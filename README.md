@@ -14,13 +14,13 @@ Pipeline:
 Mesh        [implemented]
 Measure     [implemented]
 Map         [implemented]
-Rule        [not implemented]
+Rule        [implemented — selection and planning]
 Transform   [not implemented]
 Inherit     [not implemented]
 Repeat      [not implemented]
 ```
 
-Tasks 01–03 implement mesh infrastructure, per-vertex measurement, and scalar mapping. CHESHIRE now converts geometric/topological mesh measurements into deterministic normalized scalar fields. Geometry remains unchanged.
+Tasks 01–04 implement mesh infrastructure, per-vertex measurement, scalar mapping, and rule selection with dry-run budgeting. CHESHIRE can now decide where an operation would apply and estimate whether the proposed generation fits an explicit computational budget, without modifying geometry.
 
 ## Setup and tests
 
@@ -69,3 +69,27 @@ Measurements include valence, boundary status, normalized Z height, centroid dis
 Curvature is a simple normal-variation proxy: the mean pairwise angle between incident unit face normals, divided by pi. Consistently oriented coplanar faces give zero. Boundary vertices, incomplete face fans, and degenerate/unavailable normals return `None`. It depends on winding and tessellation and is not differential curvature.
 
 `normalize_values()` accepts sequences or keyed mappings, preserves `None`, and clips using linearly interpolated percentiles (`0 <= lower < upper <= 100`). Constants normalize to zero; non-finite inputs are rejected. `map_attribute()` applies `linear`, `inverse`, `smoothstep`, `power` (finite exponent > 0, default 2), or monotonic half-`sine` to normalized values. Fields stay in `[0, 1]` or `None`. `build_scalar_field()` adds source/mapping metadata and effective parameters. Numeric summaries report min/max/mean, ignore nulls, and exclude booleans. All functions leave input mesh data unchanged.
+
+## Rule selection and dry-run budgets
+
+```python
+from cheshire import Rule, ExecutionBudget, plan_execution
+
+fields = {"height": build_scalar_field(attributes, "normalized_height")}
+rule = Rule(
+    "upper faces", "height", "face", "greater_than", 0.65,
+    operator="hypothetical_refine", face_reduction="mean",
+)
+plan = plan_execution(
+    mesh, fields, rule, ExecutionBudget(max_faces=50_000, max_generation=4),
+    current_generation=2,
+    cost_profile={"topology_preserving": False, "replacement_faces_per_selected_face": 4},
+)
+print(plan["status"], plan["estimated_output_faces"], plan["reasons"])
+```
+
+Field names are arbitrary labels. Rules target vertices or faces and support `greater_than`, `greater_equal`, `less_than`, `less_equal`, and inclusive `between`. Thresholds and field scalars must be finite. `evaluate_vertex_rule()` and `evaluate_face_rule()` return selected keys/counts, eligible counts, fractions, threshold rejections, and null exclusions. Fractions use non-null eligible elements as the denominator. Face reductions (`mean`, `min`, `max`) ignore unavailable vertex values; completely null faces are ineligible. Missing vertex keys stay unavailable, and keys absent from the mesh are rejected.
+
+`plan_execution()` accepts named raw value mappings or field metadata. Operator names/parameters are descriptive only. A `topology_preserving=True` cost profile estimates unchanged counts; otherwise the positive integer replacement rate must be supplied explicitly. The face estimate is `input_faces - selected_faces + selected_faces * replacement_rate`. Refinement vertex counts remain unknown; face growth cannot be inferred from vertex selections. No profile means unknown output counts.
+
+Budgets check face, optional vertex, and optional generation limits separately. Counts equal to a limit are allowed; `current_generation >= max_generation` is blocked. Plans report `SAFE` when supplied estimates fit, `WARNING` when a configured count budget cannot be verified, or `BLOCKED` when any limit is exceeded. Estimates describe the supplied assumptions, not guaranteed operator costs. Planning never moves vertices, changes faces, or executes transformations.
