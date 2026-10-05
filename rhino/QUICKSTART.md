@@ -1,0 +1,32 @@
+# CHESHIRE Rhino 8 demo
+
+Entry file: `C:\Users\USER\CHESHIRE\rhino\CHESHIRE_Run.py`.
+Set up CHESHIRE's existing Python 3.12 `.venv` as described in the root README.
+COMPAS stays in that environment; do not install it into Rhino.
+
+1. In Rhino 8, enter `ScriptEditor`. Open the entry file as **Python 3** and click Run. Keep the script on the UI thread; do not add `async:true`.
+2. Select one existing **Mesh**, then enter strength or accept **0.01**. Allowed range is 0–0.03. Strength is a fraction of each step's pre-displacement bounding-box diagonal, not millimetres. The four effective strengths are `s`, `s/2`, `s/4`, `s/8`.
+3. Rhino stays available while the external worker runs. Press **Esc** to cancel. Switching/closing the document cancels insertion; changing the source, its attributes/layer/visibility or units also prevents insertion. Cancellation kills only this run's worker. Timeout is 60 seconds for the whole worker, including startup.
+4. Inspect the new `CHESHIRE_<run UUID>` layer and its named meshes/text dots: **ORIGINAL REFERENCE**, **G1 DRIVER FIELD**, **G1**, **G2**, **G4** when reached. If interrupted after G3, G3 is shown as the last valid partial result. Use Undo to remove the insertion. Earlier runs and the selected original are preserved.
+
+Copies use the same orientation and model scale, translated along **world X only**. Calculation coordinates, IDs, fields and lineage are stored without display offsets in `output/task08/<run UUID>/response.json`. Each run has new request/response/log files; no manual OBJ export is required. No automatic viewport or global display-mode change occurs.
+
+The **G1 driver: normal-variation proxy → power(2)** belongs to the first subdivided mesh **before displacement**. It is not a measurement of G1/G2/G4 after movement. Black means mapped value 0, white means 1, and **magenta means unavailable**. Gray is the actual normalized, squared scalar value used for displacement. Switch the viewport manually to **Shaded** to show mesh vertex colors; Rendered/material overrides and some custom modes can hide them. Layers/objects retain the full driver label. No legend panel or custom renderer is installed.
+
+The fixed recipe is subdivision first (`nonplanar_policy="bilinear"`), then fresh measurement of `approximate_curvature`, min/max normalization with power exponent 2 and no percentile clipping, selection of valid mapped values greater than zero, and outward normal displacement. Each next step measures the changed geometry again. Subdivision first gives a coarse cube edge/face samples before measurement. The proxy is local incident-normal variation, **not exact curvature**. The ordering, mapping and strength schedule are our experiment, not claimed author parameters. This is Mesh-Grammars-inspired, not Digital Grotesque, modified Catmull-Clark, or a claim that subdivision alone creates ornament. Movement can be subtle.
+
+Rhino command history reports each completed step's counts, mapped range, unavailable values, movement/skips, strength, maximum actual displacement in model units, and elapsed time. Skips within the positive selection and unselected vertices are reported separately. Unavailable values do not move. Constant/zero mapped values produce no hidden fallback, noise or offsets.
+
+Limits: at most 5,000 input faces / 20,000 input vertices; 50,000 vertices and faces per stage; four steps; 60-second worker timeout. Budgets are conservative demo limits, not performance benchmarks. A budget/geometry failure stops at the last validated completed step and reports **PARTIAL**. Unsupported input geometry may produce no completed step (**FAILED**). There is no simplification, welding, repair, triangulation, smoothing, custom subdivision, Mola or general Repeat engine.
+
+Only existing triangle/quad Mesh objects are accepted; Brep, SubD and Ngon groups are rejected. Raw Rhino vertex identities and winding are retained, including coincident distinct vertices; sparse calculation IDs are retained in JSON and explicit Rhino mesh user-string index maps. Unwelded cube seams remain separate and may make the proxy unavailable at boundaries; use a valid shared-vertex control when testing movement. Do not expect an arbitrary Rhino mesh to pass COMPAS's manifold/fan/local bilinear restrictions. Original materials/custom attributes are preserved on the original; comparison objects carry geometry, labels and explicit ID maps rather than a material transfer. The `source_face` categorical field is explicitly inherited in run JSON, and geometry-derived drivers are recomputed. Local admissibility does not guarantee global collision freedom or fabrication suitability. A triangulated Rhino display can differ from bilinear surface semantics.
+
+For a reproducible real-worker smoke run outside Rhino:
+
+```powershell
+.\.venv\Scripts\python.exe examples\mesh_grammar_demo.py
+```
+
+It uses the existing `Box(2,3,4)` test fixture at strength 0.01 and retains actual G0/G1/G2/G4 OBJ outputs where reached, the pre-displacement driver OBJ and aligned field values, full recipe/lineage/step response and command logs in a unique ignored directory. It does not claim Rhino execution. Manual host checks: run the entry on a small Mesh, inspect colors/labels and X-only comparisons, confirm the original is unchanged, Undo, repeat to check unique results, and exercise Esc, source edits, document switching and later-stage budget failure. Host checks remain **PENDING** until executed in Rhino; no synthetic screenshots are evidence.
+
+API references: [Rhino ScriptEditor](https://developer.rhino3d.com/en/guides/scripting/scripting-command/), [Rhino UI-thread execution](https://developer.rhino3d.com/en/guides/scripting/advanced-async/), [double-precision vertex access](https://developer.rhino3d.com/api/rhinocommon/rhino.geometry.collections.meshvertexlist/point3dat), and [Escape event](https://developer.rhino3d.com/api/rhinocommon/rhino.rhinoapp/escapekeypressed?version=8.x).

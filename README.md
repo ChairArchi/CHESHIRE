@@ -21,7 +21,7 @@ Inherit     [verified on a real topology-changing operation]
 Repeat      [not implemented]
 ```
 
-Tasks 01–07.1 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and one global COMPAS quad-subdivision step with verified lineage and field inheritance. Task 07.1 adds explicit bilinear support for locally admissible nonplanar quads. Input meshes remain unchanged. CHESHIRE separates geometry execution from semantic continuity. Repeat remains unimplemented.
+Tasks 01–07.1 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and one global COMPAS quad-subdivision step with verified lineage and field inheritance. Task 07.1 adds explicit bilinear support for locally admissible nonplanar quads. Task 08 adds a thin Rhino entry point for four fixed experimental rule applications. Input meshes remain unchanged. CHESHIRE separates geometry execution from semantic continuity. A general Repeat engine remains unimplemented.
 
 ## Setup and tests
 
@@ -208,4 +208,18 @@ Run the four fixed composition cases:
 
 Using the original `Box(2,2,2)` and freshly mapped normalized height, Case A (two subdivisions) and Case C (zero displacement between them) finish at 98 vertices / 96 faces. Case B's strength `0.01` displacement moves 17 vertices and produces 20 nonplanar quads: strict mode still rejects face 10, while explicit bilinear subdivision succeeds at 98/96. Case D adds fresh measurement/mapping, a second strength `0.01` displacement moving 73 vertices, and another bilinear subdivision, reaching 386/384. Every stage checks immutable inputs, finite output, immediate-parent coverage, continuous/categorical inheritance, and fresh measurements. The example reports policies, strengths, counts, rejection reasons, nonplanarity, and maximum sampled parent/child patch comparison error. It exports five small OBJ files to ignored `output/task07_1/`.
 
-This policy certifies only conservative local admissibility. It does not certify intersections between faces, global collision freedom, fabrication suitability, or enclosed volume. A viewer's triangulated OBJ display may differ from the chosen bilinear surface. Measurements and displacement normals still use the existing COMPAS methods, without exact bilinear-surface integration. These four explicit sequences are diagnostic examples; no Repeat engine, Mola, or Rhino integration is implemented.
+This policy certifies only conservative local admissibility. It does not certify intersections between faces, global collision freedom, fabrication suitability, or enclosed volume. A viewer's triangulated OBJ display may differ from the chosen bilinear surface. Measurements and displacement normals still use the existing COMPAS methods, without exact bilinear-surface integration. These four explicit sequences are Task 07.1 diagnostic examples. A general Repeat engine and Mola integration remain unimplemented; the Task 08 Rhino entry point is described below.
+
+## Rhino mesh-grammar experiment (Task 08)
+
+Run `C:\Users\USER\CHESHIRE\rhino\CHESHIRE_Run.py` in **Rhino 8 ScriptEditor / Python 3**, select one existing Mesh, and choose strength (default `0.01`, allowed `0–0.03` of the bounding-box diagonal). Selection/display stay in Rhino; a small external JSON worker uses the existing repository `.venv`. Rhino imports stay outside the core, and no dependencies change. See [the English quickstart](rhino/QUICKSTART.md) for launch, colors, cancellation, partial results, limits and host checks.
+
+Four fixed steps use existing APIs: bilinear quad subdivision → fresh normal-variation proxy measurement → power(2) mapping without percentile clipping → positive-value rule selection → outward displacement at `strength / 2**step_index` → validation and explicit inheritance. New run layers show ORIGINAL REFERENCE, the actual pre-displacement G1 driver in grayscale (magenta means unavailable), and G1/G2/G4 where reached. Display copies move only along world X; the original and calculation coordinates are preserved. Later budget/geometry failures retain completed results as PARTIAL. This is our Mesh-Grammars-inspired recipe; no modified Catmull-Clark, Digital Grotesque reproduction, or general Repeat engine is implemented.
+
+The real-worker control can also run without Rhino:
+
+```powershell
+.\.venv\Scripts\python.exe examples\mesh_grammar_demo.py
+```
+
+It retains real control geometry, aligned driver values and step diagnostics in a unique ignored `output/task08/` directory. Rhino selection, viewport/color display, Undo and cancellation checks are **PENDING** until executed in the host. Results may be subtle; there is no ornament, collision-free or fabrication-ready claim.
