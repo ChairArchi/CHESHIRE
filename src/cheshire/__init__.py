@@ -1,7 +1,9 @@
-"""CHESHIRE mesh fields, rule selection, budgeting, and normal displacement."""
+"""CHESHIRE mesh fields, transforms, and backend-independent inheritance."""
 
 from .attributes import analyze_vertex_attributes, attribute_summary
 from .execution import ExecutionBudget, plan_execution
+from .inheritance import FieldSpec, InheritedFieldSet, inherit_fields
+from .lineage import LineageMap, ParentRef, identity_lineage, validate_lineage
 from .mapping import build_scalar_field, inverse, linear, map_attribute, power, sine, smoothstep
 from .mesh_io import load_mesh, save_mesh
 from .normalization import normalize_values
@@ -17,4 +19,6 @@ __all__ = [
     "Rule", "evaluate_vertex_rule", "evaluate_face_rule",
     "ExecutionBudget", "plan_execution",
     "TransformResult", "displace_vertices_along_normals",
+    "ParentRef", "LineageMap", "validate_lineage", "identity_lineage",
+    "FieldSpec", "InheritedFieldSet", "inherit_fields",
 ]

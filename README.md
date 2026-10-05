@@ -8,7 +8,7 @@ CHESHIRE is a standalone deterministic computational design engine for transform
 
 Pipeline:
 
-**Mesh → Measure → Map → Rule → Transform → Inherit → Repeat**
+**Mesh → Measure → Map → Rule → Budget → Transform → Inherit → Repeat**
 
 ```text
 Mesh        [implemented]
@@ -17,11 +17,11 @@ Map         [implemented]
 Rule        [implemented]
 Budget      [implemented]
 Transform   [partially implemented — normal displacement]
-Inherit     [not implemented]
+Inherit     [implemented — lineage + field inheritance foundation]
 Repeat      [not implemented]
 ```
 
-Tasks 01–05 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, and the first transform only: normal displacement. CHESHIRE can now convert a deterministic scalar field and rule selection into a topology-preserving geometric transformation on a new mesh. Input meshes remain unchanged.
+Tasks 01–06 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and the lineage/field inheritance foundation. Input meshes remain unchanged. CHESHIRE now separates geometry execution from semantic continuity.
 
 ## Setup and tests
 
@@ -119,4 +119,39 @@ Distance is `field_value * strength * input_bbox_diagonal`; strength is a dimens
 
 COMPAS vertex normals average incident polygon normals with area weighting, then unitize the result. They are evaluated on the original geometry. `outward` follows these normals, and `inward` follows their negatives; winding determines orientation. Missing/null fields, zero distances, and unsafe normals leave vertices fixed. Incomplete face fans and degenerate, cancelling, non-finite, or unavailable normals are reported as skips. Invalid mesh topology or unrepresentable scales/output coordinates are rejected, without repair.
 
-`TransformResult.mesh` is an independent COMPAS Mesh with the same vertex/face keys and connectivity. Metadata records operator, direction, selected/moved/skipped counts, strength, scale, actual maximum displacement, skip reasons, and `topology_changed=False`. Selection defaults to all mesh vertices; explicit selections restrict candidates. Zero/null candidates count as skipped. Rules and budget checks remain separate from the transform. No subdivision, inheritance, or repetition is implemented.
+`TransformResult.mesh` is an independent COMPAS Mesh with the same vertex/face keys and connectivity. Metadata records operator, direction, selected/moved/skipped counts, strength, scale, actual maximum displacement, skip reasons, and `topology_changed=False`. Selection defaults to all mesh vertices; explicit selections restrict candidates. Zero/null candidates count as skipped. Rules and budget checks remain separate from the transform. No subdivision or repetition is implemented.
+
+## Lineage and field inheritance
+
+```python
+from cheshire import FieldSpec, LineageMap, ParentRef, identity_lineage, inherit_fields
+
+# Synthetic lineage only; this does not create or split geometry.
+lineage = LineageMap(vertex_parents={
+    "C": [ParentRef("A", 0.25), ParentRef("B", 0.75)],
+})
+inherited = inherit_fields(
+    lineage,
+    {"confidence": {"A": 0.2, "B": 0.8},
+     "part_type": {"A": "support", "B": "support"}},
+    [FieldSpec("confidence", "vertex", "scalar", "CONTINUOUS"),
+     FieldSpec("part_type", "vertex", "categorical", "CATEGORICAL"),
+     FieldSpec("approximate_curvature", "vertex", "scalar", "RECOMPUTE")],
+)
+# confidence[C] is approximately 0.65; part_type[C] is "support".
+# inherited.recompute_fields == ["approximate_curvature"]
+
+# After the SAFE normal-displacement example above:
+# lineage = identity_lineage(result.mesh)
+# inherited = inherit_fields(lineage, fields, specs)
+```
+
+`LineageMap(vertex_parents, face_parents)` maps arbitrary hashable child keys to ordered `ParentRef(key, weight)` sequences. Children retain mapping insertion order; parents retain sequence order, without sorting keys. Maps and parent records are read-only snapshots. `validate_lineage()` returns a list of problems (`[]` when valid); construction rejects invalid lineage. Weights must be finite, non-negative, and sum to one within absolute tolerance `1e-9` (zero relative tolerance). Weights are never renormalized. Duplicate parents and empty parent sequences are rejected; `None` explicitly represents unknown parents. Keys must keep stable hash/equality behavior.
+
+`FieldSpec(name, domain, kind, inheritance_mode)` uses arbitrary names, domains `vertex`/`face`, and kinds `scalar`/`categorical`. `CONTINUOUS` requires scalar kind and computes finite weighted values without a `[0, 1]` restriction. `CATEGORICAL` requires categorical kind and inherits hashable labels (strings, enums, or other semantic labels) only when every parent agrees; conflicting labels return `None`. Labels are treated as immutable atomic values and retained directly, so callers must keep their hash/equality and content stable. Numeric labels must be finite. `RECOMPUTE` omits the field from output values and flags its name without reading stale source data or measuring geometry. Geometry-derived fields such as height, valence, boundary status, and curvature should normally use `RECOMPUTE`; the engine makes no choices based on field names.
+
+`inherit_fields(lineage, fields, specs)` accepts named raw mappings or scalar-field metadata with a `values` mapping. All declared parents are required, including zero-weight parents. Missing fields/keys, null parent values, unknown lineage, and label conflicts return `None`; incomplete data is never renormalized. All supplied values for inherited fields are validated, including unused entries. `InheritedFieldSet` returns fresh `values`, ordered `recompute_fields`, per-inherited-field `unresolved_counts`, and `warnings`. Ordinary floating-point rounding applies; non-finite inputs/results are rejected. Lineage, source fields, and meshes remain unchanged. Inheritance needs no mesh access.
+
+## Future backend contract
+
+Any future topology-changing backend (COMPAS, Mola, or another implementation) must return both the resulting mesh and lineage sufficient for CHESHIRE inheritance, identifying child vertex/face keys and their weighted parent keys in the input mesh. A topology-preserving transform can use `identity_lineage(output_mesh)` when keys remain unchanged. CHESHIRE uses lineage to inherit semantic and continuous fields while marking geometry-derived measurements for recomputation. No backend framework, external backend integration, topology-changing operator, or Repeat loop is implemented yet.
