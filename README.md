@@ -222,4 +222,8 @@ The real-worker control can also run without Rhino:
 .\.venv\Scripts\python.exe examples\mesh_grammar_demo.py
 ```
 
-It retains real control geometry, aligned driver values and step diagnostics in a unique ignored `output/task08/` directory. Rhino selection, viewport/color display, Undo and cancellation checks are **PENDING** until executed in the host. Results may be subtle; there is no ornament, collision-free or fabrication-ready claim.
+It retains real control geometry, aligned driver values and step diagnostics in a unique ignored `output/task08/` directory. The user has since confirmed actual Task 08 selection/calculation/insertion in Rhino; broader viewport/color, Undo and cancellation checks remain **PENDING**. Results may be subtle; there is no ornament, collision-free or fabrication-ready claim.
+
+## Optional Mola tapered extrusion study (Task 09)
+
+The Rhino launcher now offers `MeshGrammar` and `MolaTaperStudy`. The latter calls the official external HDMola 1.0.0 face operator through optional Python.NET 3.0.5 and explicitly selected .NET 8 CoreCLR. It compares the same original input/planar selection at A `(height_ratio=0.10, fraction=0.25)`, B `(0.30, 0.25)`, and C `(0.10, 0.65)` without subdivision. Mola generates the upper geometry; CHESHIRE preserves base IDs, assembles verified side/cap roles, checks budgets and complete lineage, and explicitly inherits/recomputes fields. See [Mola quickstart](rhino/MOLA_QUICKSTART.md) for the external DLL requirement, real-worker example, limits, numerical tolerances and attribution. No Mola files are distributed, and new-mode Rhino host checks remain **PENDING**.

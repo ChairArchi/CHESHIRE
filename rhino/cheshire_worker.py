@@ -192,10 +192,18 @@ def main():
     if args.request.resolve().parent != args.response.resolve().parent or args.response.exists():
         raise ValueError("Use new per-run request/response paths in one unique run directory.")
     request = validate_request(read_json(args.request))
-    response = run_experiment(request, publish=lambda value: write_json_atomic(args.response, value))
-    print(response["status"] + ": " + (response["reason"] or "G1/G2/G3/G4 completed"))
+    if request.get("mode") == "MOLA_TAPER_STUDY":
+        from mola_study import run_mola_study
+        response = run_mola_study(request, publish=lambda value: write_json_atomic(args.response, value))
+    else:
+        response = run_experiment(request, publish=lambda value: write_json_atomic(args.response, value))
+    completed = "A/B/C completed" if request.get("mode") == "MOLA_TAPER_STUDY" else "G1/G2/G3/G4 completed"
+    print(response["status"] + ": " + (response["reason"] or completed))
     return 0 if response["status"] in ("SUCCESS", "PARTIAL") else 1
 
 
 if __name__ == "__main__":
+    # The optional study imports these exchange helpers; reuse this worker
+    # module rather than executing its startup checks a second time.
+    sys.modules["cheshire_worker"] = sys.modules[__name__]
     raise SystemExit(main())

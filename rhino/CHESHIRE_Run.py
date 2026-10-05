@@ -20,7 +20,7 @@ import Rhino
 from System import Guid
 from System.Drawing import Color
 from exchange import (
-    MAX_INPUT_FACES, MAX_INPUT_VERTICES, TIMEOUT_SECONDS, read_json,
+    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, TIMEOUT_SECONDS, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
 from worker_process import worker_launch_options
@@ -87,6 +87,18 @@ def source_fingerprint(doc, source):
 
 
 def print_steps(response):
+    if response.get("mode") == MOLA_MODE:
+        Rhino.RhinoApp.WriteLine("MOLA_TAPER_STUDY " + response["status"] + ": " + (response.get("reason") or "A/B/C completed."))
+        Rhino.RhinoApp.WriteLine(f"Selected {len(response['selected_faces'])}; excluded {len(response['excluded_faces'])}; height in input document coordinate units.")
+        for variant in response["variants"]:
+            heights = [row["height"] for row in variant["parameters"]]
+            Rhino.RhinoApp.WriteLine("{name}: height ratio {height_ratio:g}, fraction {fraction:g}; {vertex_count} vertices / {face_count} faces; {elapsed_seconds:.3f}s".format(**variant))
+            Rhino.RhinoApp.WriteLine("Actual height range: " + (f"{min(heights):g} .. {max(heights):g}" if heights else "none (empty selection)"))
+        if response["variants"] and response["variants"][0]["backend"]:
+            backend = response["variants"][0]["backend"]
+            Rhino.RhinoApp.WriteLine("Mola: " + backend["assembly"] + "; CoreCLR " + backend["runtime"] + "; " + backend["dll_path"])
+        Rhino.RhinoApp.WriteLine("Full parameters, exclusions, roles and lineage are in response.json. No global collision guarantee.")
+        return
     Rhino.RhinoApp.WriteLine("CHESHIRE " + response["status"] + ": " + (response.get("reason") or "Four recipe applications completed."))
     for stage in response["stages"]:
         Rhino.RhinoApp.WriteLine(
@@ -101,14 +113,24 @@ def print_steps(response):
 
 def insert_results(doc, request, response):
     """UI-thread insertion with one undo record and run-local failure rollback."""
-    items = [("ORIGINAL REFERENCE", request["mesh"], None),
+    if response.get("mode") == MOLA_MODE:
+        selected = set(response["selected_faces"])
+        preview = {"vertices": request["mesh"]["vertices"],
+                   "faces": [row for row in request["mesh"]["faces"] if row["id"] in selected]}
+        items = [("ORIGINAL REFERENCE", request["mesh"], None),
+                 ("SELECTED FACE PREVIEW" if selected else "SELECTED FACE PREVIEW (none; original shown)",
+                  preview if selected else request["mesh"], None)]
+        for variant in response["variants"]:
+            items.append(("{name} - height {height_ratio:g}, taper {fraction:g}".format(**variant), variant["mesh"], None))
+    else:
+        items = [("ORIGINAL REFERENCE", request["mesh"], None),
              (response["driver"]["label"], response["driver"]["mesh"],
               {row["id"]: row["value"] for row in response["driver"]["values"]})]
-    stages = response["stages"]
-    for stage in stages:
-        generation = stage["generation"]
-        if generation in (1, 2, 4) or stage is stages[-1]:
-            items.append((f"G{generation}" + (" (last valid; PARTIAL)" if response["status"] == "PARTIAL" and stage is stages[-1] else ""), stage["mesh"], None))
+        stages = response["stages"]
+        for stage in stages:
+            generation = stage["generation"]
+            if generation in (1, 2, 4) or stage is stages[-1]:
+                items.append((f"G{generation}" + (" (last valid; PARTIAL)" if response["status"] == "PARTIAL" and stage is stages[-1] else ""), stage["mesh"], None))
     all_xyz = [row["xyz"] for _, data, _ in items for row in data["vertices"]]
     dimensions = [max(point[axis] for point in all_xyz) - min(point[axis] for point in all_xyz) for axis in range(3)]
     diagonal = hypot(*dimensions)
@@ -117,7 +139,7 @@ def insert_results(doc, request, response):
         raise ValueError("Cannot represent a safe X-only comparison spacing.")
     root_name = "CHESHIRE_" + request["run_id"]
     created_objects, created_layers = [], []
-    undo = doc.BeginUndoRecord("CHESHIRE mesh-grammar experiment")
+    undo = doc.BeginUndoRecord("CHESHIRE " + request.get("mode", "mesh-grammar experiment"))
     if not undo:
         raise ValueError("Could not begin an undoable insertion; no results added.")
     try:
@@ -139,7 +161,8 @@ def insert_results(doc, request, response):
             attrs.LayerIndex, attrs.Name = layer_index, label
             attrs.SetUserString("CHESHIRE run_id", request["run_id"])
             attrs.SetUserString("CHESHIRE source_object", request["source"]["object_id"])
-            attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output/task08" / request["run_id"] / "response.json"))
+            task = "task09" if request.get("mode") == MOLA_MODE else "task08"
+            attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output" / task / request["run_id"] / "response.json"))
             display = data_to_rhino_mesh(data, position * spacing, values)
             object_id = doc.Objects.AddMesh(display, attrs)
             if object_id == Guid.Empty:
@@ -168,13 +191,18 @@ def insert_results(doc, request, response):
 class Run:
     """One subprocess, one UI timer and one cancellation event; no host wait."""
 
-    def __init__(self, doc, source, strength):
+    def __init__(self, doc, source, strength=None, mode="MESH_GRAMMAR", mola_dll=None):
         self.serial, self.object_id = doc.RuntimeSerialNumber, source.Id
         self.fingerprint = source_fingerprint(doc, source)
-        self.request = validate_request({"protocol": 1, "run_id": str(uuid4()),
+        payload = {"protocol": 1, "run_id": str(uuid4()),
                                         "source": {"document_serial": self.serial, "object_id": str(source.Id)},
-                                        "strength": strength, "mesh": rhino_mesh_to_data(source.Geometry)})
-        self.directory = ROOT / "output/task08" / self.request["run_id"]
+                                        "mode": mode, "mesh": rhino_mesh_to_data(source.Geometry)}
+        if mode == MOLA_MODE:
+            payload.update(mola_dll=mola_dll, selected_faces="ALL_ELIGIBLE_PLANAR")
+        else:
+            payload["strength"] = strength
+        self.request = validate_request(payload)
+        self.directory = ROOT / "output" / ("task09" if mode == MOLA_MODE else "task08") / self.request["run_id"]
         self.directory.mkdir(parents=True, exist_ok=False)
         write_json_atomic(self.directory / "request.json", self.request)
         self.cancel = threading.Event()
@@ -225,7 +253,7 @@ class Run:
                 raise ValueError(f"Worker returned no matching response (exit {process.returncode}, {stopped or 'no checkpoint'}).\n{tail}")
             response = validate_response(read_json(path), self.request)
             if stopped == "TIMEOUT" or process.returncode != 0:
-                response["status"] = "PARTIAL" if response["stages"] else "FAILED"
+                response["status"] = "PARTIAL" if response.get("variants", response.get("stages", [])) else "FAILED"
                 response["reason"] = f"Worker {stopped or ('exited ' + str(process.returncode))}; retaining only validated completed stages."
                 write_json_atomic(path, response)
             self.completion.put((response, None))
@@ -267,10 +295,11 @@ class Run:
             Rhino.RhinoApp.WriteLine("Worker stdlib: re=" + runtime["re_file"] + "; pathlib=" + runtime["pathlib_file"])
             Rhino.RhinoApp.WriteLine("CHESHIRE package: " + runtime["cheshire_file"])
             print_steps(response)
-            if response["stages"]:
+            if response.get("variants", response.get("stages", [])):
                 insert_results(doc, self.request, response)
                 Rhino.RhinoApp.WriteLine("Results translated along world X on a new CHESHIRE run layer; original preserved.")
-                Rhino.RhinoApp.WriteLine("Driver: black=0, white=1, magenta=unavailable. Use Shaded mode to see mesh vertex colors; no display mode was changed.")
+                if response.get("mode") != MOLA_MODE:
+                    Rhino.RhinoApp.WriteLine("Driver: black=0, white=1, magenta=unavailable. Use Shaded mode to see mesh vertex colors; no display mode was changed.")
             Rhino.RhinoApp.WriteLine("Run files: " + str(self.directory))
         except Exception as error:
             self.cancel.set()
@@ -296,6 +325,25 @@ def main():
     source = selection.Object(0).Object()
     try:
         rhino_mesh_to_data(source.Geometry)
+        choice = Rhino.Input.Custom.GetOption()
+        choice.SetCommandPrompt("CHESHIRE experiment mode")
+        grammar = choice.AddOption("MeshGrammar")
+        mola = choice.AddOption("MolaTaperStudy")
+        choice.Get()
+        if choice.CommandResult() != Rhino.Commands.Result.Success:
+            return
+        if choice.OptionIndex() == mola:
+            Rhino.RhinoApp.WriteLine("MOLA_TAPER_STUDY: all eligible planar convex triangles/quads of this ORIGINAL mesh; excluded faces stay unchanged. Maximum 1000 selected faces.")
+            path = Rhino.Input.Custom.GetString()
+            path.SetCommandPrompt("Exact full path to official standalone HDMola.dll (outside CHESHIRE)")
+            path.Get()
+            if path.CommandResult() != Rhino.Commands.Result.Success:
+                return
+            dll = Path(path.StringResult().strip().strip('"'))
+            if not dll.is_absolute() or not dll.is_file() or dll.is_relative_to(ROOT):
+                raise ValueError("Provide an existing standalone DLL outside CHESHIRE; no automatic search or copy.")
+            Run(doc, source, mode=MOLA_MODE, mola_dll=str(dll)).start()
+            return
         Rhino.RhinoApp.WriteLine("Strength is a fraction of each pre-displacement bounding-box diagonal, not millimetres; allowed 0–0.03.")
         number = Rhino.Input.Custom.GetNumber()
         number.SetCommandPrompt("CHESHIRE strength (relative bbox diagonal)")

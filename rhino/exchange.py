@@ -13,6 +13,8 @@ MAX_INPUT_VERTICES = 20000
 MAX_STAGE_COUNT = 50000
 MAX_STEPS = 4
 TIMEOUT_SECONDS = 60
+MOLA_MODE = "MOLA_TAPER_STUDY"
+MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
 def finite_json(value):
@@ -91,9 +93,23 @@ def validate_request(request):
     source = request.get("source")
     if not isinstance(source, dict) or not isinstance(source.get("object_id"), str) or type(source.get("document_serial")) is not int:
         raise ValueError("Source document and object identity are required.")
-    strength = request.get("strength")
-    if type(strength) not in (int, float) or not isfinite(strength) or not 0 <= strength <= 0.03:
-        raise ValueError("Demo strength must be finite, from 0 to 0.03 of the bounding-box diagonal.")
+    mode = request.get("mode", "MESH_GRAMMAR")
+    if mode == MOLA_MODE:
+        if not isinstance(request.get("mola_dll"), str) or not Path(request["mola_dll"]).is_absolute():
+            raise ValueError("Mola requires an explicit absolute standalone DLL path.")
+        selection = request.get("selected_faces")
+        if selection != "ALL_ELIGIBLE_PLANAR":
+            if not isinstance(selection, list) or any(type(k) is not int for k in selection) or len(set(selection)) != len(selection):
+                raise ValueError("Mola selection must be explicit distinct face IDs or ALL_ELIGIBLE_PLANAR.")
+            keys = {row["id"] for row in validate_mesh_data(request.get("mesh"))["faces"]}
+            if len(selection) > 1000 or not set(selection) <= keys:
+                raise ValueError("Mola selection exceeds 1000 faces or contains unknown IDs.")
+    elif mode == "MESH_GRAMMAR":
+        strength = request.get("strength")
+        if type(strength) not in (int, float) or not isfinite(strength) or not 0 <= strength <= 0.03:
+            raise ValueError("Demo strength must be finite, from 0 to 0.03 of the bounding-box diagonal.")
+    else:
+        raise ValueError("Unsupported CHESHIRE experiment mode.")
     validate_mesh_data(request.get("mesh"), MAX_INPUT_VERTICES, MAX_INPUT_FACES)
     return request
 
@@ -103,6 +119,8 @@ def validate_response(response, request):
     finite_json(response)
     if not isinstance(response, dict) or response.get("protocol") != 1 or response.get("run_id") != request["run_id"] or response.get("source") != request["source"]:
         raise ValueError("Response does not match the initiating request/document/object.")
+    if request.get("mode") == MOLA_MODE:
+        return _validate_mola_response(response, request)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -126,4 +144,33 @@ def validate_response(response, request):
             raise ValueError("G1 field must be aligned to its pre-displacement driver mesh.")
         if any(row["value"] is not None and (type(row["value"]) not in (int, float) or not 0 <= row["value"] <= 1) for row in values):
             raise ValueError("Invalid driver field values.")
+    return response
+
+
+def _validate_mola_response(response, request):
+    variants = response.get("variants")
+    status = response.get("status")
+    if response.get("mode") != MOLA_MODE or not isinstance(variants, list) or len(variants) > 3:
+        raise ValueError("Invalid Mola study response.")
+    if status not in ("SUCCESS", "PARTIAL", "FAILED") or (status == "SUCCESS" and len(variants) != 3) or (status == "PARTIAL" and not variants) or (status == "FAILED" and variants):
+        raise ValueError("Inconsistent Mola study status.")
+    if not isinstance(response.get("selected_faces"), list) or len(response["selected_faces"]) > (MAX_INPUT_FACES if status == "FAILED" else 1000):
+        raise ValueError("Invalid Mola selected-face list.")
+    selected = response["selected_faces"]
+    if len(set(selected)) != len(selected) or not set(selected) <= {row["id"] for row in request["mesh"]["faces"]}:
+        raise ValueError("Mola selected-face IDs do not match input.")
+    if isinstance(request["selected_faces"], list) and selected != request["selected_faces"]:
+        raise ValueError("Mola response selection differs from explicit request.")
+    for variant, (name, ratio, fraction) in zip(variants, MOLA_VARIANTS):
+        if variant.get("name") != name or variant.get("height_ratio") != ratio or variant.get("fraction") != fraction or variant.get("validated") is not True:
+            raise ValueError("Mola variants must follow fixed A/B/C settings.")
+        mesh = validate_mesh_data(variant.get("mesh"))
+        if variant.get("vertex_count") != len(mesh["vertices"]) or variant.get("face_count") != len(mesh["faces"]):
+            raise ValueError("Mola variant counts do not match mesh.")
+        if [row["id"] for row in variant.get("parameters", [])] != selected:
+            raise ValueError("Mola parameters must align with selected input faces.")
+        for domain in ("vertices", "faces"):
+            ids = [row["id"] for row in mesh[domain]]
+            if [row["id"] for row in variant.get("lineage", {}).get(domain, [])] != ids:
+                raise ValueError("Mola lineage must align with output IDs.")
     return response
