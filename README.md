@@ -14,13 +14,14 @@ Pipeline:
 Mesh        [implemented]
 Measure     [implemented]
 Map         [implemented]
-Rule        [implemented — selection and planning]
-Transform   [not implemented]
+Rule        [implemented]
+Budget      [implemented]
+Transform   [partially implemented — normal displacement]
 Inherit     [not implemented]
 Repeat      [not implemented]
 ```
 
-Tasks 01–04 implement mesh infrastructure, per-vertex measurement, scalar mapping, and rule selection with dry-run budgeting. CHESHIRE can now decide where an operation would apply and estimate whether the proposed generation fits an explicit computational budget, without modifying geometry.
+Tasks 01–05 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, and the first transform only: normal displacement. CHESHIRE can now convert a deterministic scalar field and rule selection into a topology-preserving geometric transformation on a new mesh. Input meshes remain unchanged.
 
 ## Setup and tests
 
@@ -93,3 +94,29 @@ Field names are arbitrary labels. Rules target vertices or faces and support `gr
 `plan_execution()` accepts named raw value mappings or field metadata. Operator names/parameters are descriptive only. A `topology_preserving=True` cost profile estimates unchanged counts; otherwise the positive integer replacement rate must be supplied explicitly. The face estimate is `input_faces - selected_faces + selected_faces * replacement_rate`. Refinement vertex counts remain unknown; face growth cannot be inferred from vertex selections. No profile means unknown output counts.
 
 Budgets check face, optional vertex, and optional generation limits separately. Counts equal to a limit are allowed; `current_generation >= max_generation` is blocked. Plans report `SAFE` when supplied estimates fit, `WARNING` when a configured count budget cannot be verified, or `BLOCKED` when any limit is exceeded. Estimates describe the supplied assumptions, not guaranteed operator costs. Planning never moves vertices, changes faces, or executes transformations.
+
+## First transform: normal displacement
+
+```python
+from cheshire import displace_vertices_along_normals
+
+rule = Rule("high vertices", "height", "vertex", "greater_than", 0.65,
+            operator="normal_displacement")
+plan = plan_execution(
+    mesh, fields, rule,
+    ExecutionBudget(max_faces=50_000, max_vertices=50_000, max_generation=4),
+    current_generation=0, cost_profile={"topology_preserving": True},
+)
+if plan["status"] == "SAFE":
+    result = displace_vertices_along_normals(
+        mesh, fields["height"]["values"], selected_vertices=plan["selected_vertices"],
+        strength=0.02, direction="outward",
+    )
+    save_mesh(result.mesh, "output/displaced.obj")
+```
+
+Distance is `field_value * strength * input_bbox_diagonal`; strength is a dimensionless fraction, not an absolute distance. For example, `0.8 * 0.02 * 5000 = 80` model units. Only `scale_mode="bbox_diagonal"` is supported. Strength must be finite and non-negative, and all supplied field values must be finite in `[0, 1]` or `None`.
+
+COMPAS vertex normals average incident polygon normals with area weighting, then unitize the result. They are evaluated on the original geometry. `outward` follows these normals, and `inward` follows their negatives; winding determines orientation. Missing/null fields, zero distances, and unsafe normals leave vertices fixed. Incomplete face fans and degenerate, cancelling, non-finite, or unavailable normals are reported as skips. Invalid mesh topology or unrepresentable scales/output coordinates are rejected, without repair.
+
+`TransformResult.mesh` is an independent COMPAS Mesh with the same vertex/face keys and connectivity. Metadata records operator, direction, selected/moved/skipped counts, strength, scale, actual maximum displacement, skip reasons, and `topology_changed=False`. Selection defaults to all mesh vertices; explicit selections restrict candidates. Zero/null candidates count as skipped. Rules and budget checks remain separate from the transform. No subdivision, inheritance, or repetition is implemented.
