@@ -192,7 +192,10 @@ def main():
     if args.request.resolve().parent != args.response.resolve().parent or args.response.exists():
         raise ValueError("Use new per-run request/response paths in one unique run directory.")
     request = validate_request(read_json(args.request))
-    if request.get("mode") == "MOLA_FIELD_STUDY":
+    if request.get("mode") == "MOLA_SURFACE_STUDY":
+        from mola_surface_study import run_mola_surface_study
+        response = run_mola_surface_study(request, publish=lambda value: write_json_atomic(args.response, value))
+    elif request.get("mode") == "MOLA_FIELD_STUDY":
         from mola_field_study import run_mola_field_study
         response = run_mola_field_study(request, publish=lambda value: write_json_atomic(args.response, value))
     elif request.get("mode") == "MOLA_TAPER_STUDY":
@@ -200,7 +203,7 @@ def main():
         response = run_mola_study(request, publish=lambda value: write_json_atomic(args.response, value))
     else:
         response = run_experiment(request, publish=lambda value: write_json_atomic(args.response, value))
-    completed = {"MOLA_TAPER_STUDY": "A/B/C completed", "MOLA_FIELD_STUDY": "G1/G2/G3 cap recursion completed"}.get(request.get("mode"), "G1/G2/G3/G4 completed")
+    completed = {"MOLA_SURFACE_STUDY": "G1/G3 raw and terminal CC1 comparisons completed", "MOLA_TAPER_STUDY": "A/B/C completed", "MOLA_FIELD_STUDY": "G1/G2/G3 cap recursion completed"}.get(request.get("mode"), "G1/G2/G3/G4 completed")
     print(response["status"] + ": " + (response["reason"] or completed))
     return 0 if response["status"] in ("SUCCESS", "PARTIAL") else 1
 

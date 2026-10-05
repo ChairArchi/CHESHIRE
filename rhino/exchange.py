@@ -15,6 +15,7 @@ MAX_STEPS = 4
 TIMEOUT_SECONDS = 60
 MOLA_MODE = "MOLA_TAPER_STUDY"
 MOLA_FIELD_MODE = "MOLA_FIELD_STUDY"
+MOLA_SURFACE_MODE = "MOLA_SURFACE_STUDY"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -95,12 +96,13 @@ def validate_request(request):
     if not isinstance(source, dict) or not isinstance(source.get("object_id"), str) or type(source.get("document_serial")) is not int:
         raise ValueError("Source document and object identity are required.")
     mode = request.get("mode", "MESH_GRAMMAR")
-    if mode in (MOLA_MODE, MOLA_FIELD_MODE):
+    if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE):
         if not isinstance(request.get("mola_dll"), str) or not Path(request["mola_dll"]).is_absolute():
             raise ValueError("Mola requires an explicit absolute standalone DLL path.")
         selection = request.get("selected_faces")
-        if mode == MOLA_FIELD_MODE and selection != "ALL_ELIGIBLE_PLANAR":
-            raise ValueError("MolaFieldStudy uses all eligible ORIGINAL planar faces.")
+        if mode in (MOLA_FIELD_MODE, MOLA_SURFACE_MODE) and selection != "ALL_ELIGIBLE_PLANAR":
+            name = "MolaFieldStudy" if mode == MOLA_FIELD_MODE else "MolaSurfaceStudy"
+            raise ValueError(name + " uses all eligible ORIGINAL planar faces.")
         if selection != "ALL_ELIGIBLE_PLANAR":
             if not isinstance(selection, list) or any(type(k) is not int for k in selection) or len(set(selection)) != len(selection):
                 raise ValueError("Mola selection must be explicit distinct face IDs or ALL_ELIGIBLE_PLANAR.")
@@ -126,6 +128,8 @@ def validate_response(response, request):
         return _validate_mola_response(response, request)
     if request.get("mode") == MOLA_FIELD_MODE:
         return _validate_field_response(response, request)
+    if request.get("mode") == MOLA_SURFACE_MODE:
+        return _validate_surface_response(response, request)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -216,6 +220,47 @@ def _validate_field_response(response, request):
         if stage.get("budget", {}).get("status") != "SAFE" or stage.get("lineage_coverage") != []:
             raise ValueError("Only budget-safe generations with verified coverage may be displayed.")
         previous_mesh, selected = mesh, caps
+    return response
+
+
+def _validate_surface_response(response, request):
+    if response.get("mode") != MOLA_SURFACE_MODE:
+        raise ValueError("Invalid surface study mode.")
+    _validate_field_response({**response, "mode": MOLA_FIELD_MODE, "status": response.get("raw_status")}, request)
+    derivatives = response.get("derivatives")
+    if not isinstance(derivatives, list) or [row.get("source_generation") for row in derivatives] != [1, 3]:
+        raise ValueError("Surface derivatives must refer separately to raw G1 and G3.")
+    stages = {stage["generation"]: stage for stage in response["stages"]}
+    for row in derivatives:
+        if row.get("source_run") != request["run_id"] or row.get("terminal_derivative") is not True or row.get("semantic_lineage") != "NOT IMPLEMENTED":
+            raise ValueError("CC1 requires terminal source association and explicit unimplemented semantic lineage.")
+        if any(name in row for name in ("fields", "lineage", "face_roles", "cap_faces", "parameters")):
+            raise ValueError("Raw semantic data cannot be reassigned to CC1 topology.")
+        status = row.get("status")
+        if status not in ("SUCCESS", "PENDING", "BLOCKED", "UNAVAILABLE", "REJECTED"):
+            raise ValueError("Invalid CC1 derivative status.")
+        if status != "SUCCESS":
+            if "mesh" in row or row.get("validated") is True or not isinstance(row.get("reason"), str) or not row["reason"]:
+                raise ValueError("An incomplete derivative cannot contain display geometry.")
+            continue
+        mesh = validate_mesh_data(row.get("mesh"))
+        stage = stages.get(row["source_generation"])
+        if stage is None or row.get("validated") is not True or row.get("scheme") != "catmullclark" or row.get("level") != 1:
+            raise ValueError("Only a validated one-level CC derivative of an available raw stage is allowed.")
+        if row.get("input", {}).get("vertex_count") != stage["vertex_count"] or row.get("input", {}).get("face_count") != stage["face_count"]:
+            raise ValueError("CC1 source counts do not match its raw stage.")
+        counts, budget = row.get("output", {}), row.get("budget", {})
+        if counts.get("vertex_count") != len(mesh["vertices"]) or counts.get("face_count") != len(mesh["faces"]) or any(len(face["vertices"]) != 4 for face in mesh["faces"]):
+            raise ValueError("CC1 output counts/topology do not match the display mesh.")
+        if budget.get("status") != "SAFE" or budget.get("estimated_output_vertices") != len(mesh["vertices"]) or budget.get("estimated_output_faces") != len(mesh["faces"]):
+            raise ValueError("CC1 must match its safe preflight estimate.")
+        if row.get("boundary_preservation", {}).get("status") != "PASS" or row.get("components_before") != row.get("components_after"):
+            raise ValueError("CC1 boundary/component verification did not pass.")
+    status = response.get("status")
+    if status not in ("SUCCESS", "PARTIAL", "FAILED") or (status == "PARTIAL" and not stages) or (status == "FAILED" and stages):
+        raise ValueError("Inconsistent surface study status.")
+    if status == "SUCCESS" and (response["raw_status"] != "SUCCESS" or any(row["status"] != "SUCCESS" for row in derivatives)):
+        raise ValueError("Surface SUCCESS requires both completed CC1 comparisons and the raw recipe.")
     return response
 
 
