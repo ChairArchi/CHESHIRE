@@ -7,6 +7,8 @@ from pathlib import Path
 import subprocess
 import sys
 from uuid import uuid4
+from types import ModuleType, SimpleNamespace
+from unittest.mock import MagicMock
 
 import pytest
 from compas.datastructures import Mesh
@@ -157,3 +159,73 @@ def test_real_isolated_external_worker_field_study(tmp_path):
     assert result["status"] == "SUCCESS" and len(result["stages"]) == 3, result["reason"]
     assert result["stages"][0]["backend"]["runtime"].startswith("8.")
     assert "G1/G2/G3 cap recursion completed" in process.stdout
+
+
+@real_backend
+def test_partial_checkpoint_reporting_and_insertion_without_final_metadata(monkeypatch):
+    payload = request(vertical_mesh())
+    checkpoints = []
+    complete = run_mola_field_study(payload, publish=lambda value: checkpoints.append(deepcopy(value)))
+    assert complete["status"] == "SUCCESS", complete["reason"]
+
+    # Exercise the actual launcher functions with native host calls stubbed;
+    # geometry/checkpoints come from the real DLL. This is not a host UI test.
+    output, inserted = [], []
+    rhino = MagicMock()
+    rhino.RhinoApp.WriteLine.side_effect = output.append
+    rhino.DocObjects.ObjectAttributes.side_effect = lambda: SimpleNamespace(SetUserString=MagicMock())
+    eto, forms, system, drawing = [ModuleType(name) for name in ("Eto", "Eto.Forms", "System", "System.Drawing")]
+    eto.Forms = forms
+    system.Guid = SimpleNamespace(Empty=uuid4())
+    drawing.Color = MagicMock()
+    for name, module in (("Rhino", rhino), ("Eto", eto), ("Eto.Forms", forms), ("System", system), ("System.Drawing", drawing)):
+        monkeypatch.setitem(sys.modules, name, module)
+    spec = importlib.util.spec_from_file_location("cheshire_checkpoint_launcher", ROOT / "rhino/CHESHIRE_Run.py")
+    launcher = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(launcher)
+    monkeypatch.setattr(launcher, "data_to_rhino_mesh", lambda data, *args: SimpleNamespace(data=data, SetUserString=MagicMock()))
+    doc = MagicMock()
+    doc.BeginUndoRecord.return_value = 1
+    doc.Layers.Add.return_value = 0
+    doc.Objects.AddMesh.side_effect = lambda mesh, attrs: inserted.append((attrs.Name, mesh.data)) or uuid4()
+    doc.Objects.AddTextDot.side_effect = lambda *args: uuid4()
+
+    for number in (1, 2):
+        checkpoint = deepcopy(checkpoints[number-1])
+        assert checkpoint["status"] == "PARTIAL" and len(checkpoint["stages"]) == number
+        for name in ("variation_assessment", "rhino_host_status", "elapsed_seconds"):
+            checkpoint.pop(name, None)
+        if number == 2:
+            checkpoint.pop("top_five_g1", None)
+            checkpoint["drivers"].pop("warnings", None)
+        # Cover both an absent stop description and an actual timeout reason.
+        checkpoint["reason"] = None if number == 1 else "Worker TIMEOUT; retaining the validated G2 checkpoint."
+        before = deepcopy(checkpoint)
+        validate_response(checkpoint, payload)
+        output.clear()
+        inserted.clear()
+        launcher.print_steps(checkpoint)
+        launcher.insert_results(doc, payload, checkpoint)
+        text = "\n".join(output)
+        assert f"Last completed generation: G{number} (PARTIAL)" in text
+        assert "G1/G2/G3 cap recursion completed" not in text
+        if number == 2:
+            assert checkpoint["reason"] in text
+        assert [label for label, _ in inserted[:3]] == ["ORIGINAL REFERENCE", "HEIGHT DRIVER", "TAPER DRIVER"]
+        assert len(inserted) == 3+number
+        assert inserted[-1][0].startswith(f"G{number}") and "last valid; PARTIAL" in inserted[-1][0]
+        assert inserted[-1][1] == checkpoint["stages"][-1]["mesh"]
+        assert checkpoint == before
+
+    # New checkpoints include the static ORIGINAL-driver summary immediately.
+    assert all(value["variation_assessment"] == complete["variation_assessment"] and
+               value["rhino_host_status"] == complete["rhino_host_status"] for value in checkpoints)
+    output.clear()
+    inserted.clear()
+    validate_response(complete, payload)
+    launcher.print_steps(complete)
+    launcher.insert_results(doc, payload, complete)
+    assert output[0] == "MOLA_FIELD_STUDY SUCCESS: G1/G2/G3 cap recursion completed."
+    assert complete["variation_assessment"] in output
+    assert len(inserted) == 6 and inserted[-1][0] == "G3 - cap recursion"
+    assert inserted[-1][1] == complete["stages"][-1]["mesh"]

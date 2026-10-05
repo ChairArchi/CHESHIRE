@@ -69,9 +69,18 @@ def run_mola_field_study(request, publish=None, *, budget=None):
     original = mesh_from_data(request["mesh"])
     eligible, excluded = eligible_planar_faces(original)
     drivers = original_face_fields(original, eligible)
+    # This describes ORIGINAL drivers, not completion of any generation.
+    # Publish it from the first checkpoint so interrupted runs are complete
+    # responses for the descriptive fields consumed by Rhino.
+    hr = _range(row["height_driver"] for row in drivers["faces"])
+    tr = _range(row["taper_driver"] for row in drivers["faces"])
+    variation_assessment = "Effectively uniform drivers; visually weak study." if (
+        not eligible or (hr[0] == hr[1] and tr[0] == tr[1])) else "Non-uniform original drivers; inspect retained geometry for visual strength."
     response = {"protocol": 1, "mode": MODE, "run_id": request["run_id"], "source": deepcopy(request["source"]),
                 "status": "FAILED", "reason": None, "stages": [], "eligible_faces": eligible, "excluded_faces": excluded,
                 "drivers": drivers, "runtime_identity": deepcopy(RUNTIME_IDENTITY), "top_five_g1": [],
+                "variation_assessment": variation_assessment,
+                "rhino_host_status": "PENDING for MolaFieldStudy; existing modes user-confirmed working.",
                 "recipe": {"operator": "FaceSubdivision.ExtrudeTapered", "cap_top": True, "maximum_generations": 3,
                            "height_scales": list(HEIGHT_SCALES), "taper_offsets": list(TAPER_OFFSETS),
                            "taper_clamp": [0.05, 0.85], "height_units": "input mesh coordinate units",
@@ -174,11 +183,6 @@ def run_mola_field_study(request, publish=None, *, budget=None):
     else:
         response["status"], response["reason"] = "SUCCESS", None
     response["elapsed_seconds"] = perf_counter()-start
-    hr = _range(row["height_driver"] for row in drivers["faces"])
-    tr = _range(row["taper_driver"] for row in drivers["faces"])
-    response["variation_assessment"] = "Effectively uniform drivers; visually weak study." if (
-        not eligible or (hr[0] == hr[1] and tr[0] == tr[1])) else "Non-uniform original drivers; inspect retained geometry for visual strength."
-    response["rhino_host_status"] = "PENDING for MolaFieldStudy; existing modes user-confirmed working."
     validate_response(response, request)
     if publish is not None:
         publish(response)

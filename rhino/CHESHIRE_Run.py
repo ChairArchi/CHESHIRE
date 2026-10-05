@@ -89,9 +89,18 @@ def source_fingerprint(doc, source):
 
 def print_steps(response):
     if response.get("mode") == MOLA_FIELD_MODE:
-        Rhino.RhinoApp.WriteLine("MOLA_FIELD_STUDY " + response["status"] + ": " + (response.get("reason") or "G1/G2/G3 cap recursion completed."))
+        reason = response.get("reason")
+        if response["status"] == "PARTIAL":
+            summary = f"Last completed generation: G{response['stages'][-1]['generation']} (PARTIAL)."
+            if reason:
+                summary += " " + reason
+        elif response["status"] == "SUCCESS":
+            summary = reason or "G1/G2/G3 cap recursion completed."
+        else:
+            summary = reason or "No completed generation."
+        Rhino.RhinoApp.WriteLine("MOLA_FIELD_STUDY " + response["status"] + ": " + summary)
         Rhino.RhinoApp.WriteLine(f"Eligible original faces {len(response['eligible_faces'])}; excluded {len(response['excluded_faces'])}; height in input document units.")
-        for warning in response["drivers"]["warnings"]:
+        for warning in response["drivers"].get("warnings") or []:
             Rhino.RhinoApp.WriteLine(warning)
         for stage in response["stages"]:
             Rhino.RhinoApp.WriteLine("G{generation}: processed {processed_face_count} faces ({caps_processed} caps); "
@@ -99,11 +108,15 @@ def print_steps(response):
                 "{elapsed_seconds:.3f}s".format(**stage))
             Rhino.RhinoApp.WriteLine(f"Height driver {stage['height_driver_range']}; taper driver {stage['taper_driver_range']}; "
                 f"actual height {stage['height_range']}; fraction {stage['fraction_range']}; budget {stage['budget']['status']}.")
-        Rhino.RhinoApp.WriteLine("Five original faces with greatest G1 height:")
-        for row in response["top_five_g1"]:
+        top_five = response.get("top_five_g1") or []
+        if top_five:
+            Rhino.RhinoApp.WriteLine("Five original faces with greatest G1 height:")
+        for row in top_five:
             Rhino.RhinoApp.WriteLine("Face {root_face}: height driver {height_driver:g}, taper driver {taper_driver:g}, "
                                     "height {height:g}, fraction {fraction:g}".format(**row))
-        Rhino.RhinoApp.WriteLine(response["variation_assessment"])
+        assessment = response.get("variation_assessment")
+        if isinstance(assessment, str) and assessment:
+            Rhino.RhinoApp.WriteLine(assessment)
         return
     if response.get("mode") == MOLA_MODE:
         Rhino.RhinoApp.WriteLine("MOLA_TAPER_STUDY " + response["status"] + ": " + (response.get("reason") or "A/B/C completed."))
