@@ -1,16 +1,46 @@
 """Fixed four-step demo in CHESHIRE's Python 3.12 .venv; no Rhino imports."""
 
-import argparse
-from copy import deepcopy
-from pathlib import Path
 import sys
-from time import perf_counter
+import pathlib
+import re
+from pathlib import Path
 
 # Allows the external script to work with the existing src checkout as well as
 # its editable installation, without installing anything into Rhino.
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def check_runtime_identity(identity):
+    """Reject a redirected interpreter/stdlib or an unrelated CHESHIRE copy."""
+    expected = ROOT / ".venv/Scripts/python.exe"
+    if Path(identity["executable"]).resolve() != expected.resolve():
+        raise RuntimeError(f"Worker Python must be {expected}; got {identity['executable']}.")
+    if Path(identity["prefix"]).resolve() != (ROOT / ".venv").resolve():
+        raise RuntimeError("Worker Python prefix does not match this repository's .venv.")
+    for name in ("pathlib_file", "re_file"):
+        if ".rhinocode" in {part.casefold() for part in Path(identity[name]).resolve().parts}:
+            raise RuntimeError(f"Worker stdlib is contaminated by Rhino: {identity[name]}.")
+    if identity.get("cheshire_file") is not None and not Path(identity["cheshire_file"]).resolve().is_relative_to(ROOT):
+        raise RuntimeError(f"CHESHIRE package is outside this repository: {identity['cheshire_file']}.")
+
+
+RUNTIME_IDENTITY = {
+    "executable": sys.executable, "version": sys.version, "prefix": sys.prefix, "base_prefix": sys.base_prefix,
+    "pathlib_file": str(Path(pathlib.__file__).resolve()), "re_file": str(Path(re.__file__).resolve()),
+    "ignore_environment": bool(sys.flags.ignore_environment), "no_user_site": bool(sys.flags.no_user_site),
+}
+check_runtime_identity(RUNTIME_IDENTITY)  # Before argparse, COMPAS, or CHESHIRE imports.
+
+import argparse
+from copy import deepcopy
+from time import perf_counter
+
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import cheshire
+RUNTIME_IDENTITY["cheshire_file"] = str(Path(cheshire.__file__).resolve())
+check_runtime_identity(RUNTIME_IDENTITY)
 
 from compas.datastructures import Mesh
 from cheshire import (
@@ -68,7 +98,7 @@ def run_experiment(request, publish=None):
     fields = {"source_face": {key: key for key in mesh.faces()}}
     response = {"protocol": 1, "run_id": request["run_id"], "source": deepcopy(request["source"]),
                 "recipe": deepcopy(RECIPE), "strength": request["strength"], "status": "FAILED",
-                "reason": None, "stages": [], "driver": None}
+                "reason": None, "stages": [], "driver": None, "runtime_identity": deepcopy(RUNTIME_IDENTITY)}
     budget = ExecutionBudget(MAX_STAGE_COUNT, max_vertices=MAX_STAGE_COUNT, max_generation=MAX_STEPS)
     rule = Rule("positive driver", "driver", "vertex", "greater_than", 0.0, operator="normal_displacement")
     for step_index in range(MAX_STEPS):
@@ -152,6 +182,9 @@ def run_experiment(request, publish=None):
 
 
 def main():
+    print("Worker Python: " + RUNTIME_IDENTITY["executable"] + " | " + RUNTIME_IDENTITY["version"].splitlines()[0], flush=True)
+    print("Worker stdlib: re=" + RUNTIME_IDENTITY["re_file"] + "; pathlib=" + RUNTIME_IDENTITY["pathlib_file"], flush=True)
+    print("CHESHIRE package: " + RUNTIME_IDENTITY["cheshire_file"], flush=True)
     parser = argparse.ArgumentParser()
     parser.add_argument("request", type=Path)
     parser.add_argument("response", type=Path)

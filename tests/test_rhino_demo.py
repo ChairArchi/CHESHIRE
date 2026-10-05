@@ -22,6 +22,7 @@ spec = importlib.util.spec_from_file_location("cheshire_demo_worker", ROOT / "rh
 worker = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(worker)
 from exchange import read_json, validate_request, validate_response, write_json_atomic
+from worker_process import worker_environment, worker_launch_options
 
 
 def request(mesh, strength=0.01):
@@ -127,13 +128,51 @@ def test_exchange_rejects_stale_nonfinite_and_malformed_data(box_mesh, tmp_path)
     assert read_json(path) == result and list(tmp_path.iterdir()) == [path]
 
 
-def test_external_worker_uses_real_venv_request_response(box_mesh, tmp_path):
+def test_external_worker_uses_real_venv_despite_rhino_environment(box_mesh, tmp_path, monkeypatch):
     payload = request(box_mesh)
     write_json_atomic(tmp_path / "request.json", payload)
-    process = subprocess.run([sys.executable, str(ROOT / "rhino/cheshire_worker.py"),
-                              str(tmp_path / "request.json"), str(tmp_path / "response.json")],
-                             shell=False, capture_output=True, text=True, timeout=60)
+    fake_rhino = tmp_path / ".rhinocode/py39-rh8/Lib"
+    fake_rhino.mkdir(parents=True)
+    for name in ("argparse", "re"):
+        (fake_rhino / (name + ".py")).write_text("raise AssertionError('SRE module mismatch: contaminated test module')\n")
+    monkeypatch.setenv("PYTHONHOME", str(fake_rhino.parent))
+    monkeypatch.setenv("PYTHONPATH", str(fake_rhino))
+    launch = worker_launch_options(ROOT, tmp_path / "request.json", tmp_path / "response.json")
+    assert launch["args"][:3] == [str(ROOT / ".venv/Scripts/python.exe"), "-E", "-s"]
+    assert "PYTHONHOME" not in launch["env"] and "PYTHONPATH" not in launch["env"]
+    process = subprocess.run(**launch, capture_output=True, text=True, timeout=60)
     assert process.returncode == 0, process.stderr
     result = validate_response(read_json(tmp_path / "response.json"), payload)
     assert result["status"] == "SUCCESS" and result["stages"][-1]["face_count"] == 1536
+    identity = result["runtime_identity"]
+    assert Path(identity["executable"]).resolve() == (ROOT / ".venv/Scripts/python.exe").resolve()
+    assert identity["version"] == sys.version and sys.version_info[:2] == (3, 12)
+    assert Path(identity["prefix"]).resolve() == (ROOT / ".venv").resolve()
+    assert identity["base_prefix"] == sys.base_prefix
+    assert all(".rhinocode" not in path.casefold() for path in (identity["pathlib_file"], identity["re_file"]))
+    assert Path(identity["cheshire_file"]).resolve().is_relative_to(ROOT)
+    assert identity["ignore_environment"] and identity["no_user_site"]
+    assert "Worker Python:" in process.stdout and "Worker stdlib:" in process.stdout and "CHESHIRE package:" in process.stdout
     assert json.loads((tmp_path / "request.json").read_text()) == payload
+
+
+def test_worker_environment_removes_only_python_runtime_settings_case_insensitively():
+    parent = {"PythonHome": "fake Rhino", "pythonPATH": "fake Rhino", "PYTHONSTARTUP": "startup.py",
+              "pythonexecutable": "python39.exe", "__PyVenv_Launcher__": "python39.exe", "pythonNOusersite": "0",
+              "Path": "normal Windows path", "SystemRoot": "Windows", "TEMP": "temp", "RHINO_SETTING": "retained"}
+    before = parent.copy()
+    child = worker_environment(parent)
+    assert child == {"Path": "normal Windows path", "SystemRoot": "Windows", "TEMP": "temp",
+                     "RHINO_SETTING": "retained", "PYTHONNOUSERSITE": "1"}
+    assert parent == before
+
+
+def test_worker_identity_rejects_wrong_interpreter_stdlib_and_repository(tmp_path):
+    for key, value in (("executable", str(tmp_path / "python.exe")),
+                       ("re_file", str(tmp_path / ".RhinoCode/py39-rh8/Lib/re.py")),
+                       ("pathlib_file", str(tmp_path / ".rhinocode/py39-rh8/Lib/pathlib.py")),
+                       ("cheshire_file", str(tmp_path / "unrelated/cheshire/__init__.py"))):
+        identity = deepcopy(worker.RUNTIME_IDENTITY)
+        identity[key] = value
+        with pytest.raises(RuntimeError):
+            worker.check_runtime_identity(identity)

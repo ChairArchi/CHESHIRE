@@ -15,6 +15,7 @@ from compas.geometry import Box
 from cheshire import save_mesh
 from cheshire_worker import mesh_from_data, mesh_to_data
 from exchange import read_json, validate_request, validate_response, write_json_atomic
+from worker_process import worker_launch_options
 
 
 def main():
@@ -29,11 +30,10 @@ def main():
                                 "source": {"document_serial": 0, "object_id": "programmatic-box-control"},
                                 "strength": 0.01, "mesh": mesh_to_data(control)})
     write_json_atomic(directory / "request.json", request)
-    command = [str(ROOT / ".venv/Scripts/python.exe"), str(ROOT / "rhino/cheshire_worker.py"),
-               str(directory / "request.json"), str(directory / "response.json")]
+    launch = worker_launch_options(ROOT, directory / "request.json", directory / "response.json")
+    command = launch["args"]
     try:
-        completed = subprocess.run(command, cwd=ROOT, shell=False, capture_output=True, text=True, timeout=60,
-                                   creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+        completed = subprocess.run(**launch, capture_output=True, text=True, timeout=60)
         log = {"command": command, "exit_code": completed.returncode, "stdout": completed.stdout, "stderr": completed.stderr}
     except subprocess.TimeoutExpired as error:
         log = {"command": command, "exit_code": None, "timeout_seconds": 60,
@@ -54,6 +54,7 @@ def main():
                           "alignment": "values/raw_values use the mesh's explicit IDs and OBJ vertex-list order"})
     summary = {"status": response["status"], "reason": response["reason"], "output_directory": str(directory),
                "rhino_execution": "PENDING — this command verifies the real worker, not Rhino host display",
+               "runtime_identity": response["runtime_identity"],
                "recipe": response["recipe"],
                "stages": [{key: value for key, value in stage.items() if key not in {"mesh", "lineage", "fields"}}
                           for stage in response["stages"]]}

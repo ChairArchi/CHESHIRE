@@ -23,6 +23,7 @@ from exchange import (
     MAX_INPUT_FACES, MAX_INPUT_VERTICES, TIMEOUT_SECONDS, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
+from worker_process import worker_launch_options
 
 
 _RUNS = {}  # Keep this script's timer/callback alive after ScriptEditor returns.
@@ -189,22 +190,21 @@ class Run:
         _RUNS[self.request["run_id"]] = self
         Rhino.RhinoApp.EscapeKeyPressed += self.on_escape
         self.timer.Start()
-        threading.Thread(target=self.calculate, args=(executable,), daemon=True).start()
+        threading.Thread(target=self.calculate, daemon=True).start()
         Rhino.RhinoApp.WriteLine("CHESHIRE running; Rhino remains available. Press Esc to cancel this run.")
 
     def on_escape(self, sender, event):
         self.cancel.set()
 
-    def calculate(self, executable):
+    def calculate(self):
         process = None
         try:
             with (self.directory / "worker_stdout.txt").open("w", encoding="utf-8") as stdout, \
                  (self.directory / "worker_stderr.txt").open("w", encoding="utf-8") as stderr:
                 start = monotonic()
-                process = subprocess.Popen([str(executable), str(HERE / "cheshire_worker.py"),
-                                            str(self.directory / "request.json"), str(self.directory / "response.json")],
-                                           cwd=str(ROOT), shell=False, stdout=stdout, stderr=stderr,
-                                           creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
+                process = subprocess.Popen(
+                    **worker_launch_options(ROOT, self.directory / "request.json", self.directory / "response.json"),
+                    stdout=stdout, stderr=stderr)
                 stopped = None
                 while process.poll() is None:
                     if self.cancel.is_set() or monotonic() - start >= TIMEOUT_SECONDS:
@@ -221,7 +221,8 @@ class Run:
                 return
             path = self.directory / "response.json"
             if not path.is_file():
-                raise ValueError(f"Worker returned no matching response (exit {process.returncode}, {stopped or 'no checkpoint'}).")
+                tail = "\n".join((self.directory / "worker_stderr.txt").read_text(encoding="utf-8", errors="replace").splitlines()[-8:])
+                raise ValueError(f"Worker returned no matching response (exit {process.returncode}, {stopped or 'no checkpoint'}).\n{tail}")
             response = validate_response(read_json(path), self.request)
             if stopped == "TIMEOUT" or process.returncode != 0:
                 response["status"] = "PARTIAL" if response["stages"] else "FAILED"
@@ -261,6 +262,10 @@ class Run:
             if source is None or source_fingerprint(doc, source) != self.fingerprint:
                 Rhino.RhinoApp.WriteLine("CHESHIRE source object, attributes, layer, visibility or units changed; results not inserted.")
                 return
+            runtime = response["runtime_identity"]
+            Rhino.RhinoApp.WriteLine("Worker Python: " + runtime["executable"] + " | " + runtime["version"].splitlines()[0])
+            Rhino.RhinoApp.WriteLine("Worker stdlib: re=" + runtime["re_file"] + "; pathlib=" + runtime["pathlib_file"])
+            Rhino.RhinoApp.WriteLine("CHESHIRE package: " + runtime["cheshire_file"])
             print_steps(response)
             if response["stages"]:
                 insert_results(doc, self.request, response)
