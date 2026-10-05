@@ -21,7 +21,7 @@ Inherit     [verified on a real topology-changing operation]
 Repeat      [not implemented]
 ```
 
-Tasks 01–07 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and one global COMPAS quad-subdivision step with verified lineage and field inheritance. Input meshes remain unchanged. CHESHIRE separates geometry execution from semantic continuity. Repeat remains unimplemented.
+Tasks 01–07.1 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and one global COMPAS quad-subdivision step with verified lineage and field inheritance. Task 07.1 adds explicit bilinear support for locally admissible nonplanar quads. Input meshes remain unchanged. CHESHIRE separates geometry execution from semantic continuity. Repeat remains unimplemented.
 
 ## Setup and tests
 
@@ -170,9 +170,11 @@ result = subdivide_quad_once(
 # result.mesh is new; result.lineage covers every output vertex and face.
 ```
 
-The adapter calls the installed **COMPAS 2.15.1** public API `Mesh.subdivided(scheme="quad", k=1)`. It executes exactly one global level, without smoothing or displacement. It has no face-selection parameter and does not perform local refinement. `estimate_quad_subdivision()` predicts `3*T + 4*Q` faces and `V + E + F` vertices, where `E` counts unique input edges. `check_execution_budget()` checks explicit counts with the same semantics as `plan_execution()`, whose API and behavior remain unchanged. A blocked budget prevents the backend call. Actual counts and geometry are checked before returning `SubdivisionResult`, which records the estimates, actual counts, backend/version, `levels=1`, and `topology_changed=True`.
+The adapter calls the installed **COMPAS 2.15.1** public API `Mesh.subdivided(scheme="quad", k=1)`. It executes exactly one global level, without smoothing or displacement. It has no face-selection parameter and does not perform local refinement. `estimate_quad_subdivision()` predicts `3*T + 4*Q` faces and `V + E + F` vertices, where `E` counts unique input edges. `check_execution_budget()` checks explicit counts with the same semantics as `plan_execution()`, whose API and behavior remain unchanged. A blocked budget prevents backend-copy allocation and execution. Actual counts and geometry are checked before returning `SubdivisionResult`, which records the estimates, actual counts, backend/version, `levels=1`, `topology_changed=True`, and `nonplanar_policy`.
 
-Inputs must have finite XYZ, valid connectivity, consistently oriented manifold vertex fans, and nondegenerate planar strictly convex triangles/quads. Open, closed, disconnected, and sparse/nonconsecutive COMPAS integer-key meshes are supported. Isolated vertices, unsupported face sizes, concave/self-crossing faces, and non-manifold topology are rejected only by this adapter; OBJ I/O restrictions are unchanged. Geometric tolerance is `1e-9` relative to each face's largest distance from its first vertex: faces are translated and scaled before checking planarity, edge lengths, and corner cross-product magnitudes. Nearly collinear corners are rejected. Extreme coordinates that cause unrepresentable backend arithmetic/results are rejected without returning output. Self-intersection/collision analysis between separate faces is outside this validation.
+By default, `nonplanar_policy="reject"` requires nondegenerate planar strictly convex triangles/quads, preserving the Task 07 contract. Both subdivision APIs accept the keyword-only alternative `nonplanar_policy="bilinear"`; unknown policies raise `ValueError`. The selected policy validates both input and output. Triangles retain their existing restrictions in either mode.
+
+All modes require finite XYZ, valid connectivity, distinct corners, consistently oriented manifold vertex fans, and nonzero edges and corner areas. Open, closed, disconnected, and sparse/nonconsecutive COMPAS integer-key meshes are supported. Isolated vertices, unsupported face sizes, concave/self-crossing controls, and non-manifold topology are rejected only by this adapter; OBJ I/O restrictions are unchanged. Geometric tolerance remains `1e-9` relative to each face's largest distance from its first vertex: faces are translated and scaled before checking geometry. Nearly collinear corners are rejected. Extreme coordinates that cause unrepresentable backend arithmetic/results are rejected without returning output. Self-intersection/collision analysis between separate faces is outside this validation.
 
 Installed source inspection and triangle/quad/adjacent-quad/cube probes verified original vertex keys/XYZ retention, one shared midpoint per original edge at `t=0.5`, arithmetic vertex-mean `face_centroid()` (not area-weighted `face_center()`), and child `path=[parent_face_key, corner_index]`. Recovery verifies each path against its retained corner, adjacent midpoint connectivity, and opposite face-center vertex. It requires one midpoint per input edge, one center per input face, every expected corner child, and complete unambiguous output coverage. Coordinates only verify topology-derived roles; they never identify ancestry. Original vertices inherit weight 1, edge endpoints 0.5 each, face vertices `1/n` each, and child faces weight 1 from their parent. Backend `path` describes this single call and is not a full provenance history; a second manual call references its own immediate input faces.
 
@@ -185,3 +187,25 @@ Run the complete cube example from the repository root on Windows:
 ```
 
 It demonstrates estimate → SAFE budget → subdivision → coverage → continuous/categorical inheritance → explicit measurement recomputation. Confidence `0.2`/`0.8` at an original edge inherits `0.5` at its midpoint; child face labels remain tied to their distinct parents. Diagnostic OBJ files go to ignored `output/task07/`. No subdivision algorithm was reimplemented, and no dependency was added or upgraded. Local/adaptive subdivision, smoothing wrappers, Mola/Rhino integration, and Repeat remain outside the implemented scope.
+
+## Explicit bilinear policy and composition
+
+An ordered quad `p0, p1, p2, p3` denotes parameter corners `(0,0), (1,0), (1,1), (0,1)` under the bilinear policy:
+
+```text
+P(u,v) = (1-u)(1-v)p0 + u(1-v)p1 + uv p2 + (1-u)v p3
+```
+
+This uses the [bilinear patch definition described in PBRT](https://pbr-book.org/4ed/Shapes/Bilinear_Patches), with corners listed in boundary order. The installed COMPAS implementation retains the original corners, creates half-edge midpoints and the arithmetic corner mean, and connects four child quads. Independent parent/child evaluations verify that these represent the four half-parameter regions of the chosen patch. No vertices are projected or flattened, and no automatic triangulation occurs.
+
+Acceptance uses a conservative local regularity test. In translated/scaled coordinates, write `P=a*u+b*v+c*u*v`, where `a=p1`, `b=p3`, and `c=p2-p1-p3`. Its area vector is `J=a×b + u(a×c) + v(c×b)`. A nonzero center Jacobian supplies a unit reference normal. Each corner's signed projection onto it must exceed `1e-9`; the affine projection has its minimum at a domain corner, so this bounds the interior away from singularities and orientation flips. Collapsed, folded, singular, near-degenerate, or otherwise unsupported controls are rejected. The criterion respects rigid rotation, cyclic corner order, consistent winding reversal, and uniform scaling away from numerical thresholds.
+
+Run the four fixed composition cases:
+
+```powershell
+.\.venv\Scripts\python.exe examples\bilinear_composition.py
+```
+
+Using the original `Box(2,2,2)` and freshly mapped normalized height, Case A (two subdivisions) and Case C (zero displacement between them) finish at 98 vertices / 96 faces. Case B's strength `0.01` displacement moves 17 vertices and produces 20 nonplanar quads: strict mode still rejects face 10, while explicit bilinear subdivision succeeds at 98/96. Case D adds fresh measurement/mapping, a second strength `0.01` displacement moving 73 vertices, and another bilinear subdivision, reaching 386/384. Every stage checks immutable inputs, finite output, immediate-parent coverage, continuous/categorical inheritance, and fresh measurements. The example reports policies, strengths, counts, rejection reasons, nonplanarity, and maximum sampled parent/child patch comparison error. It exports five small OBJ files to ignored `output/task07_1/`.
+
+This policy certifies only conservative local admissibility. It does not certify intersections between faces, global collision freedom, fabrication suitability, or enclosed volume. A viewer's triangulated OBJ display may differ from the chosen bilinear surface. Measurements and displacement normals still use the existing COMPAS methods, without exact bilinear-surface integration. These four explicit sequences are diagnostic examples; no Repeat engine, Mola, or Rhino integration is implemented.

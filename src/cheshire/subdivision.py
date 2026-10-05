@@ -39,11 +39,12 @@ class SubdivisionResult:
     output_vertices: int
     output_faces: int
     topology_changed: bool
+    nonplanar_policy: str = "reject"
 
 
-def estimate_quad_subdivision(mesh: Mesh) -> dict:
+def estimate_quad_subdivision(mesh: Mesh, *, nonplanar_policy: str = "reject") -> dict:
     """Validate operator inputs and return exact one-step V+E+F / 3T+4Q counts."""
-    _require_supported_mesh(mesh)
+    _require_supported_mesh(mesh, nonplanar_policy)
     sizes = [len(mesh.face_vertices(face)) for face in mesh.faces()]
     vertices, edges, faces = mesh.number_of_vertices(), mesh.number_of_edges(), mesh.number_of_faces()
     triangles, quads = sizes.count(3), sizes.count(4)
@@ -60,12 +61,16 @@ def subdivide_quad_once(
     *,
     budget: ExecutionBudget,
     current_generation: int = 0,
+    nonplanar_policy: str = "reject",
 ) -> SubdivisionResult:
     """Execute exactly one global level only after an explicit SAFE budget.
 
     Supports oriented manifold planar strictly convex triangles/quads, open
     or closed, including disconnected components and sparse COMPAS keys.
     Isolated vertices and invalid/degenerate faces are rejected, never fixed.
+    Default 'reject' retains the planar contract. Explicit 'bilinear' treats
+    quads as ordered bilinear patches passing a conservative local Jacobian
+    test; it does not project or triangulate geometry. Triangles stay unchanged.
     No selection, smoothing, welding, triangulation, or displacement occurs.
 
     Only XYZ and connectivity are carried into the backend. Custom/default
@@ -73,7 +78,7 @@ def subdivide_quad_once(
     backend child 'path' is retained. Explicit fields use inherit_fields;
     geometry-derived fields must be recomputed separately. Input is untouched.
     """
-    estimate = estimate_quad_subdivision(mesh)
+    estimate = estimate_quad_subdivision(mesh, nonplanar_policy=nonplanar_policy)
     assessment = check_execution_budget(
         budget, input_faces=estimate["input_faces"], input_vertices=estimate["input_vertices"],
         estimated_output_faces=estimate["estimated_output_faces"],
@@ -97,7 +102,7 @@ def subdivide_quad_once(
         estimate["estimated_output_vertices"], estimate["estimated_output_faces"],
     ):
         raise ValueError("COMPAS quad subdivision counts differ from the exact estimate.")
-    _require_supported_mesh(output)
+    _require_supported_mesh(output, nonplanar_policy)
     if any(len(output.face_vertices(face)) != 4 for face in output.faces()):
         raise ValueError("COMPAS quad subdivision returned a non-quad face.")
     lineage = _recover_lineage(mesh, output)
@@ -112,10 +117,13 @@ def subdivide_quad_once(
         estimated_output_faces=estimate["estimated_output_faces"],
         output_vertices=output.number_of_vertices(), output_faces=output.number_of_faces(),
         topology_changed=True,
+        nonplanar_policy=nonplanar_policy,
     )
 
 
-def _require_supported_mesh(mesh):
+def _require_supported_mesh(mesh, nonplanar_policy="reject"):
+    if nonplanar_policy not in ("reject", "bilinear"):
+        raise ValueError("nonplanar_policy must be 'reject' or 'bilinear'.")
     if not isinstance(mesh, Mesh):
         raise ValueError("Quad subdivision requires a COMPAS Mesh.")
     try:
@@ -132,7 +140,7 @@ def _require_supported_mesh(mesh):
                 raise ValueError(f"Unsupported face size at {face!r}; only triangles and quads are supported.")
             if len(set(keys)) != len(keys) or any(key not in incident for key in keys):
                 raise ValueError(f"Invalid connectivity at face {face!r}.")
-            _require_supported_face(mesh.face_coordinates(face), face)
+            _require_supported_face(mesh.face_coordinates(face), face, nonplanar_policy)
             for u, v in mesh.face_halfedges(face):
                 incident[u].add(face)
                 edges.setdefault(frozenset((u, v)), []).append((face, u, v))
@@ -179,7 +187,7 @@ def _local_face(points):
     return [[value / scale for value in offset] for offset in offsets], scale
 
 
-def _require_supported_face(points, face):
+def _require_supported_face(points, face, nonplanar_policy="reject"):
     local, _ = _local_face(points)
     normals = []
     for i in range(len(local)):
@@ -190,10 +198,46 @@ def _require_supported_face(points, face):
         if min(hypot(*ab), hypot(*cb), hypot(*normal)) <= GEOMETRY_TOLERANCE:
             raise ValueError(f"Degenerate or nearly collinear face {face!r}.")
         normals.append(normal)
+    if len(local) == 4 and nonplanar_policy == "bilinear":
+        _require_bilinear_quad(local, face)
+        return
     if any(distance_point_plane(point, (local[0], normals[0])) > GEOMETRY_TOLERANCE for point in local):
         raise ValueError(f"Nonplanar face {face!r}; relative tolerance is {GEOMETRY_TOLERANCE:g}.")
     if not is_polygon_convex(local):
         raise ValueError(f"Concave or self-crossing face {face!r} is unsupported.")
+
+
+def _require_bilinear_quad(local, face):
+    """Conservative local regularity, not global intersection certification.
+
+    Ordered corners are P(0,0), P(1,0), P(1,1), P(0,1). After the existing
+    local translation/scaling, write P=a*u+b*v+c*u*v (P(0,0)=0).
+    J=(a+v*c) x (b+u*c)=a x b+u*(a x c)+v*(c x b).
+    J and its projection on a fixed reference normal are affine in (u,v).
+    Thus corner projections bound the entire unit square; strictly positive
+    projections above 1e-9 exclude local singularities and orientation flips.
+    A center Jacobian supplies the unit reference without a world-axis bias.
+    """
+    a, b = local[1], local[3]
+    c = [local[2][i] - a[i] - b[i] for i in range(3)]
+
+    def jacobian(u, v):
+        du = [a[i] + v * c[i] for i in range(3)]
+        dv = [b[i] + u * c[i] for i in range(3)]
+        return cross_vectors(du, dv)
+
+    center = jacobian(0.5, 0.5)
+    magnitude = hypot(*center)
+    if not isfinite(magnitude) or magnitude <= GEOMETRY_TOLERANCE:
+        raise ValueError(f"Singular or near-degenerate bilinear face {face!r}.")
+    reference = [value / magnitude for value in center]
+    projections = [sum(value * axis for value, axis in zip(jacobian(u, v), reference))
+                   for u, v in ((0, 0), (1, 0), (1, 1), (0, 1))]
+    if any(not isfinite(value) or value <= GEOMETRY_TOLERANCE for value in projections):
+        raise ValueError(
+            f"Folded, singular, or unsupported bilinear face {face!r}; "
+            f"corner Jacobian projection must exceed {GEOMETRY_TOLERANCE:g}."
+        )
 
 
 def _recover_lineage(source, output):
