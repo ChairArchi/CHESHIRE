@@ -20,7 +20,7 @@ import Rhino
 from System import Guid
 from System.Drawing import Color
 from exchange import (
-    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
+    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
 from worker_process import worker_launch_options
@@ -88,6 +88,22 @@ def source_fingerprint(doc, source):
 
 
 def print_steps(response):
+    if response.get("mode") == VISUAL_MODE:
+        Rhino.RhinoApp.WriteLine("VISUAL_PROTOTYPE " + response["status"] + ": " + (response.get("reason") or "Three fixed spatial candidates completed."))
+        for row in response["variants"]:
+            Rhino.RhinoApp.WriteLine(f"{row['label']} {row['status']}: {row['vertex_count']} vertices / {row['face_count']} faces; "
+                f"{row.get('elapsed_seconds', 0):.3f}s; semantic lineage {row['semantic_lineage']}.")
+            Rhino.RhinoApp.WriteLine(row["recipe"]["layout"])
+            if row.get("reason"):
+                Rhino.RhinoApp.WriteLine(row["reason"])
+            excluded = sum(len(step["excluded_selected_faces"]) for step in row["steps"])
+            if excluded:
+                Rhino.RhinoApp.WriteLine(f"{excluded} proposed faces excluded explicitly for unsupported geometry; reasons in response.json.")
+        for row in response["attempts"]:
+            if row["status"] == "FAILED":
+                Rhino.RhinoApp.WriteLine(f"{row['id']} unavailable: {row['reason']}")
+        Rhino.RhinoApp.WriteLine("Compare structure and detail in Shaded/Wireframe. Tests do not establish visual success or collision freedom.")
+        return
     if response.get("mode") == MOLA_SURFACE_MODE:
         Rhino.RhinoApp.WriteLine("MOLA_SURFACE_STUDY " + response["status"] + ": " + (response.get("reason") or "G1/G3 raw and CC1 comparisons completed."))
         for row in response["derivatives"]:
@@ -160,7 +176,12 @@ def print_steps(response):
 
 def insert_results(doc, request, response):
     """UI-thread insertion with one undo record and run-local failure rollback."""
-    if response.get("mode") == MOLA_SURFACE_MODE:
+    if response.get("mode") == VISUAL_MODE:
+        items = [("ORIGINAL REFERENCE", request["mesh"], None)]
+        for row in response["variants"]:
+            label = row["label"] + (" (last valid; PARTIAL)" if row["status"] != "SUCCESS" else "")
+            items.append((label, row["mesh"], None))
+    elif response.get("mode") == MOLA_SURFACE_MODE:
         items = [("ORIGINAL REFERENCE", request["mesh"], None)]
         stages = {stage["generation"]: stage for stage in response["stages"]}
         for row in response["derivatives"]:
@@ -230,7 +251,7 @@ def insert_results(doc, request, response):
             attrs.LayerIndex, attrs.Name = layer_index, label
             attrs.SetUserString("CHESHIRE run_id", request["run_id"])
             attrs.SetUserString("CHESHIRE source_object", request["source"]["object_id"])
-            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11"}.get(request.get("mode"), "task08")
+            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12"}.get(request.get("mode"), "task08")
             attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output" / task / request["run_id"] / "response.json"))
             display = data_to_rhino_mesh(data, position * spacing, values)
             if response.get("mode") == MOLA_FIELD_MODE and values is not None:
@@ -271,12 +292,12 @@ class Run:
         payload = {"protocol": 1, "run_id": str(uuid4()),
                                         "source": {"document_serial": self.serial, "object_id": str(source.Id)},
                                         "mode": mode, "mesh": rhino_mesh_to_data(source.Geometry)}
-        if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE):
+        if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE):
             payload.update(mola_dll=mola_dll, selected_faces="ALL_ELIGIBLE_PLANAR")
         else:
             payload["strength"] = strength
         self.request = validate_request(payload)
-        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11"}.get(mode, "task08") / self.request["run_id"]
+        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12"}.get(mode, "task08") / self.request["run_id"]
         self.directory.mkdir(parents=True, exist_ok=False)
         write_json_atomic(self.directory / "request.json", self.request)
         self.cancel = threading.Event()
@@ -374,7 +395,7 @@ class Run:
                 Rhino.RhinoApp.WriteLine("Results translated along world X on a new CHESHIRE run layer; original preserved.")
                 if response.get("mode") == MOLA_FIELD_MODE:
                     Rhino.RhinoApp.WriteLine("Height and taper drivers: black=low, white=high, magenta=excluded. Original face values; Shaded mode shows colors.")
-                elif response.get("mode") == MOLA_SURFACE_MODE:
+                elif response.get("mode") in (MOLA_SURFACE_MODE, VISUAL_MODE):
                     Rhino.RhinoApp.WriteLine("Compare Shaded and Wireframe manually; no global display mode changed. CC1 outputs are terminal geometry only.")
                 elif response.get("mode") != MOLA_MODE:
                     Rhino.RhinoApp.WriteLine("Driver: black=0, white=1, magenta=unavailable. Use Shaded mode to see mesh vertex colors; no display mode was changed.")
@@ -424,6 +445,7 @@ def main():
         mola = choice.AddOption("MolaTaperStudy")
         field = choice.AddOption("MolaFieldStudy")
         surface = choice.AddOption("MolaSurfaceStudy")
+        prototype = choice.AddOption("VisualPrototype")
         dll_option = choice.AddOption("SetMolaDllPath")
         choice.Get()
         if choice.CommandResult() != Rhino.Commands.Result.Success:
@@ -432,9 +454,12 @@ def main():
             if mola_dll_path(replace=True):
                 Rhino.RhinoApp.WriteLine("Mola DLL preference updated; no study launched.")
             return
-        if choice.OptionIndex() in (mola, field, surface):
-            mode = {mola: MOLA_MODE, field: MOLA_FIELD_MODE, surface: MOLA_SURFACE_MODE}[choice.OptionIndex()]
-            Rhino.RhinoApp.WriteLine(mode + ": all eligible planar convex triangles/quads of this ORIGINAL mesh; excluded faces stay unchanged. Maximum 1000 selected faces.")
+        if choice.OptionIndex() in (mola, field, surface, prototype):
+            mode = {mola: MOLA_MODE, field: MOLA_FIELD_MODE, surface: MOLA_SURFACE_MODE, prototype: VISUAL_MODE}[choice.OptionIndex()]
+            if mode == VISUAL_MODE:
+                Rhino.RhinoApp.WriteLine("VisualPrototype: curved ribs, crown fans and diagonal terraces on this ORIGINAL mesh. Fixed reproducible recipes; existing limits apply.")
+            else:
+                Rhino.RhinoApp.WriteLine(mode + ": all eligible planar convex triangles/quads of this ORIGINAL mesh; excluded faces stay unchanged. Maximum 1000 selected faces.")
             dll = mola_dll_path()
             if dll is None:
                 return

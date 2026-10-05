@@ -16,6 +16,7 @@ TIMEOUT_SECONDS = 60
 MOLA_MODE = "MOLA_TAPER_STUDY"
 MOLA_FIELD_MODE = "MOLA_FIELD_STUDY"
 MOLA_SURFACE_MODE = "MOLA_SURFACE_STUDY"
+VISUAL_MODE = "VISUAL_PROTOTYPE"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -96,12 +97,12 @@ def validate_request(request):
     if not isinstance(source, dict) or not isinstance(source.get("object_id"), str) or type(source.get("document_serial")) is not int:
         raise ValueError("Source document and object identity are required.")
     mode = request.get("mode", "MESH_GRAMMAR")
-    if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE):
+    if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE):
         if not isinstance(request.get("mola_dll"), str) or not Path(request["mola_dll"]).is_absolute():
             raise ValueError("Mola requires an explicit absolute standalone DLL path.")
         selection = request.get("selected_faces")
-        if mode in (MOLA_FIELD_MODE, MOLA_SURFACE_MODE) and selection != "ALL_ELIGIBLE_PLANAR":
-            name = "MolaFieldStudy" if mode == MOLA_FIELD_MODE else "MolaSurfaceStudy"
+        if mode in (MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE) and selection != "ALL_ELIGIBLE_PLANAR":
+            name = {MOLA_FIELD_MODE: "MolaFieldStudy", MOLA_SURFACE_MODE: "MolaSurfaceStudy", VISUAL_MODE: "VisualPrototype"}[mode]
             raise ValueError(name + " uses all eligible ORIGINAL planar faces.")
         if selection != "ALL_ELIGIBLE_PLANAR":
             if not isinstance(selection, list) or any(type(k) is not int for k in selection) or len(set(selection)) != len(selection):
@@ -130,6 +131,8 @@ def validate_response(response, request):
         return _validate_field_response(response, request)
     if request.get("mode") == MOLA_SURFACE_MODE:
         return _validate_surface_response(response, request)
+    if request.get("mode") == VISUAL_MODE:
+        return _validate_visual_response(response, request)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -261,6 +264,66 @@ def _validate_surface_response(response, request):
         raise ValueError("Inconsistent surface study status.")
     if status == "SUCCESS" and (response["raw_status"] != "SUCCESS" or any(row["status"] != "SUCCESS" for row in derivatives)):
         raise ValueError("Surface SUCCESS requires both completed CC1 comparisons and the raw recipe.")
+    return response
+
+
+def _validate_visual_response(response, request):
+    variants, recipes = response.get("variants"), response.get("recipes")
+    if response.get("mode") != VISUAL_MODE or not isinstance(variants, list) or not isinstance(recipes, list) or not 1 <= len(recipes) <= 3:
+        raise ValueError("Invalid visual prototype alternatives.")
+    ids = [row.get("id") for row in recipes]
+    if len(set(ids)) != len(ids) or any(key not in ("A", "B", "C") for key in ids):
+        raise ValueError("Invalid fixed visual study recipe IDs.")
+    if len(variants) > len(recipes) or len({row.get("id") for row in variants}) != len(variants):
+        raise ValueError("Duplicate or extra visual candidates.")
+    for row in variants:
+        if row.get("id") not in ids or row.get("validated") is not True or row.get("status") not in ("SUCCESS", "PARTIAL"):
+            raise ValueError("Only validated available visual candidates can be displayed.")
+        steps = row.get("steps")
+        if not isinstance(steps, list) or not 1 <= len(steps) <= MAX_STEPS:
+            raise ValueError("Visual candidates require bounded completed operations.")
+        operators = {"A": ["COMPAS.quad", "CHESHIRE.normal_displacement", "CHESHIRE.normal_displacement", "COMPAS.catmullclark"],
+                     "B": ["Mola.ExtrudeTapered"] * 3, "C": ["COMPAS.quad"] + ["Mola.ExtrudeTapered"] * 3}[row["id"]]
+        if [step.get("operator") for step in steps] != operators[:len(steps)] or (row["status"] == "SUCCESS" and len(steps) != len(operators)):
+            raise ValueError("Visual result must follow its fixed recipe; incomplete execution is PARTIAL.")
+        previous = request["mesh"]
+        for index, step in enumerate(steps, 1):
+            mesh = validate_mesh_data(step.get("mesh"))
+            if step.get("index") != index or step.get("validated") is not True or step.get("budget", {}).get("status") != "SAFE":
+                raise ValueError("Visual operations must be consecutive validated budget-safe checkpoints.")
+            if step.get("input_vertex_count") != len(previous["vertices"]) or step.get("input_face_count") != len(previous["faces"]):
+                raise ValueError("Visual operation input counts disagree with its immediate source.")
+            if step.get("inspection", {}).get("vertex_count") != len(mesh["vertices"]) or step.get("inspection", {}).get("face_count") != len(mesh["faces"]):
+                raise ValueError("Visual operation counts disagree with actual geometry.")
+            terminal = step.get("terminal_derivative")
+            if terminal is not None:
+                if index != len(steps) or terminal.get("source_run") != request["run_id"] or terminal.get("source_candidate") != row["id"] or terminal.get("source_step") != index - 1:
+                    raise ValueError("CC1 must be terminal with an explicit source-stage association.")
+                if terminal.get("semantic_lineage") != "NOT IMPLEMENTED" or any(name in step for name in ("lineage", "fields", "face_roles")):
+                    raise ValueError("Terminal CC topology cannot receive invented semantic lineage or stale fields.")
+                if terminal.get("boundary_preservation", {}).get("status") != "PASS" or terminal.get("scheme") != "catmullclark" or terminal.get("level") != 1:
+                    raise ValueError("Terminal surface policy was not verified.")
+            else:
+                if step.get("lineage_coverage") != []:
+                    raise ValueError("Missing visual operation lineage verification.")
+                for domain in ("vertices", "faces"):
+                    entries = step.get("lineage", {}).get(domain, [])
+                    if [entry["id"] for entry in entries] != [item["id"] for item in mesh[domain]]:
+                        raise ValueError("Visual lineage must cover actual output IDs.")
+                    parents = {item["id"] for item in previous[domain]}
+                    if any(not entry["parents"] or any(ref["id"] not in parents for ref in entry["parents"]) for entry in entries):
+                        raise ValueError("Visual lineage must refer to the immediate input.")
+            previous = mesh
+        if row.get("mesh") != previous or row.get("vertex_count") != len(previous["vertices"]) or row.get("face_count") != len(previous["faces"]):
+            raise ValueError("Visual result must be its last validated checkpoint.")
+        expected = "NOT IMPLEMENTED" if steps[-1].get("terminal_derivative") else "AVAILABLE_IN_STEPS"
+        if row.get("semantic_lineage") != expected:
+            raise ValueError("Visual semantic lineage status is inconsistent.")
+    status = response.get("status")
+    if status not in ("SUCCESS", "PARTIAL", "FAILED") or (status == "FAILED" and variants) or (status == "PARTIAL" and not variants):
+        raise ValueError("Invalid visual study status.")
+    if status == "SUCCESS" and (len(variants) != len(recipes) or any(row["status"] != "SUCCESS" for row in variants)):
+        raise ValueError("Visual SUCCESS requires all requested alternatives completed.")
     return response
 
 
