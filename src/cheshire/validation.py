@@ -4,6 +4,8 @@ from math import isfinite
 
 from compas.datastructures import Mesh
 
+from .lineage import LineageMap, validate_lineage
+
 
 def validate_mesh(mesh: Mesh) -> list[str]:
     """Return explicit problems; an empty list means basic validation passed.
@@ -56,3 +58,33 @@ def _topology_property(mesh: Mesh, name: str) -> bool | None:
         return method()
     except NotImplementedError:
         return None
+
+
+def validate_lineage_coverage(input_mesh: Mesh, output_mesh: Mesh, lineage: LineageMap) -> list[str]:
+    """Report coverage/reference problems at a mesh-to-lineage boundary.
+
+    Requires complete known vertex and face ancestry. Missing children,
+    explicit unknown ancestry, extra children, and nonexistent parents are
+    distinct problems. This does not infer lineage or validate geometry.
+    """
+    problems = validate_lineage(lineage)
+    if problems:
+        return problems
+    for domain, inputs, outputs, mapping in (
+        ("vertex", set(input_mesh.vertices()), list(output_mesh.vertices()), lineage.vertex_parents),
+        ("face", set(input_mesh.faces()), list(output_mesh.faces()), lineage.face_parents),
+    ):
+        output_keys = set(outputs)
+        for child in outputs:
+            if child not in mapping:
+                problems.append(f"Missing {domain} child lineage entry: {child!r}.")
+        for child, refs in mapping.items():
+            if child not in output_keys:
+                problems.append(f"Extra {domain} child lineage key absent from output: {child!r}.")
+            if refs is None:
+                problems.append(f"Unknown {domain} ancestry: {child!r}.")
+                continue
+            for ref in refs:
+                if ref.key not in inputs:
+                    problems.append(f"Invalid {domain} parent reference {ref.key!r} for child {child!r}.")
+    return problems

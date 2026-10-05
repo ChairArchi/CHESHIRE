@@ -16,12 +16,12 @@ Measure     [implemented]
 Map         [implemented]
 Rule        [implemented]
 Budget      [implemented]
-Transform   [partially implemented — normal displacement]
-Inherit     [implemented — lineage + field inheritance foundation]
+Transform   [normal displacement + one-step global quad subdivision]
+Inherit     [verified on a real topology-changing operation]
 Repeat      [not implemented]
 ```
 
-Tasks 01–06 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and the lineage/field inheritance foundation. Input meshes remain unchanged. CHESHIRE now separates geometry execution from semantic continuity.
+Tasks 01–07 implement mesh infrastructure, measurement, scalar mapping, rule selection, budgeting, normal displacement, and one global COMPAS quad-subdivision step with verified lineage and field inheritance. Input meshes remain unchanged. CHESHIRE separates geometry execution from semantic continuity. Repeat remains unimplemented.
 
 ## Setup and tests
 
@@ -119,7 +119,7 @@ Distance is `field_value * strength * input_bbox_diagonal`; strength is a dimens
 
 COMPAS vertex normals average incident polygon normals with area weighting, then unitize the result. They are evaluated on the original geometry. `outward` follows these normals, and `inward` follows their negatives; winding determines orientation. Missing/null fields, zero distances, and unsafe normals leave vertices fixed. Incomplete face fans and degenerate, cancelling, non-finite, or unavailable normals are reported as skips. Invalid mesh topology or unrepresentable scales/output coordinates are rejected, without repair.
 
-`TransformResult.mesh` is an independent COMPAS Mesh with the same vertex/face keys and connectivity. Metadata records operator, direction, selected/moved/skipped counts, strength, scale, actual maximum displacement, skip reasons, and `topology_changed=False`. Selection defaults to all mesh vertices; explicit selections restrict candidates. Zero/null candidates count as skipped. Rules and budget checks remain separate from the transform. No subdivision or repetition is implemented.
+`TransformResult.mesh` is an independent COMPAS Mesh with the same vertex/face keys and connectivity. Metadata records operator, direction, selected/moved/skipped counts, strength, scale, actual maximum displacement, skip reasons, and `topology_changed=False`. Selection defaults to all mesh vertices; explicit selections restrict candidates. Zero/null candidates count as skipped. Rules and budget checks remain separate from the displacement transform.
 
 ## Lineage and field inheritance
 
@@ -154,4 +154,34 @@ inherited = inherit_fields(
 
 ## Future backend contract
 
-Any future topology-changing backend (COMPAS, Mola, or another implementation) must return both the resulting mesh and lineage sufficient for CHESHIRE inheritance, identifying child vertex/face keys and their weighted parent keys in the input mesh. A topology-preserving transform can use `identity_lineage(output_mesh)` when keys remain unchanged. CHESHIRE uses lineage to inherit semantic and continuous fields while marking geometry-derived measurements for recomputation. No backend framework, external backend integration, topology-changing operator, or Repeat loop is implemented yet.
+Any future topology-changing backend (COMPAS, Mola, or another implementation) must return both the resulting mesh and lineage sufficient for CHESHIRE inheritance, identifying child vertex/face keys and their weighted parent keys in the input mesh. A topology-preserving transform can use `identity_lineage(output_mesh)` when keys remain unchanged. CHESHIRE uses lineage to inherit semantic and continuous fields while marking geometry-derived measurements for recomputation. The COMPAS quad adapter below implements one such operation; no backend framework, Mola integration, or Repeat loop is implemented.
+
+## One-step global quad subdivision
+
+```python
+from cheshire import ExecutionBudget, estimate_quad_subdivision, subdivide_quad_once
+
+estimate = estimate_quad_subdivision(mesh)  # Also checks operator-specific input restrictions.
+result = subdivide_quad_once(
+    mesh, budget=ExecutionBudget(max_faces=24, max_vertices=26, max_generation=1),
+    current_generation=0,
+)
+# For an 8-vertex, 6-face cube: exactly 26 vertices and 24 quad faces.
+# result.mesh is new; result.lineage covers every output vertex and face.
+```
+
+The adapter calls the installed **COMPAS 2.15.1** public API `Mesh.subdivided(scheme="quad", k=1)`. It executes exactly one global level, without smoothing or displacement. It has no face-selection parameter and does not perform local refinement. `estimate_quad_subdivision()` predicts `3*T + 4*Q` faces and `V + E + F` vertices, where `E` counts unique input edges. `check_execution_budget()` checks explicit counts with the same semantics as `plan_execution()`, whose API and behavior remain unchanged. A blocked budget prevents the backend call. Actual counts and geometry are checked before returning `SubdivisionResult`, which records the estimates, actual counts, backend/version, `levels=1`, and `topology_changed=True`.
+
+Inputs must have finite XYZ, valid connectivity, consistently oriented manifold vertex fans, and nondegenerate planar strictly convex triangles/quads. Open, closed, disconnected, and sparse/nonconsecutive COMPAS integer-key meshes are supported. Isolated vertices, unsupported face sizes, concave/self-crossing faces, and non-manifold topology are rejected only by this adapter; OBJ I/O restrictions are unchanged. Geometric tolerance is `1e-9` relative to each face's largest distance from its first vertex: faces are translated and scaled before checking planarity, edge lengths, and corner cross-product magnitudes. Nearly collinear corners are rejected. Extreme coordinates that cause unrepresentable backend arithmetic/results are rejected without returning output. Self-intersection/collision analysis between separate faces is outside this validation.
+
+Installed source inspection and triangle/quad/adjacent-quad/cube probes verified original vertex keys/XYZ retention, one shared midpoint per original edge at `t=0.5`, arithmetic vertex-mean `face_centroid()` (not area-weighted `face_center()`), and child `path=[parent_face_key, corner_index]`. Recovery verifies each path against its retained corner, adjacent midpoint connectivity, and opposite face-center vertex. It requires one midpoint per input edge, one center per input face, every expected corner child, and complete unambiguous output coverage. Coordinates only verify topology-derived roles; they never identify ancestry. Original vertices inherit weight 1, edge endpoints 0.5 each, face vertices `1/n` each, and child faces weight 1 from their parent. Backend `path` describes this single call and is not a full provenance history; a second manual call references its own immediate input faces.
+
+`validate_lineage_coverage(input_mesh, output_mesh, lineage)` reports missing/extra children, explicit unknown ancestry, invalid parent references, and normal lineage errors separately. Unknown ancestry is not accepted for this operator. Only XYZ and connectivity enter the backend; custom/default vertex, face, edge, and mesh attributes are discarded on the output, while returned child `path` metadata remains. Input attributes are untouched. Semantic fields use explicit `inherit_fields()` mappings. Mark old geometry-derived fields `RECOMPUTE`, then call `analyze_vertex_attributes(result.mesh)` explicitly to obtain fresh measurements.
+
+Run the complete cube example from the repository root on Windows:
+
+```powershell
+.\.venv\Scripts\python.exe examples\quad_subdivision.py
+```
+
+It demonstrates estimate → SAFE budget → subdivision → coverage → continuous/categorical inheritance → explicit measurement recomputation. Confidence `0.2`/`0.8` at an original edge inherits `0.5` at its midpoint; child face labels remain tied to their distinct parents. Diagnostic OBJ files go to ignored `output/task07/`. No subdivision algorithm was reimplemented, and no dependency was added or upgraded. Local/adaptive subdivision, smoothing wrappers, Mola/Rhino integration, and Repeat remain outside the implemented scope.

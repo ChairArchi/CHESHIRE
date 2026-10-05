@@ -83,25 +83,10 @@ def plan_execution(
     output_faces, output_vertices, estimate_note = _estimate(
         input_faces, input_vertices, selection, profile
     )
-    checks = {}
-    reasons = []
-    for label, current, estimated, maximum in (
-        ("face", input_faces, output_faces, budget.max_faces),
-        ("vertex", input_vertices, output_vertices, budget.max_vertices),
-    ):
-        check, reason = _count_budget(label, current, estimated, maximum)
-        checks[label] = check
-        if reason:
-            reasons.append(reason)
-    if budget.max_generation is None:
-        checks["generation"] = None
-    elif generation >= budget.max_generation:
-        checks["generation"] = "BLOCKED"
-        reasons.append(f"Generation budget: {generation} >= limit {budget.max_generation}.")
-    else:
-        checks["generation"] = "SAFE"
-    status = "BLOCKED" if "BLOCKED" in checks.values() else (
-        "WARNING" if "WARNING" in checks.values() else "SAFE"
+    assessment = check_execution_budget(
+        budget, input_faces=input_faces, input_vertices=input_vertices,
+        estimated_output_faces=output_faces, estimated_output_vertices=output_vertices,
+        current_generation=generation,
     )
     return {
         "dry_run": True,
@@ -121,10 +106,51 @@ def plan_execution(
         "face_budget": budget.max_faces,
         "vertex_budget": budget.max_vertices,
         "generation_budget": budget.max_generation,
-        "budget_checks": checks,
-        "status": status,
-        "reasons": reasons,
+        **assessment,
     }
+
+
+def check_execution_budget(
+    budget: ExecutionBudget,
+    *,
+    input_faces: int,
+    input_vertices: int,
+    estimated_output_faces: int | None,
+    estimated_output_vertices: int | None,
+    current_generation: int = 0,
+) -> dict:
+    """Check explicit counts using the same semantics as plan_execution.
+
+    Returns status, budget_checks, and reasons. None means an unknown estimate;
+    a configured count limit then produces WARNING. Never executes geometry.
+    """
+    if not isinstance(budget, ExecutionBudget):
+        raise ValueError("budget must be an ExecutionBudget.")
+    generation = _count(current_generation, "current_generation")
+    input_faces = _count(input_faces, "input_faces")
+    input_vertices = _count(input_vertices, "input_vertices")
+    output_faces = None if estimated_output_faces is None else _count(estimated_output_faces, "estimated_output_faces")
+    output_vertices = None if estimated_output_vertices is None else _count(estimated_output_vertices, "estimated_output_vertices")
+    checks, reasons = {}, []
+    for label, current, estimated, maximum in (
+        ("face", input_faces, output_faces, budget.max_faces),
+        ("vertex", input_vertices, output_vertices, budget.max_vertices),
+    ):
+        check, reason = _count_budget(label, current, estimated, maximum)
+        checks[label] = check
+        if reason:
+            reasons.append(reason)
+    if budget.max_generation is None:
+        checks["generation"] = None
+    elif generation >= budget.max_generation:
+        checks["generation"] = "BLOCKED"
+        reasons.append(f"Generation budget: {generation} >= limit {budget.max_generation}.")
+    else:
+        checks["generation"] = "SAFE"
+    status = "BLOCKED" if "BLOCKED" in checks.values() else (
+        "WARNING" if "WARNING" in checks.values() else "SAFE"
+    )
+    return {"budget_checks": checks, "status": status, "reasons": reasons}
 
 
 def _count(value, name: str, minimum: int = 0) -> int:
