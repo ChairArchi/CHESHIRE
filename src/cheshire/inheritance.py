@@ -52,10 +52,13 @@ def inherit_fields(
     """Inherit only specified fields, preserving child/spec/parent order.
 
     Fields are named parent-value mappings, or build_scalar_field metadata
-    with a 'values' mapping. Every declared parent is required, even at zero
-    weight. Unknown lineage, missing fields/keys, null parents, and conflicting
+    with a 'values' mapping. Exactly zero-weight parents do not participate
+    in resolution; every positive-weight parent is required. Unknown lineage,
+    missing fields/keys, null parents, and conflicting
     labels produce None, counted and reported in warnings. No incomplete-data
-    renormalization occurs. Scalars need not be normalized to [0, 1].
+    renormalization occurs. Complete continuous weights are normalized for
+    evaluation only; stored lineage stays unchanged. Scalars need not be
+    normalized to [0, 1]. Constant fields remain exactly constant.
 
     All supplied values of inherited fields are validated, including unused
     parent entries. Categorical labels must be hashable; numeric labels must
@@ -95,6 +98,7 @@ def inherit_fields(
         parents = lineage.vertex_parents if spec.domain == "vertex" else lineage.face_parents
         inherited = {}
         for child, refs in parents.items():
+            refs = None if refs is None else tuple(ref for ref in refs if ref.weight > 0)
             if refs is None or any(source.get(ref.key) is None for ref in refs):
                 inherited[child] = None
                 continue
@@ -133,9 +137,10 @@ def _weighted_scalar(refs, samples, name):
     # retains small contributions when larger positive/negative ones cancel.
     try:
         if all(value == samples[0] for value in samples[1:]):
-            result = samples[0] * fsum(ref.weight for ref in refs)
+            result = samples[0]
         else:
-            result = fsum(ref.weight * value for ref, value in zip(refs, samples))
+            total = fsum(ref.weight for ref in refs)
+            result = fsum((ref.weight / total) * value for ref, value in zip(refs, samples))
     except (OverflowError, ValueError) as error:
         raise ValueError(f"{name}: inherited scalar is not finite.") from error
     if not isfinite(result):

@@ -38,7 +38,7 @@ class LineageMap:
     Keys are preserved without sorting or copying, including mixed key types.
     Supplied mappings/sequences are copied into read-only maps and tuples.
     Weight sums use absolute tolerance 1e-9, zero relative tolerance. Accepted
-    weights are used as supplied, never normalized or clipped.
+    weights are stored unchanged, never normalized or clipped in this map.
     """
 
     vertex_parents: Mapping[Hashable, Sequence[ParentRef] | None] = field(default_factory=dict)

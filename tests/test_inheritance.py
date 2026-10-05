@@ -58,9 +58,17 @@ def test_categorical_agreement_and_conflict(values, expected):
     assert bool(result.warnings) == (expected is None)
 
 
-def test_categorical_conflict_does_not_choose_largest_or_zero_weight_parent():
+def test_zero_weight_categorical_parent_does_not_participate():
     result = inherit_fields(
         _edge_lineage((1, 0)), {"signal": {"A": "support", "B": "lintel"}},
+        [_spec(mode="CATEGORICAL")],
+    )
+    assert result.values["signal"]["C"] == "support"
+
+
+def test_positive_weight_categorical_conflict_does_not_choose_largest_parent():
+    result = inherit_fields(
+        _edge_lineage((0.99, 0.01)), {"signal": {"A": "support", "B": "lintel"}},
         [_spec(mode="CATEGORICAL")],
     )
     assert result.values["signal"]["C"] is None
@@ -110,9 +118,13 @@ def test_missing_null_parent_values_are_unresolved_without_renormalizing(parents
     assert len(result.warnings) == 1
 
 
-def test_missing_zero_weight_parent_is_still_unresolved():
-    result = inherit_fields(_edge_lineage((1, 0)), {"signal": {"A": 0.2}}, [_spec()])
-    assert result.values["signal"]["C"] is None
+@pytest.mark.parametrize("mode,value", [("CONTINUOUS", 0.2), ("CATEGORICAL", "support")])
+@pytest.mark.parametrize("extra", [{}, {"B": None}])
+def test_missing_null_zero_weight_parent_does_not_participate(mode, value, extra):
+    result = inherit_fields(_edge_lineage((1, 0)), {"signal": {"A": value, **extra}}, [_spec(mode=mode)])
+    assert result.values["signal"]["C"] == value
+    assert result.unresolved_counts == {"signal": 0}
+    assert result.warnings == []
 
 
 def test_missing_field_and_unknown_lineage_reported():
@@ -148,13 +160,34 @@ def test_finite_scalar_range_is_not_restricted_to_normalized_values(samples, exp
     assert result.values["signal"]["C"] == expected
 
 
-def test_tolerated_weights_are_not_renormalized_and_overflow_is_rejected():
+@pytest.mark.parametrize("value", [2.0, sys.float_info.max, 5e-324])
+def test_tolerated_weights_are_normalized_only_for_evaluation(value):
     weight = 1 + 5e-10
     lineage = LineageMap(vertex_parents={"C": [ParentRef("A", weight)]})
-    result = inherit_fields(lineage, {"signal": {"A": 2}}, [_spec()])
-    assert result.values["signal"]["C"] == weight * 2
-    with pytest.raises(ValueError, match="not finite"):
-        inherit_fields(lineage, {"signal": {"A": sys.float_info.max}}, [_spec()])
+    result = inherit_fields(lineage, {"signal": {"A": value}}, [_spec()])
+    assert result.values["signal"]["C"] == value
+    assert lineage.vertex_parents["C"][0].weight == weight
+
+
+def test_nonconstant_values_use_normalized_complete_weights():
+    weights = (0.25, 0.7500000005)
+    lineage = _edge_lineage(weights)
+    result = inherit_fields(lineage, {"signal": {"A": 0.2, "B": 0.8}}, [_spec()])
+    assert result.values["signal"]["C"] == pytest.approx((weights[0] * 0.2 + weights[1] * 0.8) / sum(weights))
+    assert tuple(ref.weight for ref in lineage.vertex_parents["C"]) == weights
+
+
+@pytest.mark.parametrize("mode", ["CONTINUOUS", "CATEGORICAL"])
+def test_tiny_positive_weight_missing_parent_is_not_treated_as_zero(mode):
+    result = inherit_fields(_edge_lineage((1 - 1e-12, 1e-12)), {"signal": {"A": 0.2}}, [_spec(mode=mode)])
+    assert result.values["signal"]["C"] is None
+
+
+@pytest.mark.parametrize("count", [3, 7, 10])
+def test_equal_weight_constant_fields_remain_exactly_constant(count):
+    lineage = LineageMap(vertex_parents={"child": [ParentRef(key, 1 / count) for key in range(count)]})
+    result = inherit_fields(lineage, {"signal": {key: 0.8 for key in range(count)}}, [_spec()])
+    assert result.values["signal"]["child"] == 0.8
 
 
 def test_zero_weight_extreme_does_not_erase_tiny_contribution():
