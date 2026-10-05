@@ -14,6 +14,7 @@ MAX_STAGE_COUNT = 50000
 MAX_STEPS = 4
 TIMEOUT_SECONDS = 60
 MOLA_MODE = "MOLA_TAPER_STUDY"
+MOLA_FIELD_MODE = "MOLA_FIELD_STUDY"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -94,10 +95,12 @@ def validate_request(request):
     if not isinstance(source, dict) or not isinstance(source.get("object_id"), str) or type(source.get("document_serial")) is not int:
         raise ValueError("Source document and object identity are required.")
     mode = request.get("mode", "MESH_GRAMMAR")
-    if mode == MOLA_MODE:
+    if mode in (MOLA_MODE, MOLA_FIELD_MODE):
         if not isinstance(request.get("mola_dll"), str) or not Path(request["mola_dll"]).is_absolute():
             raise ValueError("Mola requires an explicit absolute standalone DLL path.")
         selection = request.get("selected_faces")
+        if mode == MOLA_FIELD_MODE and selection != "ALL_ELIGIBLE_PLANAR":
+            raise ValueError("MolaFieldStudy uses all eligible ORIGINAL planar faces.")
         if selection != "ALL_ELIGIBLE_PLANAR":
             if not isinstance(selection, list) or any(type(k) is not int for k in selection) or len(set(selection)) != len(selection):
                 raise ValueError("Mola selection must be explicit distinct face IDs or ALL_ELIGIBLE_PLANAR.")
@@ -121,6 +124,8 @@ def validate_response(response, request):
         raise ValueError("Response does not match the initiating request/document/object.")
     if request.get("mode") == MOLA_MODE:
         return _validate_mola_response(response, request)
+    if request.get("mode") == MOLA_FIELD_MODE:
+        return _validate_field_response(response, request)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -144,6 +149,73 @@ def validate_response(response, request):
             raise ValueError("G1 field must be aligned to its pre-displacement driver mesh.")
         if any(row["value"] is not None and (type(row["value"]) not in (int, float) or not 0 <= row["value"] <= 1) for row in values):
             raise ValueError("Invalid driver field values.")
+    return response
+
+
+def face_driver_display_data(data, rows, field):
+    """Flat face colors by duplicating display corners only; calculation unchanged."""
+    validate_mesh_data(data)
+    coordinates = {row["id"]: row["xyz"] for row in data["vertices"]}
+    samples = {row["id"]: row[field] for row in rows}
+    vertices, faces, values, source_ids = [], [], {}, []
+    for face in data["faces"]:
+        corners = []
+        for key in face["vertices"]:
+            display_id = len(vertices)
+            vertices.append({"id": display_id, "xyz": coordinates[key].copy()})
+            values[display_id] = samples.get(face["id"])
+            source_ids.append(key)
+            corners.append(display_id)
+        faces.append({"id": face["id"], "vertices": corners})
+    return {"vertices": vertices, "faces": faces}, values, source_ids
+
+
+def _validate_field_response(response, request):
+    stages, status = response.get("stages"), response.get("status")
+    if response.get("mode") != MOLA_FIELD_MODE or not isinstance(stages, list) or len(stages) > 3:
+        raise ValueError("Invalid MolaFieldStudy generation list.")
+    if status not in ("SUCCESS", "PARTIAL", "FAILED") or (status == "SUCCESS" and len(stages) != 3) or (status == "PARTIAL" and not stages) or (status == "FAILED" and stages):
+        raise ValueError("Inconsistent MolaFieldStudy status/generations.")
+    eligible = response.get("eligible_faces")
+    roots = {row["id"] for row in request["mesh"]["faces"]}
+    if not isinstance(eligible, list) or len(set(eligible)) != len(eligible) or not set(eligible) <= roots:
+        raise ValueError("Invalid original eligible face IDs.")
+    rows = response.get("drivers", {}).get("faces", [])
+    if [row["id"] for row in rows] != eligible:
+        raise ValueError("Original face driver values must align with eligibility.")
+    if any(not 0 <= row[field] <= 1 for row in rows for field in ("height_driver", "taper_driver")):
+        raise ValueError("Invalid normalized face driver.")
+    previous_mesh, selected = request["mesh"], eligible
+    for generation, stage in enumerate(stages, 1):
+        if stage.get("generation") != generation or stage.get("validated") is not True or stage.get("processed_faces") != selected:
+            raise ValueError("MolaFieldStudy must recurse on only the previous generation's caps.")
+        mesh = validate_mesh_data(stage.get("mesh"))
+        if stage.get("vertex_count") != len(mesh["vertices"]) or stage.get("face_count") != len(mesh["faces"]):
+            raise ValueError("Field study output counts do not match mesh.")
+        if stage.get("input_vertex_count") != len(previous_mesh["vertices"]) or stage.get("input_face_count") != len(previous_mesh["faces"]):
+            raise ValueError("Field study input counts do not match prior mesh.")
+        params = stage.get("parameters", [])
+        if [row["id"] for row in params] != selected or any(row["root_face"] not in eligible for row in params):
+            raise ValueError("Recursive parameters do not align with selected faces/roots.")
+        caps = stage.get("cap_faces")
+        if not isinstance(caps, list) or len(caps) != len(selected) or len(set(caps)) != len(caps):
+            raise ValueError("Each processed face must have exactly one new cap.")
+        roles = stage.get("face_roles", [])
+        if [row["id"] for row in roles] != [row["id"] for row in mesh["faces"]]:
+            raise ValueError("Face roles must cover the displayed generation.")
+        actual_caps = [row["id"] for row in roles if row["role"] == "cap" and row["generation"] == generation]
+        if caps != actual_caps:
+            raise ValueError("Recursion cap IDs disagree with generated roles.")
+        for domain in ("vertices", "faces"):
+            entries = stage.get("lineage", {}).get(domain, [])
+            if [row["id"] for row in entries] != [row["id"] for row in mesh[domain]]:
+                raise ValueError("Recursive immediate-parent lineage must cover output IDs.")
+            parent_ids = {row["id"] for row in previous_mesh[domain]}
+            if any(not entry["parents"] or any(ref["id"] not in parent_ids for ref in entry["parents"]) for entry in entries):
+                raise ValueError("Recursive lineage parent is absent from the immediate input.")
+        if stage.get("budget", {}).get("status") != "SAFE" or stage.get("lineage_coverage") != []:
+            raise ValueError("Only budget-safe generations with verified coverage may be displayed.")
+        previous_mesh, selected = mesh, caps
     return response
 
 

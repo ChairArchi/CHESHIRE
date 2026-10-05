@@ -20,10 +20,11 @@ import Rhino
 from System import Guid
 from System.Drawing import Color
 from exchange import (
-    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, TIMEOUT_SECONDS, read_json,
+    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
 from worker_process import worker_launch_options
+from local_settings import remembered_mola_path, remember_mola_path
 
 
 _RUNS = {}  # Keep this script's timer/callback alive after ScriptEditor returns.
@@ -87,6 +88,23 @@ def source_fingerprint(doc, source):
 
 
 def print_steps(response):
+    if response.get("mode") == MOLA_FIELD_MODE:
+        Rhino.RhinoApp.WriteLine("MOLA_FIELD_STUDY " + response["status"] + ": " + (response.get("reason") or "G1/G2/G3 cap recursion completed."))
+        Rhino.RhinoApp.WriteLine(f"Eligible original faces {len(response['eligible_faces'])}; excluded {len(response['excluded_faces'])}; height in input document units.")
+        for warning in response["drivers"]["warnings"]:
+            Rhino.RhinoApp.WriteLine(warning)
+        for stage in response["stages"]:
+            Rhino.RhinoApp.WriteLine("G{generation}: processed {processed_face_count} faces ({caps_processed} caps); "
+                "{input_vertex_count}/{input_face_count} -> {vertex_count}/{face_count} vertices/faces; "
+                "{elapsed_seconds:.3f}s".format(**stage))
+            Rhino.RhinoApp.WriteLine(f"Height driver {stage['height_driver_range']}; taper driver {stage['taper_driver_range']}; "
+                f"actual height {stage['height_range']}; fraction {stage['fraction_range']}; budget {stage['budget']['status']}.")
+        Rhino.RhinoApp.WriteLine("Five original faces with greatest G1 height:")
+        for row in response["top_five_g1"]:
+            Rhino.RhinoApp.WriteLine("Face {root_face}: height driver {height_driver:g}, taper driver {taper_driver:g}, "
+                                    "height {height:g}, fraction {fraction:g}".format(**row))
+        Rhino.RhinoApp.WriteLine(response["variation_assessment"])
+        return
     if response.get("mode") == MOLA_MODE:
         Rhino.RhinoApp.WriteLine("MOLA_TAPER_STUDY " + response["status"] + ": " + (response.get("reason") or "A/B/C completed."))
         Rhino.RhinoApp.WriteLine(f"Selected {len(response['selected_faces'])}; excluded {len(response['excluded_faces'])}; height in input document coordinate units.")
@@ -113,7 +131,17 @@ def print_steps(response):
 
 def insert_results(doc, request, response):
     """UI-thread insertion with one undo record and run-local failure rollback."""
-    if response.get("mode") == MOLA_MODE:
+    if response.get("mode") == MOLA_FIELD_MODE:
+        items = [("ORIGINAL REFERENCE", request["mesh"], None)]
+        for name, label in (("height_driver", "HEIGHT DRIVER"), ("taper_driver", "TAPER DRIVER")):
+            data, values, _ = face_driver_display_data(request["mesh"], response["drivers"]["faces"], name)
+            items.append((label, data, values))
+        for stage in response["stages"]:
+            label = "G1 - heterogeneous taper extrusion" if stage["generation"] == 1 else f"G{stage['generation']} - cap recursion"
+            if response["status"] == "PARTIAL" and stage is response["stages"][-1]:
+                label += " (last valid; PARTIAL)"
+            items.append((label, stage["mesh"], None))
+    elif response.get("mode") == MOLA_MODE:
         selected = set(response["selected_faces"])
         preview = {"vertices": request["mesh"]["vertices"],
                    "faces": [row for row in request["mesh"]["faces"] if row["id"] in selected]}
@@ -151,7 +179,7 @@ def insert_results(doc, request, response):
         created_layers.append(parent_index)
         for position, (label, data, values) in enumerate(items, 1):
             layer = Rhino.DocObjects.Layer()
-            layer.Name = "G1 DRIVER FIELD" if values is not None else label
+            layer.Name = "G1 DRIVER FIELD" if values is not None and response.get("mode") != MOLA_FIELD_MODE else label
             layer.ParentLayerId = doc.Layers[parent_index].Id
             layer_index = doc.Layers.Add(layer)
             if layer_index < 0:
@@ -161,9 +189,14 @@ def insert_results(doc, request, response):
             attrs.LayerIndex, attrs.Name = layer_index, label
             attrs.SetUserString("CHESHIRE run_id", request["run_id"])
             attrs.SetUserString("CHESHIRE source_object", request["source"]["object_id"])
-            task = "task09" if request.get("mode") == MOLA_MODE else "task08"
+            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10"}.get(request.get("mode"), "task08")
             attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output" / task / request["run_id"] / "response.json"))
             display = data_to_rhino_mesh(data, position * spacing, values)
+            if response.get("mode") == MOLA_FIELD_MODE and values is not None:
+                _, _, source_ids = face_driver_display_data(request["mesh"], response["drivers"]["faces"],
+                    "height_driver" if label == "HEIGHT DRIVER" else "taper_driver")
+                display.SetUserString("CHESHIRE original_vertex_ids", json.dumps(source_ids))
+                display.SetUserString("CHESHIRE display_only", "Duplicated corners for exact per-face color; calculation topology unchanged.")
             object_id = doc.Objects.AddMesh(display, attrs)
             if object_id == Guid.Empty:
                 raise ValueError("Rhino refused a result mesh.")
@@ -197,12 +230,12 @@ class Run:
         payload = {"protocol": 1, "run_id": str(uuid4()),
                                         "source": {"document_serial": self.serial, "object_id": str(source.Id)},
                                         "mode": mode, "mesh": rhino_mesh_to_data(source.Geometry)}
-        if mode == MOLA_MODE:
+        if mode in (MOLA_MODE, MOLA_FIELD_MODE):
             payload.update(mola_dll=mola_dll, selected_faces="ALL_ELIGIBLE_PLANAR")
         else:
             payload["strength"] = strength
         self.request = validate_request(payload)
-        self.directory = ROOT / "output" / ("task09" if mode == MOLA_MODE else "task08") / self.request["run_id"]
+        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10"}.get(mode, "task08") / self.request["run_id"]
         self.directory.mkdir(parents=True, exist_ok=False)
         write_json_atomic(self.directory / "request.json", self.request)
         self.cancel = threading.Event()
@@ -298,7 +331,9 @@ class Run:
             if response.get("variants", response.get("stages", [])):
                 insert_results(doc, self.request, response)
                 Rhino.RhinoApp.WriteLine("Results translated along world X on a new CHESHIRE run layer; original preserved.")
-                if response.get("mode") != MOLA_MODE:
+                if response.get("mode") == MOLA_FIELD_MODE:
+                    Rhino.RhinoApp.WriteLine("Height and taper drivers: black=low, white=high, magenta=excluded. Original face values; Shaded mode shows colors.")
+                elif response.get("mode") != MOLA_MODE:
                     Rhino.RhinoApp.WriteLine("Driver: black=0, white=1, magenta=unavailable. Use Shaded mode to see mesh vertex colors; no display mode was changed.")
             Rhino.RhinoApp.WriteLine("Run files: " + str(self.directory))
         except Exception as error:
@@ -307,6 +342,21 @@ class Run:
             Rhino.RhinoApp.EscapeKeyPressed -= self.on_escape
             _RUNS.pop(self.request["run_id"], None)
             Rhino.RhinoApp.WriteLine("CHESHIRE insertion stopped: " + str(error))
+
+
+def mola_dll_path(replace=False):
+    saved = remembered_mola_path(ROOT)
+    if saved and not replace:
+        Rhino.RhinoApp.WriteLine("Using saved Mola DLL: " + saved)
+        return saved
+    path = Rhino.Input.Custom.GetString()
+    path.SetCommandPrompt("Exact full path to official standalone HDMola.dll (saved locally, outside CHESHIRE)")
+    if saved:
+        path.SetDefaultString(saved)
+    path.Get()
+    if path.CommandResult() != Rhino.Commands.Result.Success:
+        return None
+    return remember_mola_path(ROOT, path.StringResult().strip().strip('"'))
 
 
 def main():
@@ -329,20 +379,22 @@ def main():
         choice.SetCommandPrompt("CHESHIRE experiment mode")
         grammar = choice.AddOption("MeshGrammar")
         mola = choice.AddOption("MolaTaperStudy")
+        field = choice.AddOption("MolaFieldStudy")
+        dll_option = choice.AddOption("SetMolaDllPath")
         choice.Get()
         if choice.CommandResult() != Rhino.Commands.Result.Success:
             return
-        if choice.OptionIndex() == mola:
-            Rhino.RhinoApp.WriteLine("MOLA_TAPER_STUDY: all eligible planar convex triangles/quads of this ORIGINAL mesh; excluded faces stay unchanged. Maximum 1000 selected faces.")
-            path = Rhino.Input.Custom.GetString()
-            path.SetCommandPrompt("Exact full path to official standalone HDMola.dll (outside CHESHIRE)")
-            path.Get()
-            if path.CommandResult() != Rhino.Commands.Result.Success:
+        if choice.OptionIndex() == dll_option:
+            if mola_dll_path(replace=True):
+                Rhino.RhinoApp.WriteLine("Mola DLL preference updated; no study launched.")
+            return
+        if choice.OptionIndex() in (mola, field):
+            mode = MOLA_FIELD_MODE if choice.OptionIndex() == field else MOLA_MODE
+            Rhino.RhinoApp.WriteLine(mode + ": all eligible planar convex triangles/quads of this ORIGINAL mesh; excluded faces stay unchanged. Maximum 1000 selected faces.")
+            dll = mola_dll_path()
+            if dll is None:
                 return
-            dll = Path(path.StringResult().strip().strip('"'))
-            if not dll.is_absolute() or not dll.is_file() or dll.is_relative_to(ROOT):
-                raise ValueError("Provide an existing standalone DLL outside CHESHIRE; no automatic search or copy.")
-            Run(doc, source, mode=MOLA_MODE, mola_dll=str(dll)).start()
+            Run(doc, source, mode=mode, mola_dll=dll).start()
             return
         Rhino.RhinoApp.WriteLine("Strength is a fraction of each pre-displacement bounding-box diagonal, not millimetres; allowed 0–0.03.")
         number = Rhino.Input.Custom.GetNumber()

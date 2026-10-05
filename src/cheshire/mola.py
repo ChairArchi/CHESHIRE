@@ -171,12 +171,14 @@ def _load_backend(dll_path):
 
 
 def extrude_tapered_once(mesh, *, selected_faces, height_ratio, fraction, dll_path,
-                        budget=None, cap_top=True):
+                        budget=None, cap_top=True, source_is_result=False):
     """Mola-generated geometry, explicit face selection and immediate lineage.
 
     Fresh output carries XYZ/connectivity only, not arbitrary mesh attributes.
     Original boundary XYZ is exact. Top XYZ comes from Mola float32 in a local
     frame. Verification formulas check returned roles, never replace geometry.
+    source_is_result applies the existing 50000 stage limits to a previously
+    verified result; original-input limits stay 5000 faces / 20000 vertices.
     """
     if cap_top is not True:
         raise ValueError("Only cap_top=True is supported.")
@@ -184,8 +186,11 @@ def extrude_tapered_once(mesh, *, selected_faces, height_ratio, fraction, dll_pa
     selected = list(selected_faces)
     if len(set(selected)) != len(selected) or not set(selected) <= set(mesh.faces()):
         raise ValueError("Selected face keys must be distinct existing keys.")
-    if len(selected) > MAX_SELECTED_FACES or mesh.number_of_faces() > 5000 or mesh.number_of_vertices() > 20000:
-        raise ValueError("Demo input/selected-face limit exceeded (5000 faces, 20000 vertices, 1000 selected).")
+    if type(source_is_result) is not bool:
+        raise ValueError("source_is_result must be a boolean.")
+    face_limit, vertex_limit = (50000, 50000) if source_is_result else (5000, 20000)
+    if len(selected) > MAX_SELECTED_FACES or mesh.number_of_faces() > face_limit or mesh.number_of_vertices() > vertex_limit:
+        raise ValueError(f"Demo input/selected-face limit exceeded ({face_limit} faces, {vertex_limit} vertices, 1000 selected).")
     ratios = _parameters(height_ratio, selected, "height_ratio")
     fractions = _parameters(fraction, selected, "fraction")
     frames = {key: _face_frame(mesh, key) for key in selected}

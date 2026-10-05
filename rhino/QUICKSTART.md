@@ -5,7 +5,7 @@ Set up CHESHIRE's existing Python 3.12 `.venv` as described in the root README.
 COMPAS stays in that environment; do not install it into Rhino.
 
 1. In Rhino 8, enter `ScriptEditor`. Open the entry file as **Python 3** and click Run. Keep the script on the UI thread; do not add `async:true`.
-2. Select one existing **Mesh**, choose **MeshGrammar**, then enter strength or accept **0.01**. Allowed range is 0–0.03. Strength is a fraction of each step's pre-displacement bounding-box diagonal, not millimetres. The four effective strengths are `s`, `s/2`, `s/4`, `s/8`. The separate **MolaTaperStudy** mode is described in [Mola quickstart](MOLA_QUICKSTART.md).
+2. Select one existing **Mesh**, choose **MeshGrammar**, then enter strength or accept **0.01**. Allowed range is 0–0.03. Strength is a fraction of each step's pre-displacement bounding-box diagonal, not millimetres. The four effective strengths are `s`, `s/2`, `s/4`, `s/8`. Separate modes: [MolaTaperStudy](MOLA_QUICKSTART.md) and [MolaFieldStudy](MOLA_FIELD_QUICKSTART.md).
 3. Rhino stays available while the external worker runs. Press **Esc** to cancel. Switching/closing the document cancels insertion; changing the source, its attributes/layer/visibility or units also prevents insertion. Cancellation kills only this run's worker. Timeout is 60 seconds for the whole worker, including startup.
 4. Inspect the new `CHESHIRE_<run UUID>` layer and its named meshes/text dots: **ORIGINAL REFERENCE**, **G1 DRIVER FIELD**, **G1**, **G2**, **G4** when reached. If interrupted after G3, G3 is shown as the last valid partial result. Use Undo to remove the insertion. Earlier runs and the selected original are preserved.
 
