@@ -192,7 +192,11 @@ def main():
     if args.request.resolve().parent != args.response.resolve().parent or args.response.exists():
         raise ValueError("Use new per-run request/response paths in one unique run directory.")
     request = validate_request(read_json(args.request))
-    if request.get("mode") == "VISUAL_PROTOTYPE":
+    if request.get("mode") == "WEIGHTED_SUBDIVISION_STUDY":
+        from weighted_study import run_weighted_study
+        response = run_weighted_study(request, publish=lambda value: write_json_atomic(args.response, value))
+        write_json_atomic(args.response, response)
+    elif request.get("mode") == "VISUAL_PROTOTYPE":
         from visual_prototype import run_visual_prototype
         response = run_visual_prototype(request, publish=lambda value: write_json_atomic(args.response, value))
     elif request.get("mode") == "MOLA_SURFACE_STUDY":
@@ -206,7 +210,7 @@ def main():
         response = run_mola_study(request, publish=lambda value: write_json_atomic(args.response, value))
     else:
         response = run_experiment(request, publish=lambda value: write_json_atomic(args.response, value))
-    completed = {"VISUAL_PROTOTYPE": "Three spatial prototype candidates completed", "MOLA_SURFACE_STUDY": "G1/G3 raw and terminal CC1 comparisons completed", "MOLA_TAPER_STUDY": "A/B/C completed", "MOLA_FIELD_STUDY": "G1/G2/G3 cap recursion completed"}.get(request.get("mode"), "G1/G2/G3/G4 completed")
+    completed = {"WEIGHTED_SUBDIVISION_STUDY": "S/U/F G1/G2 weighted comparisons completed", "VISUAL_PROTOTYPE": "Three spatial prototype candidates completed", "MOLA_SURFACE_STUDY": "G1/G3 raw and terminal CC1 comparisons completed", "MOLA_TAPER_STUDY": "A/B/C completed", "MOLA_FIELD_STUDY": "G1/G2/G3 cap recursion completed"}.get(request.get("mode"), "G1/G2/G3/G4 completed")
     print(response["status"] + ": " + (response["reason"] or completed))
     return 0 if response["status"] in ("SUCCESS", "PARTIAL") else 1
 

@@ -17,6 +17,7 @@ MOLA_MODE = "MOLA_TAPER_STUDY"
 MOLA_FIELD_MODE = "MOLA_FIELD_STUDY"
 MOLA_SURFACE_MODE = "MOLA_SURFACE_STUDY"
 VISUAL_MODE = "VISUAL_PROTOTYPE"
+WEIGHTED_MODE = "WEIGHTED_SUBDIVISION_STUDY"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -110,6 +111,8 @@ def validate_request(request):
             keys = {row["id"] for row in validate_mesh_data(request.get("mesh"))["faces"]}
             if len(selection) > 1000 or not set(selection) <= keys:
                 raise ValueError("Mola selection exceeds 1000 faces or contains unknown IDs.")
+    elif mode == WEIGHTED_MODE:
+        pass  # Fixed S/U/F study; no Mola DLL or user-defined recipe.
     elif mode == "MESH_GRAMMAR":
         strength = request.get("strength")
         if type(strength) not in (int, float) or not isfinite(strength) or not 0 <= strength <= 0.03:
@@ -133,6 +136,8 @@ def validate_response(response, request):
         return _validate_surface_response(response, request)
     if request.get("mode") == VISUAL_MODE:
         return _validate_visual_response(response, request)
+    if request.get("mode") == WEIGHTED_MODE:
+        return _validate_weighted_response(response, request)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -156,6 +161,54 @@ def validate_response(response, request):
             raise ValueError("G1 field must be aligned to its pre-displacement driver mesh.")
         if any(row["value"] is not None and (type(row["value"]) not in (int, float) or not 0 <= row["value"] <= 1) for row in values):
             raise ValueError("Invalid driver field values.")
+    return response
+
+
+def _validate_weighted_response(response, request):
+    variants = response.get("variants")
+    if response.get("mode") != WEIGHTED_MODE or response.get("recipe_version") != "14.1" or not isinstance(variants, list):
+        raise ValueError("Invalid weighted study response.")
+    if [v.get("id") for v in variants] != list("SUF")[:len(variants)]:
+        raise ValueError("Weighted studies must be the consecutive S/U/F prefix.")
+    completed = False
+    for variant in variants:
+        stages = variant.get("stages")
+        if variant.get("semantic_lineage") != "NOT IMPLEMENTED" or not isinstance(stages, list) or len(stages) > 2:
+            raise ValueError("Invalid weighted checkpoints/semantic status.")
+        state = variant.get("status")
+        if state not in ("SUCCESS", "PARTIAL", "FAILED") or (state == "SUCCESS" and len(stages) != 2) or (state == "PARTIAL" and not stages) or (state == "FAILED" and stages):
+            raise ValueError("Inconsistent weighted candidate status.")
+        previous = request["mesh"]
+        for number, stage in enumerate(stages, 1):
+            data = validate_mesh_data(stage.get("mesh"))
+            if stage.get("generation") != number or stage.get("validated") is not True:
+                raise ValueError("Only consecutive validated weighted checkpoints are displayable.")
+            if stage.get("vertex_count") != len(data["vertices"]) or stage.get("face_count") != len(data["faces"]):
+                raise ValueError("Weighted checkpoint counts disagree.")
+            metadata = stage.get("metadata", {})
+            expected_v = len(previous["vertices"]) + metadata.get("input", {}).get("edge_count", -100000) + len(previous["faces"])
+            expected_f = sum(len(f["vertices"]) for f in previous["faces"])
+            if len(data["vertices"]) != expected_v or len(data["faces"]) != expected_f or metadata.get("budget", {}).get("status") != "SAFE" or metadata.get("semantic_lineage") != "NOT IMPLEMENTED":
+                raise ValueError("Invalid weighted growth/budget/lineage metadata.")
+            ids = {v["id"] for v in data["vertices"]}
+            points = metadata.get("points", [])
+            if len(points) != len(ids) or {p.get("id") for p in points} != ids or any(p.get("point_class") not in ("face", "edge", "corner") for p in points):
+                raise ValueError("Generated point classes must cover actual output IDs.")
+            previous_ids = {v["id"] for v in previous["vertices"]}
+            rows = stage.get("sampling_parents", [])
+            if len(rows) != len(ids) or {r.get("id") for r in rows} != ids:
+                raise ValueError("Control-cage sampling associations must cover actual IDs.")
+            for row in rows:
+                parents = row.get("parents", [])
+                if not parents or any(p.get("id") not in previous_ids or type(p.get("weight")) not in (int,float) or p["weight"] <= 0 for p in parents) or abs(sum(p["weight"] for p in parents)-1) > 1e-9:
+                    raise ValueError("Invalid positive control-cage association.")
+            if variant["id"] == "F" and (len(stage.get("drivers", [])) != len(ids) or {r.get("id") for r in stage["drivers"]} != ids):
+                raise ValueError("Separate field drivers must cover actual generated points.")
+            previous = data
+            completed = True
+    state = response.get("status")
+    if state not in ("SUCCESS", "PARTIAL", "FAILED") or (state == "SUCCESS" and (len(variants) != 3 or any(v["status"] != "SUCCESS" for v in variants))) or (state == "PARTIAL" and not completed) or (state == "FAILED" and completed):
+        raise ValueError("Inconsistent weighted response status.")
     return response
 
 

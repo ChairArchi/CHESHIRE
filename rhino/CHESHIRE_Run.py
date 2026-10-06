@@ -20,7 +20,7 @@ import Rhino
 from System import Guid
 from System.Drawing import Color
 from exchange import (
-    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
+    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE, WEIGHTED_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
 from worker_process import worker_launch_options
@@ -88,6 +88,14 @@ def source_fingerprint(doc, source):
 
 
 def print_steps(response):
+    if response.get("mode") == WEIGHTED_MODE:
+        Rhino.RhinoApp.WriteLine("WeightedSubdivisionStudy " + response["status"] + ": conservative boundaries, fixed attenuated schedule; semantic lineage NOT IMPLEMENTED.")
+        for row in response["variants"]:
+            for stage in row["stages"]:
+                Rhino.RhinoApp.WriteLine(f"{row['id']} G{stage['generation']}: {stage['vertex_count']} vertices / {stage['face_count']} faces; budget SAFE.")
+            if row.get("reason"):
+                Rhino.RhinoApp.WriteLine(row["reason"])
+        return
     if response.get("mode") == VISUAL_MODE:
         Rhino.RhinoApp.WriteLine("VISUAL_PROTOTYPE " + response["status"] + ": " + (response.get("reason") or "Three fixed spatial candidates completed."))
         for row in response["variants"]:
@@ -176,7 +184,15 @@ def print_steps(response):
 
 def insert_results(doc, request, response):
     """UI-thread insertion with one undo record and run-local failure rollback."""
-    if response.get("mode") == VISUAL_MODE:
+    if response.get("mode") == WEIGHTED_MODE:
+        items = [("ORIGINAL REFERENCE", request["mesh"], None)]
+        for row in response["variants"]:
+            for stage in row["stages"]:
+                label = {"S":"STANDARD", "U":"UNIFORM WEIGHTED", "F":"FIELD WEIGHTED"}[row["id"]]
+                if row["status"] != "SUCCESS" and stage is row["stages"][-1]:
+                    label += " (last valid; PARTIAL)"
+                items.append((label + f" G{stage['generation']}", stage["mesh"], None))
+    elif response.get("mode") == VISUAL_MODE:
         items = [("ORIGINAL REFERENCE", request["mesh"], None)]
         for row in response["variants"]:
             label = row["label"] + (" (last valid; PARTIAL)" if row["status"] != "SUCCESS" else "")
@@ -251,7 +267,7 @@ def insert_results(doc, request, response):
             attrs.LayerIndex, attrs.Name = layer_index, label
             attrs.SetUserString("CHESHIRE run_id", request["run_id"])
             attrs.SetUserString("CHESHIRE source_object", request["source"]["object_id"])
-            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12"}.get(request.get("mode"), "task08")
+            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14"}.get(request.get("mode"), "task08")
             attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output" / task / request["run_id"] / "response.json"))
             display = data_to_rhino_mesh(data, position * spacing, values)
             if response.get("mode") == MOLA_FIELD_MODE and values is not None:
@@ -294,10 +310,10 @@ class Run:
                                         "mode": mode, "mesh": rhino_mesh_to_data(source.Geometry)}
         if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE):
             payload.update(mola_dll=mola_dll, selected_faces="ALL_ELIGIBLE_PLANAR")
-        else:
+        elif mode != WEIGHTED_MODE:
             payload["strength"] = strength
         self.request = validate_request(payload)
-        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12"}.get(mode, "task08") / self.request["run_id"]
+        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14"}.get(mode, "task08") / self.request["run_id"]
         self.directory.mkdir(parents=True, exist_ok=False)
         write_json_atomic(self.directory / "request.json", self.request)
         self.cancel = threading.Event()
@@ -395,6 +411,8 @@ class Run:
                 Rhino.RhinoApp.WriteLine("Results translated along world X on a new CHESHIRE run layer; original preserved.")
                 if response.get("mode") == MOLA_FIELD_MODE:
                     Rhino.RhinoApp.WriteLine("Height and taper drivers: black=low, white=high, magenta=excluded. Original face values; Shaded mode shows colors.")
+                elif response.get("mode") == WEIGHTED_MODE:
+                    Rhino.RhinoApp.WriteLine("Inspect STANDARD / UNIFORM / FIELD at matching generations in Shaded and Wireframe. Two separate drivers and exact point weights are in response.json. No collision guarantee.")
                 elif response.get("mode") in (MOLA_SURFACE_MODE, VISUAL_MODE):
                     Rhino.RhinoApp.WriteLine("Compare Shaded and Wireframe manually; no global display mode changed. CC1 outputs are terminal geometry only.")
                 elif response.get("mode") != MOLA_MODE:
@@ -446,6 +464,7 @@ def main():
         field = choice.AddOption("MolaFieldStudy")
         surface = choice.AddOption("MolaSurfaceStudy")
         prototype = choice.AddOption("VisualPrototype")
+        weighted = choice.AddOption("WeightedSubdivisionStudy")
         dll_option = choice.AddOption("SetMolaDllPath")
         choice.Get()
         if choice.CommandResult() != Rhino.Commands.Result.Success:
@@ -453,6 +472,10 @@ def main():
         if choice.OptionIndex() == dll_option:
             if mola_dll_path(replace=True):
                 Rhino.RhinoApp.WriteLine("Mola DLL preference updated; no study launched.")
+            return
+        if choice.OptionIndex() == weighted:
+            Rhino.RhinoApp.WriteLine("WeightedSubdivisionStudy: S/U/F G1/G2; fixed attenuated schedule, source Z and current normal-variation drivers; no extra runtime required.")
+            Run(doc, source, mode=WEIGHTED_MODE).start()
             return
         if choice.OptionIndex() in (mola, field, surface, prototype):
             mode = {mola: MOLA_MODE, field: MOLA_FIELD_MODE, surface: MOLA_SURFACE_MODE, prototype: VISUAL_MODE}[choice.OptionIndex()]
