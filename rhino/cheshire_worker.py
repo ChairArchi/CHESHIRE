@@ -192,7 +192,10 @@ def main():
     if args.request.resolve().parent != args.response.resolve().parent or args.response.exists():
         raise ValueError("Use new per-run request/response paths in one unique run directory.")
     request = validate_request(read_json(args.request))
-    if request.get("mode") == "WEIGHTED_SUBDIVISION_STUDY":
+    if request.get("mode") == "GENERATIONAL_WEIGHT_STUDY":
+        from generational_study import run_generational_study
+        response = run_generational_study(request, publish=lambda value: write_json_atomic(args.response, value))
+    elif request.get("mode") == "WEIGHTED_SUBDIVISION_STUDY":
         from weighted_study import run_weighted_study
         response = run_weighted_study(request, publish=lambda value: write_json_atomic(args.response, value))
         write_json_atomic(args.response, response)
@@ -211,6 +214,8 @@ def main():
     else:
         response = run_experiment(request, publish=lambda value: write_json_atomic(args.response, value))
     completed = {"WEIGHTED_SUBDIVISION_STUDY": "S/U/F G1/G2 weighted comparisons completed", "VISUAL_PROTOTYPE": "Three spatial prototype candidates completed", "MOLA_SURFACE_STUDY": "G1/G3 raw and terminal CC1 comparisons completed", "MOLA_TAPER_STUDY": "A/B/C completed", "MOLA_FIELD_STUDY": "G1/G2/G3 cap recursion completed"}.get(request.get("mode"), "G1/G2/G3/G4 completed")
+    if request.get("mode") == "GENERATIONAL_WEIGHT_STUDY":
+        completed = "C0 / L4 control / C11 G1,G3,G5 comparison completed; design result PARTIAL_SUCCESS"
     print(response["status"] + ": " + (response["reason"] or completed))
     return 0 if response["status"] in ("SUCCESS", "PARTIAL") else 1
 

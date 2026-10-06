@@ -18,6 +18,7 @@ MOLA_FIELD_MODE = "MOLA_FIELD_STUDY"
 MOLA_SURFACE_MODE = "MOLA_SURFACE_STUDY"
 VISUAL_MODE = "VISUAL_PROTOTYPE"
 WEIGHTED_MODE = "WEIGHTED_SUBDIVISION_STUDY"
+GENERATIONAL_MODE = "GENERATIONAL_WEIGHT_STUDY"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -111,7 +112,7 @@ def validate_request(request):
             keys = {row["id"] for row in validate_mesh_data(request.get("mesh"))["faces"]}
             if len(selection) > 1000 or not set(selection) <= keys:
                 raise ValueError("Mola selection exceeds 1000 faces or contains unknown IDs.")
-    elif mode == WEIGHTED_MODE:
+    elif mode in (WEIGHTED_MODE, GENERATIONAL_MODE):
         pass  # Fixed S/U/F study; no Mola DLL or user-defined recipe.
     elif mode == "MESH_GRAMMAR":
         strength = request.get("strength")
@@ -138,6 +139,8 @@ def validate_response(response, request):
         return _validate_visual_response(response, request)
     if request.get("mode") == WEIGHTED_MODE:
         return _validate_weighted_response(response, request)
+    if request.get("mode") == GENERATIONAL_MODE:
+        return _validate_generational_response(response)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -161,6 +164,45 @@ def validate_response(response, request):
             raise ValueError("G1 field must be aligned to its pre-displacement driver mesh.")
         if any(row["value"] is not None and (type(row["value"]) not in (int, float) or not 0 <= row["value"] <= 1) for row in values):
             raise ValueError("Invalid driver field values.")
+    return response
+
+
+def _validate_generational_response(response):
+    """Separate opt-in contract; existing weighted response stays strict."""
+    variants=response.get("variants")
+    if response.get("mode") != GENERATIONAL_MODE or response.get("recipe_version") != "16.0" or not isinstance(variants,list) or len(variants)>2:
+        raise ValueError("Invalid generational study response.")
+    if [row.get("id") for row in variants] != ["CONTROL_L4","BEST_NEW"][:len(variants)]:
+        raise ValueError("Generational comparison must be control then best.")
+    carrier=validate_mesh_data(response.get("carrier",{}).get("mesh"))
+    if len(carrier["vertices"]) != 24 or len(carrier["faces"]) != 22:
+        raise ValueError("Generational study requires the unchanged C0 carrier.")
+    completed=False
+    for variant in variants:
+        stages=variant.get("stages"); state=variant.get("status"); schedule=variant.get("schedule")
+        if variant.get("semantic_lineage") != "NOT IMPLEMENTED" or not isinstance(stages,list) or len(stages)>5:
+            raise ValueError("Invalid generational checkpoints/semantic status.")
+        if not isinstance(schedule,list) or len(schedule)!=5 or any(set(row)!={"wf","w1","we","w2","wp","w3","w4"} for row in schedule):
+            raise ValueError("Five explicit seven-parameter generation rows are required.")
+        if state not in ("SUCCESS","PARTIAL","FAILED") or (state=="SUCCESS" and len(stages)!=5) or (state=="PARTIAL" and not stages) or (state=="FAILED" and stages):
+            raise ValueError("Inconsistent generational checkpoint status.")
+        previous=carrier
+        for g,stage in enumerate(stages,1):
+            data=validate_mesh_data(stage.get("mesh"))
+            metadata=stage.get("metadata",{})
+            if stage.get("generation") != g or stage.get("validated") is not True or stage.get("ratios") != schedule[g-1]:
+                raise ValueError("Only consecutive validated scheduled generations are displayable.")
+            if stage.get("vertex_count") != len(data["vertices"]) or stage.get("face_count") != len(data["faces"]) or len(data["faces"]) != sum(len(f["vertices"]) for f in previous["faces"]):
+                raise ValueError("Generational growth/counts disagree.")
+            if len(data["vertices"]) != len(previous["vertices"])+len(previous["faces"])+metadata.get("input",{}).get("edge_count",-100000) or metadata.get("budget",{}).get("status") != "SAFE":
+                raise ValueError("Invalid generational vertex growth/budget.")
+            origins=stage.get("origin_lineage",[]); ids={v["id"] for v in data["vertices"]}
+            if len(origins)!=len(ids) or {r.get("id") for r in origins} != ids or any(r.get("generation")!=g or r.get("class") not in ("VERTEX_DERIVED","EDGE_DERIVED","FACE_DERIVED") for r in origins):
+                raise ValueError("Immediate-generation origin classes must cover actual output IDs.")
+            previous=data; completed=True
+    state=response.get("status")
+    if state not in ("SUCCESS","PARTIAL","FAILED") or (state=="SUCCESS" and (len(variants)!=2 or any(row["status"]!="SUCCESS" for row in variants))) or (state=="PARTIAL" and not completed) or (state=="FAILED" and completed):
+        raise ValueError("Inconsistent generational response status.")
     return response
 
 

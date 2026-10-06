@@ -5,7 +5,10 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $plan = Get-Content -Raw -LiteralPath $PlanPath | ConvertFrom-Json
 $atlasDirectory = Split-Path -Parent $PlanPath
-function Project($p) { return @(([double]$p[0]+0.65*[double]$p[1]), ([double]$p[2]+0.30*[double]$p[1])) }
+function Project($p, $camera) {
+    if ($camera -eq 'front') { return @([double]$p[0], [double]$p[2]) }
+    return @(([double]$p[0]+0.65*[double]$p[1]), ([double]$p[2]+0.30*[double]$p[1]))
+}
 $brushes = @{}
 $pen = New-Object System.Drawing.Pen ([System.Drawing.Color]::FromArgb(160,65,75,84)),0.65
 $font = New-Object System.Drawing.Font 'Arial',14
@@ -25,12 +28,16 @@ function Paint-Frame($frame) {
     $world = @{}; $screen = @{}
     foreach ($v in $mesh.vertices) {
         $world[[int]$v.id] = $v.xyz
-        $p = Project $v.xyz
+        $p = Project $v.xyz $frame.camera
         $screen[[int]$v.id] = New-Object System.Drawing.PointF ([single](25+($p[0]-$bounds[0])*$scale)),([single](55+($bounds[3]-$p[1])*$scale))
     }
     $ordered = foreach ($face in $mesh.faces) {
         $depth = 0.0
-        foreach ($key in $face.vertices) { $v=$world[[int]$key]; $depth += 0.65*$v[0]-$v[1]+0.30*$v[2] }
+        foreach ($key in $face.vertices) {
+            $v=$world[[int]$key]
+            if ($frame.camera -eq 'front') { $depth -= $v[1] }
+            else { $depth += 0.65*$v[0]-$v[1]+0.30*$v[2] }
+        }
         @{ Face=$face; Depth=$depth/$face.vertices.Count }
     }
     foreach ($item in ($ordered | Sort-Object -Property Depth)) {
@@ -42,6 +49,7 @@ function Paint-Frame($frame) {
         $length=[math]::Sqrt($nx*$nx+$ny*$ny+$nz*$nz)
         $gray = if ($length -gt 0) { [int](130+100*[math]::Abs((0.3*$nx-0.8*$ny+0.5*$nz)/$length)) } else { 130 }
         $gray=[math]::Max(0,[math]::Min(255,$gray))
+        if ($frame.silhouette) { $gray = 45 }
         if (-not $brushes.ContainsKey($gray)) { $brushes[$gray] = New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb($gray,$gray,$gray)) }
         if (-not $frame.wireframe) { $g.FillPolygon($brushes[$gray], $points) }
         if ($frame.wireframe) { $g.DrawPolygon($pen, $points) }

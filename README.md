@@ -251,3 +251,7 @@ The isolated [batch runner and quickstart](tools/MORPHOLOGY_QUICKSTART.md) repea
 ## Coarse gate carrier study (Task 15)
 
 The [carrier and schedule study](docs/CARRIER_SCALE_STUDY.md) compares connected 22/88/352-face carriers with the exact 936-face saved gate, using unchanged Task 14 weighted subdivision. C0 reaches G5 and creates broader forms, but ten subsequent schedules still round those forms or add repetitive/unsafe detail. Clear macro → meso → micro hierarchy was not achieved. Under the revised schedule-first gate, spatial modulation and the conditional Rhino mode remain unimplemented. All attempts, checkpoints, fixed-camera views and diagnostic limitations are retained in the Task 15 review bundle; no dependency or existing mode changes.
+
+## Generational point-class choreography (Task 16)
+
+The [C0 study](docs/GENERATIONAL_WEIGHT_STUDY.md) adds only the verified later-generation face stencil and explicit immediate point origins. Sixteen deterministic schedules retain G0-G5 and exact zero-weight regression. The best partial result, C11, preserves secondary support lobes and lintel ridges better than L4, but fine detail remains repetitive; no first hierarchical gate candidate is designated. **GenerationalWeightStudy** shows the useful partial comparison in the existing Rhino bridge. Regional modulation and C1 transfer were skipped. Real isolated-worker checks pass; actual Rhino host checks remain pending. Dependencies, existing modes, core rules and budgets stay unchanged.
