@@ -1,6 +1,6 @@
 # Consolidated gate visual prototype
 
-Restart Rhino if earlier CHESHIRE modules were already imported. In **Rhino 8 ScriptEditor / Python 3**, open **`C:\Users\USER\CHESHIRE\rhino\CHESHIRE_Run.py`**, run on the UI thread, select the **original gate Mesh once**, and choose **VisualPrototype**. The saved external Mola DLL path is reused. This one mode produces three fixed alternatives; there are no recipe or strength prompts. Existing modes and their defaults are unchanged.
+Restart Rhino if earlier CHESHIRE modules were already imported. In **Rhino 8 ScriptEditor / Python 3**, open **`rhino/CHESHIRE_Run.py`**, run on the UI thread, select the **original gate Mesh once**, and choose **VisualPrototype**. The saved external Mola DLL path is reused. This one mode produces three fixed alternatives; there are no recipe or strength prompts. Existing modes and their defaults are unchanged.
 
 Display contains **ORIGINAL REFERENCE**, **A - CURVED RIBS**, **B - CROWN FANS**, and **C - DIAGONAL TERRACES**, where reached. All use the same model units/orientation and world-X-only display offsets. Calculation geometry has no display offsets. Unique layers/TextDots, source/document fingerprint checks, one Undo insertion, failure rollback, Esc cancellation and the whole-worker **60-second timeout** use the existing bridge. Inspect Shaded and Wireframe manually; normals are recomputed normally, with no display-mode or material change. Interrupted candidates display their last validated checkpoint with a PARTIAL label.
 

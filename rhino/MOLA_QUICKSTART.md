@@ -2,13 +2,13 @@
 
 CHESHIRE uses the official [HDMolaGH 1.0.0 standalone assembly](https://github.com/dbt-ethz/HDMolaGH/tree/1.0.0/install) through one real `FaceSubdivision.ExtrudeTapered(Mola.Vec3[], Single, Single, Boolean)` call per selected face. Mola is attributed to its upstream ETH Zurich authors. These A/B/C settings are CHESHIRE study choices, not author parameters. Technical compatibility does not establish license approval or permission to redistribute; no Mola DLL/source is included.
 
-Keep the official standalone `HDMola.dll` outside this repository. The installed `HDMolaGH.gha` embeds that assembly, but CHESHIRE does not load the Grasshopper plugin or change its installation. Our tested external DLL is `C:\Users\USER\Libraries\HDMola\1.0.0\HDMola.dll`, assembly `HDMola, Version=1.0.0.0`, SHA-256 `91c6863ee1bfe370dae028389b7d966f36fa58b321d6b2706e111084c8fba5de`, targeting .NET Standard 2.1. Its references include netstandard 2.1 and Newtonsoft.Json 13; the tested extrusion call and public-type inspection succeeded without separately resolving Newtonsoft.Json.
+Keep the official standalone `HDMola.dll` outside this repository. The installed `HDMolaGH.gha` embeds that assembly, but CHESHIRE does not load the Grasshopper plugin or change its installation. The tested user-supplied external DLL identifies as assembly `HDMola, Version=1.0.0.0`, SHA-256 `91c6863ee1bfe370dae028389b7d966f36fa58b321d6b2706e111084c8fba5de`, targeting .NET Standard 2.1. Its references include netstandard 2.1 and Newtonsoft.Json 13; the tested extrusion call and public-type inspection succeeded without separately resolving Newtonsoft.Json.
 
 From the repository root:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -e ".[mola]"
-.\.venv\Scripts\python.exe examples\mola_taper_study.py --dll "C:\Users\USER\Libraries\HDMola\1.0.0\HDMola.dll"
+.\.venv\Scripts\python.exe examples\mola_taper_study.py --dll "<absolute external HDMola.dll path>"
 ```
 
 The optional extra pins Python.NET 3.0.5. CLR imports stay inside the optional adapter. Ordinary mesh-grammar/core use needs neither Python.NET nor Mola. [Python.NET requires runtime selection before importing clr](https://pythonnet.github.io/pythonnet/python.html); the packaged runtime configuration selects CoreCLR .NET 8, permits installed 8.0 patch updates, and disallows switching to .NET 9 or Windows netfx. Tested runtime: 8.0.14, Python 3.12.10. No runtime installer runs automatically. [.NET Standard 2.1 needs a modern compatible runtime](https://learn.microsoft.com/en-us/dotnet/standard/net-standard).
@@ -34,7 +34,7 @@ Mola's float32 boundary is centered and uniformly scaled per face, with height s
 Focused optional tests are separate and require explicit configuration:
 
 ```powershell
-$env:CHESHIRE_MOLA_DLL = 'C:\Users\USER\Libraries\HDMola\1.0.0\HDMola.dll'
+$env:CHESHIRE_MOLA_DLL = '<absolute external HDMola.dll path>'
 .\.venv\Scripts\python.exe -m pytest -q tests/test_mola_optional.py
 .\.venv\Scripts\python.exe -m pytest -q
 ```

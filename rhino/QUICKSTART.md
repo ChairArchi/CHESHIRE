@@ -1,6 +1,6 @@
 # CHESHIRE Rhino 8 demo
 
-Entry file: `C:\Users\USER\CHESHIRE\rhino\CHESHIRE_Run.py`.
+Entry file: `rhino/CHESHIRE_Run.py`.
 Set up CHESHIRE's existing Python 3.12 `.venv` as described in the root README.
 COMPAS stays in that environment; do not install it into Rhino.
 
