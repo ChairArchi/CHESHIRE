@@ -271,3 +271,13 @@ regional control, but do not establish convincing macro-to-meso-to-micro
 hierarchy or an advantage for ordered diffusion. See
 [the experiment and negative controls](docs/SPATIAL_ACTIVITY_STUDY.md).
 Existing Rhino modes, geometry equations and dependencies are unchanged.
+
+## Nested topology ornament study (Task 19, experimental branch)
+
+The isolated [ornament grammar study](docs/ORNAMENT_CAPABILITY_STUDY.md) combines
+the existing C11/R13/R15 subdivision vocabulary with two real external Mola face
+events. Serialized selectors and constructive cap/side ancestry control nesting;
+subdivision alone never increases ornament depth. The study retains matched
+actual geometry views, stopped boundaries and explicit local budgets. Its
+comparative labels do not automatically establish a grotesque gate milestone.
+Existing Rhino modes and global defaults remain unchanged.

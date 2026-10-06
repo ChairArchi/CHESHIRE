@@ -1,0 +1,7220 @@
+[
+  {
+    "id": "A01",
+    "family": "A",
+    "mechanism": "C11 G1 masses contain inset frames; CC descendants of INNER_CAP receive a smaller tapered event before CC finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 2,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A02",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; CC descendants of INNER_CAP receive a smaller tapered event before CC finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A03",
+    "family": "A",
+    "mechanism": "C11 G1 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A04",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A05",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; CC descendants of FRAME_SIDE receive a smaller tapered event before CC finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "FRAME_SIDE",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A06",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of FRAME_SIDE receive a smaller tapered event before DS finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "FRAME_SIDE",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A07",
+    "family": "A",
+    "mechanism": "C11 G1 masses contain inset frames; CC descendants of INNER_CAP receive a smaller tapered event before CC finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.14
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 2,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A08",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.14
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "supports"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "A09",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before CC finish.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.2
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B01",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 1 R15_restrained_edge_frames step(s); only FACE_DERIVED receives TaperedExtrusion, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B02",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 1 R15_restrained_edge_frames step(s); only EDGE_DERIVED receives TaperedExtrusion, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B03",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 1 R15_restrained_edge_frames step(s); only VERTEX_DERIVED receives TaperedExtrusion, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B04",
+    "family": "B",
+    "mechanism": "C11 G3 hands off to 1 R13_restrained_insets step(s); only FACE_DERIVED receives InsetFrame, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_3",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 3,
+          "ratios": {
+            "wf": 0.07,
+            "w1": -1.1,
+            "we": -0.025,
+            "w2": -1.0,
+            "wp": 0.015,
+            "w3": -0.6,
+            "w4": 0.8
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.35,
+            "w10_face": 0.1,
+            "w1_edge": 0.2,
+            "w10_edge": 0.01,
+            "w1_vertex": 0.3,
+            "w10_vertex": 0.08
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B05",
+    "family": "B",
+    "mechanism": "C11 G3 hands off to 1 R13_restrained_insets step(s); only EDGE_DERIVED receives InsetFrame, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_3",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 3,
+          "ratios": {
+            "wf": 0.07,
+            "w1": -1.1,
+            "we": -0.025,
+            "w2": -1.0,
+            "wp": 0.015,
+            "w3": -0.6,
+            "w4": 0.8
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.35,
+            "w10_face": 0.1,
+            "w1_edge": 0.2,
+            "w10_edge": 0.01,
+            "w1_vertex": 0.3,
+            "w10_vertex": 0.08
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B06",
+    "family": "B",
+    "mechanism": "C11 G3 hands off to 1 R13_restrained_insets step(s); only VERTEX_DERIVED receives InsetFrame, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_3",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 3,
+          "ratios": {
+            "wf": 0.07,
+            "w1": -1.1,
+            "we": -0.025,
+            "w2": -1.0,
+            "wp": 0.015,
+            "w3": -0.6,
+            "w4": 0.8
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.35,
+            "w10_face": 0.1,
+            "w1_edge": 0.2,
+            "w10_edge": 0.01,
+            "w1_vertex": 0.3,
+            "w10_vertex": 0.08
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B07",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 2 R15_restrained_edge_frames step(s); only FACE_DERIVED receives InsetFrame, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.12,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 6,
+          "ratios": {
+            "w1_face": -0.05,
+            "w10_face": 0.005,
+            "w1_edge": 0.1,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.035
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B08",
+    "family": "B",
+    "mechanism": "C11 G3 hands off to 2 R13_restrained_insets step(s); only EDGE_DERIVED receives TaperedExtrusion, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_3",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 3,
+          "ratios": {
+            "wf": 0.07,
+            "w1": -1.1,
+            "we": -0.025,
+            "w2": -1.0,
+            "wp": 0.015,
+            "w3": -0.6,
+            "w4": 0.8
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.35,
+            "w10_face": 0.1,
+            "w1_edge": 0.2,
+            "w10_edge": 0.01,
+            "w1_vertex": 0.3,
+            "w10_vertex": 0.08
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 6,
+          "ratios": {
+            "w1_face": -0.1,
+            "w10_face": 0.025,
+            "w1_edge": 0.05,
+            "w10_edge": 0.002,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "B09",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 2 R15_restrained_edge_frames step(s); only VERTEX_DERIVED receives InsetFrame, followed by descendant DS articulation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.12,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 6,
+          "ratios": {
+            "w1_face": -0.05,
+            "w10_face": 0.005,
+            "w1_edge": 0.1,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.035
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C01",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G1 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 2,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C02",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C03",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G1 contains DS EXTRUSION_CAP descendants receiving the different InsetFrame event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C04",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains DS EXTRUSION_SIDE descendants receiving the different InsetFrame event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_SIDE",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C05",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G1 contains CC INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 2,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C06",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G2 contains DS INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C07",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C08",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G1 contains DS EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "supports"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "C09",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains DS EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D01",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G1 FACE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D02",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G2 FACE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D03",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D04",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G2 VERTEX_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D05",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G1 FACE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D06",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.18,
+            "w1_edge": 0.25,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D07",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G2 FACE_DERIVED frames contain tapered inner-cap ornaments with direct role recursion and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.14
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED",
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D08",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 FACE_DERIVED frames contain tapered inner-cap ornaments with direct role recursion and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.14
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED",
+          "source_region": "supports"
+        }
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "D09",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G3 VERTEX_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_3",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.15
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_A02",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; CC descendants of INNER_CAP receive a smaller tapered event before CC finish. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 6,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_A04",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_A04_BOLDER_MESO",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Increase taper height modestly and retain wider caps at all declared scales.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.33,
+          "fraction": 0.21999999999999997
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_A04_RETAIN_TERMINAL_EVENT",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Omit the last subdivision surrounding the terminal event to test detail erasure.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_A04_WIDER_NESTED_FRAME",
+    "family": "A",
+    "mechanism": "C11 G2 masses contain inset frames; DS descendants of INNER_CAP receive a smaller tapered event before DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Widen only descendant inset frames to test meso/micro separation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.22,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.10500000000000001
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_B03",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 1 R15_restrained_edge_frames step(s); only VERTEX_DERIVED receives TaperedExtrusion, followed by descendant DS articulation. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "VERTEX_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_B04",
+    "family": "B",
+    "mechanism": "C11 G3 hands off to 1 R13_restrained_insets step(s); only FACE_DERIVED receives InsetFrame, followed by descendant DS articulation. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_3",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 3,
+          "ratios": {
+            "wf": 0.07,
+            "w1": -1.1,
+            "we": -0.025,
+            "w2": -1.0,
+            "wp": 0.015,
+            "w3": -0.6,
+            "w4": 0.8
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.35,
+            "w10_face": 0.1,
+            "w1_edge": 0.2,
+            "w10_edge": 0.01,
+            "w1_vertex": 0.3,
+            "w10_vertex": 0.08
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_B07",
+    "family": "B",
+    "mechanism": "C11 G2 hands off to 2 R15_restrained_edge_frames step(s); only FACE_DERIVED receives InsetFrame, followed by descendant DS articulation. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "handoff_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 4,
+          "ratios": {
+            "w1_face": -0.25,
+            "w10_face": 0.02,
+            "w1_edge": 0.2,
+            "w10_edge": 0.045,
+            "w1_vertex": 0.35,
+            "w10_vertex": 0.11
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.12,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 6,
+          "ratios": {
+            "w1_face": -0.05,
+            "w10_face": 0.005,
+            "w1_edge": 0.1,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.035
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_C05",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G1 contains CC INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 2,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C06",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G2 contains DS INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C06_BOLDER_MESO",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G2 contains DS INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Increase taper height modestly and retain wider caps at all declared scales.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.24,
+          "fraction": 0.21999999999999997
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.15000000000000002,
+          "fraction": 0.32
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C06_RETAIN_TERMINAL_EVENT",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G2 contains DS INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Omit the last subdivision surrounding the terminal event to test detail erasure.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "event_4",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C06_WIDER_NESTED_FRAME",
+    "family": "C",
+    "mechanism": "InsetFrame on C11 G2 contains DS INNER_CAP descendants receiving the different TaperedExtrusion event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Widen only descendant inset frames to test meso/micro separation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.13
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.16,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 4,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.10500000000000001
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C07",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C07_BOLDER_MESO",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Increase taper height modestly and retain wider caps at all declared scales.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.39,
+          "fraction": 0.21999999999999997
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.15000000000000002,
+          "fraction": 0.21999999999999997
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C07_RETAIN_TERMINAL_EVENT",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Omit the last subdivision surrounding the terminal event to test detail erasure.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "event_4",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_C07_WIDER_NESTED_FRAME",
+    "family": "C",
+    "mechanism": "TaperedExtrusion on C11 G2 contains CC EXTRUSION_CAP descendants receiving the different InsetFrame event and a third nested event. Deep comparison adds one explicit descendant scale where budgets permit. Widen only descendant inset frames to test meso/micro separation.",
+    "stages": [
+      {
+        "id": "macro_CC_1",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 1,
+          "ratios": {
+            "wf": 0.3,
+            "w1": -1.0,
+            "we": -0.08,
+            "w2": -0.7,
+            "wp": 0.1,
+            "w3": 0,
+            "w4": 0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_CC_2",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "C11",
+          "row": 2,
+          "ratios": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.26,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.5,
+          "source_region": "lintel"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 3,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.12
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "nested_articulation",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 4,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.1,
+          "fraction": 0.3
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "CC",
+        "parameters": {
+          "schedule": "CC_STANDARD",
+          "row": 5,
+          "ratios": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_4",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.10500000000000001
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_3",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_D03",
+    "family": "D",
+    "mechanism": "R15_restrained_edge_frames G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 1,
+          "ratios": {
+            "w1_face": 0.15,
+            "w10_face": 0.3,
+            "w1_edge": 0.15,
+            "w10_edge": 0.3,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.3,
+            "w10_face": 0.08,
+            "w1_edge": 0.2,
+            "w10_edge": 0.13,
+            "w1_vertex": -0.2,
+            "w10_vertex": 0.02
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.08
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.4,
+            "w10_face": 0.04,
+            "w1_edge": 0.25,
+            "w10_edge": 0.12,
+            "w1_vertex": 0.15,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R15_restrained_edge_frames",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.15,
+            "w10_face": 0.01,
+            "w1_edge": 0.15,
+            "w10_edge": 0.03,
+            "w1_vertex": 0.25,
+            "w10_vertex": 0.07
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_D05",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G1 FACE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "FACE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_D06",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.18,
+            "w1_edge": 0.25,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_D06_BOLDER_MESO",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Increase taper height modestly and retain wider caps at all declared scales.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.18,
+            "w1_edge": 0.25,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.27,
+          "fraction": 0.32
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  },
+  {
+    "id": "F_D06_RETAIN_TERMINAL_EVENT",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Omit the last subdivision surrounding the terminal event to test detail erasure.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.18,
+            "w1_edge": 0.25,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.07
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "F_D06_WIDER_NESTED_FRAME",
+    "family": "D",
+    "mechanism": "R13_restrained_insets G2 EDGE_DERIVED frames contain tapered inner-cap ornaments with intervening DS and restrained DS finish. Deep comparison adds one explicit descendant scale where budgets permit. Widen only descendant inset frames to test meso/micro separation.",
+    "stages": [
+      {
+        "id": "macro_DS_1",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 1,
+          "ratios": {
+            "w1_face": -0.45,
+            "w10_face": 0.3,
+            "w1_edge": -0.45,
+            "w10_edge": 0.3,
+            "w1_vertex": -0.45,
+            "w10_vertex": 0.3
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "macro_DS_2",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 2,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.24,
+            "w1_edge": 0.15,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.1,
+            "w10_vertex": 0.025
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_1",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.1
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0.25,
+          "family": "EDGE_DERIVED"
+        }
+      },
+      {
+        "id": "articulation",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 3,
+          "ratios": {
+            "w1_face": -0.5,
+            "w10_face": 0.18,
+            "w1_edge": 0.25,
+            "w10_edge": 0.015,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.05
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_2",
+        "operator": "TaperedExtrusion",
+        "parameters": {
+          "height_ratio": 0.18,
+          "fraction": 0.4
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "INNER_CAP",
+          "event_stage": "event_1",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "R13_restrained_insets",
+          "row": 5,
+          "ratios": {
+            "w1_face": -0.2,
+            "w10_face": 0.055,
+            "w1_edge": 0.1,
+            "w10_edge": 0.005,
+            "w1_vertex": 0.2,
+            "w10_vertex": 0.055
+          }
+        },
+        "selector": null
+      },
+      {
+        "id": "event_3",
+        "operator": "InsetFrame",
+        "parameters": {
+          "width_ratio": 0.10500000000000001
+        },
+        "selector": {
+          "z_min": 0.08,
+          "z_max": 1.3,
+          "normal_y_min": 0.28,
+          "area_ratio_min": 0,
+          "role": "EXTRUSION_CAP",
+          "event_stage": "event_2",
+          "depth_min": 1
+        }
+      },
+      {
+        "id": "deep_finish",
+        "operator": "DS",
+        "parameters": {
+          "schedule": "DS_STANDARD",
+          "row": 6,
+          "ratios": {
+            "w1_face": 0.0,
+            "w10_face": 0.0,
+            "w1_edge": 0.0,
+            "w10_edge": 0.0,
+            "w1_vertex": 0.0,
+            "w10_vertex": 0.0
+          }
+        },
+        "selector": null
+      }
+    ]
+  }
+]

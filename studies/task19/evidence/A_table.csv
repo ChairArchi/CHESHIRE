@@ -1,0 +1,37 @@
+id,status,reason,faces,vertices,edges,ornament_depth,nested_trees,events,runtime_seconds,fold_warnings,bilinear_warnings,sampled_crossings,technically_valid
+A01,SUCCESS,All declared stages completed,9312,9314,18624,2,62,308,7.193481900030747,0,0,0,True
+A02,SUCCESS,All declared stages completed,28160,28162,56320,2,176,880,15.677381500019692,0,0,0,True
+A03,TERMINAL_CROSSING_CAP,All declared stages completed,6370,6368,12736,2,62,124,6.023510699975304,142,4,30,False
+A04,SUCCESS,All declared stages completed,19714,19712,39424,2,176,352,12.873811200028285,524,28,4,True
+A05,SUCCESS,All declared stages completed,60160,60162,120320,2,176,2880,28.943210599943995,0,0,0,True
+A06,TERMINAL_CROSSING_CAP,All declared stages completed,39618,39616,79232,2,176,1596,21.682597099919803,64,16,30,False
+A07,SUCCESS,All declared stages completed,5760,5762,11520,2,34,170,5.27076930005569,0,0,0,True
+A08,SUCCESS,All declared stages completed,12034,12032,24064,2,80,160,8.668874600087292,218,44,19,True
+A09,TECHNICAL_STOP,finish: Only triangle/quad input without isolated vertices is supported.,4930,4928,9856,2,176,352,7.038961500045843,66,24,0,False
+B01,SUCCESS,All declared stages completed,9026,9024,18048,1,0,212,5.546083299908787,0,0,0,True
+B02,SUCCESS,All declared stages completed,14786,14784,29568,1,0,572,7.993357899948023,0,0,5,True
+B03,SUCCESS,All declared stages completed,10098,10096,20192,1,0,282,6.60693170002196,0,0,0,True
+B04,SUCCESS,All declared stages completed,35778,35776,71552,1,0,828,17.60124809993431,18,14,2,True
+B05,SUCCESS,All declared stages completed,55330,55328,110656,1,0,2050,25.681209800066426,14,10,0,True
+B06,SUCCESS,All declared stages completed,38962,38960,77920,1,0,1030,17.406263699987903,26,10,1,True
+B07,TECHNICAL_STOP,finish: Doo-Sabin blocked: Face budget: estimated output 168434 exceeds limit 120000.,42110,42108,84216,2,982,1964,31.431475899997167,0,0,0,False
+B08,TECHNICAL_STOP,articulation: Doo-Sabin blocked: Face budget: estimated output 222466 exceeds limit 120000.,55618,55616,111232,1,0,8272,34.50430629996117,68,26,0,False
+B09,TECHNICAL_STOP,finish: Doo-Sabin blocked: Face budget: estimated output 176514 exceeds limit 120000.,44130,44128,88256,2,1080,2160,32.448414299986325,0,0,0,False
+C01,SUCCESS,All declared stages completed,9248,9250,18496,2,62,304,7.959785399958491,0,0,0,True
+C02,SUCCESS,All declared stages completed,27904,27906,55808,2,176,864,18.562492400058545,0,0,0,True
+C03,TERMINAL_CROSSING_CAP,event_2: Severe sampled crossing cap reached; no further growth.,1594,1592,3184,2,62,124,4.009558800025843,0,0,30,False
+C04,TERMINAL_CROSSING_CAP,event_2: Severe sampled crossing cap reached; no further growth.,9042,9040,18080,2,176,1380,9.019257600069977,4,0,30,False
+C05,SUCCESS,All declared stages completed,52608,52610,105216,3,62,1268,25.885039700078778,0,0,0,True
+C06,SUCCESS,All declared stages completed,81666,81664,163328,3,176,528,42.62331809999887,12,0,0,True
+C07,SUCCESS,All declared stages completed,96256,96258,192512,3,96,2016,55.36287599999923,0,0,0,True
+C08,TERMINAL_CROSSING_CAP,event_2: Severe sampled crossing cap reached; no further growth.,914,912,1824,2,28,56,4.2854492999613285,0,0,30,False
+C09,TERMINAL_CROSSING_CAP,event_2: Severe sampled crossing cap reached; no further growth.,4930,4928,9856,2,176,352,6.5990777999395505,4,0,30,False
+D01,SUCCESS,All declared stages completed,2210,2208,4416,2,10,20,3.405812600045465,0,0,0,True
+D02,SUCCESS,All declared stages completed,9554,9552,19104,2,50,100,6.354105899925344,16,16,13,True
+D03,SUCCESS,All declared stages completed,16194,16192,32384,2,132,264,9.378278900054283,0,0,0,True
+D04,SUCCESS,All declared stages completed,12034,12032,24064,2,80,160,7.400116699980572,0,0,0,True
+D05,TECHNICAL_STOP,finish: Undefined face normal for requested DS extrusion.,474,472,944,2,6,12,2.7268897999310866,24,24,0,False
+D06,SUCCESS,All declared stages completed,17474,17472,34944,2,148,296,10.63184650009498,264,0,0,True
+D07,SUCCESS,All declared stages completed,2338,2336,4672,2,30,60,3.3198847000021487,0,0,0,True
+D08,SUCCESS,All declared stages completed,2242,2240,4480,2,28,56,3.2782060999888927,0,0,0,True
+D09,SUCCESS,All declared stages completed,46530,46528,93056,2,300,600,22.860184899996966,8,0,0,True
