@@ -280,7 +280,7 @@ def depth_diagnostics(history, events):
         independent_nested_trees=len(nested),operator_lineage_depth=max((r["operator_depth"] for r in history.values()),default=0))
 
 
-def run_ornament(source, recipe, *, dll_path, budget, publish=None, routing=None):
+def run_ornament(source, recipe, *, dll_path, budget, publish=None, routing=None, event_executor=None):
     """Serial deterministic grammar; caller retains each completed checkpoint.
 
     CC/DS stencil equations are reused verbatim. Event-created faces inherit
@@ -321,7 +321,8 @@ def run_ornament(source, recipe, *, dll_path, budget, publish=None, routing=None
                 record["selection"]=selection
                 if not selection["selected_ids"] and not selection.get("quiet_if_empty",False):
                     raise ValueError("Empty deterministic event selector; no ornament generated.")
-                step=topology_event(mesh,history,stage,selected_faces=selection["selected_ids"],dll_path=dll_path,
+                execute_event=topology_event if event_executor is None else event_executor
+                step=execute_event(mesh,history,stage,selected_faces=selection["selected_ids"],dll_path=dll_path,
                     budget=budget,families=families,stage_index=index)
                 parents=step["lineage"].face_parents; vertex_parents=step["lineage"].vertex_parents
                 if not selection["selected_ids"]:
