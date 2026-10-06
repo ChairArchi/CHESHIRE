@@ -261,3 +261,13 @@ The [carrier and schedule study](docs/CARRIER_SCALE_STUDY.md) compares connected
 ## Generational point-class choreography (Task 16)
 
 The [C0 study](docs/GENERATIONAL_WEIGHT_STUDY.md) adds only the verified later-generation face stencil and explicit immediate point origins. Sixteen deterministic schedules retain G0-G5 and exact zero-weight regression. The best partial result, C11, preserves secondary support lobes and lintel ridges better than L4, but fine detail remains repetitive; no first hierarchical gate candidate is designated. **GenerationalWeightStudy** shows the useful partial comparison in the existing Rhino bridge. Regional modulation and C1 transfer were skipped. Real isolated-worker checks pass; actual Rhino host checks remain pending. Dependencies, existing modes, core rules and budgets stay unchanged.
+
+## Source-space spatial activity stress test (Task 18)
+
+Frozen C0 graph fields now modulate the existing CC/DS schedules through
+positive sampling associations. The 48-case screen and 12 deep comparisons
+are reproducible from tracked source/seed/recipe definitions. They establish
+regional control, but do not establish convincing macro-to-meso-to-micro
+hierarchy or an advantage for ordered diffusion. See
+[the experiment and negative controls](docs/SPATIAL_ACTIVITY_STUDY.md).
+Existing Rhino modes, geometry equations and dependencies are unchanged.

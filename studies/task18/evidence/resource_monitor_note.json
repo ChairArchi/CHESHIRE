@@ -1,0 +1,13 @@
+{
+  "scope": "Existing bounded_child reused unchanged. Native Win32_Process inspection confirmed the Windows venv redirector creates a descendant Python process. Existing direct-child working-set counter excludes that descendant; it must not be reported as actual worker peak. System available-memory floor, explicit count ceiling and time limits remain active. No cap event occurred in retained process logs.",
+  "sample": {
+    "driver_pid": 46812,
+    "driver_working_set": 91615232,
+    "redirector_pid": 45412,
+    "redirector_working_set": 4386816,
+    "actual_worker_pid": 51424,
+    "actual_worker_working_set": 396918784
+  },
+  "actual_peak_worker_memory": "NOT ESTABLISHED",
+  "no_budget_change": true
+}

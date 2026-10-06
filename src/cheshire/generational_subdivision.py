@@ -80,7 +80,7 @@ def later_generation_face_stencil(V, F, E1, E2, normal, *, w3, w4, wf):
 
 
 def generational_subdivide_once(mesh, weights=None, *, origin_lineage=None,
-                               point_weights=None, budget=None, current_generation=0):
+                               point_weights=None, face_weights=None, budget=None, current_generation=0):
     """Task 14 topology/edge/corner rules plus opt-in later face stencil.
 
     Every output point receives a new generation-local origin record and
@@ -96,6 +96,15 @@ def generational_subdivide_once(mesh, weights=None, *, origin_lineage=None,
         if any(type(w) not in (int, float) or not isfinite(w) for w in weights.values()):
             raise ValueError("Generational weights must be finite real numbers.")
         values.update(weights)
+    # Optional local equation-4 values; the established uniform path is intact.
+    local = face_weights or {}
+    if not isinstance(local, dict) or set(local)-set(mesh.faces()):
+        raise ValueError("Unknown later-generation face override.")
+    for row in local.values():
+        if not isinstance(row, dict) or set(row)-{"w3", "w4"} or any(
+            type(w) not in (int, float) or not isfinite(w) for w in row.values()
+        ):
+            raise ValueError("Local w3/w4 must be finite real numbers.")
     base = weighted_subdivide_once(mesh, {k: values[k] for k in STANDARD},
         point_weights=point_weights, budget=budget, current_generation=current_generation)
     w3, w4 = values["w3"], values["w4"]
@@ -105,6 +114,8 @@ def generational_subdivide_once(mesh, weights=None, *, origin_lineage=None,
         origin = dict(class_=ORIGIN_CLASSES[kind], generation=current_generation+1, source=source)
         origin["class"] = origin.pop("class_")
         if kind == "face":
+            w3 = local.get(source, {}).get("w3", values["w3"])
+            w4 = local.get(source, {}).get("w4", values["w4"])
             origin["source_vertices"] = mesh.face_vertices(source)
             pattern, reason = classify_child_quad(mesh, source, origin_lineage, current_generation)
             if pattern is None:
@@ -127,7 +138,7 @@ def generational_subdivide_once(mesh, weights=None, *, origin_lineage=None,
     metadata = {**base.metadata, "name": "CHESHIRE opt-in later-generation face stencil",
         "backend_before_face_stencil_output": base.metadata["output"], "output": inspect_mesh(base.mesh),
         "equations_1_2_3": "Unchanged Task 14; only eligible face positions use equation 4",
-        "later_generation_face_stencil": dict(w3=w3,w4=w4,eligible_faces=len(applications),fallback_faces=len(fallbacks),
+        "later_generation_face_stencil": dict(w3=values["w3"],w4=values["w4"],local_override_count=len(local),eligible_faces=len(applications),fallback_faces=len(fallbacks),
             fallback_counts=dict(Counter(row["reason"] for row in fallbacks)),fallbacks=fallbacks,applications=applications),
         "origin_classes": dict(Counter(row["class"] for row in origins.values())),
         "elapsed_seconds": perf_counter()-started}

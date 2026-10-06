@@ -59,7 +59,7 @@ def _sampling_coefficients(n,corner):
     return [(n+5)/(4*n) if j==corner else (3+2*cos(2*pi*(corner-j)/n))/(4*n) for j in range(n)]
 
 
-def weighted_doosabin_once(mesh,weights=None,*,face_families=None,budget=None,current_generation=0):
+def weighted_doosabin_once(mesh,weights=None,*,face_families=None,face_weights=None,budget=None,current_generation=0):
     """Closed oriented manifold only; no invented open-boundary/crease rule.
 
     Family labels are assigned while constructing the returned faces from
@@ -88,6 +88,12 @@ def weighted_doosabin_once(mesh,weights=None,*,face_families=None,budget=None,cu
     if set(values)!=set(STANDARD) or any(type(w) not in (int,float) or not isfinite(w) for w in values.values()):
         raise ValueError("Doo-Sabin weights must contain only the six finite family parameters.")
     faces=list(mesh.faces())
+    local=face_weights or {}
+    if not isinstance(local,dict) or set(local)-set(faces):
+        raise ValueError("Unknown local DS face override.")
+    for pair in local.values():
+        if not isinstance(pair,dict) or set(pair)-{"w1","w10"} or any(type(w) not in (int,float) or not isfinite(w) for w in pair.values()):
+            raise ValueError("Local DS w1/w10 must be finite real numbers.")
     if face_families is not None:
         if set(face_families)!=set(faces) or any(not isinstance(r,dict) or r.get("class") not in FAMILIES or type(r.get("generation")) is not int or r["generation"]!=current_generation for r in face_families.values()):
             raise ValueError("Face families must cover the current mesh with immediate-generation origin records.")
@@ -104,6 +110,7 @@ def weighted_doosabin_once(mesh,weights=None,*,face_families=None,budget=None,cu
         family=face_families[f]["class"] if face_families is not None else "SOURCE_FACE"
         suffix=SUFFIX[family] if family in SUFFIX else "face"
         requested=dict(w1=values["w1_"+suffix],w10=values["w10_"+suffix])
+        requested.update(local.get(f,{}))
         supported=len(old) in (3,4)
         effective=requested if supported else dict(w1=0.0,w10=0.0)
         normal=mesh.face_normal(f)
@@ -148,7 +155,7 @@ def weighted_doosabin_once(mesh,weights=None,*,face_families=None,budget=None,cu
     if coverage or not output.is_valid() or not output.is_manifold() or not output.is_closed() or len(output.connected_vertices())!=len(mesh.connected_vertices()):
         raise ValueError("Unexpected DS output topology/lineage: "+" ".join(coverage))
     return DooSabinResult(output,dict(generation=current_generation+1,backend="COMPAS 2.15.1 public Mesh.subdivided(doosabin)",
-        input=before,output=inspect_mesh(output),budget=assessment,weights=values,
+        input=before,output=inspect_mesh(output),budget=assessment,weights=values,local_override_count=len(local),
         family_counts=dict(Counter(r["class"] for r in origins.values())),
         input_family_counts=dict(Counter(face_families[f]["class"] if face_families else "SOURCE_FACE" for f in faces)),
         fallback_faces=len(fallback),fallbacks=fallback,
