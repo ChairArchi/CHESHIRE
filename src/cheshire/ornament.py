@@ -280,7 +280,7 @@ def depth_diagnostics(history, events):
         independent_nested_trees=len(nested),operator_lineage_depth=max((r["operator_depth"] for r in history.values()),default=0))
 
 
-def run_ornament(source, recipe, *, dll_path, budget, publish=None):
+def run_ornament(source, recipe, *, dll_path, budget, publish=None, routing=None):
     """Serial deterministic grammar; caller retains each completed checkpoint.
 
     CC/DS stencil equations are reused verbatim. Event-created faces inherit
@@ -315,14 +315,22 @@ def run_ornament(source, recipe, *, dll_path, budget, publish=None):
                     seed_policy=step.metadata.get("seed_policy"),later_classification=step.metadata.get("later_generation"))
                 mesh=step.mesh
             else:
-                selection=select_event_faces(mesh,history,stage.selector,source,families)
+                selection=(routing.select(mesh,history,stage,source,families,events)
+                    if routing is not None and routing.handles(stage.id) else
+                    select_event_faces(mesh,history,stage.selector,source,families))
                 record["selection"]=selection
-                if not selection["selected_ids"]:
+                if not selection["selected_ids"] and not selection.get("quiet_if_empty",False):
                     raise ValueError("Empty deterministic event selector; no ornament generated.")
                 step=topology_event(mesh,history,stage,selected_faces=selection["selected_ids"],dll_path=dll_path,
                     budget=budget,families=families,stage_index=index)
                 parents=step["lineage"].face_parents; vertex_parents=step["lineage"].vertex_parents
-                if families is not None:
+                if not selection["selected_ids"]:
+                    # A declared branch may have no eligible faces. This is an
+                    # explicit quiet action, preserving history and routing labels.
+                    step["history"]=history
+                    step["mesh"]=mesh
+                    record["quiet"]=True
+                if families is not None and selection["selected_ids"]:
                     families={f:{**families[refs[0].key],"inherited_through_event":stage.id} for f,refs in parents.items()}
                 next_anchors={v:anchors.get(p) for v,p in step["corner_parents"].items()}
                 mesh=step["mesh"]; history=step["history"]; events.extend(step["events"])

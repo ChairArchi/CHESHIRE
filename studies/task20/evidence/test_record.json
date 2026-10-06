@@ -1,0 +1,9 @@
+{
+  "command": ".\\.venv\\Scripts\\python.exe -m pytest -q",
+  "exit_code": 0,
+  "full_suite_attempts": 2,
+  "initial": "750 passed, one failure: repository-local basetemp made a fixture intended to be outside the repository fall inside it.",
+  "diagnosis": "Existing identity rejection test requires a foreign CHESHIRE path. A focused rerun outside the repository passed without code or test changes.",
+  "final_result": "751 passed in 29.00s",
+  "reason_for_repeating": "Correct the evidenced test-environment assumption; no geometry or assertion changed."
+}

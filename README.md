@@ -281,3 +281,12 @@ subdivision alone never increases ornament depth. The study retains matched
 actual geometry views, stopped boundaries and explicit local budgets. Its
 comparative labels do not automatically establish a grotesque gate milestone.
 Existing Rhino modes and global defaults remain unchanged.
+
+## Differentiated branching (Task 20, experimental branch)
+
+The [branching study](docs/DIFFERENTIATED_BRANCHING_STUDY.md) freezes the saved
+C07 backbone and routes constructive cap/side descendants with serialized,
+ordered branch tables. It compares role, depth, orientation and quiet pruning,
+with explicit no-finish or single-finish policies and positive mixed-path
+signatures. Geometry operators, dependencies and global budgets are unchanged;
+branch metrics alone do not establish visual hierarchy.

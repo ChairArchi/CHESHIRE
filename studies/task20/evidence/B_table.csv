@@ -1,0 +1,14 @@
+id,family,status,technically_valid,stop_reason,completed_stage,faces,vertices,edges,manifold,closed,boundary_edges,components,degenerate_faces,fan_warnings,bilinear_warnings,sampled_crossings,crossing_cap,ornament_depth,branch_signatures,signature_dominance,nested_components,finish,runtime_seconds,known_backbone_contacts_retained,finite,valid,constructed_signatures,degenerate_face_count
+F_A03,A,SUCCESS,True,All declared stages completed,descend__side_child,19840,19842,39680,True,True,0,1,[],0,0,0,False,4,7,0.32653061224489793,96,FINISH_NONE,38.510183900012635,12,True,True,12,0
+F_A04,A,SUCCESS,True,All declared stages completed,descend__side_child,19840,19842,39680,True,True,0,1,[],0,0,0,False,4,7,0.32653061224489793,96,FINISH_NONE,38.75757960008923,12,True,True,12,0
+F_A08,A,SUCCESS,True,All declared stages completed,terminal_CC,48640,48642,97280,True,True,0,1,[],1508,1666,0,False,3,5,0.5517241379310345,96,FINISH_RESTRAINED_CC,41.7720995999407,0,True,True,8,0
+F_B01,B,SUCCESS,True,All declared stages completed,micro__cap,13696,13698,27392,True,True,0,1,[],0,0,0,False,4,6,0.48484848484848486,96,FINISH_NONE,30.234725299989805,12,True,True,10,0
+F_B03,B,TECHNICAL_STOP,False,micro__side: Mola cap reverses/collapses.,split__side,12160,12162,24320,True,True,0,1,[],0,0,2,False,3,5,0.5517241379310345,96,FINISH_NONE,25.27431600005366,12,True,True,8,0
+F_B05,B,SUCCESS,True,All declared stages completed,split__side,15344,15346,30688,True,True,0,1,[],0,0,7,False,3,7,0.42905027932960893,96,FINISH_NONE,29.277952900039963,0,True,True,10,0
+F_C09,C,SUCCESS,True,All declared stages completed,split__side,8048,8050,16096,True,True,0,1,[],0,0,3,False,3,9,0.3439635535307517,96,FINISH_NONE,23.677980600041337,12,True,True,10,0
+F_D02,D,SUCCESS,True,All declared stages completed,micro__cap,34818,34816,69632,True,True,0,1,[],0,0,0,False,4,8,0.4497027634264541,96,FINISH_NONE,55.30724409990944,0,True,True,10,0
+F_D03,D,SUCCESS,True,All declared stages completed,split__side,33282,33280,66560,True,True,0,1,[],0,0,0,False,3,7,0.4733548739716113,96,FINISH_NONE,44.326106399996206,0,True,True,8,0
+F_D05,D,SUCCESS,True,All declared stages completed,micro__cap,33258,33256,66512,True,True,0,1,[],370,364,0,False,4,8,0.4202834788761617,96,FINISH_NONE,55.10523920005653,0,True,True,10,0
+F_E01,E,SUCCESS,True,All declared stages completed,micro__active,5984,5986,11968,True,True,0,1,[],0,0,4,False,4,6,0.3096774193548387,96,FINISH_NONE,17.938671199954115,12,True,True,8,0
+F_E03,E,SUCCESS,True,All declared stages completed,micro__active,9312,9314,18624,True,True,0,1,[],0,0,2,False,4,6,0.2915057915057915,96,FINISH_NONE,21.003110000048764,12,True,True,8,0
+HERO_ROLE_ASSEMBLY,B,SUCCESS,True,All declared stages completed,descend__side_child,18544,18546,37088,True,True,0,1,[],0,0,0,False,4,10,0.2228310502283105,96,FINISH_NONE,49.02113190002274,0,True,True,14,0

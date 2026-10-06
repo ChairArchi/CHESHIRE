@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CHESHIRE Task 20 BranchTable",
+  "description": "Ordered first-match routes on the pre-round mesh, using constructive roles. No manual face IDs. All unmatched or ineligible faces are quiet.",
+  "type": "object",
+  "required": ["id", "rules", "fallback"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "fallback": {"const": "quiet"},
+    "rules": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "required": ["id", "when", "action", "parameters"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "action": {"enum": ["quiet", "InsetFrame", "TaperedExtrusion"]},
+          "when": {
+            "type": "object", "required": ["role", "event_stage"], "additionalProperties": false,
+            "properties": {
+              "role": {"enum": ["FRAME_SIDE", "INNER_CAP", "EXTRUSION_SIDE", "EXTRUSION_CAP"]},
+              "event_stage": {"type": "string", "minLength": 1},
+              "depth": {"type": "integer", "minimum": 1},
+              "depth_min": {"type": "integer", "minimum": 0},
+              "parent_operator": {"enum": ["InsetFrame", "TaperedExtrusion"]},
+              "normal_axis": {"enum": ["x", "y", "z"]},
+              "normal_min": {"type": "number", "minimum": -1, "maximum": 1},
+              "normal_max": {"type": "number", "minimum": -1, "maximum": 1},
+              "normal_absolute": {"type": "boolean"},
+              "normal_y_min": {"type": "number", "minimum": 0, "maximum": 1},
+              "area_ratio_min": {"type": "number", "minimum": 0},
+              "area_ratio_max": {"type": "number", "minimum": 0},
+              "z_min": {"type": "number"}, "z_max": {"type": "number"},
+              "family": {"enum": ["FACE_DERIVED", "EDGE_DERIVED", "VERTEX_DERIVED"]},
+              "source_region": {"enum": ["lintel", "supports"]}
+            }
+          },
+          "parameters": {"type": "object"}
+        },
+        "allOf": [
+          {"if": {"properties": {"action": {"const": "quiet"}}}, "then": {"properties": {"parameters": {"maxProperties": 0}}}},
+          {"if": {"properties": {"action": {"const": "InsetFrame"}}}, "then": {"properties": {"parameters": {"required": ["width_ratio"], "additionalProperties": false, "properties": {"width_ratio": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.2}}}}}},
+          {"if": {"properties": {"action": {"const": "TaperedExtrusion"}}}, "then": {"properties": {"parameters": {"required": ["height_ratio", "fraction"], "additionalProperties": false, "properties": {"height_ratio": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.5}, "fraction": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 0.9}}}}}}
+        ]
+      }
+    }
+  }
+}
