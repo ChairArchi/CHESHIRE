@@ -1,0 +1,98 @@
+{
+  "phases": {
+    "CONTROL": {
+      "cases": 76,
+      "status": {
+        "SUCCESS": 73,
+        "TECHNICAL_STOP": 3
+      },
+      "geometry_state": {
+        "VALID_SHARP": 61,
+        "BOUNDARY_SHARP": 12,
+        "UNSTABLE": 3
+      },
+      "distinct_successful_geometry_hashes": 73
+    },
+    "DISTANCE": {
+      "cases": 8,
+      "status": {
+        "SUCCESS": 8
+      },
+      "geometry_state": {
+        "BOUNDARY_SHARP": 8
+      },
+      "distinct_successful_geometry_hashes": 8
+    },
+    "PLANARITY": {
+      "cases": 8,
+      "status": {
+        "SUCCESS": 8
+      },
+      "geometry_state": {
+        "VALID_SHARP": 4,
+        "BOUNDARY_SHARP": 4
+      },
+      "distinct_successful_geometry_hashes": 8
+    },
+    "GATE": {
+      "cases": 55,
+      "status": {
+        "SUCCESS": 46,
+        "TECHNICAL_STOP": 9
+      },
+      "geometry_state": {
+        "VALID_SHARP": 34,
+        "BOUNDARY_SHARP": 14,
+        "UNSTABLE": 7
+      },
+      "distinct_successful_geometry_hashes": 46
+    },
+    "R": {
+      "cases": 18,
+      "status": {
+        "SUCCESS": 16,
+        "TECHNICAL_STOP": 2
+      },
+      "geometry_state": {
+        "BOUNDARY_SHARP": 7,
+        "UNSTABLE": 2,
+        "VALID_SHARP": 9
+      },
+      "distinct_successful_geometry_hashes": 16
+    },
+    "HERO": {
+      "cases": 1,
+      "status": {
+        "SUCCESS": 1
+      },
+      "geometry_state": {
+        "VALID_SHARP": 1
+      },
+      "distinct_successful_geometry_hashes": 1
+    },
+    "REPLAY": {
+      "cases": 1,
+      "status": {
+        "SUCCESS": 1
+      },
+      "geometry_state": {
+        "VALID_SHARP": 1
+      },
+      "distinct_successful_geometry_hashes": 1
+    },
+    "REFERENCE": {
+      "cases": 3,
+      "status": {
+        "SUCCESS": 3
+      },
+      "geometry_state": {
+        "VALID_SHARP": 2,
+        "BOUNDARY_SHARP": 1
+      },
+      "distinct_successful_geometry_hashes": 3
+    }
+  },
+  "raw_dataset_bytes": 4837981201,
+  "gate_causal_declarations": 55,
+  "gate_declared_ids": 55
+}

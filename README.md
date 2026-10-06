@@ -290,3 +290,12 @@ ordered branch tables. It compares role, depth, orientation and quiet pruning,
 with explicit no-finish or single-finish policies and positive mixed-path
 signatures. Geometry operators, dependencies and global budgets are unchanged;
 branch metrics alone do not establish visual hierarchy.
+
+## Subdivision beyond smoothness (Task 22, experimental branch)
+
+The isolated [sharp-subdivision study](docs/BEYOND_SMOOTHNESS_STUDY.md) tests
+literal motif attraction, finite Eq7 schedules and temporary corner locking
+over the unchanged weighted-CC backend. Actual control and gate evidence
+separates sharp geometry from collapse and from visual hierarchy. Heavy meshes
+and checkpoints use an explicit portable external output root; compact recipes
+and diagnostics remain in Git. Existing Rhino modes and dependencies stay unchanged.

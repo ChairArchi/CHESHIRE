@@ -1,0 +1,125 @@
+{
+  "finalists": [
+    {
+      "id": "C11_cube",
+      "phase": "CONTROL",
+      "reason": "Best late motif-only case, still visually weak",
+      "artifact": "study/CONTROL/C11_cube/attempt_002"
+    },
+    {
+      "id": "C26_column",
+      "phase": "CONTROL",
+      "reason": "Matched ablation establishes a valid edge-driven crease",
+      "artifact": "study/CONTROL/C26_column/attempt_002"
+    },
+    {
+      "id": "C35_column",
+      "phase": "CONTROL",
+      "reason": "Finite Eq7 attenuation without an assumed visual win",
+      "artifact": "study/CONTROL/C35_column/attempt_002"
+    },
+    {
+      "id": "LOCK_L6",
+      "phase": "CONTROL",
+      "reason": "Literal fixed-tip capability; weak continuous edge",
+      "artifact": "study/CONTROL/LOCK_L6/attempt_002"
+    },
+    {
+      "id": "C30_column",
+      "phase": "CONTROL",
+      "reason": "Matched old-interpolation control",
+      "artifact": "study/CONTROL/C30_column/attempt_002"
+    },
+    {
+      "id": "G1_17",
+      "phase": "GATE",
+      "reason": "Clean angular C07 seam",
+      "artifact": "study/GATE/G1_17/attempt_001"
+    },
+    {
+      "id": "G1_24",
+      "phase": "GATE",
+      "reason": "Rare high-valence locked C07 junctions",
+      "artifact": "study/GATE/G1_24/attempt_001"
+    },
+    {
+      "id": "G2_02",
+      "phase": "GATE",
+      "reason": "Two-generation literal source-corner locking, weak persistence",
+      "artifact": "study/GATE/G2_02/attempt_001"
+    },
+    {
+      "id": "G1_22",
+      "phase": "GATE",
+      "reason": "Boundary-sharp opposite-class case",
+      "artifact": "study/GATE/G1_22/attempt_001"
+    },
+    {
+      "id": "G3_05",
+      "phase": "GATE",
+      "reason": "Roof on existing side ancestry",
+      "artifact": "study/GATE/G3_05/attempt_001"
+    },
+    {
+      "id": "G4_06",
+      "phase": "GATE",
+      "reason": "Readable existing nested ornament on a locked substrate",
+      "artifact": "study/GATE/G4_06/attempt_001"
+    },
+    {
+      "id": "G5_06",
+      "phase": "GATE",
+      "reason": "Ordered ridge comparison with least warning burden among strong candidates",
+      "artifact": "study/GATE/G5_06/attempt_001"
+    },
+    {
+      "id": "G2_03",
+      "phase": "GATE",
+      "reason": "Broad corner lock reaches the actual contact cap",
+      "artifact": "study/GATE/G2_03/attempt_001"
+    },
+    {
+      "id": "C43_cube",
+      "phase": "CONTROL",
+      "reason": "Actual analytic zero-area collapse",
+      "artifact": "study/CONTROL/C43_cube/attempt_001"
+    },
+    {
+      "id": "C31_column",
+      "phase": "CONTROL",
+      "reason": "Matched face-only ablation; no comparable late crease",
+      "artifact": "study/CONTROL/C31_column/attempt_002"
+    },
+    {
+      "id": "C32_column",
+      "phase": "CONTROL",
+      "reason": "Matched edge-only ablation; actual late crease with local warnings",
+      "artifact": "study/CONTROL/C32_column/attempt_002"
+    }
+  ],
+  "refinement_bases": [
+    "C26_column",
+    "G1_17",
+    "G1_24",
+    "G3_05",
+    "G4_06",
+    "G5_06"
+  ],
+  "heroes": [
+    "HERO_SHARP_GATE"
+  ],
+  "replays": [
+    "HERO_SHARP_GATE"
+  ],
+  "secondary_fields": "Complete 8+8 comparisons retained; no demonstrable new ornament structure, not preferred gate rules.",
+  "design_status": "No grotesque gate candidate established by the basic atlas.",
+  "hero_scope": "One limited capability specimen; refinements of pure gates are visually near equivalent. Do not force three design-success Heroes.",
+  "labels": {
+    "BEST_SHARP_GATE": "HERO_SHARP_GATE",
+    "BEST_SHARP_ORNAMENT": "G4_06",
+    "BEST_GEOMETRIC_ORDER": "G3_05",
+    "MAX_ORNAMENT_CAPABILITY": "G5_06",
+    "MOST_INFORMATIVE_FAILURE": "G2_03"
+  },
+  "label_scope": "Relative partial capability choices, not design-success awards. Original Task21 ordered Hero retains clearer overall ridge order; no grotesque candidate."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "HERO_SHARP_GATE",
+      "independent_workers": true,
+      "source_immutable": true,
+      "terminal_sha256": "4a9e988e7a64abb5cec8cc4901db55b75dd8b504ae6f0265f14368d4b1356b2a",
+      "checkpoints": [
+        {
+          "stage": "G1",
+          "geometry_sha256": "4a9e988e7a64abb5cec8cc4901db55b75dd8b504ae6f0265f14368d4b1356b2a",
+          "exact_lineage": true,
+          "exact_branch_signatures": true
+        }
+      ]
+    }
+  ]
+}

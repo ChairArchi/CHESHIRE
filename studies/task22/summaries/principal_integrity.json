@@ -1,0 +1,296 @@
+[
+  {
+    "id": "REF_C07",
+    "phase": "REFERENCE",
+    "faces": 4480,
+    "state": "BOUNDARY_SHARP",
+    "opening_drift_percent": {
+      "width": 0.09823205429471127,
+      "height": -19.026083683328732
+    },
+    "dimensions_drift_percent": {
+      "width": 12.588951393727598,
+      "depth": 119.40638406400966,
+      "height": 13.158784400829603
+    },
+    "center_drift": {
+      "x": -1.4210854715202004e-17,
+      "z": 0.05870496857711175
+    },
+    "support_base": {
+      "mean": 452.80647790316453,
+      "min": 452.80647790316453,
+      "max": 452.80647790316453,
+      "mean_over_source_height": 0.12937327940090415
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.036865234375,
+      "right_median_x": 1149.9631347656248,
+      "lintel_median_z": 2966.890091834926,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 11,
+    "fan": 0,
+    "bilinear": 0,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 110,
+      "confined": 0,
+      "multiple_neighboring_cells": 110,
+      "multiple_C0_source_faces": 18,
+      "high_edges_crossing_frozen_cell_boundaries": 500,
+      "high_edges_crossing_C0_source_face_boundaries": 88,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  },
+  {
+    "id": "REF_ORDERED",
+    "phase": "REFERENCE",
+    "faces": 22576,
+    "state": "VALID_SHARP",
+    "opening_drift_percent": {
+      "width": 0.4040452081253143,
+      "height": -19.04449880371084
+    },
+    "dimensions_drift_percent": {
+      "width": 12.62470474496864,
+      "depth": 119.40638406400966,
+      "height": 13.175708836524125
+    },
+    "center_drift": {
+      "x": 1.4210854715202004e-17,
+      "z": 0.058636569558549644
+    },
+    "support_base": {
+      "mean": 452.80647790316453,
+      "min": 452.80647790316453,
+      "max": 452.80647790316453,
+      "mean_over_source_height": 0.12937327940090415
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.036865234375,
+      "right_median_x": 1149.9631347656248,
+      "lintel_median_z": 2965.5197807978902,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 0,
+    "fan": 0,
+    "bilinear": 0,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 2323,
+      "confined": 1994,
+      "multiple_neighboring_cells": 329,
+      "multiple_C0_source_faces": 3,
+      "high_edges_crossing_frozen_cell_boundaries": 3160,
+      "high_edges_crossing_C0_source_face_boundaries": 164,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  },
+  {
+    "id": "HERO_SHARP_GATE",
+    "phase": "HERO",
+    "faces": 17920,
+    "state": "VALID_SHARP",
+    "opening_drift_percent": {
+      "width": 0.0706718502596404,
+      "height": -18.957904247661904
+    },
+    "dimensions_drift_percent": {
+      "width": 12.097251503192696,
+      "depth": 115.78602142473811,
+      "height": 12.784816898006879
+    },
+    "center_drift": {
+      "x": -2.842170943040401e-17,
+      "z": 0.059187094507810734
+    },
+    "support_base": {
+      "mean": 453.60758599694253,
+      "min": 453.60758599694253,
+      "max": 453.60758599694253,
+      "mean_over_source_height": 0.12960216742769787
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.036865234375,
+      "right_median_x": 1149.9631347656248,
+      "lintel_median_z": 2968.1222217338495,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 0,
+    "fan": 0,
+    "bilinear": 0,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 156,
+      "confined": 4,
+      "multiple_neighboring_cells": 152,
+      "multiple_C0_source_faces": 36,
+      "high_edges_crossing_frozen_cell_boundaries": 618,
+      "high_edges_crossing_C0_source_face_boundaries": 120,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  },
+  {
+    "id": "G3_05",
+    "phase": "GATE",
+    "faces": 28624,
+    "state": "VALID_SHARP",
+    "opening_drift_percent": {
+      "width": 0.04301061392706362,
+      "height": -18.97791695200913
+    },
+    "dimensions_drift_percent": {
+      "width": 11.922679679327587,
+      "depth": 114.68847218907344,
+      "height": 12.733384875198638
+    },
+    "center_drift": {
+      "x": 1.4210854715202004e-17,
+      "z": 0.05971272084640883
+    },
+    "support_base": {
+      "mean": 455.70744333854987,
+      "min": 455.70744333854987,
+      "max": 455.70744333854987,
+      "mean_over_source_height": 0.13020212666815711
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.0368652343745,
+      "right_median_x": 1149.963134765625,
+      "lintel_median_z": 2968.855808587985,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 0,
+    "fan": 0,
+    "bilinear": 0,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 766,
+      "confined": 392,
+      "multiple_neighboring_cells": 374,
+      "multiple_C0_source_faces": 18,
+      "high_edges_crossing_frozen_cell_boundaries": 1494,
+      "high_edges_crossing_C0_source_face_boundaries": 204,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  },
+  {
+    "id": "G4_06",
+    "phase": "GATE",
+    "faces": 74352,
+    "state": "VALID_SHARP",
+    "opening_drift_percent": {
+      "width": 0.6508013927005507,
+      "height": -19.16875700721602
+    },
+    "dimensions_drift_percent": {
+      "width": 12.253869638461467,
+      "depth": 116.77400987640412,
+      "height": 12.784816898006879
+    },
+    "center_drift": {
+      "x": -1.4210854715202004e-17,
+      "z": 0.05840392711518117
+    },
+    "support_base": {
+      "mean": 453.60758599694253,
+      "min": 453.60758599694253,
+      "max": 453.60758599694253,
+      "mean_over_source_height": 0.12960216742769787
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.036865234375,
+      "right_median_x": 1149.9631347656248,
+      "lintel_median_z": 2964.8826668648053,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 0,
+    "fan": 0,
+    "bilinear": 0,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 1940,
+      "confined": 1760,
+      "multiple_neighboring_cells": 180,
+      "multiple_C0_source_faces": 14,
+      "high_edges_crossing_frozen_cell_boundaries": 5766,
+      "high_edges_crossing_C0_source_face_boundaries": 284,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  },
+  {
+    "id": "G5_06",
+    "phase": "GATE",
+    "faces": 90316,
+    "state": "BOUNDARY_SHARP",
+    "opening_drift_percent": {
+      "width": 0.40712773412792114,
+      "height": -18.986011923471256
+    },
+    "dimensions_drift_percent": {
+      "width": 12.567864151054998,
+      "depth": 118.62094585579426,
+      "height": 12.922710183215358
+    },
+    "center_drift": {
+      "x": -1.4210854715202004e-17,
+      "z": 0.0590826945690903
+    },
+    "support_base": {
+      "mean": 453.60758599694253,
+      "min": 453.60758599694253,
+      "max": 453.60758599694253,
+      "mean_over_source_height": 0.12960216742769787
+    },
+    "all_anchors_retained": true,
+    "macro_relations": {
+      "left_median_x": -1950.036865234375,
+      "right_median_x": 1149.9631347656248,
+      "lintel_median_z": 2966.3396602921666,
+      "left_median_left_of_right": true,
+      "fraction_left_landmarks_left_of_right_median": 1,
+      "fraction_right_landmarks_right_of_left_median": 1,
+      "lintel_median_above_support_medians": true,
+      "fraction_lintel_landmarks_above_opening_center": 1
+    },
+    "crossings": 0,
+    "fan": 14,
+    "bilinear": 32,
+    "degenerate": 0,
+    "cross_cell": {
+      "total": 3760,
+      "confined": 3362,
+      "multiple_neighboring_cells": 398,
+      "multiple_C0_source_faces": 14,
+      "high_edges_crossing_frozen_cell_boundaries": 5614,
+      "high_edges_crossing_C0_source_face_boundaries": 288,
+      "note": "Connected edges with >=45 degree adjacent-face-normal contrast. Source cells are frozen prefix faces; connectivity is geometric adjacency, not evidence of visual hierarchy."
+    }
+  }
+]

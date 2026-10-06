@@ -1,0 +1,251 @@
+{
+  "baseline": "0090fc816c8d7a1bcb755114a859c295047c7b0b",
+  "regressions": [
+    {
+      "fixture": "cube",
+      "exact_mesh_data": true,
+      "exact_positive_sampling": true,
+      "source_immutable": true,
+      "geometry_sha256": "1dd6390a579b62641a787c76e96687e293f8a1cb2a8047c4ca991b10707391dc"
+    },
+    {
+      "fixture": "column",
+      "exact_mesh_data": true,
+      "exact_positive_sampling": true,
+      "source_immutable": true,
+      "geometry_sha256": "d84b299b26d320295cc3a2c2ff56a33f585310a4e72862b01aeacc104f586e90"
+    },
+    {
+      "fixture": "C0",
+      "exact_mesh_data": true,
+      "exact_positive_sampling": true,
+      "source_immutable": true,
+      "geometry_sha256": "f5f886469a63b0a728d4f68ff4ec4f2f377f7020008f10be02a0cb1bd6255551"
+    },
+    {
+      "fixture": "Saved Task21 C11 weighted stage 1",
+      "exact_mesh_data": true,
+      "exact_saved_ordered_polygon_json": true,
+      "geometry_sha256": "ae5a857efb6df290804fd4fc7fb359905b37907af5ea77021ef18bbb70bf0ea5"
+    },
+    {
+      "fixture": "C07 continuation with restored verified CC3 origins",
+      "exact_mesh_data": true,
+      "eligible_eq4_faces": 2560,
+      "geometry_sha256": "2599e7b580fc861d2ad0d455f0541009d07f090abd81dcfab62a8e03ebb23d5e"
+    }
+  ],
+  "reference_inputs": {
+    "inputs/BACKBONE_S01.json.gz": "04aa7faf9d2ac4decef24a5bd90336c8ccd377b357ca1ec55b0d174a1557d157",
+    "inputs/BACKBONE_S01_lineage.json.gz": "9d4af9caa9aeebf921e388a2c40c77cb066ce340e0629f3c7c3b9d0a16a62c64",
+    "inputs/BACKBONE_S01_signatures.json.gz": "0d7f646a8cc702ffde4d008d5c81e327d8ee805013f16f1d2591429b9f4940c1",
+    "inputs/BACKBONE_S02.json.gz": "f116052b921754c2bd4265337f1f78c2d64ba0d36f4a7892527455d8aead789a",
+    "inputs/BACKBONE_S02_lineage.json.gz": "82933bc5b75957d45f19d7ca53b6f5bef5f1295226f40c64fe0eb0392107eb47",
+    "inputs/BACKBONE_S02_signatures.json.gz": "4e34d3955d80af1c4f5b1a98c8a0b2bf202398194d1d75fd17fa2020be7424fa",
+    "inputs/BACKBONE_S03.json.gz": "0fd199dc7165bc5f60dddd03cd3ad8ac015a5ac7e68f1eed39df0824eca63cb0",
+    "inputs/BACKBONE_S03_lineage.json.gz": "7aeefb41fe642cefa0c2f6348503f852c304c6406c1fd332b5962f11be6c81b5",
+    "inputs/BACKBONE_S03_signatures.json.gz": "ab6738b96cfeb071e50d92343f270fb9552b8c74a5263863168d95799c8572ff",
+    "inputs/BACKBONE_S04.json.gz": "9056fb9f27591c6c626bc074d960801e7a6f79b2ec57b2dadacff3e02bdba8e5",
+    "inputs/BACKBONE_S04_lineage.json.gz": "ca5be2240363a164908c13e5f8cf975d692a09722b82aac43ed4216e1ca3fe3f",
+    "inputs/BACKBONE_S04_signatures.json.gz": "4ad8bc9376a06a54b470963ac8454465461ab791d7d058d103ecc4d6063b7a58",
+    "inputs/BACKBONE_S05.json.gz": "5cc026971574ca1a955555640375654d873625b6195fc0057cf5aff3e308f1e7",
+    "inputs/BACKBONE_S05_lineage.json.gz": "c11c3149fecabe380673db401b11c2a68a0d3f3d04961551c6a7a5aeff9f5ecf",
+    "inputs/BACKBONE_S05_signatures.json.gz": "8cfd9d8d6b914b9b5015d268e03c3d5b9dbd8817b2025521f66cf35200324186",
+    "inputs/ORDERED_S06_lineage.json.gz": "fda807c100d575bfbf00c2270f183b397bc388b5e6e69d2a3f15d6948c7ad6c2",
+    "inputs/ORDERED_S07_lineage.json.gz": "bf2c184ef4246f72da0c21638259e2b1ce0f1417afe012bad3a27f66da4a1c6b",
+    "inputs/ORDERED_S08_lineage.json.gz": "f61c5a2b68b3e4d996e946865f9d7a69757ae972a2d49460c25a1cde50340509",
+    "inputs/ORDERED_S09_lineage.json.gz": "f6512baadb04a93020469b1aae134212434654e6a1a7ab398283a5f6c07bf741",
+    "inputs/ORDERED_S10_lineage.json.gz": "78cdad852bb47d1c819e53f679d5c42c142c689d049f92fdcaccd67e063e6b7b",
+    "inputs/ORDERED_S11_lineage.json.gz": "f960c1837f1815886cb9556aeea108354fd482921018de119e603edae6b8c951",
+    "inputs/ORDERED_S12_lineage.json.gz": "13ead91ceabff53d3f775ee26573afaa52bfb9a27aa7ff452daad92775c921fc",
+    "inputs/ORDERED_CORE.json.gz": "5f09860c5a930d1fd93169bbc14813707e299a384811883387b152b3cabcfb9c",
+    "inputs/ORDERED_CORE_lineage.json.gz": "78cdad852bb47d1c819e53f679d5c42c142c689d049f92fdcaccd67e063e6b7b",
+    "inputs/ORDERED_CORE_signatures.json.gz": "13d2d5b600be7e5d42ec4504b1026cdfaf17d8d8c94b1af4123d1dbd3ccecaab",
+    "inputs/TASK21_ORDERED.json": "39cdcc41b9d014a21293ca6b4763f8a0ec2413037b2bb6e59c04578bae4282fe",
+    "inputs/TASK21_ORDERED_lineage.json.gz": "6dee7669fd561416590f08344f82b74f9462cfb6da7ecb40c3007811e87a741d"
+  },
+  "ordering_differences": [],
+  "motifs": {
+    "cube": {
+      "(3,3)": 8
+    },
+    "column": {
+      "(3,3)": 8
+    },
+    "C0": {
+      "(3,3)": 12,
+      "(4,4)": 8,
+      "(5,5)": 4
+    },
+    "BACKBONE_S05": {
+      "(3,3)": 1544,
+      "(5,5)": 36,
+      "(7,7)": 44,
+      "(6,6)": 444,
+      "(4,4)": 2294,
+      "(8,8)": 120
+    },
+    "ORDERED_CORE": {
+      "(3,3)": 8632,
+      "(7,7)": 252,
+      "(10,10)": 126,
+      "(8,8)": 414,
+      "(4,4)": 7122,
+      "(14,14)": 20,
+      "(13,13)": 20,
+      "(12,12)": 70,
+      "(11,11)": 100,
+      "(6,6)": 1370,
+      "(9,9)": 44,
+      "(5,5)": 332,
+      "(16,16)": 40,
+      "(15,15)": 4
+    },
+    "TASK21_ORDERED": {
+      "(3,3)": 7416,
+      "(7,7)": 192,
+      "(10,10)": 78,
+      "(12,12)": 190,
+      "(4,4)": 10888,
+      "(14,14)": 16,
+      "(13,13)": 28,
+      "(16,16)": 54,
+      "(6,6)": 1218,
+      "(8,8)": 814,
+      "(9,9)": 28,
+      "(5,5)": 260,
+      "(11,11)": 48,
+      "(15,15)": 4
+    }
+  },
+  "restored_point_origins": {
+    "method": "Replayed unchanged standard CC on exact saved S03; S04 ordered polygon hash exactly matched. Post-CC Mola-created vertices have no invented CC point class.",
+    "generations": 3,
+    "artifact": "inputs/CC3_origins.json.gz",
+    "sha256": "373a61f3c6a73724807d16e150deecd9f2057810350593c027ef669dd84a81e0"
+  },
+  "restored_corner_anchors": [
+    {
+      "input": "C07",
+      "tracked_vertices": 88,
+      "exact_old_monitor": true
+    },
+    {
+      "input": "ORDERED_CORE",
+      "tracked_vertices": 392,
+      "exact_old_monitor": true
+    },
+    {
+      "input": "TASK21_ORDERED",
+      "tracked_vertices": 392,
+      "exact_old_monitor": true
+    }
+  ],
+  "equation7_oracles": [
+    {
+      "a": 0.3,
+      "b": 0.2,
+      "q": 1,
+      "values": [
+        0.3,
+        0.5,
+        0.7
+      ]
+    },
+    {
+      "a": 0.1,
+      "b": -0.05,
+      "q": 2,
+      "values": [
+        0.1,
+        0.05,
+        -0.1
+      ]
+    },
+    {
+      "a": -1,
+      "b": 0.125,
+      "q": 3,
+      "values": [
+        -1.0,
+        -0.875,
+        0.0
+      ]
+    }
+  ],
+  "equation10_oracles": {
+    "base": [
+      2,
+      1,
+      1
+    ],
+    "input": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ]
+    ],
+    "weight": 0.25,
+    "positive": [
+      1.5,
+      0.75,
+      0.75
+    ],
+    "negative": [
+      2.5,
+      1.25,
+      1.25
+    ],
+    "two_positive": [
+      2.0,
+      0.5,
+      0.5
+    ]
+  },
+  "equation11_oracle": {
+    "base": [
+      1,
+      0.5,
+      0.25
+    ],
+    "endpoints": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "u": [
+      0.5,
+      -1
+    ],
+    "weight": 0.4,
+    "result": [
+      0.3999999999999999,
+      0.6,
+      0.3
+    ]
+  },
+  "status": "PASS"
+}
