@@ -247,3 +247,7 @@ The isolated [batch runner and quickstart](tools/MORPHOLOGY_QUICKSTART.md) repea
 ## Weighted subdivision experiment (Task 14)
 
 **WeightedSubdivisionStudy** compares standard, uniformly scheduled and field-modulated point placement through one new experimental operator. See the [reference/formula note](docs/WEIGHTED_SUBDIVISION_REFERENCE.md) and [study quickstart and limitations](docs/WEIGHTED_SUBDIVISION_STUDY.md). The exact saved mixed-face gate and six-face column are retained at matching comparison generations. Spatial modulation is visible, but the gate still shows repetitive relief and the target hierarchy remains weak. Stronger intersecting/fold-prone attempts are retained. No dependencies change; semantic lineage and actual new-mode Rhino-host verification remain unimplemented/pending respectively.
+
+## Coarse gate carrier study (Task 15)
+
+The [carrier and schedule study](docs/CARRIER_SCALE_STUDY.md) compares connected 22/88/352-face carriers with the exact 936-face saved gate, using unchanged Task 14 weighted subdivision. C0 reaches G5 and creates broader forms, but ten subsequent schedules still round those forms or add repetitive/unsafe detail. Clear macro → meso → micro hierarchy was not achieved. Under the revised schedule-first gate, spatial modulation and the conditional Rhino mode remain unimplemented. All attempts, checkpoints, fixed-camera views and diagnostic limitations are retained in the Task 15 review bundle; no dependency or existing mode changes.
