@@ -19,6 +19,7 @@ MOLA_SURFACE_MODE = "MOLA_SURFACE_STUDY"
 VISUAL_MODE = "VISUAL_PROTOTYPE"
 WEIGHTED_MODE = "WEIGHTED_SUBDIVISION_STUDY"
 GENERATIONAL_MODE = "GENERATIONAL_WEIGHT_STUDY"
+CAPABILITY_MODE = "SUBDIVISION_CAPABILITY_STUDY"
 MOLA_VARIANTS = [("A", 0.10, 0.25), ("B", 0.30, 0.25), ("C", 0.10, 0.65)]
 
 
@@ -58,7 +59,7 @@ def write_json_atomic(path, value):
             temporary.unlink()
 
 
-def validate_mesh_data(data, max_vertices=MAX_STAGE_COUNT, max_faces=MAX_STAGE_COUNT):
+def validate_mesh_data(data, max_vertices=MAX_STAGE_COUNT, max_faces=MAX_STAGE_COUNT, *, allow_polygons=False):
     """Explicit integer IDs, ordered corners; no repair or coordinate merging."""
     if not isinstance(data, dict):
         raise ValueError("Mesh exchange must be an object.")
@@ -81,7 +82,7 @@ def validate_mesh_data(data, max_vertices=MAX_STAGE_COUNT, max_faces=MAX_STAGE_C
         if not isinstance(row, dict) or type(row.get("id")) is not int or row["id"] in face_ids:
             raise ValueError("Face IDs must be distinct integers.")
         corners = row.get("vertices")
-        if not isinstance(corners, list) or len(corners) not in (3, 4) or any(type(key) is not int for key in corners):
+        if not isinstance(corners, list) or (len(corners)<3 if allow_polygons else len(corners) not in (3, 4)) or any(type(key) is not int for key in corners):
             raise ValueError("Only explicit triangle/quad corner lists are supported.")
         if len(set(corners)) != len(corners) or not set(corners) <= vertex_ids:
             raise ValueError("Face corners must be distinct existing vertex IDs.")
@@ -112,7 +113,7 @@ def validate_request(request):
             keys = {row["id"] for row in validate_mesh_data(request.get("mesh"))["faces"]}
             if len(selection) > 1000 or not set(selection) <= keys:
                 raise ValueError("Mola selection exceeds 1000 faces or contains unknown IDs.")
-    elif mode in (WEIGHTED_MODE, GENERATIONAL_MODE):
+    elif mode in (WEIGHTED_MODE, GENERATIONAL_MODE, CAPABILITY_MODE):
         pass  # Fixed S/U/F study; no Mola DLL or user-defined recipe.
     elif mode == "MESH_GRAMMAR":
         strength = request.get("strength")
@@ -141,6 +142,8 @@ def validate_response(response, request):
         return _validate_weighted_response(response, request)
     if request.get("mode") == GENERATIONAL_MODE:
         return _validate_generational_response(response)
+    if request.get("mode") == CAPABILITY_MODE:
+        return _validate_capability_response(response)
     stages = response.get("stages")
     if not isinstance(stages, list) or len(stages) > MAX_STEPS:
         raise ValueError("Invalid completed-stage list.")
@@ -164,6 +167,33 @@ def validate_response(response, request):
             raise ValueError("G1 field must be aligned to its pre-displacement driver mesh.")
         if any(row["value"] is not None and (type(row["value"]) not in (int, float) or not 0 <= row["value"] <= 1) for row in values):
             raise ValueError("Invalid driver field values.")
+    return response
+
+
+def _validate_capability_response(response):
+    variants=response.get("variants")
+    if response.get("mode")!=CAPABILITY_MODE or response.get("recipe_version")!="17.0" or response.get("cached_reviewed_outputs") is not True or not isinstance(variants,list) or len(variants)>5:
+        raise ValueError("Invalid Task17 capability comparison.")
+    carrier=validate_mesh_data(response.get("carrier",{}).get("mesh"))
+    if len(carrier["vertices"])!=24 or len(carrier["faces"])!=22:
+        raise ValueError("Capability comparison requires the unchanged C0 carrier.")
+    allowed={"TASK16 C11 CONTROL","BEST WEIGHTED DS","MAX_CAPABILITY_CANDIDATE","GATE_LEGIBLE_CANDIDATE","BEST CC-DS HYBRID"}
+    ids=set(); roles=set()
+    for variant in variants:
+        data=validate_mesh_data(variant.get("mesh"),120000,120000,allow_polygons=True)
+        current=variant.get("roles")
+        if not isinstance(current,list) or not current or len(set(current))!=len(current) or any(r not in allowed or r in roles for r in current):
+            raise ValueError("Capability comparison roles must be unique and explicit.")
+        roles.update(current)
+        if variant.get("id") in ids or variant.get("validated") is not True or variant.get("semantic_lineage")!="NOT IMPLEMENTED" or type(variant.get("generation")) is not int or not 0<=variant["generation"]<=6:
+            raise ValueError("Invalid reviewed capability checkpoint identity.")
+        ids.add(variant["id"])
+        if variant.get("vertex_count")!=len(data["vertices"]) or variant.get("face_count")!=len(data["faces"]):
+            raise ValueError("Capability checkpoint counts disagree.")
+    if response.get("status") not in ("SUCCESS","PARTIAL","FAILED") or (response["status"] in ("SUCCESS","PARTIAL") and not variants) or (response["status"]=="FAILED" and variants):
+        raise ValueError("Inconsistent capability comparison status.")
+    if response["status"]=="SUCCESS" and not {"TASK16 C11 CONTROL","BEST WEIGHTED DS","MAX_CAPABILITY_CANDIDATE","GATE_LEGIBLE_CANDIDATE"}<=roles:
+        raise ValueError("Complete capability comparison requires both descriptive selections and controls.")
     return response
 
 

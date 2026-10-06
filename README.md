@@ -6,6 +6,12 @@ CHESHIRE is a standalone deterministic computational design engine for transform
 
 **Status:** early experimental research software.
 
+Task 17 adds an isolated weighted Doo-Sabin capability study and the opt-in
+Rhino **SubdivisionCapabilityStudy** comparison. Angular family structures are
+a partial result; convincing stable macro → meso → micro hierarchy remains
+unresolved. See [actual results](docs/TASK17_RESULTS.md) and
+[reference/API choices](docs/TASK17_REFERENCE.md).
+
 Pipeline:
 
 **Mesh → Measure → Map → Rule → Budget → Transform → Inherit → Repeat**

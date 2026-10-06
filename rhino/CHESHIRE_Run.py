@@ -20,7 +20,7 @@ import Rhino
 from System import Guid
 from System.Drawing import Color
 from exchange import (
-    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE, WEIGHTED_MODE, GENERATIONAL_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
+    MAX_INPUT_FACES, MAX_INPUT_VERTICES, MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE, WEIGHTED_MODE, GENERATIONAL_MODE, CAPABILITY_MODE, TIMEOUT_SECONDS, face_driver_display_data, read_json,
     validate_mesh_data, validate_request, validate_response, write_json_atomic,
 )
 from worker_process import worker_launch_options
@@ -51,8 +51,11 @@ def rhino_mesh_to_data(mesh):
     return validate_mesh_data({"vertices": vertices, "faces": faces}, MAX_INPUT_VERTICES, MAX_INPUT_FACES)
 
 
-def data_to_rhino_mesh(data, x_offset=0.0, values=None):
-    validate_mesh_data(data)
+def data_to_rhino_mesh(data, x_offset=0.0, values=None, *, capability=False):
+    if capability:
+        validate_mesh_data(data,120000,120000,allow_polygons=True)
+    else:
+        validate_mesh_data(data)
     mesh = Rhino.Geometry.Mesh()
     mesh.Vertices.UseDoublePrecisionVertices = True
     indices = {}
@@ -61,8 +64,23 @@ def data_to_rhino_mesh(data, x_offset=0.0, values=None):
         if not isfinite(x + x_offset):
             raise ValueError("Display offset would produce non-finite geometry.")
         indices[row["id"]] = mesh.Vertices.Add(Rhino.Geometry.Point3d(x + x_offset, y, z))
-    for row in data["faces"]:
-        mesh.Faces.AddFace(*[indices[key] for key in row["vertices"]])
+    if capability:
+        from System import Array, Int32
+        from capability_display import polygon_display_plan
+        faces,face_ids,ngons=polygon_display_plan(data)
+        if len(faces)>120000:
+            raise ValueError("Task17 display tessellation exceeds its local face ceiling.")
+        for corners in faces:
+            mesh.Faces.AddFace(*[indices[key] for key in corners])
+        for group in ngons:
+            ngon=Rhino.Geometry.MeshNgon.Create(Array[Int32]([indices[v] for v in group["vertices"]]),Array[Int32](group["faces"]))
+            if ngon is None or mesh.Ngons.AddNgon(ngon)<0:
+                raise ValueError("Rhino refused a display-only n-gon boundary group.")
+        mesh.SetUserString("CHESHIRE display_only","Unsupported display n-gons use explicit fan triangles and MeshNgon boundary groups; original calculation polygons remain on disk. Nonplanar surface approximation; no geometry repair.")
+    else:
+        face_ids=[row["id"] for row in data["faces"]]
+        for row in data["faces"]:
+            mesh.Faces.AddFace(*[indices[key] for key in row["vertices"]])
     if values is not None:
         for row in data["vertices"]:
             value = values[row["id"]]
@@ -71,7 +89,7 @@ def data_to_rhino_mesh(data, x_offset=0.0, values=None):
     mesh.Normals.ComputeNormals()
     # Rhino uses dense list indices; explicit mappings retain calculation IDs.
     mesh.SetUserString("CHESHIRE vertex_ids", json.dumps([row["id"] for row in data["vertices"]]))
-    mesh.SetUserString("CHESHIRE face_ids", json.dumps([row["id"] for row in data["faces"]]))
+    mesh.SetUserString("CHESHIRE face_ids", json.dumps(face_ids))
     return mesh
 
 
@@ -88,6 +106,13 @@ def source_fingerprint(doc, source):
 
 
 def print_steps(response):
+    if response.get("mode") == CAPABILITY_MODE:
+        Rhino.RhinoApp.WriteLine("SubdivisionCapabilityStudy: " + response["design_status"] + "; loaded actual reviewed outputs, no search rerun.")
+        Rhino.RhinoApp.WriteLine(response["evidence_note"])
+        Rhino.RhinoApp.WriteLine(response["display_policy"])
+        for row in response["variants"]:
+            Rhino.RhinoApp.WriteLine(" / ".join(row["roles"])+f" G{row['generation']}: {row['vertex_count']} vertices / {row['face_count']} calculation faces.")
+        return
     if response.get("mode") == GENERATIONAL_MODE:
         Rhino.RhinoApp.WriteLine("GenerationalWeightStudy " + response["status"] + ": C11 partial hierarchy; no FIRST_GROTESQUE_GATE_CANDIDATE designated.")
         Rhino.RhinoApp.WriteLine(response["evidence_note"])
@@ -192,7 +217,10 @@ def print_steps(response):
 
 def insert_results(doc, request, response):
     """UI-thread insertion with one undo record and run-local failure rollback."""
-    if response.get("mode") == GENERATIONAL_MODE:
+    if response.get("mode") == CAPABILITY_MODE:
+        from capability_display import comparison_items
+        items = comparison_items(response)
+    elif response.get("mode") == GENERATIONAL_MODE:
         from generational_display import comparison_items
         items = comparison_items(response)
     elif response.get("mode") == WEIGHTED_MODE:
@@ -278,9 +306,12 @@ def insert_results(doc, request, response):
             attrs.LayerIndex, attrs.Name = layer_index, label
             attrs.SetUserString("CHESHIRE run_id", request["run_id"])
             attrs.SetUserString("CHESHIRE source_object", request["source"]["object_id"])
-            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14", GENERATIONAL_MODE: "task16"}.get(request.get("mode"), "task08")
+            task = {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14", GENERATIONAL_MODE: "task16", CAPABILITY_MODE: "task17"}.get(request.get("mode"), "task08")
             attrs.SetUserString("CHESHIRE results_file", str(ROOT / "output" / task / request["run_id"] / "response.json"))
-            display = data_to_rhino_mesh(data, position * spacing, values)
+            if response.get("mode")==CAPABILITY_MODE:
+                display = data_to_rhino_mesh(data, position * spacing, values, capability=True)
+            else:
+                display = data_to_rhino_mesh(data, position * spacing, values)
             if response.get("mode") == MOLA_FIELD_MODE and values is not None:
                 _, _, source_ids = face_driver_display_data(request["mesh"], response["drivers"]["faces"],
                     "height_driver" if label == "HEIGHT DRIVER" else "taper_driver")
@@ -321,10 +352,10 @@ class Run:
                                         "mode": mode, "mesh": rhino_mesh_to_data(source.Geometry)}
         if mode in (MOLA_MODE, MOLA_FIELD_MODE, MOLA_SURFACE_MODE, VISUAL_MODE):
             payload.update(mola_dll=mola_dll, selected_faces="ALL_ELIGIBLE_PLANAR")
-        elif mode not in (WEIGHTED_MODE, GENERATIONAL_MODE):
+        elif mode not in (WEIGHTED_MODE, GENERATIONAL_MODE, CAPABILITY_MODE):
             payload["strength"] = strength
         self.request = validate_request(payload)
-        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14", GENERATIONAL_MODE: "task16"}.get(mode, "task08") / self.request["run_id"]
+        self.directory = ROOT / "output" / {MOLA_MODE: "task09", MOLA_FIELD_MODE: "task10", MOLA_SURFACE_MODE: "task11", VISUAL_MODE: "task12", WEIGHTED_MODE: "task14", GENERATIONAL_MODE: "task16", CAPABILITY_MODE: "task17"}.get(mode, "task08") / self.request["run_id"]
         self.directory.mkdir(parents=True, exist_ok=False)
         write_json_atomic(self.directory / "request.json", self.request)
         self.cancel = threading.Event()
@@ -424,6 +455,8 @@ class Run:
                     Rhino.RhinoApp.WriteLine("Height and taper drivers: black=low, white=high, magenta=excluded. Original face values; Shaded mode shows colors.")
                 elif response.get("mode") == WEIGHTED_MODE:
                     Rhino.RhinoApp.WriteLine("Inspect STANDARD / UNIFORM / FIELD at matching generations in Shaded and Wireframe. Two separate drivers and exact point weights are in response.json. No collision guarantee.")
+                elif response.get("mode") == CAPABILITY_MODE:
+                    Rhino.RhinoApp.WriteLine("Compare the concise capability results in Shaded/Wireframe. X offsets only; no display mode changed. Gate drift is observational. N-gon fans are display-only; semantic lineage NOT IMPLEMENTED.")
                 elif response.get("mode") == GENERATIONAL_MODE:
                     Rhino.RhinoApp.WriteLine("Compare C0 / L4 G5 / BEST G1,G3,G5 in Shaded and Wireframe. Display offsets only; no display mode changed. Saved offline diagnostics include local warnings; no collision guarantee.")
                 elif response.get("mode") in (MOLA_SURFACE_MODE, VISUAL_MODE):
@@ -479,6 +512,7 @@ def main():
         prototype = choice.AddOption("VisualPrototype")
         weighted = choice.AddOption("WeightedSubdivisionStudy")
         generational = choice.AddOption("GenerationalWeightStudy")
+        capability = choice.AddOption("SubdivisionCapabilityStudy")
         dll_option = choice.AddOption("SetMolaDllPath")
         choice.Get()
         if choice.CommandResult() != Rhino.Commands.Result.Success:
@@ -494,6 +528,10 @@ def main():
         if choice.OptionIndex() == generational:
             Rhino.RhinoApp.WriteLine("GenerationalWeightStudy: fixed 4000 x 500 x 3500 C0 fixture at original gate bbox center/floor, no scaling. Original gate depth is 900; its geometry stays untouched. C11 is a useful PARTIAL result; finer hierarchy remains weak.")
             Run(doc, source, mode=GENERATIONAL_MODE).start()
+            return
+        if choice.OptionIndex() == capability:
+            Rhino.RhinoApp.WriteLine("SubdivisionCapabilityStudy: reviewed C0 / C11 / weighted DS / selected hybrid evidence, translated to the original gate center/floor without scaling. Original selection stays untouched. Recorded warnings remain visible.")
+            Run(doc, source, mode=CAPABILITY_MODE).start()
             return
         if choice.OptionIndex() in (mola, field, surface, prototype):
             mode = {mola: MOLA_MODE, field: MOLA_FIELD_MODE, surface: MOLA_SURFACE_MODE, prototype: VISUAL_MODE}[choice.OptionIndex()]
