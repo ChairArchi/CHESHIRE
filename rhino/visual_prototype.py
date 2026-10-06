@@ -223,7 +223,8 @@ def run_visual_prototype(request, publish=None, *, recipes=None, budget=None):
                     if role == "side":
                         parent = last_result.lineage.face_parents[key][0].key
                         by_parent.setdefault(parent, []).append(key)
-                for parent, sides in sorted(by_parent.items()):
+                # Study-only cap ablation; the normal Rhino recipe stays exact.
+                for parent, sides in (sorted(by_parent.items()) if not p.get("study_cap_only", False) else []):
                     sides = [key for key in sides if not any(neighbor is not None and neighbor != parent and neighbor in cluster_roots
                              for neighbor in original.edge_faces(tuple(mesh.face_vertices(key)[:2])))]
                     if not sides:
