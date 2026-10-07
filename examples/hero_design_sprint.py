@@ -369,11 +369,11 @@ def run_one(root, name, dll):
     print(name,'TECHNICAL_STOP' if failed else 'SUCCESS',failed or '',flush=True)
 
 
-def guarded(args, logs):
+def guarded(args, logs, *, worker_script=None):
     logs.mkdir(parents=True,exist_ok=True);start=perf_counter();peak=0;reason=None;seen={}
     initial=windows_memory();limit=min(12*1024**3,int(initial['available_bytes']*.65))
     with (logs/'stdout.txt').open('w') as out,(logs/'stderr.txt').open('w') as err:
-        child=subprocess.Popen([sys.executable,'-E','-s',str(Path(__file__)),*args],cwd=ROOT,
+        child=subprocess.Popen([sys.executable,'-E','-s',str(worker_script or Path(__file__)),*args],cwd=ROOT,
             env=worker_environment(),stdout=out,stderr=err,creationflags=subprocess.CREATE_NO_WINDOW)
         birth=process_birth(int(child._handle));seen[child.pid]=birth
         try:

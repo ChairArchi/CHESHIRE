@@ -1,0 +1,39 @@
+{
+  "mode": "INTEGER_COMPAS",
+  "seed": null,
+  "depth": 2,
+  "baseline": "385ec86c1f18ee1e2e0d61e2b32c524ceccfb683",
+  "resource_bytes_per_face": 5700,
+  "resource_rationale": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+  "id": "H1_CONVERGENCE_G2",
+  "input": "H1",
+  "checkpoint": "designs/H1_CONVERGENCE_G1/attempt_001",
+  "question": "The first central fold is visibly noisy. Remove normal offsets and strong edge/corner extrapolation, continue real immediate-origin Eq4 with a gentler face bias inside the same support flow.",
+  "declaration": {
+    "band_hops": 32,
+    "weights": {
+      "wf": 0.0,
+      "w1": 0.0,
+      "we": 0.0,
+      "w2": 0.0,
+      "wp": 0.0,
+      "w3": -0.6,
+      "w4": 0.35,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "support_network_ids": [
+      "lintel_convergence_support"
+    ]
+  }
+}

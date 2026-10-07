@@ -1,0 +1,34 @@
+{
+  "id": "H1_FLOW_G2_UNCALIBRATED",
+  "input": "H1",
+  "question": "Record the inherited 16000-byte forecast for the 1.17M next whole gate before allocating it.",
+  "declaration": {
+    "band_hops": 18,
+    "weights": {
+      "wf": 12,
+      "w1": -0.6,
+      "we": -6,
+      "w2": -1.1,
+      "wp": 9,
+      "w3": -0.8,
+      "w4": 0.5,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+    "execution": "POINTWISE_EXISTING_STENCILS"
+  },
+  "mode": "INTEGER_COMPAS",
+  "seed": null,
+  "baseline": "385ec86c1f18ee1e2e0d61e2b32c524ceccfb683",
+  "depth": 2,
+  "checkpoint": "designs/H1_FLOW_G1/attempt_001"
+}

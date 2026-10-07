@@ -27,7 +27,7 @@ def route_support(mesh,networks,hops):
     return {v:max(0.,1-distances.get(v,hops)/hops) for v in mesh.vertices()}
 
 
-def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=None,current_generation=0):
+def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=None,current_generation=0,origin_lineage=None):
     """P = reference crease point + route support*(sharp-weighted - smooth).
 
     Sharp-weighted uses existing literal Eq10/11 and Extended CC. Points are
@@ -40,9 +40,20 @@ def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=
     reference=crease_subdivide_once(mesh,networks,mode=mode,budget=budget,current_generation=current_generation)
     if all(w==0 for w in weights.values()):
         return reference
-    if weights['w3'] or weights['w4']:
-        raise ValueError('This composition does not invent later point-origin stencils; w3/w4 must be zero.')
-    support=route_support(mesh,networks,declaration['band_hops'])
+    if (weights['w3'] or weights['w4']) and not origin_lineage:
+        raise ValueError('Later face stencils require explicit current-generation point origins.')
+    support_networks=networks
+    if 'support_network_ids' in declaration:
+        requested_ids=declaration['support_network_ids']
+        if not requested_ids or not set(requested_ids)<=set(n.network_id for n in networks):
+            raise ValueError('Explicit support network IDs must exist in the current geometry.')
+        support_networks=tuple(n for n in networks if n.network_id in requested_ids)
+    support=route_support(mesh,support_networks,declaration['band_hops'])
+    execution=declaration.get('execution','REFERENCE_THREE_MESHES')
+    if execution=='POINTWISE_EXISTING_STENCILS':
+        from .fold_placement import apply_points
+        return apply_points(mesh,reference,support,weights,declaration,current_generation,origin_lineage)
+    if execution!='REFERENCE_THREE_MESHES':raise ValueError('Unknown fold execution method.')
     overrides={'face':{},'edge':{},'corner':{}}
     # Do not request an unused normal extrusion in a zero-support quiet zone.
     for f in mesh.faces():
@@ -55,7 +66,7 @@ def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=
     # The caller's original mesh and implicit crease attributes stay untouched.
     sharp=sharp_subdivide_once(mesh,weights,u_map=declaration.get('u_map',{}),
         unknown_u=declaration.get('unknown_u',0.),vertex_u_scale=support,
-        point_weights=overrides,budget=budget,current_generation=current_generation)
+        point_weights=overrides,budget=budget,current_generation=current_generation,origin_lineage=origin_lineage)
     smooth=crease_subdivide_once(mesh,(),budget=budget,current_generation=current_generation)
     output=reference.mesh
     corners=set(mesh.vertices());edge_ids={edge_key(r['edge']):r['point'] for r in reference.metadata['edge_points']}

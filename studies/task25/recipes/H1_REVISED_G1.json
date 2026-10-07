@@ -1,0 +1,33 @@
+{
+  "id": "H1_REVISED_G1",
+  "input": "H1",
+  "question": "Compare stronger contrasting interpolation and softened ridge retention at equal depth.",
+  "declaration": {
+    "band_hops": 28,
+    "weights": {
+      "wf": 36,
+      "w1": -1.1,
+      "we": -18,
+      "w2": -1.7,
+      "wp": 24,
+      "w3": 0.0,
+      "w4": 0.0,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+  },
+  "sharpness": 2,
+  "mode": "INTEGER_COMPAS",
+  "seed": null,
+  "baseline": "385ec86c1f18ee1e2e0d61e2b32c524ceccfb683",
+  "depth": 1
+}

@@ -1,0 +1,46 @@
+{
+  "project_gate": {
+    "passed": 798,
+    "skipped": 0,
+    "seconds": 39.84,
+    "actual_log": "C:\\Users\\USER\\CHESHIRE\\output\\task25_pytest_final.txt",
+    "actual_log_sha256": "078e0b97683e48895c6c16873e6f76707ed0108954850c4f4698a341e38d864e"
+  },
+  "execution_equivalence": {
+    "status": "PASS",
+    "comparison": "Entire H1 first continuation, legacy three-mesh vs pointwise execution",
+    "vertices": 292450,
+    "faces": 292448,
+    "exact_vertex_ids_oriented_topology": true,
+    "exact_coordinates": false,
+    "maximum_absolute_coordinate_difference": 1.1368683772161603e-13,
+    "tolerance_original_model_units": 1e-09,
+    "reference_sha256": "792a754dee1bafec2e706da69b539454beadb7b642b59120fcb0dd20cd3aa8a9",
+    "pointwise_sha256": "511141119adb660c42975fca1288ad44e0f8fd6693f60bbec4d0026d611dbb68",
+    "constraint": "Equivalent existing stencils within measured floating-point rounding; bitwise equivalence is not claimed when checksums differ."
+  },
+  "native": {
+    "application": "RhinoCommon 8.18.25100.11001",
+    "target": "E:\\CHESHIRE_DATA\\task25\\dcc\\H1_CURVATURE_G2.3dm",
+    "OBJ": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CURVATURE_G2\\attempt_001\\H1_CURVATURE_G2.obj",
+    "OBJ_sha256": "0b27bf444f0ce29a44e6536d8ad405e3627c102893097b44baa7c600622a00f3",
+    "native_sha256": "0f26b58023a4df9847d6bec8cb433edf9c86b16efa35c1f11ed48c17efcbc9b2",
+    "native_bytes": 67749447,
+    "actual_native_file_read": true,
+    "exact_XYZ_oriented_faces": true,
+    "headless_document_open": true,
+    "imported_objects": 1,
+    "object_id": "8e114362-3e79-41cd-93f1-55f22ad31d26",
+    "layer": "TASK25_H1_CURVATURE_G2",
+    "object_name": "H1_CURVATURE_G2_FULL_RESOLUTION",
+    "vertices": 1169794,
+    "faces": 1169792,
+    "units": "None / original unknown physical units; no scaling",
+    "processing": "Display normals only; no welding, triangulation, remeshing, smoothing, thickening or intersection repair.",
+    "native_read_write_document_seconds": 18.505983399999998,
+    "native_host_peak_working_set_bytes": 950116352,
+    "resource_scope": "Native operation time excludes cold RhinoCore startup. Peak working set is this native PowerShell/RhinoCommon host, not a whole process-tree measurement.",
+    "display": "Native file validation, not an interactive viewport or beauty render. Task25 NoWindow bitmap attempt failed separately."
+  },
+  "scope": "Tests and exact export/state checks establish computation and format readiness, not design quality or automated clay rendering."
+}

@@ -1,0 +1,78 @@
+{
+  "mode": "INTEGER_COMPAS",
+  "seed": null,
+  "depth": 2,
+  "baseline": "385ec86c1f18ee1e2e0d61e2b32c524ceccfb683",
+  "resource_bytes_per_face": 5700,
+  "resource_rationale": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+  "id": "H1_AMPLIFIED_G2",
+  "input": "H1",
+  "checkpoint": "designs/H1_CONTROL_G1/attempt_001",
+  "question": "After actual no-offset views, large curls are clearer but added hierarchy remains subtle. Amplify only later-generation V/F/E Eq4 weights from (-.9,.5) to (-3,1.5) at unchanged input, route, interpolation, zero offsets and support. Do child faces develop readable small folds inside the inherited curls?",
+  "support_route": {
+    "generator": "N6",
+    "junction": "X",
+    "junction_xz": [
+      0,
+      0.71
+    ],
+    "arm_targets": [
+      [
+        -0.13,
+        0.82
+      ],
+      [
+        0.13,
+        0.82
+      ],
+      [
+        -0.1,
+        0.63
+      ],
+      [
+        0.1,
+        0.63
+      ]
+    ],
+    "target_y_ratio": -1.1,
+    "sharpness": 0,
+    "minimum_seed_support": 0.8,
+    "minimum_target_support": 0.8,
+    "quiet_below": 0.45,
+    "turn_cost": 1.4,
+    "source_cost": 0.8,
+    "front_cost": 0.8,
+    "dihedral_cost": 0.25,
+    "cell_reward": 0.15,
+    "profile": "CONSTANT",
+    "birth_absolute_cc": 6,
+    "scope": "Point-placement support; zero sharpness adds no crease lock. Actual ordered N6 routes and root/source associations retained."
+  },
+  "declaration": {
+    "band_hops": 32,
+    "weights": {
+      "wf": 0.0,
+      "w1": -0.18,
+      "we": 0.0,
+      "w2": -0.3,
+      "wp": 0.0,
+      "w3": -3.0,
+      "w4": 1.5,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "support_network_ids": [
+      "lintel_convergence_support"
+    ]
+  }
+}

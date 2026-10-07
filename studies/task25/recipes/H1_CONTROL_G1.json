@@ -1,0 +1,32 @@
+{
+  "id": "H1_CONTROL_G1",
+  "input": "H1",
+  "question": "Standard CC geometry with inherited integer creases still active; additional placement terms inactive.",
+  "declaration": {
+    "band_hops": 12,
+    "weights": {
+      "wf": 0.0,
+      "w1": 0.0,
+      "we": 0.0,
+      "w2": 0.0,
+      "wp": 0.0,
+      "w3": 0.0,
+      "w4": 0.0,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+  },
+  "mode": "INTEGER_COMPAS",
+  "seed": null,
+  "baseline": "385ec86c1f18ee1e2e0d61e2b32c524ceccfb683",
+  "depth": 1
+}

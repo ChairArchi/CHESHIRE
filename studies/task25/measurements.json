@@ -1,0 +1,1138 @@
+{
+  "records": [
+    {
+      "id": "H1_AMPLIFIED_G2",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_AMPLIFIED_G2\\attempt_001\\summary.json",
+      "summary_sha256": "49c5f9d2d647fb9ee15cf6667acbd572349658dc47b802a3022985b2d10500ec",
+      "statistics": {
+        "vertex_count": 1169794,
+        "face_count": 1169792,
+        "edge_count": 2339584,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7338.877574529322,
+          2627.342618529129,
+          4672.745794888268
+        ]
+      },
+      "times": {
+        "operation": 169.67350000003353,
+        "operator_save": 12.460292200092226,
+        "state_save": 39.19549840001855,
+        "OBJ_write": 17.200889299972914,
+        "OBJ_read_check": 5.010684299981222
+      },
+      "elapsed_operation_to_exports_seconds": 270.33318839990534,
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "predicted_additional_bytes": 5860242944,
+        "resident_worker_before_bytes": 807571456,
+        "available_bytes": 11780759552,
+        "fraction_of_available": 0.55,
+        "accounting": "Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.",
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 7,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 2,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1169794,
+        "faces": 1169792,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 53567186,
+          "sha256": "a2033ccd412814f5b7a948cb6dee77edf907818060da4fcfeb0dac9c68b93021"
+        },
+        "H1_AMPLIFIED_G2.obj": {
+          "bytes": 130763429,
+          "sha256": "022966a735af90fa5eb48e48bb98d9d7028179b551fe0d045101b6138a8909ff"
+        },
+        "new_support_route.json": {
+          "bytes": 68160,
+          "sha256": "de6a0118b94189f62dd983a75f24b27dca2bd8bfdc39c81b30b8db06d3e4b959"
+        },
+        "operator.json.gz": {
+          "bytes": 14736368,
+          "sha256": "92cd02233933dd9b74a26ed351820df0bcd9acfb07b9ce14f510a3840429ffd4"
+        },
+        "operator_summary.json": {
+          "bytes": 1288,
+          "sha256": "dcc68be796b32e80e461dd1742d6db97913c881451db2610366318262bff8bf2"
+        },
+        "request.json": {
+          "bytes": 11196,
+          "sha256": "836f8d65da698bb560d7482333be85bc31eb98ef2e4889bddacb2ba285717e50"
+        },
+        "resource_preflight.json": {
+          "bytes": 721,
+          "sha256": "8aed870e62de3a5d5136d0418606545fa834b3c52635d5a46c12205a8f75a54c"
+        },
+        "state.json.gz": {
+          "bytes": 13452197,
+          "sha256": "12937a7bbf4b71fe574417046c449d7336a0a42739391e518c826d8be600327c"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 296.62237280001864,
+        "sampled_peak_tree_plus_driver_bytes": 4334522368,
+        "memory_guard_bytes": 8131744358,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_CONTROL_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONTROL_G1\\attempt_001\\summary.json",
+      "summary_sha256": "2e832218f4a456b8cb858fd6212ef70e3e4a1a93dfbe20afac2856fb56d9fecb",
+      "statistics": {
+        "vertex_count": 292450,
+        "face_count": 292448,
+        "edge_count": 584896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7347.201759710724,
+          2634.746095147252,
+          4683.481924594034
+        ]
+      },
+      "times": {
+        "operation": 31.584989199996926,
+        "operator_save": 3.3546792999841273,
+        "state_save": 10.248559099971317,
+        "OBJ_write": 3.7402199000352994,
+        "OBJ_read_check": 1.2484708999982104
+      },
+      "elapsed_operation_to_exports_seconds": 56.56812059995718,
+      "resource_forecast": {
+        "output_faces": 292448,
+        "output_vertices": 292450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4679168000,
+        "available_bytes": 11297681408,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292450,
+        "faces": 292448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13276268,
+          "sha256": "2e24eacf36c18acac7771580cb4f186fabf45436304ede68b6cc423b12a1b13d"
+        },
+        "H1_CONTROL_G1.obj": {
+          "bytes": 31309977,
+          "sha256": "a2fc905728a398316a6204517d0d2ac300091f9e9bfabb3dce040351a4c5b0bf"
+        },
+        "operator.json.gz": {
+          "bytes": 3560920,
+          "sha256": "d83232b42c6a7b958a0fc0bfe1159f727db7b3ba5f53733725c4ae761149ff83"
+        },
+        "operator_summary.json": {
+          "bytes": 1124,
+          "sha256": "db5b1e4f0e120cc1ab0a00af5a78b65cd3fcdb0b415c2541054ed59c0ab74c63"
+        },
+        "request.json": {
+          "bytes": 6301,
+          "sha256": "137cfdc52465afa8bcc4277e9f7fb0e037073630d5df30244014268c24531c20"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "d5f6f1794c6024cd113e8e7d98847585c838b5b384d433146774c1e1bb4dbaef"
+        },
+        "state.json.gz": {
+          "bytes": 3449276,
+          "sha256": "b15017903f90d2cf0596e7aad8adbade24aa6ce04a1a2da8b375ba993b158021"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 60.026712400023825,
+        "sampled_peak_tree_plus_driver_bytes": 1230737408,
+        "memory_guard_bytes": 7619605094,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_CONTROL_G2",
+      "attempt": "attempt_001",
+      "status": "TECHNICAL_STOP",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONTROL_G2\\attempt_001\\summary.json",
+      "summary_sha256": "7157416fe7b76107f2482a7b0ae5d79e7c7e99948a14164d96ac8d1b0fac9bd1",
+      "reason": "PREDICTION_STOP: {'output_faces': 1169792, 'output_vertices': 1169794, 'bytes_per_output_face': 5700, 'predicted_working_bytes': 6667814400, 'available_bytes': 11905040384, 'fraction_of_available': 0.55, 'reason': 'See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.', 'status': 'PREDICTION_STOP'}",
+      "last_preserved_input": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONTROL_G1\\attempt_001\\geometry.json.gz",
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "available_bytes": 11905040384,
+        "fraction_of_available": 0.55,
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "PREDICTION_STOP"
+      }
+    },
+    {
+      "id": "H1_CONTROL_G2",
+      "attempt": "attempt_002",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONTROL_G2\\attempt_002\\summary.json",
+      "summary_sha256": "97a8b4e9607d7585d574e5568570afb28d7197da1ac0d3447d8636cc6bd92572",
+      "statistics": {
+        "vertex_count": 1169794,
+        "face_count": 1169792,
+        "edge_count": 2339584,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7338.877574529322,
+          2627.342618529129,
+          4672.745794888268
+        ]
+      },
+      "times": {
+        "operation": 129.91253440000582,
+        "operator_save": 14.405996200046502,
+        "state_save": 44.59074439993128,
+        "OBJ_write": 17.784344700048678,
+        "OBJ_read_check": 6.241989900008775
+      },
+      "elapsed_operation_to_exports_seconds": 243.4915408999659,
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "predicted_additional_bytes": 6016476672,
+        "resident_worker_before_bytes": 651337728,
+        "available_bytes": 13518041088,
+        "fraction_of_available": 0.55,
+        "accounting": "Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.",
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 7,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 2,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1169794,
+        "faces": 1169792,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 53562308,
+          "sha256": "9118926fe29ab826e15b03de2ba2fddbb7cada85f41d0cf06e678a4cb2a886b6"
+        },
+        "H1_CONTROL_G2.obj": {
+          "bytes": 130763462,
+          "sha256": "31c9aadbba174f4afba33776eace4f32db68a2307cd8a10be4cc9ae07c55affd"
+        },
+        "operator.json.gz": {
+          "bytes": 14647650,
+          "sha256": "93a564f30683a1f79ed348c312201632e837927f59cb6f1a072908d30c541d53"
+        },
+        "operator_summary.json": {
+          "bytes": 1125,
+          "sha256": "3664abbcf0a2b7cc432c63ec0a923ae756181480d1be65162521118ef6007d30"
+        },
+        "request.json": {
+          "bytes": 9965,
+          "sha256": "ce4962acd184df524b7bd449092a18449bf9e62f96d7daddeabf60842dc530ea"
+        },
+        "resource_preflight.json": {
+          "bytes": 721,
+          "sha256": "e12f408f1e17b72ae1e44d25a2eb360f5d6c5a56427d5b0bf16003af767233d6"
+        },
+        "state.json.gz": {
+          "bytes": 13440165,
+          "sha256": "21978c90f861550b98afdf6d7a5220f47fca576bbbffe154af3f3777e646d6bd"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 250.62121260003187,
+        "sampled_peak_tree_plus_driver_bytes": 4331954176,
+        "memory_guard_bytes": 8823036518,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_CONVERGENCE_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONVERGENCE_G1\\attempt_001\\summary.json",
+      "summary_sha256": "efb67a81688d9e4a5ae29651acd8d0ff81962050c76208ed422d6b4488d42078",
+      "statistics": {
+        "vertex_count": 292450,
+        "face_count": 292448,
+        "edge_count": 584896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7347.201759710724,
+          2634.746095147252,
+          4683.481924594034
+        ]
+      },
+      "times": {
+        "operation": 42.83627480000723,
+        "operator_save": 3.373656400013715,
+        "state_save": 10.323659299989231,
+        "OBJ_write": 3.607874699984677,
+        "OBJ_read_check": 1.1644531999481842
+      },
+      "elapsed_operation_to_exports_seconds": 68.58168569998816,
+      "resource_forecast": {
+        "output_faces": 292448,
+        "output_vertices": 292450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4679168000,
+        "available_bytes": 12267528192,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292450,
+        "faces": 292448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13279890,
+          "sha256": "ac87bce7509877184bdf0c439fefa6e36d0fd189c744977b686300718787a7b9"
+        },
+        "H1_CONVERGENCE_G1.obj": {
+          "bytes": 31309970,
+          "sha256": "43e6dc5cb3857994925946c00575d80a7c4da4d99b93aa1d654081e06508230f"
+        },
+        "new_support_route.json": {
+          "bytes": 31877,
+          "sha256": "7c3add8045eb9764a2f7615911f11063f2d2d7d014511913e742c2207e7e8e0c"
+        },
+        "operator.json.gz": {
+          "bytes": 3588803,
+          "sha256": "e90d8b7b99a1ffb225db3fb91f163d8740b9ca8713502e30ca07c4082d753bef"
+        },
+        "operator_summary.json": {
+          "bytes": 1284,
+          "sha256": "99e20bf2f6e1d181b9ed8d84cba3de16d493b8417360765da4f6ce5fb984677a"
+        },
+        "request.json": {
+          "bytes": 10712,
+          "sha256": "5f21f0c4ac42531c66c6177f4cd5935069617e4fab412c1d1410c6fe442531fe"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "68f48b2f161543641ff211ef2de7ae3e64d9796575ce440c5337a021c893643c"
+        },
+        "state.json.gz": {
+          "bytes": 3454771,
+          "sha256": "ff77dbdff8a7b99fa9afa47e9d1e8af139f1f429220493d2585f9500579b6043"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 76.43886879994534,
+        "sampled_peak_tree_plus_driver_bytes": 1201467392,
+        "memory_guard_bytes": 8135075020,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_CONVERGENCE_G2",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CONVERGENCE_G2\\attempt_001\\summary.json",
+      "summary_sha256": "15518c5fc551abb8d37a02420c8730e34bd732dd1fec00d3d051e1f5644929ae",
+      "statistics": {
+        "vertex_count": 1169794,
+        "face_count": 1169792,
+        "edge_count": 2339584,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7338.877574529322,
+          2627.342618529129,
+          4672.745794888268
+        ]
+      },
+      "times": {
+        "operation": 195.35696170001756,
+        "operator_save": 14.393310899962671,
+        "state_save": 40.55693230009638,
+        "OBJ_write": 15.881304300040938,
+        "OBJ_read_check": 4.998769499943592
+      },
+      "elapsed_operation_to_exports_seconds": 300.2269201000454,
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "predicted_additional_bytes": 6015120896,
+        "resident_worker_before_bytes": 652693504,
+        "available_bytes": 11589451776,
+        "fraction_of_available": 0.55,
+        "accounting": "Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.",
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 7,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 2,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1169794,
+        "faces": 1169792,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 53573476,
+          "sha256": "4962fbfc8ffd45999abae6ed4f1cd8a056dfd0fc3654d4ae142bf42769ed8dba"
+        },
+        "H1_CONVERGENCE_G2.obj": {
+          "bytes": 130763464,
+          "sha256": "a42503fa2f0aeed66494fe9d79742c654713025699756c6585865c61d5382d2f"
+        },
+        "operator.json.gz": {
+          "bytes": 14736543,
+          "sha256": "9b67c684c10f2ff8e0f20754394a0006cd19d26dc2f99d80c34012a632239da9"
+        },
+        "operator_summary.json": {
+          "bytes": 1286,
+          "sha256": "7c11dead4c464292ef97b691906ae384ad7c55f8be4fec3a3b730318f8ceff63"
+        },
+        "request.json": {
+          "bytes": 10200,
+          "sha256": "0c44f8aaa2d97ceedc335dd91686ad8caab4c30d967bc4753b10b6359c544910"
+        },
+        "resource_preflight.json": {
+          "bytes": 721,
+          "sha256": "f5732b3d0e8a546505ebfffbd5f3714bfefe07759ed78881498ad7d37b095047"
+        },
+        "state.json.gz": {
+          "bytes": 13449944,
+          "sha256": "ef5b6994445b21c6bb750ef5fcc9924251758f969699a1d4f4f16d07ef49e3a6"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 308.3025186000159,
+        "sampled_peak_tree_plus_driver_bytes": 4351234048,
+        "memory_guard_bytes": 7918097408,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_CURVATURE_G2",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_CURVATURE_G2\\attempt_001\\summary.json",
+      "summary_sha256": "1ec9d40e49207c9d1565b394d72434411609140a918ca0ce77f59271bf7bf65e",
+      "statistics": {
+        "vertex_count": 1169794,
+        "face_count": 1169792,
+        "edge_count": 2339584,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7338.877574529322,
+          2627.342618529129,
+          4672.745794888268
+        ]
+      },
+      "times": {
+        "operation": 171.08388729998842,
+        "operator_save": 12.310752000077628,
+        "state_save": 38.60951820004266,
+        "OBJ_write": 15.08446089993231,
+        "OBJ_read_check": 5.418259200057946
+      },
+      "elapsed_operation_to_exports_seconds": 269.0030537999701,
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "predicted_additional_bytes": 5861766656,
+        "resident_worker_before_bytes": 806047744,
+        "available_bytes": 11314409472,
+        "fraction_of_available": 0.55,
+        "accounting": "Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.",
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 7,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 2,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1169794,
+        "faces": 1169792,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 53567398,
+          "sha256": "62993c497532c9a759b1e37f686fababa2fb7abcf312bca8206281d82215b1b1"
+        },
+        "H1_CURVATURE_G2.obj": {
+          "bytes": 130763487,
+          "sha256": "0b27bf444f0ce29a44e6536d8ad405e3627c102893097b44baa7c600622a00f3"
+        },
+        "new_support_route.json": {
+          "bytes": 68160,
+          "sha256": "de6a0118b94189f62dd983a75f24b27dca2bd8bfdc39c81b30b8db06d3e4b959"
+        },
+        "operator.json.gz": {
+          "bytes": 14736413,
+          "sha256": "45ba88dfafa39d9f17b24b29c8537aea4adee9d1b74fe06a3fecf54bbe6138e7"
+        },
+        "operator_summary.json": {
+          "bytes": 1288,
+          "sha256": "e5c8cc35e98fddd4277dcad6bbac91901ecab7ccfbacbdbf817caf7bf1359635"
+        },
+        "request.json": {
+          "bytes": 11146,
+          "sha256": "8d82f1cdd571605ba6d3abef28062932df41fb66d16e3a0a6fe7848ea05fefc1"
+        },
+        "resource_preflight.json": {
+          "bytes": 721,
+          "sha256": "969bfa77c0be58946f6d9a6405276996f42d458e2ae7bad12aca87a2262812b4"
+        },
+        "state.json.gz": {
+          "bytes": 13452195,
+          "sha256": "1ade598ccc7e5e9994d005ef38d21199ee5afbe745c7ffb96137cfcd53caf2c0"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 295.2679609999759,
+        "sampled_peak_tree_plus_driver_bytes": 4335534080,
+        "memory_guard_bytes": 7741130342,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_FLOW_EFFICIENT_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_FLOW_EFFICIENT_G1\\attempt_001\\summary.json",
+      "summary_sha256": "5ea193c19784985fa6e272cb23c64dcac7707289085c901b1848ca9b8567b203",
+      "statistics": {
+        "vertex_count": 292450,
+        "face_count": 292448,
+        "edge_count": 584896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7369.94419752288,
+          2668.250473855489,
+          4696.410526170791
+        ]
+      },
+      "times": {
+        "operation": 47.832286300021224,
+        "operator_save": 3.133744899998419,
+        "state_save": 10.18352339998819,
+        "OBJ_write": 3.980044799973257,
+        "OBJ_read_check": 1.2326939000049606
+      },
+      "elapsed_operation_to_exports_seconds": 73.15747890004423,
+      "resource_forecast": {
+        "output_faces": 292448,
+        "output_vertices": 292450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4679168000,
+        "available_bytes": 12278222848,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292450,
+        "faces": 292448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13278072,
+          "sha256": "b899d32cbbde4d55090ffb47718159bbf2c137d562ae8d6d8460a43f2cceefa8"
+        },
+        "H1_FLOW_EFFICIENT_G1.obj": {
+          "bytes": 33064731,
+          "sha256": "24844975ce505cda1ee719c3d52f9e3ba38b5e82e5b3ecfe1034785e3bc60e9a"
+        },
+        "operator.json.gz": {
+          "bytes": 3691913,
+          "sha256": "f9ff5ca6a4b52f25315c23c40b6978cfa4550e340dcb54be80f3d38858ed5a36"
+        },
+        "operator_summary.json": {
+          "bytes": 1209,
+          "sha256": "29cede769c8bc91650116cc1a0c24e0e89e47d1e543130568f941de2712ed254"
+        },
+        "request.json": {
+          "bytes": 9680,
+          "sha256": "9c574fe70d8e47436f2a9548a0654dde9ffebbe7c09bd837315429f18dcedcfb"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "36b61a09e6646591ffeffd5fd70a79d7ec5d2f50bf2c377bbffc0888e8da98fb"
+        },
+        "state.json.gz": {
+          "bytes": 3449447,
+          "sha256": "1bc17f784f8c35ee5fc3e53d48acdc6b211aab2b2137112ee29626bb663e74ee"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 76.04474039992783,
+        "sampled_peak_tree_plus_driver_bytes": 1194971136,
+        "memory_guard_bytes": 8043919769,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_FLOW_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_FLOW_G1\\attempt_001\\summary.json",
+      "summary_sha256": "6780e5212d21741ea6196f1b4d9872490c6e5d92a3301d140e41083a5457b4bb",
+      "statistics": {
+        "vertex_count": 292450,
+        "face_count": 292448,
+        "edge_count": 584896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7369.94419752288,
+          2668.250473855489,
+          4696.410526170791
+        ]
+      },
+      "times": {
+        "operation": 121.4351702000713,
+        "operator_save": 24.720087700057775,
+        "state_save": 9.903110100072809,
+        "OBJ_write": 3.5355728999711573,
+        "OBJ_read_check": 1.2021966999163851
+      },
+      "elapsed_operation_to_exports_seconds": 168.13613280002028,
+      "resource_forecast": {
+        "output_faces": 292448,
+        "output_vertices": 292450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4679168000,
+        "available_bytes": 11564457984,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292450,
+        "faces": 292448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13278079,
+          "sha256": "8bc1372cd2369fc7b2dc023d3c5eaa5aa1c5bd82170c97ce51a21b5d4fb2cf27"
+        },
+        "H1_FLOW_G1.obj": {
+          "bytes": 33064731,
+          "sha256": "5982fc0dc6bd704d83ea9a300f96b946fafa96d79045df8b247f0e7297d4fa49"
+        },
+        "operator.json.gz": {
+          "bytes": 42284251,
+          "sha256": "4e73460d6024e57320b54cf33bd9d3c37a1d01e19cb2b244e684a9b7c1b254bd"
+        },
+        "operator_summary.json": {
+          "bytes": 1144,
+          "sha256": "be3a3950b1d7450823ffd6a7f51634f6ccdd263dcc2648b510992f932337d853"
+        },
+        "request.json": {
+          "bytes": 6311,
+          "sha256": "a4f5f280604d38111f7e8ab464301a589515edda4ca60bd470c0e89794d8f6a7"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "113e707a2ca62471d5b32ebf443faa52617158680fa3bcdd3dff52b14b12d3bf"
+        },
+        "state.json.gz": {
+          "bytes": 3449371,
+          "sha256": "c93c9728b73f089edb5b02a21391f2a1fe92395772808a21e18d396264ca1d81"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 171.7274135000771,
+        "sampled_peak_tree_plus_driver_bytes": 2865991680,
+        "memory_guard_bytes": 7680816332,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_FLOW_G2_UNCALIBRATED",
+      "attempt": "attempt_001",
+      "status": "TECHNICAL_STOP",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_FLOW_G2_UNCALIBRATED\\attempt_001\\summary.json",
+      "summary_sha256": "33c2e67ee113e8de99a29e2a1e5bed58b29dd4fdbc0060f3f5bc16ba3de49fc1",
+      "reason": "PREDICTION_STOP: {'output_faces': 1169792, 'output_vertices': 1169794, 'bytes_per_output_face': 16000, 'predicted_working_bytes': 18716672000, 'available_bytes': 10716749824, 'fraction_of_available': 0.55, 'reason': 'Inherited Task24 conservative estimate, pending completed-run calibration.'}",
+      "last_preserved_input": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_FLOW_G1\\attempt_001\\geometry.json.gz"
+    },
+    {
+      "id": "H1_RENEWED_G2",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_RENEWED_G2\\attempt_001\\summary.json",
+      "summary_sha256": "20190e50bfbcc349012c8f937e8dcf14e4ff03c13969f5eccdf304cc0b655fbd",
+      "statistics": {
+        "vertex_count": 1169794,
+        "face_count": 1169792,
+        "edge_count": 2339584,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7338.877574529322,
+          2627.342618529129,
+          4672.745794888268
+        ]
+      },
+      "times": {
+        "operation": 171.0318382999394,
+        "operator_save": 13.16227390000131,
+        "state_save": 39.344653100008145,
+        "OBJ_write": 15.746151800034568,
+        "OBJ_read_check": 4.897643000003882
+      },
+      "elapsed_operation_to_exports_seconds": 271.46201779996045,
+      "resource_forecast": {
+        "output_faces": 1169792,
+        "output_vertices": 1169794,
+        "bytes_per_output_face": 5700,
+        "predicted_working_bytes": 6667814400,
+        "predicted_additional_bytes": 5858285056,
+        "resident_worker_before_bytes": 809529344,
+        "available_bytes": 11577348096,
+        "fraction_of_available": 0.55,
+        "accounting": "Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.",
+        "reason": "See analysis/resource_calibration.json: five measured whole-gate one-topology runs, +35% margin and unchanged live memory guard. Predict at current available RAM before allocation.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 7,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 2,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1169794,
+        "faces": 1169792,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 53567641,
+          "sha256": "ae9465a04c83fe1f561b8602c28226b7d0683c06a0f3544d9a12127d0877252a"
+        },
+        "H1_RENEWED_G2.obj": {
+          "bytes": 130763483,
+          "sha256": "778ff625cdc48ddcfab70b6809d15caf482710d0f450ff7f8664d04648c9e287"
+        },
+        "new_support_route.json": {
+          "bytes": 68160,
+          "sha256": "de6a0118b94189f62dd983a75f24b27dca2bd8bfdc39c81b30b8db06d3e4b959"
+        },
+        "operator.json.gz": {
+          "bytes": 14736396,
+          "sha256": "9e6f933f02aae55bcc21518bd6664523c5557d7f5c3100c276ac86af34d5cf86"
+        },
+        "operator_summary.json": {
+          "bytes": 1289,
+          "sha256": "f895b65de13d54615898e75ab33cbbd80963df3bf942e48eef479445b02bde91"
+        },
+        "request.json": {
+          "bytes": 11082,
+          "sha256": "3b8172a6f2fd9cb7e766926a17ad9ec7c951af0e64dda273e281fff58d514de9"
+        },
+        "resource_preflight.json": {
+          "bytes": 721,
+          "sha256": "785f33768c89e342e247ba27339b428c66bb5500d8d0da0a99eb05ac935a3189"
+        },
+        "state.json.gz": {
+          "bytes": 13452204,
+          "sha256": "15603e24d25261623799de74e38fe4ab91c1cfa5d0e7c93265e4c25de36bbe9a"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 298.52880749991164,
+        "sampled_peak_tree_plus_driver_bytes": 4373270528,
+        "memory_guard_bytes": 7618598707,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H1_REVISED_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H1_REVISED_G1\\attempt_001\\summary.json",
+      "summary_sha256": "0244684eb2ad0d4c0b535ad363b89654bd547223eaff9a7bce09c41ba410d702",
+      "statistics": {
+        "vertex_count": 292450,
+        "face_count": 292448,
+        "edge_count": 584896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          7391.793156840171,
+          2692.5468060823323,
+          4717.671383831939
+        ]
+      },
+      "times": {
+        "operation": 121.93210090009961,
+        "operator_save": 24.711742399958894,
+        "state_save": 10.28119680006057,
+        "OBJ_write": 3.6147667000768706,
+        "OBJ_read_check": 1.1959912000456825
+      },
+      "elapsed_operation_to_exports_seconds": 168.9565394000383,
+      "resource_forecast": {
+        "output_faces": 292448,
+        "output_vertices": 292450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4679168000,
+        "available_bytes": 11538415616,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292450,
+        "faces": 292448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13277862,
+          "sha256": "bfba8cbdc2e440dc6bcf7f3ab3468119da34fbe51b1c07ba19dc37c7880dc223"
+        },
+        "H1_REVISED_G1.obj": {
+          "bytes": 30432749,
+          "sha256": "72070ac5e696db0e4ac2419e04b4f214c8ae714d0c2e3a78fa925a9d883aaaf9"
+        },
+        "operator.json.gz": {
+          "bytes": 44302784,
+          "sha256": "b1783cc4d7a3cd30a32d8bace2dede23ef98f3c727445f64de3933a45dabc7f5"
+        },
+        "operator_summary.json": {
+          "bytes": 1144,
+          "sha256": "320a99460469d893aa92b930aff357a8c0481d9050ab4d61459aa2a16540f8f0"
+        },
+        "request.json": {
+          "bytes": 6307,
+          "sha256": "def4ee12314ebb09d8d041ec5ee78392c6c59350e6e7ad3370200671282a5be5"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "aca418c81146443a531f6abfc742b1cc74943f2270e8a4843d3d8f1cc082fe88"
+        },
+        "state.json.gz": {
+          "bytes": 3449213,
+          "sha256": "b87868119a5b5389c50bcdc1c16e8e036f22c1ff6cec3d2f38f9e9639f7bca74"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 171.7889427000191,
+        "sampled_peak_tree_plus_driver_bytes": 2860199936,
+        "memory_guard_bytes": 7631316992,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H2_R1_SCOUT_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H2_R1_SCOUT_G1\\attempt_001\\summary.json",
+      "summary_sha256": "281b7e2c89999ab25f811b7133b81be22318a8f0bd86b3477c6be1309bd73490",
+      "statistics": {
+        "vertex_count": 292866,
+        "face_count": 292864,
+        "edge_count": 585728,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          5722.491970587354,
+          2135.7892885760966,
+          4492.397611485215
+        ]
+      },
+      "times": {
+        "operation": 42.759426999953575,
+        "operator_save": 2.9053805000148714,
+        "state_save": 9.633844899944961,
+        "OBJ_write": 3.734563900041394,
+        "OBJ_read_check": 1.2116665000794455
+      },
+      "elapsed_operation_to_exports_seconds": 66.76754909998272,
+      "resource_forecast": {
+        "output_faces": 292864,
+        "output_vertices": 292866,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4685824000,
+        "available_bytes": 12981579776,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration."
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 292866,
+        "faces": 292864,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13168744,
+          "sha256": "3f027df883385fd7d417a0fe446d2f6f29bd2f3d04c49590d56ddd21e09cc569"
+        },
+        "H2_R1_SCOUT_G1.obj": {
+          "bytes": 30482795,
+          "sha256": "37ad7874041aa858e3d04a12fa6c8c288197b8706ffaa0a40ab2add7135c9524"
+        },
+        "operator.json.gz": {
+          "bytes": 3654236,
+          "sha256": "df5b9993ce3d7752bd922d2164994ebc55efddf262b21e1035eac15657d52717"
+        },
+        "operator_summary.json": {
+          "bytes": 1209,
+          "sha256": "5444c332cc9cbd6e45ecf0ff5b665dd8be13031173f0888ac417f6717665c386"
+        },
+        "request.json": {
+          "bytes": 9761,
+          "sha256": "f32627d9d5af28398b2525cdfbfa1c1646bae5972934549e105244403842d5d8"
+        },
+        "resource_preflight.json": {
+          "bytes": 299,
+          "sha256": "2ad4a640c986e3551429f9d235f2734caa15ebfaeb56ae9e8335d9249158aab5"
+        },
+        "state.json.gz": {
+          "bytes": 3422073,
+          "sha256": "f380724c10bdc804722c5448ab66c8b79765402e3724bb7f510581aaad225174"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 69.52104539994616,
+        "sampled_peak_tree_plus_driver_bytes": 1207345152,
+        "memory_guard_bytes": 8529120870,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    },
+    {
+      "id": "H3_R3_SCOUT_G1",
+      "attempt": "attempt_001",
+      "status": "SUCCESS",
+      "summary": "E:\\CHESHIRE_DATA\\task25\\designs\\H3_R3_SCOUT_G1\\attempt_001\\summary.json",
+      "summary_sha256": "c44592a0f364070c5213f46a0ff6eb9fb8a7045110423ccf9ad681a9bde67129",
+      "statistics": {
+        "vertex_count": 290450,
+        "face_count": 290448,
+        "edge_count": 580896,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          5817.807031489678,
+          3879.2589473224652,
+          4858.794116035135
+        ]
+      },
+      "times": {
+        "operation": 42.36587029998191,
+        "operator_save": 2.856508299941197,
+        "state_save": 9.343828300014138,
+        "OBJ_write": 3.5262810999993235,
+        "OBJ_read_check": 1.189880899968557
+      },
+      "elapsed_operation_to_exports_seconds": 66.25012840004638,
+      "resource_forecast": {
+        "output_faces": 290448,
+        "output_vertices": 290450,
+        "bytes_per_output_face": 16000,
+        "predicted_working_bytes": 4647168000,
+        "available_bytes": 13135519744,
+        "fraction_of_available": 0.55,
+        "reason": "Inherited Task24 conservative estimate, pending completed-run calibration.",
+        "status": "SAFE_FORECAST"
+      },
+      "generation": {
+        "absolute_cc": 6,
+        "backbone_cc": 3,
+        "task24_relative_cc": 2,
+        "continuation_depth": 1,
+        "note": "Absolute counts CC only. Network generations count splits since route birth. Task24 did not retain generic point origins after Mola; first continuation bootstraps actual immediate CC origins."
+      },
+      "OBJ_validation": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 290450,
+        "faces": 290448,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "artifacts": {
+        "geometry.json.gz": {
+          "bytes": 13038618,
+          "sha256": "e117135e3e82eeb65c00eef55abb37a532e4b82cb80a5ae368c5fa498c50400e"
+        },
+        "H3_R3_SCOUT_G1.obj": {
+          "bytes": 31094075,
+          "sha256": "c7681eb2ba0326134529ac69ff6f34635a08033abac11f06a160ce600dff1de2"
+        },
+        "operator.json.gz": {
+          "bytes": 3663296,
+          "sha256": "c0e94910d417f298fbe8f32c50f4086593d59cd9c2e64aa5e2112f4e7561144e"
+        },
+        "operator_summary.json": {
+          "bytes": 1207,
+          "sha256": "fa5354650b0fbb3b6f49df87536b00eb734c02ec0dbedf72975c201884da62db"
+        },
+        "request.json": {
+          "bytes": 9759,
+          "sha256": "916a76e912e15e8e5750efb395a0b3afde1fcc586667c224f35dfa9a1718d8bb"
+        },
+        "resource_preflight.json": {
+          "bytes": 329,
+          "sha256": "12235e42fb4f78730ca097e630399321ce004ad6b0d63fe412609d5beea030ef"
+        },
+        "state.json.gz": {
+          "bytes": 3402187,
+          "sha256": "84513e840343bfb70614d97150ec97d0c3266426bbf2ed1d6336ef26ef45c090"
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 69.95314160000999,
+        "sampled_peak_tree_plus_driver_bytes": 1204944896,
+        "memory_guard_bytes": 8665989529,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      }
+    }
+  ],
+  "scope": "Generator process-tree plus driver peak is sampled by the existing guard. Native host measurement is separate. No shader/renderer RAM inferred from generator peak."
+}
