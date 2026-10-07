@@ -30,8 +30,13 @@ interrupted attempt, then the corrected validation exited 0 with no RAM stop.
 Its correction changes only validation lookup cost, not generated meshes.
 
 Preservation branch: `experiment/task26-progressive-gates`.
-Preservation commit: recorded below after the actual local commit is created.
-The metadata follow-up can be a descendant; it does not change generated meshes.
+Actual preservation commit:
+`846112578d269b765f1b0b0f395d0cae4dfeadf0`.
+Its parent is the stated Task25 baseline. It contains the preserved Task26
+implementation, exact small recipes/evidence, results and stop handoff.
+The metadata follow-up that records this SHA is a descendant and does not
+change source algorithms or generated meshes. Final local HEAD and clean
+status are recorded in external `release.json`; use both records.
 Verify with `git show`, `git merge-base --is-ancestor` and `git status --porcelain`.
 
 Retained lead: `LEAD_BALANCED_G7`, actual attempt_002, 1,245,184 quads.

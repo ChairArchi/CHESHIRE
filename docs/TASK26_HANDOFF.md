@@ -7,7 +7,8 @@ Only existing-file verification, reporting and preservation continued.
 
 Baseline is `b4000cf85bc0768821976bab4b454ca35b8ccca3`; branch is
 `experiment/task26-progressive-gates`. The actual preservation SHA is recorded
-in the stop handoff after committing and in external `release.json`. Check
+in the stop handoff: `846112578d269b765f1b0b0f395d0cae4dfeadf0`.
+The metadata follow-up's final HEAD is in external `release.json`. Check
 actual Git ancestry and working-tree status; do not assume HEAD is the intended
 baseline. Never reset, clean or overwrite the preserved branch or external data.
 
