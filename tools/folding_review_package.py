@@ -108,7 +108,14 @@ def package(root,lead,attempt):
     for n in ['input_identity.json','source_revision.json']:
         review[n]=root/n
     for source in sorted((root/'recipes').glob('*.json')):review['recipes/'+source.name]=source
-    for source in sorted((root/'analysis').glob('*.json')):review['analysis/'+source.name]=source
+    # Camera-space mesh JSON lives beside analysis metadata; do not collect the
+    # entire folder. Review contains references/evidence, not those large meshes.
+    for n in ['ancestry_map.json','ancestry_plan.json','resource_calibration.json',
+              'scouting_decision.json','rhino_display_failure.json',
+              'whole_execution_equivalence.json','measurements.json',
+              'folding_support.json','curvature_displacement.json',
+              'native_sections_manifest.json']:
+        review['analysis/'+n]=root/'analysis'/n
     for n in ['SOURCE_MAP.md','DESIGN_DECISION.md']:
         if (root/'analysis'/n).exists():review['analysis/'+n]=root/'analysis'/n
     for source in sorted((root/'analysis/dcc_failure').glob('*')):
