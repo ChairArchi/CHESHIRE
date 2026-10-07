@@ -4,13 +4,24 @@ from pathlib import Path
 from time import perf_counter
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont,ImageOps
-from task31_study import ROOT,PREVIOUS,REPO,read,write,file_hash,load_mesh
+from task31_study import ROOT,PREVIOUS,REPO,read,write,load_mesh
 from task30_views import sheet
 
 BASELINE='e66324f63a956182f5808e5f412a77e65973b338'
 BRANCH='experiment/task31-regional-depth-openings'
 OWN=['src/cheshire/reference_subdivision.py','src/cheshire/polygon_dual_subdivision.py','src/cheshire/regional_generation.py',
     'tests/test_task31_regional_generation.py']+[str(p.relative_to(REPO)).replace('\\','/') for p in sorted((REPO/'tools').glob('task31_*'))]
+POSTCOMMIT={'CHESHIRE_TASK31_REVIEW.zip','analysis/review_zip_validation.json',
+    'analysis/repository_commit.json','analysis/repository_commit_payload.json'}
+FIRST_BUNDLE='logs/review_bundle_first.zip'
+
+
+def file_hash(path):
+    """Bounded-memory hashing even for multi-GB review archives."""
+    digest=hashlib.sha256()
+    with Path(path).open('rb') as stream:
+        for chunk in iter(lambda:stream.read(4*1024*1024),b''):digest.update(chunk)
+    return digest.hexdigest()
 
 
 def visuals():
@@ -228,6 +239,11 @@ One early render attempt reached a still-writing NPZ and failed with EOFError. G
 generation completed intact; `cube2_complete` is the complete replacement comparison.
 Failed logs and partial images are retained transparently. No resource-stop or invalid
 geometry fallback occurred. See performance.json for actual sampled process memory/time.
+The first3GB review bundle passed every payload CRC/SHA check, then failed when the
+legacy whole-file SHA helper allocated the entire ZIP in RAM. Final packaging uses
+4MiB streaming hashes; the initial archive is retained as logs/review_bundle_first.zip
+and excluded from the final payload to prevent embedding a second full geometry bundle.
+This packaging correction changes no geometry or generative assessment.
 
 ## Reference grounding
 
@@ -313,7 +329,8 @@ def publish(existing=False):
     snapshot=ROOT/'source';snapshot.mkdir(exist_ok=True)
     for name in OWN:
         d=snapshot/name;d.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(REPO/name,d)
-    manifest=[dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=file_hash(p)) for p in sorted(ROOT.rglob('*')) if p.is_file()]
+    manifest=[dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,sha256=file_hash(p)) for p in sorted(ROOT.rglob('*'))
+        if p.is_file() and str(p.relative_to(ROOT)).replace('\\','/') not in POSTCOMMIT|{FIRST_BUNDLE}]
     write(dest/'ARTIFACTS.json',dict(root=str(ROOT),files=manifest,large_geometry='Actual checkpoints and OBJ/3DM retained externally, indexed by SHA256.',
         scope='Pre-commit artifact/source snapshot. Commit stamp and ZIP validation are added afterward; ZIP payload manifest independently indexes all bundled files.'))
     (dest/'README.md').write_text('PARTIAL\n\nTask31 regional/depth/opening research. See docs/TASK31_RESULTS.md and analysis/final_decision.md. Full actual geometry and native files are in E:/CHESHIRE_DATA/task31; ARTIFACTS.json indexes their hashes. Cube18 + gate4 transfers and unchanged controls. No push/merge/Task32.\n',encoding='utf-8')
@@ -327,7 +344,7 @@ def refresh():
 def bundle():
     started=perf_counter();path=ROOT/'CHESHIRE_TASK31_REVIEW.zip'
     assert not path.exists()
-    excluded={'CHESHIRE_TASK31_REVIEW.zip','analysis/review_zip_validation.json','analysis/repository_commit.json'}
+    excluded=POSTCOMMIT-{ 'analysis/repository_commit_payload.json' }|{FIRST_BUNDLE}
     payload=[p for p in sorted(ROOT.rglob('*')) if p.is_file() and str(p.relative_to(ROOT)).replace('\\','/') not in excluded]
     assert shutil.disk_usage(ROOT).free>sum(p.stat().st_size for p in payload)+1024**3,'Insufficient measured disk capacity for retained ZIP.'
     index=[dict(path=str(p.relative_to(ROOT)).replace('\\','/'),bytes=p.stat().st_size,sha256=file_hash(p)) for p in payload]

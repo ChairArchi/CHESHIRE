@@ -177,6 +177,11 @@ One early render attempt reached a still-writing NPZ and failed with EOFError. G
 generation completed intact; `cube2_complete` is the complete replacement comparison.
 Failed logs and partial images are retained transparently. No resource-stop or invalid
 geometry fallback occurred. See performance.json for actual sampled process memory/time.
+The first3GB review bundle passed every payload CRC/SHA check, then failed when the
+legacy whole-file SHA helper allocated the entire ZIP in RAM. Final packaging uses
+4MiB streaming hashes; the initial archive is retained as logs/review_bundle_first.zip
+and excluded from the final payload to prevent embedding a second full geometry bundle.
+This packaging correction changes no geometry or generative assessment.
 
 ## Reference grounding
 
