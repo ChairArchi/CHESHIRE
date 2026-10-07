@@ -1,0 +1,1257 @@
+{
+  "definitions": [
+    {
+      "id": "FINAL_DX00",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_retention\\DX00\\G5",
+      "intrinsic": {
+        "field": "NORMAL_VARIATION",
+        "start": 3,
+        "gain": 3,
+        "lock_threshold": 0.12,
+        "controls": {
+          "wf": [
+            -0.1,
+            0.18
+          ],
+          "w1": [
+            -0.35,
+            0.35
+          ],
+          "w2": [
+            -0.7,
+            0.35
+          ],
+          "w3": [
+            -0.8,
+            0.8
+          ],
+          "w4": [
+            0.35,
+            -0.35
+          ]
+        }
+      },
+      "base_C": "C00_B000_0"
+    },
+    {
+      "id": "FINAL_DX08",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": -0.16,
+            "w1": -1.05,
+            "we": 0.05,
+            "w2": -0.9,
+            "wp": -0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B offset-sign reversal",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_retention\\DX08\\G5",
+      "intrinsic": {
+        "field": "NORMAL_VARIATION",
+        "start": 3,
+        "gain": 3,
+        "lock_threshold": 0.12,
+        "controls": {
+          "wf": [
+            -0.1,
+            0.18
+          ],
+          "w1": [
+            -0.35,
+            0.35
+          ],
+          "w2": [
+            -0.7,
+            0.35
+          ],
+          "w3": [
+            -0.8,
+            0.8
+          ],
+          "w4": [
+            0.35,
+            -0.35
+          ]
+        }
+      },
+      "base_C": "C03_B028_1"
+    },
+    {
+      "id": "FINAL_DX16",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -0.9,
+            "w7": 0.8
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.0,
+          "source": "H1",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.7,
+            "we": 0.0,
+            "w2": -2.8,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.25,
+            "w7": 0.65
+          },
+          "u_map": {
+            "(3,3)": 1.0,
+            "(4,4)": -0.2
+          },
+          "unknown_u": 0.0,
+          "source": "C26",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_retention\\DX16\\G5",
+      "intrinsic": {
+        "field": "NORMAL_VARIATION",
+        "start": 3,
+        "gain": 3,
+        "lock_threshold": 0.12,
+        "controls": {
+          "wf": [
+            -0.1,
+            0.18
+          ],
+          "w1": [
+            -0.35,
+            0.35
+          ],
+          "w2": [
+            -0.7,
+            0.35
+          ],
+          "w3": [
+            -0.8,
+            0.8
+          ],
+          "w4": [
+            0.35,
+            -0.35
+          ]
+        }
+      },
+      "base_C": "C05_B140_0"
+    },
+    {
+      "id": "FINAL_DX24",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.35000000000000003,
+            "w1": 1.0,
+            "we": 0.4,
+            "w2": -3.5,
+            "wp": 0.65,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "H1 1.25",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.20800000000000002,
+            "w1": -1.3650000000000002,
+            "we": -0.065,
+            "w2": -1.1700000000000002,
+            "wp": 0.058499999999999996,
+            "w3": -1.04,
+            "w4": 0.65,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B x 1.3",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": -0.16,
+            "w1": -1.05,
+            "we": 0.05,
+            "w2": -0.9,
+            "wp": -0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Offset sign reversal",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.04,
+            "w1": -0.3,
+            "we": -0.02,
+            "w2": -0.65,
+            "wp": 0.01,
+            "w3": -1.25,
+            "w4": 0.65,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Bounded continued Eq4 fold",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.04,
+            "w1": -0.3,
+            "we": -0.02,
+            "w2": -0.65,
+            "wp": 0.01,
+            "w3": -1.25,
+            "w4": 0.65,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Bounded continued Eq4 fold",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_retention\\DX24\\G5",
+      "intrinsic": {
+        "field": "NORMAL_VARIATION",
+        "start": 3,
+        "gain": 3,
+        "lock_threshold": 0.12,
+        "controls": {
+          "wf": [
+            -0.1,
+            0.18
+          ],
+          "w1": [
+            -0.35,
+            0.35
+          ],
+          "w2": [
+            -0.7,
+            0.35
+          ],
+          "w3": [
+            -0.8,
+            0.8
+          ],
+          "w4": [
+            0.35,
+            -0.35
+          ]
+        }
+      },
+      "base_C": "C07_B248_3"
+    },
+    {
+      "id": "FINAL_E_D00_3_ADJACENT_4_0.45",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\topology\\E_D00_3_ADJACENT_4_0.45\\G5",
+      "intrinsic": {
+        "field": "ORIGINAL_EDGE_DISTANCE",
+        "start": 3,
+        "gain": 12,
+        "controls": {
+          "wf": [
+            -0.072,
+            0.144
+          ],
+          "we": [
+            0.042,
+            -0.048
+          ],
+          "w3": [
+            -0.66,
+            0.42
+          ],
+          "w4": [
+            0.216,
+            -0.264
+          ]
+        }
+      },
+      "base_C": "C00_B000_0",
+      "topology": {
+        "generation": 4,
+        "threshold": 0.45,
+        "scope": "ADJACENT"
+      }
+    },
+    {
+      "id": "FINAL_E_D02_3_ADJACENT_3_0.45",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -0.9,
+            "w7": 0.8
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.0,
+          "source": "H1",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.7,
+            "we": 0.0,
+            "w2": -2.8,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.25,
+            "w7": 0.65
+          },
+          "u_map": {
+            "(3,3)": 1.0,
+            "(4,4)": -0.2
+          },
+          "unknown_u": 0.0,
+          "source": "C26",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\topology\\E_D02_3_ADJACENT_3_0.45\\G5",
+      "intrinsic": {
+        "field": "ORIGINAL_EDGE_DISTANCE",
+        "start": 3,
+        "gain": 12,
+        "controls": {
+          "wf": [
+            -0.072,
+            0.144
+          ],
+          "we": [
+            0.042,
+            -0.048
+          ],
+          "w3": [
+            -0.66,
+            0.42
+          ],
+          "w4": [
+            0.216,
+            -0.264
+          ]
+        }
+      },
+      "base_C": "C05_B140_0",
+      "topology": {
+        "generation": 3,
+        "threshold": 0.45,
+        "scope": "ADJACENT"
+      }
+    },
+    {
+      "id": "FINAL_E_D02_3_ADJACENT_4_0.45",
+      "rows": [
+        {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -0.9,
+            "w7": 0.8
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.0,
+          "source": "H1",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.7,
+            "we": 0.0,
+            "w2": -2.8,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.25,
+            "w7": 0.65
+          },
+          "u_map": {
+            "(3,3)": 1.0,
+            "(4,4)": -0.2
+          },
+          "unknown_u": 0.0,
+          "source": "C26",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        }
+      ],
+      "mode": "REFERENCE_COUPLED",
+      "scale": "LOCAL_INCIDENT_SCALE",
+      "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\topology\\E_D02_3_ADJACENT_4_0.45\\G5",
+      "intrinsic": {
+        "field": "ORIGINAL_EDGE_DISTANCE",
+        "start": 3,
+        "gain": 12,
+        "controls": {
+          "wf": [
+            -0.072,
+            0.144
+          ],
+          "we": [
+            0.042,
+            -0.048
+          ],
+          "w3": [
+            -0.66,
+            0.42
+          ],
+          "w4": [
+            0.216,
+            -0.264
+          ]
+        }
+      },
+      "base_C": "C05_B140_0",
+      "topology": {
+        "generation": 4,
+        "threshold": 0.45,
+        "scope": "ADJACENT"
+      }
+    }
+  ],
+  "reason": "Four strongest actual fold-lock D G5 results and all three valid changed-topology E results, continued to G8 with exactly matched underlying late schedule and no additional zero cleanup."
+}

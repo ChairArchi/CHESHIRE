@@ -1,0 +1,274 @@
+{
+  "jobs": [
+    {
+      "job": "final_followups",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 48.66676340007689,
+      "sampled_peak_tree_plus_driver_bytes": 568332288,
+      "memory_guard_bytes": 10098632294,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "intrinsic_D",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 9.657343700062484,
+      "sampled_peak_tree_plus_driver_bytes": 185479168,
+      "memory_guard_bytes": 11038230528,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "intrinsic_late",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 27.95150950003881,
+      "sampled_peak_tree_plus_driver_bytes": 608350208,
+      "memory_guard_bytes": 10353820672,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "intrinsic_retention",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 8.499463299987838,
+      "sampled_peak_tree_plus_driver_bytes": 186601472,
+      "memory_guard_bytes": 10779258880,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "lock_ablation",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 8.699137300020084,
+      "sampled_peak_tree_plus_driver_bytes": 545775616,
+      "memory_guard_bytes": 10078113177,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "prepare_matrix",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 3.8276533000171185,
+      "sampled_peak_tree_plus_driver_bytes": 204365824,
+      "memory_guard_bytes": 10109047603,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_final_followups",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 8.590408699936233,
+      "sampled_peak_tree_plus_driver_bytes": 1272594432,
+      "memory_guard_bytes": 10694115328,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_final_progression",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 7.13092029991094,
+      "sampled_peak_tree_plus_driver_bytes": 736763904,
+      "memory_guard_bytes": 10389070848,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_intrinsic_D",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 7.043318000040017,
+      "sampled_peak_tree_plus_driver_bytes": 389001216,
+      "memory_guard_bytes": 10377784934,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_intrinsic_late",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 5.893343599978834,
+      "sampled_peak_tree_plus_driver_bytes": 1032097792,
+      "memory_guard_bytes": 10694373580,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_intrinsic_retention",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 6.153902200050652,
+      "sampled_peak_tree_plus_driver_bytes": 365780992,
+      "memory_guard_bytes": 10456173977,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_lead_details",
+      "exit_code": 1,
+      "resource_stop": null,
+      "seconds": 3.2567529999651015,
+      "sampled_peak_tree_plus_driver_bytes": 360562688,
+      "memory_guard_bytes": 10701221273,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_lead_details_v2",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 8.711721800034866,
+      "sampled_peak_tree_plus_driver_bytes": 1006538752,
+      "memory_guard_bytes": 10190298726,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_matrix",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 4.342147099901922,
+      "sampled_peak_tree_plus_driver_bytes": 358469632,
+      "memory_guard_bytes": 10162292940,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_matrix_close",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 5.4554413999430835,
+      "sampled_peak_tree_plus_driver_bytes": 379789312,
+      "memory_guard_bytes": 10252873113,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_round_A",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 16.064235399942845,
+      "sampled_peak_tree_plus_driver_bytes": 346742784,
+      "memory_guard_bytes": 10249827328,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_round_B",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 11.852495099999942,
+      "sampled_peak_tree_plus_driver_bytes": 371769344,
+      "memory_guard_bytes": 11077506252,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_round_C",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 13.993304800009355,
+      "sampled_peak_tree_plus_driver_bytes": 1126645760,
+      "memory_guard_bytes": 10900446003,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_rule_isolation",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 8.158777499920689,
+      "sampled_peak_tree_plus_driver_bytes": 1077141504,
+      "memory_guard_bytes": 10124154060,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_rule_isolation_exact",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 7.533453900017776,
+      "sampled_peak_tree_plus_driver_bytes": 1054945280,
+      "memory_guard_bytes": 10161382400,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_task28_comparison",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 4.292646700050682,
+      "sampled_peak_tree_plus_driver_bytes": 649969664,
+      "memory_guard_bytes": 10286784102,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_topology_E",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 5.40358699997887,
+      "sampled_peak_tree_plus_driver_bytes": 381128704,
+      "memory_guard_bytes": 9752770560,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "round_A",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 49.63657069997862,
+      "sampled_peak_tree_plus_driver_bytes": 197152768,
+      "memory_guard_bytes": 10418532966,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "round_B",
+      "exit_code": 1,
+      "resource_stop": null,
+      "seconds": 1.69315770000685,
+      "sampled_peak_tree_plus_driver_bytes": 152039424,
+      "memory_guard_bytes": 11122546073,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "round_B_v2",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 29.728305700002238,
+      "sampled_peak_tree_plus_driver_bytes": 189345792,
+      "memory_guard_bytes": 10971082137,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "round_C",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 54.193790299934335,
+      "sampled_peak_tree_plus_driver_bytes": 555450368,
+      "memory_guard_bytes": 10957280256,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "topology_E",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 6.390221400070004,
+      "sampled_peak_tree_plus_driver_bytes": 187219968,
+      "memory_guard_bytes": 11252282163,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    }
+  ],
+  "measured_guarded_seconds": 372.8203727998771,
+  "peak_sampled_tree_plus_driver_bytes": 1272594432,
+  "exact_regeneration_OBJ_seconds": 10.224960599909537,
+  "native": {
+    "application": "RhinoCommon 8.18.25100.11001",
+    "target": "E:/CHESHIRE_DATA/task29\\dcc\\TASK29_LEAD.3dm",
+    "OBJ": "E:/CHESHIRE_DATA/task29/dcc/TASK29_LEAD.obj",
+    "OBJ_sha256": "73964071aa3ff3e907c9245d0a32fcefd1ca7ae1c350fcb05d0d3b783b7a4045",
+    "native_sha256": "b3525fd1daaf8a4a29f358eba291b30e7638d243fbdeb25c765065e457c8695b",
+    "native_bytes": 13959268,
+    "actual_native_file_read": true,
+    "exact_XYZ_oriented_faces": true,
+    "headless_document_open": true,
+    "imported_objects": 1,
+    "object_id": "90aa62b9-0288-428a-9a06-c92bddba793c",
+    "layer": "TASK29_TASK29_LEAD",
+    "object_name": "TASK29_LEAD_EXACT_SAVED_SUBDIVISION",
+    "vertices": 393218,
+    "faces": 393216,
+    "units": "None / original unknown physical units; no scaling",
+    "processing": "Display normals only; no welding, triangulation, remeshing, smoothing, thickening or intersection repair.",
+    "native_read_write_document_seconds": 7.079991,
+    "native_host_peak_working_set_bytes": 564768768,
+    "resource_scope": "Native operation time excludes cold RhinoCore startup. Peak working set is this native PowerShell/RhinoCommon host, not a whole process-tree measurement.",
+    "display": "Native file validation, not an interactive viewport or beauty render. OpenGL depth capture is separate; this evidence verifies native file and headless open only."
+  },
+  "scope": "Sum of measured job elapsed durations, including failed setup attempt; not total human/agent elapsed time. Guarded peak samples process tree plus driver. Native host peak separately measured. No resource guard stopped generation."
+}

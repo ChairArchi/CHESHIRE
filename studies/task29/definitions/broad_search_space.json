@@ -1,0 +1,386 @@
+{
+  "macros": [
+    {
+      "weights": {
+        "wf": -0.28,
+        "w1": 0.8,
+        "we": 0.32,
+        "w2": -2.8,
+        "wp": 0.52,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task28 H1 ablation",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    },
+    {
+      "weights": {
+        "wf": 0.3,
+        "w1": -1.0,
+        "we": -0.08,
+        "w2": -0.7,
+        "wp": 0.1,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11A",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Historical dimensionless ratio unchanged."
+    },
+    {
+      "weights": {
+        "wf": 0.16,
+        "w1": -1.05,
+        "we": -0.05,
+        "w2": -0.9,
+        "wp": 0.045,
+        "w3": -0.8,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11B",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Historical dimensionless ratio unchanged."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.7,
+        "we": 0.0,
+        "w2": -2.8,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.25,
+        "w7": 0.65
+      },
+      "u_map": {
+        "(3,3)": 1.0,
+        "(4,4)": -0.2
+      },
+      "unknown_u": 0.0,
+      "source": "C26",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Historical dimensionless ratio unchanged."
+    },
+    {
+      "weights": {
+        "wf": -0.28,
+        "w1": 0.8,
+        "we": 0.32,
+        "w2": -2.8,
+        "wp": 0.52,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": -0.9,
+        "w7": 0.8
+      },
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.0,
+      "source": "H1",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.13,
+        "w1": -0.35,
+        "we": 0.13,
+        "w2": -0.65,
+        "wp": 0.13,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.0,
+      "source": "H1B",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.009999999999999981,
+        "w1": -0.09999999999999998,
+        "we": 0.12,
+        "w2": -1.75,
+        "wp": 0.31,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "H1/C11A midpoint",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    },
+    {
+      "weights": {
+        "wf": -0.35000000000000003,
+        "w1": 1.0,
+        "we": 0.4,
+        "w2": -3.5,
+        "wp": 0.65,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "H1 1.25",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    }
+  ],
+  "secondary": [
+    {
+      "weights": {
+        "wf": 0.16,
+        "w1": -1.05,
+        "we": -0.05,
+        "w2": -0.9,
+        "wp": 0.045,
+        "w3": -0.8,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11B",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Historical dimensionless ratio unchanged."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.18,
+        "we": 0.0,
+        "w2": -0.3,
+        "wp": 0.0,
+        "w3": -0.9,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "CURVE",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "GENTLE",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.7,
+        "we": 0.0,
+        "w2": -2.8,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.25,
+        "w7": 0.65
+      },
+      "u_map": {
+        "(3,3)": 1.0,
+        "(4,4)": -0.2
+      },
+      "unknown_u": 0.0,
+      "source": "C26",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Historical dimensionless ratio unchanged."
+    },
+    {
+      "weights": {
+        "wf": 0.13,
+        "w1": -0.35,
+        "we": 0.13,
+        "w2": -0.65,
+        "wp": 0.13,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.0,
+      "source": "H1B",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.08,
+        "w1": -0.615,
+        "we": -0.025,
+        "w2": -0.6,
+        "wp": 0.0225,
+        "w3": -0.8500000000000001,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11B/CURVE midpoint",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    },
+    {
+      "weights": {
+        "wf": 0.20800000000000002,
+        "w1": -1.3650000000000002,
+        "we": -0.065,
+        "w2": -1.1700000000000002,
+        "wp": 0.058499999999999996,
+        "w3": -1.04,
+        "w4": 0.65,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11B x 1.3",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    },
+    {
+      "weights": {
+        "wf": -0.16,
+        "w1": -1.05,
+        "we": 0.05,
+        "w2": -0.9,
+        "wp": -0.045,
+        "w3": -0.8,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "C11B offset-sign reversal",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    }
+  ],
+  "nested": [
+    {
+      "weights": {
+        "wf": 0.11199999999999999,
+        "w1": -0.735,
+        "we": -0.034999999999999996,
+        "w2": -0.63,
+        "wp": 0.0315,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Exact Task28 G3 ratio row",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.18,
+        "we": 0.0,
+        "w2": -0.3,
+        "wp": 0.0,
+        "w3": -0.9,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "CURVE",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.18,
+        "we": 0.0,
+        "w2": -0.3,
+        "wp": 0.0,
+        "w3": -3.0,
+        "w4": 1.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "AMP",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+      "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.35,
+        "we": 0.0,
+        "w2": -1.4,
+        "wp": 0.0,
+        "w3": -0.3,
+        "w4": 0.175,
+        "w6": 0.125,
+        "w7": 0.325
+      },
+      "u_map": {
+        "(4,4)": -0.1,
+        "(3,3)": 0.5
+      },
+      "unknown_u": 0.0,
+      "source": "C26/GENTLE midpoint",
+      "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+    }
+  ],
+  "count": 256,
+  "sampling": "Deterministic 8 x 8 x 4 seed-derived nonstationary Cartesian schedules; no vertex noise."
+}

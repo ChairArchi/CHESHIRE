@@ -1,0 +1,191 @@
+{
+  "root": "E:\\CHESHIRE_DATA\\task29",
+  "verdict": "PARTIAL",
+  "baseline": "a9e456fcc7711ae5920457c49890bc28aa045f1d",
+  "final_lead": "FINAL_DX00",
+  "search_definitions": 480,
+  "executed_definition_records": 495,
+  "real_G8_lineages": 20,
+  "files": [
+    {
+      "path": "analysis/reference_equation_audit.md",
+      "bytes": 7440,
+      "sha256": "2301eadc40190e110b23fc529c4c800b6fee12b69c19209c09158f6229a61a99"
+    },
+    {
+      "path": "analysis/mechanism_matrix_metrics.json",
+      "bytes": 56363,
+      "sha256": "61288ae8bfe3da96131c82935b1bb78ad598bd662fcbb5078e71974007eb185b"
+    },
+    {
+      "path": "analysis/seed_parameter_inventory.json",
+      "bytes": 56063,
+      "sha256": "3b2c5649ff8bac43cd45c36a81b591a7176534c799e1ba4b235c3b3f0af1418d"
+    },
+    {
+      "path": "analysis/seed_parameter_inventory.md",
+      "bytes": 32843,
+      "sha256": "09387bddf23dc07b1c30f008473fa0c123cb2c43710cbb4540712ae23afb563a"
+    },
+    {
+      "path": "analysis/broad_search_log.json",
+      "bytes": 1409,
+      "sha256": "1b8bf33859079363c7af7e108923002c2517e91b434a85baf5abaa3731e0f3b4"
+    },
+    {
+      "path": "analysis/retention_metrics.json",
+      "bytes": 126267,
+      "sha256": "ec6bc506ed9b91c604cc1214bc777b84302daa1130749d56798a0af4e9c0b790"
+    },
+    {
+      "path": "analysis/intrinsic_variation_log.json",
+      "bytes": 1253790,
+      "sha256": "a6f9362fc026b75382caa161047fc92cccd688e5d6c67467f1717c554bdabbf8"
+    },
+    {
+      "path": "analysis/topology_variation_log.json",
+      "bytes": 1428235,
+      "sha256": "a437c92670f124a1932f46665c903a4cecb6624ad153e203c12c5f7f36adcfdf"
+    },
+    {
+      "path": "analysis/FINAL_DIAGNOSIS.md",
+      "bytes": 2280,
+      "sha256": "f81252e0ccd20eeaa9d3d9d3accc7beae3184ba641b5668f5186f92f9f420f47"
+    },
+    {
+      "path": "definitions/cube_specimen.json",
+      "bytes": 932,
+      "sha256": "c2e04345ed79b4c00e4b5096dba9876ac4161b56a55c8b67fa1f5200fe201109"
+    },
+    {
+      "path": "definitions/mechanism_modes.json",
+      "bytes": 949,
+      "sha256": "2af0a9aa1b5626ac4449a4f8e595329442bbcc702688f67609e7b5e59c9065ed"
+    },
+    {
+      "path": "definitions/broad_search_space.json",
+      "bytes": 10188,
+      "sha256": "1af854c0397d091b2740d637d563d534267bbdd1775f341c7a64d0c7265478fe"
+    },
+    {
+      "path": "definitions/selected_nonstationary_schedule.json",
+      "bytes": 4367,
+      "sha256": "27256e5faddc473d0eb4ded78e94321d80c0bfcce63d836ccb53775ea9ba4d3e"
+    },
+    {
+      "path": "definitions/intrinsic_rules.json",
+      "bytes": 18461,
+      "sha256": "ea855f73aafea8c575afa2a036322ceded06e6ff12d03efc132a3cb975de526a"
+    },
+    {
+      "path": "definitions/topology_rules.json",
+      "bytes": 797,
+      "sha256": "a4246f76239c5327f6c18ba066b7db3edbc47500cf94f707a02a01c75c8ac285"
+    },
+    {
+      "path": "renders/mechanism_matrix.png",
+      "bytes": 888655,
+      "sha256": "33fe234f920fdfb22fb6657dd8d3c211cf7a1ffd88f4d565ef6cf735a9d967bb"
+    },
+    {
+      "path": "renders/broad_search_contact_sheet.png",
+      "bytes": 1207490,
+      "sha256": "1939eb8d3111a8e20424a2acefe0ba46865d8fbd0243cceeced251de0285bd3a"
+    },
+    {
+      "path": "renders/late_schedule_contact_sheet.png",
+      "bytes": 6936618,
+      "sha256": "9f2c03bfd944231568f303a35d295d4b55421c712ebef522c47e2be1759f2ce2"
+    },
+    {
+      "path": "renders/intrinsic_variation_sheet.png",
+      "bytes": 7709254,
+      "sha256": "1c3c16e9fd0aa0ebc240d69325f332803bc56ff51dd6e38621bd3cffc78d6343"
+    },
+    {
+      "path": "renders/topology_variation_sheet.png",
+      "bytes": 1305133,
+      "sha256": "87d36e1716a4eb30c181513d66aec5ed6c41bdeb6961940c322976e440f104be"
+    },
+    {
+      "path": "renders/FINAL_LEAD_PROGRESSION.png",
+      "bytes": 1294877,
+      "sha256": "046a4391bf698d13a39b85cc24568b2dc239991d29b089310e2a94e3979d2826"
+    },
+    {
+      "path": "renders/TASK28_VS_TASK29.png",
+      "bytes": 711752,
+      "sha256": "dd3a8bab2a98de9b932d5ce9c68176a1a3a80a3d97486bb2f2533a7c81971631"
+    },
+    {
+      "path": "renders/lead_details.png",
+      "bytes": 2757903,
+      "sha256": "7daf2e6321b32c4690bb67dabc83b9877add00f4ae00eda0ce2ff6abb59b973a"
+    },
+    {
+      "path": "dcc/TASK29_LEAD.obj",
+      "bytes": 35026903,
+      "sha256": "73964071aa3ff3e907c9245d0a32fcefd1ca7ae1c350fcb05d0d3b783b7a4045"
+    },
+    {
+      "path": "dcc/TASK29_LEAD.3dm",
+      "bytes": 13959268,
+      "sha256": "b3525fd1daaf8a4a29f358eba291b30e7638d243fbdeb25c765065e457c8695b"
+    },
+    {
+      "path": "lead/G0/mesh.npz",
+      "bytes": 1232,
+      "sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382"
+    },
+    {
+      "path": "lead/G1/mesh.npz",
+      "bytes": 1513,
+      "sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f"
+    },
+    {
+      "path": "lead/G2/mesh.npz",
+      "bytes": 2494,
+      "sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3"
+    },
+    {
+      "path": "lead/G3/mesh.npz",
+      "bytes": 6477,
+      "sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb"
+    },
+    {
+      "path": "lead/G4/mesh.npz",
+      "bytes": 20286,
+      "sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1"
+    },
+    {
+      "path": "lead/G5/mesh.npz",
+      "bytes": 78802,
+      "sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6"
+    },
+    {
+      "path": "lead/G6/mesh.npz",
+      "bytes": 330297,
+      "sha256": "fd5ce249c0ce56bcc4ef291d20564e0ed4deb7c4c2806e540af07f11e73f937d"
+    },
+    {
+      "path": "lead/G7/mesh.npz",
+      "bytes": 1429935,
+      "sha256": "363ea2d7ef5d87a64fceb0703757cd370b9a10be8e148c14ff8033665bba2cbb"
+    },
+    {
+      "path": "lead/G8/mesh.npz",
+      "bytes": 7122161,
+      "sha256": "bf4fb98630189d6dcc88702dfdf3adee04c7c1f079858f38d490eac39c4b40e6"
+    }
+  ],
+  "archives": [
+    "CHESHIRE_TASK29_REVIEW.zip",
+    "MODEL.zip"
+  ],
+  "post_commit_proofs": [
+    "analysis/repository_commit.json",
+    "analysis/file_inventory.json",
+    "analysis/archive_validation.json"
+  ],
+  "scope": "Large candidate checkpoint trees and all render pages remain external and in review archive; selected evidence, definitions and code are tracked here."
+}

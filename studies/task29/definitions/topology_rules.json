@@ -1,0 +1,24 @@
+{
+  "mode": "REFERENCE_COUPLED_LOCAL_TOPOLOGY",
+  "base_schedules": [
+    "D00_3",
+    "D01_0",
+    "D02_3"
+  ],
+  "variants": 24,
+  "timings": [
+    3,
+    4
+  ],
+  "thresholds": [
+    0.2,
+    0.45
+  ],
+  "scopes": [
+    "ALL_PROXIMATE",
+    "ADJACENT"
+  ],
+  "local_scale": "min of mean incident face-perimeter scales at both generated endpoints",
+  "joining": "One disjoint matching, sorted normalized distance then exact-ID tie-break, only current generated edge/face-derived points. Mean coordinates. Consecutive repeats compressed, <3-corner faces dropped and recorded. No nonconsecutive pinch or invalid edge/vertex link accepted.",
+  "comparison": "Actual pre-weld NPZ retained for every attempted proposal; same exact intrinsic base path. Not DGII reproduction."
+}

@@ -1,0 +1,19 @@
+{
+  "M0": [
+    "LEGACY_ISOLATED",
+    "GLOBAL_SCALE"
+  ],
+  "M1": [
+    "REFERENCE_COUPLED",
+    "GLOBAL_SCALE"
+  ],
+  "M2": [
+    "REFERENCE_COUPLED",
+    "LOCAL_INCIDENT_SCALE"
+  ],
+  "reference_vertex_midpoints": "Original endpoint midpoints, justified by Fig2 stencil and neutral CC; new face points feed Eq2 and Eq3.",
+  "local_scale": "Face arithmetic mean current perimeter edge length; edge mean of two incident face scales; vertex mean of incident face scales.",
+  "attraction_order": "Eq10 completes face points before Eq2/3. Eq11 completes edges but Eq3 retains original endpoint midpoints.",
+  "REFERENCE_COUPLED_LOCAL_TOPOLOGY": "Reference/local operator followed once by declared deterministic threshold join, with explicit rejection and pre-weld evidence.",
+  "intrinsic_lock_extension": "Opt-in current normal-disagreement tag freezes input-vertex XYZ for that step only; new edge/face points remain modified."
+}

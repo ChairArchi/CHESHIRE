@@ -1,0 +1,46 @@
+{
+  "rounds": {
+    "round_A": {
+      "definitions": 256,
+      "completed": 256,
+      "log": "round_A_log.json"
+    },
+    "round_B": {
+      "definitions": 128,
+      "completed": 128,
+      "log": "round_B_log.json"
+    },
+    "round_C": {
+      "definitions": 8,
+      "completed": 8,
+      "log": "round_C_log.json"
+    },
+    "intrinsic": {
+      "definitions": 32,
+      "completed": 32,
+      "log": "intrinsic_log.json"
+    },
+    "intrinsic_retention": {
+      "definitions": 32,
+      "completed": 32,
+      "log": "intrinsic_retention_log.json"
+    },
+    "topology": {
+      "definitions": 24,
+      "completed": 16,
+      "log": "topology_log.json"
+    }
+  },
+  "base_search_definitions": 480,
+  "additional_matrix_controls": 3,
+  "additional_lock_ablation_controls": 1,
+  "additional_continuation_records": 11,
+  "total_executed_definition_records": 495,
+  "continuations": {
+    "intrinsic_final_log.json": 4,
+    "final_followups_log.json": 7
+  },
+  "G8_lineages": 20,
+  "count_policy": "A/B/C/D/E candidate definitions counted once; controls and later extensions reported separately. 32 A finalists each receive four late schedules. No count reduction.",
+  "visual_selection": "Every A/B/C/D/E contact page and every final followup reviewed; selection manifests retain actual decisions. No metric threshold substitutes for visual judgment."
+}

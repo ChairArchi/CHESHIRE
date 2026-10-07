@@ -1,0 +1,55 @@
+{
+  "resolution": 1600,
+  "width": 2600,
+  "cols": 3,
+  "size": 1000,
+  "pages": 6,
+  "sheet_name": "rule_contribution_isolation.png",
+  "items": [
+    {
+      "label": "Base C00 G8 / no intrinsic",
+      "stage": "E:\\CHESHIRE_DATA\\task29\\candidates\\round_C\\C00_B000_0\\G8",
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "DX00 same fields / no locks",
+      "stage": "E:\\CHESHIRE_DATA\\task29\\candidates\\lock_ablation\\LOCK_ABLATION_DX00\\G8",
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "DX00 same fields / with locks",
+      "stage": "E:\\CHESHIRE_DATA\\task29\\candidates\\final_followups\\FINAL_DX00\\G8",
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "D00_3 unchanged G8",
+      "stage": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_final\\DL_D00_3\\G8",
+      "target": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "label": "D00_3 welded G4 / G8",
+      "stage": "E:\\CHESHIRE_DATA\\task29\\candidates\\final_followups\\FINAL_E_D00_3_ADJACENT_4_0.45\\G8",
+      "target": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

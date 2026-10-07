@@ -1,0 +1,1097 @@
+{
+  "rules": [
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "controls": {
+        "wf": [
+          -0.036,
+          0.072
+        ],
+        "we": [
+          0.021,
+          -0.024
+        ],
+        "w3": [
+          -0.33,
+          0.21
+        ],
+        "w4": [
+          0.108,
+          -0.132
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "controls": {
+        "wf": [
+          -0.072,
+          0.144
+        ],
+        "we": [
+          0.042,
+          -0.048
+        ],
+        "w3": [
+          -0.66,
+          0.42
+        ],
+        "w4": [
+          0.216,
+          -0.264
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.036,
+          0.072
+        ],
+        "we": [
+          0.021,
+          -0.024
+        ],
+        "w3": [
+          -0.33,
+          0.21
+        ],
+        "w4": [
+          0.108,
+          -0.132
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.072,
+          0.144
+        ],
+        "we": [
+          0.042,
+          -0.048
+        ],
+        "w3": [
+          -0.66,
+          0.42
+        ],
+        "w4": [
+          0.216,
+          -0.264
+        ]
+      }
+    },
+    {
+      "field": "PLANARITY",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.036,
+          0.072
+        ],
+        "we": [
+          0.021,
+          -0.024
+        ],
+        "w3": [
+          -0.33,
+          0.21
+        ],
+        "w4": [
+          0.108,
+          -0.132
+        ]
+      }
+    },
+    {
+      "field": "PLANARITY",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.072,
+          0.144
+        ],
+        "we": [
+          0.042,
+          -0.048
+        ],
+        "w3": [
+          -0.66,
+          0.42
+        ],
+        "w4": [
+          0.216,
+          -0.264
+        ]
+      }
+    },
+    {
+      "field": "LOCAL_SCALE",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.036,
+          0.072
+        ],
+        "we": [
+          0.021,
+          -0.024
+        ],
+        "w3": [
+          -0.33,
+          0.21
+        ],
+        "w4": [
+          0.108,
+          -0.132
+        ]
+      }
+    },
+    {
+      "field": "LOCAL_SCALE",
+      "start": 3,
+      "gain": 12,
+      "controls": {
+        "wf": [
+          -0.072,
+          0.144
+        ],
+        "we": [
+          0.042,
+          -0.048
+        ],
+        "w3": [
+          -0.66,
+          0.42
+        ],
+        "w4": [
+          0.216,
+          -0.264
+        ]
+      }
+    }
+  ],
+  "base_schedules": [
+    "C00_B000_0",
+    "C03_B028_1",
+    "C05_B140_0",
+    "C07_B248_3"
+  ],
+  "variants": 32,
+  "meaning": "Current scalar field linearly adds bounded offsets to declared controls. Other controls remain identical. Field re-evaluated from actual geometry every generation; no IDs/no randomness.",
+  "equivalent_cell_goal": "Original edge distances or nonlinear geometric feedback differentiate neighbouring descendants.",
+  "extra_rules": [
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    {
+      "field": "ORIGINAL_EDGE_DISTANCE",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.28,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          0.8,
+          -0.8
+        ],
+        "w4": [
+          -0.35,
+          0.35
+        ]
+      }
+    }
+  ],
+  "total_variants": 64,
+  "extra_reason": "Current normal disagreement tags lock existing vertex XYZ above .12/.28, while new face/edge points remain modified. No vertex ID field."
+}
