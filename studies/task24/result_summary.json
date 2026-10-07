@@ -1,0 +1,20 @@
+{
+  "status": "PARTIAL",
+  "lead": "H1",
+  "artifact_root": "E:/CHESHIRE_DATA/task24",
+  "selected": [
+    "H1",
+    "H2_R1",
+    "H3_R3"
+  ],
+  "three_distinct_compositions": true,
+  "three_convincing_Hero_gates": false,
+  "tests": {
+    "passed": 793,
+    "skipped": 0,
+    "seconds": 29.95
+  },
+  "native_checks": "Exact .3dm XYZ/oriented connectivity; RhinoDoc.OpenHeadless each actual file; three passes",
+  "render": "System.Drawing clay from actual native .3dm reimport; interactive viewport/beauty render unverified",
+  "unknown_units": true
+}

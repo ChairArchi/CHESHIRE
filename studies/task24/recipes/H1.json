@@ -1,0 +1,275 @@
+{
+  "input": "C07",
+  "units": "original model units; see input_identity.json",
+  "baseline": "140932fb6cbcaec4a1d27665fb99bf0e0a806fc3",
+  "seed": null,
+  "mode": "INTEGER_COMPAS",
+  "policy": "Finite computation and actual operator compatibility; contacts/opening changes diagnostic.",
+  "no_terminal_smoothing": true,
+  "id": "H1",
+  "name": "ANGULAR MANTLE / CLEFT",
+  "vocabulary": [
+    "R20",
+    "X10",
+    "Y19",
+    "X01"
+  ],
+  "networks": [
+    {
+      "generator": "N3",
+      "sharpness": 12,
+      "seed_xz": [
+        -0.38,
+        0.94
+      ],
+      "target_y_ratio": -1.05,
+      "length_ratio": 1.35,
+      "max_steps": 120,
+      "turn_cost": 2.0,
+      "cell_reward": 0.4,
+      "max_turn": 0.7,
+      "direction": [
+        1.0,
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "generator": "N3",
+      "sharpness": 12,
+      "seed_xz": [
+        0.38,
+        0.94
+      ],
+      "target_y_ratio": -1.05,
+      "length_ratio": 1.35,
+      "max_steps": 120,
+      "turn_cost": 2.0,
+      "cell_reward": 0.4,
+      "max_turn": 0.7,
+      "direction": [
+        -1.0,
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "generator": "N6",
+      "junction": "Y",
+      "junction_xz": [
+        -0.39,
+        0.79
+      ],
+      "arm_targets": [
+        [
+          -0.4,
+          0.2
+        ],
+        [
+          0,
+          0.98
+        ],
+        [
+          -0.49,
+          1.04
+        ]
+      ],
+      "sharpness": 12,
+      "minimum_seed_support": 0.0,
+      "minimum_target_support": 0.0,
+      "quiet_below": 0.12,
+      "target_y_ratio": -0.85
+    },
+    {
+      "generator": "N6",
+      "junction": "Y",
+      "junction_xz": [
+        0.39,
+        0.79
+      ],
+      "arm_targets": [
+        [
+          0.4,
+          0.2
+        ],
+        [
+          0,
+          0.98
+        ],
+        [
+          0.49,
+          1.04
+        ]
+      ],
+      "sharpness": 12,
+      "minimum_seed_support": 0.0,
+      "minimum_target_support": 0.0,
+      "quiet_below": 0.12,
+      "target_y_ratio": -0.85
+    }
+  ],
+  "steps": [
+    {
+      "kind": "fold",
+      "id": "mantle_macro",
+      "declaration": {
+        "band_hops": 10,
+        "weights": {
+          "wf": -280,
+          "w1": 0.8,
+          "we": 320,
+          "w2": -2.8,
+          "wp": 520,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": -0.9,
+          "w7": 0.8
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "mantle_ridges",
+      "operator": "Roof",
+      "parameters": {
+        "height_ratio": 1.2,
+        "direction_mode": "vertical",
+        "gable_inset": 0.16
+      },
+      "selector": {
+        "z_min": 0.48,
+        "normal_y_min": 0.0
+      },
+      "placement": "ADJACENT",
+      "hops": 8,
+      "spacing": 1,
+      "max_events": 36,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "fold",
+      "id": "cleft_articulation",
+      "declaration": {
+        "band_hops": 5,
+        "weights": {
+          "wf": 130,
+          "w1": -0.35,
+          "we": 130,
+          "w2": -0.65,
+          "wp": 130,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "mantle_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.12
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "RIDGE_SIDE",
+        "event_stage": "mantle_ridges"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 72,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "mantle_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 2.2,
+        "fraction": 0.25
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "mantle_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 72,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "mantle_fine_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.08
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "EXTRUSION_CAP",
+        "event_stage": "mantle_cap"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 72,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "mantle_fine_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 1.2100000000000002,
+        "fraction": 0.3
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "mantle_fine_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 72,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    }
+  ],
+  "intent": "Opposed X10 angular placement, R20 matched normal offsets and Y19 restrained return; shoulder-to-support route continuation and nested ridge descendants."
+}

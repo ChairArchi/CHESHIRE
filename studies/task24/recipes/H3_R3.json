@@ -1,0 +1,233 @@
+{
+  "input": "C07",
+  "units": "original model units; see input_identity.json",
+  "baseline": "140932fb6cbcaec4a1d27665fb99bf0e0a806fc3",
+  "seed": null,
+  "mode": "INTEGER_COMPAS",
+  "policy": "Finite computation and actual operator compatibility; contacts/opening changes diagnostic.",
+  "no_terminal_smoothing": true,
+  "id": "H3_R3",
+  "name": "ORDERED SHARD / CANYON",
+  "vocabulary": [
+    "R20",
+    "X02",
+    "Y19",
+    "X10"
+  ],
+  "networks": [
+    {
+      "generator": "N1",
+      "relation": "opening_rim",
+      "sharpness": 12,
+      "target_y_ratio": -0.85,
+      "minimum_seed_support": 0.0,
+      "quiet_below": 0.4
+    },
+    {
+      "generator": "N1",
+      "relation": "opening_rim",
+      "sharpness": 12,
+      "target_y_ratio": 0.85,
+      "minimum_seed_support": 0.0,
+      "quiet_below": 0.4
+    },
+    {
+      "generator": "N1",
+      "relation": "support_shoulder_lintel",
+      "sharpness": 12,
+      "target_y_ratio": -0.85,
+      "minimum_seed_support": 0.0,
+      "quiet_below": 0.4
+    }
+  ],
+  "steps": [
+    {
+      "kind": "fold",
+      "id": "canyon_macro",
+      "declaration": {
+        "band_hops": 8,
+        "weights": {
+          "wf": 320,
+          "w1": 0.0,
+          "we": 320,
+          "w2": 0.0,
+          "wp": 320,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "fold",
+      "id": "intersecting_shards",
+      "declaration": {
+        "band_hops": 5,
+        "weights": {
+          "wf": 450,
+          "w1": -2.2,
+          "we": -120,
+          "w2": -5,
+          "wp": 350,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": -1.2,
+          "w7": 1.5
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "depth_assemblies",
+      "operator": "DirectionalExtrusion",
+      "parameters": {
+        "height_ratio": 1.2,
+        "direction_mode": "depth",
+        "normal_ratio": 0.55,
+        "tangent_sign": 1
+      },
+      "selector": {
+        "z_min": 0.57,
+        "normal_y_min": 0.0
+      },
+      "placement": "ADJACENT",
+      "hops": 7,
+      "spacing": 1,
+      "max_events": 32,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "canyon_ridges",
+      "operator": "Roof",
+      "parameters": {
+        "height_ratio": 1.1,
+        "direction_mode": "vertical",
+        "gable_inset": 0.22
+      },
+      "selector": {
+        "z_min": 0.48,
+        "normal_y_min": 0.0,
+        "role": "DIRECTIONAL_EXTRUSION_SIDE",
+        "event_stage": "depth_assemblies"
+      },
+      "placement": "ADJACENT",
+      "hops": 9,
+      "spacing": 1,
+      "max_events": 48,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "canyon_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.12
+      },
+      "selector": {
+        "z_min": 0.4,
+        "normal_y_min": 0.0,
+        "role": "RIDGE_SIDE",
+        "event_stage": "canyon_ridges"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 64,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "canyon_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 1.8,
+        "fraction": 0.25
+      },
+      "selector": {
+        "z_min": 0.4,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "canyon_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 64,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "canyon_fine_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.08
+      },
+      "selector": {
+        "z_min": 0.4,
+        "normal_y_min": 0.0,
+        "role": "EXTRUSION_CAP",
+        "event_stage": "canyon_cap"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 64,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "canyon_fine_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 0.9900000000000001,
+        "fraction": 0.3
+      },
+      "selector": {
+        "z_min": 0.4,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "canyon_fine_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 64,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    }
+  ],
+  "intent": "Matched Y19 macro offsets -> full X02 angular shard generation -> depth-axis local assemblies -> route-oriented Roof children -> nested frame/taper detail. Strong fold precedes topology events so their new corner classes are not globally amplified.",
+  "revision_of": "H3_R2",
+  "visual_observation": "Actual R2 oblique/side: giant plate-like caps occlude the threshold and nesting. Strong X02 interpolation after medium constructive events amplifies their new point classes. Complete both macro folds before the depth assembly events, preserving the same angular ingredients and permitting intersections."
+}

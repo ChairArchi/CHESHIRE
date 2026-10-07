@@ -1,0 +1,128 @@
+[
+  {
+    "id": "R20",
+    "recipe": "references/R20.json",
+    "recipe_sha256": "ef49d41b9866cd684ef144ace6ebc75cd30f734e90a03a60a66b0d4123d57e1a",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\R20\\attempt_001",
+    "output_stage": "E5",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\R20_E5_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\R20_E5_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\R20_E5_node.png"
+    ],
+    "semantics": "Complete generation/event recipe, not an independent operator."
+  },
+  {
+    "id": "X10",
+    "recipe": "references/X10.json",
+    "recipe_sha256": "48bc608a0e7bb78f4d492da0ce645a0b7e155f42e8b1be90eb8b784611ee64fd",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\X10\\attempt_001",
+    "output_stage": "E5",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X10_E5_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X10_E5_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X10_E5_node.png"
+    ],
+    "semantics": "Complete generation/event recipe, not an independent operator."
+  },
+  {
+    "id": "X01",
+    "recipe": "references/X01.json",
+    "recipe_sha256": "6e6c610536a98ad63bc742e1b3401657f0cc13f3dc63d68107822190764ab3b2",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\X01\\attempt_001",
+    "output_stage": "G3",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X01_G3_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X01_G3_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X01_G3_node.png"
+    ],
+    "semantics": "Complete generation/event recipe, not an independent operator."
+  },
+  {
+    "id": "X02",
+    "recipe": "references/X02.json",
+    "recipe_sha256": "b02b54d062ec1bb111ea5931983e09247b455c44b27bf715abe7aafdaa3ce194",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\X02\\attempt_001",
+    "output_stage": "G2",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X02_G2_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X02_G2_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\X02_G2_node.png"
+    ],
+    "semantics": "Complete generation/event recipe, not an independent operator."
+  },
+  {
+    "id": "Y07",
+    "recipe": "references/Y07.json",
+    "recipe_sha256": "f78efb9b7c1045402bdf5df3e22327b5d137277ab79beec2649f37e3981eb58e",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\Y07\\attempt_001",
+    "output_stage": "E3",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y07_E3_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y07_E3_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y07_E3_node.png"
+    ],
+    "semantics": "Y07 resumes X07 E2; Y19 resumes R19 E2. Order in Y19 is relative editorial order, no separate sorting/spatial-field operator."
+  },
+  {
+    "id": "Y19",
+    "recipe": "references/Y19.json",
+    "recipe_sha256": "b848f18dd310f498d978cd84e438c6d40e854c0f3f651a30927e32dbf5fa3e04",
+    "definition": "examples/cross_cell_crease_capability.py",
+    "implementation": [
+      "examples/cross_cell_crease_study.py:load/choose_faces/terminal_networks",
+      "src/cheshire/crease_routing.py:CreaseRouter",
+      "src/cheshire/crease_folding.py:folded_crease_once",
+      "src/cheshire/vocabulary.py:vocabulary_event"
+    ],
+    "input": "C07",
+    "checkpoint": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\Y19\\attempt_001",
+    "output_stage": "E2",
+    "images": [
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y19_E2_front.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y19_E2_oblique.png",
+      "E:\\CHESHIRE_DATA\\task23\\renders\\CAPABILITY\\Y19_E2_node.png"
+    ],
+    "semantics": "Y07 resumes X07 E2; Y19 resumes R19 E2. Order in Y19 is relative editorial order, no separate sorting/spatial-field operator."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "inputs": [
+    {
+      "file": "inputs/C0.json",
+      "byte_sha256": "619cfb118e2a54f745010dbb9595659c1b87e45f7904b595cf7adb42565a79c2",
+      "canonical_sha256": "5c70c20d94bf8982c90b158fe2701f99d33a54d6dc9de3641f408528f3c4822d"
+    },
+    {
+      "file": "inputs/backbone.json",
+      "byte_sha256": "f82dbd7ad5480e1914d67a25964bfc4d50148dbc6eb5d988206cb533ecee2b14",
+      "canonical_sha256": "09deb3119e4e4815ba520f71ae2d18fdb39fb823e4f96ee0a0809563bf9b22af"
+    },
+    {
+      "file": "inputs/BACKBONE_S05.json.gz",
+      "byte_sha256": "5cc026971574ca1a955555640375654d873625b6195fc0057cf5aff3e308f1e7",
+      "canonical_sha256": "3d4c788e584f5da5df9bcbe9ac0f8cbb62ff350803a543cf35101c4327521ccb"
+    },
+    {
+      "file": "inputs/BACKBONE_S05_lineage.json.gz",
+      "byte_sha256": "c11c3149fecabe380673db401b11c2a68a0d3f3d04961551c6a7a5aeff9f5ecf",
+      "canonical_sha256": "202190fb22f3fe6e91008520d05867f00311268baaf21822b8787a2671a4a552"
+    },
+    {
+      "file": "inputs/BACKBONE_S05_signatures.json.gz",
+      "byte_sha256": "8cfd9d8d6b914b9b5015d268e03c3d5b9dbd8817b2025521f66cf35200324186",
+      "canonical_sha256": "c500d73c9ce90aeab0fe3b6645c74187692ed457ce427c1962211d81badde551"
+    },
+    {
+      "file": "inputs/C07_anchors.json",
+      "byte_sha256": "634438950e83ba780fe56e42ff8c93e986ae5580577bd822de9f47fc1aaf2228",
+      "canonical_sha256": "425e931b69808288ba8c6b28cfe391d6c8fbc38bfd5ef2f986bc37aee8841fe0"
+    }
+  ],
+  "R20_validation": {
+    "artifact": "E:\\CHESHIRE_DATA\\task23\\study\\CAPABILITY\\R20\\attempt_001",
+    "status": "PASS",
+    "artifacts_checked": 48,
+    "terminal_canonical_sha256": "a0bdf1273eca4dfdff7aeb87e555884cf9b86974993c9789f071c08c8256b23c",
+    "independent_Task23_replay": "PASS"
+  },
+  "provenance": "Exact frozen Task23 C0 and C07 backbone; no replacement input. Upstream ALICE provenance and units must be resolved from original request metadata.",
+  "orientation": "Original XYZ, Z up; front camera looks along +Y; original origin retained."
+}

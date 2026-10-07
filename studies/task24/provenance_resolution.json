@@ -1,0 +1,22 @@
+{
+  "source": "Task23 frozen C07 derived from Task15 C0",
+  "C0_definition": "examples/carrier_scale_study.py:initialise + rhino/carrier_study.py:coarse_gate",
+  "C0_vertices": 24,
+  "C0_faces": 22,
+  "construction": "Boundary of five adjacent occupied cells; shared grid IDs; interfaces not emitted; 22 planar outward quads.",
+  "dimensions": {
+    "width": 4000.0,
+    "height": 3500.0,
+    "depth": 500.0,
+    "opening_width": 2200.0,
+    "opening_height": 2600.0
+  },
+  "origin": [
+    -400.036865234375,
+    -18.533447265625,
+    0.0
+  ],
+  "units": "Not serialized in upstream input; original model units retained, no conversion. User asked; answer not yet received.",
+  "ALICE": "No ALICE identifier or actual ALICE input checksum is present. C0 is a reconstructed five-cell U gate based on earlier dense-gate dimensions/origin. Task24 did not substitute a new input.",
+  "construction_basis": "Fixed Task15 architectural dimensions; origin computed from previous dense-gate bounds. Dense gate depth differs from C0."
+}

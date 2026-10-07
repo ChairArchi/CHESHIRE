@@ -1,0 +1,436 @@
+[
+  {
+    "id": "H1",
+    "recipe": "18417c83f4c882828a1151c767bfe1c504c3ef2e68ad7b49ecf969d701ef42aa",
+    "networks": [
+      {
+        "generator": "N3",
+        "effective": {
+          "target_y_ratio": -1.05,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.55,
+          "max_steps": 120,
+          "length_ratio": 1.35,
+          "turn_cost": 2.0,
+          "source_cost": 0.8,
+          "cell_reward": 0.4,
+          "dihedral_cost": 0.25,
+          "max_turn": 0.7,
+          "seed_xz": [
+            -0.38,
+            0.94
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.25
+          ],
+          "generator": "N3"
+        },
+        "implementation_constants": {
+          "trace_front_preference": 0.5,
+          "seed_lintel_support": 0.3,
+          "N3_seed_dihedral_reward": 0.65,
+          "seed_direction_cost": 0.3
+        }
+      },
+      {
+        "generator": "N3",
+        "effective": {
+          "target_y_ratio": -1.05,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.55,
+          "max_steps": 120,
+          "length_ratio": 1.35,
+          "turn_cost": 2.0,
+          "source_cost": 0.8,
+          "cell_reward": 0.4,
+          "dihedral_cost": 0.25,
+          "max_turn": 0.7,
+          "seed_xz": [
+            0.38,
+            0.94
+          ],
+          "direction": [
+            -1.0,
+            0.0,
+            0.25
+          ],
+          "generator": "N3"
+        },
+        "implementation_constants": {
+          "trace_front_preference": 0.5,
+          "seed_lintel_support": 0.3,
+          "N3_seed_dihedral_reward": 0.65,
+          "seed_direction_cost": 0.3
+        }
+      },
+      {
+        "generator": "N6",
+        "effective": {
+          "target_y_ratio": -0.85,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.12,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.0,
+          "minimum_target_support": 0.0,
+          "generator": "N6",
+          "junction": "Y",
+          "junction_xz": [
+            -0.39,
+            0.79
+          ],
+          "arm_targets": [
+            [
+              -0.4,
+              0.2
+            ],
+            [
+              0,
+              0.98
+            ],
+            [
+              -0.49,
+              1.04
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      },
+      {
+        "generator": "N6",
+        "effective": {
+          "target_y_ratio": -0.85,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.12,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.0,
+          "minimum_target_support": 0.0,
+          "generator": "N6",
+          "junction": "Y",
+          "junction_xz": [
+            0.39,
+            0.79
+          ],
+          "arm_targets": [
+            [
+              0.4,
+              0.2
+            ],
+            [
+              0,
+              0.98
+            ],
+            [
+              0.49,
+              1.04
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      }
+    ],
+    "source_lintel_centroid_height": 0.74,
+    "source_front_normal_y": -0.25,
+    "event_selector_defaults": {
+      "z_min": 0.0,
+      "z_max": 1.5,
+      "normal_y_min": 0.0,
+      "area_ratio_min": 0.0,
+      "depth_min": 0
+    },
+    "event_rule": "Each explicit step overrides these defaults. Normal_y test is absolute. Heights use original C0 z origin/height; selection is not a geometry clamp.",
+    "local_polygon_tolerance": 1e-09,
+    "spacing": "One immediate face-neighbor ring when spacing=1.",
+    "crease_decay": "max(s-1,0), all listed finite integer schedules use verified COMPAS parity.",
+    "seed": null,
+    "parameters_inherited_from_frozen_C07": "inputs/backbone.json and full frozen lineage.",
+    "exact_per_point_placement": "designs/<id>/attempt_*/S*_operator.json.gz",
+    "source_of_defaults": "src/cheshire/crease_routing.py, ornament.py; frozen source revision and source hashes retained."
+  },
+  {
+    "id": "H2_R1",
+    "recipe": "071bb9dabaa56ddc5fa728c9a9040f9b80f790e36013578908e35751cea71479",
+    "networks": [
+      {
+        "generator": "N5",
+        "effective": {
+          "target_y_ratio": -0.65,
+          "profile": "CONSTANT",
+          "sharpness": 16,
+          "quiet_below": 0.5,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0,
+          "generator": "N5",
+          "side": "left",
+          "seed_xz": [
+            -0.36,
+            0.87
+          ],
+          "architectural_arm_targets": [
+            [
+              0,
+              0.96
+            ],
+            [
+              -0.47,
+              0.98
+            ],
+            [
+              -0.39,
+              0.56
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      },
+      {
+        "generator": "N5",
+        "effective": {
+          "target_y_ratio": -0.65,
+          "profile": "CONSTANT",
+          "sharpness": 16,
+          "quiet_below": 0.5,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0,
+          "generator": "N5",
+          "side": "right",
+          "seed_xz": [
+            0.36,
+            0.87
+          ],
+          "architectural_arm_targets": [
+            [
+              0,
+              0.96
+            ],
+            [
+              0.47,
+              0.98
+            ],
+            [
+              0.39,
+              0.56
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      },
+      {
+        "generator": "N3",
+        "effective": {
+          "target_y_ratio": -1.05,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.55,
+          "max_steps": 120,
+          "length_ratio": 1.35,
+          "turn_cost": 2.0,
+          "source_cost": 0.8,
+          "cell_reward": 0.4,
+          "dihedral_cost": 0.25,
+          "max_turn": 0.7,
+          "seed_xz": [
+            -0.4,
+            0.96
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "generator": "N3"
+        },
+        "implementation_constants": {
+          "trace_front_preference": 0.5,
+          "seed_lintel_support": 0.3,
+          "N3_seed_dihedral_reward": 0.65,
+          "seed_direction_cost": 0.3
+        }
+      }
+    ],
+    "source_lintel_centroid_height": 0.74,
+    "source_front_normal_y": -0.25,
+    "event_selector_defaults": {
+      "z_min": 0.0,
+      "z_max": 1.5,
+      "normal_y_min": 0.0,
+      "area_ratio_min": 0.0,
+      "depth_min": 0
+    },
+    "event_rule": "Each explicit step overrides these defaults. Normal_y test is absolute. Heights use original C0 z origin/height; selection is not a geometry clamp.",
+    "local_polygon_tolerance": 1e-09,
+    "spacing": "One immediate face-neighbor ring when spacing=1.",
+    "crease_decay": "max(s-1,0), all listed finite integer schedules use verified COMPAS parity.",
+    "seed": null,
+    "parameters_inherited_from_frozen_C07": "inputs/backbone.json and full frozen lineage.",
+    "exact_per_point_placement": "designs/<id>/attempt_*/S*_operator.json.gz",
+    "source_of_defaults": "src/cheshire/crease_routing.py, ornament.py; frozen source revision and source hashes retained."
+  },
+  {
+    "id": "H3_R3",
+    "recipe": "c00d5712fa7a67209274fc03789979baa712dfb5155fc4964916d179faeec87d",
+    "networks": [
+      {
+        "generator": "N1",
+        "effective": {
+          "target_y_ratio": -0.85,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.4,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.0,
+          "minimum_target_support": 0.05,
+          "generator": "N1",
+          "relation": "opening_rim",
+          "architectural_targets": [
+            [
+              -0.28,
+              0.72
+            ],
+            [
+              0,
+              0.78
+            ],
+            [
+              0.28,
+              0.72
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      },
+      {
+        "generator": "N1",
+        "effective": {
+          "target_y_ratio": 0.85,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.4,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.0,
+          "minimum_target_support": 0.05,
+          "generator": "N1",
+          "relation": "opening_rim",
+          "architectural_targets": [
+            [
+              -0.28,
+              0.72
+            ],
+            [
+              0,
+              0.78
+            ],
+            [
+              0.28,
+              0.72
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      },
+      {
+        "generator": "N1",
+        "effective": {
+          "target_y_ratio": -0.85,
+          "profile": "CONSTANT",
+          "sharpness": 12,
+          "quiet_below": 0.4,
+          "turn_cost": 1.4,
+          "source_cost": 0.8,
+          "front_cost": 0.8,
+          "dihedral_cost": 0.25,
+          "cell_reward": 0.15,
+          "minimum_seed_support": 0.0,
+          "minimum_target_support": 0.05,
+          "generator": "N1",
+          "relation": "support_shoulder_lintel",
+          "architectural_targets": [
+            [
+              -0.4,
+              0.6
+            ],
+            [
+              -0.36,
+              0.9
+            ],
+            [
+              0,
+              0.98
+            ],
+            [
+              0.36,
+              0.9
+            ],
+            [
+              0.4,
+              0.6
+            ]
+          ]
+        },
+        "implementation_constants": {
+          "positive_directed_edge_Dijkstra": true
+        }
+      }
+    ],
+    "source_lintel_centroid_height": 0.74,
+    "source_front_normal_y": -0.25,
+    "event_selector_defaults": {
+      "z_min": 0.0,
+      "z_max": 1.5,
+      "normal_y_min": 0.0,
+      "area_ratio_min": 0.0,
+      "depth_min": 0
+    },
+    "event_rule": "Each explicit step overrides these defaults. Normal_y test is absolute. Heights use original C0 z origin/height; selection is not a geometry clamp.",
+    "local_polygon_tolerance": 1e-09,
+    "spacing": "One immediate face-neighbor ring when spacing=1.",
+    "crease_decay": "max(s-1,0), all listed finite integer schedules use verified COMPAS parity.",
+    "seed": null,
+    "parameters_inherited_from_frozen_C07": "inputs/backbone.json and full frozen lineage.",
+    "exact_per_point_placement": "designs/<id>/attempt_*/S*_operator.json.gz",
+    "source_of_defaults": "src/cheshire/crease_routing.py, ornament.py; frozen source revision and source hashes retained."
+  }
+]

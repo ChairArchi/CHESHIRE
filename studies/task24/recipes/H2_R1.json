@@ -1,0 +1,244 @@
+{
+  "input": "C07",
+  "units": "original model units; see input_identity.json",
+  "baseline": "140932fb6cbcaec4a1d27665fb99bf0e0a806fc3",
+  "seed": null,
+  "mode": "INTEGER_COMPAS",
+  "policy": "Finite computation and actual operator compatibility; contacts/opening changes diagnostic.",
+  "no_terminal_smoothing": true,
+  "id": "H2_R1",
+  "name": "BRANCHING CROWN / CANOPY",
+  "vocabulary": [
+    "R20",
+    "X01",
+    "Y07",
+    "X10"
+  ],
+  "networks": [
+    {
+      "generator": "N5",
+      "side": "left",
+      "sharpness": 16,
+      "seed_xz": [
+        -0.36,
+        0.87
+      ],
+      "target_y_ratio": -0.65,
+      "minimum_seed_support": 0.05,
+      "minimum_target_support": 0.0
+    },
+    {
+      "generator": "N5",
+      "side": "right",
+      "sharpness": 16,
+      "seed_xz": [
+        0.36,
+        0.87
+      ],
+      "target_y_ratio": -0.65,
+      "minimum_seed_support": 0.05,
+      "minimum_target_support": 0.0
+    },
+    {
+      "generator": "N3",
+      "sharpness": 12,
+      "seed_xz": [
+        -0.4,
+        0.96
+      ],
+      "target_y_ratio": -1.05,
+      "length_ratio": 1.35,
+      "max_steps": 120,
+      "turn_cost": 2.0,
+      "cell_reward": 0.4,
+      "max_turn": 0.7
+    }
+  ],
+  "steps": [
+    {
+      "kind": "fold",
+      "id": "crown_macro",
+      "declaration": {
+        "band_hops": 6,
+        "weights": {
+          "wf": 480,
+          "w1": -1.8,
+          "we": 160,
+          "w2": -4,
+          "wp": 420,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.9,
+          "w7": -0.7
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "major_branches",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 3.6,
+        "fraction": 0.7
+      },
+      "selector": {
+        "z_min": 0.58,
+        "normal_y_min": 0.0
+      },
+      "placement": "ADJACENT",
+      "hops": 5,
+      "spacing": 1,
+      "max_events": 12,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "fold",
+      "id": "branch_articulation",
+      "declaration": {
+        "band_hops": 4,
+        "weights": {
+          "wf": -90,
+          "w1": 0.35,
+          "we": -40,
+          "w2": 0.6,
+          "wp": -80,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.2,
+          "w7": 0.2
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+      }
+    },
+    {
+      "kind": "event",
+      "id": "secondary_forks",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 1.8,
+        "fraction": 0.62
+      },
+      "selector": {
+        "z_min": 0.5,
+        "normal_y_min": 0.0,
+        "role": "EXTRUSION_SIDE",
+        "event_stage": "major_branches"
+      },
+      "placement": "ADJACENT",
+      "hops": 8,
+      "spacing": 1,
+      "max_events": 40,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "crown_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.12
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "EXTRUSION_SIDE",
+        "event_stage": "secondary_forks"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 80,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "crown_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 1.6,
+        "fraction": 0.25
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "crown_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 80,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "crown_fine_frame",
+      "operator": "InsetFrame",
+      "parameters": {
+        "width_ratio": 0.08
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "EXTRUSION_CAP",
+        "event_stage": "crown_cap"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 80,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    },
+    {
+      "kind": "event",
+      "id": "crown_fine_cap",
+      "operator": "TaperedExtrusion",
+      "parameters": {
+        "height_ratio": 0.8800000000000001,
+        "fraction": 0.3
+      },
+      "selector": {
+        "z_min": 0.45,
+        "normal_y_min": 0.0,
+        "role": "INNER_CAP",
+        "event_stage": "crown_fine_frame"
+      },
+      "placement": "ADJACENT",
+      "hops": 6,
+      "spacing": 1,
+      "max_events": 80,
+      "quad_only": true,
+      "stratify_by": "C0_FACE",
+      "local_face_policy": "Record incompatible local polygons; operate on usable selected faces without moving or repairing them."
+    }
+  ],
+  "intent": "X01 directional branching interacts with Y07 bilateral fan displacement; early large taper branches are subdivided, then their surviving side descendants receive forks and nested tips. Revision uses X01 interpolation and narrower primary/secondary taper caps; changes are editorial, not collision repairs.",
+  "revision_of": "H2",
+  "visual_observation": "Initial fitted oblique: large broad rectangular cap masses dominate; fine forks are invisible at whole scale. Preserve canopy scale, taper tips and organize intermediate child branches."
+}

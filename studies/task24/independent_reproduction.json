@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "artifact": "terminal.json.gz",
+      "original": "35a455b0febbe630e802b51b74de72fa486e9ddaceb32e70074b987f1ef64885",
+      "replay": "35a455b0febbe630e802b51b74de72fa486e9ddaceb32e70074b987f1ef64885",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_lineage.json.gz",
+      "original": "680b9c8653b5262ae6fb6e65e64e803335fa16a1ac60a8fe9d0595f8438fdf3f",
+      "replay": "680b9c8653b5262ae6fb6e65e64e803335fa16a1ac60a8fe9d0595f8438fdf3f",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_signatures.json.gz",
+      "original": "23bc8a207dd2c0b5b0b4c247213b78bc0c1ab2c9a2c4809256ec48cb472e9e59",
+      "replay": "23bc8a207dd2c0b5b0b4c247213b78bc0c1ab2c9a2c4809256ec48cb472e9e59",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_networks.json",
+      "original": "88c9ffee91775448ac065145ef4f1546ef9bff35b32a8c415333959694e82de2",
+      "replay": "88c9ffee91775448ac065145ef4f1546ef9bff35b32a8c415333959694e82de2",
+      "exact": true
+    }
+  ],
+  "scope": "Independently regenerated from original C07; canonical coordinates, oriented topology, complete histories/events, branch paths and retained crease networks. Runtime excluded."
+}
