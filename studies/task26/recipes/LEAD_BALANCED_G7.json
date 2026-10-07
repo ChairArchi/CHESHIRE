@@ -1,0 +1,55 @@
+{
+  "id": "LEAD_BALANCED_G7",
+  "parent": "LEAD_REVISED_G6",
+  "declaration": {
+    "weights": {
+      "wf": 0.0,
+      "w1": -0.18,
+      "we": 0.0,
+      "w2": -0.3,
+      "wp": 0.0,
+      "w3": -0.9,
+      "w4": 0.5,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+    "execution": "POINTWISE_EXISTING_STENCILS"
+  },
+  "support": {
+    "kind": "DISTRIBUTED",
+    "zones": [
+      [
+        1550,
+        2250,
+        360,
+        650
+      ],
+      [
+        1550,
+        2900,
+        400,
+        380
+      ],
+      [
+        0,
+        3050,
+        1100,
+        320
+      ]
+    ],
+    "front_only": true
+  },
+  "use_task26_calibration": true,
+  "question": "High-resolution negative Eq4 continuation amplified micro-granularity. Transfer Task25 actual convex later-face stencil at the same G6 ancestor, support and G7 topology, retaining gentle interpolation and zero offsets; test whether fine geometry survives with less new oscillation.",
+  "transfer": "Exact Task25 weights/u-map/unknown-u and execution; transported Task26 distributed physical regions and existing paired creases replace original H1 routes/band/sharpness.",
+  "resource_calibration": "analysis/resource_same_level_G7.json"
+}

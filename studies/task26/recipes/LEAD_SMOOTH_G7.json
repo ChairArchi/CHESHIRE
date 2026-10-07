@@ -1,0 +1,36 @@
+{
+  "id": "LEAD_SMOOTH_G7",
+  "parent": "LEAD_REFINE_G6",
+  "declaration": {
+    "weights": {},
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "DISTRIBUTED",
+    "zones": [
+      [
+        1550,
+        2250,
+        360,
+        650
+      ],
+      [
+        1550,
+        2900,
+        400,
+        380
+      ],
+      [
+        0,
+        3050,
+        1100,
+        320
+      ]
+    ],
+    "front_only": true
+  },
+  "question": "Comparable-resolution full gate, smooth the newly generated fine folds; forecast and live guard remain active."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ROUND_GROOVE_G2",
+  "parent": "ROUND_EARLY_G1",
+  "declaration": {
+    "weights": {
+      "wf": -120,
+      "we": 180,
+      "wp": 35,
+      "w1": -1.7,
+      "w2": -3.1,
+      "w3": -2.6,
+      "w4": 0.9
+    },
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "UPPER",
+    "quiet_below": 400,
+    "transition": 900
+  },
+  "question": "Targeted macro revision: initial timing comparison stayed too plain; articulate bodies at G2, then smooth instead of retaining last-stage teeth."
+}

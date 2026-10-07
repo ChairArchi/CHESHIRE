@@ -1,0 +1,23 @@
+{
+  "id": "SYMMETRY_PAIRED_G4",
+  "parent": "ROUND_EARLY_G3",
+  "routes": "PAIRED",
+  "declaration": {
+    "weights": {
+      "wf": 35,
+      "we": -28,
+      "wp": 18,
+      "w1": -0.6,
+      "w2": -1.1
+    },
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "ROUTE_BAND",
+    "radius": 380
+  },
+  "question": "Same full gate/schedule, existing independently selected N6 vs constructive paired reflection."
+}

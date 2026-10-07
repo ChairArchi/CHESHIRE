@@ -1,0 +1,18 @@
+{
+  "id": "ROUND_EARLY_G3",
+  "parent": "ROUND_EARLY_G2",
+  "declaration": {
+    "weights": {},
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "UPPER",
+    "quiet_below": 400,
+    "transition": 900
+  },
+  "trajectory": "ROUND_EARLY",
+  "question": "Matched full-gate fold timing/section comparison; same fold block and total CC depth."
+}

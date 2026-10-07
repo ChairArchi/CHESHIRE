@@ -1,0 +1,24 @@
+{
+  "measurements": [
+    {
+      "id": "LEAD_FINAL_G7",
+      "faces": 1245184,
+      "peak_bytes": 4756262912,
+      "process_path": "logs/LEAD_FINAL_G7_attempt_001/process.json",
+      "process_sha256": "4e7591b1866b3fd3cc74f2cb91b74ef1378155a3cb2a521b2eec7dea8e23aa5a"
+    },
+    {
+      "id": "LEAD_ARTICULATED_G7",
+      "faces": 1245184,
+      "peak_bytes": 4774711296,
+      "process_path": "logs/LEAD_ARTICULATED_G7_attempt_001/process.json",
+      "process_sha256": "778c4e75c0e28d122d70755cce56e1798a44008a39469df8c69b79c501c33006"
+    }
+  ],
+  "slope_bytes_per_face": 0,
+  "fixed_bytes": 4774711296,
+  "margin": 0.2,
+  "largest_measured_faces": 1245184,
+  "exact_output_faces": 1245184,
+  "rationale": "No 4x extrapolation: two completed full gates at exact same parent, topology, generation, physical support and pointwise/CC implementation. Observed peak variation 0.4%; +20% for same-resolution repeat, restricted to exact output count. 35% extrapolation model preserved; 55% remaining availability and live 65%/2GiB floor unchanged."
+}

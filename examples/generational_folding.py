@@ -92,10 +92,11 @@ def verify_obj(mesh,path):
         parser='Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation.')
 
 
-def budget_for(mesh,directory,recipe):
+def budget_for(mesh,directory,recipe,*,predicted_total_bytes=None):
     faces=sum(len(mesh.face_vertices(f)) for f in mesh.faces());vertices=mesh.number_of_vertices()+mesh.number_of_edges()+mesh.number_of_faces()
     memory=windows_memory();available=memory['available_bytes'];per_face=recipe.get('resource_bytes_per_face',16000)
-    predicted=faces*per_face
+    predicted=faces*per_face if predicted_total_bytes is None else predicted_total_bytes
+    if type(predicted) not in (int,float) or predicted<=0:raise ValueError('Positive measured total memory forecast required.')
     # Calibration measures TOTAL process-tree peak, including the input already
     # loaded here. Compare only predicted additional allocation with remaining
     # available RAM; subtracting the worker only leaves driver memory conservative.
@@ -104,6 +105,7 @@ def budget_for(mesh,directory,recipe):
         predicted_working_bytes=predicted,predicted_additional_bytes=additional,resident_worker_before_bytes=resident,
         available_bytes=available,fraction_of_available=.55,
         accounting='Measured total-peak calibration includes already loaded input. Compare additional=predicted_total-current_worker_resident to remaining available; driver remains in forecast.',
+        prediction_method='Per-face calibration' if predicted_total_bytes is None else 'Caller supplied measured total-peak model; recipe resource_rationale records calibration.',
         reason=recipe.get('resource_rationale','Inherited Task24 conservative estimate, pending completed-run calibration.'))
     record['status']='SAFE_FORECAST' if additional<=available*.55 else 'PREDICTION_STOP'
     write(directory/'resource_preflight.json',record)

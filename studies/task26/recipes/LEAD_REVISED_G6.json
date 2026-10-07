@@ -1,0 +1,45 @@
+{
+  "id": "LEAD_REVISED_G6",
+  "parent": "FOLD_DISTRIBUTED_SMOOTH_G5",
+  "declaration": {
+    "weights": {
+      "wf": 0,
+      "we": 0,
+      "wp": 0,
+      "w1": -0.18,
+      "w2": -0.3,
+      "w3": -1.4,
+      "w4": 0.35
+    },
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "DISTRIBUTED",
+    "zones": [
+      [
+        1550,
+        2250,
+        360,
+        650
+      ],
+      [
+        1550,
+        2900,
+        400,
+        380
+      ],
+      [
+        0,
+        3050,
+        1100,
+        320
+      ]
+    ],
+    "front_only": true
+  },
+  "use_task26_calibration": true,
+  "question": "Reduce negative Eq4 vertex coefficient from -.495 to -.135 after actual G6 detail/angle review: retain within-body folds with less granular oscillation."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "LEAD_ARTICULATED_G7",
+  "parent": "LEAD_REVISED_G6",
+  "declaration": {
+    "weights": {
+      "wf": 0,
+      "we": 0,
+      "wp": 0,
+      "w1": -0.35,
+      "w2": -0.8,
+      "w3": -1.4,
+      "w4": 0.35
+    },
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "DISTRIBUTED",
+    "zones": [
+      [
+        1550,
+        2250,
+        360,
+        650
+      ],
+      [
+        1550,
+        2900,
+        400,
+        380
+      ],
+      [
+        0,
+        3050,
+        1100,
+        320
+      ]
+    ],
+    "front_only": true
+  },
+  "use_task26_calibration": true,
+  "question": "Actual G7 standard CC softened most new folds. Same G6 ancestor and G7 topology: offset-free modified continuation instead of plain smoothing, retain hierarchy without strong negative-coefficient granular branch."
+}

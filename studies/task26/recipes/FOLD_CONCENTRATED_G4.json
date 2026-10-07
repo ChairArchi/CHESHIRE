@@ -1,0 +1,27 @@
+{
+  "id": "FOLD_CONCENTRATED_G4",
+  "parent": "ROUND_GROOVE_SMOOTH_G3",
+  "declaration": {
+    "weights": {
+      "wf": 0,
+      "we": 0,
+      "wp": 0,
+      "w1": -0.8,
+      "w2": -1.5,
+      "w3": -3.2,
+      "w4": 1.0
+    },
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "ROUTE_BAND",
+    "radius": 380
+  },
+  "routes": "PAIRED",
+  "disable_creases": false,
+  "question": "Common G3 checkpoint: true crease-inactive CC, retained crease CC, actual Task25 weight/u-map transfer, distributed and concentrated smaller-fold rules.",
+  "transfer": null
+}

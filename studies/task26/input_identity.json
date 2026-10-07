@@ -1,0 +1,30 @@
+{
+  "baseline": "b4000cf85bc0768821976bab4b454ca35b8ccca3",
+  "inputs": [
+    {
+      "id": "INPUT_RECT",
+      "geometry": "784d8ac723ea127e22dd39e97c07ee256786975ac7aacbda69df7d605221e419",
+      "state": "f0c5e78673e3cb97d72b1759cbf61f2843e8e0dfbee565108064469f633063b7"
+    },
+    {
+      "id": "INPUT_ROUND",
+      "geometry": "2c20ed2e6711468b2f61ab6e475a7ff7794cd8097ffa216a4130a15a67754f51",
+      "state": "6dcf4ca63f577a72ea62d578d140b8f0f2ba836a47e2a90fd11ca5676b5cf204"
+    },
+    {
+      "id": "INPUT_ROUND_PROFILE",
+      "geometry": "a9c567f933880ab14aa8156eb5f37eebf288255a827d40730452059145f00140",
+      "state": "02663e312c63cf6ea4890cc274f3a695593e8939be56fcba604e8b7d1ffe5e72"
+    }
+  ],
+  "identical_vertex_IDs": true,
+  "identical_oriented_faces": true,
+  "vertices": 74,
+  "faces": 80,
+  "parts_identical": true,
+  "changed": "Cross-section geometry only. Both share 9 height/joint stations, 8 perimeter points and 16 triangular cap faces.",
+  "section": "RECT 8 corner/mid-edge perimeter samples; ROUND 8 ellipse samples, support width/depth 900/500.",
+  "profile": "Separate ROUND_PROFILE: z=1300 scale .72, z=2600 scale 1.12; input waist/bulge, not new folds.",
+  "original_frame": true,
+  "physical_units": "UNRESOLVED"
+}

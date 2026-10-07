@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "input_geometry": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_BALANCED_G7\\attempt_002\\geometry.json.gz",
+  "geometry_sha256": "17f1a85d9a57ba9d11a31a083897071b2dec7f5b7f4d7e326a45d078d7d053f0",
+  "state_sha256": "33505a3e6f03f7b371ad278f5334f82c178c7df6114f7b88ddf6757f18e45c84",
+  "OBJ_reread": {
+    "actual_file_read": true,
+    "exact_XYZ_oriented_faces": true,
+    "vertices": 1245186,
+    "faces": 1245184,
+    "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+  },
+  "symmetry": {
+    "plane_X": -400.036865234375,
+    "plane_Y_not_enforced": -18.533447265625,
+    "max_coordinate_residual": 2.4933470057773444e-12,
+    "rms_coordinate_residual": 3.0513329848621977e-13,
+    "residual_over_nominal_width": 6.233367514443361e-16,
+    "vertex_correspondences": 1245186,
+    "face_correspondences": 1245184,
+    "oriented_face_failures": 0,
+    "policy": "PAIRED",
+    "method": "Constructive ring/CC-parent correspondence, reverse oriented face cycles; no nearest-point correspondence or averaging."
+  },
+  "generation": {
+    "absolute_cc": 7,
+    "continuation_depth": 7
+  },
+  "completed_recipes": [
+    {
+      "id": "ROUND_EARLY_G1",
+      "parent": "INPUT_ROUND",
+      "declaration": {
+        "weights": {
+          "wf": 70.0,
+          "we": -55.0,
+          "wp": 35.0,
+          "w1": -2.2,
+          "w2": -3.4
+        },
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "UPPER",
+        "quiet_below": 400,
+        "transition": 900
+      },
+      "trajectory": "ROUND_EARLY",
+      "question": "Matched full-gate fold timing/section comparison; same fold block and total CC depth."
+    },
+    {
+      "id": "ROUND_GROOVE_G2",
+      "parent": "ROUND_EARLY_G1",
+      "declaration": {
+        "weights": {
+          "wf": -120,
+          "we": 180,
+          "wp": 35,
+          "w1": -1.7,
+          "w2": -3.1,
+          "w3": -2.6,
+          "w4": 0.9
+        },
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "UPPER",
+        "quiet_below": 400,
+        "transition": 900
+      },
+      "question": "Targeted macro revision: initial timing comparison stayed too plain; articulate bodies at G2, then smooth instead of retaining last-stage teeth."
+    },
+    {
+      "id": "ROUND_GROOVE_SMOOTH_G3",
+      "parent": "ROUND_GROOVE_G2",
+      "declaration": {
+        "weights": {},
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "UPPER",
+        "quiet_below": 400,
+        "transition": 900
+      }
+    },
+    {
+      "id": "FOLD_DISTRIBUTED_G4",
+      "parent": "ROUND_GROOVE_SMOOTH_G3",
+      "declaration": {
+        "weights": {
+          "wf": 0,
+          "we": 0,
+          "wp": 0,
+          "w1": -0.8,
+          "w2": -1.5,
+          "w3": -3.2,
+          "w4": 1.0
+        },
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "DISTRIBUTED",
+        "zones": [
+          [
+            1550,
+            1900,
+            380,
+            800
+          ],
+          [
+            1550,
+            2900,
+            450,
+            400
+          ],
+          [
+            0,
+            3050,
+            1400,
+            350
+          ]
+        ],
+        "front_only": true
+      },
+      "routes": "PAIRED",
+      "disable_creases": false,
+      "question": "Common G3 checkpoint: true crease-inactive CC, retained crease CC, actual Task25 weight/u-map transfer, distributed and concentrated smaller-fold rules.",
+      "transfer": null
+    },
+    {
+      "id": "FOLD_DISTRIBUTED_SMOOTH_G5",
+      "parent": "FOLD_DISTRIBUTED_G4",
+      "declaration": {
+        "weights": {},
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "UPPER",
+        "quiet_below": 400,
+        "transition": 900
+      }
+    },
+    {
+      "id": "LEAD_REVISED_G6",
+      "parent": "FOLD_DISTRIBUTED_SMOOTH_G5",
+      "declaration": {
+        "weights": {
+          "wf": 0,
+          "we": 0,
+          "wp": 0,
+          "w1": -0.18,
+          "w2": -0.3,
+          "w3": -1.4,
+          "w4": 0.35
+        },
+        "execution": "POINTWISE_EXISTING_STENCILS",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+      },
+      "support": {
+        "kind": "DISTRIBUTED",
+        "zones": [
+          [
+            1550,
+            2250,
+            360,
+            650
+          ],
+          [
+            1550,
+            2900,
+            400,
+            380
+          ],
+          [
+            0,
+            3050,
+            1100,
+            320
+          ]
+        ],
+        "front_only": true
+      },
+      "use_task26_calibration": true,
+      "question": "Reduce negative Eq4 vertex coefficient from -.495 to -.135 after actual G6 detail/angle review: retain within-body folds with less granular oscillation."
+    },
+    {
+      "id": "LEAD_BALANCED_G7",
+      "parent": "LEAD_REVISED_G6",
+      "declaration": {
+        "weights": {
+          "wf": 0.0,
+          "w1": -0.18,
+          "we": 0.0,
+          "w2": -0.3,
+          "wp": 0.0,
+          "w3": -0.9,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+        "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+        "execution": "POINTWISE_EXISTING_STENCILS"
+      },
+      "support": {
+        "kind": "DISTRIBUTED",
+        "zones": [
+          [
+            1550,
+            2250,
+            360,
+            650
+          ],
+          [
+            1550,
+            2900,
+            400,
+            380
+          ],
+          [
+            0,
+            3050,
+            1100,
+            320
+          ]
+        ],
+        "front_only": true
+      },
+      "use_task26_calibration": true,
+      "question": "High-resolution negative Eq4 continuation amplified micro-granularity. Transfer Task25 actual convex later-face stencil at the same G6 ancestor, support and G7 topology, retaining gentle interpolation and zero offsets; test whether fine geometry survives with less new oscillation.",
+      "transfer": "Exact Task25 weights/u-map/unknown-u and execution; transported Task26 distributed physical regions and existing paired creases replace original H1 routes/band/sharpness.",
+      "resource_calibration": "analysis/resource_same_level_G7.json"
+    }
+  ],
+  "metadata_corrections": [
+    {
+      "kind": "RIGHT_BIRTH_SEED_METADATA",
+      "generation": 5,
+      "geometry_change": false,
+      "reason": "Actual reflected edges were correct; correct right target/seed/profile-origin metadata inherited from preserved early paired trials."
+    }
+  ],
+  "continuation": "Actual full checkpoint reloaded; complete origin/material/pair/face/crease coverage verified. Small save/reload/uninterrupted continuation tests separately passed. No next generation allocated."
+}

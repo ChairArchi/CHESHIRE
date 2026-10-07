@@ -31,14 +31,14 @@ def cc_origins(before,result,generation):
     return origins
 
 
-def fold_state(mesh,state,declaration,*,budget,mode='INTEGER_COMPAS'):
+def fold_state(mesh,state,declaration,*,budget,mode='INTEGER_COMPAS',point_support=None):
     if set(state['history'])!=set(mesh.faces()) or set(state['source_cells'])!=set(mesh.faces()) or set(state['signatures'])!=set(mesh.faces()):
         raise ValueError('Geometry/state IDs differ; resume from the keyed checkpoint, not an OBJ alone.')
     generation=state['generation']['absolute_cc']
     networks=tuple(CreaseNetwork.from_data(n) for n in state['networks'])
     origins=state.get('origins',{})
     result=folded_crease_once(mesh,networks,declaration,mode=mode,budget=budget,
-        current_generation=generation,origin_lineage=origins)
+        current_generation=generation,origin_lineage=origins,point_support=point_support)
     next_generation=generation+1
     next_origins=cc_origins(mesh,result,next_generation)
     # A CC child has exactly one face parent with positive mass one. This

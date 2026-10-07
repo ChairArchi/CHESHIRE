@@ -1,0 +1,36 @@
+{
+  "id": "CONTROL_TASK25_G4",
+  "parent": "ROUND_GROOVE_SMOOTH_G3",
+  "declaration": {
+    "weights": {
+      "wf": 0.0,
+      "w1": -0.18,
+      "we": 0.0,
+      "w2": -0.3,
+      "wp": 0.0,
+      "w3": -0.9,
+      "w4": 0.5,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {
+      "(3,3)": 2.0,
+      "(4,4)": -1.0,
+      "(5,5)": 2.5,
+      "(6,6)": -1.5
+    },
+    "unknown_u": 0.5,
+    "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+    "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC",
+    "execution": "POINTWISE_EXISTING_STENCILS"
+  },
+  "support": {
+    "kind": "UPPER",
+    "quiet_below": 400,
+    "transition": 900
+  },
+  "routes": "PAIRED",
+  "disable_creases": false,
+  "question": "Common G3 checkpoint: true crease-inactive CC, retained crease CC, actual Task25 weight/u-map transfer, distributed and concentrated smaller-fold rules.",
+  "transfer": "Task25 exact weights/u_map/unknown_u/execution retained; original H1 routes do not map to this new input. New paired N6 at sharpness4 and fixed physical region replace old 32 hops/9-sharpness routes, disclosed adaptation."
+}

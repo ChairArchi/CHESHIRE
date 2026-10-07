@@ -27,7 +27,7 @@ def route_support(mesh,networks,hops):
     return {v:max(0.,1-distances.get(v,hops)/hops) for v in mesh.vertices()}
 
 
-def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=None,current_generation=0,origin_lineage=None):
+def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=None,current_generation=0,origin_lineage=None,point_support=None):
     """P = reference crease point + route support*(sharp-weighted - smooth).
 
     Sharp-weighted uses existing literal Eq10/11 and Extended CC. Points are
@@ -48,7 +48,12 @@ def folded_crease_once(mesh,networks,declaration,*,mode='INTEGER_COMPAS',budget=
         if not requested_ids or not set(requested_ids)<=set(n.network_id for n in networks):
             raise ValueError('Explicit support network IDs must exist in the current geometry.')
         support_networks=tuple(n for n in networks if n.network_id in requested_ids)
-    support=route_support(mesh,support_networks,declaration['band_hops'])
+    if point_support is None:
+        support=route_support(mesh,support_networks,declaration['band_hops'])
+    else:
+        if set(point_support)!=set(mesh.vertices()) or any(not isfinite(a) or not 0<=a<=1 for a in point_support.values()):
+            raise ValueError('Explicit point support requires complete current IDs and finite values in [0,1].')
+        support=point_support
     execution=declaration.get('execution','REFERENCE_THREE_MESHES')
     if execution=='POINTWISE_EXISTING_STENCILS':
         from .fold_placement import apply_points

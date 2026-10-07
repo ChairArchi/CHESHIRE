@@ -1,0 +1,36 @@
+{
+  "id": "LEAD_CC_CONTROL_G6",
+  "parent": "FOLD_DISTRIBUTED_SMOOTH_G5",
+  "declaration": {
+    "weights": {},
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "DISTRIBUTED",
+    "zones": [
+      [
+        1550,
+        2250,
+        360,
+        650
+      ],
+      [
+        1550,
+        2900,
+        400,
+        380
+      ],
+      [
+        0,
+        3050,
+        1100,
+        320
+      ]
+    ],
+    "front_only": true
+  },
+  "question": "Within-body second smaller generation: retain large grooved hierarchy, lighter zero-offset later stencil versus true smoothing continuation."
+}

@@ -5,6 +5,9 @@
 - Mola/HDMola is an optional external runtime integration.
 - CHESHIRE redistributes no Mola/HDMola binary or upstream source.
 - Users must supply their own compatible external DLL where required.
+- Task26 review uses optional pyrender 0.1.45, trimesh 5.1.1, Pillow 11.3.0,
+  pyglet 2.1.16 and their runtime dependencies. They are installed externally;
+  no package source/binary is bundled in the repository or review archives.
 
 The repository excludes environments, output/local_settings.json and review
 archives. Technical compatibility does not grant third-party redistribution

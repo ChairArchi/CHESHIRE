@@ -1,0 +1,16 @@
+{
+  "id": "CONTROL_STANDARD_SMOOTH_G5",
+  "parent": "CONTROL_STANDARD_G4",
+  "declaration": {
+    "weights": {},
+    "execution": "POINTWISE_EXISTING_STENCILS",
+    "u_map": {},
+    "unknown_u": 0.0,
+    "units": "Offsets absolute original units; dimensionless interpolation. Region size in input-material units."
+  },
+  "support": {
+    "kind": "UPPER",
+    "quiet_below": 400,
+    "transition": 900
+  }
+}

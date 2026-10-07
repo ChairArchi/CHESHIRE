@@ -1,0 +1,294 @@
+{
+  "actual_written_checkpoint_comparisons": [
+    {
+      "pair": [
+        "RECT_EARLY_G3",
+        "RECT_DELAYED_G3"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\RECT_EARLY_G3\\attempt_001\\geometry.json.gz",
+          "sha256": "ee883f24e72371afb1a60a814b8143f58b1c5cd7c8f23910c273ac175bc2aad7"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\RECT_DELAYED_G3\\attempt_001\\geometry.json.gz",
+          "sha256": "47e5a3384ca2b48f8cbd738b8b1ccde2726b883679ccad64a5dbb5668809a8f7"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "3843a05bab222dfdd5363600579ec54b2babc19200af7c1cd791833e818a921d",
+      "vertices": 4866,
+      "displacement": {
+        "min": 0.0,
+        "median": 58.66278717502026,
+        "p90": 157.89264653188346,
+        "p99": 255.27862775507737,
+        "max": 307.8567659872641,
+        "rms": 94.99136423704941,
+        "over_001": 4416
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "RECT_EARLY_G3",
+        "ROUND_EARLY_G3"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\RECT_EARLY_G3\\attempt_001\\geometry.json.gz",
+          "sha256": "ee883f24e72371afb1a60a814b8143f58b1c5cd7c8f23910c273ac175bc2aad7"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\ROUND_EARLY_G3\\attempt_001\\geometry.json.gz",
+          "sha256": "43478541e0f1b4e975d69097cae5d0fd3aa11039e88e3b8b03fd9a386ac36acc"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "3843a05bab222dfdd5363600579ec54b2babc19200af7c1cd791833e818a921d",
+      "vertices": 4866,
+      "displacement": {
+        "min": 3.552713678800501e-15,
+        "median": 65.16127301873343,
+        "p90": 129.4888170008279,
+        "p99": 142.82609832209457,
+        "max": 150.2073993883552,
+        "rms": 80.68638349556446,
+        "over_001": 4864
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "SYMMETRY_PAIRED_G4",
+        "SYMMETRY_INDEPENDENT_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\SYMMETRY_PAIRED_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "08fc6ca9656c1589bd4af1c6c30ef0515db311b85529f72dd4022bd578a8937b"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\SYMMETRY_INDEPENDENT_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "34be33c3fe94a6b2b503c93069fc27bb9271662b1e51c1ef3435a5daee497c4a"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "31eee73bfddfbce9798a1d0649e9f846f78260bc40f1d849934f7fbf5fe9fdfe",
+      "vertices": 19458,
+      "displacement": {
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "rms": 0.0,
+        "over_001": 0
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "CONTROL_CREASE_G4",
+        "CONTROL_STANDARD_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\CONTROL_CREASE_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "2743941fffdcccc018fda75dc0fc52a3e81fa629ad3efb9f75d5f7200d8650f5"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\CONTROL_STANDARD_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "cca7c488da09e1f73cd9252cc774def8a8c1e9cd17af26688a7b1d1730493aea"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "31eee73bfddfbce9798a1d0649e9f846f78260bc40f1d849934f7fbf5fe9fdfe",
+      "vertices": 19458,
+      "displacement": {
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p99": 0.0,
+        "max": 57.05853623871294,
+        "rms": 1.2567459472168334,
+        "over_001": 80
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "CONTROL_TASK25_G4",
+        "CONTROL_CREASE_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\CONTROL_TASK25_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "1b3f6ed7d61c79f1729b5f037dda7850afcd4dc608ba2862c82fdd1d2f8b2fef"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\CONTROL_CREASE_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "2743941fffdcccc018fda75dc0fc52a3e81fa629ad3efb9f75d5f7200d8650f5"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "31eee73bfddfbce9798a1d0649e9f846f78260bc40f1d849934f7fbf5fe9fdfe",
+      "vertices": 19458,
+      "displacement": {
+        "min": 0.0,
+        "median": 1.1395505245561475,
+        "p90": 41.68794354940791,
+        "p99": 149.38325157012636,
+        "max": 220.74593353141745,
+        "rms": 33.181838257250305,
+        "over_001": 15140
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "FOLD_DISTRIBUTED_G4",
+        "FOLD_CONCENTRATED_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\FOLD_DISTRIBUTED_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "946ad0246b869ee9f679ad3ea9c610cbd4ffbf597910c6ca67e0ce31d63c0c05"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\FOLD_CONCENTRATED_G4\\attempt_001\\geometry.json.gz",
+          "sha256": "0e8ef2fa1a2a6905d55f1827061d2136eb88f10cd4982ede8bca67cf9da8878e"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "31eee73bfddfbce9798a1d0649e9f846f78260bc40f1d849934f7fbf5fe9fdfe",
+      "vertices": 19458,
+      "displacement": {
+        "min": 0.0,
+        "median": 0.0017333614817070595,
+        "p90": 8.221941355311722,
+        "p99": 177.38208583510257,
+        "max": 537.6574285523513,
+        "rms": 34.32245629025071,
+        "over_001": 8977
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "LEAD_REFINE_G6",
+        "LEAD_CC_CONTROL_G6"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_REFINE_G6\\attempt_001\\geometry.json.gz",
+          "sha256": "e12d97ebb8f80684a672d11cf467e7227c163adbf10979c83f9546245ba33c03"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_CC_CONTROL_G6\\attempt_001\\geometry.json.gz",
+          "sha256": "c14f20bb3fc65b4dcca1066ac1702feac8bba3510e6011760b8e12c385fd469c"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "b46bf8a8c04e128b1e776033a8509f9adb5e49889fc774a87ae766b6c132033b",
+      "vertices": 311298,
+      "displacement": {
+        "min": 0.0,
+        "median": 8.330251124401525e-08,
+        "p90": 0.8808992204013096,
+        "p99": 39.11908193525498,
+        "max": 303.4091618187794,
+        "rms": 9.529048727018058,
+        "over_001": 98879
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "LEAD_REVISED_G6",
+        "LEAD_CC_CONTROL_G6"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_REVISED_G6\\attempt_001\\geometry.json.gz",
+          "sha256": "81d52e53dad5ce5417c465eabee063120bf4677d2fbcb31d6a5842ee5da2e92f"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_CC_CONTROL_G6\\attempt_001\\geometry.json.gz",
+          "sha256": "c14f20bb3fc65b4dcca1066ac1702feac8bba3510e6011760b8e12c385fd469c"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "b46bf8a8c04e128b1e776033a8509f9adb5e49889fc774a87ae766b6c132033b",
+      "vertices": 311298,
+      "displacement": {
+        "min": 0.0,
+        "median": 5.7779363620817695e-08,
+        "p90": 0.5604965587686769,
+        "p99": 20.333797963929175,
+        "max": 157.81289943061748,
+        "rms": 4.96220841632049,
+        "over_001": 94367
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "LEAD_ARTICULATED_G7",
+        "LEAD_FINAL_G7"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_ARTICULATED_G7\\attempt_001\\geometry.json.gz",
+          "sha256": "b9b71f8e2106cd1a272a080df60e7fff55fe4ea68eb8462c5fa6094f4c36adca"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_FINAL_G7\\attempt_001\\geometry.json.gz",
+          "sha256": "0fac596ce76965a5dd421535b98d74d32763db724180b75ec461cc127f7e626b"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "f435ee64184d5273621d19cb9bf8b4be80e9aacb840d30607435de1d3f61ae7b",
+      "vertices": 1245186,
+      "displacement": {
+        "min": 0.0,
+        "median": 2.787257337717043e-08,
+        "p90": 0.4574073513747542,
+        "p99": 9.82575532468966,
+        "max": 153.50518671072467,
+        "rms": 3.118446040744187,
+        "over_001": 355069
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "LEAD_BALANCED_G7",
+        "LEAD_FINAL_G7"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_BALANCED_G7\\attempt_002\\geometry.json.gz",
+          "sha256": "17f1a85d9a57ba9d11a31a083897071b2dec7f5b7f4d7e326a45d078d7d053f0"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task26\\designs\\LEAD_FINAL_G7\\attempt_001\\geometry.json.gz",
+          "sha256": "0fac596ce76965a5dd421535b98d74d32763db724180b75ec461cc127f7e626b"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "f435ee64184d5273621d19cb9bf8b4be80e9aacb840d30607435de1d3f61ae7b",
+      "vertices": 1245186,
+      "displacement": {
+        "min": 0.0,
+        "median": 1.282878279246301e-08,
+        "p90": 0.2564274184595857,
+        "p99": 7.452598151800707,
+        "max": 119.11518964250878,
+        "rms": 2.39610804692231,
+        "over_001": 318620
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    }
+  ]
+}
