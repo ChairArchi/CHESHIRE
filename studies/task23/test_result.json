@@ -1,0 +1,18 @@
+{
+  "full_suite_runs": 1,
+  "full_run": {
+    "passed": 788,
+    "failed": 1,
+    "seconds": 37.28
+  },
+  "failure": "Existing worker identity negative test used repository-internal basetemp, invalidating its outside-repository package premise.",
+  "correction": "Existing test/code unchanged; only that test rerun with fresh temporary directory outside the repository.",
+  "focused_recheck": {
+    "passed": 1,
+    "failed": 0,
+    "seconds": 0.07
+  },
+  "verified_unique_tests": 789,
+  "disposition": "PASS after correcting one test-harness path; not falsely reported as a clean single 789-pass full run.",
+  "real_Mola_tests": "Official explicitly supplied DLL enabled for the full run; no skips."
+}

@@ -1,0 +1,47 @@
+{
+  "finalists": [
+    {"id": "A05", "phase": "SCREEN", "reason": "Declared cross-cell route collapses below the 20-degree contrast threshold."},
+    {"id": "A08", "phase": "SCREEN", "reason": "Best supported pure-reference crease; whole gate remains weak."},
+    {"id": "X05", "phase": "CAPABILITY", "reason": "Aggressive fold of an actual Task22 75-contact input; two generations complete, but a long clipped spike replaces a useful ordered hierarchy."},
+    {"id": "B12", "phase": "SCREEN", "reason": "Actual recorded Roof ridge transfer into neighboring cells."},
+    {"id": "C06", "phase": "DESIGN", "reason": "Sparse junction-related Roof; visually small reinforcement."},
+    {"id": "D05", "phase": "DESIGN", "reason": "Three actual nested stages in sparse fan bands; micro remains small."},
+    {"id": "E05", "phase": "DESIGN", "reason": "Clean sampled full baseline; inherited panels dominate."},
+    {"id": "EX01", "phase": "EXPLORATION", "stage": "G0", "reason": "Actual prior Task22 75-contact input retained as a trajectory checkpoint, not Task23-generated final geometry."},
+    {"id": "X01", "phase": "CAPABILITY", "reason": "Three generations of aggressive route-local fold, contrasting placement and crease preservation."},
+    {"id": "X02", "phase": "CAPABILITY", "reason": "Informative design failure: large shard field instead of a coherent meso fold; geometry remains computable."},
+    {"id": "X09", "phase": "CAPABILITY", "reason": "Attenuated fractional fan plus sparse nested ornament; repetitive small shards remain."},
+    {"id": "X10", "phase": "CAPABILITY", "reason": "Strong bilateral sharp ornament capability; dense overlap obscures micro structure."},
+    {"id": "Y06", "phase": "CAPABILITY", "reason": "Complete actual Roof-transfer/fold/nesting sequence; asymmetrical burst rather than ordered whole-gate hierarchy."},
+    {"id": "Y07", "phase": "CAPABILITY", "reason": "Maximum broad distortion and deep nesting; capped contacts continue through all stages; fixed view clips extreme branches."},
+    {"id": "Y19", "phase": "CAPABILITY", "reason": "Relatively legible, ordered broad fold and sparse terminal nesting; panels remain visible."},
+    {"id": "R20", "phase": "CAPABILITY", "reason": "Retained partial gate grammar: coordinated normal placement, persistent bilateral fans and five sparse event stages."}
+  ],
+  "labels": {
+    "BEST_CROSS_CELL_CREASE": "CAPABILITY/X01",
+    "BEST_PURE_REFERENCE_CREASE": "SCREEN/A08",
+    "BEST_MOTIF_CREASE": "CAPABILITY/X05 (extreme local extension; not a hierarchy success)",
+    "BEST_CREASE_ROOF_CONTROL": "DESIGN/C06",
+    "BEST_CREASE_MICRO_CONTROL": "DESIGN/D05",
+    "BEST_SHARP_ORNAMENT": "CAPABILITY/X10",
+    "BEST_GATE_LEGIBLE": "CAPABILITY/Y19",
+    "BEST_GEOMETRIC_ORDER": "CAPABILITY/Y19 (relative order, still weak)",
+    "MAX_ORNAMENT_CAPABILITY": "CAPABILITY/Y07",
+    "MOST_INFORMATIVE_FAILURE": "CAPABILITY/X02 (design coherence, not contact count)",
+    "INFORMATIVE_CREASE_COLLAPSE": "SCREEN/A05",
+    "RETAINED_GATE_GRAMMAR": "CAPABILITY/R20",
+    "BEST_PRODUCTION_HERO": null,
+    "GROTESQUE_GATE_CANDIDATE": null
+  },
+  "assessment": "Morphological spread is materially broader after the override. No result meets all visual Grotesque criteria. The single strongest limitation is the lack of a coherent meso fold that replaces the inherited panel scaffold: local point placement produces swollen panels or shard fields. Freeze standalone research with the reproducible R20 grammar; do not start another broad geometry search.",
+  "test_result": {
+    "full_suite_runs": 1,
+    "full_run": {"passed": 788, "failed": 1, "seconds": 37.28},
+    "failure": "Existing worker identity negative test used repository-internal basetemp, invalidating its outside-repository package premise.",
+    "correction": "Existing test/code unchanged; only that test rerun with fresh temporary directory outside the repository.",
+    "focused_recheck": {"passed": 1, "failed": 0, "seconds": 0.07},
+    "verified_unique_tests": 789,
+    "disposition": "PASS after correcting one test-harness path; not falsely reported as a clean single 789-pass full run.",
+    "real_Mola_tests": "Official explicitly supplied DLL enabled for the full run; no skips."
+  }
+}

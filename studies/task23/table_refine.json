@@ -1,0 +1,2599 @@
+[
+  {
+    "id": "R01",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R01/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "REFINEMENT",
+    "faces": 71680,
+    "stage": "G2",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 63,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 4008.0341632344507,
+        "surviving_sharp_edges": 136,
+        "mean_sharpness": 4.0,
+        "max_sharpness": 4.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.477844944322126,
+          "p10": 5.771598620530017,
+          "median": 24.52476344114662,
+          "p90": 59.90173510521761,
+          "max": 115.90474170925282,
+          "mean": 30.45776325866634
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 2669.6815191599076,
+        "visible_crease_survival_ratio": 0.6660825258548936,
+        "longest_high_dihedral_chain_length": 820.4682562409099,
+        "high45_edge_count": 29,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 1,
+    "bilinear": 0,
+    "output_sha256": "6d7574728bb2710628abbccf6b697696590bb5c8f291bb9e333e636949a052d4",
+    "seconds": 78.5,
+    "peak_bytes": 635039744,
+    "ornament": {
+      "maximum": 2,
+      "face_counts": {
+        "0": 16384,
+        "1": 24576,
+        "2": 30720
+      },
+      "source_regions_at_least": {
+        "1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "3": []
+      },
+      "event_count": 480,
+      "event_depth_counts": {
+        "1": 96,
+        "2": 384
+      },
+      "independent_nested_trees": 96,
+      "operator_lineage_depth": 7
+    },
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4467.234074916481,
+        "depth": 1051.6773932387093,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2289.9942633271844,
+            -307.714466875501,
+            2514.1863357772218
+          ],
+          "normalized_mean_displacement": 0.027150336174141563,
+          "maximum_descendant_distance_over_source_diagonal": 0.03440356002513394
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0395685302256,
+            -227.48073026257404,
+            3375.0325336720935
+          ],
+          "normalized_mean_displacement": 0.03398994557068373,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846361641593,
+            -321.2728227163317,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.038305472909856975,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.01090662195,
+            -321.272822757396,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.03830547261584455,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 11.680851872912035,
+        "depth": 110.33547864774187,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "R02",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R02/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "REFINEMENT",
+    "faces": 71680,
+    "stage": "G2",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 126,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 4941.945041241769,
+        "surviving_sharp_edges": 316,
+        "mean_sharpness": 2.0,
+        "max_sharpness": 2.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.17613287242296358,
+          "p10": 2.392896258910707,
+          "median": 16.496588861144858,
+          "p90": 55.60696787971594,
+          "max": 101.30605370107548,
+          "mean": 22.42550619939124
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1984.2618580024898,
+        "visible_crease_survival_ratio": 0.40151435142303843,
+        "longest_high_dihedral_chain_length": 314.3704028574542,
+        "high45_edge_count": 41,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 126,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 4941.945056183753,
+        "surviving_sharp_edges": 316,
+        "mean_sharpness": 2.0,
+        "max_sharpness": 2.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.1761328789949438,
+          "p10": 2.3928782288080903,
+          "median": 16.496587766635862,
+          "p90": 55.60696688479163,
+          "max": 101.3060541699232,
+          "mean": 22.425505077444143
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1984.2618720657192,
+        "visible_crease_survival_ratio": 0.40151435305474587,
+        "longest_high_dihedral_chain_length": 314.3704038883762,
+        "high45_edge_count": 41,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "feb47c8051a88ab190256b430d3770dbb4dd6d733477b3d9707c4110238eba58",
+    "seconds": 72.51500000001397,
+    "peak_bytes": 629645312,
+    "ornament": {
+      "maximum": 2,
+      "face_counts": {
+        "0": 16384,
+        "1": 24576,
+        "2": 30720
+      },
+      "source_regions_at_least": {
+        "1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "3": []
+      },
+      "event_count": 480,
+      "event_depth_counts": {
+        "1": 96,
+        "2": 384
+      },
+      "independent_nested_trees": 96,
+      "operator_lineage_depth": 7
+    },
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4492.813622935118,
+        "depth": 1051.3001392132032,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051526664602,
+            -307.0522512995747,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438865,
+          "maximum_descendant_distance_over_source_diagonal": 0.039315657407472684
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.053037251043,
+            -227.4974861659131,
+            3375.01617189795
+          ],
+          "normalized_mean_displacement": 0.03398960865343378,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1345.3292989485603,
+            -322.3806568982073,
+            3382.0100119949734
+          ],
+          "normalized_mean_displacement": 0.03781561467182261,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            545.2555691976456,
+            -322.38065700103925,
+            3382.0100134528707
+          ],
+          "normalized_mean_displacement": 0.03781561441430844,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 12.32034057337794,
+        "depth": 110.26002784264067,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "R03",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R03/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "REFINEMENT",
+    "faces": 71680,
+    "stage": "G2",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 136,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 5391.476212139548,
+        "surviving_sharp_edges": 336,
+        "mean_sharpness": 2.0,
+        "max_sharpness": 2.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.17613287242296358,
+          "p10": 2.160161296109649,
+          "median": 15.129227315972027,
+          "p90": 54.46093639076803,
+          "max": 101.30605370107548,
+          "mean": 21.599262712453815
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 2015.3067756416144,
+        "visible_crease_survival_ratio": 0.373794986075226,
+        "longest_high_dihedral_chain_length": 314.3704028574542,
+        "high45_edge_count": 41,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "e1c307449c510269bd7137617d6e2cd3bd580ee1c3e80ebeebd68c2addaa3e7f",
+    "seconds": 71.78099999995902,
+    "peak_bytes": 618016768,
+    "ornament": {
+      "maximum": 2,
+      "face_counts": {
+        "0": 16384,
+        "1": 24576,
+        "2": 30720
+      },
+      "source_regions_at_least": {
+        "1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "3": []
+      },
+      "event_count": 480,
+      "event_depth_counts": {
+        "1": 96,
+        "2": 384
+      },
+      "independent_nested_trees": 96,
+      "operator_lineage_depth": 7
+    },
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4480.023848545889,
+        "depth": 1051.3001392132032,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051526664602,
+            -307.0522512995747,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438865,
+          "maximum_descendant_distance_over_source_diagonal": 0.039315657407472684
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.053037251043,
+            -227.4974861659131,
+            3375.01617189795
+          ],
+          "normalized_mean_displacement": 0.03398960865343378,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1345.3292989485603,
+            -322.3806568982073,
+            3382.0100119949734
+          ],
+          "normalized_mean_displacement": 0.03781561467182261,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.01090662195,
+            -321.272822757396,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.03830547261584455,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 12.000596213647242,
+        "depth": 110.26002784264067,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "R04",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R04/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "REFINEMENT",
+    "faces": 17920,
+    "stage": "G1",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 87,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 3806.424079110689,
+        "surviving_sharp_edges": 102,
+        "mean_sharpness": 5.0,
+        "max_sharpness": 5.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.1331832564379286,
+          "p10": 2.213957905184255,
+          "median": 9.76400293261671,
+          "p90": 39.52197780273763,
+          "max": 119.8107554862304,
+          "mean": 16.35143910633242
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1303.0440915194354,
+        "visible_crease_survival_ratio": 0.34232761889838376,
+        "longest_high_dihedral_chain_length": 625.7828253360983,
+        "high45_edge_count": 7,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 1,
+        "parent_cell_count": 92,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 3603.068619609794,
+        "surviving_sharp_edges": 110,
+        "mean_sharpness": 5.0,
+        "max_sharpness": 5.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.13318247772878686,
+          "p10": 1.4302507421753357,
+          "median": 7.093667766526452,
+          "p90": 27.85276473855112,
+          "max": 119.8106821304767,
+          "mean": 12.20703136789549
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 730.2820664170474,
+        "visible_crease_survival_ratio": 0.2026833634093085,
+        "longest_high_dihedral_chain_length": 393.292223377318,
+        "high45_edge_count": 4,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 2,
+    "bilinear": 4,
+    "output_sha256": "b8390d4fd081f63a26ecf331d5f977575702bb728acdc243ec412ba029ea12ce",
+    "seconds": 24.93700000003446,
+    "peak_bytes": 424341504,
+    "ornament": {
+      "maximum": 2,
+      "face_counts": {
+        "0": 4096,
+        "1": 6144,
+        "2": 7680
+      },
+      "source_regions_at_least": {
+        "1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "3": []
+      },
+      "event_count": 480,
+      "event_depth_counts": {
+        "1": 96,
+        "2": 384
+      },
+      "independent_nested_trees": 96,
+      "operator_lineage_depth": 6
+    },
+    "monitor": {
+      "generation": 1,
+      "opening": {
+        "width": 2200.1668939648293,
+        "height": 2105.6975065238926,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.331131946595
+      },
+      "dimensions": {
+        "width": 4474.025782226535,
+        "depth": 1064.622464448563,
+        "height": 3941.525397555089
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.164886052939,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 17922,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.763726423205,
+            -307.04833023352563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285954,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997386
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.7637273054424,
+            269.98143571406433,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132050212621,
+            326.1130477257493,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132091079217,
+            -363.1799423385977,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.0320959104597491,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.4394745525121,
+            -363.1799422569993,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.439478639172,
+            326.1130478073477,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.03209591045974906,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.689995954455,
+            269.98143570227563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285922,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997388
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.6899968366924,
+            -307.0483302453144,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.18675060169,
+            -227.62310668996932,
+            3375.149885252912
+          ],
+          "normalized_mean_displacement": 0.03394978657513553,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145015
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.1867503895473,
+            190.5562123712114,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265165,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070832
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507454271485,
+            -321.18941501478895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584671,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769191
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507464195843,
+            284.1225204900073,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.03817740631068914,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770159508344,
+            -321.1894150212572,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.038177406310689124,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770149583984,
+            284.12252048353895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584673,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769192
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.1130201329397,
+            190.55621215871932,
+            3375.1498852529116
+          ],
+          "normalized_mean_displacement": 0.03394978657513565,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145021
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.113019920797,
+            -227.6231069024614,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265171,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070841
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0000758608931042,
+        "height": 0.8098836563553433,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.163331639958919
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06066603769902713
+      },
+      "dimensions_drift_percent": {
+        "width": 11.850644555663381,
+        "depth": 112.92449288971262,
+        "height": 12.615011358716831
+      }
+    }
+  },
+  {
+    "id": "R05",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R05/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "REFINEMENT",
+    "faces": 71680,
+    "stage": "G2",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 87,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 3800.020452356439,
+        "surviving_sharp_edges": 172,
+        "mean_sharpness": 1.4603599660684645,
+        "max_sharpness": 2.496945237416341,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.28268793794515573,
+          "p10": 1.287107959643607,
+          "median": 7.81427567319539,
+          "p90": 38.335520534599695,
+          "max": 169.0141868519881,
+          "mean": 15.534860438516494
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1309.6318954883006,
+        "visible_crease_survival_ratio": 0.34463811758596774,
+        "longest_high_dihedral_chain_length": 393.9263199793553,
+        "high45_edge_count": 14,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 92,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 3596.753783741792,
+        "surviving_sharp_edges": 164,
+        "mean_sharpness": 1.2874517166081654,
+        "max_sharpness": 2.496583208860974,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.22329196077182145,
+          "p10": 0.6977626534221771,
+          "median": 5.531729252045126,
+          "p90": 26.235398025126127,
+          "max": 169.01416163882303,
+          "mean": 11.638372825056337
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 680.5223825338707,
+        "visible_crease_survival_ratio": 0.18920460600055486,
+        "longest_high_dihedral_chain_length": 393.9263199793553,
+        "high45_edge_count": 11,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 10,
+    "bilinear": 10,
+    "output_sha256": "fa23634c7a64e6592d1da6cf1412c1bb84c67455cc072ae4b480218d27c8cf64",
+    "seconds": 75.18700000003446,
+    "peak_bytes": 635645952,
+    "ornament": {
+      "maximum": 2,
+      "face_counts": {
+        "0": 16384,
+        "1": 24576,
+        "2": 30720
+      },
+      "source_regions_at_least": {
+        "1": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "2": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "3": []
+      },
+      "event_count": 480,
+      "event_depth_counts": {
+        "1": 96,
+        "2": 384
+      },
+      "independent_nested_trees": 96,
+      "operator_lineage_depth": 7
+    },
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4467.234074916481,
+        "depth": 1051.3001392132032,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051526664602,
+            -307.0522512995747,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438865,
+          "maximum_descendant_distance_over_source_diagonal": 0.039315657407472684
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.053037251043,
+            -227.4974861659131,
+            3375.01617189795
+          ],
+          "normalized_mean_displacement": 0.03398960865343378,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846361641593,
+            -321.2728227163317,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.038305472909856975,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.01090662195,
+            -321.272822757396,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.03830547261584455,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 11.680851872912035,
+        "depth": 110.26002784264067,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "R06",
+    "phase": "REFINE",
+    "attempt": "study/REFINE/R06/attempt_001",
+    "status": "CANCELLED_POLICY_OVERRIDE",
+    "reason": "Stopped superseded batch after user design-first override; saved checkpoints retained, no completion claim",
+    "family": "REFINEMENT",
+    "faces": 17920,
+    "stage": "G1",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": true,
+    "cap_ever": false,
+    "design_eligible": false,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650787348553,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 5.0,
+        "max_sharpness": 5.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.15881408586246162,
+          "p10": 2.3873247842514522,
+          "median": 12.373931672228876,
+          "p90": 59.24624329319225,
+          "max": 82.01966128848949,
+          "mean": 19.531919787915438
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1371.9104539515974,
+        "visible_crease_survival_ratio": 0.41791307664340027,
+        "longest_high_dihedral_chain_length": 634.81650080461,
+        "high45_edge_count": 11,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650847417326,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 5.0,
+        "max_sharpness": 5.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.15881408586705148,
+          "p10": 2.387324686703477,
+          "median": 12.373928552012393,
+          "p90": 59.246240406316645,
+          "max": 82.01965960709222,
+          "mean": 19.531925177811853
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1371.9104526382018,
+        "visible_crease_survival_ratio": 0.4179130754786053,
+        "longest_high_dihedral_chain_length": 634.8165008965956,
+        "high45_edge_count": 11,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": null,
+    "seconds": null,
+    "peak_bytes": null,
+    "ornament": null,
+    "monitor": {
+      "generation": 1,
+      "opening": {
+        "width": 2200.1668939648293,
+        "height": 2105.6975065238926,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.331131946595
+      },
+      "dimensions": {
+        "width": 4474.025782226535,
+        "depth": 1064.622464448563,
+        "height": 3941.525397555089
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.164886052939,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 17922,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.763726423205,
+            -307.04833023352563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285954,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997386
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.7637273054424,
+            269.98143571406433,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132050212621,
+            326.1130477257493,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132091079217,
+            -363.1799423385977,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.0320959104597491,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.4394745525121,
+            -363.1799422569993,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.439478639172,
+            326.1130478073477,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.03209591045974906,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.689995954455,
+            269.98143570227563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285922,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997388
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.6899968366924,
+            -307.0483302453144,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2276.602475612175,
+            -226.4606163658177,
+            3375.69900983504
+          ],
+          "normalized_mean_displacement": 0.0337466868015416,
+          "maximum_descendant_distance_over_source_diagonal": 0.0459814484324108
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.1867503895473,
+            190.5562123712114,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265165,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070832
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507454271485,
+            -321.18941501478895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584671,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769191
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507464195843,
+            284.1225204900073,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.03817740631068914,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770159508344,
+            -321.1894150212572,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.038177406310689124,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770149583984,
+            284.12252048353895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584673,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769192
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.1130201329397,
+            190.55621215871932,
+            3375.1498852529116
+          ],
+          "normalized_mean_displacement": 0.03394978657513565,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145021
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1476.5287447696796,
+            -226.4606165755094,
+            3375.699010080477
+          ],
+          "normalized_mean_displacement": 0.033746686808614625,
+          "maximum_descendant_distance_over_source_diagonal": 0.04598144858198652
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0000758608931042,
+        "height": 0.8098836563553433,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.163331639958919
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06066603769902713
+      },
+      "dimensions_drift_percent": {
+        "width": 11.850644555663381,
+        "depth": 112.92449288971262,
+        "height": 12.615011358716831
+      }
+    }
+  }
+]

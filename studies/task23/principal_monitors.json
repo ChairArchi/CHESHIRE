@@ -1,0 +1,5314 @@
+[
+  {
+    "id": "A05",
+    "phase": "SCREEN",
+    "stage": "G2",
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4467.234074916481,
+        "depth": 1051.3001392132032,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051526664602,
+            -307.0522512995747,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438865,
+          "maximum_descendant_distance_over_source_diagonal": 0.039315657407472684
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.053037251043,
+            -227.4974861659131,
+            3375.01617189795
+          ],
+          "normalized_mean_displacement": 0.03398960865343378,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846361641593,
+            -321.2728227163317,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.038305472909856975,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.01090662195,
+            -321.272822757396,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.03830547261584455,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 11.680851872912035,
+        "depth": 110.26002784264067,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "A08",
+    "phase": "SCREEN",
+    "stage": "G2",
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 4467.234074916481,
+        "depth": 1051.6773932387093,
+        "height": 3936.914864938348
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2289.9942633271844,
+            -307.714466875501,
+            2514.1863357772218
+          ],
+          "normalized_mean_displacement": 0.027150336174141563,
+          "maximum_descendant_distance_over_source_diagonal": 0.03440356002513394
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777970779226,
+            -307.0522513218765,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.02799379789985011,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0395685302256,
+            -227.48073026257404,
+            3375.0325336720935
+          ],
+          "normalized_mean_displacement": 0.03398994557068373,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846361641593,
+            -321.2728227163317,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.038305472909856975,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363743
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.01090662195,
+            -321.272822757396,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.03830547261584455,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302461
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793065644615,
+            -227.49748639112838,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146559,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 11.680851872912035,
+        "depth": 110.33547864774187,
+        "height": 12.483281855381367
+      }
+    }
+  },
+  {
+    "id": "X05",
+    "phase": "CAPABILITY",
+    "stage": "G2",
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2200.6341752972576,
+        "height": 2103.8488672650874,
+        "center_x": -400.03686523437494,
+        "center_z": 1511.0878526131883
+      },
+      "dimensions": {
+        "width": 4938.481375189627,
+        "depth": 2855.5808837610275,
+        "height": 5543.7192743544465
+      },
+      "macro_relations": {
+        "left_median_x": -1950.0368652343748,
+        "right_median_x": 1149.9631347656245,
+        "lintel_median_z": 2969.065672100478,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 286722,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.1634189806445,
+        "min": 459.1634189806445,
+        "max": 459.1634189806445,
+        "mean_over_source_height": 0.13118954828018414
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3359299090475,
+            -206.98269592778902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698198,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698198
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2293.454949073264,
+            -306.07605036162016,
+            2501.4008141432587
+          ],
+          "normalized_mean_displacement": 0.02809192388870445,
+          "maximum_descendant_distance_over_source_diagonal": 0.039220214814643245
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2293.4549499538916,
+            269.00915583000864,
+            2501.4008158510874
+          ],
+          "normalized_mean_displacement": 0.02809192356112939,
+          "maximum_descendant_distance_over_source_diagonal": 0.0392202147682725
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3359299090475,
+            169.91580139653902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698198,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698198
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.737800559702,
+            -206.98269592778902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698194,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698194
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.737800559702,
+            169.91580139653902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698194,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698194
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.9701031616207,
+            325.0305566979193,
+            2563.0122878688053
+          ],
+          "normalized_mean_displacement": 0.032000408152904065,
+          "maximum_descendant_distance_over_source_diagonal": 0.059381028747805084
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.9701072509906,
+            -362.0974515232024,
+            2563.012284622658
+          ],
+          "normalized_mean_displacement": 0.03200040769564281,
+          "maximum_descendant_distance_over_source_diagonal": 0.05938102698780962
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.664070090952,
+            -206.98269592778902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698194,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698194
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.8963726928708,
+            -362.0974512291693,
+            2563.0122878688053
+          ],
+          "normalized_mean_displacement": 0.032000408152904045,
+          "maximum_descendant_distance_over_source_diagonal": 0.059381028747805126
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.8963767822407,
+            325.0305569919524,
+            2563.012284622658
+          ],
+          "normalized_mean_displacement": 0.032000407695642795,
+          "maximum_descendant_distance_over_source_diagonal": 0.05938102698780957
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.664070090952,
+            169.91580139653902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698194,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698194
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2621994402973,
+            -206.98269592778902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698198,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698198
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2621994402973,
+            169.91580139653902,
+            459.1634189806445
+          ],
+          "normalized_mean_displacement": 0.09058435823698198,
+          "maximum_descendant_distance_over_source_diagonal": 0.09058435823698198
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1493.3812186045136,
+            269.0091558303702,
+            2501.4008141432587
+          ],
+          "normalized_mean_displacement": 0.028091923888704486,
+          "maximum_descendant_distance_over_source_diagonal": 0.039220214814643245
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1493.3812194851412,
+            -306.07605036125864,
+            2501.4008158510874
+          ],
+          "normalized_mean_displacement": 0.028091923561129457,
+          "maximum_descendant_distance_over_source_diagonal": 0.039220214768272504
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.155921742767,
+            -227.42729397550562,
+            3375.11905633215
+          ],
+          "normalized_mean_displacement": 0.033966038754438044,
+          "maximum_descendant_distance_over_source_diagonal": 0.04655003074963964
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.155921444876,
+            190.36039958738206,
+            3375.1190564920344
+          ],
+          "normalized_mean_displacement": 0.03396603876616393,
+          "maximum_descendant_distance_over_source_diagonal": 0.04655003093898184
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1358.6631220513532,
+            -454.0296671810323,
+            3465.364957203714
+          ],
+          "normalized_mean_displacement": 0.04416673712830582,
+          "maximum_descendant_distance_over_source_diagonal": 0.08158853432612058
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.6755071708637,
+            282.9907094461732,
+            3381.590664816347
+          ],
+          "normalized_mean_displacement": 0.037986324260722834,
+          "maximum_descendant_distance_over_source_diagonal": 0.06412158905736828
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.601776702114,
+            -320.0576039774232,
+            3381.590664816347
+          ],
+          "normalized_mean_displacement": 0.037986324260722806,
+          "maximum_descendant_distance_over_source_diagonal": 0.06412158905736826
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.601774962206,
+            282.9907097156855,
+            3381.5906633377645
+          ],
+          "normalized_mean_displacement": 0.03798632468656278,
+          "maximum_descendant_distance_over_source_diagonal": 0.06412159026979224
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.0821912740166,
+            190.3603994442556,
+            3375.11905633215
+          ],
+          "normalized_mean_displacement": 0.033966038754438106,
+          "maximum_descendant_distance_over_source_diagonal": 0.046550030749639676
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.0821909761257,
+            -227.42729411863206,
+            3375.119056492034
+          ],
+          "normalized_mean_displacement": 0.033966038766164046,
+          "maximum_descendant_distance_over_source_diagonal": 0.04655003093898193
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0002882614987534,
+        "height": 0.8091726412558028,
+        "center_x": 0.9999999999999999,
+        "center_z": 1.162375271240914
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 1.4210854715202004e-17,
+        "z": 0.0603108150323395
+      },
+      "dimensions_drift_percent": {
+        "width": 23.462034379740683,
+        "depth": 471.11617675220555,
+        "height": 58.39197926726989
+      }
+    }
+  },
+  {
+    "id": "B12",
+    "phase": "SCREEN",
+    "stage": "G1",
+    "monitor": {
+      "generation": 1,
+      "opening": {
+        "width": 2209.6100907826212,
+        "height": 2105.226201838881,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.0954796040892
+      },
+      "dimensions": {
+        "width": 4497.740507929036,
+        "depth": 1091.4677900158786,
+        "height": 3952.922520200453
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2967.863708808574,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 392,
+      "total_vertex_count": 87618,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 8,
+          "mean_xyz": [
+            -2294.6831008137992,
+            -312.62875228190063,
+            2510.998901295654
+          ],
+          "normalized_mean_displacement": 0.027122210211549588,
+          "maximum_descendant_distance_over_source_diagonal": 0.03828754802317424
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 8,
+          "mean_xyz": [
+            -2294.6831021981216,
+            275.5618574517655,
+            2510.9989022781183
+          ],
+          "normalized_mean_displacement": 0.02712220989270246,
+          "maximum_descendant_distance_over_source_diagonal": 0.038287547986139
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 14,
+          "mean_xyz": [
+            -1370.9564021788296,
+            328.43214420609155,
+            2564.70858183967
+          ],
+          "normalized_mean_displacement": 0.030955302279628876,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942458521376
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 14,
+          "mean_xyz": [
+            -1370.9564055859378,
+            -365.4990392019327,
+            2564.7085792073894
+          ],
+          "normalized_mean_displacement": 0.030955301937488904,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942400756322
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 14,
+          "mean_xyz": [
+            570.8826717100799,
+            -365.49903873734155,
+            2564.70858183967
+          ],
+          "normalized_mean_displacement": 0.030955302279628845,
+          "maximum_descendant_distance_over_source_diagonal": 0.0635494245852138
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 14,
+          "mean_xyz": [
+            570.8826751171879,
+            328.43214467068276,
+            2564.7085792073894
+          ],
+          "normalized_mean_displacement": 0.030955301937488897,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942400756318
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 8,
+          "mean_xyz": [
+            1494.6093703450492,
+            275.56185775065063,
+            2510.9989012956535
+          ],
+          "normalized_mean_displacement": 0.027122210211549636,
+          "maximum_descendant_distance_over_source_diagonal": 0.03828754802317424
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 8,
+          "mean_xyz": [
+            1494.609371729371,
+            -312.6287519830155,
+            2510.9989022781183
+          ],
+          "normalized_mean_displacement": 0.027122209892702517,
+          "maximum_descendant_distance_over_source_diagonal": 0.038287547986139016
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 45,
+          "mean_xyz": [
+            -2275.9938352942527,
+            -229.6761565185779,
+            3377.4450850150256
+          ],
+          "normalized_mean_displacement": 0.03346444539418491,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332416936606
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 45,
+          "mean_xyz": [
+            -2275.9871323590646,
+            192.59821428477605,
+            3377.4729382168243
+          ],
+          "normalized_mean_displacement": 0.03346218857445687,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332717889556
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 29,
+          "mean_xyz": [
+            -1344.1546437223765,
+            -332.4233955923177,
+            3371.0188357774778
+          ],
+          "normalized_mean_displacement": 0.03974362277207678,
+          "maximum_descendant_distance_over_source_diagonal": 0.06781171766292256
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 29,
+          "mean_xyz": [
+            -1344.4126135604633,
+            295.2909368089228,
+            3371.2690220689174
+          ],
+          "normalized_mean_displacement": 0.03967593481168171,
+          "maximum_descendant_distance_over_source_diagonal": 0.06772346498473931
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 29,
+          "mean_xyz": [
+            544.3388830917135,
+            -332.3578313401728,
+            3371.2690220689174
+          ],
+          "normalized_mean_displacement": 0.0396759348116817,
+          "maximum_descendant_distance_over_source_diagonal": 0.06772346498473931
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 29,
+          "mean_xyz": [
+            544.4476417131996,
+            295.3251161443489,
+            3371.2822396351185
+          ],
+          "normalized_mean_displacement": 0.03966139425382122,
+          "maximum_descendant_distance_over_source_diagonal": 0.06781171766292253
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 45,
+          "mean_xyz": [
+            1475.9201048255022,
+            192.60926198732787,
+            3377.445085015025
+          ],
+          "normalized_mean_displacement": 0.033464445394185034,
+          "maximum_descendant_distance_over_source_diagonal": 0.04701133241693667
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 45,
+          "mean_xyz": [
+            1475.9134018903144,
+            -229.66510881602602,
+            3377.4729382168243
+          ],
+          "normalized_mean_displacement": 0.033462188574456896,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332717889646
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0043682230830095,
+        "height": 0.8097023853226466,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.1631503689262224
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.060598708458311196
+      },
+      "dimensions_drift_percent": {
+        "width": 12.4435126982259,
+        "depth": 118.29355800317569,
+        "height": 12.94064343429866
+      }
+    }
+  },
+  {
+    "id": "C06",
+    "phase": "DESIGN",
+    "stage": "E1",
+    "monitor": {
+      "generation": 1,
+      "opening": {
+        "width": 2200.1668939648293,
+        "height": 2105.6975065238926,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.331131946595
+      },
+      "dimensions": {
+        "width": 4474.025782226535,
+        "depth": 1064.622464448563,
+        "height": 3941.525397555089
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.164886052939,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 17970,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.763726423205,
+            -307.04833023352563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285954,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997386
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.7637273054424,
+            269.98143571406433,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132050212621,
+            326.1130477257493,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132091079217,
+            -363.1799423385977,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.0320959104597491,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.4394745525121,
+            -363.1799422569993,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.439478639172,
+            326.1130478073477,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.03209591045974906,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.689995954455,
+            269.98143570227563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285922,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997388
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.6899968366924,
+            -307.0483302453144,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2276.602475612175,
+            -226.4606163658177,
+            3375.69900983504
+          ],
+          "normalized_mean_displacement": 0.0337466868015416,
+          "maximum_descendant_distance_over_source_diagonal": 0.0459814484324108
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.1867503895473,
+            190.5562123712114,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265165,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070832
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507454271485,
+            -321.18941501478895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584671,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769191
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507464195843,
+            284.1225204900073,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.03817740631068914,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770159508344,
+            -321.1894150212572,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.038177406310689124,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770149583984,
+            284.12252048353895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584673,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769192
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.1130201329397,
+            190.55621215871932,
+            3375.1498852529116
+          ],
+          "normalized_mean_displacement": 0.03394978657513565,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145021
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1476.5287447696796,
+            -226.4606165755094,
+            3375.699010080477
+          ],
+          "normalized_mean_displacement": 0.033746686808614625,
+          "maximum_descendant_distance_over_source_diagonal": 0.045981448581986495
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0000758608931042,
+        "height": 0.8098836563553433,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.163331639958919
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06066603769902713
+      },
+      "dimensions_drift_percent": {
+        "width": 11.850644555663381,
+        "depth": 112.92449288971262,
+        "height": 12.615011358716831
+      }
+    }
+  },
+  {
+    "id": "D05",
+    "phase": "DESIGN",
+    "stage": "E3",
+    "monitor": {
+      "generation": 3,
+      "opening": {
+        "width": 2200.1668939648293,
+        "height": 2105.6975065238926,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.331131946595
+      },
+      "dimensions": {
+        "width": 4474.025782226535,
+        "depth": 1064.622464448563,
+        "height": 3941.525397555089
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.164886052939,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 18114,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.763726423205,
+            -307.04833023352563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285954,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997386
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.7637273054424,
+            269.98143571406433,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132050212621,
+            326.1130477257493,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132091079217,
+            -363.1799423385977,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.0320959104597491,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.4394745525121,
+            -363.1799422569993,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.439478639172,
+            326.1130478073477,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.03209591045974906,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.689995954455,
+            269.98143570227563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285922,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997388
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.6899968366924,
+            -307.0483302453144,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2276.602475612175,
+            -226.4606163658177,
+            3375.69900983504
+          ],
+          "normalized_mean_displacement": 0.0337466868015416,
+          "maximum_descendant_distance_over_source_diagonal": 0.0459814484324108
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.1867503895473,
+            190.5562123712114,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265165,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070832
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507454271485,
+            -321.18941501478895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584671,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769191
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507464195843,
+            284.1225204900073,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.03817740631068914,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770159508344,
+            -321.1894150212572,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.038177406310689124,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770149583984,
+            284.12252048353895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584673,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769192
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.1130201329397,
+            190.55621215871932,
+            3375.1498852529116
+          ],
+          "normalized_mean_displacement": 0.03394978657513565,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145021
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1476.5287447696796,
+            -226.4606165755094,
+            3375.699010080477
+          ],
+          "normalized_mean_displacement": 0.033746686808614625,
+          "maximum_descendant_distance_over_source_diagonal": 0.04598144858198652
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0000758608931042,
+        "height": 0.8098836563553433,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.163331639958919
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06066603769902713
+      },
+      "dimensions_drift_percent": {
+        "width": 11.850644555663381,
+        "depth": 112.92449288971262,
+        "height": 12.615011358716831
+      }
+    }
+  },
+  {
+    "id": "E05",
+    "phase": "DESIGN",
+    "stage": "E4",
+    "monitor": {
+      "generation": 4,
+      "opening": {
+        "width": 2200.1668939648293,
+        "height": 2105.6975065238926,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.331131946595
+      },
+      "dimensions": {
+        "width": 4474.025782226535,
+        "depth": 1064.622464448563,
+        "height": 3941.525397555089
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.164886052939,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 18162,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.763726423205,
+            -307.04833023352563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285954,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997386
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.7637273054424,
+            269.98143571406433,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132050212621,
+            326.1130477257493,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.5132091079217,
+            -363.1799423385977,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.0320959104597491,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.4394745525121,
+            -363.1799422569993,
+            2565.1798868529663
+          ],
+          "normalized_mean_displacement": 0.032095910944981064,
+          "maximum_descendant_distance_over_source_diagonal": 0.0607802991815899
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.439478639172,
+            326.1130478073477,
+            2565.1798835641166
+          ],
+          "normalized_mean_displacement": 0.03209591045974906,
+          "maximum_descendant_distance_over_source_diagonal": 0.06078029737449714
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.689995954455,
+            269.98143570227563,
+            2503.5557896516866
+          ],
+          "normalized_mean_displacement": 0.027967655648285922,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659950997388
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1492.6899968366924,
+            -307.0483302453144,
+            2503.5557913886787
+          ],
+          "normalized_mean_displacement": 0.0279676553199503,
+          "maximum_descendant_distance_over_source_diagonal": 0.03904659946750615
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2276.602475612175,
+            -226.4606163658177,
+            3375.69900983504
+          ],
+          "normalized_mean_displacement": 0.0337466868015416,
+          "maximum_descendant_distance_over_source_diagonal": 0.0459814484324108
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.1867503895473,
+            190.5562123712114,
+            3375.1498853371777
+          ],
+          "normalized_mean_displacement": 0.03394978658265165,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993914070832
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507454271485,
+            -321.18941501478895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584671,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769191
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.3507464195843,
+            284.1225204900073,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.03817740631068914,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770159508344,
+            -321.1894150212572,
+            3380.769264533421
+          ],
+          "normalized_mean_displacement": 0.038177406310689124,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370054031475
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.2770149583984,
+            284.12252048353895,
+            3380.7692630500096
+          ],
+          "normalized_mean_displacement": 0.03817740661584673,
+          "maximum_descendant_distance_over_source_diagonal": 0.06557370110769192
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.1130201329397,
+            190.55621215871932,
+            3375.1498852529116
+          ],
+          "normalized_mean_displacement": 0.03394978657513565,
+          "maximum_descendant_distance_over_source_diagonal": 0.04702993898145021
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1476.5287447696796,
+            -226.4606165755094,
+            3375.699010080477
+          ],
+          "normalized_mean_displacement": 0.033746686808614625,
+          "maximum_descendant_distance_over_source_diagonal": 0.04598144858198652
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0000758608931042,
+        "height": 0.8098836563553433,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.163331639958919
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06066603769902713
+      },
+      "dimensions_drift_percent": {
+        "width": 11.850644555663381,
+        "depth": 112.92449288971262,
+        "height": 12.615011358716831
+      }
+    }
+  },
+  {
+    "id": "EX01",
+    "phase": "EXPLORATION",
+    "stage": "G0",
+    "monitor": {
+      "generation": 0,
+      "opening": {
+        "width": 2201.720109930585,
+        "height": 2101.9387128803237,
+        "center_x": -400.036865234375,
+        "center_z": 1508.3154468747357
+      },
+      "dimensions": {
+        "width": 4477.9323652475,
+        "depth": 1069.459277142703,
+        "height": 3943.903508764062
+      },
+      "macro_relations": {
+        "left_median_x": -1950.0368652343745,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2967.3335380305134,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 17922,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 457.3460904345738,
+        "min": 457.3460904345738,
+        "max": 457.3460904345738,
+        "mean_over_source_height": 0.13067031155273537
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.276769868927,
+            -206.3121680710574,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.090280517625203,
+          "maximum_descendant_distance_over_source_diagonal": 0.090280517625203
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2295.414292466211,
+            -305.33885863058657,
+            2498.471487117473
+          ],
+          "normalized_mean_displacement": 0.02816527659801163,
+          "maximum_descendant_distance_over_source_diagonal": 0.03886393857381653
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2295.414293318863,
+            268.27196407840387,
+            2498.4714887334835
+          ],
+          "normalized_mean_displacement": 0.028165276281523554,
+          "maximum_descendant_distance_over_source_diagonal": 0.03886393853546141
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.276769868927,
+            169.2452735398074,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.090280517625203,
+          "maximum_descendant_distance_over_source_diagonal": 0.090280517625203
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7969605998221,
+            -206.3121680710574,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520296,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520296
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7969605998221,
+            169.2452735398074,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520296,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520296
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1362.9968777546658,
+            324.47378888872106,
+            2559.284804801097
+          ],
+          "normalized_mean_displacement": 0.031947342236651737,
+          "maximum_descendant_distance_over_source_diagonal": 0.05692505160852311
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1362.9968818443597,
+            -361.5406840256431,
+            2559.2848018286986
+          ],
+          "normalized_mean_displacement": 0.03194734181589584,
+          "maximum_descendant_distance_over_source_diagonal": 0.05692504994124593
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.723230131072,
+            -206.3121680710574,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520296,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520296
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            562.923147285916,
+            -361.54068341997106,
+            2559.284804801097
+          ],
+          "normalized_mean_displacement": 0.03194734223665171,
+          "maximum_descendant_distance_over_source_diagonal": 0.05692505160852312
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            562.9231513756099,
+            324.4737894943931,
+            2559.2848018286986
+          ],
+          "normalized_mean_displacement": 0.031947341815895806,
+          "maximum_descendant_distance_over_source_diagonal": 0.056925049941245864
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.723230131072,
+            169.2452735398074,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520296,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520296
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2030394001774,
+            -206.3121680710574,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520299,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520299
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2030394001774,
+            169.2452735398074,
+            457.3460904345738
+          ],
+          "normalized_mean_displacement": 0.09028051762520299,
+          "maximum_descendant_distance_over_source_diagonal": 0.09028051762520299
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1495.3405619974608,
+            268.2719640993366,
+            2498.471487117473
+          ],
+          "normalized_mean_displacement": 0.02816527659801166,
+          "maximum_descendant_distance_over_source_diagonal": 0.03886393857381653
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1495.3405628501132,
+            -305.33885860965387,
+            2498.4714887334835
+          ],
+          "normalized_mean_displacement": 0.028165276281523554,
+          "maximum_descendant_distance_over_source_diagonal": 0.038863938535461426
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.419136729736,
+            -227.5458338860462,
+            3375.3822712599303
+          ],
+          "normalized_mean_displacement": 0.03389309354920048,
+          "maximum_descendant_distance_over_source_diagonal": 0.04568113920317647
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.4191363515806,
+            190.47893935832363,
+            3375.382271504898
+          ],
+          "normalized_mean_displacement": 0.033893093566233316,
+          "maximum_descendant_distance_over_source_diagonal": 0.04568113943285752
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1344.5347586742816,
+            -319.07027494075015,
+            3383.8787971209363
+          ],
+          "normalized_mean_displacement": 0.03756585322093167,
+          "maximum_descendant_distance_over_source_diagonal": 0.06153052628142536
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1344.5347613999961,
+            282.0033797170703,
+            3383.878798578688
+          ],
+          "normalized_mean_displacement": 0.037565852634244105,
+          "maximum_descendant_distance_over_source_diagonal": 0.06153052407160866
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            544.4610309312463,
+            -319.07027424832023,
+            3383.878798578688
+          ],
+          "normalized_mean_displacement": 0.03756585263424408,
+          "maximum_descendant_distance_over_source_diagonal": 0.06153052407160866
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            544.4610282055319,
+            282.00338040950015,
+            3383.8787971209363
+          ],
+          "normalized_mean_displacement": 0.03756585322093164,
+          "maximum_descendant_distance_over_source_diagonal": 0.06153052628142536
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.3454062609853,
+            190.47893935479618,
+            3375.3822712599303
+          ],
+          "normalized_mean_displacement": 0.033893093549200545,
+          "maximum_descendant_distance_over_source_diagonal": 0.04568113920317656
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1475.34540588283,
+            -227.5458338895736,
+            3375.382271504898
+          ],
+          "normalized_mean_displacement": 0.033893093566233407,
+          "maximum_descendant_distance_over_source_diagonal": 0.04568113943285761
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0007818681502658,
+        "height": 0.8084379664924322,
+        "center_x": 1.0,
+        "center_z": 1.1602426514421045
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.05951869910706734
+      },
+      "dimensions_drift_percent": {
+        "width": 11.948309131187496,
+        "depth": 113.89185542854064,
+        "height": 12.68295739325891
+      }
+    }
+  },
+  {
+    "id": "X01",
+    "phase": "CAPABILITY",
+    "stage": "G3",
+    "monitor": {
+      "generation": 3,
+      "opening": {
+        "width": 2199.710918898346,
+        "height": 2105.5909571989773,
+        "center_x": -400.03686523437506,
+        "center_z": 1513.5759491027595
+      },
+      "dimensions": {
+        "width": 5024.28919365405,
+        "depth": 1505.709751172823,
+        "height": 4248.004391049454
+      },
+      "macro_relations": {
+        "left_median_x": -1950.0368652343755,
+        "right_median_x": 1149.963134765625,
+        "lintel_median_z": 2970.673740236317,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 286722,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.7804705032707,
+        "min": 460.7804705032707,
+        "max": 460.7804705032707,
+        "mean_over_source_height": 0.13165156300093447
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.388570271278,
+            -207.57932887786043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173443,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173443
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2337.7572699032703,
+            -410.84583892412417,
+            2469.653259255944
+          ],
+          "normalized_mean_displacement": 0.037985148361259456,
+          "maximum_descendant_distance_over_source_diagonal": 0.04506772165282794
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.9047720883386,
+            271.00615212788273,
+            2504.0185760277013
+          ],
+          "normalized_mean_displacement": 0.02794298647201918,
+          "maximum_descendant_distance_over_source_diagonal": 0.03930829360240537
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.388570271278,
+            170.51243434661043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173443,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173443
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.685160197473,
+            -207.57932887786043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173446,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173446
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.685160197473,
+            170.51243434661043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173446,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173446
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.099487115611,
+            325.88226775327195,
+            2566.3714293760418
+          ],
+          "normalized_mean_displacement": 0.03209022534855872,
+          "maximum_descendant_distance_over_source_diagonal": 0.06138481265779489
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.0994912236347,
+            -362.94916235311734,
+            2566.3714260284546
+          ],
+          "normalized_mean_displacement": 0.03209022485465856,
+          "maximum_descendant_distance_over_source_diagonal": 0.061384810822506075
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6114297287227,
+            -207.57932887786043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173444,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173444
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.0257566468612,
+            -362.94916228452195,
+            2566.3714293760418
+          ],
+          "normalized_mean_displacement": 0.0320902253485587,
+          "maximum_descendant_distance_over_source_diagonal": 0.06138481265779491
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.0257607548849,
+            325.8822678218674,
+            2566.3714260284546
+          ],
+          "normalized_mean_displacement": 0.03209022485465853,
+          "maximum_descendant_distance_over_source_diagonal": 0.06138481082250601
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6114297287227,
+            170.51243434661043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173444,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173444
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.314839802527,
+            -207.57932887786043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173446,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173446
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.314839802527,
+            170.51243434661043,
+            460.7804705032707
+          ],
+          "normalized_mean_displacement": 0.09085507956173446,
+          "maximum_descendant_distance_over_source_diagonal": 0.09085507956173446
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.8168251538805,
+            269.94691410852806,
+            2504.19468918179
+          ],
+          "normalized_mean_displacement": 0.028006903957804797,
+          "maximum_descendant_distance_over_source_diagonal": 0.039404691641712515
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.8168260372613,
+            -307.01380866380435,
+            2504.1946909653043
+          ],
+          "normalized_mean_displacement": 0.028006903625205155,
+          "maximum_descendant_distance_over_source_diagonal": 0.039404691591188354
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2287.0134364292053,
+            -254.19096263274153,
+            3388.403532126267
+          ],
+          "normalized_mean_displacement": 0.029873284413026578,
+          "maximum_descendant_distance_over_source_diagonal": 0.04714218036579218
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0129162314183,
+            190.3848976737369,
+            3374.976051178365
+          ],
+          "normalized_mean_displacement": 0.03400189777251084,
+          "maximum_descendant_distance_over_source_diagonal": 0.04725260584140786
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1349.4179889544948,
+            -429.7276278471411,
+            3439.6980223418013
+          ],
+          "normalized_mean_displacement": 0.0428403557304387,
+          "maximum_descendant_distance_over_source_diagonal": 0.06833422610719271
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0154658196213,
+            284.17445166698104,
+            3379.804098040235
+          ],
+          "normalized_mean_displacement": 0.03833412539165483,
+          "maximum_descendant_distance_over_source_diagonal": 0.0661910795035753
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            542.9417353508716,
+            -321.24134619823104,
+            3379.804098040235
+          ],
+          "normalized_mean_displacement": 0.0383341253916548,
+          "maximum_descendant_distance_over_source_diagonal": 0.0661910795035753
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            542.9417344356009,
+            284.17445161867715,
+            3379.80409655864
+          ],
+          "normalized_mean_displacement": 0.03833412568387095,
+          "maximum_descendant_distance_over_source_diagonal": 0.066191079981391
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9391859823452,
+            190.38489744522983,
+            3374.976051096592
+          ],
+          "normalized_mean_displacement": 0.034001897764406215,
+          "maximum_descendant_distance_over_source_diagonal": 0.04725260568387727
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9391857626683,
+            -227.45179220498687,
+            3374.976051178365
+          ],
+          "normalized_mean_displacement": 0.03400189777251084,
+          "maximum_descendant_distance_over_source_diagonal": 0.04725260584140786
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9998685994992481,
+        "height": 0.8098426758457605,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.1642891916175073
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.06102169974364558
+      },
+      "dimensions_drift_percent": {
+        "width": 25.60722984135124,
+        "depth": 201.1419502345646,
+        "height": 21.37155402998441
+      }
+    }
+  },
+  {
+    "id": "X02",
+    "phase": "CAPABILITY",
+    "stage": "G2",
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2198.9236393868136,
+        "height": 2104.354855457217,
+        "center_x": -400.03686523514966,
+        "center_z": 1512.7724565435046
+      },
+      "dimensions": {
+        "width": 4777.093023655963,
+        "depth": 2760.664432857127,
+        "height": 4082.800009824964
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.5940026705475,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71682,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2317.350056958326,
+            -348.97687845048654,
+            2500.157468341395
+          ],
+          "normalized_mean_displacement": 0.02857847614298561,
+          "maximum_descendant_distance_over_source_diagonal": 0.04257642981593559
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1359.4255761864924,
+            -370.8513325378519,
+            2563.7012297307792
+          ],
+          "normalized_mean_displacement": 0.0332761360027765,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            559.35184160891,
+            -370.8513324752364,
+            2563.701233106056
+          ],
+          "normalized_mean_displacement": 0.033276136476033995,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1517.2763289951256,
+            -348.97687865412036,
+            2500.1574714802036
+          ],
+          "normalized_mean_displacement": 0.028578475523968073,
+          "maximum_descendant_distance_over_source_diagonal": 0.042576429776710285
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.026331901709,
+            -227.4169043841467,
+            3374.9894665483175
+          ],
+          "normalized_mean_displacement": 0.03399991590109117,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799912
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1342.4433592728537,
+            -341.64769632453505,
+            3392.2693527557562
+          ],
+          "normalized_mean_displacement": 0.038291265502290193,
+          "maximum_descendant_distance_over_source_diagonal": 0.06591510682147822
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            542.3696295739066,
+            -341.6476961150099,
+            3392.2693547077806
+          ],
+          "normalized_mean_displacement": 0.038291265184387024,
+          "maximum_descendant_distance_over_source_diagonal": 0.06591510630627659
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9526012148292,
+            -227.416904609362,
+            3374.9894666302503
+          ],
+          "normalized_mean_displacement": 0.03399991590910563,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577232
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9995107451758244,
+        "height": 0.8093672520989297,
+        "center_x": 1.0000000000019365,
+        "center_z": 1.1636711204180805
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.936655280587729e-13,
+        "z": 0.060792130441001326
+      },
+      "dimensions_drift_percent": {
+        "width": 19.427325591399082,
+        "depth": 452.1328865714254,
+        "height": 16.651428852141837
+      }
+    }
+  },
+  {
+    "id": "X09",
+    "phase": "CAPABILITY",
+    "stage": "E4",
+    "monitor": {
+      "generation": 6,
+      "opening": {
+        "width": 2199.4576669940184,
+        "height": 2105.194023034963,
+        "center_x": -400.0368652345944,
+        "center_z": 1513.1920403323775
+      },
+      "dimensions": {
+        "width": 4467.234074916481,
+        "depth": 1229.8677789173644,
+        "height": 3949.0710208861406
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 71966,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2294.777101787103,
+            -311.432908507702,
+            2504.3086455573853
+          ],
+          "normalized_mean_displacement": 0.027832088568172594,
+          "maximum_descendant_distance_over_source_diagonal": 0.03874485540484237
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1360.4936313986807,
+            -366.18762369176955,
+            2565.379564899626
+          ],
+          "normalized_mean_displacement": 0.03255614680923168,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            560.4198968255405,
+            -366.187623625057,
+            2565.3795682481914
+          ],
+          "normalized_mean_displacement": 0.03255614729454316,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1494.7033721973123,
+            -311.4329085301442,
+            2504.3086473307208
+          ],
+          "normalized_mean_displacement": 0.027832088238817627,
+          "maximum_descendant_distance_over_source_diagonal": 0.03874485535810539
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2281.141336080461,
+            -236.38026006182105,
+            3381.1240968109623
+          ],
+          "normalized_mean_displacement": 0.03206432934135582,
+          "maximum_descendant_distance_over_source_diagonal": 0.04525523483612973
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1339.6165878796235,
+            -372.9196813452206,
+            3404.075756057727
+          ],
+          "normalized_mean_displacement": 0.04010189295431108,
+          "maximum_descendant_distance_over_source_diagonal": 0.06382554516747943
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            539.511369798069,
+            -372.9705999162408,
+            3404.08941746287
+          ],
+          "normalized_mean_displacement": 0.040109817487275816,
+          "maximum_descendant_distance_over_source_diagonal": 0.06403459105373599
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1481.0676061239599,
+            -236.38026015030067,
+            3381.124096333606
+          ],
+          "normalized_mean_displacement": 0.03206432933369268,
+          "maximum_descendant_distance_over_source_diagonal": 0.04525523493409994
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9997534849972811,
+        "height": 0.8096900088596011,
+        "center_x": 1.0000000000005485,
+        "center_z": 1.163993877178752
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -5.485389920067973e-14,
+        "z": 0.06091201152353642
+      },
+      "dimensions_drift_percent": {
+        "width": 11.680851872912035,
+        "depth": 145.97355578347288,
+        "height": 12.830600596746876
+      }
+    }
+  },
+  {
+    "id": "X10",
+    "phase": "CAPABILITY",
+    "stage": "E5",
+    "monitor": {
+      "generation": 7,
+      "opening": {
+        "width": 2199.8042381740406,
+        "height": 2105.6035083109127,
+        "center_x": -400.036865234375,
+        "center_z": 1513.3967829703524
+      },
+      "dimensions": {
+        "width": 6116.7862786896,
+        "depth": 2751.4129023507485,
+        "height": 4542.577514617427
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2973.0932908814902,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 92,
+      "total_vertex_count": 72098,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2299.3904052927264,
+            -318.9787969442479,
+            2503.2347374763226
+          ],
+          "normalized_mean_displacement": 0.027807583992823185,
+          "maximum_descendant_distance_over_source_diagonal": 0.039060657246378125
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.0338753335786,
+            269.96657868459465,
+            2504.145452576383
+          ],
+          "normalized_mean_displacement": 0.027994355375566847,
+          "maximum_descendant_distance_over_source_diagonal": 0.039315007592110866
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867737578475,
+            -363.0473484079403,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.032093484291061104,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395228
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130391864627,
+            -363.04734833660103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.0320934847832818,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9601439827563,
+            269.9665786622957,
+            2504.145450801371
+          ],
+          "normalized_mean_displacement": 0.027994355707151086,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931500764062874
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1499.3166757050258,
+            -318.9787969668036,
+            2503.234739255455
+          ],
+          "normalized_mean_displacement": 0.027807583665139135,
+          "maximum_descendant_distance_over_source_diagonal": 0.039060657197039404
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2314.4082175741346,
+            -293.5610746334816,
+            3413.906282446081
+          ],
+          "normalized_mean_displacement": 0.023223381770179446,
+          "maximum_descendant_distance_over_source_diagonal": 0.042663738105719475
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2280.946373164995,
+            201.4466512002745,
+            3380.8492018522256
+          ],
+          "normalized_mean_displacement": 0.03205294550260299,
+          "maximum_descendant_distance_over_source_diagonal": 0.04724325382466151
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1360.96822604679,
+            -439.98794921214756,
+            3453.998384198186
+          ],
+          "normalized_mean_displacement": 0.04224111296529928,
+          "maximum_descendant_distance_over_source_diagonal": 0.0763915254162108
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 9,
+          "mean_xyz": [
+            604.5291411528086,
+            -405.42937956984133,
+            3511.1349370140183
+          ],
+          "normalized_mean_displacement": 0.031328553334896696,
+          "maximum_descendant_distance_over_source_diagonal": 0.07639152289108014
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1480.8726429646335,
+            201.4466509683812,
+            3380.849201717509
+          ],
+          "normalized_mean_displacement": 0.032052945492806115,
+          "maximum_descendant_distance_over_source_diagonal": 0.04724325365186227
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1514.3344845060815,
+            -293.56107507085176,
+            3413.90628391122
+          ],
+          "normalized_mean_displacement": 0.023223381932420527,
+          "maximum_descendant_distance_over_source_diagonal": 0.04266373819221557
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9999110173518366,
+        "height": 0.8098475031965049,
+        "center_x": 1.0,
+        "center_z": 1.1641513715156557
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 0.0,
+        "z": 0.060970509420100696
+      },
+      "dimensions_drift_percent": {
+        "width": 52.919656967240016,
+        "depth": 450.2825804701497,
+        "height": 29.787928989069346
+      }
+    }
+  },
+  {
+    "id": "Y06",
+    "phase": "CAPABILITY",
+    "stage": "E3",
+    "monitor": {
+      "generation": 3,
+      "opening": {
+        "width": 2209.6100907826212,
+        "height": 2105.226201838881,
+        "center_x": -400.03686523437506,
+        "center_z": 1512.0954796040892
+      },
+      "dimensions": {
+        "width": 5060.258643891469,
+        "depth": 1685.9037573856258,
+        "height": 4657.770543049627
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2967.9888019542936,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 392,
+      "total_vertex_count": 88030,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 459.4823786846487,
+        "min": 459.4823786846487,
+        "max": 459.4823786846487,
+        "mean_over_source_height": 0.13128067962418535
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 8,
+          "mean_xyz": [
+            -2313.631709437004,
+            -346.1139645210687,
+            2496.534173857533
+          ],
+          "normalized_mean_displacement": 0.029133548988723713,
+          "maximum_descendant_distance_over_source_diagonal": 0.043151022388652094
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 8,
+          "mean_xyz": [
+            -2294.6831021981216,
+            275.5618574517655,
+            2510.9989022781183
+          ],
+          "normalized_mean_displacement": 0.02712220989270246,
+          "maximum_descendant_distance_over_source_diagonal": 0.038287547986139
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.346313099763,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.7274173689873,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 14,
+          "mean_xyz": [
+            -1370.9564021788296,
+            328.43214420609155,
+            2564.70858183967
+          ],
+          "normalized_mean_displacement": 0.030955302279628876,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942458521376
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 14,
+          "mean_xyz": [
+            -1370.9564055859378,
+            -365.4990392019327,
+            2564.7085792073894
+          ],
+          "normalized_mean_displacement": 0.030955301937488904,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942400756322
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 14,
+          "mean_xyz": [
+            570.8826717100799,
+            -365.49903873734155,
+            2564.70858183967
+          ],
+          "normalized_mean_displacement": 0.030955302279628845,
+          "maximum_descendant_distance_over_source_diagonal": 0.0635494245852138
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 14,
+          "mean_xyz": [
+            570.8826751171879,
+            328.43214467068276,
+            2564.7085792073894
+          ],
+          "normalized_mean_displacement": 0.030955301937488897,
+          "maximum_descendant_distance_over_source_diagonal": 0.06354942400756318
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6536869002371,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858893,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858893
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            -207.10038040876643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.2725826310125,
+            170.03348587751643,
+            459.4823786846487
+          ],
+          "normalized_mean_displacement": 0.09063773027858894,
+          "maximum_descendant_distance_over_source_diagonal": 0.09063773027858894
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 8,
+          "mean_xyz": [
+            1494.6093703450492,
+            275.56185775065063,
+            2510.9989012956535
+          ],
+          "normalized_mean_displacement": 0.027122210211549636,
+          "maximum_descendant_distance_over_source_diagonal": 0.03828754802317424
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 8,
+          "mean_xyz": [
+            1494.609371729371,
+            -312.6287519830155,
+            2510.9989022781183
+          ],
+          "normalized_mean_displacement": 0.027122209892702517,
+          "maximum_descendant_distance_over_source_diagonal": 0.038287547986139016
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 45,
+          "mean_xyz": [
+            -2276.2209678219433,
+            -230.10233103715058,
+            3377.6696143112263
+          ],
+          "normalized_mean_displacement": 0.03338875239199438,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332416936606
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 45,
+          "mean_xyz": [
+            -2276.2146940999237,
+            193.02432189821448,
+            3377.69716290129
+          ],
+          "normalized_mean_displacement": 0.03338647648191283,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332717889556
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 29,
+          "mean_xyz": [
+            -1337.1022741304948,
+            -364.01989360826434,
+            3382.690454138078
+          ],
+          "normalized_mean_displacement": 0.04164464202333108,
+          "maximum_descendant_distance_over_source_diagonal": 0.06781171766292256
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 29,
+          "mean_xyz": [
+            -1344.4126135604633,
+            295.2909368089228,
+            3371.2690220689174
+          ],
+          "normalized_mean_displacement": 0.03967593481168171,
+          "maximum_descendant_distance_over_source_diagonal": 0.06772346498473931
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 29,
+          "mean_xyz": [
+            544.3388830917135,
+            -332.3578313401728,
+            3371.2690220689174
+          ],
+          "normalized_mean_displacement": 0.0396759348116817,
+          "maximum_descendant_distance_over_source_diagonal": 0.06772346498473931
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 29,
+          "mean_xyz": [
+            544.4476417131996,
+            295.3251161443489,
+            3371.2822396351185
+          ],
+          "normalized_mean_displacement": 0.03966139425382122,
+          "maximum_descendant_distance_over_source_diagonal": 0.06781171766292253
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 45,
+          "mean_xyz": [
+            1475.9201048255022,
+            192.60926198732787,
+            3377.445085015025
+          ],
+          "normalized_mean_displacement": 0.033464445394185034,
+          "maximum_descendant_distance_over_source_diagonal": 0.04701133241693667
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 45,
+          "mean_xyz": [
+            1475.9134018903144,
+            -229.66510881602602,
+            3377.4729382168243
+          ],
+          "normalized_mean_displacement": 0.033462188574456896,
+          "maximum_descendant_distance_over_source_diagonal": 0.047011332717889646
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 1.0043682230830095,
+        "height": 0.8097023853226466,
+        "center_x": 1.0000000000000002,
+        "center_z": 1.1631503689262224
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": -1.4210854715202004e-17,
+        "z": 0.060598708458311196
+      },
+      "dimensions_drift_percent": {
+        "width": 26.506466097286708,
+        "depth": 237.18075147712514,
+        "height": 33.07915837284649
+      }
+    }
+  },
+  {
+    "id": "Y07",
+    "phase": "CAPABILITY",
+    "stage": "E3",
+    "monitor": {
+      "generation": 3,
+      "opening": {
+        "width": 2197.3483352031362,
+        "height": 2101.513342056487,
+        "center_x": -400.0368652328521,
+        "center_z": 1511.3516998431396
+      },
+      "dimensions": {
+        "width": 9487.738557171184,
+        "depth": 4095.8459907392253,
+        "height": 5636.988872087993
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 72098,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.5950288148961,
+        "min": 460.5950288148961,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.1315985796613989
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2316.9793315419724,
+            -348.55625145875047,
+            2500.96354991589
+          ],
+          "normalized_mean_displacement": 0.028476165188339973,
+          "maximum_descendant_distance_over_source_diagonal": 0.044432810071512736
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1356.2749678099467,
+            -388.9105619212315,
+            2558.0182028896775
+          ],
+          "normalized_mean_displacement": 0.035992496378079636,
+          "maximum_descendant_distance_over_source_diagonal": 0.06131406168781154
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            556.2012332507452,
+            -388.9105618886557,
+            2558.0182063442385
+          ],
+          "normalized_mean_displacement": 0.03599249680614257,
+          "maximum_descendant_distance_over_source_diagonal": 0.06131406350180123
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1516.905601977093,
+            -348.55625159792504,
+            2500.963552006273
+          ],
+          "normalized_mean_displacement": 0.028476164854468577,
+          "maximum_descendant_distance_over_source_diagonal": 0.04443281002713323
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2394.909632335794,
+            -453.43630935888325,
+            3484.3447761876196
+          ],
+          "normalized_mean_displacement": 0.034772666700684025,
+          "maximum_descendant_distance_over_source_diagonal": 0.15288628081989816
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1342.6633132598743,
+            -341.05826266472104,
+            3392.7310596597163
+          ],
+          "normalized_mean_displacement": 0.038174534210084134,
+          "maximum_descendant_distance_over_source_diagonal": 0.06609294511337298
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            542.5895836841044,
+            -341.05826260942524,
+            3392.731061256384
+          ],
+          "normalized_mean_displacement": 0.038174533919806485,
+          "maximum_descendant_distance_over_source_diagonal": 0.06609294461161533
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1594.8360373352987,
+            -453.4362987062153,
+            3484.344688027261
+          ],
+          "normalized_mean_displacement": 0.03477266540494676,
+          "maximum_descendant_distance_over_source_diagonal": 0.15288628476893676
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9987946978196074,
+        "height": 0.8082743623294181,
+        "center_x": 0.9999999999961932,
+        "center_z": 1.162578230648569
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 3.807230086749769e-13,
+        "z": 0.06038619995518275
+      },
+      "dimensions_drift_percent": {
+        "width": 137.1934639292796,
+        "depth": 719.1691981478451,
+        "height": 61.056824916799776
+      }
+    }
+  },
+  {
+    "id": "Y19",
+    "phase": "CAPABILITY",
+    "stage": "E2",
+    "monitor": {
+      "generation": 2,
+      "opening": {
+        "width": 2195.811706303248,
+        "height": 2092.155024187634,
+        "center_x": -400.0368649082585,
+        "center_z": 1506.672540908713
+      },
+      "dimensions": {
+        "width": 4702.775145212359,
+        "depth": 1382.0367670223598,
+        "height": 4088.8643376243604
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 72014,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.58315110494993,
+        "min": 460.54751797511136,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.13159518602998568
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.5134956181646,
+            -207.68403874049827,
+            460.54751797511136
+          ],
+          "normalized_mean_displacement": 0.09080447294816359,
+          "maximum_descendant_distance_over_source_diagonal": 0.09080447294816359
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2351.065677477414,
+            -456.7787171933789,
+            2464.718082835391
+          ],
+          "normalized_mean_displacement": 0.044380988498210976,
+          "maximum_descendant_distance_over_source_diagonal": 0.05257476528829006
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1353.201708711795,
+            -454.34124717228985,
+            2539.301565234753
+          ],
+          "normalized_mean_displacement": 0.045794890422142354,
+          "maximum_descendant_distance_over_source_diagonal": 0.06531075169009826
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            -207.51090766798987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            553.1279767493428,
+            -454.34124828116796,
+            2539.3015725237487
+          ],
+          "normalized_mean_displacement": 0.04579489040906772,
+          "maximum_descendant_distance_over_source_diagonal": 0.06531075262986183
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.4397651494146,
+            -207.68403874049827,
+            460.54751797511136
+          ],
+          "normalized_mean_displacement": 0.09080447294816359,
+          "maximum_descendant_distance_over_source_diagonal": 0.09080447294816359
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1550.991968516622,
+            -456.77872004555206,
+            2464.718105511239
+          ],
+          "normalized_mean_displacement": 0.04438098566469649,
+          "maximum_descendant_distance_over_source_diagonal": 0.05257476523983397
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2301.6225903768673,
+            -275.89846258849724,
+            3401.58572034794
+          ],
+          "normalized_mean_displacement": 0.026107055835855174,
+          "maximum_descendant_distance_over_source_diagonal": 0.04229920463248711
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1333.0683312586923,
+            -462.20786054322855,
+            3442.11178088575
+          ],
+          "normalized_mean_displacement": 0.04911115770198456,
+          "maximum_descendant_distance_over_source_diagonal": 0.06748710051216873
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.0846370907,
+            284.20592822614606,
+            3379.9880444510404
+          ],
+          "normalized_mean_displacement": 0.038305472615844556,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            532.994599259669,
+            -462.20785775052235,
+            3442.1117879100534
+          ],
+          "normalized_mean_displacement": 0.04911115720758685,
+          "maximum_descendant_distance_over_source_diagonal": 0.06748710028076815
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0109056954094,
+            284.2059281850817,
+            3379.988042970203
+          ],
+          "normalized_mean_displacement": 0.03830547290985696,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1501.5488560790916,
+            -275.8984632860777,
+            3401.585722700354
+          ],
+          "normalized_mean_displacement": 0.02610705603806892,
+          "maximum_descendant_distance_over_source_diagonal": 0.04229920460213378
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9980962301378399,
+        "height": 0.8046750093029361,
+        "center_x": 0.9999999991847839,
+        "center_z": 1.1589788776220868
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 8.152912300829484e-11,
+        "z": 0.05904929740248943
+      },
+      "dimensions_drift_percent": {
+        "width": 17.569378630308986,
+        "depth": 176.40735340447193,
+        "height": 16.82469536069602
+      }
+    }
+  },
+  {
+    "id": "R20",
+    "phase": "CAPABILITY",
+    "stage": "E5",
+    "monitor": {
+      "generation": 7,
+      "opening": {
+        "width": 2192.861820611566,
+        "height": 2082.9747269697327,
+        "center_x": -400.03686473094405,
+        "center_z": 1502.041150251338
+      },
+      "dimensions": {
+        "width": 4775.80535091851,
+        "depth": 1517.7921569980851,
+        "height": 4201.505069599886
+      },
+      "macro_relations": {
+        "left_median_x": -1950.036865234375,
+        "right_median_x": 1149.9631347656248,
+        "lintel_median_z": 2970.6073553453634,
+        "left_median_left_of_right": true,
+        "fraction_left_landmarks_left_of_right_median": 1,
+        "fraction_right_landmarks_right_of_left_median": 1,
+        "lintel_median_above_support_medians": true,
+        "fraction_lintel_landmarks_above_opening_center": 1
+      },
+      "tracked_vertex_count": 88,
+      "total_vertex_count": 72098,
+      "missing_source_anchor_ids": [],
+      "disappeared_macro_regions": [],
+      "macro_region_anchor_counts": {
+        "left_support": 8,
+        "right_support": 8,
+        "lintel": 16
+      },
+      "support_base_displacement": {
+        "mean": 460.55378676647183,
+        "min": 460.51254471804754,
+        "max": 460.5950288148961,
+        "mean_over_source_height": 0.13158679621899194
+      },
+      "anchors": [
+        {
+          "source_id": 0,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.609898264565,
+            -207.81148244665022,
+            460.51254471804754
+          ],
+          "normalized_mean_displacement": 0.09079009646096046,
+          "maximum_descendant_distance_over_source_diagonal": 0.09079009646096046
+        },
+        {
+          "source_id": 1,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2359.591268495516,
+            -470.3691654598431,
+            2463.847926963833
+          ],
+          "normalized_mean_displacement": 0.04623012249058157,
+          "maximum_descendant_distance_over_source_diagonal": 0.05954881892695617
+        },
+        {
+          "source_id": 2,
+          "descendant_count": 3,
+          "mean_xyz": [
+            -2292.051527546673,
+            269.98535679062644,
+            2504.1377492284264
+          ],
+          "normalized_mean_displacement": 0.027993797899850074,
+          "maximum_descendant_distance_over_source_diagonal": 0.03931565735895108
+        },
+        {
+          "source_id": 3,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -2261.3825335324896,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 4,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.4638322041853,
+            -207.81148244665022,
+            460.51254471804754
+          ],
+          "normalized_mean_displacement": 0.09079009646096048,
+          "maximum_descendant_distance_over_source_diagonal": 0.09079009646096048
+        },
+        {
+          "source_id": 5,
+          "descendant_count": 1,
+          "mean_xyz": [
+            -1638.6911969362607,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 6,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1361.1867696552126,
+            325.98045380535103,
+            2566.1985387927775
+          ],
+          "normalized_mean_displacement": 0.03209348478328181,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830243524516
+        },
+        {
+          "source_id": 7,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1347.5293013512496,
+            -514.2923217291458,
+            2520.8584850871116
+          ],
+          "normalized_mean_displacement": 0.05616996787690865,
+          "maximum_descendant_distance_over_source_diagonal": 0.07748476369687866
+        },
+        {
+          "source_id": 8,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.3901017354352,
+            -207.81148244665022,
+            460.51254471804754
+          ],
+          "normalized_mean_displacement": 0.09079009646096046,
+          "maximum_descendant_distance_over_source_diagonal": 0.09079009646096046
+        },
+        {
+          "source_id": 9,
+          "descendant_count": 5,
+          "mean_xyz": [
+            547.4555708073125,
+            -514.2923237682121,
+            2520.858495606089
+          ],
+          "normalized_mean_displacement": 0.05616996767707501,
+          "maximum_descendant_distance_over_source_diagonal": 0.07748476370670877
+        },
+        {
+          "source_id": 10,
+          "descendant_count": 5,
+          "mean_xyz": [
+            561.1130432890976,
+            325.9804538766904,
+            2566.19853545884
+          ],
+          "normalized_mean_displacement": 0.0320934842910611,
+          "maximum_descendant_distance_over_source_diagonal": 0.06129830060395221
+        },
+        {
+          "source_id": 11,
+          "descendant_count": 1,
+          "mean_xyz": [
+            838.6174664675104,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546396,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546396
+        },
+        {
+          "source_id": 12,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.5361677958144,
+            -207.81148244665022,
+            460.51254471804754
+          ],
+          "normalized_mean_displacement": 0.09079009646096049,
+          "maximum_descendant_distance_over_source_diagonal": 0.09079009646096049
+        },
+        {
+          "source_id": 13,
+          "descendant_count": 1,
+          "mean_xyz": [
+            1461.308803063739,
+            170.44401313673987,
+            460.5950288148961
+          ],
+          "normalized_mean_displacement": 0.09082401618546397,
+          "maximum_descendant_distance_over_source_diagonal": 0.09082401618546397
+        },
+        {
+          "source_id": 14,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1491.9777961958519,
+            269.98535676832466,
+            2504.1377474534047
+          ],
+          "normalized_mean_displacement": 0.027993798231438893,
+          "maximum_descendant_distance_over_source_diagonal": 0.0393156574074727
+        },
+        {
+          "source_id": 15,
+          "descendant_count": 3,
+          "mean_xyz": [
+            1559.5175588950885,
+            -470.3691684371057,
+            2463.8479494940752
+          ],
+          "normalized_mean_displacement": 0.0462301199778638,
+          "maximum_descendant_distance_over_source_diagonal": 0.059548818881223126
+        },
+        {
+          "source_id": 16,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2384.2968599916803,
+            -416.10073884085256,
+            3484.3518596575796
+          ],
+          "normalized_mean_displacement": 0.027952790780587742,
+          "maximum_descendant_distance_over_source_diagonal": 0.04352982277712518
+        },
+        {
+          "source_id": 17,
+          "descendant_count": 7,
+          "mean_xyz": [
+            -2275.0530370332117,
+            190.4305918598784,
+            3375.0161719795847
+          ],
+          "normalized_mean_displacement": 0.03398960866146556,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074384577233
+        },
+        {
+          "source_id": 18,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1315.0388054240884,
+            -690.3901505371331,
+            3536.2657981754382
+          ],
+          "normalized_mean_displacement": 0.0865524013969465,
+          "maximum_descendant_distance_over_source_diagonal": 0.09254737302490869
+        },
+        {
+          "source_id": 19,
+          "descendant_count": 5,
+          "mean_xyz": [
+            -1343.080363365027,
+            284.3830915487018,
+            3380.1902428627395
+          ],
+          "normalized_mean_displacement": 0.038292448737724145,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287617302463
+        },
+        {
+          "source_id": 20,
+          "descendant_count": 5,
+          "mean_xyz": [
+            515.2757935004397,
+            -692.0078289583835,
+            3537.159609924267
+          ],
+          "normalized_mean_displacement": 0.08681919154466858,
+          "maximum_descendant_distance_over_source_diagonal": 0.09303146399040056
+        },
+        {
+          "source_id": 21,
+          "descendant_count": 5,
+          "mean_xyz": [
+            543.0066319700167,
+            284.3830915083201,
+            3380.190241381347
+          ],
+          "normalized_mean_displacement": 0.03829244903161292,
+          "maximum_descendant_distance_over_source_diagonal": 0.06610287666363741
+        },
+        {
+          "source_id": 22,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1474.9793067822923,
+            190.43059163466307,
+            3375.0161718979493
+          ],
+          "normalized_mean_displacement": 0.03398960865343392,
+          "maximum_descendant_distance_over_source_diagonal": 0.04722074368799921
+        },
+        {
+          "source_id": 23,
+          "descendant_count": 7,
+          "mean_xyz": [
+            1584.2231178218387,
+            -416.10073982669945,
+            3484.35186788305
+          ],
+          "normalized_mean_displacement": 0.02795279103281851,
+          "maximum_descendant_distance_over_source_diagonal": 0.043529821934750364
+        }
+      ],
+      "topology": {
+        "components": 1,
+        "boundary_edges": 0,
+        "is_manifold": true,
+        "is_closed": true
+      },
+      "note": "Read-only primary-corner descendant landmark approximation, equal source-anchor influence. Not exact free opening clearance, semantic inheritance or a gate score; never used by recursion.",
+      "opening_normalized": {
+        "width": 0.9967553730052573,
+        "height": 0.8011441257575895,
+        "center_x": 0.9999999987415386,
+        "center_z": 1.1554162694241061
+      },
+      "opening_center_drift_over_source_width_height": {
+        "x": 1.258577384533055e-10,
+        "z": 0.057726042928953704
+      },
+      "dimensions_drift_percent": {
+        "width": 19.395133772962758,
+        "depth": 203.55843139961704,
+        "height": 20.043001988568165
+      }
+    }
+  }
+]

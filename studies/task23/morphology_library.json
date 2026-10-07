@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "previous_library": {
+    "path": "studies/task21/morphology_library.json",
+    "sha256": "be6adc660a8ab8b109e57bfdf195393ee3ed664d276e5deab1f5fddafb7141bb"
+  },
+  "crease_fragments": [
+    {
+      "id": "LONG_CREASE",
+      "scope": "Closed verified control cages only; not a proven whole-gate transplant",
+      "operator": "Reference COMPAS integer crease CC",
+      "sharpness": 6,
+      "generations": 6,
+      "successful_contexts": [
+        {
+          "case": "CTRL_cube_04",
+          "artifact": "study/CONTROL/CTRL_cube_04/attempt_001",
+          "recipe": {
+            "id": "CTRL_cube_04",
+            "family": "CONTROL",
+            "input": "control_cube_q1",
+            "networks": [
+              {
+                "generator": "N1",
+                "relation": "outer_lintel",
+                "sharpness": 6,
+                "quiet_below": 0.0
+              }
+            ],
+            "generations": 6,
+            "mode": "INTEGER_COMPAS",
+            "composition": [],
+            "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+            "no_global_finish": true,
+            "quiet_region": "Source lower supports remain unornamented",
+            "max_faces": 300000
+          },
+          "geometry_sha256": "4352fdf6c316811f2a4091abb52ce7eb738738b0868a82d782e4e6c9e8c812be",
+          "final_contrast": 0.9259174176067518
+        },
+        {
+          "case": "CTRL_column_04",
+          "artifact": "study/CONTROL/CTRL_column_04/attempt_001",
+          "recipe": {
+            "id": "CTRL_column_04",
+            "family": "CONTROL",
+            "input": "control_column_q1",
+            "networks": [
+              {
+                "generator": "N1",
+                "relation": "outer_lintel",
+                "sharpness": 6,
+                "quiet_below": 0.0
+              }
+            ],
+            "generations": 6,
+            "mode": "INTEGER_COMPAS",
+            "composition": [],
+            "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+            "no_global_finish": true,
+            "quiet_region": "Source lower supports remain unornamented",
+            "max_faces": 300000
+          },
+          "geometry_sha256": "fb2ebed6eff19d5703517ce48f5b7ed7fedcab789960e5428d2ed1b9b5bd6873",
+          "final_contrast": 0.7932650157266213
+        },
+        {
+          "case": "CTRL_U_gate_04",
+          "artifact": "study/CONTROL/CTRL_U_gate_04/attempt_001",
+          "recipe": {
+            "id": "CTRL_U_gate_04",
+            "family": "CONTROL",
+            "input": "control_U_gate_q0",
+            "networks": [
+              {
+                "generator": "N1",
+                "relation": "outer_lintel",
+                "sharpness": 6,
+                "quiet_below": 0.0
+              }
+            ],
+            "generations": 6,
+            "mode": "INTEGER_COMPAS",
+            "composition": [],
+            "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+            "no_global_finish": true,
+            "quiet_region": "Source lower supports remain unornamented",
+            "max_faces": 300000
+          },
+          "geometry_sha256": "44957e5b0900d05ad9121e70a351e72338d777fb1656b790489098b01b866aa7",
+          "final_contrast": 0.9776684841944074
+        }
+      ],
+      "lineage_contract": "Two exact structural descendants per edge, finite Uniform decay; available constructive ancestry only",
+      "known_failure_boundaries": [
+        "A05 whole-gate reference route loses threshold contrast.",
+        "Maintaining a crease does not create a new fold or a coherent meso hierarchy."
+      ]
+    }
+  ],
+  "excluded": {
+    "SHOULDER_FAN_CREASE": "Gate fans remain swollen or fragmented.",
+    "CREASE_JUNCTION": "Angular convergence demonstrated, useful hierarchical nodes not established.",
+    "CREASE_ROOF": "Local reinforcement only.",
+    "CREASE_NESTED_ORNAMENT": "Actual depth, insufficient visual hierarchy.",
+    "VARIABLE_SHARPNESS_RIDGE": "No demonstrated morphological improvement."
+  },
+  "contract": "Separate context-bound Task23 extension; existing Task21 entries and validator are unchanged."
+}

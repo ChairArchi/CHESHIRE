@@ -232,9 +232,10 @@ class VocabularyRouter(BranchRouter):
         self.allocations[table.id]=assignments; self.reports[table.id]=dict(table=table.to_data(),table_sha256=content_hash(table.to_data()),rules=report,
             semantics='First-match pre-round snapshot; connected cohorts coordinate only direction/route, never stitched.')
 
-def vocabulary_event(mesh,history,stage,*,selected_faces,dll_path,budget,families=None,stage_index=1,routes=None):
+def vocabulary_event(mesh,history,stage,*,selected_faces,dll_path,budget,families=None,stage_index=1,routes=None,allow_large_taper=False):
     if stage.operator not in NEW_OPERATORS:
-        return topology_event(mesh,history,stage,selected_faces=selected_faces,dll_path=dll_path,budget=budget,families=families,stage_index=stage_index)
+        options={'allow_large_taper':True} if allow_large_taper else {}
+        return topology_event(mesh,history,stage,selected_faces=selected_faces,dll_path=dll_path,budget=budget,families=families,stage_index=stage_index,**options)
     _check_mesh(mesh); selected=list(selected_faces)
     if len(set(selected))!=len(selected) or not set(selected)<=set(mesh.faces()): raise ValueError('Invalid event selection.')
     growth_f=sum(len(mesh.face_vertices(f)) if stage.operator=='DirectionalExtrusion' else 3 for f in selected)

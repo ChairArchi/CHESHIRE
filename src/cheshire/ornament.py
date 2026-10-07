@@ -178,7 +178,7 @@ def select_event_faces(mesh, history, selector, source, families=None):
         excluded_counts=dict(Counter(r["reason"] for r in excluded)))
 
 
-def topology_event(mesh, history, stage, *, selected_faces, dll_path, budget, families=None, stage_index=1):
+def topology_event(mesh, history, stage, *, selected_faces, dll_path, budget, families=None, stage_index=1, allow_large_taper=False):
     """Selected parent disks replaced with Mola's ordered sides+cap, never welded.
 
     Offset sampling parents identify the constructive corner, not offset XYZ.
@@ -206,7 +206,8 @@ def topology_event(mesh, history, stage, *, selected_faces, dll_path, budget, fa
         keys,center,scale,local,normal,area_length=local_polygon(mesh,f); n=len(keys)
         if stage.operator=="TaperedExtrusion":
             height=stage.parameters["height_ratio"]; fraction=stage.parameters["fraction"]
-            if not 0<height<=.5 or not 0<fraction<.9: raise ValueError("Conservative taper range required.")
+            if not isfinite(height) or not 0<height or (not allow_large_taper and height>.5) or not 0<fraction<.9:
+                raise ValueError("Conservative taper range required." if not allow_large_taper else "Finite positive experimental taper height and established fraction range required.")
             execute,backend=_load_backend(dll_path)
             raw=execute(local,height*area_length,fraction)
             oracle=[[(1-fraction)*p[a]+height*area_length*normal[a] for a in range(3)] for p in local]

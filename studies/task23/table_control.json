@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "CTRL_column_01",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_01/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.302860546714377,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 2.3902495203879113,
+          "p10": 3.7941921641762124,
+          "median": 4.85246682905898,
+          "p90": 5.977587224089218,
+          "max": 6.151799672060916,
+          "mean": 4.977903985174197
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "69d2a1d71cb5791c3b4af70af800a6f930f17d4dd325b6e688f1a525df86128f",
+    "seconds": 19.14000000001397,
+    "peak_bytes": 358895616,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_02",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_02/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.4966930477144471,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 3.1172203174719644,
+          "p10": 5.154629910699092,
+          "median": 9.948529073781852,
+          "p90": 12.374660454154604,
+          "max": 12.937381129175494,
+          "mean": 9.749403377865882
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "a2f825443a10dea6931de8d16ffd65a01b04e614666413b7dc5ccffc708a88c0",
+    "seconds": 16.57799999997951,
+    "peak_bytes": 358510592,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_03",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_03/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.699646386666874,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 5.8650372032925215,
+          "p10": 14.481357192188403,
+          "median": 64.54354194260328,
+          "p90": 89.51336481599529,
+          "max": 90.0,
+          "mean": 60.18262707882238
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.382766722032979,
+        "visible_crease_survival_ratio": 0.8135614165865886,
+        "longest_high_dihedral_chain_length": 1.382766722032979,
+        "high45_edge_count": 22,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "c901e701c5dfcd3f40317f227b1df755cde38947d249a017c358182233358e6d",
+    "seconds": 17.608999999938533,
+    "peak_bytes": 345915392,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_04",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_04/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 98304,
+    "stage": "G6",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 6,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.6891839197022815,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.7130386831664435,
+          "p10": 14.723507655790774,
+          "median": 67.001711878954,
+          "p90": 89.87516295459824,
+          "max": 90.0,
+          "mean": 59.747553408194584
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.3399705086277862,
+        "visible_crease_survival_ratio": 0.7932650157266213,
+        "longest_high_dihedral_chain_length": 1.3399705086277862,
+        "high45_edge_count": 88,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "fb2ebed6eff19d5703517ce48f5b7ed7fedcab789960e5428d2ed1b9b5bd6873",
+    "seconds": 79.43700000003446,
+    "peak_bytes": 774750208,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 98304
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 6
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_05",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_05/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 3.6876354298128535,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 1.2074182697257333e-06,
+          "mean": 1.91078823121095e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "9e4eb41e9fe4e15fbf888f2207798365fbceaac7b6125bef09e680c963a9b34c",
+    "seconds": 29.640999999945052,
+    "peak_bytes": 438800384,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_06",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_06/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 6.440252686788721,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 1.2074182697257333e-06,
+          "mean": 1.8218534763930757e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "9e4eb41e9fe4e15fbf888f2207798365fbceaac7b6125bef09e680c963a9b34c",
+    "seconds": 28.984000000054948,
+    "peak_bytes": 443428864,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_07",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_07/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 14,
+        "C0_face_count": 14,
+        "cross_cell": true,
+        "geometric_length": 9.628804020966543,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 8.537736462515939e-07,
+          "p90": 71.91953024842734,
+          "max": 90.0,
+          "mean": 18.84598987984904
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.1943723406878128,
+        "visible_crease_survival_ratio": 0.12404160870727965,
+        "longest_high_dihedral_chain_length": 0.7626018615477295,
+        "high45_edge_count": 36,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "67e42b3904c76fc03e93c9fcee3caff79c9f7026f8a48ccbbb0b0b171cad0da5",
+    "seconds": 28.483999999938533,
+    "peak_bytes": 438509568,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_08",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_08/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 3.6876354298128535,
+        "surviving_sharp_edges": 32,
+        "mean_sharpness": 0.10763888888888899,
+        "max_sharpness": 0.32291666666666696,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 1.2074182697257333e-06,
+          "mean": 1.91078823121095e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "9e4eb41e9fe4e15fbf888f2207798365fbceaac7b6125bef09e680c963a9b34c",
+    "seconds": 31.0,
+    "peak_bytes": 445767680,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_09",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_09/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 8,
+        "C0_face_count": 8,
+        "cross_cell": true,
+        "geometric_length": 1.2770108581504196,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 3.7070332809910522,
+          "p10": 12.617762384279462,
+          "median": 15.803989445059628,
+          "p90": 18.366510884084843,
+          "max": 20.055499984776166,
+          "mean": 15.413807157680795
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0.04984147116540892,
+        "visible_crease_survival_ratio": 0.039029794341449583,
+        "longest_high_dihedral_chain_length": 0.02492073558270446,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "c98bf75314a05e4e03a1ba870a5d06a0becdae6ff282ae365132d1ca8f901a4b",
+    "seconds": 28.125,
+    "peak_bytes": 452661248,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_column_10",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_column_10/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 3.6876354298128535,
+        "surviving_sharp_edges": 96,
+        "mean_sharpness": 0.5,
+        "max_sharpness": 0.5,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 1.2074182697257333e-06,
+          "mean": 1.91078823121095e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "9e4eb41e9fe4e15fbf888f2207798365fbceaac7b6125bef09e680c963a9b34c",
+    "seconds": 31.140999999945052,
+    "peak_bytes": 449208320,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_01",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_01/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.6066262426117004,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 3.47735502343963,
+          "p10": 5.606645827625895,
+          "median": 12.136400317673957,
+          "p90": 14.21912201140499,
+          "max": 14.25003269780357,
+          "mean": 11.105126529824744
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "8eb3fd2d179f7b347a8e6684f3c831b5cd0152c5a4747634529b2a0739f5ef86",
+    "seconds": 16.03200000000652,
+    "peak_bytes": 329838592,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_02",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_02/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.6569287466517506,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 4.449556566606744,
+          "p10": 7.40350495692914,
+          "median": 23.43675418375831,
+          "p90": 28.010841120201228,
+          "max": 28.072486935852975,
+          "mean": 20.74588138684683
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.145452412812609,
+        "visible_crease_survival_ratio": 0.6913106041085286,
+        "longest_high_dihedral_chain_length": 1.145452412812609,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "a7d43b7404ca2c8478e8b1c883b7ac9ece2297fbeb2c8496529e4bf64dadb49b",
+    "seconds": 17.108999999938533,
+    "peak_bytes": 309387264,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_03",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_03/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 6144,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.7175899659655651,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 8.283095052956217,
+          "p10": 20.360503074984095,
+          "median": 78.19884629999927,
+          "p90": 89.86421126793165,
+          "max": 90.0,
+          "mean": 67.39377307270013
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.6328627658907935,
+        "visible_crease_survival_ratio": 0.950670880854185,
+        "longest_high_dihedral_chain_length": 1.6328627658907935,
+        "high45_edge_count": 24,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "6f778a4bc4954bce82b7f9c4b6e56fefd532a18ccb629c281c0fedc677e9edd0",
+    "seconds": 18.17200000002049,
+    "peak_bytes": 330821632,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 6144
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_04",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_04/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 98304,
+    "stage": "G6",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 6,
+        "parent_cell_count": 4,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 1.7118599942105803,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 2.418432551874334,
+          "p10": 20.671864498863044,
+          "median": 79.9455179316966,
+          "p90": 89.96397800059798,
+          "max": 90.0,
+          "mean": 66.89849893752746
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.5850409851437697,
+        "visible_crease_survival_ratio": 0.9259174176067518,
+        "longest_high_dihedral_chain_length": 1.5850409851437697,
+        "high45_edge_count": 98,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "4352fdf6c316811f2a4091abb52ce7eb738738b0868a82d782e4e6c9e8c812be",
+    "seconds": 69.67200000002049,
+    "peak_bytes": 741429248,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 98304
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 6
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_05",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_05/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 2.8050545185109694,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 8.537736462515939e-07,
+          "mean": 1.3340213222681154e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "0dffb29d210b357d1f405071fc78a95237b26261cb581bbdbccc79861c82367e",
+    "seconds": 27.780999999959022,
+    "peak_bytes": 413573120,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_06",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_06/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 3.7400726913479594,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 8.537736462515939e-07,
+          "mean": 1.3340213222681154e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "0dffb29d210b357d1f405071fc78a95237b26261cb581bbdbccc79861c82367e",
+    "seconds": 28.141000000061467,
+    "peak_bytes": 417366016,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_07",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_07/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 14,
+        "C0_face_count": 14,
+        "cross_cell": true,
+        "geometric_length": 4.261749546185663,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 65.98693859324221,
+          "max": 84.60349592173615,
+          "mean": 13.574691102649442
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0.7634411105505117,
+        "visible_crease_survival_ratio": 0.1791379578449898,
+        "longest_high_dihedral_chain_length": 0.38172055527525584,
+        "high45_edge_count": 24,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "3763ad5fc217e31907cd8603ccf9c533d0db2e3852fa2d7327c3ef22eafe04fa",
+    "seconds": 26.733999999938533,
+    "peak_bytes": 425373696,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_08",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_08/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 2.8050545185109694,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 8.537736462515939e-07,
+          "mean": 1.3340213222681154e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "0dffb29d210b357d1f405071fc78a95237b26261cb581bbdbccc79861c82367e",
+    "seconds": 29.593999999924563,
+    "peak_bytes": 426569728,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_09",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_09/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 8,
+        "C0_face_count": 8,
+        "cross_cell": true,
+        "geometric_length": 1.8365198654970905,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 5.270508081764623,
+          "p10": 18.325498288976636,
+          "median": 41.11209043916694,
+          "p90": 41.11209043916694,
+          "max": 41.11209043916694,
+          "mean": 35.63391420311153
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1.6709125084407184,
+        "visible_crease_survival_ratio": 0.9098254474848563,
+        "longest_high_dihedral_chain_length": 1.6709125084407184,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "9685e2aba9d8351c85665a6cae4e385a1dd56a9d1bbcd853fd97ac6842f1a442",
+    "seconds": 23.39000000001397,
+    "peak_bytes": 439242752,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_cube_10",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_cube_10/attempt_002",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 24576,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 2.8050545185109694,
+        "surviving_sharp_edges": 96,
+        "mean_sharpness": 0.5,
+        "max_sharpness": 0.5,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 8.537736462515939e-07,
+          "max": 8.537736462515939e-07,
+          "mean": 1.3340213222681154e-07
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "0dffb29d210b357d1f405071fc78a95237b26261cb581bbdbccc79861c82367e",
+    "seconds": 30.094000000040978,
+    "peak_bytes": 431792128,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 24576
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_01",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_01/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 3807.4689720389338,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 3.6458065871893948,
+          "p10": 8.573921051390188,
+          "median": 12.16856462849227,
+          "p90": 12.16856462849236,
+          "max": 12.16856462849236,
+          "mean": 11.40610279697026
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "85591afcfce7603a7e6cd5e75995320682ddc7ec1313aa6135c598f6970b5907",
+    "seconds": 26.734000000054948,
+    "peak_bytes": 452546560,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_02",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_02/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 3822.801943243898,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 4.892426821914866,
+          "p10": 15.601109420908244,
+          "median": 24.362453015312187,
+          "p90": 24.3624530153122,
+          "max": 24.3624530153122,
+          "mean": 22.52014800789082
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 3567.473146948298,
+        "visible_crease_survival_ratio": 0.9332089917065028,
+        "longest_high_dihedral_chain_length": 3567.473146948298,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "c9360be4756c1b41aaa6339d96c0797d6cbd60e1d79c44b71dace5baf32a50af",
+    "seconds": 30.265999999945052,
+    "peak_bytes": 472109056,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_03",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_03/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 3842.0063268302542,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 9.470978659802553,
+          "p10": 57.757544012412524,
+          "median": 90.0,
+          "p90": 90.0,
+          "max": 90.0,
+          "mean": 82.90396340971603
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 3808.6709660888537,
+        "visible_crease_survival_ratio": 0.9913234498057417,
+        "longest_high_dihedral_chain_length": 3808.6709660888537,
+        "high45_edge_count": 90,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "ad1ca3db77b19e6daac458da5ca8f46a52b277d5bf7d3e48484a6d9cd74817b2",
+    "seconds": 27.469000000040978,
+    "peak_bytes": 470777856,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_04",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_04/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 90112,
+    "stage": "G6",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 6,
+        "parent_cell_count": 6,
+        "C0_face_count": 6,
+        "cross_cell": true,
+        "geometric_length": 3671.820680562645,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 2.788610714193954,
+          "p10": 34.26440818373414,
+          "median": 89.30751139464525,
+          "p90": 90.0,
+          "max": 90.0,
+          "mean": 76.01880206950887
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 3589.823358999359,
+        "visible_crease_survival_ratio": 0.9776684841944074,
+        "longest_high_dihedral_chain_length": 3589.823358999359,
+        "high45_edge_count": 166,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "44957e5b0900d05ad9121e70a351e72338d777fb1656b790489098b01b866aa7",
+    "seconds": 64.01600000006147,
+    "peak_bytes": 740089856,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 90112
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 6
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_05",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_05/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 4241.817684863934,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 1.2074182697257333e-06,
+          "mean": 5.2052956468373594e-08
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "e81233c8bcbcc2df35e28738b3a3e0bae403797a3cac9ff70a5aa45e9e226486",
+    "seconds": 23.32799999997951,
+    "peak_bytes": 460210176,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_06",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_06/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 4622.423579818579,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 1.2074182697257333e-06,
+          "mean": 5.8886550132508046e-08
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "e81233c8bcbcc2df35e28738b3a3e0bae403797a3cac9ff70a5aa45e9e226486",
+    "seconds": 22.125,
+    "peak_bytes": 460857344,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_07",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_07/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 10,
+        "C0_face_count": 10,
+        "cross_cell": true,
+        "geometric_length": 4007.9910249568106,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.33633608510957186,
+          "max": 0.5153962899964748,
+          "mean": 0.07576662298696246
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "26a215a4aa4076b8208aad46fe379810a784d85eaa4961522ac7418715cc91e7",
+    "seconds": 24.375,
+    "peak_bytes": 488984576,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_08",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_08/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 4241.817684863934,
+        "surviving_sharp_edges": 16,
+        "mean_sharpness": 0.0031249999999999494,
+        "max_sharpness": 0.021874999999999645,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 1.2074182697257333e-06,
+          "mean": 5.2052956468373594e-08
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "e81233c8bcbcc2df35e28738b3a3e0bae403797a3cac9ff70a5aa45e9e226486",
+    "seconds": 25.42099999997299,
+    "peak_bytes": 490639360,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_09",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_09/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 3818.112157120598,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 4.179368808356362,
+          "p10": 11.496054078481636,
+          "median": 41.3733082831336,
+          "p90": 57.86509197908737,
+          "max": 57.86509197908739,
+          "mean": 36.07914574831269
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 3104.568197753981,
+        "visible_crease_survival_ratio": 0.8131160295970113,
+        "longest_high_dihedral_chain_length": 3104.568197753981,
+        "high45_edge_count": 28,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "8d33639a3ed60c0ae07255e6b7ab95e31d584e37be94a35e59d6fd7d0e0c8ad9",
+    "seconds": 26.905999999959022,
+    "peak_bytes": 486141952,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  },
+  {
+    "id": "CTRL_U_gate_10",
+    "phase": "CONTROL",
+    "attempt": "study/CONTROL/CTRL_U_gate_10/attempt_001",
+    "status": "SUCCESS",
+    "reason": "Requested finite recipe completed",
+    "family": "CONTROL",
+    "faces": 22528,
+    "stage": "G4",
+    "contact": "CLEAN_SAMPLE",
+    "crossings": 0,
+    "cap": false,
+    "any_contact": false,
+    "cap_ever": false,
+    "design_eligible": true,
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 4,
+        "parent_cell_count": 12,
+        "C0_face_count": 12,
+        "cross_cell": true,
+        "geometric_length": 4241.817684863934,
+        "surviving_sharp_edges": 112,
+        "mean_sharpness": 0.5,
+        "max_sharpness": 0.5,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.0,
+          "p10": 0.0,
+          "median": 0.0,
+          "p90": 0.0,
+          "max": 1.2074182697257333e-06,
+          "mean": 5.2052956468373594e-08
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "degenerate": 0,
+    "opposed": 0,
+    "bilinear": 0,
+    "output_sha256": "e81233c8bcbcc2df35e28738b3a3e0bae403797a3cac9ff70a5aa45e9e226486",
+    "seconds": 23.359000000054948,
+    "peak_bytes": 456986624,
+    "ornament": {
+      "maximum": 0,
+      "face_counts": {
+        "0": 22528
+      },
+      "source_regions_at_least": {
+        "1": [],
+        "2": [],
+        "3": []
+      },
+      "event_count": 0,
+      "event_depth_counts": {},
+      "independent_nested_trees": 0,
+      "operator_lineage_depth": 4
+    },
+    "monitor": null
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "comparison": [
+    {
+      "artifact": "terminal.json",
+      "selected_sha256": "a0bdf1273eca4dfdff7aeb87e555884cf9b86974993c9789f071c08c8256b23c",
+      "reference_sha256": "a0bdf1273eca4dfdff7aeb87e555884cf9b86974993c9789f071c08c8256b23c",
+      "replay_sha256": "a0bdf1273eca4dfdff7aeb87e555884cf9b86974993c9789f071c08c8256b23c",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_networks.json",
+      "selected_sha256": "3cfa44a23e4887674f460f206ce556871be6cd5648d1e0a3cec1065860f048c7",
+      "reference_sha256": "3cfa44a23e4887674f460f206ce556871be6cd5648d1e0a3cec1065860f048c7",
+      "replay_sha256": "3cfa44a23e4887674f460f206ce556871be6cd5648d1e0a3cec1065860f048c7",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_lineage.json.gz",
+      "selected_sha256": "3520af8e3abab225e91fc379a8593c96ba4c81cb76f1149b7f94ba1f74bd0b9d",
+      "reference_sha256": "3520af8e3abab225e91fc379a8593c96ba4c81cb76f1149b7f94ba1f74bd0b9d",
+      "replay_sha256": "3520af8e3abab225e91fc379a8593c96ba4c81cb76f1149b7f94ba1f74bd0b9d",
+      "exact": true
+    },
+    {
+      "artifact": "terminal_signatures.json.gz",
+      "selected_sha256": "2a41b1090e2e02211cecc4d7eecfc3e8e247c092525fae1b8c75b6ea5b289c72",
+      "reference_sha256": "2a41b1090e2e02211cecc4d7eecfc3e8e247c092525fae1b8c75b6ea5b289c72",
+      "replay_sha256": "2a41b1090e2e02211cecc4d7eecfc3e8e247c092525fae1b8c75b6ea5b289c72",
+      "exact": true
+    },
+    {
+      "artifact": "branch_signatures.json",
+      "selected_sha256": "18bbac359a20022fa9cd60a6ade2a5059eab6a725134be15b5635250420da63a",
+      "reference_sha256": "18bbac359a20022fa9cd60a6ade2a5059eab6a725134be15b5635250420da63a",
+      "replay_sha256": "18bbac359a20022fa9cd60a6ade2a5059eab6a725134be15b5635250420da63a",
+      "exact": true
+    }
+  ],
+  "benchmark": "study/HERO/RETAINED_GATE_GRAMMAR/attempt_001",
+  "replay": "study/REPLAY/RETAINED_GATE_REPLAY/attempt_001",
+  "scope": "Canonical JSON equality of coordinates/oriented topology, crease graph, complete terminal histories/events/anchors, positive branch paths and branch diagnostics; runtime/timings excluded."
+}

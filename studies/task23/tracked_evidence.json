@@ -1,0 +1,51 @@
+{
+  "images": [
+    {
+      "file": "evidence/whole_gate.png",
+      "source": "renders/CAPABILITY/ATLAS_front_FINAL_01.png",
+      "sha256": "fa51fb650d161dadf28549ade38b77bcbc9b9e6ae86f5d62c0657554fff198e3"
+    },
+    {
+      "file": "evidence/node_detail.png",
+      "source": "renders/CAPABILITY/ATLAS_node_FINAL_01.png",
+      "sha256": "c0c2538dcb7b2880d90b1cde8f0217970ab5d4e9a4637d33016c5ae66affe7bb"
+    },
+    {
+      "file": "evidence/retained_wire.png",
+      "source": "renders/CAPABILITY/R20_E5_wire.png",
+      "sha256": "187ee2ab3efce4cf641ac03c602fed3ec050661f9b393b09c9a0cc2a2f98409f"
+    },
+    {
+      "file": "evidence/retained_network.png",
+      "source": "renders/CAPABILITY/R20_E5_front_network.png",
+      "sha256": "b64c3e8e4852db92c8cffbd7a2de8f8cf508ee597d9fd57b2e5eae12a3aaa226"
+    },
+    {
+      "file": "evidence/retained_sharpness.png",
+      "source": "renders/CAPABILITY/R20_E5_sharpness.png",
+      "sha256": "2403dcc76f49da3d68df9922247890e5e13e7554c5992461cff45b8c673e58b6"
+    },
+    {
+      "file": "evidence/retained_ancestry.png",
+      "source": "renders/CAPABILITY/R20_E5_ancestry.png",
+      "sha256": "92519a51a210cc1939fd2c0fa9898733db356dd1f25d55d391f1a3008a4e3266"
+    },
+    {
+      "file": "evidence/retained_depth.png",
+      "source": "renders/CAPABILITY/R20_E5_depth.png",
+      "sha256": "cb3ee4765e2b75000be77207f0e7fc9032431f27d43722e35d4fc5611dd92523"
+    },
+    {
+      "file": "evidence/control_initial.png",
+      "source": "renders/CONTROL/CTRL_cube_04_G0_front.png",
+      "sha256": "4428b011f9d07820e83710904ef2caccccbe5cfec847cba9265fe19fa736d89f"
+    },
+    {
+      "file": "evidence/control_sixth.png",
+      "source": "renders/CONTROL/CTRL_cube_04_G6_front.png",
+      "sha256": "c81319bd9f676f665cb2d671ebc80cf8288671328343db0a2be8ff18209b4088"
+    }
+  ],
+  "kind": "Actual headless polygon projections; same camera/scale/light; overlays include hidden edges",
+  "limitations": "Painter sorting/first-triangle normals approximate shading, particularly on intersections; fixed camera clips extreme branches."
+}

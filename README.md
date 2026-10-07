@@ -299,3 +299,15 @@ over the unchanged weighted-CC backend. Actual control and gate evidence
 separates sharp geometry from collapse and from visual hierarchy. Heavy meshes
 and checkpoints use an explicit portable external output root; compact recipes
 and diagnostics remain in Git. Existing Rhino modes and dependencies stay unchanged.
+
+## Persistent cross-cell creases (Task 23, experimental branch)
+
+The [reference contract](docs/CROSS_CELL_CREASE_REFERENCE.md) separates exact
+COMPAS integer creases and finite Uniform semi-sharp transitions from experimental
+graph routing and point-placement composition. The [completed study](docs/CROSS_CELL_CREASE_STUDY.md)
+retains 16 finalists, actual fixed-camera evidence and an independently reproduced
+partial gate grammar. Sampled contacts, including the 256-count cap, remain
+diagnostic and do not veto compatible evolution. No convincing Grotesque gate
+emerged: a coherent meso fold that replaces the panel scaffold is still missing.
+Standalone research freezes with that limitation; no production rescue or new
+Rhino Hero mode was added.

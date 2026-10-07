@@ -1,0 +1,2675 @@
+[
+  {
+    "phase": "SCREEN",
+    "recipe": {
+      "id": "A05",
+      "family": "A_PURE_CREASE",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N1",
+          "relation": "opening_rim",
+          "sharpness": 1
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented"
+    }
+  },
+  {
+    "phase": "SCREEN",
+    "recipe": {
+      "id": "A08",
+      "family": "A_PURE_CREASE",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N3",
+          "sharpness": 4,
+          "length_ratio": 1.0,
+          "max_turn": 0.7
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "X05",
+      "family": "DESIGN_FIRST_CAPABILITY",
+      "input": "TASK22_BOUNDARY",
+      "networks": [
+        {
+          "generator": "N3",
+          "sharpness": 12,
+          "seed_xz": [
+            -0.4,
+            0.96
+          ],
+          "target_y_ratio": -1.05,
+          "length_ratio": 1.35,
+          "max_steps": 120,
+          "turn_cost": 2.0,
+          "cell_reward": 0.4,
+          "max_turn": 0.7
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 5,
+          "weights": {
+            "wf": 400,
+            "w1": -2,
+            "we": -200,
+            "w2": -6,
+            "wp": 300,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 2,
+            "w7": -2
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 3,
+          "weights": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "hypothesis": "Continue an actual 75-contact Task22 input through aggressive fold and subsequent crease subdivision.",
+      "policy_override": true,
+      "priority_order": [
+        "visible morphology",
+        "cross-cell organization",
+        "hierarchy",
+        "replay",
+        "gate readability",
+        "contact cleanliness"
+      ],
+      "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+    }
+  },
+  {
+    "phase": "SCREEN",
+    "recipe": {
+      "id": "B12",
+      "family": "B_ORDERED_RIDGE_TRANSFER",
+      "input": "ORDERED",
+      "networks": [
+        {
+          "generator": "N4",
+          "sharpness": 4,
+          "profile": "CONSTANT",
+          "length_ratio": 1.0,
+          "seed_xz": [
+            -0.3,
+            0.94
+          ]
+        }
+      ],
+      "generations": 1,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented"
+    }
+  },
+  {
+    "phase": "DESIGN",
+    "recipe": {
+      "id": "C06",
+      "family": "C_CREASE_ROOF",
+      "input": "C07",
+      "networks": [],
+      "generations": 0,
+      "mode": "UNIFORM_FRACTIONAL",
+      "composition": [
+        {
+          "id": "crease_roof",
+          "operator": "Roof",
+          "parameters": {
+            "height_ratio": 0.18,
+            "direction_mode": "vertical",
+            "gable_inset": 0.2
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "new__branch"
+          },
+          "placement": "JUNCTION",
+          "max_events": 24,
+          "hops": 2,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE"
+        }
+      ],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "A11",
+        "artifact": "study/SCREEN/A11/attempt_001",
+        "stage": "G1",
+        "assets": {
+          "study/SCREEN/A11/attempt_001/G1.json.gz": "00833d140a1fe6d99a87dbe3517c89558b7785f7eb1fb69fea6a1718196d2662",
+          "study/SCREEN/A11/attempt_001/G1_lineage.json.gz": "c3963d5faaf5572fcbf749917631a4771d318bcc2bee9b9c52b105c3e0a1b2f9",
+          "study/SCREEN/A11/attempt_001/G1_signatures.json.gz": "075cdc98962f7346368749025b809fe67f2ce0af01971b0184eeb4d07fafffa2",
+          "study/SCREEN/A11/attempt_001/G1_networks.json": "e485ccd7ce704c0a6e2874d85f4dcbd74b6ce7b03f4ec595c30a813965b7f53b",
+          "study/SCREEN/A11/attempt_001/G1_operator.json.gz": "120136628b1e2b8faa0704487e27f983892e595ba5bc48e04e5e268dc10ebf8b"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "00833d140a1fe6d99a87dbe3517c89558b7785f7eb1fb69fea6a1718196d2662",
+          "geometry_state": "CLEAN_SAMPLE",
+          "design_eligible": true,
+          "statistics": {
+            "vertex_count": 17922,
+            "face_count": 17920,
+            "edge_count": 35840,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              4474.025782226535,
+              1064.622464448563,
+              3941.525397555089
+            ]
+          },
+          "policy": {
+            "contact_band": "CLEAN_SAMPLE",
+            "design_eligible": true,
+            "hard_stop": false,
+            "stop": false,
+            "additional_requested_stage_allowed": false,
+            "policy": "Contact cap retains finite valid geometry, permitting at most one further requested stage; no collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "A11",
+          "family": "A_PURE_CREASE",
+          "input": "C07",
+          "networks": [
+            {
+              "generator": "N5",
+              "side": "left",
+              "sharpness": 4.5,
+              "profile": "JUNCTION_SOFT_ENDS"
+            },
+            {
+              "generator": "N5",
+              "side": "right",
+              "sharpness": 4.5,
+              "profile": "JUNCTION_SOFT_ENDS"
+            }
+          ],
+          "generations": 2,
+          "mode": "UNIFORM_FRACTIONAL",
+          "composition": [],
+          "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented"
+        },
+        "visual_review": "See signed factual review and registered actual views; design eligible is technical, not a design-success label."
+      },
+      "hypothesis": "Sparse existing Roof follows actual declared edge tangents; equal source-cohort opportunity, lower supports quiet.",
+      "operator_order": "Exact frozen backbone -> declared networks -> verified CC prefix -> listed local event stages -> STOP"
+    }
+  },
+  {
+    "phase": "DESIGN",
+    "recipe": {
+      "id": "D05",
+      "family": "D_CREASE_NESTED",
+      "input": "C07",
+      "networks": [],
+      "generations": 0,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_micro_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.12
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "split__cap"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE"
+        },
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.26,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP"
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP"
+        }
+      ],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "A10",
+        "artifact": "study/SCREEN/A10/attempt_001",
+        "stage": "G1",
+        "assets": {
+          "study/SCREEN/A10/attempt_001/G1.json.gz": "eea2640284fa2775cdf417bc29785309138cb7b35f508c0282debab0f7006f0a",
+          "study/SCREEN/A10/attempt_001/G1_lineage.json.gz": "c3963d5faaf5572fcbf749917631a4771d318bcc2bee9b9c52b105c3e0a1b2f9",
+          "study/SCREEN/A10/attempt_001/G1_signatures.json.gz": "075cdc98962f7346368749025b809fe67f2ce0af01971b0184eeb4d07fafffa2",
+          "study/SCREEN/A10/attempt_001/G1_networks.json": "84061ae77375a0a2a708c1be1934f905e974a1382298ea394600b6d9caa56fef",
+          "study/SCREEN/A10/attempt_001/G1_operator.json.gz": "01c754c55e3642388b0ef9bfddbeb1322d62d8b1c764810960dd65e345de3a61"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "eea2640284fa2775cdf417bc29785309138cb7b35f508c0282debab0f7006f0a",
+          "geometry_state": "CLEAN_SAMPLE",
+          "design_eligible": true,
+          "statistics": {
+            "vertex_count": 17922,
+            "face_count": 17920,
+            "edge_count": 35840,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              4474.025782226535,
+              1064.622464448563,
+              3941.525397555089
+            ]
+          },
+          "policy": {
+            "contact_band": "CLEAN_SAMPLE",
+            "design_eligible": true,
+            "hard_stop": false,
+            "stop": false,
+            "additional_requested_stage_allowed": false,
+            "policy": "Contact cap retains finite valid geometry, permitting at most one further requested stage; no collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "A10",
+          "family": "A_PURE_CREASE",
+          "input": "C07",
+          "networks": [
+            {
+              "generator": "N5",
+              "side": "left",
+              "sharpness": 4
+            },
+            {
+              "generator": "N5",
+              "side": "right",
+              "sharpness": 4
+            }
+          ],
+          "generations": 2,
+          "mode": "INTEGER_COMPAS",
+          "composition": [],
+          "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented"
+        },
+        "visual_review": "See signed factual review and registered actual views; design eligible is technical, not a design-success label."
+      },
+      "hypothesis": "Select actual crease-band/junction source roles, then ring -> child cap; selected cases add one child ring.",
+      "operator_order": "Exact frozen backbone -> declared networks -> verified CC prefix -> listed local event stages -> STOP"
+    }
+  },
+  {
+    "phase": "DESIGN",
+    "recipe": {
+      "id": "E05",
+      "family": "E_FULL_SYNTHESIS",
+      "input": "C07",
+      "networks": [],
+      "generations": 0,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_roof",
+          "operator": "Roof",
+          "parameters": {
+            "height_ratio": 0.18,
+            "direction_mode": "vertical",
+            "gable_inset": 0.2
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "new__branch"
+          },
+          "placement": "JUNCTION",
+          "max_events": 32,
+          "hops": 2,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE"
+        },
+        {
+          "id": "crease_micro_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.12
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "split__cap"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE"
+        },
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.26,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP"
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 16,
+          "hops": 2,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.15
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP"
+        }
+      ],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "A10",
+        "artifact": "study/SCREEN/A10/attempt_001",
+        "stage": "G1",
+        "assets": {
+          "study/SCREEN/A10/attempt_001/G1.json.gz": "eea2640284fa2775cdf417bc29785309138cb7b35f508c0282debab0f7006f0a",
+          "study/SCREEN/A10/attempt_001/G1_lineage.json.gz": "c3963d5faaf5572fcbf749917631a4771d318bcc2bee9b9c52b105c3e0a1b2f9",
+          "study/SCREEN/A10/attempt_001/G1_signatures.json.gz": "075cdc98962f7346368749025b809fe67f2ce0af01971b0184eeb4d07fafffa2",
+          "study/SCREEN/A10/attempt_001/G1_networks.json": "84061ae77375a0a2a708c1be1934f905e974a1382298ea394600b6d9caa56fef",
+          "study/SCREEN/A10/attempt_001/G1_operator.json.gz": "01c754c55e3642388b0ef9bfddbeb1322d62d8b1c764810960dd65e345de3a61"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "eea2640284fa2775cdf417bc29785309138cb7b35f508c0282debab0f7006f0a",
+          "geometry_state": "CLEAN_SAMPLE",
+          "design_eligible": true,
+          "statistics": {
+            "vertex_count": 17922,
+            "face_count": 17920,
+            "edge_count": 35840,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              4474.025782226535,
+              1064.622464448563,
+              3941.525397555089
+            ]
+          },
+          "policy": {
+            "contact_band": "CLEAN_SAMPLE",
+            "design_eligible": true,
+            "hard_stop": false,
+            "stop": false,
+            "additional_requested_stage_allowed": false,
+            "policy": "Contact cap retains finite valid geometry, permitting at most one further requested stage; no collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "A10",
+          "family": "A_PURE_CREASE",
+          "input": "C07",
+          "networks": [
+            {
+              "generator": "N5",
+              "side": "left",
+              "sharpness": 4
+            },
+            {
+              "generator": "N5",
+              "side": "right",
+              "sharpness": 4
+            }
+          ],
+          "generations": 2,
+          "mode": "INTEGER_COMPAS",
+          "composition": [],
+          "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented"
+        },
+        "visual_review": "See signed factual review and registered actual views; design eligible is technical, not a design-success label."
+      },
+      "hypothesis": "A10: JUNCTION Roof; JUNCTION nested nodes on INDEPENDENT; source height>0.74; sparse counts 32/16; no finish.",
+      "operator_order": "Exact frozen backbone -> declared networks -> verified CC prefix -> listed local event stages -> STOP"
+    }
+  },
+  {
+    "phase": "EXPLORATION",
+    "recipe": {
+      "id": "EX01",
+      "family": "EXPLORATION_HEAVY",
+      "input": "TASK22_BOUNDARY",
+      "networks": [
+        {
+          "generator": "N3",
+          "sharpness": 4,
+          "length_ratio": 1.1,
+          "max_turn": 0.9
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "EXPLORATION cap256; preferred design only CLEAN_SAMPLE/LOW_CONTACT",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "X01",
+      "family": "DESIGN_FIRST_CAPABILITY",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N3",
+          "sharpness": 12,
+          "seed_xz": [
+            -0.4,
+            0.96
+          ],
+          "target_y_ratio": -1.05,
+          "length_ratio": 1.35,
+          "max_steps": 120,
+          "turn_cost": 2.0,
+          "cell_reward": 0.4,
+          "max_turn": 0.7
+        }
+      ],
+      "generations": 3,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 4,
+          "weights": {
+            "wf": 250,
+            "w1": -1.8,
+            "we": 100,
+            "w2": -4,
+            "wp": 200,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 1.25,
+            "w7": -0.7
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 3,
+          "weights": {
+            "wf": 80,
+            "w1": 0.8,
+            "we": 0.0,
+            "w2": -0.8,
+            "wp": 50,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -0.35,
+            "w7": 0.4
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 3,
+          "weights": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "hypothesis": "Aggressive long terrain fold; large first displacement, contrasting second placement, persistent third crease generation.",
+      "policy_override": true,
+      "priority_order": [
+        "visible morphology",
+        "cross-cell organization",
+        "hierarchy",
+        "replay",
+        "gate readability",
+        "contact cleanliness"
+      ],
+      "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "X02",
+      "family": "DESIGN_FIRST_CAPABILITY",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N1",
+          "relation": "support_shoulder_lintel",
+          "sharpness": 12
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [],
+      "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 6,
+          "weights": {
+            "wf": 450,
+            "w1": -2.2,
+            "we": -120,
+            "w2": -5,
+            "wp": 350,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -1.2,
+            "w7": 1.5
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 4,
+          "weights": {
+            "wf": -150,
+            "w1": 1.4,
+            "we": 0.0,
+            "w2": 2,
+            "wp": -120,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.6,
+            "w7": -0.9
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "hypothesis": "Wide shoulder-to-lintel deformation followed by reverse-signed placement; gate drift allowed.",
+      "policy_override": true,
+      "priority_order": [
+        "visible morphology",
+        "cross-cell organization",
+        "hierarchy",
+        "replay",
+        "gate readability",
+        "contact cleanliness"
+      ],
+      "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "X09",
+      "family": "DESIGN_FIRST_CAPABILITY",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N5",
+          "side": "left",
+          "sharpness": 10.5,
+          "seed_xz": [
+            -0.44,
+            0.98
+          ],
+          "target_y_ratio": -1.05,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0,
+          "profile": "JUNCTION_SOFT_ENDS"
+        },
+        {
+          "generator": "N5",
+          "side": "right",
+          "sharpness": 10.5,
+          "seed_xz": [
+            0.44,
+            0.98
+          ],
+          "target_y_ratio": -1.05,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0,
+          "profile": "JUNCTION_SOFT_ENDS"
+        }
+      ],
+      "generations": 2,
+      "mode": "UNIFORM_FRACTIONAL",
+      "composition": [
+        {
+          "id": "crease_roof",
+          "operator": "Roof",
+          "parameters": {
+            "height_ratio": 0.55,
+            "direction_mode": "vertical",
+            "gable_inset": 0.2
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "new__branch"
+          },
+          "placement": "JUNCTION",
+          "max_events": 48,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.55,
+              "direction_mode": "vertical",
+              "gable_inset": 0.2
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.12
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "split__cap"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.12
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.6,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.6,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 5,
+          "weights": {
+            "wf": 150,
+            "w1": -1.4,
+            "we": 30,
+            "w2": -2.8,
+            "wp": 100,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.35,
+            "w7": 0.4
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 3,
+          "weights": {
+            "wf": 40,
+            "w1": -0.4,
+            "we": 0.0,
+            "w2": -0.8,
+            "wp": 30,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.1,
+            "w7": 0.1
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "hypothesis": "Gate-readable direction: localized contrasting shoulder fold, attenuated second placement and sparse nested nodes.",
+      "policy_override": true,
+      "priority_order": [
+        "visible morphology",
+        "cross-cell organization",
+        "hierarchy",
+        "replay",
+        "gate readability",
+        "contact cleanliness"
+      ],
+      "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "X10",
+      "family": "DESIGN_FIRST_CAPABILITY",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N3",
+          "sharpness": 12,
+          "seed_xz": [
+            -0.38,
+            0.94
+          ],
+          "target_y_ratio": -1.05,
+          "length_ratio": 1.35,
+          "max_steps": 120,
+          "turn_cost": 2.0,
+          "cell_reward": 0.4,
+          "max_turn": 0.7,
+          "direction": [
+            1.0,
+            0.0,
+            0.25
+          ]
+        },
+        {
+          "generator": "N3",
+          "sharpness": 12,
+          "seed_xz": [
+            0.38,
+            0.94
+          ],
+          "target_y_ratio": -1.05,
+          "length_ratio": 1.35,
+          "max_steps": 120,
+          "turn_cost": 2.0,
+          "cell_reward": 0.4,
+          "max_turn": 0.7,
+          "direction": [
+            -1.0,
+            0.0,
+            0.25
+          ]
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_roof",
+          "operator": "Roof",
+          "parameters": {
+            "height_ratio": 0.9,
+            "direction_mode": "vertical",
+            "gable_inset": 0.2
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "new__branch"
+          },
+          "placement": "ADJACENT",
+          "max_events": 48,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.9,
+              "direction_mode": "vertical",
+              "gable_inset": 0.2
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.12
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "split__cap"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.12
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 1.1,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 1.1,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_second_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.7150000000000001,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_terminal_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.7150000000000001,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 6,
+          "weights": {
+            "wf": -260,
+            "w1": 1.5,
+            "we": 0.0,
+            "w2": -4,
+            "wp": 400,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": -1.6,
+            "w7": 1.2
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 4,
+          "weights": {
+            "wf": 180,
+            "w1": -1,
+            "we": 100,
+            "w2": 0.0,
+            "wp": -200,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.8,
+            "w7": -0.8
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "hypothesis": "Opposed directional traces and signed nonstationary placement followed by deep selective articulation.",
+      "policy_override": true,
+      "priority_order": [
+        "visible morphology",
+        "cross-cell organization",
+        "hierarchy",
+        "replay",
+        "gate readability",
+        "contact cleanliness"
+      ],
+      "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "Y06",
+      "family": "LARGE_TAPER_CONTINUATION",
+      "input": "ORDERED",
+      "networks": [],
+      "generations": 0,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.8,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.8,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_second_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.52,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.74,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_terminal_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.52,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Contacts diagnostic only; existing next-operator geometry checks retained.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "X06",
+        "artifact": "study/CAPABILITY/X06/attempt_001",
+        "stage": "E2",
+        "assets": {
+          "study/CAPABILITY/X06/attempt_001/E2.json.gz": "8f924d0b77415bd1dcbcab7b6c077c7ee0459b63f9fcec1b377362e512231b93",
+          "study/CAPABILITY/X06/attempt_001/E2_lineage.json.gz": "5594ceeb5997d5715536d4d5c32cbb14a8e38e086fb0853cb7dca31293eeae1a",
+          "study/CAPABILITY/X06/attempt_001/E2_signatures.json.gz": "c90a834d0be1bddc78515bab334b47cabd772d261eb0df9b97841827e3f974e6",
+          "study/CAPABILITY/X06/attempt_001/E2_networks.json": "512116a9e102b49c795459dd14a745ba07d6fdd7fe60a753b90fd2c75667ca27",
+          "study/CAPABILITY/X06/attempt_001/E2_operator.json.gz": "a899a2faf6caa48db9071eec47ff1411995b418aa8bf666f1d5cf7b10e81458e"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "8f924d0b77415bd1dcbcab7b6c077c7ee0459b63f9fcec1b377362e512231b93",
+          "geometry_state": "SELF_INTERSECTING_CAPABILITY",
+          "design_eligible": false,
+          "statistics": {
+            "vertex_count": 87794,
+            "face_count": 87840,
+            "edge_count": 175632,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              5060.258643891469,
+              1685.9037573856258,
+              4657.770543049627
+            ]
+          },
+          "policy": {
+            "contact_band": "101-256",
+            "design_eligible": false,
+            "hard_stop": false,
+            "stop": false,
+            "capability_usable": true,
+            "capability_state": "SELF_INTERSECTING_CAPABILITY",
+            "additional_requested_stage_allowed": true,
+            "policy": "User override: contact count/cap never stops evolution; finite/topology/operator/resource conditions govern. No collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "X06",
+          "family": "DESIGN_FIRST_CAPABILITY",
+          "input": "ORDERED",
+          "networks": [
+            {
+              "generator": "N4",
+              "sharpness": 12,
+              "length_ratio": 1.3,
+              "max_steps": 120,
+              "turn_cost": 2.0
+            }
+          ],
+          "generations": 1,
+          "mode": "INTEGER_COMPAS",
+          "composition": [
+            {
+              "id": "crease_roof",
+              "operator": "Roof",
+              "parameters": {
+                "height_ratio": 0.75,
+                "direction_mode": "vertical",
+                "gable_inset": 0.2
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "new__branch"
+              },
+              "placement": "ADJACENT",
+              "max_events": 48,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.74,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 0.75,
+                  "direction_mode": "vertical",
+                  "gable_inset": 0.2
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.12
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "split__cap"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.74,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "parent_stage": "crease_roof",
+              "parent_role": "RIDGE_SIDE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.12
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_cap",
+              "operator": "TaperedExtrusion",
+              "parameters": {
+                "height_ratio": 0.8,
+                "fraction": 0.22
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__cap_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.74,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_frame",
+              "parent_role": "INNER_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 0.8,
+                  "fraction": 0.22
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_terminal_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.08
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__side_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.74,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_cap",
+              "parent_role": "EXTRUSION_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.08
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_second_cap",
+              "operator": "TaperedExtrusion",
+              "parameters": {
+                "height_ratio": 0.52,
+                "fraction": 0.22
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__cap_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.74,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_terminal_frame",
+              "parent_role": "INNER_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 0.52,
+                  "fraction": 0.22
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            }
+          ],
+          "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented",
+          "fold_schedule": [
+            {
+              "band_hops": 5,
+              "weights": {
+                "wf": 200,
+                "w1": -1.2,
+                "we": 150,
+                "w2": -3.2,
+                "wp": 120,
+                "w3": 0.0,
+                "w4": 0.0,
+                "w6": 0.8,
+                "w7": 0.9
+              },
+              "u_map": {
+                "(3,3)": 2.0,
+                "(4,4)": -1.0,
+                "(5,5)": 2.5,
+                "(6,6)": -1.5
+              },
+              "unknown_u": 0.5,
+              "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+              "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+            }
+          ],
+          "hypothesis": "Actual recorded Roof ridge transfer, large ordered folding and strict ridge-child nesting.",
+          "policy_override": true,
+          "priority_order": [
+            "visible morphology",
+            "cross-cell organization",
+            "hierarchy",
+            "replay",
+            "gate readability",
+            "contact cleanliness"
+          ],
+          "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+        },
+        "visual_review": "See factual review and registered actual views; clean preference and computational usability are separate from design success."
+      },
+      "policy_override": true,
+      "composition_stage_base": 15,
+      "continuation_of": "X06",
+      "hypothesis": "Resume the exact real fold/Roof/frame checkpoint with Task23 explicit finite large-taper permission; no repeated prefix computation."
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "Y07",
+      "family": "LARGE_TAPER_CONTINUATION",
+      "input": "C07",
+      "networks": [],
+      "generations": 0,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 1.2,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 1.2,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_second_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.78,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.7,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_terminal_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.78,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Contacts diagnostic only; existing next-operator geometry checks retained.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "X07",
+        "artifact": "study/CAPABILITY/X07/attempt_001",
+        "stage": "E2",
+        "assets": {
+          "study/CAPABILITY/X07/attempt_001/E2.json.gz": "7acff8eb677cc6e9c6941a662531aa533815420a7f993b3b75e0b9418dc34c85",
+          "study/CAPABILITY/X07/attempt_001/E2_lineage.json.gz": "de239f8ee67ecdaa2ba8062753ebd56b562431034bf5d00e4020d3f518005767",
+          "study/CAPABILITY/X07/attempt_001/E2_signatures.json.gz": "5c4680093839af40572d05cd65d6bbcedb8df2d517dea74c92d6b129ffb8ce34",
+          "study/CAPABILITY/X07/attempt_001/E2_networks.json": "f5c1abd5d95be61d7b140e1df97867245362ec9026e53a9b276ec8e27cdefc85",
+          "study/CAPABILITY/X07/attempt_001/E2_operator.json.gz": "346ccdbdb8de4d6c66ace649b3c18823363734bda1de0c33b6918c2f15efc6f9"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "7acff8eb677cc6e9c6941a662531aa533815420a7f993b3b75e0b9418dc34c85",
+          "geometry_state": "SELF_INTERSECTING_CAPABILITY",
+          "design_eligible": false,
+          "statistics": {
+            "vertex_count": 71858,
+            "face_count": 71904,
+            "edge_count": 143760,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              9487.738557171184,
+              4095.8459907392253,
+              5636.988872087993
+            ]
+          },
+          "policy": {
+            "contact_band": "256+",
+            "design_eligible": false,
+            "hard_stop": false,
+            "stop": false,
+            "capability_usable": true,
+            "capability_state": "SELF_INTERSECTING_CAPABILITY",
+            "additional_requested_stage_allowed": true,
+            "policy": "User override: contact count/cap never stops evolution; finite/topology/operator/resource conditions govern. No collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "X07",
+          "family": "DESIGN_FIRST_CAPABILITY",
+          "input": "C07",
+          "networks": [
+            {
+              "generator": "N5",
+              "side": "left",
+              "sharpness": 16,
+              "seed_xz": [
+                -0.36,
+                0.87
+              ],
+              "target_y_ratio": -0.65,
+              "minimum_seed_support": 0.05,
+              "minimum_target_support": 0.0
+            },
+            {
+              "generator": "N5",
+              "side": "right",
+              "sharpness": 16,
+              "seed_xz": [
+                0.36,
+                0.87
+              ],
+              "target_y_ratio": -0.65,
+              "minimum_seed_support": 0.05,
+              "minimum_target_support": 0.0
+            }
+          ],
+          "generations": 2,
+          "mode": "INTEGER_COMPAS",
+          "composition": [
+            {
+              "id": "crease_roof",
+              "operator": "Roof",
+              "parameters": {
+                "height_ratio": 1.2,
+                "direction_mode": "vertical",
+                "gable_inset": 0.2
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "new__branch"
+              },
+              "placement": "ADJACENT",
+              "max_events": 48,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.7,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 1.2,
+                  "direction_mode": "vertical",
+                  "gable_inset": 0.2
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.12
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "split__cap"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.7,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.12
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_cap",
+              "operator": "TaperedExtrusion",
+              "parameters": {
+                "height_ratio": 1.2,
+                "fraction": 0.22
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__cap_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.7,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_frame",
+              "parent_role": "INNER_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 1.2,
+                  "fraction": 0.22
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_terminal_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.08
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__side_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.7,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_cap",
+              "parent_role": "EXTRUSION_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.08
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_second_cap",
+              "operator": "TaperedExtrusion",
+              "parameters": {
+                "height_ratio": 0.78,
+                "fraction": 0.22
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__cap_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.7,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_terminal_frame",
+              "parent_role": "INNER_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 0.78,
+                  "fraction": 0.22
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            }
+          ],
+          "contact_policy": "Diagnostic cap256; contact count does not stop compatible finite evolution.",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented",
+          "fold_schedule": [
+            {
+              "band_hops": 6,
+              "weights": {
+                "wf": 600,
+                "w1": -3,
+                "we": 180,
+                "w2": -7,
+                "wp": 500,
+                "w3": 0.0,
+                "w4": 0.0,
+                "w6": -1.5,
+                "w7": -1.5
+              },
+              "u_map": {
+                "(3,3)": 2.0,
+                "(4,4)": -1.0,
+                "(5,5)": 2.5,
+                "(6,6)": -1.5
+              },
+              "unknown_u": 0.5,
+              "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+              "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+            },
+            {
+              "band_hops": 4,
+              "weights": {
+                "wf": -180,
+                "w1": 0.5,
+                "we": -80,
+                "w2": 1,
+                "wp": -160,
+                "w3": 0.0,
+                "w4": 0.0,
+                "w6": 0.5,
+                "w7": 0.4
+              },
+              "u_map": {
+                "(3,3)": 2.0,
+                "(4,4)": -1.0,
+                "(5,5)": 2.5,
+                "(6,6)": -1.5
+              },
+              "unknown_u": 0.5,
+              "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+              "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+            }
+          ],
+          "hypothesis": "Extreme broad fan folding, partial signed return, large Roof and deep extrusion relationships.",
+          "policy_override": true,
+          "priority_order": [
+            "visible morphology",
+            "cross-cell organization",
+            "hierarchy",
+            "replay",
+            "gate readability",
+            "contact cleanliness"
+          ],
+          "operator_order": "Frozen backbone -> declared network -> listed route-local folded crease generations -> listed existing Mola stages -> STOP"
+        },
+        "visual_review": "See factual review and registered actual views; clean preference and computational usability are separate from design success."
+      },
+      "policy_override": true,
+      "composition_stage_base": 16,
+      "continuation_of": "X07",
+      "hypothesis": "Resume the exact real fold/Roof/frame checkpoint with Task23 explicit finite large-taper permission; no repeated prefix computation."
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "Y19",
+      "family": "LARGE_TAPER_CONTINUATION",
+      "input": "C07",
+      "networks": [],
+      "generations": 0,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 1.0,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 1.0,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "ADJACENT",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Contacts diagnostic only; existing next-operator geometry checks retained.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "prepared_substrate": {
+        "source_case": "R19",
+        "artifact": "study/CAPABILITY/R19/attempt_001",
+        "stage": "E2",
+        "assets": {
+          "study/CAPABILITY/R19/attempt_001/E2.json.gz": "f2c13f387bd4b6ae9e08f60b67b50c3a18ef16c62d3e4ce6f87f84caf19e3aa5",
+          "study/CAPABILITY/R19/attempt_001/E2_lineage.json.gz": "e8b3cbc210c16318958391873d7cde840c25ea4840f643a3902634e477eb6d9b",
+          "study/CAPABILITY/R19/attempt_001/E2_signatures.json.gz": "bd599e54e9e5ab7efadd2037e9779c188e399e8b9c6462161167ec68423e4d1b",
+          "study/CAPABILITY/R19/attempt_001/E2_networks.json": "69db9e9992851291d5c0071df24cdddee4c6aabcc8cae7e86fce891cb9370449",
+          "study/CAPABILITY/R19/attempt_001/E2_operator.json.gz": "8061408e983cad1b22009b291747926b700f5f70bae7efe4fbceeaf5f161f091"
+        },
+        "reviewed_stage": {
+          "geometry_sha256": "f2c13f387bd4b6ae9e08f60b67b50c3a18ef16c62d3e4ce6f87f84caf19e3aa5",
+          "geometry_state": "SELF_INTERSECTING_CAPABILITY",
+          "design_eligible": false,
+          "statistics": {
+            "vertex_count": 71858,
+            "face_count": 71904,
+            "edge_count": 143760,
+            "boundary_edge_count": 0,
+            "is_manifold": true,
+            "is_closed": true,
+            "bounding_box": [
+              4702.775145212359,
+              1382.0367670223598,
+              4088.8643376243604
+            ]
+          },
+          "policy": {
+            "contact_band": "11-30",
+            "design_eligible": false,
+            "hard_stop": false,
+            "stop": false,
+            "capability_usable": true,
+            "capability_state": "SELF_INTERSECTING_CAPABILITY",
+            "additional_requested_stage_allowed": true,
+            "policy": "User override: contact count/cap never stops evolution; finite/topology/operator/resource conditions govern. No collision certificate."
+          }
+        },
+        "crease_prefix_recipe": {
+          "id": "R19",
+          "family": "DESIGN_FIRST_REFINEMENT",
+          "input": "C07",
+          "networks": [
+            {
+              "generator": "N1",
+              "relation": "support_shoulder_lintel",
+              "sharpness": 12
+            }
+          ],
+          "generations": 2,
+          "mode": "INTEGER_COMPAS",
+          "composition": [
+            {
+              "id": "crease_roof",
+              "operator": "Roof",
+              "parameters": {
+                "height_ratio": 0.8,
+                "direction_mode": "vertical",
+                "gable_inset": 0.2
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "new__branch"
+              },
+              "placement": "ADJACENT",
+              "max_events": 48,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.78,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 0.8,
+                  "direction_mode": "vertical",
+                  "gable_inset": 0.2
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.12
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "split__cap"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 1,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.78,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.12
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_cap",
+              "operator": "TaperedExtrusion",
+              "parameters": {
+                "height_ratio": 1.0,
+                "fraction": 0.22
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__cap_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.78,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_frame",
+              "parent_role": "INNER_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "height_ratio": 1.0,
+                  "fraction": 0.22
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            },
+            {
+              "id": "crease_micro_terminal_frame",
+              "operator": "InsetFrame",
+              "parameters": {
+                "width_ratio": 0.08
+              },
+              "parameter_reference": {
+                "recipe": "inputs/ORDERED_recipe.json",
+                "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+                "stage": "descend__side_child"
+              },
+              "placement": "ADJACENT",
+              "max_events": 20,
+              "hops": 3,
+              "spacing": 0,
+              "selector": {
+                "source_region": "lintel",
+                "z_min": 0.78,
+                "normal_y_min": 0.05
+              },
+              "quad_only": true,
+              "parent_stage": "crease_micro_cap",
+              "parent_role": "EXTRUSION_CAP",
+              "stratify_by": "C0_FACE",
+              "explicit_parameter_deviation_from_saved_fragment": {
+                "parameters": {
+                  "width_ratio": 0.08
+                },
+                "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+              }
+            }
+          ],
+          "contact_policy": "Diagnostic cap256; continue compatible finite evolution.",
+          "no_global_finish": true,
+          "quiet_region": "Source lower supports remain unornamented",
+          "fold_schedule": [
+            {
+              "band_hops": 10,
+              "weights": {
+                "wf": 320,
+                "w1": 0.0,
+                "we": 320,
+                "w2": 0.0,
+                "wp": 320,
+                "w3": 0.0,
+                "w4": 0.0,
+                "w6": 0.0,
+                "w7": 0.0
+              },
+              "u_map": {
+                "(3,3)": 2.0,
+                "(4,4)": -1.0,
+                "(5,5)": 2.5,
+                "(6,6)": -1.5
+              },
+              "unknown_u": 0.5,
+              "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+              "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+            },
+            {
+              "band_hops": 5,
+              "weights": {
+                "wf": 0.0,
+                "w1": -0.35,
+                "we": 0.0,
+                "w2": -0.65,
+                "wp": 0.0,
+                "w3": 0.0,
+                "w4": 0.0,
+                "w6": 0.0,
+                "w7": 0.0
+              },
+              "u_map": {
+                "(3,3)": 2.0,
+                "(4,4)": -1.0,
+                "(5,5)": 2.5,
+                "(6,6)": -1.5
+              },
+              "unknown_u": 0.5,
+              "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+              "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+            }
+          ],
+          "policy_override": true,
+          "refinement_of": "X02",
+          "original_recipe_sha256": "b02b54d062ec1bb111ea5931983e09247b455c44b27bf715abe7aafdaa3ce194",
+          "hypothesis": "Replace competing point-class offsets and strong interpolation with a broad coherent route-local normal fold; preserve sharp paths and apply sparse terminal nesting."
+        },
+        "visual_review": "See factual review and registered actual views; clean preference and computational usability are separate from design success."
+      },
+      "policy_override": true,
+      "composition_stage_base": 16,
+      "continuation_of": "R19",
+      "hypothesis": "Resume the exact real fold/Roof/frame checkpoint with Task23 explicit finite large-taper permission; no repeated prefix computation."
+    }
+  },
+  {
+    "phase": "CAPABILITY",
+    "recipe": {
+      "id": "R20",
+      "family": "DESIGN_FIRST_REFINEMENT",
+      "input": "C07",
+      "networks": [
+        {
+          "generator": "N5",
+          "side": "left",
+          "sharpness": 12,
+          "seed_xz": [
+            -0.44,
+            0.98
+          ],
+          "target_y_ratio": -1.05,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0
+        },
+        {
+          "generator": "N5",
+          "side": "right",
+          "sharpness": 12,
+          "seed_xz": [
+            0.44,
+            0.98
+          ],
+          "target_y_ratio": -1.05,
+          "minimum_seed_support": 0.05,
+          "minimum_target_support": 0.0
+        }
+      ],
+      "generations": 2,
+      "mode": "INTEGER_COMPAS",
+      "composition": [
+        {
+          "id": "crease_roof",
+          "operator": "Roof",
+          "parameters": {
+            "height_ratio": 1.0,
+            "direction_mode": "vertical",
+            "gable_inset": 0.2
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "new__branch"
+          },
+          "placement": "JUNCTION",
+          "max_events": 48,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 1.0,
+              "direction_mode": "vertical",
+              "gable_inset": 0.2
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.12
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "split__cap"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 1,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.12
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 1.4,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 1.4,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_terminal_frame",
+          "operator": "InsetFrame",
+          "parameters": {
+            "width_ratio": 0.08
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__side_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_cap",
+          "parent_role": "EXTRUSION_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "width_ratio": 0.08
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        },
+        {
+          "id": "crease_micro_second_cap",
+          "operator": "TaperedExtrusion",
+          "parameters": {
+            "height_ratio": 0.9099999999999999,
+            "fraction": 0.22
+          },
+          "parameter_reference": {
+            "recipe": "inputs/ORDERED_recipe.json",
+            "sha256": "9bb59dbff0c198c4058ac8fbe6626cf133729bf590a12f9b013d0ae748737984",
+            "stage": "descend__cap_child"
+          },
+          "placement": "JUNCTION",
+          "max_events": 20,
+          "hops": 3,
+          "spacing": 0,
+          "selector": {
+            "source_region": "lintel",
+            "z_min": 0.78,
+            "normal_y_min": 0.05
+          },
+          "quad_only": true,
+          "parent_stage": "crease_micro_terminal_frame",
+          "parent_role": "INNER_CAP",
+          "stratify_by": "C0_FACE",
+          "explicit_parameter_deviation_from_saved_fragment": {
+            "parameters": {
+              "height_ratio": 0.9099999999999999,
+              "fraction": 0.22
+            },
+            "reason": "User override permits large serialized Roof/extrusion/nesting moves; original fragment reference remains recorded."
+          }
+        }
+      ],
+      "contact_policy": "Diagnostic cap256; continue compatible finite evolution.",
+      "no_global_finish": true,
+      "quiet_region": "Source lower supports remain unornamented",
+      "fold_schedule": [
+        {
+          "band_hops": 9,
+          "weights": {
+            "wf": 500,
+            "w1": 0.0,
+            "we": 500,
+            "w2": 0.0,
+            "wp": 500,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        },
+        {
+          "band_hops": 4,
+          "weights": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {
+            "(3,3)": 2.0,
+            "(4,4)": -1.0,
+            "(5,5)": 2.5,
+            "(6,6)": -1.5
+          },
+          "unknown_u": 0.5,
+          "units": "wf/we/wp: absolute original model units; interpolation and Eq10/11: dimensionless",
+          "composition": "Reference crease CC plus route-local existing sharp-weighted displacement relative to standard smooth CC"
+        }
+      ],
+      "policy_override": true,
+      "refinement_of": "X02",
+      "original_recipe_sha256": "b02b54d062ec1bb111ea5931983e09247b455c44b27bf715abe7aafdaa3ce194",
+      "hypothesis": "Replace competing point-class offsets and strong interpolation with a broad coherent route-local normal fold; preserve sharp paths and apply sparse terminal nesting."
+    }
+  }
+]

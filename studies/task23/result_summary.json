@@ -1,0 +1,117 @@
+{
+  "baseline": "66cb4f90d0b15834d358db5ce2569c813379b0b1",
+  "phase_counts": {
+    "CONTROL": {
+      "named_requests": 30,
+      "latest_status_counts": {
+        "SUCCESS": 30
+      },
+      "attempts": 40,
+      "any_sampled_contact": 0,
+      "diagnostic_cap_ever": 0
+    },
+    "SCREEN": {
+      "named_requests": 30,
+      "latest_status_counts": {
+        "SUCCESS": 30
+      },
+      "attempts": 30,
+      "any_sampled_contact": 16,
+      "diagnostic_cap_ever": 0
+    },
+    "DESIGN": {
+      "named_requests": 39,
+      "latest_status_counts": {
+        "SUCCESS": 36,
+        "TECHNICAL_STOP": 2,
+        "CANCELLED_POLICY_OVERRIDE": 1
+      },
+      "attempts": 40,
+      "any_sampled_contact": 3,
+      "diagnostic_cap_ever": 0
+    },
+    "REFINE": {
+      "named_requests": 6,
+      "latest_status_counts": {
+        "SUCCESS": 5,
+        "CANCELLED_POLICY_OVERRIDE": 1
+      },
+      "attempts": 6,
+      "any_sampled_contact": 6,
+      "diagnostic_cap_ever": 0
+    },
+    "EXPLORATION": {
+      "named_requests": 1,
+      "latest_status_counts": {
+        "SUCCESS": 1
+      },
+      "attempts": 1,
+      "any_sampled_contact": 1,
+      "diagnostic_cap_ever": 0
+    },
+    "CAPABILITY": {
+      "named_requests": 16,
+      "latest_status_counts": {
+        "TECHNICAL_STOP": 4,
+        "SUCCESS": 12
+      },
+      "attempts": 16,
+      "any_sampled_contact": 16,
+      "diagnostic_cap_ever": 9
+    }
+  },
+  "named_gate_requests": 92,
+  "continuation_segments": 4,
+  "distinct_gate_candidate_strategies": 88,
+  "named_gate_technical_completions": 84,
+  "gate_requests_with_any_contact": 42,
+  "cap_request_count": 9,
+  "maximum_finished_peak_bytes": 1966911488,
+  "resources": {
+    "system_total_bytes": 34280996864,
+    "process_tree_plus_driver_limit": 4294967296,
+    "available_memory_floor": 5142149529,
+    "case_seconds": 900,
+    "ordinary_faces": 300000
+  },
+  "original_policy": "Saved pre-override requests retain original contact policy",
+  "current_policy": "Contacts and diagnostic cap do not stop compatible finite evolution; SELF_INTERSECTING_CAPABILITY",
+  "labels": {
+    "BEST_CROSS_CELL_CREASE": "CAPABILITY/X01",
+    "BEST_PURE_REFERENCE_CREASE": "SCREEN/A08",
+    "BEST_MOTIF_CREASE": "CAPABILITY/X05 (extreme local extension; not a hierarchy success)",
+    "BEST_CREASE_ROOF_CONTROL": "DESIGN/C06",
+    "BEST_CREASE_MICRO_CONTROL": "DESIGN/D05",
+    "BEST_SHARP_ORNAMENT": "CAPABILITY/X10",
+    "BEST_GATE_LEGIBLE": "CAPABILITY/Y19",
+    "BEST_GEOMETRIC_ORDER": "CAPABILITY/Y19 (relative order, still weak)",
+    "MAX_ORNAMENT_CAPABILITY": "CAPABILITY/Y07",
+    "MOST_INFORMATIVE_FAILURE": "CAPABILITY/X02 (design coherence, not contact count)",
+    "INFORMATIVE_CREASE_COLLAPSE": "SCREEN/A05",
+    "RETAINED_GATE_GRAMMAR": "CAPABILITY/R20",
+    "BEST_PRODUCTION_HERO": null,
+    "GROTESQUE_GATE_CANDIDATE": null
+  },
+  "grotesque_gate_candidate": null,
+  "production": "NOT_JUSTIFIED",
+  "rhino": "NOT_ADDED; no real/strong near-Hero established; actual host not run",
+  "assessment": "Morphological spread is materially broader after the override. No result meets all visual Grotesque criteria. The single strongest limitation is the lack of a coherent meso fold that replaces the inherited panel scaffold: local point placement produces swollen panels or shard fields. Freeze standalone research with the reproducible R20 grammar; do not start another broad geometry search.",
+  "test_result": {
+    "full_suite_runs": 1,
+    "full_run": {
+      "passed": 788,
+      "failed": 1,
+      "seconds": 37.28
+    },
+    "failure": "Existing worker identity negative test used repository-internal basetemp, invalidating its outside-repository package premise.",
+    "correction": "Existing test/code unchanged; only that test rerun with fresh temporary directory outside the repository.",
+    "focused_recheck": {
+      "passed": 1,
+      "failed": 0,
+      "seconds": 0.07
+    },
+    "verified_unique_tests": 789,
+    "disposition": "PASS after correcting one test-harness path; not falsely reported as a clean single 789-pass full run.",
+    "real_Mola_tests": "Official explicitly supplied DLL enabled for the full run; no skips."
+  }
+}

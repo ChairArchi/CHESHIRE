@@ -1,0 +1,3476 @@
+[
+  {
+    "id": "A05",
+    "phase": "SCREEN",
+    "reason": "Declared cross-cell route collapses below the 20-degree contrast threshold.",
+    "stage": "G2",
+    "artifact": "study/SCREEN/A05/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "72402e046f44362a78bd94063e69b6520fc220a822f4ab04f1463c77dcd832f7",
+    "statistics": {
+      "vertex_count": 71682,
+      "face_count": 71680,
+      "edge_count": 143360,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4467.234074916481,
+        1051.3001392132032,
+        3936.914864938348
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 58,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 2627.5604938600086,
+        "surviving_sharp_edges": 0,
+        "mean_sharpness": 0.0,
+        "max_sharpness": 0.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.3820366187171752,
+          "p10": 0.8512360310647057,
+          "median": 4.984875562470265,
+          "p90": 9.565562798259835,
+          "max": 13.332787798258453,
+          "mean": 5.383133430714289
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 0,
+        "visible_crease_survival_ratio": 0.0,
+        "longest_high_dihedral_chain_length": 0.0,
+        "high45_edge_count": 0,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 59.85999999998603,
+      "peak_process_tree_plus_driver_bytes": 659558400,
+      "observed_worker_pids": [
+        3264,
+        6308,
+        12592,
+        19036,
+        30208,
+        37800,
+        44556,
+        48156,
+        51396,
+        54192,
+        55804,
+        58000
+      ],
+      "verified_process_births": {
+        "12592": 134358036765337486,
+        "55804": 134358036765426220,
+        "30208": 134358036765652755,
+        "3264": 134358036834604399,
+        "6308": 134358036834183099,
+        "51396": 134358036834319000,
+        "58000": 134358036924556790,
+        "44556": 134358036924824547,
+        "48156": 134358036924452324,
+        "54192": 134358037230285575,
+        "37800": 134358037230156648,
+        "19036": 134358037230549718
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 882,
+      "component_count": 228,
+      "cross_cell_component_count": 100,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/SCREEN/A05_G2_high_angle_metrics.json",
+      "sha256": "caeb9b1d2603b0771eaee83baf31b260f6947172503ef1901dccf2660e72801a",
+      "first_12_components": [
+        {
+          "edge_count": 5,
+          "length": 447.7983020221818,
+          "maximum_angle": 43.629032483412374,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.79830202218153,
+          "maximum_angle": 43.629032483412615,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.79830122423454,
+          "maximum_angle": 43.62903620438272,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.7983012242344,
+          "maximum_angle": 43.62903620438308,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922445952964,
+          "maximum_angle": 41.63782068482164,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922445952964,
+          "maximum_angle": 41.63782068482281,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.29224436192544,
+          "maximum_angle": 41.63781731366947,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922443619253,
+          "maximum_angle": 41.63781731367065,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327782977133,
+          "maximum_angle": 39.1598233406354,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327782977132,
+          "maximum_angle": 39.1598233406354,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327781474365,
+          "maximum_angle": 39.15982419587535,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327781474364,
+          "maximum_angle": 39.159824195875494,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "A08",
+    "phase": "SCREEN",
+    "reason": "Best supported pure-reference crease; whole gate remains weak.",
+    "stage": "G2",
+    "artifact": "study/SCREEN/A08/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "6d7574728bb2710628abbccf6b697696590bb5c8f291bb9e333e636949a052d4",
+    "statistics": {
+      "vertex_count": 71682,
+      "face_count": 71680,
+      "edge_count": 143360,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4467.234074916481,
+        1051.6773932387093,
+        3936.914864938348
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 63,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 4008.0341632344507,
+        "surviving_sharp_edges": 136,
+        "mean_sharpness": 2.0,
+        "max_sharpness": 2.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.477844944322126,
+          "p10": 5.771598620530017,
+          "median": 24.52476344114662,
+          "p90": 59.90173510521761,
+          "max": 115.90474170925282,
+          "mean": 30.45776325866634
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 2669.6815191599076,
+        "visible_crease_survival_ratio": 0.6660825258548936,
+        "longest_high_dihedral_chain_length": 820.4682562409099,
+        "high45_edge_count": 29,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 61.78200000000652,
+      "peak_process_tree_plus_driver_bytes": 667942912,
+      "observed_worker_pids": [
+        3744,
+        13056,
+        19816,
+        33128,
+        36168,
+        39576,
+        48220,
+        48536,
+        52372,
+        53556,
+        55632,
+        58280
+      ],
+      "verified_process_births": {
+        "58280": 134358038764130863,
+        "19816": 134358038764254333,
+        "39576": 134358038764482969,
+        "55632": 134358038831567927,
+        "52372": 134358038831447545,
+        "48220": 134358038831833836,
+        "13056": 134358038924327622,
+        "36168": 134358038923882782,
+        "48536": 134358038924005871,
+        "3744": 134358039231406429,
+        "53556": 134358039231087736,
+        "33128": 134358039231181385
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 965,
+      "component_count": 224,
+      "cross_cell_component_count": 100,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/SCREEN/A08_G2_high_angle_metrics.json",
+      "sha256": "1ec5e037f496dfe90aa9008bdf18ac21141185393f5a2a4d1d3d248402b5ff19",
+      "first_12_components": [
+        {
+          "edge_count": 38,
+          "length": 1763.4557261618995,
+          "maximum_angle": 115.90474170925282,
+          "parent_cell_count": 15,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 24,
+          "length": 653.9772325642906,
+          "maximum_angle": 56.332305514292614,
+          "parent_cell_count": 14,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 25,
+          "length": 581.1785426512674,
+          "maximum_angle": 86.62199447129188,
+          "parent_cell_count": 11,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.7983020221818,
+          "maximum_angle": 43.629032483412374,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.79830122423454,
+          "maximum_angle": 43.62903620438272,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.7983012242344,
+          "maximum_angle": 43.62903620438308,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922445952964,
+          "maximum_angle": 41.63782068482164,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922445952964,
+          "maximum_angle": 41.63782068482281,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.29224436192544,
+          "maximum_angle": 41.63781731366947,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922443619253,
+          "maximum_angle": 41.63781731367065,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327782977133,
+          "maximum_angle": 39.1598233406354,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327782977132,
+          "maximum_angle": 39.1598233406354,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "X05",
+    "phase": "CAPABILITY",
+    "reason": "Aggressive fold of an actual Task22 75-contact input; two generations complete, but a long clipped spike replaces a useful ordered hierarchy.",
+    "stage": "G2",
+    "artifact": "study/CAPABILITY/X05/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "742e5eeb1b91c0061e012de01843a8cde77537846cf4dea38d2d068aded3fd35",
+    "statistics": {
+      "vertex_count": 286722,
+      "face_count": 286720,
+      "edge_count": 573440,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4938.481375189627,
+        2855.5808837610275,
+        5543.7192743544465
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 32,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 14993.051797128152,
+        "surviving_sharp_edges": 152,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.4759179225888621,
+          "p10": 14.256700540953434,
+          "median": 57.02583652752528,
+          "p90": 142.01437720807738,
+          "max": 171.0997856860543,
+          "mean": 65.66461774327152
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 12298.452628790381,
+        "visible_crease_survival_ratio": 0.8202768052296125,
+        "longest_high_dihedral_chain_length": 2160.4431114389245,
+        "high45_edge_count": 91,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 221.90599999995902,
+      "peak_process_tree_plus_driver_bytes": 1686163456,
+      "observed_worker_pids": [
+        8664,
+        17432,
+        35092,
+        36240,
+        37092,
+        42624,
+        42712,
+        44068,
+        46184,
+        46444,
+        49324,
+        50764
+      ],
+      "verified_process_births": {
+        "35092": 134358079896535798,
+        "42624": 134358079896629967,
+        "42712": 134358079896940516,
+        "36240": 134358080031416229,
+        "37092": 134358080031302232,
+        "46444": 134358080031718668,
+        "46184": 134358080614206486,
+        "50764": 134358080614330485,
+        "49324": 134358080614567383,
+        "44068": 134358081615826175,
+        "8664": 134358081615556438,
+        "17432": 134358081615447099
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 13560,
+      "component_count": 584,
+      "cross_cell_component_count": 65,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/X05_G2_high_angle_metrics.json",
+      "sha256": "d98e7096758ede7dabaa4eb508e2a15f5c642aa0b82bf8d40a02ac5d96c6eba6",
+      "first_12_components": [
+        {
+          "edge_count": 11166,
+          "length": 1054791.5556352292,
+          "maximum_angle": 179.9135554904994,
+          "parent_cell_count": 201,
+          "C0_face_count": 4,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 40,
+          "length": 796.7967847114205,
+          "maximum_angle": 80.89850870519967,
+          "parent_cell_count": 3,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 1,
+          "length": 535.7658659343991,
+          "maximum_angle": 27.297293379988496,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 1,
+          "length": 504.330672138913,
+          "maximum_angle": 29.05369733983015,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 1,
+          "length": 395.3875060210969,
+          "maximum_angle": 20.449675314691873,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 8,
+          "length": 374.90506354005527,
+          "maximum_angle": 33.96602968597488,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 374.9050635400551,
+          "maximum_angle": 33.96602968597546,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 374.90506297024245,
+          "maximum_angle": 33.966033042523264,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 374.9050629702424,
+          "maximum_angle": 33.96603304252399,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 356.2625123483997,
+          "maximum_angle": 29.174465649900053,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 356.26251234839964,
+          "maximum_angle": 29.174465649901293,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 356.2625121681796,
+          "maximum_angle": 29.174461809616197,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "B12",
+    "phase": "SCREEN",
+    "reason": "Actual recorded Roof ridge transfer into neighboring cells.",
+    "stage": "G1",
+    "artifact": "study/SCREEN/B12/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "d2ee37cc58f333b607d3e859553af3299f4aebb09134f9b7af7d91fb6c3dec51",
+    "statistics": {
+      "vertex_count": 87618,
+      "face_count": 87616,
+      "edge_count": 175232,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4497.740507929036,
+        1091.4677900158786,
+        3952.922520200453
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 68,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 3986.756834731404,
+        "surviving_sharp_edges": 100,
+        "mean_sharpness": 3.0,
+        "max_sharpness": 3.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.1258622289166673,
+          "p10": 3.1882112915688414,
+          "median": 19.51369943128353,
+          "p90": 120.19206117284263,
+          "max": 153.38267434448028,
+          "mean": 41.94629470299817
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 2174.1785150325713,
+        "visible_crease_survival_ratio": 0.5453501693636779,
+        "longest_high_dihedral_chain_length": 1727.1283872999365,
+        "high45_edge_count": 39,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 65.75,
+      "peak_process_tree_plus_driver_bytes": 1104723968,
+      "observed_worker_pids": [
+        2496,
+        31400,
+        33436,
+        35360,
+        50088,
+        55328,
+        55748,
+        56140,
+        58108
+      ],
+      "verified_process_births": {
+        "2496": 134358066581075120,
+        "58108": 134358066581174670,
+        "35360": 134358066581425241,
+        "33436": 134358066728470039,
+        "56140": 134358066728248892,
+        "31400": 134358066728156831,
+        "55328": 134358067052066341,
+        "55748": 134358067052212079,
+        "50088": 134358067052431476
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 72155,
+      "component_count": 2575,
+      "cross_cell_component_count": 174,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/SCREEN/B12_G1_high_angle_metrics.json",
+      "sha256": "e4be76725f11b77c47eb126bfb65f182e332f1bde76c00747e9c23b4435c862b",
+      "first_12_components": [
+        {
+          "edge_count": 5844,
+          "length": 179754.40873556686,
+          "maximum_angle": 176.9148281128139,
+          "parent_cell_count": 762,
+          "C0_face_count": 15,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 2037,
+          "length": 36181.322576616585,
+          "maximum_angle": 166.21679039684105,
+          "parent_cell_count": 217,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 2036,
+          "length": 36163.59831620502,
+          "maximum_angle": 166.21679039684122,
+          "parent_cell_count": 217,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 1246,
+          "length": 28123.883855997672,
+          "maximum_angle": 169.00125557570385,
+          "parent_cell_count": 184,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 1246,
+          "length": 28123.88385599767,
+          "maximum_angle": 169.00125557570365,
+          "parent_cell_count": 184,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 635,
+          "length": 11415.06824220491,
+          "maximum_angle": 121.86674274708012,
+          "parent_cell_count": 27,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 635,
+          "length": 11415.06824220491,
+          "maximum_angle": 121.86674274708028,
+          "parent_cell_count": 27,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 527,
+          "length": 9934.424823469115,
+          "maximum_angle": 107.16049789303699,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 527,
+          "length": 9934.424823469115,
+          "maximum_angle": 107.16049789303642,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 697,
+          "length": 7619.154004210765,
+          "maximum_angle": 98.46963289459364,
+          "parent_cell_count": 25,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 697,
+          "length": 7619.154004210755,
+          "maximum_angle": 98.46963289459251,
+          "parent_cell_count": 25,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 695,
+          "length": 7571.784512637171,
+          "maximum_angle": 98.65540968085713,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "C06",
+    "phase": "DESIGN",
+    "reason": "Sparse junction-related Roof; visually small reinforcement.",
+    "stage": "E1",
+    "artifact": "study/DESIGN/C06/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "c147956b74ab802b3c8b190a165b158376698769e033031c9d0c9203b22662fd",
+    "statistics": {
+      "vertex_count": 17970,
+      "face_count": 17992,
+      "edge_count": 35960,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4474.025782226535,
+        1064.622464448563,
+        3941.525397555089
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3283.9460554999973,
+        "surviving_sharp_edges": 72,
+        "mean_sharpness": 2.0067946673751935,
+        "max_sharpness": 3.39699955459945,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715510591016263,
+          "p10": 3.0098213931794566,
+          "median": 13.45419703898037,
+          "p90": 59.24624329319225,
+          "max": 82.44353221885612,
+          "mean": 21.366771833256237
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1587.7277211230407,
+        "visible_crease_survival_ratio": 0.4834816693970636,
+        "longest_high_dihedral_chain_length": 634.81650080461,
+        "high45_edge_count": 12,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3283.946061513783,
+        "surviving_sharp_edges": 72,
+        "mean_sharpness": 2.0067946649993487,
+        "max_sharpness": 3.3969995546039797,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715564859608901,
+          "p10": 3.009821393179336,
+          "median": 13.454196907145928,
+          "p90": 59.246240406316645,
+          "max": 82.25342735726997,
+          "mean": 21.343256575158403
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1587.7277198096454,
+        "visible_crease_survival_ratio": 0.4834816681117347,
+        "longest_high_dihedral_chain_length": 634.8165008965955,
+        "high45_edge_count": 12,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 30.29700000002049,
+      "peak_process_tree_plus_driver_bytes": 458694656,
+      "observed_worker_pids": [
+        20596,
+        29520,
+        42848,
+        43040,
+        43952,
+        48504,
+        49936,
+        55172,
+        58268
+      ],
+      "verified_process_births": {
+        "20596": 134358047281093198,
+        "42848": 134358047281240608,
+        "29520": 134358047281508588,
+        "43952": 134358047399020828,
+        "55172": 134358047398660053,
+        "58268": 134358047398819038,
+        "43040": 134358047516305138,
+        "49936": 134358047516656786,
+        "48504": 134358047516401820
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 2418,
+      "component_count": 456,
+      "cross_cell_component_count": 174,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/DESIGN/C06_E1_high_angle_metrics.json",
+      "sha256": "fda8c488d30eee6ea58024cc221bd0bd24ec50908215446ea28f585dd417c9e2",
+      "first_12_components": [
+        {
+          "edge_count": 106,
+          "length": 7239.573127817578,
+          "maximum_angle": 75.7471319210465,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 106,
+          "length": 7239.573127796666,
+          "maximum_angle": 75.74713192104662,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 126,
+          "length": 4648.277980378736,
+          "maximum_angle": 82.44353221885612,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 126,
+          "length": 4646.9073125977675,
+          "maximum_angle": 82.25342735726997,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149256,
+          "maximum_angle": 80.52297296391512,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149247,
+          "maximum_angle": 80.52297296391451,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941444,
+          "maximum_angle": 80.52297010853046,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941435,
+          "maximum_angle": 80.52297010853025,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336324,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336225,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.5442088581359,
+          "maximum_angle": 50.27345808849558,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.544208858135,
+          "maximum_angle": 50.27345808849567,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "D05",
+    "phase": "DESIGN",
+    "reason": "Three actual nested stages in sparse fan bands; micro remains small.",
+    "stage": "E3",
+    "artifact": "study/DESIGN/D05/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "09b6d06784b794abf50fc88c0583d125d31ebda038805dcaf1484704575f4b4e",
+    "statistics": {
+      "vertex_count": 18114,
+      "face_count": 18112,
+      "edge_count": 36224,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4474.025782226535,
+        1064.622464448563,
+        3941.525397555089
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650787348553,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 3.0,
+        "max_sharpness": 3.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715510591016263,
+          "p10": 2.3873247842514522,
+          "median": 12.137134527895396,
+          "p90": 59.24624329319225,
+          "max": 82.01966128848949,
+          "mean": 19.328793259066767
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1371.9104539515974,
+        "visible_crease_survival_ratio": 0.41791307664340027,
+        "longest_high_dihedral_chain_length": 634.81650080461,
+        "high45_edge_count": 11,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650847417326,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 3.0,
+        "max_sharpness": 3.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715564859608901,
+          "p10": 2.387324686703477,
+          "median": 12.13713542101208,
+          "p90": 59.246240406316645,
+          "max": 82.01965960709222,
+          "mean": 19.32879897717081
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1371.9104526382018,
+        "visible_crease_survival_ratio": 0.4179130754786053,
+        "longest_high_dihedral_chain_length": 634.8165008965956,
+        "high45_edge_count": 11,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 51.78100000007544,
+      "peak_process_tree_plus_driver_bytes": 539656192,
+      "observed_worker_pids": [
+        11576,
+        16580,
+        29952,
+        30464,
+        34904,
+        37280,
+        44136,
+        44672,
+        45276,
+        48340,
+        48392,
+        51696,
+        52736,
+        57996,
+        58264
+      ],
+      "verified_process_births": {
+        "30464": 134358050700087548,
+        "48392": 134358050700209888,
+        "44672": 134358050700434194,
+        "51696": 134358050809178658,
+        "34904": 134358050808834153,
+        "44136": 134358050808930804,
+        "52736": 134358050921774036,
+        "37280": 134358050921904711,
+        "11576": 134358050922167480,
+        "16580": 134358051037529789,
+        "58264": 134358051037235451,
+        "57996": 134358051037077709,
+        "29952": 134358051146825712,
+        "48340": 134358051146938180,
+        "45276": 134358051147191934
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 2408,
+      "component_count": 478,
+      "cross_cell_component_count": 176,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/DESIGN/D05_E3_high_angle_metrics.json",
+      "sha256": "c10b6ac95959407e0fbdcc6f0f0f3984958b7061836dba0ba69092c331345d5b",
+      "first_12_components": [
+        {
+          "edge_count": 106,
+          "length": 7239.573127817578,
+          "maximum_angle": 75.7471319210465,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 106,
+          "length": 7239.573127796666,
+          "maximum_angle": 75.74713192104662,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149256,
+          "maximum_angle": 80.52297296391512,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149247,
+          "maximum_angle": 80.52297296391451,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941444,
+          "maximum_angle": 80.52297010853046,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941435,
+          "maximum_angle": 80.52297010853025,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336324,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336225,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.5442088581359,
+          "maximum_angle": 50.27345808849558,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.544208858135,
+          "maximum_angle": 50.27345808849567,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.5442079299243,
+          "maximum_angle": 50.273457845834685,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.5442079299239,
+          "maximum_angle": 50.273457845834656,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "E05",
+    "phase": "DESIGN",
+    "reason": "Clean sampled full baseline; inherited panels dominate.",
+    "stage": "E4",
+    "artifact": "study/DESIGN/E05/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "571771ebbfac3fb19080b26a2a9266b32fd90ce3a91aa0f078c0de82ca8d577e",
+    "statistics": {
+      "vertex_count": 18162,
+      "face_count": 18184,
+      "edge_count": 36344,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4474.025782226535,
+        1064.622464448563,
+        3941.525397555089
+      ]
+    },
+    "sampled_contacts": 0,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "CLEAN_SAMPLE",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650787348553,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 3.0,
+        "max_sharpness": 3.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715510591016263,
+          "p10": 3.0098213931794566,
+          "median": 13.454197038980396,
+          "p90": 63.26042101148938,
+          "max": 82.44353221885612,
+          "mean": 21.61727113067409
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1587.0198635355969,
+        "visible_crease_survival_ratio": 0.48343997376358666,
+        "longest_high_dihedral_chain_length": 634.81650080461,
+        "high45_edge_count": 12,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 1,
+        "parent_cell_count": 66,
+        "C0_face_count": 2,
+        "cross_cell": true,
+        "geometric_length": 3282.7650847417326,
+        "surviving_sharp_edges": 76,
+        "mean_sharpness": 3.0,
+        "max_sharpness": 3.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.4715564859608901,
+          "p10": 3.009821393179336,
+          "median": 13.454196907145928,
+          "p90": 63.26042160311525,
+          "max": 82.25342735726997,
+          "mean": 21.592019324178217
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 1587.0198622222013,
+        "visible_crease_survival_ratio": 0.4834399724788891,
+        "longest_high_dihedral_chain_length": 634.8165008965956,
+        "high45_edge_count": 12,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 65.125,
+      "peak_process_tree_plus_driver_bytes": 576024576,
+      "observed_worker_pids": [
+        8324,
+        11408,
+        11536,
+        20252,
+        24536,
+        35976,
+        37140,
+        49212,
+        49544,
+        50348,
+        51836,
+        54488,
+        54812,
+        54924,
+        54972,
+        55076,
+        56156,
+        56548
+      ],
+      "verified_process_births": {
+        "54972": 134358055146858575,
+        "56548": 134358055147013370,
+        "56156": 134358055147351559,
+        "54488": 134358055253733409,
+        "50348": 134358055253362142,
+        "54812": 134358055253524792,
+        "20252": 134358055370566886,
+        "49544": 134358055370453579,
+        "24536": 134358055370872227,
+        "8324": 134358055481730245,
+        "37140": 134358055481376823,
+        "54924": 134358055481250199,
+        "11536": 134358055598308415,
+        "51836": 134358055598404612,
+        "55076": 134358055598681790,
+        "11408": 134358055705926260,
+        "35976": 134358055706318745,
+        "49212": 134358055706054454
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 2610,
+      "component_count": 472,
+      "cross_cell_component_count": 174,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/DESIGN/E05_E4_high_angle_metrics.json",
+      "sha256": "f03c23f19ea9d23a8aaca16c94891238fd5eb148d00c08f75865af8adfe21dea",
+      "first_12_components": [
+        {
+          "edge_count": 106,
+          "length": 7239.573127817578,
+          "maximum_angle": 75.7471319210465,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 106,
+          "length": 7239.573127796666,
+          "maximum_angle": 75.74713192104662,
+          "parent_cell_count": 83,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 126,
+          "length": 4648.277980378736,
+          "maximum_angle": 82.44353221885612,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 126,
+          "length": 4646.9073125977675,
+          "maximum_angle": 82.25342735726997,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149256,
+          "maximum_angle": 80.52297296391512,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329877149247,
+          "maximum_angle": 80.52297296391451,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941444,
+          "maximum_angle": 80.52297010853046,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 47,
+          "length": 2976.5329819941435,
+          "maximum_angle": 80.52297010853025,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336324,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 897.5657713276773,
+          "maximum_angle": 33.617024757336225,
+          "parent_cell_count": 8,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.5442088581359,
+          "maximum_angle": 50.27345808849558,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 18,
+          "length": 765.544208858135,
+          "maximum_angle": 50.27345808849567,
+          "parent_cell_count": 12,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "EX01",
+    "phase": "EXPLORATION",
+    "stage": "G0",
+    "reason": "Actual prior Task22 75-contact input retained as a trajectory checkpoint, not Task23-generated final geometry.",
+    "artifact": "study/EXPLORATION/EX01/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "f747aa417514f040e3fce9ebee7c99f7fdd87bce4a73d9489581fd39f35bde3e",
+    "statistics": {
+      "vertex_count": 17922,
+      "face_count": 17920,
+      "edge_count": 35840,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4477.9323652475,
+        1069.459277142703,
+        3943.903508764062
+      ]
+    },
+    "sampled_contacts": 75,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "31-100",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 0,
+        "parent_cell_count": 42,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 2150.46031483064,
+        "surviving_sharp_edges": 58,
+        "mean_sharpness": 4.0,
+        "max_sharpness": 4.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.8083294164612658,
+          "p10": 4.9419644080798815,
+          "median": 16.370220032862083,
+          "p90": 68.32732992358046,
+          "max": 172.270032951159,
+          "mean": 32.28328186331219
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 875.5300730817544,
+        "visible_crease_survival_ratio": 0.4071361219938192,
+        "longest_high_dihedral_chain_length": 367.4251777511019,
+        "high45_edge_count": 14,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 217.48499999998603,
+      "peak_process_tree_plus_driver_bytes": 1664430080,
+      "observed_worker_pids": [
+        1904,
+        2956,
+        4840,
+        8324,
+        11992,
+        41924,
+        44412,
+        44956,
+        50272,
+        51772,
+        52300,
+        52400
+      ],
+      "verified_process_births": {
+        "44412": 134358037590315913,
+        "44956": 134358037590408145,
+        "52300": 134358037590684479,
+        "50272": 134358037717812832,
+        "8324": 134358037718090676,
+        "4840": 134358037717721693,
+        "52400": 134358038037688141,
+        "1904": 134358038037825459,
+        "11992": 134358038038121663,
+        "41924": 134358039224407706,
+        "2956": 134358039224861367,
+        "51772": 134358039224555462
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 4588,
+      "component_count": 975,
+      "cross_cell_component_count": 543,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/EXPLORATION/EX01_G0_high_angle_metrics.json",
+      "sha256": "4ff18300a2311573c352aa87f952003b51836fc1f7eac906ff2c0f6ddfeab865",
+      "first_12_components": [
+        {
+          "edge_count": 648,
+          "length": 38921.555716503615,
+          "maximum_angle": 173.0354162049447,
+          "parent_cell_count": 440,
+          "C0_face_count": 13,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 84,
+          "length": 3709.340460662618,
+          "maximum_angle": 60.54096910622072,
+          "parent_cell_count": 70,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 84,
+          "length": 3709.3404606626177,
+          "maximum_angle": 60.540969106220544,
+          "parent_cell_count": 70,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 84,
+          "length": 3709.3404541440514,
+          "maximum_angle": 60.540973941582685,
+          "parent_cell_count": 70,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 84,
+          "length": 3709.3404541440505,
+          "maximum_angle": 60.540973941582635,
+          "parent_cell_count": 70,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 35,
+          "length": 2158.929121426837,
+          "maximum_angle": 60.13263901874852,
+          "parent_cell_count": 25,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 35,
+          "length": 2158.9291214268364,
+          "maximum_angle": 60.13263901874866,
+          "parent_cell_count": 25,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 35,
+          "length": 2158.9291196593927,
+          "maximum_angle": 60.13263901874843,
+          "parent_cell_count": 25,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 35,
+          "length": 2158.9291196593927,
+          "maximum_angle": 60.13263901874875,
+          "parent_cell_count": 25,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 30,
+          "length": 2119.864400297535,
+          "maximum_angle": 55.303384506528715,
+          "parent_cell_count": 26,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 30,
+          "length": 2119.8644002975348,
+          "maximum_angle": 55.303384506528765,
+          "parent_cell_count": 26,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 29,
+          "length": 1138.0258782631947,
+          "maximum_angle": 73.15491240655517,
+          "parent_cell_count": 21,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "X01",
+    "phase": "CAPABILITY",
+    "reason": "Three generations of aggressive route-local fold, contrasting placement and crease preservation.",
+    "stage": "G3",
+    "artifact": "study/CAPABILITY/X01/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "a4e68434f82323e553498475862b820f258e3fd1f3b2981d2c76608a0b8e7e3e",
+    "statistics": {
+      "vertex_count": 286722,
+      "face_count": 286720,
+      "edge_count": 573440,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        5024.28919365405,
+        1505.709751172823,
+        4248.004391049454
+      ]
+    },
+    "sampled_contacts": 3,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 3,
+        "parent_cell_count": 136,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 41214.65322923812,
+        "surviving_sharp_edges": 672,
+        "mean_sharpness": 9.0,
+        "max_sharpness": 9.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.6214261932357481,
+          "p10": 6.16949853600116,
+          "median": 34.28368804685356,
+          "p90": 151.0311390006552,
+          "max": 175.80530885252566,
+          "mean": 57.48238298995362
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 24981.561003614734,
+        "visible_crease_survival_ratio": 0.6061329902417459,
+        "longest_high_dihedral_chain_length": 1623.6473132942278,
+        "high45_edge_count": 291,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 241.20300000009593,
+      "peak_process_tree_plus_driver_bytes": 1618231296,
+      "observed_worker_pids": [
+        6040,
+        8752,
+        12564,
+        16044,
+        16076,
+        17268,
+        21980,
+        45040,
+        45508,
+        47740,
+        48792,
+        51640,
+        52468,
+        53140,
+        53972
+      ],
+      "verified_process_births": {
+        "21980": 134358077784400863,
+        "53972": 134358077784503061,
+        "6040": 134358077784862712,
+        "17268": 134358077861456344,
+        "51640": 134358077861081600,
+        "45508": 134358077861207152,
+        "47740": 134358078041821242,
+        "52468": 134358078042240085,
+        "12564": 134358078041959639,
+        "45040": 134358078604241535,
+        "16076": 134358078604333408,
+        "48792": 134358078604589449,
+        "8752": 134358079621141992,
+        "53140": 134358079621450962,
+        "16044": 134358079621009120
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 33069,
+      "component_count": 725,
+      "cross_cell_component_count": 72,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/X01_G3_high_angle_metrics.json",
+      "sha256": "4a5892815f9fb67a5b7dbf086938c03e243304a3097e6e8e38d18fa8c5e37499",
+      "first_12_components": [
+        {
+          "edge_count": 28220,
+          "length": 871690.7126081305,
+          "maximum_angle": 179.46663358977918,
+          "parent_cell_count": 527,
+          "C0_face_count": 8,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 200,
+          "length": 3686.4480403232797,
+          "maximum_angle": 130.09744556300936,
+          "parent_cell_count": 8,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 373,
+          "length": 3553.6517914711976,
+          "maximum_angle": 137.15633410368721,
+          "parent_cell_count": 17,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 202,
+          "length": 3109.9470535651767,
+          "maximum_angle": 176.94722992079505,
+          "parent_cell_count": 8,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 68,
+          "length": 1933.0038775912492,
+          "maximum_angle": 110.87830279441786,
+          "parent_cell_count": 7,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 45,
+          "length": 1051.2579537521472,
+          "maximum_angle": 68.47725791365826,
+          "parent_cell_count": 7,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 56,
+          "length": 777.0009625808025,
+          "maximum_angle": 69.45368233326701,
+          "parent_cell_count": 2,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 35,
+          "length": 729.9130502414611,
+          "maximum_angle": 168.74001452454695,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 46,
+          "length": 708.1572255507962,
+          "maximum_angle": 177.83513527232847,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 34,
+          "length": 639.7860932282019,
+          "maximum_angle": 102.09469863274026,
+          "parent_cell_count": 3,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 105,
+          "length": 629.33315013911,
+          "maximum_angle": 60.94291272643317,
+          "parent_cell_count": 7,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 71,
+          "length": 596.7864085639301,
+          "maximum_angle": 113.50463862886082,
+          "parent_cell_count": 2,
+          "C0_face_count": 1,
+          "cross_cell": false
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "X02",
+    "phase": "CAPABILITY",
+    "reason": "Informative design failure: large shard field instead of a coherent meso fold; geometry remains computable.",
+    "stage": "G2",
+    "artifact": "study/CAPABILITY/X02/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "759ec4d02551ab30adf29a1e77a6ae910ce3c50ceff13ca1d2324cbce63278b8",
+    "statistics": {
+      "vertex_count": 71682,
+      "face_count": 71680,
+      "edge_count": 143360,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4777.093023655963,
+        2760.664432857127,
+        4082.800009824964
+      ]
+    },
+    "sampled_contacts": 217,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 72,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 84664.33629463999,
+        "surviving_sharp_edges": 156,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 0.917726657942956,
+          "p10": 15.469732281281441,
+          "median": 55.75339581248685,
+          "p90": 119.94551705125428,
+          "max": 149.69207516193154,
+          "mean": 62.00881846423253
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 71973.9807999964,
+        "visible_crease_survival_ratio": 0.8501097858904848,
+        "longest_high_dihedral_chain_length": 11735.607210997177,
+        "high45_edge_count": 107,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 91.56200000003446,
+      "peak_process_tree_plus_driver_bytes": 945815552,
+      "observed_worker_pids": [
+        1948,
+        16576,
+        18676,
+        20000,
+        30480,
+        34076,
+        36620,
+        41908,
+        46404,
+        51744,
+        56884,
+        57564
+      ],
+      "verified_process_births": {
+        "20000": 134358077925734711,
+        "51744": 134358077925868859,
+        "30480": 134358077926215497,
+        "18676": 134358077996347892,
+        "56884": 134358077996441866,
+        "1948": 134358077996684215,
+        "41908": 134358078139553046,
+        "34076": 134358078139657240,
+        "57564": 134358078139910461,
+        "16576": 134358078694139270,
+        "46404": 134358078694371895,
+        "36620": 134358078694038495
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 30758,
+      "component_count": 311,
+      "cross_cell_component_count": 76,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/X02_G2_high_angle_metrics.json",
+      "sha256": "5e2c2278f268f841b8624c17255dc912b7b583bd757fffa4d946af06a24e6333",
+      "first_12_components": [
+        {
+          "edge_count": 29927,
+          "length": 2495335.919073468,
+          "maximum_angle": 179.56161259881887,
+          "parent_cell_count": 1496,
+          "C0_face_count": 15,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.7983020221818,
+          "maximum_angle": 43.629032483412374,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 447.7983012242344,
+          "maximum_angle": 43.62903620438308,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.2922445952964,
+          "maximum_angle": 41.63782068482164,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 5,
+          "length": 438.29224436192544,
+          "maximum_angle": 41.63781731366947,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327782977132,
+          "maximum_angle": 39.1598233406354,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 6,
+          "length": 429.9327781474365,
+          "maximum_angle": 39.15982419587535,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 391.3693260267446,
+          "maximum_angle": 70.85645469310435,
+          "parent_cell_count": 4,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 8,
+          "length": 391.3693260261236,
+          "maximum_angle": 70.85645469310478,
+          "parent_cell_count": 4,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 10,
+          "length": 347.0694206301032,
+          "maximum_angle": 46.652076237189746,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 10,
+          "length": 347.0694206301027,
+          "maximum_angle": 46.65207623718993,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 4,
+          "length": 342.82503096432004,
+          "maximum_angle": 46.72135491353596,
+          "parent_cell_count": 2,
+          "C0_face_count": 1,
+          "cross_cell": false
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "X09",
+    "phase": "CAPABILITY",
+    "reason": "Attenuated fractional fan plus sparse nested ornament; repetitive small shards remain.",
+    "stage": "E4",
+    "artifact": "study/CAPABILITY/X09/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "f2cffe55538be1e5eb200023f008d59884963f2583a63f72ec8c1edaa2bf6ada",
+    "statistics": {
+      "vertex_count": 71966,
+      "face_count": 71986,
+      "edge_count": 143950,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4467.234074916481,
+        1229.8677789173644,
+        3949.0710208861406
+      ]
+    },
+    "sampled_contacts": 28,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 87,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 8788.51581708168,
+        "surviving_sharp_edges": 192,
+        "mean_sharpness": 5.707557821782303,
+        "max_sharpness": 8.49263263141588,
+        "junctions": 1,
+        "dihedral": {
+          "min": 4.012830381919194,
+          "p10": 26.939883684203437,
+          "median": 80.08201329767556,
+          "p90": 131.31183974884476,
+          "max": 171.67164680823373,
+          "mean": 78.25079289129258
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 8115.544730482146,
+        "visible_crease_survival_ratio": 0.9234260823321815,
+        "longest_high_dihedral_chain_length": 1990.1465405212039,
+        "high45_edge_count": 150,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 92,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 9376.42195094214,
+        "surviving_sharp_edges": 188,
+        "mean_sharpness": 5.029375655756138,
+        "max_sharpness": 8.491759503723525,
+        "junctions": 1,
+        "dihedral": {
+          "min": 4.012830340031777,
+          "p10": 28.795165796447595,
+          "median": 75.08119970040376,
+          "p90": 128.91214002408267,
+          "max": 178.26617970173712,
+          "mean": 77.21222516728392
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 8737.747621853487,
+        "visible_crease_survival_ratio": 0.9318850695467603,
+        "longest_high_dihedral_chain_length": 1990.1466351570414,
+        "high45_edge_count": 164,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 235.35900000005495,
+      "peak_process_tree_plus_driver_bytes": 1009623040,
+      "observed_worker_pids": [
+        11484,
+        15216,
+        19732,
+        21900,
+        24296,
+        25900,
+        26520,
+        27212,
+        27548,
+        33436,
+        34340,
+        36884,
+        43016,
+        46852,
+        50028,
+        50256,
+        50844,
+        50880,
+        52196,
+        54524,
+        54588,
+        56856,
+        57468,
+        57816
+      ],
+      "verified_process_births": {
+        "57816": 134358086090907533,
+        "54524": 134358086091009417,
+        "56856": 134358086091304754,
+        "46852": 134358086164632473,
+        "36884": 134358086164903643,
+        "54588": 134358086164521701,
+        "52196": 134358086318434832,
+        "19732": 134358086318562576,
+        "33436": 134358086318900526,
+        "11484": 134358086904941564,
+        "24296": 134358086905271855,
+        "57468": 134358086905030329,
+        "50844": 134358087260115835,
+        "34340": 134358087260012899,
+        "26520": 134358087260337649,
+        "21900": 134358087604576592,
+        "25900": 134358087604809043,
+        "50028": 134358087604462887,
+        "50256": 134358087943225294,
+        "43016": 134358087943327110,
+        "27212": 134358087943559764,
+        "50880": 134358088279966541,
+        "15216": 134358088280085517,
+        "27548": 134358088280359549
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 19325,
+      "component_count": 898,
+      "cross_cell_component_count": 160,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/X09_E4_high_angle_metrics.json",
+      "sha256": "97f7b2b95d630fd0c0c96c4681742d3f55cd5c725d45609526feec038fb11629",
+      "first_12_components": [
+        {
+          "edge_count": 15678,
+          "length": 554829.0232720944,
+          "maximum_angle": 179.3050977742336,
+          "parent_cell_count": 853,
+          "C0_face_count": 10,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 145,
+          "length": 2085.8786685404552,
+          "maximum_angle": 71.3494404637012,
+          "parent_cell_count": 14,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 49,
+          "length": 1703.810868796971,
+          "maximum_angle": 175.69692586010638,
+          "parent_cell_count": 4,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 25,
+          "length": 1013.614040724311,
+          "maximum_angle": 101.12740325293119,
+          "parent_cell_count": 5,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 30,
+          "length": 876.4513791144476,
+          "maximum_angle": 167.2775708793486,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 30,
+          "length": 876.451378026671,
+          "maximum_angle": 167.27756895265566,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 24,
+          "length": 678.3295186754833,
+          "maximum_angle": 55.43427003697089,
+          "parent_cell_count": 3,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 24,
+          "length": 678.3295182044117,
+          "maximum_angle": 55.43427187040314,
+          "parent_cell_count": 3,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 43,
+          "length": 669.5170175192213,
+          "maximum_angle": 59.51768082360447,
+          "parent_cell_count": 6,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 20,
+          "length": 597.3212263144676,
+          "maximum_angle": 51.09787286737295,
+          "parent_cell_count": 3,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 20,
+          "length": 597.3212261924058,
+          "maximum_angle": 51.097872897619666,
+          "parent_cell_count": 3,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 31,
+          "length": 596.6807310915977,
+          "maximum_angle": 150.6372251836207,
+          "parent_cell_count": 4,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "X10",
+    "phase": "CAPABILITY",
+    "reason": "Strong bilateral sharp ornament capability; dense overlap obscures micro structure.",
+    "stage": "E5",
+    "artifact": "study/CAPABILITY/X10/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "68ea25d236b07165414ee7b05e867f7ea7a0d03ebf08bd4b1bfa1401dac78b1f",
+    "statistics": {
+      "vertex_count": 72098,
+      "face_count": 72144,
+      "edge_count": 144240,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        6116.7862786896,
+        2751.4129023507485,
+        4542.577514617427
+      ]
+    },
+    "sampled_contacts": 256,
+    "sample_cap_reached": true,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 118,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 67734.23497495957,
+        "surviving_sharp_edges": 288,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.494377752059843,
+          "p10": 24.43609739329204,
+          "median": 82.53318347982176,
+          "p90": 140.6213606879092,
+          "max": 176.40082765920315,
+          "mean": 81.94224412484307
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 64647.99038796379,
+        "visible_crease_survival_ratio": 0.9544359718813282,
+        "longest_high_dihedral_chain_length": 19114.711446742735,
+        "high45_edge_count": 206,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 118,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 67734.23535992291,
+        "surviving_sharp_edges": 288,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 1.4943768812952487,
+          "p10": 24.436097353828856,
+          "median": 81.26592079803335,
+          "p90": 141.0181122121427,
+          "max": 176.40082753002966,
+          "mean": 81.69649800845458
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 64449.4758184683,
+        "visible_crease_survival_ratio": 0.9515051801500347,
+        "longest_high_dihedral_chain_length": 19114.711526004307,
+        "high45_edge_count": 203,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 297.219000000041,
+      "peak_process_tree_plus_driver_bytes": 995479552,
+      "observed_worker_pids": [
+        6980,
+        8104,
+        15520,
+        15868,
+        17356,
+        17564,
+        17948,
+        22796,
+        23148,
+        23716,
+        31900,
+        36920,
+        38360,
+        39932,
+        43356,
+        43728,
+        43748,
+        47856,
+        51820,
+        52392,
+        53028,
+        53652,
+        54860,
+        55276,
+        57368,
+        57600,
+        58284
+      ],
+      "verified_process_births": {
+        "58284": 134358084106031032,
+        "53652": 134358084106135640,
+        "15868": 134358084106389910,
+        "23148": 134358084171588614,
+        "31900": 134358084171324976,
+        "52392": 134358084171219389,
+        "51820": 134358084325209332,
+        "17948": 134358084325470079,
+        "43748": 134358084325063014,
+        "55276": 134358084940044679,
+        "39932": 134358084940492409,
+        "36920": 134358084939743770,
+        "15520": 134358085317224871,
+        "17564": 134358085317454404,
+        "43356": 134358085317135803,
+        "43728": 134358085699045685,
+        "17356": 134358085698623150,
+        "54860": 134358085698771337,
+        "6980": 134358086117873681,
+        "22796": 134358086118035255,
+        "8104": 134358086118294525,
+        "57600": 134358086500741071,
+        "23716": 134358086501028092,
+        "57368": 134358086500632608,
+        "47856": 134358086891038972,
+        "53028": 134358086890793318,
+        "38360": 134358086890702413
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 44290,
+      "component_count": 259,
+      "cross_cell_component_count": 69,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/X10_E5_high_angle_metrics.json",
+      "sha256": "39780384588fa3dc9993bdf55853e885d9fe6130344916fd27a45b2132cfa15d",
+      "first_12_components": [
+        {
+          "edge_count": 43374,
+          "length": 5845790.094449312,
+          "maximum_angle": 179.54328987115292,
+          "parent_cell_count": 1926,
+          "C0_face_count": 14,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 12,
+          "length": 4893.880505066115,
+          "maximum_angle": 141.6612960301378,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 4893.880505066115,
+          "maximum_angle": 141.6612960301378,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 4893.880494668909,
+          "maximum_angle": 141.6612964955217,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 2950.7082047051563,
+          "maximum_angle": 140.74185936839248,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 2950.708202692248,
+          "maximum_angle": 140.74184288679976,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 2950.708202692247,
+          "maximum_angle": 140.74184288679973,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 11,
+          "length": 1191.0077386607634,
+          "maximum_angle": 154.80943938368932,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 11,
+          "length": 1001.2478119925288,
+          "maximum_angle": 139.69939858445662,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 15,
+          "length": 827.4113482077194,
+          "maximum_angle": 63.02782583376503,
+          "parent_cell_count": 4,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 15,
+          "length": 827.411348178083,
+          "maximum_angle": 63.02782583376501,
+          "parent_cell_count": 4,
+          "C0_face_count": 2,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 17,
+          "length": 713.8322731780121,
+          "maximum_angle": 49.29448686390765,
+          "parent_cell_count": 5,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "Y06",
+    "phase": "CAPABILITY",
+    "reason": "Complete actual Roof-transfer/fold/nesting sequence; asymmetrical burst rather than ordered whole-gate hierarchy.",
+    "stage": "E3",
+    "artifact": "study/CAPABILITY/Y06/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "21aedeb8ba2ab556d22ca156275cf754867ed63f32ffa932f40fecb0f7cef953",
+    "statistics": {
+      "vertex_count": 88030,
+      "face_count": 88076,
+      "edge_count": 176104,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        5060.258643891469,
+        1685.9037573856258,
+        4657.770543049627
+      ]
+    },
+    "sampled_contacts": 115,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 1,
+        "parent_cell_count": 85,
+        "C0_face_count": 4,
+        "cross_cell": true,
+        "geometric_length": 32754.8874257887,
+        "surviving_sharp_edges": 134,
+        "mean_sharpness": 11.0,
+        "max_sharpness": 11.0,
+        "junctions": 0,
+        "dihedral": {
+          "min": 0.953450829073121,
+          "p10": 24.20428375406683,
+          "median": 59.71126406213217,
+          "p90": 140.03343729149708,
+          "max": 175.55368725377227,
+          "mean": 74.54350648690276
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 31007.351473780556,
+        "visible_crease_survival_ratio": 0.9466480855424261,
+        "longest_high_dihedral_chain_length": 9442.210572456832,
+        "high45_edge_count": 89,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 191.375,
+      "peak_process_tree_plus_driver_bytes": 1237151744,
+      "observed_worker_pids": [
+        16872,
+        21900,
+        27056,
+        30076,
+        33440,
+        39128,
+        41604,
+        45252,
+        45920,
+        49732,
+        50576,
+        52712,
+        52936,
+        54592,
+        57936
+      ],
+      "verified_process_births": {
+        "52712": 134358087495384068,
+        "54592": 134358087495487655,
+        "57936": 134358087495738179,
+        "33440": 134358087858419730,
+        "49732": 134358087858525540,
+        "16872": 134358087858863740,
+        "45920": 134358088304115190,
+        "45252": 134358088304214258,
+        "52936": 134358088304467645,
+        "50576": 134358088751764395,
+        "27056": 134358088752006397,
+        "30076": 134358088751664253,
+        "41604": 134358089208440206,
+        "21900": 134358089208350812,
+        "39128": 134358089208680675
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 84247,
+      "component_count": 2199,
+      "cross_cell_component_count": 135,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/Y06_E3_high_angle_metrics.json",
+      "sha256": "9b3cab89dd3af941689d3081d8a0c6f104e2fa5e490d2fe00c2f7b79ae015663",
+      "first_12_components": [
+        {
+          "edge_count": 33888,
+          "length": 1665251.6135158027,
+          "maximum_angle": 179.48401783734394,
+          "parent_cell_count": 1717,
+          "C0_face_count": 17,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 2036,
+          "length": 36163.59831620502,
+          "maximum_angle": 166.21679039684122,
+          "parent_cell_count": 217,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 1246,
+          "length": 28123.88385599767,
+          "maximum_angle": 169.00125557570365,
+          "parent_cell_count": 184,
+          "C0_face_count": 3,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 635,
+          "length": 11415.06824220491,
+          "maximum_angle": 121.86674274708012,
+          "parent_cell_count": 27,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 635,
+          "length": 11415.06824220491,
+          "maximum_angle": 121.86674274708028,
+          "parent_cell_count": 27,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 527,
+          "length": 9934.424823469115,
+          "maximum_angle": 107.16049789303642,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 697,
+          "length": 7619.154004210755,
+          "maximum_angle": 98.46963289459251,
+          "parent_cell_count": 25,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 696,
+          "length": 7580.042040656622,
+          "maximum_angle": 98.46963289459364,
+          "parent_cell_count": 25,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 695,
+          "length": 7571.784512637171,
+          "maximum_angle": 98.65540968085713,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 695,
+          "length": 7571.78451263717,
+          "maximum_angle": 98.65540968085254,
+          "parent_cell_count": 26,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 473,
+          "length": 7164.526181561193,
+          "maximum_angle": 118.21366820237732,
+          "parent_cell_count": 22,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 473,
+          "length": 7164.52618156119,
+          "maximum_angle": 118.2136682023775,
+          "parent_cell_count": 22,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "Y07",
+    "phase": "CAPABILITY",
+    "reason": "Maximum broad distortion and deep nesting; capped contacts continue through all stages; fixed view clips extreme branches.",
+    "stage": "E3",
+    "artifact": "study/CAPABILITY/Y07/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "424f267d4bbc1709d27e82c5f8ef6844b627f8f1f8c4e537331d362b57bb9baa",
+    "statistics": {
+      "vertex_count": 72098,
+      "face_count": 72144,
+      "edge_count": 144240,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        9487.738557171184,
+        4095.8459907392253,
+        5636.988872087993
+      ]
+    },
+    "sampled_contacts": 256,
+    "sample_cap_reached": true,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 63,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 70475.05366622932,
+        "surviving_sharp_edges": 148,
+        "mean_sharpness": 14.0,
+        "max_sharpness": 14.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 3.9717469632346396,
+          "p10": 22.461550580122264,
+          "median": 65.97398510360534,
+          "p90": 137.20734674809327,
+          "max": 169.13321864004493,
+          "mean": 77.06471121333075
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 67392.35782284677,
+        "visible_crease_survival_ratio": 0.9562583398945358,
+        "longest_high_dihedral_chain_length": 24310.5043090263,
+        "high45_edge_count": 106,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 63,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 70475.04563369439,
+        "surviving_sharp_edges": 148,
+        "mean_sharpness": 14.0,
+        "max_sharpness": 14.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 3.972606305546581,
+          "p10": 20.81426248210403,
+          "median": 65.12239238087601,
+          "p90": 137.2073394225516,
+          "max": 169.13321864004493,
+          "mean": 76.65572244054115
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 66028.30192632106,
+        "visible_crease_survival_ratio": 0.9369032872928382,
+        "longest_high_dihedral_chain_length": 24310.504442458336,
+        "high45_edge_count": 107,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 143.10900000005495,
+      "peak_process_tree_plus_driver_bytes": 1002844160,
+      "observed_worker_pids": [
+        1400,
+        2172,
+        2836,
+        11168,
+        16172,
+        24312,
+        30592,
+        31712,
+        33504,
+        46780,
+        49964,
+        51640,
+        54604,
+        55076,
+        55260
+      ],
+      "verified_process_births": {
+        "31712": 134358089460069177,
+        "11168": 134358089460181494,
+        "16172": 134358089460411321,
+        "30592": 134358089689951828,
+        "55076": 134358089689685600,
+        "1400": 134358089689583889,
+        "54604": 134358090025287025,
+        "24312": 134358090025536007,
+        "2172": 134358090025149408,
+        "49964": 134358090371305001,
+        "51640": 134358090371526389,
+        "46780": 134358090371162646,
+        "33504": 134358090726346341,
+        "2836": 134358090725992918,
+        "55260": 134358090726105215
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 37710,
+      "component_count": 366,
+      "cross_cell_component_count": 80,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/Y07_E3_high_angle_metrics.json",
+      "sha256": "113e0e13d0ff2412ab6f5315274d1935d33723536a7a3f145d8c068525d75fe9",
+      "first_12_components": [
+        {
+          "edge_count": 36458,
+          "length": 4766748.080539287,
+          "maximum_angle": 179.44648851747638,
+          "parent_cell_count": 1846,
+          "C0_face_count": 15,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 12,
+          "length": 8424.754482598628,
+          "maximum_angle": 149.07018629869827,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 7544.977126196112,
+          "maximum_angle": 115.62707777657882,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 7384.022349384696,
+          "maximum_angle": 119.4875336801215,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 5888.8539513449805,
+          "maximum_angle": 122.40018906857063,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 5694.660345474676,
+          "maximum_angle": 127.76786096513054,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 5348.351999435127,
+          "maximum_angle": 103.05802134851358,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 5080.982572844879,
+          "maximum_angle": 147.78508331209994,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 4404.508745457502,
+          "maximum_angle": 114.53634918035344,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 4292.55662775155,
+          "maximum_angle": 118.3566360026024,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 3392.6466453159815,
+          "maximum_angle": 121.36403193604133,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        },
+        {
+          "edge_count": 12,
+          "length": 3284.1641772002895,
+          "maximum_angle": 126.7231020950261,
+          "parent_cell_count": 1,
+          "C0_face_count": 1,
+          "cross_cell": false
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "Y19",
+    "phase": "CAPABILITY",
+    "reason": "Relatively legible, ordered broad fold and sparse terminal nesting; panels remain visible.",
+    "stage": "E2",
+    "artifact": "study/CAPABILITY/Y19/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "43b5722b83241e05788ffc67abcd6cf90bff7a7e23749450ac2b62b987635f94",
+    "statistics": {
+      "vertex_count": 72014,
+      "face_count": 72060,
+      "edge_count": 144072,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4702.775145212359,
+        1382.0367670223598,
+        4088.8643376243604
+      ]
+    },
+    "sampled_contacts": 17,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 72,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 7515.044270129536,
+        "surviving_sharp_edges": 156,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 2.20008469967525,
+          "p10": 27.10629089087734,
+          "median": 56.89001574847952,
+          "p90": 152.8399695945982,
+          "max": 178.50867578226848,
+          "mean": 77.7007856014425
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 7064.199491162051,
+        "visible_crease_survival_ratio": 0.9400077015168783,
+        "longest_high_dihedral_chain_length": 2692.6565438918255,
+        "high45_edge_count": 91,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 97.71900000004098,
+      "peak_process_tree_plus_driver_bytes": 973398016,
+      "observed_worker_pids": [
+        5996,
+        21208,
+        24008,
+        30652,
+        32244,
+        36056,
+        40252,
+        44396,
+        48604,
+        51960,
+        52784,
+        54180
+      ],
+      "verified_process_births": {
+        "36056": 134358090948281094,
+        "32244": 134358090948390344,
+        "52784": 134358090948645629,
+        "54180": 134358091173075167,
+        "24008": 134358091172985262,
+        "44396": 134358091173309299,
+        "30652": 134358091471209802,
+        "48604": 134358091470975609,
+        "5996": 134358091470890200,
+        "51960": 134358091788035139,
+        "40252": 134358091787688897,
+        "21208": 134358091787786735
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 14521,
+      "component_count": 896,
+      "cross_cell_component_count": 271,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/Y19_E2_high_angle_metrics.json",
+      "sha256": "97a8e0847632aca3156b10cbbcb7c2ce32540f1702952091f96288f597961e20",
+      "first_12_components": [
+        {
+          "edge_count": 5962,
+          "length": 222792.864911717,
+          "maximum_angle": 178.50867578226848,
+          "parent_cell_count": 642,
+          "C0_face_count": 11,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 183,
+          "length": 2256.1456766643378,
+          "maximum_angle": 82.70872232854768,
+          "parent_cell_count": 18,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 183,
+          "length": 2256.1453128807916,
+          "maximum_angle": 82.70883022680499,
+          "parent_cell_count": 18,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 183,
+          "length": 2252.26264897898,
+          "maximum_angle": 83.37461143737085,
+          "parent_cell_count": 18,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 183,
+          "length": 2252.26251377619,
+          "maximum_angle": 83.374572957664,
+          "parent_cell_count": 18,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 71,
+          "length": 2192.539693081209,
+          "maximum_angle": 139.00574085796805,
+          "parent_cell_count": 16,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 173,
+          "length": 2058.863237093555,
+          "maximum_angle": 99.68649351116707,
+          "parent_cell_count": 23,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 173,
+          "length": 2058.8632117268876,
+          "maximum_angle": 99.68649098846146,
+          "parent_cell_count": 23,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 173,
+          "length": 2058.8631532979216,
+          "maximum_angle": 99.68648548936424,
+          "parent_cell_count": 23,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 173,
+          "length": 2058.8631047077183,
+          "maximum_angle": 99.68649391945634,
+          "parent_cell_count": 23,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 143,
+          "length": 1879.1048421434302,
+          "maximum_angle": 71.61234372696201,
+          "parent_cell_count": 16,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 143,
+          "length": 1879.1046409823568,
+          "maximum_angle": 71.61234937258867,
+          "parent_cell_count": 16,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  },
+  {
+    "id": "R20",
+    "phase": "CAPABILITY",
+    "reason": "Retained partial gate grammar: coordinated normal placement, persistent bilateral fans and five sparse event stages.",
+    "stage": "E5",
+    "artifact": "study/CAPABILITY/R20/attempt_001",
+    "status": "SUCCESS",
+    "geometry_sha256": "a0bdf1273eca4dfdff7aeb87e555884cf9b86974993c9789f071c08c8256b23c",
+    "statistics": {
+      "vertex_count": 72098,
+      "face_count": 72144,
+      "edge_count": 144240,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        4775.80535091851,
+        1517.7921569980851,
+        4201.505069599886
+      ]
+    },
+    "sampled_contacts": 25,
+    "sample_cap_reached": false,
+    "recorded_geometry_state": "SELF_INTERSECTING_CAPABILITY",
+    "networks": [
+      {
+        "network_id": "network-1",
+        "generation": 2,
+        "parent_cell_count": 87,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 9651.712609045462,
+        "surviving_sharp_edges": 204,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 2.866106464992488,
+          "p10": 24.345442434911106,
+          "median": 45.23732933547093,
+          "p90": 128.59645980726071,
+          "max": 178.87296087672897,
+          "mean": 59.28943604854441
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 9353.947020081749,
+        "visible_crease_survival_ratio": 0.9691489374968904,
+        "longest_high_dihedral_chain_length": 5943.478534490802,
+        "high45_edge_count": 103,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      },
+      {
+        "network_id": "network-2",
+        "generation": 2,
+        "parent_cell_count": 92,
+        "C0_face_count": 3,
+        "cross_cell": true,
+        "geometric_length": 9015.49591296612,
+        "surviving_sharp_edges": 220,
+        "mean_sharpness": 10.0,
+        "max_sharpness": 10.0,
+        "junctions": 1,
+        "dihedral": {
+          "min": 2.8657495057907165,
+          "p10": 24.707239648265553,
+          "median": 47.742941879508194,
+          "p90": 145.924804723509,
+          "max": 178.87293756432467,
+          "mean": 63.84932395764022
+        },
+        "visible_threshold_degrees": 20.0,
+        "high_dihedral_length": 8717.73028859485,
+        "visible_crease_survival_ratio": 0.9669717975310684,
+        "longest_high_dihedral_chain_length": 5307.261951001521,
+        "high45_edge_count": 124,
+        "note": "Declared-route adjacent-normal contrast, not occlusion-aware visibility or an aesthetic score."
+      }
+    ],
+    "process": {
+      "exit_code": 0,
+      "stop": null,
+      "seconds": 254.18799999996554,
+      "peak_process_tree_plus_driver_bytes": 770068480,
+      "observed_worker_pids": [
+        15256,
+        17928,
+        18676,
+        18792,
+        30968,
+        34304,
+        34332,
+        35012,
+        35016,
+        37016,
+        37744,
+        39488,
+        39884,
+        43004,
+        47164,
+        48628,
+        50660,
+        50772,
+        51844,
+        52028,
+        52784,
+        53476,
+        55204,
+        56460,
+        57424,
+        58152,
+        58292
+      ],
+      "verified_process_births": {
+        "39884": 134358083726066496,
+        "35016": 134358083726159968,
+        "55204": 134358083726414960,
+        "37744": 134358083798935153,
+        "34332": 134358083799364957,
+        "47164": 134358083799056058,
+        "30968": 134358083957824552,
+        "51844": 134358083957935116,
+        "50772": 134358083958227781,
+        "52784": 134358084251149836,
+        "58292": 134358084250691439,
+        "48628": 134358084250826888,
+        "56460": 134358084598103107,
+        "52028": 134358084598345594,
+        "37016": 134358084598010609,
+        "58152": 134358084950615162,
+        "15256": 134358084950061214,
+        "53476": 134358084950282778,
+        "39488": 134358085318883475,
+        "18792": 134358085319292158,
+        "50660": 134358085319016665,
+        "34304": 134358085685957387,
+        "57424": 134358085686338514,
+        "18676": 134358085686072705,
+        "35012": 134358086090904612,
+        "43004": 134358086091293236,
+        "17928": 134358086091016757
+      },
+      "unknown_creation_pids": [],
+      "memory_scope": "Driver plus creation-time-verified worker descendants; 0.5s samples; same-handle identity checked before cancellation."
+    },
+    "degenerate_fan_faces": 0,
+    "note": "Selected checkpoint, not necessarily the requested terminal. Contact counts are diagnostic; visual judgment is separate.",
+    "high_angle_components": {
+      "threshold_degrees": 20.0,
+      "high_angle_edge_count": 19014,
+      "component_count": 899,
+      "cross_cell_component_count": 263,
+      "scope": "Current whole-mesh adjacent-normal contrast, with actual positive face ancestry. No occlusion test or aesthetic score.",
+      "artifact": "renders/CAPABILITY/R20_E5_high_angle_metrics.json",
+      "sha256": "52f046d9c0447cab72226b856292fec44f20cf9233095cc57fe402bd939629e4",
+      "first_12_components": [
+        {
+          "edge_count": 8443,
+          "length": 357295.7719771515,
+          "maximum_angle": 178.90912437621967,
+          "parent_cell_count": 944,
+          "C0_face_count": 15,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 204,
+          "length": 4883.5089402388985,
+          "maximum_angle": 92.42999635095627,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 184,
+          "length": 4264.974996762167,
+          "maximum_angle": 91.25619396111682,
+          "parent_cell_count": 21,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 229,
+          "length": 4238.600267501637,
+          "maximum_angle": 121.5413401131447,
+          "parent_cell_count": 22,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 229,
+          "length": 4238.599995447318,
+          "maximum_angle": 121.5412741172116,
+          "parent_cell_count": 22,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 224,
+          "length": 4235.18774384404,
+          "maximum_angle": 90.97388140643396,
+          "parent_cell_count": 20,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 224,
+          "length": 4235.187098166188,
+          "maximum_angle": 90.9742860328265,
+          "parent_cell_count": 20,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 217,
+          "length": 3814.5042965024754,
+          "maximum_angle": 105.0379738371882,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 217,
+          "length": 3814.5041354362143,
+          "maximum_angle": 105.03796164855737,
+          "parent_cell_count": 24,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 164,
+          "length": 3769.540552961483,
+          "maximum_angle": 102.29270149397715,
+          "parent_cell_count": 20,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 185,
+          "length": 3578.0422701531065,
+          "maximum_angle": 106.80619199256563,
+          "parent_cell_count": 21,
+          "C0_face_count": 1,
+          "cross_cell": true
+        },
+        {
+          "edge_count": 185,
+          "length": 3578.041778193507,
+          "maximum_angle": 106.8059687513598,
+          "parent_cell_count": 21,
+          "C0_face_count": 1,
+          "cross_cell": true
+        }
+      ],
+      "retention": "Full actual component ancestry remains in the referenced external metrics file; lightweight Git table retains counts and first 12 recorded components."
+    }
+  }
+]

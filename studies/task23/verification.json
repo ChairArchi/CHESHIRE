@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "baseline": "66cb4f90d0b15834d358db5ce2569c813379b0b1",
+  "COMPAS": "2.15.1",
+  "installed_source": "compas/datastructures/mesh/subdivision.py",
+  "installed_source_sha256": "3cef6a2886c8699479570c69316eb858ad85a2f5b288ce0125b8f3b5ef7bbc41",
+  "tests": [
+    {
+      "fixture": "cube",
+      "generation": 1,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 24
+    },
+    {
+      "fixture": "cube",
+      "generation": 2,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 96
+    },
+    {
+      "fixture": "cube",
+      "generation": 3,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 384
+    },
+    {
+      "fixture": "column",
+      "generation": 1,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 24
+    },
+    {
+      "fixture": "column",
+      "generation": 2,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 96
+    },
+    {
+      "fixture": "column",
+      "generation": 3,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 384
+    },
+    {
+      "fixture": "U_gate",
+      "generation": 1,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 88
+    },
+    {
+      "fixture": "U_gate",
+      "generation": 2,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 352
+    },
+    {
+      "fixture": "U_gate",
+      "generation": 3,
+      "exact_coordinates": true,
+      "exact_oriented_topology": true,
+      "exact_decay_and_descendants": true,
+      "faces": 1408
+    }
+  ],
+  "ordering_differences": [],
+  "source_immutable": true,
+  "fractional_contract": "Modern finite Uniform transitions, independently tested; not original variable Chaikin appendix."
+}
