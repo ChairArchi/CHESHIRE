@@ -124,11 +124,23 @@ def package(root,lead,attempt):
         review['analysis/sections/'+source.name]=source
     for source in sorted((root/'analysis').glob('*.svg')):review['analysis/'+source.name]=source
     for source in sorted((root/'analysis').glob('*comparison*.png')):review['images/ancestry/'+source.name]=source
-    for n in ['backbone_detail.png','ancestry_detail.png','ancestry_underside.png','ancestry_detail_angle.png','ancestry_whole.png','scouting_whole.png','scouting_detail.png']:
+    for n in ['backbone_detail.png','ancestry_detail.png','ancestry_underside.png','ancestry_detail_angle.png','ancestry_whole.png','scouting_whole.png']:
         if (root/'analysis'/n).exists():review['images/ancestry/'+n]=root/'analysis'/n
-    for tag in ['first_comparison','scouting','second_comparison','curvature_comparison','amplified_comparison','final','geometry_evidence']:
+    sheets_by_tag={
+        'first_comparison':['close','detail_angle','oblique'],
+        'scouting':['oblique','underside','detail_angle'],
+        'second_comparison':['close','detail_angle'],
+        'curvature_comparison':['close','detail_angle'],
+        'amplified_comparison':['close','detail_angle'],
+        'final':['front','oblique','underside','detail','detail_angle','close','wire'],
+        'geometry_evidence':[],
+    }
+    for tag,views in sheets_by_tag.items():
         folder=root/'renders'/tag
-        for pattern in ['comparison_*.png','camera_manifest.json','projection_plan.json','*overlay.png']:
+        # Keep every final view and decisive earlier comparisons at original
+        # quality. Redundant intermediate wire/whole sheets stay external.
+        patterns=['comparison_'+v+'.png' for v in views]+['camera_manifest.json','projection_plan.json','*overlay.png']
+        for pattern in patterns:
             for source in sorted(folder.glob(pattern)):
                 review['images/'+tag+'/'+source.name]=source
     for source in sorted((root/'brief/references').glob('*.png')):
