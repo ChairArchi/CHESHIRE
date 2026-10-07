@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "insertion_order_invariant": true,
+  "center_depth": 9800.000890151423,
+  "expected_depth": 9800,
+  "pyrender_raw_center": 1.960592269897461,
+  "depth_correction": "pyrender 0.1.45 applies perspective linearization even to orthographic cameras; adapter inverses it, then applies orthographic linearization.",
+  "method": "Two coincident projected triangles at Y=0 and Y=-200, actual camera at Y=-10000. Near surface wins in both insertion orders."
+}

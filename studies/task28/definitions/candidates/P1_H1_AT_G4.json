@@ -1,0 +1,80 @@
+{
+  "id": "P1_H1_AT_G4",
+  "pass_id": "PASS1",
+  "rows": [
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "RATIO",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Existing all-zero backend; control or zero-valued later phase, no external smoothing modifier"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "RATIO",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Existing all-zero backend; control or zero-valued later phase, no external smoothing modifier"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "RATIO",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Existing all-zero backend; control or zero-valued later phase, no external smoothing modifier"
+    },
+    {
+      "weights": {
+        "wf": -280.0,
+        "w1": 0.8,
+        "we": 320.0,
+        "w2": -2.8,
+        "wp": 520.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": -0.9,
+        "w7": 0.8
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.5,
+      "source": "Task24 H1 mantle_macro"
+    }
+  ],
+  "hypothesis": "Exact old H1 macro coefficients at absolute CC4; old first H1 macro was CC4. Prior simple CC parents, not copied gate."
+}

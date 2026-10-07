@@ -1,0 +1,21 @@
+{
+  "actual_inspected": [
+    "pass1_G1/front_contact_sheet.png",
+    "pass1_G1/oblique_contact_sheet.png",
+    "P1_H1_REPEAT_G1_oblique.png",
+    "P1_C11A_REPEAT_G1_oblique.png"
+  ],
+  "early_macro_promising": [
+    "P1_H1_REPEAT",
+    "P1_C11A_REPEAT",
+    "P1_C11B_REPEAT"
+  ],
+  "rejected_as_lead_early": [
+    "P1_C26_REPEAT",
+    "P1_OLD_ONLY",
+    "P1_CURVE_REPEAT",
+    "P1_AMP_REPEAT"
+  ],
+  "reason": "C26 retains edges but does not generate a major new form at G1; later curvature-only rows begin as rounded prisms. Still kept as diagnostic controls.",
+  "next": "Test actual G2, then compare recovered nonstationary sequences."
+}

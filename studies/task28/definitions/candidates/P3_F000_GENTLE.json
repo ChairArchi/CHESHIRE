@@ -1,0 +1,102 @@
+{
+  "id": "P3_F000_GENTLE",
+  "pass_id": "PASS3",
+  "rows": [
+    {
+      "weights": {
+        "wf": -280.0,
+        "w1": 0.8,
+        "we": 320.0,
+        "w2": -2.8,
+        "wp": 520.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.5,
+      "source": "Task24 H1 numeric macro; matched Eq10/11 removal only"
+    },
+    {
+      "weights": {
+        "wf": 0.16,
+        "w1": -1.05,
+        "we": -0.05,
+        "w2": -0.9,
+        "wp": 0.045,
+        "w3": -0.8,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "RATIO",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task20/21 C11 macro_CC_2"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.0,
+        "we": -0.0,
+        "w2": -0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "RATIO",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task20/21 C11B continuation scaled by 0.0; Task25 GENTLE exact Eq4 pair"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task25 H1_CONVERGENCE_G2"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task25 H1_CONVERGENCE_G2"
+    }
+  ],
+  "hypothesis": "Correct only G3 premature secondary-fold loss: fixed actual macro/secondary parents, old C11 continuation strength x old Eq4 pair. G4/G5 identical recovered convergence, no external smoothing.",
+  "axes": {
+    "continuation_factor": 0.0,
+    "Eq4_pair": "GENTLE"
+  },
+  "spatial_scope": "GLOBAL"
+}

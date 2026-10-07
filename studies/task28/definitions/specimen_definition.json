@@ -1,0 +1,57 @@
+{
+  "schema": "TASK28_SIMPLE_COLUMN_V1",
+  "sections": [
+    {
+      "z": 0,
+      "width": 900,
+      "depth": 500,
+      "center": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "z": 650,
+      "width": 900,
+      "depth": 500,
+      "center": [
+        0,
+        0,
+        650
+      ]
+    },
+    {
+      "z": 1800,
+      "width": 900,
+      "depth": 500,
+      "center": [
+        0,
+        0,
+        1800
+      ]
+    }
+  ],
+  "perimeter": 8,
+  "angular_offset": 0.39269908169872414,
+  "frame": {
+    "T": [
+      0,
+      0,
+      1
+    ],
+    "U": [
+      1,
+      0,
+      0
+    ],
+    "V": [
+      0,
+      1,
+      0
+    ]
+  },
+  "caps": "Four coplanar quads per end: center, ring[2j], ring[2j+1], ring[2j+2]. Bottom reversed.",
+  "units": "Same unresolved coordinate units as old experiments; no rescaling",
+  "input_variation": "Unequal two longitudinal band lengths only; constant ellipse, straight centerline, no ornament or desired final silhouette."
+}

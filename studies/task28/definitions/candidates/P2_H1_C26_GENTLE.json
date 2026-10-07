@@ -1,0 +1,95 @@
+{
+  "id": "P2_H1_C26_GENTLE",
+  "pass_id": "PASS2",
+  "hypothesis": "Early sharp macro + actual prior geometry middle articulation + recovered zero-normal-offset later class blending; no external ornament/smoothing modifier.",
+  "roles": [
+    "H1",
+    "C26",
+    "GENTLE",
+    "GENTLE"
+  ],
+  "rows": [
+    {
+      "weights": {
+        "wf": -280.0,
+        "w1": 0.8,
+        "we": 320.0,
+        "w2": -2.8,
+        "wp": 520.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": -0.9,
+        "w7": 0.8
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {
+        "(3,3)": 2.0,
+        "(4,4)": -1.0,
+        "(5,5)": 2.5,
+        "(6,6)": -1.5
+      },
+      "unknown_u": 0.5,
+      "source": "Task24 H1 mantle_macro"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": -0.7,
+        "we": 0.0,
+        "w2": -2.8,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.25,
+        "w7": 0.65
+      },
+      "offset_units": "RATIO",
+      "u_map": {
+        "(3,3)": 1.0,
+        "(4,4)": -0.2
+      },
+      "unknown_u": 0.0,
+      "source": "Task22 C26"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task25 H1_CONVERGENCE_G2"
+    },
+    {
+      "weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "offset_units": "ABSOLUTE",
+      "u_map": {},
+      "unknown_u": 0.0,
+      "source": "Task25 H1_CONVERGENCE_G2"
+    }
+  ],
+  "axes": [
+    "4 recovered early mechanisms",
+    "4 recovered middle mechanisms",
+    "2 recovered later mechanisms"
+  ],
+  "spatial_scope": "GLOBAL; current topology motif map only, no gate regions"
+}

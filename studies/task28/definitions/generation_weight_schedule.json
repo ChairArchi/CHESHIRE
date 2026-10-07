@@ -1,0 +1,543 @@
+{
+  "candidate": "P4_C033_ZERO",
+  "definition": {
+    "id": "P4_C033_ZERO",
+    "pass_id": "PASS4",
+    "rows": [
+      {
+        "weights": {
+          "wf": -280.0,
+          "w1": 0.8,
+          "we": 320.0,
+          "w2": -2.8,
+          "wp": 520.0,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "ABSOLUTE",
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "source": "Task24 H1 numeric macro; matched Eq10/11 removal only"
+      },
+      {
+        "weights": {
+          "wf": 0.16,
+          "w1": -1.05,
+          "we": -0.05,
+          "w2": -0.9,
+          "wp": 0.045,
+          "w3": -0.8,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11 macro_CC_2"
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11B continuation scaled by 0.7; Task25 GENTLE exact Eq4 pair"
+      },
+      {
+        "weights": {
+          "wf": 0.0,
+          "w1": 0.0,
+          "we": 0.0,
+          "w2": 0.0,
+          "wp": 0.0,
+          "w3": -0.19999999999999998,
+          "w4": 0.11666666666666665,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "ABSOLUTE",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task25 convergence Eq4 pair scaled 0.3333333333333333 after observed G3 secondary/subfold formation"
+      },
+      {
+        "weights": {
+          "wf": 0.0,
+          "w1": 0.0,
+          "we": 0.0,
+          "w2": 0.0,
+          "wp": 0.0,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Existing all-zero backend; control or zero-valued later phase, no external smoothing modifier"
+      }
+    ],
+    "hypothesis": "Keep angular G1/G2 and measured G3 subfolds fixed. Reduce persistent late face-class distortion only; compare real curvature retention in same existing CC backend.",
+    "axes": {
+      "G4_Eq4_factor": 0.3333333333333333,
+      "G5_class_blend": "ZERO"
+    },
+    "spatial_scope": "GLOBAL"
+  },
+  "resolved_stages": [
+    {
+      "statistics": {
+        "vertex_count": 98,
+        "face_count": 96,
+        "edge_count": 192,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          1709.571957331561,
+          1458.5416899744287,
+          2840.0
+        ]
+      },
+      "bounds_min": [
+        -854.7859786657805,
+        -729.2708449872142,
+        -520.0
+      ],
+      "bounds_max": [
+        854.7859786657805,
+        729.2708449872143,
+        2320.0
+      ],
+      "coordinates_finite": true,
+      "zero_unsigned_fan_faces": 0,
+      "dihedral": {
+        "median": 85.73137024789301,
+        "p90": 126.19825410564418,
+        "max": 149.07191049609264,
+        "fraction_over_45": 0.8229166666666666
+      },
+      "vs_same_parent_standard_CC": {
+        "RMS": 379.7657401850196,
+        "maximum": 666.0838076874016,
+        "changed_vertices": 98
+      },
+      "eq4": {
+        "eligible": 0,
+        "fallback": 24
+      },
+      "status": "COMPUTED",
+      "candidate": "P4_C033_ZERO",
+      "generation": 1,
+      "parent": "E:\\CHESHIRE_DATA\\task28\\input\\G0",
+      "declared": {
+        "weights": {
+          "wf": -280.0,
+          "w1": 0.8,
+          "we": 320.0,
+          "w2": -2.8,
+          "wp": 520.0,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "ABSOLUTE",
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "source": "Task24 H1 numeric macro; matched Eq10/11 removal only"
+      },
+      "resolved_weights": {
+        "wf": -280.0,
+        "w1": 0.8,
+        "we": 320.0,
+        "w2": -2.8,
+        "wp": 520.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "normal_offset_scale": 1.0,
+      "OBJ": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 98,
+        "faces": 96,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "seconds": 0.04351640003733337,
+      "OBJ_bytes": 12455,
+      "geometry_sha256": "5f84e54ee27b272d2c99b1d774436e3bf95e56af0045f4911d4038da3fa5e2d2",
+      "ordered_geometry_sha256": "9cb8d56a820aa82bd37f0b8319aa031afd3cbe457b4cb2be3118534a627c56e5"
+    },
+    {
+      "statistics": {
+        "vertex_count": 386,
+        "face_count": 384,
+        "edge_count": 768,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          1568.5122077100154,
+          1322.080925831704,
+          2728.127709851219
+        ]
+      },
+      "bounds_min": [
+        -784.2561038550077,
+        -661.0404629158519,
+        -464.0638549256095
+      ],
+      "bounds_max": [
+        784.2561038550077,
+        661.040462915852,
+        2264.0638549256096
+      ],
+      "coordinates_finite": true,
+      "zero_unsigned_fan_faces": 0,
+      "dihedral": {
+        "median": 38.120320488453245,
+        "p90": 109.93342342234142,
+        "max": 146.55916011659795,
+        "fraction_over_45": 0.4270833333333333
+      },
+      "vs_same_parent_standard_CC": {
+        "RMS": 167.61743307197642,
+        "maximum": 331.3795155141253,
+        "changed_vertices": 386
+      },
+      "eq4": {
+        "eligible": 96,
+        "fallback": 0
+      },
+      "status": "COMPUTED",
+      "candidate": "P4_C033_ZERO",
+      "generation": 2,
+      "parent": "E:\\CHESHIRE_DATA\\task28\\candidates\\P4_C033_ZERO\\G1",
+      "declared": {
+        "weights": {
+          "wf": 0.16,
+          "w1": -1.05,
+          "we": -0.05,
+          "w2": -0.9,
+          "wp": 0.045,
+          "w3": -0.8,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11 macro_CC_2"
+      },
+      "resolved_weights": {
+        "wf": 85.56037306883387,
+        "w1": -1.05,
+        "we": -26.737616584010585,
+        "w2": -0.9,
+        "wp": 24.063854925609526,
+        "w3": -0.8,
+        "w4": 0.5,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "normal_offset_scale": 534.7523316802117,
+      "OBJ": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 386,
+        "faces": 384,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "seconds": 0.15140099998097867,
+      "OBJ_bytes": 48999,
+      "geometry_sha256": "7e29aec1ceff4757d8d436f936ad76f467b8db793fe26cc3ff61cffe50267109",
+      "ordered_geometry_sha256": "13afaf32ee1d0152eba137815c37a790f6567b16c9585173c4b0a9c21a741a91"
+    },
+    {
+      "statistics": {
+        "vertex_count": 1538,
+        "face_count": 1536,
+        "edge_count": 3072,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          1512.649633211241,
+          1278.240914905717,
+          2687.811520232446
+        ]
+      },
+      "bounds_min": [
+        -756.3248166056205,
+        -639.1204574528585,
+        -443.90576011622306
+      ],
+      "bounds_max": [
+        756.3248166056205,
+        639.1204574528585,
+        2243.905760116223
+      ],
+      "coordinates_finite": true,
+      "zero_unsigned_fan_faces": 0,
+      "dihedral": {
+        "median": 33.279925821664534,
+        "p90": 101.35808809759239,
+        "max": 177.32922702775286,
+        "fraction_over_45": 0.3177083333333333
+      },
+      "vs_same_parent_standard_CC": {
+        "RMS": 62.089726287281216,
+        "maximum": 192.42506237635936,
+        "changed_vertices": 1538
+      },
+      "eq4": {
+        "eligible": 384,
+        "fallback": 0
+      },
+      "status": "COMPUTED",
+      "candidate": "P4_C033_ZERO",
+      "generation": 3,
+      "parent": "E:\\CHESHIRE_DATA\\task28\\candidates\\P4_C033_ZERO\\G2",
+      "declared": {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11B continuation scaled by 0.7; Task25 GENTLE exact Eq4 pair"
+      },
+      "resolved_weights": {
+        "wf": 31.15883504822141,
+        "w1": -0.735,
+        "we": -9.73713595256919,
+        "w2": -0.63,
+        "wp": 8.763422357312272,
+        "w3": -0.6,
+        "w4": 0.35,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "normal_offset_scale": 278.20388435911974,
+      "OBJ": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 1538,
+        "faces": 1536,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "seconds": 0.6103782000718638,
+      "OBJ_bytes": 198482,
+      "geometry_sha256": "f5eca22ba7320feea8ed6753f68f453bf05af77b4e89c05420f78af73db64310",
+      "ordered_geometry_sha256": "761753304adfff16eb184b778d685ebbb4a9a87cef6bc48069999307a83a3e50"
+    },
+    {
+      "statistics": {
+        "vertex_count": 6146,
+        "face_count": 6144,
+        "edge_count": 12288,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          1460.8479678770618,
+          1228.7537888202164,
+          2637.7409049155194
+        ]
+      },
+      "bounds_min": [
+        -730.4239839385309,
+        -614.3768944101082,
+        -418.87045245775965
+      ],
+      "bounds_max": [
+        730.4239839385309,
+        614.3768944101082,
+        2218.8704524577597
+      ],
+      "coordinates_finite": true,
+      "zero_unsigned_fan_faces": 0,
+      "dihedral": {
+        "median": 12.739802954270782,
+        "p90": 41.08830849405487,
+        "max": 177.5621402925392,
+        "fraction_over_45": 0.09033203125
+      },
+      "vs_same_parent_standard_CC": {
+        "RMS": 6.576552826333268,
+        "maximum": 32.211454951017735,
+        "changed_vertices": 1536
+      },
+      "eq4": {
+        "eligible": 1536,
+        "fallback": 0
+      },
+      "status": "COMPUTED",
+      "candidate": "P4_C033_ZERO",
+      "generation": 4,
+      "parent": "E:\\CHESHIRE_DATA\\task28\\candidates\\P4_C033_ZERO\\G3",
+      "declared": {
+        "weights": {
+          "wf": 0.0,
+          "w1": 0.0,
+          "we": 0.0,
+          "w2": 0.0,
+          "wp": 0.0,
+          "w3": -0.19999999999999998,
+          "w4": 0.11666666666666665,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "ABSOLUTE",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task25 convergence Eq4 pair scaled 0.3333333333333333 after observed G3 secondary/subfold formation"
+      },
+      "resolved_weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": -0.19999999999999998,
+        "w4": 0.11666666666666665,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "normal_offset_scale": 1.0,
+      "OBJ": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 6146,
+        "faces": 6144,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "seconds": 3.939074599999003,
+      "OBJ_bytes": 824817,
+      "geometry_sha256": "b2cc967b0959ec0778fdada11e315dbfe61f51ae7401655e1ede8968ae42bb65",
+      "ordered_geometry_sha256": "09e1c07b3a49b4d746f81d1ed516b11d08b3bcf15a25b84c10b207b5e290bddb"
+    },
+    {
+      "statistics": {
+        "vertex_count": 24578,
+        "face_count": 24576,
+        "edge_count": 49152,
+        "boundary_edge_count": 0,
+        "is_manifold": true,
+        "is_closed": true,
+        "bounding_box": [
+          1445.756867350666,
+          1206.0930173069664,
+          2614.35175409274
+        ]
+      },
+      "bounds_min": [
+        -722.878433675333,
+        -603.0465086534832,
+        -407.1758770463699
+      ],
+      "bounds_max": [
+        722.878433675333,
+        603.0465086534832,
+        2207.1758770463703
+      ],
+      "coordinates_finite": true,
+      "zero_unsigned_fan_faces": 0,
+      "dihedral": {
+        "median": 5.823248385839772,
+        "p90": 18.941542286681994,
+        "max": 179.87788016397417,
+        "fraction_over_45": 0.025797526041666668
+      },
+      "vs_same_parent_standard_CC": {
+        "RMS": 5.0132238305607735e-14,
+        "maximum": 4.549728090486446e-13,
+        "changed_vertices": 0
+      },
+      "eq4": {
+        "eligible": 6144,
+        "fallback": 0
+      },
+      "status": "COMPUTED",
+      "candidate": "P4_C033_ZERO",
+      "generation": 5,
+      "parent": "E:\\CHESHIRE_DATA\\task28\\candidates\\P4_C033_ZERO\\G4",
+      "declared": {
+        "weights": {
+          "wf": 0.0,
+          "w1": 0.0,
+          "we": 0.0,
+          "w2": 0.0,
+          "wp": 0.0,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Existing all-zero backend; control or zero-valued later phase, no external smoothing modifier"
+      },
+      "resolved_weights": {
+        "wf": 0.0,
+        "w1": 0.0,
+        "we": 0.0,
+        "w2": 0.0,
+        "wp": 0.0,
+        "w3": 0.0,
+        "w4": 0.0,
+        "w6": 0.0,
+        "w7": 0.0
+      },
+      "normal_offset_scale": 51.022873969740346,
+      "OBJ": {
+        "actual_file_read": true,
+        "exact_XYZ_oriented_faces": true,
+        "vertices": 24578,
+        "faces": 24576,
+        "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+      },
+      "seconds": 10.398108400055207,
+      "OBJ_bytes": 3369777,
+      "geometry_sha256": "65332e97fbaf55cc0a53a7570b17044384726677f16dc4805004b0241d5fb275",
+      "ordered_geometry_sha256": "5b18447158a225bde71a8f2d49ff2243f497bfc9ebb8dae2e04417ae89702108"
+    }
+  ],
+  "policy": "Exact actual global weights and current edge-scale offsets. No external smoothing modifier."
+}
