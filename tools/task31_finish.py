@@ -323,7 +323,8 @@ def publish(existing=False):
     dest.mkdir(exist_ok=existing)
     for group in ('analysis','definitions','docs'):
         for p in (ROOT/group).glob('*'):
-            if p.is_file():d=dest/group/p.name;d.parent.mkdir(exist_ok=True);shutil.copy2(p,d)
+            if p.is_file() and str(p.relative_to(ROOT)).replace('\\','/') not in POSTCOMMIT:
+                d=dest/group/p.name;d.parent.mkdir(exist_ok=True);shutil.copy2(p,d)
     for p in (ROOT/'renders').glob('TASK*.png'):
         d=dest/'renders'/p.name;d.parent.mkdir(exist_ok=True);shutil.copy2(p,d)
     snapshot=ROOT/'source';snapshot.mkdir(exist_ok=True)
