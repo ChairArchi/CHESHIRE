@@ -1,0 +1,48 @@
+{
+  "type": "Two explicit shared rectangular column-to-horizontal-lintel ports",
+  "G0_vertices": 160,
+  "G0_faces": 166,
+  "G0_triangles": 16,
+  "G0_quads": 150,
+  "topology": "One connected closed oriented manifold, Euler characteristic 2",
+  "column_rings": "8 stations x 8 points on each support, elliptical first six, RECT8 final two",
+  "port": "Remove corresponding lintel bottom grid cells. Registry reuses all eight actual perimeter vertices of each column final ring; two unused hole-center grid vertices pruned. No overlap or implicit boolean.",
+  "frames": {
+    "column": {
+      "T": [
+        0,
+        0,
+        1
+      ],
+      "U": [
+        1,
+        0,
+        0
+      ],
+      "V": [
+        0,
+        1,
+        0
+      ]
+    },
+    "lintel": {
+      "T": [
+        1,
+        0,
+        0
+      ],
+      "U": [
+        0,
+        0,
+        1
+      ],
+      "V": [
+        0,
+        -1,
+        0
+      ]
+    }
+  },
+  "registry": "Input coordinate key rounded to 10 decimal places; only declared G0 port/beam grid matching. Subsequent reflection is constructed from actual CC parent/child genealogy, never nearest-position matching.",
+  "control_and_profile": "Same vertex IDs, oriented face connectivity and semantic parts. Different section widths/depths and resulting port-grid coordinates. No other construction difference."
+}

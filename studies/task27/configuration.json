@@ -1,0 +1,39 @@
+{
+  "baseline": "53bea0fda2779cb63a6ef31f5b7eb9c5eeff7392",
+  "configs": {
+    "R1": {
+      "offset_ratio": 0.08,
+      "face_gain": 1.0,
+      "edge_gain": 1.0
+    },
+    "R2": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0
+    },
+    "R3": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.65
+    },
+    "R4": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.65
+    }
+  },
+  "paths": [
+    "CONTROL_CC",
+    "PROFILE_CC",
+    "PROFILE_STATIC",
+    "PROFILE_DYNAMIC"
+  ],
+  "scope": "New connected port gate, current-geometry feedback. No Task26 recipe continuation.",
+  "revision_reasons": {
+    "R2": "R1 true CC/profile separates macro form, but local Eq4 coefficients remain predominantly convex and detail reads as small dimples. Change only face_gain 1->3 to permit negative vertex-derived coefficients and secondary curvature; no generation-strength schedule. CC controls are the actual unchanged R1 CC paths.",
+    "R3": "R2 G4 produces secondary facets and smaller ridges but repeatedly extrapolates already sharp places. Add actual neighbor-normal contrast K, damping w3 by 1-.65*min(K/.35,1), measured freshly per dynamic generation. Other mappings/settings unchanged; test relief stabilization rather than a generation strength schedule.",
+    "R4": "Same numeric parameters as R3. Correct folded-face h measurement to unsigned centroid-fan area, independent of polygon cycle start/reflection. R3 symmetry defect and all previous geometry/captures remain preserved; no forced coordinate mirroring."
+  }
+}

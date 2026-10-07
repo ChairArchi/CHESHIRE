@@ -1,0 +1,64 @@
+{
+  "scope": "Uniform whole-mesh CC topology with spatially varying point placement; not adaptive topology refinement or Task26 route-fold continuation.",
+  "measurement": {
+    "station_center": "Mean CURRENT XYZ of persistent actual station-ring corners; authored coordinates are never reapplied.",
+    "section_width_depth": "Extents of CURRENT side mesh intersected by the current center plane. Nonplanar quad measurement uses a rotation/reflection-invariant centroid fan; saved quads remain unchanged.",
+    "face_center_normal_area": "Current COMPAS face_centroid and face_normal; current unsigned centroid-fan area from saved vertices. R4 does not use signed-reference COMPAS face_area.",
+    "longitudinal": "(current centroid coordinate - current first station coordinate) / current station span; Z for columns, X for lintel.",
+    "T": "Unit difference of adjacent CURRENT section-center positions.",
+    "W": "Current section width interpolated at current face centroid along the part.",
+    "C": "clip(1-W/Wbody,0,1), with current body station width; lintel body reference is its current median thickness.",
+    "E": "clip((W/Wneck-1)/3,0,1), with current neck station width; lintel uses its current median thickness.",
+    "S": "Current section-width derivative along current station positions, interpolated at the face centroid and clipped to [-2,2].",
+    "K": "Mean over actual face neighbors of clip((1-dot(current unit normals))/2,0,1). Added for R3.",
+    "h": "sqrt(sum of unsigned CURRENT centroid-fan triangle areas); invariant to cyclic rotation, reversed cycle and reflection, including folded/nonplanar quads. R4 corrects COMPAS signed-reference polygon-area measurement.",
+    "sharpness": "Maximum current crease attribute of incident face edges, zero in all four paths; no crease network is active.",
+    "ancestry": "Actual coarse face source IDs, inherited semantic part/band and verified immediately previous V/F/E/E point origins. Geometry coefficients never replace positive semantic ancestry."
+  },
+  "mapping": {
+    "O": "max(0,1-abs(dot(current normal,T)))",
+    "A": "0.5+0.5*abs(current normal Y)",
+    "B": "0.65 for LINTEL; 1 for column sides; all BASE face parameters are exactly zero",
+    "k": "0.35+0.4*C+0.25*E+0.2*min(abs(S),1)",
+    "D": "1-curvature_gain*min(K/0.35,1); R3 range [0.35,1]",
+    "wf": "offset_ratio*h*k*O*A*B",
+    "w1": "-edge_gain*(0.12+0.25*C)",
+    "we": "-0.35*wf",
+    "w2": "-edge_gain*(0.12+0.30*C)",
+    "wp": "0.08*wf",
+    "w3": "-face_gain*(0.45+1.25*C+0.35*E)*O*D",
+    "w4": "(0.35+0.30*E)*O",
+    "point_assignment": "Face wf/w3/w4 directly; edge w1/we arithmetic mean of its two current face rules; corner w2/wp mean of current incident face rules.",
+    "normals": "Existing face extrusion uses unit face normal; edge extrusion uses mean neighboring face normals; corner extrusion normalizes the incident mean.",
+    "equation4": "P=((V*(1+w3)+F*(1-w3))*(1+w4)+(E1+E2)*(1-w4))/4 + wf*n; only verified prior-CC child quads are eligible. G0 has no prior origins, so G1 uses existing face centroid placement plus wf instead.",
+    "standard_control": "Existing crease_subdivide_once with empty networks, all extra weights/displacement disabled.",
+    "static": "Compute all mapped face values at G0 only; every actual child inherits its parent's values exactly. Current observations are saved for diagnostics, never consumed by its next mapping.",
+    "dynamic": "Read the immediately previous saved mesh/state, measure current sections/centroids/normals/area/K and remap every generation. Generation number is recorded, not used as a strength multiplier."
+  },
+  "configurations": {
+    "R1": {
+      "offset_ratio": 0.08,
+      "face_gain": 1.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.0
+    },
+    "R2": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.0
+    },
+    "R3": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.65
+    },
+    "R4": {
+      "offset_ratio": 0.08,
+      "face_gain": 3.0,
+      "edge_gain": 1.0,
+      "curvature_gain": 0.65
+    }
+  }
+}

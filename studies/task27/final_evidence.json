@@ -1,0 +1,840 @@
+{
+  "comparison_generation": 4,
+  "lead_generation": 5,
+  "comparisons": [
+    {
+      "pair": [
+        "R1_CONTROL_CC_G4",
+        "R1_PROFILE_CC_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R1_CONTROL_CC_G4\\geometry.json.gz",
+          "sha256": "df15c05c98abba73611662e4cf059465b39fbe6f50a74b583839cb560675c0a4"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R1_PROFILE_CC_G4\\geometry.json.gz",
+          "sha256": "e3857cc76babb94d99317ffa589940eb386c4668aabc2c7bb6f7212665ad91ff"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "06a185e801315c8e8fc480b3805e77e5dfa4d173da4615faf3ee07fcbd5314ea",
+      "vertices": 41474,
+      "displacement": {
+        "min": 0.0,
+        "median": 38.226169396450636,
+        "p90": 99.28067779541016,
+        "p99": 133.7357151019494,
+        "max": 140.51862532316423,
+        "rms": 58.8105265835918,
+        "over_001": 41198
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "R4_PROFILE_STATIC_G1",
+        "R4_PROFILE_DYNAMIC_G1"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_STATIC_G1\\geometry.json.gz",
+          "sha256": "e0fed1a1be25c100ed00e5de7a52591f22deb5a17fee7ff324451249a277f29d"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_DYNAMIC_G1\\geometry.json.gz",
+          "sha256": "f96c4698e4a97ce12563230390cd1ca3334fac2a37b0ebf25434fd70e087ea22"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "8aa3bf402b2d5df35dfa95e34eed8fea56d314764e9e60c7f4d53216bf2f8c6d",
+      "vertices": 650,
+      "displacement": {
+        "min": 0.0,
+        "median": 0.0,
+        "p90": 0.0,
+        "p99": 0.0,
+        "max": 0.0,
+        "rms": 0.0,
+        "over_001": 0
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "R4_PROFILE_STATIC_G2",
+        "R4_PROFILE_DYNAMIC_G2"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_STATIC_G2\\geometry.json.gz",
+          "sha256": "246b66251e103e28acff778487ede8474f8ffbf2d8f37bdf4f29fc3a7fcedd0f"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_DYNAMIC_G2\\geometry.json.gz",
+          "sha256": "49f09ff48789be314f83adb3c3df4afb15305ef90b42118586a2760564e5d168"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "ba38dc3a1816f13913c0b693ad5054707edfc6fc28946c91185d5b6f2b12938a",
+      "vertices": 2594,
+      "displacement": {
+        "min": 0.0,
+        "median": 1.2174105897991723,
+        "p90": 29.81330395926184,
+        "p99": 80.37790864184035,
+        "max": 164.17141184074444,
+        "rms": 19.785675826232612,
+        "over_001": 2432
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "R4_PROFILE_STATIC_G3",
+        "R4_PROFILE_DYNAMIC_G3"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_STATIC_G3\\geometry.json.gz",
+          "sha256": "f360078210d3c92aacd5bbb53c9da9c11fb30e9f4c1c5dd55a828af2a60891a9"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_DYNAMIC_G3\\geometry.json.gz",
+          "sha256": "2dccb57485f04f096290a05d6977fca66fc814ab51af4c85e4926adc842b8407"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "578cec5ec975cacdcaee59d8c7c9afe27290625d6c9d32cf2ce5c35111afe753",
+      "vertices": 10370,
+      "displacement": {
+        "min": 0.0,
+        "median": 5.383918842367821,
+        "p90": 39.73994444888027,
+        "p99": 137.07364112872088,
+        "max": 225.83532737209407,
+        "rms": 30.534047851995293,
+        "over_001": 9920
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "R4_PROFILE_STATIC_G4",
+        "R4_PROFILE_DYNAMIC_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_STATIC_G4\\geometry.json.gz",
+          "sha256": "a9a806982e38a6f8767b580804a8aa5c3e1dbb7500b37b94da1a20284dc7d430"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_DYNAMIC_G4\\geometry.json.gz",
+          "sha256": "8956a5f846f7ab8a9bfbd0be7814f021728f4e9f21db3cc9d2ff21a3cb1c13fc"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "06a185e801315c8e8fc480b3805e77e5dfa4d173da4615faf3ee07fcbd5314ea",
+      "vertices": 41474,
+      "displacement": {
+        "min": 0.0,
+        "median": 11.988015098723494,
+        "p90": 52.129747640351276,
+        "p99": 174.29811874924962,
+        "max": 279.7043746191452,
+        "rms": 38.838851795012765,
+        "over_001": 39912
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    },
+    {
+      "pair": [
+        "R1_PROFILE_CC_G4",
+        "R4_PROFILE_DYNAMIC_G4"
+      ],
+      "inputs": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R1_PROFILE_CC_G4\\geometry.json.gz",
+          "sha256": "e3857cc76babb94d99317ffa589940eb386c4668aabc2c7bb6f7212665ad91ff"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\task27\\stages\\R4_PROFILE_DYNAMIC_G4\\geometry.json.gz",
+          "sha256": "8956a5f846f7ab8a9bfbd0be7814f021728f4e9f21db3cc9d2ff21a3cb1c13fc"
+        }
+      ],
+      "exact_vertex_IDs_oriented_connectivity": true,
+      "topology_sha256": "06a185e801315c8e8fc480b3805e77e5dfa4d173da4615faf3ee07fcbd5314ea",
+      "vertices": 41474,
+      "displacement": {
+        "min": 0.0,
+        "median": 33.33034773841757,
+        "p90": 105.12902900890255,
+        "p99": 208.00082632633763,
+        "max": 365.7616037293304,
+        "rms": 65.90481834480275,
+        "over_001": 41376
+      },
+      "interpretation": "Actual position differences on identical saved point IDs/face cycles; this alone does not prove a fold or a through-hole."
+    }
+  ],
+  "parameter_table": [
+    {
+      "name": "R4_PROFILE_DYNAMIC_G1",
+      "input_generation": 0,
+      "output_generation": 1,
+      "input_body_width": 900.0,
+      "input_neck_width": 340.0,
+      "input_neck_depth": 260.0,
+      "vertices": 650,
+      "faces": 648,
+      "parameters": {
+        "wf": {
+          "min": 0.0,
+          "median": 8.104934724509025,
+          "max": 18.807489898170108
+        },
+        "w1": {
+          "min": -0.17833333333333332,
+          "median": -0.12,
+          "max": 0.0
+        },
+        "w2": {
+          "min": -0.18999999999999997,
+          "median": -0.12,
+          "max": 0.0
+        },
+        "w3": {
+          "min": -1.9538951179649482,
+          "median": -0.9765922810333639,
+          "max": 0.0
+        },
+        "w4": {
+          "min": 0.0,
+          "median": 0.35000000000000003,
+          "max": 0.6029411764705882
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 1.638019400066696,
+        "sampled_peak_tree_plus_driver_bytes": 184008704,
+        "memory_guard_bytes": 12484858880,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      },
+      "times": {
+        "parent_file_read": 0.004827600088901818,
+        "measure_map_subdivide_state": 0.0741654000012204,
+        "output_section_observation": 0.08931950002443045,
+        "checkpoint_export_reread": 0.05064160004258156
+      },
+      "OBJ_bytes": 58207
+    },
+    {
+      "name": "R4_PROFILE_DYNAMIC_G2",
+      "input_generation": 1,
+      "output_generation": 2,
+      "input_body_width": 816.7500234951158,
+      "input_neck_width": 500.4013199395197,
+      "input_neck_depth": 328.6299981354255,
+      "vertices": 2594,
+      "faces": 2592,
+      "parameters": {
+        "wf": {
+          "min": 0.0,
+          "median": 3.743717186456146,
+          "max": 9.415956956543956
+        },
+        "w1": {
+          "min": -0.19209887381886856,
+          "median": -0.12214585851722853,
+          "max": 0.0
+        },
+        "w2": {
+          "min": -0.20651864858264227,
+          "median": -0.12257503022067424,
+          "max": 0.0
+        },
+        "w3": {
+          "min": -1.9830691433258953,
+          "median": -1.2152042906928444,
+          "max": 0.0
+        },
+        "w4": {
+          "min": 0.0,
+          "median": 0.31401361021588975,
+          "max": 0.4844636723236005
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 2.685507499962114,
+        "sampled_peak_tree_plus_driver_bytes": 197369856,
+        "memory_guard_bytes": 12481514905,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      },
+      "times": {
+        "parent_file_read": 0.008027600008063018,
+        "measure_map_subdivide_state": 0.3067741999402642,
+        "output_section_observation": 0.3787585999816656,
+        "checkpoint_export_reread": 0.16340339998714626
+      },
+      "OBJ_bytes": 239788
+    },
+    {
+      "name": "R4_PROFILE_DYNAMIC_G3",
+      "input_generation": 2,
+      "output_generation": 3,
+      "input_body_width": 795.4505755611026,
+      "input_neck_width": 536.9879853193215,
+      "input_neck_depth": 343.3207358627873,
+      "vertices": 10370,
+      "faces": 10368,
+      "parameters": {
+        "wf": {
+          "min": 0.0,
+          "median": 1.6075222839586885,
+          "max": 7.68562174845355
+        },
+        "w1": {
+          "min": -0.18793069231059142,
+          "median": -0.12050641025366594,
+          "max": 0.0
+        },
+        "w2": {
+          "min": -0.2015168307727097,
+          "median": -0.12060769230439913,
+          "max": 0.0
+        },
+        "w3": {
+          "min": -2.023728938236799,
+          "median": -0.9675346429813347,
+          "max": 0.0
+        },
+        "w4": {
+          "min": 0.0,
+          "median": 0.2933998737063497,
+          "max": 0.4585187830330714
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 5.874480800004676,
+        "sampled_peak_tree_plus_driver_bytes": 243085312,
+        "memory_guard_bytes": 12474022912,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      },
+      "times": {
+        "parent_file_read": 0.02802159998100251,
+        "measure_map_subdivide_state": 1.4320800000568852,
+        "output_section_observation": 1.4257231000810862,
+        "checkpoint_export_reread": 0.5978328000055626
+      },
+      "OBJ_bytes": 973082
+    },
+    {
+      "name": "R4_PROFILE_DYNAMIC_G4",
+      "input_generation": 3,
+      "output_generation": 4,
+      "input_body_width": 788.5125845348934,
+      "input_neck_width": 548.1155851904664,
+      "input_neck_depth": 348.9119996988836,
+      "vertices": 41474,
+      "faces": 41472,
+      "parameters": {
+        "wf": {
+          "min": 0.0,
+          "median": 0.6678324999645933,
+          "max": 6.386069520435205
+        },
+        "w1": {
+          "min": -0.18700499583105196,
+          "median": -0.12,
+          "max": 0.0
+        },
+        "w2": {
+          "min": -0.20040599499726236,
+          "median": -0.12,
+          "max": 0.0
+        },
+        "w3": {
+          "min": -2.1722074857509157,
+          "median": -0.8918955295635808,
+          "max": 0.0
+        },
+        "w4": {
+          "min": 0.0,
+          "median": 0.29845044089827905,
+          "max": 0.47017017605452077
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 21.239804100012407,
+        "sampled_peak_tree_plus_driver_bytes": 423878656,
+        "memory_guard_bytes": 12446429798,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      },
+      "times": {
+        "parent_file_read": 0.11104850005358458,
+        "measure_map_subdivide_state": 6.441806499962695,
+        "output_section_observation": 6.237689300091006,
+        "checkpoint_export_reread": 2.45322380005382
+      },
+      "OBJ_bytes": 4273267
+    },
+    {
+      "name": "R4_PROFILE_DYNAMIC_G5",
+      "input_generation": 4,
+      "output_generation": 5,
+      "input_body_width": 784.9106282875641,
+      "input_neck_width": 559.7730373671652,
+      "input_neck_depth": 361.2705591340618,
+      "vertices": 165890,
+      "faces": 165888,
+      "parameters": {
+        "wf": {
+          "min": 0.0,
+          "median": 0.30194425338240544,
+          "max": 5.532012561614131
+        },
+        "w1": {
+          "min": -0.18495814197387384,
+          "median": -0.12002525789590211,
+          "max": 0.0
+        },
+        "w2": {
+          "min": -0.19794977036864858,
+          "median": -0.12003030947508253,
+          "max": 0.0
+        },
+        "w3": {
+          "min": -2.1027148635034423,
+          "median": -0.789428149368729,
+          "max": 0.0
+        },
+        "w4": {
+          "min": 0.0,
+          "median": 0.29356270320051714,
+          "max": 0.4628288067485938
+        }
+      },
+      "process": {
+        "exit_code": 0,
+        "resource_stop": null,
+        "seconds": 87.32429670006968,
+        "sampled_peak_tree_plus_driver_bytes": 1143013376,
+        "memory_guard_bytes": 12473980313,
+        "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+      },
+      "times": {
+        "parent_file_read": 0.5474887000164017,
+        "measure_map_subdivide_state": 28.695416999980807,
+        "output_section_observation": 27.493708599940874,
+        "checkpoint_export_reread": 9.800684800022282
+      },
+      "OBJ_bytes": 16991444
+    }
+  ],
+  "feedback": [
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G2",
+      "parent_geometry_sha256": "f96c4698e4a97ce12563230390cd1ca3334fac2a37b0ebf25434fd70e087ea22",
+      "actual_descriptors_sha256": "13fed49e5badc0a9989d4ae2346bc0d9ef3f49bb0b5355fc76ec9e9e886841da",
+      "input_generation": 1,
+      "actual_sections_equal_saved_parent_observation": true,
+      "rule_changes_vs_inherited_previous_input": {
+        "wf": {
+          "changed_faces": 600,
+          "max_abs": 12.338372741541756,
+          "median_abs": 4.0314661673423355
+        },
+        "w1": {
+          "changed_faces": 384,
+          "max_abs": 0.03774737953067378,
+          "median_abs": 0.0021458585172285383
+        },
+        "w2": {
+          "changed_faces": 384,
+          "max_abs": 0.04529685543680853,
+          "median_abs": 0.0025750302206742487
+        },
+        "w3": {
+          "changed_faces": 600,
+          "max_abs": 0.9923655446129102,
+          "median_abs": 0.22500187505930702
+        },
+        "w4": {
+          "changed_faces": 600,
+          "max_abs": 0.5325065035376763,
+          "median_abs": 0.03863855075317915
+        }
+      },
+      "statement": "w3/w4/w1/w2 changes also prove geometry feedback beyond shrinking h-based offsets; no generation strength schedule."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G3",
+      "parent_geometry_sha256": "49f09ff48789be314f83adb3c3df4afb15305ef90b42118586a2760564e5d168",
+      "actual_descriptors_sha256": "0077ead1a13db1387f976d0679f5f7a379bce3e5d9b07367a69d3083f66961c1",
+      "input_generation": 2,
+      "actual_sections_equal_saved_parent_observation": true,
+      "rule_changes_vs_inherited_previous_input": {
+        "wf": {
+          "changed_faces": 2400,
+          "max_abs": 8.17144279392806,
+          "median_abs": 1.6658702611550102
+        },
+        "w1": {
+          "changed_faces": 1408,
+          "max_abs": 0.0450522440065802,
+          "median_abs": 0.0008581822764509306
+        },
+        "w2": {
+          "changed_faces": 1408,
+          "max_abs": 0.05406269280789623,
+          "median_abs": 0.0010298187317411278
+        },
+        "w3": {
+          "changed_faces": 2400,
+          "max_abs": 1.438648921131203,
+          "median_abs": 0.14463101313532234
+        },
+        "w4": {
+          "changed_faces": 2400,
+          "max_abs": 0.2980968844194616,
+          "median_abs": 0.01837129004059152
+        }
+      },
+      "statement": "w3/w4/w1/w2 changes also prove geometry feedback beyond shrinking h-based offsets; no generation strength schedule."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G4",
+      "parent_geometry_sha256": "2dccb57485f04f096290a05d6977fca66fc814ab51af4c85e4926adc842b8407",
+      "actual_descriptors_sha256": "19a1118f14bd98027af44fe979ed53c76dfdb137188782e85ec526b5b1b21d8b",
+      "input_generation": 3,
+      "actual_sections_equal_saved_parent_observation": true,
+      "rule_changes_vs_inherited_previous_input": {
+        "wf": {
+          "changed_faces": 9600,
+          "max_abs": 5.546714535854096,
+          "median_abs": 0.759553483390254
+        },
+        "w1": {
+          "changed_faces": 5488,
+          "max_abs": 0.03256489774328905,
+          "median_abs": 0.0002719601430762886
+        },
+        "w2": {
+          "changed_faces": 5488,
+          "max_abs": 0.039077877291946866,
+          "median_abs": 0.00032635217169155184
+        },
+        "w3": {
+          "changed_faces": 9600,
+          "max_abs": 1.4803135637525946,
+          "median_abs": 0.18612406018916494
+        },
+        "w4": {
+          "changed_faces": 9600,
+          "max_abs": 0.36448621050096863,
+          "median_abs": 0.017709040009034588
+        }
+      },
+      "statement": "w3/w4/w1/w2 changes also prove geometry feedback beyond shrinking h-based offsets; no generation strength schedule."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G5",
+      "parent_geometry_sha256": "8956a5f846f7ab8a9bfbd0be7814f021728f4e9f21db3cc9d2ff21a3cb1c13fc",
+      "actual_descriptors_sha256": "d056e1c2d0c5d18ac3c2e5a3779b6d7e2b76d1ea4ba757d603f7a640b5ef71f1",
+      "input_generation": 4,
+      "actual_sections_equal_saved_parent_observation": true,
+      "rule_changes_vs_inherited_previous_input": {
+        "wf": {
+          "changed_faces": 38400,
+          "max_abs": 4.661423004523366,
+          "median_abs": 0.31908673834348206
+        },
+        "w1": {
+          "changed_faces": 20916,
+          "max_abs": 0.03039431003787091,
+          "median_abs": 2.518828556867525e-05
+        },
+        "w2": {
+          "changed_faces": 20916,
+          "max_abs": 0.03647317204544509,
+          "median_abs": 3.0225942682413076e-05
+        },
+        "w3": {
+          "changed_faces": 38400,
+          "max_abs": 1.6005870084406437,
+          "median_abs": 0.13830113774393
+        },
+        "w4": {
+          "changed_faces": 38400,
+          "max_abs": 0.35939547775618247,
+          "median_abs": 0.014402839199492652
+        }
+      },
+      "statement": "w3/w4/w1/w2 changes also prove geometry feedback beyond shrinking h-based offsets; no generation strength schedule."
+    }
+  ],
+  "lead_checkpoint": {
+    "status": "PASS",
+    "lead": "R4_PROFILE_DYNAMIC_G5",
+    "actual_full_checkpoint_reload": true,
+    "OBJ": {
+      "actual_file_read": true,
+      "exact_XYZ_oriented_faces": true,
+      "vertices": 165890,
+      "faces": 165888,
+      "parser": "Sequential written polygon records; no welding, triangulation, repairs or extra mesh allocation."
+    },
+    "geometry_sha256": "56b6914e56978c20688187098e186efcf8041aada420f070799f8e7c72893b96",
+    "state_sha256": "ca092d8a2dde8669e7a30748defdbad2f433c5a92a32227cf4c81a941b64bfa3",
+    "symmetry": {
+      "plane_X": -400.036865234375,
+      "plane_Y_not_enforced": -18.533447265625,
+      "max_coordinate_residual": 7.851471509102968e-12,
+      "rms_coordinate_residual": 5.319748522383106e-13,
+      "residual_over_nominal_width": 1.962867877275742e-15,
+      "vertex_correspondences": 165890,
+      "face_correspondences": 165888,
+      "oriented_face_failures": 0,
+      "policy": "PAIRED_FULL_GATE",
+      "method": "Constructive ring/CC-parent correspondence, reverse oriented face cycles; no nearest-point correspondence or averaging."
+    },
+    "sections_equal_actual_saved_observation": true,
+    "next_rule_statistics": {
+      "wf": {
+        "min": 0.0,
+        "max": 4.917954622998822,
+        "median": 0.13268387155922384
+      },
+      "w1": {
+        "min": -0.18448937288997388,
+        "max": 0.0,
+        "median": -0.12
+      },
+      "w2": {
+        "min": -0.19738724746796865,
+        "max": 0.0,
+        "median": -0.12
+      },
+      "w3": {
+        "min": -2.103713405415038,
+        "max": 0.0,
+        "median": -0.8050962466931818
+      },
+      "w4": {
+        "min": 0.0,
+        "max": 0.4724575735686003,
+        "median": 0.28872716872341353
+      }
+    },
+    "continued_geometry_not_allocated": "Actual next rule mapping reconstructed; exact small save/reload next-generation equality is separately tested.",
+    "next_action": "Reread current generated geometry, measure slices and map rules again",
+    "completed": [
+      {
+        "path": "PROFILE_DYNAMIC",
+        "input_generation": 0,
+        "config": {
+          "offset_ratio": 0.08,
+          "face_gain": 3.0,
+          "edge_gain": 1.0,
+          "curvature_gain": 0.65
+        },
+        "method": "Fresh actual immediately preceding geometry measurement"
+      },
+      {
+        "path": "PROFILE_DYNAMIC",
+        "input_generation": 1,
+        "config": {
+          "offset_ratio": 0.08,
+          "face_gain": 3.0,
+          "edge_gain": 1.0,
+          "curvature_gain": 0.65
+        },
+        "method": "Fresh actual immediately preceding geometry measurement"
+      },
+      {
+        "path": "PROFILE_DYNAMIC",
+        "input_generation": 2,
+        "config": {
+          "offset_ratio": 0.08,
+          "face_gain": 3.0,
+          "edge_gain": 1.0,
+          "curvature_gain": 0.65
+        },
+        "method": "Fresh actual immediately preceding geometry measurement"
+      },
+      {
+        "path": "PROFILE_DYNAMIC",
+        "input_generation": 3,
+        "config": {
+          "offset_ratio": 0.08,
+          "face_gain": 3.0,
+          "edge_gain": 1.0,
+          "curvature_gain": 0.65
+        },
+        "method": "Fresh actual immediately preceding geometry measurement"
+      },
+      {
+        "path": "PROFILE_DYNAMIC",
+        "input_generation": 4,
+        "config": {
+          "offset_ratio": 0.08,
+          "face_gain": 3.0,
+          "edge_gain": 1.0,
+          "curvature_gain": 0.65
+        },
+        "method": "Fresh actual immediately preceding geometry measurement"
+      }
+    ],
+    "dihedral_degrees": {
+      "BASE_L": {
+        "median": 1.161476726751696,
+        "p90": 3.116794814340321,
+        "max": 5.060158163506735
+      },
+      "BASE_R": {
+        "median": 1.1614767267515391,
+        "p90": 3.1167948143400985,
+        "max": 5.060158163506591
+      },
+      "COLUMN_L": {
+        "median": 12.40899777068598,
+        "p90": 133.1870749634314,
+        "max": 179.8809957512364
+      },
+      "COLUMN_R": {
+        "median": 12.408997770679482,
+        "p90": 133.1870749634277,
+        "max": 179.8809957512364
+      },
+      "LINTEL": {
+        "median": 5.734345420893012,
+        "p90": 45.86043789072957,
+        "max": 179.95052615391597
+      }
+    },
+    "dihedral_caution": "Actual geometry orientation diagnostic; normal variation or count growth alone does not prove hierarchy.",
+    "symmetry_tolerance": 1e-08
+  },
+  "front_rear": [
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G1",
+      "plane_Y": -18.533447265625,
+      "max_coordinate_residual": 4.567413805031093e-13,
+      "oriented_face_failures": 0,
+      "method": "Independent constructive reflection from declared G0 registry and actual saved CC corner/edge/face parent relations; no nearest-point pairing."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G2",
+      "plane_Y": -18.533447265625,
+      "max_coordinate_residual": 1.0172431170856999e-12,
+      "oriented_face_failures": 0,
+      "method": "Independent constructive reflection from declared G0 registry and actual saved CC corner/edge/face parent relations; no nearest-point pairing."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G3",
+      "plane_Y": -18.533447265625,
+      "max_coordinate_residual": 2.280122671451361e-12,
+      "oriented_face_failures": 0,
+      "method": "Independent constructive reflection from declared G0 registry and actual saved CC corner/edge/face parent relations; no nearest-point pairing."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G4",
+      "plane_Y": -18.533447265625,
+      "max_coordinate_residual": 4.428043953088985e-12,
+      "oriented_face_failures": 0,
+      "method": "Independent constructive reflection from declared G0 registry and actual saved CC corner/edge/face parent relations; no nearest-point pairing."
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G5",
+      "plane_Y": -18.533447265625,
+      "max_coordinate_residual": 5.953805443002818e-12,
+      "oriented_face_failures": 0,
+      "method": "Independent constructive reflection from declared G0 registry and actual saved CC corner/edge/face parent relations; no nearest-point pairing."
+    }
+  ],
+  "rule_symmetry": [
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G1",
+      "input_generation": 0,
+      "max_abs_parameter_residual": {
+        "wf": 1.9984014443252818e-14,
+        "w1": 0.0,
+        "we": 7.105427357601002e-15,
+        "w2": 0.0,
+        "wp": 1.5543122344752192e-15,
+        "w3": 7.771561172376096e-16,
+        "w4": 3.3306690738754696e-16
+      },
+      "semantic_parts_coarse_ancestry_generation_and_column_bands": "PASS",
+      "selection": "PAIRED_FULL_GATE"
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G2",
+      "input_generation": 1,
+      "max_abs_parameter_residual": {
+        "wf": 4.1744385725905886e-14,
+        "w1": 1.2212453270876722e-15,
+        "we": 1.4654943925052066e-14,
+        "w2": 1.4710455076283324e-15,
+        "wp": 3.3306690738754696e-15,
+        "w3": 6.106226635438361e-15,
+        "w4": 1.2212453270876722e-15
+      },
+      "semantic_parts_coarse_ancestry_generation_and_column_bands": "PASS",
+      "selection": "PAIRED_FULL_GATE"
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G3",
+      "input_generation": 2,
+      "max_abs_parameter_residual": {
+        "wf": 6.972200594645983e-14,
+        "w1": 2.9698465908722937e-15,
+        "we": 2.4424906541753444e-14,
+        "w2": 3.58046925441613e-15,
+        "wp": 5.578870698741412e-15,
+        "w3": 4.463096558993129e-14,
+        "w4": 2.5479618415147343e-14
+      },
+      "semantic_parts_coarse_ancestry_generation_and_column_bands": "PASS",
+      "selection": "PAIRED_FULL_GATE"
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G4",
+      "input_generation": 3,
+      "max_abs_parameter_residual": {
+        "wf": 1.0441647546599597e-13,
+        "w1": 1.4155343563970746e-15,
+        "we": 3.6540215297975465e-14,
+        "w2": 1.6930901125533637e-15,
+        "wp": 8.354428260304303e-15,
+        "w3": 1.7852386235972517e-13,
+        "w4": 3.4916514124461173e-14
+      },
+      "semantic_parts_coarse_ancestry_generation_and_column_bands": "PASS",
+      "selection": "PAIRED_FULL_GATE"
+    },
+    {
+      "stage": "R4_PROFILE_DYNAMIC_G5",
+      "input_generation": 4,
+      "max_abs_parameter_residual": {
+        "wf": 1.5232259897857148e-13,
+        "w1": 4.9682480351975755e-15,
+        "we": 5.331846075762314e-14,
+        "w2": 5.9674487573602164e-15,
+        "wp": 1.2184697695261093e-14,
+        "w3": 7.398526236102043e-13,
+        "w4": 1.6509016376176078e-13
+      },
+      "semantic_parts_coarse_ancestry_generation_and_column_bands": "PASS",
+      "selection": "PAIRED_FULL_GATE"
+    }
+  ]
+}

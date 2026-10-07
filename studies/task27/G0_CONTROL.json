@@ -1,0 +1,240 @@
+{
+  "schema": "TASK27_PORT_GATE_V1",
+  "profile": false,
+  "stations": [
+    {
+      "zone": "base",
+      "z": 0,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.0,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "lower_body",
+      "z": 420,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.14482758620689656,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "body",
+      "z": 1050,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.3620689655172414,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "constriction",
+      "z": 1600,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.5517241379310345,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "expansion",
+      "z": 2020,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.696551724137931,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "neck",
+      "z": 2450,
+      "width": 900,
+      "depth": 500,
+      "longitudinal": 0.8448275862068966,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "ELLIPSE8"
+    },
+    {
+      "zone": "shoulder",
+      "z": 2780,
+      "width": 900,
+      "depth": 640,
+      "longitudinal": 0.9586206896551724,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "RECT8"
+    },
+    {
+      "zone": "port",
+      "z": 2900,
+      "width": 900,
+      "depth": 640,
+      "longitudinal": 1.0,
+      "frame": {
+        "T": [
+          0,
+          0,
+          1
+        ],
+        "U": [
+          1,
+          0,
+          0
+        ],
+        "V": [
+          0,
+          1,
+          0
+        ]
+      },
+      "section": "RECT8"
+    }
+  ],
+  "centers_X": [
+    -1750.036865234375,
+    949.963134765625
+  ],
+  "Y": -18.533447265625,
+  "Z_up": true,
+  "units": "UNRESOLVED original coordinate units",
+  "beam": {
+    "length": 4000,
+    "bottom": 2900,
+    "top": 3500,
+    "depth": 640,
+    "frame": {
+      "T": [
+        1,
+        0,
+        0
+      ],
+      "U": [
+        0,
+        0,
+        1
+      ],
+      "V": [
+        0,
+        -1,
+        0
+      ]
+    }
+  },
+  "joint": "Remove beam-bottom cells over two rectangular ports; reuse their eight perimeter vertices as column top ring. No overlapping closed objects.",
+  "samples": 8,
+  "symmetry_X": -400.036865234375,
+  "front_rear_symmetry": "Also maintained by absolute normal-Y mapping; separately diagnosed."
+}

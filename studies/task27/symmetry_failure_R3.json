@@ -1,0 +1,135 @@
+{
+  "classification": "Geometry measurement defect, not symmetry topology or RAM",
+  "cause": "COMPAS area_polygon signs fan triangles relative to the first fan triangle. Folded generated quads can have opposing fan normals; a reflected reverse cycle can choose a different reference and different area. Use sum of unsigned centroid-fan triangle areas for current h measurement; no coordinate averaging.",
+  "examples": [
+    {
+      "faces": [
+        1685,
+        2657
+      ],
+      "coordinates": [
+        [
+          [
+            -1331.0790697554046,
+            -320.7578653648089,
+            2842.927360345604
+          ],
+          [
+            -1459.495256595129,
+            -338.58891113668125,
+            2843.4220331128226
+          ],
+          [
+            -1470.7522230187337,
+            -325.08723921033624,
+            2799.435314556788
+          ],
+          [
+            -1415.7312929456343,
+            -341.4612513517188,
+            2825.0342692735358
+          ]
+        ],
+        [
+          [
+            670.6784925499838,
+            -325.0872392103362,
+            2799.435314556788
+          ],
+          [
+            659.4215261263787,
+            -338.5889111366812,
+            2843.4220331128226
+          ],
+          [
+            531.0053392866545,
+            -320.7578653648088,
+            2842.927360345604
+          ],
+          [
+            615.6575624768844,
+            -341.46125135171866,
+            2825.0342692735358
+          ]
+        ]
+      ],
+      "compas_area": [
+        787.1489577322814,
+        2833.5318606605206
+      ],
+      "invariant_area": [
+        2833.5318606605265,
+        2833.5318606605206
+      ],
+      "max_mirrored_rule_offset_difference": 1.1376832040351108
+    },
+    {
+      "faces": [
+        1601,
+        2613
+      ],
+      "coordinates": [
+        [
+          [
+            -1470.7522230187337,
+            288.02034467908624,
+            2799.435314556788
+          ],
+          [
+            -1459.4952565951287,
+            301.52201660543125,
+            2843.4220331128226
+          ],
+          [
+            -1331.0790697554044,
+            283.6909708335588,
+            2842.927360345604
+          ],
+          [
+            -1415.7312929456343,
+            304.3943568204688,
+            2825.0342692735358
+          ]
+        ],
+        [
+          [
+            531.0053392866545,
+            283.6909708335588,
+            2842.927360345604
+          ],
+          [
+            659.4215261263787,
+            301.52201660543125,
+            2843.4220331128226
+          ],
+          [
+            670.678492549984,
+            288.02034467908624,
+            2799.435314556788
+          ],
+          [
+            615.6575624768846,
+            304.3943568204688,
+            2825.0342692735358
+          ]
+        ]
+      ],
+      "compas_area": [
+        2833.531860660527,
+        787.1489577322816
+      ],
+      "invariant_area": [
+        2833.531860660524,
+        2833.5318606605233
+      ],
+      "max_mirrored_rule_offset_difference": 1.1376832040351095
+    }
+  ],
+  "old_evidence_status_caution": "R3 evidence status PASS covered exports/checkpoint coverage only. R3 is not an accepted symmetry result; actual recorded max residual 2.6579732545. R4 evidence enforces 1e-8 coordinate tolerance.",
+  "preserved": [
+    "R3_PROFILE_DYNAMIC_G1..G5",
+    "renders/lead",
+    "renders/progression",
+    "dcc/R3_PROFILE_DYNAMIC_G5.3dm"
+  ]
+}
