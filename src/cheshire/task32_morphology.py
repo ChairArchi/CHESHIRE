@@ -97,7 +97,18 @@ def spring_system(mesh):
     return edges, laplacian, scale
 
 
-def growth_energy(x, base, edges, lengths, laplacian, bending, anchors):
+def signed_volume_gradient(x, tri):
+    a,b,c=x[tri[:,0]],x[tri[:,1]],x[tri[:,2]]
+    volume=float(np.sum(a*np.cross(b,c))/6)
+    contributions=[np.cross(b,c)/6,np.cross(c,a)/6,np.cross(a,b)/6]
+    gradient=np.zeros_like(x)
+    for slot,values in enumerate(contributions):
+        for k in range(3):
+            gradient[:,k]+=np.bincount(tri[:,slot],weights=values[:,k],minlength=len(x))
+    return volume,gradient
+
+
+def growth_energy(x, base, edges, lengths, laplacian, bending, anchors, volume_constraint=None):
     """Analytic gradient of a stated spring + displacement-Laplacian energy.
 
     A positive regularizer in lengths only prevents division by zero in the
@@ -116,6 +127,13 @@ def growth_energy(x, base, edges, lengths, laplacian, bending, anchors):
     bend = laplacian@dx
     value += .5*bending*np.sum(bend**2) + .5*np.sum(anchors[:, None]*dx**2)
     gradient += bending*(laplacian.T@bend) + anchors[:, None]*dx
+    if volume_constraint is not None:
+        tri,target,strength=volume_constraint
+        volume,dvolume=signed_volume_gradient(x,tri)
+        relative=volume/target-1
+        # Strength is independent of vertex count in the averaged objective.
+        value+=.5*len(x)*strength*relative**2
+        gradient+=len(x)*strength*relative*dvolume/target
     return float(value/len(x)), (gradient/len(x)).ravel()
 
 
@@ -144,8 +162,14 @@ def metric_growth(mesh, spec):
     # Infinitesimal, reproducible symmetry breaking, NOT a sculpted fold shape.
     seed = float(spec.get('seed', .001))*parent[:, None]*fields(mesh)['nv']
     history = []
+    volume_constraint=None
+    if spec.get('volume_strength',0):
+        tri=triangles(mesh); volume0,_=signed_volume_gradient(base,tri)
+        if abs(volume0)<1e-12:raise ValueError('Nonzero signed reference volume required.')
+        if spec['volume_strength']<0:raise ValueError('Nonnegative volume penalty required.')
+        volume_constraint=(tri,volume0,float(spec['volume_strength']))
     def objective(x):
-        return growth_energy(x, base, edges, target, lap, bending, anchors)
+        return growth_energy(x, base, edges, target, lap, bending, anchors,volume_constraint)
     initial = objective((base+seed).ravel())[0]
     def callback(x):
         if len(history) % 25 == 0:
@@ -165,6 +189,10 @@ def metric_growth(mesh, spec):
                 final_energy=float(result.fun), gradient_inf=float(np.abs(result.jac).max()),
                 relative_metric_error_RMS=float(np.sqrt(np.mean(((actual-target)/target)**2))),
                 scale=scale, bending=bending, caveat='No physical shell bending, collision response, or manufacturing guarantee.')
+    if volume_constraint is not None:
+        v,_=signed_volume_gradient(result.x.reshape(base.shape),tri)
+        meta['signed_volume_ratio']=v/volume0
+        meta['volume_caveat']='Algebraic global volume only; not local thickness or intersection-free solid volume.'
     state = dict(spring_edges=edges, target_lengths=target*scale, growth_signal=signal,
                  base_xyz=mesh.xyz, anchors=anchors, energy_history=np.array([h['energy'] if h else np.nan for h in history]),
                  optimizer_xyz=xyz, terminal_gradient=result.jac.reshape(base.shape))

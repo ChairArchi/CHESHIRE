@@ -97,8 +97,37 @@ def patches():
     return folder
 
 
+def intrinsic():
+    definitions=[]
+    for k,(growth,volume,bending,anisotropy) in enumerate([
+            (.55,2,.02,0),(.55,20,.02,0),(.9,20,.02,0),
+            (.9,20,.002,0),(.9,20,.02,.85),(.9,20,.002,.85)],1):
+        spec=dict(growth=growth,volume_strength=volume,bending=bending,anisotropy=anisotropy,
+                  field='nested',lobes=5,anchor=.002,seed=.001,maxiter=4000)
+        definitions.append(dict(id=f'V{k:02}_VOLUME',
+            hypothesis='Global signed volume penalty may convert free inflation into constrained buckling; algebraic volume not certified solid volume',
+            steps=[cc(),cc(),dict(kind='growth',spec=spec),cc(),cc()]))
+    for k,(modes,amplitude,coupling,remeasure) in enumerate([
+            ([2,7],240,1,False),([5,14],320,1,False),([8,18],320,1,False),
+            ([5,14],320,0,False),([5,14],320,1,True),([5,14],500,1,False),
+            ([5,14],180,1,False)],1):
+        spec=dict(modes=modes,amplitude=amplitude,coupling=coupling,secondary_mix=.4,level=0)
+        child=dict(spec,level=1,amplitude=amplitude*.32,frequency=4,remeasure=remeasure)
+        micro=dict(spec,level=2,amplitude=amplitude*.10,frequency=4)
+        steps=[cc(),cc(),dict(kind='spectral',spec=spec),cc(),dict(kind='spectral',spec=child),
+               cc(),dict(kind='spectral',spec=micro)]
+        definitions.append(dict(id=f'S{k:02}_SPECTRAL',
+            hypothesis='Intrinsic eigenfield organization avoids closest-carrier chart seams; shared parent phase couples scales',steps=steps))
+    folder=ROOT/'definitions/intrinsic'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Patch attachment remains local and child depth does not improve whole view. Test intrinsic geometry organization and constrain free inflation.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
-    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else request(a.folder, a.tag))
+    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else request(a.folder, a.tag))

@@ -25,10 +25,12 @@ from hero_design_sprint import guarded, windows_memory
 from cheshire.reference_subdivision import subdivide, metrics
 from cheshire.task32_morphology import displace_hierarchy, metric_growth
 from cheshire.task32_patches import branch_patches
+from cheshire.task32_spectral import spectral_displace, transport_coordinates
 
 ROOT = Path('E:/CHESHIRE_DATA/task32')
 SOURCES = ['tools/task32_research.py', 'src/cheshire/task32_morphology.py',
            'src/cheshire/task32_patches.py',
+           'src/cheshire/task32_spectral.py',
            'src/cheshire/reference_subdivision.py', 'src/cheshire/progressive_gates.py',
            'examples/task29_search.py', 'examples/hero_design_sprint.py',
            'tools/task31_study.py']
@@ -110,6 +112,7 @@ def run(definition_path):
     checkpoints = []
     mesh = basic_gate()
     branch_state = None
+    spectral_state = None
     operations = [dict(kind='input')]+d['steps']
     for index, step in enumerate(operations):
         path = dest/f'S{index:02}'
@@ -127,6 +130,8 @@ def run(definition_path):
             if (path/'branch_state.npz').exists():
                 with np.load(path/'branch_state.npz') as z:
                     branch_state={k:z[k].copy() for k in z.files}
+            if (path/'spectral_state.npz').exists():
+                with np.load(path/'spectral_state.npz') as z:spectral_state={k:z[k].copy() for k in z.files}
             checkpoints.append(str(path))
             continue
         pre = preflight(mesh, step['kind'])
@@ -134,13 +139,19 @@ def run(definition_path):
         if step['kind'] == 'input':
             meta, state = dict(input='Exact gate_input RECT False; unresolved original units'), None
         elif step['kind'] == 'cc':
+            before=mesh
             mesh, meta, state = subdivide(mesh, step.get('row', {}))
             if branch_state is not None:
                 branch_state={k:v[state['parent_face']] for k,v in branch_state.items()}
+            if spectral_state is not None:
+                spectral_state={'coordinates':transport_coordinates(spectral_state['coordinates'],state,before)}
         elif step['kind'] == 'hierarchy':
             mesh, meta, state = displace_hierarchy(mesh, step['spec'], step.get('level', 0))
         elif step['kind'] == 'growth':
             mesh, meta, state = metric_growth(mesh, step['spec'])
+        elif step['kind'] == 'spectral':
+            mesh,meta,state=spectral_displace(mesh,step['spec'],spectral_state)
+            spectral_state={'coordinates':state['coordinates']}
         elif step['kind'] == 'patches':
             mesh, meta, state = branch_patches(mesh, step['spec'], branch_state if step.get('children') else None)
             branch_state={k:state[k] for k in ('face_scope','cap_mask','scope_level')}
@@ -150,6 +161,8 @@ def run(definition_path):
         summary = save_mesh(path, mesh, dict(**meta, operation_seconds=seconds, preflight=pre), state, parent)
         if branch_state is not None:
             np.savez_compressed(path/'branch_state.npz',**branch_state)
+        if spectral_state is not None:
+            np.savez_compressed(path/'spectral_state.npz',**spectral_state)
         write_new(path/'task32_identity.json', dict(step=step, sources=sources,
             parent_mesh_sha256=sha(parent/'mesh.npz') if parent else None,
             files={f.name:sha(f) for f in path.iterdir() if f.is_file()}))
