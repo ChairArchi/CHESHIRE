@@ -8,6 +8,11 @@ CHESHIRE is a standalone deterministic computational design engine for transform
 regional growth/depth/opening control, with a **PARTIAL** result. Existing algorithms,
 legacy replay and research verdicts remain unchanged.
 
+Task32 adds opt-in relational morphology experiments, native checkpoint recovery,
+and geometry contact audits. Its [research results](docs/TASK32_RESULTS.md) are
+**PARTIAL**: controlled parent–child geometry is demonstrated, while rich
+Macro–Meso–Micro ornament remains unresolved. The full Task31 state is preserved.
+
 Start with [current execution paths](docs/CURRENT_PATHS.md),
 [the small ALICE gate exchange](docs/GATE_EXCHANGE_V1.md), and
 [preservation/consolidation results](docs/CONSOLIDATION_20261009.md).

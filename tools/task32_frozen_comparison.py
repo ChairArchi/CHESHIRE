@@ -1,15 +1,16 @@
 """Compare existing full Task31 renders with newly matched Task32 actual renders."""
-import sys
-import numpy as np
+import argparse
 from PIL import Image
 from task32_research import ROOT,read,write_new,sha
 from task31_views import sheet
 
 
-def main():
+def main(current_tag='G8_CAMERA_1400',output_name='TASK31_G8_VS_TASK32'):
+    for name in [current_tag,output_name]:
+        if any(c not in 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-' for c in name):raise ValueError('Safe output identities required.')
     old=read('E:/CHESHIRE_DATA/task31/renders/gate_compare/manifest.json')
     detail=read('E:/CHESHIRE_DATA/task31/renders/gate_detail/manifest.json')
-    current=read(ROOT/'renders/G8_CAMERA_1400/manifest.json')
+    current=read(ROOT/'renders'/current_tag/'manifest.json')
     for field in ['backend','material','light']:
         if current[field]!=old[field] or current[field]!=detail[field]:raise ValueError('Render condition changed: '+field)
     prior=[old['records'][2],old['records'][3],detail['records'][8]]
@@ -27,12 +28,14 @@ def main():
             current_mesh_sha256=r['mesh_sha256'],current_image_sha256=r['image_sha256'],
             original_polygons=p['polygons'],current_polygons=r['polygons']))
         records.append(r)
-    output=ROOT/'renders/TASK31_G8_VS_TASK32.png'
+    output=ROOT/'renders'/(output_name+'.png')
     if output.exists():raise ValueError('Fresh comparison output required.')
     sheet(records,output,cols=3,size=700)
-    write_new(ROOT/'validation/frozen_G8_comparison.json',dict(records=records,proof=proof,
+    write_new(ROOT/'validation'/(output_name+'_comparison.json'),dict(records=records,proof=proof,
         image_sha256=sha(output),script_sha256=sha(__file__),
         note='Original Task31 G8 images reused byte-unmodified; no GPU reload of 5,021,696 polygons. Current actual native meshes rendered with identical camera, 1400px resolution, flat normals, clay, light and backend. Mesh resolutions differ explicitly; no claim of equal detail density.'))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--current-tag',default='G8_CAMERA_1400');p.add_argument('--output-name',default='TASK31_G8_VS_TASK32')
+    a=p.parse_args();main(a.current_tag,a.output_name)

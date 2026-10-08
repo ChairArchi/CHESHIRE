@@ -1,4 +1,7 @@
-# Task32 — 독립 조형 연구 (진행 중)
+# Task32 — 초기 가설 및 기존 연구 검토 기록
+
+이 문서는 실험을 시작할 때의 가설·검토 기록이다. 실제 후속 대조, 실패,
+검증·보존 결과와 현재 판정은 [TASK32_RESULTS.md](TASK32_RESULTS.md)에 있다.
 
 기준 커밋: `17c0415b8d7bdead8763949bfa8d95f18fad908c`.
 브랜치: `experiment/task32-relational-morphology`.
