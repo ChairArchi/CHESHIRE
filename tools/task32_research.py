@@ -31,6 +31,7 @@ ROOT = Path('E:/CHESHIRE_DATA/task32')
 SOURCES = ['tools/task32_research.py', 'src/cheshire/task32_morphology.py',
            'src/cheshire/task32_patches.py',
            'src/cheshire/task32_spectral.py',
+           'tools/task32_validation.py',
            'src/cheshire/reference_subdivision.py', 'src/cheshire/progressive_gates.py',
            'examples/task29_search.py', 'examples/hero_design_sprint.py',
            'tools/task31_study.py']
@@ -170,6 +171,13 @@ def run(definition_path):
                 # rather than silently attaching stale arrays to new topology.
                 meta['spectral_coordinate_lineage']='Ended at constructive topology edit; previous checkpoint retained.'
                 spectral_state=None
+        elif step['kind']=='audit':
+            from task32_validation import embedding,transverse_contacts
+            contacts=transverse_contacts(mesh)
+            meta=dict(mechanism='Explicit geometric checkpoint screen; geometry unchanged',
+                embedding=embedding(mesh),contacts=contacts,
+                continuation_rejected=bool(contacts['transverse_contacts']))
+            state=None
         else:
             raise ValueError('Unknown opt-in experiment operation.')
         seconds = perf_counter()-start
@@ -186,6 +194,8 @@ def run(definition_path):
               round(seconds, 3), 's', meta.get('termination', ''), flush=True)
         if not summary['finite'] or summary['zero_area_faces']:
             raise ValueError('Invalid geometry retained and stopped; no silent repair.')
+        if meta.get('continuation_rejected'):
+            raise ValueError('Transverse crossings at declared checkpoint screen; retained and stopped before subdivision.')
     final = dest/'completed.json'
     if not final.exists():
         write_new(final, dict(id=d['id'], final_stage=checkpoints[-1], stages=checkpoints,

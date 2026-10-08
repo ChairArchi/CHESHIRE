@@ -219,10 +219,35 @@ def combination():
     return folder
 
 
+def conservative():
+    parent=read(ROOT/'definitions/combination/E02_COMBINATION.json')
+    definitions=[]
+    for k,(scales,heights,bend,children) in enumerate([
+        ([1,1,1],[.4,.8,1.2],0,False),([1,1,1],[.4,.8,1.2],.2,True),
+        ([1,.85,.75],[.7,1.4,2.1],.2,True),([1,1,1],[.4,.8,1.2],0,True)],1):
+        d=deepcopy(parent);d.update(id=f'F{k:02}_SCREENED',comparison_parent='E02_COMBINATION',
+            hypothesis='E02 root stage had 87 fully sampled transverse crossings despite final sample zero. Preserve first ring footprint and increase outward clearance; require explicit pre-subdivision screen.')
+        d['steps']=d['steps'][:4]
+        root=deepcopy(parent['steps'][4]['spec']);root.update(scales=scales,heights=heights,bend=bend)
+        d['steps'] += [dict(kind='patches',spec=root),dict(kind='audit'),cc()]
+        if children:
+            child=deepcopy(parent['steps'][6]['spec']);child.update(scales=[1,.85,.65] if k==3 else [1,1,1],
+                heights=[.6,1.2,1.8],bend=bend)
+            d['steps'] += [dict(kind='patches',children=True,spec=child),dict(kind='audit'),cc()]
+        else:d['steps'] += [cc()]
+        definitions.append(d)
+    folder=ROOT/'definitions/conservative'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Root-stage full contact check exposed contacts missed by a final coarse sample. Stop flagged topology edits before smoothing; no old output repaired.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','conservative','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
     actions=dict(pilot=pilot,patches=patches,intrinsic=intrinsic,corrective=corrective,
-                 transmission=transmission,combination=combination)
+                 transmission=transmission,combination=combination,conservative=conservative)
     print(request(a.folder,a.tag) if a.action=='request' else actions[a.action]())
