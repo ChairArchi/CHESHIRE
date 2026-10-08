@@ -1,5 +1,6 @@
 """Explicit hypothesis batches; further batches depend on reviewed actual geometry."""
 import argparse
+from copy import deepcopy
 from pathlib import Path
 from task32_research import ROOT, write_new, read
 
@@ -39,7 +40,7 @@ def pilot():
 
 
 def request(folder, tag, extra=None):
-    paths = sorted(Path(folder).glob('P*.json'))
+    paths = sorted(p for p in Path(folder).glob('*.json') if p.name!='batch.json')
     items = []
     for p in paths:
         d = read(p)
@@ -60,8 +61,44 @@ def request(folder, tag, extra=None):
     return path
 
 
+def patches():
+    root=dict(locations=[.14,.3,.44,.56,.7,.86],radius_arc=400,radius_angle=1.1,
+              heights=[.25,.7,1.25],scales=[.6,1.05,.75],bend=.45,twist=0,direction=[0,0,1])
+    child=dict(heights=[.25,.7,1.2],scales=[.65,1,.5],bend=.5,twist=0,
+               child_radius=.27,child_offset=.30)
+    base=[cc(),cc(),dict(kind='patches',spec=root),cc(),
+          dict(kind='patches',spec=child,children=True),cc(),cc()]
+    definitions=[]
+    for name,steps,reason in [
+        ('R01_ROOT_ONLY',base[:4]+[cc(),cc()], 'Ablate child events; same root grammar and CC5'),
+        ('R02_NESTED',base,'Connected multi-face roots, then two inherited cap children'),
+        ('R03_NO_NECK',deepcopy(base),'Ablate neck constriction with same cumulative heights'),
+        ('R04_TWIST',deepcopy(base),'Change patch orientation through actual ring rotation'),
+        ('R05_LONG_THIN',deepcopy(base),'Test legibility and collision risk of longer narrow branches'),
+        ('R06_WIDE_CHILD',deepcopy(base),'Increase child scope size; expose overlap rejection'),
+        ('R07_THIRD_LEVEL',base[:-1]+[dict(kind='patches',spec=child,children=True),cc()],
+            'Third grammar level; test extra hierarchy before late smoothing'),
+        ('R08_GROWTH_PATCH',base[:2]+[dict(kind='growth',spec=dict(growth=.55,field='bands',anisotropy=0,
+            lobes=5,bending=.02,anchor=.002))]+base[2:], 'Combine observed growth meso and constructive patch hierarchy')]:
+        d=dict(id=name,hypothesis=reason,steps=deepcopy(steps));definitions.append(d)
+    for step in definitions[2]['steps']:
+        if step['kind']=='patches':step['spec']['scales']=[1,1,1]
+    for step in definitions[3]['steps']:
+        if step['kind']=='patches':step['spec']['twist']=.8
+    for step in definitions[4]['steps']:
+        if step['kind']=='patches':step['spec'].update(heights=[.4,1.3,2.2],scales=[.45,.65,.25])
+    definitions[5]['steps'][4]['spec']['child_radius']=.34
+    folder=ROOT/'definitions/patches'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Pilot metric growth yielded broad necks/bulbs, field hierarchy yielded repeated rough bands. Test a different constructive relationship.',
+        changed_from_Task23='Simple Task26 carrier; connected multi-face disks, curved neck rings, inherited multi-face child caps; no crease/Mola/per-cell terminal events.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
-    print(pilot() if a.action == 'pilot' else request(a.folder, a.tag))
+    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else request(a.folder, a.tag))

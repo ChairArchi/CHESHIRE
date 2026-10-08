@@ -24,9 +24,11 @@ from task31_study import basic_gate
 from hero_design_sprint import guarded, windows_memory
 from cheshire.reference_subdivision import subdivide, metrics
 from cheshire.task32_morphology import displace_hierarchy, metric_growth
+from cheshire.task32_patches import branch_patches
 
 ROOT = Path('E:/CHESHIRE_DATA/task32')
 SOURCES = ['tools/task32_research.py', 'src/cheshire/task32_morphology.py',
+           'src/cheshire/task32_patches.py',
            'src/cheshire/reference_subdivision.py', 'src/cheshire/progressive_gates.py',
            'examples/task29_search.py', 'examples/hero_design_sprint.py',
            'tools/task31_study.py']
@@ -107,6 +109,7 @@ def run(definition_path):
         write_new(dest/'request.json', request)
     checkpoints = []
     mesh = basic_gate()
+    branch_state = None
     operations = [dict(kind='input')]+d['steps']
     for index, step in enumerate(operations):
         path = dest/f'S{index:02}'
@@ -121,6 +124,9 @@ def run(definition_path):
             if proof['parent_mesh_sha256'] != (sha(parent/'mesh.npz') if parent else None):
                 raise ValueError('Checkpoint parent mismatch.')
             mesh = load_mesh(path)
+            if (path/'branch_state.npz').exists():
+                with np.load(path/'branch_state.npz') as z:
+                    branch_state={k:z[k].copy() for k in z.files}
             checkpoints.append(str(path))
             continue
         pre = preflight(mesh, step['kind'])
@@ -129,14 +135,21 @@ def run(definition_path):
             meta, state = dict(input='Exact gate_input RECT False; unresolved original units'), None
         elif step['kind'] == 'cc':
             mesh, meta, state = subdivide(mesh, step.get('row', {}))
+            if branch_state is not None:
+                branch_state={k:v[state['parent_face']] for k,v in branch_state.items()}
         elif step['kind'] == 'hierarchy':
             mesh, meta, state = displace_hierarchy(mesh, step['spec'], step.get('level', 0))
         elif step['kind'] == 'growth':
             mesh, meta, state = metric_growth(mesh, step['spec'])
+        elif step['kind'] == 'patches':
+            mesh, meta, state = branch_patches(mesh, step['spec'], branch_state if step.get('children') else None)
+            branch_state={k:state[k] for k in ('face_scope','cap_mask','scope_level')}
         else:
             raise ValueError('Unknown opt-in experiment operation.')
         seconds = perf_counter()-start
         summary = save_mesh(path, mesh, dict(**meta, operation_seconds=seconds, preflight=pre), state, parent)
+        if branch_state is not None:
+            np.savez_compressed(path/'branch_state.npz',**branch_state)
         write_new(path/'task32_identity.json', dict(step=step, sources=sources,
             parent_mesh_sha256=sha(parent/'mesh.npz') if parent else None,
             files={f.name:sha(f) for f in path.iterdir() if f.is_file()}))
