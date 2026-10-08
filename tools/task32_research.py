@@ -164,6 +164,12 @@ def run(definition_path):
         elif step['kind'] == 'patches':
             mesh, meta, state = branch_patches(mesh, step['spec'], branch_state if step.get('children') else None)
             branch_state={k:state[k] for k in ('face_scope','cap_mask','scope_level')}
+            if spectral_state is not None:
+                # New swept vertices have no declared spectral interpolation.
+                # Preserve the preceding state and end this coordinate lineage
+                # rather than silently attaching stale arrays to new topology.
+                meta['spectral_coordinate_lineage']='Ended at constructive topology edit; previous checkpoint retained.'
+                spectral_state=None
         else:
             raise ValueError('Unknown opt-in experiment operation.')
         seconds = perf_counter()-start

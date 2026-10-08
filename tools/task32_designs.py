@@ -188,8 +188,41 @@ def transmission():
     return folder
 
 
+def combination():
+    root=dict(locations=[.14,.3,.44,.56,.7,.86],radius_arc=400,radius_angle=1.1,
+        heights=[.25,.65,1.1],scales=[.72,.6,.42],bend=.45,direction=[1,0,1])
+    child=dict(root,heights=[.4,1.3,2.2],scales=[.45,.65,.25],child_radius=.24,child_offset=.27)
+    definitions=[]
+    for k,(parent,modes,bound,twist) in enumerate([
+        (None,None,None,0),('D06_MACRO_ONLY',None,None,0),('D06_MACRO_ONLY',None,None,.8),
+        ('D08_TIGHT_BOUND',None,None,0),('D08_TIGHT_BOUND',[2,19],.15,0),
+        ('D10_TASK31_PREFIX',None,None,0)],1):
+        if parent:
+            d=deepcopy(read(ROOT/'definitions/transmission'/(parent+'.json')))
+            # Only the first macro deformation; do not carry rejected fine folds.
+            end=next(i for i,s in enumerate(d['steps']) if s['kind']=='spectral')+1
+            d['steps']=d['steps'][:end]
+            if modes:d['steps'][-1]['spec']['modes']=modes
+            if bound:d['steps'][-1]['spec']['curvature_limit']=bound
+        else:d=dict(steps=[cc(),cc(),cc()])
+        root_spec=dict(root);child_spec=dict(child,twist=twist)
+        if k==5:root_spec.update(heights=[.4,1.3,2.2],scales=[.45,.65,.25])
+        d.update(id=f'E{k:02}_COMBINATION',comparison_parent=parent or 'R02_NESTED',
+            hypothesis='Previous isolated patches attach to a mostly blank carrier. Test whether an actual macro input changes multi-face branch organization, keeping real scope lineage and rejected selections.')
+        d['steps'] += [dict(kind='patches',spec=root_spec),cc(),dict(kind='patches',children=True,spec=child_spec),cc()]
+        definitions.append(d)
+    folder=ROOT/'definitions/combination'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='D06 macro-only had zero sampled transverse contacts and zero opposed quad fans. D08 tight bound also passed these limited screens; actual fine hierarchy is still weak. Test constructed branches on those macro prefixes.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
-    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else corrective() if a.action=='corrective' else transmission() if a.action=='transmission' else request(a.folder, a.tag))
+    actions=dict(pilot=pilot,patches=patches,intrinsic=intrinsic,corrective=corrective,
+                 transmission=transmission,combination=combination)
+    print(request(a.folder,a.tag) if a.action=='request' else actions[a.action]())
