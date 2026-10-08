@@ -152,7 +152,8 @@ def run(definition_path):
             if branch_state is not None:
                 branch_state={k:v[state['parent_face']] for k,v in branch_state.items()}
             if spectral_state is not None:
-                spectral_state={'coordinates':transport_coordinates(spectral_state['coordinates'],state,before)}
+                spectral_state={'coordinates':transport_coordinates(spectral_state['coordinates'],state,before,
+                    d.get('coordinate_transport','material'))}
         elif step['kind'] == 'hierarchy':
             mesh, meta, state = displace_hierarchy(mesh, step['spec'], step.get('level', 0))
         elif step['kind'] == 'growth':

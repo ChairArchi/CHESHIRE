@@ -6,7 +6,7 @@ out-of-core band solver or an exact ornamental formula from their paper.
 from dataclasses import replace
 import numpy as np
 from scipy.sparse import coo_matrix, diags
-from scipy.sparse.linalg import eigsh
+from scipy.sparse.linalg import eigsh, spsolve
 from .reference_subdivision import fields
 from .task32_morphology import triangles
 
@@ -74,6 +74,12 @@ def spectral_displace(mesh,spec,previous=None):
     normals=fields(mesh)['nv'];applied=requested
     if spec.get('curvature_limit'):
         limit,kappa=curvature_limit(mesh,float(spec['curvature_limit']))
+        smooth_length=float(spec.get('limit_smoothing_length',0))
+        if smooth_length:
+            log_limit,residual=diffuse_field(mesh,np.log(limit),smooth_length)
+            limit=np.exp(log_limit)
+            meta['limit_diffusion']=dict(model_unit_length=smooth_length,residual=residual,
+                caveat='Diffusing log bounds can relax individual local limits; not a collision certificate.')
         applied=limit*np.tanh(requested/limit)
         state.update(curvature_bound=limit,estimated_max_abs_curvature=kappa,requested_displacement=requested)
         meta['limiter']=dict(fraction=float(spec['curvature_limit']),
@@ -107,7 +113,30 @@ def curvature_limit(mesh,fraction):
     return bound,maximum
 
 
-def transport_coordinates(coordinates,state,mesh):
+def diffuse_field(mesh,values,length):
+    """One backward-Euler scalar diffusion step, not smoothing delivered xyz."""
+    if not np.isfinite(length) or length<=0:raise ValueError('Positive finite diffusion length required.')
+    lap,area=cotan_system(mesh)
+    system=diags(area)+(length/1000)**2*lap
+    rhs=area[:,None]*values if values.ndim==2 else area*values
+    out=spsolve(system.tocsc(),rhs)
+    residual=float(np.linalg.norm(system@out-rhs)/max(np.linalg.norm(rhs),1e-15))
+    if not np.isfinite(out).all():raise ValueError('Nonfinite diffusion field; no fallback.')
+    return out,residual
+
+
+def transport_coordinates(coordinates,state,mesh,method='material'):
+    if method=='coupled_cc':
+        # Apply the unchanged zero-weight operator to scalar coordinates too.
+        # It moves old samples with the same vertex stencil as delivered xyz,
+        # whereas the original material interpolation deliberately retains them.
+        # Geometry-derived normals/scales are multiplied by zero in this call.
+        if coordinates.shape[1]>3:raise ValueError('At most three coordinate channels admitted.')
+        from .reference_subdivision import subdivide
+        padded=np.zeros_like(mesh.xyz);padded[:,:coordinates.shape[1]]=coordinates
+        out,_,_=subdivide(replace(mesh,xyz=padded),{})
+        return out.xyz[:,:coordinates.shape[1]]
+    if method!='material':raise ValueError('Unknown coordinate transport method.')
     edges=state['input_edges'];mask=mesh.faces>=0
     face=np.zeros((len(mesh.faces),coordinates.shape[1]))
     for j in range(coordinates.shape[1]):

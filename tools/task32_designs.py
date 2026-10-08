@@ -157,8 +157,39 @@ def corrective():
     return folder
 
 
+def transmission():
+    definitions=[]
+    choices=[('D01_SMOOTH','C01_LIMITED','material',80,None,None),
+        ('D02_CC_FIELD','C01_LIMITED','coupled_cc',0,None,None),
+        ('D03_BOTH','C01_LIMITED','coupled_cc',80,None,None),
+        ('D04_LONG_SMOOTH','C01_LIMITED','coupled_cc',150,None,None),
+        ('D05_OTHER_MODES','C06_LIMITED','coupled_cc',80,None,None),
+        ('D06_MACRO_ONLY','C01_LIMITED','coupled_cc',80,None,0),
+        ('D07_MACRO_MESO','C01_LIMITED','coupled_cc',80,None,1),
+        ('D08_TIGHT_BOUND','C01_LIMITED','coupled_cc',80,.15,None),
+        ('D09_UNCAPPED_CC','C02_LIMITED','coupled_cc',0,None,None),
+        ('D10_TASK31_PREFIX','C09_TASK31_PREFIX','coupled_cc',80,None,None)]
+    for name,parent,transport,length,fraction,last_level in choices:
+        d=deepcopy(read(ROOT/'definitions/corrective'/(parent+'.json')))
+        d.update(id=name,coordinate_transport=transport,
+            hypothesis='C-series showed many opposed quad fans even after local caps. Separate bound-field discontinuity, material-vs-geometry stencil, and contributions of each scale.',
+            comparison_parent=parent)
+        for step in d['steps']:
+            if step['kind']=='spectral':
+                step['spec']['limit_smoothing_length']=length
+                if fraction is not None:step['spec']['curvature_limit']=fraction
+                if last_level is not None and step['spec']['level']>last_level:step['spec']['amplitude']=0
+        definitions.append(d)
+    folder=ROOT/'definitions/transmission'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Corrective C01 had 1,315 opposed quad fans despite only two sampled contacts. Investigate field transmission instead of increasing detail depth.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
-    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else corrective() if a.action=='corrective' else request(a.folder, a.tag))
+    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else corrective() if a.action=='corrective' else transmission() if a.action=='transmission' else request(a.folder, a.tag))

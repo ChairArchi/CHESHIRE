@@ -2,7 +2,7 @@ import numpy as np
 from dataclasses import replace
 from cheshire.reference_subdivision import cube, subdivide
 from cheshire.task32_morphology import spring_system, growth_energy, signed_volume_gradient, triangles
-from cheshire.task32_spectral import cotan_system, spectral_field, transport_coordinates,curvature_limit
+from cheshire.task32_spectral import cotan_system, spectral_field, transport_coordinates,curvature_limit,diffuse_field
 
 
 def test_volume_constraint_energy_gradient_and_translation_invariance():
@@ -55,3 +55,23 @@ def test_curvature_limit_has_physical_scale_covariance():
     _,curvature2=curvature_limit(doubled,.3)
     np.testing.assert_allclose(curvature2,curvature/2,rtol=1e-10,atol=1e-12)
     assert (bound>0).all() and np.isfinite(bound).all()
+
+
+def test_diffusion_preserves_constant_and_area_mean_and_reduces_dirichlet_energy():
+    m,_,_=subdivide(cube(),{})
+    lap,area=cotan_system(m)
+    value=np.sin(np.arange(len(m.xyz)))
+    out,residual=diffuse_field(m,value,220)
+    assert residual<1e-12
+    np.testing.assert_allclose(area@out,area@value,atol=1e-12)
+    assert out@lap@out < value@lap@value
+    constant,_=diffuse_field(m,np.ones(len(m.xyz)),220)
+    np.testing.assert_allclose(constant,1,atol=1e-12)
+
+
+def test_coupled_coordinate_transport_matches_affine_geometry_stencil():
+    m,_,_=subdivide(cube(),{})
+    coordinates=m.xyz[:,:2]*.001+[.6,-.3]
+    out,_,state=subdivide(m,{})
+    transported=transport_coordinates(coordinates,state,m,'coupled_cc')
+    np.testing.assert_allclose(transported,out.xyz[:,:2]*.001+[.6,-.3],atol=1e-14)
