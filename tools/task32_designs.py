@@ -244,10 +244,27 @@ def conservative():
     return folder
 
 
+def projected():
+    definitions=[]
+    for k in range(1,4):
+        d=deepcopy(read(ROOT/'definitions/conservative'/f'F{k:02}_SCREENED.json'))
+        d.update(id=f'G{k:02}_PROJECTED',comparison_parent=f'F{k:02}_SCREENED',
+            hypothesis='F-series contact pairs localize to one right-shoulder disk; its projected boundary crosses once. Admit a simple projected boundary and oriented cap before each sweep, retain the independent post-edit contact screen.')
+        for step in d['steps']:
+            if step['kind']=='patches':step['spec']['projection_guard']=True
+        definitions.append(d)
+    folder=ROOT/'definitions/projected'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Diagnosed self-crossing projected boundary in scope5; outward clearance alone did not fix all four F candidates.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','conservative','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','conservative','projected','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
     actions=dict(pilot=pilot,patches=patches,intrinsic=intrinsic,corrective=corrective,
-                 transmission=transmission,combination=combination,conservative=conservative)
+                 transmission=transmission,combination=combination,conservative=conservative,projected=projected)
     print(request(a.folder,a.tag) if a.action=='request' else actions[a.action]())

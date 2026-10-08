@@ -135,6 +135,8 @@ def run(definition_path):
                     raise ValueError('Corrupt or incomplete checkpoint: '+str(path/name2))
             if proof['parent_mesh_sha256'] != (sha(parent/'mesh.npz') if parent else None):
                 raise ValueError('Checkpoint parent mismatch.')
+            if read(path/'summary.json').get('metadata',{}).get('continuation_rejected'):
+                raise ValueError('Retained checkpoint screen rejected continuation; resumption cannot bypass it.')
             mesh = load_mesh(path)
             if (path/'branch_state.npz').exists():
                 with np.load(path/'branch_state.npz') as z:

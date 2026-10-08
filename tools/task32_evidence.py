@@ -77,7 +77,10 @@ def checkpoints():
         if completed and len(stages)!=len(request['definition']['steps'])+1:raise ValueError('Incomplete declared run.')
         rows.append(dict(id=dest.name,completed=completed is not None,stages=stages,
                          request_sha256=sha(path),producer_sources=request['sources']))
-    write_new(ROOT/'preservation/checkpoints_verified.json',dict(UTC=datetime.now(timezone.utc).isoformat(),
+    dest=ROOT/'preservation/checkpoints_verified.json';number=2
+    while dest.exists():
+        dest=ROOT/f'preservation/checkpoints_verified_{number:03}.json';number+=1
+    write_new(dest,dict(UTC=datetime.now(timezone.utc).isoformat(),
         experiments=rows,stage_files_verified=total_files,total_stages=sum(len(r['stages']) for r in rows)))
     print('Checkpoint files verified',total_files)
 

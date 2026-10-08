@@ -61,6 +61,7 @@ def sweep_disk(mesh, selection, spec, face_scope=None, new_scope=1):
     if np.linalg.norm(direction) < .5:
         direction = unit((mesh.xyz[ring[1]]-mesh.xyz[ring[0]])[None])[0]
     side = np.cross(normal, direction)
+    admission=projected_disk_admission(mesh,selection,ring) if spec.get('projection_guard') else None
     relative = mesh.xyz[vertices]-centre
     radius = float(np.sqrt(f['area'][selection].sum()/np.pi))
     heights = np.asarray(spec.get('heights', [.2, .6, 1.0]), float)*radius
@@ -119,11 +120,44 @@ def sweep_disk(mesh, selection, spec, face_scope=None, new_scope=1):
         patch_faces=len(selection), boundary_vertices=len(ring), centre=centre.tolist(), normal=normal.tolist(),
         direction=direction.tolist(), area_radius=radius, actual_heights=heights.tolist(), spec=spec,
         topology_changed=True, genus_changed=False, new_scope=int(new_scope),
+        projection_admission=admission,
         caveat='Designed constructive branches; not emergent branching, no intersection repair.')
     state = dict(parent_face=parent_array,face_scope=np.asarray(out_scope,np.int64),
                  selected_input_faces=selection,boundary_ring=ring,cap_faces=np.asarray(caps,np.int64),
                  final_ring=np.asarray(rings[-1]),input_classes=mesh.classes)
     return out,meta,state
+
+
+def simple_projected_ring(points):
+    """Reject crossing/touching nonadjacent segments in a proposed 2D boundary."""
+    def cross(a,b):return a[0]*b[1]-a[1]*b[0]
+    tolerance=max(float(np.ptp(points,axis=0).max())**2*1e-12,1e-16)
+    for i,a in enumerate(points):
+        b=points[(i+1)%len(points)]
+        for j in range(i+2,len(points)):
+            if (j+1)%len(points)==i:continue
+            c,d=points[j],points[(j+1)%len(points)]
+            if np.any(np.maximum(np.minimum(a,b),np.minimum(c,d)) > np.minimum(np.maximum(a,b),np.maximum(c,d))+np.sqrt(tolerance)):
+                continue
+            first=cross(b-a,c-a);second=cross(b-a,d-a)
+            third=cross(d-c,a-c);fourth=cross(d-c,b-c)
+            if first*second<=tolerance**2 and third*fourth<=tolerance**2:return False
+    return True
+
+
+def projected_disk_admission(mesh,selection,ring):
+    """Conservative admission for a constant-direction sweep, not solid validity."""
+    q=mesh.faces[np.asarray(selection)];tri=np.concatenate([q[q[:,k]>=0][:,[0,k-1,k]] for k in range(2,q.shape[1])])
+    p=mesh.xyz[tri];cross=np.cross(p[:,1]-p[:,0],p[:,2]-p[:,0])
+    average=unit(cross.sum(0)[None])[0]
+    if np.linalg.norm(average)<.5:raise ValueError('Cancelling projected patch orientation.')
+    dots=cross@average/np.maximum(np.linalg.norm(cross,axis=1),1e-15)
+    if dots.min()<=0:raise ValueError('Patch is not a consistently oriented graph over its sweep plane.')
+    axis=np.eye(3)[np.argmin(np.abs(average))];u=unit(np.cross(average,axis)[None])[0];v=np.cross(average,u)
+    projected=mesh.xyz[ring]@np.array([u,v]).T
+    if not simple_projected_ring(projected):raise ValueError('Projected boundary crosses/touches; constant-direction swept walls can intersect.')
+    return dict(projected_boundary_simple=True,min_triangle_normal_alignment=float(dots.min()),
+        caveat='Input graph/plane admission only; later curved/twisted sweeps and global contacts still need a separate screen.')
 
 
 def choose_front_disks(mesh, spec):
@@ -141,6 +175,7 @@ def choose_front_disks(mesh, spec):
         faces = np.flatnonzero((score<1)&(f['nf'][:,1]<-.35))
         try:
             vertices,ring,_ = disk_boundary(mesh,faces)
+            if spec.get('projection_guard'):projected_disk_admission(mesh,faces,ring)
             if used.intersection(vertices):
                 raise ValueError('Patch scopes touch; no implicit merge.')
             used.update(vertices); selected.append(faces)
@@ -174,7 +209,8 @@ def branch_patches(mesh, spec, previous=None):
                 target=centre+sign*extent*float(spec.get('child_offset',.27))*direction
                 faces=face_ids[np.linalg.norm(centres-target,axis=1)<radius]
                 try:
-                    vertices,_,_=disk_boundary(mesh,faces)
+                    vertices,ring,_=disk_boundary(mesh,faces)
+                    if spec.get('projection_guard'):projected_disk_admission(mesh,faces,ring)
                     if len(faces)<2: raise ValueError('Child not a multi-face patch at this resolution.')
                     if used.intersection(vertices): raise ValueError('Child patches touch.')
                     used.update(vertices); groups.append((faces,int(scope)))
