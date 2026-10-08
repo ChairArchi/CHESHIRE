@@ -132,6 +132,7 @@ G8 비교는 camera pose/width/target, flat normals, clay, lights, GPU backend, 
 - rejected audit checkpoint를 재개해 다음 CC로 넘어가지 못하도록 회귀 테스트를 추가했다. completed-prefix 복구를 검증했으며 mid-optimizer/incomplete-stage restart는 주장하지 않는다.
 - **596개 단계의 1,979개 payload 파일** 해시·parent chain·source/step identity를 검증했다. 정확한 실행 소스 10세트를 `source_snapshots/<identity>/`에 저장했다. 과거 batch는 해당 소스/정의를 복구해야 재개된다.
 - Git의 CRLF 변환도 source hash를 바꿀 수 있다. Git revision과 source overlay를 함께 복구한다. checkpoint/파라미터/소스가 바뀌면 새 ID를 요구한다.
+- 외부 bundle에서 별도 checkout을 복구하고 `git fsck` 및 I02 checkpoint 재개를 확인했다. 기존 worker는 checkout-local `.venv` executable/prefix를 요구한다. 원본 interpreter를 직접 사용한 거부 기록도 보존했다. 새 local venv와 기존 의존성의 읽기 전용 참조로 검증했으며, bundle이 Python 의존성까지 포함하는 독립 배포물이라고 주장하지 않는다.
 - local commits를 작은 단위로 보존했다. 주요 단계: `93df5f3`, `3857909`, `2d05c3e`, `c034d26`, `b451c3c`, `ade92cf`, `8570acd`, `2a2b71c`, `42c88bc`, `2f72524`. 최종 보존 commit/bundle/독립 복구 기록은 `preservation/git_recovery.json`에 있다.
 - 보호 manifest, 문헌·추출 실패, 실제 이미지/단면/state/logs를 `FINAL_ARTIFACTS.json`으로 색인한다. 기존 외부 연구 자료 전체를 복제하지 않았다.
 
