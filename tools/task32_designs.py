@@ -261,10 +261,31 @@ def projected():
     return folder
 
 
+def straight_children():
+    definitions=[]
+    for k,radius in enumerate([.24,.18],1):
+        d=deepcopy(read(ROOT/'definitions/projected/G02_PROJECTED.json'))
+        d.update(id=f'I{k:02}_STRAIGHT_CHILD',comparison_parent='G02_PROJECTED',
+            hypothesis='Full G02 child audit found 13 contacts, concentrated in child scope6 with near-tangential cap normals. Isolate curved sweep bend=0 first; then reduce child footprint. Require all-triangle screens before CC and at the final stage.')
+        for step in d['steps']:
+            if step['kind']=='audit':step['full']=True
+            if step['kind']=='patches' and step.get('children'):
+                step['spec'].update(bend=0,child_radius=radius)
+        d['steps'].append(dict(kind='audit',full=True))
+        definitions.append(d)
+    folder=ROOT/'definitions/straight_children'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Projection over an initial normal does not certify a curved sweep path. Full contact checks replace limited sampling for these candidates.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','conservative','projected','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','transmission','combination','conservative','projected','straight_children','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
     actions=dict(pilot=pilot,patches=patches,intrinsic=intrinsic,corrective=corrective,
-                 transmission=transmission,combination=combination,conservative=conservative,projected=projected)
+                 transmission=transmission,combination=combination,conservative=conservative,
+                 projected=projected,straight_children=straight_children)
     print(request(a.folder,a.tag) if a.action=='request' else actions[a.action]())

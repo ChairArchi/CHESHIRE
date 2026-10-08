@@ -32,6 +32,7 @@ SOURCES = ['tools/task32_research.py', 'src/cheshire/task32_morphology.py',
            'src/cheshire/task32_patches.py',
            'src/cheshire/task32_spectral.py',
            'tools/task32_validation.py',
+           'tools/task32_full_contacts.py',
            'src/cheshire/reference_subdivision.py', 'src/cheshire/progressive_gates.py',
            'examples/task29_search.py', 'examples/hero_design_sprint.py',
            'tools/task31_study.py']
@@ -180,7 +181,10 @@ def run(definition_path):
                 spectral_state=None
         elif step['kind']=='audit':
             from task32_validation import embedding,transverse_contacts
-            contacts=transverse_contacts(mesh)
+            if step.get('full'):
+                from task32_full_contacts import full_contacts
+                contacts=full_contacts(mesh)
+            else:contacts=transverse_contacts(mesh)
             meta=dict(mechanism='Explicit geometric checkpoint screen; geometry unchanged',
                 embedding=embedding(mesh),contacts=contacts,
                 continuation_rejected=bool(contacts['transverse_contacts']))
