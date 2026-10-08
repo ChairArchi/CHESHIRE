@@ -2,7 +2,7 @@ import numpy as np
 from dataclasses import replace
 from cheshire.reference_subdivision import cube, subdivide
 from cheshire.task32_morphology import spring_system, growth_energy, signed_volume_gradient, triangles
-from cheshire.task32_spectral import cotan_system, spectral_field, transport_coordinates
+from cheshire.task32_spectral import cotan_system, spectral_field, transport_coordinates,curvature_limit
 
 
 def test_volume_constraint_energy_gradient_and_translation_invariance():
@@ -44,3 +44,14 @@ def test_spectral_residual_and_positive_cc_field_transport():
     assert transported.min()>=coordinates.min()-1e-14
     assert transported.max()<=coordinates.max()+1e-14
     np.testing.assert_array_equal(transported[:len(m.xyz)],coordinates)
+
+
+def test_curvature_limit_has_physical_scale_covariance():
+    m,_,_=subdivide(cube(),{})
+    bound,curvature=curvature_limit(m,.3)
+    # Remove the declared 1/1000 regularizer when comparing scaling; compare
+    # the actual curvature estimate independently, not a mirrored clamp rule.
+    doubled=replace(m,xyz=m.xyz*2)
+    _,curvature2=curvature_limit(doubled,.3)
+    np.testing.assert_allclose(curvature2,curvature/2,rtol=1e-10,atol=1e-12)
+    assert (bound>0).all() and np.isfinite(bound).all()

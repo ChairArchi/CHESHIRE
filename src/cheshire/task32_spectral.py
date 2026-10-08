@@ -70,12 +70,41 @@ def spectral_displace(mesh,spec,previous=None):
         scalar*=np.clip(np.abs(parent),0,1)**float(spec.get('envelope_power',.5))
     scalar*=np.clip(mesh.rest[:,2]/250,0,1)
     amplitude=float(spec.get('amplitude',250))
-    normals=fields(mesh)['nv'];xyz=mesh.xyz+amplitude*scalar[:,None]*normals
+    requested=amplitude*scalar
+    normals=fields(mesh)['nv'];applied=requested
+    if spec.get('curvature_limit'):
+        limit,kappa=curvature_limit(mesh,float(spec['curvature_limit']))
+        applied=limit*np.tanh(requested/limit)
+        state.update(curvature_bound=limit,estimated_max_abs_curvature=kappa,requested_displacement=requested)
+        meta['limiter']=dict(fraction=float(spec['curvature_limit']),
+            requested_max=float(np.abs(requested).max()),applied_max=float(np.abs(applied).max()),
+            changed_vertices=int((np.abs(applied-requested)>1e-5).sum()),
+            caveat='Own local curvature heuristic, not a global collision or variable-offset regularity guarantee.')
+    xyz=mesh.xyz+applied[:,None]*normals
     state.update(coordinates=coordinates,field=scalar,normals=normals,displacement=xyz-mesh.xyz)
     meta.update(mechanism='cotan eigenfield / transported nonlinear phase displacement',spec=spec,
         amplitude=amplitude,level=level,topology_changed=False,
         caveat='Own normal displacement application; not physical folds, emergent topology, or unique canonical eigenbasis.')
     return replace(mesh,xyz=xyz),meta,state
+
+
+def curvature_limit(mesh,fraction):
+    if not 0<fraction<1:raise ValueError('Curvature fraction must lie strictly inside (0,1).')
+    lap,area=cotan_system(mesh)
+    p=mesh.xyz/1000
+    mean=.5*np.linalg.norm(lap@p,axis=1)/area
+    tri=triangles(mesh);points=p[tri];angles=[]
+    for j in range(3):
+        a=points[:,(j+1)%3]-points[:,j];b=points[:,(j+2)%3]-points[:,j]
+        cosine=(a*b).sum(1)/(np.linalg.norm(a,axis=1)*np.linalg.norm(b,axis=1))
+        angles.append(np.arccos(np.clip(cosine,-1,1)))
+    angle_sum=np.bincount(tri.ravel(),weights=np.column_stack(angles).ravel(),minlength=len(p))
+    gauss=(2*np.pi-angle_sum)/area
+    maximum=(mean+np.sqrt(np.maximum(mean**2-gauss,0)))/1000
+    # Lumped barycentric areas, not Meyer's complete mixed-Voronoi estimator.
+    # A model-unit regularizer limits huge offsets on perfectly flat regions.
+    bound=fraction/np.sqrt(maximum**2+(1/1000)**2)
+    return bound,maximum
 
 
 def transport_coordinates(coordinates,state,mesh):

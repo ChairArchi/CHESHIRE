@@ -2,7 +2,7 @@
 import argparse
 from copy import deepcopy
 from pathlib import Path
-from task32_research import ROOT, write_new, read
+from task32_research import ROOT, write_new, read,sha
 
 
 def cc():
@@ -126,8 +126,39 @@ def intrinsic():
     return folder
 
 
+def corrective():
+    definitions=[]
+    choices=[([5,14],320,.35,3,1),([5,14],320,0,3,1),([5,14],320,.35,2,1),
+             ([2,19],300,.35,3,1),([6,20],300,.35,3,1),([8,18],240,.35,3,1),
+             ([5,14],320,.35,3,0),([5,14],180,.20,3,1)]
+    for k,(modes,amplitude,limit,birth,coupling) in enumerate(choices,1):
+        spec=dict(modes=modes,amplitude=amplitude,coupling=coupling,secondary_mix=.4,level=0,curvature_limit=limit)
+        child=dict(spec,level=1,amplitude=amplitude*.3,frequency=4)
+        micro=dict(spec,level=2,amplitude=amplitude*.10,frequency=4)
+        steps=[cc() for _ in range(birth)]+[dict(kind='spectral',spec=spec),cc(),
+            dict(kind='spectral',spec=child),cc(),dict(kind='spectral',spec=micro)]
+        definitions.append(dict(id=f'C{k:02}_LIMITED',
+            hypothesis='Observed transverse crossings require local curvature-aware amplitude and adequate birth sampling; matched uncapped/coupling ablations',steps=steps))
+    source=Path('E:/CHESHIRE_DATA/task31/lead/gate/G2')
+    for k,modes in enumerate(([2,19],[8,18]),9):
+        spec=dict(modes=modes,amplitude=200,coupling=1,secondary_mix=.4,level=0,curvature_limit=.2)
+        definitions.append(dict(id=f'C{k:02}_TASK31_PREFIX',
+            hypothesis='Retain actual Task31 simple-gate early macro prefix, replace late cell forcing with intrinsic hierarchy; not replay of full Task31 schedule',
+            source_checkpoint=dict(path=str(source),mesh_sha256=sha(source/'mesh.npz'),
+                producer_baseline='663be3b4e030322b38af743d0d40631e8cafc1d6',
+                note='Actual G0->G2 unchanged simple gate prefix, original state preserved at source'),
+            steps=[cc(),dict(kind='spectral',spec=spec),cc(),dict(kind='spectral',spec=dict(spec,level=1,amplitude=55)),
+                   cc(),dict(kind='spectral',spec=dict(spec,level=2,amplitude=18))]))
+    folder=ROOT/'definitions/corrective'
+    for d in definitions:write_new(folder/(d['id']+'.json'),d)
+    write_new(folder/'batch.json',dict(ids=[d['id'] for d in definitions],
+        reason='Every S-series field result had transverse contacts and opposed quad fans. Test an explicit geometric risk correction; no repair of those retained outputs.',
+        not_final_search_limit=True))
+    return folder
+
+
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','request'])
+    p = argparse.ArgumentParser(); p.add_argument('action', choices=['pilot','patches','intrinsic','corrective','request'])
     p.add_argument('--folder', type=Path); p.add_argument('--tag')
     a = p.parse_args()
-    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else request(a.folder, a.tag))
+    print(pilot() if a.action == 'pilot' else patches() if a.action=='patches' else intrinsic() if a.action=='intrinsic' else corrective() if a.action=='corrective' else request(a.folder, a.tag))

@@ -111,6 +111,14 @@ def run(definition_path):
         write_new(dest/'request.json', request)
     checkpoints = []
     mesh = basic_gate()
+    input_source=None
+    if d.get('source_checkpoint'):
+        source=Path(d['source_checkpoint']['path']).resolve()
+        if not source.is_relative_to(Path('E:/CHESHIRE_DATA/task31').resolve()):
+            raise ValueError('Only declared read-only Task31 source checkpoints are admitted.')
+        if sha(source/'mesh.npz')!=d['source_checkpoint']['mesh_sha256']:
+            raise ValueError('Task31 source checkpoint identity mismatch.')
+        mesh=load_mesh(source);input_source=d['source_checkpoint']
     branch_state = None
     spectral_state = None
     operations = [dict(kind='input')]+d['steps']
@@ -137,7 +145,7 @@ def run(definition_path):
         pre = preflight(mesh, step['kind'])
         start = perf_counter()
         if step['kind'] == 'input':
-            meta, state = dict(input='Exact gate_input RECT False; unresolved original units'), None
+            meta, state = dict(input='Exact gate_input RECT False; unresolved original units',source_checkpoint=input_source), None
         elif step['kind'] == 'cc':
             before=mesh
             mesh, meta, state = subdivide(mesh, step.get('row', {}))
