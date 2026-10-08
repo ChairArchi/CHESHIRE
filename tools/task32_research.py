@@ -138,6 +138,11 @@ def run(definition_path):
             if read(path/'summary.json').get('metadata',{}).get('continuation_rejected'):
                 raise ValueError('Retained checkpoint screen rejected continuation; resumption cannot bypass it.')
             mesh = load_mesh(path)
+            # Every completed stage stores its complete active auxiliary state.
+            # Missing state means its lineage ended, e.g. at a topology edit;
+            # never keep an earlier field while loading a newer mesh.
+            branch_state=None
+            spectral_state=None
             if (path/'branch_state.npz').exists():
                 with np.load(path/'branch_state.npz') as z:
                     branch_state={k:z[k].copy() for k in z.files}
