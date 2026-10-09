@@ -1,0 +1,30 @@
+{
+  "carrier": "curved_jointed",
+  "macro": {
+    "amplitude": 500,
+    "lobes": 6,
+    "neck_depth": 0.7,
+    "angular_convergence": 0.18,
+    "bulge_span": 0.055,
+    "xz_gain": 1.0
+  },
+  "refold": {
+    "fraction": 0.3,
+    "normal_mix": 0.15,
+    "longitudinal_mix": 0.2,
+    "curvature_gain": 0.15,
+    "prominence": 15.0,
+    "notch_width": 0.6,
+    "operator": "split",
+    "axial_mix": 0.5,
+    "direction_mode": "profile",
+    "tangent_mode": "guide"
+  },
+  "criterion": "frozen_macro",
+  "final_generation": 5,
+  "macro_generation": 3,
+  "fold_generations": [
+    4,
+    5
+  ]
+}

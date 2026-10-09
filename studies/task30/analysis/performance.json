@@ -1,0 +1,111 @@
+{
+  "jobs": [
+    {
+      "job": "primary",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 105.96444629994221,
+      "sampled_peak_tree_plus_driver_bytes": 551469056,
+      "memory_guard_bytes": 10704003481,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_comparison",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 9.110411099973135,
+      "sampled_peak_tree_plus_driver_bytes": 1068212224,
+      "memory_guard_bytes": 10363237580,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_detail",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 7.4653044999577105,
+      "sampled_peak_tree_plus_driver_bytes": 715440128,
+      "memory_guard_bytes": 11199758336,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_primary",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 13.3707000000868,
+      "sampled_peak_tree_plus_driver_bytes": 1506340864,
+      "memory_guard_bytes": 10703912960,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_primary_details",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 12.924476600019261,
+      "sampled_peak_tree_plus_driver_bytes": 853614592,
+      "memory_guard_bytes": 10721237196,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_progression",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 6.621819199994206,
+      "sampled_peak_tree_plus_driver_bytes": 727912448,
+      "memory_guard_bytes": 10488727142,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_secondary",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 6.387726499931887,
+      "sampled_peak_tree_plus_driver_bytes": 1120948224,
+      "memory_guard_bytes": 10600886067,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "render_secondary_details",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 11.641005800105631,
+      "sampled_peak_tree_plus_driver_bytes": 732274688,
+      "memory_guard_bytes": 11039902515,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    },
+    {
+      "job": "secondary",
+      "exit_code": 0,
+      "resource_stop": null,
+      "seconds": 30.181137999985367,
+      "sampled_peak_tree_plus_driver_bytes": 546070528,
+      "memory_guard_bytes": 10717565747,
+      "guard": "Measured RAM only; no elapsed-time/contact/historical-face-cap stop."
+    }
+  ],
+  "measured_guarded_seconds": 203.6670279999962,
+  "sampled_peak_tree_plus_driver_bytes": 1506340864,
+  "native": {
+    "application": "RhinoCommon 8.18.25100.11001",
+    "target": "E:/CHESHIRE_DATA/task30\\dcc\\TASK30_LEAD.3dm",
+    "OBJ": "E:/CHESHIRE_DATA/task30/dcc/TASK30_LEAD.obj",
+    "OBJ_sha256": "4cf3c00a536858ddae2ef7288d3d708c727ac910fda924a35ea884b77e843402",
+    "native_sha256": "d701fd4fe4ee532b1405d2da16c63cc633ab7b2a2492457202720de5314ed885",
+    "native_bytes": 13585646,
+    "actual_native_file_read": true,
+    "exact_XYZ_oriented_faces": true,
+    "headless_document_open": true,
+    "imported_objects": 1,
+    "object_id": "314ec286-8520-40e5-b953-110d121554d3",
+    "layer": "TASK30_TASK30_LEAD",
+    "object_name": "TASK30_LEAD_EXACT_SAVED_SUBDIVISION",
+    "vertices": 393218,
+    "faces": 393216,
+    "units": "None / original unknown physical units; no scaling",
+    "processing": "Display normals only; no welding, triangulation, remeshing, smoothing, thickening or intersection repair.",
+    "native_read_write_document_seconds": 6.525586,
+    "native_host_peak_working_set_bytes": 546418688,
+    "resource_scope": "Native operation time excludes cold RhinoCore startup. Peak working set is this native PowerShell/RhinoCommon host, not a whole process-tree measurement.",
+    "display": "Native file validation, not an interactive viewport or beauty render. OpenGL depth capture is separate; this evidence verifies native file and headless open only."
+  },
+  "scope": "Measured guarded generation/render jobs only; native host has separate measurements. Not total agent elapsed time."
+}
