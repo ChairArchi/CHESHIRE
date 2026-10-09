@@ -1,0 +1,497 @@
+{
+  "date": "2026-10-10",
+  "original_branch": "research/hansmeyer-cleanroom",
+  "original_commit": "04d0dae8231fdfabaa7ae9f074a38a92985ac81f",
+  "publication_branch": "archive/hansmeyer-cleanroom-2026-10-10",
+  "kind": "New publication snapshot, not the original commit/history",
+  "original_history": "Unchanged local refs and archive-local/2026-10-10/CHESHIRE_RESEARCH_LOCAL_HEADS.bundle; not uploaded with excluded blobs",
+  "retained_files": "Every retained original tree entry, including implementation and recipes, is byte-identical (same Git blob and mode).",
+  "excluded": [
+    {
+      "path": "output/G0.png",
+      "git_entry": "100644 blob 43e50f3bff3d54bf329f72d2b85186739982dfe8",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G0.npz",
+      "git_entry": "100644 blob f86a38856d40ca705393fb3a245f182a0a990fb3",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G0.obj",
+      "git_entry": "100644 blob 5834f35363690f7d0b5d3b3995fd47b3f9ffa48f",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G0.png",
+      "git_entry": "100644 blob 6e3fc57a792b96af3985404505b8a9341e391633",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G1.npz",
+      "git_entry": "100644 blob a629f98e1ddb0bfb33e18c69aeaed20dc1c54412",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G2.npz",
+      "git_entry": "100644 blob 16a36b1e5aa3ec8e8ac2edb3b4fa2b0312d96e13",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G2.obj",
+      "git_entry": "100644 blob af3e96ef1bb33834612e8459581b0b3fba7576f0",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G2.png",
+      "git_entry": "100644 blob e2745cf5fa109fbfa1952871fe6db113438d7c00",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G3.npz",
+      "git_entry": "100644 blob dacafa9aea537ae3f96d4bba1d68eab517796c6e",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G4.npz",
+      "git_entry": "100644 blob 87857d6905c6a4fc885c4aa8f89a7409b7967ec0",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G4.obj",
+      "git_entry": "100644 blob 13a5fba091cac03fa2615ae5d92e84ca9ce25222",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G4.png",
+      "git_entry": "100644 blob eb9ee5bc10c6fdc7fb785a265727c8aa26ae47bf",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G5.npz",
+      "git_entry": "100644 blob 1983e01a7c17676d0b31a1fca28cbed12d762801",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G6.npz",
+      "git_entry": "100644 blob ad32201b8ae6d3212cec1bbefe7da1751f2bd1e5",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G6.obj",
+      "git_entry": "100644 blob d7d08e8329a59fa2d8ef9b3f54b919d179b3fc18",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G6.png",
+      "git_entry": "100644 blob 57c4fbd98dd093c784d1ea04a0fa19e4f5ed5852",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G7.npz",
+      "git_entry": "100644 blob 297b8f440d8cc94e1a3a8e75d1cea3318d3bf81f",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G8.npz",
+      "git_entry": "100644 blob e0fe2810e85be5ac09fee23ff6ea988d73867905",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G8.obj",
+      "git_entry": "100644 blob 50c0b6f462e97bb49fce746632bae8bfc0f8d5f3",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G8.png",
+      "git_entry": "100644 blob 1f6c4c1dd96113a916fb05979286286c5b8e983c",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/standard_cc/G8_center_detail.png",
+      "git_entry": "100644 blob 9802150b4fe0963a99d797564f991bf790ad5865",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G0.npz",
+      "git_entry": "100644 blob f86a38856d40ca705393fb3a245f182a0a990fb3",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G0.obj",
+      "git_entry": "100644 blob 5834f35363690f7d0b5d3b3995fd47b3f9ffa48f",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G0.png",
+      "git_entry": "100644 blob 4ee1551700b64b872be09c77e082f3be02416804",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G1.npz",
+      "git_entry": "100644 blob a0cdc2f4b270be6018e99815299f0810f53b56a9",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G1.png",
+      "git_entry": "100644 blob a91e198105ea54d9156f8cee584b3c9495e28639",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G2.npz",
+      "git_entry": "100644 blob 1b058a898cd6d248ffd6b77d31da5e07fca6d085",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G2.obj",
+      "git_entry": "100644 blob 29c1fa644bb054f03577b0283140f251ee954a80",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G2.png",
+      "git_entry": "100644 blob 5e12a9f45201c1b18be9749e927f0e5ed46ded65",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G3.npz",
+      "git_entry": "100644 blob 1bf7f6003d04d6c1a1b326421d88bcb26512075c",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G3.png",
+      "git_entry": "100644 blob 7f4f00fc3da9cf7cccdbce1d1b638adcdf136d00",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G4.npz",
+      "git_entry": "100644 blob dc7482bc1bcccc58d49a7e772b5b931854fe685a",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G4.obj",
+      "git_entry": "100644 blob 30e3c36f2476f9be21a08b2c2dd446a52a361488",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G4.png",
+      "git_entry": "100644 blob 1b304819b8e4693f82882ff20c0129bdebbdbf46",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G5.npz",
+      "git_entry": "100644 blob e0782e0917c717c44fe356be1a475a361f40c9e5",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G6.npz",
+      "git_entry": "100644 blob 1fc520efb174a49c149985df182251458fc216d2",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G6.obj",
+      "git_entry": "100644 blob 90044923887f833eb4d2668b152d7ca8d90b9083",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G6.png",
+      "git_entry": "100644 blob 1351a074d003ed21484bf7a328de606b45314af1",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G7.npz",
+      "git_entry": "100644 blob 54b79e4c9091bcbf85f5718116bd1f7571d7a69d",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G8.npz",
+      "git_entry": "100644 blob 8ef18e721ea86ae342f1aad1a2a32a399cc77642",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G8.obj",
+      "git_entry": "100644 blob 145a4aa4c0c730d9d9b569913ebef17d5ac45b0a",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_only/G8.png",
+      "git_entry": "100644 blob cd84be8cea52ee2ef3f68d3bedfad373756c5822",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_only/G8_center_detail.png",
+      "git_entry": "100644 blob df1af8bca14f47c9fb20dfad4d725b962d91ce94",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G0.npz",
+      "git_entry": "100644 blob f86a38856d40ca705393fb3a245f182a0a990fb3",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G0.obj",
+      "git_entry": "100644 blob 5834f35363690f7d0b5d3b3995fd47b3f9ffa48f",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G0.png",
+      "git_entry": "100644 blob e96109456be7fe9a6d4d187347cba36efd5e503f",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G1.npz",
+      "git_entry": "100644 blob 27afde29130fc19b7abcd04c4a8d497984d21f9b",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G1.png",
+      "git_entry": "100644 blob 14e4407599edfbae451a38c9ba68d275ba18cecc",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G2.npz",
+      "git_entry": "100644 blob 9e70e1f5e1e58d3eee8ebb43e16e4e7875843225",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G2.obj",
+      "git_entry": "100644 blob 6f35da7a2f117e0991ddcee477cf246c841bf77e",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G2.png",
+      "git_entry": "100644 blob 9fd01e7147cabc0864e56bea8bb207292983258b",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G3.npz",
+      "git_entry": "100644 blob 8d740b8afc0140e69d40c4ba399d190e075cb8b8",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G3.png",
+      "git_entry": "100644 blob 37c7b8759139a53c30623c2360d5d8fce17d7db7",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G4.npz",
+      "git_entry": "100644 blob 1cc447c91f32b58b34160485f62ea147de0ca891",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G4.obj",
+      "git_entry": "100644 blob 8c63668f3c010f5a348bff1d4ce35a278fe2966f",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G4.png",
+      "git_entry": "100644 blob f1418bc94dc75a3591a42e05efea091e362b3a54",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G5.npz",
+      "git_entry": "100644 blob 3b44666cc2d672bff1d7c7eda9ebe989259c3aac",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G6.npz",
+      "git_entry": "100644 blob f8291998d7a3df099c736aabc7ed6c649663fcc6",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G6.obj",
+      "git_entry": "100644 blob 95063ddb310c592bb2a3ab6fb27f127c2bf1813d",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G6.png",
+      "git_entry": "100644 blob 2e33a2c46238f64e2a13af56bfcc68e613904b4e",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G7.npz",
+      "git_entry": "100644 blob 828c005460f04c38c06a02804205a9400468e18c",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G8.npz",
+      "git_entry": "100644 blob 698612376f96839a93de3215c7bc546ac1fd6ab5",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G8.obj",
+      "git_entry": "100644 blob b6b8b6abb6127e1e803097b7c5165b613c5705ae",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G8.png",
+      "git_entry": "100644 blob 86c28361d6a7d1920a432ad35835352b0c5bc2b4",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/illustration1/weights_vertex_normal/G8_center_detail.png",
+      "git_entry": "100644 blob a4a7c6da23bb5ec0d8aede636671bdaab54c49a3",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G0.obj",
+      "git_entry": "100644 blob d44657ec9763f870ddc4066384906d0cfefb7617",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G0.png",
+      "git_entry": "100644 blob 7784d85b19aa2bbea72c653c1321090fdad65a93",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G1.obj",
+      "git_entry": "100644 blob 2cdfaed99f54a66f4c758efe7b549d677c692941",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G1.png",
+      "git_entry": "100644 blob a9a3b8a82d7f8a986547beb1003fa96db0583e32",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G2.obj",
+      "git_entry": "100644 blob 34a1d45487d18ad4b04c702d506941c07e77c718",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G2.png",
+      "git_entry": "100644 blob 5826b99caface26381d492391b390b06c3be9f3a",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G3.obj",
+      "git_entry": "100644 blob c23f18d3910dcf710ff70ed62de54e01b52401bf",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/mixed_cc_ds_cc_G3.png",
+      "git_entry": "100644 blob 2fdcf9fc32daa33abafa9042ccb7b686a95ab862",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_cc_G0.obj",
+      "git_entry": "100644 blob d44657ec9763f870ddc4066384906d0cfefb7617",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_cc_G0.png",
+      "git_entry": "100644 blob c17e6d3407cbffc334146a37fe62a2292aaf9c26",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_cc_G1.obj",
+      "git_entry": "100644 blob 2cdfaed99f54a66f4c758efe7b549d677c692941",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_cc_G1.png",
+      "git_entry": "100644 blob 217118c5ea5485c04a013db6eb00293a356952da",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_cc_G2.obj",
+      "git_entry": "100644 blob 6adac76c0a1916b4b1e58cd18aa0c2e1cd77ca75",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_cc_G2.png",
+      "git_entry": "100644 blob e9cf02d73c46dde61b0bdabb8612884c2b418809",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_cc_G3.obj",
+      "git_entry": "100644 blob a73b165c5a2ff295f998efa93f29695de754e357",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_cc_G3.png",
+      "git_entry": "100644 blob 8d03b4e7557665f49e70b957ba0f47e3fe09405d",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_ds_G0.obj",
+      "git_entry": "100644 blob d44657ec9763f870ddc4066384906d0cfefb7617",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_ds_G0.png",
+      "git_entry": "100644 blob aa680ab78b7750df89c21e2fc478037fb0f3942a",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_ds_G1.obj",
+      "git_entry": "100644 blob f87adf30f0b901ae74fbabf6c60e0109e52ed6ec",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_ds_G1.png",
+      "git_entry": "100644 blob 30d64820f01da24af0f274def41ebcb56537cfea",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_ds_G2.obj",
+      "git_entry": "100644 blob 652226c2b4001a9550161436dc2d2403d50ea543",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_ds_G2.png",
+      "git_entry": "100644 blob 91d268ab7bbef1d4e82a682601b2050ee1cd2008",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/modified_ds_G3.obj",
+      "git_entry": "100644 blob f777e95ef216be6add0a871773ab54ed6a9b0e3d",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/modified_ds_G3.png",
+      "git_entry": "100644 blob 12b36d3ab3378b9ace1cde52669335de3d1d5d9d",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/standard_cc_G0.obj",
+      "git_entry": "100644 blob d44657ec9763f870ddc4066384906d0cfefb7617",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/standard_cc_G0.png",
+      "git_entry": "100644 blob 43e50f3bff3d54bf329f72d2b85186739982dfe8",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/standard_cc_G1.obj",
+      "git_entry": "100644 blob eca1f976440395bdab32092c36959c8edd151629",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/standard_cc_G1.png",
+      "git_entry": "100644 blob 0bcc6539fe3202cdbbe5586e42fc1e6047dc02bf",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/standard_cc_G2.obj",
+      "git_entry": "100644 blob 24d77a69e7c669dc5fde988190c3e9c5320f64c6",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/standard_cc_G2.png",
+      "git_entry": "100644 blob 84bb3de97261961768fbdc5cc7ddbe6e10daa17b",
+      "reason": "Selected comparison images published; individual original views remain local"
+    },
+    {
+      "path": "output/standard_cc_G3.obj",
+      "git_entry": "100644 blob 8f61b9442d01d7873fb355de263617a517f304b6",
+      "reason": "Generated geometry/checkpoints remain in original local branch/worktree and local Git bundle; no bulk mesh upload"
+    },
+    {
+      "path": "output/standard_cc_G3.png",
+      "git_entry": "100644 blob b932b5ae1fbaabf43dacb39fcba6ff28ffc84263",
+      "reason": "Selected comparison images published; individual original views remain local"
+    }
+  ],
+  "no_research_execution": "No geometry generation, rendering, test suite or generator edits during archive work."
+}

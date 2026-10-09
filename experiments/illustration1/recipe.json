@@ -1,0 +1,18 @@
+{
+  "description": "Own fixed non-stationary uniform test values; NOT Hansmeyer's unpublished Illustration 1 parameters.",
+  "input": "Single undecorated closed cube [-1,1]^3, 8 vertices and 6 quads",
+  "scheme": "Modified Catmull-Clark only; no Doo-Sabin, fusing, locking, spatial weights or postprocessing",
+  "max_generation": 8,
+  "comparison_generations": [0, 2, 4, 6, 8],
+  "controls": ["standard_cc", "weights_only", "weights_vertex_normal"],
+  "w1": [1.4, -1.25, 1.6, -1.15, 1.35, -1.05, 1.2, -1.1],
+  "w2": [-1.2, 2.4, -1.4, 2.3, -1.1, 2.2, -1.0, 2.1],
+  "w3": [0.0, 1.25, -1.1, 1.2, -1.1, 1.15, -1.05, 1.1],
+  "w4": [0.0, 1.15, -1.05, 1.1, -0.95, 1.05, -0.9, 0.95],
+  "w10": [0, 0, 0, 0, 0, 0, 0, 0],
+  "w11": [0, 0, 0, 0, 0, 0, 0, 0],
+  "w12": [0.06, 0.10, -0.06, 0.12, -0.08, 0.12, -0.08, 0.12],
+  "normal_convention": "Existing implementation unchanged: unit input face normal times current face perimeter; input vertex normal is the arithmetic mean of these scaled incident face normals, without renormalization.",
+  "selection_reason": "Alternate non-convex masks to test generation of new folds rather than return each generation to convex smoothing. Avoid exact w1=3 coincidence. Independent w12 supplies signed vertex-only normal displacement; weights_only has identical w1-w4 with w12=0.",
+  "paper_scope": "2010 pp76-77 Eqs1-4 and section3.1; p80 Illustration1. No numeric weight interval is specified. Finite extrapolating weights do not guarantee an embedded or printable surface."
+}
