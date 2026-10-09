@@ -80,6 +80,8 @@ def run(request,tag):
             meta=dict(operation='Incremental child differences on interpolated geometry' if request.get('incremental',False) else 'Re-evaluate finite physical-scale folds on same material carrier',generation=g,levels=level,
                       requested=params,actual_depth_range=[float(ff['depth'].min()),float(ff['depth'].max())],
                       actual_fan_range=[float(ff['fan'].min()),float(ff['fan'].max())],
+                      actual_twist_angle_range=[float(ff['twist_angle'].min()),float(ff['twist_angle'].max())],
+                      actual_width_range=[float(ff['width'].min()),float(ff['width'].max())],
                       symmetry_constructive_chart_max=reflection_error(state,m.xyz),
                       no_geometric_smoothing=not(request.get('smooth_after_macro',False) and g>onset),scale='Original unresolved project units; not edge-length scaling.')
             checkpoint(after,m,state,meta,None,before,ff)
@@ -120,16 +122,24 @@ def render(request,tag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--action',choices=['run','audit','render'],required=True)
+    p=argparse.ArgumentParser();p.add_argument('--action',choices=['run','audit','render','measure','evidence','planar','progression','export'],required=True)
     p.add_argument('--request',type=Path,required=True);p.add_argument('--tag',required=True);p.add_argument('--worker',action='store_true');args=p.parse_args()
     if not args.tag.replace('_','').isalnum():raise ValueError('Safe tag required.')
     if args.worker:
         if args.action=='render':render(args.request,args.tag)
+        elif args.action in ('measure','evidence','planar','progression','export'):
+            module=__import__('task33_'+args.action)
+            function=getattr(module,'audit' if args.action=='planar' else args.action)
+            function(json.loads(args.request.read_text(encoding='utf-8'))['candidate'],args.tag)
         else:globals()[args.action](json.loads(args.request.read_text(encoding='utf-8')),args.tag)
     else:
         definition=json.loads(args.request.read_text(encoding='utf-8'))
         if args.action=='run':preflight(definition)
-        result=guarded(['--action',args.action,'--request',str(args.request),'--tag',args.tag,'--worker'],ROOT/'logs'/(args.action+'_'+args.tag),worker_script=Path(__file__))
+        if args.action in ('measure','evidence','planar','progression','export'):
+            preflight(json.loads((ROOT/'candidates'/definition['candidate']/'request.json').read_text()))
+        logs=ROOT/'logs'/(args.action+'_'+args.tag)
+        if logs.exists():raise FileExistsError('Existing Task33 logs are immutable: '+str(logs))
+        result=guarded(['--action',args.action,'--request',str(args.request),'--tag',args.tag,'--worker'],logs,worker_script=Path(__file__))
         write_new(ROOT/'resources'/(args.action+'_'+args.tag+'.json'),result)
         print(json.dumps(result),flush=True)
         if result['exit_code']:raise SystemExit(result['exit_code'])

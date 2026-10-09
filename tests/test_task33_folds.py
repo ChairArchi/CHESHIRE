@@ -72,3 +72,55 @@ def test_section_refinement_keeps_closed_oriented_topology_and_parent_support():
 @pytest.mark.parametrize('params',[{'sweep':float('nan')},{'lobes':0},{'typo_amplitude':300},{'child_frequency_variation':2}])
 def test_invalid_or_discontinuous_controls_fail_explicitly(params):
     with pytest.raises(ValueError):fold_values(initial_chart(gate())['chart'],params,3)
+
+
+def test_child_phase_can_form_a_real_valley_inside_the_parent_crest():
+    chart=np.array([[.1,-.08,-1],[.1,0,-1],[.1,.08,-1]])
+    p=dict(convergence=0,sweep=0,lobes=1,amplitudes=[500,260,75],child_floor=0,parent_gate_power=2,
+           child_phase_shift=np.pi)
+    macro=fold_values(chart,p,1)['depth'];meso=fold_values(chart,p,2)['depth']
+    assert macro[1]>macro[0] and macro[1]>macro[2]
+    assert meso[0]-meso[1]>100 and meso[2]-meso[1]>100
+
+
+def test_fine_phase_can_create_additional_valleys_instead_of_only_sharpening_meso():
+    from scipy.signal import find_peaks
+    u=np.linspace(-1,1,2001)
+    chart=np.column_stack([np.full(len(u),.24531),u,-np.ones(len(u))])
+    p=dict(convergence=.55,neck_locations=[.15,.43],windowed=True,lobes=1.6,
+           child_floor=0,parent_gate_power=2,child_frequency_variation=2,
+           child_phase_shift=np.pi,micro_phase_shift=np.pi,micro_coupling=0,amplitudes=[500,400,200])
+    meso=fold_values(chart,p,2)['depth'];fine=fold_values(chart,p,3)['depth']
+    assert len(find_peaks(fine,prominence=25)[0])>len(find_peaks(meso,prominence=25)[0])
+    np.testing.assert_array_equal(fold_values(chart,p,1)['depth'],fold_values(chart,{**p,'amplitudes':[500,0,0]},3)['depth'])
+
+
+def test_generated_meso_response_and_signed_recess_remain_finite_and_symmetric():
+    m=gate();s=initial_chart(m)
+    for _ in range(3):m,s,_,_=refine(m,s,carrier_smoothing=m.generation<2)
+    p=dict(child_floor=0,parent_gate_power=2,child_frequency_variation=2,child_phase_shift=np.pi,
+           fine_mode='meso_slope',macro_recess=120,paired_controls=True,twist=.35,amplitudes=[500,400,100])
+    out,ff=evaluate(m,s,p,3)
+    assert reflection_error(s,out.xyz)<1e-9
+    assert ff['depth'].min()>=-120 and np.isfinite(out.xyz).all()
+
+
+def test_generated_meso_response_derivative_step_is_converged():
+    u=np.linspace(-1,1,1001);c=np.column_stack([np.full(len(u),.24531),u,-np.ones(len(u))])
+    p=dict(child_floor=0,parent_gate_power=2,child_frequency_variation=2,fine_mode='meso_slope')
+    a=fold_values(c,{**p,'gradient_epsilon':1e-5},3)['depth']
+    b=fold_values(c,{**p,'gradient_epsilon':1e-6},3)['depth']
+    assert np.abs(a-b).max()<.01
+
+
+def test_meso_notch_splits_generated_crests_without_erasing_macro_component():
+    from scipy.signal import find_peaks
+    u=np.linspace(-1,1,257);chart=np.column_stack([np.full(len(u),.06531),u,-np.ones(len(u))])
+    p=dict(windowed=True,child_floor=0,lobes=1.6,convergence=.55,neck_locations=[.15,.43],
+           child_frequency_variation=2,parent_gate_power=2,child_phase_shift=np.pi,
+           fine_mode='meso_notch',micro_slope_scale=12,amplitudes=[500,400,180])
+    macro=fold_values(chart,p,1)['depth'];meso=fold_values(chart,p,2)['depth'];fine=fold_values(chart,p,3)['depth']
+    assert len(find_peaks(fine,prominence=25)[0])==12
+    assert len(find_peaks(meso,prominence=25)[0])==6
+    assert np.all(fine>=macro-1e-10)
+    with pytest.raises(ValueError):fold_values(chart,{**p,'amplitudes':[500,100,180]},3)

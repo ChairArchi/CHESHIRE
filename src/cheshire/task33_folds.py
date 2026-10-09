@@ -87,10 +87,16 @@ def fold_values(chart, params, levels):
         raise ValueError('Finite levels 0..3 required.')
     allowed={'neck_location','neck_locations','neck_span','convergence','lobes','sweep',
              'coupling','amplitudes','waist','windowed','child_floor','child_frequency_variation',
-             'parent_gate_power','micro_frequency','twist','twist_start','twist_end'}
+             'parent_gate_power','micro_frequency','twist','twist_start','twist_end',
+             'child_phase_shift','micro_phase_shift','micro_coupling','fine_mode',
+             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls'}
     if set(params)-allowed:raise ValueError('Unknown fold parameters: '+str(sorted(set(params)-allowed)))
     for key,value in params.items():
+        if key=='fine_mode':
+            if value not in ('phase','meso_slope','meso_notch'):raise ValueError('Unknown fine mechanism.')
+            continue
         if not np.isfinite(np.asarray(value,dtype=float)).all():raise ValueError('Nonfinite fold control: '+key)
+    if not 0<=params.get('macro_recess',0)<200:raise ValueError('Recess must preserve positive carrier thickness.')
     if params.get('lobes',1.15)<=0 or params.get('micro_frequency',3)<=1:
         raise ValueError('Positive macro frequency and finer micro frequency required.')
     if not 0<=params.get('waist',.28)<1 or not 0<=params.get('convergence',.6)<1:
@@ -122,8 +128,9 @@ def fold_values(chart, params, levels):
         local_phase=np.arctan2(np.sin(theta),np.cos(theta))
         child_phase=frequency*local_phase+params.get('coupling',1.4)*np.sin(theta)
     else:child_phase = 3*theta+params.get('coupling',1.4)*np.sin(theta)
+    child_phase+=params.get('child_phase_shift',0)
     child = .5+.5*np.cos(child_phase)
-    micro = .5+.5*np.cos(params.get('micro_frequency',3)*child_phase+np.sin(theta))
+    micro = .5+.5*np.cos(params.get('micro_frequency',3)*child_phase+params.get('micro_coupling',1)*np.sin(theta)+params.get('micro_phase_shift',0))
     a = params.get('amplitudes',[390,100,28])
     amplitudes = np.array(a,dtype=float)
     if amplitudes.shape!=(3,) or not np.isfinite(amplitudes).all() or np.any(amplitudes<0):
@@ -133,16 +140,43 @@ def fold_values(chart, params, levels):
     floor=params.get('child_floor',.2)
     if not 0<=floor<=1:raise ValueError('Child floor must be in [0,1].')
     gate=floor+(1-floor)*parent**params.get('parent_gate_power',1)
+    width = 1-params.get('waist',.28)*neck+.12*np.exp(-((q-.31)/.10)**2)
+    slope=np.zeros(len(chart))
+    fine_mode=params.get('fine_mode','phase')
+    if fine_mode=='meso_notch' and a[2]>a[1]:
+        raise ValueError('A notch may not remove more than the meso contribution.')
+    if fine_mode in ('meso_slope','meso_notch'):
+        if levels>=3:
+            eps=params.get('gradient_epsilon',1e-5);scale=params.get('micro_slope_scale',12)
+            if eps<=0 or scale<=0:raise ValueError('Positive derivative step and slope scale required.')
+            plus=chart.copy();minus=chart.copy();plus[:,1]+=eps;minus[:,1]-=eps
+            derivative=(fold_values(plus,params,2)['depth']-fold_values(minus,params,2)['depth'])/(2*eps)
+            # Generated meso depth field response, not a general actual-mesh
+            # curvature estimator. Fixed nominal physical section scale.
+            slope=derivative/(450*width)
+            micro=(np.sin(np.pi*np.tanh(np.abs(slope)/scale))**2 if fine_mode=='meso_slope'
+                   else -np.exp(-(slope/scale)**2))
+        else:micro=np.zeros(len(chart))
     if levels>=2:depth += a[1]*gate*child
     if levels>=3:depth += a[2]*gate*(floor+(1-floor)*child)*micro
     depth *= foot
-    width = 1-params.get('waist',.28)*neck+.12*np.exp(-((q-.31)/.10)**2)
+    if levels:depth-=params.get('macro_recess',0)*foot
     return dict(depth=depth, width=width, fan=fan, parent_phase=theta,
-                child_phase=child_phase, parent=parent, child=child, foot=foot)
+                child_phase=child_phase, parent=parent, child=child, foot=foot,meso_depth_slope=slope)
 
 
 def evaluate(mesh, state, params, levels):
     f = fold_values(state['chart'],params,levels)
+    pair=None
+    if params.get('paired_controls',False):
+        from scipy.spatial import cKDTree
+        reflected=state['chart'].copy();reflected[:,0]=1-reflected[:,0]
+        distance,pair=cKDTree(state['chart']).query(reflected)
+        if distance.max()>1e-10 or not np.array_equal(pair[pair],np.arange(len(pair))):
+            raise ValueError('Control reflection correspondence is invalid.')
+        right=state['chart'][:,0]>.5
+        # Reflect scalar controls BEFORE deformation, never average XYZ.
+        for value in f.values():value[right]=value[pair[right]]
     base = state['carrier']
     s = state['chart'][:,0]
     centre = np.column_stack([np.interp(s,state['knots'],state['centres'][:,k]) for k in range(3)])
@@ -150,6 +184,7 @@ def evaluate(mesh, state, params, levels):
     xyz[:,[0,2]] = centre[:,[0,2]] + (base[:,[0,2]]-centre[:,[0,2]])*f['width'][:,None]
     xyz[:,1] = PLANE_Y+(base[:,1]-PLANE_Y)*(1+f['depth']/250)
     twist=params.get('twist',0)
+    f['twist_angle']=np.zeros(len(base))
     if not np.isfinite(twist) or abs(twist)>.8:raise ValueError('Twist must be finite and within 0.8 radians.')
     if twist:
         directions=state.get('directions')
@@ -165,10 +200,13 @@ def evaluate(mesh, state, params, levels):
             if not 0<start<end<.5:raise ValueError('Ordered twist support bounds required.')
             envelope=np.clip((end-q)/(end-start),0,1)
             angle*=envelope*envelope*(3-2*envelope)
+        if pair is not None:angle[right]=angle[pair[right]]
+        f['twist_angle']=angle.copy()
         off=xyz[:,[0,2]]-centre[:,[0,2]]
         u=(off*directions).sum(1);v=xyz[:,1]-PLANE_Y
         xyz[:,[0,2]]+=directions*(u*(np.cos(angle)-1)-v*np.sin(angle))[:,None]
         xyz[:,1]=PLANE_Y+u*np.sin(angle)+v*np.cos(angle)
+    if not np.isfinite(xyz).all():raise ValueError('Nonfinite generated geometry rejected.')
     out = ArrayMesh(xyz,mesh.faces.copy(),mesh.classes.copy(),mesh.rest.copy(),mesh.anchors.copy(),mesh.generation)
     return out, f
 

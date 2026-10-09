@@ -43,6 +43,27 @@ def plot(data,output,baseline=None):
     plt.close(fig)
 
 
+def progression(data,output):
+    with np.load(data) as z:d={k:z[k].copy() for k in z.files}
+    generations=sorted({int(k.split('_')[0][1:]) for k in d})
+    top=100*np.ceil((max(v[:,1].max() for v in d.values())+30)/100)
+    fig,axes=plt.subplots(3,len(generations),figsize=(17,9),constrained_layout=True)
+    for row,s in enumerate([.06531,.15031,.24531]):
+        for column,g in enumerate(generations):
+            ax=axes[row,column]
+            for kind,colour,style in [('PRE','#88949a','--'),('FOLD','#803d6c','-')]:
+                p=d[f'G{g}_{kind}_s{s}'];ax.plot(p[:,0],p[:,1],style,color=colour,lw=1.2,label=kind)
+            ax.set(xlim=(-1,1),ylim=(-30,top),xlabel='Same material u',ylabel='Actual mesh depth',title=f'G{g}: s={s:.5f}')
+            ax.grid(alpha=.2);ax.legend(frameon=False,fontsize=8)
+    fig.suptitle('Actual checkpoint progression — fixed cuts and scales\nDashed: immediately before reconstruction; solid: after. No shading or per-panel normalization.',fontsize=14)
+    for suffix in ['.png','.pdf']:
+        path=Path(output).with_suffix(suffix)
+        if path.exists():raise FileExistsError(path)
+        path.parent.mkdir(parents=True,exist_ok=True);fig.savefig(path,dpi=200,facecolor='white')
+    plt.close(fig)
+
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--baseline',type=Path);a=p.parse_args()
-    plot(a.data,a.output,a.baseline)
+    p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--baseline',type=Path);p.add_argument('--progression',action='store_true');a=p.parse_args()
+    if a.progression:progression(a.data,a.output)
+    else:plot(a.data,a.output,a.baseline)

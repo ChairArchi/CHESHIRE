@@ -77,13 +77,26 @@ def measure(name,tag):
         smooth=[gaussian_filter1d(d,.06/(u[1]-u[0])) for d in profiles]
         peaks,_=find_peaks(smooth[0],prominence=50)
         actual_peaks,_=find_peaks(smooth[2],prominence=50)
-        meso_peaks,_=find_peaks(meso_d,prominence=25)
-        final_peaks,_=find_peaks(final_d,prominence=15)
+        meso_peaks,meso_properties=find_peaks(meso_d,prominence=25)
+        final_peaks,final_properties=find_peaks(final_d,prominence=15)
+        split=[]
+        for peak in peaks:
+            # Half-height parent basin, bounded to this same broad ridge.
+            left=peak
+            while left>0 and macro_d[left-1]>.5*macro_d[peak]:left-=1
+            right=peak
+            while right<len(u)-1 and macro_d[right+1]>.5*macro_d[peak]:right+=1
+            if left<peak<right:
+                split.append(dict(parent_u=float(u[peak]),
+                    meso_internal_valley_depth=float(min(meso_d[left:peak].max(),meso_d[peak+1:right+1].max())-meso_d[peak]),
+                    final_internal_valley_depth=float(min(final_d[left:peak].max(),final_d[peak+1:right+1].max())-final_d[peak])))
         span=float((xyz[peaks[-1]]-xyz[peaks[0]])@tangent) if len(peaks)>1 else None
         rows.append(dict(s=s,macro_peak_to_valley=float(np.ptp(macro_d)),final_peak_to_valley=float(np.ptp(final_d)),
             child_difference_peak_to_valley=float(np.ptp(meso_d-macro_d)),micro_difference_peak_to_valley=float(np.ptp(final_d-meso_d)),
             macro_ridge_u=u[peaks].tolist(),final_lowpass_ridge_u=u[actual_peaks].tolist(),macro_ridge_span=span,
             meso_peaks=u[meso_peaks].tolist(),final_peaks=u[final_peaks].tolist(),
+            meso_peak_prominences=meso_properties['prominences'].tolist(),final_peak_prominences=final_properties['prominences'].tolist(),
+            parent_internal_valleys=split,
             lowpass_correlation=float(np.corrcoef(smooth[0],smooth[2])[0,1]),
             lowpass_peak_to_valley_ratio=float(np.ptp(smooth[2])/np.ptp(smooth[0]))))
     section_info,segments=section_segments(mesh)
