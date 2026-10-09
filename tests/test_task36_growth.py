@@ -100,3 +100,12 @@ def test_vf_split_preserves_actual_nonplanar_parent_triangle_surface():
     grandchild,_=step(child,active=False,surface='vf')
     grand_model=trimesh.Trimesh(vertices=native(grandchild).xyz,faces=native(grandchild).faces[:,:3],process=False)
     assert abs(grand_model.area-child_model.area)<1e-7
+
+
+@pytest.mark.parametrize('response',['face_geometry','all_geometry','face_outward'])
+def test_normal_response_records_actual_controls_and_changes_placement(response):
+    base=carrier();a,_=step(base,mode='coupled',decompose=True)
+    b,op=step(base,mode='coupled',decompose=True,normal_response=response)
+    assert np.max(abs(a.xyz-b.xyz))>1
+    assert 'resolved_wf' in op and np.isfinite(op['resolved_wf']).all()
+    assert np.any(op['resolved_wf']>0)

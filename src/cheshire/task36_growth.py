@@ -1,8 +1,9 @@
 """Task36 opt-in interpolating quad folding. No existing operator is changed.
 
 Every new edge and face point is independently placed using incoming geometry.
-Retained vertices keep their positions: refinement cannot average away a parent
-crease. Project units, X/Y reflection and quarter-turn symmetry, Z vertical.
+The interpolating control retains vertices; the coupled experiments explicitly
+separate CC averaging, weighted stencils and normal placement. Project units,
+X/Y reflection and quarter-turn symmetry, Z vertical.
 This is a CHESHIRE experiment, not an implementation claim about Hansmeyer.
 """
 import numpy as np
@@ -25,7 +26,7 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
          direction='normal', active=True, source='current', vertex_gain=0., vertex_memory=1., mode='interpolating',
          diagonal_tension=None, edge_tension=.5, vertex_tension=-.8,
          averaging_gain=1., stencil_gain=1., normal_gain=1., decompose=False,
-         cap_mode='fixed_xyz', ancestry_gain=1., surface='mean'):
+         cap_mode='fixed_xyz', ancestry_gain=1., surface='mean', normal_response='class_signed'):
     values=[face_gain,edge_gain,feedback,inherited_bias,vertex_gain,vertex_memory]
     if not np.isfinite(values).all() or not 0<=face_gain<=1 or not 0<=edge_gain<=1 or not 0<=feedback<=2 or not -1<=inherited_bias<=1:
         raise ValueError('Finite declared experimental parameter domain required.')
@@ -35,9 +36,11 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
     if not np.isfinite([averaging_gain,stencil_gain,normal_gain]).all() or min(averaging_gain,stencil_gain,normal_gain)<0 or max(averaging_gain,stencil_gain,normal_gain)>1:raise ValueError('Component gains must be in [0,1].')
     if cap_mode not in ('fixed_xyz','plane_only') or not np.isfinite(ancestry_gain) or not 0<=ancestry_gain<=1:raise ValueError('Declared boundary and ancestry policy required.')
     if surface not in ('mean','vf'):raise ValueError('Declared native surface required.')
+    if normal_response not in ('class_signed','face_outward','face_geometry','all_geometry'):raise ValueError('Declared normal response required.')
     if direction not in ('normal','radial') or source not in ('current','rest'):
         raise ValueError('Explicit direction and geometric source required.')
     if mode=='coupled' and direction!='normal':raise ValueError('Coupled reference placement uses current normals; radial override is unsupported.')
+    if mode!='coupled' and normal_response!='class_signed':raise ValueError('Geometric normal-response experiments require coupled placement.')
     t=topology(mesh);q=mesh.faces;x=mesh.xyz;nv=len(x);ne=len(t['edges']);nf=len(q)
     if q.shape[1]!=4 or np.any(q<0):raise ValueError('Closed all-quad operator carrier required.')
     observed=mesh if source=='current' else ArrayMesh(mesh.rest,q,mesh.classes,mesh.rest,mesh.anchors,mesh.generation)
@@ -78,11 +81,14 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
     # A signed geometric contrast response, bounded by incoming support.
     # No random seed, pre-specified lobe count, or axial ornament locations.
     contrast=np.sum(lap*f['nv'],axis=1)
+    other=np.where(t['ef'][t['fe']][:,:,0]==np.arange(nf)[:,None],t['ef'][t['fe']][:,:,1],t['ef'][t['fe']][:,:,0])
+    face_contrast=np.sum((f['c']-f['c'][other].mean(1))*f['nf'],axis=1)/np.maximum(support,1e-12)
+    edge_contrast=np.sum((observed.xyz[edges].mean(1)-f['c'][ef].mean(1))*en,axis=1)/np.maximum(np.minimum(support[ef[:,0]],support[ef[:,1]]),1e-12)
     vertex_vector=vertex_gain*np.tanh(contrast/np.maximum(radius_vertex,1e-12))[:,None]*radius_vertex[:,None]*f['nv']
     vertex_vector+=(1-vertex_memory)*(neighbours-observed.xyz)
     if cap_mode=='fixed_xyz':vertex_vector[fixed_vertex]=0
     else:vertex_vector[fixed_vertex,2]=0
-    components={}
+    components={};resolved_state={}
     if mode=='coupled' and active:
         from .reference_subdivision import subdivide
         # Reuse the already corrected face -> edge -> vertex implementation.
@@ -92,7 +98,13 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
           wp=vertex_gain*radius_vertex/np.maximum(f['sv'],1e-12),
           w3=ancestry_gain*inherited_bias*np.tanh(1+face_bend),w4=ancestry_gain*(-.3*np.tanh(face_bend) if diagonal_tension is None else np.full(nf,diagonal_tension)),
           w1=np.full(ne,edge_tension),w2=np.full(nv,vertex_tension))
+        if normal_response=='face_outward':controls['wf']*=-1
+        elif normal_response in ('face_geometry','all_geometry'):controls['wf']*=-np.tanh(2*face_contrast)
+        if normal_response=='all_geometry':
+            controls['we']*=np.tanh(2*edge_contrast)
+            controls['wp']*=np.tanh(2*contrast/np.maximum(radius_vertex,1e-12))
         controls['wf'][fixed_face]=0;controls['we'][fixed_edge]=0;controls['wp'][fixed_vertex]=0
+        resolved_state={'resolved_'+k:v for k,v in controls.items()}
         coupled,_,_=subdivide(mesh,{},resolved_controls=controls)
         if decompose or (averaging_gain,stencil_gain,normal_gain)!=(1.,1.,1.):
             standard,_,_=subdivide(mesh,{})
@@ -130,15 +142,18 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
             face_base=face_base,edge_base=edge_base,support_radius=support,face_bend=face_bend,
             edge_bend=bend,ancestry_bias=bias,eligible=eligible,fixed_face=fixed_face,fixed_edge=fixed_edge,
             incoming_point_classes=mesh.classes,vertex_vector=vertex_vector,vertex_contrast=contrast,
-            requested_face_gain=np.array(face_gain),requested_edge_gain=np.array(edge_gain),**components)
+            face_normal_contrast=face_contrast,edge_normal_contrast=edge_contrast,
+            requested_face_gain=np.array(face_gain),requested_edge_gain=np.array(edge_gain),**components,**resolved_state)
     return out,op
 
 
 def native(mesh):
-    """Explicit centre-fan triangles are the authoritative physical surface.
+    """Explicit fan triangles are the authoritative physical surface.
 
     The separate all-quad state drives the next generation. A nonplanar quad
-    has no unique surface; never silently swap to a diagonal triangulation.
+    has no unique surface. 'mean' uses its arithmetic centre; 'vf' splits the
+    inherited V/F diagonal at its midpoint. With incoming fan-centre sampling,
+    the latter makes inactive refinement surface-exact (up to floating point).
     """
     nv=len(mesh.xyz);nf=len(mesh.faces);q=mesh.faces
     centres=mesh.xyz[q].mean(1)

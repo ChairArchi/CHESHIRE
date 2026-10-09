@@ -32,10 +32,13 @@ def symmetry(mesh):
 
 
 def audit(request,tag):
+    contact_check=contacts
+    if request.get('contact_engine')=='bvh':
+        from task36_contacts import contacts as contact_check
     dest=ROOT/'validation'/tag;dest.mkdir(parents=True,exist_ok=False);write_new(dest/'request.json',request);rows=[]
     for item in request['items']:
         start=perf_counter();stage=Path(item['stage']);mesh=load_mesh(stage)
-        value=dict(**item,mesh_sha256=sha(stage/'mesh.npz'),embedding=embedding(mesh),symmetry=symmetry(mesh),contacts=contacts(mesh))
+        value=dict(**item,mesh_sha256=sha(stage/'mesh.npz'),embedding=embedding(mesh),symmetry=symmetry(mesh),contacts=contact_check(mesh))
         fixed=(mesh.rest[:,2]==0)|(mesh.rest[:,2]==4000)
         value['end_plane_z_error']=float(np.max(np.abs(mesh.xyz[fixed,2]-mesh.rest[fixed,2])))
         value['endcap_xy_displacement']=float(np.max(np.abs(mesh.xyz[fixed,:2]-mesh.rest[fixed,:2])))

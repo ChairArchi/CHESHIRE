@@ -14,15 +14,17 @@ ROOT=Path('E:/CHESHIRE_DATA/task36')
 SOURCES=['src/cheshire/task36_growth.py','src/cheshire/reference_subdivision.py','tools/task36_research.py',
  'examples/task29_search.py','examples/hero_design_sprint.py','tools/task33_preserve.py','tools/task33_contacts.py',
  'tools/task32_validation.py','tools/task33_views.py','tools/task34_research.py','tools/task33_planar.py']
+SOURCES += ['tools/task36_contacts.py','tools/native/Task36Bounds.cs']
 
 
 def preflight(request):
     g=request['generations'];div=request.get('divisions',2)
     if type(g)!=int or not 1<=g<=10:raise ValueError('Declared bounded integer depth required.')
-    faces=(4*div+2)*4**g;tri=faces*4;memory=windows_memory();forecast=512*1024**2+tri*3000
+    faces=(4*div+2)*4**g;tri=faces*4;memory=windows_memory();forecast=512*1024**2+tri*1800
     if memory['status']!='MEASURED' or forecast>min(12*1024**3,.55*memory['available_bytes']):raise MemoryError('Forecast exceeds measured RAM reserve.')
     if shutil.disk_usage(ROOT.parent).free<4*1024**3+tri*2000:raise OSError('Insufficient disk reserve.')
-    return dict(quads=faces,triangles=tri,forecast_bytes=forecast,available=memory)
+    return dict(quads=faces,triangles=tri,forecast_bytes=forecast,available=memory,
+      estimator='512 MiB + 1800 bytes/native triangle; empirical Task36 G6 and H01 G7 margin. Actual process-family RAM guard and 2 GiB free floor unchanged.')
 
 
 def checkpoint(dest,mesh,parent=None,op=None,meta=None):
@@ -48,7 +50,9 @@ def run(request,tag):
         start=perf_counter();params=request['parameters'].copy();params.update(request.get('schedule',{}).get(str(g),{}))
         active=g in request.get('active_generations',list(range(1,request['generations']+1)))
         pre,preop=step(mesh,**params,active=False);before=job/f'G{g}_PRE';checkpoint(before,pre,parent,preop,dict(operation='Interpolating split only; centre-fan surface changes possible.'))
-        from task33_contacts import contacts
+        if request.get('contact_engine','original')=='bvh':from task36_contacts import contacts
+        elif request.get('contact_engine','original')=='original':from task33_contacts import contacts
+        else:raise ValueError('Explicit supported contact engine required.')
         out,op=step(mesh,**params,active=active)
         trials=[];check=contacts(native(out)) if request.get('check_each',True) else None
         factor=1.;integrity=quick_integrity(out)
@@ -56,6 +60,9 @@ def run(request,tag):
         if check and check['transverse_contacts'] and request.get('local_backtrack',False):
             from scipy.spatial import cKDTree
             proposed=out.xyz.copy();delta=proposed-pre.xyz;weights=np.ones(len(out.xyz));tree=cKDTree(out.rest)
+            local_cap=request.get('local_contact_cap',256)
+            if type(local_cap)!=int or not 256<=local_cap<=16384:raise ValueError('Bounded diagnostic contact batch required.')
+            if local_cap>256:check=contacts(native(out),cap=local_cap)
             transforms=[np.diag([-1,1,1]),np.diag([1,-1,1]),np.array([[0,-1,0],[1,0,0],[0,0,1]])]
             maps=[]
             for matrix in transforms:
@@ -67,8 +74,9 @@ def run(request,tag):
                 affected=np.unique(out.faces[quad_ids].ravel())
                 for _ in range(3):affected=np.unique(np.r_[affected,*[m[affected] for m in maps]])
                 weights[affected]*=.5;weights[weights<1/4096]=0
-                out.xyz=pre.xyz+weights[:,None]*delta;check=contacts(native(out));integrity=quick_integrity(out)
+                out.xyz=pre.xyz+weights[:,None]*delta;check=contacts(native(out),cap=local_cap);integrity=quick_integrity(out)
                 local_trials.append(dict(iteration=iteration+1,changed_points=len(affected),limited_points=int((weights<1).sum()),zero_points=int((weights==0).sum()),contacts=check,integrity=integrity))
+                print(tag,'G'+str(g),'local',iteration+1,'contacts',check['transverse_contacts'],'limited',int((weights<1).sum()),flush=True)
                 if not check['transverse_contacts'] or any(integrity.values()):break
             op.update(local_requested_xyz=proposed,local_point_factor=weights)
         if ((check and check['transverse_contacts']) or any(integrity.values())) and request.get('backtrack',False) and not request.get('local_backtrack',False):
@@ -122,6 +130,8 @@ def probe(request,tag):
     recipe=json.loads((job/'request.json').read_text());params=recipe['parameters'].copy();params.update(recipe.get('schedule',{}).get(str(g),{}))
     alpha=json.loads((job/f'G{g}_FOLD/growth.json').read_text())['applied_factor']
     pre,_=step(mesh,**params,active=False);full,op=step(mesh,**params)
+    original_op=np.load(job/f'G{g}_FOLD/operator_state.npz')
+    common_point_factor=original_op['local_point_factor'] if 'local_point_factor' in original_op else np.ones(len(full.xyz))
     dest=ROOT/'diagnostics'/tag;dest.mkdir(parents=True,exist_ok=False);rows=[]
     for name in ['REPLAY','FEATURES_REST','NO_NEW_POINTS','NO_RETAINED_MOVE','SUBDIVISION_ONLY']:
         out=step(mesh,**dict(params,source='rest'))[0] if name=='FEATURES_REST' else ArrayMesh(full.xyz.copy(),full.faces,full.classes,full.rest,full.anchors,full.generation)
@@ -130,13 +140,13 @@ def probe(request,tag):
         if name=='NO_NEW_POINTS':delta[nv:]=0
         if name=='NO_RETAINED_MOVE':delta[:nv]=0
         if name=='SUBDIVISION_ONLY':delta[:]=0
-        out.xyz=pre.xyz+alpha*delta;stage=dest/name/f'G{g}_FOLD'
+        out.xyz=pre.xyz+alpha*common_point_factor[:,None]*delta;stage=dest/name/f'G{g}_FOLD'
         checkpoint(stage,out,previous,dict(actual_delta=out.xyz-pre.xyz),dict(probe=name,common_applied_factor=alpha,source_native_sha256=sha(previous/'mesh.npz')))
-        diff=out.xyz-(pre.xyz+alpha*(full.xyz-pre.xyz));check=contacts(native(out))
+        diff=out.xyz-(pre.xyz+alpha*common_point_factor[:,None]*(full.xyz-pre.xyz));check=contacts(native(out))
         row=dict(id=name,stage=str(stage),contacts=check,integrity=quick_integrity(out),max_difference=float(abs(diff).max()),rms_difference=float(np.sqrt(np.mean(diff**2))))
         if name=='REPLAY':row['matches_authoritative_native_arrays']=bool(np.array_equal(native(out).xyz,load_mesh(job/f'G{g}_FOLD').xyz))
         rows.append(row);print(name,check['transverse_contacts'],row['max_difference'],flush=True)
-    write_new(dest/'summary.json',dict(source=request,common_factor=alpha,rows=rows,note='Identical incoming geometry and common actual factor; invalid counterfactual surfaces retained, never exported. FEATURES_REST freezes feature controls, not placement geometry/normals.'))
+    write_new(dest/'summary.json',dict(source=request,common_factor=alpha,common_local_mask_sha256=sha(job/f'G{g}_FOLD/operator_state.npz'),rows=rows,note='Identical incoming geometry and frozen common actual point factors; alternative masks are not re-solved. Invalid counterfactual surfaces retained, never exported. FEATURES_REST freezes feature controls, not placement geometry/normals.'))
 
 
 if __name__=='__main__':
