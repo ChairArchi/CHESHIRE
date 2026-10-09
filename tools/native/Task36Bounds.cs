@@ -8,6 +8,7 @@ class Task36Bounds {
     struct Node { public double x0,y0,z0,x1,y1,z1; public int left,right,start,count; }
     static double[] bounds;
     static int[] vertices, ids;
+    static bool includeShared=false;
     static List<Node> nodes=new List<Node>();
     const double Eps=1e-10;
     static double Centre(int id,int axis) { int k=6*id+axis; return (bounds[k]+bounds[k+3])*.5; }
@@ -45,9 +46,10 @@ class Task36Bounds {
     }
     static bool Pair(int a,int b) {
         for(int d=0;d<3;d++)if(Math.Min(bounds[6*a+3+d],bounds[6*b+3+d])+Eps<Math.Max(bounds[6*a+d],bounds[6*b+d]))return false;
-        return !Shared(a,b);
+        return includeShared||!Shared(a,b);
     }
     static void Main(string[] args) {
+        includeShared=args.Length==2&&args[1]=="--include-shared";
         using(BinaryReader input=new BinaryReader(File.OpenRead(args[0]))) {
             int count=input.ReadInt32();bounds=new double[count*6];vertices=new int[count*3];ids=new int[count];
             byte[] data=input.ReadBytes(count*6*8);if(data.Length!=count*6*8)throw new EndOfStreamException();Buffer.BlockCopy(data,0,bounds,0,data.Length);

@@ -12,6 +12,7 @@ def deliver(candidate,audit_file):
     job=ROOT/'candidates'/candidate;stage=Path(json.loads((job/'completed.json').read_text())['final_stage'])
     certificate=json.loads(audit_file.read_text());m=load_mesh(stage);e=certificate['embedding']
     if 'interval overlap' not in certificate['contacts'].get('narrow_phase',''):raise ValueError('Supplementary noncoplanar interval audit required.')
+    if not certificate['contacts'].get('shared_vertex_pairs_included'):raise ValueError('Final shared-pair interior interval audit required.')
     if any(c['crossings_touches_overlaps'] for c in certificate['cuts']):raise ValueError('Unresolved actual section crossing/touch/overlap; no validated exchange.')
     if certificate['mesh_sha256']!=sha(stage/'mesh.npz') or Path(certificate['stage']).resolve()!=stage.resolve():raise ValueError('Certificate/source identity mismatch.')
     if certificate['contacts']['transverse_contacts'] or not certificate['contacts']['all_triangles_sampled'] or e['degenerate_triangles'] or e['invalid_vertex_links'] or e['orphan_vertices'] or e['connected_components']!=1 or e['Euler']!=2 or certificate['end_plane_z_error']>1e-10:raise ValueError('Native geometry failed exchange requirements.')

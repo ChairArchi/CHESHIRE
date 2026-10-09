@@ -1,5 +1,5 @@
 """Independent original-vs-BVH broad-phase regression, including failures."""
-import json,sys
+import argparse,json,sys
 from pathlib import Path
 import numpy as np
 REPO=Path(__file__).resolve().parents[1];sys.path[:0]=[str(REPO/'tools'),str(REPO/'examples')]
@@ -11,7 +11,8 @@ from cheshire.reference_subdivision import ArrayMesh
 ROOT=Path('E:/CHESHIRE_DATA/task36')
 
 
-def verify():
+def verify(tag='BVH_EQUIVALENCE'):
+    if not tag.replace('_','').isalnum():raise ValueError('Fresh safe evidence tag required.')
     rows=[]
     stages=[('D01_VERTEX_CONTRAST',4),('E01_COUPLED',4),('M01_FREE_RECURSIVE_G8',6),('N01_EXACT_SURFACE_G6',6),('S02_ALL_GEOMETRY',5)]
     for name,g in stages:
@@ -28,8 +29,9 @@ def verify():
     stage=ROOT/'candidates/Q01_LOCAL_SAFETY_G6/G6_FOLD';m=load_mesh(stage);a=json.loads((stage/'growth.json').read_text())['contacts'];b=accelerated(m,cap=4096)
     if a['pairs']!=b['pairs'] or a['checked_nonadjacent_AABB_pairs']!=b['checked_nonadjacent_AABB_pairs']:raise ValueError('Full 163840-triangle original certificate mismatch.')
     rows.append(dict(id='Q01_FULL_G6',native_sha256=sha(stage/'mesh.npz'),original=a,accelerated=b,pairs_exact=True))
-    write_new(ROOT/'validation/BVH_EQUIVALENCE.json',dict(rows=rows,all_exact=True,old_predicate_sha256=sha(REPO/'tools/task33_contacts.py'),new_wrapper_sha256=sha(REPO/'tools/task36_contacts.py'),helper_source_sha256=sha(REPO/'tools/native/Task36Bounds.cs'),
+    write_new(ROOT/'validation'/(tag+'.json'),dict(rows=rows,all_exact=True,old_predicate_sha256=sha(REPO/'tools/task33_contacts.py'),new_wrapper_sha256=sha(REPO/'tools/task36_contacts.py'),helper_source_sha256=sha(REPO/'tools/native/Task36Bounds.cs'),
        scope='Ascending pair identities and exhausted candidate counts on real successes/failures and deterministic intersecting fixtures. Full dense known-original certificate included. Same imported narrow phase; no new tolerance or exclusions.'))
 
 
-if __name__=='__main__':verify()
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--tag',default='BVH_EQUIVALENCE');a=p.parse_args();verify(a.tag)

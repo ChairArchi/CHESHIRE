@@ -1,7 +1,8 @@
-"""Exact native AABB broad phase; original Task33 NumPy narrow phase unchanged.
+"""Exact native AABB broad phase; original Task33 narrow phase by default.
 
 Candidate pairs remain ascending (a,b), with the same sphere/AABB/shared-vertex
-filters. No sampling, triangle merging, tolerance changes or predicate ports.
+filters. No sampling or triangle merging. Opt-in interval=True adds the separately
+tested Task36 positive interior interval predicate; it never removes old hits.
 """
 import json,subprocess,tempfile,sys,os
 from pathlib import Path
@@ -33,7 +34,8 @@ def read_exact(stream,n):
     return b''.join(chunks)
 
 
-def contacts(mesh,cap=256,interval=False):
+def contacts(mesh,cap=256,interval=False,include_shared=False):
+    if include_shared and not interval:raise ValueError('Shared pairs require the interior interval predicate.')
     start=perf_counter();tri=triangles(mesh);span=float(np.ptp(mesh.xyz,axis=0).max())
     if span<=0:raise ValueError('Nonzero extent required.')
     p=(mesh.xyz[tri]-mesh.xyz.min(0))/span;centre=p.mean(1);radius=np.linalg.norm(p-centre[:,None],axis=2).max(1)
@@ -42,7 +44,7 @@ def contacts(mesh,cap=256,interval=False):
     try:
         with temporary.open('wb') as out:
             out.write(np.array([len(tri)],'<i4').tobytes());out.write(bounds.astype('<f8',copy=False).tobytes());out.write(tri.astype('<i4',copy=False).tobytes())
-        process=subprocess.Popen([str(exe),str(temporary)],stdout=subprocess.PIPE,stderr=subprocess.PIPE,creationflags=subprocess.CREATE_NO_WINDOW)
+        process=subprocess.Popen([str(exe),str(temporary)]+(['--include-shared'] if include_shared else []),stdout=subprocess.PIPE,stderr=subprocess.PIPE,creationflags=subprocess.CREATE_NO_WINDOW)
         try:
             while True:
                 count=int(np.frombuffer(read_exact(process.stdout,4),dtype='<i4')[0])
@@ -51,6 +53,7 @@ def contacts(mesh,cap=256,interval=False):
                 eligible=np.linalg.norm(centre[a]-centre[b],axis=1)<=radius[a]+radius[b]+1e-10
                 a=a[eligible];b=b[eligible];checked+=len(a)
                 hit=batch_hits(p[a],p[b])
+                if include_shared:hit&=~(tri[a,:,None]==tri[b,None,:]).any((1,2))
                 if interval:
                     from task36_triangle_interval import interval_hits
                     remaining=~hit
@@ -70,4 +73,5 @@ def contacts(mesh,cap=256,interval=False):
         broad_phase='Exact native AABB BVH, ascending pairs; same bounding-sphere filter; unchanged Task33 batch_hits.',
         helper_source_sha256=sha(REPO/'tools/native/Task36Bounds.cs'),helper_binary_sha256=sha(exe),
         narrow_phase='Task33 strict edge hits UNION Task36 positive noncoplanar interior interval overlap' if interval else 'Unchanged Task33 strict edge hits',
-        exclusions='Shared vertices, coplanar, boundary/tangent contacts excluded; no sampling or triangle merging. Zero does not certify solid geometry.')
+        shared_vertex_pairs_included=include_shared,
+        exclusions=('Coplanar and boundary-only/tangent contacts excluded; shared pairs tested for positive interior interval overlap. ' if include_shared else 'Shared vertices, coplanar, boundary/tangent contacts excluded; ')+ 'No sampling or triangle merging. Zero does not certify solid geometry.')

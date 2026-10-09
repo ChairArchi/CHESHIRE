@@ -34,7 +34,11 @@ def symmetry(mesh):
 
 def audit(request,tag):
     contact_check=contacts
-    if request.get('contact_engine')=='bvh_interval':
+    if request.get('contact_engine')=='bvh_inclusive':
+        from task36_contacts import contacts as accelerated
+        from functools import partial
+        contact_check=partial(accelerated,interval=True,include_shared=True)
+    elif request.get('contact_engine')=='bvh_interval':
         from task36_contacts import contacts as accelerated
         from functools import partial
         contact_check=partial(accelerated,interval=True)

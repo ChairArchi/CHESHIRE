@@ -28,3 +28,14 @@ def test_real_T02_crossing_is_not_a_tangent_or_coplanar_pair():
     a=np.array([[[-741.96229493,746.40135671,999.55244788],[-765.69165790,760.86774975,998.51348406],[-728.28092920,723.27928262,1002.22018170]]])/4000
     b=np.array([[[-760.86774975,765.69165790,998.51348406],[-746.40135671,741.96229493,999.55244788],[-723.27928262,728.28092920,1002.22018170]]])/4000
     assert interval_hits(a,b)[0]
+
+
+def test_shared_vertex_bvh_audit_checks_interior_overlap_but_excludes_hinges():
+    from types import SimpleNamespace
+    from task36_contacts import contacts
+    xyz=np.array([[-1,-1,0],[1,-1,0],[0,1,0],[1,1,-1],[1,1,1]],float)
+    mesh=SimpleNamespace(xyz=xyz,faces=np.array([[0,1,2,-1],[0,3,4,-1]]))
+    assert contacts(mesh,interval=True)['transverse_contacts']==0
+    assert contacts(mesh,interval=True,include_shared=True)['pairs']==[[0,1]]
+    mesh.xyz=np.r_[xyz[:3],[[0,-2,1]]];mesh.faces=np.array([[0,1,2,-1],[1,0,3,-1]])
+    assert contacts(mesh,interval=True,include_shared=True)['transverse_contacts']==0
