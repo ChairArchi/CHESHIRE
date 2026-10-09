@@ -134,3 +134,14 @@ def test_depth_convergence_modulates_binding_in_physical_space_without_generatio
     assert converged['depth'][0]/plain[0]==pytest.approx(.35)
     assert converged['depth'][1]/plain[1]>.98
     assert converged['depth'][0]==pytest.approx(converged['depth'][2])
+
+
+def test_child_direction_response_preserves_macro_and_constructive_symmetry():
+    m=gate();state=initial_chart(m)
+    for _ in range(3):m,state,_,_=refine(m,state,carrier_smoothing=m.generation<2)
+    p=dict(twist=.35,paired_controls=True,child_direction_mix=.3)
+    macro,_=evaluate(m,state,p,1);control,_=evaluate(m,state,{**p,'child_direction_mix':0},1)
+    np.testing.assert_array_equal(macro.xyz,control.xyz)
+    generated,f=evaluate(m,state,p,3)
+    assert reflection_error(state,generated.xyz)<1e-9
+    np.testing.assert_allclose(f['child_direction_local_x']**2+f['child_direction_local_y']**2,1)

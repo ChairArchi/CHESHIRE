@@ -4,9 +4,11 @@
 
 CHESHIRE is a standalone deterministic computational design engine for transforming arbitrary polygon meshes through explicit, traceable rules. Its long-term aim is to measure geometric and topological attributes, map them into scalar fields, select and apply transformation rules, inherit provenance and tags, and iterate. It is independent from ALICE and has no dependency on it.
 
-**Status:** experimental research software. The latest frozen study is Task31
-regional growth/depth/opening control, with a **PARTIAL** result. Existing algorithms,
-legacy replay and research verdicts remain unchanged.
+**Status:** experimental research software. Task33 studies deep nested folds and
+converging/diverging ridge paths on the original gate carrier. See its
+[native evidence and results](docs/TASK33_RESULTS.md) and
+[local causal diagnosis](docs/TASK33_DIAGNOSIS.md). This is a separate, carrier-specific
+research path; existing algorithms, legacy replay and Task31/32 verdicts remain unchanged.
 
 Task32 adds opt-in relational morphology experiments, native checkpoint recovery,
 and geometry contact audits. Its [research results](docs/TASK32_RESULTS.md) are

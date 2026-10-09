@@ -89,7 +89,7 @@ def fold_values(chart, params, levels):
              'coupling','amplitudes','waist','windowed','child_floor','child_frequency_variation',
              'parent_gate_power','micro_frequency','twist','twist_start','twist_end',
              'child_phase_shift','micro_phase_shift','micro_coupling','fine_mode',
-             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls','depth_convergence'}
+             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls','depth_convergence','child_direction_mix'}
     if set(params)-allowed:raise ValueError('Unknown fold parameters: '+str(sorted(set(params)-allowed)))
     for key,value in params.items():
         if key=='fine_mode':
@@ -103,6 +103,8 @@ def fold_values(chart, params, levels):
         raise ValueError('Waist and convergence must be within [0,1).')
     if not 0<=params.get('depth_convergence',0)<1:
         raise ValueError('Depth convergence must be within [0,1).')
+    if not 0<=params.get('child_direction_mix',0)<=.5:
+        raise ValueError('Child direction mix must be within [0,0.5].')
     if params.get('parent_gate_power',1)<1 or params.get('child_frequency_variation',0)<0:
         raise ValueError('Positive parent gate power and nonnegative frequency variation required.')
     if params.get('child_frequency_variation',0) and (params.get('child_floor',.2)!=0 or params.get('parent_gate_power',1)<2):
@@ -187,16 +189,32 @@ def evaluate(mesh, state, params, levels):
     xyz = base.copy()
     xyz[:,[0,2]] = centre[:,[0,2]] + (base[:,[0,2]]-centre[:,[0,2]])*f['width'][:,None]
     xyz[:,1] = PLANE_Y+(base[:,1]-PLANE_Y)*(1+f['depth']/250)
+    # Original section axis, reflected constructively on the opposite support.
+    path=np.array([[1,0],[1,0],[1,0],[2**-.5,-2**-.5],[0,-1],[-2**-.5,-2**-.5],[-1,0],[-1,0],[-1,0]])
+    directions=np.column_stack([np.interp(s,state['knots'],path[:,k]) for k in range(2)])
+    directions/=np.linalg.norm(directions,axis=1)[:,None]
+    f['child_direction_local_x']=np.zeros(len(base));f['child_direction_local_y']=np.ones(len(base))
+    mix=params.get('child_direction_mix',0)
+    if mix and levels>=2:
+        eps=params.get('gradient_epsilon',1e-5);chart=state['chart']
+        plus=chart.copy();minus=chart.copy();plus[:,1]+=eps;minus[:,1]-=eps
+        macro=fold_values(chart,params,1)['depth']
+        slope=(fold_values(plus,params,1)['depth']-fold_values(minus,params,1)['depth'])/(2*eps*450*f['width'])
+        norm=np.sqrt(1+slope*slope)
+        dx=-mix*slope/norm;dy=1-mix+mix/norm
+        length=np.sqrt(dx*dx+dy*dy);dx/=length;dy/=length
+        delta=fold_values(chart,params,2)['depth']-macro
+        if pair is not None:
+            for value in [dx,dy,delta]:value[right]=value[pair[right]]
+        f['child_direction_local_x']=dx;f['child_direction_local_y']=dy
+        v=(base[:,1]-PLANE_Y)/250
+        xyz[:,[0,2]]+=directions*(np.abs(v)*delta*dx)[:,None]
+        xyz[:,1]+=v*delta*(dy-1)
     twist=params.get('twist',0)
     f['twist_angle']=np.zeros(len(base))
     if not np.isfinite(twist) or abs(twist)>.8:raise ValueError('Twist must be finite and within 0.8 radians.')
     if twist:
-        directions=state.get('directions')
-        if directions is None:
-            # Original carrier section axes, transported through its fixed knots.
-            path=np.array([[1,0],[1,0],[1,0],[2**-.5,-2**-.5],[0,-1],[-2**-.5,-2**-.5],[-1,0],[-1,0],[-1,0]])
-            directions=np.column_stack([np.interp(s,state['knots'],path[:,k]) for k in range(2)])
-            directions/=np.linalg.norm(directions,axis=1)[:,None]
+        directions=state.get('directions',directions)
         q=np.minimum(s,1-s)
         angle=twist*np.sin(2*np.pi*q/.31)*f['foot']
         if 'twist_end' in params:

@@ -77,3 +77,32 @@ $env:PYTHONNET_RUNTIME = 'coreclr'
 ```
 
 Actual Rhino UI/Undo/cancellation checks remain distinct from headless/native/unit tests.
+
+## Task33: deep-fold research
+
+The opt-in `tools/task33_research.py` path uses the original Task31 RECT G0
+carrier, finite material-coordinate folds, native pre/post checkpoints and
+the existing measured-RAM worker guard. It supports this carrier only; it is
+not the arbitrary-mesh API or a Rhino launcher default. Task01–32 source and
+frozen recipes are unchanged. [Results](TASK33_RESULTS.md) and
+[diagnosis](TASK33_DIAGNOSIS.md) distinguish measured facts from hypotheses.
+
+```powershell
+.\.venv\Scripts\python.exe -B tools/task33_research.py --action run --request studies/task33/definitions/depth_binding_gate.json --tag MY_NEW_GATE
+```
+
+Every tag must be fresh. Outputs go to `E:/CHESHIRE_DATA/task33`; the runner
+refuses an existing candidate/log directory. The request declares when macro,
+meso and fine scales start. Each important refinement/reconstruction writes
+native mesh, operator, material chart, fold controls, ancestry and SHA-linked
+parents. `--action measure/evidence/planar/progression/tracks/export` takes a
+small JSON request such as `{"candidate":"MY_NEW_GATE"}` and a fresh tag.
+`audit` and `render` take explicit item/stage requests; examples are preserved
+in the external Task33 `definitions` directory. Full validation and an
+explicit mirrored triangle checkpoint precede the separate `deliver` OBJ
+exchange. Native checkpoints remain authoritative for replay.
+
+The reference `nested_notch_control.json` retains constant longitudinal fold
+height; `strong_binding_ablation.json` is an aggressive comparison, not the
+recommended starting recipe. Fine amplitude may not exceed meso amplitude in
+notch mode. No remote publishing or repository/package rename is involved.
