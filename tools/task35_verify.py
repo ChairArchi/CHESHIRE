@@ -19,9 +19,13 @@ def main(worker,tag):
     memory=windows_memory()
     if memory['status']!='MEASURED' or 4*1024**3>.55*memory['available_bytes']:raise MemoryError('Regression RAM reserve insufficient.')
     result=guarded(['--worker','--tag',tag],dest,worker_script=Path(__file__))
+    write_new(dest/'execution.json',result)
     versions={}
     for name in ['numpy','scipy','trimesh','pyrender','compas','pythonnet','pytest','Pillow','numba','psutil']:
-        m=metadata.metadata(name);versions[name]=dict(version=metadata.version(name),license=m.get('License-Expression') or m.get('License','')[:2000],homepage=m.get('Home-page'))
+        try:m=metadata.metadata(name)
+        except metadata.PackageNotFoundError:
+            versions[name]=dict(status='NOT_INSTALLED',note='Metadata inventory only; no package is installed by this collector.');continue
+        versions[name]=dict(version=metadata.version(name),license=m.get('License-Expression') or (m.get('License') or '')[:2000],homepage=m.get('Home-page'))
     write_new(dest/'result.json',dict(**result,available_before=memory,forecast_bytes=4*1024**3,
         python=sys.version,dependency_metadata=versions,DLL=dict(path=os.environ['CHESHIRE_MOLA_DLL'],sha256=sha(Path(os.environ['CHESHIRE_MOLA_DLL']))),
         test_sha256={p.as_posix():sha(p) for p in sorted(Path('tests').rglob('*.py'))},producer_sha256=sha(Path(__file__)),
