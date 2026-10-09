@@ -89,7 +89,8 @@ def fold_values(chart, params, levels):
              'coupling','amplitudes','waist','windowed','child_floor','child_frequency_variation',
              'parent_gate_power','micro_frequency','twist','twist_start','twist_end',
              'child_phase_shift','micro_phase_shift','micro_coupling','fine_mode',
-             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls','depth_convergence','child_direction_mix'}
+             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls','depth_convergence','child_direction_mix',
+             'transport_fine_with_child'}
     if set(params)-allowed:raise ValueError('Unknown fold parameters: '+str(sorted(set(params)-allowed)))
     for key,value in params.items():
         if key=='fine_mode':
@@ -203,7 +204,8 @@ def evaluate(mesh, state, params, levels):
         norm=np.sqrt(1+slope*slope)
         dx=-mix*slope/norm;dy=1-mix+mix/norm
         length=np.sqrt(dx*dx+dy*dy);dx/=length;dy/=length
-        delta=fold_values(chart,params,2)['depth']-macro
+        transported_level=levels if params.get('transport_fine_with_child',False) else 2
+        delta=fold_values(chart,params,transported_level)['depth']-macro
         if pair is not None:
             for value in [dx,dy,delta]:value[right]=value[pair[right]]
         f['child_direction_local_x']=dx;f['child_direction_local_y']=dy

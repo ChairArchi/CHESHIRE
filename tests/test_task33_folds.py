@@ -145,3 +145,16 @@ def test_child_direction_response_preserves_macro_and_constructive_symmetry():
     generated,f=evaluate(m,state,p,3)
     assert reflection_error(state,generated.xyz)<1e-9
     np.testing.assert_allclose(f['child_direction_local_x']**2+f['child_direction_local_y']**2,1)
+
+
+def test_fine_transport_keeps_the_same_parent_vector_and_does_not_change_meso():
+    m=gate();state=initial_chart(m)
+    for _ in range(3):m,state,_,_=refine(m,state,carrier_smoothing=m.generation<2)
+    p=dict(paired_controls=True,child_direction_mix=.15,fine_mode='meso_notch',amplitudes=[500,400,260])
+    a,_=evaluate(m,state,p,2);b,_=evaluate(m,state,{**p,'transport_fine_with_child':True},2)
+    np.testing.assert_array_equal(a.xyz,b.xyz)
+    macro,_=evaluate(m,state,p,1);fine,_=evaluate(m,state,{**p,'transport_fine_with_child':True},3)
+    # At every same vertex the fine position remains on the macro-to-meso ray.
+    cross=np.cross(a.xyz-macro.xyz,fine.xyz-macro.xyz)
+    assert np.linalg.norm(cross,axis=1).max()<1e-8
+    assert reflection_error(state,fine.xyz)<1e-9
