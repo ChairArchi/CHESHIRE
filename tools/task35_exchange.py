@@ -13,10 +13,12 @@ from task33_preserve import sha,write_new
 ROOT=Path('E:/CHESHIRE_DATA/task35')
 
 
-def deliver(candidate,tag):
+def deliver(candidate,tag,validation=None):
     if not all(v.replace('_','').isalnum() for v in (candidate,tag)):raise ValueError('Safe fresh tags required.')
-    validation=ROOT/'validation'/(candidate+'_EXPORT_FULL')/'TRIANGLES.json';audit=json.loads(validation.read_text())
+    validation=Path(validation) if validation else ROOT/'validation'/(candidate+'_EXPORT_FULL')/'TRIANGLES.json';audit=json.loads(validation.read_text())
     stage=Path(audit['stage']);checks=audit['contacts'];geometry=audit['embedding']
+    expected=Path(json.loads((ROOT/'candidates'/candidate/'completed.json').read_text())['final_stage'])
+    if stage.resolve()!=expected.resolve():raise ValueError('Certificate must identify this candidate exact final native stage.')
     if not checks['all_triangles_sampled'] or checks['transverse_contacts'] or checks['cap_reached']:raise ValueError('Full triangular transverse diagnostic must pass.')
     if geometry['degenerate_triangles'] or geometry['invalid_vertex_links'] or geometry['orphan_vertices']:raise ValueError('Invalid native geometry.')
     if not geometry['finite'] or geometry['connected_components']!=1 or geometry['Euler']!=2:raise ValueError('One finite closed column required.')
@@ -70,5 +72,5 @@ def deliver(candidate,tag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--tag',required=True)
-    args=p.parse_args();deliver(args.candidate,args.tag)
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--tag',required=True);p.add_argument('--validation',type=Path)
+    args=p.parse_args();deliver(args.candidate,args.tag,args.validation)

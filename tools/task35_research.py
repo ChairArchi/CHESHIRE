@@ -141,7 +141,7 @@ def render(request,tag):
 
 def measure(request,tag):
     from task35_analyze import measure as actual_measure
-    actual_measure(request['candidate'],request['validation'],tag)
+    actual_measure(request['candidate'],request['validation'],tag,request.get('audit_id'))
 
 
 if __name__=='__main__':

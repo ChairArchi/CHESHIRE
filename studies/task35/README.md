@@ -12,3 +12,10 @@ C01–04 remove one control at a time; C05 compares Task34's profile with amplit
 ```
 
 Native mesh, rest/formation/material state, operator stencils, control vectors, feature source edges, producer overlay and source revision remain authoritative. OBJ alone is insufficient to continue the research. Feature filtering and scalar smoothstep do not smooth mesh positions. Geometry and aesthetic success must be evaluated separately; neither triangle counts nor native ancestry alone establishes success.
+
+H01/H02 separate positive shoulder growth from the support of an inward incision.
+They follow a same-incoming-mesh intervention after V01 exposed cancellation at
+some upper-body sites. H01 is the final recommended research recipe and H02 the
+reduced-contrast alternative; V01/V02 remain preserved intermediate candidates.
+The four original comparisons are corrected B01/B02/A03/A04, not the failed A01/A02.
+No recipe guarantees safety outside its recorded sampling and validation.

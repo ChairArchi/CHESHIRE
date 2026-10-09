@@ -16,6 +16,7 @@ from cheshire.task35_columns import native
 ROOT=Path('E:/CHESHIRE_DATA/task35')
 SAMPLES=2048
 THETA=(np.arange(SAMPLES)+.371)*2*np.pi/SAMPLES
+AXIAL_Z=(np.arange(SAMPLES)+.371)*4000/SAMPLES
 REGIONS=[('body',400,1800),('contraction',1800,2000),('neck',2000,2240),('flare_collar',2240,2600),('upper',2600,3600)]
 
 
@@ -96,17 +97,58 @@ def material_edge(state,row):
     return xyz,np.linalg.norm(xyz[:,:2],axis=1)-np.linalg.norm(base[:,:2],axis=1)
 
 
-def measure(candidate,validation,tag):
+def longitudinal_profile(lines,name):
+    uv=lines[:,:,[0,2]] if name=='XZ' else lines[:,:,[1,2]] if name=='YZ' else np.stack([(lines[:,:,0]+lines[:,:,1])/2**.5,lines[:,:,2]],axis=-1)
+    radius=np.full(SAMPLES,np.nan);multiple=np.zeros(SAMPLES,bool)
+    for pair in uv:
+        a,b=pair
+        if abs(b[1]-a[1])<1e-10:continue
+        lo,hi=sorted([a[1],b[1]]);ids=np.flatnonzero((AXIAL_Z>=lo)&(AXIAL_Z<hi))
+        r=a[0]+(b[0]-a[0])*(AXIAL_Z[ids]-a[1])/(b[1]-a[1]);good=r>0;ids=ids[good];r=r[good]
+        multiple[ids]|=np.isfinite(radius[ids])&(abs(radius[ids]-r)>1e-6);radius[ids]=r
+    return radius,dict(missing_samples=int((~np.isfinite(radius)).sum()),multiple_positive_hits=int(multiple.sum()))
+
+
+def open_valleys(parent,child):
+    if not np.isfinite(parent).all() or not np.isfinite(child).all():return []
+    pp,_=find_peaks(parent,prominence=15);rows=[]
+    for j,p in enumerate(pp):
+        previous=int(pp[j-1]) if j else 0;nxt=int(pp[j+1]) if j+1<len(pp) else len(parent)-1
+        a=previous+int(np.argmin(parent[previous:p+1]));b=p+int(np.argmin(parent[p:nxt+1]));v=child[a:b+1]
+        valleys,_=find_peaks(-v,prominence=15);crests,_=find_peaks(v,prominence=15)
+        for valley in valleys:
+            left=crests[crests<valley];right=crests[crests>valley]
+            if not len(left) or not len(right):continue
+            l=int(left[-1]);r=int(right[0]);depth=float(min(v[l],v[r])-v[valley])
+            if depth>=15:rows.append(dict(parent_world_z=float(AXIAL_Z[p]),valley_world_z=float(AXIAL_Z[a+valley]),depth=depth))
+    return rows
+
+
+def measure(candidate,validation,tag,audit_id=None):
     import trimesh
     job=ROOT/'candidates'/candidate;dest=ROOT/'measurements'/tag;dest.mkdir(parents=True,exist_ok=False)
     stage=Path(json.loads((job/'completed.json').read_text())['final_stage']);state=dict(np.load(stage/'formation_state.npz'))
-    cuts_path=ROOT/'validation'/validation/(candidate+'_cuts.npz');cuts=dict(np.load(cuts_path))
+    audit_id=audit_id or candidate;audit_path=ROOT/'validation'/validation/(audit_id+'.json')
+    audit=json.loads(audit_path.read_text())
+    if audit['mesh_sha256']!=sha(stage/'mesh.npz'):raise ValueError('Section certificate belongs to a different native mesh.')
+    cuts_path=ROOT/'validation'/validation/(audit_id+'_cuts.npz');cuts=dict(np.load(cuts_path))
     rest_mesh,_,_=native(dict(state,grid=state['rest']),7)
     rest=trimesh.Trimesh(vertices=rest_mesh.xyz,faces=rest_mesh.faces[:,:3],process=False)
     curves={};world=[];named=[];earlier={};named_heights=[900,1500,1900,2120,2380,2520,3000]
     final_mesh=load_mesh(stage);final_model=trimesh.Trimesh(vertices=final_mesh.xyz,faces=final_mesh.faces[:,:3],process=False)
     for name in ['G3_FORM','G4_FOLD']:
         m=load_mesh(job/name);earlier[name]=trimesh.Trimesh(vertices=m.xyz,faces=m.faces[:,:3],process=False)
+    longitudinal=[]
+    for name,normal in [('XZ',[0,1,0]),('YZ',[1,0,0]),('DIAGONAL',[1,-1,0])]:
+        profiles={};validations={}
+        for stage_name,model in list(earlier.items())+[('G7_FOLD',final_model),('REST',rest)]:
+            lines=trimesh.intersections.mesh_plane(model,normal,[0,0,0]);curves['LONG_'+stage_name+'_'+name+'_segments']=lines
+            profiles[stage_name],validations[stage_name]=longitudinal_profile(lines,name);curves['LONG_'+stage_name+'_'+name+'_radius']=profiles[stage_name]
+        valid=not any(any(v.values()) for v in validations.values())
+        longitudinal.append(dict(plane=name,ray_validation=validations,
+            raw_middle_inside_large=open_valleys(profiles['G3_FORM'],profiles['G4_FOLD']) if valid else [],
+            raw_small_inside_middle=open_valleys(profiles['G4_FOLD'],profiles['G7_FOLD']) if valid else [],
+            limits='Fixed-world actual triangle cuts; axial redistribution prevents interpreting these world-Z basins as exact material ancestry.'))
     for z in sorted(set(range(400,3601,100))|set(named_heights)):
         name=f'Z{z}';lines=cuts[name] if name in cuts else trimesh.intersections.mesh_plane(final_model,[0,0,1],[0,0,z+.12345])
         curves[name+'_segments']=lines;r,valid=radial_cut(lines);base_lines=trimesh.intersections.mesh_plane(rest,[0,0,1],[0,0,z+.12345]);base,base_valid=radial_cut(base_lines)
@@ -139,7 +181,7 @@ def measure(candidate,validation,tag):
         row['middle_envelope_retention']=envelope_retention(signals['G4_FOLD'],signals['G7_FOLD'])
         row['large_final_min_depth']=min([x['prominence'] for x in peaks(signals['G7_FOLD'])],default=0.)
         tracks.append(row)
-    np.savez_compressed(dest/'actual_curves.npz',theta=THETA,**curves)
+    np.savez_compressed(dest/'actual_curves.npz',theta=THETA,axial_z=AXIAL_Z,**curves)
     controls={};provenance=[]
     for name in ['G3_FORM','G4_FOLD','G7_FOLD']:
         s=states[name];c=dict(np.load(job/name/'control_state.npz'));original=s['s']*4000;rs=[]
@@ -168,9 +210,9 @@ def measure(candidate,validation,tag):
                 applied_vector_reconstruction_max=float(abs(s['grid']-pre['grid']-c['applied_displacement']).max()),
                 note='feature_owner uses the canonical X/Y representative; reflected controls share that owner. Material-domain ancestry is not a certified spatial ridge.'))
     summary=dict(candidate=candidate,mesh_sha256=sha(stage/'mesh.npz'),source_cut_sha256=sha(cuts_path),producer_sha256=sha(Path(__file__)),
-        analysis='2048 fixed rays intersect actual native triangle cuts; 15-unit unfiltered radial-excess prominence. Material tracks interpolate actual native edges, not fixed-world sections.',
+        source_audit_sha256=sha(audit_path),analysis='2048 fixed rays intersect actual native triangle cuts; 15-unit unfiltered radial-excess prominence. Material tracks interpolate actual native edges, not fixed-world sections.',
         limitations='Radial excess relative to unwarped rest at same world Z is a distribution descriptor, not ancestry. Native material-edge tracking uses material theta, not spatial polar angle. Finite samples do not certify continuous ridges. Coarse facet kinks can be peaks; counts alone are not ornament success.',
-        world_sections=world,named_sections=named,material_tracks=tracks,controls=controls,provenance=provenance,
+        world_sections=world,named_sections=named,longitudinal_sections=longitudinal,material_tracks=tracks,controls=controls,provenance=provenance,
         middle_coverage=sum(bool(t['middle_inside_large']) for t in tracks),small_coverage=sum(bool(t['small_inside_middle']) for t in tracks),material_denominator=len(tracks),
         world_middle_coverage=sum(bool(t['large_to_middle']) for t in world),world_small_coverage=sum(bool(t['middle_to_final']) for t in world),
         fine_depths=[v['depth'] for t in tracks for v in t['small_inside_middle']])
@@ -179,4 +221,4 @@ def measure(candidate,validation,tag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--validation',required=True);p.add_argument('--tag',required=True);a=p.parse_args();measure(a.candidate,a.validation,a.tag)
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--validation',required=True);p.add_argument('--tag',required=True);p.add_argument('--audit-id');a=p.parse_args();measure(a.candidate,a.validation,a.tag,a.audit_id)

@@ -12,22 +12,31 @@ ROOT=Path('E:/CHESHIRE_DATA/task35')
 def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
-def plot(candidate,measurement,validation,tag):
+def plot(candidate,measurement,validation,tag,audit_id=None):
     source=ROOT/'measurements'/measurement;data=json.loads((source/'result.json').read_text());curves=dict(np.load(source/'actual_curves.npz'))
-    cut_path=ROOT/'validation'/validation/(candidate+'_cuts.npz');cuts=dict(np.load(cut_path));dest=ROOT/'plots'/tag;dest.mkdir(parents=True,exist_ok=False)
+    cut_path=ROOT/'validation'/validation/((audit_id or candidate)+'_cuts.npz');cuts=dict(np.load(cut_path));dest=ROOT/'plots'/tag;dest.mkdir(parents=True,exist_ok=False)
     theta=curves['theta']*180/np.pi;stages=['G3_FORM','G4_FOLD','G7_FOLD'];colours=['#8a8a86','#cc7a22','#146c9a'];records=[]
     def save(fig,name):
         fig.tight_layout();path=dest/name;fig.savefig(path,dpi=170);plt.close(fig);records.append(dict(path=str(path),sha256=digest(path)))
-    fig,axes=plt.subplots(1,3,figsize=(10,13),sharey=True)
+    fig,axes=plt.subplots(1,3,figsize=(11,7),sharey=True)
     for ax,name,columns,title in zip(axes,['XZ','YZ','DIAGONAL'],[[0,2],[1,2],None],['Actual Y=0 cut','Actual X=0 cut','Actual X=Y cut']):
-        xyz=cuts[name];uv=xyz[:,:,columns] if columns else np.stack([(xyz[:,:,0]+xyz[:,:,1])/np.sqrt(2),xyz[:,:,2]],axis=-1)
-        ax.add_collection(LineCollection(uv,linewidths=.6,color='#283f52'));ax.set(xlim=(-1400,1400),ylim=(0,4000),title=title,xlabel='project units');ax.set_aspect('equal');ax.grid(alpha=.2)
-    fig.suptitle(candidate+' G7_FOLD | real triangle surface intersections');save(fig,'LONGITUDINAL_TRIANGLE_CUTS.png')
+        for stage,c in zip(stages,colours):
+            xyz=curves['LONG_'+stage+'_'+name+'_segments'];uv=xyz[:,:,columns] if columns else np.stack([(xyz[:,:,0]+xyz[:,:,1])/np.sqrt(2),xyz[:,:,2]],axis=-1)
+            ax.add_collection(LineCollection(uv,linewidths=.6,color=c,label=stage))
+        ax.set(xlim=(-1400,1400),ylim=(0,4000),title=title,xlabel='project units');ax.set_aspect('equal');ax.grid(alpha=.2)
+    axes[0].legend(fontsize=7);fig.suptitle(candidate+' | real triangle surface intersections');save(fig,'LONGITUDINAL_TRIANGLE_CUTS.png')
+    fig,axes=plt.subplots(3,1,figsize=(12,10),sharex=True)
+    for ax,name in zip(axes,['XZ','YZ','DIAGONAL']):
+        for stage,c in zip(stages,colours):ax.plot(curves['axial_z'],curves['LONG_'+stage+'_'+name+'_radius'],color=c,lw=1,label=stage)
+        ax.plot(curves['axial_z'],curves['LONG_REST_'+name+'_radius'],color='#bbbbbb',ls='--',label='REST')
+        ax.set(title=name+' positive half of actual cut',ylim=(0,1500),ylabel='physical radial extent');ax.grid(alpha=.2)
+    axes[0].legend();axes[-1].set(xlim=(0,4000),xlabel='World Z / project units')
+    fig.suptitle(candidate+' | world sections, not material ancestry');save(fig,'AXIAL_TRIANGLE_PROFILES.png')
     fig,axes=plt.subplots(2,4,figsize=(15,8));heights=[900,1500,1900,2120,2380,2520,3000]
     for ax,z in zip(axes.flat,heights):
         for name,c in zip(stages,colours):
-            r=curves[f'Z{z}_radius'] if name=='G7_FOLD' else curves[f'{name}_Z{z}_radius']
-            ax.plot(r*np.cos(curves['theta']),r*np.sin(curves['theta']),color=c,label=name,lw=.9)
+            key=f'Z{z}_segments' if name=='G7_FOLD' else f'{name}_Z{z}_segments'
+            ax.add_collection(LineCollection(curves[key][:,:,:2],color=c,label=name,linewidths=.9))
         ax.set(xlim=(-1200,1200),ylim=(-1000,1000),title=f'World Z={z}+.12345',xlabel='X',ylabel='Y');ax.set_aspect('equal');ax.grid(alpha=.2)
     axes.flat[-1].axis('off');axes.flat[0].legend(fontsize=7)
     fig.suptitle(candidate+' | fixed-world actual triangle cuts, NOT material ancestry');save(fig,'TRANSVERSE_TRIANGLE_CUTS.png')
@@ -62,4 +71,4 @@ def plot(candidate,measurement,validation,tag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--measurement',required=True);p.add_argument('--validation',required=True);p.add_argument('--tag',required=True);a=p.parse_args();plot(a.candidate,a.measurement,a.validation,a.tag)
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--measurement',required=True);p.add_argument('--validation',required=True);p.add_argument('--tag',required=True);p.add_argument('--audit-id');a=p.parse_args();plot(a.candidate,a.measurement,a.validation,a.tag,a.audit_id)

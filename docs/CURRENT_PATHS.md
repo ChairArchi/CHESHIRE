@@ -139,3 +139,33 @@ bounds and a previously valid recipe do not guarantee another sampling is valid.
 comparisons; `task34_plot.py` uses the declared `study-plots` extra. The local
 study reused ALICE's installed Matplotlib environment read-only.
 `task34_recover.py` tests an independent bundle clone and full native NPZ replay.
+
+## Task35: one column, sectional relationships and subsequent folds
+
+Use [Task35 results](TASK35_RESULTS.md) for the independent single-column study.
+X is width, Y depth and Z vertical; height is 4000 unresolved project units.
+H01 is the recommended research candidate; H02 reduces coarse-section contrast.
+Both retain closed caps, common fixed end buffers, and X/Y reflections.
+The path requires its structured material chart and does not accept an arbitrary
+gate mesh. It does not construct a lintel or change the Rhino launcher.
+
+```powershell
+.\.venv\Scripts\python.exe -B tools/task35_research.py --action run --request studies/task35/definitions/H01_SHOULDER_GROWTH.json --tag MY_NEW_TASK35_COLUMN
+```
+
+Every tag must be fresh; native checkpoints, controls, source-edge features,
+operator stencils and source overlays go to `E:/CHESHIRE_DATA/task35/`.
+Formation is G3 and subsequent refolding G4/G7; G5/G6 only refine angular sampling.
+`run`, `audit`, `render` and `measure` accept explicit JSON requests.
+The four starting groups, control ablations, rejected trials and H01/H02 are
+separate recipes, not interchangeable safe presets. Their limits are in the report.
+
+`task35_exchange.py` requires an exact final-stage full audit certificate;
+`--validation` may identify an already completed certificate with the same native
+SHA. Every coordinate and oriented OBJ face is round-trip checked. Connection
+sections/frame accompany the OBJ; native state is required for further research.
+`task35_probe.py` repeats one last operation on the same incoming V01 geometry
+to isolate growth/incision cancellation. It is not a full recursive candidate.
+`task35_compare.py` separates causal control, formation timing and angular resolution.
+`task35_recover.py` verifies independent bundle recovery, all native NPZ and
+measured feature values. No remote push is part of these tools.

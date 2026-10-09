@@ -152,3 +152,35 @@ def test_unknown_or_nonfinite_controls_are_not_silently_ignored():
     with pytest.raises(ValueError,match='Unknown initial'):form(s,'regional',{'not_applied':1})
     for parameter in ['direction_gain','common_axial_mix','signal_sigma']:
         with pytest.raises(ValueError,match='bounds'):refold(s,s,'regional',{parameter:np.nan})
+
+
+def test_feature_log_records_applied_branch_gain_separately_from_geometry():
+    s=formed();_,_,rows=refold(s,s,'regional',{'branch_gain':0})
+    assert rows and max(r['measured_branch_mix'] for r in rows)>.5
+    assert max(r['branch_mix'] for r in rows)==0
+
+
+def test_longitudinal_triangle_cut_profile_keeps_positive_and_multiple_hits():
+    import importlib.util
+    from pathlib import Path
+    spec=importlib.util.spec_from_file_location('task35_longitudinal_test',Path(__file__).resolve().parents[1]/'tools/task35_analyze.py')
+    m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+    lines=np.array([[[2,0,0],[2,0,4000]],[[-2,0,4000],[-2,0,0]]],float)
+    r,v=m.longitudinal_profile(lines,'XZ')
+    assert v==dict(missing_samples=0,multiple_positive_hits=0)
+    np.testing.assert_array_equal(r,np.full(m.SAMPLES,2.))
+    lines=np.concatenate([lines,[[[3,0,0],[3,0,4000]]]])
+    assert m.longitudinal_profile(lines,'XZ')[1]['multiple_positive_hits']==m.SAMPLES
+
+
+def test_shoulder_growth_cannot_cancel_the_whole_measured_incision():
+    s=formed();p={'axial_notch_gain':.65,'axial_wave_gain':.5,'branch_gain':0}
+    _,a,_=refold(s,s,'regional',p)
+    out,b,_=refold(s,s,'regional',dict(p,growth_coupling='shoulders'))
+    assert np.max(b['growth_before_coupling']-b['growth_after_coupling'])>20
+    np.testing.assert_allclose(b['primary_fold_component']+b['growth_after_coupling'],b['requested_signed_distance'],atol=1e-10)
+    positive=b['growth_before_coupling']>0
+    assert np.all(b['growth_after_coupling'][positive]<=b['growth_before_coupling'][positive])
+    assert np.max(abs(a['requested_signed_distance']-b['requested_signed_distance']))>20
+    mesh,chart,_=native(out,4)
+    assert max(v['geometry_max'] for v in symmetry(mesh,chart).values())<1e-8

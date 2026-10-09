@@ -116,7 +116,7 @@ def periodic_interp(at,arc,values,perimeter):
 
 
 def refold(state,source,mode,params):
-    allowed={'fraction','chord_gain','branch_gain','direction_gain','axial_gain','width_scale','cut_width','amplitude_only','common_longitudinal_mix','common_axial_mix','signal_sigma','axial_wave_gain','axial_wavelength','fan_gain','axial_notch_gain'}
+    allowed={'fraction','chord_gain','branch_gain','direction_gain','axial_gain','width_scale','cut_width','amplitude_only','common_longitudinal_mix','common_axial_mix','signal_sigma','axial_wave_gain','axial_wavelength','fan_gain','axial_notch_gain','growth_coupling'}
     if set(params)-allowed:raise ValueError('Unknown column folding parameters.')
     bounds={'branch_gain':(0,1),'direction_gain':(0,.4),'common_longitudinal_mix':(0,.4),'common_axial_mix':(0,1),'signal_sigma':(0,.2)}
     for key,(low,high) in bounds.items():
@@ -149,12 +149,16 @@ def refold(state,source,mode,params):
     phase_arc-=np.interp(240.,f['z'],phase_arc)
     wave=np.cos(phase_arc)
     amplitude_only=bool(params.get('amplitude_only',False))
+    coupling=params.get('growth_coupling','additive')
+    if coupling not in ('additive','shoulders'):raise ValueError('Unknown fold/growth coupling.')
+    fold_component=np.zeros_like(depth);growth_before=np.zeros_like(depth);growth_after=np.zeros_like(depth)
     for row,(features,(xy,arc,perimeter)) in enumerate(zip(records,geometries)):
         sampled_arc=np.interp(theta,np.arange(samples)*2*np.pi/samples,arc)
         raw_radius=np.linalg.norm(xy,axis=1)
         for feature in features:
             at=arc[feature['peak']];distance=(sampled_arc-at+perimeter/2)%perimeter-perimeter/2
             width=np.where(distance<0,feature['half_width_left'],feature['half_width_right'])
+            growth_raw=np.zeros(nt);growth=np.zeros(nt)
             if mode=='common' or amplitude_only:
                 t=distance/(width*.60);weight=np.maximum(0,1-t*t)**3
                 profile=weight*(.9-2*np.exp(-(t/.28)**2))
@@ -169,7 +173,7 @@ def refold(state,source,mode,params):
                 if not .3<=width_scale<=1.2 or not .2<=cut_width<=.8:raise ValueError('Declared crest support bounds exceeded.')
                 t=distance/(width*width_scale);b=branch[row]*params.get('branch_gain',1.)
                 if not 0<=b<=1:raise ValueError('Branch blend must stay within0..1.')
-                candidates=[];chords=[]
+                candidates=[];chords=[];supports=[]
                 opening=1-fan_gain*(.5+.5*wave[row])
                 for centre in [0.,-.38*opening,.38*opening]:
                     side=feature['half_width_left'] if centre<0 else feature['half_width_right']
@@ -179,20 +183,32 @@ def refold(state,source,mode,params):
                     offset=(sampled_arc-middle+perimeter/2)%perimeter-perimeter/2
                     support=np.maximum(0,1-(offset/span)**2)**3
                     candidates.append(-(fraction*feature['prominence']+chord_gain*chord)*support)
-                    chords.append(chord)
+                    chords.append(chord);supports.append(support)
                 requested=(1-b)*candidates[0]+b*np.minimum(candidates[1],candidates[2]);chord=max(chords)
+                primary=requested.copy()
                 # Whole crest shoulder bends along a radius-relative span;
                 # narrow parent-tip incisions alone cannot bend a long panel.
                 shoulder=np.maximum(0,1-t*t)**2
-                requested+=wave_gain*feature['prominence']*f['broadness'][row]*wave[row]*shoulder
-                requested+=axial_notch_gain*axial_prominence[row]*axial[row]*shoulder
+                wave_term=wave_gain*feature['prominence']*f['broadness'][row]*wave[row]*shoulder
+                axial_term=axial_notch_gain*axial_prominence[row]*axial[row]*shoulder
+                growth_raw=wave_term+axial_term
+                incision=(1-b)*supports[0]+b*np.maximum(supports[1],supports[2])
+                growth=np.where(growth_raw>0,growth_raw*(1-incision),growth_raw) if coupling=='shoulders' else growth_raw.copy()
+                if coupling=='additive':
+                    requested=primary+wave_term;requested+=axial_term
+                else:requested=primary+growth
             else:raise ValueError('Unknown controller.')
             requested*=window[row];take=np.abs(requested)>np.abs(depth[row]);depth[row,take]=requested[take]
+            fold_component[row,take]=(requested-growth*window[row])[take]
+            growth_before[row,take]=(growth_raw*window[row])[take];growth_after[row,take]=(growth*window[row])[take]
             owner[row,take]=row*samples+feature['peak'];chord_field[row,take]=chord
-            rows.append(dict(**feature,branch_mix=float(branch[row]) if mode=='regional' and not amplitude_only else 0.,
+            rows.append(dict(**feature,measured_branch_mix=float(branch[row]),
+                             branch_mix=float(branch[row]*params.get('branch_gain',1.)) if mode=='regional' and not amplitude_only else 0.,
                              chord_drop=float(chord),axial_phase=float(phase_arc[row]),axial_wave=float(wave[row]),
+                             axial_notch_gain=axial_notch_gain,axial_prominence=float(axial_prominence[row]),axial_profile=float(axial[row]),
                              requested_min=float(requested.min()),requested_max=float(requested.max())))
     pair_scalar(state,depth);pair_scalar(state,owner);pair_scalar(state,chord_field)
+    for field in [fold_component,growth_before,growth_after]:pair_scalar(state,field)
     source_xy=source['grid'][:,:,:2];radial=source_xy/np.maximum(np.linalg.norm(source_xy,axis=-1)[:,:,None],1e-12)
     delta=np.zeros_like(state['grid']);delta[:,:,:2]=depth[:,:,None]*radial
     angular=np.zeros_like(depth);axial_delta=np.zeros(nr)
@@ -219,6 +235,7 @@ def refold(state,source,mode,params):
         end_window=window,source_signal=signal,axial_feature_table=axial_table,axial_feature_owner=axial_owner,
         axial_feature_profile=axial,axial_feature_prominence=axial_prominence,
         measured_span_phase=phase_arc,measured_span_wave=wave,
+        primary_fold_component=fold_component,growth_before_coupling=growth_before,growth_after_coupling=growth_after,
         **{'read_'+k:v for k,v in f.items()})
     radius=np.linalg.norm(out['grid'][:,:,:2],axis=-1)
     if np.any(radius<.15*np.linalg.norm(state['rest'][:,:,:2],axis=-1)):raise RejectedFormation('Consumed column thickness; no clipping.',out,controls,rows)

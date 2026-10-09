@@ -42,15 +42,20 @@ def recover(bundle,candidate,tag):
     replay_tag='INDEPENDENT_'+tag
     replay=checked([str(python),'-B',str(clone/'tools/task35_research.py'),'--action','run',
                     '--request',str(job/'request.json'),'--tag',replay_tag],clone)
-    regenerated=ROOT/'candidates'/replay_tag;proof=[]
+    regenerated=ROOT/'candidates'/replay_tag;proof=[];feature_proof=[]
     for stage in sorted(job.glob('G*')):
         for source in sorted(stage.glob('*.npz')):
             target=regenerated/stage.name/source.name
             if not target.exists() or sha(source)!=sha(target):raise ValueError('Native-state byte replay differs: '+str(source))
             proof.append(dict(path=str(source.relative_to(job)),sha256=sha(source)))
+        if (stage/'features.json').exists():
+            original=json.loads((stage/'features.json').read_text());new=json.loads((regenerated/stage.name/'features.json').read_text())
+            if original['features']!=new['features'] or original['source_mesh_sha256']!=new['source_mesh_sha256']:raise ValueError('Measured source feature replay differs.')
+            feature_proof.append(dict(stage=stage.name,rows=len(original['features']),source_mesh_sha256=original['source_mesh_sha256'],values_equal=True,
+                limits='Absolute source_stage path changes in the independent candidate; geometric feature values, native edge IDs/weights and source mesh identity match exactly.'))
     write_new(dest/'recovery.json',dict(candidate=candidate,bundle=str(bundle),bundle_sha256=sha(bundle),
         bundle_verification=verified,clone=cloned,fsck=fsck,source_import_probe=probe,producer_overlay=overlay,
-        native_replay=replay,regenerated_candidate=str(regenerated),byte_exact_npz_files=proof,
+        native_replay=replay,regenerated_candidate=str(regenerated),byte_exact_npz_files=proof,feature_replay=feature_proof,
         recovered_head=checked(['git','-C',str(clone),'-c','safe.directory='+clone.as_posix(),'rev-parse','HEAD'])['stdout'].strip(),
         dependency_library_readonly=str(dependency),producer_sha256=sha(Path(__file__)),
         limits='Fresh clone and checkout-local venv; no package installation. Source and every native NPZ recovered, but installed dependencies remain a separate prerequisite.'))
