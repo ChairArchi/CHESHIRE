@@ -14,7 +14,7 @@ ROOT=Path('E:/CHESHIRE_DATA/task36')
 SOURCES=['src/cheshire/task36_growth.py','src/cheshire/reference_subdivision.py','tools/task36_research.py',
  'examples/task29_search.py','examples/hero_design_sprint.py','tools/task33_preserve.py','tools/task33_contacts.py',
  'tools/task32_validation.py','tools/task33_views.py','tools/task34_research.py','tools/task33_planar.py']
-SOURCES += ['tools/task36_contacts.py','tools/native/Task36Bounds.cs']
+SOURCES += ['tools/task36_contacts.py','tools/native/Task36Bounds.cs','tools/task36_triangle_interval.py']
 
 
 def preflight(request):
@@ -50,7 +50,11 @@ def run(request,tag):
         start=perf_counter();params=request['parameters'].copy();params.update(request.get('schedule',{}).get(str(g),{}))
         active=g in request.get('active_generations',list(range(1,request['generations']+1)))
         pre,preop=step(mesh,**params,active=False);before=job/f'G{g}_PRE';checkpoint(before,pre,parent,preop,dict(operation='Interpolating split only; centre-fan surface changes possible.'))
-        if request.get('contact_engine','original')=='bvh':from task36_contacts import contacts
+        if request.get('contact_engine','original')=='bvh_interval':
+            from task36_contacts import contacts as accelerated
+            from functools import partial
+            contacts=partial(accelerated,interval=True)
+        elif request.get('contact_engine','original')=='bvh':from task36_contacts import contacts
         elif request.get('contact_engine','original')=='original':from task33_contacts import contacts
         else:raise ValueError('Explicit supported contact engine required.')
         out,op=step(mesh,**params,active=active)
@@ -62,6 +66,8 @@ def run(request,tag):
             proposed=out.xyz.copy();delta=proposed-pre.xyz;weights=np.ones(len(out.xyz));tree=cKDTree(out.rest)
             local_cap=request.get('local_contact_cap',256)
             if type(local_cap)!=int or not 256<=local_cap<=16384:raise ValueError('Bounded diagnostic contact batch required.')
+            local_iterations=request.get('local_iterations',24)
+            if type(local_iterations)!=int or not 1<=local_iterations<=64:raise ValueError('Bounded diagnostic repair budget required.')
             if local_cap>256:check=contacts(native(out),cap=local_cap)
             transforms=[np.diag([-1,1,1]),np.diag([1,-1,1]),np.array([[0,-1,0],[1,0,0],[0,0,1]])]
             maps=[]
@@ -69,7 +75,7 @@ def run(request,tag):
                 distance,index=tree.query(out.rest@matrix.T)
                 if distance.max()>1e-8 or len(np.unique(index))!=len(index):raise ValueError('Material symmetry correspondence failed.')
                 maps.append(index)
-            for iteration in range(24):
+            for iteration in range(local_iterations):
                 pairs=np.asarray(check['pairs'],np.int64);quad_ids=np.unique(pairs.ravel()//4)
                 affected=np.unique(out.faces[quad_ids].ravel())
                 for _ in range(3):affected=np.unique(np.r_[affected,*[m[affected] for m in maps]])

@@ -26,7 +26,9 @@ def recover(candidate,tag,bundle):
         if sha(src)!=digest:raise ValueError('Producer overlay integrity failed.')
         shutil.copy2(src,target)
         if sha(target)!=digest:raise ValueError('Overlay copy mismatch.')
-    env=clone/'recovery_venv';subprocess.run([sys.executable,'-m','venv','--without-pip',str(env)],check=True)
+    # Existing Rhino support imports enforce <repo>/.venv/Scripts/python.exe.
+    # Honour that runtime identity in the fresh clone; never bypass its guard.
+    env=clone/'.venv';subprocess.run([sys.executable,'-m','venv','--without-pip',str(env)],check=True)
     site=env/'Lib/site-packages';(site/'local_recovery.pth').write_text(str(REPO/'.venv/Lib/site-packages')+'\nimport sys; sys.path.insert(0, '+repr(str(clone/'src'))+')\n',encoding='utf8')
     python=env/'Scripts/python.exe';probe=subprocess.check_output([str(python),'-B','-c','import cheshire.task36_growth as m; print(m.__file__)'],cwd=clone,text=True).strip()
     if not Path(probe).is_relative_to(clone):raise ValueError('Recovery imported original code.')

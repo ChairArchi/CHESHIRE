@@ -33,7 +33,7 @@ def read_exact(stream,n):
     return b''.join(chunks)
 
 
-def contacts(mesh,cap=256):
+def contacts(mesh,cap=256,interval=False):
     start=perf_counter();tri=triangles(mesh);span=float(np.ptp(mesh.xyz,axis=0).max())
     if span<=0:raise ValueError('Nonzero extent required.')
     p=(mesh.xyz[tri]-mesh.xyz.min(0))/span;centre=p.mean(1);radius=np.linalg.norm(p-centre[:,None],axis=2).max(1)
@@ -50,7 +50,12 @@ def contacts(mesh,cap=256):
                 ab=np.frombuffer(read_exact(process.stdout,count*8),dtype='<i4').reshape(-1,2);a,b=ab.T;raw+=len(a)
                 eligible=np.linalg.norm(centre[a]-centre[b],axis=1)<=radius[a]+radius[b]+1e-10
                 a=a[eligible];b=b[eligible];checked+=len(a)
-                hit=batch_hits(p[a],p[b]);pairs.extend(np.column_stack([a[hit],b[hit]]).tolist())
+                hit=batch_hits(p[a],p[b])
+                if interval:
+                    from task36_triangle_interval import interval_hits
+                    remaining=~hit
+                    hit[remaining]|=interval_hits(p[a[remaining]],p[b[remaining]])
+                pairs.extend(np.column_stack([a[hit],b[hit]]).tolist())
                 if len(pairs)>=cap:pairs=pairs[:cap];break
         finally:
             if process.poll() is None and len(pairs)>=cap:process.terminate()
@@ -64,4 +69,5 @@ def contacts(mesh,cap=256):
         cap_reached=len(pairs)==cap,cap=cap,checked_nonadjacent_AABB_pairs=checked,raw_AABB_pairs=raw,seconds=perf_counter()-start,
         broad_phase='Exact native AABB BVH, ascending pairs; same bounding-sphere filter; unchanged Task33 batch_hits.',
         helper_source_sha256=sha(REPO/'tools/native/Task36Bounds.cs'),helper_binary_sha256=sha(exe),
+        narrow_phase='Task33 strict edge hits UNION Task36 positive noncoplanar interior interval overlap' if interval else 'Unchanged Task33 strict edge hits',
         exclusions='Shared vertices, coplanar, boundary/tangent contacts excluded; no sampling or triangle merging. Zero does not certify solid geometry.')

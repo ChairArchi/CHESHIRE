@@ -11,7 +11,9 @@ ROOT=Path('E:/CHESHIRE_DATA/task36')
 def deliver(candidate,audit_file):
     job=ROOT/'candidates'/candidate;stage=Path(json.loads((job/'completed.json').read_text())['final_stage'])
     certificate=json.loads(audit_file.read_text());m=load_mesh(stage);e=certificate['embedding']
-    if certificate['mesh_sha256']!=sha(stage/'mesh.npz') or certificate['stage']!=str(stage):raise ValueError('Certificate/source identity mismatch.')
+    if 'interval overlap' not in certificate['contacts'].get('narrow_phase',''):raise ValueError('Supplementary noncoplanar interval audit required.')
+    if any(c['crossings_touches_overlaps'] for c in certificate['cuts']):raise ValueError('Unresolved actual section crossing/touch/overlap; no validated exchange.')
+    if certificate['mesh_sha256']!=sha(stage/'mesh.npz') or Path(certificate['stage']).resolve()!=stage.resolve():raise ValueError('Certificate/source identity mismatch.')
     if certificate['contacts']['transverse_contacts'] or not certificate['contacts']['all_triangles_sampled'] or e['degenerate_triangles'] or e['invalid_vertex_links'] or e['orphan_vertices'] or e['connected_components']!=1 or e['Euler']!=2 or certificate['end_plane_z_error']>1e-10:raise ValueError('Native geometry failed exchange requirements.')
     if any(v['geometry_max']>1e-8 or not v['bijective'] or v['oriented_face_cycle_failures'] for v in certificate['symmetry'].values()):raise ValueError('Symmetry requirement failed.')
     dest=ROOT/'deliverables'/candidate;dest.mkdir(parents=True,exist_ok=False);path=dest/'column.obj'

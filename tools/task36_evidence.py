@@ -34,7 +34,11 @@ def symmetry(mesh):
 
 def audit(request,tag):
     contact_check=contacts
-    if request.get('contact_engine')=='bvh':
+    if request.get('contact_engine')=='bvh_interval':
+        from task36_contacts import contacts as accelerated
+        from functools import partial
+        contact_check=partial(accelerated,interval=True)
+    elif request.get('contact_engine')=='bvh':
         from task36_contacts import contacts as contact_check
     dest=ROOT/'validation'/tag;dest.mkdir(parents=True,exist_ok=False);write_new(dest/'request.json',request);rows=[]
     for item in request['items']:
