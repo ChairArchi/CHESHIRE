@@ -1,0 +1,227 @@
+{
+  "baseline_commit": "c71ac1f9961a45a16dd454dcf2d9f624153a8e6a",
+  "original_definition": {
+    "id": "FINAL_DX00",
+    "rows": [
+      {
+        "weights": {
+          "wf": -0.28,
+          "w1": 0.8,
+          "we": 0.32,
+          "w2": -2.8,
+          "wp": 0.52,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task28 H1 ablation",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      },
+      {
+        "weights": {
+          "wf": 0.16,
+          "w1": -1.05,
+          "we": -0.05,
+          "w2": -0.9,
+          "wp": 0.045,
+          "w3": -0.8,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "C11B",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+        "normalization": "Historical dimensionless ratio unchanged."
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Exact Task28 G3 ratio row",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      },
+      {
+        "weights": {
+          "wf": 0.0,
+          "w1": -0.18,
+          "we": 0.0,
+          "w2": -0.3,
+          "wp": 0.0,
+          "w3": -0.9,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "CURVE",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+        "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Exact Task28 G3 ratio row",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Exact Task28 G3 ratio row",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Exact Task28 G3 ratio row",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      },
+      {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Exact Task28 G3 ratio row",
+        "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+      }
+    ],
+    "mode": "REFERENCE_COUPLED",
+    "scale": "LOCAL_INCIDENT_SCALE",
+    "parent": "E:\\CHESHIRE_DATA\\task29\\candidates\\intrinsic_retention\\DX00\\G5",
+    "intrinsic": {
+      "field": "NORMAL_VARIATION",
+      "start": 3,
+      "gain": 3,
+      "lock_threshold": 0.12,
+      "controls": {
+        "wf": [
+          -0.1,
+          0.18
+        ],
+        "w1": [
+          -0.35,
+          0.35
+        ],
+        "w2": [
+          -0.7,
+          0.35
+        ],
+        "w3": [
+          -0.8,
+          0.8
+        ],
+        "w4": [
+          0.35,
+          -0.35
+        ]
+      }
+    },
+    "base_C": "C00_B000_0"
+  },
+  "source_sha256": "27256e5faddc473d0eb4ded78e94321d80c0bfcce63d836ccb53775ea9ba4d3e",
+  "canonical_base": "REFERENCE_COUPLED + LOCAL_INCIDENT_SCALE + exact nonzero nonstationary rows; original intrinsic normal interpolation/locking is explicit optional policy.",
+  "source_meshes": [
+    {
+      "generation": 0,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G0\\mesh.npz",
+      "sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382"
+    },
+    {
+      "generation": 1,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G1\\mesh.npz",
+      "sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f"
+    },
+    {
+      "generation": 2,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G2\\mesh.npz",
+      "sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3"
+    },
+    {
+      "generation": 3,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G3\\mesh.npz",
+      "sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb"
+    },
+    {
+      "generation": 4,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G4\\mesh.npz",
+      "sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1"
+    },
+    {
+      "generation": 5,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G5\\mesh.npz",
+      "sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6"
+    },
+    {
+      "generation": 6,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G6\\mesh.npz",
+      "sha256": "fd5ce249c0ce56bcc4ef291d20564e0ed4deb7c4c2806e540af07f11e73f937d"
+    },
+    {
+      "generation": 7,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G7\\mesh.npz",
+      "sha256": "363ea2d7ef5d87a64fceb0703757cd370b9a10be8e148c14ff8033665bba2cbb"
+    },
+    {
+      "generation": 8,
+      "path": "E:\\CHESHIRE_DATA\\task29\\lead\\G8\\mesh.npz",
+      "sha256": "bf4fb98630189d6dcc88702dfdf3adee04c7c1f079858f38d490eac39c4b40e6"
+    }
+  ]
+}

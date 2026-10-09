@@ -1,0 +1,40 @@
+{
+  "carrier": "varied",
+  "variant": "standard",
+  "controller": "regional",
+  "criterion": "current",
+  "final_generation": 7,
+  "macro_generation": 4,
+  "fold_generations": [
+    5,
+    7
+  ],
+  "sampling": [
+    "both",
+    "both",
+    "both",
+    "both",
+    "angular",
+    "angular",
+    "angular"
+  ],
+  "form": {
+    "amplitude": 500
+  },
+  "refold": {
+    "fraction": 0.45,
+    "chord_gain": 1.0,
+    "branch_gain": 1.0,
+    "direction_gain": 0.1,
+    "axial_gain": 0.4,
+    "width_scale": 0.85,
+    "cut_width": 0.45,
+    "amplitude_only": false,
+    "common_longitudinal_mix": 0.2,
+    "common_axial_mix": 0.5,
+    "signal_sigma": 0.035,
+    "axial_wave_gain": 0.5,
+    "fan_gain": 0.5,
+    "axial_notch_gain": 0.65
+  }
+}
