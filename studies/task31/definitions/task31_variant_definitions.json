@@ -1,0 +1,261 @@
+{
+  "StageA": [
+    {
+      "id": "AX_P4",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.4,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AX_P8",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AX_R4",
+      "descriptor": "axis",
+      "memory": "remeasured",
+      "contrast": 0.4,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AX_R8",
+      "descriptor": "axis",
+      "memory": "remeasured",
+      "contrast": 0.8,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "FOLD_P4",
+      "descriptor": "fold",
+      "memory": "persistent",
+      "contrast": 0.4,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "FOLD_P8",
+      "descriptor": "fold",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": null,
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "DEPTH_1_3",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "recess",
+        "levels": 1,
+        "depth": 0.3,
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "DEPTH_2_3",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "recess",
+        "levels": 2,
+        "depth": 0.3,
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "DEPTH_2_6",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "recess",
+        "levels": 2,
+        "depth": 0.6,
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "OPEN_35",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.35
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "OPEN_60",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "OPEN_85",
+      "descriptor": null,
+      "memory": "persistent",
+      "contrast": 0,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.85
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AXIS_OPEN_60",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AXIS_OPEN_85",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.85
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "FOLD_OPEN_60",
+      "descriptor": "fold",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "FOLD_OPEN_85",
+      "descriptor": "fold",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": {
+        "kind": "opening",
+        "ratio": 0.85
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AXIS_DEPTH",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": {
+        "kind": "recess",
+        "levels": 2,
+        "depth": 0.6,
+        "ratio": 0.6
+      },
+      "born": 2,
+      "onset": 3
+    },
+    {
+      "id": "AXIS_BORN1",
+      "descriptor": "axis",
+      "memory": "persistent",
+      "contrast": 0.8,
+      "edit": null,
+      "born": 1,
+      "onset": 3
+    }
+  ],
+  "CC_modes": [
+    {
+      "wf": 0.06,
+      "w1": 0.25,
+      "w2": -0.15,
+      "wp": 0.02,
+      "w3": 0.2,
+      "w4": 0.05
+    },
+    {
+      "wf": 0.1,
+      "we": -0.02,
+      "wp": 0.02,
+      "w1": -0.35,
+      "w2": -0.15,
+      "w3": -0.6,
+      "w4": 0.25
+    },
+    {
+      "wf": -0.1,
+      "we": -0.04,
+      "wp": -0.02,
+      "w1": 0.1,
+      "w2": 0.1,
+      "w3": 0.05,
+      "w4": -0.15
+    },
+    {
+      "wf": -0.03,
+      "w1": 0.25
+    }
+  ],
+  "DS_modes": [
+    {
+      "w1": -0.05,
+      "wf": 0.07
+    },
+    {
+      "w1": 0.85,
+      "wf": 0.04
+    },
+    {
+      "w1": 0.35,
+      "wf": -0.08
+    },
+    {
+      "w1": 0.2,
+      "wf": -0.025
+    }
+  ],
+  "control": "Unchanged actual Task30 U_67_LOCK_END4",
+  "blend": "(1-contrast)*resolved Task30 intrinsic control + contrast*membership-weighted mode",
+  "inheritance": "CC exact parent; DS all actual incident parents equal mean; edited walls CHANNEL",
+  "polygon_extension": "Exact Eq5/6 n3/4; standard cosine mask n>4, w1 inactive there; common to controls and gate transfers"
+}
