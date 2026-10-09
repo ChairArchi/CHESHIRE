@@ -17,7 +17,7 @@ LOCAL_INCIDENT_SCALE = 'LOCAL_INCIDENT_SCALE'
 @dataclass
 class ArrayMesh:
     xyz: np.ndarray
-    faces: np.ndarray                 # -1 fourth slot for triangles
+    faces: np.ndarray                 # contiguous polygon slots, trailing -1 padding
     classes: np.ndarray               # 0 previous vertex, 1 edge, 2 face
     rest: np.ndarray                  # positive cage association, not geometry
     anchors: np.ndarray               # actual ancestor face IDs at G1/G2/G3
@@ -35,7 +35,7 @@ def cube(side=1000.):
 
 def topology(mesh):
     q=mesh.faces;mask=q>=0;n=mask.sum(1);fi=np.repeat(np.arange(len(q)),n)
-    a=q[mask];nextq=q[np.arange(len(q))[:,None],(np.arange(4)[None,:]+1)%n[:,None]]
+    a=q[mask];nextq=q[np.arange(len(q))[:,None],(np.arange(q.shape[1])[None,:]+1)%n[:,None]]
     b=nextq[mask];pairs=np.sort(np.column_stack((a,b)),axis=1)
     edges,inv,counts=np.unique(pairs,axis=0,return_inverse=True,return_counts=True)
     if np.any(counts!=2): raise ValueError('Closed two-face edges required; no repair.')
@@ -62,7 +62,7 @@ def unit(v):
 def fields(mesh,t=None):
     t=t or topology(mesh);q=mesh.faces;p=mesh.xyz[np.maximum(q,0)]
     c=(p*t['mask'][:,:,None]).sum(1)/t['n'][:,None]
-    following=p[np.arange(len(q))[:,None],(np.arange(4)[None,:]+1)%t['n'][:,None]]
+    following=p[np.arange(len(q))[:,None],(np.arange(q.shape[1])[None,:]+1)%t['n'][:,None]]
     cross=np.cross(p-c[:,None],following-c[:,None])*t['mask'][:,:,None]
     normals=unit(cross.sum(1));area=np.linalg.norm(cross,axis=2).sum(1)/2
     lengths=np.linalg.norm(mesh.xyz[t['edges'][:,0]]-mesh.xyz[t['edges'][:,1]],axis=1)
@@ -97,7 +97,7 @@ def intrinsic_signal(mesh,t,f,rule):
     return s
 
 
-def subdivide(mesh,row,*,scale_mode=LOCAL_INCIDENT_SCALE,intrinsic=None):
+def subdivide(mesh,row,*,scale_mode=LOCAL_INCIDENT_SCALE,intrinsic=None,resolved_controls=None):
     """Complete face -> edge, complete face + original midpoint -> vertex.
 
     Compact previous-point classes are verified against the real quad pattern;
@@ -115,6 +115,11 @@ def subdivide(mesh,row,*,scale_mode=LOCAL_INCIDENT_SCALE,intrinsic=None):
     if signal is not None:
         sf=mean_incident(signal[t['a']],t['fi'],nf);se=signal[edges].mean(1);sv=signal
     def control(k,kind):
+        if resolved_controls is not None and k in resolved_controls:
+            v=np.asarray(resolved_controls[k],float)
+            size={'face':nf,'edge':ne,'vertex':nv}[kind]
+            if v.shape!=(size,) or not np.isfinite(v).all():raise ValueError('Invalid resolved regional control '+k)
+            return v
         s={'face':sf,'edge':se,'vertex':sv}[kind]
         if s is None or k not in intrinsic['controls']: return w[k]
         lo,hi=intrinsic['controls'][k]
@@ -150,7 +155,7 @@ def subdivide(mesh,row,*,scale_mode=LOCAL_INCIDENT_SCALE,intrinsic=None):
         if not 0<threshold<1:raise ValueError('Fold-lock threshold must be in (0,1).')
         locks=f['variation']>=threshold;vp[locks]=x[locks]
     xyz=np.concatenate([vp,ep,face]);outclasses=np.concatenate([np.zeros(nv,np.int8),np.ones(ne,np.int8),np.full(nf,2,np.int8)])
-    prev=t['fe'][np.arange(nf)[:,None],(np.arange(4)[None,:]-1)%n[:,None]]
+    prev=t['fe'][np.arange(nf)[:,None],(np.arange(q.shape[1])[None,:]-1)%n[:,None]]
     child=np.column_stack([prev[t['mask']]+nv,t['a'],t['fe'][t['mask']]+nv,t['fi']+nv+ne])
     restface=mean_incident(mesh.rest[t['a']],t['fi'],nf)
     rest=np.concatenate([mesh.rest,mesh.rest[edges].mean(1),restface])
@@ -170,6 +175,9 @@ def subdivide(mesh,row,*,scale_mode=LOCAL_INCIDENT_SCALE,intrinsic=None):
                face_scale=scales['face'],edge_scale=scales['edge'],vertex_scale=scales['vertex'])
     if signal is not None:state['intrinsic_signal']=signal
     if locks is not None:state['vertex_lock_mask']=locks
+    if resolved_controls is not None:
+        metadata['regional_controls']='Explicit absolute arrays, after intrinsic interpolation; opt-in only.'
+        state.update({'resolved_'+k:np.asarray(v) for k,v in resolved_controls.items()})
     return out,metadata,state
 
 

@@ -1,0 +1,5446 @@
+[
+  {
+    "id": "U_4",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "U_6",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      6
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "U_45",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "U_67",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      6,
+      7
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "U_468",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      6,
+      8
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "U_45678",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Isolate early/late/consecutive/interleaved scheme roles"
+  },
+  {
+    "id": "M_45",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5
+    ],
+    "group_policy": "moderate",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "S_45",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5
+    ],
+    "group_policy": "strong",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "M_67",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      6,
+      7
+    ],
+    "group_policy": "moderate",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "S_67",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      6,
+      7
+    ],
+    "group_policy": "strong",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "M_45678",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 0.85,
+            "wf": 0.03
+          },
+          "EDGE": {
+            "w1": -0.1,
+            "wf": -0.02
+          },
+          "VERTEX": {
+            "w1": 0.5,
+            "wf": 0.065
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "group_policy": "moderate",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "S_45678",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {
+          "FACE": {
+            "w1": 1.1,
+            "wf": 0.035
+          },
+          "EDGE": {
+            "w1": -0.3,
+            "wf": -0.04
+          },
+          "VERTEX": {
+            "w1": 0.6,
+            "wf": 0.09
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE"
+      }
+    ],
+    "ds_generations": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "group_policy": "strong",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Matched structural face-origin policy"
+  },
+  {
+    "id": "CC_LOCK_END3",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      }
+    ],
+    "ds_generations": [],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Secondary finite lock lifetime; same normal control interpolation retained, no neutral cleanup."
+  },
+  {
+    "id": "CC_LOCK_END4",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      }
+    ],
+    "ds_generations": [],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Secondary finite lock lifetime; same normal control interpolation retained, no neutral cleanup."
+  },
+  {
+    "id": "U_67_LOCK_END3",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 3
+      }
+    ],
+    "ds_generations": [
+      6,
+      7
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Secondary finite lock lifetime; same normal control interpolation retained, no neutral cleanup."
+  },
+  {
+    "id": "U_67_LOCK_END4",
+    "steps": [
+      {
+        "generation": 1,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": -0.28,
+            "w1": 0.8,
+            "we": 0.32,
+            "w2": -2.8,
+            "wp": 0.52,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Task28 H1 ablation",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 2,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.16,
+            "w1": -1.05,
+            "we": -0.05,
+            "w2": -0.9,
+            "wp": 0.045,
+            "w3": -0.8,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "C11B",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Historical dimensionless ratio unchanged."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 3,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 4,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.0,
+            "w1": -0.18,
+            "we": 0.0,
+            "w2": -0.3,
+            "wp": 0.0,
+            "w3": -0.9,
+            "w4": 0.5,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "CURVE",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless",
+          "normalization": "Absolute historical offsets / initial cube edge 1000; later applied to current declared scale."
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 5,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 6,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 7,
+        "scheme": "REFERENCE_DOO_SABIN",
+        "weights": {
+          "w1": 0.6,
+          "wf": 0.03
+        },
+        "groups": {},
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      },
+      {
+        "generation": 8,
+        "scheme": "REFERENCE_COUPLED",
+        "row": {
+          "weights": {
+            "wf": 0.11199999999999999,
+            "w1": -0.735,
+            "we": -0.034999999999999996,
+            "w2": -0.63,
+            "wp": 0.0315,
+            "w3": -0.6,
+            "w4": 0.35,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0.0,
+          "source": "Exact Task28 G3 ratio row",
+          "units": "wf/we/wp dimensionless ratios times declared current scale; all others dimensionless"
+        },
+        "intrinsic": {
+          "field": "NORMAL_VARIATION",
+          "start": 3,
+          "gain": 3,
+          "lock_threshold": 0.12,
+          "controls": {
+            "wf": [
+              -0.1,
+              0.18
+            ],
+            "w1": [
+              -0.35,
+              0.35
+            ],
+            "w2": [
+              -0.7,
+              0.35
+            ],
+            "w3": [
+              -0.8,
+              0.8
+            ],
+            "w4": [
+              0.35,
+              -0.35
+            ]
+          }
+        },
+        "scale": "LOCAL_INCIDENT_SCALE",
+        "lock_end": 4
+      }
+    ],
+    "ds_generations": [
+      6,
+      7
+    ],
+    "group_policy": "uniform",
+    "prefix_source": "E:\\CHESHIRE_DATA\\task29\\lead\\G3",
+    "justification": "Secondary finite lock lifetime; same normal control interpolation retained, no neutral cleanup."
+  }
+]

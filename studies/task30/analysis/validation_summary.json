@@ -1,0 +1,1764 @@
+{
+  "status": "PASS",
+  "tests_passed": 862,
+  "skipped": 0,
+  "backend": "Actual HDMola.dll1.0.0 / coreclr",
+  "saved_geometry_stages": 162,
+  "new_generated_stages": 80,
+  "candidate_definitions": 16,
+  "parent_checks": 144,
+  "all_stage_checks": [
+    {
+      "path": "candidates\\CC_LOCK_END3\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G4",
+      "mesh_sha256": "49ebb3cf7d56e9a82b6c1380e3d797f6dfcd4b523dc489507f3da2a46f928538",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G5",
+      "mesh_sha256": "88c0a7ce279f542b9e1f0767dc5b7bd67f5413ff83c5e836a300d53a6daabf46",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G6",
+      "mesh_sha256": "b6857a392373023c1cf8411819ef546dca79d4e7b68ff4e42b19b81d2ab1d379",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G7",
+      "mesh_sha256": "3af25d0024ee7c39bda64242114baa095f7ed4dd8ac95eea5193153876efa50a",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\CC_LOCK_END3\\G8",
+      "mesh_sha256": "b78064bae7d1457be018dedef05457f8f61ccf29fa7666279a8f9f2c76483c44",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G5",
+      "mesh_sha256": "ff6f44e1d2b4acb101f5be3634ea94825cc152256b6943d6533f7e163b319637",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G6",
+      "mesh_sha256": "91dffa738219c3a258ff443ef750a71d975d773ed2ffa3156cf2169d9e1c72d3",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G7",
+      "mesh_sha256": "6e2957105e41f85c52ee2e5ca212dacec7ba7e0c33fa5bf4e5337978736cfd6d",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\CC_LOCK_END4\\G8",
+      "mesh_sha256": "3b6a6673f466d71f80f6e473f01d996aba06f9e888d3cafc83e4daa15fdb0633",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\M_45\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\M_45\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\M_45\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\M_45\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\M_45\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\M_45\\G5",
+      "mesh_sha256": "af471fd878a3284251115b2ba17dea4a04de98de14617d410ad5d56a2f1176d1",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\M_45\\G6",
+      "mesh_sha256": "07088ce514d4c344206a93b6f15652bc588ad7f6cfaf7dcfe57da17db092567c",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\M_45\\G7",
+      "mesh_sha256": "ba910f44721a24b65a4368539ffbfd1bc1df93e8e174b6171f76315b66d55211",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\M_45\\G8",
+      "mesh_sha256": "c224b0ded2cb15914126c22120d3e9d52fe7a14d2f28f8ec7fb7806045235bfd",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\M_45678\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\M_45678\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\M_45678\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\M_45678\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\M_45678\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\M_45678\\G5",
+      "mesh_sha256": "af471fd878a3284251115b2ba17dea4a04de98de14617d410ad5d56a2f1176d1",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\M_45678\\G6",
+      "mesh_sha256": "7debefe08be6e76c6faf47c677e36ab949afb7b912341ef2aa46e5142fc09a8e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\M_45678\\G7",
+      "mesh_sha256": "abf3254b3d7f670d169f22ff8c26735f458ce084b868ae40cb1381855322a055",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\M_45678\\G8",
+      "mesh_sha256": "85d895b0b7eb9f2844c1bc8fe4b482b272def67603ae4c7d75c8c15b0f64a975",
+      "generation": 8,
+      "vertices": 393216,
+      "faces": 393218
+    },
+    {
+      "path": "candidates\\M_67\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\M_67\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\M_67\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\M_67\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\M_67\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\M_67\\G5",
+      "mesh_sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\M_67\\G6",
+      "mesh_sha256": "49c7c09b8dfabcfc2d134e413faeb0aa136c91972984418ecd7770de2566304e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\M_67\\G7",
+      "mesh_sha256": "edfda7dbfeabbcea7ad57a6db14397cfc8cf527dc8370a985a4ec529ffdd6243",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\M_67\\G8",
+      "mesh_sha256": "3d97dce94d79066296083d68b3664614c28e9f94a4093e56211a8e1507e1a0e0",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\S_45\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\S_45\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\S_45\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\S_45\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\S_45\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\S_45\\G5",
+      "mesh_sha256": "b45bd89550ddd3b5a1efdc2ae8104ff6d5ff1d2ee6226c93a76395b3e951a8d3",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\S_45\\G6",
+      "mesh_sha256": "184adce9c99ac6b6022dac9def0283da86184581f563096692bf949cfd7feec6",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\S_45\\G7",
+      "mesh_sha256": "58cfe80eb5f155c2b596fe9c7e9235dfef561489be5e2a3344436656f25db28a",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\S_45\\G8",
+      "mesh_sha256": "3913fb9692661656173773199e32bbf1fe5d57b74a3866ca68cb2400e4327f86",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\S_45678\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\S_45678\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\S_45678\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\S_45678\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\S_45678\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\S_45678\\G5",
+      "mesh_sha256": "b45bd89550ddd3b5a1efdc2ae8104ff6d5ff1d2ee6226c93a76395b3e951a8d3",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\S_45678\\G6",
+      "mesh_sha256": "682b8fa9ecc5aaa793938b9ec219a3271d9c19daf0d9ce3bf8b27eea01f3472e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\S_45678\\G7",
+      "mesh_sha256": "8e7301e50f83eb9fb6f33c6df2c82883a6e03ed65f54b51b6d636dac3c60e3f9",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\S_45678\\G8",
+      "mesh_sha256": "0ba0c81415da80c6c3ed999d12fad47f5fda8ce12db3f6b5b34867a8fad8bb6e",
+      "generation": 8,
+      "vertices": 393216,
+      "faces": 393218
+    },
+    {
+      "path": "candidates\\S_67\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\S_67\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\S_67\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\S_67\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\S_67\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\S_67\\G5",
+      "mesh_sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\S_67\\G6",
+      "mesh_sha256": "49c7c09b8dfabcfc2d134e413faeb0aa136c91972984418ecd7770de2566304e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\S_67\\G7",
+      "mesh_sha256": "28b4b687eabf2570c159f4b4507f8ed7e2444223325df5899bd2baab697addaa",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\S_67\\G8",
+      "mesh_sha256": "3da7b3a1afa490ed47b250ebe3c3814fd1ed8297d6e29fe0152a2d91f42085fe",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_4\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_4\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_4\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_4\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_4\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\U_4\\G5",
+      "mesh_sha256": "32bd523abc046e1ded457014e194cf454b81f97c24edf693414bef3583c0436c",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_4\\G6",
+      "mesh_sha256": "b89526d0caf97a20c081fdedf96d05d32fd2253be4c5f4bc8e9684d252f314f8",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\U_4\\G7",
+      "mesh_sha256": "cac5408dd45dfb68101749a7a3582f773806963a03c9f135dfa1c0ff062150c1",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\U_4\\G8",
+      "mesh_sha256": "f3e29f0100334980b2fe3c099ff9eee841fcb16e658e7afc456942adc690f752",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_45\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_45\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_45\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_45\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_45\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\U_45\\G5",
+      "mesh_sha256": "c6defc8aa971bc147bcd9b504bb20fce20df11c0b1a767be5d6e24b18b965d89",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\U_45\\G6",
+      "mesh_sha256": "70a44923ce214b9a9010da218b3cc8a9a2336b59e8b2fdf5d2653607f437d52b",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "candidates\\U_45\\G7",
+      "mesh_sha256": "1d27ff4aaee22da9f2ba6ec2d38d8fd8980be5e054d4e45764923610c1c64770",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\U_45\\G8",
+      "mesh_sha256": "5959ba4951eec34bbcb97df7f212735c53b624a70b689f16ff903033759db5b7",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_45678\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_45678\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_45678\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_45678\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_45678\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\U_45678\\G5",
+      "mesh_sha256": "c6defc8aa971bc147bcd9b504bb20fce20df11c0b1a767be5d6e24b18b965d89",
+      "generation": 5,
+      "vertices": 6144,
+      "faces": 6146
+    },
+    {
+      "path": "candidates\\U_45678\\G6",
+      "mesh_sha256": "68152316bb6259850c2c47bafb8c619a6002284bb8934e988714883d0e1863ce",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_45678\\G7",
+      "mesh_sha256": "81dab98ac70864d9ada7dc5d868ef68cf3debe68050258d21f259d9afc85dfd4",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\U_45678\\G8",
+      "mesh_sha256": "bc84a3d42422c58db3b15bf9123751ee9bf4c7a55dcf297c3ea8f40344eaba4c",
+      "generation": 8,
+      "vertices": 393216,
+      "faces": 393218
+    },
+    {
+      "path": "candidates\\U_468\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_468\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_468\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_468\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_468\\G4",
+      "mesh_sha256": "d3de62909e2983635276d7daec1e8523b677d011dc10283c388cb4a98b13fa1a",
+      "generation": 4,
+      "vertices": 1536,
+      "faces": 1538
+    },
+    {
+      "path": "candidates\\U_468\\G5",
+      "mesh_sha256": "32bd523abc046e1ded457014e194cf454b81f97c24edf693414bef3583c0436c",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_468\\G6",
+      "mesh_sha256": "6ff53915dc98931240d7ec6944bd7cb320dea350351cfc6856d623a60be2116a",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_468\\G7",
+      "mesh_sha256": "91c53c85a3b7a681c15eecae29383534b51d2ae210e8d91e934864c261162b99",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\U_468\\G8",
+      "mesh_sha256": "df1e09b8e1938b93e52b06353cda1ecccd4c2e7e7b20c7c427831016fac553a2",
+      "generation": 8,
+      "vertices": 393216,
+      "faces": 393218
+    },
+    {
+      "path": "candidates\\U_6\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_6\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_6\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_6\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_6\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\U_6\\G5",
+      "mesh_sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_6\\G6",
+      "mesh_sha256": "49c7c09b8dfabcfc2d134e413faeb0aa136c91972984418ecd7770de2566304e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_6\\G7",
+      "mesh_sha256": "7b45f2e0db5b98c397d551393c8e7b285e5b52695bacfd1e13133c9e3b0accb6",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "candidates\\U_6\\G8",
+      "mesh_sha256": "356a32f654f273977aa8b1b8a8a2797dcd3265ac17b8eeb49683ca1d8cc07985",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_67\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_67\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_67\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_67\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_67\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\U_67\\G5",
+      "mesh_sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_67\\G6",
+      "mesh_sha256": "49c7c09b8dfabcfc2d134e413faeb0aa136c91972984418ecd7770de2566304e",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_67\\G7",
+      "mesh_sha256": "c21603bc9738753dada6fc2e89d8584e1828d2708c428dd00493d449229908f9",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\U_67\\G8",
+      "mesh_sha256": "7e69a528c6f953ea264d2738dfcea7ed819ada50946cd0235f49c8411da0ba08",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G4",
+      "mesh_sha256": "49ebb3cf7d56e9a82b6c1380e3d797f6dfcd4b523dc489507f3da2a46f928538",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G5",
+      "mesh_sha256": "88c0a7ce279f542b9e1f0767dc5b7bd67f5413ff83c5e836a300d53a6daabf46",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G6",
+      "mesh_sha256": "4b7c333d1cf4b788e573a59116d5bd58dc34de93b7e96e1174e5ff3378aa7c56",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G7",
+      "mesh_sha256": "ba629e36f6a45c70a4609521b82a0963a23f29babb3dbe30a297ee89efe53c27",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END3\\G8",
+      "mesh_sha256": "8b8908163b230282f0af6b054f43706365c7ac3622109a3ea080efe47ad76ad3",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G5",
+      "mesh_sha256": "ff6f44e1d2b4acb101f5be3634ea94825cc152256b6943d6533f7e163b319637",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G6",
+      "mesh_sha256": "b9e875389fb472d07d9ae17f69a764541f1759dc6af1a84886748a5d8b92929b",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G7",
+      "mesh_sha256": "5ac8d2602589eebabcc25d3f78a82df4e2b2613928d795bfe40464606788f842",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "candidates\\U_67_LOCK_END4\\G8",
+      "mesh_sha256": "dc8c751dc3b6c35278ccb0c25edacae57cf7024b88bcd7421029fce2ca238ae9",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "controls\\task29\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "controls\\task29\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "controls\\task29\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "controls\\task29\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "controls\\task29\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "controls\\task29\\G5",
+      "mesh_sha256": "0801933c9cd30f321fd2168585fbbe7c41afce12b37fbb58f81247a6bdae60f6",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "controls\\task29\\G6",
+      "mesh_sha256": "fd5ce249c0ce56bcc4ef291d20564e0ed4deb7c4c2806e540af07f11e73f937d",
+      "generation": 6,
+      "vertices": 24578,
+      "faces": 24576
+    },
+    {
+      "path": "controls\\task29\\G7",
+      "mesh_sha256": "363ea2d7ef5d87a64fceb0703757cd370b9a10be8e148c14ff8033665bba2cbb",
+      "generation": 7,
+      "vertices": 98306,
+      "faces": 98304
+    },
+    {
+      "path": "controls\\task29\\G8",
+      "mesh_sha256": "bf4fb98630189d6dcc88702dfdf3adee04c7c1f079858f38d490eac39c4b40e6",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    },
+    {
+      "path": "lead\\G0",
+      "mesh_sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382",
+      "generation": 0,
+      "vertices": 8,
+      "faces": 6
+    },
+    {
+      "path": "lead\\G1",
+      "mesh_sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f",
+      "generation": 1,
+      "vertices": 26,
+      "faces": 24
+    },
+    {
+      "path": "lead\\G2",
+      "mesh_sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3",
+      "generation": 2,
+      "vertices": 98,
+      "faces": 96
+    },
+    {
+      "path": "lead\\G3",
+      "mesh_sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb",
+      "generation": 3,
+      "vertices": 386,
+      "faces": 384
+    },
+    {
+      "path": "lead\\G4",
+      "mesh_sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1",
+      "generation": 4,
+      "vertices": 1538,
+      "faces": 1536
+    },
+    {
+      "path": "lead\\G5",
+      "mesh_sha256": "ff6f44e1d2b4acb101f5be3634ea94825cc152256b6943d6533f7e163b319637",
+      "generation": 5,
+      "vertices": 6146,
+      "faces": 6144
+    },
+    {
+      "path": "lead\\G6",
+      "mesh_sha256": "b9e875389fb472d07d9ae17f69a764541f1759dc6af1a84886748a5d8b92929b",
+      "generation": 6,
+      "vertices": 24576,
+      "faces": 24578
+    },
+    {
+      "path": "lead\\G7",
+      "mesh_sha256": "5ac8d2602589eebabcc25d3f78a82df4e2b2613928d795bfe40464606788f842",
+      "generation": 7,
+      "vertices": 98304,
+      "faces": 98306
+    },
+    {
+      "path": "lead\\G8",
+      "mesh_sha256": "dc8c751dc3b6c35278ccb0c25edacae57cf7024b88bcd7421029fce2ca238ae9",
+      "generation": 8,
+      "vertices": 393218,
+      "faces": 393216
+    }
+  ],
+  "flat_render_checks": 72,
+  "renders": [
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0000_Task29_G8_oblique.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0001_Task30_G8_oblique.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0002_Task29_G8_front.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0003_Task30_G8_front.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0004_Task29_G8_upper.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\comparison\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\comparison\\0005_Task30_G8_upper.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0000_Task29_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0001_Task29_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3308
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0002_Task29_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 213996
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0003_Task30_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0004_Task30_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3340
+    },
+    {
+      "manifest": "renders\\detail\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\detail\\0005_Task30_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 214156
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0000_TASK29_G8_control.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0001_U_4_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0002_U_6_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0003_U_45_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0004_U_67_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0005_U_468_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0006_U_45678_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0007_M_45_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0008_S_45_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0009_M_67_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0010_S_67_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0011_M_45678_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary\\0012_S_45678_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0000_TASK29_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0001_TASK29_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3308
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0002_TASK29_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 213996
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0003_U_67_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0004_U_67_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3308
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0005_U_67_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 212604
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0006_U_468_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0007_U_468_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3180
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0008_U_468_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 207176
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0009_M_67_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0010_M_67_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3308
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0011_M_67_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 212828
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0012_M_45678_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0013_M_45678_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3200
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0014_M_45678_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 209224
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0015_U_45678_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0016_U_45678_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3136
+    },
+    {
+      "manifest": "renders\\primary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\primary_details\\0017_U_45678_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 205864
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0000_G0.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0001_G1.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0002_G2.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0003_G3.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0004_G4.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0005_G5.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0006_G6.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0007_G7.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\progression\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\progression\\0008_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary\\0000_TASK29_G8_control.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary\\0001_CC_LOCK_END3_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary\\0002_CC_LOCK_END4_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary\\0003_U_67_LOCK_END3_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary\\0004_U_67_LOCK_END4_G8.png",
+      "physical_width": 2600,
+      "outside_frame": 0
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0000_TASK29_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0001_TASK29_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3308
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0002_TASK29_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 213996
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0003_CC_LOCK_END3_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0004_CC_LOCK_END3_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3324
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0005_CC_LOCK_END3_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 216100
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0006_CC_LOCK_END4_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0007_CC_LOCK_END4_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3340
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0008_CC_LOCK_END4_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 215516
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0009_U_67_LOCK_END3_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0010_U_67_LOCK_END3_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3324
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0011_U_67_LOCK_END3_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 215820
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0012_U_67_LOCK_END4_G3_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 188
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0013_U_67_LOCK_END4_G5_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 3340
+    },
+    {
+      "manifest": "renders\\secondary_details\\manifest.json",
+      "image": "E:\\CHESHIRE_DATA\\task30\\renders\\secondary_details\\0014_U_67_LOCK_END4_G8_700_units.png",
+      "physical_width": 700,
+      "outside_frame": 214156
+    }
+  ],
+  "unchanged_canonical_and_legacy": [
+    {
+      "path": "src/cheshire/weighted_subdivision.py",
+      "baseline_blob_sha256": "edc8d26ffa77a5c85dc5395b1779c0e798e315309c7692463bbabe8b99d4c801",
+      "unchanged_source": true
+    },
+    {
+      "path": "src/cheshire/generational_subdivision.py",
+      "baseline_blob_sha256": "a5ae2cf1575d65b5e3995d4c7ae2fcf8c3d4c3fbcc32a33ed28e3b0a287a5387",
+      "unchanged_source": true
+    },
+    {
+      "path": "src/cheshire/sharp_subdivision.py",
+      "baseline_blob_sha256": "a2949e3702f6ec8125fc46719e3ff366f5c0fd4362be1391ea6c60642486a5c8",
+      "unchanged_source": true
+    },
+    {
+      "path": "src/cheshire/reference_subdivision.py",
+      "baseline_blob_sha256": "1a73baf0205fe41679a33e8ac236d70293793dc1cc30ac472531caeb192e4831",
+      "unchanged_source": true
+    }
+  ],
+  "exact_replay": {
+    "status": "PASS",
+    "records": [
+      {
+        "generation": 0,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G0\\G0.obj",
+          "vertices": 8,
+          "faces": 6,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "362eccd2111c3ff8834b08d062652dfbdc683a02f034fc963ad378bf35ae1260"
+        }
+      },
+      {
+        "generation": 1,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G1\\G1.obj",
+          "vertices": 26,
+          "faces": 24,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "b5fcedb7485946579d25f3add80c289e87e6e17fd22393f75aa0ba82c9725291"
+        }
+      },
+      {
+        "generation": 2,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G2\\G2.obj",
+          "vertices": 98,
+          "faces": 96,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "f50eb38f1a198bb797a536bc9448c12d6a34e24cf8170a52c788774c6f6b6a38"
+        }
+      },
+      {
+        "generation": 3,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G3\\G3.obj",
+          "vertices": 386,
+          "faces": 384,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "0623396788eeb6d3aaa85a3ff0ddc1a63729c2a81c03ee03ca968ac075e85110"
+        }
+      },
+      {
+        "generation": 4,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G4\\G4.obj",
+          "vertices": 1538,
+          "faces": 1536,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "85cdb41b85904dddfed4fa57d6fa154bc6c192496d060eb7032f95f31e62b777"
+        }
+      },
+      {
+        "generation": 5,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G5\\G5.obj",
+          "vertices": 6146,
+          "faces": 6144,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "673bdd90ea563f78d9dc0c44cc5324143042f0ed1b5ee481e2461d5ef2afccc4"
+        }
+      },
+      {
+        "generation": 6,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G6\\G6.obj",
+          "vertices": 24576,
+          "faces": 24578,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "fefa88da6b2ecd60e32df56bbf81ccc32fd759910bd41f6dea266baf3ef89373"
+        }
+      },
+      {
+        "generation": 7,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G7\\G7.obj",
+          "vertices": 98304,
+          "faces": 98306,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "d47470645e72546cc9ab4716cbe1a4e0fe865343e4609bc4b19e0295a119574f"
+        }
+      },
+      {
+        "generation": 8,
+        "exact_geometry_state": true,
+        "exact_operator_state": true,
+        "exact_face_roles": true,
+        "OBJ": {
+          "path": "E:\\CHESHIRE_DATA\\task30\\lead\\G8\\G8.obj",
+          "vertices": 393218,
+          "faces": 393216,
+          "exact_XYZ": true,
+          "exact_oriented_faces": true,
+          "sha256": "4cf3c00a536858ddae2ef7288d3d708c727ac910fda924a35ea884b77e843402"
+        }
+      }
+    ],
+    "exact_G0_to_G8": true,
+    "actual_G7_reload_continuation": true,
+    "all_modified_nonzero": true,
+    "definition_sha256": "2d78acb5f5e3625c59ce481e887dc8ab2a780c3a02915ae2681df856e920bf61",
+    "seconds": 10.028724000090733
+  },
+  "native": {
+    "application": "RhinoCommon 8.18.25100.11001",
+    "target": "E:/CHESHIRE_DATA/task30\\dcc\\TASK30_LEAD.3dm",
+    "OBJ": "E:/CHESHIRE_DATA/task30/dcc/TASK30_LEAD.obj",
+    "OBJ_sha256": "4cf3c00a536858ddae2ef7288d3d708c727ac910fda924a35ea884b77e843402",
+    "native_sha256": "d701fd4fe4ee532b1405d2da16c63cc633ab7b2a2492457202720de5314ed885",
+    "native_bytes": 13585646,
+    "actual_native_file_read": true,
+    "exact_XYZ_oriented_faces": true,
+    "headless_document_open": true,
+    "imported_objects": 1,
+    "object_id": "314ec286-8520-40e5-b953-110d121554d3",
+    "layer": "TASK30_TASK30_LEAD",
+    "object_name": "TASK30_LEAD_EXACT_SAVED_SUBDIVISION",
+    "vertices": 393218,
+    "faces": 393216,
+    "units": "None / original unknown physical units; no scaling",
+    "processing": "Display normals only; no welding, triangulation, remeshing, smoothing, thickening or intersection repair.",
+    "native_read_write_document_seconds": 6.525586,
+    "native_host_peak_working_set_bytes": 546418688,
+    "resource_scope": "Native operation time excludes cold RhinoCore startup. Peak working set is this native PowerShell/RhinoCommon host, not a whole process-tree measurement.",
+    "display": "Native file validation, not an interactive viewport or beauty render. OpenGL depth capture is separate; this evidence verifies native file and headless open only."
+  },
+  "seconds": 8.119555699988268,
+  "limits": "Combinatorial checks and native readability do not establish embedded solid validity."
+}
