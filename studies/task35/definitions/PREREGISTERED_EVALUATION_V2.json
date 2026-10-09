@@ -1,0 +1,146 @@
+{
+  "height": 4000.0,
+  "units": "Original unresolved project units; no mm claim.",
+  "axes": {
+    "X": "section width",
+    "Y": "section depth",
+    "Z": "vertical, bottom0 top4000"
+  },
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "reference_half_section": [
+    450.0,
+    250.0
+  ],
+  "coarse_z": [
+    0,
+    240,
+    600,
+    1800,
+    2000,
+    2240,
+    2500,
+    3400,
+    4000
+  ],
+  "varied_half_width": [
+    450,
+    450,
+    560,
+    560,
+    200,
+    200,
+    650,
+    450,
+    450
+  ],
+  "varied_half_depth": [
+    250,
+    250,
+    350,
+    350,
+    160,
+    160,
+    420,
+    250,
+    250
+  ],
+  "end_conditions": "Identical octagonal end sections; XYZ fixed for original material z<=240 or >=3760; smooth scalar activation to400/3600. No z reflection, no added rotational symmetry requirement.",
+  "named_planes_Z": {
+    "LOW_BODY": 900.0,
+    "LONG_BODY": 1500.0,
+    "CONTRACTION": 1900.0,
+    "NECK": 2120.0,
+    "FLARE": 2380.0,
+    "COLLAR": 2520.0,
+    "UPPER_BODY": 3000.0
+  },
+  "distribution_planes_Z": [
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200,
+    1300,
+    1400,
+    1500,
+    1600,
+    1700,
+    1800,
+    1900,
+    2000,
+    2100,
+    2200,
+    2300,
+    2400,
+    2500,
+    2600,
+    2700,
+    2800,
+    2900,
+    3000,
+    3100,
+    3200,
+    3300,
+    3400,
+    3500,
+    3600
+  ],
+  "regions_Z": {
+    "BODY": [
+      400,
+      1800
+    ],
+    "CONTRACTION": [
+      1800,
+      2000
+    ],
+    "NECK": [
+      2000,
+      2240
+    ],
+    "FLARE_COLLAR": [
+      2240,
+      2600
+    ],
+    "UPPER": [
+      2600,
+      3600
+    ]
+  },
+  "main_sampling": "G1..G4 both axial/angular; G5..G7 angular only. MacroG3, subsequent foldsG4/G7. Same sampling and physical scale across four starting comparisons.",
+  "comparisons": {
+    "A01_UNIFORM_COMMON": [
+      "uniform",
+      "common"
+    ],
+    "A02_VARIED_COMMON": [
+      "varied",
+      "common"
+    ],
+    "A03_UNIFORM_REGIONAL": [
+      "uniform",
+      "regional"
+    ],
+    "A04_VARIED_REGIONAL": [
+      "varied",
+      "regional"
+    ]
+  },
+  "evaluation": "Actual triangle world-plane transverse and longitudinal cuts, fixed cameras and axes, native material edge tracks; no post-result representative repositioning. Small-fold distribution reported across all33 world planes and original material samples.",
+  "hypotheses": [
+    "Current section size/slope/aspect can change fan direction and branch spacing rather than amplitude alone.",
+    "Crest prominence-only subtraction may fail to invert a newly sharp shoulder; chord-relative notch displacement can separate this cause.",
+    "Perfectly uniform local input may not differentiate its interior without geometric boundary differences."
+  ],
+  "limitations": "Finite scheduled structured-column study; no claim of Hansmeyer algorithm, physical buckling or gate/lintel completion.",
+  "plane_offset_Z": 0.12345,
+  "reason_for_V2": "Before any model execution: make entire common top end buffer match, and disambiguate plane/native-edge coincidences by one fixed predeclared offset."
+}

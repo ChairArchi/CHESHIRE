@@ -1,0 +1,30 @@
+{
+  "generations": 5,
+  "divisions": 2,
+  "parameters": {
+    "face_gain": 0.18,
+    "edge_gain": 0.15,
+    "feedback": 0.5,
+    "inherited_bias": -0.6,
+    "direction": "normal",
+    "source": "current",
+    "mode": "coupled",
+    "vertex_gain": 0.3,
+    "vertex_memory": 0.2,
+    "diagonal_tension": 1.6,
+    "edge_tension": -0.7,
+    "vertex_tension": 0,
+    "decompose": true,
+    "averaging_gain": 0,
+    "cap_mode": "plane_only",
+    "surface": "vf",
+    "stencil_gain": 0.65,
+    "normal_gain": 0.65,
+    "normal_response": "all_geometry"
+  },
+  "check_each": true,
+  "backtrack": true,
+  "local_backtrack": true,
+  "local_contact_cap": 4096,
+  "contact_engine": "bvh"
+}

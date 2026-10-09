@@ -1,0 +1,19 @@
+{
+  "generations": 5,
+  "divisions": 2,
+  "parameters": {
+    "face_gain": 0.35,
+    "edge_gain": 0.25,
+    "feedback": 0.5,
+    "inherited_bias": -0.8,
+    "direction": "normal",
+    "source": "current",
+    "mode": "coupled",
+    "vertex_gain": 0.4,
+    "vertex_memory": 0.6,
+    "diagonal_tension": 0.9,
+    "edge_tension": -1
+  },
+  "check_each": true,
+  "backtrack": true
+}

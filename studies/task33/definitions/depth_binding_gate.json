@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "windowed": true,
+    "child_floor": 0,
+    "lobes": 1.6,
+    "convergence": 0.55,
+    "amplitudes": [
+      500,
+      400,
+      260
+    ],
+    "twist": 0.35,
+    "neck_locations": [
+      0.15,
+      0.43
+    ],
+    "child_frequency_variation": 2,
+    "parent_gate_power": 2,
+    "child_phase_shift": 3.141592653589793,
+    "fine_mode": "meso_notch",
+    "micro_slope_scale": 12,
+    "paired_controls": true,
+    "depth_convergence": 0.65
+  },
+  "carrier_smoothing_end": 2,
+  "final_generation": 7,
+  "macro_generation": 4,
+  "child_generation": 5,
+  "micro_generation": 6
+}

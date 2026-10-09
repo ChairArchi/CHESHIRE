@@ -1,0 +1,250 @@
+[
+  {
+    "task": 1,
+    "title": "원형을 바꾸지 않는 메시 기반",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "mesh_io.py와 validation.py를 만들었다. 원래 vertex index, unused vertex, face cycle을 보존하고 COMPAS가 바꿔 버릴 malformed face를 거부한다. positive/negative relative OBJ index를 처리하고 최소 17자리, 극소수에서는 최대 324자리 소수 정밀도로 저장한다.",
+    "limits_summary": "OBJ 재료·texture·normal·group 및 custom attribute는 보존 범위 밖이다. 기본 validation은 manifold·degeneracy·self-intersection 인증이 아니다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task01"
+  },
+  {
+    "task": 2,
+    "title": "기하·위상 측정",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "attributes.py에서 valence, boundary, Z height, area-weighted centroid까지의 거리, boundary graph-hop distance, incident normal angle variation을 추가했다. variation은 평균 pairwise unit-normal angle/π이며 boundary에서는 unavailable(None)을 유지한다.",
+    "limits_summary": "proxy를 실제 differential curvature나 의미 있는 건축 부위 분류로 볼 근거는 없다. boundary 자체는 proxy 비교에서 빠진다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task02"
+  },
+  {
+    "task": 3,
+    "title": "측정값을 제어 필드로 mapping",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "normalization.py와 mapping.py에서 finite 범위, percentile, exponent 등 명시적 parameters를 받도록 했다. None은 유지하며 상수 field의 normalize 결과는 0이다. field와 metadata를 분리해 실제 측정과 mapped 값을 혼동하지 않는다.",
+    "limits_summary": "mapping 함수만 바꾸는 것은 공간 조직이나 장식 계층을 정의하지 않는다. 상수/undefined field에서 노이즈를 대신 넣지 않는다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task03"
+  },
+  {
+    "task": 4,
+    "title": "선택 규칙과 실행 전 예산",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "rules.py와 count budget 관련 코드를 추가했다. target vertex/face, thresholds, face min/max/mean, eligible fraction을 명시하고 None은 eligible aggregation에서 제외한다. dry-run estimate를 실행 판단과 분리했다.",
+    "limits_summary": "unknown 비용을 정확한 추정으로 포장하지 않았고, budget 통과를 mesh 유효성이나 디자인 품질로 보지 않는다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task04"
+  },
+  {
+    "task": 5,
+    "title": "최초 변형: field-driven normal displacement",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "각 vertex를 input normal 방향으로 field×strength×input bbox diagonal만큼 움직인다. 유효 normal이나 field가 없으면 skip하며 같은 vertex/face keys를 가진 새 mesh를 반환한다. 원본은 불변이다.",
+    "limits_summary": "normal 이동만으로 새로운 topology나 branch를 만들지 못한다. global collision·volume·fabrication 보장은 없다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task05"
+  },
+  {
+    "task": 6,
+    "title": "lineage와 field inheritance 계약",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "immutable ParentRef/LineageMap, positive finite 부모 가중치와 sum=1(absolute tolerance 1e-9), CONTINUOUS weighted field, CATEGORICAL 합의/불일치(None), RECOMPUTE flag를 구현했다. 양의 모든 부모 값이 필요하며 incomplete parent를 재정규화하지 않는다. Task06.1(45e4f0b...)에서 저장된 weight를 그대로 사용하는 의미를 엄격히 정리했다.",
+    "limits_summary": "RECOMPUTE는 실제 재계산을 대신하지 않는다. 계약이 생겼다는 이유로 뒤의 weighted CC 전체에 generic semantic lineage가 자동 구현됐다고 볼 수 없다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task06"
+  },
+  {
+    "task": 7,
+    "title": "최초 topology 변화와 nonplanar composition",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "global one-level subdivision adapter, V+E+F/3T+4Q 비용 estimate, backend 경로 및 oriented topology와 vertex/face parents를 검증했다. 07.1(b698e62...)은 bilinear Jacobian 조건을 만족하는 quad만 opt-in 허용하고 flatten/repair하지 않았다.",
+    "limits_summary": "선택적 local subdivision나 general Repeat는 없다. bilinear admissibility는 global self-intersection의 증명이 아니다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task07"
+  },
+  {
+    "task": 8,
+    "title": "Rhino에서 보이는 네 단계 recipe",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "UI-thread selection/entry, repository venv external worker, request/response identity, background wait/Eto timer, 원형 fingerprint, run layers와 Undo/rollback을 추가했다. 08.1(6ab43f8...)에서 Rhino Python environment 오염을 막도록 -E -s와 sanitized child environment를 고정했다.",
+    "limits_summary": "초기 review의 실제 UI/Undo/Esc 검증은 PENDING이었다. 나중 사용자 확인은 계산·표시만 뒷받침하며 모든 lifecycle 동작을 입증하지 않는다. gate는 해상도 한계에 빨리 도달했다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task08"
+  },
+  {
+    "task": 9,
+    "title": "공식 Mola tapered extrusion의 첫 도입",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "pythonnet 3.0.5/CoreCLR .NET8 adapter와 local float32 normalization을 추가했다. source boundary를 그대로 두고 selected face를 side+cap으로 바꾸며 per-parent top vertex를 쓴다. positive constructive weights와 normal offset을 별도로 기록한다.",
+    "limits_summary": "neighbor 간 새 top을 welding하지 않으므로 face-local 반복 scaffold를 남긴다. 초기 ZIP의 host PENDING은 later confirmation보다 앞선 기록이며 Undo/Esc 전체 검증 완료로 바꾸지 않는다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task09"
+  },
+  {
+    "task": 10,
+    "title": "field로 제어하는 cap 재귀 성장",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "root/role와 immediate-parent field를 기록하고 G2는 G1 cap, G3는 G2 cap만 선택했다. height scale .65/.40, fraction 원값+.10/−.05로 세대별 변화를 둔다. Task10.1(ff8a313...)은 PARTIAL 결과에서 last reached label까지 display하도록 고쳤다.",
+    "limits_summary": "반복된 상자 cap과 작은 tiled extrusion이 주를 이룬다. 원래 side를 다른 규칙으로 성장시키는 branch hierarchy는 없다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task10"
+  },
+  {
+    "task": 11,
+    "title": "Mola raw와 CC smoothing 비교",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "MolaSurfaceStudy comparison을 추가했다. raw 기록을 그대로 저장하고 G1/G3에 CC1을 따로 적용하며 movement·boundary·bbox를 비교한다. terminal smoothing semantic lineage는 별도 한계로 남겼다.",
+    "limits_summary": "smoothing은 새로운 큰 fold 조직을 만들지 않았다. 이전 FieldStudy 사용자 확인은 새 SurfaceStudy Rhino host 실행의 증거가 아니다(PENDING).",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task11"
+  },
+  {
+    "task": 12,
+    "title": "세 종류의 gate 시각 prototype",
+    "recovery": "PARTIALLY RECOVERED",
+    "implementation_summary": "A는 quad1 뒤 two-Gaussian winding ribbons와 작은 wave, terminal CC1이며 extrusion 없음. B는 crown4 clusters의 caps와 최대 2 directional perimeter sides만 후손으로 골라 내부 이웃 branching을 제외한다. C는 mirrored diagonal masks와 smaller upper caps, finish 없음.",
+    "limits_summary": "A terminal CC semantic lineage NOT IMPLEMENTED; 무교차 sample은 global certificate가 아니다. 새 VisualPrototype UI PENDING. 최초 사용자 자연어 prompt는 찾지 못했다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task12"
+  },
+  {
+    "task": 13,
+    "title": "bounded morphology atlas와 ablation",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "saved recipe/hash 중심 morphology runner, timeout·resident/available RAM·storage guards, offline atlas와 registered views를 추가했다. family별 broad/fine displacement, cluster count/extent, band spacing/center shift를 비교했다.",
+    "limits_summary": "A는 subtle, B는 tiled interior/pinched junction, C는 grid-stepped. 전부 무교차 sample이지만 global certificate가 아니며 Rhino host는 NOT PERFORMED.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task13"
+  },
+  {
+    "task": 14,
+    "title": "논문 기반 modified CC의 첫 구현",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "별도 opt-in Extended-CC experimental subset: wf/we/wp normal extrusion, w1/w2 interpolation. face centroid와 original edge midpoint를 input에서 계산하며 same-step displaced face를 edge/corner에 연쇄하지 않는 legacy path였다. current global mean edge로 world offset을 정한다.",
+    "limits_summary": "dense gateG3은 기존 50k ceiling으로 blocked. independent branch/opening/convincing DG hierarchy 없음. full semantic lineage·Rhino host 검증도 없음.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task14"
+  },
+  {
+    "task": 15,
+    "title": "coarse gate carrier와 세대 schedule",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "새 equation 없이 carrier study·schedule serialization을 추가했다. A attenuation/B L4 동일 6rows를 4carriers에 적용. C0선택 뒤 spatial fields 없이 8initial+2followup nonstationary schedules를 실행했다.",
+    "limits_summary": "C0G6 예상 90114V/90112F는 50k 예산 초과. quiet trajectories도 meso를 잃었다. feet/envelope/opening dimensions 보존은 없으며 dense와 coarse의 차이를 resolution 하나로 설명할 수 없다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task15"
+  },
+  {
+    "task": 16,
+    "title": "point-class Eq4와 interpolation release",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "generational_subdivision.py opt-in이 기존 Task14 뒤 face point만 교체한다. actual V/F opposite와 Epair를 구조적으로 판별하고 class를 매 generation reset. w10=wf,w11=we,w12=wp alias. signed interpolation은 positive lineage weights로 넣지 않는다.",
+    "limits_summary": "C09/C11/R14는 같은 family이며 세 independent Hero가 아니다. P01contacts16,C05/C10cap30 실패도 저장. Eq4 face displacement는 같은 generation edge/corner에 전달되지 않는다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task16"
+  },
+  {
+    "task": 17,
+    "title": "weighted Doo–Sabin과 최초 CC/DS handoff",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "weighted_doosabin.py에서 F/E/V face-origin별 w1/w10 sixcontrols를 구현했다. n>4는 standardCOMPAS positions·zeroextrusion fallback. CC→DS는 originFACE로 reseed; geometry stencil과 positive constructive parents는 별도다.",
+    "limits_summary": "독립 micro계층·DG milestone없음. C0degree5에서 pentagon4→6생성 후 fallback; 전체 surface를 dominate하지는 않는다. hostPENDING.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task17"
+  },
+  {
+    "task": 18,
+    "title": "spatial activity 순서의 stress test",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "phi=max(0,1−d/3), diffusion.5, Fine1/Medium4/Broad12을 각자 peaknormalize. Uuniform,Sstatic,Mordered,Rreverse,Ppermuted,Ddistance strategies와 per-generationfields를 serialize했다.",
+    "limits_summary": "C0가작고 peak-only normalization이라 totalmass matched실험은 아니다. directchild counter는 venvredirector 아래 실제 Python을 놓쳐 reportedpeak≠actualpeak; worker396918784B는 snapshot일뿐 peak아님.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task18"
+  },
+  {
+    "task": 19,
+    "title": "persistent topology events와 중첩 깊이",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "FRAME_SIDE/INNER_CAP/EXTRUSION_SIDE/CAP 역할, root ancestry, immediateparents와 실제 event history를 추가했다. DS는 commonrole 또는 mixedancestors를 보존하며 CC/DS 자체를 새 event depth로 세지 않는다. recursive Windows process memory tracking도 보강했다.",
+    "limits_summary": "cap-centered oval/panel scaffold가 남았다. maxactual168434F/peak약 1.11GiB였으며 조건부 400k를 실행하지 않았다. root가 섞인 DS 연결을 독립 tree 개수로 부풀리지 않았다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task19"
+  },
+  {
+    "task": 20,
+    "title": "role별 분화된 branching grammar",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "BranchRule/BranchTable/BranchingRecipe와 canonical hash, pre-round snapshot의 ordered first-match/sibling allocation, explicitquiet를 추가했다. role·depth·orientation·area·source ancestry별 selector; signature는 operator:childrole event에서만 증가하고 DS mixedpaths를 양의 mixture로 유지한다.",
+    "limits_summary": "signature 다양성은 visible differentiation의 증명이 아니다. frozen4480F backbone의 12contacts는 이미 존재했고 terminalsamplezero가 그것을 해결했다고 볼 수 없다. wholeform은 여전히 cell scaffold를 읽게 한다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task20"
+  },
+  {
+    "task": 21,
+    "title": "directional Extrude·Roof vocabulary sandbox",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "DirectionalExtrusion의 side/cap, Roof의 two ridgepoints와 4children order, deterministic T1/T2/Nlocalframe·cyclicrotation·actualridgeaxis diagnostics를 추가했다. connectedrouting patch가공통 axis/rule을 지정하지만 각 DLLcall은 여전히 oneface다.",
+    "limits_summary": "B1lateralfin10개 모두 contactcap. directionplate는 coherentfin으로채택하지 않았고 strip은 wholegateresult로표시하지 않았다. routing은 celljunction을바꾸지못했다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task21"
+  },
+  {
+    "task": 22,
+    "title": "literal Eq10/11 motif attraction과 locking",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "sharp_subdivision.py가 old weightedCC/Eq4뒤에 literal SUMattraction을 더했다.9controls/trends, u-map, sourcegraphdistance 및 existingnormalproxy interpolation. cornerdescendant만 firstLiterationsfixed;newedge/face는 locktag없다. samegenerationdeformedface→edgecoupling은 아직 없다.",
+    "limits_summary": "valence3broadlock variants여럿 crosscap30. sharpness가 spikes/junctionpinching도증폭. C38은 transientavailablememory stop으로 C43geometriccollapse와다르다. broadcoherentfold는 여전히부족.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task22"
+  },
+  {
+    "task": 23,
+    "title": "cross-cell crease와 design-first 큰 fold",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "CreaseNetwork에 실제 edge graph, root/immediate edge, finite sharpness와 검증한 두 child edge를 저장했다. N1–N6는 architecture·direction·high-dihedral·Roof ridge·fan·junction routing을 다뤘다. 위치는 P = Pcrease + α(Poldsharpweighted − Pstandardsmooth)로 조합하고, normal offset은 500 model units, band는 9→4로 맞췄다. w3/w4는 0이다. opt-in allow_large_taper는 기존 0.5 기본 범위 밖의 유한한 값을 허용했다.",
+    "limits_summary": "이 ancestry 수와 20° contrast length 0.969/0.967은 시각적으로 일관된 큰 접힘을 증명하지 않는다. swelling·star-node pinching·occlusion·intersection과 원래 panel 구조가 남았다. 원래 카메라에서 잘리는 극단적인 branch도 해당 결과로 보존했다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task23"
+  },
+  {
+    "task": 24,
+    "title": "H1·H2·H3 gate hero design sprint",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "H1은 큰 angular Fold→Roof→matched R20/Y19 normal offset·limited fold→Frame/Taper 4 events의 조합이다. H2는 box cap을 바꾸도록 R1 parameter를 수정했다. H3는 초기 큰 panel이 detail을 가리는 문제를 보고, 큰 fold를 먼저 놓는 순서로 R3를 수정했다.",
+    "limits_summary": "closed topology와 Euler 2는 collision-free를 보증하지 않는다. native Rhino headless 재독해·open은 성공했지만 viewport capture는 실패했다. System.Drawing preview를 Rhino screenshot으로 취급하지 않는다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task24"
+  },
+  {
+    "task": 25,
+    "title": "네 갈래 말림의 계보와 whole-gate continuation",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "full GenerationState를 저장하고 absolute CC iteration과 relative continuation을 분리했다. exact save/resume에 point classes와 positive ancestry를 보존했다. geometry 기반 memory prediction과 실제 다음 stage의 preflight를 추가했다.",
+    "limits_summary": "강한 weight가 새로운 scale보다 fragmentation을 일으켰다. 다음 약 4.68M 예상 stage는 memory guard로 실행 전에 중지됐다. 실제 OOM이나 geometry failure가 아니다. 당시 painter occlusion은 근사 방식이었다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task25"
+  },
+  {
+    "task": 26,
+    "title": "progressive whole gates와 profile 방향의 재검토",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "full checkpoint와 part/station state, generation control, constructive LR vertex/face pair를 검증했다. pyrender OpenGL의 depth-occluded capture를 도입하고 orthographic auxiliary depth의 변환 오류를 수정했다. 초기 RGB에도 GPU occlusion이 있었으며 수정 대상은 auxiliary depth였다.",
+    "limits_summary": "fine organization은 cell-periodic했고 body/neck/seat/lintel의 profile 분화는 main route에 없었다. 사용자의 STOP_HANDOFF는 당시 결과를 보존하고 Task27 전에 profile 방향을 명확히 하라는 역사적 결정이다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task26"
+  },
+  {
+    "task": 27,
+    "title": "connected profile·current sections·R3→R4 수정",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "dynamic_sections.py와 driver output 7개를 정의하고 현재 저장 mesh/state에서 descriptor와 rule을 다시 생성했다. STATIC은 G0 mapping 수치를 실제 parent 관계로 상속하고 DYNAMIC은 재측정했다. R3 folded quad에서 COMPAS area의 cycle/reflection 의존성을 발견해 R4의 unsigned centroid-fan area로 고쳤다.",
+    "limits_summary": "R3의 옛 SUCCESS/PASS는 기하 대칭을 보증하지 않았다. old progression/lead 폴더는 R3이므로 최종 결과로 쓰지 않고 R4 폴더를 선택했다. G6를 생성하지 않은 이유는 cell 문제가 이미 충분히 보였기 때문이며 RAM hard stop은 없었다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task27"
+  },
+  {
+    "task": 28,
+    "title": "simple column technology benchmark",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "기존 code inventory와 point-placement equation 감사를 추가하고 bounded benchmark를 저장했다. 논문의 class mechanism과 현재 legacy coupling의 차이를 기록했으며 해당 coupling은 이 Task에서 수정하지 않았다.",
+    "limits_summary": "독립적인 micro structure와 reference 수준의 regional identity는 없다. legacy edge placement가 변형 전 face centroid를 사용해 같은 세대의 face 변화를 전달하지 않는 차이를 확인했다. 이것 하나가 모든 문제의 원인이라는 증명은 아니다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task28"
+  },
+  {
+    "task": 29,
+    "title": "reference coupling 교정과 대규모 cube search",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "reference_subdivision.py의 array path에서 face Equation (1)/eligible Equation (4)→Equation (10) 완료→갱신한 face를 쓰는 edge Equation (2)→Equation (11)→corner Equation (3) 순서를 구현했다. local incident length는 CHESHIRE의 정의다. locking, 현재 normal 기반 intrinsic fields와 exact full parent/origin checkpoint를 추가하고 기존 legacy path도 유지했다.",
+    "limits_summary": "G8의 높은 density만으로 독립적인 scale가 증명되지 않는다. valid weld 3건을 hole creation으로 볼 수 없으며 실제 genus change/opening 실험은 아직 없었다. 공개되지 않은 Hansmeyer 제작 pipeline 전체를 재현한 결과가 아니다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task29"
+  },
+  {
+    "task": 30,
+    "title": "문헌 consolidation·finite lock·array CC/DS",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "opt-in vectorized array DS, 공개 tri/quad Equations (5)/(6), standard reference path, 명시적 F/E/V face origin과 CC/DS transition을 추가했다. DS 자체는 Task17에 이미 있었다. 이번 변경은 large-scale path의 정리이며 finite corner locking의 마지막 세대를 4로 낮췄다.",
+    "limits_summary": "R1의 복잡한 CC-only 예시 때문에 DS가 반드시 필요하다는 가설은 지지되지 않았다. R2는 parameter sequence를 제공하지 않고 R3 mirror/topology generator는 이 Task에서 구현하지 않았다. CC8 Equation (4)는 DS의 unknown origin 때문에 Equation (1)로 fallback한다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task30"
+  },
+  {
+    "task": 31,
+    "title": "fold-born regions·depth·실제 opening·gate return",
+    "recovery": "FULLY RECOVERED",
+    "implementation_summary": "G2에서 normal 방향으로 부호를 둔 이웃 대비 displacement를 tertile로 나눠 BULB/RIB/DEPTH region을 만들고 0.8 blend로 memory를 전파했다. CC는 실제 parents, DS는 모든 parents의 mean을 쓴다. control mesh에 annulus 0.85로 handle 하나를 만들고 CHANNEL wall과 regional weights를 유지했다. n>4 DS는 standard positive-cosine mask와 local offset으로 opt-in 확장했다. 이 드문 경우 w1은 inactive다. DS 뒤 CC8은 unknown point class 때문에 Equation (4)가 Equation (1)로 fallback해 w3/w4가 inactive지만, 다른 resolved controls는 활성 상태다.",
+    "limits_summary": "memory-axis와 remeasure의 이미지가 비슷해 feedback의 필수성은 미입증이다. combined와 opening-only는 exterior controls와 CHANNEL이 함께 달라 wall 하나의 인과 효과도 미입증이다. quiet bulb/neck의 fine feature가 약하고 풍부한 identity, clearance와 fabrication은 검증되지 않았다. 추가 hole의 비대칭은 의도한 edit다. 초기 render는 쓰는 중인 NPZ를 읽어 EOFError가 났으며 cube2_complete에서 비교를 완성했다. 첫 review bundle의 전체 ZIP hash 계산도 RAM allocation으로 실패해 4MiB streaming 방식으로 고쳤다. 두 수정은 생성 geometry를 바꾸지 않았다.",
+    "original_ledger": "E:/CHESHIRE_DATA/research_archive/CHESHIRE_TASK01_31_MASTER_LEDGER.md#task31"
+  }
+]
