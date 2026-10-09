@@ -82,6 +82,7 @@ def run(request,tag):
                       actual_fan_range=[float(ff['fan'].min()),float(ff['fan'].max())],
                       actual_twist_angle_range=[float(ff['twist_angle'].min()),float(ff['twist_angle'].max())],
                       actual_width_range=[float(ff['width'].min()),float(ff['width'].max())],
+                      actual_depth_envelope_range=[float(ff['depth_envelope'].min()),float(ff['depth_envelope'].max())],
                       symmetry_constructive_chart_max=reflection_error(state,m.xyz),
                       no_geometric_smoothing=not(request.get('smooth_after_macro',False) and g>onset),scale='Original unresolved project units; not edge-length scaling.')
             checkpoint(after,m,state,meta,None,before,ff)
@@ -122,12 +123,15 @@ def render(request,tag):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--action',choices=['run','audit','render','measure','evidence','planar','progression','export'],required=True)
+    p=argparse.ArgumentParser();p.add_argument('--action',choices=['run','audit','render','raking','measure','evidence','planar','progression','export','tracks','deliver'],required=True)
     p.add_argument('--request',type=Path,required=True);p.add_argument('--tag',required=True);p.add_argument('--worker',action='store_true');args=p.parse_args()
     if not args.tag.replace('_','').isalnum():raise ValueError('Safe tag required.')
     if args.worker:
         if args.action=='render':render(args.request,args.tag)
-        elif args.action in ('measure','evidence','planar','progression','export'):
+        elif args.action=='raking':
+            from task33_views import raking
+            raking(args.request,args.tag)
+        elif args.action in ('measure','evidence','planar','progression','export','tracks','deliver'):
             module=__import__('task33_'+args.action)
             function=getattr(module,'audit' if args.action=='planar' else args.action)
             function(json.loads(args.request.read_text(encoding='utf-8'))['candidate'],args.tag)
@@ -135,7 +139,7 @@ if __name__=='__main__':
     else:
         definition=json.loads(args.request.read_text(encoding='utf-8'))
         if args.action=='run':preflight(definition)
-        if args.action in ('measure','evidence','planar','progression','export'):
+        if args.action in ('measure','evidence','planar','progression','export','tracks','deliver'):
             preflight(json.loads((ROOT/'candidates'/definition['candidate']/'request.json').read_text()))
         logs=ROOT/'logs'/(args.action+'_'+args.tag)
         if logs.exists():raise FileExistsError('Existing Task33 logs are immutable: '+str(logs))

@@ -124,3 +124,13 @@ def test_meso_notch_splits_generated_crests_without_erasing_macro_component():
     assert len(find_peaks(meso,prominence=25)[0])==6
     assert np.all(fine>=macro-1e-10)
     with pytest.raises(ValueError):fold_values(chart,{**p,'amplitudes':[500,100,180]},3)
+
+
+def test_depth_convergence_modulates_binding_in_physical_space_without_generation_decay():
+    chart=np.array([[.15,0,-1],[.30,0,-1],[.85,0,-1]])
+    params=dict(neck_locations=[.15,.43],sweep=0,amplitudes=[500,400,260])
+    plain=fold_values(chart,params,1)['depth']
+    converged=fold_values(chart,{**params,'depth_convergence':.65},1)
+    assert converged['depth'][0]/plain[0]==pytest.approx(.35)
+    assert converged['depth'][1]/plain[1]>.98
+    assert converged['depth'][0]==pytest.approx(converged['depth'][2])

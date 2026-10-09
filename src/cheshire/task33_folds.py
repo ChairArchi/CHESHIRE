@@ -89,7 +89,7 @@ def fold_values(chart, params, levels):
              'coupling','amplitudes','waist','windowed','child_floor','child_frequency_variation',
              'parent_gate_power','micro_frequency','twist','twist_start','twist_end',
              'child_phase_shift','micro_phase_shift','micro_coupling','fine_mode',
-             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls'}
+             'micro_slope_scale','gradient_epsilon','macro_recess','paired_controls','depth_convergence'}
     if set(params)-allowed:raise ValueError('Unknown fold parameters: '+str(sorted(set(params)-allowed)))
     for key,value in params.items():
         if key=='fine_mode':
@@ -101,6 +101,8 @@ def fold_values(chart, params, levels):
         raise ValueError('Positive macro frequency and finer micro frequency required.')
     if not 0<=params.get('waist',.28)<1 or not 0<=params.get('convergence',.6)<1:
         raise ValueError('Waist and convergence must be within [0,1).')
+    if not 0<=params.get('depth_convergence',0)<1:
+        raise ValueError('Depth convergence must be within [0,1).')
     if params.get('parent_gate_power',1)<1 or params.get('child_frequency_variation',0)<0:
         raise ValueError('Positive parent gate power and nonnegative frequency variation required.')
     if params.get('child_frequency_variation',0) and (params.get('child_floor',.2)!=0 or params.get('parent_gate_power',1)<2):
@@ -160,9 +162,11 @@ def fold_values(chart, params, levels):
     if levels>=2:depth += a[1]*gate*child
     if levels>=3:depth += a[2]*gate*(floor+(1-floor)*child)*micro
     depth *= foot
+    depth_envelope=1-params.get('depth_convergence',0)*neck
+    depth*=depth_envelope
     if levels:depth-=params.get('macro_recess',0)*foot
     return dict(depth=depth, width=width, fan=fan, parent_phase=theta,
-                child_phase=child_phase, parent=parent, child=child, foot=foot,meso_depth_slope=slope)
+                child_phase=child_phase, parent=parent, child=child, foot=foot,meso_depth_slope=slope,depth_envelope=depth_envelope)
 
 
 def evaluate(mesh, state, params, levels):

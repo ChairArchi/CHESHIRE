@@ -17,12 +17,17 @@ from cheshire.task32_morphology import triangles
 from task32_validation import section_segments
 
 
-def cut(mesh,state,s,reference,params):
+def prepare_cuts(mesh,state):
     tri=triangles(mesh)
     # Actual front-material patches; not a projected silhouette.
     tri=tri[np.all(np.abs(state['chart'][tri,2]+1)<1e-10,axis=1)]
-    chart=state['chart'];values=chart[tri,0]
-    crossing=(values.min(1)<s)&(values.max(1)>s);tri=tri[crossing]
+    values=state['chart'][tri,0]
+    return tri,values.min(1),values.max(1)
+
+
+def cut(mesh,state,s,reference,params,prepared=None):
+    tri,lower,upper=prepare_cuts(mesh,state) if prepared is None else prepared
+    chart=state['chart'];tri=tri[(lower<s)&(upper>s)]
     result=[]
     for j in range(3):
         a,b=tri[:,j],tri[:,(j+1)%3]

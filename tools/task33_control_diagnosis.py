@@ -1,5 +1,5 @@
 """Isolated causal tests of Task31 controls; historical code/data are read-only."""
-import json,sys
+import argparse,json,sys,shutil
 from pathlib import Path
 import numpy as np
 from scipy.spatial import cKDTree
@@ -25,9 +25,11 @@ def propagate(vp,fp,op,nv,nf):
     return newvp,newfp
 
 
-def diagnose():
-    source=Path('E:/CHESHIRE_DATA/task31/lead/gate');dest=ROOT/'analysis/control_causality'
+def diagnose(tag='control_causality'):
+    if not tag.replace('_','').isalnum():raise ValueError('Safe immutable tag required.')
+    source=Path('E:/CHESHIRE_DATA/task31/lead/gate');dest=ROOT/'analysis'/tag
     dest.mkdir(parents=True,exist_ok=False)
+    shutil.copy2(Path(__file__),dest/'producer_source.py')
     m=load_mesh(source/'G0');target=m.xyz.copy();target[:,0]=2*PLANE_X-target[:,0]
     distance,vp=cKDTree(m.xyz).query(target)
     assert distance.max()<1e-9
@@ -70,4 +72,5 @@ def diagnose():
     print(records,locked,flush=True)
 
 
-if __name__=='__main__':diagnose()
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--tag',default='control_causality');a=p.parse_args();diagnose(a.tag)
