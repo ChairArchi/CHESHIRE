@@ -1,0 +1,105 @@
+{
+  "start": "E:/CHESHIRE_DATA/astra_research/recovered_probe/P01_RECOVERED_MACRO/K03_TASK28_TRANSFER/G1",
+  "cases": [
+    {
+      "id": "P00_UNIFORM",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        }
+      ]
+    },
+    {
+      "id": "P01_BROAD",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.9,
+          "selection": 0.6,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.9,
+          "selection": 0.6,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        }
+      ]
+    },
+    {
+      "id": "P02_SIGNED",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 1.2,
+          "selection": 0.6,
+          "signed": true
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 1.2,
+          "selection": 0.6,
+          "signed": true
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        }
+      ]
+    }
+  ],
+  "width": 6500
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-10",
+  "original_branch": "experiment/astra-generative-freedom",
+  "original_commit": "0ac8830c059193240babf49700a45241d18bb38b",
+  "publication_branch": "archive/astra-freedom-2026-10-10",
+  "kind": "New publication snapshot, not the original commit/history",
+  "original_history": "Unchanged local refs and archive-local/2026-10-10/CHESHIRE_RESEARCH_LOCAL_HEADS.bundle; not uploaded with excluded blobs",
+  "retained_files": "Every retained original tree entry, including implementation and recipes, is byte-identical (same Git blob and mode).",
+  "excluded": [
+    {
+      "path": "studies/task30/renders/TASK30_reference_relation_sheet.png",
+      "git_entry": "100644 blob 7b280cefa9ace23bf69ff2b769c10973f42193ec",
+      "reason": "Includes official third-party photo; redistribution permission unverified"
+    },
+    {
+      "path": "studies/task31/renders/TASK31_reference_relation_sheet.png",
+      "git_entry": "100644 blob 48286f57a188d51e4cd4c2fec97142285e5064e8",
+      "reason": "Includes official third-party photo and paper page reproductions; redistribution permission unverified"
+    }
+  ],
+  "no_research_execution": "No geometry generation, rendering, test suite or generator edits during archive work."
+}

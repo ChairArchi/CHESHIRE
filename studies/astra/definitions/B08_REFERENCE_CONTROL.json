@@ -1,0 +1,120 @@
+{
+  "carrier": {
+    "kind": "column"
+  },
+  "steps": [
+    {
+      "operator": "reference",
+      "parameters": {
+        "weights": {
+          "wf": -280.0,
+          "w1": 0.8,
+          "we": 320.0,
+          "w2": -2.8,
+          "wp": 520.0,
+          "w3": 0.0,
+          "w4": 0.0,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "ABSOLUTE",
+        "u_map": {
+          "(3,3)": 2.0,
+          "(4,4)": -1.0,
+          "(5,5)": 2.5,
+          "(6,6)": -1.5
+        },
+        "unknown_u": 0.5,
+        "source": "Task24 H1 numeric macro; matched Eq10/11 removal only",
+        "scale_mode": "GLOBAL_SCALE"
+      }
+    },
+    {
+      "operator": "reference",
+      "parameters": {
+        "weights": {
+          "wf": 0.16,
+          "w1": -1.05,
+          "we": -0.05,
+          "w2": -0.9,
+          "wp": 0.045,
+          "w3": -0.8,
+          "w4": 0.5,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11 macro_CC_2",
+        "scale_mode": "GLOBAL_SCALE"
+      }
+    },
+    {
+      "operator": "reference",
+      "parameters": {
+        "weights": {
+          "wf": 0.11199999999999999,
+          "w1": -0.735,
+          "we": -0.034999999999999996,
+          "w2": -0.63,
+          "wp": 0.0315,
+          "w3": -0.6,
+          "w4": 0.35,
+          "w6": 0.0,
+          "w7": 0.0
+        },
+        "offset_units": "RATIO",
+        "u_map": {},
+        "unknown_u": 0.0,
+        "source": "Task20/21 C11B continuation scaled by 0.7; Task25 GENTLE exact Eq4 pair",
+        "scale_mode": "GLOBAL_SCALE"
+      }
+    },
+    {
+      "operator": "rotating",
+      "parameters": {
+        "fold": 0.35,
+        "relaxation": 0.04,
+        "polarity": 1,
+        "source": "rest"
+      }
+    },
+    {
+      "operator": "rotating",
+      "parameters": {
+        "fold": 0.35,
+        "relaxation": 0.04,
+        "polarity": 1,
+        "source": "rest"
+      }
+    },
+    {
+      "operator": "rotating",
+      "parameters": {
+        "fold": 0.35,
+        "relaxation": 0.04,
+        "polarity": 1,
+        "source": "rest"
+      }
+    },
+    {
+      "operator": "rotating",
+      "parameters": {
+        "fold": 0.35,
+        "relaxation": 0.04,
+        "polarity": 1,
+        "source": "rest"
+      }
+    },
+    {
+      "operator": "rotating",
+      "parameters": {
+        "fold": 0.35,
+        "relaxation": 0.04,
+        "polarity": 1,
+        "source": "rest"
+      }
+    }
+  ]
+}

@@ -1,0 +1,835 @@
+{
+  "root": "E:\\CHESHIRE_DATA\\astra_freedom",
+  "baseline": "0c4ec452518415d2fb12f724553e25d732c4c7c2",
+  "branch": "experiment/astra-generative-freedom",
+  "entries": [
+    {
+      "id": "F00_SPLIT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F00_SPLIT",
+      "relative_path": "experiments/F00_SPLIT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F00_SPLIT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F00_SPLIT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F00_SPLIT\\execution.json"
+      }
+    },
+    {
+      "id": "F01_STEER",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F01_STEER",
+      "relative_path": "experiments/F01_STEER",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F01_STEER\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F01_STEER\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F01_STEER\\execution.json"
+      }
+    },
+    {
+      "id": "F02_STRONG",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F02_STRONG",
+      "relative_path": "experiments/F02_STRONG",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F02_STRONG\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F02_STRONG\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F02_STRONG\\execution.json"
+      }
+    },
+    {
+      "id": "F03_AMPLIFY",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F03_AMPLIFY",
+      "relative_path": "experiments/F03_AMPLIFY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F03_AMPLIFY\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F03_AMPLIFY\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F03_AMPLIFY\\execution.json"
+      }
+    },
+    {
+      "id": "F04_COHERENT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F04_COHERENT",
+      "relative_path": "experiments/F04_COHERENT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F04_COHERENT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F04_COHERENT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F04_COHERENT\\execution.json"
+      }
+    },
+    {
+      "id": "F05_COHERENT_STEER",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F05_COHERENT_STEER",
+      "relative_path": "experiments/F05_COHERENT_STEER",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F05_COHERENT_STEER\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F05_COHERENT_STEER\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F05_COHERENT_STEER\\execution.json"
+      }
+    },
+    {
+      "id": "F06_SEED",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F06_SEED",
+      "relative_path": "experiments/F06_SEED",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F06_SEED\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F06_SEED\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F06_SEED\\execution.json"
+      }
+    },
+    {
+      "id": "F07_LOCAL",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F07_LOCAL",
+      "relative_path": "experiments/F07_LOCAL",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F07_LOCAL\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F07_LOCAL\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F07_LOCAL\\execution.json"
+      }
+    },
+    {
+      "id": "F08_OSCILLATE",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F08_OSCILLATE",
+      "relative_path": "experiments/F08_OSCILLATE",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F08_OSCILLATE\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F08_OSCILLATE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F08_OSCILLATE\\execution.json"
+      }
+    },
+    {
+      "id": "F09_BROAD_SPLIT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F09_BROAD_SPLIT",
+      "relative_path": "experiments/F09_BROAD_SPLIT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F09_BROAD_SPLIT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F09_BROAD_SPLIT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F09_BROAD_SPLIT\\execution.json"
+      }
+    },
+    {
+      "id": "F10_TRANSVERSE",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F10_TRANSVERSE",
+      "relative_path": "experiments/F10_TRANSVERSE",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F10_TRANSVERSE\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F10_TRANSVERSE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F10_TRANSVERSE\\execution.json"
+      }
+    },
+    {
+      "id": "F11_LOW_SPLIT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F11_LOW_SPLIT",
+      "relative_path": "experiments/F11_LOW_SPLIT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F11_LOW_SPLIT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F11_LOW_SPLIT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F11_LOW_SPLIT\\execution.json"
+      }
+    },
+    {
+      "id": "F12_REPEAT_SCALE",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F12_REPEAT_SCALE",
+      "relative_path": "experiments/F12_REPEAT_SCALE",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F12_REPEAT_SCALE\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F12_REPEAT_SCALE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F12_REPEAT_SCALE\\execution.json"
+      }
+    },
+    {
+      "id": "F13_CHILD_SCALE",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F13_CHILD_SCALE",
+      "relative_path": "experiments/F13_CHILD_SCALE",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F13_CHILD_SCALE\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F13_CHILD_SCALE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F13_CHILD_SCALE\\execution.json"
+      }
+    },
+    {
+      "id": "F14_LOW_SEED",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_LOW_SEED",
+      "relative_path": "experiments/F14_LOW_SEED",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_LOW_SEED\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_LOW_SEED\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_LOW_SEED\\execution.json"
+      }
+    },
+    {
+      "id": "F14_VERIFIED_REPLAY",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_VERIFIED_REPLAY",
+      "relative_path": "experiments/F14_VERIFIED_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_VERIFIED_REPLAY\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_VERIFIED_REPLAY\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\F14_VERIFIED_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "H00_POCKET_FOLD",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H00_POCKET_FOLD",
+      "relative_path": "experiments/H00_POCKET_FOLD",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H00_POCKET_FOLD\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H00_POCKET_FOLD\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H00_POCKET_FOLD\\execution.json"
+      }
+    },
+    {
+      "id": "H01_POCKET_SEED",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H01_POCKET_SEED",
+      "relative_path": "experiments/H01_POCKET_SEED",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H01_POCKET_SEED\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H01_POCKET_SEED\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H01_POCKET_SEED\\execution.json"
+      }
+    },
+    {
+      "id": "H02_POCKET_SMALL",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_POCKET_SMALL",
+      "relative_path": "experiments/H02_POCKET_SMALL",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_POCKET_SMALL\\spec.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_POCKET_SMALL\\execution.json"
+      }
+    },
+    {
+      "id": "H02_REPLAY",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_REPLAY",
+      "relative_path": "experiments/H02_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_REPLAY\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_REPLAY\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\H02_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "J00_DOMAINS",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J00_DOMAINS",
+      "relative_path": "experiments/J00_DOMAINS",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J00_DOMAINS\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J00_DOMAINS\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J00_DOMAINS\\execution.json"
+      }
+    },
+    {
+      "id": "J01_OVERLAP",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J01_OVERLAP",
+      "relative_path": "experiments/J01_OVERLAP",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J01_OVERLAP\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J01_OVERLAP\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J01_OVERLAP\\execution.json"
+      }
+    },
+    {
+      "id": "J02_OUTWARD",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_OUTWARD",
+      "relative_path": "experiments/J02_OUTWARD",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_OUTWARD\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_OUTWARD\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_OUTWARD\\execution.json"
+      }
+    },
+    {
+      "id": "J02_VERIFIED_REPLAY",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_VERIFIED_REPLAY",
+      "relative_path": "experiments/J02_VERIFIED_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_VERIFIED_REPLAY\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_VERIFIED_REPLAY\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J02_VERIFIED_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "J03_STRONG",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J03_STRONG",
+      "relative_path": "experiments/J03_STRONG",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J03_STRONG\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J03_STRONG\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J03_STRONG\\execution.json"
+      }
+    },
+    {
+      "id": "J04_SPARSE_MEAN",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J04_SPARSE_MEAN",
+      "relative_path": "experiments/J04_SPARSE_MEAN",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J04_SPARSE_MEAN\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J04_SPARSE_MEAN\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J04_SPARSE_MEAN\\execution.json"
+      }
+    },
+    {
+      "id": "J05_DENSE_DOMINANT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J05_DENSE_DOMINANT",
+      "relative_path": "experiments/J05_DENSE_DOMINANT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J05_DENSE_DOMINANT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J05_DENSE_DOMINANT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J05_DENSE_DOMINANT\\execution.json"
+      }
+    },
+    {
+      "id": "J06_OUTWARD_REST",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J06_OUTWARD_REST",
+      "relative_path": "experiments/J06_OUTWARD_REST",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J06_OUTWARD_REST\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J06_OUTWARD_REST\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J06_OUTWARD_REST\\execution.json"
+      }
+    },
+    {
+      "id": "J07_CHILD",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J07_CHILD",
+      "relative_path": "experiments/J07_CHILD",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J07_CHILD\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J07_CHILD\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J07_CHILD\\execution.json"
+      }
+    },
+    {
+      "id": "J08_REORIENT",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J08_REORIENT",
+      "relative_path": "experiments/J08_REORIENT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J08_REORIENT\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J08_REORIENT\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J08_REORIENT\\execution.json"
+      }
+    },
+    {
+      "id": "J09_BROAD",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_BROAD",
+      "relative_path": "experiments/J09_BROAD",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_BROAD\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_BROAD\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_BROAD\\execution.json"
+      }
+    },
+    {
+      "id": "J09_VERIFIED_REPLAY",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_VERIFIED_REPLAY",
+      "relative_path": "experiments/J09_VERIFIED_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_VERIFIED_REPLAY\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_VERIFIED_REPLAY\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J09_VERIFIED_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "J10_TURN",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J10_TURN",
+      "relative_path": "experiments/J10_TURN",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J10_TURN\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J10_TURN\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J10_TURN\\execution.json"
+      }
+    },
+    {
+      "id": "J11_G8",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J11_G8",
+      "relative_path": "experiments/J11_G8",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J11_G8\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J11_G8\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J11_G8\\execution.json"
+      }
+    },
+    {
+      "id": "J12_G8_PARENT_SCALE",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J12_G8_PARENT_SCALE",
+      "relative_path": "experiments/J12_G8_PARENT_SCALE",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J12_G8_PARENT_SCALE\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J12_G8_PARENT_SCALE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\J12_G8_PARENT_SCALE\\execution.json"
+      }
+    },
+    {
+      "id": "L00_RELEASED",
+      "family": "experiments",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\L00_RELEASED",
+      "relative_path": "experiments/L00_RELEASED",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\L00_RELEASED\\spec.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\L00_RELEASED\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\experiments\\L00_RELEASED\\execution.json"
+      }
+    },
+    {
+      "id": "P01_COMPETING",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P01_COMPETING",
+      "relative_path": "legacy_probe/P01_COMPETING",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P01_COMPETING\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P01_COMPETING\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P01_COMPETING\\execution.json"
+      }
+    },
+    {
+      "id": "P02_POCKET_EVOLUTION",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P02_POCKET_EVOLUTION",
+      "relative_path": "legacy_probe/P02_POCKET_EVOLUTION",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P02_POCKET_EVOLUTION\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P02_POCKET_EVOLUTION\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P02_POCKET_EVOLUTION\\execution.json"
+      }
+    },
+    {
+      "id": "P03_GENERATED_POCKETS",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_GENERATED_POCKETS",
+      "relative_path": "legacy_probe/P03_GENERATED_POCKETS",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_GENERATED_POCKETS\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_GENERATED_POCKETS\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_GENERATED_POCKETS\\execution.json"
+      }
+    },
+    {
+      "id": "P03_LINEAGE_AUDIT",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_LINEAGE_AUDIT",
+      "relative_path": "legacy_probe/P03_LINEAGE_AUDIT",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_LINEAGE_AUDIT\\spec.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_LINEAGE_AUDIT\\execution.json"
+      }
+    },
+    {
+      "id": "P03_VERIFIED_REPLAY",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_VERIFIED_REPLAY",
+      "relative_path": "legacy_probe/P03_VERIFIED_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_VERIFIED_REPLAY\\spec.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P03_VERIFIED_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "P04_SIGNED_CONTROL",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_SIGNED_CONTROL",
+      "relative_path": "legacy_probe/P04_SIGNED_CONTROL",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_SIGNED_CONTROL\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_SIGNED_CONTROL\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_SIGNED_CONTROL\\execution.json"
+      }
+    },
+    {
+      "id": "P04_VERIFIED_REPLAY",
+      "family": "legacy_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_VERIFIED_REPLAY",
+      "relative_path": "legacy_probe/P04_VERIFIED_REPLAY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_VERIFIED_REPLAY\\spec.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\legacy_probe\\P04_VERIFIED_REPLAY\\execution.json"
+      }
+    },
+    {
+      "id": "R01_HINGE_DIRECTION",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R01_HINGE_DIRECTION",
+      "relative_path": "patch_probe/R01_HINGE_DIRECTION",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R01_HINGE_DIRECTION\\execution.json"
+      }
+    },
+    {
+      "id": "R01B_HINGE_DIRECTION",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R01B_HINGE_DIRECTION",
+      "relative_path": "patch_probe/R01B_HINGE_DIRECTION",
+      "artifacts": {
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R01B_HINGE_DIRECTION\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R01B_HINGE_DIRECTION\\execution.json"
+      }
+    },
+    {
+      "id": "R02_DIRECTION_AND_STRENGTH",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R02_DIRECTION_AND_STRENGTH",
+      "relative_path": "patch_probe/R02_DIRECTION_AND_STRENGTH",
+      "artifacts": {
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R02_DIRECTION_AND_STRENGTH\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R02_DIRECTION_AND_STRENGTH\\execution.json"
+      }
+    },
+    {
+      "id": "R03_CONNECTED_GEODESIC",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R03_CONNECTED_GEODESIC",
+      "relative_path": "patch_probe/R03_CONNECTED_GEODESIC",
+      "artifacts": {
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R03_CONNECTED_GEODESIC\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R03_CONNECTED_GEODESIC\\execution.json"
+      }
+    },
+    {
+      "id": "R04_CONNECTED_CHARTS",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R04_CONNECTED_CHARTS",
+      "relative_path": "patch_probe/R04_CONNECTED_CHARTS",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R04_CONNECTED_CHARTS\\execution.json"
+      }
+    },
+    {
+      "id": "R05_CHILD_PATCH_SCALE",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R05_CHILD_PATCH_SCALE",
+      "relative_path": "patch_probe/R05_CHILD_PATCH_SCALE",
+      "artifacts": {
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R05_CHILD_PATCH_SCALE\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R05_CHILD_PATCH_SCALE\\execution.json"
+      }
+    },
+    {
+      "id": "R06_CHILD_PATCH_CHARTS",
+      "family": "patch_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R06_CHILD_PATCH_CHARTS",
+      "relative_path": "patch_probe/R06_CHILD_PATCH_CHARTS",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\patch_probe\\R06_CHILD_PATCH_CHARTS\\execution.json"
+      }
+    },
+    {
+      "id": "FINAL_DIAGNOSTICS",
+      "family": "nested_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\FINAL_DIAGNOSTICS",
+      "relative_path": "nested_probe/FINAL_DIAGNOSTICS",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\FINAL_DIAGNOSTICS\\execution.json"
+      }
+    },
+    {
+      "id": "P01_SMOOTHING_CONTROL",
+      "family": "nested_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P01_SMOOTHING_CONTROL",
+      "relative_path": "nested_probe/P01_SMOOTHING_CONTROL",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P01_SMOOTHING_CONTROL\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P01_SMOOTHING_CONTROL\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P01_SMOOTHING_CONTROL\\execution.json"
+      }
+    },
+    {
+      "id": "P02_SUPPORT_MEMORY",
+      "family": "nested_probe",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P02_SUPPORT_MEMORY",
+      "relative_path": "nested_probe/P02_SUPPORT_MEMORY",
+      "artifacts": {
+        "spec.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P02_SUPPORT_MEMORY\\spec.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P02_SUPPORT_MEMORY\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\nested_probe\\P02_SUPPORT_MEMORY\\execution.json"
+      }
+    },
+    {
+      "id": "CHART_G3_G6_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_G3_G6_V1",
+      "relative_path": "hierarchy/CHART_G3_G6_V1",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_G3_G6_V1\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_G3_G6_V1\\execution.json"
+      }
+    },
+    {
+      "id": "CHART_STRICT_V2",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_STRICT_V2",
+      "relative_path": "hierarchy/CHART_STRICT_V2",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_STRICT_V2\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\CHART_STRICT_V2\\execution.json"
+      }
+    },
+    {
+      "id": "DOMAINS_FOLLOWUP_STRICT_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\DOMAINS_FOLLOWUP_STRICT_V1",
+      "relative_path": "hierarchy/DOMAINS_FOLLOWUP_STRICT_V1",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\DOMAINS_FOLLOWUP_STRICT_V1\\execution.json"
+      }
+    },
+    {
+      "id": "DOMAINS_STRICT_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\DOMAINS_STRICT_V1",
+      "relative_path": "hierarchy/DOMAINS_STRICT_V1",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\DOMAINS_STRICT_V1\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\DOMAINS_STRICT_V1\\execution.json"
+      }
+    },
+    {
+      "id": "FOLLOWUP_STRICT_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\FOLLOWUP_STRICT_V1",
+      "relative_path": "hierarchy/FOLLOWUP_STRICT_V1",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\FOLLOWUP_STRICT_V1\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\FOLLOWUP_STRICT_V1\\execution.json"
+      }
+    },
+    {
+      "id": "G8_STRICT_J11_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\G8_STRICT_J11_V1",
+      "relative_path": "hierarchy/G8_STRICT_J11_V1",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\G8_STRICT_J11_V1\\execution.json"
+      }
+    },
+    {
+      "id": "G8_STRICT_J12_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\G8_STRICT_J12_V1",
+      "relative_path": "hierarchy/G8_STRICT_J12_V1",
+      "artifacts": {
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\G8_STRICT_J12_V1\\execution.json"
+      }
+    },
+    {
+      "id": "J02_REPRESENTATIVE_CHAIN_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\J02_REPRESENTATIVE_CHAIN_V1",
+      "relative_path": "hierarchy/J02_REPRESENTATIVE_CHAIN_V1",
+      "artifacts": {}
+    },
+    {
+      "id": "J02_REPRESENTATIVE_CHAIN_V2",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\J02_REPRESENTATIVE_CHAIN_V2",
+      "relative_path": "hierarchy/J02_REPRESENTATIVE_CHAIN_V2",
+      "artifacts": {}
+    },
+    {
+      "id": "J09_FOUR_GENERATION_CHAIN_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\J09_FOUR_GENERATION_CHAIN_V1",
+      "relative_path": "hierarchy/J09_FOUR_GENERATION_CHAIN_V1",
+      "artifacts": {}
+    },
+    {
+      "id": "J09_FOUR_GENERATION_CHAIN_V2",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\J09_FOUR_GENERATION_CHAIN_V2",
+      "relative_path": "hierarchy/J09_FOUR_GENERATION_CHAIN_V2",
+      "artifacts": {}
+    },
+    {
+      "id": "POCKET_STRICT_V1",
+      "family": "hierarchy",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\POCKET_STRICT_V1",
+      "relative_path": "hierarchy/POCKET_STRICT_V1",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\POCKET_STRICT_V1\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\hierarchy\\POCKET_STRICT_V1\\execution.json"
+      }
+    },
+    {
+      "id": "D01_CORE",
+      "family": "deliverables",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01_CORE",
+      "relative_path": "deliverables/D01_CORE",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01_CORE\\request.json",
+        "setup_failure.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01_CORE\\setup_failure.json"
+      }
+    },
+    {
+      "id": "D01B_CORE",
+      "family": "deliverables",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01B_CORE",
+      "relative_path": "deliverables/D01B_CORE",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01B_CORE\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01B_CORE\\summary.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01B_CORE\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D01B_CORE\\execution.json"
+      }
+    },
+    {
+      "id": "D02_G7",
+      "family": "deliverables",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D02_G7",
+      "relative_path": "deliverables/D02_G7",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D02_G7\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D02_G7\\summary.json",
+        "completed.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D02_G7\\completed.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\deliverables\\D02_G7\\execution.json"
+      }
+    },
+    {
+      "id": "Q01_INITIAL",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q01_INITIAL",
+      "relative_path": "quick_views/Q01_INITIAL",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q01_INITIAL\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q01_INITIAL\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q01_INITIAL\\execution.json"
+      }
+    },
+    {
+      "id": "Q02_COHERENT",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q02_COHERENT",
+      "relative_path": "quick_views/Q02_COHERENT",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q02_COHERENT\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q02_COHERENT\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q02_COHERENT\\execution.json"
+      }
+    },
+    {
+      "id": "Q03_MULTISCALE",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q03_MULTISCALE",
+      "relative_path": "quick_views/Q03_MULTISCALE",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q03_MULTISCALE\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q03_MULTISCALE\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q03_MULTISCALE\\execution.json"
+      }
+    },
+    {
+      "id": "Q04_CONTINUATION",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q04_CONTINUATION",
+      "relative_path": "quick_views/Q04_CONTINUATION",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q04_CONTINUATION\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q04_CONTINUATION\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q04_CONTINUATION\\execution.json"
+      }
+    },
+    {
+      "id": "Q05_DOMAINS",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q05_DOMAINS",
+      "relative_path": "quick_views/Q05_DOMAINS",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q05_DOMAINS\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q05_DOMAINS\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q05_DOMAINS\\execution.json"
+      }
+    },
+    {
+      "id": "Q06_J02_SEQUENCE",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q06_J02_SEQUENCE",
+      "relative_path": "quick_views/Q06_J02_SEQUENCE",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q06_J02_SEQUENCE\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q06_J02_SEQUENCE\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q06_J02_SEQUENCE\\execution.json"
+      }
+    },
+    {
+      "id": "Q07_DOMAINS_FOLLOWUP",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q07_DOMAINS_FOLLOWUP",
+      "relative_path": "quick_views/Q07_DOMAINS_FOLLOWUP",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q07_DOMAINS_FOLLOWUP\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q07_DOMAINS_FOLLOWUP\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q07_DOMAINS_FOLLOWUP\\execution.json"
+      }
+    },
+    {
+      "id": "Q08_FINAL_COMPARISON",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q08_FINAL_COMPARISON",
+      "relative_path": "quick_views/Q08_FINAL_COMPARISON",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q08_FINAL_COMPARISON\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q08_FINAL_COMPARISON\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q08_FINAL_COMPARISON\\execution.json"
+      }
+    },
+    {
+      "id": "Q09_G8_CHILD",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q09_G8_CHILD",
+      "relative_path": "quick_views/Q09_G8_CHILD",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q09_G8_CHILD\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q09_G8_CHILD\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q09_G8_CHILD\\execution.json"
+      }
+    },
+    {
+      "id": "Q10_G8_PARENT_SCALE",
+      "family": "quick_views",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q10_G8_PARENT_SCALE",
+      "relative_path": "quick_views/Q10_G8_PARENT_SCALE",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q10_G8_PARENT_SCALE\\request.json",
+        "summary.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q10_G8_PARENT_SCALE\\summary.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\quick_views\\Q10_G8_PARENT_SCALE\\execution.json"
+      }
+    },
+    {
+      "id": "P01_FIELDS",
+      "family": "evaluation",
+      "absolute_path": "E:\\CHESHIRE_DATA\\astra_freedom\\evaluation\\P01_FIELDS",
+      "relative_path": "evaluation/P01_FIELDS",
+      "artifacts": {
+        "request.json": "E:\\CHESHIRE_DATA\\astra_freedom\\evaluation\\P01_FIELDS\\request.json",
+        "execution.json": "E:\\CHESHIRE_DATA\\astra_freedom\\evaluation\\P01_FIELDS\\execution.json",
+        "STOPPED.json": "E:\\CHESHIRE_DATA\\astra_freedom\\evaluation\\P01_FIELDS\\STOPPED.json"
+      }
+    }
+  ],
+  "limitation": "Entries include controls, replays, failed setup and analyses; not a count of independent hypotheses."
+}

@@ -1,0 +1,62 @@
+{
+  "carrier": {
+    "kind": "column",
+    "side": 1000,
+    "height": 4000,
+    "divisions": 2
+  },
+  "steps": [
+    {
+      "operator": "reference",
+      "parameters": {
+        "weights": {
+          "wf": 0.35,
+          "we": 0,
+          "wp": 0,
+          "w1": 0.3,
+          "w2": -0.4
+        }
+      }
+    },
+    {
+      "operator": "dual",
+      "parameters": {
+        "tension": 0.65,
+        "fold_gain": 0.2,
+        "feedback": 0.6,
+        "corner_gain": 0.5,
+        "role_gain": 0.1
+      }
+    },
+    {
+      "operator": "dual",
+      "parameters": {
+        "tension": 0.65,
+        "fold_gain": 0.2,
+        "feedback": 0.6,
+        "corner_gain": 0.5,
+        "role_gain": 0.1
+      }
+    },
+    {
+      "operator": "dual",
+      "parameters": {
+        "tension": 0.65,
+        "fold_gain": 0.2,
+        "feedback": 0.6,
+        "corner_gain": 0.5,
+        "role_gain": 0.1
+      }
+    },
+    {
+      "operator": "dual",
+      "parameters": {
+        "tension": 0.65,
+        "fold_gain": 0.2,
+        "feedback": 0.6,
+        "corner_gain": 0.5,
+        "role_gain": 0.1
+      }
+    }
+  ]
+}

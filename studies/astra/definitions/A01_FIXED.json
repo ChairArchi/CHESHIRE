@@ -1,0 +1,74 @@
+{
+  "carrier": {
+    "kind": "column",
+    "side": 1000,
+    "height": 4000,
+    "divisions": 2
+  },
+  "steps": [
+    {
+      "operator": "reference",
+      "parameters": {
+        "weights": {
+          "wf": 0.35,
+          "we": 0,
+          "wp": 0,
+          "w1": 0.3,
+          "w2": -0.4
+        }
+      }
+    },
+    {
+      "operator": "primal",
+      "parameters": {
+        "wf": -0.05,
+        "we": 0.04,
+        "wp": 0.03,
+        "w1": -0.15,
+        "w2": -0.8,
+        "w3": -0.65,
+        "w4": 0.75,
+        "cap_policy": "none"
+      }
+    },
+    {
+      "operator": "primal",
+      "parameters": {
+        "wf": -0.05,
+        "we": 0.04,
+        "wp": 0.03,
+        "w1": -0.15,
+        "w2": -0.8,
+        "w3": -0.65,
+        "w4": 0.75,
+        "cap_policy": "none"
+      }
+    },
+    {
+      "operator": "primal",
+      "parameters": {
+        "wf": -0.05,
+        "we": 0.04,
+        "wp": 0.03,
+        "w1": -0.15,
+        "w2": -0.8,
+        "w3": -0.65,
+        "w4": 0.75,
+        "cap_policy": "none"
+      }
+    },
+    {
+      "operator": "primal",
+      "parameters": {
+        "wf": -0.05,
+        "we": 0.04,
+        "wp": 0.03,
+        "w1": -0.15,
+        "w2": -0.8,
+        "w3": -0.65,
+        "w4": 0.75,
+        "cap_policy": "none"
+      }
+    }
+  ]
+}

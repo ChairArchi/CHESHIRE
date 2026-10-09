@@ -1,0 +1,117 @@
+{
+  "start": "E:/CHESHIRE_DATA/astra_research/recovered_probe/P01_RECOVERED_MACRO/K03_TASK28_TRANSFER/G1",
+  "cases": [
+    {
+      "id": "Q00_ROUND",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "weights": {},
+          "memory": 0
+        }
+      ]
+    },
+    {
+      "id": "Q01_CHILD_BROAD",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.65,
+          "depth": 1.0,
+          "selection": 0.5,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "weights": {},
+          "memory": 0
+        }
+      ]
+    },
+    {
+      "id": "Q02_CHILD_RESPONSE",
+      "steps": [
+        {
+          "op": "pocket",
+          "ratio": 0.48,
+          "depth": 0.7,
+          "selection": 0,
+          "signed": false
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "op": "pocket",
+          "ratio": 0.65,
+          "depth": 1.3,
+          "selection": 0.3,
+          "signed": true
+        },
+        {
+          "weights": {
+            "w1": 0.35,
+            "w2": -0.7
+          },
+          "memory": 0.5
+        },
+        {
+          "weights": {},
+          "memory": 0
+        }
+      ]
+    }
+  ],
+  "width": 6500
+}
