@@ -1,0 +1,43 @@
+{
+  "carrier": "1000 x 1000 x 4000 constant square, two equal axial cells, closed planar square caps",
+  "axes": "X width Y depth Z vertical; project units unresolved",
+  "fixed": "All rest Z=0 or 4000 points; same for every strategy",
+  "sections_z": [
+    500.12345,
+    1000.12345,
+    1500.12345,
+    2000.12345,
+    2500.12345,
+    3000.12345,
+    3500.12345
+  ],
+  "longitudinal": [
+    "Y=0",
+    "X=0",
+    "X=Y"
+  ],
+  "camera": {
+    "target": [
+      0,
+      0,
+      2000
+    ],
+    "width": 5000,
+    "angles": [
+      [
+        0,
+        0
+      ],
+      [
+        28,
+        22
+      ],
+      [
+        90,
+        0
+      ]
+    ]
+  },
+  "comparison": "A early large vs B every-generation local; same carrier/topology/final depth. C pure sampling isolates growth.",
+  "limits": "Full transverse checks, no sampling, cap=256. Shared vertices/coplanar/tangent excluded. No arbitrary 15% radial core restriction; actual geometry checks retained."
+}
