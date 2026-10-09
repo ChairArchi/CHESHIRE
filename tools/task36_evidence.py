@@ -1,5 +1,5 @@
 """Actual native triangle geometry, finite cuts and oriented symmetry evidence."""
-import json,sys
+import json,sys,shutil
 from pathlib import Path
 from time import perf_counter
 import numpy as np
@@ -45,6 +45,10 @@ def audit(request,tag):
     elif request.get('contact_engine')=='bvh':
         from task36_contacts import contacts as contact_check
     dest=ROOT/'validation'/tag;dest.mkdir(parents=True,exist_ok=False);write_new(dest/'request.json',request);rows=[]
+    identities={}
+    for relative in ['tools/task36_evidence.py','tools/task36_contacts.py','tools/task36_triangle_interval.py','tools/native/Task36Bounds.cs','tools/task32_validation.py','tools/task33_contacts.py','tools/task33_planar.py','tools/task35_analyze.py']:
+        copied=dest/'source'/relative;copied.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(REPO/relative,copied);identities[relative]=sha(copied)
+    write_new(dest/'source_identity.json',identities)
     for item in request['items']:
         from hero_design_sprint import windows_memory
         start=perf_counter();stage=Path(item['stage']);summary=json.loads((stage/'summary.json').read_text());memory=windows_memory();forecast=536870912+summary['faces']*1800

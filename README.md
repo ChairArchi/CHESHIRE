@@ -4,7 +4,13 @@
 
 CHESHIRE is a standalone deterministic computational design engine for transforming arbitrary polygon meshes through explicit, traceable rules. Its long-term aim is to measure geometric and topological attributes, map them into scalar fields, select and apply transformation rules, inherit provenance and tags, and iterate. It is independent from ALICE and has no dependency on it.
 
-**Status:** experimental research software. Task35 studies one closed column with
+**Status:** experimental research software. Task36 studies recursive folding from
+a constant square column, explicit native triangle surfaces, carrier inheritance,
+and supplemental intersection checks. See [results and limitations](docs/TASK36_RESULTS.md).
+Its overall ornament remains **PARTIAL**; use the report's final selection and
+validation scope rather than an experiment ID as a safety certificate.
+
+Task35 studies one closed column with
 section-dependent formation and deep nested folds. Its [results](docs/TASK35_RESULTS.md)
 separate verified local geometry from the remaining **PARTIAL** overall ornament.
 It does not construct or attach a lintel.

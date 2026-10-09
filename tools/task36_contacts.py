@@ -69,7 +69,7 @@ def contacts(mesh,cap=256,interval=False,include_shared=False):
         if not temporary.resolve().is_relative_to(BUILD.resolve()):raise ValueError('Unexpected temporary payload path.')
         temporary.unlink(missing_ok=True)
     return dict(transverse_contacts=len(pairs),pairs=pairs,sample_triangles=len(tri),total_triangles=len(tri),all_triangles_sampled=True,
-        cap_reached=len(pairs)==cap,cap=cap,checked_nonadjacent_AABB_pairs=checked,raw_AABB_pairs=raw,seconds=perf_counter()-start,
+        cap_reached=len(pairs)==cap,cap=cap,checked_nonadjacent_AABB_pairs=None if include_shared else checked,checked_AABB_pairs=checked,raw_AABB_pairs=raw,seconds=perf_counter()-start,
         broad_phase='Exact native AABB BVH, ascending pairs; same bounding-sphere filter; unchanged Task33 batch_hits.',
         helper_source_sha256=sha(REPO/'tools/native/Task36Bounds.cs'),helper_binary_sha256=sha(exe),
         narrow_phase='Task33 strict edge hits UNION Task36 positive noncoplanar interior interval overlap' if interval else 'Unchanged Task33 strict edge hits',

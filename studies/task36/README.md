@@ -29,8 +29,19 @@ Some definitions were prepared but not run. The external candidate's `completed.
 Never infer completion from a definition filename. Use a new tag for every execution:
 
 ```powershell
-.\.venv\Scripts\python.exe -B tools/task36_research.py --action run --request studies/task36/definitions/Q02_LOCAL_SAFETY_G8.json --tag MY_FRESH_RUN
+.\.venv\Scripts\python.exe -B tools/task36_research.py --action run --request studies/task36/definitions/U01_INTERVAL_SAFE_G8.json --tag MY_FRESH_RUN
 ```
 
 Final selection, limitations and exact preservation identities belong in
 `docs/TASK36_RESULTS.md`. No Task35 operator, historical record or test is replaced.
+
+The later native-section audit exposed an edge-to-edge endpoint blind spot in the
+original strict triangle predicate. T02 remains an immutable research snapshot;
+`WITHDRAWN_VALIDATION.json` withdraws its exchange safety status. U01 uses the union
+of the original predicate and positive noncoplanar interior interval overlap.
+Do not treat earlier completion/zero counts as passing this supplemental audit.
+Final U01/W03 audits also test shared-vertex pairs for positive interior interval
+overlap. Coplanar and boundary-only/tangent contacts remain excluded; zero counts
+do not certify a fabrication-ready solid. W03 preserves the previous cap edge rule
+while increasing new-face coupling only on the body; it improves macro articulation
+but does not add detected child valleys at G7/G8 under the fixed material metric.

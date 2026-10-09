@@ -1,4 +1,4 @@
-# CHESHIRE execution paths — current index, 2026-10-09
+# CHESHIRE execution paths — current index, 2026-10-10
 
 Use this index for present work. Task reports, recipes, handoffs and `studies/` snapshots
 retain their research-time statements. The public COMPAS engine and later ArrayMesh
@@ -13,6 +13,13 @@ reference studies are separate supported paths; legacy operators are not replace
 | Frozen Task31 research | `tools/task31_study.py`, `tools/task31_evidence.py` | Task30 baseline + Task31 definitions/checkpoints → candidates, lead, proofs | Completed research; not a general design runner |
 | Task31 rendering/native review | `tools/task31_views.py`, `task31_native.ps1`, `task31_finish.py` | Saved geometry → renders/3DM/review package | Writes research artifacts; never rerun casually in completed directories |
 | Independent ALICE input | `tools/check_gate_exchange.py <NEW export> --probe-subdivision` | Canonical OBJ + manifest → validation and one bounded neutral probe | Small initial-input boundary, not Task31 continuation |
+| Task36 neutral recursive column | `tools/task36_research.py` + `studies/task36/definitions/U01_INTERVAL_SAFE_G8.json` | Constant square carrier → native triangles, quad/operator state, resolved controls and local safety masks | Opt-in research; see [results](TASK36_RESULTS.md), use a fresh tag and measured RAM guard |
+
+Task36 uses `bvh_interval` for its final candidate: original strict edge hits plus
+positive noncoplanar interior intersection intervals. Earlier Task36 experiment IDs
+containing `VERIFIED` do not establish current validity. T02's original exchange
+validation was withdrawn after actual section crossings were traced to missed edge
+endpoints. Existing historical operator/test behavior is preserved.
 
 ## Exact Task31 reproduction and preservation
 

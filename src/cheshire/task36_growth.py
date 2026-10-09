@@ -26,7 +26,7 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
          direction='normal', active=True, source='current', vertex_gain=0., vertex_memory=1., mode='interpolating',
          diagonal_tension=None, edge_tension=.5, vertex_tension=-.8,
          averaging_gain=1., stencil_gain=1., normal_gain=1., decompose=False,
-         cap_mode='fixed_xyz', ancestry_gain=1., surface='mean', normal_response='class_signed'):
+         cap_mode='fixed_xyz', ancestry_gain=1., surface='mean', normal_response='class_signed', cap_edge_tension=None):
     values=[face_gain,edge_gain,feedback,inherited_bias,vertex_gain,vertex_memory]
     if not np.isfinite(values).all() or not 0<=face_gain<=1 or not 0<=edge_gain<=1 or not 0<=feedback<=2 or not -1<=inherited_bias<=1:
         raise ValueError('Finite declared experimental parameter domain required.')
@@ -37,6 +37,7 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
     if cap_mode not in ('fixed_xyz','plane_only') or not np.isfinite(ancestry_gain) or not 0<=ancestry_gain<=1:raise ValueError('Declared boundary and ancestry policy required.')
     if surface not in ('mean','vf'):raise ValueError('Declared native surface required.')
     if normal_response not in ('class_signed','face_outward','face_geometry','all_geometry'):raise ValueError('Declared normal response required.')
+    if cap_edge_tension is not None and (not np.isfinite(cap_edge_tension) or not -2<=cap_edge_tension<=2):raise ValueError('Declared cap edge stencil domain required.')
     if direction not in ('normal','radial') or source not in ('current','rest'):
         raise ValueError('Explicit direction and geometric source required.')
     if mode=='coupled' and direction!='normal':raise ValueError('Coupled reference placement uses current normals; radial override is unsupported.')
@@ -98,6 +99,7 @@ def step(mesh, *, face_gain=.25, edge_gain=.08, feedback=.5, inherited_bias=.4,
           wp=vertex_gain*radius_vertex/np.maximum(f['sv'],1e-12),
           w3=ancestry_gain*inherited_bias*np.tanh(1+face_bend),w4=ancestry_gain*(-.3*np.tanh(face_bend) if diagonal_tension is None else np.full(nf,diagonal_tension)),
           w1=np.full(ne,edge_tension),w2=np.full(nv,vertex_tension))
+        if cap_edge_tension is not None:controls['w1'][fixed_edge]=cap_edge_tension
         if normal_response=='face_outward':controls['wf']*=-1
         elif normal_response in ('face_geometry','all_geometry'):controls['wf']*=-np.tanh(2*face_contrast)
         if normal_response=='all_geometry':

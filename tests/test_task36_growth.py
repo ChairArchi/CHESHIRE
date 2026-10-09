@@ -109,3 +109,17 @@ def test_normal_response_records_actual_controls_and_changes_placement(response)
     assert np.max(abs(a.xyz-b.xyz))>1
     assert 'resolved_wf' in op and np.isfinite(op['resolved_wf']).all()
     assert np.any(op['resolved_wf']>0)
+
+
+def test_body_edge_coupling_preserves_caps_that_global_change_inverts():
+    from cheshire.task36_growth import quick_integrity
+    params=dict(mode='coupled',face_gain=.18,edge_gain=.15,feedback=.5,inherited_bias=-.6,
+        vertex_gain=.3,vertex_memory=.2,diagonal_tension=1.6,edge_tension=.5,vertex_tension=-2,
+        decompose=True,averaging_gain=0,cap_mode='plane_only',surface='vf',stencil_gain=.65,
+        normal_gain=.65,normal_response='all_geometry')
+    global_mesh=carrier();body_mesh=carrier()
+    for _ in range(4):
+        global_mesh,_=step(global_mesh,**params)
+        body_mesh,_=step(body_mesh,**params,cap_edge_tension=-.7)
+    assert quick_integrity(global_mesh)['reversed_or_degenerate_cap_triangles']>0
+    assert not any(quick_integrity(body_mesh).values())
