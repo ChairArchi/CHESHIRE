@@ -4,15 +4,26 @@
 
 CHESHIRE is a standalone deterministic computational design engine for transforming arbitrary polygon meshes through explicit, traceable rules. Its long-term aim is to measure geometric and topological attributes, map them into scalar fields, select and apply transformation rules, inherit provenance and tags, and iterate. It is independent from ALICE and has no dependency on it.
 
-**Status:** early experimental research software.
+**Status:** experimental research software. Task33 studies deep nested folds and
+converging/diverging ridge paths on the original gate carrier. See its
+[native evidence and results](docs/TASK33_RESULTS.md) and
+[local causal diagnosis](docs/TASK33_DIAGNOSIS.md). This is a separate, carrier-specific
+research path; existing algorithms, legacy replay and Task31/32 verdicts remain unchanged.
 
-Task 17 adds an isolated weighted Doo-Sabin capability study and the opt-in
-Rhino **SubdivisionCapabilityStudy** comparison. Angular family structures are
-a partial result; convincing stable macro → meso → micro hierarchy remains
-unresolved. See [actual results](docs/TASK17_RESULTS.md) and
-[reference/API choices](docs/TASK17_REFERENCE.md).
+Task32 adds opt-in relational morphology experiments, native checkpoint recovery,
+and geometry contact audits. Its [research results](docs/TASK32_RESULTS.md) are
+**PARTIAL**: controlled parent–child geometry is demonstrated, while rich
+Macro–Meso–Micro ornament remains unresolved. The full Task31 state is preserved.
 
-Pipeline:
+Start with [current execution paths](docs/CURRENT_PATHS.md),
+[the small ALICE gate exchange](docs/GATE_EXCHANGE_V1.md), and
+[preservation/consolidation results](docs/CONSOLIDATION_20261009.md).
+Task31 runs through its separate research tools/API, not a new Rhino launcher default.
+The earlier Task17 **SubdivisionCapabilityStudy** remains supported; its
+[results](docs/TASK17_RESULTS.md) and [reference choices](docs/TASK17_REFERENCE.md)
+are historical records.
+
+Compatibility API pipeline (Tasks 01–08; later reference studies are separate):
 
 **Mesh → Measure → Map → Rule → Budget → Transform → Inherit → Repeat**
 
@@ -160,7 +171,7 @@ inherited = inherit_fields(
 
 ## Future backend contract
 
-Any future topology-changing backend (COMPAS, Mola, or another implementation) must return both the resulting mesh and lineage sufficient for CHESHIRE inheritance, identifying child vertex/face keys and their weighted parent keys in the input mesh. A topology-preserving transform can use `identity_lineage(output_mesh)` when keys remain unchanged. CHESHIRE uses lineage to inherit semantic and continuous fields while marking geometry-derived measurements for recomputation. The COMPAS quad adapter below implements one such operation; no backend framework, Mola integration, or Repeat loop is implemented.
+Any future topology-changing backend (COMPAS, Mola, or another implementation) must return both the resulting mesh and lineage sufficient for CHESHIRE inheritance, identifying child vertex/face keys and their weighted parent keys in the input mesh. A topology-preserving transform can use `identity_lineage(output_mesh)` when keys remain unchanged. CHESHIRE uses lineage to inherit semantic and continuous fields while marking geometry-derived measurements for recomputation. The COMPAS quad adapter below implements one such operation; this original adapter does not supply a backend framework or general Repeat loop. Optional Mola and later study implementations are indexed in docs/CURRENT_PATHS.md.
 
 ## One-step global quad subdivision
 
@@ -214,7 +225,7 @@ Run the four fixed composition cases:
 
 Using the original `Box(2,2,2)` and freshly mapped normalized height, Case A (two subdivisions) and Case C (zero displacement between them) finish at 98 vertices / 96 faces. Case B's strength `0.01` displacement moves 17 vertices and produces 20 nonplanar quads: strict mode still rejects face 10, while explicit bilinear subdivision succeeds at 98/96. Case D adds fresh measurement/mapping, a second strength `0.01` displacement moving 73 vertices, and another bilinear subdivision, reaching 386/384. Every stage checks immutable inputs, finite output, immediate-parent coverage, continuous/categorical inheritance, and fresh measurements. The example reports policies, strengths, counts, rejection reasons, nonplanarity, and maximum sampled parent/child patch comparison error. It exports five small OBJ files to ignored `output/task07_1/`.
 
-This policy certifies only conservative local admissibility. It does not certify intersections between faces, global collision freedom, fabrication suitability, or enclosed volume. A viewer's triangulated OBJ display may differ from the chosen bilinear surface. Measurements and displacement normals still use the existing COMPAS methods, without exact bilinear-surface integration. These four explicit sequences are Task 07.1 diagnostic examples. A general Repeat engine and Mola integration remain unimplemented; the Task 08 Rhino entry point is described below.
+This policy certifies only conservative local admissibility. It does not certify intersections between faces, global collision freedom, fabrication suitability, or enclosed volume. A viewer's triangulated OBJ display may differ from the chosen bilinear surface. Measurements and displacement normals still use the existing COMPAS methods, without exact bilinear-surface integration. These four explicit sequences are Task 07.1 diagnostic examples. This Task07.1 example is not a general Repeat engine. Optional Mola paths and the Task08 Rhino entry point are described below.
 
 ## Rhino mesh-grammar experiment (Task 08)
 
