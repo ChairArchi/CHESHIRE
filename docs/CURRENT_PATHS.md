@@ -88,7 +88,7 @@ frozen recipes are unchanged. [Results](TASK33_RESULTS.md) and
 [diagnosis](TASK33_DIAGNOSIS.md) distinguish measured facts from hypotheses.
 
 ```powershell
-.\.venv\Scripts\python.exe -B tools/task33_research.py --action run --request studies/task33/definitions/depth_binding_gate.json --tag MY_NEW_GATE
+.\.venv\Scripts\python.exe -B tools/task33_research.py --action run --request studies/task33/definitions/coherent_transport_gate.json --tag MY_NEW_GATE
 ```
 
 Every tag must be fresh. Outputs go to `E:/CHESHIRE_DATA/task33`; the runner
@@ -102,7 +102,11 @@ in the external Task33 `definitions` directory. Full validation and an
 explicit mirrored triangle checkpoint precede the separate `deliver` OBJ
 exchange. Native checkpoints remain authoritative for replay.
 
-The reference `nested_notch_control.json` retains constant longitudinal fold
+The recommended `coherent_transport_gate.json` keeps fine notches on the same
+parent-directed displacement ray as meso folds (mix 0.15). A larger tested mix
+0.30 failed the full contact diagnostic; the parameter bound is not a safety
+guarantee. `depth_binding_gate.json` retains the separately verified zero-mix
+control. The reference `nested_notch_control.json` retains constant longitudinal fold
 height; `strong_binding_ablation.json` is an aggressive comparison, not the
 recommended starting recipe. Fine amplitude may not exceed meso amplitude in
 notch mode. No remote publishing or repository/package rename is involved.
