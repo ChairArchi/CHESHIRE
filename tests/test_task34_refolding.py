@@ -20,7 +20,7 @@ def seed():
 
 
 def test_native_closed_and_both_symmetry_planes():
-    for kind in ['uniform','jointed','splayed']:
+    for kind in ['uniform','jointed','splayed','curved_uniform','curved_jointed']:
         s=carrier(template(),kind);m,c,_=native(s,0);topology(m)
         result=symmetry(m,c,check_faces=True)
         assert max(d['geometry_max'] for d in result.values())<1e-9

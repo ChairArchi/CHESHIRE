@@ -69,7 +69,7 @@ def run(request,tag):
                 checkpoint(source_stage,source,generation,dict(operation='Frozen first-formation geometry, resampled without refolding.'),frozen_parent);frozen_parent=source_stage
             state,controls,features=refold(state,source,request.get('refold',{}));after=job/f'G{generation}_FOLD'
             flat=[f for row in features for f in row]
-            summary=dict(operation='Read actual source edge polylines, parent crest width/prominence/curvature and longitudinal shape, then notch within measured crests.',
+            summary=dict(operation='Read actual source edge polylines, crest width/prominence/curvature and longitudinal shape, then apply the explicitly requested crest operation.',
                 criterion=criterion,source_stage=str(source_stage),source_mesh_sha256=sha(source_stage/'mesh.npz'),requested=request.get('refold',{}),
                 actual_requested_range=[float(controls['requested_radial'].min()),float(controls['requested_radial'].max())],
                 actual_applied_range=[float(controls['applied_radial'].min()),float(controls['applied_radial'].max())],
@@ -145,8 +145,8 @@ def planar(request,tag):
 
 
 def deliver(request,tag):
-    import task33_deliver
-    task33_deliver.ROOT=ROOT;task33_deliver.deliver(request['candidate'],tag)
+    import task34_exchange
+    task34_exchange.deliver(request['candidate'],tag)
 
 
 def baseline(request,tag):

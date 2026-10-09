@@ -110,3 +110,32 @@ control. The reference `nested_notch_control.json` retains constant longitudinal
 height; `strong_binding_ablation.json` is an aggressive comparison, not the
 recommended starting recipe. Fine amplitude may not exceed meso amplitude in
 notch mode. No remote publishing or repository/package rename is involved.
+
+## Task34: generated geometry becomes the next control source
+
+Use [Task34 results](TASK34_RESULTS.md) for the separate, finite structured-gate
+study. Task33 V01 at `767c5e1` stays frozen. Task34 supports its declared
+elliptical carriers only, with both LR and FB reflection and explicit native
+triangles. It is not an arbitrary-mesh solver or a Rhino launcher default.
+
+```powershell
+.\.venv\Scripts\python.exe -B tools/task34_research.py --action run --request studies/task34/definitions/refold_gate.json --tag MY_NEW_TASK34_GATE
+```
+
+Every tag must be new. Outputs go to `E:/CHESHIRE_DATA/task34`. N04's macro
+formation is G3, its first geometry-responsive fold is G4, and its next fold
+is G6; G5 is sampling only. `surface_normal_gate.json` instead folds at G4/G5
+and samples at G6. Its native source includes measured triangle normals.
+`current_control.json` and `frozen_control.json` form the valid causal pair.
+The two `failed_*.json` recipes are retained counterexamples, not safe presets.
+
+The runner retains mesh/classes/rest/anchors, formation and material state,
+operator vertex stencils and two-face contributors, requested/applied controls,
+actual source-edge features, source snapshots and SHA-linked parents.
+`audit`, `render`, `planar` and `deliver` accept explicit requests as documented
+in the results. Full export validation must precede OBJ delivery. Parameter
+bounds and a previously valid recipe do not guarantee another sampling is valid.
+`task34_analyze.py` measures actual cuts, finite feature matches and causal
+comparisons; `task34_plot.py` uses the declared `study-plots` extra. The local
+study reused ALICE's installed Matplotlib environment read-only.
+`task34_recover.py` tests an independent bundle clone and full native NPZ replay.
