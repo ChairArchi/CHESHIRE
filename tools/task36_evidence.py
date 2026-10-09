@@ -23,11 +23,12 @@ def cycles(tri):
 
 
 def symmetry(mesh):
-    tree=cKDTree(mesh.xyz);tri=mesh.faces[:,:3];original=cycles(tri);result={}
+    tree=cKDTree(mesh.rest);tri=mesh.faces[:,:3];original=cycles(tri);result={}
     for name,matrix in [('X',np.diag([-1,1,1])),('Y',np.diag([1,-1,1])),('QUARTER_TURN',np.array([[0,-1,0],[1,0,0],[0,0,1]]))]:
-        distance,ids=tree.query(mesh.xyz@matrix.T);mapped=ids[tri]
+        material_distance,ids=tree.query(mesh.rest@matrix.T);mapped=ids[tri]
+        distance=np.linalg.norm(mesh.xyz@matrix.T-mesh.xyz[ids],axis=1)
         if np.linalg.det(matrix)<0:mapped=mapped[:,[0,2,1]]
-        result[name]=dict(geometry_max=float(distance.max()),bijective=len(np.unique(ids))==len(ids),oriented_face_cycle_failures=int(np.count_nonzero(np.any(cycles(mapped)!=original,axis=1))))
+        result[name]=dict(geometry_max=float(distance.max()),material_match_max=float(material_distance.max()),bijective=len(np.unique(ids))==len(ids),oriented_face_cycle_failures=int(np.count_nonzero(np.any(cycles(mapped)!=original,axis=1))))
     return result
 
 
@@ -37,8 +38,11 @@ def audit(request,tag):
         from task36_contacts import contacts as contact_check
     dest=ROOT/'validation'/tag;dest.mkdir(parents=True,exist_ok=False);write_new(dest/'request.json',request);rows=[]
     for item in request['items']:
-        start=perf_counter();stage=Path(item['stage']);mesh=load_mesh(stage)
-        value=dict(**item,mesh_sha256=sha(stage/'mesh.npz'),embedding=embedding(mesh),symmetry=symmetry(mesh),contacts=contact_check(mesh))
+        from hero_design_sprint import windows_memory
+        start=perf_counter();stage=Path(item['stage']);summary=json.loads((stage/'summary.json').read_text());memory=windows_memory();forecast=536870912+summary['faces']*1800
+        if memory['status']!='MEASURED' or forecast>min(12*1024**3,.55*memory['available_bytes']):raise MemoryError('Audit forecast exceeds measured reserve.')
+        mesh=load_mesh(stage)
+        value=dict(**item,mesh_sha256=sha(stage/'mesh.npz'),embedding=embedding(mesh),symmetry=symmetry(mesh),contacts=contact_check(mesh),forecast_bytes=forecast,available_before=memory)
         fixed=(mesh.rest[:,2]==0)|(mesh.rest[:,2]==4000)
         value['end_plane_z_error']=float(np.max(np.abs(mesh.xyz[fixed,2]-mesh.rest[fixed,2])))
         value['endcap_xy_displacement']=float(np.max(np.abs(mesh.xyz[fixed,:2]-mesh.rest[fixed,:2])))
