@@ -1,0 +1,70 @@
+{
+  "candidate": "D_RETURN",
+  "generation": 2,
+  "branch_from": "Preserved Task33 G6 material carrier, before D_R2 depth amplification and extra torsion",
+  "sources": {
+    "mesh.npz": "local-asset:task33/candidates/V01_COHERENT_TRANSPORT/G6_FOLD/mesh.npz",
+    "material_state.npz": "local-asset:task33/candidates/V01_COHERENT_TRANSPORT/G6_FOLD/material_state.npz",
+    "summary.json": "local-asset:task33/candidates/V01_COHERENT_TRANSPORT/G6_FOLD/summary.json"
+  },
+  "source_hashes": {
+    "mesh.npz": "9cca9915b3ba0554f18b582032f191e7db331d70551a4176d81a874d0cab3adb",
+    "material_state.npz": "87e2b8b0c4b5437881bc9e8d7154fb2a75cf1ea0c7bf2062414cc28909dfc20d",
+    "summary.json": "9fab1e180a369b595195530eeb7b2de72a74b83ae9cb7341dd266413164842b7"
+  },
+  "operations": [
+    "Unmodified cheshire.task33_folds.evaluate, levels=3, paired scalar controls BEFORE deformation",
+    "Existing continuous neck/width/fan/depth convergence and transported meso-notch controls",
+    "Authored composition-specific one-half section return and arch lattice",
+    "Opposite half reflected in construction, no averaging"
+  ],
+  "existing_fold_parameters": {
+    "windowed": true,
+    "child_floor": 0,
+    "lobes": 1.6,
+    "convergence": 0.54,
+    "amplitudes": [
+      250,
+      260,
+      100
+    ],
+    "twist": 0.68,
+    "neck_locations": [
+      0.14,
+      0.285,
+      0.44
+    ],
+    "child_frequency_variation": 2,
+    "parent_gate_power": 2,
+    "child_phase_shift": 3.141592653589793,
+    "fine_mode": "meso_notch",
+    "micro_slope_scale": 12,
+    "paired_controls": true,
+    "depth_convergence": 0.74,
+    "child_direction_mix": 0.3,
+    "transport_fine_with_child": true,
+    "neck_span": 0.047,
+    "waist": 0.18,
+    "twist_start": 0.25,
+    "twist_end": 0.405
+  },
+  "normalization": {
+    "origin": [
+      -400.036865234375,
+      -22.452826409155705,
+      0.0
+    ],
+    "source_height": 3452.737185439934,
+    "display_scale": 12,
+    "fixed_to": "D_R2"
+  },
+  "original_evaluator_reflection_error": 2.0337416284171585e-12,
+  "constructed_reflection_error_model_units": 0.0,
+  "original_vertices": 311298,
+  "original_quads": 311296,
+  "topology_changed": false,
+  "new_subdivision_applied": false,
+  "new_shells": false,
+  "recipe_sha256": "9a3b3f41b9de087f231738b462753b1a90786f2996d4ffa0e9423c273c84ae4a",
+  "classification": "DESIGN_EXPLORATION_NOT_FABRICATION_CERTIFIED"
+}

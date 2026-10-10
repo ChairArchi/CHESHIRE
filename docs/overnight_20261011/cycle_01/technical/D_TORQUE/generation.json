@@ -1,0 +1,23 @@
+{
+  "candidate": "D_TORQUE",
+  "revision": 1,
+  "source_actual_checkpoint": "local-worktree:scratch/d_architecture_20261011_03/results/D_RETURN/G02/geometry.npz",
+  "source_sha256": "988dfc93f75755514fa33e18ad46c4744b06c48e927b2e907538badbafef1b48",
+  "source_type": "RETURN G2 actual mesh",
+  "operations": [
+    "Preserved existing fluted whole body, no new rib generation",
+    "Authored finite horizontal section rotations and continuous local section proportions",
+    "Continuous binding/expansion follows the same attached support",
+    "One-half construction reflected into existing paired indices, no XYZ averaging"
+  ],
+  "parameter_scope": "Composition-specific mesh modelling, not a change to the Task33 twist parameter or its limit. Exact profile and pivots in immutable recipe.",
+  "maximum_additional_section_rotation_radians": 0.8904949919877481,
+  "constructed_reflection_error_model_units": 0.0,
+  "vertices": 311298,
+  "quads": 311296,
+  "topology_changed": false,
+  "new_subdivision": false,
+  "new_shells": false,
+  "recipe_sha256": "38cf1444fff0db664700cfc42806c4fce74e1e31f8dffc76815126b014cdc46e",
+  "classification": "DESIGN_EXPLORATION_NOT_FABRICATION_CERTIFIED"
+}

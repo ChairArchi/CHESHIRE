@@ -1,0 +1,36 @@
+{
+  "path": "local-worktree:scratch/d_articulation_20261011_05/results/D_TORQUE/R01/gate_exploration.ply",
+  "sha256": "3295f41251df7659b6935b1a93953bd1f1e1e33378c0c912dd190bb052c39cf9",
+  "vertices": 311298,
+  "triangles": 622592,
+  "components": 1,
+  "component_face_sizes": [
+    622592
+  ],
+  "finite": true,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "zero_area_triangles": 0,
+  "minimum_triangle_area": 3.053240655582599e-05,
+  "watertight": true,
+  "winding_consistent": true,
+  "signed_volume": 129.17094579526477,
+  "bounds": [
+    [
+      -6.433630466461182,
+      -2.196927070617676,
+      0.0
+    ],
+    [
+      6.433630466461182,
+      1.9676393270492554,
+      14.077320098876953
+    ]
+  ],
+  "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+  "cgal_first_intersection_pairs": 0,
+  "cgal_witness_triangle_ids": [],
+  "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+  "elapsed_seconds": 3.9448537826538086,
+  "geometric_fabrication_status": "NOT_CERTIFIED"
+}

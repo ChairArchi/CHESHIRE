@@ -1,0 +1,43 @@
+{
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "samples": 32,
+  "resolution": [
+    1200,
+    1200
+  ],
+  "camera_target": [
+    0,
+    0,
+    6.5
+  ],
+  "orthographic_scale": 17.5,
+  "positions": {
+    "front": [
+      0,
+      38,
+      6.5
+    ],
+    "oblique": [
+      -25,
+      36,
+      21
+    ],
+    "side": [
+      -38,
+      0,
+      6.5
+    ],
+    "rear": [
+      0,
+      -38,
+      6.5
+    ]
+  },
+  "geometry_modifiers": [],
+  "material": "Uniform untextured mineral; flat geometric normals",
+  "rendered_objects": [
+    "D_CONFLUX"
+  ],
+  "source": "Actual exported/saved mesh only; no AI generated imagery, added decoration, ground, or image retouching"
+}

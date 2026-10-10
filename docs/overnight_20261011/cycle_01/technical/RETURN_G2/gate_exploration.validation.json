@@ -1,0 +1,36 @@
+{
+  "path": "local-worktree:scratch/d_architecture_20261011_03/results/D_RETURN/G02/gate_exploration.ply",
+  "sha256": "106a0c966eab92805a874507cc4cf7327bc6779dd308c3fbf39635cd4820af1f",
+  "vertices": 311298,
+  "triangles": 622592,
+  "components": 1,
+  "component_face_sizes": [
+    622592
+  ],
+  "finite": true,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "zero_area_triangles": 0,
+  "minimum_triangle_area": 3.053240655582599e-05,
+  "watertight": true,
+  "winding_consistent": true,
+  "signed_volume": 130.5577076692683,
+  "bounds": [
+    [
+      -6.218104839324951,
+      -2.2110984325408936,
+      0.0
+    ],
+    [
+      6.218104839324951,
+      2.315438985824585,
+      14.077320098876953
+    ]
+  ],
+  "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+  "cgal_first_intersection_pairs": 0,
+  "cgal_witness_triangle_ids": [],
+  "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+  "elapsed_seconds": 3.1640424728393555,
+  "geometric_fabrication_status": "NOT_CERTIFIED"
+}

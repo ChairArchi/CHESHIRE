@@ -1,0 +1,21 @@
+{
+  "declared_before_final_generation": "2026-10-11",
+  "design_mesh_export": [
+    "finite vertices",
+    "actual polygons and saved mesh",
+    "reload OBJ and PLY",
+    "single principal architectural opening visibly unobstructed"
+  ],
+  "geometric_fabrication_prerequisites": [
+    "one connected component after all intended joins",
+    "zero boundary edges",
+    "zero nonmanifold edges",
+    "zero zero-area triangles",
+    "consistent outward winding",
+    "zero CGAL self intersection pairs on complete first-only detection",
+    "closed planar bearing surfaces and suitable local thickness"
+  ],
+  "distinction": "Passing export or topology does not prove fabrication. Separate thickened decorative shells with interpenetration are exploration assemblies. No structural/material/scale verification is implied.",
+  "failures": "Record exact findings; do not silently remove components, repair, relax tolerances, or certify unsampled checks. Retain failed branches.",
+  "CGAL_scope": "Existing libigl.copyleft.cgal.remesh_self_intersections(detect_only=True, first_only=True). Nonzero is a confirmed failure; it is not an exhaustive intersection count."
+}

@@ -1,0 +1,1909 @@
+{
+  "schema": "cheshire.review-handoff.v1",
+  "cycle": 1,
+  "max_total_design_cycles": 3,
+  "created_utc": "2026-10-10T21:44:38.895922+00:00",
+  "repository": "ChairArchi/CHESHIRE",
+  "target_branch": "review/cheshire-overnight-20261011",
+  "base_commit": "66c6a3404ad042830709e7c923c7cd5d8464d07f",
+  "local_locator_scope": "Paths relative to the preserved gate-synthesis-20261011 design worktree. Not available in a fresh public checkout unless explicitly listed under published_files.",
+  "local_delivery_directory": "outputs/d_articulation_20261011_05",
+  "local_archive": "outputs/CHESHIRE_D_ARTICULATION_20261012.zip",
+  "selected_candidates": {
+    "D_TORQUE": "R01",
+    "D_KNUCKLE": "R02",
+    "D_CONFLUX": "R01 (stopped for upper mass regression)"
+  },
+  "geometry_status": "Four actual native meshes passed unchanged geometry checks; no fabrication certification",
+  "execution_status": "Cycle 01 complete. Upload and issue handoff only; scheduling excluded by current instruction. Stop after handoff.",
+  "published_files": [
+    {
+      "path": "OVERNIGHT_STATUS.md",
+      "bytes": 9972,
+      "sha256": "4656da2d0e38ec6ec21cf84cfe77d44375dd50b95281f9ebc8a64076a806e221",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 357,
+      "sha256": "4496249208921558b2fa802515de69cf3e8fe3c816903a2acaccd35d75008b78",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/central_crown_comparison.json",
+      "bytes": 1634,
+      "sha256": "7392e76bb9f20ae4868384249020424d86dbc086381778e3237cc08ff0e26bff",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/code/operations_R01.py",
+      "bytes": 2310,
+      "sha256": "921f95a54958f72612f2fe41ec34b7dd238caede229b20f0050ea14d598af6ab",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/code/operations_R02.py",
+      "bytes": 2962,
+      "sha256": "72218f04164911205452a66e05b3c56b6dec83673b36c357dc96fb477fab858a",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/01_front_comparison.jpg",
+      "bytes": 268424,
+      "sha256": "88d8c43170a4a06af3109f58b00d7beecd9c0f43c13c3a15e859f5adb6953678",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/02_three_views.jpg",
+      "bytes": 519737,
+      "sha256": "ab0960ce1fcb8172bfb1834ca34711fd1a600f7c5e451f293aef1b19cbb8b2b4",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/03_rotation_flow.jpg",
+      "bytes": 425744,
+      "sha256": "ad895d35dc0085f17fe5acea3cd9abe43b63378ce3b91b93d3007ac3614ddd95",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/04_knuckle_generations.jpg",
+      "bytes": 254875,
+      "sha256": "8a066663b5dccfa9dc1498432d6216fde5b4a7dee7431169e36dd12e4317b849",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/05_meso_comparison.jpg",
+      "bytes": 281949,
+      "sha256": "69d4c4a17952e1b08a1109fa44f21fb35421d3c6898c4313bcb9152a7ea30100",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/06_passage_comparison.jpg",
+      "bytes": 292110,
+      "sha256": "a77be739d5cda23c54aa854c8d367e1b98344fcf316837737f309dd33fb467c4",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/07_preserved_references.jpg",
+      "bytes": 303429,
+      "sha256": "623b73355c33c1b838c570e14c1b1b6f563499930e5fc7c8cb65ab4f0df27fc0",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/08_actual_sections.jpg",
+      "bytes": 428719,
+      "sha256": "2e1f004b1bbe0ce18eaaad2b6f45bbcf470d33eb32dc33400a5f788a06bb11b6",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/front.jpg",
+      "bytes": 52985,
+      "sha256": "82f9fda826a3b3a067fec35e7b4c50e0b6aa72234503dfd5f4ec97203a092eec",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/meso_detail.jpg",
+      "bytes": 57442,
+      "sha256": "a1c919f2ac23188be534625b19e3bbf70d4a5e552e9a76ef9b3ac51dcba9d958",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/oblique.jpg",
+      "bytes": 48256,
+      "sha256": "926de18fbf33be2ce528f01906fedc7c1bfb1bb676516c5e8f2e5a6aed71e92c",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/passage.jpg",
+      "bytes": 60015,
+      "sha256": "c8a557576268edf544e336dd3b4456e5ee2cd5d6b38abbb2ecff4dd0fa7245ce",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/rear.jpg",
+      "bytes": 54921,
+      "sha256": "f82ab632c8ba2e3a320399f767c12d111d6b99a0152742886b48ce066aef16c2",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/side.jpg",
+      "bytes": 30494,
+      "sha256": "b0268c30d8d3a8c224b2a490027ff9484f61cd354f8984901b4a9626eb7689a7",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/front.jpg",
+      "bytes": 52085,
+      "sha256": "1d9315849397ee307769bed7f90e862535d777eafca6fb70a773f7be891a1cb2",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/meso_detail.jpg",
+      "bytes": 58563,
+      "sha256": "49eb50beee2b1c9cfd1b227510ed9eafadd174354cecb0490c3ff6365aef76d3",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/oblique.jpg",
+      "bytes": 47669,
+      "sha256": "15dfb1294825ff22d8db83958ccfbdac4386bbdd0884663f92e00fd129bf85ad",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/passage.jpg",
+      "bytes": 58344,
+      "sha256": "1ff0f43744c2e9c301a64a0a15c962442c76ac0884f73af29b8e1e26572065ca",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/rear.jpg",
+      "bytes": 51191,
+      "sha256": "119d7ba0de21ce3d3705405fd4a2f2fea689e29d8876cf176c9bb5ec01917ec6",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/side.jpg",
+      "bytes": 28512,
+      "sha256": "11c524b2e24998e154cd1a22d509fcd475b4f9c9cf055b915893d5bc90223fdf",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_R2/front.jpg",
+      "bytes": 61877,
+      "sha256": "ea1605afed6771a0627cd298f5a260da1579c6487f7433c47604c2c1dd5622f9",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_R2/oblique.jpg",
+      "bytes": 56593,
+      "sha256": "52d2dbc5aff077749ea21189459ac99cc9edf7a5090646c1c0413521d7c07603",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_R2/side.jpg",
+      "bytes": 33296,
+      "sha256": "63d9bc79da573823d91e0f9887bfdcf145bff3d1ccf5204f87fa14311649f2cc",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/front.jpg",
+      "bytes": 54256,
+      "sha256": "206b777101394a7151c73ce2bd2cbb85387a20d345e6d94fcf7946f6b2f7f268",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/meso_detail.jpg",
+      "bytes": 61035,
+      "sha256": "b7798bc4541fc4d830fd0937e1d8aad8dfc29dcea6dcf366182876c2003e791c",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/oblique.jpg",
+      "bytes": 50175,
+      "sha256": "61dbfe0e8d5c19c7ed52ab4d75f20088757b077ca0443c5f8f73438cec1e7208",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/passage.jpg",
+      "bytes": 61434,
+      "sha256": "6358abb922463ba1ed3649f94ebb2e1f97a2149e94bb61df3a6bc7f5257731ee",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/rear.jpg",
+      "bytes": 54397,
+      "sha256": "850f883845a28de8dc5e62c2877a2220e4e36b8242cbbb9294ddee4ecd984abf",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/side.jpg",
+      "bytes": 30320,
+      "sha256": "2c63a906aecf3aee90915c3e5464e21cffd52a76778896e1b8ec07813e25bbcd",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/INFLECT_G4/front.jpg",
+      "bytes": 52501,
+      "sha256": "ccf0dcd3487dad27ad7070130c236dc43577ce9384f97afa0ccc8ab611cf6798",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/KNUCKLE_R01/front.jpg",
+      "bytes": 53121,
+      "sha256": "68d79a30c3db27a8cfd40f51997165c158fa0e76c2f2bab648cb01a8474d92dc",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/LINK_G2/front.jpg",
+      "bytes": 54371,
+      "sha256": "cc90a60908bbd02dc064b477caf4efe16bcbc537857ea3cfb1915d3e7109cc2d",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/LINK_G2/oblique.jpg",
+      "bytes": 46850,
+      "sha256": "8b1f8e633532a4b60b075aaa956a5317e6b0b698041702430f6177157308f8de",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/LINK_G2/side.jpg",
+      "bytes": 28292,
+      "sha256": "1a8357d5036f1644909a9b8b14a44cdbf7a43113bcfff805ccc8d1c8ce2982a2",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/front.jpg",
+      "bytes": 55895,
+      "sha256": "d9edd296f436a90f49b09c3fe0edcb1bf4a9f11f6f50a771943bb0ecfa91b40f",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/meso_detail.jpg",
+      "bytes": 57905,
+      "sha256": "7c63c9bb24994acb0c1b0e1f15a60cf2c4590bfe94c9af8f548c2a6ac587f260",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/oblique.jpg",
+      "bytes": 46982,
+      "sha256": "f7ffdfd5579905d73b4a6ff15187fa6a8012867ba49d33af2c5964974627b830",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/passage.jpg",
+      "bytes": 64198,
+      "sha256": "30688b4cc219736e1b4013ce92a40f6621fe634185ca23b1fd958a8cd26913a8",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/rear.jpg",
+      "bytes": 54825,
+      "sha256": "ca78b680d58f0cd06048df99e0abf02ec1e1218c8346468b75a5b6aa30e9a77a",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/side.jpg",
+      "bytes": 28684,
+      "sha256": "5e72a9fd8d6aab9f1add2325a0f410bca1826daa1460761e1bd6fb3816c68bd0",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/material_ring_orientation.csv",
+      "bytes": 3304,
+      "sha256": "ca4bf52f15f1b147151f0361ba97eb6a3f3a10e02668bc0e2482a55b410850b8",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/REPORT.txt",
+      "bytes": 4471,
+      "sha256": "9246f60bc0f666bebf10dd31b2ee3f1eb409caa2686db69f670a85425ba8a717",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/section_comparison.csv",
+      "bytes": 7125,
+      "sha256": "cce0831157d286151135fb6696a096efd68347525baaad470f01b55ba514ea20",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/checkpoint_replay.json",
+      "bytes": 493,
+      "sha256": "72162ccfebf8fb3ea77dc1a62d246f5fda867b981358872967cb50de31134167",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_CONFLUX/architectural_measurements.json",
+      "bytes": 6797,
+      "sha256": "9b19a2d139395c7bbc4c5da7795e35dfdcb918a7463344a6c45036455a41d7e8",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_CONFLUX/gate_exploration.validation.json",
+      "bytes": 1120,
+      "sha256": "e0820ce917d555d8dbb7acdbcb1a2f16f232fa3cf6f6ec2bd83bbd3c000a670d",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_CONFLUX/generation.json",
+      "bytes": 1175,
+      "sha256": "f5637e45d6b391d707ca9b6b67f752959f897813859182b8376cdd89e6de0324",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_CONFLUX/meso_evidence.json",
+      "bytes": 6401,
+      "sha256": "b2317fb9fcf3668522a441cd9a4391a61f49dd8a25709796236e5f5ab7f24272",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_CONFLUX/render_receipt.json",
+      "bytes": 683,
+      "sha256": "c584396b07c6aa1fd23004a7d3b550488e3ead1984e7bcc334d5d5edb26fe682",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_KNUCKLE/architectural_measurements.json",
+      "bytes": 6793,
+      "sha256": "fef33af6fbc058966d7b5eeddbc72537163cc6fcc706b42d9b7f806621f01c2c",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_KNUCKLE/gate_exploration.validation.json",
+      "bytes": 1122,
+      "sha256": "139673ab997f293f1b39ccd101d385b6835682a8e6597036241a2511630aec98",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_KNUCKLE/generation.json",
+      "bytes": 1185,
+      "sha256": "d876b1d7a3911ebcbc13705df943f31afcca03e2e1b16200f2d83b172e63a005",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_KNUCKLE/meso_evidence.json",
+      "bytes": 6420,
+      "sha256": "12b16c1ff2d83c94d1fe469e7a031fb19feb589ebc65d8d999bdba54b34c7b26",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_KNUCKLE/render_receipt.json",
+      "bytes": 683,
+      "sha256": "c3c3b4fc5dfce8468f4bfc4195f52dca633be8f58b0b3c39b23ca971b37c9777",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_TORQUE/architectural_measurements.json",
+      "bytes": 6791,
+      "sha256": "7508634addd492c7818a7adbf7856ecee9738249c137439275ea46cb9683af1d",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_TORQUE/gate_exploration.validation.json",
+      "bytes": 1121,
+      "sha256": "2be803cde5ba8d91245ac73bb7cb639646a0a02a577994fcc0e06b558e1afe86",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_TORQUE/generation.json",
+      "bytes": 1190,
+      "sha256": "50aad48f731fb724762ae56061b19f02dd6d9b34bf420adca1d511b22c6d6cb4",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_TORQUE/meso_evidence.json",
+      "bytes": 6416,
+      "sha256": "831e934764a90b92c8acf69b754c23109df67238e70448f0a41037aa05d8a8c6",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/D_TORQUE/render_receipt.json",
+      "bytes": 682,
+      "sha256": "26c00eb1f6eefa6897cd1046ae741cd61e4e5e51f9a426e892a582be316b312d",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/design_decisions.json",
+      "bytes": 1844,
+      "sha256": "1a74f0e2232c2794823a1e6ae58d7f4a5aa8d79010d2b61a4c6f2e8d511d6dcd",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/exchange_reload.json",
+      "bytes": 693,
+      "sha256": "1050e075ad1bbf29b38478c52d8e19072f6fd9bc15e479700ad696cf9279a836",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/final_QA.json",
+      "bytes": 438,
+      "sha256": "af4c83aa229b56c67213dbb548a57fdba1f57200b6342be046372f954d8354a9",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/preservation_after.json",
+      "bytes": 20270,
+      "sha256": "6777dbdfeed94b5ed6d23f5bd7c213b65d5ea4af487487ee2ef5108411c532e9",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/publication_QA.json",
+      "bytes": 518,
+      "sha256": "19949ec05df6324854508cf59706ca72ce199a30c4a1d5ec887cd7357f210da4",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/RETURN_G2/architectural_measurements.json",
+      "bytes": 6792,
+      "sha256": "b896dde07035f4e7c868297b023bf4157c80c6b3287d59c29bc2c1e71db85d6e",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/RETURN_G2/gate_exploration.validation.json",
+      "bytes": 1120,
+      "sha256": "fe402e5a0aed38e1aa405d70af82d6d2de20863e00d170a65020b00c7e332c2f",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/RETURN_G2/generation.json",
+      "bytes": 2396,
+      "sha256": "cb7ad6d4fe26abe3f566b9cb2f1f794443cd6d15208de1a2be9177da754f6962",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/RETURN_G2/meso_evidence.json",
+      "bytes": 6419,
+      "sha256": "3a95d5bca9791231bb16ac6c5c29ccea6755eaa4ab363c9f59de3c4f6e54f1d0",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/RETURN_G2/render_receipt.json",
+      "bytes": 682,
+      "sha256": "725a1362f80561077641698360cbc0a31281559ccb651ed351ccef6e706f9724",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/source_code_map.json",
+      "bytes": 777,
+      "sha256": "425d23d02f06bc072d07ec02b4461bc0dc47b78f3bce8387ac1a1c5a8c5a3fa4",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/validation_criteria.json",
+      "bytes": 1162,
+      "sha256": "dae8bafc5e901a047a9b6544dd3f310d91ba159744ffddce5fb09f9b43ebe521",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/validation_summary.json",
+      "bytes": 1677,
+      "sha256": "d328f83dc72f50c7f06c1f1cd0e6d05de2683fca92278e51b8a22378bc0c2609",
+      "uploaded_in_this_commit": true
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_01/technical/visual_review.json",
+      "bytes": 1991,
+      "sha256": "1e3cc8a2d0be019812a030c94b33c3ec9c7a9fc9f17776edb476d74db9910cea",
+      "uploaded_in_this_commit": true
+    }
+  ],
+  "local_artifacts": [
+    {
+      "local_worktree_relative_path": "outputs/d_articulation_20261011_05/REPORT.txt",
+      "bytes": 4471,
+      "sha256": "9246f60bc0f666bebf10dd31b2ee3f1eb409caa2686db69f670a85425ba8a717",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "outputs/d_articulation_20261011_05/review.html",
+      "bytes": 8253,
+      "sha256": "32280dbd6c9ab30b1e11ac5a8e2b9b7d925cffb55dcfb81b3947f30f3cf27b33",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/measure.py",
+      "bytes": 4546,
+      "sha256": "da6e4e62936bb3cc1407a9029af956bd93a1fbab12ae164e7ffbfa548c56b458",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/architectural_measurements.json",
+      "bytes": 7065,
+      "sha256": "0a7c2e442e999127d2e393fee8356ca5a1b2c45fe0148c94d5cbb7e5192d88c1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/detail_camera.json",
+      "bytes": 390,
+      "sha256": "00adef605703a5f32a2895e61f541713eb85b74e10c6794305e5666b10c7d3da",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/front.png",
+      "bytes": 1561267,
+      "sha256": "7c4f8caabb677e505094b157ee874fe1adcb01cb2e01e97572f1f71d747b5e43",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "4bc0fff6af3c769a1d89fecffacefe780e388539d4846137218e468aa8f53348",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/gate_exploration.obj",
+      "bytes": 18309331,
+      "sha256": "6a50b50fbec5f351fb85bf0a407529a11e48c2ae043a490d69ba66dd1d8d9a32",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "9c709926b726ff5c27344829bfe03718fa9bb3fff51de13137cca98ee02ebd74",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/gate_exploration.validation.json",
+      "bytes": 1210,
+      "sha256": "4d0d0dfe998957b63da63bc21e5d28ba0e40b62d875598bd67e439e82d3b843d",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/generation.json",
+      "bytes": 2445,
+      "sha256": "23bdfd136aeb8a72e18951cd557cce76bf941d4ed8b9b2ffe691e04d70d3e408",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/geometry.npz",
+      "bytes": 7140264,
+      "sha256": "b8a55c778e196729d320ad6513bd5f2a72509c226b822d257790b6565d38776e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/oblique.png",
+      "bytes": 1533985,
+      "sha256": "45605b43cdccfdb0b90757b3e3ffc8d8bd248375f6532700e288c3e962440524",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/rear.png",
+      "bytes": 1601318,
+      "sha256": "f4bb12969509ee3161fdf5f84533b3cf442d1db7aa90813daf7cfc8e23b512c9",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/recipe.py",
+      "bytes": 6869,
+      "sha256": "9a3b3f41b9de087f231738b462753b1a90786f2996d4ffa0e9423c273c84ae4a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/render_receipt.json",
+      "bytes": 722,
+      "sha256": "61a75af3ff12fa4de77c5dc64fe60874d47363ec706f2d4dbbd8daee8732e7d4",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/resolved_fold_fields.npz",
+      "bytes": 6439528,
+      "sha256": "40525e3a0ee9a1532aaf528c4366ac54e2033770c8b2f4761b0774543d80dc83",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/section_segments.npz",
+      "bytes": 241019,
+      "sha256": "531a0adaf6304caebc3207a767ac50d1134251bf94d738393b867c1581bfa609",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/shoulder_detail.png",
+      "bytes": 1934624,
+      "sha256": "2a96cbddf60dd5ccedfd3531657850bbdf8b2781750b042b5c4bedeede122402",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_LINK/G02/side.png",
+      "bytes": 1415288,
+      "sha256": "e9e3cd960cadce8cc74242c122a2bc829ff1ab858d78c405384cc45715308bc7",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/architectural_measurements.json",
+      "bytes": 7064,
+      "sha256": "e22a0eb898092180d8797f8d4ce46e538d284debcf0030755518bd58e649f1b8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/detail_camera.json",
+      "bytes": 390,
+      "sha256": "00adef605703a5f32a2895e61f541713eb85b74e10c6794305e5666b10c7d3da",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/front.png",
+      "bytes": 1584948,
+      "sha256": "a9890b780a221f80260c896d9b404ec021a9aa14c1350eed4dcdfa00a52e8111",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "0604d828e2227ca67355ee186290a8e2132a8cc4c77bbdb4150ce809184d220b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/gate_exploration.obj",
+      "bytes": 18301833,
+      "sha256": "48b5bd2484302e87db251fbba29ad11121928061a61fb4596476967ba6b64489",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "106a0c966eab92805a874507cc4cf7327bc6779dd308c3fbf39635cd4820af1f",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/gate_exploration.validation.json",
+      "bytes": 1208,
+      "sha256": "26a8e98b511ae94e4fbace33eeb164d46c4d4a57dac5b43fea5cb24943c0386c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/generation.json",
+      "bytes": 2498,
+      "sha256": "b28487cd542d927275d080aebbcc0ed3940127361ca1916ff67be73d9c8500c0",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/geometry.npz",
+      "bytes": 7415165,
+      "sha256": "988dfc93f75755514fa33e18ad46c4744b06c48e927b2e907538badbafef1b48",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/oblique.png",
+      "bytes": 1539926,
+      "sha256": "009f6430a2765e019bf31808af18b40f6da7382c7d6dea8435474549c7fc8af5",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/rear.png",
+      "bytes": 1584633,
+      "sha256": "145bdc30192103f2ff1157383caea08672b58537d1c3158da648f873ca8f3292",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/recipe.py",
+      "bytes": 6869,
+      "sha256": "9a3b3f41b9de087f231738b462753b1a90786f2996d4ffa0e9423c273c84ae4a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/render_receipt.json",
+      "bytes": 724,
+      "sha256": "8623be2bcb600bfe9438d717abc3390061ec05f7118cced11d234d8425df427f",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/resolved_fold_fields.npz",
+      "bytes": 6452609,
+      "sha256": "66b5facd775aba75e30ca6670410efd0fb0089854197d62363bdd28f36f28b2d",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/section_segments.npz",
+      "bytes": 255169,
+      "sha256": "dde63a7efc8026575c3fa3cd41a54d425bf56652b9972dd066b3354734e57309",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/shoulder_detail.png",
+      "bytes": 1947916,
+      "sha256": "f5da1728aa589c9bf1783a985cf87021e88e6f9c709d128edb92b5a297a1dc23",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_architecture_20261011_03/results/D_RETURN/G02/side.png",
+      "bytes": 1413074,
+      "sha256": "9f725c993622f147f3748fc1bda2102fa83f17357cc0e674bfe5f807ca6073eb",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/develop.py",
+      "bytes": 6243,
+      "sha256": "b69be6087b442cebfc68771ad3facc5b6b8161ee712fab0f7f91376ecd08711e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/package.py",
+      "bytes": 19192,
+      "sha256": "66c5c3972e01c056b2a91fe16c5d3507017e6d4f0af8f20f03e62601c68ed46f",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/render.py",
+      "bytes": 1103,
+      "sha256": "0cffa07210dd6142abd7487f035a096b1432512d5aab0b80235abe420bb61eb8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/replay.py",
+      "bytes": 1586,
+      "sha256": "90677b42f7e632971ed4b34f20eba8dc85aebe43e50c29784b2e6555f81a10f9",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/architectural_measurements.json",
+      "bytes": 7069,
+      "sha256": "967ca0276372b2be875aa1b5e71cb5754f11615842b28bfb4118a3d43f09cd56",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/authored_section_fields.npz",
+      "bytes": 4408346,
+      "sha256": "2fcad7c3bbc910bbf341943c090563b5dfb5564cc4a9c954adb368e5cff4cde7",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/front.png",
+      "bytes": 1581651,
+      "sha256": "c461336dfaea86f7ec0e3ad31f700b288fd192e00b14f9887bc8ee01ca1654f3",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "1d6c69ea7c7872be1ed5b002edfa0009d4c1ccafac832ba421211821a4a3e8d3",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/gate_exploration.obj",
+      "bytes": 18289512,
+      "sha256": "ce897f450dbed2abb3561a8899874dbae60145572b3998db39a718f4b9aeb803",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "9915ad96f1999ebbb0a46dfae2e40b9d8edd80ec58b81784456d9eace653aa6c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/gate_exploration.validation.json",
+      "bytes": 1208,
+      "sha256": "28857e48411f7d5e4787f9a7db14aaf2c517e431f3d1706b746ebe9ac4703cdc",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/generation.json",
+      "bytes": 1250,
+      "sha256": "a58a97ea8b87e36f2e8702582a61959020f1470bb2b81b0fdec0e34a916769c1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/geometry.npz",
+      "bytes": 7463646,
+      "sha256": "7637419961305854e4a913f357789ebd792d5a5746349fc6fe9ee6ca4ec14d86",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/meso_detail.png",
+      "bytes": 1637857,
+      "sha256": "3ce51023653e5b48710a91ef82edc45de6841947a8fc580893bb73d9f601c410",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/meso_evidence.json",
+      "bytes": 6688,
+      "sha256": "a09d3e55c41876aff6a1a6079209d769c69608b3b91c7e5e1647c12985f62588",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/oblique.png",
+      "bytes": 1547929,
+      "sha256": "f4a6d317084bfd3779bf5fa8cdc04d572753924417804648ea460249a0dde71a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/passage.png",
+      "bytes": 1644259,
+      "sha256": "2924e327f76d9239fdfc673b5f55674fd65dd10cb7c27e9ee86ae0d28133b9a5",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/rear.png",
+      "bytes": 1599288,
+      "sha256": "44b1443d45ae520cf1a446f03ae2c9eda53c48f97c61bdf9522107558b41396a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/recipe.py",
+      "bytes": 5591,
+      "sha256": "38cf1444fff0db664700cfc42806c4fce74e1e31f8dffc76815126b014cdc46e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/render_receipt.json",
+      "bytes": 725,
+      "sha256": "12e972eb1920223dd66f38d3720b3690c77a8c089a72c9478d1c59e131422f8c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/section_segments.npz",
+      "bytes": 249864,
+      "sha256": "879853fb328147cd60aabbaa9ee71d5d88a88d976f1d8547ceef00f1db124766",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/side.png",
+      "bytes": 1421427,
+      "sha256": "40913ed219a720f70e120075ad7b7256c5df9dca2b6866f8659fe4050c5555a2",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/status.json",
+      "bytes": 406,
+      "sha256": "0c2f3c83262e2bdb28fe40e5749ca0809bace8729dfc36e2de2837bdaf2365fc",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/supplement_cameras.json",
+      "bytes": 686,
+      "sha256": "5db010f2634b91a342bacd75dc6d926fa3bb28732c63ba3d7950ae82b0feada1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/architectural_measurements.json",
+      "bytes": 7071,
+      "sha256": "011cbb3a49a4c074a479b0ee2dcb70b165c6a7903cdd8e9811a4ff2f18d6d707",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/authored_section_fields.npz",
+      "bytes": 4184343,
+      "sha256": "89d6ad34c69d5368c142c965839689bedad41df2c3cce5893b5f892e2a79df57",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/front.png",
+      "bytes": 1581324,
+      "sha256": "003512d1a7f79b9a636f488aca81d858ea354f6067f69a8413cf0a3dfe6b45ca",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "246ad3ff35c6e6fdb11d556252eeecbd09994aa4378639facf6bfa34f82433a1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/gate_exploration.obj",
+      "bytes": 18301370,
+      "sha256": "e44963bedf7915e18ee2658a974817a3e217d75f02e4d97dc9aa566ce7d2b73b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "99805ffee1af16e2ab97d4e4e5f8e44bd81485c073910bbc2afde6424a80489a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/gate_exploration.validation.json",
+      "bytes": 1209,
+      "sha256": "873ce17b1a11ebc8282c34a7e42592fb625a33501ede88418fbc3ab687e129e1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/generation.json",
+      "bytes": 1260,
+      "sha256": "4d31b1bdfd1b1bd870b2975cdbda084372827132e82f7afe05aafab1528a6e9e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/geometry.npz",
+      "bytes": 7425002,
+      "sha256": "7c77bcfea428a20e129d20d6b984c2700cff15284b77bac09278fc57cec300e8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/meso_evidence.json",
+      "bytes": 6711,
+      "sha256": "2c69d0709615bdba3582b088191b2ecd799218c4f270a6721da85204ef36e45f",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/oblique.png",
+      "bytes": 1547915,
+      "sha256": "05532fdbc6013a5af9577fe3fff1ba02c547e1c984388b4368b0f933620f9e5c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/rear.png",
+      "bytes": 1576610,
+      "sha256": "bca912af87f8349a9631e21df3a9c56d1fcbdae9ab6c4c59c1d7a451d5cd55ac",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/recipe.py",
+      "bytes": 5591,
+      "sha256": "38cf1444fff0db664700cfc42806c4fce74e1e31f8dffc76815126b014cdc46e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/render_receipt.json",
+      "bytes": 725,
+      "sha256": "d84f361affaa2bf7ac86f8d839aba5ca753a42a9739762b5d2b9582f7fdad0f1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/section_segments.npz",
+      "bytes": 260915,
+      "sha256": "d63cbe2b816afaf704ece8c2e9dc8a4baefeda8e2b337b658e23793133562895",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/side.png",
+      "bytes": 1409580,
+      "sha256": "3045afbd993753e3d408215db6cb6fc8fc9d52efdbaa525d6f5b549903dba432",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R01/status.json",
+      "bytes": 414,
+      "sha256": "38a292447fca000d2a6ec7fad63b14d1af731bc7db6872f55f0113a20efd7fd4",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/architectural_measurements.json",
+      "bytes": 7065,
+      "sha256": "aa69a9f33dd58d5b99d4d58a946ac22d1116a883e84dfe55c543fed3d952ebbb",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/authored_section_fields.npz",
+      "bytes": 4514872,
+      "sha256": "6bf98e598e6255160bf1a43d9e609ec2136fdc3b911d5fae40dd27d3c92166c9",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/front.png",
+      "bytes": 1576254,
+      "sha256": "c32e54bca38ca9993e459e1011d3dc9b87ff614bd57e39d4cc0618e65fce4924",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "1c3795789055cbd06f252cb8f5874acfbbfd99ec07ee9fff4958e3307b126ba6",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/gate_exploration.obj",
+      "bytes": 18302782,
+      "sha256": "0122ff3d001988cb185d3b3a76fc63407437141d2390373775eadd7757e52454",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "eb69e72b87d0419c627b40db7a7b146251bb8bb80690430ac7a685f80266cf3c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/gate_exploration.validation.json",
+      "bytes": 1210,
+      "sha256": "b3b1f155a97534bda7318a7810cba9cf495553431814e0942f106fbcba7df1ba",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/generation.json",
+      "bytes": 1260,
+      "sha256": "6fa557e8cb1eaf919978aa178cf28fb7813633768407f9ca273d6644195f7dc1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/geometry.npz",
+      "bytes": 7441790,
+      "sha256": "88fc011e0736167956c5edb78091f0c80b860320185b37e3c2d2b4d16ac66fe8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/meso_detail.png",
+      "bytes": 1648285,
+      "sha256": "7ebb4620bc8493ecffc60020a9adfb0e37c812f60bfe478fcd1ca5061600c263",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/meso_evidence.json",
+      "bytes": 6707,
+      "sha256": "b6aba22d9d08a2a1841c9e2b3b32040d5c87e07797967b662e24e67bcfff7798",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/oblique.png",
+      "bytes": 1543736,
+      "sha256": "8f0a3f7ccd7d36b0d245b142a3274a345c89baee4a760961c1a38c6da08464a6",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/passage.png",
+      "bytes": 1626753,
+      "sha256": "9af54a751e4fa2ba51f9acbc3b7bdcfdbb1097eccfaf7fc8104754dca8e60b3e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/rear.png",
+      "bytes": 1570029,
+      "sha256": "d1f8cae55c1298f177fab031b89def16fe55c80391873dc94729cd23e0bbdc1d",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/recipe.py",
+      "bytes": 6243,
+      "sha256": "b69be6087b442cebfc68771ad3facc5b6b8161ee712fab0f7f91376ecd08711e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/render_receipt.json",
+      "bytes": 725,
+      "sha256": "d84f361affaa2bf7ac86f8d839aba5ca753a42a9739762b5d2b9582f7fdad0f1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/section_segments.npz",
+      "bytes": 260761,
+      "sha256": "8403be1fa22485193ab39da51eded0335a96d8d6397bc54644008d3e6d8447aa",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/side.png",
+      "bytes": 1400198,
+      "sha256": "8958a1c6a21486f1421eb6f0e5a96830dcf6644a8da422817b324f49f0837557",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/status.json",
+      "bytes": 396,
+      "sha256": "7557fa8a21529b8baca27c6823a7471c3b7a5458b9a8692a9385e8a547a33ff6",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/supplement_cameras.json",
+      "bytes": 686,
+      "sha256": "91133e8c21b019f659a114394fe292d4d7cf6b9c47d93a2a7d5ee3645c8ef667",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/architectural_measurements.json",
+      "bytes": 7063,
+      "sha256": "44fee9f2d1640e8fbf79c53f641d809705e1956ea042c1787bddc07f581cfb9d",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/authored_section_fields.npz",
+      "bytes": 2539118,
+      "sha256": "62d7e5ca28f24663c1dd561ca27d243f50e03906e09a637612c9dce9271bad74",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/front.png",
+      "bytes": 1593561,
+      "sha256": "65d68fa389aadcc242096b786b6c919b19a19007783d5a45152ab3ea97f45330",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "c3e77cbfd6d360f641a5738ce4bef5becfc4d38c844b792d195faeea43bdca9a",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/gate_exploration.obj",
+      "bytes": 18301603,
+      "sha256": "7364e5aecf790081de8e1e547dbb298c87026f1d1635ac6acec2a9de2f7e99d6",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "3295f41251df7659b6935b1a93953bd1f1e1e33378c0c912dd190bb052c39cf9",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/gate_exploration.validation.json",
+      "bytes": 1209,
+      "sha256": "600783e419539f133b3bb66c0b97cce125cfd31f8c65c3c28b7a719b3929fe36",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/generation.json",
+      "bytes": 1265,
+      "sha256": "32159752de8b2a212e382d2a8ac1232be5bb1eb9d0815f056045ffe57163033b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/geometry.npz",
+      "bytes": 7436833,
+      "sha256": "7ac4bc2678c7a4f28910afa8cc575842e3c27b0bbda53a274471d2960ec8c9d8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/meso_detail.png",
+      "bytes": 1671693,
+      "sha256": "5e45661efa4324e68d73f8eb6cea2fc6c8a554c679b980936d43df623a0acdd7",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/meso_evidence.json",
+      "bytes": 6703,
+      "sha256": "cf023a7009e2a0a54ee96b64e70ec35eaa88d8dbc3b517cc2aaaa69ac7aaf2fc",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/oblique.png",
+      "bytes": 1569095,
+      "sha256": "f3022eb92f5dc87ae9472e9533c05ac41c0b068bced7aa6e5a5e7f8ab6688253",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/passage.png",
+      "bytes": 1649269,
+      "sha256": "a71d9afd7bf79e0d2956b8be77a73c9732c082ead5a0d581874a4ababe008b7f",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/rear.png",
+      "bytes": 1591146,
+      "sha256": "9b14de82945cf1e7115b0bdf460bc7054579003d2531451d9cab091db7e8c1d5",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/recipe.py",
+      "bytes": 5591,
+      "sha256": "38cf1444fff0db664700cfc42806c4fce74e1e31f8dffc76815126b014cdc46e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/render_receipt.json",
+      "bytes": 724,
+      "sha256": "ef3887faf747bd5da634e7d144893ef6a76f1f03594f4e0db1a0dea4b075d742",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/section_segments.npz",
+      "bytes": 255515,
+      "sha256": "37e05cc35f830f2cede81579005bf83837478467eb2f8e4095cc990906315954",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/side.png",
+      "bytes": 1413162,
+      "sha256": "013eb72c69ee4d8f6c3f0ddf26eadb86e0b2045e16c6a1dc820ad581bf6d5030",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/status.json",
+      "bytes": 395,
+      "sha256": "4c09a8537038d113c63594b8749aec700b96d74ecf3b8b41ea9570a56d380665",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/supplement_cameras.json",
+      "bytes": 685,
+      "sha256": "b1ec3fd4e824e7116f6d37269071dab40ba11df1448f1942cc480c8aced903b9",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/supplement.py",
+      "bytes": 1558,
+      "sha256": "f8e41c81a66b0f9a4468aabdf935dbe832585775709d5a32688ded09c58bd1b8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_articulation_20261011_05/validation_criteria.json",
+      "bytes": 1111,
+      "sha256": "e5ec39bd11d764795699b5bd1755ef6a07d7d8a4ff02c0140cf966029134b4c0",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/meso_evidence.py",
+      "bytes": 2329,
+      "sha256": "2734d5fd6e878f6fa2a5d400d1fbe1c5321adbd80bb04b85c16af63b1f860725",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/architectural_measurements.json",
+      "bytes": 7057,
+      "sha256": "a72f28d24e52d8a80c5be147139a86f521f9d2efecfe0495e6a62d5fc86c3b93",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/front.png",
+      "bytes": 1560367,
+      "sha256": "476fb41ea23a56576da19ea71ec21608f4d6df0010e320c01abdf80192b395b4",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "24e1328a230551ef3b89a9c85892bd86017ae45f333007520afa18ed69356358",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/gate_exploration.obj",
+      "bytes": 18302460,
+      "sha256": "8fae99bdb947eb61509edd8a5195be56b0237735b61ceaa41bbf38b9090db892",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "295ca5994ee36d6ccaad6dd2c05f4f9778bf61b77f311f64db37d6d09c967cdf",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/gate_exploration.validation.json",
+      "bytes": 1201,
+      "sha256": "ca83c61c6ad56284be0eb675ac7763b901e52b6f4ca11bdb929cc45ad6ef60c4",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/generation.json",
+      "bytes": 1814,
+      "sha256": "163861ace81e83b2ffc7b43acab3d559fd51dce8558c5dd4f0ddde6cec6deeb7",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/geometry.npz",
+      "bytes": 7414261,
+      "sha256": "8a24bddcc3ce4f36b7ddda342d6a71492cd331070b349ce5a3d30c1e980a2910",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/meso_detail.png",
+      "bytes": 1599209,
+      "sha256": "86236d5455d40bef58cfc264384b525951195aebc17e148bd847030953e812a8",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/meso_evidence.json",
+      "bytes": 6698,
+      "sha256": "e0fc103245a5b1dcae5dbc5525eefd9ea27c646f28b770e334ea728f10adbc7b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/mirror_pairs.npy",
+      "bytes": 2490512,
+      "sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/oblique.png",
+      "bytes": 1519806,
+      "sha256": "d357ef95422290760b961c65c2b3115f5ecb10d93540db1de94e5ac2d5b72eab",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/passage.png",
+      "bytes": 1619711,
+      "sha256": "892dd3d34840a5283e576d03ff1569f61e8ffb4c4df3979b87509dfe12a8c32e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/rear.png",
+      "bytes": 1557954,
+      "sha256": "7d796a3f30945e967b64735d833f14298ed30b0c4031a92b28e9feee31ea9269",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/recipe.py",
+      "bytes": 6127,
+      "sha256": "c6a592d62712dae41dec5c8695242efe15503d0ca507a88189979ccf4e01df41",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/render_receipt.json",
+      "bytes": 725,
+      "sha256": "94e104c19a2756b939eb3bbea161799d46c0b3a181f4d04dfab154ea121b6b30",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/resolved_fold_fields.npz",
+      "bytes": 6452928,
+      "sha256": "905697b03bec2b63e386b2e3de571b43d62a373075a5f2822f3205c6c2deaffe",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/section_segments.npz",
+      "bytes": 260432,
+      "sha256": "562f7fa34b10387ba53203b1e423f78521974f524b2d02fbbeb28c249e59b74e",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/side.png",
+      "bytes": 1402225,
+      "sha256": "7afd0bdf6153108508079b7cf0f0ac81e0aabf10192e4bb4ae0597a210634a3c",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/status.json",
+      "bytes": 341,
+      "sha256": "ea32a74c0391355b2c6a1911d39c0ea30fe3b75568024fdf41dd717dc58874ab",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/d_meso_20261011_04/results/D_INFLECT/G04/supplement_cameras.json",
+      "bytes": 702,
+      "sha256": "80d77a1a37a98d401e274d9d387fc328c35055dfe08f119c443af6409a158cc1",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/front.png",
+      "bytes": 1396678,
+      "sha256": "d9041ea85cfa9fea034746972c2987462f5db8556f69ca61663ca5b10d6e7f41",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/gate_exploration.blend",
+      "bytes": 21939697,
+      "sha256": "d9a98c92d4cb1941108226a6912edc1028fcdd2e196b7bcf0ae1f0617a2e8831",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/gate_exploration.obj",
+      "bytes": 18309679,
+      "sha256": "cc3d3263759a49d22713fe78207d3b91dc3771e4393579294488abe340878944",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/gate_exploration.ply",
+      "bytes": 9027833,
+      "sha256": "f0d91637cac51316a16f14f8c9869310f1485ca66e5a0ff9021406afd024606b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/gate_exploration.validation.json",
+      "bytes": 1207,
+      "sha256": "f47fd5600aa8e2f33f93020d3bda2b2120943c56de4573405a994092be819304",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/generation.json",
+      "bytes": 1110,
+      "sha256": "1b46bc7c2b3e5f668a74ca5aabea715c8390b5ff03f06f567c4e78b8da4f90dd",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/oblique.png",
+      "bytes": 1371731,
+      "sha256": "3a3960896718bbf904221e1819bc6c152a6b5cd5d9e7b6685b870aad54c09d07",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/rear.png",
+      "bytes": 1405009,
+      "sha256": "99807e3a4dcd517e230a29c54db3f91c5d047e8884e03b1ecda16d9d56e46d58",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/recipe.py",
+      "bytes": 4437,
+      "sha256": "7de2744f6835315eb9031945f0b54e53fe889bbdf1bf54be8de318fc49834b3b",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/render_receipt.json",
+      "bytes": 726,
+      "sha256": "8ae044ad7634a1b3df14c8a8b78ced8f141fd61974353458858e17fe6da76e90",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/section_segments.npz",
+      "bytes": 245215,
+      "sha256": "6137b72f8f2630a8d97ea08b577886417d6ab33d03b65874910d5b7376d55ce0",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_branch_20261011_02/results/D_LAMELLAR/R02/side.png",
+      "bytes": 1225365,
+      "sha256": "f664671fa4fc73383d9e1ea62dca4c3c9ea4eea51b619a9d5db950e20da97729",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_synthesis_20261011/check_mesh.py",
+      "bytes": 2257,
+      "sha256": "aadc2c11d9c6e3ffd3f872c71a5969fb0695af1ea330b8655b38294a4d7a5cb2",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "scratch/gate_synthesis_20261011/design.py",
+      "bytes": 8893,
+      "sha256": "f9a4122f3baed93231084de77b55023836a8a6047c7071a8505bd8824379e526",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "src/cheshire/regional_generation.py",
+      "bytes": 9559,
+      "sha256": "b3f4bf926d06491e5ba066e5fa8c4bcf8aad90b4c536b358bc1ddbbbcd5b64c0",
+      "uploaded": false
+    },
+    {
+      "local_worktree_relative_path": "src/cheshire/task33_folds.py",
+      "bytes": 15035,
+      "sha256": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+      "uploaded": false
+    },
+    {
+      "local_asset_relative_path": "task33/candidates/V01_COHERENT_TRANSPORT/G6_FOLD/material_state.npz",
+      "bytes": 4059481,
+      "sha256": "87e2b8b0c4b5437881bc9e8d7154fb2a75cf1ea0c7bf2062414cc28909dfc20d",
+      "uploaded": false,
+      "delivery_copy": "outputs/d_articulation_20261011_05/technical/source_G6/material_state.npz"
+    }
+  ],
+  "image_provenance": [
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/front.png",
+      "source_sha256": "a9890b780a221f80260c896d9b404ec021a9aa14c1350eed4dcdfa00a52e8111",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/oblique.png",
+      "source_sha256": "009f6430a2765e019bf31808af18b40f6da7382c7d6dea8435474549c7fc8af5",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/side.png",
+      "source_sha256": "9f725c993622f147f3748fc1bda2102fa83f17357cc0e674bfe5f807ca6073eb",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/rear.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/rear.png",
+      "source_sha256": "145bdc30192103f2ff1157383caea08672b58537d1c3158da648f873ca8f3292",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/passage.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/passage.png",
+      "source_sha256": "61dd1771ebb1b79665b67f6e8738c62ce315a7ba5765ba3a0b20822d428aa911",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/RETURN_G2/meso_detail.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/RETURN_G2/meso_detail.png",
+      "source_sha256": "85278a237619885511d43abfb7fbf9e6c93184f437b467f9238a0a30727a8e63",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/front.png",
+      "source_sha256": "65d68fa389aadcc242096b786b6c919b19a19007783d5a45152ab3ea97f45330",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/oblique.png",
+      "source_sha256": "f3022eb92f5dc87ae9472e9533c05ac41c0b068bced7aa6e5a5e7f8ab6688253",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/side.png",
+      "source_sha256": "013eb72c69ee4d8f6c3f0ddf26eadb86e0b2045e16c6a1dc820ad581bf6d5030",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/rear.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/rear.png",
+      "source_sha256": "9b14de82945cf1e7115b0bdf460bc7054579003d2531451d9cab091db7e8c1d5",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/passage.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/passage.png",
+      "source_sha256": "a71d9afd7bf79e0d2956b8be77a73c9732c082ead5a0d581874a4ababe008b7f",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_TORQUE/meso_detail.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_TORQUE/meso_detail.png",
+      "source_sha256": "5e45661efa4324e68d73f8eb6cea2fc6c8a554c679b980936d43df623a0acdd7",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/front.png",
+      "source_sha256": "c32e54bca38ca9993e459e1011d3dc9b87ff614bd57e39d4cc0618e65fce4924",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/oblique.png",
+      "source_sha256": "8f0a3f7ccd7d36b0d245b142a3274a345c89baee4a760961c1a38c6da08464a6",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/side.png",
+      "source_sha256": "8958a1c6a21486f1421eb6f0e5a96830dcf6644a8da422817b324f49f0837557",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/rear.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/rear.png",
+      "source_sha256": "d1f8cae55c1298f177fab031b89def16fe55c80391873dc94729cd23e0bbdc1d",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/passage.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/passage.png",
+      "source_sha256": "9af54a751e4fa2ba51f9acbc3b7bdcfdbb1097eccfaf7fc8104754dca8e60b3e",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_KNUCKLE/meso_detail.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_KNUCKLE/meso_detail.png",
+      "source_sha256": "7ebb4620bc8493ecffc60020a9adfb0e37c812f60bfe478fcd1ca5061600c263",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/front.png",
+      "source_sha256": "c461336dfaea86f7ec0e3ad31f700b288fd192e00b14f9887bc8ee01ca1654f3",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/oblique.png",
+      "source_sha256": "f4a6d317084bfd3779bf5fa8cdc04d572753924417804648ea460249a0dde71a",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/side.png",
+      "source_sha256": "40913ed219a720f70e120075ad7b7256c5df9dca2b6866f8659fe4050c5555a2",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/rear.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/rear.png",
+      "source_sha256": "44b1443d45ae520cf1a446f03ae2c9eda53c48f97c61bdf9522107558b41396a",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/passage.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/passage.png",
+      "source_sha256": "2924e327f76d9239fdfc673b5f55674fd65dd10cb7c27e9ee86ae0d28133b9a5",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_CONFLUX/meso_detail.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_CONFLUX/meso_detail.png",
+      "source_sha256": "3ce51023653e5b48710a91ef82edc45de6841947a8fc580893bb73d9f601c410",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_R2/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_R2/front.png",
+      "source_sha256": "5f79e64c251fe59b53e26106520bfd4254de54e6f716ee04c367d84cea4fff43",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_R2/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_R2/oblique.png",
+      "source_sha256": "289692f1325c57d3cf0719b69218ed53006acf9dc1db8f8cb259ee6306ae5b0d",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/D_R2/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/D_R2/side.png",
+      "source_sha256": "831a419e4d059a96e4e6861fc677e9d26a30cf74cf71461c1a7f56fc272ec5f5",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/LINK_G2/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/LINK_G2/front.png",
+      "source_sha256": "7c4f8caabb677e505094b157ee874fe1adcb01cb2e01e97572f1f71d747b5e43",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/LINK_G2/oblique.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/LINK_G2/oblique.png",
+      "source_sha256": "45605b43cdccfdb0b90757b3e3ffc8d8bd248375f6532700e288c3e962440524",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/LINK_G2/side.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/LINK_G2/side.png",
+      "source_sha256": "e9e3cd960cadce8cc74242c122a2bc829ff1ab858d78c405384cc45715308bc7",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/KNUCKLE_R01/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/generations/D_KNUCKLE/R01/front.png",
+      "source_sha256": "003512d1a7f79b9a636f488aca81d858ea354f6067f69a8413cf0a3dfe6b45ca",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/INFLECT_G4/front.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/technical/source_INFLECT_G4/front.png",
+      "source_sha256": "476fb41ea23a56576da19ea71ec21608f4d6df0010e320c01abdf80192b395b4",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        720,
+        720
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/01_front_comparison.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/01_front_comparison.png",
+      "source_sha256": "452ad64448e85017b8e98cf4ba7de8cc2c8348caa4257fbc4152fd1054cc442a",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        902
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/02_three_views.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/02_three_views.png",
+      "source_sha256": "f91cfacd78b6772e6d927af73e52c4995ac48bd6b62e478d6abab76fdb5a847c",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        1777,
+        2800
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/03_rotation_flow.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/03_rotation_flow.png",
+      "source_sha256": "427eae7ad5603727cc677d73e52a362506d5bc9a8a493d585b3b356c8e658e41",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        1692
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/04_knuckle_generations.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/04_knuckle_generations.png",
+      "source_sha256": "011a83f9edb65518260368ee796d0ad8e2d283b91beec9084b3cbfb76adbd746",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        902
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/05_meso_comparison.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/05_meso_comparison.png",
+      "source_sha256": "fe511ce1d3c69a7b8625a898aed7f5713c79911d5d03c0b06eee3ad5d9f5db3b",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        902
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/06_passage_comparison.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/06_passage_comparison.png",
+      "source_sha256": "9e574f81c3238df50f77fe9993d9ab07134c556dddf4954547406d220aba227c",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        902
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/07_preserved_references.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/07_preserved_references.png",
+      "source_sha256": "fd7e867934f6ab1bab7461010a9f637933f7219ac630357cd9a5012871e5ae92",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        1950,
+        1592
+      ]
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/images/08_actual_sections.jpg",
+      "source_local_path": "outputs/d_articulation_20261011_05/08_actual_sections.png",
+      "source_sha256": "4cb9978b45f0c370300173e6e0e3533ed7f034f53d85b51caaa6d3918cec0cec",
+      "presentation": "Proportional resize and JPEG encoding only; labels on comparison boards lie outside actual render",
+      "published_resolution": [
+        2800,
+        1700
+      ]
+    }
+  ],
+  "code_provenance": [
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/code/operations_R01.py",
+      "source_local_path": "scratch/d_articulation_20261011_05/results/D_TORQUE/R01/recipe.py",
+      "source_recipe_sha256": "38cf1444fff0db664700cfc42806c4fce74e1e31f8dffc76815126b014cdc46e",
+      "functions": [
+        "gauss",
+        "smooth",
+        "sculpt"
+      ],
+      "function_text_changed": false
+    },
+    {
+      "published_path": "docs/overnight_20261011/cycle_01/code/operations_R02.py",
+      "source_local_path": "scratch/d_articulation_20261011_05/results/D_KNUCKLE/R02/recipe.py",
+      "source_recipe_sha256": "b69be6087b442cebfc68771ad3facc5b6b8161ee712fab0f7f91376ecd08711e",
+      "functions": [
+        "gauss",
+        "smooth",
+        "sculpt"
+      ],
+      "function_text_changed": false
+    }
+  ],
+  "self_hash_policy": "MANIFEST.json excludes its own hash; the Git commit identifies this manifest. Published SHA-256 values cover committed bytes; scoped .gitattributes preserves text LF on checkout. Local artifact hashes cover original unmodified local bytes."
+}

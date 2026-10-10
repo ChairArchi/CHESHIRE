@@ -1,0 +1,220 @@
+{
+  "path": "local-worktree:scratch/d_articulation_20261011_05/results/D_CONFLUX/R01/gate_exploration.obj",
+  "sha256": "ce897f450dbed2abb3561a8899874dbae60145572b3998db39a718f4b9aeb803",
+  "symmetry": {
+    "plane": "X=0",
+    "tolerance_model_units": 1e-05,
+    "vertices": 311298,
+    "native_polygons": 311296,
+    "max_reflected_vertex_error": 0.0,
+    "p99_reflected_vertex_error": 0.0,
+    "pair_map_bijective": true,
+    "pair_map_involutive": true,
+    "native_polygons_with_reflected_vertex_set": 311296,
+    "all_native_polygons_mirrored": true,
+    "triangles_with_reflected_vertex_set": 622592,
+    "triangles": 622592,
+    "all_triangulated_faces_mirrored": true,
+    "native_polygon_symmetry_pass": true,
+    "note": "Native-polygon and exchange-triangulation connectivity reported separately. No vertex averaging or geometry repair."
+  },
+  "geometry": {
+    "relative_model_units": true,
+    "overall_bounds": [
+      [
+        -6.412584,
+        -2.209824,
+        0.0
+      ],
+      [
+        6.412584,
+        2.286716,
+        14.081008
+      ]
+    ],
+    "height": 14.081008,
+    "sections": [
+      {
+        "z": 1.2,
+        "right_section_x_span": 2.3364027675821566,
+        "right_section_y_span": 2.8172533307100904,
+        "depth_over_width": 1.2058080780419318,
+        "right_section_bounds": [
+          [
+            3.615530824960878,
+            -1.4213636418705917
+          ],
+          [
+            5.951933592543035,
+            1.3958896888394985
+          ]
+        ],
+        "projected_center_opening_width": 7.231061649921756,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.3896043855110231,
+        "region": "Support section"
+      },
+      {
+        "z": 3.0,
+        "right_section_x_span": 3.1318065724774238,
+        "right_section_y_span": 2.803732127919073,
+        "depth_over_width": 0.8952443463649714,
+        "right_section_bounds": [
+          [
+            2.744820223168654,
+            -1.4434080907871132
+          ],
+          [
+            5.876626795646078,
+            1.3603240371319594
+          ]
+        ],
+        "projected_center_opening_width": 5.489640446337308,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.5107314687230062,
+        "region": "Support section"
+      },
+      {
+        "z": 4.8,
+        "right_section_x_span": 2.181629745430903,
+        "right_section_y_span": 2.5483883933423375,
+        "depth_over_width": 1.1681122329210791,
+        "right_section_bounds": [
+          [
+            2.9127134578268876,
+            -1.2375501338102997
+          ],
+          [
+            5.09434320325779,
+            1.3108382595320378
+          ]
+        ],
+        "projected_center_opening_width": 5.825426915653775,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.43745950815972723,
+        "region": "Support section"
+      },
+      {
+        "z": 6.0,
+        "right_section_x_span": 2.963557714251664,
+        "right_section_y_span": 3.740120128123307,
+        "depth_over_width": 1.2620372163285962,
+        "right_section_bounds": [
+          [
+            2.454543361315981,
+            -1.8797365082183273
+          ],
+          [
+            5.418101075567645,
+            1.86038361990498
+          ]
+        ],
+        "projected_center_opening_width": 4.909086722631962,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.7618769721220318,
+        "region": "Support section"
+      },
+      {
+        "z": 7.2,
+        "right_section_x_span": 3.28698460605411,
+        "right_section_y_span": 2.9057004739569314,
+        "depth_over_width": 0.8840018503905029,
+        "right_section_bounds": [
+          [
+            2.319586555600886,
+            -1.225761357150314
+          ],
+          [
+            5.606571161654996,
+            1.6799391168066173
+          ]
+        ],
+        "projected_center_opening_width": 4.639173111201772,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.6263401697472362,
+        "region": "Support section"
+      },
+      {
+        "z": 8.4,
+        "right_section_x_span": 2.462311915564968,
+        "right_section_y_span": 1.9978306225920688,
+        "depth_over_width": 0.8113637472016514,
+        "right_section_bounds": [
+          [
+            2.738833799429744,
+            -0.007266079284789952
+          ],
+          [
+            5.201145714994712,
+            1.9905645433072787
+          ]
+        ],
+        "projected_center_opening_width": 5.477667598859488,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.3647228654414955,
+        "region": "Support section"
+      },
+      {
+        "z": 9.6,
+        "right_section_x_span": 3.1618516417715177,
+        "right_section_y_span": 2.84569694170823,
+        "depth_over_width": 0.9000096348966731,
+        "right_section_bounds": [
+          [
+            2.1216832485153465,
+            -1.0022088107831575
+          ],
+          [
+            5.283534890286864,
+            1.8434881309250721
+          ]
+        ],
+        "projected_center_opening_width": 4.243366497030693,
+        "center_axis_blocked": false,
+        "jamb_depth_over_projected_opening": 0.6706224747967242,
+        "region": "Upper combined section; not a column width"
+      },
+      {
+        "z": 11.0,
+        "right_section_x_span": 4.547203522041716,
+        "right_section_y_span": 2.8866463680259757,
+        "depth_over_width": 0.634817938988985,
+        "right_section_bounds": [
+          [
+            0.020793356460438884,
+            -1.5190575714561794
+          ],
+          [
+            4.567996878502155,
+            1.3675887965697966
+          ]
+        ],
+        "projected_center_opening_width": 0,
+        "center_axis_blocked": true,
+        "jamb_depth_over_projected_opening": null,
+        "region": "Upper combined section; not a column width"
+      },
+      {
+        "z": 12.6,
+        "right_section_x_span": 2.421142645771379,
+        "right_section_y_span": 3.2716608782074976,
+        "depth_over_width": 1.3512879482427778,
+        "right_section_bounds": [
+          [
+            0.0044268932618214815,
+            -1.0180077177066653
+          ],
+          [
+            2.4255695390332006,
+            2.253653160500832
+          ]
+        ],
+        "projected_center_opening_width": 0,
+        "center_axis_blocked": true,
+        "jamb_depth_over_projected_opening": null,
+        "region": "Upper combined section; not a column width"
+      }
+    ],
+    "scope": "Full actual horizontal intersections, all protrusions retained. Above z=8.4 the right-half span may include the crown. Projected opening is not a full passage clearance certification."
+  }
+}
