@@ -1,0 +1,503 @@
+{
+  "runs": {
+    "region_fans23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "51785338ece27619ee19670ae5871c33fddd83547731607fe3a4874985fdae5b",
+      "result_sha256": "2ad23943e5f888eff3a7fea739c0d18b9313284daffd7813e1bf6d64db5db1a8",
+      "elapsed_seconds": 59.31535949998943,
+      "final": {
+        "vertices": 172230,
+        "polygons": 344456,
+        "triangles": 344456,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 1.2784498944869882e-10,
+        "volume": 0.08110869145192968,
+        "components": 1,
+        "symmetry_max_error": 4.440892098500626e-16,
+        "obj_reload_checks": {
+          "vertices": 172230,
+          "polygons": 344456,
+          "triangles": 344456,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.3091326919579243e-09,
+          "volume": 2.6577696014968324,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 172230,
+          "polygons": 344456,
+          "triangles": 344456,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.3096956619798934e-09,
+          "volume": 2.6577696000572844,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 1.3358046614212626e-15
+      }
+    },
+    "region_fibers23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "68b5f22b29e372e3129b0579a406cabea698a2adccf30c808be1d1e92179c726",
+      "result_sha256": "f2473c6c3d3237ffdd7fc739f2bab49280ef290619e1a2d422f660a8980e0794",
+      "elapsed_seconds": 260.87229189999925,
+      "final": {
+        "vertices": 996926,
+        "polygons": 2065072,
+        "triangles": 2065072,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 5.224414360678986e-16,
+        "volume": 0.08111939208556335,
+        "components": 4491,
+        "symmetry_max_error": 0.0,
+        "obj_reload_checks": {
+          "vertices": 996926,
+          "polygons": 2065072,
+          "triangles": 2065072,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 5.349800304538205e-15,
+          "volume": 2.65812023985974,
+          "components": 4491
+        },
+        "ply_reload_checks": {
+          "vertices": 996926,
+          "polygons": 2065072,
+          "triangles": 2065072,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 9.147725712528096e-15,
+          "volume": 2.6581202382927063,
+          "components": 4491
+        },
+        "exported_obj_symmetry_max_error": 0.0
+      }
+    },
+    "region_fans_wide23": {
+      "status": "COMPLETE",
+      "input_sha256": "ba7c7d4337f3d5bfa12dfaa6ba3fb62db8e931bd797231a227c75cbb766400f2",
+      "config_sha256": "51785338ece27619ee19670ae5871c33fddd83547731607fe3a4874985fdae5b",
+      "result_sha256": "608e7f425f4b39bef1f0444214b0bc0ed5fc375ad2882a4229617271b24f575b",
+      "elapsed_seconds": 79.26654169999529,
+      "final": {
+        "vertices": 172154,
+        "polygons": 344304,
+        "triangles": 344304,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 1.2520547476344987e-09,
+        "volume": 0.12922247383779062,
+        "components": 1,
+        "symmetry_max_error": 1.788512522917511e-15,
+        "obj_reload_checks": {
+          "vertices": 172154,
+          "polygons": 344304,
+          "triangles": 344304,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.2821040615785027e-08,
+          "volume": 4.234362022716724,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 172154,
+          "polygons": 344304,
+          "triangles": 344304,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.28196919746415e-08,
+          "volume": 4.234362027266048,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 5.800848902387804e-15
+      }
+    },
+    "hierarchy_base23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "73a9ec0f1daca5c8f690b87828137c2199f24d3b9480b4022f8dcecfd00ff256",
+      "result_sha256": "1ddfa4b95700d371c8996db38907ab3c910974394faa0d147a6e16332129e948",
+      "elapsed_seconds": 79.46152810000058,
+      "final": {
+        "vertices": 172034,
+        "polygons": 344064,
+        "triangles": 344064,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 1.0720731477001958e-07,
+        "volume": 0.08594913994137066,
+        "components": 1,
+        "symmetry_max_error": 3.5135752366389115e-16,
+        "obj_reload_checks": {
+          "vertices": 172034,
+          "polygons": 344064,
+          "triangles": 344064,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.09780290324444e-06,
+          "volume": 2.816381417598834,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 172034,
+          "polygons": 344064,
+          "triangles": 344064,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 1.097671505197956e-06,
+          "volume": 2.816381420795443,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 1.3506446028928519e-15
+      }
+    },
+    "hierarchy_twist23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "5715e79bb58ca56b01f308cc60eda4c189b7bdb37186af9d3e892755cae1a155",
+      "result_sha256": "1ca5a1513e0b13e6c112ea3a664c9b10a53092f9c2371f29a8b9ab445e807cad",
+      "elapsed_seconds": 57.08381030001328,
+      "final": {
+        "vertices": 171620,
+        "polygons": 343236,
+        "triangles": 343236,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 3.0851166108092054e-10,
+        "volume": 0.08163209964733013,
+        "components": 1,
+        "symmetry_max_error": 3.3306690738754696e-16,
+        "obj_reload_checks": {
+          "vertices": 171620,
+          "polygons": 343236,
+          "triangles": 343236,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.15915940946895e-09,
+          "volume": 2.674920641243714,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 171620,
+          "polygons": 343236,
+          "triangles": 343236,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.1577336486592336e-09,
+          "volume": 2.6749206382429684,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 1.3322676295501878e-15
+      }
+    },
+    "hierarchy_sixfold23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "dcd2b1f4ae4ad9eb61d2e6f4ab2bb91879da383425d7172da8c4ab1b79cd9d39",
+      "result_sha256": "186c40de4d1ca8b5a95be148289848c646b0ed6542b83dd1d882db1324318f53",
+      "elapsed_seconds": 101.39903520001099,
+      "final": {
+        "vertices": 171664,
+        "polygons": 343324,
+        "triangles": 343324,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 8.186465041224051e-10,
+        "volume": 0.08253078007328599,
+        "components": 1,
+        "symmetry_max_error": 0.0,
+        "obj_reload_checks": {
+          "vertices": 171664,
+          "polygons": 343324,
+          "triangles": 343324,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 8.382940202218535e-09,
+          "volume": 2.7043686014414363,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 171664,
+          "polygons": 343324,
+          "triangles": 343324,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 8.377437592193845e-09,
+          "volume": 2.704368596329239,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 0.0
+      }
+    },
+    "hierarchy_microfold23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "698cd592ef068d827d5c1bc0a34335d38c1f3f039c5d926efb45c009c4d19e30",
+      "result_sha256": "63ba84c13f1aeeed9e5942fd4be6eaf986111474ff84cc3b32470f060cb4e38d",
+      "elapsed_seconds": 339.331219100015,
+      "final": {
+        "vertices": 685260,
+        "polygons": 1370516,
+        "triangles": 1370516,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 3.3101827117639005e-11,
+        "volume": 0.08206759641993892,
+        "components": 1,
+        "symmetry_max_error": 0.0,
+        "obj_reload_checks": {
+          "vertices": 685260,
+          "polygons": 1370516,
+          "triangles": 1370516,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.3896270968402953e-10,
+          "volume": 2.6891909994885594,
+          "components": 1
+        },
+        "ply_reload_checks": {
+          "vertices": 685260,
+          "polygons": 1370516,
+          "triangles": 1370516,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.3911796602597894e-10,
+          "volume": 2.6891909960031044,
+          "components": 1
+        },
+        "exported_obj_symmetry_max_error": 0.0
+      }
+    },
+    "micro_simple_tissue23": {
+      "status": "COMPLETE",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "a11c325d18372c80b6352249b90450a3f65bcd700afa97e0a5afacd1038dcdf8",
+      "result_sha256": "1c37d22e28eaf5a9f50bd2cfcaaf71503114975a42dfa19a130815cf39adb178",
+      "elapsed_seconds": 270.15052870000363,
+      "final": {
+        "vertices": 925260,
+        "polygons": 1946516,
+        "triangles": 1946516,
+        "watertight": true,
+        "winding_consistent": true,
+        "zero_area_faces": 0,
+        "min_triangle_area": 3.3101827117639005e-11,
+        "volume": 0.08207113003037857,
+        "components": 6001,
+        "symmetry_max_error": 0.0,
+        "obj_reload_checks": {
+          "vertices": 925260,
+          "polygons": 1946516,
+          "triangles": 1946516,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.3896270968402953e-10,
+          "volume": 2.689306788835445,
+          "components": 6001
+        },
+        "ply_reload_checks": {
+          "vertices": 925260,
+          "polygons": 1946516,
+          "triangles": 1946516,
+          "watertight": true,
+          "winding_consistent": true,
+          "zero_area_faces": 0,
+          "min_triangle_area": 3.3911796602597894e-10,
+          "volume": 2.6893067853183923,
+          "components": 6001
+        },
+        "exported_obj_symmetry_max_error": 0.0
+      }
+    },
+    "micro_exposed_tissue23": {
+      "status": "FAILED",
+      "input_sha256": "47800435c5da953e606955fc7426c815c47fe529c28a17c9c9be7a291353ff4d",
+      "config_sha256": "1b91b10cb78b3fa5d01c73752b0b1c0dc8fd59c6d708d69eebe28167d549d1cf"
+    }
+  },
+  "limits": [
+    "Basic validity is not a self-intersection or fabrication certificate.",
+    "Tissue output is a multi-shell assembly, not a fused solid."
+  ],
+  "tissue_target_preservation_after_symmetry": {
+    "max_distance_to_preserved_target_vertex": 2.2215299868541707e-16,
+    "target_vertex_count": 172034,
+    "scope": "Immediately after Tissue and symmetry; before final opening Boolean"
+  },
+  "same_config_different_input": {
+    "config_identical": true,
+    "input_different": true,
+    "result_different": true
+  },
+  "micro_simple_tissue23_target_preservation": {
+    "max_distance_after_symmetry": 0.0,
+    "target_vertex_count": 688130,
+    "before_symmetry_coordinate_error": 0.0,
+    "before_symmetry_topology_identical": true,
+    "selected_faces": 6000,
+    "scope": "Tissue stage; final opening Boolean can cut geometry",
+    "input": "Unmodified simple porous cell, not a bundle motif"
+  },
+  "original_sources_unchanged": {
+    "C:\\Users\\USER\\CHESHIRE\\src\\cheshire\\reference_subdivision.py": true,
+    "C:\\Users\\USER\\CHESHIRE\\src\\cheshire\\polygon_dual_subdivision.py": true,
+    "C:\\Users\\USER\\CHESHIRE\\src\\cheshire\\mola.py": true,
+    "C:\\Users\\USER\\CHESHIRE_ASTRA\\src\\cheshire\\astra_adaptive.py": true,
+    "C:\\Users\\USER\\CHESHIRE_ASTRA\\src\\cheshire\\freedom_domains.py": true,
+    "C:\\Users\\USER\\CHESHIRE_ASTRA\\src\\cheshire\\gate_mirror.py": true,
+    "C:\\Users\\USER\\Libraries\\HDMola\\1.0.0\\HDMola.dll": true
+  },
+  "tissue_composition_comparison": {
+    "status": "COMPLETE",
+    "selected_faces": 6000,
+    "selection_fraction": 0.008719308035714286,
+    "sources_unchanged": {
+      "C:\\Users\\USER\\CHESHIRE\\scratch\\generative_gate_20261010\\runs\\hierarchy_microfold23\\19_crease_subdivide\\state.npz": true,
+      "C:\\Users\\USER\\CHESHIRE\\scratch\\generative_gate_20261010\\runs\\micro_simple_tissue23\\20_tessellate\\state.npz": true,
+      "C:\\Users\\USER\\CHESHIRE\\scratch\\generative_gate_20261010\\components\\simple_micro_cell\\component.json": true
+    },
+    "variants": {
+      "03_tissue_only": {
+        "vertices": 240000,
+        "triangles": 576000,
+        "finite": true,
+        "zero_area_faces": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "components": 6000,
+        "symmetry_max_error": 0.0,
+        "selected_original_faces_remaining": 0,
+        "unused_original_faces_remaining": 0,
+        "comparison_tolerance": 1e-07,
+        "cell_geometry_max_distance_from_LAST": 0.0,
+        "obj_reload": {
+          "vertices": 240000,
+          "triangles": 576000,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "watertight": true,
+          "winding_consistent": true,
+          "components": 6000
+        },
+        "ply_reload": {
+          "vertices": 240000,
+          "triangles": 576000,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "watertight": true,
+          "winding_consistent": true,
+          "components": 6000
+        }
+      },
+      "02_replace_selected": {
+        "vertices": 926250,
+        "triangles": 1940256,
+        "finite": true,
+        "zero_area_faces": 0,
+        "boundary_edges": 9694,
+        "nonmanifold_edges": 0,
+        "watertight": false,
+        "winding_consistent": true,
+        "components": 6065,
+        "symmetry_max_error": 0.0,
+        "selected_original_faces_remaining": 0,
+        "unused_original_faces_remaining": 682128,
+        "comparison_tolerance": 1e-07,
+        "cell_geometry_max_distance_from_LAST": 0.0,
+        "obj_reload": {
+          "vertices": 926250,
+          "triangles": 1940256,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 9694,
+          "nonmanifold_edges": 0,
+          "watertight": false,
+          "winding_consistent": true,
+          "components": 6065
+        },
+        "ply_reload": {
+          "vertices": 926250,
+          "triangles": 1940256,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 9694,
+          "nonmanifold_edges": 0,
+          "watertight": false,
+          "winding_consistent": true,
+          "components": 6065
+        }
+      },
+      "01_overlay": {
+        "vertices": 928130,
+        "triangles": 1952256,
+        "finite": true,
+        "zero_area_faces": 0,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "watertight": true,
+        "winding_consistent": true,
+        "components": 6001,
+        "symmetry_max_error": 0.0,
+        "selected_original_faces_remaining": 6000,
+        "unused_original_faces_remaining": 682128,
+        "comparison_tolerance": 1e-07,
+        "cell_geometry_max_distance_from_LAST": 0.0,
+        "obj_reload": {
+          "vertices": 928130,
+          "triangles": 1952256,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "watertight": true,
+          "winding_consistent": true,
+          "components": 6001
+        },
+        "ply_reload": {
+          "vertices": 928130,
+          "triangles": 1952256,
+          "finite": true,
+          "zero_area_faces": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "watertight": true,
+          "winding_consistent": true,
+          "components": 6001
+        }
+      }
+    }
+  }
+}

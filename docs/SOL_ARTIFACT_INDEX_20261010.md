@@ -1,6 +1,6 @@
 # CHESHIRE 보존 자료 인덱스
 
-모든 상대 경로의 기준은 `C:/Users/USER/CHESHIRE/`다. 실제 파일 단위 목록은 `SOL_EXPERIMENT_INDEX_20261010.json`; 전체 아카이브 사본/원본 SHA256 대응은 `E:/CHESHIRE_DATA/archives/SOL_HANDOFF_20261010/files_verified.jsonl`이다. 아래는 **경로를 찾기 위한 지도**이며 과거 모든 실패안을 재검증했다는 뜻이 아니다.
+모든 상대 경로의 기준은 `C:/Users/USER/CHESHIRE/`다. 실제 파일 단위 목록은 `SOL_EXPERIMENT_INDEX_20261010.json`; 전체 아카이브 사본/원본 SHA256 대응은 `E:/CHESHIRE_DATA/archives/SOL_HANDOFF_20261010/files_verified_final.jsonl`이다. 아래는 **경로를 찾기 위한 지도**이며 과거 모든 실패안을 재검증했다는 뜻이 아니다.
 
 ## 기둥 연구
 
@@ -26,6 +26,7 @@
 | 동일 규칙 / 3 carrier | carrier_comparison/{uniform,area,aspect}.json, analyze_carriers.py | published_column_vertex7_results, carrier_area_results, carrier_aspect_results |
 | G8만 팽창 제어 | expansion_control.py | repo outputs/expansion_control_20261010/{baseline,decay_025,reprocess_only,local_decay} |
 | G1부터 성장량 배분 | paper075_hierarchy_control_8.json; 기존 published_column.py 재사용 | published_column_hierarchy8_results/g00…g08; 1개 추가 비교안, 완성된 ancestry hierarchy 아님 |
+| 초기 성공안 + 후기 국소 배분 | paper075_regional_control_8.json; published_column.py opt-in late_geometry_control | published_column_regional8_results/g00…g08 및 g05…g08_growth_field.npz; g08/column_double.ply 권장 |
 
 각 generation 폴더의 mesh.json/column.obj/column.ply와 validation/operator_metadata가 기준이다. 별도 standalone 초기 시험은 결과 형식이 다르므로 JSON 인덱스와 스크립트의 OUT 경로를 함께 확인한다. 일부 과거 스크립트는 import 실행/고정 output이라 **원본 폴더에서 무심코 재실행하지 않는다.**
 

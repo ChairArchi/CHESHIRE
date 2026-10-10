@@ -1,0 +1,81 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.65,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 3000000,
+  "opening_retention": 0.85,
+  "render_resolution": 1000,
+  "stages": [
+    {
+      "op": "cage_ribs",
+      "ribs": 4,
+      "core_scale": 0.72,
+      "rib_height": 0.46
+    },
+    {
+      "op": "cage_ribs",
+      "ribs": 4,
+      "knots": [
+        0,
+        0.12,
+        0.26,
+        0.38,
+        0.5,
+        0.63,
+        0.76,
+        0.88,
+        1
+      ],
+      "scales": [
+        1,
+        0.92,
+        0.72,
+        1.24,
+        0.82,
+        1.35,
+        0.68,
+        1.12,
+        1
+      ],
+      "stagger": 0.13,
+      "spine_retention": 0.72
+    },
+    {
+      "op": "cage_children",
+      "count": 18,
+      "spacing": 0.11,
+      "height_ratio": 0.48,
+      "fraction": 0.25,
+      "axial_shift": 0.8,
+      "cap_turn": 0.3,
+      "min_vertical_normal": 0.1
+    },
+    {
+      "op": "cage_children",
+      "count": 24,
+      "spacing": 0.07,
+      "height_ratio": 0.5,
+      "fraction": 0.4,
+      "axial_shift": -0.55,
+      "cap_turn": -0.45,
+      "frontier_only": true
+    },
+    {
+      "op": "cage_children",
+      "count": 32,
+      "spacing": 0.045,
+      "height_ratio": 0.46,
+      "fraction": 0.3,
+      "axial_shift": 0.7,
+      "cap_turn": 0.4,
+      "frontier_only": true
+    }
+  ]
+}

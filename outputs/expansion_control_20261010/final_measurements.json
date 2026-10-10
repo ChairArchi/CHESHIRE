@@ -1,0 +1,152 @@
+{
+  "baseline": {
+    "finite": true,
+    "watertight": true,
+    "winding": true,
+    "min_triangle_area": 1.3202903455948414e-08,
+    "vertices": 917504,
+    "faces": 917506,
+    "triangles": 1835004,
+    "extents": [
+      5.307028384316132,
+      5.307028384316132,
+      9.443083205134647
+    ],
+    "silhouette_pixels": {
+      "front": 172274,
+      "side": 172274
+    },
+    "normal_growth_budget_multiplier": 1.0,
+    "factor_range": [
+      1.0,
+      1.0
+    ],
+    "baseline_reconstruction_error": 2.3757302025048303e-12,
+    "self_intersections": "Raw experimental mesh; not repaired, not certified intersection-free",
+    "source_parent": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex7_results\\g07\\mesh.json",
+    "source_template": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex8_results\\g08\\mesh.json",
+    "control": "G8 only: unchanged DS placement weights and topology; normal extrusion multiplier",
+    "local_rule": "baseline",
+    "front_area_change_pct": 0.0,
+    "width_change_pct": 0.0
+  },
+  "decay_025": {
+    "finite": true,
+    "watertight": true,
+    "winding": true,
+    "min_triangle_area": 1.3379041088324362e-08,
+    "vertices": 917504,
+    "faces": 917506,
+    "triangles": 1835004,
+    "extents": [
+      5.277618985219415,
+      5.277618985219415,
+      9.441732018031214
+    ],
+    "silhouette_pixels": {
+      "front": 169790,
+      "side": 169790
+    },
+    "normal_growth_budget_multiplier": 0.25,
+    "factor_range": [
+      0.25,
+      0.25
+    ],
+    "baseline_reconstruction_error": 2.3757302025048303e-12,
+    "self_intersections": "Raw experimental mesh; not repaired, not certified intersection-free",
+    "source_parent": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex7_results\\g07\\mesh.json",
+    "source_template": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex8_results\\g08\\mesh.json",
+    "control": "G8 only: unchanged DS placement weights and topology; normal extrusion multiplier",
+    "local_rule": "decay_025",
+    "front_area_change_pct": -1.4418890836690346,
+    "width_change_pct": -0.5541594460589327
+  },
+  "reprocess_only": {
+    "finite": true,
+    "watertight": true,
+    "winding": true,
+    "min_triangle_area": 1.3683929626701745e-08,
+    "vertices": 917504,
+    "faces": 917506,
+    "triangles": 1835004,
+    "extents": [
+      5.271676586619658,
+      5.271676586619658,
+      9.441618164105035
+    ],
+    "silhouette_pixels": {
+      "front": 169290,
+      "side": 169290
+    },
+    "normal_growth_budget_multiplier": 0.0,
+    "factor_range": [
+      0.0,
+      0.0
+    ],
+    "baseline_reconstruction_error": 2.3757302025048303e-12,
+    "self_intersections": "Raw experimental mesh; not repaired, not certified intersection-free",
+    "source_parent": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex7_results\\g07\\mesh.json",
+    "source_template": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex8_results\\g08\\mesh.json",
+    "control": "G8 only: unchanged DS placement weights and topology; normal extrusion multiplier",
+    "local_rule": "reprocess_only",
+    "front_area_change_pct": -1.7321244064687602,
+    "width_change_pct": -0.6661316868202372
+  },
+  "local_decay": {
+    "finite": true,
+    "watertight": true,
+    "winding": true,
+    "min_triangle_area": 1.735077450391711e-09,
+    "vertices": 917504,
+    "faces": 917506,
+    "triangles": 1835004,
+    "extents": [
+      5.287422118251654,
+      5.287422118251654,
+      9.44184587195739
+    ],
+    "silhouette_pixels": {
+      "front": 170033,
+      "side": 170033
+    },
+    "normal_growth_budget_multiplier": 0.24999999999999994,
+    "factor_range": [
+      0.05850502812480129,
+      0.5
+    ],
+    "baseline_reconstruction_error": 2.3757302025048303e-12,
+    "self_intersections": "Raw experimental mesh; not repaired, not certified intersection-free",
+    "source_parent": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex7_results\\g07\\mesh.json",
+    "source_template": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\published_column_vertex8_results\\g08\\mesh.json",
+    "control": "G8 only: unchanged DS placement weights and topology; normal extrusion multiplier",
+    "local_rule": "min(0.5,k/(1+(face_perimeter/median_perimeter)^2)); k balances area*abs(w10) budget to 0.25",
+    "front_area_change_pct": -1.3008347167883683,
+    "width_change_pct": -0.36943963070594776
+  },
+  "hierarchy_G1_G8": {
+    "extents": [
+      4.867772057209746,
+      4.867772057209746,
+      9.299006182218474
+    ],
+    "silhouette_pixels": {
+      "front": 151173
+    },
+    "config": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\paper075_hierarchy_control_8.json",
+    "front_area_change_pct": -12.248511092794034,
+    "width_change_pct": -8.276879174125407
+  },
+  "regional_G5_G8": {
+    "extents": [
+      5.224623733522516,
+      5.224623733522516,
+      9.433160051027551
+    ],
+    "silhouette_pixels": {
+      "front": 162946
+    },
+    "config": "C:\\Users\\USER\\CHESHIRE\\scratch\\column_reference_20261010\\paper075_regional_control_8.json",
+    "front_area_change_pct": -5.414630182151692,
+    "width_change_pct": -1.552745620075191
+  }
+}

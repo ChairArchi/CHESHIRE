@@ -1,0 +1,122 @@
+{
+  "source": "Hansmeyer 2010 equations 1-6; this is an experimental weight schedule, not the unpublished settings of Illustration 3",
+  "extrusion_gain": 1.0,
+  "position_variation": true,
+  "schedule": [
+    {
+      "scheme": "cc",
+      "w1": -1.0,
+      "w2": -2.0,
+      "wf": 0.1,
+      "we": 0.0,
+      "wp": -0.012
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.65,
+        -0.008
+      ],
+      "edge": [
+        0.0,
+        0.0
+      ],
+      "vertex": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        -0.012
+      ],
+      "edge": [
+        0.3,
+        0.12
+      ],
+      "vertex": [
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "scheme": "cc",
+      "w1": -1.15,
+      "w2": -1.5,
+      "wf": -0.035,
+      "we": 0.045,
+      "wp": 0.32
+    },
+    {
+      "scheme": "cc",
+      "w1": -0.8,
+      "w2": -1.5,
+      "w3": 1.8,
+      "w4": 0.6,
+      "wf": 0.022750000000000003,
+      "we": -0.0078000000000000005,
+      "wp": 0.013000000000000001
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.004
+      ],
+      "edge": [
+        0.4,
+        0.010000000000000002
+      ],
+      "vertex": [
+        0.4,
+        0.008
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.0015
+      ],
+      "edge": [
+        0.45,
+        0.015
+      ],
+      "vertex": [
+        0.45,
+        0.01125
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.0009
+      ],
+      "edge": [
+        0.45,
+        0.009
+      ],
+      "vertex": [
+        0.45,
+        0.00675
+      ]
+    }
+  ],
+  "experiment": "G1-G4 identical successful parent formation; G5-G8 decayed growth redistributed using current face perimeter and neighbor normal bend. Heuristic, not persistent lineage control.",
+  "max_faces": 1200000,
+  "max_vertices": 1200000,
+  "late_geometry_control": true,
+  "generation_extrusion_multipliers": [
+    1,
+    1,
+    1,
+    1,
+    0.65,
+    0.4,
+    0.25,
+    0.15
+  ]
+}

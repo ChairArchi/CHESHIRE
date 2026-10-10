@@ -53,6 +53,18 @@ def run(config,output):
                 z=(mesh.face_centroid(f)[2]-lo)/(hi-lo)
                 factor[f]=float(np.interp(z,[0.,.25,.5,.75,1.],[.6,1.25,.75,1.1,.65]))
         scale={f:float(per[f]*factor[f]*config['extrusion_gain']) for f in mesh.faces()}
+        # Opt-in preservation-period trial: geometry-dependent late growth budget.
+        # This is a current-face heuristic, NOT persistent parent/child age control.
+        local_info=None
+        if config.get('late_geometry_control') and g+1>=5:
+            keys=list(mesh.faces());normals={f:np.asarray(mesh.face_normal(f)) for f in keys}
+            bend=np.array([np.mean([max(0.,1-float(np.dot(normals[f],normals[n]))) for n in mesh.face_neighbors(f)] or [0.]) for f in keys])
+            perimeter=np.array([per[f] for f in keys]);weight=np.array([scale[f] for f in keys])
+            raw=np.clip((.5+.5*np.sqrt(np.median(perimeter)/np.maximum(perimeter,1e-12)))/(1+2*bend),.25,2.)
+            gain=raw/np.average(raw,weights=weight)
+            for f,m in zip(keys,gain):scale[f]*=float(m)
+            np.savez_compressed(common.OUT/f'g{g+1:02d}_growth_field.npz',face_ids=keys,perimeter=perimeter,bend=bend,multiplier=gain)
+            local_info=dict(rule='clip((.5+.5*sqrt(median_perimeter/perimeter))/(1+2*mean_neighbor_normal_bend),.25,2); normalized by original face displacement scale',range=[float(gain.min()),float(gain.max())],mean_weighted=float(np.average(gain,weights=weight)),semantic_parent_hierarchy=False)
         if row['scheme']=='cc':
             pw={'face':{},'edge':{},'corner':{}}
             for f in mesh.faces():pw['face'][f]={'wf':row['wf']*scale[f]}
@@ -77,7 +89,7 @@ def run(config,output):
             families=result.face_families;origins=None
             participation=dict(input_families=result.metadata['input_family_counts'],output_families=result.metadata['family_counts'],unsupported_polygons=result.metadata['fallback_faces'])
         previous=row['scheme'];mesh=result.mesh
-        common.save(mesh,g+1,dict(operator=row,participation=participation,extrusion_gain=config['extrusion_gain'],normal_scale='current face perimeter; incident mean for edge/vertex',restored_parent_vertices=0,final_smoothing=False))
+        common.save(mesh,g+1,dict(operator=row,participation=participation,extrusion_gain=config['extrusion_gain'],normal_scale='current face perimeter; incident mean for edge/vertex',restored_parent_vertices=0,final_smoothing=False,late_geometry_control=local_info))
         (common.OUT/f'g{g+1:02d}'/'operator_metadata.json').write_text(json.dumps(result.metadata))
     return mesh
 

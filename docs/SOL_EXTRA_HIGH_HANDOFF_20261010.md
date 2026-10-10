@@ -1,6 +1,6 @@
 # CHESHIRE → Sol Extra High 인수인계
 
-이 문서는 이전 채팅 없이 작업을 이어가기 위한 시작점이다. 기준 작업 폴더는 `C:/Users/USER/CHESHIRE`다. 파일별 보존 증거는 `E:/CHESHIRE_DATA/archives/SOL_HANDOFF_20261010/files_verified.jsonl`, 예외는 같은 폴더의 `preservation_status.json`을 먼저 확인한다. **기둥, 이전 게이트 TARGET, Tissue 조직화는 서로 다른 성공 경로이며 어느 하나로 대체하지 않는다.**
+이 문서는 이전 채팅 없이 작업을 이어가기 위한 시작점이다. 기준 작업 폴더는 `C:/Users/USER/CHESHIRE`다. 파일별 보존 증거는 `E:/CHESHIRE_DATA/archives/SOL_HANDOFF_20261010/files_verified_final.jsonl`, 예외는 같은 폴더의 `preservation_final_status.json`을 먼저 확인한다. **기둥, 이전 게이트 TARGET, Tissue 조직화는 서로 다른 성공 경로이며 어느 하나로 대체하지 않는다.**
 
 ## 1. 목표와 현재 요청
 
@@ -9,6 +9,10 @@
 사용자가 마지막으로 요청한 것은 8세대 팽창 제어와 전체 성과 보존이었다. 이후 **1세대부터 위계를 반영하는 비교안 하나**를 추가 요청했으므로, 기존 연산의 세대별 법선 돌출 계수만 조절한 G1–G8 시험을 추가했다. 이것을 새로운 완성형 위계 알고리즘이라고 부르면 안 된다. 최종 수치/이미지는 `outputs/expansion_control_20261010/REPORT.txt` 및 `outputs/sol_handoff_20261010`의 검증 기록을 본다.
 
 보존 이후 자동으로 새 대규모 탐색을 시작하지 않는다. 후속 우선순위는 (1) 세대 간 성장 위계/비대화 제어 (2) carrier 반응성 (3) 기존 게이트 적용 (4) 기존 Tissue와 연결 (5) 설계/렌더 발전이다.
+
+추가 대화에서 선택적 후기 성장도 시험 요청하여 `paper075_regional_control_8.json` 한 안을 더 실행했다. G0–G4는 성공안과 mesh 바이트 동일, G5–G8은 현재 face perimeter와 이웃 normal bend에 따라 돌출 예산을 재배분한다. 기본 동작은 바꾸지 않은 opt-in 설정이며, 실제 field는 NPZ로 저장된다. 최종 결과: G8만 .25 감쇠는 폭 -0.554% / 정면 점유 -1.442%; G1부터 schedule은 -8.277% / -12.249%; 성공 초기형상+후기 국소 제어는 -1.553% / -5.415%. 면적은 고정 카메라 투영 점유이며 물리 체적 아님. 국소안과 일괄안은 초기 schedule도 달라 국소 mask의 단독 인과 효과를 증명하지 않는다.
+
+초기 schedule안의 기본 float32 PLY에 8개 퇴화 삼각형이 재로드 때 발견됐다. `published_column_hierarchy8_results/g08/column_double.ply`는 정확한 좌표 roundtrip/퇴화 0으로 별도 검증했다. 국소안 `published_column_regional8_results/g08/column_double.ply`도 동일 검증 통과. 기존 파일을 삭제하거나 이 실패를 숨기지 않았다. 재귀 기둥, 새 control 모두 자기교차 solid 인증은 별개다.
 
 ## 2. 우선 열 파일
 
@@ -108,6 +112,25 @@ Set-Location C:/Users/USER/CHESHIRE/scratch/connected_tissue_20261010
 
 `extension/`은 원래 생성기를 보존 복사해 fold8/fold10 및 section-mass 실험을 수행한 경로다. fold8/fold10은 같은 해상도에서 pleat/extrude cycle을 추가한 것이며 CC/DS 세대 증가와 동일하지 않다. 저폴리/날개/단면 변형 시험도 이곳과 column_reference에 각각 있다.
 
+### 마지막 첨부 게이트: section_mass 경로 회수
+
+첨부 이미지에 대응하는 section_mass 계열을 실제 렌더에서 확인했다. crop의 바이트 동일성은 확인하지 않았으므로 mid/full 모두 보존한다.
+
+- `renders/section_mass_mid/front.png`의 source는 `extension/runs/section_mass_full/16_normal_extrude/state.npz`.
+- `renders/section_mass_full/front.png`의 source는 같은 run의 `21_crease_subdivide/state.npz`.
+- 입력 `extension/inputs/neutral`, seed 23. `section_mass_early.json`: CC → 실제 MOLA → CC → section_articulate → DS → pleat_flow → normal_extrude → support_twist → CC.
+- `section_mass_full.json`: early `09_cc`에서 재개해 pleat/extrude 5쌍과 crease_subdivide 추가. 실제 run에는 prefix state SHA와 source run SHA가 있다.
+- full 최종 opening 처리 후 739,264 vertices / 1,478,524 triangles, closed 1 component / zero-area 0의 기존 OBJ/PLY 재로드 기록. 렌더는 opening guard 이전 normalized checkpoint이므로 최종 result.obj와 좌표·처리가 동일하지 않다.
+- `section_target.json` / `section_target.source.json`은 이 TARGET의 조직화 입력과 provenance. 이어진 `runs/section_wide_bundle4/frame_bundle`, `runs/section_wide_collar4/frame_bundle`, `renders/section_bundle`도 기본 frozen TARGET 조직과 별도로 보존한다.
+
+```powershell
+Set-Location C:/Users/USER/CHESHIRE/scratch/connected_tissue_20261010/extension
+..\..\..\.venv\Scripts\python.exe -B run.py --input ../../generative_gate_20261010/inputs/neutral --config section_mass_early.json --output runs/SOL_SECTION_EARLY
+..\..\..\.venv\Scripts\python.exe -B run.py --input ../../generative_gate_20261010/inputs/neutral --config section_mass_full.json --output runs/SOL_SECTION_FULL --resume-stage runs/SOL_SECTION_EARLY/09_cc
+```
+
+사용자는 이 기본 게이트+외부 연산 경로, Tissue 시험, 현재 재귀 생성까지 모두 회수한 뒤 **확보한 기능을 연결하고 미세 값을 조정하는 것**을 원한다. 현재 기둥의 재귀 schedule을 이 게이트와 Tissue에 연결한 완성 파이프라인은 아직 없으며, 그것이 다음 통합 작업이다.
+
 ## 8. 설계 판단과 다음 작업
 
 복잡성은 표면 장식만 붙이는 것으로 대체하지 않는다. 현재 기하가 다음 연산에 참여해야 한다. 큰 carrier, 중간 분기, 미세 접힘의 위계를 구분하고 smoothing 수렴과 과도한 팽창을 함께 피한다. FDM 때문에 이번 단계에서 디테일을 임의로 줄이지 않는다. 레퍼런스는 관찰과 가설의 근거이며 원본 기둥을 정확히 복제했다는 주장은 하지 않는다. 사용자의 'fin/날개/로켓'은 비유였으며 문자 그대로 로켓 부품을 붙이는 방식은 거절됐다.
@@ -118,7 +141,7 @@ Set-Location C:/Users/USER/CHESHIRE/scratch/connected_tissue_20261010
 
 ## 9. 보존 / 환경 / 남은 확인 범위
 
-아카이브 `workspace/`는 로컬 workspace의 확인 가능한 파일 사본, dependencies/는 CHESHIRE_ASTRA와 HDMola, references/는 사용자 PDF/이미지다. .git은 bundle로 보존하며 __pycache__/.pytest_cache는 제외한다. 일부 오래된 pytest 임시 폴더의 ACL 거부는 `preservation_status.json`에 기록한다. 원본은 삭제/초기화하지 않았다.
+아카이브 `workspace/`는 로컬 workspace의 확인 가능한 파일 사본, dependencies/는 CHESHIRE_ASTRA와 HDMola, references/는 사용자 PDF/이미지다. .git은 bundle로 보존하며 __pycache__/.pytest_cache는 제외한다. 일부 오래된 pytest 임시 폴더의 ACL 거부는 `preservation_final_status.json`에 기록한다. 원본은 삭제/초기화하지 않았다.
 
 기존 E:/CHESHIRE_DATA task22–36, astra 계열, research_archive는 **기존 위치에 보존 + external_inventory.jsonl로 목록화**한다. 이 전체를 새 아카이브에 중복 백업했다고 주장하지 않는다. 기존 Git bundle/zip/checkpoint도 inventory에 포함한다.
 
