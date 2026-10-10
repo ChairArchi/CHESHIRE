@@ -1,0 +1,2665 @@
+{
+  "criterion": "사용자 지정 세 범주. 개별 기능의 실제 증거와 통합 성공을 구분. 카테고리1에서도 과거 전체 코드 재현이 제한된 기존 형상 자산은 명시적으로 별도 표시.",
+  "category_1": [
+    {
+      "id": "A01",
+      "name": "메시 입출력·검증·측정·필드",
+      "tasks": "Task01–03",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/mesh_io.py",
+          "exists": true,
+          "bytes": 3878,
+          "sha256": "7d893a7aada8e1dad201e714626577be6cdc5d7ceee5e81dea0f02c7112ac904"
+        },
+        {
+          "path": "src/cheshire/validation.py",
+          "exists": true,
+          "bytes": 3545,
+          "sha256": "e563565e7e0d59030569f3ead8ef45cad9d72f9fc126e806619be3d72ef6fa5d"
+        },
+        {
+          "path": "src/cheshire/attributes.py",
+          "exists": true,
+          "bytes": 5941,
+          "sha256": "7dcb9f629664f32602b075ffb724ec920f6a66417cc52f159b7a033ddfce8761"
+        },
+        {
+          "path": "src/cheshire/mapping.py",
+          "exists": true,
+          "bytes": 4446,
+          "sha256": "74d20edddec1de8aee66223226075283c715cc5d18ff221fa476e84a1516864a"
+        },
+        {
+          "path": "src/cheshire/normalization.py",
+          "exists": true,
+          "bytes": 2837,
+          "sha256": "00bf6368e9c53eac124761adad87aa10d6927e581e7857a362aded3b71eeeb6f"
+        },
+        {
+          "path": "src/cheshire/artifact_root.py",
+          "exists": true,
+          "bytes": 1036,
+          "sha256": "b0834cb8eeef27847bcc97ebc6f594969c63fca6bdf2950fc74fd444f5f3daf0"
+        },
+        {
+          "path": "src/cheshire/__init__.py",
+          "exists": true,
+          "bytes": 1538,
+          "sha256": "3b3f0868446a0eb5d1e83ac115ff5886b5c6d60d47b6f92afea073ddf3c0973e"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실제 게이트 입력",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task13/study/source.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task13/study/source.json",
+              "exists": true,
+              "bytes": 104542,
+              "sha256": "6d0aec060448cedee6607c4a7d917139cd3414ee4de66d7c1122cfdd0da54d55"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [],
+      "solved": "원본 순서와 좌표를 유지하는 입출력, 기하 측정과 매개변수 필드의 분리.",
+      "limits": "초기 Task01–05 개별 실행 기록 일부 부재. 일반 프로그램 완성 판정과 별개.",
+      "reproducibility": "현재 구현과 실제 저장 입력 확인. 초기 모든 실행의 원본 로그 재현까지 확인한 것은 아님.",
+      "reports": [
+        {
+          "path": "README.md",
+          "exists": true,
+          "bytes": 34733,
+          "sha256": "cce11bd3d924c7460b79bd66cb03c3aa0e57319ee50943c236309027b4be423c"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "name": "선택·예산·변형 제어",
+      "tasks": "Task04–05",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/rules.py",
+          "exists": true,
+          "bytes": 6565,
+          "sha256": "06cc21910e5aee878b8fb56add1f83f3c60b863390180b89bbf7f5dbe666261f"
+        },
+        {
+          "path": "src/cheshire/execution.py",
+          "exists": true,
+          "bytes": 8888,
+          "sha256": "55a15fc54337b60b394b9e5227f8b6bb36823ec72d6db7350a0591bd884aa512"
+        },
+        {
+          "path": "src/cheshire/transforms.py",
+          "exists": true,
+          "bytes": 7406,
+          "sha256": "d6b783e98397e650d5b7339fcf3057cb437f4eba8fdabbeb21c91c909bc75c67"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "기존 실제 실행",
+          "declared_pattern": "local-artifact:output/task10/*/response.json",
+          "matched_files": 5,
+          "files": [
+            {
+              "path": "local-artifact:output/task10/12dc46b8-f2d1-4583-bc8b-04ada6cf74e9/response.json",
+              "exists": true,
+              "bytes": 13571711,
+              "sha256": "3204c6a59d980db7c09938c23d402e16f9cbe9af5899162cc7ced539942dfe7c"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task10/208e18eb-d872-4603-8120-cadf9021a160/response.json",
+              "exists": true,
+              "bytes": 264109,
+              "sha256": "255b54d46d4d9759481b5bc43b8cae22fc272188208f87bd1340908e1d10d208"
+            },
+            {
+              "path": "local-artifact:output/task10/62392f8e-9d94-4503-8c87-75193126a9ea/response.json",
+              "exists": true,
+              "bytes": 13571713,
+              "sha256": "dea1379240d5af78285f2b5ec7da539c129caa3e5c14e7fe0543608cc8d93b9c"
+            },
+            {
+              "path": "local-artifact:output/task10/a254e425-ffe2-449c-a97f-8de5bd164352/response.json",
+              "exists": true,
+              "bytes": 13571732,
+              "sha256": "41b9669d0f59cc1d326d16595d780dc211de9b5be79d719018754baa56e461e8"
+            },
+            {
+              "path": "local-artifact:output/task10/efb77471-d7c4-4ee1-8e64-5e300ebe5d10/response.json",
+              "exists": true,
+              "bytes": 13571713,
+              "sha256": "55209f4ad4d259579650e4397310d7f955b6e9779371f2ad426331d284a69871"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "mola_raw"
+      ],
+      "solved": "실행 전 증가량과 선택 결과를 설명하고 필드에 따라 실제 정점을 변형.",
+      "limits": "자동 설계 선택이나 임의 연산의 일반 Repeat 엔진은 없음.",
+      "reproducibility": "당시 테스트·worker 결과 기록. 이번 작업은 파일·해시 점검.",
+      "reports": [
+        {
+          "path": "README.md",
+          "exists": true,
+          "bytes": 34733,
+          "sha256": "cce11bd3d924c7460b79bd66cb03c3aa0e57319ee50943c236309027b4be423c"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "name": "계보와 필드 상속",
+      "tasks": "Task06–07",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/lineage.py",
+          "exists": true,
+          "bytes": 4647,
+          "sha256": "d5759302bd323f1e2c04695b231f9f75083c2fa8bba792c8bd4936c37d86aa07"
+        },
+        {
+          "path": "src/cheshire/inheritance.py",
+          "exists": true,
+          "bytes": 6426,
+          "sha256": "1923cc9e7e92a46ec8f319ae768f75eee6c3d92dc50278f4197f7b34e2199839"
+        },
+        {
+          "path": "src/cheshire/subdivision.py",
+          "exists": true,
+          "bytes": 15741,
+          "sha256": "6ae57494a58cc06e5c0704904ce271657aff8bd173514b11158ddefc89790526"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "원본 worker 상태",
+          "declared_pattern": "local-artifact:output/task08/*/response.json",
+          "matched_files": 4,
+          "files": [
+            {
+              "path": "local-artifact:output/task08/0fbcc484-180c-478d-bd05-85b375e7c753/response.json",
+              "exists": true,
+              "bytes": 5389147,
+              "sha256": "351fbf3ca87daa083f7bb0c864b7dd21d1652192331e3db8ade6937c16c1cb37"
+            },
+            {
+              "path": "local-artifact:output/task08/9615dfa0-7965-4709-89c0-12d0161c8287/response.json",
+              "exists": true,
+              "bytes": 5389147,
+              "sha256": "65f8d3a63aa7e93891c5ca290a041479ddc0bd725dec61c31bd7b42f9682916c"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task08/control_2b9f9059-dc57-4282-b4aa-a1649d427671/response.json",
+              "exists": true,
+              "bytes": 544757,
+              "sha256": "73c405e79677cd428a17859fae9decb8980b27a24a0cc284e3b20377d7dc8ed0"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task08/control_99ba0262-2dac-4fce-805e-4e35e03e41b6/response.json",
+              "exists": true,
+              "bytes": 545369,
+              "sha256": "36549692cb69ad6e0105c874572069dfa44a703746b80717c68a45a1acd135a6"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [],
+      "solved": "새 면·정점의 실제 부모 지지와 필드 운반을 분리해 저장.",
+      "limits": "메시 계보가 공간적 내부 포함 또는 장식의 미적 위계를 자동 보장하지 않음.",
+      "reproducibility": "기존 회귀와 immediate-parent 검증 기록.",
+      "reports": [
+        {
+          "path": "docs/CURRENT_PATHS.md",
+          "exists": true,
+          "bytes": 12361,
+          "sha256": "f1712d6bb2cad68af9142c5036ab2855eccc703ab4fcb318313d184dc7976bfe"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "name": "Rhino 선택·worker·비교 표시",
+      "tasks": "Task08 이후",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "rhino/CHESHIRE_Run.py",
+          "exists": true,
+          "bytes": 34421,
+          "sha256": "31c865cbe969c9f89660cf6c6c993ffe0b98ef48a0f39cdecd2a897255313294"
+        },
+        {
+          "path": "rhino/cheshire_worker.py",
+          "exists": true,
+          "bytes": 14773,
+          "sha256": "80cab8c404cc7e69713d0e3c631d8e8d7ae7cad15c4f157d98adb3a82766b92a"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실제 실행",
+          "declared_pattern": "local-artifact:output/task10/*/response.json",
+          "matched_files": 5,
+          "files": [
+            {
+              "path": "local-artifact:output/task10/12dc46b8-f2d1-4583-bc8b-04ada6cf74e9/response.json",
+              "exists": true,
+              "bytes": 13571711,
+              "sha256": "3204c6a59d980db7c09938c23d402e16f9cbe9af5899162cc7ced539942dfe7c"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task10/208e18eb-d872-4603-8120-cadf9021a160/response.json",
+              "exists": true,
+              "bytes": 264109,
+              "sha256": "255b54d46d4d9759481b5bc43b8cae22fc272188208f87bd1340908e1d10d208"
+            },
+            {
+              "path": "local-artifact:output/task10/62392f8e-9d94-4503-8c87-75193126a9ea/response.json",
+              "exists": true,
+              "bytes": 13571713,
+              "sha256": "dea1379240d5af78285f2b5ec7da539c129caa3e5c14e7fe0543608cc8d93b9c"
+            },
+            {
+              "path": "local-artifact:output/task10/a254e425-ffe2-449c-a97f-8de5bd164352/response.json",
+              "exists": true,
+              "bytes": 13571732,
+              "sha256": "41b9669d0f59cc1d326d16595d780dc211de9b5be79d719018754baa56e461e8"
+            },
+            {
+              "path": "local-artifact:output/task10/efb77471-d7c4-4ee1-8e64-5e300ebe5d10/response.json",
+              "exists": true,
+              "bytes": 13571713,
+              "sha256": "55209f4ad4d259579650e4397310d7f955b6e9779371f2ad426331d284a69871"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "mola_raw"
+      ],
+      "solved": "선택한 메시를 외부 Python 계산과 연결하고 원본 및 세대별 비교 결과를 표시.",
+      "limits": "후기 연구 전부가 런처에 통합된 것은 아님. 실제 UI Undo/Esc의 일부 증거 공백.",
+      "reproducibility": "실제 gate run 기록과 headless/native 테스트 범위를 구분.",
+      "reports": [
+        {
+          "path": "docs/CURRENT_PATHS.md",
+          "exists": true,
+          "bytes": 12361,
+          "sha256": "f1712d6bb2cad68af9142c5036ab2855eccc703ab4fcb318313d184dc7976bfe"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "name": "ALICE 실제 입력과 교환 경계",
+      "tasks": "독립 교환 + 20261010",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/gate_exchange.py",
+          "exists": true,
+          "bytes": 5217,
+          "sha256": "d2ab634dfc0cd1a7ef474efef827139a69fa719dae341fe9c2d4e2e22fc9ce54"
+        },
+        {
+          "path": "tools/check_gate_exchange.py",
+          "exists": true,
+          "bytes": 1168,
+          "sha256": "34e573679dc156f06a5dfa920248af95bbdbc1f563b572ae4f69880e7c52ff27"
+        },
+        {
+          "path": "scratch/alice_cheshire_pipeline_20261010/run.py",
+          "exists": true,
+          "bytes": 753,
+          "sha256": "d98cf2b185ada84cbc709531ae051d358477e6a784d2c702a2989284c73f4b1f"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "설정",
+          "declared_pattern": "scratch/alice_cheshire_pipeline_20261010/configs/default.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/alice_cheshire_pipeline_20261010/configs/default.json",
+              "exists": true,
+              "bytes": 956,
+              "sha256": "9897b2adee8f03fd9a25a84024dd6255f6fcc76289d389e65417f8d9302c7bf9"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "개선문 결과",
+          "declared_pattern": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/arch_17_v2/result.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/arch_17_v2/result.obj",
+              "exists": true,
+              "bytes": 13977851,
+              "sha256": "1697fd61b4813bfa53c12192e20420dcb57fd4aa6966269dd223a5e1b794394c"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "torii 결과",
+          "declared_pattern": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/torii_17/result.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/torii_17/result.obj",
+              "exists": true,
+              "bytes": 10186775,
+              "sha256": "9e31974bad71e526335887221fdff44c6aba510f0033d817ec9923e0c2294a1d"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "alice_arch_17_v2_views",
+        "alice_torii_17_views"
+      ],
+      "solved": "실제 ALICE atlas 두 입력에 Mola→carve→CC→Freedom 국소 접힘을 실행한 완료 산출물 존재.",
+      "limits": "형상 후 역할 전달은 nearest triangle centroid; 정확한 계보가 아님. 전체 접촉 검증·범용 통합 미완료.",
+      "reproducibility": "run.json의 source/input/result 해시를 아래 별도 현재 대조로 기록. fresh replay는 안 함.",
+      "reports": [
+        {
+          "path": "docs/GATE_EXCHANGE_V1.md",
+          "exists": true,
+          "bytes": 5441,
+          "sha256": "84d93d9447782b77d0fa53d450098b33a8aec2a7338905d95bc2512809698c2b"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "name": "공식 Mola 돌출과 표면 세분화",
+      "tasks": "Task09–11",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/mola.py",
+          "exists": true,
+          "bytes": 15014,
+          "sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee"
+        },
+        {
+          "path": "src/cheshire/surface.py",
+          "exists": true,
+          "bytes": 6373,
+          "sha256": "eaa7d79be0c2d90a2dd211293af694fef94d00900e7bfe707184c71fd48ad7ba"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "worker 결과",
+          "declared_pattern": "local-artifact:output/task10/12dc46b8-f2d1-4583-bc8b-04ada6cf74e9/response.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:output/task10/12dc46b8-f2d1-4583-bc8b-04ada6cf74e9/response.json",
+              "exists": true,
+              "bytes": 13571711,
+              "sha256": "3204c6a59d980db7c09938c23d402e16f9cbe9af5899162cc7ced539942dfe7c"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "mola_raw",
+        "mola_cc"
+      ],
+      "solved": "실제 외부 DLL tapered extrusion, cap 후손 성장, raw/terminal CC 차이.",
+      "limits": "개별 셀 돌출만으로 전체 장식 흐름이 자동 조직되지는 않음.",
+      "reproducibility": "공식 호출과 lineage 검증, 실제 raw/CC 동일 입력 비교 기록.",
+      "reports": [
+        {
+          "path": "rhino/MOLA_FIELD_QUICKSTART.md",
+          "exists": true,
+          "bytes": 6930,
+          "sha256": "5c77f855224879daeda4d1197a056df97e354ecccc918b3e189779625e691e20"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "name": "부위별 배치와 초기 게이트 디자인 어휘",
+      "tasks": "Task12–13",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [],
+      "artifacts": [
+        {
+          "role": "prototype recipe",
+          "declared_pattern": "local-artifact:output/task12/*/recipe*.json",
+          "matched_files": 3,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task12/8c5ff45c-7810-455d-a4ba-c1339c67eccd/recipes.json",
+              "exists": true,
+              "bytes": 1611,
+              "sha256": "5ceba1931351237dd6b547370b1a738621c780789f8d39de9c656427ab0df9fe"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task12/bc95e333-3e08-4c1e-bf39-38cf000d1d81/recipes.json",
+              "exists": true,
+              "bytes": 1367,
+              "sha256": "762e1ce24bedc8c7937b8e7f32dd08f6f1d703df8c641dc96e7ad856d977e80b"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task12/f677d4a8-c127-471f-85ea-961b868299df/recipes.json",
+              "exists": true,
+              "bytes": 1420,
+              "sha256": "a222704445435e5b690d967bb507588aab307b9e2cd71544b712d6242cf20df7"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "atlas manifest",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task13/study/manifest.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task13/study/manifest.json",
+              "exists": true,
+              "bytes": 215971,
+              "sha256": "8afc21ed2ea8b95b63eb49822769437cf11295475042f740f814f173914b6332"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "proto_final",
+        "atlas_Bhero",
+        "atlas_Chero"
+      ],
+      "solved": "리브·주두 팬·대각 테라스, quiet 영역과 전면/개구부 선택을 바꾼 실제 게이트.",
+      "limits": "초기 brief 일부 부재. 이미지 SUCCESS 라벨은 최종 미적 채택을 뜻하지 않음.",
+      "reproducibility": "36 recipes의 완료·입력 identity·repeat 검사 기록. 원본 이미지를 현재 해시 대조.",
+      "reports": [
+        {
+          "path": "rhino/VISUAL_PROTOTYPE_QUICKSTART.md",
+          "exists": true,
+          "bytes": 7772,
+          "sha256": "11dba3339f1bdafcb6ead4ec8153cece8e98de093ca9bc2c2c4c5548a7671b1d"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "name": "가중 CC·세대별 배치·point-class Eq4",
+      "tasks": "Task14–16",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/weighted_subdivision.py",
+          "exists": true,
+          "bytes": 10401,
+          "sha256": "edc8d26ffa77a5c85dc5395b1779c0e798e315309c7692463bbabe8b99d4c801"
+        },
+        {
+          "path": "src/cheshire/generational_subdivision.py",
+          "exists": true,
+          "bytes": 8040,
+          "sha256": "a5ae2cf1575d65b5e3995d4c7ae2fcf8c3d4c3fbcc32a33ed28e3b0a287a5387"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "C11 상태/결과",
+          "declared_pattern": "local-artifact:output/task16/**/C11*.*",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task16/study/schedules/C11_interpolation_release.json",
+              "exists": true,
+              "bytes": 1159,
+              "sha256": "e16377d80c6d54c510c6ff87e0500b6fef327a2931b1341f0c4566f89ca00afa"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "Task15 manifest",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task15/study/reproducibility.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task15/study/reproducibility.json",
+              "exists": true,
+              "bytes": 1541,
+              "sha256": "6ece6423db6fb257e6070e5ac5ba4a2595f22f8a0e544fb458708146ffe92f42"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "weighted_gate",
+        "carrier_final",
+        "c11_front"
+      ],
+      "solved": "위치 배치와 법선 돌출 분리, coarse carrier와 일정/변동 schedule, interpolation release.",
+      "limits": "초기 legacy와 이후 교정된 same-step coupling은 다른 연산 경로.",
+      "reproducibility": "standard/zero-control exact compatibility와 C11 실제 progression 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/research_archive/TECHNICAL_EVOLUTION.md",
+          "exists": true,
+          "bytes": 38467,
+          "sha256": "020ed52eac67682c2bc09954c42b35b0dba2753909ec5fdbcada766f2d9b3b96"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "name": "가중 Doo–Sabin과 CC/DS handoff",
+      "tasks": "Task17",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/weighted_doosabin.py",
+          "exists": true,
+          "bytes": 10402,
+          "sha256": "f2da1a3051797c9cd727dcf47bca8eed9c91f5e3649813f6fe2ea573484b4d7a"
+        },
+        {
+          "path": "src/cheshire/dual_subdivision.py",
+          "exists": true,
+          "bytes": 6022,
+          "sha256": "cff60085d94afc64e040e13dff723ee57b04ee12bfe7b037e7d7af083061bc5f"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "원본 결과",
+          "declared_pattern": "local-artifact:output/task17/**/response.json",
+          "matched_files": 21,
+          "files": [
+            {
+              "path": "local-artifact:output/task17/reproduction_smoke/cases/DS_STANDARD/response.json",
+              "exists": true,
+              "bytes": 3119945,
+              "sha256": "3fefd7d2f8421363d2dace45b0f849b9e05e3cb8ad5398601f734bdcec38e828"
+            },
+            {
+              "path": "local-artifact:output/task17/study/cases/DS_STANDARD/response.json",
+              "exists": true,
+              "bytes": 3119945,
+              "sha256": "3fefd7d2f8421363d2dace45b0f849b9e05e3cb8ad5398601f734bdcec38e828"
+            },
+            {
+              "path": "local-artifact:output/task17/study/cases/F05_face_mass/response.json",
+              "exists": true,
+              "bytes": 3261903,
+              "sha256": "2378032938fa12356c0d6bd9b0201422f68c0fe228bbde37479cd588665caab0"
+            },
+            {
+              "path": "local-artifact:output/task17/study/cases/F06_edge_release/response.json",
+              "exists": true,
+              "bytes": 3264456,
+              "sha256": "f1bfd57ff30c68d2579e6ab48dbeb72763c8a051d599e04228550de08bede5aa"
+            },
+            {
+              "path": "local-artifact:output/task17/study/cases/F07_vertex_crown/response.json",
+              "exists": true,
+              "bytes": 3262345,
+              "sha256": "e79cd91c8827c97779ec7b23df4dd0529d0cf2d4d4166cb48d092b01b0ac3458"
+            }
+          ],
+          "truncated_to_first_five": true
+        }
+      ],
+      "image_keys": [
+        "ds_selected",
+        "ds_hybrid"
+      ],
+      "solved": "inset·edge frame·hybrid의 다른 구조를 실제 형상에서 확보.",
+      "limits": "DS 계열을 CC와 같은 토폴로지 변화로 취급하면 안 됨.",
+      "reproducibility": "standard reference exact 비교 및 보존된 CC/DS/hybrid 실제 결과.",
+      "reports": [
+        {
+          "path": "docs/CURRENT_PATHS.md",
+          "exists": true,
+          "bytes": 12361,
+          "sha256": "f1712d6bb2cad68af9142c5036ab2855eccc703ab4fcb318313d184dc7976bfe"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "공간 activity·억제/활성 영역",
+      "tasks": "Task18",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/activity.py",
+          "exists": true,
+          "bytes": 5659,
+          "sha256": "3935716a9e5443f22d029acee93212f4698b08cf65f81227786ccff5a1972b7a"
+        },
+        {
+          "path": "src/cheshire/activity_diagnostics.py",
+          "exists": true,
+          "bytes": 4816,
+          "sha256": "b4b8c5fb60db18e9ee1a11cf2bcd02f13f4b6438aab6e590d627a1f2d1d15d81"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실행 기록",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task18/study/reproduction_result.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task18/study/reproduction_result.json",
+              "exists": true,
+              "bytes": 149,
+              "sha256": "d87cc80d7b44eec2159fd066147cf1f10c27bbd28a39e8e6b48a8c3efbc69565"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "activity",
+        "activity_detail"
+      ],
+      "solved": "공간에 따라 활성·quiet 영역을 나누고 그 상태를 운반.",
+      "limits": "ordered diffusion이 단순 거리 제어보다 낫다는 조형적 근거는 없음.",
+      "reproducibility": "uniform exact match와 topology/source-field 검증 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/research_archive/task_records.json",
+          "exists": true,
+          "bytes": 88234,
+          "sha256": "60ac3a27e0add234064936da2dbe852e956cc52695376af52070261304b717a7"
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "name": "지속적인 topology event와 중첩",
+      "tasks": "Task19",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/ornament.py",
+          "exists": true,
+          "bytes": 20993,
+          "sha256": "36d53842150b00e475445ee3eb311783d738e0b1facacfbaa07936bcf7544709"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "C07 실제 결과",
+          "declared_pattern": "local-artifact:output/task19/**/F_C07*/**/response.json",
+          "matched_files": 8,
+          "files": [
+            {
+              "path": "local-artifact:output/task19/study/B/F_C07/attempt_001/response.json",
+              "exists": true,
+              "bytes": 1470636,
+              "sha256": "840b31c338a586acec136ad150eaed50cf48aef5b834b1990384821e4dfb9c4a"
+            },
+            {
+              "path": "local-artifact:output/task19/study/B/F_C07/attempt_001/terminal_audit/response.json",
+              "exists": true,
+              "bytes": 1470638,
+              "sha256": "7b483deb30a5a6678f7cc04c8857447a087ad7d2206e8584d03b5501c29a2b0e"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task19/study/R/F_C07_BOLDER_MESO/attempt_001/response.json",
+              "exists": true,
+              "bytes": 84520,
+              "sha256": "ba49559c756cfeb768778dd128a9d9916b87f944e7300bbe992c650534af74f5"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task19/study/R/F_C07_BOLDER_MESO/attempt_001/terminal_audit/response.json",
+              "exists": true,
+              "bytes": 84534,
+              "sha256": "032309431203bd12492a6a88b96fb228960096430a5cf37b35557a3c6bf199b2"
+            },
+            {
+              "path": "local-artifact:output/task19/study/R/F_C07_RETAIN_TERMINAL_EVENT/attempt_001/response.json",
+              "exists": true,
+              "bytes": 1334234,
+              "sha256": "f74540b33402d4ecaefb6d3ef48b08f31ad4c863d1dc543e9e8ed899df4523a3"
+            }
+          ],
+          "truncated_to_first_five": true
+        }
+      ],
+      "image_keys": [
+        "events",
+        "c07_whole"
+      ],
+      "solved": "후손의 후속 이벤트와 실제 중첩 depth4; 개구부를 읽을 수 있는 장식 구조.",
+      "limits": "branch처럼 보이는 형상과 수학적 tree/전체 solid 유효성을 구분.",
+      "reproducibility": "원본 recipes·selection·worker 결과·실패 상태 보존.",
+      "reports": [
+        {
+          "path": "docs/ORNAMENT_CAPABILITY_STUDY.md",
+          "exists": true,
+          "bytes": 15761,
+          "sha256": "0f4750466a99c4638af55aeac6f6ef5c0fab70c8b82bd80fb5bdedf6c609a937"
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "name": "역할별 분기 문법",
+      "tasks": "Task20",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/branching.py",
+          "exists": true,
+          "bytes": 13785,
+          "sha256": "ba55e10d9f0797eafb392f2ea13e55d821fb100a1b7e750aa43f203edae8d8b8"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실제 hero 결과",
+          "declared_pattern": "local-artifact:output/task20/**/HERO*/**/response.json",
+          "matched_files": 20,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task20/study/B/HERO_ROLE_ASSEMBLY/attempt_001/audit_S01/response.json",
+              "exists": true,
+              "bytes": 9298,
+              "sha256": "fc9b10f009d8c91dda9514404e97cd249bd962979f1681b0618e884cc288b25f"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task20/study/B/HERO_ROLE_ASSEMBLY/attempt_001/audit_S02/response.json",
+              "exists": true,
+              "bytes": 40347,
+              "sha256": "4fa22e288afd7fcc72444d729b83eae7312b07d6f130066ae53329a7b5725a04"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task20/study/B/HERO_ROLE_ASSEMBLY/attempt_001/audit_S03/response.json",
+              "exists": true,
+              "bytes": 84578,
+              "sha256": "007cdd92425172d2b596b7d0b13feeb6e3424c4ff3e033dae0379c98ecce8d0c"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task20/study/B/HERO_ROLE_ASSEMBLY/attempt_001/audit_S04/response.json",
+              "exists": true,
+              "bytes": 352044,
+              "sha256": "b8b526bf41cb6b845785341f31bf2062b87dde5a511fd753bb7d82109a0f8ef9"
+            },
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task20/study/B/HERO_ROLE_ASSEMBLY/attempt_001/audit_S05/response.json",
+              "exists": true,
+              "bytes": 521512,
+              "sha256": "c5f6d9b540f6137ee1f62801b323b09eaad4bf7bf0db1e0478f9a70bfbe2b498"
+            }
+          ],
+          "truncated_to_first_five": true
+        }
+      ],
+      "image_keys": [
+        "branching",
+        "branch_roles"
+      ],
+      "solved": "같은 sibling에서도 다른 후속 행동, quiet branch와 ordered rule, backbone 유지.",
+      "limits": "연속 Tissue와의 새 조합은 별도 검증 필요.",
+      "reproducibility": "실제 backbone identity와 branch schema·recipe 기록.",
+      "reports": [
+        {
+          "path": "docs/DIFFERENTIATED_BRANCHING_STUDY.md",
+          "exists": true,
+          "bytes": 20709,
+          "sha256": "b499877fbb298ef68d766402d7ba177e36f128a597948d836a2703dd2036153d"
+        }
+      ]
+    },
+    {
+      "id": "A13",
+      "name": "방향성 돌출·Roof·ridge 어휘",
+      "tasks": "Task21",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/vocabulary.py",
+          "exists": true,
+          "bytes": 25747,
+          "sha256": "d021ccd81af965251c3e16f6bcb3e81c242357961d8f4db75a5700d1fb7e49c8"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실행 근거",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task21/study/direction_verification.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/output/task21/study/direction_verification.json",
+              "exists": true,
+              "bytes": 67077,
+              "sha256": "bc3752528529f91a34c649664f2074fb9fe71f1611cfdf1fd5ad6e8d96901d24"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "vocabulary",
+        "operators"
+      ],
+      "solved": "선호 방향과 실제 ridge 축을 구분한 7개 fragment 및 연결 경로.",
+      "limits": "raw operator 성공과 닫힌 게이트에 넣을 수 있는지는 다름.",
+      "reproducibility": "공식 Mola unit probe 및 실제 gate 비교.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/research_archive/task_records.json",
+          "exists": true,
+          "bytes": 88234,
+          "sha256": "60ac3a27e0add234064936da2dbe852e956cc52695376af52070261304b717a7"
+        }
+      ]
+    },
+    {
+      "id": "A14",
+      "name": "motif attraction·locking·sharp placement",
+      "tasks": "Task22",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/sharp_subdivision.py",
+          "exists": true,
+          "bytes": 12129,
+          "sha256": "a2949e3702f6ec8125fc46719e3ff366f5c0fd4362be1391ea6c60642486a5c8"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "연구 보고",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task22/TASK22_FINAL_REPORT.txt",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task22/TASK22_FINAL_REPORT.txt",
+              "exists": true,
+              "bytes": 11412,
+              "sha256": "0e9e9677ba4a301cc02a6c5ce97b6ddba5fe5fbd1b94d74b03e51616a184355a"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "최종 계획",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task22/final_comparison_plan.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task22/final_comparison_plan.json",
+              "exists": true,
+              "bytes": 8879,
+              "sha256": "a8cee1ddaab53004b0a6d5ca15285d9273b140c3d9dedacfab650d3c15d3105a"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "sharp",
+        "motif_matrix",
+        "lock_sequence"
+      ],
+      "solved": "Eq7/10/11, motif별 attractor/deflector와 유지 기간을 별도 제어.",
+      "limits": "locking 기간을 세대 수와 혼동하지 않음. attraction 자체가 분기 다양성 해결은 아님.",
+      "reproducibility": "문자 그대로의 식과 CHESHIRE 분류/거리 정의를 구분한 대조 기록.",
+      "reports": []
+    },
+    {
+      "id": "A15",
+      "name": "셀을 가로지르는 crease와 큰 접힘",
+      "tasks": "Task23",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/creases.py",
+          "exists": true,
+          "bytes": 14761,
+          "sha256": "9c8ef01ee967f099ee52d3b9e96bf89f78eb530c1f0ef327044b2d6ea7f168c4"
+        },
+        {
+          "path": "src/cheshire/crease_policy.py",
+          "exists": true,
+          "bytes": 1665,
+          "sha256": "8b128c24819b81d893c9390c18e17aaae4c94b9f1d23584dcb685ed8c6269ae2"
+        },
+        {
+          "path": "src/cheshire/crease_routing.py",
+          "exists": true,
+          "bytes": 15102,
+          "sha256": "063455fe30ec4ef8ffeeb6f73916ecfa9659961628064a029438e0651e202a09"
+        },
+        {
+          "path": "src/cheshire/crease_folding.py",
+          "exists": true,
+          "bytes": 7106,
+          "sha256": "e35a663b2343f21d1996fb3cab8da70ad870b1321a078270d7d01a9e7240851d"
+        },
+        {
+          "path": "src/cheshire/fold_placement.py",
+          "exists": true,
+          "bytes": 6370,
+          "sha256": "e1be3c23427817f4684c86578ae8bf2f4d1684584bb9eb3393e258040dc6125a"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "선택/재개 근거",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task23/REVIEW_MANIFEST.md",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task23/REVIEW_MANIFEST.md",
+              "exists": true,
+              "bytes": 5600,
+              "sha256": "3ecf514c479779ce8520465fe4bef5fc2828751357a1a3877bcde1735825a0fa"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "crease_spread",
+        "crease_network"
+      ],
+      "solved": "여러 부모 셀을 연결하는 graph와 sharpness, source ancestry, checkpoint 후속 재개.",
+      "limits": "Task23에서 제작용 hero를 새로 완성했다고 주장하지 않음.",
+      "reproducibility": "exact replay 및 실패 checkpoint에서 tail 재개 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task23/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 8028,
+          "sha256": "73dde803c2980bbb6a7b9caf75be5ab233aedddd3846d132fe6569d93063c4cf"
+        }
+      ]
+    },
+    {
+      "id": "A16",
+      "name": "말림·내부 공동과 전체 게이트 대안",
+      "tasks": "Task24–25",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/fold_continuation.py",
+          "exists": true,
+          "bytes": 5641,
+          "sha256": "fef4e6f7ac81bd12d6599c641f1d23d13b704e3ac02036d7c50c650af2b0a1ba"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "H1 원본",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task24/meshes/H1.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task24/meshes/H1.obj",
+              "exists": true,
+              "bytes": 7382063,
+              "sha256": "80a064ecc2118b5452508d177c81d0c2a6ab49833771f879c51fc96f533803f9"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "H1 설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task24/recipes/H1.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task24/recipes/H1.json",
+              "exists": true,
+              "bytes": 6979,
+              "sha256": "74b60bdf275316af58fe6c9f6abe4cc6d2d679dc7af32d401da83866da56aaa1"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "curvature 후속",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task25/designs/H1_CURVATURE_G2/attempt_001/H1_CURVATURE_G2.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task25/designs/H1_CURVATURE_G2/attempt_001/H1_CURVATURE_G2.obj",
+              "exists": true,
+              "bytes": 130763487,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "후속 설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task25/recipes/H1_CURVATURE_G2.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task25/recipes/H1_CURVATURE_G2.json",
+              "exists": true,
+              "bytes": 2277,
+              "sha256": "058d8777d8d7aed5e1a817ba6037ae14f4ba21f1e4736d423eda21b5fa17d72d"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "gate24_comparison",
+        "curl_ancestry",
+        "curl_underside"
+      ],
+      "solved": "서로 다른 gate H1/H2/H3, 큰 말림과 내부 공동, 말림의 초기 backbone 계보를 추적.",
+      "limits": "후기 작은 골의 추가는 약함. 별도의 whole-gate 미적 PARTIAL을 기능 실패로 바꾸지 않음.",
+      "reproducibility": "OBJ/3DM exact read, save/resume, 동일 조건 비교 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task24/selection.json",
+          "exists": true,
+          "bytes": 18139,
+          "sha256": "d366db88462a842080319f9cfec562b556cb2e2b37ed1b8a46fc0601dab266ce"
+        },
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task25/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 15342,
+          "sha256": "8777806f5c08023f8605683484fb8e5b594ddcdfdc2cadb1c5cd0d2ba58e9eb5"
+        }
+      ]
+    },
+    {
+      "id": "A17",
+      "name": "연속 단면으로 전체 게이트 생성",
+      "tasks": "Task26",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/progressive_gates.py",
+          "exists": true,
+          "bytes": 8108,
+          "sha256": "cc79e6d479937333fd992b90969d18f2a15e644e66cd6cd45d32629f8e0711c4"
+        },
+        {
+          "path": "src/cheshire/gate_integrity.py",
+          "exists": true,
+          "bytes": 6784,
+          "sha256": "ba6f526e6cdce5279ba72bcb7a00c2272c272769111a74056de3ce9cd1432899"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "G7 실제 게이트",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task26/designs/LEAD_FINAL_G7/attempt_001/LEAD_FINAL_G7.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task26/designs/LEAD_FINAL_G7/attempt_001/LEAD_FINAL_G7.obj",
+              "exists": true,
+              "bytes": 138794992,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task26/recipes/LEAD_FINAL_G7.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task26/recipes/LEAD_FINAL_G7.json",
+              "exists": true,
+              "bytes": 819,
+              "sha256": "62469831c3bb8f7550154683d8ee85b721481749977dc4e1afa365e243b0c40b"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "gate26_seq",
+        "gate26_final"
+      ],
+      "solved": "공유 ring으로 연결한 전체 게이트, 물리 대칭과 깊이 확인.",
+      "limits": "사용자 stop은 알고리즘 실패의 증거가 아님. 후속 세부 위계 자동 해결은 아님.",
+      "reproducibility": "100만 face 이상 체크포인트 재독해·대칭·native export 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task26/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 11552,
+          "sha256": "c1ef66ed9467aa84f08234913e26b561b3885add88e9c62fdbeb1aec21958afa"
+        }
+      ]
+    },
+    {
+      "id": "A18",
+      "name": "마디별 단면과 현재 형상 피드백",
+      "tasks": "Task27",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/dynamic_sections.py",
+          "exists": true,
+          "bytes": 16367,
+          "sha256": "ce3c7e6be5a552e9bac39368e32752e94d69e0ec2e4e9b6ff289cb57da35b4a0"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "실제 G5",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task27/stages/R4_PROFILE_DYNAMIC_G5/R4_PROFILE_DYNAMIC_G5.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task27/stages/R4_PROFILE_DYNAMIC_G5/R4_PROFILE_DYNAMIC_G5.obj",
+              "exists": true,
+              "bytes": 16991444,
+              "sha256": "626222df8fdbc4d1b7453f9c31d2ee99c46b55a590dec5ee3e9f88456bd0ab37"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "G5 설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task27/recipes/R4_PROFILE_DYNAMIC_G5.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task27/recipes/R4_PROFILE_DYNAMIC_G5.json",
+              "exists": true,
+              "bytes": 252,
+              "sha256": "14bfa9b89576826ec919028a96d6ae380bf4487448ea40561bb2c60425181ff7"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "P08",
+        "profile_controls",
+        "profile_body"
+      ],
+      "solved": "서로 다른 단면·목·팽창부를 가진 연결 gate, 실제 현재 형상을 다음 mapping에 반영.",
+      "limits": "R3 대칭 문제는 R4에서 교정. 모든 임의 입력에 적용하는 기능은 아님.",
+      "reproducibility": "actual sections·physical LR/FR symmetry·exact save/reload 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task27/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 23006,
+          "sha256": "0b182c2c258ad99dc6363034f052082844c64114a12a47fd90a963fa1da8332c"
+        }
+      ]
+    },
+    {
+      "id": "A19",
+      "name": "교정된 ArrayMesh reference CC/DS coupling",
+      "tasks": "Task28–30",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/reference_subdivision.py",
+          "exists": true,
+          "bytes": 11147,
+          "sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20"
+        },
+        {
+          "path": "src/cheshire/polygon_dual_subdivision.py",
+          "exists": true,
+          "bytes": 4561,
+          "sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168"
+        },
+        {
+          "path": "src/cheshire/subdivision_pipeline.py",
+          "exists": true,
+          "bytes": 3020,
+          "sha256": "71105eb46aaa78e8426c0fbf88209373a1d470d5dcceb2cf6a7b7352e39afae8"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "최종 정의",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task30/definitions/final_selected_pipeline.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/definitions/final_selected_pipeline.json",
+              "exists": true,
+              "bytes": 7812,
+              "sha256": "2d78acb5f5e3625c59ce481e887dc8ab2a780c3a02915ae2681df856e920bf61"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "선택된 cube",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task30/lead/**/mesh.npz",
+          "matched_files": 9,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/lead/G0/mesh.npz",
+              "exists": true,
+              "bytes": 1232,
+              "sha256": "fa56a922da827c7e83056340cf1dbc5521e5f85ddbd1d71a99ad4cd8b8435382"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/lead/G1/mesh.npz",
+              "exists": true,
+              "bytes": 1513,
+              "sha256": "6f2bc96848e287945913db06150078e6ce7b704b3635b902703a9de74e1a5f7f"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/lead/G2/mesh.npz",
+              "exists": true,
+              "bytes": 2494,
+              "sha256": "a50b4e68f5efb9e5e0f5e482d73fb4f43c0c6f772a659aa6e869737048b2bef3"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/lead/G3/mesh.npz",
+              "exists": true,
+              "bytes": 6477,
+              "sha256": "741697c2d77867429bddfdc8702146d7f983db30094e146f0c5b8d2c73a547fb"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task30/lead/G4/mesh.npz",
+              "exists": true,
+              "bytes": 20286,
+              "sha256": "98631d3cafa806d05570401ba987806310409461a72f0f9fe0cb5ad6ceaf6df1"
+            }
+          ],
+          "truncated_to_first_five": true
+        }
+      ],
+      "image_keys": [
+        "P12",
+        "P13",
+        "P17"
+      ],
+      "solved": "수정 face→edge→vertex의 실제 전달 순서, local scale, finite lock, CC/DS array 경로.",
+      "limits": "legacy API를 대체하지 않음. 무작위 전역 탐색의 최댓값이 조형 성공은 아님.",
+      "reproducibility": "mechanism matrix·reference 식 감사·G0–G8·save/resume 재독해.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task30/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 8219,
+          "sha256": "a377b117900b2946f0bbd02d93487ef31846ac9a1c83e3828760c667192ee1c3"
+        }
+      ]
+    },
+    {
+      "id": "A20",
+      "name": "지속 영역과 실제 내부 opening",
+      "tasks": "Task31",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/regional_generation.py",
+          "exists": true,
+          "bytes": 9407,
+          "sha256": "e8d5d6013dbeae296c36d4477aeabc47c9bc92039cfbe159fe21b5270e06fb84"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "선택 gate G7 mesh",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task31/lead/gate/G7/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task31/lead/gate/G7/mesh.npz",
+              "exists": true,
+              "bytes": 44146977,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "함께 필요한 regional state",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task31/lead/gate/G7/regional_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task31/lead/gate/G7/regional_state.npz",
+              "exists": true,
+              "bytes": 338355,
+              "sha256": "1ee309c821165e131c92d9798eac25fa9c0b7a3894a106b39cc8f1afbd5a99b2"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "정의",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task31/definitions/verified_gate_pipeline.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task31/definitions/verified_gate_pipeline.json",
+              "exists": true,
+              "bytes": 351,
+              "sha256": "a4981de49ffef5b7a46a4f5ebbe71e076d170243c10b9a371a6464facc1a1340"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "P25",
+        "P28",
+        "P29"
+      ],
+      "solved": "실제 genus/handle 변화, birth/coarse_edit/advance, 다중 부모 membership, 큰 개구부와 depth.",
+      "limits": "후속 검사에서 일부 Task31 단계의 교차가 확인됨. 검증된 기능을 전체 solid 인증으로 확대하지 않음.",
+      "reproducibility": "정의 hash·완전 부모·regional state·G7 exact resume 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task31/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 13492,
+          "sha256": "bed95e758437be8446873888ba2837794d0b79b5920faf4420e50d70e72e647a"
+        },
+        {
+          "path": "docs/TASK32_RESULTS.md",
+          "exists": true,
+          "bytes": 19834,
+          "sha256": "1d6b802fe25780a7e94f3d6947b606a401377bf328da8cc57dbcc3772768a2aa"
+        }
+      ]
+    },
+    {
+      "id": "A21",
+      "name": "관계형 영역·intrinsic/spectral 특징",
+      "tasks": "Task32",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/task32_patches.py",
+          "exists": true,
+          "bytes": 14099,
+          "sha256": "82517447e3d9307c591a7095aa0147e91c5b34dcda6d32ecdce320085bf539e5"
+        },
+        {
+          "path": "src/cheshire/task32_morphology.py",
+          "exists": true,
+          "bytes": 10040,
+          "sha256": "709651acd249f419c4811e96904062a71dcf5ecaa69ef8a426e7407bcdc69667"
+        },
+        {
+          "path": "src/cheshire/task32_spectral.py",
+          "exists": true,
+          "bytes": 7857,
+          "sha256": "2db9fc5bedcb733c2b1ad8780d8c9356701448151276133ef12165d1194ffedf"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "연구 정의",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/*.json",
+          "matched_files": 7,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/E01_COMBINATION.json",
+              "exists": true,
+              "bytes": 1717,
+              "sha256": "a047353ad22df77dcaa6f668b5d5f8e73a72aef1fa9011e2773ebe624e82aeef"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/E02_COMBINATION.json",
+              "exists": true,
+              "bytes": 2065,
+              "sha256": "c7e3b04b648bcd435da459bce86419e61d3a7c098e0ab64a0979acb46deab2de"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/E03_COMBINATION.json",
+              "exists": true,
+              "bytes": 2067,
+              "sha256": "0da455b909cca7db7f4865f4773551b5b342ef670e5df5b6cac20aeb0e18eee3"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/E04_COMBINATION.json",
+              "exists": true,
+              "bytes": 2066,
+              "sha256": "73a70bb7b50244820d0c02e6561bad195e4910acb6456ea084198fecf198b8d6"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/definitions/combination/E05_COMBINATION.json",
+              "exists": true,
+              "bytes": 2065,
+              "sha256": "942912c0915dbb5cafe21315077e2889da12521ae5b26ac194b684d8aed10b54"
+            }
+          ],
+          "truncated_to_first_five": true
+        },
+        {
+          "role": "대표 상태",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task32/candidates/E01_COMBINATION/S04/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task32/candidates/E01_COMBINATION/S04/mesh.npz",
+              "exists": true,
+              "bytes": 142869,
+              "sha256": "bc43c0e69a08b2233899023bfada7448cd9976d6436d00cea16a9ea0977e612d"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "task32_relations"
+      ],
+      "solved": "multi-face cap과 scope, 원본/생성 특징을 읽는 제어와 manifold-harmonic 계열 계산.",
+      "limits": "68개 대조의 완주는 미적 성공이 아님. 최종 디자인 미선정.",
+      "reproducibility": "실제 parent-child 생성·제어 및 별도 복구 시험 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task32/FINAL_REPORT.md",
+          "exists": true,
+          "bytes": 20298,
+          "sha256": "a56cdd4a31ddc5ee2d875284a39cea6549bd3a58e1510b49685b51c3b199a367"
+        }
+      ]
+    },
+    {
+      "id": "A22",
+      "name": "큰 접힘 안의 후속 중간·작은 골",
+      "tasks": "Task33",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/task33_folds.py",
+          "exists": true,
+          "bytes": 14789,
+          "sha256": "112c47a254b17abcaec7f3f8041db2f07163e41f8e13e56aa37440687ac6d1ea"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "V01 원본",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/G7_FOLD/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/G7_FOLD/mesh.npz",
+              "exists": true,
+              "bytes": 37678618,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "fold state",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/G7_FOLD/fold_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/G7_FOLD/fold_state.npz",
+              "exists": true,
+              "bytes": 28813486,
+              "sha256": "484f6786c653e4e69c10a8e698e0cc8fa94b07004016f41b0ccaaf99b730ba56"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/request.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task33/candidates/V01_COHERENT_TRANSPORT/request.json",
+              "exists": true,
+              "bytes": 704,
+              "sha256": "3d6add58def12944ebbae54afa6df72ad9e98d7a8726fbf12710d1e50da1484f"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "교환 메시",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task33/deliverables/V01_DESIGN_EXCHANGE/gate.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task33/deliverables/V01_DESIGN_EXCHANGE/gate.obj",
+              "exists": true,
+              "bytes": 131018485,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "task33_deepfolds"
+      ],
+      "solved": "부모 방향으로 정합한 후속 변위와 실제 깊은 nested fold.",
+      "limits": "선언한 구조화 carrier의 유한 결과. 전체 장식 풍부함은 아직 부족.",
+      "reproducibility": "35 NPZ fresh parameter replay exact와 독립 Git recovery의 기존 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task33/FINAL_SUMMARY.json",
+          "exists": true,
+          "bytes": 1104,
+          "sha256": "f7d4f0da5d46ba96b1d6401ecc70ee29b159d77e4e58b94141e6fb63fb4e27e5"
+        }
+      ]
+    },
+    {
+      "id": "A23",
+      "name": "생성된 형상이 다음 refold의 제어가 됨",
+      "tasks": "Task34",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/task34_refolding.py",
+          "exists": true,
+          "bytes": 20056,
+          "sha256": "529c55452ae8321f7ce622861a82d49f28edfb49137ab5cc443a938746058647"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "N04 native",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/G6_FOLD/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/G6_FOLD/mesh.npz",
+              "exists": true,
+              "bytes": 17990651,
+              "sha256": "d4c4cee801430e20c1aab6cd6fdd142a8f312f8b312ec9a3b0038ed2ce3b0081"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "제어 상태",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/G6_FOLD/control_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/G6_FOLD/control_state.npz",
+              "exists": true,
+              "bytes": 7722943,
+              "sha256": "4870a21436aef45f2753983c6c9bd2f6f8258a9efbd327746de0137d8e4db1d9"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/request.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task34/candidates/N04_FINE_RADIAL/request.json",
+              "exists": true,
+              "bytes": 357,
+              "sha256": "01cde75034b51ec077b2c57519d764c2605fc83394bd122c9dc836f39b21f516"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "task34_refolding"
+      ],
+      "solved": "실제 현재 crest/normal 특징이 다음 접힘 위치와 방향에 기여, 일부 secondary cleft 확보.",
+      "limits": "N04 G5는 sampling만 수행. 전면적인 fine fold 분포는 없음.",
+      "reproducibility": "current/frozen 대조와 후보별39개 native replay 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task34/FINAL_OVERVIEW.json",
+          "exists": true,
+          "bytes": 1743,
+          "sha256": "ff2983644b13aeb0cfe3a4d79bdfd2292798f70e9cd85240338b2abb88012853"
+        }
+      ]
+    },
+    {
+      "id": "A24",
+      "name": "구간별 단면과 깊은 내부 골",
+      "tasks": "Task35",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/task35_columns.py",
+          "exists": true,
+          "bytes": 17395,
+          "sha256": "8544fe108eb54ad11c97873e8bb830ea457105abc63a8c6f01dc05bbeb1f3b75"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "H01 native",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/G7_FOLD/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/G7_FOLD/mesh.npz",
+              "exists": true,
+              "bytes": 5800648,
+              "sha256": "45772452c7c187923e6cd6635d6a665500e2a4f393eb0934ac41a2d2ae19b51a"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "제어 상태",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/G7_FOLD/control_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/G7_FOLD/control_state.npz",
+              "exists": true,
+              "bytes": 1902628,
+              "sha256": "ab8c1bdd2c44dce3c939075cb8ad64b24afb47b67ebf9fd8e2fbd05372b7b6ed"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "설정",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/request.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task35/candidates/H01_SHOULDER_GROWTH/request.json",
+              "exists": true,
+              "bytes": 804,
+              "sha256": "30a501af2b29e9d65d7ea6db953fbae28c869806748eccefa531f88b8a9bb529"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "task35_sections"
+      ],
+      "solved": "폭·목·어깨와 현재 능선 특징에 따라 배열과 방향이 달라지고 내부 골 생성.",
+      "limits": "고정 각도/높이의 structured column. 일부 세대는 sampling. 상인방/게이트 접합 미수행.",
+      "reproducibility": "H01/H02 actual section·native·source overlay 기록.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task35/TASK35_RESULTS.md",
+          "exists": true,
+          "bytes": 26986,
+          "sha256": "58b5c12aab71d60f18135c89d886db15f30ab82c042567d280a55389430c6e20"
+        }
+      ]
+    },
+    {
+      "id": "A25",
+      "name": "중립 기둥에서 연속 재귀 생성",
+      "tasks": "Task36",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "src/cheshire/task36_growth.py",
+          "exists": true,
+          "bytes": 13237,
+          "sha256": "f523231d4e1c3e1119020d17c10b505ea01d51907b3b8f7016ab60bfb8403d62"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "U01 native",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/mesh.npz",
+              "exists": true,
+              "bytes": 36744662,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "재개에 필요한 quad state",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/quad_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/quad_state.npz",
+              "exists": true,
+              "bytes": 13695895,
+              "sha256": "577c2ecafdc35ce3f840be148ac2a9362ebff88073bb76e3155f7c3b3e7041e5"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "operator state",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/operator_state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task36/candidates/U01_INTERVAL_SAFE_G8/G8_FOLD/operator_state.npz",
+              "exists": true,
+              "bytes": 51280148,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "선택 recipe",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/task36/deliverables/U01_INTERVAL_SAFE_G8/recipe.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/task36/deliverables/U01_INTERVAL_SAFE_G8/recipe.json",
+              "exists": true,
+              "bytes": 705,
+              "sha256": "c0034afc7d007b216cf4756ce31cf58f2b14dfc28db6902626f4d96491aa9729"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "task36_recursive"
+      ],
+      "solved": "단순한 닫힌 기둥에서 현재 support·bend를 읽어 G8까지 실제 새 점을 배치.",
+      "limits": "이전 T02 VERIFIED는 철회됨. U01/W03도 무한 위계·게이트 전체 성공을 뜻하지 않음.",
+      "reproducibility": "교정된 U01 원본, 검사 범위와 native/quad 역할 구분.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/task36/TASK36_RESULTS.md",
+          "exists": true,
+          "bytes": 29018,
+          "sha256": "1d37541f14511c529a873b70f50abe7bc4f7641776fdd42e56b4affbe990815d"
+        }
+      ]
+    },
+    {
+      "id": "A26",
+      "name": "Astra 독립 엔진과 큰 형상 경로 복구",
+      "tasks": "Astra",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_adaptive.py",
+          "exists": true,
+          "bytes": 7239,
+          "sha256": "84c95447a9cb5cfa125796e752c99a560a383b1e91550e05ca2f8f3b55e6a823"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_curvature_response.py",
+          "exists": true,
+          "bytes": 7240,
+          "sha256": "c039370e4abe69525f802e8f8f498abedcbf198610bae5111f04abaef0d83ab4"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_dual.py",
+          "exists": true,
+          "bytes": 7226,
+          "sha256": "8919c06cd3cae44c07d1e4d7a6449c1c1e815fb270fb3261e0cd88067492468e"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_primal.py",
+          "exists": true,
+          "bytes": 6348,
+          "sha256": "4a03c4ad8a7f5176f63eee909a1fedbddca367c7a61c3588aa008c48f13fd27d"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_rotating.py",
+          "exists": true,
+          "bytes": 4448,
+          "sha256": "23c236d83ebf6d9c2ea8f58af5623fe04e1b2edb9e1ef26d7ea685358e8963d0"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_validation.py",
+          "exists": true,
+          "bytes": 662,
+          "sha256": "a6dbc1210481777f038e301aaaf8a8f9f9d62a0a74672099ad6f04c59e7a55cc"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "D00 실제 결과",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/astra_research/deliverables/D00_G9_RESEARCH/D00_G9_RESEARCH.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/deliverables/D00_G9_RESEARCH/D00_G9_RESEARCH.obj",
+              "exists": true,
+              "bytes": 8049057,
+              "sha256": "a8a661def1c4ad7d0bc7eae6b900774b2d512198e4d5836898786b1a4ec33d81"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "복구 레시피",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/*.json",
+          "matched_files": 7,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/completed.json",
+              "exists": true,
+              "bytes": 308,
+              "sha256": "91526cf19d4efcd3ef2af40d8c2b05468af6b43e1b408d9d6342b6e8150701a3"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/execution.json",
+              "exists": true,
+              "bytes": 256,
+              "sha256": "0a09f118c8cca52f2744682518bbb11812c7bf646a92aefe7772ca4b25857e63"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/history.json",
+              "exists": true,
+              "bytes": 15862,
+              "sha256": "527e30241a3c7364ee8d6cf63048abef3060541f7cdb1a165064e1cd7acb1e85"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/preflight.json",
+              "exists": true,
+              "bytes": 322,
+              "sha256": "bd0672eea23a2148afdfdedd418817f3a9db285be4bcfd11f90710aa09cd5b26"
+            },
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_research/recipes/B00_RECOVERED/recipe.json",
+              "exists": true,
+              "bytes": 2887,
+              "sha256": "5f02cafc3ab415ac93eb0f9e5e63dd4fa6ff1d07dea6652ddc7df5d00f827764"
+            }
+          ],
+          "truncated_to_first_five": true
+        }
+      ],
+      "image_keys": [
+        "astra_recovered"
+      ],
+      "solved": "단순 입력의 팽창·결속·능선 복구, 현재 hinge·면적이 다음 분할/edge flip/offset에 기여.",
+      "limits": "G5 이후 새 깊은 골의 지속은 약함. 끝단 접합 제약 미구현.",
+      "reproducibility": "원본 CHESHIRE와 별도 Git 가지·source·replay 기록.",
+      "reports": [
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/docs/ASTRA_RESEARCH_RESULTS.md",
+          "exists": true,
+          "bytes": 15029,
+          "sha256": "15e685b56b59bfa80a97c8863bb51f5d7a0b9b89fc40f79f02179be9e1bdc70a"
+        }
+      ]
+    },
+    {
+      "id": "A27",
+      "name": "Freedom: 셀을 가로지르는 회전 영역",
+      "tasks": "Freedom",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_domains.py",
+          "exists": true,
+          "bytes": 5819,
+          "sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_growth.py",
+          "exists": true,
+          "bytes": 6513,
+          "sha256": "4257245affeb3042124c87e1931c8e92ec3247498cd088fd40b674586b9e94bd"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_patch.py",
+          "exists": true,
+          "bytes": 9392,
+          "sha256": "f2a1dc9f18dcf80885b72cd0996b65c4b68927a7378fa5c1c86ab8e038c55312"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_legacy.py",
+          "exists": true,
+          "bytes": 4889,
+          "sha256": "e7bf178ef892589c1e10cb68a9aa19f1f2d047ed58bdbdf811fbefb716ee3319"
+        },
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_nested.py",
+          "exists": true,
+          "bytes": 4202,
+          "sha256": "75d446a4626fd2e163927c5436910ba1936b12a14bf04b0640347459281a484f"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "J09 native",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/J09_BROAD_G7/native_mesh.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/J09_BROAD_G7/native_mesh.npz",
+              "exists": true,
+              "bytes": 9408665,
+              "sha256": "1465642c30784cf8176e10c261df2f54d7d8e774c795efbc1662ffe0836dd911"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "J09 recipe",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/request.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/request.json",
+              "exists": true,
+              "bytes": 223,
+              "sha256": "738e2a7457483a1abac108710c94fcdf6cdf0d8849bc41957f3869af11e88458"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "J09 교환",
+          "declared_pattern": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/J09_BROAD_G7/J09_BROAD_G7_INVALID.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/deliverables/D02_G7/J09_BROAD_G7/J09_BROAD_G7_INVALID.obj",
+              "exists": true,
+              "bytes": 33967437,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "freedom_domains"
+      ],
+      "solved": "회전 제안의 상쇄를 줄이고 여러 셀을 함께 접어 동일 부모 내부의 유한 골→골 계층 확보.",
+      "limits": "J09는 자기교차가 있는 연구 메시. G8에서 같은 계층의 지속을 잃은 기록도 보존.",
+      "reproducibility": "31개 NPZ exact replay와 단면 추적 기록. actual ALICE prototype에도 domain 호출.",
+      "reports": [
+        {
+          "path": "external-artifact:E:/CHESHIRE_DATA/astra_freedom/final_documents/FREEDOM_RESULTS.md",
+          "exists": true,
+          "bytes": 12892,
+          "sha256": "6f8d5e9b2677192bf6b075d9587854b0a19149164c9df4777a5884fddeea8cc3"
+        }
+      ]
+    },
+    {
+      "id": "A28",
+      "name": "기존 게이트의 국소 접힘·돌출",
+      "tasks": "20261010",
+      "classification": "기존 형상·체크포인트 확보 / 과거 전체 재현 제한",
+      "codes": [
+        {
+          "path": "scratch/generative_gate_20261010/run.py",
+          "exists": true,
+          "bytes": 918,
+          "sha256": "834aef28468f502a504429b7b60cf441f7af02f9e2c7af863750f3ad2199265b"
+        },
+        {
+          "path": "scratch/generative_gate_20261010/gateflow/engine.py",
+          "exists": true,
+          "bytes": 44540,
+          "sha256": "7834f2fa3bbf91cc80ff449f70c00dd820e1dde7e9b3a7fa1e3434256259fcbc"
+        },
+        {
+          "path": "scratch/generative_gate_20261010/gateflow/pipeline.py",
+          "exists": true,
+          "bytes": 11011,
+          "sha256": "290490840d014b8b19beb12e293357c2b408edcc22441d63d182815afb625fa2"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "원본 성공 state",
+          "declared_pattern": "local-artifact:scratch/generative_gate_20261010/runs/hierarchy_microfold23/19_crease_subdivide/state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/generative_gate_20261010/runs/hierarchy_microfold23/19_crease_subdivide/state.npz",
+              "exists": true,
+              "bytes": 24852783,
+              "sha256": "9e72bcd8debb0484082c789feb390e27bcc2ca96c082b099495ba6014035c8a7"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "원본 설정/기록",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/generative_gate_20261010/runs/hierarchy_microfold23/run.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/generative_gate_20261010/runs/hierarchy_microfold23/run.json",
+              "exists": true,
+              "bytes": 38421,
+              "sha256": "5061f8ff111c5f68f8aa1572d1793b326cdc12505a383500d0df6c0a131dd03c"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "frozen_full",
+        "fold8"
+      ],
+      "solved": "role·곡률·opening/transition field에 따른 pleat_flow, 독립 돌출, crease 후속 변화. 성공한 전체 게이트 원본을 재사용 가능.",
+      "limits": "당시 engine/pipeline 등 exact source 일부 미회수. 완전한 과거 파이프라인 bit-exact 재현 보장 없음.",
+      "reproducibility": "확보 범위는 보존 checkpoint 로드·기존 형상 재사용. 당시 전체 prefix 재현과 구별.",
+      "reports": [
+        {
+          "path": "docs/SOL_EXTRA_HIGH_HANDOFF_20261010.md",
+          "exists": true,
+          "bytes": 22135,
+          "sha256": "aa6d70725d9caadea0612339b91cb748c0e919c43919dcd2b95523e93e1fd196"
+        }
+      ]
+    },
+    {
+      "id": "A29",
+      "name": "단면 변주와 게이트 큰 덩어리",
+      "tasks": "20261010",
+      "classification": "기존 형상·체크포인트 확보 / 과거 전체 재현 제한",
+      "codes": [
+        {
+          "path": "scratch/connected_tissue_20261010/extension/run.py",
+          "exists": true,
+          "bytes": 918,
+          "sha256": "834aef28468f502a504429b7b60cf441f7af02f9e2c7af863750f3ad2199265b"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "중간 checkpoint",
+          "declared_pattern": "local-artifact:scratch/connected_tissue_20261010/extension/runs/section_mass_full/16_normal_extrude/state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/connected_tissue_20261010/extension/runs/section_mass_full/16_normal_extrude/state.npz",
+              "exists": true,
+              "bytes": 8947924,
+              "sha256": "3a525757503035e2a1ddb7ea3d9c8069d9903121ccc107e5771680fdc694ef9e"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "후기 checkpoint",
+          "declared_pattern": "local-artifact:scratch/connected_tissue_20261010/extension/runs/section_mass_full/21_crease_subdivide/state.npz",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/connected_tissue_20261010/extension/runs/section_mass_full/21_crease_subdivide/state.npz",
+              "exists": true,
+              "bytes": 26970798,
+              "sha256": "e741e07847703f9443957f81552118ef3a004570293a978ca533e2cab2d68b19"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "설정",
+          "declared_pattern": "scratch/connected_tissue_20261010/extension/section_mass_full.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/connected_tissue_20261010/extension/section_mass_full.json",
+              "exists": true,
+              "bytes": 8271,
+              "sha256": "1162b57cc742014d28838a518d6e7fb0f47e8e278b990362380a29086352fac1"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "section_mass_mid",
+        "section_mass_full",
+        "section_bundle"
+      ],
+      "solved": "팽창·수축·마디·비틀림과 반복 접힘, section TARGET에 연결 조직을 실제 적용.",
+      "limits": "렌더는 최종 opening guard 전 checkpoint. 전체 당시 코드 재현 제한은 A28과 공유.",
+      "reproducibility": "native/설정/실제 render source 연결. 원본 checkpoint 재사용 범위.",
+      "reports": [
+        {
+          "path": "docs/SOL_ARTIFACT_INDEX_20261010.md",
+          "exists": true,
+          "bytes": 9949,
+          "sha256": "f9fc240cca0fa716da0793262ddfc629876c130762bba4fcdc1296fc516f9b32"
+        }
+      ]
+    },
+    {
+      "id": "A30",
+      "name": "Tissue 연속 조직·다발·슬릿",
+      "tasks": "20261010",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "scratch/connected_tissue_20261010/run.py",
+          "exists": true,
+          "bytes": 6489,
+          "sha256": "ed95cbd75093d0d5751ee0b664140a5cb6a7bf7616b562a28d27ed1bf77b37b3"
+        },
+        {
+          "path": "scratch/connected_tissue_20261010/worker.py",
+          "exists": true,
+          "bytes": 13113,
+          "sha256": "f6327bd0276cc1a6ef5733561bb54bcf1b707562f7f7c32602cd69d3219794b1"
+        },
+        {
+          "path": "scratch/connected_tissue_20261010/strip_network.py",
+          "exists": true,
+          "bytes": 2990,
+          "sha256": "3e53f3486dfdb8df019f55329cedb6d962a60df496a72f9671355878545c56c0"
+        },
+        {
+          "path": "scratch/connected_tissue_20261010/mirror_surface.py",
+          "exists": true,
+          "bytes": 1340,
+          "sha256": "11d78149dcecbfcccde946f5148631a7c1ebae0ce108c6fe811c13964b0493a4"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "선호 local 결과",
+          "declared_pattern": "local-artifact:scratch/connected_tissue_20261010/runs/patch_bundle4/frame_bundle/result.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/connected_tissue_20261010/runs/patch_bundle4/frame_bundle/result.obj",
+              "exists": true,
+              "bytes": 23145351,
+              "sha256": "5b3f4ddee3c954a5752319987ea36d59109bc5a0c7c9cd5a71e0ad0be585d708"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "local 설정",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/connected_tissue_20261010/runs/patch_bundle4/frame_bundle/job.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/connected_tissue_20261010/runs/patch_bundle4/frame_bundle/job.json",
+              "exists": true,
+              "bytes": 549,
+              "sha256": "a466836af0d78e15a02ff967a7d25f900dc9647db8a6a43978f65823410ce35e"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "wide 조직",
+          "declared_pattern": "local-artifact:scratch/connected_tissue_20261010/runs/wide_bundle4/frame_bundle/result.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/connected_tissue_20261010/runs/wide_bundle4/frame_bundle/result.obj",
+              "exists": true,
+              "bytes": 132935207,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "실제 Tissue 조직",
+          "declared_pattern": "local-artifact:scratch/connected_tissue_20261010/runs/wide_protected4/tissue_round/result.obj",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/connected_tissue_20261010/runs/wide_protected4/tissue_round/result.obj",
+              "exists": true,
+              "bytes": 71770941,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "기존 검증",
+          "declared_pattern": "scratch/connected_tissue_20261010/verification.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/connected_tissue_20261010/verification.json",
+              "exists": true,
+              "bytes": 9541,
+              "sha256": "945cc54037de0c19e322dca05ed089eecc6755e250c94508e267913728239bee"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "wide_bundle",
+        "wide_protected",
+        "section_bundle",
+        "tissue_target_detail",
+        "tissue_bundle_detail",
+        "tissue_protected_detail"
+      ],
+      "solved": "quad scale 회수·연속 face patch·actual Tissue와 local frame_bundle을 구분. 두께감·연속 relief를 큰 접힘/단면 TARGET에 실제 적용.",
+      "limits": "wide는 별도 전면 shell이며 전체 gate와 용접된 솔리드가 아님. frame_bundle은 자체 구현; 실제 Weaverbird 호출로 표기하지 않음.",
+      "reproducibility": "frozen TARGET hash·source·operations·checks·실제 결과 보존. 사용자 강한 선호.",
+      "reports": [
+        {
+          "path": "scratch/connected_tissue_20261010/design_selection.json",
+          "exists": true,
+          "bytes": 475,
+          "sha256": "f7a097ac9d7e898216b42b4a5a0a061926ff3539b2ca1142863428fb9e098cbf"
+        },
+        {
+          "path": "scratch/connected_tissue_20261010/README.txt",
+          "exists": true,
+          "bytes": 4426,
+          "sha256": "bfd7f875146b401c21b0951cdeca728254b8043de0d8970c200ebaeb881da49c"
+        }
+      ]
+    },
+    {
+      "id": "A31",
+      "name": "Astra 이후 논문 기반 CC/DS와 G7/G8",
+      "tasks": "20261010 이후",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "scratch/column_reference_20261010/published_column.py",
+          "exists": true,
+          "bytes": 7337,
+          "sha256": "8a01f2c1ff29213185d38ab2b93f4d9a0da79d007a3ebe81f73f9c46653710d6"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "G7 설정",
+          "declared_pattern": "scratch/column_reference_20261010/paper075_vertex_growth_7.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/column_reference_20261010/paper075_vertex_growth_7.json",
+              "exists": true,
+              "bytes": 1575,
+              "sha256": "7fb953557b485d07c7e606c3aa53e80fc1c4520c2e4ae3fc1d628442f388606e"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "G8 설정",
+          "declared_pattern": "scratch/column_reference_20261010/paper075_vertex_growth_8.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/column_reference_20261010/paper075_vertex_growth_8.json",
+              "exists": true,
+              "bytes": 1836,
+              "sha256": "0a5c9d432037b3b01d209f8662a1d7d5fa5f83ac9e82ca83c6e4104a79b7e72d"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "독립 G7 native",
+          "declared_pattern": "local-artifact:scratch/column_reference_20261010/published_column_vertex7_results/g07/mesh.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/column_reference_20261010/published_column_vertex7_results/g07/mesh.json",
+              "exists": true,
+              "bytes": 21707881,
+              "sha256": "6684a48916917e52ae634e36eb1f24cdb40e11d2884870078b0c2c51a45b5c6a"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "독립 G8 native",
+          "declared_pattern": "local-artifact:scratch/column_reference_20261010/published_column_vertex8_results/g08/mesh.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/column_reference_20261010/published_column_vertex8_results/g08/mesh.json",
+              "exists": true,
+              "bytes": 88166184,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "검증된 G7 body",
+          "declared_pattern": "local-artifact:outputs/subdivision_column_20261010/vertex_column_07/mesh.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:outputs/subdivision_column_20261010/vertex_column_07/mesh.json",
+              "exists": true,
+              "bytes": 44541691,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "column_g7",
+        "column_g8"
+      ],
+      "solved": "추가 논문 분석 이후 꼭짓점 제어·CC/DS 배치·motif/locking·돌출을 발전시킨 독립 G7/G8 기술 자산.",
+      "limits": "G8 raw를 CGAL 해소 완료나 제작 가능으로 표기하지 않음. 기존 게이트·Tissue와 별도 보존.",
+      "reproducibility": "원본 세대별 mesh/operator metadata와 정확한 G6/G7 body export 기록.",
+      "reports": [
+        {
+          "path": "docs/SOL_EXTRA_HIGH_HANDOFF_20261010.md",
+          "exists": true,
+          "bytes": 22135,
+          "sha256": "aa6d70725d9caadea0612339b91cb748c0e919c43919dcd2b95523e93e1fd196"
+        }
+      ]
+    },
+    {
+      "id": "A32",
+      "name": "부위·세대별 제어와 GPU 경로",
+      "tasks": "20261010–11",
+      "classification": "개별 확보 / 검증 범위 한정",
+      "codes": [
+        {
+          "path": "scratch/column_reference_20261010/published_column.py",
+          "exists": true,
+          "bytes": 7337,
+          "sha256": "8a01f2c1ff29213185d38ab2b93f4d9a0da79d007a3ebe81f73f9c46653710d6"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "부위별 recipe",
+          "declared_pattern": "scratch/column_reference_20261010/paper075_regional_control_8.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "scratch/column_reference_20261010/paper075_regional_control_8.json",
+              "exists": true,
+              "bytes": 2166,
+              "sha256": "216e8764e3c7f1c96902cd3ed2e5d133ff3dcfec1e8b6358163c2e9fb65d0b26"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "regional G8",
+          "declared_pattern": "local-artifact:scratch/column_reference_20261010/published_column_regional8_results/g08/mesh.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "local-artifact:scratch/column_reference_20261010/published_column_regional8_results/g08/mesh.json",
+              "exists": true,
+              "bytes": 88159613,
+              "hash_note": "Presence and size checked; large checkpoint not newly hashed here."
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "GPU 결과 기록",
+          "declared_pattern": "local-artifact:outputs/regional_gpu_20261010_01/*.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/regional_gpu_20261010_01/gpu_probe.json",
+              "exists": true,
+              "bytes": 291,
+              "sha256": "2c88caf382170536058ed7f5606ae9c51c542e00e9d9f0ccadb37aa3465c4b5a"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [
+        "column_regional_g8"
+      ],
+      "solved": "현재 기하 특징과 후기 제어의 opt-in 경로, G8 및 별도 GPU 실행 자료.",
+      "limits": "모든 backend/GPU가 같은 수식·정밀도라는 의미가 아님. 큰 형상의 수렴 문제 자동 해결은 아님.",
+      "reproducibility": "세대·원본 배열/설정·렌더 기록 범위. 계산량 자체를 성과로 세지 않음.",
+      "reports": [
+        {
+          "path": "docs/SOL_ARTIFACT_INDEX_20261010.md",
+          "exists": true,
+          "bytes": 9949,
+          "sha256": "f9fc240cca0fa716da0793262ddfc629876c130762bba4fcdc1296fc516f9b32"
+        }
+      ]
+    },
+    {
+      "id": "A33",
+      "name": "원인 분리와 형상 유지 측정",
+      "tasks": "20261011",
+      "classification": "진단 기술·근거 확보",
+      "codes": [
+        {
+          "path": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_build_20261011.py",
+          "exists": true,
+          "bytes": 10684,
+          "sha256": "ec5c7291d4aa3b39423d8f903c88d3145cdb0997dbb3136eb5f2a2e54a4fc018"
+        }
+      ],
+      "artifacts": [
+        {
+          "role": "종합 보고",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/REPORT.txt",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/REPORT.txt",
+              "exists": true,
+              "bytes": 12226,
+              "sha256": "0785b7a1f5c23096a4c03bebfb58c51411b8e2a25a0c39e53233f57c681946de"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "실험 목록",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/EXPERIMENT_INDEX.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/EXPERIMENT_INDEX.json",
+              "exists": true,
+              "bytes": 6957,
+              "sha256": "f04fd24489c6571068599259e6427e1b643fb3b52338b7ce42e97abf64ab0273"
+            }
+          ],
+          "truncated_to_first_five": false
+        },
+        {
+          "role": "가설 목록",
+          "declared_pattern": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/HYPOTHESES.json",
+          "matched_files": 1,
+          "files": [
+            {
+              "path": "docs/technology_recovery_20261011/code_snapshots/workspace/outputs/research_synthesis_20261011_01/HYPOTHESES.json",
+              "exists": true,
+              "bytes": 10702,
+              "sha256": "5a322d70e8289e505c918447ca86e7ca56c8845e3c488325f90619b3f05460d6"
+            }
+          ],
+          "truncated_to_first_five": false
+        }
+      ],
+      "image_keys": [],
+      "solved": "placement·normal·attraction·후기 제어의 역할을 작은 동일 조건 비교로 분리한 측정·이미지.",
+      "limits": "큰 접힘 유지의 국소 개선과 전체 디자인 다양성 해결을 구분. 종료한 자기교차 억제 가설 재개 없음.",
+      "reproducibility": "원본 설정·고정 카메라·보존 audit. 진단 자료이지 독립 완성 게이트가 아님.",
+      "reports": []
+    }
+  ],
+  "category_2": [
+    {
+      "id": "B01",
+      "name": "기존 큰 접힘 + Tissue의 전면/후면·접합 완성",
+      "parts": [
+        "A28",
+        "A29",
+        "A30"
+      ],
+      "already_done": "기존 microfold/section TARGET 위의 연속 조직 적용은 실제로 완료.",
+      "unverified": "전체 뒷면까지의 조직 범위와 원본 게이트에 용접한 최종 솔리드.",
+      "alternative": "시안에서는 별도 shell을 함께 배치하고 필요한 부위만 수작업 trim/접합. 전체 자동 용접 개발은 보류 가능."
+    },
+    {
+      "id": "B02",
+      "name": "G7/G8 재귀 형상 + 전체 게이트 구성",
+      "parts": [
+        "A31",
+        "A32",
+        "A17"
+      ],
+      "already_done": "각 기둥과 기존 전체 gate는 별도로 확보.",
+      "unverified": "기둥의 위계·단면을 상인방/접합부까지 연속적으로 운반하는 결합.",
+      "alternative": "좋은 기둥/부분 메시를 선택해 변형·배치하고 접합부를 수작업 설계. 일반적인 자동 연결 엔진은 지금 불필요."
+    },
+    {
+      "id": "B03",
+      "name": "역할별 분기 + 연속 조직",
+      "parts": [
+        "A12",
+        "A13",
+        "A30"
+      ],
+      "already_done": "branching grammar와 Tissue 각각 실제 형상 확인.",
+      "unverified": "분기 영역이 Tissue의 방향·밀도·quiet 영역을 함께 정하는 결합.",
+      "alternative": "저장된 branch/role 결과에서 적용 영역을 수동 선택하고 기존 조직 기능 사용."
+    },
+    {
+      "id": "B04",
+      "name": "실제 ALICE 입력 + 선호한 microfold/section/Tissue 결과",
+      "parts": [
+        "A05",
+        "A28",
+        "A29",
+        "A30"
+      ],
+      "already_done": "ALICE→Mola/CC/Freedom prototype은 존재. synthetic gate→Tissue도 존재.",
+      "unverified": "현재 ALICE 형상·매개변수를 선호한 두 성공 TARGET의 제어 의미와 동일하게 연결하는 경로.",
+      "alternative": "ALICE의 선택 gate를 베이스로 부위와 접합 범위를 지정하고 기존 결과/연산을 선택적으로 사용."
+    },
+    {
+      "id": "B05",
+      "name": "동적 단면 gate + 선택한 연속 relief",
+      "parts": [
+        "A18",
+        "A30"
+      ],
+      "already_done": "R4 단면 gate와 section_mass+bundle은 각각 존재.",
+      "unverified": "Task27 R4의 native state를 선택한 bundle/Tissue 경로에 직접 전달하는 비교.",
+      "alternative": "완성 메시를 export해서 조직 입력으로 사용. 새로운 단면 알고리즘을 만들 이유 없음."
+    }
+  ],
+  "category_3": [
+    {
+      "id": "C01",
+      "name": "서로 다른 연구 엔진을 하나로 잇는 최종 설계 조합 경로",
+      "need": "선택한 게이트와 부위별 기능을 2–3개 대안으로 구성하고 저장할 작업이 필요.",
+      "absent": "모든 기술을 단일 ALICE parameter interface로 조합·재개하는 범용 runner는 없음.",
+      "workaround": "고정한 입력·설정과 기존 출력으로 대안별 별도 recipe/scene를 구성.",
+      "development_priority": "지금 범용 엔진 개발 불필요"
+    },
+    {
+      "id": "C02",
+      "name": "선택 기둥·상인방·조직의 최종 접합",
+      "need": "한 monumental gate로 읽히는 접합부와 전면/후면 구성이 필요.",
+      "absent": "모든 재귀 부품과 shell을 임의 gate에 자동 맞춤·용접하는 기능은 없음.",
+      "workaround": "기존 단면 게이트를 베이스로 사용하거나 DCC에서 단면 맞춤·trim·Boolean.",
+      "development_priority": "시안 선택 뒤 필요한 접합만 처리"
+    },
+    {
+      "id": "C03",
+      "name": "ALICE 의미/매개변수의 정확한 후속 제어 연결",
+      "need": "선택된 입력에서 어느 부위를 어떻게 바꿀지 일관된 지정이 필요.",
+      "absent": "현재 prototype의 nearest-centroid role 전달을 모든 topology 변화의 정확한 semantic lineage로 확장한 기능은 없음.",
+      "workaround": "이번 2–3개 입력은 역할을 명시적으로 지정하고 범위를 고정. 기존 lineage 지원 연산을 우선 사용.",
+      "development_priority": "시안에는 수동 지정 가능; 제품화 시 재검토"
+    },
+    {
+      "id": "C04",
+      "name": "선택된 최종 조합의 형상·교환 확인",
+      "need": "조합 뒤 개구부·접합·중복 면·출력 파일을 확인해야 함.",
+      "absent": "모든 연구 가지와 Tissue 조합에 공통으로 적용한 최종 전체 검증/수리 완료본은 아직 없음.",
+      "workaround": "기존 검사·export 도구와 DCC 국소 수리 사용. 발표용과 제작용 검증 범위를 구분.",
+      "development_priority": "최종 선택안만 필요한 범위로 검증"
+    }
+  ],
+  "held_evidence": [
+    {
+      "name": "초기 low-poly/fins/되접힘 가설들",
+      "paths": [
+        "outputs/radical_lowpoly_20261011_01",
+        "outputs/reference_cage_20261011_01",
+        "outputs/center_column_growth_20261011_01"
+      ],
+      "status": "연구 산출물 보존. 사용자 미채택; 성공 자산으로 재분류하지 않음."
+    },
+    {
+      "name": "게이트 문법 중간 연구",
+      "paths": [
+        "external-artifact:E:/CHESHIRE_DATA/astra_gate_grammar"
+      ],
+      "status": "완료 event·spec·evaluation 존재. 독립 재현/최종 선택 범위 미확정으로 확보 목록과 분리."
+    },
+    {
+      "name": "Cleanroom 가중 subdivision 대조",
+      "paths": [
+        "cleanroom",
+        "research/hansmeyer-cleanroom"
+      ],
+      "status": "3개 대조의 G0–G8 자료/별도 Git 가지 존재. 최종 게이트 자산과는 별도 기준 실험."
+    }
+  ],
+  "not_required_now": [
+    "한스마이어 원작의 정확한 재현",
+    "무한 세대에서 지속되는 자동 위계",
+    "임의 입력 전체를 지원하는 범용 모델링 엔진",
+    "모든 연구 기술을 하나의 알고리즘으로 합치기"
+  ],
+  "user_preferences": [
+    "최종 목표는 grotesque monumental gate와 2–3개 디자인 대안.",
+    "Tissue 실험과 두께감 있는 연속 조직을 강하게 선호.",
+    "Astra 이후 논문 분석으로 진보한 subdivision을 별도 기술 자산으로 유지.",
+    "기존 게이트 접힘/돌출, Tissue, 최근 G7/G8을 각각 보존.",
+    "없는 기술을 무조건 개발하지 말고 기존 조합이나 수작업도 사용."
+  ]
+}

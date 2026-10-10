@@ -1,0 +1,238 @@
+[
+  {
+    "run": "arch_17_v2",
+    "receipt": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/alice_cheshire_pipeline_20261010/runs/arch_17_v2/run.json",
+      "exists": true,
+      "bytes": 20395,
+      "sha256": "bf20fa98ff55d857555ada473a670655eb875c50b8d11056e70c212a12d72c30"
+    },
+    "reported_status": "COMPLETE",
+    "source_code": [
+      {
+        "path": "src/cheshire/reference_subdivision.py",
+        "exists": true,
+        "bytes": 11147,
+        "sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20",
+        "expected_sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20",
+        "matches": true
+      },
+      {
+        "path": "src/cheshire/polygon_dual_subdivision.py",
+        "exists": true,
+        "bytes": 4561,
+        "sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168",
+        "expected_sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168",
+        "matches": true
+      },
+      {
+        "path": "src/cheshire/mola.py",
+        "exists": true,
+        "bytes": 15014,
+        "sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee",
+        "expected_sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee",
+        "matches": true
+      },
+      {
+        "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_domains.py",
+        "exists": true,
+        "bytes": 5819,
+        "sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63",
+        "expected_sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63",
+        "matches": true
+      }
+    ],
+    "actual_input": [
+      {
+        "path": "external-artifact:E:/ModernClicheData/experiments/alice2_3_canonical_atlas/samples/10193dbbaf2e08fb7c35/atlas.json",
+        "exists": true,
+        "bytes": 6266269,
+        "sha256": "15db7139540aa324a59a31484acf461e15626521c85e571d42e59b35d5321655",
+        "expected_sha256": "15db7139540aa324a59a31484acf461e15626521c85e571d42e59b35d5321655",
+        "matches": true
+      },
+      {
+        "path": "external-artifact:E:/ModernClicheData/experiments/alice2_baseline/structure/10193dbbaf2e08fb7c35/normalized.glb",
+        "exists": true,
+        "bytes": 4980168,
+        "sha256": "f4e02dc36572ce0a013b8d1273b5422305cce9bc31d89add819dc1f929af811e",
+        "expected_sha256": "f4e02dc36572ce0a013b8d1273b5422305cce9bc31d89add819dc1f929af811e",
+        "matches": true
+      }
+    ],
+    "result": {
+      "path": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/arch_17_v2/result.obj",
+      "exists": true,
+      "bytes": 13977851,
+      "sha256": "1697fd61b4813bfa53c12192e20420dcb57fd4aa6966269dd223a5e1b794394c",
+      "expected_sha256": "1697fd61b4813bfa53c12192e20420dcb57fd4aa6966269dd223a5e1b794394c",
+      "matches": true
+    },
+    "stages": [
+      {
+        "index": null,
+        "stage": "prepare",
+        "observation_source": null,
+        "operator": null
+      },
+      {
+        "index": 1,
+        "stage": "mola",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 2,
+        "stage": "carve",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 3,
+        "stage": "cc",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 4,
+        "stage": "fold",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": "GEODESIC_DOMINANT_FOLD_DOMAINS"
+      }
+    ],
+    "limitations": [
+      "Basic topology and Manifold validity; no exhaustive self-contact/clearance certification.",
+      "Source role transport after topology changes uses nearest triangle centroid, not exact lineage."
+    ],
+    "final_record": {
+      "vertices": 138007,
+      "triangles": 276042,
+      "watertight": true,
+      "consistent_winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "min_face_area": 2.2354814713841122e-11,
+      "components": 4,
+      "volume": 0.18451037805071782
+    }
+  },
+  {
+    "run": "torii_17",
+    "receipt": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/workspace/scratch/alice_cheshire_pipeline_20261010/runs/torii_17/run.json",
+      "exists": true,
+      "bytes": 20074,
+      "sha256": "673960ba49b70f5cd532000168d367f2aa25df772a3855b51c98d1ce9c4ff08e"
+    },
+    "reported_status": "COMPLETE",
+    "source_code": [
+      {
+        "path": "src/cheshire/reference_subdivision.py",
+        "exists": true,
+        "bytes": 11147,
+        "sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20",
+        "expected_sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20",
+        "matches": true
+      },
+      {
+        "path": "src/cheshire/polygon_dual_subdivision.py",
+        "exists": true,
+        "bytes": 4561,
+        "sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168",
+        "expected_sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168",
+        "matches": true
+      },
+      {
+        "path": "src/cheshire/mola.py",
+        "exists": true,
+        "bytes": 15014,
+        "sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee",
+        "expected_sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee",
+        "matches": true
+      },
+      {
+        "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_domains.py",
+        "exists": true,
+        "bytes": 5819,
+        "sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63",
+        "expected_sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63",
+        "matches": true
+      }
+    ],
+    "actual_input": [
+      {
+        "path": "external-artifact:E:/ModernClicheData/experiments/alice2_3_canonical_atlas/samples/2482b7d8233d97c4ee47/atlas.json",
+        "exists": true,
+        "bytes": 1090248,
+        "sha256": "ae964d60907fa7d1303ee54b17b1aee4f32d3edc607c5cd6f2b48d46260d69cc",
+        "expected_sha256": "ae964d60907fa7d1303ee54b17b1aee4f32d3edc607c5cd6f2b48d46260d69cc",
+        "matches": true
+      },
+      {
+        "path": "external-artifact:E:/ModernClicheData/experiments/alice2_baseline/structure/2482b7d8233d97c4ee47/normalized.glb",
+        "exists": true,
+        "bytes": 865600,
+        "sha256": "0cca2b2dba9fea35d5bea4e903c32df3d6a4e6f6563a74296c1bec300f69cf87",
+        "expected_sha256": "0cca2b2dba9fea35d5bea4e903c32df3d6a4e6f6563a74296c1bec300f69cf87",
+        "matches": true
+      }
+    ],
+    "result": {
+      "path": "local-artifact:scratch/alice_cheshire_pipeline_20261010/runs/torii_17/result.obj",
+      "exists": true,
+      "bytes": 10186775,
+      "sha256": "9e31974bad71e526335887221fdff44c6aba510f0033d817ec9923e0c2294a1d",
+      "expected_sha256": "9e31974bad71e526335887221fdff44c6aba510f0033d817ec9923e0c2294a1d",
+      "matches": true
+    },
+    "stages": [
+      {
+        "index": null,
+        "stage": "prepare",
+        "observation_source": null,
+        "operator": null
+      },
+      {
+        "index": 1,
+        "stage": "mola",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 2,
+        "stage": "carve",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 3,
+        "stage": "cc",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": null
+      },
+      {
+        "index": 4,
+        "stage": "fold",
+        "observation_source": "actual_previous_stage_mesh",
+        "operator": "GEODESIC_DOMINANT_FOLD_DOMAINS"
+      }
+    ],
+    "limitations": [
+      "Basic topology and Manifold validity; no exhaustive self-contact/clearance certification.",
+      "Source role transport after topology changes uses nearest triangle centroid, not exact lineage."
+    ],
+    "final_record": {
+      "vertices": 101902,
+      "triangles": 203808,
+      "watertight": true,
+      "consistent_winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "zero_area_faces": 0,
+      "min_face_area": 5.8003791211740786e-11,
+      "components": 1,
+      "volume": 0.02401711694297944
+    }
+  }
+]

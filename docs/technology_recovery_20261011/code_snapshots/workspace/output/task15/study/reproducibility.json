@@ -1,0 +1,48 @@
+{
+  "case": "T03_meso_interpolation",
+  "process": {
+    "exit_code": 0,
+    "stop": null,
+    "seconds": 15.313000000081956,
+    "peak_combined_resident_bytes": 88252416
+  },
+  "checkpoints": [
+    {
+      "generation": 0,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "56fb1b82f96253fe1bc73b69d8dde5989a3d5d06b00d98b146210cebe8086139"
+    },
+    {
+      "generation": 1,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "53cb78e21e1728bb6251a88ba9ce5b85bcece1a0fcbaa773f425ed63ae405994"
+    },
+    {
+      "generation": 2,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "89f490908a3eba261c0f7903ead3b4c5bbd9639892cd788cd06c0853569bd503"
+    },
+    {
+      "generation": 3,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "cf72fde20c6d2fc7fb1f3f5ffa9250d82f9a5ad30bb74f119df896c70761cc06"
+    },
+    {
+      "generation": 4,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "858bde34d924ccfc78e6e1ae4832681611e9851bfc5ce5c157215aa3f85c9902"
+    },
+    {
+      "generation": 5,
+      "json_geometry": "IDENTICAL",
+      "OBJ_bytes": "IDENTICAL",
+      "mesh_sha256": "6a7034e17711fd669d868e246d780c98f9610ca2e3b0abcd29d186f8d476711a"
+    }
+  ],
+  "scope": "Fresh real subprocess, same source and all six planned rows; G0-G5 actual geometry and OBJ bytes identical, G6 budget blocked."
+}

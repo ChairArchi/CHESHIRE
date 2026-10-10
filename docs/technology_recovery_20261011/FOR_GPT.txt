@@ -1,0 +1,59 @@
+CHESHIRE — 다음 방향 선정을 위한 읽기 자료
+작성: 2026-10-11. 연구 과제의 추가 확장보다 monumental gate 시안 두세 개의 선택·개발을 목적으로 한다.
+
+프로젝트
+ALICE가 간단한 gate 형상과 매개변수를 제공하고 CHESHIRE가 그 값에 따라 형상을 바꾸는 구조다.
+최종 작품은 grotesque monumental gate다. Hansmeyer는 미적 참고이며 정확한 재현은 현재의 필수 목표가 아니다.
+사용자는 Tissue의 두께감 있는 연속 조직 실험을 특히 좋게 평가했다.
+
+먼저 볼 파일
+1) images/01_gate_forms_front.png: 최근 보존한 기존 큰 접힘과 단면 게이트의 실제 메시 렌더.
+2) images/03_organization_front.png 및 04_organization_oblique.png: 기존 연속 다발/Tissue/section 조직.
+3) images/05_latest_subdivision_and_tissue.png: Astra 이후 논문 분석의 G7/G8 및 Tissue 상세.
+4) images/01_early_gate_possibilities.png 및 02_gate_folds_and_sections.png: 더 이전의 분기·말림·단면·큰 접힘.
+5) ASSESSMENT.txt: 작업자가 판단한 강점, 약한 시도, 검증되지 않은 원작 복원의 한계.
+6) technology_inventory.json / REPORT.txt: 세 범주별 코드·설정·실제 결과와 재현 경계.
+이미지는 AI 생성이 아닌 기존 실제 메시의 렌더/투영이다. 서로 다른 연구의 촬영 조건은 같지 않다.
+
+1. 이미 확보한 것
+- geometry fields·선택·예산·계보·상속·Rhino worker.
+- 공식 Mola 돌출, legacy 가중CC/Eq4, 가중Doo–Sabin, 교정된 ArrayMesh CC/DS coupling.
+- topology events·역할별 branching·방향성 어휘·motif attraction/locking·persistent crease.
+- H1/C07 말림·공동, 전체 게이트 생성, 마디별 단면과 current-geometry feedback.
+- Task33/34 깊은/후속 접힘, Task35 단면별 내부 골, Task36 중립 입력 G8.
+- Astra/Freedom의 복구·영역 회전과 유한 내부 골 추적. Freedom J09는 INVALID 연구 형상이다.
+- Astra 이후 논문 분석으로 발전한 꼭짓점 제어·CC/DS와 독립 G7/G8. G8 raw의 solid 인증은 없음.
+- 기존 whole gate의 성공 checkpoint, section-mass TARGET, 실제 Tissue와 자체 frame_bundle 연속 조직.
+기존 형상 자산의 재사용과 당시 전체 코드로 bit-exact 재생성 가능한 범위는 동일하지 않다.
+
+2. 개별 확보했지만 결합 검증이 필요한 것
+- 재귀 기둥/좋은 부분을 상인방과 이어 전체 gate로 구성.
+- 분기/역할의 상태로 Tissue의 적용 범위·방향·밀도까지 제어.
+- 선호한 microfold/section/Tissue 경로를 실제 ALICE 입력·매개변수에 연결.
+- 기존 전면 조직 shell과 gate의 전체 뒷면/접합 완성.
+이미 결합된 것도 있다: 실제 ALICE→Mola/CC/Freedom의 두 완료 결과, microfold→조직, section-mass→다발 조직.
+
+3. 현재 자동 기능이 없는 최종 작업
+- 모든 연구 가지를 하나의 설계·재개 인터페이스로 조합.
+- 임의 기둥/상인방/shell의 자동 맞춤 접합.
+- ALICE 의미를 모든 토폴로지 변화에 정확히 전달하는 범용 연결.
+- 선택한 최종 조합 전체의 검증/수리 완료본.
+이것들을 무조건 새로 개발할 필요는 없다. 고정된 입력/recipe, 명시적 역할 선택, 기존 검사, DCC 수작업 조립/trim/Boolean으로 진행 가능하다.
+
+남은 연구 한계
+별형 모듈의 반복, 후기 수렴, 부모 접힘 내부에 새 접힘을 계속 유지하는 자동 위계는 전체적으로 해결되지 않았다.
+면 수 증가를 해결의 증거로 삼지 않는다. 자기교차 억제가 현재 G7/G8 진화를 제한한다는 가설은 근거 부족으로 종료했다.
+이 한계를 최종 gate 시안 착수의 선결 조건으로 만들지 않는다.
+
+검증과 보존
+Task01–31 선별 이미지133장 및 소스/요청/분석 기록1,515건이 현재 존재하며 보존 SHA256과 전부 일치했다.
+본체46개와 별도Astra/Freedom11개 주요 코드 모듈을 확인했다. 성공 작품 수나 전체 아카이브 수가 아니다.
+이번에는 과거 실험을 재실행하지 않았다. 재현 성공 진술은 기존 원문 기록과 현재 파일·해시를 대조한 것이다.
+microfold/section-mass의 과거 소스 해시5개는 미회수. 기존 checkpoint/설정/결과는 보존되어 있다.
+대용량 전체 원본은 로컬/E드라이브 아카이브에 있고 이 GitHub 자료는 검토와 작은 코드·설정 보존을 위한 묶음이다.
+
+다음 방향 선정 때 논의할 것
+두세 가지 gate 대안을 고르되 각각 기존 어떤 전체 형상과 어떤 조직을 조합할지 구체적으로 정한다.
+중요한 건 기술적 순수성보다 실제 monumental gate의 실루엣·부위 관계·두께·개구부·가까이의 조직이다.
+제안한 조합이 아직 실제 메시로 확인되지 않았으면 제안임을 표시한다.
+새 논문 재현, 새로운 프랙탈 엔진, 광범위한 G8 탐색을 기본 다음 작업으로 잡지 않는다.

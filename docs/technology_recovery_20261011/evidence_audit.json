@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-10-10T18:46:00.774225+00:00",
+  "scope": "Read-only evidence cross-check; no geometry generation, no imports of historical runners, no test-suite or recipe replay.",
+  "historical_task_count": 31,
+  "historical_source_records": 1515,
+  "historical_sources_archived_present": 1515,
+  "historical_sources_hash_match": 1515,
+  "historical_sources_missing": [],
+  "historical_sources_hash_mismatch": [],
+  "historical_curated_image_records": 133,
+  "historical_images_present": 133,
+  "historical_image_hash_match": 133,
+  "historical_images_missing": [],
+  "historical_image_hash_mismatch": [],
+  "later_image_records": 24,
+  "later_images_missing": [],
+  "current_main_modules": 46,
+  "external_astra_freedom_modules": 11,
+  "limits": [
+    "Historical recovery labels are inherited documentation; archive hashes are checked now.",
+    "133 curated images include controls, failures and external references; not 133 successful designs.",
+    "Reproducibility claims remain historical unless a current fresh replay is explicitly recorded.",
+    "This is not a full audit of the 53,226-file handoff or 90,721-file external inventory.",
+    "Five exact historical code hashes for microfold / section-mass remain unrecovered; available checkpoints do not replace those source versions."
+  ],
+  "corrections": [
+    "U01_FULL_SEQUENCE.png was a guessed path, not a lost artifact. Actual U01_ALL_GENERATIONS.png found.",
+    "Task33 representative is explicitly V01_NATIVE_PROGRESS.png."
+  ],
+  "main_modules_mapped_to_families": 46,
+  "unmapped_main_modules": [],
+  "family_count": 33,
+  "unverified_combinations": 5,
+  "missing_final_work_capabilities": 4,
+  "code_paths_missing": [],
+  "artifact_patterns_unresolved": [],
+  "family_scope_note": "33 organizing families are not 33 independent algorithms or 33 final successful designs."
+}

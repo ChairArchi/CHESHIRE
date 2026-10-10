@@ -1,0 +1,953 @@
+[
+  {
+    "file_check": {
+      "path": "src/cheshire/__init__.py",
+      "exists": true,
+      "bytes": 1538,
+      "current_sha256": "3b3f0868446a0eb5d1e83ac115ff5886b5c6d60d47b6f92afea073ddf3c0973e"
+    },
+    "docstring": "CHESHIRE mesh fields, transforms, and backend-independent inheritance.",
+    "public_functions": [],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/activity.py",
+      "exists": true,
+      "bytes": 5659,
+      "current_sha256": "3935716a9e5443f22d029acee93212f4698b08cf65f81227786ccff5a1972b7a"
+    },
+    "docstring": "Source-graph scalar activity, separate from weights and geometry.\n\nPositive sampling parents are control-cage associations. They do not claim\nto explain signed experimental geometry or supply architectural semantics.",
+    "public_functions": [
+      "unit",
+      "source_graph",
+      "distances",
+      "distance_values",
+      "diffuse",
+      "peak_normalize",
+      "field_statistics",
+      "inherit_values",
+      "lerp_weight",
+      "scale_at"
+    ],
+    "classes": [
+      "ActivityField"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/activity_diagnostics.py",
+      "exists": true,
+      "bytes": 4816,
+      "current_sha256": "b4b8c5fb60db18e9ee1a11cf2bcd02f13f4b6438aab6e590d627a1f2d1d15d81"
+    },
+    "docstring": "Individually inspectable comparative diagnostics, without an aesthetic score.",
+    "public_functions": [
+      "distribution",
+      "hierarchy_diagnostics"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/artifact_root.py",
+      "exists": true,
+      "bytes": 1036,
+      "current_sha256": "b0834cb8eeef27847bcc97ebc6f594969c63fca6bdf2950fc74fd444f5f3daf0"
+    },
+    "docstring": "Explicit portable study artifact paths; existing project defaults are intact.",
+    "public_functions": [],
+    "classes": [
+      "ArtifactRoot"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/attributes.py",
+      "exists": true,
+      "bytes": 5941,
+      "current_sha256": "7dcb9f629664f32602b075ffb724ec920f6a66417cc52f159b7a033ddfce8761"
+    },
+    "docstring": "Read-only per-vertex measurement of COMPAS polygon meshes.",
+    "public_functions": [
+      "analyze_vertex_attributes",
+      "attribute_summary"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/branching.py",
+      "exists": true,
+      "bytes": 13785,
+      "current_sha256": "ba55e10d9f0797eafb392f2ea13e55d821fb100a1b7e750aa43f203edae8d8b8"
+    },
+    "docstring": "Task-20 data-driven sibling routing; all geometry uses verified Task-19 words.",
+    "public_functions": [
+      "content_hash",
+      "run_branching"
+    ],
+    "classes": [
+      "BranchRule",
+      "BranchTable",
+      "BranchingRecipe",
+      "BranchRouter",
+      "BranchSignatures"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/crease_folding.py",
+      "exists": true,
+      "bytes": 7106,
+      "current_sha256": "e35a663b2343f21d1996fb3cab8da70ad870b1321a078270d7d01a9e7240851d"
+    },
+    "docstring": "Experimental route-local composition of verified point placement and creases.\n\nThe additional placement is CHESHIRE composition, not a DeRose crease mask.\nThe reference crease implementation remains independently unchanged.",
+    "public_functions": [
+      "route_support",
+      "folded_crease_once"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/crease_policy.py",
+      "exists": true,
+      "bytes": 1665,
+      "current_sha256": "8b128c24819b81d893c9390c18e17aaae4c94b9f1d23584dcb685ed8c6269ae2"
+    },
+    "docstring": "Task23 capability contacts and design eligibility; old policies unchanged.",
+    "public_functions": [
+      "contact_band",
+      "assess_contact_policy"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/crease_routing.py",
+      "exists": true,
+      "bytes": 15102,
+      "current_sha256": "063455fe30ec4ef8ffeeb6f73916ecfa9659961628064a029438e0651e202a09"
+    },
+    "docstring": "CHESHIRE design routing on actual mesh edges, separate from crease rules.",
+    "public_functions": [
+      "unit",
+      "dot"
+    ],
+    "classes": [
+      "CreaseRouter"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/creases.py",
+      "exists": true,
+      "bytes": 14761,
+      "current_sha256": "9c8ef01ee967f099ee52d3b9e96bf89f78eb530c1f0ef327044b2d6ea7f168c4"
+    },
+    "docstring": "Explicit mesh-edge networks and finite uniform semi-sharp Catmull-Clark.\n\nInteger geometry is delegated to installed COMPAS. Fractional transitions use\nthe published OpenSubdiv Uniform mask rules, independently expressed here.\nNo upstream code, limit evaluation, Chaikin propagation or infinite sentinel.",
+    "public_functions": [
+      "edge_key",
+      "canonical",
+      "sharpness",
+      "make_network",
+      "vertex_rule",
+      "crease_vertex",
+      "fractional_vertex",
+      "crease_subdivide_once"
+    ],
+    "classes": [
+      "CreaseEdge",
+      "CreaseNetwork",
+      "CreaseResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/dual_subdivision.py",
+      "exists": true,
+      "bytes": 6022,
+      "current_sha256": "cff60085d94afc64e040e13dff723ee57b04ee12bfe7b037e7d7af083061bc5f"
+    },
+    "docstring": "Opt-in published Doo–Sabin masks and face-origin topology for Task30.\n\nHansmeyer 2010, Subdivision Beyond Smoothness, Eq5/6 and section2.2.\nScope: closed oriented triangles/quads with input valence3/4. No welding,\ngenus changes, implicit polygon conversion or claim of unpublished DG code.",
+    "public_functions": [
+      "doo_sabin"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/dynamic_sections.py",
+      "exists": true,
+      "bytes": 16367,
+      "current_sha256": "ce3c7e6be5a552e9bac39368e32752e94d69e0ec2e4e9b6ff289cb57da35b4a0"
+    },
+    "docstring": "Task27: explicit port-connected profiles and measured local CC feedback.\n\nNo Task26 fold recipe, route field, crease network or original-ring refit.\nExisting COMPAS crease-inactive CC and Extended CC / equation 4 are reused.",
+    "public_functions": [
+      "definition",
+      "gate",
+      "restore",
+      "current_face_area",
+      "measure",
+      "map_rules",
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/execution.py",
+      "exists": true,
+      "bytes": 8888,
+      "current_sha256": "55a15fc54337b60b394b9e5227f8b6bb36823ec72d6db7350a0591bd884aa512"
+    },
+    "docstring": "Dry-run execution estimates and explicit computational budget checks.",
+    "public_functions": [
+      "plan_execution",
+      "check_execution_budget"
+    ],
+    "classes": [
+      "ExecutionBudget"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/fold_continuation.py",
+      "exists": true,
+      "bytes": 5641,
+      "current_sha256": "fef4e6f7ac81bd12d6599c641f1d23d13b704e3ac02036d7c50c650af2b0a1ba"
+    },
+    "docstring": "Stateful continuation of existing crease folding, including real CC origins.\n\nThe state table interns equal face records without removing ancestry. Origins\ndescribe the previous actual split; they are never inferred from coordinates.",
+    "public_functions": [
+      "cc_origins",
+      "fold_state",
+      "packed",
+      "unpacked",
+      "save_state",
+      "load_state"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/fold_placement.py",
+      "exists": true,
+      "bytes": 6370,
+      "current_sha256": "e1be3c23427817f4684c86578ae8bf2f4d1684584bb9eb3393e258040dc6125a"
+    },
+    "docstring": "Evaluate existing fold point rules on one COMPAS crease topology.\n\nTask25 memory adaptation: the old path materializes crease, sharp and smooth\nmeshes simultaneously. This path evaluates the same existing equations point\nby point using the previous mesh neighborhoods. No cut pieces or new topology.",
+    "public_functions": [
+      "apply_points"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/gate_exchange.py",
+      "exists": true,
+      "bytes": 5217,
+      "current_sha256": "d2ab634dfc0cd1a7ef474efef827139a69fa719dae341fe9c2d4e2e22fc9ce54"
+    },
+    "docstring": "Read the small ALICE gate exchange contract; no geometry repair or execution.",
+    "public_functions": [
+      "load_gate_input",
+      "describe_gate_input"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/gate_integrity.py",
+      "exists": true,
+      "bytes": 6784,
+      "current_sha256": "ba6f526e6cdce5279ba72bcb7a00c2272c272769111a74056de3ce9cd1432899"
+    },
+    "docstring": "Read-only C0 descendant-landmark monitor; never a constraint or budget.",
+    "public_functions": [],
+    "classes": [
+      "GateIntegrityMonitor"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/generational_subdivision.py",
+      "exists": true,
+      "bytes": 8040,
+      "current_sha256": "a5ae2cf1575d65b5e3995d4c7ae2fcf8c3d4c3fbcc32a33ed28e3b0a287a5387"
+    },
+    "docstring": "Opt-in Hansmeyer equation (4); Task 14's operator stays unchanged.",
+    "public_functions": [
+      "classify_child_quad",
+      "later_generation_face_stencil",
+      "generational_subdivide_once"
+    ],
+    "classes": [
+      "GenerationalResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/inheritance.py",
+      "exists": true,
+      "bytes": 6426,
+      "current_sha256": "1923cc9e7e92a46ec8f319ae768f75eee6c3d92dc50278f4197f7b34e2199839"
+    },
+    "docstring": "Semantic/continuous field inheritance without mesh or measurement access.",
+    "public_functions": [
+      "inherit_fields"
+    ],
+    "classes": [
+      "FieldSpec",
+      "InheritedFieldSet"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/lineage.py",
+      "exists": true,
+      "bytes": 4647,
+      "current_sha256": "d5759302bd323f1e2c04695b231f9f75083c2fa8bba792c8bd4936c37d86aa07"
+    },
+    "docstring": "Geometry-independent child-to-parent lineage; no geometry operations.",
+    "public_functions": [
+      "validate_lineage",
+      "identity_lineage"
+    ],
+    "classes": [
+      "ParentRef",
+      "LineageMap"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/mapping.py",
+      "exists": true,
+      "bytes": 4446,
+      "current_sha256": "74d20edddec1de8aee66223226075283c715cc5d18ff221fa476e84a1516864a"
+    },
+    "docstring": "Pure scalar mappings and lightweight, explicit field metadata.",
+    "public_functions": [
+      "linear",
+      "inverse",
+      "smoothstep",
+      "power",
+      "sine",
+      "map_attribute",
+      "build_scalar_field"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/mesh_io.py",
+      "exists": true,
+      "bytes": 3878,
+      "current_sha256": "7d893a7aada8e1dad201e714626577be6cdc5d7ceee5e81dea0f02c7112ac904"
+    },
+    "docstring": "Polygon OBJ I/O without welding, triangulation, or geometry repair.",
+    "public_functions": [
+      "load_mesh",
+      "save_mesh"
+    ],
+    "classes": [
+      "_MeshOBJReader"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/mola.py",
+      "exists": true,
+      "bytes": 15014,
+      "current_sha256": "be704dcc1e251863a773883234742a1ac99d9833086281b5c3563a48b1987cee"
+    },
+    "docstring": "Optional, one-pass HDMola face adapter. CLR imports occur only on execution.",
+    "public_functions": [
+      "eligible_planar_faces",
+      "extrude_tapered_once"
+    ],
+    "classes": [
+      "TaperedExtrusionResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/normalization.py",
+      "exists": true,
+      "bytes": 2837,
+      "current_sha256": "00bf6368e9c53eac124761adad87aa10d6927e581e7857a362aded3b71eeeb6f"
+    },
+    "docstring": "Deterministic min-max normalization with optional percentile clipping.",
+    "public_functions": [
+      "normalize_values"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/ornament.py",
+      "exists": true,
+      "bytes": 20993,
+      "current_sha256": "36d53842150b00e475445ee3eb311783d738e0b1facacfbaa07936bcf7544709"
+    },
+    "docstring": "Task-19 experimental grammar. Existing operators and global budgets are untouched.\n\nTopology ancestry is constructive. A mixed DS face keeps the union of event\nancestry, but only common role tokens qualify for strict descendant selection.\nNo geometric coefficient is misrepresented as a semantic interpolation weight.",
+    "public_functions": [
+      "source_history",
+      "propagate_history",
+      "local_polygon",
+      "select_event_faces",
+      "topology_event",
+      "depth_diagnostics",
+      "run_ornament"
+    ],
+    "classes": [
+      "OrnamentStage",
+      "OrnamentRecipe"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/polygon_dual_subdivision.py",
+      "exists": true,
+      "bytes": 4561,
+      "current_sha256": "b5847ae6752e0606656c0c992cceed868b66b903ea04af0606f244fa7646a168"
+    },
+    "docstring": "Task31 opt-in closed polygon DS. Eq5/6 on tri/quads; neutral cosine mask\non other polygons (COMPAS subdivision.py). Modified Hansmeyer w1 is explicitly\ninactive on those polygons. No invented generalization of unpublished weights.",
+    "public_functions": [
+      "polygon_corners",
+      "doo_sabin"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/progressive_gates.py",
+      "exists": true,
+      "bytes": 8108,
+      "current_sha256": "cc79e6d479937333fd992b90969d18f2a15e644e66cd6cd45d32629f8e0711c4"
+    },
+    "docstring": "Task26 matched cages, material-space regions and constructive reflection.\n\nThese helpers concern the full closed U carrier and actual CC used here only.\nNo reflected coordinate averaging or independently subdivided half meshes.",
+    "public_functions": [
+      "gate_input",
+      "cycle_key",
+      "restore_gate",
+      "advance_gate",
+      "symmetry",
+      "physical_support"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/reference_subdivision.py",
+      "exists": true,
+      "bytes": 11147,
+      "current_sha256": "6b8663dee75b04b31233b933d6db1591993a7338309295e984d6d7a75e15db20"
+    },
+    "docstring": "Task29 opt-in closed tri/quad experiment; original operators are untouched.\n\nEq3 uses original endpoint midpoints (Figure 2's weight-6 neighbours),\nbut completed new face points. Eq10 finishes faces before Eq2/3. No claim\nof reproducing the unpublished Digital Grotesque implementation.",
+    "public_functions": [
+      "cube",
+      "topology",
+      "mean_incident",
+      "unit",
+      "fields",
+      "intrinsic_signal",
+      "subdivide",
+      "metrics"
+    ],
+    "classes": [
+      "ArrayMesh"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/regional_generation.py",
+      "exists": true,
+      "bytes": 9407,
+      "current_sha256": "e8d5d6013dbeae296c36d4477aeabc47c9bc92039cfbe159fe21b5270e06fb84"
+    },
+    "docstring": "Task31 region memory and bounded coarse topology edits; opt-in research.\n\nRegion names express a tested intention, not a claim of visual achievement.\nNo random/ID-driven field, postprocessing or semantic architecture generator.",
+    "public_functions": [
+      "birth",
+      "inherit",
+      "regional_controls",
+      "advance",
+      "mouth_pair",
+      "coarse_edit"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/rules.py",
+      "exists": true,
+      "bytes": 6565,
+      "current_sha256": "06cc21910e5aee878b8fb56add1f83f3c60b863390180b89bbf7f5dbe666261f"
+    },
+    "docstring": "Deterministic scalar-field selection without geometry mutation.",
+    "public_functions": [
+      "evaluate_vertex_rule",
+      "evaluate_face_rule"
+    ],
+    "classes": [
+      "Rule"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/sharp_subdivision.py",
+      "exists": true,
+      "bytes": 12129,
+      "current_sha256": "a2949e3702f6ec8125fc46719e3ff366f5c0fd4362be1391ea6c60642486a5c8"
+    },
+    "docstring": "Opt-in literal equations 7/10/11 over the unchanged Extended CC backend.",
+    "public_functions": [
+      "finite",
+      "equation7",
+      "compile_schedule",
+      "topology_motifs",
+      "validate_motif_map",
+      "motif_values",
+      "equation10",
+      "equation11",
+      "source_graph_distance",
+      "inherit_scalar",
+      "normal_variation_values",
+      "intrinsic_overrides",
+      "sharp_subdivide_once"
+    ],
+    "classes": [
+      "MotifSignature",
+      "SharpResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/subdivision.py",
+      "exists": true,
+      "bytes": 15741,
+      "current_sha256": "6ae57494a58cc06e5c0704904ce271657aff8bd173514b11158ddefc89790526"
+    },
+    "docstring": "One global COMPAS quad-subdivision step with checked immediate lineage.\n\nVerified against installed COMPAS 2.15.1, Mesh.subdivided(scheme='quad', k=1).\nIt retains original keys/XYZ, splits unique edges at t=0.5, uses arithmetic\nface_centroid(), and assigns child path=[input_face_key, corner_index]. All\nthese assumptions are checked against returned topology/geometry per call.\nThe backend's path is adapter metadata, not multi-generation provenance.",
+    "public_functions": [
+      "estimate_quad_subdivision",
+      "subdivide_quad_once"
+    ],
+    "classes": [
+      "SubdivisionResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/subdivision_pipeline.py",
+      "exists": true,
+      "bytes": 3020,
+      "current_sha256": "71105eb46aaa78e8426c0fbf88209373a1d470d5dcceb2cf6a7b7352e39afae8"
+    },
+    "docstring": "Small explicit reference pipeline, independent of research artifact roots.\n\nTask29 CC behavior stays in reference_subdivision unchanged. Dual subdivision\nis opt-in. Persistent face roles are distinct from CC vertex stencil classes.",
+    "public_functions": [
+      "step",
+      "save_checkpoint",
+      "load_checkpoint"
+    ],
+    "classes": [
+      "SubdivisionState"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/surface.py",
+      "exists": true,
+      "bytes": 6373,
+      "current_sha256": "eaa7d79be0c2d90a2dd211293af694fef94d00900e7bfe707184c71fd48ad7ba"
+    },
+    "docstring": "One terminal COMPAS Catmull-Clark comparison, without semantic inheritance.",
+    "public_functions": [
+      "assess_catmull_clark",
+      "catmull_clark_once"
+    ],
+    "classes": [
+      "SurfaceResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task32_morphology.py",
+      "exists": true,
+      "bytes": 10040,
+      "current_sha256": "709651acd249f419c4811e96904062a71dcf5ecaa69ef8a426e7407bcdc69667"
+    },
+    "docstring": "Opt-in Task32 experiments, independent of all Task01--31 operators.\n\nMetric growth below is a graph-spring variational surrogate, NOT ARCSim or\nan implementation of Gingras/Kry's shell mechanics. Swept hierarchy is our\nown carrier-space application of hierarchical/field-guided modelling.",
+    "public_functions": [
+      "triangles",
+      "carrier_coordinates",
+      "hierarchy_field",
+      "displace_hierarchy",
+      "spring_system",
+      "signed_volume_gradient",
+      "growth_energy",
+      "metric_growth"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task32_patches.py",
+      "exists": true,
+      "bytes": 14099,
+      "current_sha256": "82517447e3d9307c591a7095aa0147e91c5b34dcda6d32ecdce320085bf539e5"
+    },
+    "docstring": "Connected disk-patch sweeps for Task32; an independent constructive experiment.\n\nUses the familiar extrusion principle, not a new subdivision formula. Compared\nwith Task23's per-face Mola events, the changed condition is a connected,\nmulti-face cap, a curved multi-ring neck and inherited patch scope. No boolean\nunion, welding, hidden repair or claim of emergent topology is made.",
+    "public_functions": [
+      "disk_boundary",
+      "sweep_disk",
+      "simple_projected_ring",
+      "projected_disk_admission",
+      "choose_front_disks",
+      "branch_patches"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task32_spectral.py",
+      "exists": true,
+      "bytes": 7857,
+      "current_sha256": "2db9fc5bedcb733c2b1ad8780d8c9356701448151276133ef12165d1194ffedf"
+    },
+    "docstring": "Opt-in lumped cotan eigenfields and our nonlinear harmonic displacement.\n\nStandard generalized Laplacian eigenproblem, not Vallet/Levy's complete\nout-of-core band solver or an exact ornamental formula from their paper.",
+    "public_functions": [
+      "cotan_system",
+      "spectral_field",
+      "spectral_displace",
+      "curvature_limit",
+      "diffuse_field",
+      "transport_coordinates"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task33_folds.py",
+      "exists": true,
+      "bytes": 14789,
+      "current_sha256": "112c47a254b17abcaec7f3f8041db2f07163e41f8e13e56aa37440687ac6d1ea"
+    },
+    "docstring": "Finite three-scale material folds, independent of subdivision cell size.\n\nOriginal U carrier and closed topology retained. Bilinear refinement samples\nthe carrier; it does not smooth geometry. No claim of Hansmeyer's algorithm,\nphysical buckling, a fractal, or certified collision-free geometry.",
+    "public_functions": [
+      "initial_chart",
+      "refine",
+      "refine_section",
+      "fold_values",
+      "evaluate",
+      "reflection_error"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task34_refolding.py",
+      "exists": true,
+      "bytes": 20056,
+      "current_sha256": "529c55452ae8321f7ce622861a82d49f28edfb49137ab5cc443a938746058647"
+    },
+    "docstring": "Finite, geometry-responsive refolding on a closed structured gate.\n\nThree explicitly scheduled formation/folding stages, not a fractal model.\nFeatures are measured on actual incoming ring polylines. Their projected\ncurvature is not a general triangle-mesh principal-curvature estimator.\nAll distances use the unresolved original project units, never cell lengths.",
+    "public_functions": [
+      "carrier",
+      "frame",
+      "native",
+      "refine",
+      "pair_controls",
+      "macro",
+      "read_features",
+      "axial_features",
+      "refold",
+      "symmetry"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task35_columns.py",
+      "exists": true,
+      "bytes": 17395,
+      "current_sha256": "8544fe108eb54ad11c97873e8bb830ea457105abc63a8c6f01dc05bbeb1f3b75"
+    },
+    "docstring": "Finite local-geometry column formation/refolding; no gate region copying.\n\nX/Y section reflections only, Z is vertical. Original project units are\nunresolved. Closed centre-fan native triangles and refinement stencils reuse\nTask34 unchanged. Geometry is never averaged to enforce symmetry.",
+    "public_functions": [
+      "carrier",
+      "refine",
+      "end_window",
+      "pair_scalar",
+      "pair_vector",
+      "geometry_features",
+      "form",
+      "periodic_interp",
+      "refold",
+      "symmetry"
+    ],
+    "classes": [
+      "RejectedFormation"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/task36_growth.py",
+      "exists": true,
+      "bytes": 13237,
+      "current_sha256": "f523231d4e1c3e1119020d17c10b505ea01d51907b3b8f7016ab60bfb8403d62"
+    },
+    "docstring": "Task36 opt-in interpolating quad folding. No existing operator is changed.\n\nEvery new edge and face point is independently placed using incoming geometry.\nThe interpolating control retains vertices; the coupled experiments explicitly\nseparate CC averaging, weighted stencils and normal placement. Project units,\nX/Y reflection and quarter-turn symmetry, Z vertical.\nThis is a CHESHIRE experiment, not an implementation claim about Hansmeyer.",
+    "public_functions": [
+      "carrier",
+      "step",
+      "native",
+      "quick_integrity"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/transforms.py",
+      "exists": true,
+      "bytes": 7406,
+      "current_sha256": "d6b783e98397e650d5b7339fcf3057cb437f4eba8fdabbeb21c91c909bc75c67"
+    },
+    "docstring": "A single topology-preserving, field-driven normal displacement transform.",
+    "public_functions": [
+      "displace_vertices_along_normals"
+    ],
+    "classes": [
+      "TransformResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/validation.py",
+      "exists": true,
+      "bytes": 3545,
+      "current_sha256": "e563565e7e0d59030569f3ead8ef45cad9d72f9fc126e806619be3d72ef6fa5d"
+    },
+    "docstring": "Read-only inspection and basic validation of COMPAS meshes.",
+    "public_functions": [
+      "validate_mesh",
+      "inspect_mesh",
+      "validate_lineage_coverage"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/vocabulary.py",
+      "exists": true,
+      "bytes": 25747,
+      "current_sha256": "d021ccd81af965251c3e16f6bcb3e81c242357961d8f4db75a5700d1fb7e49c8"
+    },
+    "docstring": "Task-21 isolated directional/roof vocabulary; official HDMola owns geometry.",
+    "public_functions": [
+      "unit",
+      "local_frame",
+      "new_backend",
+      "routing_patches",
+      "vocabulary_event",
+      "run_vocabulary",
+      "validate_morphology_library"
+    ],
+    "classes": [
+      "VocabularyStage",
+      "VocabularyRule",
+      "VocabularyTable",
+      "VocabularyRecipe",
+      "VocabularyRouter"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/weighted_doosabin.py",
+      "exists": true,
+      "bytes": 10402,
+      "current_sha256": "f2da1a3051797c9cd727dcf47bca8eed9c91f5e3649813f6fe2ea573484b4d7a"
+    },
+    "docstring": "Isolated weighted Doo-Sabin; COMPAS supplies standard positions/topology.\n\nOnly published triangle/quad positions are weighted. Other polygons keep the\nactual COMPAS standard corner positions, with explicit fallback records.",
+    "public_functions": [
+      "weighted_corner",
+      "weighted_doosabin_once"
+    ],
+    "classes": [
+      "DooSabinResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "src/cheshire/weighted_subdivision.py",
+      "exists": true,
+      "bytes": 10401,
+      "current_sha256": "edc8d26ffa77a5c85dc5395b1779c0e798e315309c7692463bbabe8b99d4c801"
+    },
+    "docstring": "CHESHIRE Extended-CC Experimental Subset; see the reference note.\n\nPublic COMPAS supplies topology. Input stencils supply geometry; sampling\nassociations are explicitly separate from semantic/geometric coefficients.",
+    "public_functions": [
+      "mean",
+      "weighted_subdivide_once",
+      "local_lengths"
+    ],
+    "classes": [
+      "WeightedResult"
+    ]
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_adaptive.py",
+      "exists": true,
+      "bytes": 7239,
+      "current_sha256": "84c95447a9cb5cfa125796e752c99a560a383b1e91550e05ca2f8f3b55e6a823"
+    },
+    "docstring": "Experimental geometry-selected conforming centroid/old-edge growth.\n\nOnly the insert-centres/flip-old-edges connectivity is inspired by sqrt(3).\nArea selection, dominant signed hinges, and fraction-weighted Laplacian motion\nare new research rules, not the original adaptive algorithm or smoothing mask.",
+    "public_functions": [
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_curvature_response.py",
+      "exists": true,
+      "bytes": 7240,
+      "current_sha256": "c039370e4abe69525f802e8f8f498abedcbf198610bae5111f04abaef0d83ab4"
+    },
+    "docstring": "Coherent curvature response hypothesis on exact midpoint triangle refinement.\n\nSigned edge-angle curvature and scalar graph averaging are geometric features;\nno XYZ averaging is performed. Nonmonotonic response is our research hypothesis,\nnot an established ridge-splitting or Digital Grotesque reconstruction method.\nAll lengths (radius, amplitude, reference_length) use the input coordinate unit.",
+    "public_functions": [
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_dual.py",
+      "exists": true,
+      "bytes": 7226,
+      "current_sha256": "8919c06cd3cae44c07d1e4d7a6449c1c1e815fb270fb3261e0cd88067492468e"
+    },
+    "docstring": "Independent, intrinsic face-corner dual experiment; not recovered DG code.\n\nExact published Doo--Sabin connectivity is reused. Current polygon width\nrelative to adjacent widths controls inset and extrusion. Corner differences\nin actual adjacent-normal bend modulate extrusion within each polygon.\nThere is no axial profile, oscillator, random field, or face-ID ornament map.",
+    "public_functions": [
+      "features",
+      "step",
+      "native",
+      "refine_fan"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_primal.py",
+      "exists": true,
+      "bytes": 6348,
+      "current_sha256": "4a03c4ad8a7f5176f63eee909a1fedbddca367c7a61c3588aa008c48f13fd27d"
+    },
+    "docstring": "Independent spatial/intrinsic modified-CC prototype; not DG production code.\n\nThe published reference operator supplies all point placement and topology.\nOnly the control mapping, cyclic-invariant feature aggregation, and optional\nend-plane boundary are new. No subtraction of the standard CC component.",
+    "public_functions": [
+      "features",
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_rotating.py",
+      "exists": true,
+      "bytes": 4448,
+      "current_sha256": "23c236d83ebf6d9c2ea8f58af5623fe04e1b2edb9e1ef26d7ea685358e8963d0"
+    },
+    "docstring": "Triangle edge-rotating growth, inspired by sqrt(3) connectivity.\n\nKobbelt 2000 supplies the insert-centres/flip-old-edges topology idea.\nThe bounded signed normal response and retention are our experimental rules;\nno claim of the paper's smooth limit or Hansmeyer's private implementation.",
+    "public_functions": [
+      "features",
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/astra_validation.py",
+      "exists": true,
+      "bytes": 662,
+      "current_sha256": "a6dbc1210481777f038e301aaaf8a8f9f9d62a0a74672099ad6f04c59e7a55cc"
+    },
+    "docstring": "Explicit closed single-component policy for the independent primitive study.",
+    "public_functions": [
+      "embedding_failures"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_domains.py",
+      "exists": true,
+      "bytes": 5819,
+      "current_sha256": "683f222964d499238584ab09dc0a61372903e1aa5f3121b9e40fd93945ac5f63"
+    },
+    "docstring": "Geometrically selected coherent fold domains; no geometry repair.\n\nGreedy graph-geodesic suppression separates competing hinge centres. Weighted\nrotation proposals are combined with configurable concentration, not XYZ blur.\nEqual scores use deterministic edge order; symmetry is not imposed.",
+    "public_functions": [
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_growth.py",
+      "exists": true,
+      "bytes": 6513,
+      "current_sha256": "4257245affeb3042124c87e1931c8e92ec3247498cd088fd40b674586b9e94bd"
+    },
+    "docstring": "Geometry-driven multiscale crest inversion; an experimental hypothesis.\n\nHeat-filtered coordinates are FEATURES ONLY. They never replace the surface.\nPositive FEM stiffness with lumped mass gives a physical-length observation.\nNonlinear response and tangential steering are our own geometric rules.",
+    "public_functions": [
+      "normals",
+      "observe",
+      "step"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_legacy.py",
+      "exists": true,
+      "bytes": 4889,
+      "current_sha256": "e7bf178ef892589c1e10cb68a9aa19f1f2d047ed58bdbdf811fbefb716ee3319"
+    },
+    "docstring": "Published weighted CC with explicit transported ancestor displacement scale.\n\nThis experiment allows invalid finite geometry and never repairs intersections.\nThe incoming actual normals and stencils are recomputed every generation.\nOnly the normal distance scale is transported through exact parent faces.",
+    "public_functions": [
+      "step",
+      "pocket"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_nested.py",
+      "exists": true,
+      "bytes": 4202,
+      "current_sha256": "75d446a4626fd2e163927c5436910ba1936b12a14bf04b0640347459281a484f"
+    },
+    "docstring": "Pocket-depth support transport and exact physical-fan refinement controls.\n\nSeparate experiment: historical freedom_legacy and astra_dual remain unchanged.\nEvery operator polygon carries the centre of its declared physical triangle fan.\nThus leaving a polygon untouched does not silently replace its VF fan by a mean.",
+    "public_functions": [
+      "centres",
+      "physical",
+      "exact_split",
+      "cc_split",
+      "pocket"
+    ],
+    "classes": []
+  },
+  {
+    "file_check": {
+      "path": "docs/technology_recovery_20261011/code_snapshots/CHESHIRE_ASTRA/src/cheshire/freedom_patch.py",
+      "exists": true,
+      "bytes": 9392,
+      "current_sha256": "f2a1dc9f18dcf80885b72cd0996b65c4b68927a7378fa5c1c86ab8e038c55312"
+    },
+    "docstring": "Connected face-patch folding by finite rotations, an independent hypothesis.\n\nA dominant current hinge supplies a direction, not a face-ID motif. Exact\nmidpoint refinement precedes opposite rotations across an interior crease.\nShared-point proposals are area-weighted; intersections are not repaired.",
+    "public_functions": [
+      "step",
+      "connected_step"
+    ],
+    "classes": []
+  }
+]

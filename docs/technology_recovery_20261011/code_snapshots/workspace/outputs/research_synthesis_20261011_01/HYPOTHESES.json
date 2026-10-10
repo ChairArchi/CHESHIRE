@@ -1,0 +1,179 @@
+[
+  {
+    "id": "H01",
+    "hypothesis": "자기교차 억제가 재귀 진화를 제한한다",
+    "status": "CLOSED_BY_USER",
+    "evidence": "활성 G7/G8 변형 경로에 충돌 피드백 제약이 없었음. 종료한 가설을 재개하지 않음.",
+    "artifact": "outputs/convergence_review_20261010_01/FINAL_STATUS.json"
+  },
+  {
+    "id": "H02",
+    "hypothesis": "후기 법선 요청량 감소가 새 돌출을 약하게 한다",
+    "status": "SUPPORTED_CONTRIBUTION_NOT_SOLE_CAUSE",
+    "evidence": "기존 G4→5에서 평균 corner 법선 요청18.941배, G7→8에서7.629배 감소. 선택한 일정의 효과이며 세대 자체의 필연 한계는 아님.",
+    "artifact": "outputs/convergence_review_20261010_01/stage_trace.json"
+  },
+  {
+    "id": "H03",
+    "hypothesis": "초기 큰 되접힘이 첫 CC 배치에서 크게 약해진다",
+    "status": "SUPPORTED_FOR_TESTED_SEED",
+    "evidence": "실제24 corner 쌍 방향은 남지만 높이차 중앙값0.112. 법선 제거시0.0819. 전체 표면 소실 비율과 동일하지 않음.",
+    "artifact": "outputs/first_fold_mechanism_20261011_01/analysis_with_sections.json"
+  },
+  {
+    "id": "H04",
+    "hypothesis": "초기 중첩만으로 다양한 분기가 생긴다",
+    "status": "PARTIAL_SUPPORT_INSUFFICIENT",
+    "evidence": "컵형 되접힘은 큰 겹침을G5까지 남기지만 분기 다양성 해결은 아님.",
+    "artifact": "outputs/initial_overlap_20261010_01/summary.json"
+  },
+  {
+    "id": "H05",
+    "hypothesis": "마디 수만 늘리면 서로 다른 모듈이 생긴다",
+    "status": "NOT_SUPPORTED_IN_CONTROLLED_G4",
+    "evidence": "동일 표면에7개 몸통 고리를 추가한14마디는 주름과 굴곡을 바꾸지만 역할 다양성을 자동으로 만들지 않음.",
+    "artifact": "outputs/spur_segments_20261011_01/analysis.json"
+  },
+  {
+    "id": "H06",
+    "hypothesis": "규칙적인 돌기 입력이 컵형보다 유리하다",
+    "status": "SUPPORTED_FOR_DIRECTIONAL_DIFFERENCE",
+    "evidence": "G4에 다른 기단의 큰 방향이 남음. 게이트 연결 대응에는 규칙성이 유리하다는 설계 판단이나 아직 게이트 변환 검증은 아님.",
+    "artifact": "outputs/spur_segments_20261011_01/G4_base_comparison_oblique.png"
+  },
+  {
+    "id": "H07",
+    "hypothesis": "되접힘 여러 곳과 마디별 w1/w2 변화면 충분하다",
+    "status": "NOT_SUFFICIENT_IN_TESTED_G4",
+    "evidence": "14마디2x2 비교에서 입력의 몸통 굴곡은 바뀌지만 큰 분기와 구획 간 얽힘이 충분히 생기지 않음.",
+    "artifact": "outputs/regular_fold_variation_20261011_01/analysis.json"
+  },
+  {
+    "id": "H08",
+    "hypothesis": "역할 태그 평균 계승이 주요 원인이다",
+    "status": "WEAK_AS_PRIMARY_CAUSE_IN_TESTED_FIELD",
+    "evidence": "같은 해석함수를 계승 좌표에서 재계산해도G4 평균 점 차이0.000692, 최대0.06962, 큰 형태 유사. 태그 희석만 고치면 해결된다는 근거 없음.",
+    "artifact": "outputs/role_reconstruction_20261011_01/verification.json"
+  },
+  {
+    "id": "H09",
+    "hypothesis": "face/edge 역할 차이를 주는 Eq10/11이 도움된다",
+    "status": "ACTIVE_BUT_INSUFFICIENT_IN_TESTED_G4",
+    "evidence": "기존Eq10/11 .2/.2는국소모양을바꾸지만보존제어와조합해도G5의큰분기다양성이크게늘지않음. 초기12개주돌기쌍의투영반경차이중앙값비율은보존만.819,조합.658. 이파라미터한정의부정결과.",
+    "artifact": "outputs/differential_attraction_20261011_01/verification.json",
+    "additional_artifact": "outputs/research_synthesis_20261011_01/anchor_radial_retention.json"
+  },
+  {
+    "id": "H10",
+    "hypothesis": "선택 꼭짓점 잠금이 초기 접힘을 보존한다",
+    "status": "SUPPORTED_G1_ONLY",
+    "evidence": "48개 초기 접힘 corner 잠금으로24쌍 높이차1.0. DS의 지속 잠금 의미론을 아직 구현하지 않았으므로G4/G8 보존 주장 금지.",
+    "artifact": "outputs/first_fold_mechanism_20261011_01/analysis_with_sections.json"
+  },
+  {
+    "id": "H11",
+    "hypothesis": "기존 CC/DS 배치값을 역산하면 큰 접힘을 유지할 수 있다",
+    "status": "SUPPORTED_FOR_TESTED_G5_MACRO_FOLD_RETENTION",
+    "evidence": "같은 입력·법선 요청에서 축방향 배치 역산으로G5의24 corner 계보 쌍 높이차 중앙값1.006, 방향24/24 유지. 기존 배치−0.0633 및8/24. 실제렌더에서도큰접힘차이확인. 전체표면보존율이나새재귀분기의증명은아님.",
+    "artifact": "outputs/axial_placement_retention_20261011_01/analysis.json"
+  },
+  {
+    "id": "H12",
+    "hypothesis": "부위 경계를 넘는3D 방향장이 구획화를 줄일 수 있다",
+    "status": "NOT_YET_TESTED",
+    "evidence": "IAAC에서 가져올 후보. 현재 높이장도 매 세대 현재Z를 평가하므로 재평가 자체가 없는 것은 아님. 새 차이는3D 범위와 법선 외 방향. 고정 attractor도 수렴할 수 있음.",
+    "artifact": "outputs/iaac_reference_20261011_01/retrieval.json"
+  },
+  {
+    "id": "H13",
+    "hypothesis": "지속 crease 네트워크가 큰 접힘을 보존할 수 있다",
+    "status": "EXISTING_CAPABILITY_REUSE_CANDIDATE",
+    "evidence": "정수·분수 sharpness와실제자식 edge추적이이미있음. mixed DS는 crease 의미론 미지원. 보존과 새 분기 생성은 다른 능력.",
+    "artifact": "docs/CROSS_CELL_CREASE_REFERENCE.md"
+  },
+  {
+    "id": "H14",
+    "hypothesis": "원 논문의 실제 planarity 조건이 중요할 수 있다",
+    "status": "METRIC_DIFFERENCE_CONFIRMED_CAUSAL_TEST_PENDING",
+    "evidence": "원논문4번째점-평면거리/다른3점둘레의진단을추가함. 순서편향방지를위한4개순환최댓값은CHESHIRE선택. 보존G4에서incident평균과기존법선변화proxy의Spearman상관.258. 대체가능한동일지표가아님. 생성에적용한인과비교는아직없음.",
+    "artifact": "outputs/research_synthesis_20261011_01/planarity_diagnostic.json"
+  },
+  {
+    "id": "H15",
+    "hypothesis": "연결 배열과새 모티프 구별 부족이 반복을 강화한다",
+    "status": "CODE_LIMITATION_CONFIRMED_CAUSAL_TEST_PENDING",
+    "evidence": "MotifSignature는valence/incident-face개수만보며같은개수의다른연결배열을구별못함. CC 내부대다수4/4. 이것만으로 반복의원인을확정하지않음.",
+    "artifact": "src/cheshire/sharp_subdivision.py"
+  },
+  {
+    "id": "H16",
+    "hypothesis": "세대별 기하 잔차를 저장하면 큰 형상을 보존할 수 있다",
+    "status": "LITERATURE_SUPPORTED_NOT_INTEGRATED",
+    "evidence": "다중해상도 잔차·국소프레임은positive계승태그와다름. mixed DS 대응을정의해야하며보존만으로다양성이생기지는않음.",
+    "artifact": "S06"
+  },
+  {
+    "id": "H17",
+    "hypothesis": "근접 정점 결합이 새로운 연결 모티프를 만들 수 있다",
+    "status": "AUTHOR_DESCRIBED_NOT_TESTED_HERE",
+    "evidence": "논문에서명시된위상변화. 초기중첩/자기교차와동일하지않음. 현재연구에서자동결합하지않음.",
+    "artifact": "S03"
+  },
+  {
+    "id": "H18",
+    "hypothesis": "보간형 subdivision으로 바꾸면 해결된다",
+    "status": "LOW_PRIORITY_PIPELINE_CHANGE",
+    "evidence": "기존정점통과는보존에유용하나ModifiedButterfly는삼각형이고장식생성해법자체가아님. ATLV단순quad분할도CC와다른보존특성을가짐.",
+    "artifact": "S07,S19"
+  },
+  {
+    "id": "H19",
+    "hypothesis": "비수축 smoothing이 해결한다",
+    "status": "LOW_RELEVANCE",
+    "evidence": "전체부피수축억제는큰접힘·분기역할보존과다름. 우선도입하지않음.",
+    "artifact": "S09"
+  },
+  {
+    "id": "H20",
+    "hypothesis": "GPU·OpenSubdiv로 더 많이 계산하면 해결된다",
+    "status": "PERFORMANCE_ONLY",
+    "evidence": "CuPy검증은있으나생성GPU이식은아직없음. CC/Loop가속은커스텀DS·계층생성의대체가아님.",
+    "artifact": "outputs/regional_gpu_20261010_01/gpu_probe.json"
+  },
+  {
+    "id": "H21",
+    "hypothesis": "같은 세대 face점 변형을corner에연쇄전파하지않아문제다",
+    "status": "UNPROVEN_NO_CORE_CHANGE",
+    "evidence": "현재원래입력 이웃을쓰는규약이문서화되어있고Mola도동일한단계분리를보임. 이를버그로정하고기존코어를변경하지않음.",
+    "artifact": "docs/WEIGHTED_SUBDIVISION_REFERENCE.md"
+  },
+  {
+    "id": "H22",
+    "hypothesis": "접힘 보존에는 첫 CC만 조절하면 충분하다",
+    "status": "NOT_SUFFICIENT_IN_TESTED_G5",
+    "evidence": "동일seed의2x2분리: G5높이차중앙값 off−.0633,CC만.5408,DS만.0721,둘다1.0060. 첫CC에서가장큰초기손실,DS도추가손실. CC·DS기여를서로혼동하지않음.",
+    "artifact": "outputs/operator_retention_factorial_20261011_01/analysis.json"
+  },
+  {
+    "id": "H23",
+    "hypothesis": "높이만 보존하기 때문에 전체 형상이 수렴한다",
+    "status": "SMALL_EFFECT_NOT_PRIMARY_SOLUTION_IN_TESTED_G5",
+    "evidence": "같은scalar가중치·범위·support에서XYZ오차최소화로변경.G5높이비율1.026vs축1.006,주돌기반경차이.868vs.819. 실제렌더큰모양유사,새모듈다양성증거약함.",
+    "artifact": "outputs/vector_placement_retention_20261011_01/analysis.json",
+    "additional_artifact": "outputs/research_synthesis_20261011_01/anchor_radial_retention.json"
+  },
+  {
+    "id": "H24",
+    "hypothesis": "큰 접힘을 보존해도 후기 법선 요청 감소가 잔돌출을 약하게 한다",
+    "status": "SUPPORTED_ONE_STEP_DETAIL_CONTRIBUTION_NOT_BRANCHING_SOLUTION",
+    "evidence": "완전히같은보존G4에서G5몸통법선요청만x4하면잔돌출이강해짐. 입력법선벡터로위치차예측최대오차1.77e−15. 정면몸통실루엣면적은50085→50684픽셀약+1.20%로큰모듈변화는작음.",
+    "artifact": "outputs/late_g5_factorial_20261011_01/verification.json"
+  },
+  {
+    "id": "H25",
+    "hypothesis": "후기 Eq4가 수렴을 일으키므로 끄면 낫다",
+    "status": "NOT_SUPPORTED_IN_TESTED_G5",
+    "evidence": "같은G4에서w3/w4=0이면더매끈해짐. 면점외위치정확히동일. 이번Eq4는디테일에기여하며약화의주범이라고볼수없음. 모든Eq4설정에대한일반결론은아님.",
+    "artifact": "outputs/late_g5_factorial_20261011_01/verification.json"
+  }
+]
