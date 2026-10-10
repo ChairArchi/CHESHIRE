@@ -1,0 +1,191 @@
+[
+  {
+    "run": "scratch\\generative_gate_20261010\\runs\\hierarchy_microfold23\\run.json",
+    "files": [
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\__init__.py",
+        "expected": "6305471aef6a76008144187f320b80766327065836d95865f1eebe62049f6c04",
+        "actual": "6305471aef6a76008144187f320b80766327065836d95865f1eebe62049f6c04",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\deform_worker.py",
+        "expected": "5ab5ed4db4772cf71b985765dcd5f58f0e735628516823746fd7f09970cd5973",
+        "actual": "5ab5ed4db4772cf71b985765dcd5f58f0e735628516823746fd7f09970cd5973",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\engine.py",
+        "expected": "f536807ca20515e5927675bee07cce22f2964556746b066a2c8561954fdb25d0",
+        "actual": "7834f2fa3bbf91cc80ff449f70c00dd820e1dde7e9b3a7fa1e3434256259fcbc",
+        "matches": false,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\input.py",
+        "expected": "43646de0bd0dbb69437f518518c10505aa129538cb0d1302d9c27c476d222a5d",
+        "actual": "43646de0bd0dbb69437f518518c10505aa129538cb0d1302d9c27c476d222a5d",
+        "matches": true,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\input.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/input.py"
+        ]
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\pipeline.py",
+        "expected": "9384269ed9f6d013e55208502a487f4855c81efb5fcf57c5557fe7eb0f65dbce",
+        "actual": "290490840d014b8b19beb12e293357c2b408edcc22441d63d182815afb625fa2",
+        "matches": false,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\render.py",
+        "expected": "f48829c49543a05b1f9077a4ca023468c751247499e708faa0ab98d6706ea2e5",
+        "actual": "f48829c49543a05b1f9077a4ca023468c751247499e708faa0ab98d6706ea2e5",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\runtime.py",
+        "expected": "5836dd76976a965a9d281ca0939a8a40aae230d6bb9b638c7b8bb4ce865592a2",
+        "actual": "5836dd76976a965a9d281ca0939a8a40aae230d6bb9b638c7b8bb4ce865592a2",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\subdivision_worker.py",
+        "expected": "5e8d1d6c3ee7eeae990a2d104a15350eaae8efcfcc0ae0e6a683ab2b4bb79c7a",
+        "actual": "5e8d1d6c3ee7eeae990a2d104a15350eaae8efcfcc0ae0e6a683ab2b4bb79c7a",
+        "matches": true,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\subdivision_worker.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/subdivision_worker.py"
+        ]
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\symmetry.py",
+        "expected": "185e679d95d871e4b33e19d6cb07c75e8e9316fefbc312566367d4a7a960ad70",
+        "actual": "185e679d95d871e4b33e19d6cb07c75e8e9316fefbc312566367d4a7a960ad70",
+        "matches": true,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\symmetry.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/symmetry.py"
+        ]
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\tessellate_worker.py",
+        "expected": "7cccb5b2b924ab70e27eeb9227bce414cd08f255f818e1febe1a1fe5af40241d",
+        "actual": "08c47ab8948792a8c1288f79d9812d3fd313f6d1d7233abff8c515f8128db67b",
+        "matches": false,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\generative_gate_20261010\\gateflow\\tissue_worker.py",
+        "expected": "62476a7f555c0ae97e7d126ed9b37fb720740d8848e941dd13fd8966ac930e15",
+        "actual": "62476a7f555c0ae97e7d126ed9b37fb720740d8848e941dd13fd8966ac930e15",
+        "matches": true,
+        "matching_preserved_copies": []
+      }
+    ]
+  },
+  {
+    "run": "scratch\\connected_tissue_20261010\\extension\\runs\\section_mass_full\\run.json",
+    "files": [
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\__init__.py",
+        "expected": "6305471aef6a76008144187f320b80766327065836d95865f1eebe62049f6c04",
+        "actual": "6305471aef6a76008144187f320b80766327065836d95865f1eebe62049f6c04",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\deform_worker.py",
+        "expected": "5ab5ed4db4772cf71b985765dcd5f58f0e735628516823746fd7f09970cd5973",
+        "actual": "5ab5ed4db4772cf71b985765dcd5f58f0e735628516823746fd7f09970cd5973",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\engine.py",
+        "expected": "a9584758012b7bd02ce79172093ee69e5d29b327f5ae0f86db6ceea02c6b714a",
+        "actual": "6192df0ebc1438afe9bdc5d7ed8216271d34fb8b64433008b11f5b8a6cbfe453",
+        "matches": false,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\input.py",
+        "expected": "43646de0bd0dbb69437f518518c10505aa129538cb0d1302d9c27c476d222a5d",
+        "actual": "b248adeb2e30a913f5a940aa6436f5f62fa5350cb4eb3010345d33517115e409",
+        "matches": false,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\input.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/input.py"
+        ]
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\pipeline.py",
+        "expected": "06b055ecb798be094d242fffeca28286a0bba15ef03094ef57ddde43255e42b0",
+        "actual": "1284d13d7a542d45dff268322f5bbf84dff74c84dce9d2fcb0fcf01787b70dd8",
+        "matches": false,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\render.py",
+        "expected": "f48829c49543a05b1f9077a4ca023468c751247499e708faa0ab98d6706ea2e5",
+        "actual": "f48829c49543a05b1f9077a4ca023468c751247499e708faa0ab98d6706ea2e5",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\runtime.py",
+        "expected": "c5a3475addcf980940a8270070260abd96fdbc0dec57ab97c1a0f10077762324",
+        "actual": "c5a3475addcf980940a8270070260abd96fdbc0dec57ab97c1a0f10077762324",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\subdivision_worker.py",
+        "expected": "5e8d1d6c3ee7eeae990a2d104a15350eaae8efcfcc0ae0e6a683ab2b4bb79c7a",
+        "actual": "83ab4ab041a5f597d51a4fc56990a7246a7d7c6e249d66c786cc90853b3adfac",
+        "matches": false,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\subdivision_worker.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/subdivision_worker.py"
+        ]
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\symmetry.py",
+        "expected": "185e679d95d871e4b33e19d6cb07c75e8e9316fefbc312566367d4a7a960ad70",
+        "actual": "b2939667ad7d5bb0d97273248b168fc28c165b56d104dc4db9509405ac159e54",
+        "matches": false,
+        "matching_preserved_copies": [
+          "scratch\\generative_gate_20261010\\gateflow\\symmetry.py",
+          "scratch\\generative_gate_20261010\\pipeline_source.zip::gateflow/symmetry.py"
+        ]
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\tessellate_worker.py",
+        "expected": "08c47ab8948792a8c1288f79d9812d3fd313f6d1d7233abff8c515f8128db67b",
+        "actual": "08c47ab8948792a8c1288f79d9812d3fd313f6d1d7233abff8c515f8128db67b",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\tissue_comparison.py",
+        "expected": "db54f8970cffcbedd8cb540cebd35aa5372b6fb06f36ef4a3234ef682e16c3cb",
+        "actual": "db54f8970cffcbedd8cb540cebd35aa5372b6fb06f36ef4a3234ef682e16c3cb",
+        "matches": true,
+        "matching_preserved_copies": []
+      },
+      {
+        "file": "scratch\\connected_tissue_20261010\\extension\\gateflow\\tissue_worker.py",
+        "expected": "62476a7f555c0ae97e7d126ed9b37fb720740d8848e941dd13fd8966ac930e15",
+        "actual": "62476a7f555c0ae97e7d126ed9b37fb720740d8848e941dd13fd8966ac930e15",
+        "matches": true,
+        "matching_preserved_copies": []
+      }
+    ]
+  }
+]

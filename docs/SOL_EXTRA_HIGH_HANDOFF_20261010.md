@@ -148,3 +148,18 @@ Set-Location C:/Users/USER/CHESHIRE/scratch/connected_tissue_20261010/extension
 `outputs/sol_handoff_20261010/pip_freeze.txt`, 기존 environment.json/requirements.txt와 vendored deps/external을 같이 보존한다. Python 3.12, COMPAS 2.15.1, headless Blender 4.5.4, libigl 2.6.3 CGAL, manifold3d 3.5.4. 환경별 실제 import 경로는 gateflow/runtime.py를 확인한다. HDMola는 Python.NET/CoreCLR 및 외부 DLL 경로가 필요하다. 복사한 .venv는 로컬 복구 보조이며 다른 경로에서 그대로 이동 실행을 보장하지 않는다.
 
 원격 push 없음. 최종 Git ID/검증 상태는 `outputs/sol_handoff_20261010/FINAL_STATUS.json`을 본다. 자신의 커밋 ID를 같은 커밋 문서에 넣으려는 순환은 만들지 않는다.
+
+### 과거 소스 버전 회수의 한계 — 숨기지 말 것
+
+`outputs/sol_handoff_20261010/historical_code_hash_check.json`은 microfold TARGET와 section_mass_full 실행 당시 code_sha256를 현재 파일과 비교한다. 서로 다른 8개 해시가 현재 코드와 달랐고, 그중 3개는 다른 보존 소스/ZIP에서 정확한 사본을 찾았다. 남은 **5개 해시의 당시 파일은 현존 scratch/아카이브 코드, 두 source ZIP, Git의 작은 blob 10,469개 검색에서 찾지 못했다.** 현재 구현, 실행 설정, 원본 checkpoint와 결과는 존재하지만 모든 과거 단계를 그때 코드로 bit-exact 재생성할 수 있다고 주장하지 않는다. 당시 코드 대신 새 코드를 임의로 고쳐 같은 SHA를 만들어낸 것으로 기록하지 않는다.
+
+관련 파일은 microfold의 engine.py / pipeline.py / tessellate_worker.py, section_mass_full의 engine.py / pipeline.py다. 원본 gate TARGET/section TARGET을 바로 로드하는 경로는 보존돼 있으며, 새 실행은 새 디렉터리에서 prefix와 geometry를 검증해야 한다. 과거 모든 full pipeline을 이번 보존 작업에서 다시 실행한 것은 아니다.
+
+아카이브에서 전체 gate runner를 실행할 경우 `CHESHIRE_ROOT`는 archive/workspace,
+`CHESHIRE_ASTRA_ROOT`는 archive/dependencies/CHESHIRE_ASTRA,
+`CHESHIRE_MOLA_DLL`은 archive/dependencies/HDMola 아래 실제 DLL로 지정한다.
+현재 C 드라이브 경로에서는 기존 설정을 유지한다. git bundle은 전체 refs의 history를 보존하며,
+unreachable object와 reflog-only 과거 상태까지 모두 bundle에 포함했다는 뜻은 아니다.
+기존 .git은 원래 위치에 그대로 있고 refs/reflog 목록도 저장했다.
+
+?? ?? ??: E ????? .venv Python? E/workspace/src? ?? ??? ??? ?? 21? ???? ???? (`outputs/sol_handoff_20261010/archive_recovery_tests.txt`). ?? ???? ??? ???? ?? ?? ?? ?? ????.
