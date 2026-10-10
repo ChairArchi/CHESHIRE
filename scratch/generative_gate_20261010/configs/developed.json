@@ -1,0 +1,72 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.3,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 550000,
+  "opening_retention": 0.85,
+  "render_resolution": 850,
+  "stages": [
+    {
+      "op": "extrusion_growth",
+      "count": 32,
+      "spacing": 0.105,
+      "rounds": 8,
+      "fraction": 0.075,
+      "turn": 0.48,
+      "interaction_radius": 0.32
+    },
+    {
+      "op": "extrusion_growth",
+      "frontier_only": true,
+      "count": 85,
+      "spacing": 0.052,
+      "rounds": 4,
+      "fraction": 0.13,
+      "turn": 0.56,
+      "interaction_radius": 0.16
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.08,
+        "we": -0.06,
+        "wp": 0,
+        "w1": -0.3,
+        "w2": -0.05
+      },
+      "contrast": 0.11
+    },
+    {
+      "op": "ds",
+      "w1": 0.72,
+      "wf": 0.025,
+      "contrast": 0.22
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.04,
+        "we": -0.06,
+        "wp": 0,
+        "w1": -0.45,
+        "w2": 0.02,
+        "w3": -0.6,
+        "w4": 0.2
+      },
+      "contrast": 0.075
+    },
+    {
+      "op": "fuse",
+      "pitch": 0.004,
+      "sigma": 0.55,
+      "retain_core": 0.045
+    }
+  ]
+}

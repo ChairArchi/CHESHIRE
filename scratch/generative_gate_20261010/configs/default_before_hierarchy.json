@@ -1,0 +1,65 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.4,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 300000,
+  "opening_retention": 0.85,
+  "render_resolution": 850,
+  "stages": [
+    {
+      "op": "mola",
+      "count": 45,
+      "spacing": 0.13,
+      "height_ratio": 0.5,
+      "fraction": 0.25
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.16,
+        "we": -0.1,
+        "wp": 0.02,
+        "w1": -0.4,
+        "w2": -0.2
+      },
+      "contrast": 0.32
+    },
+    {
+      "op": "ds",
+      "w1": 0.55,
+      "wf": 0.08,
+      "contrast": 0.5
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.1,
+        "we": -0.05,
+        "wp": 0.0,
+        "w1": 0.45,
+        "w2": -0.1,
+        "w3": -0.6,
+        "w4": 0.3
+      },
+      "contrast": 0.22
+    },
+    {
+      "op": "domains",
+      "radius": 0.17,
+      "angle": 1.1,
+      "spacing": 1.0
+    },
+    {
+      "op": "fuse",
+      "pitch": 0.006,
+      "sigma": 0.65
+    }
+  ]
+}

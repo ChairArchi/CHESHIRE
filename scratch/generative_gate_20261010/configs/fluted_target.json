@@ -1,0 +1,85 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.65,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 500000,
+  "opening_retention": 0.85,
+  "render_resolution": 850,
+  "stages": [
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": 0,
+        "w2": 0
+      },
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 2.2,
+      "amount": 0.8999999999999999,
+      "cross_flow": 0.7,
+      "convergence": 0.8,
+      "flow_angle": 1.57079632679
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.015,
+        "we": -0.13,
+        "wp": 0.015,
+        "w1": -0.75,
+        "w2": 0.05,
+        "w3": -1.1,
+        "w4": 0.6
+      },
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 4.4,
+      "amount": 0.625,
+      "cross_flow": 0.8,
+      "convergence": 0.8,
+      "phase": 0.25,
+      "flow_angle": 1.57079632679
+    },
+    {
+      "op": "ds",
+      "w1": 0.75,
+      "wf": 0,
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 8.8,
+      "amount": 0.325,
+      "cross_flow": 1.1,
+      "convergence": 0.55,
+      "flow_angle": 1.57079632679
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.015,
+        "we": -0.09,
+        "wp": 0.01,
+        "w1": -0.6,
+        "w2": 0.05,
+        "w3": -0.7,
+        "w4": 0.4
+      },
+      "contrast": 0
+    }
+  ]
+}

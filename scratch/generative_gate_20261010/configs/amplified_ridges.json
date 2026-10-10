@@ -1,0 +1,100 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.65,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 500000,
+  "opening_retention": 0.85,
+  "render_resolution": 850,
+  "stages": [
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": 0,
+        "w2": 0
+      },
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 4,
+      "amount": 1.15,
+      "cross_flow": 0.7,
+      "convergence": 0.9,
+      "flow_angle": 1.05
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.65
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.035,
+        "we": -0.16,
+        "wp": 0.02,
+        "w1": -0.85,
+        "w2": 0.05,
+        "w3": -1.15,
+        "w4": 0.65
+      },
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 8,
+      "amount": 0.82,
+      "cross_flow": 0.8,
+      "convergence": 1.0,
+      "flow_angle": 0.45,
+      "phase": 0.25
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.5
+    },
+    {
+      "op": "ds",
+      "w1": 0.85,
+      "wf": 0,
+      "contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 16,
+      "amount": 0.42,
+      "cross_flow": 1.1,
+      "convergence": 0.8,
+      "flow_angle": 1.1
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.32
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.02,
+        "we": -0.1,
+        "wp": 0.015,
+        "w1": -0.65,
+        "w2": 0.05,
+        "w3": -0.7,
+        "w4": 0.4
+      },
+      "contrast": 0
+    }
+  ]
+}

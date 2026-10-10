@@ -1,0 +1,109 @@
+{
+  "source": "Hansmeyer 2010 equations 1-6; this is an experimental weight schedule, not the unpublished settings of Illustration 3",
+  "extrusion_gain": 1.0,
+  "position_variation": true,
+  "schedule": [
+    {
+      "scheme": "cc",
+      "w1": -1.0,
+      "w2": -2.0,
+      "wf": 0.1,
+      "we": 0.0,
+      "wp": -0.012
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.65,
+        -0.008
+      ],
+      "edge": [
+        0.0,
+        0.0
+      ],
+      "vertex": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        -0.012
+      ],
+      "edge": [
+        0.3,
+        0.12
+      ],
+      "vertex": [
+        0.45,
+        0.06
+      ]
+    },
+    {
+      "scheme": "cc",
+      "w1": -1.15,
+      "w2": -1.5,
+      "wf": -0.035,
+      "we": 0.045,
+      "wp": 0.32
+    },
+    {
+      "scheme": "cc",
+      "w1": -0.8,
+      "w2": -1.5,
+      "w3": 1.8,
+      "w4": 0.6,
+      "wf": 0.035,
+      "we": -0.012,
+      "wp": 0.02
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.01
+      ],
+      "edge": [
+        0.4,
+        0.025
+      ],
+      "vertex": [
+        0.4,
+        0.02
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.006
+      ],
+      "edge": [
+        0.45,
+        0.06
+      ],
+      "vertex": [
+        0.45,
+        0.045
+      ]
+    }
+  ],
+  "experiment": "Only carrier geometry varies; all seven operator rows and extrusion gain identical",
+  "carrier": {
+    "areas": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "ratios": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "equal_volume": true
+  }
+}

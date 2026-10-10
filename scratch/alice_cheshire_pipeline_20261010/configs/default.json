@@ -1,0 +1,52 @@
+{
+  "schema": "cheshire-gateflow/1",
+  "seed": 17,
+  "max_faces": 300000,
+  "max_seconds": 240,
+  "prepare": {
+    "weld_digits": 7,
+    "minimum_component_area_fraction": 0.9,
+    "simplify_tolerance": 0.008,
+    "max_prepared_faces": 6000
+  },
+  "role_gain": [
+    1.0,
+    1.0,
+    1.25,
+    0.85,
+    0.3
+  ],
+  "opening_retention": 0.9,
+  "stages": [
+    {
+      "op": "mola",
+      "selected": 130,
+      "spacing": 0.065,
+      "height_ratio": 0.46,
+      "fraction": 0.38
+    },
+    {
+      "op": "carve",
+      "selected": 32,
+      "spacing": 0.085,
+      "radius": 0.026,
+      "depth": 0.038,
+      "length": 0.065
+    },
+    {
+      "op": "cc",
+      "wf": 0.16,
+      "we": -0.045,
+      "wp": 0.012,
+      "contrast": 0.8
+    },
+    {
+      "op": "fold",
+      "radius": 0.14,
+      "angle": 0.8,
+      "direction": "transverse",
+      "spacing": 0.9
+    }
+  ],
+  "render_resolution": 900
+}

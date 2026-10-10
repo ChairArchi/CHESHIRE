@@ -1,0 +1,121 @@
+{
+  "source": "Hansmeyer 2010 equations 1-6; this is an experimental weight schedule, not the unpublished settings of Illustration 3",
+  "extrusion_gain": 1.0,
+  "position_variation": true,
+  "schedule": [
+    {
+      "scheme": "cc",
+      "w1": -1.0,
+      "w2": -2.0,
+      "wf": 0.1,
+      "we": 0.0,
+      "wp": -0.012
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.65,
+        -0.007200000000000001
+      ],
+      "edge": [
+        0.0,
+        0.0
+      ],
+      "vertex": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        -0.009600000000000001
+      ],
+      "edge": [
+        0.3,
+        0.096
+      ],
+      "vertex": [
+        0.45,
+        0.048
+      ]
+    },
+    {
+      "scheme": "cc",
+      "w1": -1.15,
+      "w2": -1.5,
+      "wf": -0.029750000000000002,
+      "we": 0.03825,
+      "wp": 0.272
+    },
+    {
+      "scheme": "cc",
+      "w1": -0.8,
+      "w2": -1.5,
+      "w3": 1.8,
+      "w4": 0.6,
+      "wf": 0.021,
+      "we": -0.0072,
+      "wp": 0.012
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.004
+      ],
+      "edge": [
+        0.4,
+        0.010000000000000002
+      ],
+      "vertex": [
+        0.4,
+        0.008
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.0015
+      ],
+      "edge": [
+        0.45,
+        0.015
+      ],
+      "vertex": [
+        0.45,
+        0.01125
+      ]
+    },
+    {
+      "scheme": "ds",
+      "face": [
+        0.6,
+        0.0009
+      ],
+      "edge": [
+        0.45,
+        0.009
+      ],
+      "vertex": [
+        0.45,
+        0.00675
+      ]
+    }
+  ],
+  "experiment": "User-authorized G1-G8 growth-budget schedule: early formation retained, later normal growth decays. Not persistent parent-age hierarchy.",
+  "max_faces": 1200000,
+  "max_vertices": 1200000,
+  "generation_extrusion_multipliers": [
+    1,
+    0.9,
+    0.8,
+    0.85,
+    0.6,
+    0.4,
+    0.25,
+    0.15
+  ]
+}

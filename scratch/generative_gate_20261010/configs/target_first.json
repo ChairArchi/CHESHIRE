@@ -1,0 +1,100 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.3,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 2200000,
+  "opening_retention": 0.85,
+  "render_resolution": 850,
+  "stages": [
+    {
+      "op": "fold_field",
+      "radius": 0.24,
+      "angle": 2.4,
+      "direction_phase": 0.3,
+      "domains": 25
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.55,
+        "we": -0.18,
+        "wp": 0.1,
+        "w1": -1.0,
+        "w2": -0.15
+      },
+      "contrast": 0.35
+    },
+    {
+      "op": "fold_field",
+      "radius": 0.13,
+      "angle": 2.7,
+      "direction_phase": 1.6,
+      "domains": 80
+    },
+    {
+      "op": "ds",
+      "w1": 0.82,
+      "wf": 0.22,
+      "contrast": 0.32
+    },
+    {
+      "op": "normal_extrude",
+      "amount": 0.65
+    },
+    {
+      "op": "fold_field",
+      "radius": 0.08,
+      "angle": 2.0,
+      "direction_phase": -0.6,
+      "domains": 180
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0.24,
+        "we": -0.17,
+        "wp": 0.09,
+        "w1": -1.2,
+        "w2": 0.05,
+        "w3": 0.75,
+        "w4": -0.65
+      },
+      "contrast": 0.35
+    },
+    {
+      "op": "normal_extrude",
+      "amount": 0.45
+    },
+    {
+      "op": "fold_field",
+      "radius": 0.046,
+      "angle": 1.8,
+      "direction_phase": 1.2,
+      "domains": 260
+    },
+    {
+      "op": "tessellate",
+      "component": "components/cell18/component.json",
+      "depth": 1.1,
+      "overlap": 1.2
+    },
+    {
+      "op": "normal_extrude",
+      "amount": 0.18
+    },
+    {
+      "op": "fuse",
+      "pitch": 0.0028,
+      "sigma": 0.5,
+      "retain_core": 0,
+      "bounded_voxelization": true
+    }
+  ]
+}

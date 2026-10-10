@@ -1,0 +1,129 @@
+{
+  "schema": "cheshire-generative/1",
+  "seed": 23,
+  "field_radius": 0.12,
+  "feedback": 0.65,
+  "region_gain": [
+    1.0,
+    1.0,
+    1.2,
+    0.6
+  ],
+  "max_polygons": 1000000,
+  "opening_retention": 0.85,
+  "render_resolution": 950,
+  "stages": [
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": 0,
+        "w2": 0
+      },
+      "contrast": 0,
+      "edge_contrast": 0
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": 0,
+        "w2": 0
+      },
+      "contrast": 0,
+      "edge_contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 4,
+      "amount": 2.25,
+      "cross_flow": 0.25,
+      "convergence": 0.08,
+      "flow_angle": 1.25,
+      "flow_smoothing": 0.045,
+      "fan_count": 5,
+      "fan_radius": 0.19,
+      "fan_strength": 1.0,
+      "regional_contrast": 0.45
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.22
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": -0.15,
+        "w2": 0
+      },
+      "contrast": 0,
+      "edge_contrast": 0,
+      "fold_lock": 0.05
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 8,
+      "amount": 1.0,
+      "cross_flow": 0.25,
+      "convergence": 0.08,
+      "flow_angle": 0.9,
+      "phase": 0.25,
+      "flow_smoothing": 0.035,
+      "fan_count": 5,
+      "fan_radius": 0.12,
+      "fan_strength": 0.7,
+      "regional_contrast": 0.45
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.2
+    },
+    {
+      "op": "ds",
+      "w1": 0.3,
+      "wf": 0,
+      "contrast": 0,
+      "normal_contrast": 0
+    },
+    {
+      "op": "pleat_flow",
+      "frequency": 16,
+      "amount": 0.55,
+      "cross_flow": 0.2,
+      "convergence": 0.06,
+      "flow_angle": 1.15,
+      "flow_smoothing": 0.02,
+      "fan_count": 5,
+      "fan_radius": 0.075,
+      "fan_strength": 0.45,
+      "regional_contrast": 0.45
+    },
+    {
+      "op": "normal_extrude",
+      "ridge_focus": true,
+      "amount": 0.12
+    },
+    {
+      "op": "cc",
+      "weights": {
+        "wf": 0,
+        "we": 0,
+        "wp": 0,
+        "w1": -0.7,
+        "w2": 0
+      },
+      "contrast": 0,
+      "edge_contrast": 0,
+      "fold_lock": 0.035
+    }
+  ]
+}
