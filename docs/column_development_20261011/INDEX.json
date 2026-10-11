@@ -1,0 +1,585 @@
+{
+  "output_root": "E:\\CHESHIRE_DATA\\column_development_20261011",
+  "checkpoints": [
+    {
+      "candidate": "COUNTER",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER\\G00\\column.blend"
+    },
+    {
+      "candidate": "COUNTER_R1",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00",
+      "vertices": 12802,
+      "triangles": 25600,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\COUNTER_R1\\G00\\column.blend"
+    },
+    {
+      "candidate": "SPAN",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN\\G00\\column.blend"
+    },
+    {
+      "candidate": "SPAN_COARSE",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00",
+      "vertices": 3202,
+      "triangles": 6400,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_COARSE\\G00\\column.blend"
+    },
+    {
+      "candidate": "SPAN_R1",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00",
+      "vertices": 12802,
+      "triangles": 25600,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R1\\G00\\column.blend"
+    },
+    {
+      "candidate": "SPAN_R2",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00",
+      "vertices": 12802,
+      "triangles": 25600,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\SPAN_R2\\G00\\column.blend"
+    },
+    {
+      "candidate": "WEAVE",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE\\G00\\column.blend"
+    },
+    {
+      "candidate": "WEAVE_R1",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00",
+      "vertices": 12802,
+      "triangles": 25600,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R1\\G00\\column.blend"
+    },
+    {
+      "candidate": "WEAVE_R2",
+      "stage": "G00",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00",
+      "vertices": 12802,
+      "triangles": 25600,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\generation.json",
+        "recipe.py": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\recipe.py"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\inputs\\WEAVE_R2\\G00\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_COARSE",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G01\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_COARSE",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G02\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_COARSE",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_COARSE\\G03\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_REFINED",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G01\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_REFINED",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G02\\column.blend"
+    },
+    {
+      "candidate": "SPAN_N4_REFINED",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_N4_REFINED\\G03\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_COARSE",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G01\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_COARSE",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G02\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_COARSE",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_COARSE\\G03\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_FINE",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G01\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_FINE",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G02\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_FINE",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_FINE\\G03\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_STAGED",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G01\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_STAGED",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G02\\column.blend"
+    },
+    {
+      "candidate": "SPAN_RETURN_STAGED",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\SPAN_RETURN_STAGED\\G03\\column.blend"
+    },
+    {
+      "candidate": "WEAVE_BRIDGE4_REFINED",
+      "stage": "G01",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G01\\column.blend"
+    },
+    {
+      "candidate": "WEAVE_BRIDGE4_REFINED",
+      "stage": "G02",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G02\\column.blend"
+    },
+    {
+      "candidate": "WEAVE_BRIDGE4_REFINED",
+      "stage": "G03",
+      "folder": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03",
+      "vertices": null,
+      "triangles": null,
+      "files": {
+        "gate.ply": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\gate.ply",
+        "geometry.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\geometry.npz",
+        "checkpoint.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\checkpoint.npz",
+        "control_quad.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\control_quad.npz",
+        "operation_fields.npz": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\operation_fields.npz",
+        "generation.json": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\generation.json"
+      },
+      "previews": {
+        "front": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\preview\\side.png"
+      },
+      "blender": "E:\\CHESHIRE_DATA\\column_development_20261011\\WEAVE_BRIDGE4_REFINED\\G03\\column.blend"
+    }
+  ],
+  "original_catalogue": "E:/CHESHIRE_DATA/terminal_fold_20261011",
+  "branch": "experiment/column-fold-development-20261011",
+  "source_code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\column_development_20261011",
+  "scope": "Actual file pointers; no repeat hash audit. Large meshes remain on E. OBJ not exported."
+}
