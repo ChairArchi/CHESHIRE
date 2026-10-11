@@ -10,6 +10,11 @@ and supplemental intersection checks. See [results and limitations](docs/TASK36_
 Its overall ornament remains **PARTIAL**; use the report's final selection and
 validation scope rather than an experiment ID as a safety certificate.
 
+The latest [two-input region-fold study](docs/fold_region_growth_20261012/REPORT.md)
+measures existing native shoulders to place new meso grooves with shared coefficients.
+Local new folds are demonstrated; continuous hierarchy and general recurrence remain
+**PARTIAL**. This opt-in experiment preserves the original candidates and engine paths.
+
 Task35 studies one closed column with
 section-dependent formation and deep nested folds. Its [results](docs/TASK35_RESULTS.md)
 separate verified local geometry from the remaining **PARTIAL** overall ornament.

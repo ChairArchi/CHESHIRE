@@ -1,0 +1,332 @@
+{
+  "base_revision": "8a4cc2e4367802123d6f5fd24e70620259463642",
+  "selected": "longitudinal_region / GROOVE",
+  "variants": {
+    "transverse": [
+      {
+        "case": "SPAN",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 5
+      },
+      {
+        "case": "SPAN",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 8
+      },
+      {
+        "case": "COUNTER",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 5
+      },
+      {
+        "case": "COUNTER",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 9
+      }
+    ],
+    "longitudinal_native": [
+      {
+        "case": "SPAN",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 8
+      },
+      {
+        "case": "SPAN",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 11
+      },
+      {
+        "case": "COUNTER",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 9
+      },
+      {
+        "case": "COUNTER",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 12
+      }
+    ],
+    "longitudinal_region": [
+      {
+        "case": "SPAN",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 10
+      },
+      {
+        "case": "SPAN",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 9
+      },
+      {
+        "case": "COUNTER",
+        "mode": "GROOVE",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 11
+      },
+      {
+        "case": "COUNTER",
+        "mode": "RETURN",
+        "finite_cuts": 14,
+        "cuts_with_new_near_guide_basin": 11
+      }
+    ]
+  },
+  "frames": [
+    {
+      "case": "SPAN",
+      "guide": 0,
+      "native": {
+        "tangent": {
+          "median": 27.472311818289413,
+          "maximum": 161.7488468142208,
+          "adjacent_over_45_degrees": 9
+        },
+        "normal": {
+          "median": 25.67126269989276,
+          "maximum": 147.441355746971,
+          "adjacent_over_45_degrees": 12
+        }
+      },
+      "region": {
+        "tangent": {
+          "median": 2.900460419383811,
+          "maximum": 6.515714771304564,
+          "adjacent_over_45_degrees": 0
+        },
+        "normal": {
+          "median": 2.5727674908406835,
+          "maximum": 6.774351271134019,
+          "adjacent_over_45_degrees": 0
+        }
+      }
+    },
+    {
+      "case": "SPAN",
+      "guide": 1,
+      "native": {
+        "tangent": {
+          "median": 19.36010609727584,
+          "maximum": 176.39280288114205,
+          "adjacent_over_45_degrees": 13
+        },
+        "normal": {
+          "median": 24.736798568225282,
+          "maximum": 173.2272328926848,
+          "adjacent_over_45_degrees": 16
+        }
+      },
+      "region": {
+        "tangent": {
+          "median": 1.814848541825782,
+          "maximum": 4.679465079936847,
+          "adjacent_over_45_degrees": 0
+        },
+        "normal": {
+          "median": 1.3353486627222266,
+          "maximum": 1.954826383562328,
+          "adjacent_over_45_degrees": 0
+        }
+      }
+    },
+    {
+      "case": "COUNTER",
+      "guide": 0,
+      "native": {
+        "tangent": {
+          "median": 15.67062519408638,
+          "maximum": 156.74329687087774,
+          "adjacent_over_45_degrees": 10
+        },
+        "normal": {
+          "median": 31.949964243653223,
+          "maximum": 150.10144103004686,
+          "adjacent_over_45_degrees": 11
+        }
+      },
+      "region": {
+        "tangent": {
+          "median": 1.067826845255093,
+          "maximum": 2.079940922657239,
+          "adjacent_over_45_degrees": 0
+        },
+        "normal": {
+          "median": 1.7503581320661152,
+          "maximum": 7.624212985042651,
+          "adjacent_over_45_degrees": 0
+        }
+      }
+    },
+    {
+      "case": "COUNTER",
+      "guide": 1,
+      "native": {
+        "tangent": {
+          "median": 16.657491783791592,
+          "maximum": 164.00387851514654,
+          "adjacent_over_45_degrees": 8
+        },
+        "normal": {
+          "median": 18.35331941815371,
+          "maximum": 165.98948193783085,
+          "adjacent_over_45_degrees": 13
+        }
+      },
+      "region": {
+        "tangent": {
+          "median": 0.6870947330227171,
+          "maximum": 2.848754697432714,
+          "adjacent_over_45_degrees": 0
+        },
+        "normal": {
+          "median": 1.954226356671199,
+          "maximum": 2.978204786247797,
+          "adjacent_over_45_degrees": 0
+        }
+      }
+    }
+  ],
+  "fresh_packaged_input_replay": [
+    {
+      "case": "SPAN",
+      "file": "control_quad.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "SPAN",
+      "file": "geometry.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "SPAN",
+      "file": "operation_fields.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "SPAN",
+      "file": "guide_0.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "SPAN",
+      "file": "guide_1.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "COUNTER",
+      "file": "control_quad.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "COUNTER",
+      "file": "geometry.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "COUNTER",
+      "file": "operation_fields.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "COUNTER",
+      "file": "guide_0.npz",
+      "arrays_identical": true
+    },
+    {
+      "case": "COUNTER",
+      "file": "guide_1.npz",
+      "arrays_identical": true
+    }
+  ],
+  "sources": {
+    "SPAN": {
+      "input_sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+      "maximum_displacement": 0.14891054781543575,
+      "inherited_controls_moved": 632,
+      "minimum_triangle_area": 5.779174401014292e-06,
+      "reflection_error": [
+        3.688882027804963e-15,
+        3.800791407964896e-15
+      ],
+      "quick_integrity": "PASS",
+      "measured_guides": [
+        {
+          "parent_id": "LOWER_DIAGONAL_RETURN",
+          "median_shoulder_arc": 0.5476906676831629,
+          "median_parent_signed_chord_relief": -0.16582273420599702,
+          "parameter_axis": "height",
+          "frame_mode": "region",
+          "guide_transverse_coordinate_range": [
+            0.3240881583054243,
+            0.8221131504144152
+          ],
+          "guide_world_length": 3.603491264578598
+        },
+        {
+          "parent_id": "UPPER_CROSSING_RETURN",
+          "median_shoulder_arc": 0.4704295744004695,
+          "median_parent_signed_chord_relief": -0.07875466627253935,
+          "parameter_axis": "height",
+          "frame_mode": "region",
+          "guide_transverse_coordinate_range": [
+            1.110723158081785,
+            1.4599287125344471
+          ],
+          "guide_world_length": 3.919263326921441
+        }
+      ]
+    },
+    "COUNTER": {
+      "input_sha256": "8df4d3f43374e1f59b177fbe1c072f6e06c16c91ed8537567816bd71154d1ca0",
+      "maximum_displacement": 0.20897575098958615,
+      "inherited_controls_moved": 720,
+      "minimum_triangle_area": 7.022484581714122e-06,
+      "reflection_error": [
+        4.100316822212988e-15,
+        3.903187957565046e-15
+      ],
+      "quick_integrity": "PASS",
+      "measured_guides": [
+        {
+          "parent_id": "LOWER_DIAGONAL_RETURN",
+          "median_shoulder_arc": 0.6342091074396324,
+          "median_parent_signed_chord_relief": -0.04880142985020852,
+          "parameter_axis": "height",
+          "frame_mode": "region",
+          "guide_transverse_coordinate_range": [
+            0.20608763793930335,
+            0.8700566619631631
+          ],
+          "guide_world_length": 2.9933384508979963
+        },
+        {
+          "parent_id": "UPPER_CROSSING_RETURN",
+          "median_shoulder_arc": 0.5930268908484367,
+          "median_parent_signed_chord_relief": 0.05868799636293365,
+          "parameter_axis": "height",
+          "frame_mode": "region",
+          "guide_transverse_coordinate_range": [
+            1.1512413053339916,
+            1.4566080853974759
+          ],
+          "guide_world_length": 3.4765867470008627
+        }
+      ]
+    }
+  },
+  "tests": {
+    "passed": 9,
+    "command": "python -B -m pytest -q tests/test_fold_region_growth.py -p no:cacheprovider",
+    "scope": "New experiment tests only; historical suite was not rerun"
+  },
+  "scope": "Finite two-input G2-to-G3 research. Not recursive, arbitrary-mesh, origami, self-intersection or fabrication certification."
+}

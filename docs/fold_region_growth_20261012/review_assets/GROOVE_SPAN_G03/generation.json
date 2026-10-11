@@ -1,0 +1,106 @@
+{
+  "candidate": "GROOVE",
+  "input_case": "SPAN",
+  "stage": "G03",
+  "recipe": {
+    "name": "native_measured_shoulder_region_v1",
+    "shoulder_fraction": 0.55,
+    "depth_ratio": 0.28,
+    "return_angle": 0.65,
+    "source_generation": 2,
+    "output_generation": 3,
+    "new_field_passes": 0,
+    "geometric_averaging": 0,
+    "cell_normal_placement": 0,
+    "rule_scope": "Same authored parent seeds and same coefficients on both existing column inputs; actual native geometry sets new guides, frames and physical scales",
+    "preservation": "Source and controls preserved; strip endpoints have zero displacement. No claim of exact old fold-angle/depth retention.",
+    "generation_scope": "One meso operation after inactive surface-preserving refinement; no recurrence or general-mesh claim",
+    "orientation": "height",
+    "frame_mode": "region"
+  },
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-region-growth-20261012\\docs\\fold_return_20261012\\review_assets\\OVERLAP_G02",
+  "source_control_sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+  "source_generation": 2,
+  "source_field_passes": 2,
+  "added_field_passes": 0,
+  "new_authored_events": [],
+  "parent_region_seeds": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    }
+  ],
+  "measured_guides": [
+    {
+      "parent_id": "LOWER_DIAGONAL_RETURN",
+      "median_shoulder_arc": 0.5476906676831629,
+      "median_parent_signed_chord_relief": -0.16582273420599702,
+      "parameter_axis": "height",
+      "frame_mode": "region",
+      "guide_transverse_coordinate_range": [
+        0.3240881583054243,
+        0.8221131504144152
+      ],
+      "guide_world_length": 3.603491264578598
+    },
+    {
+      "parent_id": "UPPER_CROSSING_RETURN",
+      "median_shoulder_arc": 0.4704295744004695,
+      "median_parent_signed_chord_relief": -0.07875466627253935,
+      "parameter_axis": "height",
+      "frame_mode": "region",
+      "guide_transverse_coordinate_range": [
+        1.110723158081785,
+        1.4599287125344471
+      ],
+      "guide_world_length": 3.919263326921441
+    }
+  ],
+  "actual_control_vertices": 25602,
+  "physical_vertices": 51202,
+  "physical_triangles": 102400,
+  "maximum_displacement": 0.14891054781543575,
+  "moved_controls": 2640,
+  "inherited_controls_moved": 632,
+  "quick_integrity": "PASS",
+  "self_intersection": "NOT_CHECKED_EXPLORATION",
+  "fabrication": "NOT_CHECKED",
+  "guide_sampling": "Barycentric actual native triangles in affine native material UV",
+  "source_revision": "8a4cc2e4367802123d6f5fd24e70620259463642",
+  "finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_triangle_area": 5.779174401014292e-06,
+  "minimum_area_threshold": 1e-12,
+  "geometric_reflection_error": [
+    3.688882027804963e-15,
+    3.800791407964896e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ]
+}

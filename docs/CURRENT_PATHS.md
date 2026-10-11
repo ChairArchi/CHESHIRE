@@ -1,4 +1,4 @@
-# CHESHIRE execution paths — current index, 2026-10-10
+# CHESHIRE execution paths — current index, 2026-10-12
 
 Use this index for present work. Task reports, recipes, handoffs and `studies/` snapshots
 retain their research-time statements. The public COMPAS engine and later ArrayMesh
@@ -6,6 +6,7 @@ reference studies are separate supported paths; legacy operators are not replace
 
 | Path | Entry | Input / output | Purpose |
 | --- | --- | --- | --- |
+| Measured region folds, 2026-10-12 | `experiments/fold_region_growth_20261012/study.py --orientation height --frames region --root <NEW root>` | Two packaged actual G2 columns → G3 CONTROL/GROOVE/RETURN checkpoints | Opt-in local geometry feedback; [results and limits](fold_region_growth_20261012/REPORT.md); not a recursive or arbitrary-mesh engine |
 | General mesh API | `cheshire` exports, `examples/quad_subdivision.py` | OBJ/COMPAS mesh; fields, budgets, transforms and lineage | Existing compatibility API; bounded one-step operations |
 | Existing Rhino studies | `rhino/CHESHIRE_Run.py` in Rhino 8 | Existing selected Mesh → JSON → external `.venv` worker → comparison objects and `output/task*/<run>` | Host selection/display; Task31 is not a new launcher default |
 | Task30 reference pipeline | `cheshire.subdivision_pipeline` | ArrayMesh, declared CC/DS steps, face roles, NPZ state | Small explicit pipeline; closed topology restrictions remain |

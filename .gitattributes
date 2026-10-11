@@ -1,0 +1,5 @@
+# Keep SHA-linked research artifacts byte-identical across Git checkouts.
+.gitattributes -text
+docs/fold_region_growth_20261012/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+experiments/fold_region_growth_20261012/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_fold_region_growth.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
