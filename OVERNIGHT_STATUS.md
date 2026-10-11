@@ -1,3 +1,24 @@
+# CHESHIRE — Cycle 02 / Bold development
+
+**KNOT R2를 다음 크리틱용 리드 후보로 추천한다. 최종안 확정은 아니다.** TORQUE R1에서 세 가지 실제 접근을 시험하고 KNOT만 한 차례 더 발전시켰다. 기둥 팽창을 바깥으로 옮기고 어깨의 꼬임을 상부 되감김으로 연결했다.
+
+![TORQUE와 KNOT의 같은 카메라 비교](docs/overnight_20261011/cycle_02/images/01_TORQUE_vs_KNOT.jpg)
+
+- 얻은 것: Z=6 전 깊이 투영 개구 4.73→7.69. 상부가 기존 첨두 덮개에서 양쪽 어깨와 중앙 결속의 관계로 바뀌었다.
+- 잃은 것: 수직 압축감과 중앙의 날카로운 긴장. 넓고 매끈한 어깨 면과 후면의 첨두 수렴은 남았다.
+- KNOT R2: 실제 OBJ/PLY 반사 오차 0, native quad 반사 연결성 확인, 단일 연결 폐합 메시, 경계·비다양체·퇴화 삼각형 0, CGAL 전체 first-only 탐색에서 교차 쌍 미검출.
+- CROOK R1: 대칭·연결성·폐합 통과, **자기교차 1쌍 확인**. 총수 미집계. 탐색안으로 보존.
+- SPLAY R1: 상부가 차분한 들보로 읽혀 조형적 중단. KNOT R1과 함께 실제 메시 보존, 자기교차 미검증.
+- 두께·받침·제작 접합·재료·축척·구조·전체 통행 여유 미검증. 제작 가능성을 인증하지 않는다.
+
+[세 방향](docs/overnight_20261011/cycle_02/images/02_three_directions.jpg) · [KNOT R1→R2](docs/overnight_20261011/cycle_02/images/03_KNOT_development.jpg) · [보존 후보 비교](docs/overnight_20261011/cycle_02/images/04_preserved_comparison.jpg) · [짧은 보고서](docs/overnight_20261011/cycle_02/REPORT.txt) · [메시 위치/소형 자료 목록](docs/overnight_20261011/cycle_02/MANIFEST.json)
+
+기존 완전 단면 회전·되접힘·국소 비례·팽창/결속과 TORQUE 실제 메시를 재조합했다. 새 범용 엔진, Tissue shell, 추가 subdivision이나 숨긴 수리는 없다. 중간안은 빠른 메시/렌더 판단만, 보존한 두 후보에만 핵심 검사를 적용했다. 전체 회귀·재현·대규모 해시 감사는 반복하지 않았다. 기존 원본과 A/B/D/RETURN/LINK/KNUCKLE 후보는 보존한다.
+
+이번 개발은 종료한다. 추가 생성이나 연구를 자동으로 이어가지 않는다. 아래 Cycle 01 기록은 이전 결과다.
+
+---
+
 # CHESHIRE — D / RETURN external articulation
 
 2026-10-11 · Cycle 01 · 실제 메시 디자인 개발 완료

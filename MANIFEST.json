@@ -15,12 +15,12 @@
     "D_CONFLUX": "R01 (stopped for upper mass regression)"
   },
   "geometry_status": "Four actual native meshes passed unchanged geometry checks; no fabrication certification",
-  "execution_status": "Cycle 01 complete. Upload and issue handoff only; scheduling excluded by current instruction. Stop after handoff.",
+  "execution_status": "Cycle 02 complete. Prior Cycle 01 records preserved; stop after this handoff.",
   "published_files": [
     {
       "path": "OVERNIGHT_STATUS.md",
-      "bytes": 9972,
-      "sha256": "4656da2d0e38ec6ec21cf84cfe77d44375dd50b95281f9ebc8a64076a806e221",
+      "bytes": 12295,
+      "sha256": "5eccd814cef01d666e747c23cf9a519227c83f3097b3983a52efe7faffa1c116",
       "uploaded_in_this_commit": true
     },
     {
@@ -1905,5 +1905,7 @@
       "function_text_changed": false
     }
   ],
-  "self_hash_policy": "MANIFEST.json excludes its own hash; the Git commit identifies this manifest. Published SHA-256 values cover committed bytes; scoped .gitattributes preserves text LF on checkout. Local artifact hashes cover original unmodified local bytes."
+  "self_hash_policy": "MANIFEST.json excludes its own hash; the Git commit identifies this manifest. Published SHA-256 values cover committed bytes; scoped .gitattributes preserves text LF on checkout. Local artifact hashes cover original unmodified local bytes.",
+  "latest_cycle": 2,
+  "latest_cycle_manifest": "docs/overnight_20261011/cycle_02/MANIFEST.json"
 }

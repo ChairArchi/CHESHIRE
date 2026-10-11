@@ -1,0 +1,25 @@
+{
+  "candidate": "D_KNOT",
+  "revision": 2,
+  "source": "TORQUE R1 actual geometry",
+  "source_path": "local-worktree:scratch/d_articulation_20261011_05/results/D_TORQUE/R01/geometry.npz",
+  "source_sha256": "7ac4bc2678c7a4f28910afa8cc575842e3c27b0bbda53a274471d2960ec8c9d8",
+  "source_pairs_sha256": "6672f92ef382ef82b5d9f8078ebd791bff1440614d56a8cd760af683a642f4cd",
+  "operations": [
+    "Continuous local support proportion and outward displacement",
+    "Whole attached arch span and centerline redistribution",
+    "Existing finite complete-section return around actual material-ring centroids",
+    "Continuous local section binding/expansion",
+    "One-half construction then reflection; no averaging or repair"
+  ],
+  "new_engine": false,
+  "additional_subdivision": false,
+  "new_shells": false,
+  "topology_changed": false,
+  "constructed_reflection_error": 0.0,
+  "vertices": 311298,
+  "quads": 311296,
+  "recipe_sha256": "f1cda058c78faf0346acbdab0f908dd2ed70e1673a043f9d32162552afb0d929",
+  "scope": "Composition-specific actual mesh modelling, not a modification of Task33 evaluator parameters or their limits",
+  "classification": "DESIGN_EXPLORATION_NOT_FABRICATION_CERTIFIED"
+}

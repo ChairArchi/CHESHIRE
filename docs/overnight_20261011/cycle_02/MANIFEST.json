@@ -1,0 +1,180 @@
+{
+  "schema": "cheshire.small-review.v2",
+  "cycle": 2,
+  "created_utc": "2026-10-11T06:39:51.107331+00:00",
+  "previous_commit": "d18a295e128313a85bb83195dec68a781b87afa9",
+  "local_worktree_relative_delivery": "outputs/d_bold_20261011_06",
+  "native_meshes_uploaded": false,
+  "local_index": "outputs/d_bold_20261011_06/FILE_INDEX.json",
+  "local_artifacts": [
+    {
+      "candidate": "D_KNOT R02",
+      "local_worktree_relative_path": "scratch/d_bold_20261011_06/results/D_KNOT/R02",
+      "mesh": "gate_exploration.ply",
+      "mesh_sha256": "699a8ccb8c06be77820c05946aeef560b8a6eb46512b1962dc175cce9e6e2b81",
+      "checkpoint": "geometry.npz",
+      "recipe": "recipe.py",
+      "recipe_sha256": "f1cda058c78faf0346acbdab0f908dd2ed70e1673a043f9d32162552afb0d929",
+      "status": "Core geometry pass, fabrication NOT_CHECKED"
+    },
+    {
+      "candidate": "D_CROOK R01",
+      "local_worktree_relative_path": "scratch/d_bold_20261011_06/results/D_CROOK/R01",
+      "mesh": "gate_exploration.ply",
+      "mesh_sha256": "3391c24771064ee4aed7f81e30ce639d284ad8017f5ea411312ab7197e0623af",
+      "checkpoint": "geometry.npz",
+      "recipe": "recipe.py",
+      "recipe_sha256": "b208f1fff2f39cc31c09d85bc9e969807c230cc3343a29e4c0d66233add346e5",
+      "status": "Confirmed self-intersection, exploration only"
+    }
+  ],
+  "intermediate_actual_meshes": [
+    "scratch/d_bold_20261011_06/results/D_SPLAY/R01",
+    "scratch/d_bold_20261011_06/results/D_KNOT/R01"
+  ],
+  "intermediate_status": "Quick topology and actual render only; CGAL NOT_CHECKED",
+  "images": "Actual mesh renders, proportional resize and JPEG only. Board labels outside rendered image.",
+  "published_files": [
+    {
+      "path": "docs/overnight_20261011/cycle_02/code/operations.py",
+      "bytes": 3044,
+      "sha256": "e97f3d8d9f2a420bdcb70153aa4b3643e9a1b3862d11fe50160b42396d7b573e"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/01_TORQUE_vs_KNOT.jpg",
+      "bytes": 285128,
+      "sha256": "da4031cf7eafe666f4089fad22b34214ff041117d548f444f9eb810acfb44fd4"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/02_three_directions.jpg",
+      "bytes": 362750,
+      "sha256": "80c8a22ddc5e8ea4e2c75bb82c2bc2e786f2d009642f7dd247f1986f05883de6"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/03_KNOT_development.jpg",
+      "bytes": 249676,
+      "sha256": "28aa6319c5d6b6bf651a6fa4692cc419ee917e6120ec595cf13a6914251893f3"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/04_preserved_comparison.jpg",
+      "bytes": 255996,
+      "sha256": "fec0abbcabb6a77167f6fa19878c743b79f4092cdd06f561c83033cf48cd68b3"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_CROOK_R01/front.jpg",
+      "bytes": 63165,
+      "sha256": "df49c5a5af5d00c2555b5b2f565a5f7a794b0b5c8b4b961fc9348b6662054311"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_CROOK_R01/oblique.jpg",
+      "bytes": 58457,
+      "sha256": "01cdcc3cc27a659096fca0f998b45d8255b5135665d09cb7fa5f9e80a649a567"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_CROOK_R01/rear.jpg",
+      "bytes": 63678,
+      "sha256": "c19882ee3acb16e992178792917c0e81eeab8a347794779ee091f474e2a3d3b2"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_CROOK_R01/side.jpg",
+      "bytes": 34713,
+      "sha256": "e8399b031645f5277d9f7437460be2b01e114a520fe27bd3dce84e035a3c5de8"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_KNOT_R02/front.jpg",
+      "bytes": 60805,
+      "sha256": "040e1a5356bc18b2f8a4feb45f1686f9478c10f00840eb1fc2774646d91ad938"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_KNOT_R02/oblique.jpg",
+      "bytes": 56417,
+      "sha256": "8dd405d8384e164cf12c49c24d00bf870316d5f1c5e7110dfb2919dfba70a69b"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_KNOT_R02/rear.jpg",
+      "bytes": 63888,
+      "sha256": "2cb604d473821877050333136e11f6879e71a69cbd0ed5db155c4468df03ecae"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/images/D_KNOT_R02/side.jpg",
+      "bytes": 36020,
+      "sha256": "196619bc0f3fd246dba527b9c82b93ccf1c127fba7d34ee4694f45be74be5fb7"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/REPORT.txt",
+      "bytes": 4001,
+      "sha256": "ddd0aa7d63e3f34662d5c4a16f5ddc32879a29297f33c759fe43525a5d6c6a0c"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/section_comparison.csv",
+      "bytes": 1138,
+      "sha256": "cc29d304921df58a61180c48f01760e929cbd5a70829c64cdf177f1a1bf6cb9f"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_CROOK_R01/core_symmetry.json",
+      "bytes": 333,
+      "sha256": "8dd85fe9dcc9892e4d0e6a105cad6039ef5006bb88839dbf86cef8d098c94dfb"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_CROOK_R01/design_measurements.json",
+      "bytes": 1548,
+      "sha256": "0e9d8e85a4abb672e925f81ee54ba99142a3f24a14c50dd16ca5ce57f5111cac"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_CROOK_R01/gate_exploration.validation.json",
+      "bytes": 1086,
+      "sha256": "d1ba1d9895dc5936941fd78311f9f2347dd4ebf4cc2d32c9c7c81b5d9975312e"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_CROOK_R01/generation.json",
+      "bytes": 1196,
+      "sha256": "354bad9c3a8bf0855c18dbdbd2c6f59185ca21e39e446fbbd1fe4645a6722cda"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_CROOK_R01/render_receipt.json",
+      "bytes": 682,
+      "sha256": "e5997aeb524eb97bdcf537cc5c9530a29834891f5d977ef329e548c56c6bec7e"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_KNOT_R02/core_symmetry.json",
+      "bytes": 333,
+      "sha256": "8dd85fe9dcc9892e4d0e6a105cad6039ef5006bb88839dbf86cef8d098c94dfb"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_KNOT_R02/design_measurements.json",
+      "bytes": 1542,
+      "sha256": "bcf981812eaeb95f4525a992a85ace3847315d0a6917c811a764ec576ee2fe51"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_KNOT_R02/gate_exploration.validation.json",
+      "bytes": 1128,
+      "sha256": "d51b93f340c0c9120a8434e5133b7636efccb96f8aa1b5fb4ee3eefa72193558"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_KNOT_R02/generation.json",
+      "bytes": 1195,
+      "sha256": "43b68b6b4a1e60475583a63d45b5ac009258e24161f10fa02ecab352b7351692"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/D_KNOT_R02/render_receipt.json",
+      "bytes": 681,
+      "sha256": "3fc47b51d1a9363239a6efacfa21a6c63e35b34cd2bd36d91d9d153259051dc8"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/design_decisions.json",
+      "bytes": 2281,
+      "sha256": "a29d8ada500d863f31d191a21fda0aa6b054dc8b14efac5f2888d639bbd2f4dd"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/technical/validation_criteria.json",
+      "bytes": 1163,
+      "sha256": "388cfaf7e1a7f6dda14da3deba3a813ef6627d74daff882f51ab70d2ecbf09cf"
+    },
+    {
+      "path": "docs/overnight_20261011/cycle_02/README.txt",
+      "bytes": 413,
+      "sha256": "0a892dddb235f5aa69787e4261280b845c9a46ed650a3a8d4a5a4cf05ce48417"
+    }
+  ],
+  "hash_scope": "Small published payload only; native PLY/recipe hashes reused from existing core/generation records. No preservation audit or replay."
+}

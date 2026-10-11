@@ -1,0 +1,41 @@
+{
+  "path": "local-worktree:scratch/d_bold_20261011_06/results/D_CROOK/R01/gate_exploration.ply",
+  "sha256": "3391c24771064ee4aed7f81e30ce639d284ad8017f5ea411312ab7197e0623af",
+  "vertices": 311298,
+  "triangles": 622592,
+  "components": 1,
+  "component_face_sizes": [
+    622592
+  ],
+  "finite": true,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "zero_area_triangles": 0,
+  "minimum_triangle_area": 3.052817924830106e-05,
+  "watertight": true,
+  "winding_consistent": true,
+  "signed_volume": 129.50970208246792,
+  "bounds": [
+    [
+      -6.903308391571045,
+      -2.196927070617676,
+      5.10702591327572e-15
+    ],
+    [
+      6.903308391571045,
+      2.3951916694641113,
+      13.062090873718262
+    ]
+  ],
+  "self_intersections": "CONFIRMED",
+  "cgal_first_intersection_pairs": 1,
+  "cgal_witness_triangle_ids": [
+    [
+      123917,
+      123949
+    ]
+  ],
+  "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+  "elapsed_seconds": 2.5404489040374756,
+  "geometric_fabrication_status": "NOT_CERTIFIED"
+}
