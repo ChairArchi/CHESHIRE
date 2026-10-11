@@ -1,0 +1,127 @@
+{
+  "branch": "experiment/iaac-mandelbrot-growth-20261011",
+  "source_commit": "45f3541",
+  "source_directory": "experiments/iaac_mandelbrot_20261011",
+  "preferred_artifact": "input_field/DIRECTIONAL_FIELD/G02_CC",
+  "disclosure": "Modelled sectional/axial mass deformation + Mandelbulb attraction + CC, NOT crease-driven folding or recovered IAAC implementation",
+  "geometry_payloads_public": false,
+  "original_outputs": "Preserved locally; no original mesh, checkpoint, BLEND or field-grid payload is included",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1125,
+      "sha256": "1968383d21b51596ef76abb046f83d660e9e290360764a9c9b5319695be5eab5"
+    },
+    {
+      "path": "FOR_GPT.md",
+      "bytes": 5376,
+      "sha256": "f97857328dea3a332dc5fd11e84a1aacbe47381821bee7b907ca52772f930b37"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 6546,
+      "sha256": "e77a8acbc477e243bc7c0ac351046977d199c0acd9289c0162f0d2b6e0f309bf"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 9428,
+      "sha256": "cc7fcff5cd33493c5ee76de6cd5f04da301c74013c3990112b9a113c3b57fab4"
+    },
+    {
+      "path": "images/input_field_front.png",
+      "bytes": 398520,
+      "sha256": "f2637ba824332e492344e53a908e947bc3c31a041b53f64ec506cb18a9195586"
+    },
+    {
+      "path": "images/input_field_oblique.png",
+      "bytes": 375610,
+      "sha256": "fd412fd571f783a268c448c55b4a2a58a691e2093ff418241553d6d5ae7d3b80"
+    },
+    {
+      "path": "images/input_field_side.png",
+      "bytes": 418893,
+      "sha256": "53f50c6f398fb9ef468be71a267d8ea35ac3907bd7bbece6a503c5c99237dc4b"
+    },
+    {
+      "path": "images/input_field_stages.png",
+      "bytes": 631189,
+      "sha256": "c1c38820a44ff2b19bcf823ff60abf9189a4949be9964b48ed46d0dcd19827c8"
+    },
+    {
+      "path": "images/fold_modes_geometry_front.png",
+      "bytes": 328928,
+      "sha256": "8df83c23b1dbd68a187d5c76b756fc74b582c8dcaa9c36deae161b04a3f89feb"
+    },
+    {
+      "path": "images/fold_modes_geometry_oblique.png",
+      "bytes": 307799,
+      "sha256": "3178a68051c7591a8834d95cd7f136fd8c61f6b891eaf73bc15316f365410d4d"
+    },
+    {
+      "path": "images/fold_modes_geometry_side.png",
+      "bytes": 326385,
+      "sha256": "281887661f22f978e6b1f18e20c5ff582dae0ad97de0662416610ff5bf9dea2d"
+    },
+    {
+      "path": "images/fold_modes_field_front.png",
+      "bytes": 397145,
+      "sha256": "d30f2df70fe52145f8105def39a754b83c6709e5e1bf5313b6a17ca22d4747a6"
+    },
+    {
+      "path": "images/fold_modes_field_oblique.png",
+      "bytes": 359178,
+      "sha256": "314377fb33e0aff85b27ef04ee4a071ddaa9ebcaee819ca537ae9c59e11e071e"
+    },
+    {
+      "path": "images/fold_modes_field_side.png",
+      "bytes": 411113,
+      "sha256": "d0a1e678f307d9a3fe0abc61dcc5731c0f8b64e4bbbf357c57331c789eefefe3"
+    },
+    {
+      "path": "images/fold_logic_oblique.png",
+      "bytes": 414721,
+      "sha256": "17f5e89a1d4320b9ea4b0a61e425bb055c7d5d23915bf6d814b8502b57a53e74"
+    },
+    {
+      "path": "images/catalogue_front.png",
+      "bytes": 1749801,
+      "sha256": "d2c836de63f9da225e6f1897b4edf8c4af9a428c1618d5ae2db93d78b4e84c51"
+    },
+    {
+      "path": "images/D02_INTERLEAVED_stages.png",
+      "bytes": 839428,
+      "sha256": "c6d59205bcef13d235e2e0eec318496dd416a71b50e7b24a2d2417ea958eef9f"
+    },
+    {
+      "path": "images/preferred_three_views.png",
+      "bytes": 407710,
+      "sha256": "cac9bb3a10e2661b42a685e67bef47edad9ad9f1c9504977b6d45a2432e26ce1"
+    },
+    {
+      "path": "images/preferred_front.png",
+      "bytes": 634960,
+      "sha256": "be8cf28260c34cd03a88c3fd47b49143cce5f4768f2e12a9a549682647f7bcc5"
+    },
+    {
+      "path": "technical/validation_summary.json",
+      "bytes": 19369,
+      "sha256": "b9b055d83a4ff89f9ff6d2e88eb02fb8091d3a2d3403aa04d1f5764a1ccf3fa0"
+    },
+    {
+      "path": "technical/render_receipt.json",
+      "bytes": 498,
+      "sha256": "8e6b451db5617a33dcb1281d610a934b8905098a1e1e959db6a8f2881c151a79"
+    },
+    {
+      "path": "technical/catalogue_parameters.json",
+      "bytes": 19162,
+      "sha256": "124f232e66b66649477dcfcd1eefd46ea8e16677fc661615553a4344023cc2a7"
+    },
+    {
+      "path": "technical/failed_trials.json",
+      "bytes": 1425,
+      "sha256": "1b8174e8aed3039f5432a23c13aa7ba7e00374e46342cd3f877bc93e91f66417"
+    }
+  ],
+  "package_bytes_excluding_manifest": 8064309
+}

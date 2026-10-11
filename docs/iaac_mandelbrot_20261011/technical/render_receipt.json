@@ -1,0 +1,36 @@
+{
+  "engine": "Blender Cycles",
+  "resolution": [
+    800,
+    800
+  ],
+  "samples": 16,
+  "orthographic_scale": 12.0,
+  "target": [
+    0,
+    0,
+    5
+  ],
+  "views": {
+    "front": [
+      0,
+      32,
+      5
+    ],
+    "oblique": [
+      -18,
+      28,
+      16
+    ],
+    "side": [
+      -32,
+      0,
+      5
+    ]
+  },
+  "geometry": "Actual explicit saved triangles",
+  "material": "Uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "extra_meshes": [],
+  "normal_maps": false
+}

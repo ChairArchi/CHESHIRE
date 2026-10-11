@@ -1,0 +1,47 @@
+{
+  "D03": {
+    "status": "FAILED_DESIGN_INTENT",
+    "candidate": "D03_CREASE_DRIFT",
+    "reason": "Angle change was used in every surface term: continuous-surface reparametrization, not a transported physical fold path.",
+    "consequence": "Only sampling and discrete CC differences; preserved without claiming successful directional change.",
+    "successor": "D05_CURVED_PATH separates material ridge/return values from physical direction."
+  },
+  "V16": {
+    "status": "AssertionError: Degenerate physical triangle area <= 1e-12",
+    "recipe": {
+      "name": "V16_FULL",
+      "powers": [
+        5,
+        6
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 1.0,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "family": "public-flow reconstruction"
+    },
+    "classification": "FAILED_CHECKPOINT; preserved for visual diagnosis, not a valid saved generation"
+  },
+  "uniform_pleats": {
+    "ids": "F01-F06",
+    "status": "DESIGN_DIRECTION_STOPPED",
+    "reason": "Uniform directional folding does not match the observed direction-dependent reference logic",
+    "intersection_status": "NOT_CHECKED"
+  }
+}

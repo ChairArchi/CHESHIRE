@@ -1,0 +1,647 @@
+{
+  "provenance": "Existing saved checks, copied without rerunning geometry tests",
+  "actual_mesh_checks": [
+    {
+      "artifact": "columns/NEAREST/G01",
+      "validation": {
+        "sha256": "747fdf74aea391923e27b02baa165db2cd7ffc1e6a049c4c1be683e535cd9df6",
+        "vertices": 1410,
+        "triangles": 2816,
+        "components": 1,
+        "component_face_sizes": [
+          2816
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 0.0018630190403791616,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 25.462425091537927,
+        "bounds": [
+          [
+            -1.1794999837875366,
+            -1.2326250076293945,
+            0.0
+          ],
+          [
+            1.1794999837875366,
+            1.2326250076293945,
+            10.0
+          ]
+        ],
+        "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+        "cgal_first_intersection_pairs": 0,
+        "cgal_witness_triangle_ids": [],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": "NOT_CHECKED"
+    },
+    {
+      "artifact": "columns/NEAREST/G03",
+      "validation": {
+        "sha256": "5575b9b155b0807e9db7630d0f742b54ac064ed585ece030c7d95af04c212ba8",
+        "vertices": 22530,
+        "triangles": 45056,
+        "components": 1,
+        "component_face_sizes": [
+          45056
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 8.509585667226816e-07,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 29.78512073530142,
+        "bounds": [
+          [
+            -1.3095074892044067,
+            -1.3635289669036865,
+            0.0
+          ],
+          [
+            1.3095074892044067,
+            1.3635289669036865,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 8,
+        "cgal_witness_triangle_ids": [
+          [
+            9829,
+            9991
+          ],
+          [
+            5724,
+            5729
+          ],
+          [
+            13173,
+            13110
+          ],
+          [
+            37002,
+            36997
+          ],
+          [
+            29164,
+            28805
+          ],
+          [
+            26546,
+            26246
+          ],
+          [
+            33372,
+            33344
+          ],
+          [
+            37972,
+            33944
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "max_vertex_mirror_error": 0.0,
+        "tolerance": 1e-10,
+        "mirror_face_connectivity": true,
+        "unique_positions": 22530,
+        "vertex_count": 22530,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "columns/NEAREST/G03_CC_VIEW",
+      "validation": {
+        "sha256": "48d9d3bfb9a2cd9d66b4d270edbe33e8c6f84c1c3a23ad626221d38f2efc5937",
+        "vertices": 90114,
+        "triangles": 180224,
+        "components": 1,
+        "component_face_sizes": [
+          180224
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 2.865987670539918e-07,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 29.63502301467494,
+        "bounds": [
+          [
+            -1.306442379951477,
+            -1.335873007774353,
+            0.0
+          ],
+          [
+            1.306442379951477,
+            1.335873007774353,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            45457,
+            46109
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "max_vertex_mirror_error": 0.0,
+        "tolerance": 1e-10,
+        "mirror_face_connectivity": true,
+        "unique_positions": 90114,
+        "vertex_count": 90114,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "variations/V24_TURN/G04",
+      "validation": {
+        "sha256": "23523f95fce490938619bd590cfcd5e609821d857bedbbf22457b624a8fc344d",
+        "vertices": 90114,
+        "triangles": 180224,
+        "components": 1,
+        "component_face_sizes": [
+          180224
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 5.6010574510936634e-11,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 30.4683506475637,
+        "bounds": [
+          [
+            -1.3160984516143799,
+            -1.5522005558013916,
+            0.0
+          ],
+          [
+            1.3160984516143799,
+            1.478776454925537,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            8340,
+            8468
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "directional/D02_INTERLEAVED/CC2",
+      "validation": {
+        "sha256": "0452eecfc7f417ed848fc9f91e38e2f83355ef63112221267c7b6e77af9284e6",
+        "vertices": 25602,
+        "triangles": 51200,
+        "components": 1,
+        "component_face_sizes": [
+          51200
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 3.261287152249349e-05,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 19.79478388560683,
+        "bounds": [
+          [
+            -1.6178759336471558,
+            -1.4455596208572388,
+            0.0
+          ],
+          [
+            1.6178759336471558,
+            1.576798439025879,
+            10.0
+          ]
+        ],
+        "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+        "cgal_first_intersection_pairs": 0,
+        "cgal_witness_triangle_ids": [],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "directional/D04_DEEP_RETURN/CC2",
+      "validation": {
+        "sha256": "8d50ba990b9d9791bcd0da02a3910cdbd7733d941198ffd4b252813ae5023b46",
+        "vertices": 25602,
+        "triangles": 51200,
+        "components": 1,
+        "component_face_sizes": [
+          51200
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 7.835075122969353e-07,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 19.993774198709744,
+        "bounds": [
+          [
+            -1.6178759336471558,
+            -1.4455596208572388,
+            0.0
+          ],
+          [
+            1.6178759336471558,
+            1.576798439025879,
+            10.0050630569458
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            43605,
+            43648
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "directional/D05_CURVED_PATH/CC2",
+      "validation": {
+        "sha256": "a14738905d89ebff8fe5c1401a6777d9faad814bfb780dc69cbd060c895ae70d",
+        "vertices": 25602,
+        "triangles": 51200,
+        "components": 1,
+        "component_face_sizes": [
+          51200
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 2.7430927397005097e-05,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 18.624456028455334,
+        "bounds": [
+          [
+            -1.4486958980560303,
+            -1.4401155710220337,
+            0.0
+          ],
+          [
+            1.4486958980560303,
+            1.580396294593811,
+            10.0
+          ]
+        ],
+        "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+        "cgal_first_intersection_pairs": 0,
+        "cgal_witness_triangle_ids": [],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/CYLINDER_NO_FIELD/G02_CC",
+      "validation": {
+        "sha256": "28368f04e65ee4b3e8d54ee9bc8a1ee25d0c0802f47f3073a2009b15cc9a1416",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 8.369497953200514e-05,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 18.97845126453797,
+        "bounds": [
+          [
+            -0.7790632843971252,
+            -0.7790632843971252,
+            0.0
+          ],
+          [
+            0.7790632843971252,
+            0.7790632843971252,
+            10.0
+          ]
+        ],
+        "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+        "cgal_first_intersection_pairs": 0,
+        "cgal_witness_triangle_ids": [],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/CYLINDER_FIELD/G02_CC",
+      "validation": {
+        "sha256": "a66a3ae91ca9eddde145b48ca70ab6ec2db874f89cc2ad60a485d4886408cd9c",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 1.1155749123501587e-07,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 28.72814322976301,
+        "bounds": [
+          [
+            -1.2777070999145508,
+            -1.2988241910934448,
+            0.0
+          ],
+          [
+            1.2777070999145508,
+            1.2988241910934448,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            36310,
+            36090
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/DIRECTIONAL_NO_FIELD/G02_CC",
+      "validation": {
+        "sha256": "7df80a66c23d3f7b0aa4fea2a852aab5ed64a8a48647395365c8dc51e163f4b6",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 7.423299192302974e-06,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 19.80036316896184,
+        "bounds": [
+          [
+            -1.6781014204025269,
+            -1.4776904582977295,
+            0.0
+          ],
+          [
+            1.6781014204025269,
+            1.6045730113983154,
+            10.0
+          ]
+        ],
+        "self_intersections": "No pairs detected in complete CGAL first-only search; not structural or thickness certification",
+        "cgal_first_intersection_pairs": 0,
+        "cgal_witness_triangle_ids": [],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/DIRECTIONAL_FIELD/G02_CC",
+      "validation": {
+        "sha256": "bceaf1121b642d86c44b33793cf5546ee6e5861bac545013aa8b96bddb0658ef",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 3.724255292525981e-09,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 28.165426799101898,
+        "bounds": [
+          [
+            -1.6781014204025269,
+            -1.4776904582977295,
+            0.0
+          ],
+          [
+            1.6781014204025269,
+            1.6045730113983154,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            173900,
+            173907
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/D04_DEEP_RETURN_FIELD/G02_CC",
+      "validation": {
+        "sha256": "cbb6b408ba1962453f015e413ae203af99a46bb3b3ad4b2c7386b930e9791b3d",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 1.24476499363454e-08,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 28.240062172507503,
+        "bounds": [
+          [
+            -1.6781014204025269,
+            -1.4776904582977295,
+            0.0
+          ],
+          [
+            1.6781014204025269,
+            1.6045730113983154,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            174224,
+            166147
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    },
+    {
+      "artifact": "input_field/D05_CURVED_PATH_FIELD/G02_CC",
+      "validation": {
+        "sha256": "97511e0465727ae80f8b47d34336d7cbc7351a94b91db39d5f4ad9478709a3a5",
+        "vertices": 102402,
+        "triangles": 204800,
+        "components": 1,
+        "component_face_sizes": [
+          204800
+        ],
+        "finite": true,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "minimum_triangle_area": 3.615137319480787e-09,
+        "watertight": true,
+        "winding_consistent": true,
+        "signed_volume": 27.60655907825995,
+        "bounds": [
+          [
+            -1.5027666091918945,
+            -1.476513147354126,
+            0.0
+          ],
+          [
+            1.5027666091918945,
+            1.605261206626892,
+            10.0
+          ]
+        ],
+        "self_intersections": "CONFIRMED",
+        "cgal_first_intersection_pairs": 1,
+        "cgal_witness_triangle_ids": [
+          [
+            10665,
+            10729
+          ]
+        ],
+        "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+        "geometric_fabrication_status": "NOT_CERTIFIED"
+      },
+      "symmetry": {
+        "file": "gate.ply",
+        "tolerance": 1e-10,
+        "max_vertex_mirror_error": 0.0,
+        "mirror_face_connectivity": true,
+        "passed": true
+      }
+    }
+  ],
+  "actual_mesh_payload_public": false,
+  "intersection_scope": "CGAL detect_only=True first_only=True; nonzero witnesses are not an exhaustive count",
+  "unchecked": "Other intermediate and catalogue meshes unless a saved check is listed",
+  "thickness_structure_fabrication": "NOT_CHECKED"
+}
