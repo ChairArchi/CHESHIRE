@@ -1,0 +1,160 @@
+[
+  {
+    "folder": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN_G5_TAG_ONLY\\G05",
+    "vertices": 819202,
+    "triangles": 1638400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.381909827226387e-08,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.8088902694984756e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.800791407964896e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        1595716,
+        45445
+      ],
+      [
+        1407593,
+        1471529
+      ],
+      [
+        495784,
+        493089
+      ],
+      [
+        197233,
+        259192
+      ],
+      [
+        597085,
+        660506
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 9.383622407913208,
+    "witness_centres": [
+      [
+        [
+          -0.2641355466549934,
+          -0.6325776134182584,
+          0.14223592097767201
+        ],
+        [
+          -0.2607698579586036,
+          -0.6303262731534264,
+          0.1425390575075016
+        ]
+      ],
+      [
+        [
+          -0.8843400335318697,
+          0.11051610737557777,
+          9.370483072109158
+        ],
+        [
+          -0.8844735619196019,
+          0.1125126933214269,
+          9.369150227473812
+        ]
+      ],
+      [
+        [
+          -0.9349657993646,
+          -0.6037228107275051,
+          2.8586526460223367
+        ],
+        [
+          -0.9330694193040573,
+          -0.6036149218938299,
+          2.8652540548078385
+        ]
+      ],
+      [
+        [
+          0.8501702185178232,
+          0.0029736730644124806,
+          1.2677395192728362
+        ],
+        [
+          0.8501702185178228,
+          -0.0029736730644126567,
+          1.267739519272836
+        ]
+      ],
+      [
+        [
+          0.7028148504443695,
+          0.31105497911174546,
+          4.236721973716653
+        ],
+        [
+          0.7075182487001781,
+          0.30527265295885214,
+          4.231416187169066
+        ]
+      ]
+    ]
+  },
+  {
+    "folder": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_G5_TAG_ONLY\\G05",
+    "vertices": 819202,
+    "triangles": 1638400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 3.590533673702625e-08,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 4.242156220644677e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 4.027524346742929e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        2209,
+        132835
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 9.322175741195679,
+    "witness_centres": [
+      [
+        [
+          0.8696572695978458,
+          0.37151212700825026,
+          0.6492741542073256
+        ],
+        [
+          0.864599554204855,
+          0.3687474217270022,
+          0.6417603667405344
+        ]
+      ]
+    ]
+  }
+]

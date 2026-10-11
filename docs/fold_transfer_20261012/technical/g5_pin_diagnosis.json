@@ -1,0 +1,227 @@
+{
+  "operation": "Saved-vector G5 blanket inherited-point pin ablation only",
+  "definition": "norm(delta[j]-delta[i]) / norm(pre_field_xyz[j]-pre_field_xyz[i])",
+  "edge_source": "Unique sorted endpoint pairs of the four control-quad edges; not rendered triangle edges",
+  "short_edge_exclusion_threshold": 1e-12,
+  "short_edge_exclusion_rule": "Exclude input edge length <= threshold",
+  "moving_threshold": 1e-12,
+  "moving_rule": "At least one endpoint has applied displacement norm > threshold",
+  "fixed_cohort": "old_new_source_moving_fixed_cohort uses PROTECTED moving edges for both variants",
+  "all_cohort": "old_new_all includes all old/new edges regardless of movement, after short-edge exclusion",
+  "interpretation": "Neighbor displacement observation only; ratios do not establish intersections, visual causation or fabrication validity",
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "cases": {
+    "SPAN": {
+      "source": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN_G5_FROM_RETURN\\PROTECTED\\G05",
+      "candidate": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN_G5_TAG_ONLY\\G05",
+      "same_saved_pre_field_and_raw_vectors": true,
+      "tag_core_count": 9350,
+      "tag_core_field_maximum": 0.0,
+      "old_controls_field_moved": 30401,
+      "old_controls_field_maximum": 0.12000000000000015,
+      "newborn_applied_difference_from_protected_maximum": 0.0,
+      "edge_observation": {
+        "unique_control_edges": 819200,
+        "old_control_count": 102402,
+        "PROTECTED": {
+          "old_new_all": {
+            "selected_edges": 409600,
+            "excluded_short_edges": 0,
+            "measured_edges": 409600,
+            "p50": 0.0,
+            "p90": 1.5837168995715325,
+            "p99": 8.56765564122734,
+            "maximum": 71.28332730649986,
+            "fraction_above_half": 0.267001953125,
+            "fraction_above_one": 0.16849609375
+          },
+          "old_new_source_moving_fixed_cohort": {
+            "selected_edges": 125312,
+            "excluded_short_edges": 0,
+            "measured_edges": 125312,
+            "p50": 1.0986603032999904,
+            "p90": 3.948186662308055,
+            "p99": 14.171859135819112,
+            "maximum": 71.28332730649986,
+            "fraction_above_half": 0.8727336567926456,
+            "fraction_above_one": 0.5507533197139939
+          },
+          "old_new_variant_moving": {
+            "selected_edges": 125312,
+            "excluded_short_edges": 0,
+            "measured_edges": 125312,
+            "p50": 1.0986603032999904,
+            "p90": 3.948186662308055,
+            "p99": 14.171859135819112,
+            "maximum": 71.28332730649986,
+            "fraction_above_half": 0.8727336567926456,
+            "fraction_above_one": 0.5507533197139939
+          },
+          "new_new_variant_moving": {
+            "selected_edges": 141864,
+            "excluded_short_edges": 0,
+            "measured_edges": 141864,
+            "p50": 0.5500000000000057,
+            "p90": 1.5273031021893018,
+            "p99": 4.23496975035005,
+            "maximum": 33.30871346324887,
+            "fraction_above_half": 0.8060395872102859,
+            "fraction_above_one": 0.19339649241527096
+          }
+        },
+        "TAG_ONLY": {
+          "old_new_all": {
+            "selected_edges": 409600,
+            "excluded_short_edges": 0,
+            "measured_edges": 409600,
+            "p50": 0.0,
+            "p90": 0.7146565717078611,
+            "p99": 2.7434227940191387,
+            "maximum": 35.380817708472335,
+            "fraction_above_half": 0.2759423828125,
+            "fraction_above_one": 0.065419921875
+          },
+          "old_new_source_moving_fixed_cohort": {
+            "selected_edges": 125312,
+            "excluded_short_edges": 0,
+            "measured_edges": 125312,
+            "p50": 0.5500000000000047,
+            "p90": 1.4930028184817972,
+            "p99": 4.160675923255707,
+            "maximum": 35.380817708472335,
+            "fraction_above_half": 0.8291624106230848,
+            "fraction_above_one": 0.18663815117466803
+          },
+          "old_new_variant_moving": {
+            "selected_edges": 139622,
+            "excluded_short_edges": 0,
+            "measured_edges": 139622,
+            "p50": 0.5500000000000056,
+            "p90": 1.5080858059569118,
+            "p99": 4.22196726881563,
+            "maximum": 35.380817708472335,
+            "fraction_above_half": 0.8095142599303835,
+            "fraction_above_one": 0.19191817908352551
+          },
+          "new_new_variant_moving": {
+            "selected_edges": 141864,
+            "excluded_short_edges": 0,
+            "measured_edges": 141864,
+            "p50": 0.5500000000000057,
+            "p90": 1.5273031021893018,
+            "p99": 4.23496975035005,
+            "maximum": 33.30871346324887,
+            "fraction_above_half": 0.8060395872102859,
+            "fraction_above_one": 0.19339649241527096
+          }
+        }
+      }
+    },
+    "COUNTER": {
+      "source": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_G5_FROM_RETURN\\PROTECTED\\G05",
+      "candidate": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_G5_TAG_ONLY\\G05",
+      "same_saved_pre_field_and_raw_vectors": true,
+      "tag_core_count": 9350,
+      "tag_core_field_maximum": 0.0,
+      "old_controls_field_moved": 17845,
+      "old_controls_field_maximum": 0.1200000000000001,
+      "newborn_applied_difference_from_protected_maximum": 0.0,
+      "edge_observation": {
+        "unique_control_edges": 819200,
+        "old_control_count": 102402,
+        "PROTECTED": {
+          "old_new_all": {
+            "selected_edges": 409600,
+            "excluded_short_edges": 0,
+            "measured_edges": 409600,
+            "p50": 0.0,
+            "p90": 0.8333535893400846,
+            "p99": 4.802307958901036,
+            "maximum": 40.517670736436564,
+            "fraction_above_half": 0.14509765625,
+            "fraction_above_one": 0.0816650390625
+          },
+          "old_new_source_moving_fixed_cohort": {
+            "selected_edges": 74364,
+            "excluded_short_edges": 0,
+            "measured_edges": 74364,
+            "p50": 0.9100899176767704,
+            "p90": 3.2040159516938926,
+            "p99": 11.494819797504817,
+            "maximum": 40.517670736436564,
+            "fraction_above_half": 0.799203915873272,
+            "fraction_above_one": 0.44981442633532354
+          },
+          "old_new_variant_moving": {
+            "selected_edges": 74364,
+            "excluded_short_edges": 0,
+            "measured_edges": 74364,
+            "p50": 0.9100899176767704,
+            "p90": 3.2040159516938926,
+            "p99": 11.494819797504817,
+            "maximum": 40.517670736436564,
+            "fraction_above_half": 0.799203915873272,
+            "fraction_above_one": 0.44981442633532354
+          },
+          "new_new_variant_moving": {
+            "selected_edges": 88216,
+            "excluded_short_edges": 0,
+            "measured_edges": 88216,
+            "p50": 0.550000000000003,
+            "p90": 1.3875776372151585,
+            "p99": 3.461929330090723,
+            "maximum": 20.6987704837754,
+            "fraction_above_half": 0.7481635984401922,
+            "fraction_above_one": 0.1788791148997914
+          }
+        },
+        "TAG_ONLY": {
+          "old_new_all": {
+            "selected_edges": 409600,
+            "excluded_short_edges": 0,
+            "measured_edges": 409600,
+            "p50": 0.0,
+            "p90": 0.5500000000000062,
+            "p99": 1.9439008843484558,
+            "maximum": 27.105835994435758,
+            "fraction_above_half": 0.1571923828125,
+            "fraction_above_one": 0.038330078125
+          },
+          "old_new_source_moving_fixed_cohort": {
+            "selected_edges": 74364,
+            "excluded_short_edges": 0,
+            "measured_edges": 74364,
+            "p50": 0.550000000000003,
+            "p90": 1.4087694896115757,
+            "p99": 3.6009273890790467,
+            "maximum": 20.71104966946747,
+            "fraction_above_half": 0.774864181593244,
+            "fraction_above_one": 0.18151255984078318
+          },
+          "old_new_variant_moving": {
+            "selected_edges": 86100,
+            "excluded_short_edges": 0,
+            "measured_edges": 86100,
+            "p50": 0.5500000000000033,
+            "p90": 1.3908925243948695,
+            "p99": 3.5862804745407173,
+            "maximum": 27.105835994435758,
+            "fraction_above_half": 0.7478048780487805,
+            "fraction_above_one": 0.18234610917537747
+          },
+          "new_new_variant_moving": {
+            "selected_edges": 88216,
+            "excluded_short_edges": 0,
+            "measured_edges": 88216,
+            "p50": 0.550000000000003,
+            "p90": 1.3875776372151585,
+            "p99": 3.461929330090723,
+            "maximum": 20.6987704837754,
+            "fraction_above_half": 0.7481635984401922,
+            "fraction_above_one": 0.1788791148997914
+          }
+        }
+      }
+    }
+  }
+}

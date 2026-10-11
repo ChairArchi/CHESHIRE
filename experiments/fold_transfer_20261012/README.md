@@ -23,4 +23,10 @@ C:/Users/USER/CHESHIRE/.venv/Scripts/python.exe -B experiments/fold_transfer_202
 C:/Users/USER/CHESHIRE/.venv/Scripts/python.exe -B experiments/fold_transfer_20261012/boards.py --boards detail
 ```
 
-현재 **G5는 진행하지 않는다**. 큰 접힘 보존 수치와 조형적 성공은 구분한다. PROTECTED의 더 많은 잔조직이 중간 규모 위계 개선을 뜻하지 않으며, 원래 G3와 RETURN_ONLY도 비교 기준으로 남긴다. 자기교차 등 최종 핵심 검증과 조형적 판단은 별도 보고서·validation 기록을 따른다. 두께·구조·제작 가능성은 검증하지 않았다.
+G4 검토 직후에는 G5를 권하지 않았다. 이후 사용자의 가설에 따라 `g5_probe.py`로 **RETURN_ONLY G4 두 입력에서 동일한 G5 규칙을 한 차례 실행**했다. SPAN에는 변형 없는 재분할 대조군을 추가했고, 두 입력 모두 필드 전 RETURN_ONLY / 필드 후 PROTECTED 상태를 저장했다. 필드 횟수는 부모의 실제 기록을 이어받아 3→4이며 subdivision generation5와 구분한다. `g5_boards.py`, `g5_review.py`와 docs의 `G5_REPORT.md` / `G5_INDEX.json`이 후속 기록이다. 저장된 결과의 덮어쓰기는 거부한다.
+
+근접 질서 대조는 `stencil_probe.py`다. 같은 두 G4 RETURN_ONLY에서 Task36의 기존 ancestry stencil만 활성화하고 normal gain은 0으로 둔다. 기존 event 주변 broad activation과 carried tag 보호를 적용하며 신규 return·형상장·smoothing은 없다. `stencil_boards.py --boards detail fronts`는 저장된 실제 렌더를 비교한다. STENCIL 자체의 시각적 변화는 약했으며 자기교차는 미검증이다. 실행을 반복해 기존 폴더를 덮어쓰지 않는다.
+
+`pin_probe.py`는 PROTECTED G5에 저장된 필드 전 좌표·raw 변위·태그를 그대로 재사용해, 일반 이전 control의 고정만 해제한 TAG_ONLY를 생성한다. 추가 field/subdivision/return은 없다. 보호 태그 core는 고정하고 새 점의 적용 변위도 동일하게 유지한다. `pin_boards.py`는 실제 확대와 두 입력 3뷰를 배치한다. TAG_ONLY는 잔조직 혼잡을 줄였지만 새로운 접힘 위계 확보는 미해결이다. `g5_review.py --validate-tag-only`는 이 두 신규 후보만 핵심 검사하며 기존 PROTECTED 검사를 반복하지 않는다. 저장된 큰 파일은 `{SPAN,COUNTER}_G5_TAG_ONLY/G05`; 모든 원본·대조군은 보존한다.
+
+큰 접힘 보존 수치와 조형적 성공은 구분한다. PROTECTED의 더 많은 잔조직이 중간 규모 위계 개선을 뜻하지 않으며, 원래 G3와 RETURN_ONLY도 비교 기준으로 남긴다. 자기교차 등 최종 핵심 검증과 조형적 판단은 별도 보고서·validation 기록을 따른다. 두께·구조·제작 가능성은 검증하지 않았다.

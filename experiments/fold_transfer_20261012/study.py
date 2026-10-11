@@ -127,7 +127,8 @@ def save(folder, mesh, chart, tags, meta, arrays):
         subdivision_passes_total=mesh.generation,
         quick_integrity='PASS' if passed else 'FAILED_PRESERVED_NO_REPAIR',
         self_intersection='NOT_CHECKED_INTERMEDIATE', fabrication_thickness_structure='NOT_CHECKED',
-        feature_memory_scope='Material-profile tags and inherited control points; no dihedral-angle or mechanical folding guarantee',
+        feature_memory_scope=meta.get('feature_memory_scope',
+            'Material-profile tags and inherited control points; no dihedral-angle or mechanical folding guarantee'),
         separate_geometric_smoothing=False, original_operators_modified=False, **quick)
     (folder/'generation.json').write_text(json.dumps(meta, indent=2), encoding='utf8')
     print('GENERATED', str(folder), len(triangles), 'area', area, 'sym', errors,
@@ -180,7 +181,7 @@ def base(root, case, source, reuse_span=False):
     return root/case/'G03'
 
 
-def late(root, case, source, stage, label=None, input_source=None):
+def late(root, case, source, stage, label=None, input_source=None, save_refinement_control=False):
     mesh, chart, tags = load(source)
     previous = json.loads((source/'generation.json').read_text(encoding='utf8'))
     bank = previous.get('event_bank', overlap.EVENTS)
@@ -197,6 +198,15 @@ def late(root, case, source, stage, label=None, input_source=None):
     nv = len(mesh.xyz)
     refined, chart_out, inherited_tags, refine_op = memory.refine(mesh, chart, tags)
     inherited_tags = np.maximum(inherited_tags, tag_mask(chart_out, bank))
+    inherited_field_passes = previous['field_passes_total']
+    if save_refinement_control:
+        save(root/(label or case)/'REFINED_ONLY'/f'G{stage:02}', refined, chart_out, inherited_tags,
+            dict(input_case=case, input_source=str(input_source or previous.get('input_source')),
+                parent=str(source), operation='Inactive native VF refinement only; resolution control with no geometric deformation',
+                field_passes_total=inherited_field_passes, added_field_passes=0,
+                event_bank=bank, new_authored_events=[], memory_applied=False,
+                note='More triangles alone preserve the incoming geometric surface; this is not a new folding pass'),
+            dict(input_edges=refine_op['input_edges'], parent_face=refine_op['parent_face']))
     new_events = events_from(parents, stage)
     raw_return = sum((reflected_event(chart_out, e) for e in new_events), np.zeros_like(refined.xyz))
     return_delta = raw_return*(1-inherited_tags)[:, None]
@@ -219,11 +229,10 @@ def late(root, case, source, stage, label=None, input_source=None):
         inherited_core_return_maximum=float(np.linalg.norm(return_delta[core], axis=1).max()) if core.any() else None,
         maximum_return_step=float(np.linalg.norm(return_delta, axis=1).max()),
         note='Returns are authored parametric geometric sequences, not fractal-emergent folds or origami mechanics',
-        field_passes_total=stage-1, added_field_passes=0, memory_applied=True,
+        field_passes_total=inherited_field_passes, added_field_passes=0, memory_applied=True,
         sampling='G3 remains mean; one inactive split switches children to native VF. Subsequent VF splits sample the inherited V/F diagonal. No change to the input surface before displacement.')
-    if stage == 4:
-        folder = root/(label or case)/'RETURN_ONLY'/f'G{stage:02}'
-        save(folder, refined, chart_out, tags_out, dict(meta), fields_common)
+    folder = root/(label or case)/'RETURN_ONLY'/f'G{stage:02}'
+    save(folder, refined, chart_out, tags_out, dict(meta), fields_common)
     post_return = refined.xyz.copy()
     raw_xyz, payload, field_log = field(refined, chart_out, 18, CFG[f'g{stage}_field_budget'], CFG['target_factor_late'])
     raw_delta = raw_xyz-post_return
@@ -237,7 +246,7 @@ def late(root, case, source, stage, label=None, input_source=None):
         prior.helpers.existing.reflect(applied, chart_out, prior.helpers.existing.symmetry(chart_out))
         refined.xyz = post_return+applied
         core = tags_out >= 1-1e-12
-        log = dict(meta, field=field_log, field_passes_total=stage, added_field_passes=1,
+        log = dict(meta, field=field_log, field_passes_total=inherited_field_passes+1, added_field_passes=1,
             protected_field=variant == 'PROTECTED',
             field_memory_rule='All inherited controls fixed during field; propagated and new feature tags attenuate newborn field vectors' if variant == 'PROTECTED' else 'No field memory; exact same pre-field geometry and raw field queries',
             fully_protected_feature_count=int(core.sum()),

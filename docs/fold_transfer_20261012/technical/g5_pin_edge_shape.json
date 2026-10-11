@@ -1,0 +1,94 @@
+{
+  "source_adapter": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\fold_transfer_20261012\\pin_probe.py",
+  "observation": "Saved applied-vector edge shape; no new geometry, field query or validation",
+  "edge_source": "Unique sorted control-quad edges, not rendered triangle edges",
+  "fixed_cohort": "Exactly the same old/new unique edges for both variants: one endpoint old, one newborn, at least one PROTECTED endpoint displacement norm > 1e-12",
+  "input_edge_exclusion": "Exclude pre-field edge length <= 1e-12",
+  "cosine_exclusion": "Additionally exclude displacement-difference norm <= 1e-12; report counts",
+  "post_pre_edge_length_ratio": "norm(pre_edge + (applied_delta[j]-applied_delta[i])) / norm(pre_edge)",
+  "cosine": "dot(applied_delta[j]-applied_delta[i], pre_edge) / (norm(applied_delta[j]-applied_delta[i])*norm(pre_edge))",
+  "orientation": "pre_edge = pre_field_xyz[j]-pre_field_xyz[i], j>i; negative cosine points against the incoming edge",
+  "interpretation": "Reduced differential movement can be coherent contraction toward a common target, not evidence of improved shape or fewer intersections; individual cosine and length medians do not prove target identity",
+  "cases": {
+    "SPAN": {
+      "source": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN_G5_FROM_RETURN\\PROTECTED\\G05",
+      "candidate": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN_G5_TAG_ONLY\\G05",
+      "field_fraction": 0.55,
+      "measurement": {
+        "unique_control_edges": 819200,
+        "old_control_count": 102402,
+        "selected_edges": 125312,
+        "excluded_short_edges": 0,
+        "measured_edges": 125312,
+        "PROTECTED": {
+          "post_pre_edge_length_ratio": {
+            "p10": 0.8390043613624849,
+            "median": 1.5232485361377557,
+            "p90": 4.114207385700188
+          },
+          "cosine_delta_difference_pre_edge": {
+            "p10": -0.7342980323131046,
+            "median": -7.633095002422541e-15,
+            "p90": 0.7343855880809468
+          },
+          "cosine_measured_edges": 125312,
+          "cosine_excluded_zero_delta_difference": 0
+        },
+        "TAG_ONLY": {
+          "post_pre_edge_length_ratio": {
+            "p10": 0.44999999999998874,
+            "median": 0.7925007881299693,
+            "p90": 2.2110449837217727
+          },
+          "cosine_delta_difference_pre_edge": {
+            "p10": -1.0,
+            "median": -0.7447006715853024,
+            "p90": 0.8492320298606837
+          },
+          "cosine_measured_edges": 125312,
+          "cosine_excluded_zero_delta_difference": 0
+        }
+      }
+    },
+    "COUNTER": {
+      "source": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_G5_FROM_RETURN\\PROTECTED\\G05",
+      "candidate": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_G5_TAG_ONLY\\G05",
+      "field_fraction": 0.55,
+      "measurement": {
+        "unique_control_edges": 819200,
+        "old_control_count": 102402,
+        "selected_edges": 74364,
+        "excluded_short_edges": 0,
+        "measured_edges": 74364,
+        "PROTECTED": {
+          "post_pre_edge_length_ratio": {
+            "p10": 0.7813342933446071,
+            "median": 1.392351371488022,
+            "p90": 3.359221698814391
+          },
+          "cosine_delta_difference_pre_edge": {
+            "p10": -0.777467607676925,
+            "median": 0.00040822763456997105,
+            "p90": 0.777191707415148
+          },
+          "cosine_measured_edges": 74364,
+          "cosine_excluded_zero_delta_difference": 0
+        },
+        "TAG_ONLY": {
+          "post_pre_edge_length_ratio": {
+            "p10": 0.44999999999999174,
+            "median": 0.9322231898029333,
+            "p90": 2.124677583530776
+          },
+          "cosine_delta_difference_pre_edge": {
+            "p10": -1.0,
+            "median": -0.4794354841810902,
+            "p90": 0.8346648052787895
+          },
+          "cosine_measured_edges": 74364,
+          "cosine_excluded_zero_delta_difference": 0
+        }
+      }
+    }
+  }
+}
