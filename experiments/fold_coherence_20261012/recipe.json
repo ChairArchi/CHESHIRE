@@ -1,0 +1,29 @@
+{
+  "name": "fold_coherence_bounded_design_v1",
+  "source_scope": "Same two actual G2 columns on the preserved shared material chart",
+  "variants": {
+    "RESERVE": "Reduced existing cell stencil/normal placement; no new authored returns",
+    "FLOW": "Same placement plus parent-derived continuous PCHIP returns before each split"
+  },
+  "task36_gains": {"3": [0.25, 0.25], "4": [0.18, 0.15], "5": [0.10, 0.08]},
+  "field_iterations": 18,
+  "field_fraction": 0.55,
+  "field_budgets": {"3": 0.22, "4": 0.14, "5": 0.10},
+  "target_factors": {"3": 3, "4": 2, "5": 2},
+  "memory_inner_at_span_012": 0.003,
+  "memory_outer_at_span_012": 0.010,
+  "first_child": {
+    "height_offsets": [-0.25, 0.25], "direction_offsets": [0.35, -0.35],
+    "span_scale": 0.60, "radial_scale": 0.50, "return_scale": 0.55,
+    "width_scale": 0.90, "sweep_scale": 0.65
+  },
+  "later_child": {
+    "height_offsets": [0.25, -0.25], "direction_offsets": [0.35, -0.35],
+    "span_scale": 0.62, "radial_scale": 0.60, "return_scale": 0.60,
+    "width_scale": 0.80, "sweep_scale": 0.75
+  },
+  "profile_scaling": "Existing .05 angular height bend and .32 sweep wavelength scale by child span / .12; original PCHIP knots and amplitudes retained",
+  "no_blanket_old_point_field_pin": true,
+  "separate_geometric_smoothing": false,
+  "maximum_generation": 5
+}

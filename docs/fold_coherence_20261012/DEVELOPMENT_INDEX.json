@@ -1,0 +1,1771 @@
+{
+  "schema": "cheshire_saved_development_inventory_v1",
+  "collected_utc": "2026-10-11T19:31:24.605538+00:00",
+  "external_output_root": "E:\\CHESHIRE_DATA\\fold_coherence_20261012",
+  "collector": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\fold_coherence_20261012\\collect_development.py",
+  "scope": "Existing LATE/SPAN, CURVED/SPAN, RULED/SPAN and DIAGNOSIS receipts only",
+  "collection_policy": "Read existing JSON and path presence only. No mesh checks, hashes, new generation, receipt edits or original code changes.",
+  "iteration_note": "G labels count subdivision passes. Field pass counts are separate; escape iterations are classifier iterations within a field evaluation.",
+  "recipes": {
+    "late_activation_local_edge_cap_v1": {
+      "name": "late_activation_local_edge_cap_v1",
+      "maximum_generation": 6,
+      "first_active_placement_stage": 3,
+      "first_field_stage": 3,
+      "task36_stencil_normal_gains": {
+        "3": [
+          0.15,
+          0.08
+        ],
+        "4": [
+          0.1,
+          0.05
+        ],
+        "5": [
+          0.08,
+          0.04
+        ],
+        "6": [
+          0.06,
+          0.03
+        ]
+      },
+      "field_iterations": {
+        "3": 8,
+        "4": 18,
+        "5": 18,
+        "6": 18
+      },
+      "field_budgets": {
+        "3": 0.14,
+        "4": 0.1,
+        "5": 0.07,
+        "6": 0.05
+      },
+      "field_fraction": 0.55,
+      "field_target_factor": 2,
+      "field_cap_fraction_of_mean_incident_control_edge": 0.25,
+      "child_rules": {
+        "first_child": {
+          "height_offsets": [
+            -0.25,
+            0.25
+          ],
+          "direction_offsets": [
+            0.35,
+            -0.35
+          ],
+          "span_scale": 0.6,
+          "radial_scale": 0.5,
+          "return_scale": 0.55,
+          "width_scale": 0.9,
+          "sweep_scale": 0.65
+        },
+        "later_child": {
+          "height_offsets": [
+            0.25,
+            -0.25
+          ],
+          "direction_offsets": [
+            0.35,
+            -0.35
+          ],
+          "span_scale": 0.62,
+          "radial_scale": 0.6,
+          "return_scale": 0.6,
+          "width_scale": 0.8,
+          "sweep_scale": 0.75
+        },
+        "profile_scaling": "Existing .05 angular height bend and .32 sweep wavelength scale by child span / .12; original PCHIP knots and amplitudes retained"
+      },
+      "tag_rules": {
+        "memory_inner_at_span_012": 0.003,
+        "memory_outer_at_span_012": 0.01
+      },
+      "blanket_old_control_pin": false,
+      "separate_geometric_smoothing": false,
+      "stage_order": "G1 inactive split; G2 original macro returns then inactive split; G3-G6 derived returns, reduced placement, locally capped finite field"
+    },
+    "curved_existing_CC_local_edge_cap_v1": {
+      "name": "curved_existing_CC_local_edge_cap_v1",
+      "maximum_generation": 6,
+      "first_active_placement_stage": 1,
+      "first_field_stage": 3,
+      "task36_stencil_normal_gains": {
+        "1": [
+          0.0,
+          0.0
+        ],
+        "2": [
+          0.0,
+          0.0
+        ],
+        "3": [
+          0.15,
+          0.08
+        ],
+        "4": [
+          0.1,
+          0.05
+        ],
+        "5": [
+          0.08,
+          0.04
+        ],
+        "6": [
+          0.06,
+          0.03
+        ]
+      },
+      "field_iterations": {
+        "3": 8,
+        "4": 18,
+        "5": 18,
+        "6": 18
+      },
+      "field_budgets": {
+        "3": 0.14,
+        "4": 0.1,
+        "5": 0.07,
+        "6": 0.05
+      },
+      "field_fraction": 0.55,
+      "field_target_factor": 2,
+      "field_cap_fraction_of_mean_incident_control_edge": 0.25,
+      "child_rules": {
+        "first_child": {
+          "height_offsets": [
+            -0.25,
+            0.25
+          ],
+          "direction_offsets": [
+            0.35,
+            -0.35
+          ],
+          "span_scale": 0.6,
+          "radial_scale": 0.5,
+          "return_scale": 0.55,
+          "width_scale": 0.9,
+          "sweep_scale": 0.65
+        },
+        "later_child": {
+          "height_offsets": [
+            0.25,
+            -0.25
+          ],
+          "direction_offsets": [
+            0.35,
+            -0.35
+          ],
+          "span_scale": 0.62,
+          "radial_scale": 0.6,
+          "return_scale": 0.6,
+          "width_scale": 0.8,
+          "sweep_scale": 0.75
+        },
+        "profile_scaling": "Existing .05 angular height bend and .32 sweep wavelength scale by child span / .12; original PCHIP knots and amplitudes retained"
+      },
+      "tag_rules": {
+        "memory_inner_at_span_012": 0.003,
+        "memory_outer_at_span_012": 0.01
+      },
+      "blanket_old_control_pin": false,
+      "separate_geometric_smoothing": false,
+      "stage_order": "G1 CC only; G2 original returns then CC; G3-G6 derived returns, CC plus reduced components, same capped finite field",
+      "task36_averaging_vertex_memory": {
+        "1": [
+          0.7,
+          0.2
+        ],
+        "2": [
+          0.7,
+          0.2
+        ],
+        "3": [
+          0.35,
+          0.6
+        ],
+        "4": [
+          0.2,
+          0.75
+        ],
+        "5": [
+          0.2,
+          0.75
+        ],
+        "6": [
+          0.2,
+          0.75
+        ]
+      },
+      "existing_CC_averaging_component_enabled": true,
+      "risk": "CC may soften inherited strong grooves. Scalar tag cores do not lock whole faces or fold angles."
+    },
+    "repeated_existing_support_scaled_kernel_v1": {
+      "name": "repeated_existing_support_scaled_kernel_v1",
+      "maximum_generation": 6,
+      "averaging_gain": 0.8,
+      "stencil_gain": 0.35,
+      "normal_gain": 0.75,
+      "vertex_memory": 0.35,
+      "extra_authored_returns": false,
+      "field_displacement": false,
+      "separate_geometric_smoothing": false,
+      "feature_protection": "Inherited authored extrema tags; no whole-face or angle lock"
+    }
+  },
+  "assets": {
+    "LATE/SPAN/G01": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01",
+      "family": "LATE",
+      "candidate": "LATE",
+      "case": "SPAN",
+      "stage": "G01",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\study.py"
+        ],
+        "views": {},
+        "detail_views": [],
+        "render_receipts": []
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 3202,
+        "physical_triangles": 6400,
+        "control_vertices": 1602,
+        "control_quads": 1600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 1,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": false,
+      "field_enabled": false,
+      "task36_recipe": null,
+      "surface_policy": "vf",
+      "authoritative_recipe": "late_activation_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 0.0005120739238698962,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          2.91261673054264e-15,
+          2.9873046363423827e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Late activation: authored returns, existing VF split, reduced components, local-edge-capped tag-only finite field",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 0,
+      "recipe_scope_note": "late_activation_recipe is authoritative for this G0-based schedule. The receipt generic composition_recipe is inherited study helper CFG; only its child/tag/profile settings apply, not its G2 scope or gain schedule."
+    },
+    "LATE/SPAN/G02": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02",
+      "family": "LATE",
+      "candidate": "LATE",
+      "case": "SPAN",
+      "stage": "G02",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\preview\\side.png"
+        },
+        "detail_views": [],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\preview\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G01",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 12802,
+        "physical_triangles": 25600,
+        "control_vertices": 6402,
+        "control_quads": 6400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 2,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": false,
+      "field_enabled": false,
+      "task36_recipe": null,
+      "surface_policy": "vf",
+      "authoritative_recipe": "late_activation_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 0.00010814274035453526,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.626964556229158e-15,
+          3.597533769998862e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Late activation: authored returns, existing VF split, reduced components, local-edge-capped tag-only finite field",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "late_activation_recipe is authoritative for this G0-based schedule. The receipt generic composition_recipe is inherited study helper CFG; only its child/tag/profile settings apply, not its G2 scope or gain schedule."
+    },
+    "LATE/SPAN/G03": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03",
+      "family": "LATE",
+      "candidate": "LATE",
+      "case": "SPAN",
+      "stage": "G03",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G02",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 51202,
+        "physical_triangles": 102400,
+        "control_vertices": 25602,
+        "control_quads": 25600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 3,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 1,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 1,
+      "new_field_queries": null,
+      "current_field_escape_iterations": 8,
+      "active_placement": true,
+      "field_enabled": true,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.0,
+        "stencil_gain": 0.15,
+        "normal_gain": 0.08,
+        "decompose": true,
+        "vertex_memory": 1.0,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "late_activation_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 1.3756434116176729e-05,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.6826116135695276e-15,
+          3.728762992537918e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Late activation: authored returns, existing VF split, reduced components, local-edge-capped tag-only finite field",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 4,
+      "recipe_scope_note": "late_activation_recipe is authoritative for this G0-based schedule. The receipt generic composition_recipe is inherited study helper CFG; only its child/tag/profile settings apply, not its G2 scope or gain schedule."
+    },
+    "LATE/SPAN/G04": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04",
+      "family": "LATE",
+      "candidate": "LATE",
+      "case": "SPAN",
+      "stage": "G04",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G03",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 204802,
+        "physical_triangles": 409600,
+        "control_vertices": 102402,
+        "control_quads": 102400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 4,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 2,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 1,
+      "new_field_queries": null,
+      "current_field_escape_iterations": 18,
+      "active_placement": true,
+      "field_enabled": true,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.0,
+        "stencil_gain": 0.1,
+        "normal_gain": 0.05,
+        "decompose": true,
+        "vertex_memory": 1.0,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "late_activation_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 1.3084709850867401e-06,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.742373919797964e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Late activation: authored returns, existing VF split, reduced components, local-edge-capped tag-only finite field",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 6,
+      "recipe_scope_note": "late_activation_recipe is authoritative for this G0-based schedule. The receipt generic composition_recipe is inherited study helper CFG; only its child/tag/profile settings apply, not its G2 scope or gain schedule."
+    },
+    "LATE/SPAN/G05": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05",
+      "family": "LATE",
+      "candidate": "LATE",
+      "case": "SPAN",
+      "stage": "G05",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G04",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 819202,
+        "physical_triangles": 1638400,
+        "control_vertices": 409602,
+        "control_quads": 409600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 5,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 3,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 1,
+      "new_field_queries": null,
+      "current_field_escape_iterations": 18,
+      "active_placement": true,
+      "field_enabled": true,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.0,
+        "stencil_gain": 0.08,
+        "normal_gain": 0.04,
+        "decompose": true,
+        "vertex_memory": 1.0,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "late_activation_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 2.067249204738924e-07,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.814145307657198e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\LATE\\SPAN\\G05\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Late activation: authored returns, existing VF split, reduced components, local-edge-capped tag-only finite field",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 8,
+      "recipe_scope_note": "late_activation_recipe is authoritative for this G0-based schedule. The receipt generic composition_recipe is inherited study helper CFG; only its child/tag/profile settings apply, not its G2 scope or gain schedule."
+    },
+    "CURVED/SPAN/G01": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01",
+      "family": "CURVED",
+      "candidate": "CURVED",
+      "case": "SPAN",
+      "stage": "G01",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\curved_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\study.py"
+        ],
+        "views": {},
+        "detail_views": [],
+        "render_receipts": []
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 3202,
+        "physical_triangles": 6400,
+        "control_vertices": 1602,
+        "control_quads": 1600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 1,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.7,
+        "stencil_gain": 0.0,
+        "normal_gain": 0.0,
+        "decompose": true,
+        "vertex_memory": 0.2,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "curved_existing_CC_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 0.0009136493068392859,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          2.91261673054264e-15,
+          2.9873046363423827e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Existing Task36 CC averaging plus tag protection inside the LATE return and capped-field composition",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 0,
+      "recipe_scope_note": "curved_activation_recipe / composition_recipe describe the actual G0 schedule: existing Task36 CC averaging and vertex-memory schedule, returns and capped field. CC is not a separate geometric smoothing pass."
+    },
+    "CURVED/SPAN/G02": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02",
+      "family": "CURVED",
+      "candidate": "CURVED",
+      "case": "SPAN",
+      "stage": "G02",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\curved_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\preview\\side.png"
+        },
+        "detail_views": [],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\preview\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G01",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 12802,
+        "physical_triangles": 25600,
+        "control_vertices": 6402,
+        "control_quads": 6400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 2,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.7,
+        "stencil_gain": 0.0,
+        "normal_gain": 0.0,
+        "decompose": true,
+        "vertex_memory": 0.2,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "curved_existing_CC_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.29421910465746e-06,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.583910153046161e-15,
+          3.594534575004821e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Existing Task36 CC averaging plus tag protection inside the LATE return and capped-field composition",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "curved_activation_recipe / composition_recipe describe the actual G0 schedule: existing Task36 CC averaging and vertex-memory schedule, returns and capped field. CC is not a separate geometric smoothing pass."
+    },
+    "CURVED/SPAN/G03": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03",
+      "family": "CURVED",
+      "candidate": "CURVED",
+      "case": "SPAN",
+      "stage": "G03",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\curved_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 51202,
+        "physical_triangles": 102400,
+        "control_vertices": 25602,
+        "control_quads": 25600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 3,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 1,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 1,
+      "new_field_queries": null,
+      "current_field_escape_iterations": 8,
+      "active_placement": true,
+      "field_enabled": true,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.35,
+        "stencil_gain": 0.15,
+        "normal_gain": 0.08,
+        "decompose": true,
+        "vertex_memory": 0.6,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "curved_existing_CC_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 3.913683657835503e-06,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.742373919797964e-15,
+          3.728762992537918e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Existing Task36 CC averaging plus tag protection inside the LATE return and capped-field composition",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 4,
+      "recipe_scope_note": "curved_activation_recipe / composition_recipe describe the actual G0 schedule: existing Task36 CC averaging and vertex-memory schedule, returns and capped field. CC is not a separate geometric smoothing pass."
+    },
+    "CURVED/SPAN/G04": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04",
+      "family": "CURVED",
+      "candidate": "CURVED",
+      "case": "SPAN",
+      "stage": "G04",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\curved_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\late_activation.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G03",
+      "source_g0": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\inputs\\SPAN\\G00",
+      "counts": {
+        "physical_vertices": 204802,
+        "physical_triangles": 409600,
+        "control_vertices": 102402,
+        "control_quads": 102400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 4,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 2,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 1,
+      "new_field_queries": null,
+      "current_field_escape_iterations": 18,
+      "active_placement": true,
+      "field_enabled": true,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.2,
+        "stencil_gain": 0.1,
+        "normal_gain": 0.05,
+        "decompose": true,
+        "vertex_memory": 0.75,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "curved_existing_CC_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 6.282592431866649e-07,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.814145307657198e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Existing Task36 CC averaging plus tag protection inside the LATE return and capped-field composition",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 6,
+      "recipe_scope_note": "curved_activation_recipe / composition_recipe describe the actual G0 schedule: existing Task36 CC averaging and vertex-memory schedule, returns and capped field. CC is not a separate geometric smoothing pass."
+    },
+    "RULED/SPAN/G03": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03",
+      "family": "RULED",
+      "candidate": "RULED",
+      "case": "SPAN",
+      "stage": "G03",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\ruled_growth.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G02",
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 51202,
+        "physical_triangles": 102400,
+        "control_vertices": 25602,
+        "control_quads": 25600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 3,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.8,
+        "stencil_gain": 0.35,
+        "normal_gain": 0.75,
+        "decompose": true,
+        "vertex_memory": 0.35,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "repeated_existing_support_scaled_kernel_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 1.644875045898121e-05,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.632058610082554e-15,
+          3.611639285330952e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Same existing support-scaled subdivision kernel repeated on incoming geometry",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "Starts at actual CURVED/SPAN/G02 (zero field passes, two original returns). Repeats one fixed existing Task36 kernel at G3 onward; no child returns or field. Different gains and return schedule from CURVED, not a single-variable field ablation."
+    },
+    "RULED/SPAN/G04": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04",
+      "family": "RULED",
+      "candidate": "RULED",
+      "case": "SPAN",
+      "stage": "G04",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\ruled_growth.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G03",
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 204802,
+        "physical_triangles": 409600,
+        "control_vertices": 102402,
+        "control_quads": 102400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 4,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.8,
+        "stencil_gain": 0.35,
+        "normal_gain": 0.75,
+        "decompose": true,
+        "vertex_memory": 0.35,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "repeated_existing_support_scaled_kernel_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.7281468529875573e-07,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.688882027804963e-15,
+          3.728762992537918e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Same existing support-scaled subdivision kernel repeated on incoming geometry",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "Starts at actual CURVED/SPAN/G02 (zero field passes, two original returns). Repeats one fixed existing Task36 kernel at G3 onward; no child returns or field. Different gains and return schedule from CURVED, not a single-variable field ablation."
+    },
+    "RULED/SPAN/G05": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05",
+      "family": "RULED",
+      "candidate": "RULED",
+      "case": "SPAN",
+      "stage": "G05",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\ruled_growth.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\detail\\front_micro.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\detail\\side_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\detail\\side_micro.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G04",
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 819202,
+        "physical_triangles": 1638400,
+        "control_vertices": 409602,
+        "control_quads": 409600
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 5,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.8,
+        "stencil_gain": 0.35,
+        "normal_gain": 0.75,
+        "decompose": true,
+        "vertex_memory": 0.35,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "repeated_existing_support_scaled_kernel_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 1.0495342159737454e-07,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.748544367384395e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Same existing support-scaled subdivision kernel repeated on incoming geometry",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "Starts at actual CURVED/SPAN/G02 (zero field passes, two original returns). Repeats one fixed existing Task36 kernel at G3 onward; no child returns or field. Different gains and return schedule from CURVED, not a single-variable field ablation."
+    },
+    "RULED/SPAN/G06": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06",
+      "family": "RULED",
+      "candidate": "RULED",
+      "case": "SPAN",
+      "stage": "G06",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\operation_fields.npz",
+        "blend": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\column.blend",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\ruled_growth.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\study.py"
+        ],
+        "views": {
+          "front": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\preview\\side.png"
+        },
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\detail\\front_micro.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\detail\\side_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\detail\\side_micro.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\preview\\render_receipt.json",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\detail\\render_receipt.json"
+        ]
+      },
+      "source": null,
+      "parent": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G05",
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600,
+        "control_vertices": 1638402,
+        "control_quads": 1638400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 6,
+      "new_subdivision_passes": 1,
+      "field_passes_total": 0,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": null,
+      "current_field_escape_iterations": null,
+      "active_placement": true,
+      "field_enabled": false,
+      "task36_recipe": {
+        "mode": "coupled",
+        "averaging_gain": 0.8,
+        "stencil_gain": 0.35,
+        "normal_gain": 0.75,
+        "decompose": true,
+        "vertex_memory": 0.35,
+        "face_gain": 0.65,
+        "edge_gain": 0.18,
+        "feedback": 1.0,
+        "inherited_bias": 0.8,
+        "diagonal_tension": -0.65,
+        "edge_tension": 0.5,
+        "vertex_tension": -0.8,
+        "ancestry_gain": 1.0,
+        "cap_mode": "plane_only",
+        "surface": "vf"
+      },
+      "surface_policy": "vf",
+      "authoritative_recipe": "repeated_existing_support_scaled_kernel_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.508731184653209e-08,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.820199830714189e-15,
+          3.8044380292047015e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\RULED\\SPAN\\G06\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Same existing support-scaled subdivision kernel repeated on incoming geometry",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 2,
+      "recipe_scope_note": "Starts at actual CURVED/SPAN/G02 (zero field passes, two original returns). Repeats one fixed existing Task36 kernel at G3 onward; no child returns or field. Different gains and return schedule from CURVED, not a single-variable field ablation."
+    },
+    "DIAGNOSIS/CURVED_PREFIELD/G04": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04",
+      "family": "DIAGNOSIS",
+      "candidate": "CURVED_PREFIELD",
+      "case": "SPAN",
+      "stage": "G04",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\field_slice.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\study.py"
+        ],
+        "views": {},
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\detail\\render_receipt.json"
+        ]
+      },
+      "source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\CURVED\\SPAN\\G04",
+      "parent": null,
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 204802,
+        "physical_triangles": 409600,
+        "control_vertices": 102402,
+        "control_quads": 102400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 4,
+      "new_subdivision_passes": 0,
+      "field_passes_total": 1,
+      "field_passes_source": "generation.json field_passes_total",
+      "added_field_passes": 0,
+      "new_field_queries": 0,
+      "current_field_escape_iterations": null,
+      "active_placement": null,
+      "field_enabled": null,
+      "task36_recipe": null,
+      "surface_policy": "vf",
+      "authoritative_recipe": "curved_existing_CC_local_edge_cap_v1",
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.074009030212622e-07,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.742373919797964e-15,
+          3.728762992537918e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\CURVED_PREFIELD\\G04\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Materialized saved pre-field controls; no new subdivision, return or field query",
+      "new_authored_event_count": 2,
+      "inherited_event_bank_count": 6,
+      "recipe_scope_note": "Actual CURVED recipe inherited from its source. This slice omits only the current field pass; earlier generations retain their field responses. Materializing the slice adds no refinement, authored return or field query."
+    },
+    "DIAGNOSIS/SPAN/INTERPOLATED/G02": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02",
+      "family": "DIAGNOSIS",
+      "candidate": "INTERPOLATED",
+      "case": "SPAN",
+      "stage": "G02",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\snapshot_probe.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\study.py"
+        ],
+        "views": {},
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\detail\\render_receipt.json"
+        ]
+      },
+      "source": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02",
+      "parent": null,
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 12802,
+        "physical_triangles": 25600,
+        "control_vertices": 6402,
+        "control_quads": 6400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 2,
+      "new_subdivision_passes": 0,
+      "field_passes_total": 1,
+      "field_passes_source": "Source G2 receipt minus its final field pass for pre-field slices; snapshot_probe.py operation order",
+      "added_field_passes": 0,
+      "new_field_queries": 0,
+      "current_field_escape_iterations": null,
+      "active_placement": null,
+      "field_enabled": null,
+      "task36_recipe": null,
+      "surface_policy": "mean",
+      "authoritative_recipe": null,
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.6727959722092496e-05,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.621437911838241e-15,
+          3.594534575004821e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\INTERPOLATED\\G02\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Materialized saved intermediate controls from the existing G2 operation record; no new growth",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 0,
+      "recipe_scope_note": "Saved causal operation slice, not a new design generation. Generic study CFG does not establish its field history; follow the source and slice operation."
+    },
+    "DIAGNOSIS/SPAN/TASK36_ONLY/G02": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02",
+      "family": "DIAGNOSIS",
+      "candidate": "TASK36_ONLY",
+      "case": "SPAN",
+      "stage": "G02",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\snapshot_probe.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\study.py"
+        ],
+        "views": {},
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\detail\\render_receipt.json"
+        ]
+      },
+      "source": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02",
+      "parent": null,
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 12802,
+        "physical_triangles": 25600,
+        "control_vertices": 6402,
+        "control_quads": 6400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 2,
+      "new_subdivision_passes": 0,
+      "field_passes_total": 1,
+      "field_passes_source": "Source G2 receipt minus its final field pass for pre-field slices; snapshot_probe.py operation order",
+      "added_field_passes": 0,
+      "new_field_queries": 0,
+      "current_field_escape_iterations": null,
+      "active_placement": null,
+      "field_enabled": null,
+      "task36_recipe": null,
+      "surface_policy": "mean",
+      "authoritative_recipe": null,
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 2.857781784457392e-05,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.616328897427208e-15,
+          3.595820250601821e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\TASK36_ONLY\\G02\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Materialized saved intermediate controls from the existing G2 operation record; no new growth",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 0,
+      "recipe_scope_note": "Saved causal operation slice, not a new design generation. Generic study CFG does not establish its field history; follow the source and slice operation."
+    },
+    "DIAGNOSIS/SPAN/WITH_FIELD/G02": {
+      "folder": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02",
+      "family": "DIAGNOSIS",
+      "candidate": "WITH_FIELD",
+      "case": "SPAN",
+      "stage": "G02",
+      "files": {
+        "mesh": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\column.ply",
+        "geometry": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\checkpoint.npz",
+        "control": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\generation.json",
+        "recipe_record": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\recipe.json",
+        "code_snapshots": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\fold_profile.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\snapshot_probe.py",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\study.py"
+        ],
+        "views": {},
+        "detail_views": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\detail\\front_meso.png",
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\detail\\side_meso.png"
+        ],
+        "render_receipts": [
+          "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\detail\\render_receipt.json"
+        ]
+      },
+      "source": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02",
+      "parent": null,
+      "source_g0": null,
+      "counts": {
+        "physical_vertices": 12802,
+        "physical_triangles": 25600,
+        "control_vertices": 6402,
+        "control_quads": 6400
+      },
+      "counts_source": "Existing generation.json from saved actual mesh; not recomputed",
+      "subdivision_passes_total": 2,
+      "new_subdivision_passes": 0,
+      "field_passes_total": 2,
+      "field_passes_source": "Source G2 receipt minus its final field pass for pre-field slices; snapshot_probe.py operation order",
+      "added_field_passes": 0,
+      "new_field_queries": 0,
+      "current_field_escape_iterations": null,
+      "active_placement": null,
+      "field_enabled": null,
+      "task36_recipe": null,
+      "surface_policy": "mean",
+      "authoritative_recipe": null,
+      "quick_checks": {
+        "quick_integrity": "PASS",
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 2.3116697604099084e-05,
+        "minimum_area_threshold": 1e-12,
+        "geometric_reflection_error": [
+          3.616328897427208e-15,
+          3.597533769998862e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ]
+      },
+      "quick_checks_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\generation.json",
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "self_intersection_source": "E:\\CHESHIRE_DATA\\fold_coherence_20261012\\DIAGNOSIS\\SPAN\\WITH_FIELD\\G02\\generation.json",
+      "intersection_scope": null,
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "operation": "Materialized saved intermediate controls from the existing G2 operation record; no new growth",
+      "new_authored_event_count": 0,
+      "inherited_event_bank_count": 0,
+      "recipe_scope_note": "Saved causal operation slice, not a new design generation. Generic study CFG does not establish its field history; follow the source and slice operation."
+    }
+  }
+}
