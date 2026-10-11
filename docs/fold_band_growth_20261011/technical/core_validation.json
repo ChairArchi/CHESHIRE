@@ -1,0 +1,426 @@
+{
+  "BAND_COUPLED/G03": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03",
+    "vertices": 819202,
+    "triangles": 1638400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.28043835261227e-07,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 5.34062281989631e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 5.386584276715657e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        45655,
+        1595476
+      ],
+      [
+        738396,
+        740025
+      ],
+      [
+        1149785,
+        1215078
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 6.527459621429443,
+    "witness_centres": [
+      [
+        [
+          -0.1527390778986594,
+          -0.7286690860008999,
+          0.1404058354813752
+        ],
+        [
+          -0.15076738274972656,
+          -0.7290755049589972,
+          0.1402257062243888
+        ]
+      ],
+      [
+        [
+          -0.1287816332238154,
+          0.6627707069765015,
+          4.428816113650991
+        ],
+        [
+          -0.1276582927261031,
+          0.6544328491363535,
+          4.420573000184273
+        ]
+      ],
+      [
+        [
+          -1.0734042153640668,
+          -0.2543842230686384,
+          7.587748959373628
+        ],
+        [
+          -1.083330451269257,
+          -0.2551311901744722,
+          7.594321949988029
+        ]
+      ]
+    ]
+  },
+  "ROLE_ABSOLUTE/G02": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02",
+    "vertices": 12802,
+    "triangles": 25600,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 4.55898234908659e-05,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.572715115905667e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.58724037616909e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        5739,
+        5819
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.08786511421203613,
+    "witness_centres": [
+      [
+        [
+          -0.5034781910562018,
+          -0.393626365423487,
+          2.47148241018928
+        ],
+        [
+          -0.49946343516483127,
+          -0.43133727285330253,
+          2.434790278317966
+        ]
+      ]
+    ]
+  },
+  "ROLE_ABSOLUTE/G03": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03",
+    "vertices": 51202,
+    "triangles": 102400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 2.014751615853466e-05,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.625264947627759e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.611212654972683e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        4107,
+        8211
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.32235264778137207,
+    "witness_centres": [
+      [
+        [
+          1.1171864719058615,
+          0.026346896238750316,
+          0.6463452048075246
+        ],
+        [
+          1.13124115051111,
+          0.03319314697809143,
+          0.6432202369155728
+        ]
+      ]
+    ]
+  },
+  "CURVE_CIRCLE/G02": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02",
+    "vertices": 51202,
+    "triangles": 102400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 3.179144810813448e-05,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 5.34062281989631e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 5.344371941326732e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        6131,
+        10019
+      ],
+      [
+        92755,
+        88728
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.324596643447876,
+    "witness_centres": [
+      [
+        [
+          -1.0637108914625302,
+          0.2915328297302883,
+          0.625480119953788
+        ],
+        [
+          -1.0605452927681924,
+          0.28866328857443896,
+          0.6398404355247359
+        ]
+      ],
+      [
+        [
+          -0.4909181210923195,
+          -0.9587190659667232,
+          9.38864836168577
+        ],
+        [
+          -0.4957709680086489,
+          -0.9628923961092338,
+          9.398393863521965
+        ]
+      ]
+    ]
+  },
+  "FULL_LOOP/G03": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03",
+    "vertices": 51202,
+    "triangles": 102400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 2.373120616876345e-06,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.626964556229158e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.611212654972683e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        92755,
+        88726
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.3524954319000244,
+    "witness_centres": [
+      [
+        [
+          -0.4940320507632805,
+          -0.974395093459893,
+          9.39219999404464
+        ],
+        [
+          -0.46582714582279605,
+          -0.9841804096687227,
+          9.377408675563034
+        ]
+      ]
+    ]
+  },
+  "ANCESTRY_LOOP/G03": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03",
+    "vertices": 51202,
+    "triangles": 102400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 1.6884458756379817e-06,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.742373919797964e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.728762992537918e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        99465,
+        2336
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.42417049407958984,
+    "witness_centres": [
+      [
+        [
+          -0.5844065640817803,
+          -0.27253982551103506,
+          0.18163111829787257
+        ],
+        [
+          -0.577219377867233,
+          -0.26571666966559354,
+          0.20085543719938315
+        ]
+      ]
+    ]
+  },
+  "ANCESTRY_STAGED/G03": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03",
+    "vertices": 51202,
+    "triangles": 102400,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 4.6777074126870977e-07,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 3.632058610082554e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 3.611639285330952e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        2129,
+        2331
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.36258912086486816,
+    "witness_centres": [
+      [
+        [
+          -0.6201198201235142,
+          -0.24864475589400423,
+          0.1851097300209057
+        ],
+        [
+          -0.628722820658787,
+          -0.2477349083414658,
+          0.2009313382474026
+        ]
+      ]
+    ]
+  },
+  "DUAL_FIELD_LOOP/G02": {
+    "folder": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02",
+    "vertices": 12802,
+    "triangles": 25600,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 2.9269999937540253e-07,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 8.54611520439974e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 1.859592625772522e-14,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        6528,
+        13132
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 0.08723282814025879,
+    "witness_centres": [
+      [
+        [
+          -0.7086622054973909,
+          -0.015134680352668255,
+          0.3375152599770801
+        ],
+        [
+          -0.7126808291714845,
+          -0.014613216709774174,
+          0.40353164517663204
+        ]
+      ]
+    ]
+  }
+}

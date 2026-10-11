@@ -1,0 +1,50 @@
+{
+  "comparison": [
+    {
+      "stage": "G01",
+      "internal_iterations_staged": 4,
+      "internal_iterations_baseline": 18,
+      "control_topology_and_chart_identical": true,
+      "control_difference_rms": 0.13696180009597408,
+      "control_difference_mean": 0.10711508047885522,
+      "control_difference_max": 0.5726542181885271,
+      "control_vertices_different": 1235,
+      "control_vertices": 1602,
+      "inside_fraction_staged": 0.7715355805243446,
+      "inside_fraction_baseline": 0.5224719101123596
+    },
+    {
+      "stage": "G02",
+      "internal_iterations_staged": 8,
+      "internal_iterations_baseline": 18,
+      "control_topology_and_chart_identical": true,
+      "control_difference_rms": 0.1304930760298904,
+      "control_difference_mean": 0.09844662354073967,
+      "control_difference_max": 0.9363479691375114,
+      "control_vertices_different": 5163,
+      "control_vertices": 6402,
+      "inside_fraction_staged": 0.3784754764136207,
+      "inside_fraction_baseline": 0.4965635738831615
+    },
+    {
+      "stage": "G03",
+      "internal_iterations_staged": 18,
+      "internal_iterations_baseline": 18,
+      "control_topology_and_chart_identical": true,
+      "control_difference_rms": 0.12539924280963038,
+      "control_difference_mean": 0.0926536250164063,
+      "control_difference_max": 1.2592180883870268,
+      "control_vertices_different": 21083,
+      "control_vertices": 25602,
+      "inside_fraction_staged": 0.20041403015389422,
+      "inside_fraction_baseline": 0.4682056089368018
+    }
+  ],
+  "G03_light_check": {
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED"
+  }
+}

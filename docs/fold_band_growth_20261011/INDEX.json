@@ -1,0 +1,839 @@
+{
+  "output_root": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011",
+  "branch": "experiment/fold-band-growth-20261011",
+  "predecessor_commit": "d724e65",
+  "actual_artifacts": {
+    "BAND_COUPLED": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_COUPLED\\G03\\core_validation.json"
+      }
+    },
+    "BAND_REGIONAL": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\BAND_REGIONAL\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "ROLE_VERTEX_FACE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_VERTEX_FACE\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "ROLE_EDGE_FACE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_EDGE_FACE\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "ROLE_SPARSE_VERTEX_FACE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_SPARSE_VERTEX_FACE\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "ROLE_ABSOLUTE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G02\\core_validation.json"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ROLE_ABSOLUTE\\G03\\core_validation.json"
+      }
+    },
+    "FIELD_SEED": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_SEED\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "CURVE_CIRCLE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G01\\attractor_curves.npz"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\core_validation.json",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_CIRCLE\\G02\\attractor_curves.npz"
+      }
+    },
+    "CURVE_SWEEP": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G01\\attractor_curves.npz"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\CURVE_SWEEP\\G02\\attractor_curves.npz"
+      }
+    },
+    "MASS_CURVE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\MASS_CURVE\\G01\\attractor_curves.npz"
+      }
+    },
+    "FULL_LOOP": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G01\\attractor_curves.npz"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\control_quad.npz",
+        "control_topology": "quad",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G02\\attractor_curves.npz"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\core_validation.json",
+        "attractor_curves": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FULL_LOOP\\G03\\attractor_curves.npz"
+      }
+    },
+    "RADIAL_SPARSE": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\RADIAL_SPARSE\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "QUAD_NEAREST": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\QUAD_NEAREST\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "TRI_NEAREST": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G01\\checkpoint.npz",
+        "control_topology": "triangle"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\TRI_NEAREST\\G02\\checkpoint.npz",
+        "control_topology": "triangle"
+      }
+    },
+    "DUAL_FIELD_LOOP": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\control_poly.npz",
+        "control_topology": "mixed polygon",
+        "DS_lineage": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\ds_lineage.npz",
+        "DS_operator_log": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G01\\ds_operator_log.json"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\control_poly.npz",
+        "control_topology": "mixed polygon",
+        "DS_lineage": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\ds_lineage.npz",
+        "DS_operator_log": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\ds_operator_log.json",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G02\\core_validation.json"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\control_poly.npz",
+        "control_topology": "mixed polygon",
+        "DS_lineage": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\ds_lineage.npz",
+        "DS_operator_log": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\DUAL_FIELD_LOOP\\G03\\ds_operator_log.json"
+      }
+    },
+    "FIELD_STAGED": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\FIELD_STAGED\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    },
+    "ANCESTRY_LOOP": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_LOOP\\G03\\core_validation.json"
+      }
+    },
+    "ANCESTRY_STAGED": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\control_quad.npz",
+        "control_topology": "quad",
+        "core_validation": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03\\core_validation.json"
+      }
+    },
+    "ANCESTRY_RETURN": {
+      "G01": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G01\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G02": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G02\\control_quad.npz",
+        "control_topology": "quad"
+      },
+      "G03": {
+        "actual_mesh": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\gate.ply",
+        "authoritative_geometry": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\checkpoint.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\operation_fields.npz",
+        "generation_record": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\generation.json",
+        "blender_scene": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\preview\\side.png"
+        },
+        "next_generation_control": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_RETURN\\G03\\control_quad.npz",
+        "control_topology": "quad"
+      }
+    }
+  },
+  "sources": {
+    "fine": "E:/CHESHIRE_DATA/column_development_20261011/inputs/SPAN_R2/G00",
+    "coarse": "E:/CHESHIRE_DATA/column_development_20261011/inputs/SPAN_COARSE/G00",
+    "sparse": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00"
+  },
+  "source_code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\fold_band_growth_20261011",
+  "source_notes": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\docs\\fold_band_growth_20261011\\SOURCE_NOTES.md",
+  "full_review_images": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\review",
+  "compact_review_images": [
+    "selected_directions.png",
+    "ANCESTRY_LOOP_progression.png",
+    "ANCESTRY_STAGED_progression.png",
+    "DUAL_FIELD_LOOP_progression.png",
+    "authored_return_comparison.png",
+    "late_mechanisms_G2.png",
+    "radial_failure.png",
+    "topology_G02_comparison.png",
+    "band_final_comparison.png",
+    "curve_hybrid_comparison.png",
+    "integrated_loop_comparison.png",
+    "role_absolute_selection.png",
+    "mass_curve_failure.png",
+    "ancestry_staged_final.png"
+  ],
+  "core_checks": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\docs\\fold_band_growth_20261011\\technical\\core_validation.json",
+  "representative": "ANCESTRY_STAGED/G03",
+  "co_lead": "ANCESTRY_LOOP/G03",
+  "quieter_comparison": "ANCESTRY_LOOP/G02",
+  "geometric_cell_comparison": "DUAL_FIELD_LOOP/G02",
+  "prior_role_comparison": [
+    "ROLE_ABSOLUTE/G02",
+    "ROLE_ABSOLUTE/G03"
+  ],
+  "field_comparison": "BAND_COUPLED/G03",
+  "public_flow_comparisons": [
+    "CURVE_CIRCLE/G02",
+    "CURVE_SWEEP/G02"
+  ],
+  "public_flow_count": "FIELD_SEED/G01: one split+field pass; curve G01/G02: two further split+role passes. Total growth three, finite field evaluated once at 18 internal escape iterations.",
+  "integrated_loop": "FULL_LOOP/G03: three cycles, each with ONE quad split + circle-activated V/F placement + finite field reevaluation. Three paired cycles, not six growth cycles.",
+  "stopped_failure": "MASS_CURVE/G01: common normal response changed the mass but weakened the deep folds; G2 was not generated.",
+  "late_branch_stops": {
+    "RADIAL_SPARSE": "G2: sawtooth/thorn bands; no G3",
+    "QUAD_NEAREST": "G2: topology comparison only, weak macro/meso gain; no G3",
+    "TRI_NEAREST": "G2: topology comparison only, weak macro/meso gain; no G3",
+    "DUAL_FIELD_LOOP": "G3 retained as roughness limit; G2 is clearer"
+  },
+  "staged_field": "FIELD_STAGED and ANCESTRY_STAGED: three growth cycles, internal finite escape iterations 4/8/18. Occupancy and targets change, not just detail frequency.",
+  "authored_followup": "ANCESTRY_RETURN/G03: one existing explicitly authored PCHIP waist return after the field. Not fractal-emergent folding; G1/G2 mesh-identical renders reused with a saved record. Silhouette changed, but cuff/belt interrupts continuity: not selected as a lead.",
+  "format": "Actual PLY + authoritative NPZ + quad checkpoint + Blender. No OBJ export in this study.",
+  "next_input_variations": "Deferred by user; SPAN_SPARSE is the same analytic recipe at lower sampling density, not a new input design.",
+  "scope": "Compact copy only, no repeated hash audit or full regressions. No geometry deletion or automatic continuation."
+}
