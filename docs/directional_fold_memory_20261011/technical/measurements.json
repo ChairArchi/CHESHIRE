@@ -1,0 +1,209 @@
+{
+  "A_FOLD/G01": {
+    "sections": [
+      {
+        "z": 2.2,
+        "width": 2.5439551071365307,
+        "depth": 1.56,
+        "depth_width": 0.6132183683681164,
+        "segments": 392
+      },
+      {
+        "z": 4.5,
+        "width": 1.56,
+        "depth": 1.56,
+        "depth_width": 1.0,
+        "segments": 384
+      },
+      {
+        "z": 6.5,
+        "width": 1.6073569844814564,
+        "depth": 1.56,
+        "depth_width": 0.970537357327169,
+        "segments": 384
+      },
+      {
+        "z": 7.6,
+        "width": 2.4312288173794916,
+        "depth": 1.56,
+        "depth_width": 0.6416508346924957,
+        "segments": 564
+      }
+    ],
+    "axial_edges": 12288,
+    "reverse_axial_edges": 244,
+    "reverse_definition": "Actual dz opposite to increasing material height; not self-intersection",
+    "bounds": [
+      [
+        -1.426217849667852,
+        -0.78,
+        0.0
+      ],
+      [
+        1.426217849667852,
+        0.78,
+        10.0
+      ]
+    ]
+  },
+  "A_FOLD/G02": {
+    "sections": [
+      {
+        "z": 2.2,
+        "width": 2.542893509173138,
+        "depth": 1.5717391304347827,
+        "depth_width": 0.6180908184967048,
+        "segments": 784
+      },
+      {
+        "z": 4.5,
+        "width": 1.56,
+        "depth": 2.1393,
+        "depth_width": 1.3713461538461538,
+        "segments": 912
+      },
+      {
+        "z": 6.5,
+        "width": 1.6073569844814564,
+        "depth": 2.135458074534162,
+        "depth_width": 1.328552459193173,
+        "segments": 774
+      },
+      {
+        "z": 7.6,
+        "width": 2.4312288173794916,
+        "depth": 1.6336507936507936,
+        "depth_width": 0.6719444841936473,
+        "segments": 1124
+      }
+    ],
+    "axial_edges": 49152,
+    "reverse_axial_edges": 1440,
+    "reverse_definition": "Actual dz opposite to increasing material height; not self-intersection",
+    "bounds": [
+      [
+        -1.426217849667852,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.426217849667852,
+        1.3636847826086957,
+        10.0
+      ]
+    ]
+  },
+  "A_FOLD/G03": {
+    "sections": [
+      {
+        "z": 2.2,
+        "width": 2.542893509173138,
+        "depth": 1.5717391304347827,
+        "depth_width": 0.6180908184967048,
+        "segments": 784
+      },
+      {
+        "z": 4.5,
+        "width": 1.56,
+        "depth": 2.1393,
+        "depth_width": 1.3713461538461538,
+        "segments": 912
+      },
+      {
+        "z": 6.5,
+        "width": 1.792506478863769,
+        "depth": 2.135458074534162,
+        "depth_width": 1.1913251637939866,
+        "segments": 826
+      },
+      {
+        "z": 7.6,
+        "width": 2.4312288173794916,
+        "depth": 1.7437108659529694,
+        "depth_width": 0.7172138029494214,
+        "segments": 1124
+      }
+    ],
+    "axial_edges": 49152,
+    "reverse_axial_edges": 1486,
+    "reverse_definition": "Actual dz opposite to increasing material height; not self-intersection",
+    "bounds": [
+      [
+        -1.426217849667852,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.426217849667852,
+        1.3636847826086957,
+        10.0
+      ]
+    ]
+  },
+  "B_LOCAL/G01": {
+    "sections": [
+      {
+        "z": 2.2,
+        "width": 2.542893509173138,
+        "depth": 1.5717391304347827,
+        "depth_width": 0.6180908184967048,
+        "segments": 784
+      },
+      {
+        "z": 4.5,
+        "width": 1.56,
+        "depth": 2.1393,
+        "depth_width": 1.3713461538461538,
+        "segments": 912
+      },
+      {
+        "z": 6.5,
+        "width": 1.7966311579753595,
+        "depth": 2.135458074534162,
+        "depth_width": 1.1885901371879966,
+        "segments": 826
+      },
+      {
+        "z": 7.6,
+        "width": 2.4312288173794916,
+        "depth": 1.730688416921096,
+        "depth_width": 0.7118574790449073,
+        "segments": 1124
+      }
+    ],
+    "axial_edges": 49152,
+    "reverse_axial_edges": 1604,
+    "reverse_definition": "Actual dz opposite to increasing material height; not self-intersection",
+    "bounds": [
+      [
+        -1.426217849667852,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.426217849667852,
+        1.3636847826086957,
+        10.0
+      ]
+    ]
+  },
+  "A_to_B": {
+    "same_triangle_connectivity": true,
+    "unchanged_outside_zone_control_vertices": 44806,
+    "outside_zone_control_max_movement": 0.0,
+    "unchanged_control_faces": 44596,
+    "physical_fan_centres_on_unchanged_faces_max_movement": 0.0,
+    "physical_vertices_changed_fraction": 0.12357180523817894,
+    "physical_max_movement": 0.11499999999574621,
+    "active_zone_signal_range": [
+      -0.6332947303234112,
+      0.9999999999705376
+    ],
+    "active_zone_inside_fraction": 0.18980612883051906,
+    "silhouette_pixel_difference": {
+      "front": 0.007829822197787592,
+      "side": 0.0005408610769000189
+    },
+    "fabrication": "Thickness, stability and structural performance NOT_CHECKED"
+  }
+}

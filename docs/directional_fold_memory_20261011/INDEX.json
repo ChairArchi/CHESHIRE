@@ -1,0 +1,32 @@
+{
+  "branch": "experiment/directional-fold-memory-20261011",
+  "parent_commit": "c373e32f10636d73fd54e261911140b4dfdb67bc",
+  "artifact_root": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011",
+  "A": "A_FOLD/G03",
+  "B": "B_LOCAL/G01",
+  "stages": [
+    "A/G00",
+    "A_FOLD/G01",
+    "A_FOLD/G02",
+    "A_FOLD/G03",
+    "B_LOCAL/G01"
+  ],
+  "checkpoint_names": [
+    "checkpoint.npz",
+    "geometry.npz",
+    "memory.npz",
+    "memory.json",
+    "operation_fields.npz",
+    "generation.json",
+    "gate.ply"
+  ],
+  "saved_renders": "Each reviewed checkpoint has preview/front.png, oblique.png, side.png and render_receipt.json",
+  "original_trials_retained": [
+    "A",
+    "A_REFINED",
+    "B"
+  ],
+  "raw_geometry_copied_into_code_repo": false,
+  "published_to_github": false,
+  "structural_validation": "NOT_PERFORMED"
+}

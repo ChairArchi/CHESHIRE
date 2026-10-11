@@ -1,0 +1,92 @@
+{
+  "A": {
+    "1": [
+      {
+        "id": "LOW_X",
+        "direction": 0.0,
+        "height": 0.255,
+        "span": 0.09,
+        "expansion": 0.7,
+        "constriction": 0.28,
+        "reexpansion": 0.38,
+        "return_depth": 0.48,
+        "overlap_width": 1.0,
+        "sweep": 0.25,
+        "mirror": true
+      },
+      {
+        "id": "HIGH_X",
+        "direction": 0.0,
+        "height": 0.755,
+        "span": 0.07,
+        "expansion": 0.49,
+        "constriction": 0.24,
+        "reexpansion": 0.64,
+        "return_depth": 0.42,
+        "overlap_width": 0.88,
+        "sweep": -0.32,
+        "mirror": true
+      }
+    ],
+    "2": [
+      {
+        "id": "FRONT_LINK",
+        "direction": 1.5707963267948966,
+        "height": 0.455,
+        "span": 0.115,
+        "expansion": 0.6,
+        "constriction": 0.24,
+        "reexpansion": 0.4,
+        "return_depth": 0.55,
+        "overlap_width": 1.03,
+        "sweep": 0.0,
+        "mirror": false
+      },
+      {
+        "id": "BACK_RETURN",
+        "direction": -1.5707963267948966,
+        "height": 0.6,
+        "span": 0.09,
+        "expansion": 0.44,
+        "constriction": 0.2,
+        "reexpansion": 0.58,
+        "return_depth": 0.46,
+        "overlap_width": 0.92,
+        "sweep": 0.0,
+        "mirror": false
+      }
+    ],
+    "3": [
+      {
+        "id": "DIAGONAL_SHOULDER",
+        "direction": 0.68,
+        "height": 0.655,
+        "span": 0.105,
+        "expansion": 0.31,
+        "constriction": 0.13,
+        "reexpansion": 0.4,
+        "return_depth": 0.31,
+        "overlap_width": 0.67,
+        "sweep": 0.2,
+        "mirror": true
+      }
+    ]
+  },
+  "B": {
+    "amplitude": 0.115,
+    "power": 5,
+    "iterations": 18
+  },
+  "legacy_preservation_weight": 1.0,
+  "originals_preserved": true,
+  "source_branch": "experiment/iaac-mandelbrot-growth-20261011",
+  "source_commit": "c373e32f10636d73fd54e261911140b4dfdb67bc",
+  "A_refinement_passes": [
+    2,
+    1,
+    0
+  ],
+  "first_trial": "A: coarser sampling [1,1,0] retained; angular shoulder faceting limits visual judgement",
+  "second_trial": "A_REFINED: Gaussian events with denser sampling; puffed reading remains",
+  "final_A": "A_FOLD: finite piecewise bent sections, direction-dependent curved lip heights; no smoothing"
+}

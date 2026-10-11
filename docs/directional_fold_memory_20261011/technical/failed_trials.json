@@ -1,0 +1,24 @@
+{
+  "A": {
+    "status": "NOT_LEAD",
+    "reason": "Coarse sampling produces angular swollen shoulders",
+    "exact_intersection": "NOT_CHECKED"
+  },
+  "A_REFINED": {
+    "status": "NOT_LEAD",
+    "reason": "Sampling alone reduces facets but preserves puffed masses",
+    "exact_intersection": "NOT_CHECKED"
+  },
+  "A_FOLD": {
+    "status": "PARTIAL_FORM_STUDY",
+    "reason": "Return lip clearer, but sharp jagged boundaries and confirmed self-intersection"
+  },
+  "B": {
+    "status": "UNREVIEWED_PRELIMINARY",
+    "reason": "Extra refinement unnecessary; not rendered or precisely validated. A nonplanar fan surface can change under bilinear re-tessellation despite retained control points"
+  },
+  "B_LOCAL": {
+    "status": "PRESERVED_COMPARISON_NOT_RECOMMENDED_AS_LEAD",
+    "reason": "Local detail preserved landmarks but adds roughness, with confirmed self-intersection"
+  }
+}

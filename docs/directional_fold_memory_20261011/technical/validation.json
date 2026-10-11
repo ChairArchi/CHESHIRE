@@ -1,0 +1,140 @@
+{
+  "A_FOLD/G03": {
+    "path": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\A_FOLD\\G03\\gate.ply",
+    "sha256": "127819e71e5937ebf483af3e4afa9f2d2116d74c2c5ee402e38c04ea7a7f1fac",
+    "vertices": 102402,
+    "triangles": 204800,
+    "components": 1,
+    "component_face_sizes": [
+      204800
+    ],
+    "finite": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_triangles": 0,
+    "minimum_triangle_area": 8.25767464431612e-06,
+    "watertight": true,
+    "winding_consistent": true,
+    "signed_volume": 23.46907008421047,
+    "bounds": [
+      [
+        -1.426217794418335,
+        -1.3449536561965942,
+        0.0
+      ],
+      [
+        1.426217794418335,
+        1.3636847734451294,
+        10.0
+      ]
+    ],
+    "self_intersections": "CONFIRMED",
+    "cgal_first_intersection_pairs": 1,
+    "cgal_witness_triangle_ids": [
+      [
+        143553,
+        159780
+      ]
+    ],
+    "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+    "elapsed_seconds": 0.5796170234680176,
+    "geometric_fabrication_status": "NOT_CERTIFIED",
+    "authoritative_saved_surface": {
+      "source": "geometry.npz float64 triangles: exact render source",
+      "self_intersections": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          147092,
+          163413
+        ]
+      ],
+      "scope": "CGAL detect_only=True first_only=True; not an intersection count",
+      "witness_triangle_centres": [
+        [
+          0.9488806220200967,
+          -0.19282541027977892,
+          7.7002577857157775
+        ],
+        [
+          0.990594449052575,
+          -0.20104322431891844,
+          7.703679021468275
+        ]
+      ]
+    },
+    "symmetry": {
+      "vertex_reflection_max_error": 3.554447978966673e-15,
+      "vertex_pairing_involutive": true,
+      "reflected_triangles_match": true
+    }
+  },
+  "B_LOCAL/G01": {
+    "path": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\B_LOCAL\\G01\\gate.ply",
+    "sha256": "980b6d265020f11ba1ed0e797a5dc4e0ce52ff2b324ee76060e9ee77b9c1e00d",
+    "vertices": 102402,
+    "triangles": 204800,
+    "components": 1,
+    "component_face_sizes": [
+      204800
+    ],
+    "finite": true,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "zero_area_triangles": 0,
+    "minimum_triangle_area": 8.25767464431612e-06,
+    "watertight": true,
+    "winding_consistent": true,
+    "signed_volume": 23.58242255237659,
+    "bounds": [
+      [
+        -1.426217794418335,
+        -1.3449536561965942,
+        0.0
+      ],
+      [
+        1.426217794418335,
+        1.3636847734451294,
+        10.0
+      ]
+    ],
+    "self_intersections": "CONFIRMED",
+    "cgal_first_intersection_pairs": 1,
+    "cgal_witness_triangle_ids": [
+      [
+        155178,
+        163362
+      ]
+    ],
+    "exact_scope": "CGAL remesh_self_intersections detect_only=True first_only=True; nonzero is not an exhaustive count",
+    "elapsed_seconds": 0.5501089096069336,
+    "geometric_fabrication_status": "NOT_CERTIFIED",
+    "authoritative_saved_surface": {
+      "source": "geometry.npz float64 triangles: exact render source",
+      "self_intersections": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          155669,
+          139477
+        ]
+      ],
+      "scope": "CGAL detect_only=True first_only=True; not an intersection count",
+      "witness_triangle_centres": [
+        [
+          0.9207261172261988,
+          0.010794308850936107,
+          7.665276528420015
+        ],
+        [
+          0.8840794202290215,
+          0.0036048221576649125,
+          7.641895571622681
+        ]
+      ]
+    },
+    "symmetry": {
+      "vertex_reflection_max_error": 3.554447978966673e-15,
+      "vertex_pairing_involutive": true,
+      "reflected_triangles_match": true
+    }
+  }
+}
