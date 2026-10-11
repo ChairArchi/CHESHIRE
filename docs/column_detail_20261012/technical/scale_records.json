@@ -1,0 +1,101 @@
+{
+  "OVERLAP G3 / source": {
+    "folder": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03",
+    "vertices": 51202,
+    "triangles": 102400,
+    "height_model_units": 9.767685877635891,
+    "subdivision_passes": 3,
+    "field_passes": 3,
+    "applied_task36_displacement": {
+      "nonzero_points": 18944,
+      "model_unit_quantiles": {
+        "p10": 0.01019604653583327,
+        "p50": 0.023799757577802852,
+        "p90": 0.05096178305251308,
+        "maximum": 0.18711610726660388
+      },
+      "median_over_column_height": 0.002436580974854527
+    }
+  },
+  "CONTINUED G4": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\CONTINUED\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "height_model_units": 9.770337897888746,
+    "subdivision_passes": 4,
+    "field_passes": 4,
+    "applied_task36_displacement": {
+      "nonzero_points": 75776,
+      "model_unit_quantiles": {
+        "p10": 0.004626149707028465,
+        "p50": 0.0116992893847318,
+        "p90": 0.02670353055788077,
+        "maximum": 0.1537318952298142
+      },
+      "median_over_column_height": 0.0011974293527002662
+    }
+  },
+  "NESTED G4": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\NESTED\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "height_model_units": 9.767685877635891,
+    "subdivision_passes": 4,
+    "field_passes": 3,
+    "displacement": {
+      "nonzero_points": 13502,
+      "model_unit_quantiles": {
+        "p10": 1.7396823275159495e-05,
+        "p50": 0.0007157979323965257,
+        "p90": 0.004938060616497785,
+        "maximum": 0.028283994727942848
+      },
+      "median_over_column_height": 7.328224324201679e-05
+    }
+  },
+  "NESTED STRONG G04": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\NESTED_STRONG\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "height_model_units": 9.767685877635891,
+    "subdivision_passes": 4,
+    "field_passes": 3,
+    "displacement": {
+      "nonzero_points": 13502,
+      "model_unit_quantiles": {
+        "p10": 5.2190469825478496e-05,
+        "p50": 0.0021473937971895765,
+        "p90": 0.014814181849493359,
+        "maximum": 0.08485198418382853
+      },
+      "median_over_column_height": 0.00021984672972605033
+    }
+  },
+  "RETURN DETAIL G04": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\RETURN_DETAIL\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "height_model_units": 9.767685877635891,
+    "subdivision_passes": 4,
+    "field_passes": 3,
+    "displacement": {
+      "nonzero_points": 4868,
+      "model_unit_quantiles": {
+        "p10": 0.00014760967062165395,
+        "p50": 0.010633075767284915,
+        "p90": 0.09150187796838416,
+        "maximum": 0.21967473502697635
+      },
+      "median_over_column_height": 0.001088597227684238
+    }
+  },
+  "RETURN HYBRID G04": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\RETURN_HYBRID\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "height_model_units": 9.767685877635891,
+    "subdivision_passes": 4,
+    "field_passes": 4
+  },
+  "interpretation": "Placement-vector lengths describe this operation, not minimum readable ornament, thickness, print resolution or a physical-unit claim. Triangle count is tessellation, not an aesthetic score."
+}

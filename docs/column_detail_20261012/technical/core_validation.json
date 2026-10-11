@@ -1,0 +1,224 @@
+{
+  "RETURN_DETAIL/G04": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\RETURN_DETAIL\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 1.6497621239618837e-07,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 5.349918699338111e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 5.357041806382075e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        399124,
+        10389
+      ],
+      [
+        76454,
+        77636
+      ],
+      [
+        88771,
+        87783
+      ],
+      [
+        30803,
+        15185
+      ],
+      [
+        344902,
+        360574
+      ],
+      [
+        132075,
+        132098
+      ],
+      [
+        112213,
+        128341
+      ],
+      [
+        182157,
+        180767
+      ],
+      [
+        158242,
+        174516
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 1.7607684135437012,
+    "witness_centres": [
+      [
+        [
+          -0.3430580404615096,
+          -0.5399242486159267,
+          0.16112077537296618
+        ],
+        [
+          -0.34414897802854344,
+          -0.5338085540035852,
+          0.1637562516060255
+        ]
+      ],
+      [
+        [
+          -0.7198700383179611,
+          -0.4530074879416858,
+          1.8071264741085453
+        ],
+        [
+          -0.7070498126769641,
+          -0.44252182550027513,
+          1.7800290224591147
+        ]
+      ],
+      [
+        [
+          -0.8631068199535868,
+          0.5998542775594692,
+          2.3835072763098695
+        ],
+        [
+          -0.8685489697116456,
+          0.6009246003491705,
+          2.365780615980215
+        ]
+      ],
+      [
+        [
+          0.703996202147176,
+          -0.6882698063471206,
+          0.6247671173948016
+        ],
+        [
+          0.6993773580004894,
+          -0.6839920020505703,
+          0.6280764002067815
+        ]
+      ],
+      [
+        [
+          0.9202439967845034,
+          0.025686834298420235,
+          9.37822099424674
+        ],
+        [
+          0.9142349434748701,
+          0.025493818820899322,
+          9.377887977321528
+        ]
+      ],
+      [
+        [
+          1.1519259367811943,
+          0.47980277952448674,
+          3.8472973846448855
+        ],
+        [
+          1.1403088061015403,
+          0.4877276410110352,
+          3.8349075908398724
+        ]
+      ],
+      [
+        [
+          0.4983917667927941,
+          -0.709595410096469,
+          2.936212252700603
+        ],
+        [
+          0.5035553907057031,
+          -0.7083286474614683,
+          2.9404789346992413
+        ]
+      ],
+      [
+        [
+          0.680426723956594,
+          0.3387171313097146,
+          4.7180270782559175
+        ],
+        [
+          0.6798987932938395,
+          0.3316083921626754,
+          4.696554408451664
+        ]
+      ],
+      [
+        [
+          -0.41703319345810413,
+          -0.9409808659650306,
+          4.311940321010928
+        ],
+        [
+          -0.4236685087056853,
+          -0.9421272735991352,
+          4.29328041163347
+        ]
+      ]
+    ]
+  },
+  "RETURN_HYBRID/G04": {
+    "folder": "E:\\CHESHIRE_DATA\\column_detail_20261012\\RETURN_HYBRID\\G04",
+    "vertices": 204802,
+    "triangles": 409600,
+    "finite": true,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 3.3407683010250924e-08,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "mirror_max_distance": 5.349918699338111e-15,
+    "mirror_pairing_involution": true,
+    "reflected_triangle_set_identical": true,
+    "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+    "fabrication_thickness_structure": "NOT_CHECKED",
+    "front_back_reflection": {
+      "maximum_vertex_distance": 5.357041806382075e-15,
+      "pairing_involution": true,
+      "reflected_triangle_set_identical": true
+    },
+    "self_intersection": "CONFIRMED",
+    "first_witness_triangle_ids": [
+      [
+        360215,
+        375963
+      ]
+    ],
+    "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+    "elapsed_seconds": 1.749699354171753,
+    "witness_centres": [
+      [
+        [
+          0.8998847905635192,
+          -0.14150658795196963,
+          9.3642834582621
+        ],
+        [
+          0.896344250251139,
+          -0.14057094560840686,
+          9.359990527139393
+        ]
+      ]
+    ]
+  }
+}

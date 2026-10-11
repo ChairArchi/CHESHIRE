@@ -1,0 +1,116 @@
+{
+  "candidate": "NESTED_STRONG",
+  "stage": "G04",
+  "algorithm": "EXISTING_EDGE_FACE_LOCAL_NESTED_DETAIL_V1",
+  "source": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\checkpoint.npz",
+  "parent": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\checkpoint.npz",
+  "legacy_source": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\control_quad.npz",
+  "operation": "One existing quad split and E-positive/F-negative support-scaled local normal relief; all inherited controls held, no field pass",
+  "role_variant": "edge_face_nested_scaled",
+  "role_offset": {
+    "role_coefficients": {
+      "V": 0.0,
+      "E": 0.66,
+      "F": -1.56
+    },
+    "decay": 1.0,
+    "guide": null,
+    "scale_scope": "Input face support radius and incident support",
+    "support_shrinkage": true,
+    "absolute_depth": null,
+    "guide_floor": 0.0,
+    "maximum_requested_step": 0.0848519841838287,
+    "maximum_actual_step": 0.08485198418382853,
+    "budget_clamped_points": 0,
+    "birth_counts": [
+      25602,
+      51200,
+      25600
+    ],
+    "moved_by_birth": [
+      0,
+      9022,
+      4480
+    ],
+    "activation_range": [
+      0.0,
+      0.9044625108215418
+    ],
+    "cap_points": 4354,
+    "cap_points_moved": 0,
+    "cap_maximum_step": 0.0,
+    "old_vertex_maximum_step": 0.0
+  },
+  "support_coefficient_gain": 3.0,
+  "declared_normal_offset_budget": 0.09,
+  "detail_pass_local": 1,
+  "global_geometry_generation": 4,
+  "inherited_global_growth_cycles": 3,
+  "new_detail_cycles_total": 1,
+  "growth_cycles_total": 4,
+  "subdivision_passes_total": 4,
+  "role_offset_passes_total": 1,
+  "field_passes_total": 3,
+  "new_field_passes": 0,
+  "counting_rule": "G4/G5 label total geometry cycles; local role pass1/2 is a detail-only split, not another Task36+field cycle.",
+  "guide_specs": [
+    {
+      "name": "LOWER_RETURN_LIP",
+      "height": 0.39,
+      "axial_halfwidth": 0.105,
+      "direction": 0.35,
+      "sweep": 0.28
+    },
+    {
+      "name": "UPPER_RETURN_SHOULDER",
+      "height": 0.61,
+      "axial_halfwidth": 0.105,
+      "direction": 1.18,
+      "sweep": 0.28
+    }
+  ],
+  "guide_range": 0.34,
+  "protected_core_inner": 0.018,
+  "protected_core_outer": 0.06,
+  "activation_floor": 0.0,
+  "activation_fraction": 0.17612937247319388,
+  "legacy_protection": "Fixed actual G3 surface guide core attenuates new births; all inherited control XYZ stay exact. No automatic crease detection or dihedral/developability guarantee.",
+  "scale_policy": "Existing minimum centre-to-supporting-edge radius; no constant world-depth amplification. G5 also keeps existing local role decay .72.",
+  "original_ancestry_preservation": "rest interpolated in the same V/E/F order; original face anchors repeated to four children. Input classes stored separately; output classes use the existing last-birth V/E/F convention.",
+  "inactive_surface_limit": "Old controls stay exact, but mean fan interpolation of nonplanar child quads may alter the physical surface even where role activation is zero.",
+  "source_control_vertices": 25602,
+  "source_control_quads": 25600,
+  "control_vertices": 102402,
+  "control_quads": 102400,
+  "physical_vertices": 204802,
+  "physical_triangles": 409600,
+  "old_controls_region_active": 4530,
+  "old_controls_region_inactive": 21072,
+  "old_controls_moved": 0,
+  "old_controls_exactly_held": 25602,
+  "new_controls_moved": 13502,
+  "maximum_actual_step": 0.08485198418382853,
+  "minimum_triangle_area": 9.712684663973281e-08,
+  "separate_geometric_smoothing": false,
+  "CC_coordinate_averaging": false,
+  "field_used": false,
+  "new_authored_fold": false,
+  "quick_integrity": "PASS",
+  "provenance": "Existing CHESHIRE role-growth normal placement with explicit selected-guide detail activation; not IAAC original code or physical folding.",
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "fabrication_thickness_structure": "NOT_CHECKED",
+  "finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "geometric_reflection_error": [
+    5.349918699338111e-15,
+    5.357041806382075e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ]
+}

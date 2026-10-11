@@ -1,0 +1,27 @@
+{
+  "candidate": "CONTINUED",
+  "reviewed_stage": "G04",
+  "actual_views_reviewed": [
+    "front",
+    "oblique",
+    "side"
+  ],
+  "decision": "STOP_AFTER_G4_G5_NOT_GENERATED",
+  "observed_gains": [
+    "Inherited large returns, diagonal flange and side cavity remain readable.",
+    "Additional small geometric ridges are present in the actual mesh."
+  ],
+  "observed_losses": [
+    "Fine grid/crust becomes denser around the neck and terminals.",
+    "Broad panels remain; additional ridges mostly wrap these rather than create distinct small folded relationships."
+  ],
+  "aesthetic_assessment": "Useful recurrence control and persistence record, not a demonstrated improvement of ornamental hierarchy.",
+  "g5_status": "Not generated after actual G4 review; no convincing signal justified fourfold additional face count.",
+  "inference_limit": "The prescribed G3->G4 changes include field budget .22->.16 and local target factor3->2, so this is not an isolated subdivision-only causal test.",
+  "technical_record": "G04/generation.json; generator quick checks only, no self-intersection or fabrication claim",
+  "source": "E:/CHESHIRE_DATA/directional_growth_20261012/OVERLAP/G03",
+  "code": "experiments/column_detail_20261012/continued_probe.py",
+  "actual_mesh": "G04/geometry.npz",
+  "checkpoint": "G04/control_quad.npz",
+  "blender_scene": "G04/column.blend"
+}
