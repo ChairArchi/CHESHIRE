@@ -1,0 +1,63 @@
+{
+  "folder": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03",
+  "vertices": 51202,
+  "triangles": 102400,
+  "finite": true,
+  "components": 1,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "watertight": true,
+  "winding_consistent": true,
+  "minimum_triangle_area": 1.0800237024433102e-06,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "mirror_max_distance": 3.688882027804963e-15,
+  "mirror_pairing_involution": true,
+  "reflected_triangle_set_identical": true,
+  "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+  "fabrication_thickness_structure": "NOT_CHECKED",
+  "front_back_reflection": {
+    "maximum_vertex_distance": 3.728762992537918e-15,
+    "pairing_involution": true,
+    "reflected_triangle_set_identical": true
+  },
+  "self_intersection": "CONFIRMED",
+  "first_witness_triangle_ids": [
+    [
+      94736,
+      90522
+    ],
+    [
+      99429,
+      2341
+    ]
+  ],
+  "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+  "elapsed_seconds": 0.33489155769348145,
+  "witness_centres": [
+    [
+      [
+        0.7348795592260758,
+        0.5522941846197732,
+        9.424251099318154
+      ],
+      [
+        0.7410237307672256,
+        0.6095037769905532,
+        9.409282948747583
+      ]
+    ],
+    [
+      [
+        -0.5269270509826695,
+        -0.33838323845859114,
+        0.18878602394395913
+      ],
+      [
+        -0.5228485738989653,
+        -0.3282635147704336,
+        0.1982986909717581
+      ]
+    ]
+  ]
+}

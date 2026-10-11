@@ -1,0 +1,7 @@
+# OVERLAP G2/G3: final independent visual review
+
+Viewed the final comparison board and actual 800-pixel front, oblique and side renders. **OVERLAP G3 is the narrow visual lead.** The newly turned lower shoulder and upper-to-waist vertical return introduced in G2 survive. G3 articulates the broad, somewhat blocky shoulder planes into clearer nested lips and secondary edges, integrating that intervention with the earlier fold language. The long side recess and lower wedge remain readable; the new shape does not become a separate circumferential cuff.
+
+G2 is worth preserving independently: its large blades and local silhouette change are simpler and bolder. G3 gains meso-scale articulation and continuity, rather than a new macro arrangement. Additional crust collects at edges and waist, and repeated rectangular cells remain conspicuous. Broad shield-like panels also persist, but they do not visibly spread into a newly flattened closed body. Compared with the earlier STAGED G3, the meaningful advance is the retained directional shoulder/return event, not the number of new surface lines. Another unchanged growth loop has weak justification.
+
+This is a visual selection, not a fabrication recommendation. The separately reported core checks for G2/G3 confirm closed connected symmetric geometry and also confirm self-intersections. Those results neither establish nor cancel the aesthetic gains above. The original STAGED and OVERLAP G2 remain valid alternatives; G3 is not an unqualified replacement.

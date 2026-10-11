@@ -1,0 +1,251 @@
+{
+  "candidate": "CORRIDOR",
+  "stage": "G02",
+  "algorithm": "EXISTING_ANCESTRY_FIELD_SELECTED_WALL_CORRIDORS_V1",
+  "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\checkpoint.npz",
+  "parent": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\checkpoint.npz",
+  "legacy_source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\control_quad.npz",
+  "operation": "One existing Task36 ancestry split and finite field pass, both restricted to selected actual legacy-wall corridors",
+  "task36_recipe": {
+    "mode": "coupled",
+    "averaging_gain": 0.0,
+    "stencil_gain": 1.0,
+    "normal_gain": 1.0,
+    "decompose": true,
+    "vertex_memory": 1.0,
+    "face_gain": 0.65,
+    "edge_gain": 0.18,
+    "feedback": 1.0,
+    "inherited_bias": 0.8,
+    "diagonal_tension": -0.65,
+    "edge_tension": 0.5,
+    "vertex_tension": -0.8,
+    "ancestry_gain": 1.0,
+    "cap_mode": "plane_only",
+    "surface": "mean"
+  },
+  "events": [
+    {
+      "name": "LOWER_FRONT_WALL",
+      "centre": 0.29,
+      "span": 0.17,
+      "theta": 1.5707963267948966,
+      "sweep": -0.32
+    },
+    {
+      "name": "UPPER_SIDE_SHOULDER",
+      "centre": 0.74,
+      "span": 0.15,
+      "theta": 0.0,
+      "sweep": 0.32
+    }
+  ],
+  "field_recipe": {
+    "name": "IAAC_REPEAT",
+    "powers": [
+      4,
+      4
+    ],
+    "centres": [
+      2.5,
+      7.5
+    ],
+    "axial": 2.8,
+    "scales": [
+      1.6,
+      1.6
+    ],
+    "orientation": "Z",
+    "roll": 0.0,
+    "offset_y": 0.0,
+    "radius": 0.78,
+    "rings": 11,
+    "sectors": 16,
+    "fraction": 0.55,
+    "eligibility": "all",
+    "refinement": "bilinear",
+    "response": "nearest",
+    "local_step": null,
+    "convention": "polar",
+    "iterations": 8,
+    "family": "public-flow reconstruction"
+  },
+  "field_cache": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\variations\\fields\\F03",
+  "field_step": {
+    "field_iterations": 8,
+    "fraction": 0.55,
+    "budget": 0.28,
+    "local_target_factor": 2,
+    "local_target_logs": [
+      {
+        "symmetry_plane": [
+          false,
+          false
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 471,
+        "candidates_classified": 37841,
+        "fine_outside_candidates": 19675,
+        "exact_coarse_fallbacks": 471,
+        "improved_queries": 603,
+        "maximum_distance_improvement": 0.06633781297614028,
+        "median_distance_improvement": 0.015623442614937966,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          true,
+          false
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 36,
+        "candidates_classified": 678,
+        "fine_outside_candidates": 358,
+        "exact_coarse_fallbacks": 36,
+        "improved_queries": 29,
+        "maximum_distance_improvement": 0.04136303684903864,
+        "median_distance_improvement": 0.004479605408069003,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          false,
+          true
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 30,
+        "candidates_classified": 668,
+        "fine_outside_candidates": 361,
+        "exact_coarse_fallbacks": 30,
+        "improved_queries": 23,
+        "maximum_distance_improvement": 0.05106862076530336,
+        "median_distance_improvement": 0.019790852632226043,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          true,
+          true
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 1,
+        "candidates_classified": 5,
+        "fine_outside_candidates": 3,
+        "exact_coarse_fallbacks": 1,
+        "improved_queries": 0,
+        "maximum_distance_improvement": 0.0,
+        "median_distance_improvement": 0.0,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      }
+    ],
+    "finite_inside_fraction": 0.47063417681974384,
+    "field_moved_vertices": 1278,
+    "maximum_requested_field_step": 4.2735,
+    "maximum_field_step": 0.18502339653395133,
+    "raw_targets_checked": "Every initially inside query has a confirmed sampled finite-outside target before fraction/budget application",
+    "final_outside_guarantee": false,
+    "final_outside_explanation": "A fractional and budget-limited move can remain inside; no final outside or exact distance-field claim",
+    "extra_subdivision_performed": false,
+    "raw_field_moved_vertices": 3013,
+    "maximum_raw_field_step": 0.2800000000000001
+  },
+  "guide_range": 0.82,
+  "angle_range": 0.52,
+  "core_inner": 0.07,
+  "core_outer": 0.17,
+  "activation_floor": 0.0,
+  "guide_provenance": "Nearest material samples from the actual G1 control surface; fixed world polylines, not rendered geometry",
+  "memory_scope": "Narrow authored guide-core attenuation and inactive old control position retention; no automatic crease detection or dihedral preservation guarantee",
+  "inherited_growth_cycles": 1,
+  "growth_cycles_total": 2,
+  "new_growth_cycles": 1,
+  "field_iterations": 8,
+  "internal_iteration_schedule": [
+    4,
+    8,
+    18
+  ],
+  "subdivision_passes_total": 2,
+  "field_passes_total": 2,
+  "quad_splits_per_cycle": 1,
+  "ancestry_eligible_faces": 1600,
+  "source_control_vertices": 1602,
+  "source_control_quads": 1600,
+  "control_vertices": 6402,
+  "control_quads": 6400,
+  "physical_vertices": 12802,
+  "physical_triangles": 25600,
+  "placement_active_fraction": 0.28553577007185255,
+  "field_region_active_fraction": 0.28553577007185255,
+  "maximum_task36_step": 0.2160977035815496,
+  "maximum_raw_task36_step": 0.25274679727083726,
+  "old_task36_vertex_maximum_step": 0.0,
+  "old_controls_exactly_held": 1300,
+  "old_controls_field_moved": 302,
+  "previous_control_vertex_max_movement": 0.1615513609135776,
+  "geometry_outside_region_note": "Inactive old control vertices stay exact; splitting nonplanar quads and replacing mean fans can still change the physical interpolated surface outside active corridors.",
+  "minimum_triangle_area": 5.149898321937822e-06,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "geometric_reflection_error": [
+    3.621437911838241e-15,
+    3.594534575004821e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ],
+  "components": 1,
+  "watertight": true,
+  "winding_consistent": true,
+  "separate_geometric_smoothing": false,
+  "CC_standard_averaging_gain": 0.0,
+  "authored_return": false,
+  "shape_warp": false,
+  "task36_terminal_policy": "Inherited plane_only policy remains; no new end condition.",
+  "provenance": "Existing CHESHIRE operators with selected-region and guide memory composition. Not IAAC original code or a physical folding solver.",
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "fabrication_thickness_structure": "NOT_CHECKED",
+  "field_payload_scope": "finite_inside/raw_finite_inside/raw_field_active describe the unmasked classifier; field_region_eligible is the corridor mask and field_active records actual nonzero applied movement.",
+  "old_controls_zero_weight_held": 1140
+}

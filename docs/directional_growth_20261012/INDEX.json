@@ -1,0 +1,87 @@
+{
+  "shared_G1": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01",
+  "baseline_G2": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G02",
+  "baseline_G3": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G03",
+  "actual_output_root": "E:\\CHESHIRE_DATA\\directional_growth_20261012",
+  "code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\directional_growth_20261012",
+  "candidates": {
+    "CORRIDOR": {
+      "G02": {
+        "mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\gate.ply",
+        "authoritative_mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\checkpoint.npz",
+        "next_control": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\operation_fields.npz",
+        "blender": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\CORRIDOR\\G02\\preview\\side.png"
+        }
+      }
+    },
+    "OVERLAP": {
+      "G02": {
+        "mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\gate.ply",
+        "authoritative_mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\checkpoint.npz",
+        "next_control": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\operation_fields.npz",
+        "blender": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\preview\\side.png"
+        },
+        "core_validation": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G02\\core_validation.json"
+      },
+      "G03": {
+        "mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\gate.ply",
+        "authoritative_mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\checkpoint.npz",
+        "next_control": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\operation_fields.npz",
+        "blender": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\preview\\side.png"
+        },
+        "core_validation": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\core_validation.json"
+      }
+    },
+    "FACE_RESPONSE": {
+      "G03": {
+        "mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\gate.ply",
+        "authoritative_mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\checkpoint.npz",
+        "next_control": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\operation_fields.npz",
+        "blender": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\FACE_RESPONSE\\G03\\preview\\side.png"
+        }
+      }
+    },
+    "SIGNED_RESPONSE": {
+      "G03": {
+        "mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\gate.ply",
+        "authoritative_mesh": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\geometry.npz",
+        "checkpoint": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\checkpoint.npz",
+        "next_control": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\control_quad.npz",
+        "operation_fields": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\operation_fields.npz",
+        "blender": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\column.blend",
+        "renders": {
+          "front": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\preview\\front.png",
+          "oblique": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\preview\\oblique.png",
+          "side": "E:\\CHESHIRE_DATA\\directional_growth_20261012\\SIGNED_RESPONSE\\G03\\preview\\side.png"
+        }
+      }
+    }
+  },
+  "recommendation": "See REPORT.md for visual selection; these are CHESHIRE comparisons, not an IAAC reproduction or fabrication certification.",
+  "format": "geometry.npz float64 triangles are authoritative and also drive the renders; PLY is the exchange copy. Render fan centres do not become next controls.",
+  "scope": "Two G2 approaches; OVERLAP receives G3 and two existing normal-response comparisons from the same G2. No new returns added at G3. Only explicit selected core checks; no full regression or hash audit."
+}
