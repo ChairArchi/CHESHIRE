@@ -1,0 +1,717 @@
+{
+  "data_root": "E:\\CHESHIRE_DATA\\terminal_fold_20261011",
+  "branch": "experiment/terminal-fold-field-20261011",
+  "source_commit": "cb5cee36a919c366a7b6ae381e802aa3a351c404",
+  "code": [
+    "experiments/terminal_fold_20261011/field_follow.py",
+    "experiments/terminal_fold_20261011/iaac_input.py",
+    "experiments/terminal_fold_20261011/iaac_repeat.py",
+    "experiments/terminal_fold_20261011/package_review.py",
+    "experiments/terminal_fold_20261011/review_catalogue.py",
+    "experiments/terminal_fold_20261011/review_repeat.py",
+    "experiments/terminal_fold_20261011/review_terminal.py",
+    "experiments/terminal_fold_20261011/study.py"
+  ],
+  "records": [
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\generation.json",
+      "candidate": "AXIAL_LINK",
+      "stage": 2,
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\AXIAL_LINK\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\generation.json",
+      "candidate": "CAT_CC",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\generation.json",
+      "candidate": "CAT_CC",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\generation.json",
+      "candidate": "CAT_CC",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_CC\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\generation.json",
+      "candidate": "CAT_FIVE",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\generation.json",
+      "candidate": "CAT_FIVE",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\generation.json",
+      "candidate": "CAT_FIVE",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_FIVE\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\generation.json",
+      "candidate": "CAT_N4",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\generation.json",
+      "candidate": "CAT_N4",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\generation.json",
+      "candidate": "CAT_N4",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\control_quad.npz",
+      "core_validation.json": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\core_validation.json",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N4\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\generation.json",
+      "candidate": "CAT_N8",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\generation.json",
+      "candidate": "CAT_N8",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\generation.json",
+      "candidate": "CAT_N8",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_N8\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\generation.json",
+      "candidate": "CAT_RADIAL_IO",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\generation.json",
+      "candidate": "CAT_RADIAL_IO",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\generation.json",
+      "candidate": "CAT_RADIAL_IO",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_RADIAL_IO\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\generation.json",
+      "candidate": "CAT_THREE",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\generation.json",
+      "candidate": "CAT_THREE",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\generation.json",
+      "candidate": "CAT_THREE",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\control_quad.npz",
+      "core_validation.json": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\core_validation.json",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\generation.json",
+      "candidate": "CONTINUOUS_RETURN",
+      "stage": 3,
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\preview\\side.png"
+      },
+      "core_validation.json": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\core_validation.json",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CONTINUOUS_RETURN\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\generation.json",
+      "candidate": "CYLINDER_REPEAT",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\generation.json",
+      "candidate": "CYLINDER_REPEAT",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\generation.json",
+      "candidate": "CYLINDER_REPEAT",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\generation.json",
+      "candidate": "DIAGONAL_RETURN",
+      "stage": 2,
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\DIAGONAL_RETURN\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\generation.json",
+      "candidate": "FIELD_FOLLOW",
+      "stage": "G01",
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\generation.json",
+      "candidate": "FIELD_FOLLOW",
+      "stage": "G02",
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\generation.json",
+      "candidate": "FIELD_FOLLOW",
+      "stage": "G03",
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FIELD_FOLLOW\\G03\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\generation.json",
+      "candidate": "FREE_TERMINALS",
+      "stage": 1,
+      "vertices": 411114,
+      "triangles": 822224,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\preview\\side.png"
+      },
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\FREE_TERMINALS\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_INPUT\\G00",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_INPUT\\G00\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_INPUT\\G00\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_INPUT\\G00\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_INPUT\\G00\\generation.json",
+      "candidate": "IAAC_CYLINDER_INPUT",
+      "stage": "G00",
+      "vertices": 1090,
+      "triangles": 2176,
+      "minimum_area_pass": true,
+      "preview": {}
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\generation.json",
+      "candidate": "IAAC_CYLINDER_MATCHED_QUAD_INPUT",
+      "stage": "G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\column.blend"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\generation.json",
+      "candidate": "IAAC_CYLINDER_QUAD_INPUT",
+      "stage": "G00",
+      "vertices": 1090,
+      "triangles": 2176,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_QUAD_INPUT\\G00\\column.blend"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_INPUT\\G00",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_INPUT\\G00\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_INPUT\\G00\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_INPUT\\G00\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_INPUT\\G00\\generation.json",
+      "candidate": "IAAC_INPUT",
+      "stage": "G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "minimum_area_pass": true,
+      "preview": {}
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\generation.json",
+      "candidate": "IAAC_QUAD_INPUT",
+      "stage": "G00",
+      "vertices": 12418,
+      "triangles": 24832,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\column.blend"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\generation.json",
+      "candidate": "IAAC_REPEAT",
+      "stage": "G01",
+      "vertices": 49666,
+      "triangles": 99328,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\generation.json",
+      "candidate": "IAAC_REPEAT",
+      "stage": "G02",
+      "vertices": 198658,
+      "triangles": 397312,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\operation_fields.npz"
+    },
+    {
+      "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03",
+      "geometry": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\geometry.npz",
+      "checkpoint": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\checkpoint.npz",
+      "mesh": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\gate.ply",
+      "generation_file": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\generation.json",
+      "candidate": "IAAC_REPEAT",
+      "stage": "G03",
+      "vertices": 794626,
+      "triangles": 1589248,
+      "minimum_area_pass": true,
+      "preview": {
+        "front": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\preview\\front.png",
+        "oblique": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\preview\\oblique.png",
+        "side": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\preview\\side.png"
+      },
+      "control_quad.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\control_quad.npz",
+      "column.blend": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\column.blend",
+      "operation_fields.npz": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\operation_fields.npz"
+    }
+  ],
+  "scope": "Actual local outputs, including failures and unused input adapters. No raw mesh copied into the repository; no new mass hash audit."
+}

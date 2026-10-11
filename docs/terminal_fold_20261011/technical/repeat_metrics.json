@@ -1,0 +1,243 @@
+{
+  "IAAC_REPEAT": {
+    "input": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00",
+    "stages": {
+      "G00": {
+        "vertices": 12418,
+        "triangles": 24832,
+        "minimum_triangle_area": 0.0001532800324200456,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "quad_control": true,
+        "subdivision_passes_total": 0,
+        "control_quads_from_saved_adapter": 6208,
+        "control_vertices_from_saved_adapter": 6210,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_QUAD_INPUT\\G00\\generation.json"
+      },
+      "G01": {
+        "field_passes_total": 1,
+        "subdivision_passes_total": 1,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 49666,
+        "physical_triangles": 99328,
+        "control_vertices": 24834,
+        "control_quads": 24832,
+        "maximum_actual_step": 0.35000000000000003,
+        "active_fraction": 0.6619956511234598,
+        "moved_vertices": 16440,
+        "previous_vertex_max_movement": 0.35000000000000026,
+        "previous_vertices_moved": 4068,
+        "previous_control_vertex_max_movement": 0.35000000000000026,
+        "previous_control_vertices_moved": 4068,
+        "minimum_triangle_area": 2.3412678801341466e-06,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.6619956511234598,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G01\\generation.json"
+      },
+      "G02": {
+        "field_passes_total": 2,
+        "subdivision_passes_total": 2,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 198658,
+        "physical_triangles": 397312,
+        "control_vertices": 99330,
+        "control_quads": 99328,
+        "maximum_actual_step": 0.2800000000000001,
+        "active_fraction": 0.6227121715493809,
+        "moved_vertices": 61854,
+        "previous_vertex_max_movement": 0.28000000000000025,
+        "previous_vertices_moved": 15038,
+        "previous_control_vertex_max_movement": 0.28000000000000025,
+        "previous_control_vertices_moved": 15038,
+        "minimum_triangle_area": 1.1784080140149013e-07,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.6227121715493809,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G02\\generation.json"
+      },
+      "G03": {
+        "field_passes_total": 3,
+        "subdivision_passes_total": 3,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 794626,
+        "physical_triangles": 1589248,
+        "control_vertices": 397314,
+        "control_quads": 397312,
+        "maximum_actual_step": 0.22000000000000003,
+        "active_fraction": 0.5601061125457447,
+        "moved_vertices": 222538,
+        "previous_vertex_max_movement": 0.17070976162061774,
+        "previous_vertices_moved": 53408,
+        "previous_control_vertex_max_movement": 0.17070976162061774,
+        "previous_control_vertices_moved": 53408,
+        "minimum_triangle_area": 4.145848066654824e-09,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.5601061125457447,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_REPEAT\\G03\\generation.json"
+      }
+    },
+    "all_saved_stages_minimum_area_pass": true
+  },
+  "CYLINDER_REPEAT": {
+    "input": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00",
+    "stages": {
+      "G00": {
+        "vertices": 12418,
+        "triangles": 24832,
+        "minimum_triangle_area": 0.001993374269551301,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "quad_control": true,
+        "subdivision_passes_total": 0,
+        "control_quads_from_saved_adapter": 6208,
+        "control_vertices_from_saved_adapter": 6210,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\IAAC_CYLINDER_MATCHED_QUAD_INPUT\\G00\\generation.json"
+      },
+      "G01": {
+        "field_passes_total": 1,
+        "subdivision_passes_total": 1,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 49666,
+        "physical_triangles": 99328,
+        "control_vertices": 24834,
+        "control_quads": 24832,
+        "maximum_actual_step": 0.3058914915467485,
+        "active_fraction": 0.8058307159539341,
+        "moved_vertices": 20012,
+        "previous_vertex_max_movement": 0.3005157141389522,
+        "previous_vertices_moved": 5026,
+        "previous_control_vertex_max_movement": 0.3005157141389522,
+        "previous_control_vertices_moved": 5026,
+        "minimum_triangle_area": 2.8829264528994847e-05,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.8058307159539341,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G01\\generation.json"
+      },
+      "G02": {
+        "field_passes_total": 2,
+        "subdivision_passes_total": 2,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 198658,
+        "physical_triangles": 397312,
+        "control_vertices": 99330,
+        "control_quads": 99328,
+        "maximum_actual_step": 0.18327456781963122,
+        "active_fraction": 0.764079331521192,
+        "moved_vertices": 75896,
+        "previous_vertex_max_movement": 0.13765117119603654,
+        "previous_vertices_moved": 18738,
+        "previous_control_vertex_max_movement": 0.13765117119603654,
+        "previous_control_vertices_moved": 18738,
+        "minimum_triangle_area": 5.453309610178027e-08,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.764079331521192,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G02\\generation.json"
+      },
+      "G03": {
+        "field_passes_total": 3,
+        "subdivision_passes_total": 3,
+        "source_vertices": 12418,
+        "source_triangles": 24832,
+        "source_control_vertices": 6210,
+        "source_control_quads": 6208,
+        "physical_vertices": 794626,
+        "physical_triangles": 1589248,
+        "control_vertices": 397314,
+        "control_quads": 397312,
+        "maximum_actual_step": 0.14034247995114327,
+        "active_fraction": 0.6844057848452357,
+        "moved_vertices": 271924,
+        "previous_vertex_max_movement": 0.08247355551883408,
+        "previous_vertices_moved": 66478,
+        "previous_control_vertex_max_movement": 0.08247355551883408,
+        "previous_control_vertices_moved": 66478,
+        "minimum_triangle_area": 2.7165696175792293e-09,
+        "minimum_area_threshold": 1e-12,
+        "minimum_area_pass": true,
+        "moved_control_vertex_fraction_from_json": 0.6844057848452357,
+        "metadata_source": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CYLINDER_REPEAT\\G03\\generation.json"
+      }
+    },
+    "all_saved_stages_minimum_area_pass": true
+  },
+  "actual_sections": {
+    "physical_z": [
+      2.3,
+      4.5,
+      6.0,
+      7.8
+    ],
+    "xy_pixels_per_unit": 76.875,
+    "segment_counts": {
+      "IAAC G0": {
+        "2.3": 284,
+        "4.5": 316,
+        "6.0": 200,
+        "7.8": 312
+      },
+      "IAAC G3": {
+        "2.3": 1996,
+        "4.5": 2652,
+        "6.0": 1656,
+        "7.8": 3212
+      },
+      "CYLINDER G0": {
+        "2.3": 192,
+        "4.5": 192,
+        "6.0": 192,
+        "7.8": 192
+      },
+      "CYLINDER G3": {
+        "2.3": 1952,
+        "4.5": 1760,
+        "6.0": 1608,
+        "7.8": 1772
+      }
+    }
+  },
+  "endpoint_sections": {
+    "physical_z": [
+      0.3,
+      9.7
+    ],
+    "xy_pixels_per_unit": 71.53846153846153,
+    "segment_counts": {
+      "IAAC G0": {
+        "0.3": 248,
+        "9.7": 232
+      },
+      "IAAC G3": {
+        "0.3": 2628,
+        "9.7": 2148
+      },
+      "CYLINDER G0": {
+        "0.3": 192,
+        "9.7": 192
+      },
+      "CYLINDER G3": {
+        "0.3": 1680,
+        "9.7": 1888
+      }
+    }
+  },
+  "scope": "Actual saved quad-control surfaces rendered as face-centre triangle fans. Progression and metrics use saved stages, with no source-chart transfer. Motion/counts come from generation JSON; missing G0 control counts use its saved quad adapter. Sections include every intersection segment. Topological closure does not certify fabrication."
+}

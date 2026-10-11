@@ -1,0 +1,613 @@
+{
+  "baseline": {
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03",
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -0.8524283621140734,
+          -0.78,
+          0.0
+        ],
+        "maximum_xyz": [
+          0.8524283621140734,
+          0.78,
+          1.2996620480165908
+        ],
+        "span_xyz": [
+          1.7048567242281467,
+          1.56,
+          1.2996620480165908
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -0.9296471075347101,
+          -0.78,
+          8.700055572213898
+        ],
+        "maximum_xyz": [
+          0.9296471075347101,
+          0.78,
+          10.0
+        ],
+        "span_xyz": [
+          1.8592942150694203,
+          1.56,
+          1.2999444277861016
+        ]
+      }
+    }
+  },
+  "FREE_TERMINALS/G01": {
+    "source_midpoint_adapter_passes": 0,
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -1.4987675052617693,
+          -0.9964477232717699,
+          0.003278807147558229
+        ],
+        "maximum_xyz": [
+          1.4987675052617693,
+          0.9964477232717699,
+          1.3472329622304755
+        ],
+        "span_xyz": [
+          2.9975350105235385,
+          1.9928954465435398,
+          1.3439541550829173
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -1.0428175475355328,
+          -1.570656001858794,
+          8.66569173912185
+        ],
+        "maximum_xyz": [
+          1.0428175475355328,
+          1.570656001858794,
+          9.996393312137686
+        ],
+        "span_xyz": [
+          2.0856350950710656,
+          3.141312003717588,
+          1.3307015730158351
+        ]
+      }
+    },
+    "meso_movement": {
+      "scope": "Saved meso_zone > 1e-8, exterior material shell",
+      "displacement_threshold": 0.01,
+      "zone_vertices": 0,
+      "moved_vertices": 0,
+      "moved_vertex_fraction": null,
+      "moved_reference_area_fraction": null,
+      "connected_moved_components": [],
+      "maximum_movement": null,
+      "interpretation": "Connected moved regions quantify support, not proof of new grooves or aesthetic success."
+    },
+    "central_source_protected_movement": {
+      "fan_core": {
+        "vertices": 27694,
+        "maximum": 0.2126287479651732,
+        "rms": 0.06160422920818893
+      },
+      "macro_core": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "valley_core": {
+        "vertices": 1100,
+        "maximum": 0.17540704403712368,
+        "rms": 0.06696121425215108
+      },
+      "declared_macro_protection": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "declared_valley_protection": {
+        "vertices": 1100,
+        "maximum": 0.17540704403712368,
+        "rms": 0.06696121425215108
+      },
+      "declared_pleat_protection": {
+        "vertices": 27694,
+        "maximum": 0.2126287479651732,
+        "rms": 0.06160422920818893
+      }
+    },
+    "maximum_total_movement": 0.8740236839792234
+  },
+  "AXIAL_LINK/G02": {
+    "source_midpoint_adapter_passes": 0,
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -1.4987675052617693,
+          -0.9964477232717699,
+          0.003278807147558229
+        ],
+        "maximum_xyz": [
+          1.4987675052617693,
+          0.9964477232717699,
+          1.3822040313038737
+        ],
+        "span_xyz": [
+          2.9975350105235385,
+          1.9928954465435398,
+          1.3789252241563155
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -1.0428175475355328,
+          -1.570656001858794,
+          8.514300082645795
+        ],
+        "maximum_xyz": [
+          1.0428175475355328,
+          1.570656001858794,
+          9.996393312137686
+        ],
+        "span_xyz": [
+          2.0856350950710656,
+          3.141312003717588,
+          1.4820932294918912
+        ]
+      }
+    },
+    "meso_movement": {
+      "scope": "Saved meso_zone > 1e-8, exterior material shell",
+      "displacement_threshold": 0.01,
+      "zone_vertices": 55722,
+      "moved_vertices": 49444,
+      "moved_vertex_fraction": 0.8873335486881304,
+      "moved_reference_area_fraction": 0.931213991283185,
+      "connected_moved_components": [
+        {
+          "vertices": 11264,
+          "reference_area_weight": 5.4990006976776735,
+          "zone_area_fraction": 0.32673773790270216
+        },
+        {
+          "vertices": 11264,
+          "reference_area_weight": 5.4990006976776735,
+          "zone_area_fraction": 0.32673773790270216
+        },
+        {
+          "vertices": 13458,
+          "reference_area_weight": 2.337171549554977,
+          "zone_area_fraction": 0.13886925773889175
+        },
+        {
+          "vertices": 13458,
+          "reference_area_weight": 2.337171549554977,
+          "zone_area_fraction": 0.13886925773889175
+        }
+      ],
+      "maximum_movement": 0.6444217595826685,
+      "interpretation": "Connected moved regions quantify support, not proof of new grooves or aesthetic success."
+    },
+    "central_source_protected_movement": {
+      "fan_core": {
+        "vertices": 27694,
+        "maximum": 0.24082600119617717,
+        "rms": 0.06511044209032348
+      },
+      "macro_core": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "valley_core": {
+        "vertices": 1100,
+        "maximum": 0.1914738041853493,
+        "rms": 0.07218622720602763
+      },
+      "declared_macro_protection": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "declared_valley_protection": {
+        "vertices": 1100,
+        "maximum": 0.1914738041853493,
+        "rms": 0.07218622720602763
+      },
+      "declared_pleat_protection": {
+        "vertices": 27694,
+        "maximum": 0.24082600119617717,
+        "rms": 0.06511044209032348
+      }
+    },
+    "maximum_total_movement": 0.8740236839792234
+  },
+  "DIAGONAL_RETURN/G02": {
+    "source_midpoint_adapter_passes": 0,
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -1.4987675052617693,
+          -0.9964477232717699,
+          0.003278807147558229
+        ],
+        "maximum_xyz": [
+          1.4987675052617693,
+          0.9964477232717699,
+          1.3472329622304755
+        ],
+        "span_xyz": [
+          2.9975350105235385,
+          1.9928954465435398,
+          1.3439541550829173
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -1.0428175475355328,
+          -1.570656001858794,
+          8.66569173912185
+        ],
+        "maximum_xyz": [
+          1.0428175475355328,
+          1.570656001858794,
+          9.996393312137686
+        ],
+        "span_xyz": [
+          2.0856350950710656,
+          3.141312003717588,
+          1.3307015730158351
+        ]
+      }
+    },
+    "meso_movement": {
+      "scope": "Saved meso_zone > 1e-8, exterior material shell",
+      "displacement_threshold": 0.01,
+      "zone_vertices": 80148,
+      "moved_vertices": 61992,
+      "moved_vertex_fraction": 0.7734690821979339,
+      "moved_reference_area_fraction": 0.7256367516882815,
+      "connected_moved_components": [
+        {
+          "vertices": 10374,
+          "reference_area_weight": 1.1031397559388758,
+          "zone_area_fraction": 0.12345411798835937
+        },
+        {
+          "vertices": 10374,
+          "reference_area_weight": 1.1031397559388758,
+          "zone_area_fraction": 0.12345411798835937
+        },
+        {
+          "vertices": 10374,
+          "reference_area_weight": 1.1031397559388754,
+          "zone_area_fraction": 0.12345411798835931
+        },
+        {
+          "vertices": 10374,
+          "reference_area_weight": 1.1031397559388754,
+          "zone_area_fraction": 0.12345411798835931
+        },
+        {
+          "vertices": 1601,
+          "reference_area_weight": 0.2528439255938637,
+          "zone_area_fraction": 0.028296164338976453
+        }
+      ],
+      "maximum_movement": 0.5585402889579805,
+      "interpretation": "Connected moved regions quantify support, not proof of new grooves or aesthetic success."
+    },
+    "central_source_protected_movement": {
+      "fan_core": {
+        "vertices": 27694,
+        "maximum": 0.2126287479651732,
+        "rms": 0.06160422920818893
+      },
+      "macro_core": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "valley_core": {
+        "vertices": 1100,
+        "maximum": 0.17540704403712368,
+        "rms": 0.06696121425215108
+      },
+      "declared_macro_protection": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "declared_valley_protection": {
+        "vertices": 1100,
+        "maximum": 0.17540704403712368,
+        "rms": 0.06696121425215108
+      },
+      "declared_pleat_protection": {
+        "vertices": 27694,
+        "maximum": 0.2126287479651732,
+        "rms": 0.06160422920818893
+      }
+    },
+    "maximum_total_movement": 0.8740236839792234
+  },
+  "CONTINUOUS_RETURN/G03": {
+    "source_midpoint_adapter_passes": 0,
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -1.3576446952175178,
+          -0.9788250622141377,
+          0.004644976792374159
+        ],
+        "maximum_xyz": [
+          1.3576446952175178,
+          0.9788250622141377,
+          1.2996620480165908
+        ],
+        "span_xyz": [
+          2.7152893904350357,
+          1.9576501244282754,
+          1.2950170712242166
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -0.9995417419228751,
+          -1.41540916473927,
+          8.700055572213898
+        ],
+        "maximum_xyz": [
+          0.9995417419228751,
+          1.41540916473927,
+          9.994890525528389
+        ],
+        "span_xyz": [
+          1.9990834838457503,
+          2.83081832947854,
+          1.2948349533144903
+        ]
+      }
+    },
+    "meso_movement": {
+      "scope": "Saved meso_zone > 1e-8, exterior material shell",
+      "displacement_threshold": 0.01,
+      "zone_vertices": 93816,
+      "moved_vertices": 67468,
+      "moved_vertex_fraction": 0.719152383388761,
+      "moved_reference_area_fraction": 0.6537754661371701,
+      "connected_moved_components": [
+        {
+          "vertices": 11408,
+          "reference_area_weight": 1.1752167902036876,
+          "zone_area_fraction": 0.10824631902163534
+        },
+        {
+          "vertices": 11408,
+          "reference_area_weight": 1.1752167902036876,
+          "zone_area_fraction": 0.10824631902163534
+        },
+        {
+          "vertices": 11408,
+          "reference_area_weight": 1.1752167902036876,
+          "zone_area_fraction": 0.10824631902163534
+        },
+        {
+          "vertices": 11408,
+          "reference_area_weight": 1.1752167902036876,
+          "zone_area_fraction": 0.10824631902163534
+        },
+        {
+          "vertices": 1550,
+          "reference_area_weight": 0.26775878389286123,
+          "zone_area_fraction": 0.024662600963255725
+        }
+      ],
+      "maximum_movement": 0.35845757572237386,
+      "interpretation": "Connected moved regions quantify support, not proof of new grooves or aesthetic success."
+    },
+    "central_source_protected_movement": {
+      "fan_core": {
+        "vertices": 27694,
+        "maximum": 0.09290531607847714,
+        "rms": 0.02687673818575372
+      },
+      "macro_core": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "valley_core": {
+        "vertices": 1100,
+        "maximum": 0.07665189274360486,
+        "rms": 0.029262660559991646
+      },
+      "declared_macro_protection": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "declared_valley_protection": {
+        "vertices": 1100,
+        "maximum": 0.07665189274360486,
+        "rms": 0.029262660559991646
+      },
+      "declared_pleat_protection": {
+        "vertices": 27694,
+        "maximum": 0.09290531607847714,
+        "rms": 0.02687673818575372
+      }
+    },
+    "maximum_total_movement": 0.7099809293561419
+  },
+  "FIELD_FOLLOW/G02": {
+    "source_midpoint_adapter_passes": 0,
+    "terminal_extents": {
+      "base": {
+        "vertices": 11645,
+        "minimum_xyz": [
+          -1.3576446952175178,
+          -0.9788250622141377,
+          0.004644976792374159
+        ],
+        "maximum_xyz": [
+          1.3576446952175178,
+          0.9788250622141377,
+          1.3027393324959315
+        ],
+        "span_xyz": [
+          2.7152893904350357,
+          1.9576501244282754,
+          1.2980943557035574
+        ]
+      },
+      "capital": {
+        "vertices": 25229,
+        "minimum_xyz": [
+          -0.9995417419228751,
+          -1.41540916473927,
+          8.700055572213898
+        ],
+        "maximum_xyz": [
+          0.9995417419228751,
+          1.41540916473927,
+          9.994890525528389
+        ],
+        "span_xyz": [
+          1.9990834838457503,
+          2.83081832947854,
+          1.2948349533144903
+        ]
+      }
+    },
+    "meso_movement": {
+      "scope": "Fallback .20 < material s < .85, exterior shell; includes any central deformation",
+      "displacement_threshold": 0.01,
+      "zone_vertices": 358720,
+      "moved_vertices": 105154,
+      "moved_vertex_fraction": 0.2931367082961641,
+      "moved_reference_area_fraction": 0.21982177799738942,
+      "connected_moved_components": [
+        {
+          "vertices": 30306,
+          "reference_area_weight": 3.841703572493893,
+          "zone_area_fraction": 0.05845392838638113
+        },
+        {
+          "vertices": 11432,
+          "reference_area_weight": 1.193989324109362,
+          "zone_area_fraction": 0.01816729613010849
+        },
+        {
+          "vertices": 11432,
+          "reference_area_weight": 1.193989324109362,
+          "zone_area_fraction": 0.01816729613010849
+        },
+        {
+          "vertices": 11432,
+          "reference_area_weight": 1.193989324109362,
+          "zone_area_fraction": 0.01816729613010849
+        },
+        {
+          "vertices": 11432,
+          "reference_area_weight": 1.193989324109362,
+          "zone_area_fraction": 0.01816729613010849
+        }
+      ],
+      "maximum_movement": 0.35845757572237386,
+      "interpretation": "Connected moved regions quantify support, not proof of new grooves or aesthetic success."
+    },
+    "central_source_protected_movement": {
+      "fan_core": {
+        "vertices": 27694,
+        "maximum": 0.09183512273910924,
+        "rms": 0.0263963315559504
+      },
+      "macro_core": {
+        "vertices": 18410,
+        "maximum": 0.0,
+        "rms": 0.0
+      },
+      "valley_core": {
+        "vertices": 1100,
+        "maximum": 0.07665189274360486,
+        "rms": 0.029262660559991646
+      },
+      "declared_valley_protection": {
+        "vertices": 1100,
+        "maximum": 0.07665189274360486,
+        "rms": 0.029262660559991646
+      }
+    },
+    "maximum_total_movement": 0.7099809293561419
+  },
+  "actual_sections": {
+    "physical_z": [
+      0.2,
+      0.7,
+      5.9,
+      9.4,
+      9.9
+    ],
+    "xy_pixels_per_unit": 103.07692307692308,
+    "xy_half_extent": 1.3,
+    "segment_counts": {
+      "GEO01 G3 source": {
+        "0.2": 640,
+        "0.7": 1084,
+        "5.9": 1708,
+        "9.4": 1232,
+        "9.9": 896
+      },
+      "FREE_TERMINALS/G01": {
+        "0.2": 1032,
+        "0.7": 1084,
+        "5.9": 1708,
+        "9.4": 856,
+        "9.9": 584
+      },
+      "AXIAL_LINK/G02": {
+        "0.2": 1032,
+        "0.7": 1084,
+        "5.9": 1708,
+        "9.4": 856,
+        "9.9": 584
+      },
+      "DIAGONAL_RETURN/G02": {
+        "0.2": 1032,
+        "0.7": 1084,
+        "5.9": 1724,
+        "9.4": 856,
+        "9.9": 584
+      },
+      "CONTINUOUS_RETURN/G03": {
+        "0.2": 792,
+        "0.7": 1004,
+        "5.9": 1724,
+        "9.4": 1272,
+        "9.9": 464
+      },
+      "FIELD_FOLLOW/G02": {
+        "0.2": 792,
+        "0.7": 1020,
+        "5.9": 1724,
+        "9.4": 1272,
+        "9.9": 464
+      }
+    }
+  },
+  "scope": "Terminal extents use material s < .13 and s > .87. Movement is relative to GEO01 G3 through exact material charts. Fixed core coordinates do not certify preserved valley width, fold angle, or fabrication."
+}

@@ -1,0 +1,47 @@
+{
+  "folder": "E:\\CHESHIRE_DATA\\terminal_fold_20261011\\CAT_THREE\\G03",
+  "vertices": 794626,
+  "triangles": 1589248,
+  "finite": true,
+  "components": 1,
+  "boundary_edges": 0,
+  "nonmanifold_edges": 0,
+  "watertight": true,
+  "winding_consistent": true,
+  "minimum_triangle_area": 5.965337363025216e-09,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "mirror_max_distance": 5.349846700378417e-15,
+  "mirror_pairing_involution": true,
+  "reflected_triangle_set_identical": true,
+  "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+  "fabrication_thickness_structure": "NOT_CHECKED",
+  "front_back_reflection": {
+    "maximum_vertex_distance": 5.380860564253635e-15,
+    "pairing_involution": true,
+    "reflected_triangle_set_identical": true
+  },
+  "self_intersection": "CONFIRMED",
+  "first_witness_triangle_ids": [
+    [
+      1437340,
+      1437560
+    ]
+  ],
+  "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+  "elapsed_seconds": 7.939445734024048,
+  "witness_centres": [
+    [
+      [
+        -0.15765138964301348,
+        -0.7756193296644672,
+        9.254410219075552
+      ],
+      [
+        -0.16160995358362082,
+        -0.7728655412169667,
+        9.243853745589613
+      ]
+    ]
+  ]
+}
