@@ -1,0 +1,73 @@
+{
+  "scope": "Read-only comparison of saved matched G4 control/operation arrays and declarations; no geometry generation, parameter changes, repair or broad regression tests.",
+  "sources": {
+    "SPAN": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\SPAN\\PROTECTED\\G04",
+    "COUNTER_MATCHED": "E:\\CHESHIRE_DATA\\fold_transfer_20261012\\COUNTER_MATCHED\\PROTECTED\\G04"
+  },
+  "actual_control_shape": [
+    102402,
+    3
+  ],
+  "actual_quad_shape": [
+    102400,
+    4
+  ],
+  "control_array_exact_equality": {
+    "chart": true,
+    "faces": true,
+    "classes": true,
+    "rest": true,
+    "anchors": true,
+    "generation": true,
+    "surface": true,
+    "memory": true
+  },
+  "tag_array_exact_equality": {
+    "inherited_tags": true,
+    "new_feature_tags": true,
+    "carried_tags": true,
+    "field_weight": true
+  },
+  "return_vector_exact_equality": {
+    "raw_return_displacement": true,
+    "applied_return_displacement": true
+  },
+  "return_vector_maximum_difference": {
+    "raw_return_displacement": 0.0,
+    "applied_return_displacement": 0.0
+  },
+  "pre_return_geometry": {
+    "exactly_equal": false,
+    "different_controls": 102401,
+    "maximum_point_distance": 1.436713205597053,
+    "rms_point_distance": 0.34705652559007066
+  },
+  "declared_rule_exact_equality": {
+    "new_authored_events": true,
+    "event_bank": true,
+    "shared_recipe": true,
+    "operation": true,
+    "sampling": true,
+    "field_memory_rule": true
+  },
+  "declared_field_recipe_equality": {
+    "recipe": true,
+    "field_iterations": true,
+    "fraction": true,
+    "budget": true,
+    "local_target_factor": true,
+    "cache": true
+  },
+  "inherited_exact_core_counts": {
+    "SPAN": 1190,
+    "COUNTER_MATCHED": 1190
+  },
+  "carried_exact_core_counts": {
+    "SPAN": 1816,
+    "COUNTER_MATCHED": 1816
+  },
+  "raw_field_vectors_identical": false,
+  "interpretation": "Matched G4 applies the same material chart, topology, scalar protection tags, authored return vectors, field recipe and memory rule to genuinely different pre-return geometry. Different geometry-dependent raw field vectors are expected and do not contradict a shared rule.",
+  "limits": "This checks the matched G4 transfer, not an independent replay/audit of both G0-to-G3 histories. Identical rules do not imply equal field outcomes, fold-angle preservation, aesthetic success or fabrication readiness. The older COUNTER/G04 diagnostic is preserved and excluded.",
+  "matched_g4_rule_claim_supported": true
+}

@@ -1,0 +1,30 @@
+{
+  "name": "continuous_return_memory_transfer_v1",
+  "source_scope": "Closed X/Y-reflected quad columns with normalized height and circular material chart",
+  "field_iterations": [4, 8, 18],
+  "field_budgets": [0.35, 0.28, 0.22],
+  "field_fraction": 0.55,
+  "g4_field_budget": 0.16,
+  "g5_field_budget": 0.12,
+  "target_factor_late": 2,
+  "memory_inner": 0.003,
+  "memory_outer": 0.010,
+  "g4_rule": {
+    "height_offset_in_parent_spans": [-0.3333333333333333, 0.375],
+    "direction_offset_in_parent_widths": [-0.52, 0.59],
+    "span_scale": 0.36,
+    "radial_scale": 0.38,
+    "return_scale": 0.33,
+    "width_scale": 0.74,
+    "sweep_scale": 0.5
+  },
+  "g5_rule": {
+    "height_offset_in_parent_spans": [0.32, -0.32],
+    "direction_offset_in_parent_widths": [0.40, -0.40],
+    "span_scale": 0.65,
+    "radial_scale": 0.65,
+    "return_scale": 0.55,
+    "width_scale": 0.78,
+    "sweep_scale": -0.75
+  }
+}
