@@ -1,0 +1,337 @@
+{
+  "signature": {
+    "algorithm": "EXISTING_OVERLAPPING_PCHIP_RETURN_TASK36_FIELD_G2_V1",
+    "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01",
+    "stage": 2,
+    "return_events": [
+      {
+        "id": "LOWER_DIAGONAL_RETURN",
+        "direction": 0.35,
+        "height": 0.39,
+        "span": 0.12,
+        "expansion": 0.48,
+        "constriction": 0.28,
+        "reexpansion": 0.38,
+        "return_depth": 0.72,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      },
+      {
+        "id": "UPPER_CROSSING_RETURN",
+        "direction": 1.18,
+        "height": 0.61,
+        "span": 0.12,
+        "expansion": 0.46,
+        "constriction": 0.26,
+        "reexpansion": 0.36,
+        "return_depth": 0.68,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      }
+    ],
+    "return_order": "On source G1 controls, before Task36 and field",
+    "task36_recipe": {
+      "mode": "coupled",
+      "averaging_gain": 0.0,
+      "stencil_gain": 1.0,
+      "normal_gain": 1.0,
+      "decompose": true,
+      "vertex_memory": 1.0,
+      "face_gain": 0.65,
+      "edge_gain": 0.18,
+      "feedback": 1.0,
+      "inherited_bias": 0.8,
+      "diagonal_tension": -0.65,
+      "edge_tension": 0.5,
+      "vertex_tension": -0.8,
+      "ancestry_gain": 1.0,
+      "cap_mode": "plane_only",
+      "surface": "mean"
+    },
+    "field_recipe": {
+      "name": "IAAC_REPEAT",
+      "powers": [
+        4,
+        4
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 8,
+      "family": "public-flow reconstruction"
+    },
+    "fraction": 0.55,
+    "field_budget": 0.28,
+    "local_target_factor": 2
+  },
+  "candidate": "OVERLAP",
+  "stage": "G02",
+  "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\checkpoint.npz",
+  "parent": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\ANCESTRY_STAGED\\G01\\checkpoint.npz",
+  "operation": "Two declared narrow-angular overlapping PCHIP returns on source G1, then exactly one existing Task36 split and finite escape-8 field",
+  "cycle_order": [
+    "authored_PCHIP_returns_on_G1_controls",
+    "Task36_coupled_split",
+    "finite_nearest_outside_field"
+  ],
+  "authored_return_events": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    }
+  ],
+  "authored_return_provenance": "Existing smooth_deep.smooth_event radial/axial PCHIP displacement; designed geometry, not fractal-emergent or physical origami folding",
+  "authored_return_state_frame": "Source G1 control vertices; before the sole G2 split",
+  "direction_interpretation": "Chart-direction-selective radial/axial folding with height-varying active sector; no claim that an angular mask is actual torsion",
+  "authored_return_event_maxima": [
+    0.774160506251287,
+    0.672725465569173
+  ],
+  "maximum_combined_authored_return_step": 0.774160506251287,
+  "source_return_active_fraction": 0.39575530586766544,
+  "task36_recipe": {
+    "mode": "coupled",
+    "averaging_gain": 0.0,
+    "stencil_gain": 1.0,
+    "normal_gain": 1.0,
+    "decompose": true,
+    "vertex_memory": 1.0,
+    "face_gain": 0.65,
+    "edge_gain": 0.18,
+    "feedback": 1.0,
+    "inherited_bias": 0.8,
+    "diagonal_tension": -0.65,
+    "edge_tension": 0.5,
+    "vertex_tension": -0.8,
+    "ancestry_gain": 1.0,
+    "cap_mode": "plane_only",
+    "surface": "mean"
+  },
+  "task36_maximum_step": 0.32909757697819586,
+  "ancestry_eligible_faces": 1600,
+  "incoming_faces": 1600,
+  "field_recipe": {
+    "name": "IAAC_REPEAT",
+    "powers": [
+      4,
+      4
+    ],
+    "centres": [
+      2.5,
+      7.5
+    ],
+    "axial": 2.8,
+    "scales": [
+      1.6,
+      1.6
+    ],
+    "orientation": "Z",
+    "roll": 0.0,
+    "offset_y": 0.0,
+    "radius": 0.78,
+    "rings": 11,
+    "sectors": 16,
+    "fraction": 0.55,
+    "eligibility": "all",
+    "refinement": "bilinear",
+    "response": "nearest",
+    "local_step": null,
+    "convention": "polar",
+    "iterations": 8,
+    "family": "public-flow reconstruction"
+  },
+  "field_step": {
+    "field_iterations": 8,
+    "fraction": 0.55,
+    "budget": 0.28,
+    "local_target_factor": 2,
+    "local_target_logs": [
+      {
+        "symmetry_plane": [
+          false,
+          false
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 461,
+        "candidates_classified": 37476,
+        "fine_outside_candidates": 19144,
+        "exact_coarse_fallbacks": 461,
+        "improved_queries": 634,
+        "maximum_distance_improvement": 0.06680903897200524,
+        "median_distance_improvement": 0.01517528903600926,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          true,
+          false
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 35,
+        "candidates_classified": 719,
+        "fine_outside_candidates": 379,
+        "exact_coarse_fallbacks": 35,
+        "improved_queries": 28,
+        "maximum_distance_improvement": 0.04200789207839983,
+        "median_distance_improvement": 0.0032600058910415147,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          false,
+          true
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 33,
+        "candidates_classified": 742,
+        "fine_outside_candidates": 408,
+        "exact_coarse_fallbacks": 33,
+        "improved_queries": 27,
+        "maximum_distance_improvement": 0.05488404235116151,
+        "median_distance_improvement": 0.010071237681479578,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      },
+      {
+        "symmetry_plane": [
+          true,
+          true
+        ],
+        "spacing": [
+          0.03,
+          0.03,
+          0.03125
+        ],
+        "search_half_extent": [
+          0.06,
+          0.06,
+          0.0625
+        ],
+        "unique_coarse_anchors": 1,
+        "candidates_classified": 5,
+        "fine_outside_candidates": 3,
+        "exact_coarse_fallbacks": 1,
+        "improved_queries": 0,
+        "maximum_distance_improvement": 0.0,
+        "median_distance_improvement": 0.0,
+        "classifier_batch_limit": 65536,
+        "global_fine_grid": false
+      }
+    ],
+    "finite_inside_fraction": 0.49125273352077475,
+    "field_moved_vertices": 3145,
+    "maximum_requested_field_step": 4.2735,
+    "maximum_field_step": 0.2800000000000001,
+    "raw_targets_checked": "Every initially inside query has a confirmed sampled finite-outside target before fraction/budget application",
+    "final_outside_guarantee": false,
+    "final_outside_explanation": "A fractional and budget-limited move can remain inside; no final outside or exact distance-field claim",
+    "extra_subdivision_performed": false
+  },
+  "field_cache": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\variations\\fields\\F03",
+  "field_iterations": 8,
+  "field_passes_total": 2,
+  "subdivision_passes_total": 2,
+  "new_quad_splits_this_branch": 1,
+  "new_authored_return_events": 2,
+  "step_budget_scope": "The .28 budget applies to field movement only; authored returns and Task36 are separate operations",
+  "physical_vertices": 12802,
+  "physical_triangles": 25600,
+  "control_vertices": 6402,
+  "control_quads": 6400,
+  "feature_memory": false,
+  "CC_standard_averaging_gain": 0.0,
+  "separate_geometric_smoothing": false,
+  "task36_terminal_policy": "Existing plane_only constraints retained; return window excludes ends, later field may move terminals",
+  "symmetry": "Canonical-quarter authored vectors and field queries reflected in X/Y; no posthoc XYZ averaging",
+  "physical_surface": "Existing Task36 mean quad-centre fans after field; render-only fans are not next controls",
+  "source_status": "CHESHIRE existing operators, not IAAC original executable formulas",
+  "quick_integrity": "PASS",
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "fabrication_thickness_structure": "NOT_CHECKED",
+  "finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_triangle_area": 2.3116697604099084e-05,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "geometric_reflection_error": [
+    3.616328897427208e-15,
+    3.597533769998862e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ]
+}

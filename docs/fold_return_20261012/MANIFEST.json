@@ -1,0 +1,40 @@
+{
+  "scope": "Selected small review assets only; original checkpoints and large output stay on E",
+  "assets": [
+    {
+      "path": "docs/fold_return_20261012/review_assets/OVERLAP_G02/control_quad.npz",
+      "bytes": 149320,
+      "sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+      "source": "E:/CHESHIRE_DATA/directional_growth_20261012/OVERLAP/G02/control_quad.npz"
+    },
+    {
+      "path": "docs/fold_return_20261012/review_assets/OVERLAP_G02/generation.json",
+      "bytes": 10033,
+      "sha256": "e41951b7456b2f54720c45f6444121436ae9b92b62d28adb935bcc722014f534",
+      "source": "E:/CHESHIRE_DATA/directional_growth_20261012/OVERLAP/G02/generation.json"
+    },
+    {
+      "path": "docs/fold_return_20261012/review_assets/ANCHOR_G04/geometry.npz",
+      "bytes": 4350885,
+      "sha256": "2926792f36d769f69c91a70ac511a0cbe5049081d7fc4ab1bfab6358fc0c51e4",
+      "source": "E:/CHESHIRE_DATA/fold_return_20261012/ANCHOR/SPAN/G04/geometry.npz"
+    },
+    {
+      "path": "docs/fold_return_20261012/review_assets/ANCHOR_G04/generation.json",
+      "bytes": 5427,
+      "sha256": "e08af180e34b508a57e7da5f51aa80bd22deb476ddc33b1288e120cfd83d7241",
+      "source": "E:/CHESHIRE_DATA/fold_return_20261012/ANCHOR/SPAN/G04/generation.json"
+    }
+  ],
+  "outputs": "E:/CHESHIRE_DATA/fold_return_20261012",
+  "code": "experiments/fold_return_20261012",
+  "environment": {
+    "python": "3.12.10",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "trimesh": "5.1.1",
+      "Pillow": "11.3.0"
+    }
+  }
+}
