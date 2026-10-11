@@ -1,0 +1,5070 @@
+[
+  {
+    "candidate": "C00_UNALIGNED",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "uniform",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C00_UNALIGNED"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.3414918322321882,
+      "p95": 0.9133609701922625,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.4311890612174791,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4311890612174791,
+        0.7800000000000001,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00031745479265983734,
+    "control_dihedral_median_degrees": 2.7531059583491966,
+    "control_nearly_flat_edge_fraction": 0.3446085164835165,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C00_UNALIGNED\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C00_UNALIGNED",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "uniform",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C00_UNALIGNED"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4222959126479545,
+      "p95": 0.9663054160846907,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.451093102875962,
+        -1.2456298851443302,
+        0.0
+      ],
+      [
+        1.451093102875962,
+        1.3383138287660759,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00016353468550222712,
+    "control_dihedral_median_degrees": 2.7906741844347973,
+    "control_nearly_flat_edge_fraction": 0.3117131294964029,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C00_UNALIGNED\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C01_ALIGNED",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C01_ALIGNED"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.3414918322321882,
+      "p95": 0.9133609701922625,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -0.7800000000000001,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        0.7968181621622531,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00030698913597251626,
+    "control_dihedral_median_degrees": 2.71250506592009,
+    "control_nearly_flat_edge_fraction": 0.2766998626373626,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C01_ALIGNED\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C01_ALIGNED",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C01_ALIGNED"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4222959126479545,
+      "p95": 0.9663054160846907,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -1.29,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        1.3599999999999999,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00030698913597251626,
+    "control_dihedral_median_degrees": 2.7615926078411968,
+    "control_nearly_flat_edge_fraction": 0.315900404676259,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C01_ALIGNED\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C02_BENT_PANEL",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": -0.075,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C02_BENT_PANEL"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.3414918322321882,
+      "p95": 0.9133609701922625,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        0.7968181621622531,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.0002543002690055962,
+    "control_dihedral_median_degrees": 4.380531818914483,
+    "control_nearly_flat_edge_fraction": 0.01622596153846154,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C02_BENT_PANEL\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C02_BENT_PANEL",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": -0.075,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C02_BENT_PANEL"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4222959126479545,
+      "p95": 0.9663054160846907,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -1.29,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        1.3599999999999999,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.0002543002690055962,
+    "control_dihedral_median_degrees": 4.7680999607756025,
+    "control_nearly_flat_edge_fraction": 0.011634442446043166,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C02_BENT_PANEL\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C03_SHALLOW_RETURN",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 0.65,
+      "expansion": 0.9,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C03_SHALLOW_RETURN"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.39798766406236985,
+      "p95": 0.9190130771427227,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.3842291997651852,
+        -0.7800000000000001,
+        0.0
+      ],
+      [
+        1.3842291997651852,
+        0.7800000000000001,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.0003482160264394331,
+    "control_dihedral_median_degrees": 2.7028299934000612,
+    "control_nearly_flat_edge_fraction": 0.2782451923076923,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C03_SHALLOW_RETURN\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C03_SHALLOW_RETURN",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 0.65,
+      "expansion": 0.9,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C03_SHALLOW_RETURN"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.483559278498946,
+      "p95": 0.9690184270769185,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.3842291997651852,
+        -1.239,
+        0.0
+      ],
+      [
+        1.3842291997651852,
+        1.302,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.0003482160264394331,
+    "control_dihedral_median_degrees": 2.7574553736154783,
+    "control_nearly_flat_edge_fraction": 0.31584419964028776,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C03_SHALLOW_RETURN\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C04_OBLIQUE_CREASE",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.055,
+      "phase": 0.44,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C04_OBLIQUE_CREASE"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.353760580227943,
+      "p95": 0.8871244350476858,
+      "maximum": 0.9923364612507648,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.244778391519883,
+        -1.037185860484258,
+        0.0
+      ],
+      [
+        1.244778391519883,
+        1.1977863066340309,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00018275866411222272,
+    "control_dihedral_median_degrees": 2.797771905937102,
+    "control_nearly_flat_edge_fraction": 0.21956559065934067,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C04_OBLIQUE_CREASE\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C04_OBLIQUE_CREASE",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.055,
+      "phase": 0.44,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C04_OBLIQUE_CREASE"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.3827712245378914,
+      "p95": 0.9325497574791719,
+      "maximum": 0.9988877454868954,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.244778391519883,
+        -1.29,
+        0.0
+      ],
+      [
+        1.244778391519883,
+        1.3599999999999999,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00018275866411222272,
+    "control_dihedral_median_degrees": 2.6573476891351184,
+    "control_nearly_flat_edge_fraction": 0.28108138489208634,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C04_OBLIQUE_CREASE\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C04_OBLIQUE_CREASE\\G02",
+      "vertices": 35586,
+      "triangles": 71168,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 0.0001827586641122227,
+      "mirror_max_distance": 1.7903959895615594e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "self_intersection": "NO_PAIRS_DETECTED",
+      "first_witness_triangle_ids": [],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.20009613037109375,
+      "G1_crease_max_distance_to_actual_vertices": 0.0
+    }
+  },
+  {
+    "candidate": "C05_ALTERNATE_RETURN",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": -1.0,
+      "back_sign": -1.0,
+      "name": "C05_ALTERNATE_RETURN"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.3414918322321882,
+      "p95": 0.9133609701922625,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -0.7800000000000001,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        0.7968181621622531,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00030698913597251626,
+    "control_dihedral_median_degrees": 2.71250506592009,
+    "control_nearly_flat_edge_fraction": 0.2766998626373626,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C05_ALTERNATE_RETURN\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C05_ALTERNATE_RETURN",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": -1.0,
+      "back_sign": -1.0,
+      "name": "C05_ALTERNATE_RETURN"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4366160239366757,
+      "p95": 0.9683833217652328,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.4525919056958996,
+        -1.29,
+        0.0
+      ],
+      [
+        1.4525919056958996,
+        1.3599999999999999,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00030698913597251626,
+    "control_dihedral_median_degrees": 2.7632060748759852,
+    "control_nearly_flat_edge_fraction": 0.31359599820143885,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C05_ALTERNATE_RETURN\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C06_DEEP_RETURN",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.35,
+      "expansion": 1.1,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C06_DEEP_RETURN"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.2976358653630568,
+      "p95": 0.900918244779228,
+      "maximum": 0.9993222302413484,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.5209546116266137,
+        -0.7800000000000001,
+        0.0
+      ],
+      [
+        1.5209546116266137,
+        0.82064046392825,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00027526946113112316,
+    "control_dihedral_median_degrees": 2.718834550723752,
+    "control_nearly_flat_edge_fraction": 0.2759271978021978,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C06_DEEP_RETURN\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C06_DEEP_RETURN",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.35,
+      "expansion": 1.1,
+      "warp": 0.025,
+      "phase": 0.12,
+      "width": 1.14,
+      "bend": 0.0,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C06_DEEP_RETURN"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.37183390536522276,
+      "p95": 0.9681087970622412,
+      "maximum": 0.9993222302413547,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.5209546116266137,
+        -1.3410000000000002,
+        0.0
+      ],
+      [
+        1.5209546116266137,
+        1.4180000000000001,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00027526946113112316,
+    "control_dihedral_median_degrees": 2.7641637982897596,
+    "control_nearly_flat_edge_fraction": 0.3164624550359712,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C06_DEEP_RETURN\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "C07_BROAD_DIRECTION",
+    "stage": "G01",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": -0.25,
+      "width": 1.4,
+      "bend": -0.045,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C07_BROAD_DIRECTION"
+    },
+    "old_crease_curve_max_movement": null,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4153598716487051,
+      "p95": 0.9300149610868316,
+      "maximum": 0.9979503917143504,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 11650,
+    "control_quads": 11648,
+    "physical_vertices": 23298,
+    "physical_triangles": 46592,
+    "bounds": [
+      [
+        -1.382850713103468,
+        -1.0295323136877534,
+        0.0
+      ],
+      [
+        1.382850713103468,
+        0.9271101315294946,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00020856058738500895,
+    "control_dihedral_median_degrees": 3.3877648074557367,
+    "control_nearly_flat_edge_fraction": 0.019831730769230768,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C07_BROAD_DIRECTION\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "C07_BROAD_DIRECTION",
+    "stage": "G02",
+    "operation": "Explicit crease boundaries and panel interpolation",
+    "parameters": {
+      "sampling": "aligned",
+      "depth": 1.0,
+      "expansion": 1.0,
+      "warp": 0.025,
+      "phase": -0.25,
+      "width": 1.4,
+      "bend": -0.045,
+      "front_sign": 1.0,
+      "back_sign": 1.0,
+      "name": "C07_BROAD_DIRECTION"
+    },
+    "old_crease_curve_max_movement": 0.0,
+    "crease_curve_positions_preserved_not_fold_angles": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": {
+      "normalized_scalar_triple_product_p50": 0.4686649620324729,
+      "p95": 0.9627656525700298,
+      "maximum": 0.9985140860924216,
+      "meaning": "Nonzero disproves developability of corresponding straight-ruled patches; bent-panel variant is not ruled."
+    },
+    "control_vertices": 17794,
+    "control_quads": 17792,
+    "physical_vertices": 35586,
+    "physical_triangles": 71168,
+    "bounds": [
+      [
+        -1.382850713103468,
+        -1.29,
+        0.0
+      ],
+      [
+        1.382850713103468,
+        1.3599999999999999,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 0.00020856058738500895,
+    "control_dihedral_median_degrees": 3.4112002531808465,
+    "control_nearly_flat_edge_fraction": 0.014023156474820143,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C07_BROAD_DIRECTION\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "F_V04_SYMMETRIC_CUP",
+    "stage": "G01",
+    "input": "V04_SYMMETRIC_CUP/G01",
+    "operation": "Triangle midpoint subdivision once; protected nearest finite-outside attraction",
+    "field_recipe": {
+      "name": "FOLD_RETENTION",
+      "powers": [
+        5,
+        6
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 18,
+      "family": "public-flow reconstruction"
+    },
+    "field_cache": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\variations\\fields\\F01",
+    "subdivision_passes_total": 1,
+    "field_passes_total": 1,
+    "G2_resolution": "Fixed G1 topology; no second subdivision",
+    "displacement_fraction": 0.55,
+    "maximum_requested_step": 0.18,
+    "active_fraction": 0.7901749879595441,
+    "moved_vertices": 311932,
+    "maximum_actual_step": 0.18000000000000055,
+    "source_legacy_core_vertices": 6204,
+    "source_legacy_core_max_movement": 9.222205069512407e-16,
+    "source_vertex_RMS_movement": 0.08341953354122503,
+    "initial_midpoint_surface_max_displacement": 0.18000000000000055,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 5.094312424468265e-13,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": false,
+    "symmetry": "Canonical X>=0/Y>=0 outside-grid queries and explicit mirrored coordinates; no averaging",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "source_status": "CHESHIRE finite Mandelbulb reconstruction; not IAAC original code",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_V04_SYMMETRIC_CUP\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "F_V04_SYMMETRIC_CUP",
+    "stage": "G02",
+    "input": "V04_SYMMETRIC_CUP/G01",
+    "operation": "Triangle midpoint subdivision once; protected nearest finite-outside attraction",
+    "field_recipe": {
+      "name": "FOLD_RETENTION",
+      "powers": [
+        5,
+        6
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 18,
+      "family": "public-flow reconstruction"
+    },
+    "field_cache": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\variations\\fields\\F01",
+    "subdivision_passes_total": 1,
+    "field_passes_total": 2,
+    "G2_resolution": "Fixed G1 topology; no second subdivision",
+    "displacement_fraction": 0.35,
+    "maximum_requested_step": 0.1,
+    "active_fraction": 0.7393618315114543,
+    "moved_vertices": 291042,
+    "maximum_actual_step": 0.10000000000000024,
+    "source_legacy_core_vertices": 6204,
+    "source_legacy_core_max_movement": 9.222205069512407e-16,
+    "source_vertex_RMS_movement": 0.11592394593234745,
+    "initial_midpoint_surface_max_displacement": 0.2800000000000003,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 2.843493146590606e-13,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": false,
+    "symmetry": "Canonical X>=0/Y>=0 outside-grid queries and explicit mirrored coordinates; no averaging",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "source_status": "CHESHIRE finite Mandelbulb reconstruction; not IAAC original code",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_V04_SYMMETRIC_CUP\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_V04_SYMMETRIC_CUP\\G02",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 2.843493146590606e-13,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": false,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          276089,
+          275980
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 3.823777198791504,
+      "witness_centres": [
+        [
+          [
+            -0.8953413774377051,
+            0.04999561422573173,
+            2.5602667808148554
+          ],
+          [
+            -0.8976258470553117,
+            0.04858445166700026,
+            2.5607060155899473
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "F_W06_SYMMETRIC_SMOOTH",
+    "stage": "G01",
+    "input": "W06_SYMMETRIC_SMOOTH/G01",
+    "operation": "Triangle midpoint subdivision once; protected nearest finite-outside attraction",
+    "field_recipe": {
+      "name": "FOLD_RETENTION",
+      "powers": [
+        5,
+        6
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 18,
+      "family": "public-flow reconstruction"
+    },
+    "field_cache": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\variations\\fields\\F01",
+    "subdivision_passes_total": 1,
+    "field_passes_total": 1,
+    "G2_resolution": "Fixed G1 topology; no second subdivision",
+    "displacement_fraction": 0.55,
+    "maximum_requested_step": 0.18,
+    "active_fraction": 0.7553719892779132,
+    "moved_vertices": 298118,
+    "maximum_actual_step": 0.1800000000000007,
+    "source_legacy_core_vertices": 6202,
+    "source_legacy_core_max_movement": 5.551115123125783e-16,
+    "source_vertex_RMS_movement": 0.08285534173584022,
+    "initial_midpoint_surface_max_displacement": 0.1800000000000007,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 5.576462822592052e-13,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": false,
+    "symmetry": "Canonical X>=0/Y>=0 outside-grid queries and explicit mirrored coordinates; no averaging",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "source_status": "CHESHIRE finite Mandelbulb reconstruction; not IAAC original code",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_W06_SYMMETRIC_SMOOTH\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "F_W06_SYMMETRIC_SMOOTH",
+    "stage": "G02",
+    "input": "W06_SYMMETRIC_SMOOTH/G01",
+    "operation": "Triangle midpoint subdivision once; protected nearest finite-outside attraction",
+    "field_recipe": {
+      "name": "FOLD_RETENTION",
+      "powers": [
+        5,
+        6
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 18,
+      "family": "public-flow reconstruction"
+    },
+    "field_cache": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\variations\\fields\\F01",
+    "subdivision_passes_total": 1,
+    "field_passes_total": 2,
+    "G2_resolution": "Fixed G1 topology; no second subdivision",
+    "displacement_fraction": 0.35,
+    "maximum_requested_step": 0.1,
+    "active_fraction": 0.7053372057385543,
+    "moved_vertices": 277548,
+    "maximum_actual_step": 0.10000000000000024,
+    "source_legacy_core_vertices": 6202,
+    "source_legacy_core_max_movement": 5.551115123125783e-16,
+    "source_vertex_RMS_movement": 0.11574424800785837,
+    "initial_midpoint_surface_max_displacement": 0.2800000000000004,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 3.0900227124775935e-13,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": false,
+    "symmetry": "Canonical X>=0/Y>=0 outside-grid queries and explicit mirrored coordinates; no averaging",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "source_status": "CHESHIRE finite Mandelbulb reconstruction; not IAAC original code",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_W06_SYMMETRIC_SMOOTH\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\F_W06_SYMMETRIC_SMOOTH\\G02",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 3.0900227124775935e-13,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": false,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          405669,
+          405721
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 3.908623695373535,
+      "witness_centres": [
+        [
+          [
+            -0.6972802428492074,
+            0.4703637937498595,
+            8.438630844696867
+          ],
+          [
+            -0.6672259360847268,
+            0.47050753877340673,
+            8.459129464719501
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "GEO01_FAN_MEMORY",
+    "stage": "G01",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      }
+    ],
+    "chevron": false,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "GEO01_FAN_MEMORY",
+    "stage": "G02",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      },
+      {
+        "id": "UPPER_SHOULDER_FAN",
+        "axis": "Y",
+        "centre": 0.8,
+        "span": 0.09,
+        "width0": 0.3,
+        "width1": 0.56,
+        "cycles": 8,
+        "depth": 0.055
+      }
+    ],
+    "chevron": false,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "GEO01_FAN_MEMORY",
+    "stage": "G03",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      },
+      {
+        "id": "UPPER_SHOULDER_FAN",
+        "axis": "Y",
+        "centre": 0.8,
+        "span": 0.09,
+        "width0": 0.3,
+        "width1": 0.56,
+        "cycles": 8,
+        "depth": 0.055
+      },
+      {
+        "id": "SIDE_BINDING_FAN",
+        "axis": "X",
+        "centre": 0.6,
+        "span": 0.115,
+        "width0": 0.62,
+        "width1": 0.38,
+        "cycles": 6,
+        "depth": 0.06
+      }
+    ],
+    "chevron": false,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 1.831026719408895e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 1.2560739669470201e-15,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          230824,
+          329473
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 4.286299228668213,
+      "witness_centres": [
+        [
+          [
+            -0.23149969667605755,
+            0.5150531160988645,
+            4.599785405290166
+          ],
+          [
+            -0.22526932120282447,
+            0.520438289375456,
+            4.594227625155974
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "GEO02_CHEVRON_MEMORY",
+    "stage": "G01",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      }
+    ],
+    "chevron": true,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO02_CHEVRON_MEMORY\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "GEO02_CHEVRON_MEMORY",
+    "stage": "G02",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      },
+      {
+        "id": "UPPER_SHOULDER_FAN",
+        "axis": "Y",
+        "centre": 0.8,
+        "span": 0.09,
+        "width0": 0.3,
+        "width1": 0.56,
+        "cycles": 8,
+        "depth": 0.055
+      }
+    ],
+    "chevron": true,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO02_CHEVRON_MEMORY\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "GEO02_CHEVRON_MEMORY",
+    "stage": "G03",
+    "source": "W03_PLEAT_CONTROL/G01",
+    "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+    "events": [
+      {
+        "id": "LOW_VALLEY_FAN",
+        "axis": "Y",
+        "centre": 0.43,
+        "span": 0.105,
+        "width0": 0.42,
+        "width1": 0.58,
+        "cycles": 10,
+        "depth": 0.07
+      },
+      {
+        "id": "UPPER_SHOULDER_FAN",
+        "axis": "Y",
+        "centre": 0.8,
+        "span": 0.09,
+        "width0": 0.3,
+        "width1": 0.56,
+        "cycles": 8,
+        "depth": 0.055
+      },
+      {
+        "id": "SIDE_BINDING_FAN",
+        "axis": "X",
+        "centre": 0.6,
+        "span": 0.115,
+        "width0": 0.62,
+        "width1": 0.38,
+        "cycles": 6,
+        "depth": 0.06
+      }
+    ],
+    "chevron": true,
+    "prior_feature_history": [
+      {
+        "generation": 1,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "prior_feature_core_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "prior_feature_core_max_movement": 0.0
+      }
+    ],
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO02_CHEVRON_MEMORY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO02_CHEVRON_MEMORY\\G03",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 1.8452761694870047e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 1.4217791915866692e-15,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          249187,
+          289889
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 3.3391776084899902,
+      "witness_centres": [
+        [
+          [
+            -0.2211570916232699,
+            0.5055263723252055,
+            4.5887189840183185
+          ],
+          [
+            -0.21892121602254414,
+            0.502854564616508,
+            4.584861409945784
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "GEO03_NESTED_RETURN",
+    "stage": "G01",
+    "source": "GEO01_FAN_MEMORY/G03",
+    "operation": "Existing rounded return-section events beside protected macro creases and fold fans",
+    "events": [
+      {
+        "id": "LOW_NESTED_RETURN",
+        "direction": 0.0,
+        "height": 0.285,
+        "span": 0.04,
+        "expansion": 0.24,
+        "constriction": 0.1,
+        "reexpansion": 0.17,
+        "return_depth": 0.16,
+        "overlap_width": 0.78,
+        "sweep": -0.13,
+        "mirror": true
+      },
+      {
+        "id": "MID_INNER_RETURN",
+        "direction": 1.5707963267948966,
+        "height": 0.485,
+        "span": 0.035,
+        "expansion": 0.19,
+        "constriction": 0.08,
+        "reexpansion": 0.16,
+        "return_depth": 0.15,
+        "overlap_width": 0.7,
+        "sweep": 0.0,
+        "mirror": false
+      },
+      {
+        "id": "UPPER_NESTED_RETURN",
+        "direction": 0.0,
+        "height": 0.77,
+        "span": 0.032,
+        "expansion": 0.2,
+        "constriction": 0.09,
+        "reexpansion": 0.19,
+        "return_depth": 0.15,
+        "overlap_width": 0.72,
+        "sweep": 0.1,
+        "mirror": true
+      }
+    ],
+    "protected_core_vertices": 45024,
+    "protected_core_max_movement": 0.0,
+    "actual_displacement_maximum": 0.2448192321912034,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO03_NESTED_RETURN\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO03_NESTED_RETURN\\G01",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 3.8419421763970126e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 1.2560739669470201e-15,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          235178,
+          240607
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 3.733888864517212,
+      "witness_centres": [
+        [
+          [
+            -1.33222332917052,
+            0.12117069915430694,
+            2.881212944931301
+          ],
+          [
+            -1.375771458021915,
+            0.1173590801416848,
+            2.8978662132712665
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "P00_BROAD_MEMORY",
+    "stage": "G01",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "broad_legacy",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        0.78,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 6.625968693089279e-06,
+    "control_dihedral_median_degrees": 1.4062499999996712,
+    "control_nearly_flat_edge_fraction": 0.3673696567357513,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P00_BROAD_MEMORY\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P00_BROAD_MEMORY",
+    "stage": "G02",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "broad_legacy",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 6.625465334379745e-06,
+    "control_dihedral_median_degrees": 1.4062499999999305,
+    "control_nearly_flat_edge_fraction": 0.31216604598445596,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P00_BROAD_MEMORY\\G02",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P00_BROAD_MEMORY",
+    "stage": "G03",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "broad_legacy",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 3.7609768921856943e-06,
+    "control_dihedral_median_degrees": 1.4062500000001896,
+    "control_nearly_flat_edge_fraction": 0.2837900744818653,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P00_BROAD_MEMORY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P01_LINE_MEMORY",
+    "stage": "G01",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        0.78,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 6.625968693089279e-06,
+    "control_dihedral_median_degrees": 1.4062499999996712,
+    "control_nearly_flat_edge_fraction": 0.3673696567357513,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P01_LINE_MEMORY\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P01_LINE_MEMORY",
+    "stage": "G02",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 6.625465334379745e-06,
+    "control_dihedral_median_degrees": 1.4062499999999305,
+    "control_nearly_flat_edge_fraction": 0.31362329987046633,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P01_LINE_MEMORY\\G02",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P01_LINE_MEMORY",
+    "stage": "G03",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": false,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4627333401161606,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4627333401161606,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 3.7609768921856943e-06,
+    "control_dihedral_median_degrees": 1.4062500000001896,
+    "control_nearly_flat_edge_fraction": 0.28492349417098445,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P01_LINE_MEMORY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P02_CONNECTED_PANELS",
+    "stage": "G01",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4622591819879571,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4622591819879571,
+        0.78,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.4122799475391867e-06,
+    "control_dihedral_median_degrees": 1.4062499999991527,
+    "control_nearly_flat_edge_fraction": 0.40149368523316065,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P02_CONNECTED_PANELS\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P02_CONNECTED_PANELS",
+    "stage": "G02",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4622591819879571,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4622591819879571,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.4122799475391867e-06,
+    "control_dihedral_median_degrees": 1.406249999999412,
+    "control_nearly_flat_edge_fraction": 0.360589378238342,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P02_CONNECTED_PANELS\\G02",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P02_CONNECTED_PANELS",
+    "stage": "G03",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": false,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4622591819879571,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4622591819879571,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.4122799475391867e-06,
+    "control_dihedral_median_degrees": 1.4062499999996712,
+    "control_nearly_flat_edge_fraction": 0.3319300518134715,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P02_CONNECTED_PANELS\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P03_OVERLAP",
+    "stage": "G01",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": true,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4625156938453632,
+        -0.78,
+        0.0
+      ],
+      [
+        1.4625156938453632,
+        0.78,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.235208254516228e-05,
+    "control_dihedral_median_degrees": 1.3543014950684076,
+    "control_nearly_flat_edge_fraction": 0.40408435880829013,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P03_OVERLAP\\G01",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P03_OVERLAP",
+    "stage": "G02",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": true,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4625156938453632,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4625156938453632,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.235208254516228e-05,
+    "control_dihedral_median_degrees": 1.3911867391899344,
+    "control_nearly_flat_edge_fraction": 0.36514329663212436,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P03_OVERLAP\\G02",
+    "rendered_views": []
+  },
+  {
+    "candidate": "P03_OVERLAP",
+    "stage": "G03",
+    "operation": "Original A event locations/amplitudes, rebuilt angular transitions and selected line memory",
+    "policy": "narrow_lines",
+    "connected_angular_panel": true,
+    "broader_direction_overlap": true,
+    "original_event_parameters": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 0.7,
+          "constriction": 0.28,
+          "reexpansion": 0.38,
+          "return_depth": 0.48,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.49,
+          "constriction": 0.24,
+          "reexpansion": 0.64,
+          "return_depth": 0.42,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.6,
+          "constriction": 0.24,
+          "reexpansion": 0.4,
+          "return_depth": 0.55,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.44,
+          "constriction": 0.2,
+          "reexpansion": 0.58,
+          "return_depth": 0.46,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.31,
+          "constriction": 0.13,
+          "reexpansion": 0.4,
+          "return_depth": 0.31,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "legacy_landmark_movement": [
+      {
+        "generation": 1,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 2,
+        "existing_line_landmark_max_movement": 0.0
+      },
+      {
+        "generation": 3,
+        "existing_line_landmark_max_movement": 0.0
+      }
+    ],
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "comparison_scope": "Continuous re-evaluation of authored recipe; differs from historical bilinear tag interpolation and cap tessellation. Not a bitwise reconstruction.",
+    "control_vertices": 49410,
+    "control_quads": 49408,
+    "physical_vertices": 98818,
+    "physical_triangles": 197632,
+    "bounds": [
+      [
+        -1.4625156938453632,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.4625156938453632,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.235208254516228e-05,
+    "control_dihedral_median_degrees": 1.406249999999412,
+    "control_nearly_flat_edge_fraction": 0.34127064443005184,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P03_OVERLAP\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P04_EIGHT_GUIDES",
+    "stage": "G01",
+    "operation": "Preserve actual A meridian curves; rebuild intervening polar r/z panels",
+    "source": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\A_FOLD\\G03",
+    "guide_curves": 8,
+    "guide_vertices": 1544,
+    "guide_vertex_max_movement": 0.0,
+    "maximum_vertex_movement": 0.45870935734279383,
+    "rms_vertex_movement": 0.06359921843407017,
+    "preserved": "All 193 axial samples on each guide; front/back ridges and X-extreme folded profiles included",
+    "changed": "Intervening angular surface, including old wide-mask boundary artifacts",
+    "developability": "NOT_ENFORCED; polar interpolation is not a developable or inextensible fold solver",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "control_vertices": 51202,
+    "control_quads": 51200,
+    "physical_vertices": 102402,
+    "physical_triangles": 204800,
+    "bounds": [
+      [
+        -1.375919685756475,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.375919685756475,
+        1.3636847826086957,
+        10.000000000000002
+      ]
+    ],
+    "minimum_triangle_area": 2.4404807437527882e-05,
+    "control_dihedral_median_degrees": 1.4118193660972105,
+    "control_nearly_flat_edge_fraction": 0.26154296875,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P04_EIGHT_GUIDES\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P05_SIXTEEN_GUIDES",
+    "stage": "G01",
+    "operation": "Preserve actual A meridian curves; rebuild intervening polar r/z panels",
+    "source": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\A_FOLD\\G03",
+    "guide_curves": 16,
+    "guide_vertices": 3088,
+    "guide_vertex_max_movement": 0.0,
+    "maximum_vertex_movement": 0.36962174198521136,
+    "rms_vertex_movement": 0.03919328514485518,
+    "preserved": "All 193 axial samples on each guide; front/back ridges and X-extreme folded profiles included",
+    "changed": "Intervening angular surface, including old wide-mask boundary artifacts",
+    "developability": "NOT_ENFORCED; polar interpolation is not a developable or inextensible fold solver",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "control_vertices": 51202,
+    "control_quads": 51200,
+    "physical_vertices": 102402,
+    "physical_triangles": 204800,
+    "bounds": [
+      [
+        -1.375919685756475,
+        -1.3449537037037054,
+        0.0
+      ],
+      [
+        1.375919685756475,
+        1.3636847826086957,
+        10.0
+      ]
+    ],
+    "minimum_triangle_area": 1.6124912755829823e-06,
+    "control_dihedral_median_degrees": 1.4142298098917987,
+    "control_nearly_flat_edge_fraction": 0.271748046875,
+    "interpretation": "Dihedral fraction is a diagnostic, not an aesthetic pass criterion",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_surface": "Explicit Task36 quad-centre fans, identical for checking/render/export",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P05_SIXTEEN_GUIDES\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P06_CREASE_MESH",
+    "stage": "G01",
+    "physical_vertices": 94855,
+    "physical_triangles": 189706,
+    "operation": "Material crease-conforming cuts, identical P02 continuous event and memory formula",
+    "generation": 1,
+    "initial_sampling": {
+      "rings": 49,
+      "sectors": 128
+    },
+    "minimum_triangle_area": 5.222413163674086e-12,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": "NOT_ENFORCED",
+    "comparison": "Same conceptual continuous side surface as P02; cap parameterization differs. Much lower initial grid plus conforming cuts.",
+    "symmetry_construction": "Only canonical X>=0 half cut, then reflect vertices and reverse reflected triangle winding; seam vertices shared",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P06_CREASE_MESH",
+    "stage": "G02",
+    "physical_vertices": 94855,
+    "physical_triangles": 189706,
+    "operation": "Material crease-conforming cuts, identical P02 continuous event and memory formula",
+    "generation": 2,
+    "initial_sampling": {
+      "rings": 49,
+      "sectors": 128
+    },
+    "minimum_triangle_area": 5.216852332279078e-12,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": "NOT_ENFORCED",
+    "comparison": "Same conceptual continuous side surface as P02; cap parameterization differs. Much lower initial grid plus conforming cuts.",
+    "symmetry_construction": "Only canonical X>=0 half cut, then reflect vertices and reverse reflected triangle winding; seam vertices shared",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "P06_CREASE_MESH",
+    "stage": "G03",
+    "physical_vertices": 94855,
+    "physical_triangles": 189706,
+    "operation": "Material crease-conforming cuts, identical P02 continuous event and memory formula",
+    "generation": 3,
+    "initial_sampling": {
+      "rings": 49,
+      "sectors": 128
+    },
+    "minimum_triangle_area": 5.216852332279078e-12,
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "developability": "NOT_ENFORCED",
+    "comparison": "Same conceptual continuous side surface as P02; cap parameterization differs. Much lower initial grid plus conforming cuts.",
+    "symmetry_construction": "Only canonical X>=0 half cut, then reflect vertices and reverse reflected triangle winding; seam vertices shared",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G03",
+      "vertices": 94855,
+      "triangles": 189706,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.216852332279078e-12,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          172176,
+          125435
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.6404929161071777,
+      "witness_centres": [
+        [
+          [
+            -0.9526597667875295,
+            -0.1470772393963763,
+            7.6656125501687
+          ],
+          [
+            -0.9584753137197374,
+            -0.16591904983705777,
+            7.6673063679343185
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "R01_ROUND",
+    "stage": "G01",
+    "operation": "Conforming cuts followed by cumulative exact plane reflection",
+    "maximum_relative_edge_length_change": 1.4316470102606146e-12,
+    "material_patches": 5,
+    "source": "Developable generalized cylinder side",
+    "input_side_developable": true,
+    "closed_caps_are_not_claimed_as_single_sheet_origami": true,
+    "planes": [
+      {
+        "normal": [
+          0.0,
+          -0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 1.8667513285106756
+      },
+      {
+        "normal": [
+          0.0,
+          -0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 2.2858179532783782
+      },
+      {
+        "normal": [
+          0.0,
+          0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 5.524060053756081
+      },
+      {
+        "normal": [
+          0.0,
+          0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 5.943126678523783
+      }
+    ],
+    "reflection_planes_preserve_X_symmetry": true,
+    "developability_claim": "Only round/corrugated cylinder and cone SIDE patches have developable input. Sculpted input is not developable.",
+    "physical_vertices": 12058,
+    "physical_triangles": 24112,
+    "bounds": [
+      [
+        -0.78,
+        -0.7800000000000029,
+        0.0
+      ],
+      [
+        0.78,
+        1.3228156748911468,
+        8.722786647314951
+      ]
+    ],
+    "minimum_triangle_area": 1.1386725911127617e-07,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "physical_surface": "Stored float64 triangles; identical checking and rendering input",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\R01_ROUND\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "R02_CORRUGATED",
+    "stage": "G01",
+    "operation": "Conforming cuts followed by cumulative exact plane reflection",
+    "maximum_relative_edge_length_change": 2.6174367911959253e-12,
+    "material_patches": 5,
+    "source": "Developable generalized cylinder side",
+    "input_side_developable": true,
+    "closed_caps_are_not_claimed_as_single_sheet_origami": true,
+    "planes": [
+      {
+        "normal": [
+          0.0,
+          -0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 1.8667513285106756
+      },
+      {
+        "normal": [
+          0.0,
+          -0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 2.2858179532783782
+      },
+      {
+        "normal": [
+          0.0,
+          0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 5.524060053756081
+      },
+      {
+        "normal": [
+          0.0,
+          0.6476484200955405,
+          0.7619393177594594
+        ],
+        "offset": 5.943126678523783
+      }
+    ],
+    "reflection_planes_preserve_X_symmetry": true,
+    "developability_claim": "Only round/corrugated cylinder and cone SIDE patches have developable input. Sculpted input is not developable.",
+    "physical_vertices": 12070,
+    "physical_triangles": 24136,
+    "bounds": [
+      [
+        -0.8892000000000001,
+        -0.8892000000000024,
+        0.0
+      ],
+      [
+        0.8892000000000001,
+        1.4320156748911468,
+        8.722786647314951
+      ]
+    ],
+    "minimum_triangle_area": 3.2164291700331522e-09,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "physical_surface": "Stored float64 triangles; identical checking and rendering input",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\R02_CORRUGATED\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "R03_SCULPTED",
+    "stage": "G01",
+    "operation": "Conforming cuts followed by cumulative exact plane reflection",
+    "maximum_relative_edge_length_change": 1.5915245023158084e-10,
+    "material_patches": 5,
+    "source": "E:\\CHESHIRE_DATA\\iaac_mandelbrot_20261011\\directional\\D02_INTERLEAVED\\CC2\\geometry.npz",
+    "input_side_developable": false,
+    "closed_caps_are_not_claimed_as_single_sheet_origami": true,
+    "planes": [
+      {
+        "normal": [
+          0.0,
+          -0.6246950475544243,
+          0.7808688094430303
+        ],
+        "offset": 1.9131285831354243
+      },
+      {
+        "normal": [
+          0.0,
+          -0.6246950475544243,
+          0.7808688094430303
+        ],
+        "offset": 2.420693309273394
+      },
+      {
+        "normal": [
+          0.0,
+          0.6246950475544243,
+          0.7808688094430303
+        ],
+        "offset": 5.661298868461969
+      },
+      {
+        "normal": [
+          0.0,
+          0.6246950475544243,
+          0.7808688094430303
+        ],
+        "offset": 6.16886359459994
+      }
+    ],
+    "reflection_planes_preserve_X_symmetry": true,
+    "developability_claim": "Only round/corrugated cylinder and cone SIDE patches have developable input. Sculpted input is not developable.",
+    "physical_vertices": 27440,
+    "physical_triangles": 54876,
+    "bounds": [
+      [
+        -1.6178759113600467,
+        -1.434697814392504,
+        0.0
+      ],
+      [
+        1.6178759113600467,
+        2.1989850958472603,
+        8.414634146341461
+      ]
+    ],
+    "minimum_triangle_area": 3.4330499353536616e-11,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "physical_surface": "Stored float64 triangles; identical checking and rendering input",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\R03_SCULPTED\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\R03_SCULPTED\\G01",
+      "vertices": 27440,
+      "triangles": 54876,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 3.4330499353536616e-11,
+      "mirror_max_distance": 8.055048693485857e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": false,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          22314,
+          22326
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.15826749801635742,
+      "witness_centres": [
+        [
+          [
+            1.413200757231385,
+            0.6993738470248217,
+            2.3664786639865607
+          ],
+          [
+            1.4275913499449737,
+            0.699993082947595,
+            2.361832576910081
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "R04_CONE",
+    "stage": "G01",
+    "operation": "Conforming cuts followed by cumulative exact plane reflection",
+    "maximum_relative_edge_length_change": 1.4681911083483943e-11,
+    "material_patches": 5,
+    "source": "Developable cone side",
+    "input_side_developable": true,
+    "closed_caps_are_not_claimed_as_single_sheet_origami": true,
+    "planes": [
+      {
+        "normal": [
+          0.0,
+          -0.5144957554275266,
+          0.8574929257125443
+        ],
+        "offset": 2.100857667995734
+      },
+      {
+        "normal": [
+          0.0,
+          -0.5144957554275266,
+          0.8574929257125443
+        ],
+        "offset": 2.743977362280142
+      },
+      {
+        "normal": [
+          0.0,
+          0.5144957554275266,
+          0.8574929257125443
+        ],
+        "offset": 6.216823711415946
+      },
+      {
+        "normal": [
+          0.0,
+          0.5144957554275266,
+          0.8574929257125443
+        ],
+        "offset": 6.8599434057003545
+      }
+    ],
+    "reflection_planes_preserve_X_symmetry": true,
+    "developability_claim": "Only round/corrugated cylinder and cone SIDE patches have developable input. Sculpted input is not developable.",
+    "physical_vertices": 12050,
+    "physical_triangles": 24096,
+    "bounds": [
+      [
+        -0.9360000000000002,
+        -0.9360000000000013,
+        0.0
+      ],
+      [
+        0.9360000000000002,
+        1.4963414296140929,
+        7.794117647058831
+      ]
+    ],
+    "minimum_triangle_area": 1.919664091932534e-09,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "physical_surface": "Stored float64 triangles; identical checking and rendering input",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\R04_CONE\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "S00_A_FRONT_MIRROR",
+    "stage": "G01",
+    "source": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\A_FOLD\\G03",
+    "operation": "Front-half Y reflection construction",
+    "fold_displacement_multiplier": 1.0,
+    "macro_carrier_radius": 0.78,
+    "macro_carrier_height": 10.0,
+    "scale_scope": "Authored radial/axial fold offsets relative to unchanged carrier; not global size scaling",
+    "original_front_half_vertices": 51409,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 416,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102402,
+    "physical_triangles": 204800,
+    "minimum_triangle_area": 1.3725805625642647e-05,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\S00_A_FRONT_MIRROR\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "S01_P06_FRONT_MIRROR",
+    "stage": "G01",
+    "source": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G03",
+    "operation": "Front-half Y reflection construction",
+    "fold_displacement_multiplier": 1.0,
+    "macro_carrier_radius": 0.78,
+    "macro_carrier_height": 10.0,
+    "scale_scope": "Authored radial/axial fold offsets relative to unchanged carrier; not global size scaling",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.216852332279078e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\S01_P06_FRONT_MIRROR\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\S01_P06_FRONT_MIRROR\\G01",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.216852332279078e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          160528,
+          185759
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.7599589824676514,
+      "witness_centres": [
+        [
+          [
+            -0.10585746778564076,
+            -0.6097348009729041,
+            4.525644751642997
+          ],
+          [
+            -0.09797870132222858,
+            -0.5978111266626185,
+            4.512271390221858
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "S02_STRONG_FRONT_MIRROR",
+    "stage": "G01",
+    "source": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\P06_CREASE_MESH\\G03",
+    "operation": "Front-half Y reflection construction",
+    "fold_displacement_multiplier": 1.25,
+    "macro_carrier_radius": 0.78,
+    "macro_carrier_height": 10.0,
+    "scale_scope": "Authored radial/axial fold offsets relative to unchanged carrier; not global size scaling",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 2.3880612583373384e-17,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.370021732797759e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\S02_STRONG_FRONT_MIRROR\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\S02_STRONG_FRONT_MIRROR\\G01",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.370021732797759e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 2.2887833992611187e-16,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          1384,
+          21535
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.7280378341674805,
+      "witness_centres": [
+        [
+          [
+            0.16305436959588232,
+            0.7254152697586201,
+            4.601237112942153
+          ],
+          [
+            0.1558235557043045,
+            0.7413801070042858,
+            4.625088702150388
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "T01_RADICAL_SEED",
+    "stage": "G01",
+    "operation": "Radical initial seed, subsequent directional folds, front-half mirror construction",
+    "source": "P06 conforming material topology; S02 amplitude convention for later events",
+    "events": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 1.1549999999999998,
+          "constriction": 0.37800000000000006,
+          "reexpansion": 0.627,
+          "return_depth": 0.72,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.8085,
+          "constriction": 0.324,
+          "reexpansion": 1.056,
+          "return_depth": 0.63,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.75,
+          "constriction": 0.3,
+          "reexpansion": 0.5,
+          "return_depth": 0.6875,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.55,
+          "constriction": 0.25,
+          "reexpansion": 0.725,
+          "return_depth": 0.5750000000000001,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.3875,
+          "constriction": 0.1625,
+          "reexpansion": 0.5,
+          "return_depth": 0.3875,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "G1_multiplier": {
+      "expansion": 1.65,
+      "reexpansion": 1.65,
+      "constriction": 1.35,
+      "return_depth": 1.5
+    },
+    "later_event_multiplier": 1.25,
+    "material_fold_positions_and_spans": "Unchanged",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.62999728032276e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\T01_RADICAL_SEED\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\T01_RADICAL_SEED\\G01",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.62999728032276e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          90153,
+          66804
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.823652982711792,
+      "witness_centres": [
+        [
+          [
+            -1.0852163131562405,
+            0.10668697110521304,
+            7.811731306349263
+          ],
+          [
+            -1.0758386332177474,
+            0.10317748267469636,
+            7.8059965407136644
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "T01_RADICAL_SEED",
+    "stage": "G02",
+    "operation": "Radical initial seed, subsequent directional folds, front-half mirror construction",
+    "source": "P06 conforming material topology; S02 amplitude convention for later events",
+    "events": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 1.1549999999999998,
+          "constriction": 0.37800000000000006,
+          "reexpansion": 0.627,
+          "return_depth": 0.72,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.8085,
+          "constriction": 0.324,
+          "reexpansion": 1.056,
+          "return_depth": 0.63,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.75,
+          "constriction": 0.3,
+          "reexpansion": 0.5,
+          "return_depth": 0.6875,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.55,
+          "constriction": 0.25,
+          "reexpansion": 0.725,
+          "return_depth": 0.5750000000000001,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.3875,
+          "constriction": 0.1625,
+          "reexpansion": 0.5,
+          "return_depth": 0.3875,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "G1_multiplier": {
+      "expansion": 1.65,
+      "reexpansion": 1.65,
+      "constriction": 1.35,
+      "return_depth": 1.5
+    },
+    "later_event_multiplier": 1.25,
+    "material_fold_positions_and_spans": "Unchanged",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.616870090061637e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\T01_RADICAL_SEED\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "T01_RADICAL_SEED",
+    "stage": "G03",
+    "operation": "Radical initial seed, subsequent directional folds, front-half mirror construction",
+    "source": "P06 conforming material topology; S02 amplitude convention for later events",
+    "events": {
+      "1": [
+        {
+          "id": "LOW_X",
+          "direction": 0.0,
+          "height": 0.255,
+          "span": 0.09,
+          "expansion": 1.1549999999999998,
+          "constriction": 0.37800000000000006,
+          "reexpansion": 0.627,
+          "return_depth": 0.72,
+          "overlap_width": 1.0,
+          "sweep": 0.25,
+          "mirror": true
+        },
+        {
+          "id": "HIGH_X",
+          "direction": 0.0,
+          "height": 0.755,
+          "span": 0.07,
+          "expansion": 0.8085,
+          "constriction": 0.324,
+          "reexpansion": 1.056,
+          "return_depth": 0.63,
+          "overlap_width": 0.88,
+          "sweep": -0.32,
+          "mirror": true
+        }
+      ],
+      "2": [
+        {
+          "id": "FRONT_LINK",
+          "direction": 1.5707963267948966,
+          "height": 0.455,
+          "span": 0.115,
+          "expansion": 0.75,
+          "constriction": 0.3,
+          "reexpansion": 0.5,
+          "return_depth": 0.6875,
+          "overlap_width": 1.03,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "BACK_RETURN",
+          "direction": -1.5707963267948966,
+          "height": 0.6,
+          "span": 0.09,
+          "expansion": 0.55,
+          "constriction": 0.25,
+          "reexpansion": 0.725,
+          "return_depth": 0.5750000000000001,
+          "overlap_width": 0.92,
+          "sweep": 0.0,
+          "mirror": false
+        }
+      ],
+      "3": [
+        {
+          "id": "DIAGONAL_SHOULDER",
+          "direction": 0.68,
+          "height": 0.655,
+          "span": 0.105,
+          "expansion": 0.3875,
+          "constriction": 0.1625,
+          "reexpansion": 0.5,
+          "return_depth": 0.3875,
+          "overlap_width": 0.67,
+          "sweep": 0.2,
+          "mirror": true
+        }
+      ]
+    },
+    "G1_multiplier": {
+      "expansion": 1.65,
+      "reexpansion": 1.65,
+      "constriction": 1.35,
+      "return_depth": 1.5
+    },
+    "later_event_multiplier": 1.25,
+    "material_fold_positions_and_spans": "Unchanged",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.616870090061637e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\T01_RADICAL_SEED\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\T01_RADICAL_SEED\\G03",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.616870090061637e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 0.0,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          27670,
+          38470
+        ],
+        [
+          72229,
+          57723
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.813910961151123,
+      "witness_centres": [
+        [
+          [
+            0.5346252167709923,
+            0.536707983839727,
+            6.575360384181753
+          ],
+          [
+            0.5471046948789666,
+            0.5490611303868067,
+            6.599561415719439
+          ]
+        ],
+        [
+          [
+            -0.1631535008905069,
+            0.588317984256344,
+            4.552947569497297
+          ],
+          [
+            -0.1544015407080335,
+            0.5842915024931187,
+            4.540509465562455
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "V01_SHARP_VALLEY",
+    "stage": "G01",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "V",
+    "maximum_authored_inward_depth": 0.42,
+    "angular_half_width": 0.65,
+    "actual_offset_maximum": 0.42,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.62999728032276e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V01_SHARP_VALLEY\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V01_SHARP_VALLEY",
+    "stage": "G02",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "V",
+    "maximum_authored_inward_depth": 0.42,
+    "angular_half_width": 0.65,
+    "actual_offset_maximum": 0.42,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.616870090061637e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V01_SHARP_VALLEY\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V01_SHARP_VALLEY",
+    "stage": "G03",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "V",
+    "maximum_authored_inward_depth": 0.42,
+    "angular_half_width": 0.65,
+    "actual_offset_maximum": 0.42,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.616870090061637e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V01_SHARP_VALLEY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V02_CUP_VALLEY",
+    "stage": "G01",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "U",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.8,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 6.362856805257171e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V02_CUP_VALLEY\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V02_CUP_VALLEY",
+    "stage": "G02",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "U",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.8,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 6.336487767328034e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V02_CUP_VALLEY\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V02_CUP_VALLEY",
+    "stage": "G03",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "U",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.8,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 6.336487767328034e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V02_CUP_VALLEY\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V03_WIDE_CUP",
+    "stage": "G01",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "Y_CUP",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.95,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.31602732168257e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V03_WIDE_CUP\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V03_WIDE_CUP",
+    "stage": "G02",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "Y_CUP",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.95,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.281253193671056e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V03_WIDE_CUP\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V03_WIDE_CUP",
+    "stage": "G03",
+    "source": "T01_RADICAL_SEED",
+    "operation": "Inward angular valley section + narrow valley-line position memory",
+    "valley_section": "Y_CUP",
+    "maximum_authored_inward_depth": 0.55,
+    "angular_half_width": 0.95,
+    "actual_offset_maximum": 0.55,
+    "carrier_radius": 0.78,
+    "carrier_height": 10,
+    "original_outer_X_fold_events": "Unchanged",
+    "protected_valley_vertices": 336,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.281253193671056e-12,
+    "separate_geometric_smoothing": false,
+    "physical_fold_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V03_WIDE_CUP\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "V04_SYMMETRIC_CUP",
+    "stage": "G01",
+    "source": "V03_WIDE_CUP/G03",
+    "operation": "Preserve source front half and reflect real vertices/faces across Y=0",
+    "source_front_back_nearest_vertex_error": 0.040815645982163126,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.281253193671056e-12,
+    "failure_cause": "Valley axial map used signed theta relative to a swept G1 event, unlike the preceding mirrored seed.",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V04_SYMMETRIC_CUP\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\V04_SYMMETRIC_CUP\\G01",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.281253193671056e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 1.1157603309187458e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          169626,
+          183684
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 1.3688132762908936,
+      "witness_centres": [
+        [
+          [
+            -0.7519974533476766,
+            -0.1513481432483107,
+            7.649113595892584
+          ],
+          [
+            -0.7709536029286008,
+            -0.1540093138450607,
+            7.645713253453596
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "W01_SMOOTH_DEEP",
+    "stage": "G01",
+    "operation": "PCHIP authored fold sections + rounded angular ridge + deep C1 cup section",
+    "source": "Same P06 material mesh, radical T01 event amplitudes, V03 inward depth and width",
+    "profile_knots": [
+      -2.2,
+      -1.4,
+      -0.75,
+      -0.35,
+      -0.15,
+      0.15,
+      0.35,
+      0.75,
+      1.3,
+      2.0
+    ],
+    "authored_valley_depth": 0.55,
+    "angular_cusp_radius": 0.12,
+    "unchanged": "Event positions/spans, extrema control values, LR/FB symmetry construction",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_fold_solver": false,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.901875246799268e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W01_SMOOTH_DEEP\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "W01_SMOOTH_DEEP",
+    "stage": "G02",
+    "operation": "PCHIP authored fold sections + rounded angular ridge + deep C1 cup section",
+    "source": "Same P06 material mesh, radical T01 event amplitudes, V03 inward depth and width",
+    "profile_knots": [
+      -2.2,
+      -1.4,
+      -0.75,
+      -0.35,
+      -0.15,
+      0.15,
+      0.35,
+      0.75,
+      1.3,
+      2.0
+    ],
+    "authored_valley_depth": 0.55,
+    "angular_cusp_radius": 0.12,
+    "unchanged": "Event positions/spans, extrema control values, LR/FB symmetry construction",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_fold_solver": false,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.897596719009237e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W01_SMOOTH_DEEP\\G02",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "W01_SMOOTH_DEEP",
+    "stage": "G03",
+    "operation": "PCHIP authored fold sections + rounded angular ridge + deep C1 cup section",
+    "source": "Same P06 material mesh, radical T01 event amplitudes, V03 inward depth and width",
+    "profile_knots": [
+      -2.2,
+      -1.4,
+      -0.75,
+      -0.35,
+      -0.15,
+      0.15,
+      0.35,
+      0.75,
+      1.3,
+      2.0
+    ],
+    "authored_valley_depth": 0.55,
+    "angular_cusp_radius": 0.12,
+    "unchanged": "Event positions/spans, extrema control values, LR/FB symmetry construction",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_fold_solver": false,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.897596719009237e-12,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W01_SMOOTH_DEEP\\G03",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "W02_AMPLIFIED",
+    "stage": "G01",
+    "operation": "Existing W01 G1->G3 folding amplified only beside protected legacy creases",
+    "source": "W01_SMOOTH_DEEP/G03",
+    "comparison": "W01_SMOOTH_DEEP/G03",
+    "maximum_additional_gain": 0.85,
+    "maximum_additional_displacement": 0.13369091918112813,
+    "legacy_core_max_extra_movement": 0.0,
+    "valley_core_max_extra_movement": 0.0,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.897596719009237e-12,
+    "separate_geometric_smoothing": false,
+    "random_noise": false,
+    "physical_fold_solver": false,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W02_AMPLIFIED\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "W03_PLEAT_CONTROL",
+    "stage": "G01",
+    "source": "W06_SYMMETRIC_SMOOTH/G01",
+    "operation": "Surface-exact triangle midpoint refinement, then authored converging alternating valley section",
+    "added_pleat_amplitude": 0.0,
+    "cycles_across_full_fan": 10,
+    "axial_centre": 0.43,
+    "axial_half_support": 0.105,
+    "refinement_preserves_old_vertices_and_piecewise_planar_surface": true,
+    "radial_depth_unchanged_before_pleats": true,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_buckling_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W03_PLEAT_CONTROL\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ]
+  },
+  {
+    "candidate": "W04_VALLEY_PLEATS",
+    "stage": "G01",
+    "source": "W06_SYMMETRIC_SMOOTH/G01",
+    "operation": "Surface-exact triangle midpoint refinement, then authored converging alternating valley section",
+    "added_pleat_amplitude": 0.045,
+    "cycles_across_full_fan": 10,
+    "axial_centre": 0.43,
+    "axial_half_support": 0.105,
+    "refinement_preserves_old_vertices_and_piecewise_planar_surface": true,
+    "radial_depth_unchanged_before_pleats": true,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_buckling_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W04_VALLEY_PLEATS\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W04_VALLEY_PLEATS\\G01",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 1.8107189559191205e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          221978,
+          227139
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 5.353942394256592,
+      "witness_centres": [
+        [
+          [
+            -1.2479698880990686,
+            0.21696547493548088,
+            2.8520509861432917
+          ],
+          [
+            -1.2891374745506814,
+            0.2234226903204458,
+            2.8854968089279835
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "W05_STRONG_PLEATS",
+    "stage": "G01",
+    "source": "W06_SYMMETRIC_SMOOTH/G01",
+    "operation": "Surface-exact triangle midpoint refinement, then authored converging alternating valley section",
+    "added_pleat_amplitude": 0.085,
+    "cycles_across_full_fan": 10,
+    "axial_centre": 0.43,
+    "axial_half_support": 0.105,
+    "refinement_preserves_old_vertices_and_piecewise_planar_surface": true,
+    "radial_depth_unchanged_before_pleats": true,
+    "physical_vertices": 411114,
+    "physical_triangles": 822224,
+    "minimum_triangle_area": 1.474399179277608e-12,
+    "minimum_area_threshold": 1e-12,
+    "minimum_area_pass": true,
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "separate_geometric_smoothing": false,
+    "CC_coordinate_averaging": false,
+    "physical_buckling_solver": false,
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W05_STRONG_PLEATS\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W05_STRONG_PLEATS\\G01",
+      "vertices": 411114,
+      "triangles": 822224,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 1.8107189559191205e-15,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          324065,
+          268136
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 9.736629724502563,
+      "witness_centres": [
+        [
+          [
+            -0.7604887977779651,
+            0.1901690147386439,
+            7.696392127086437
+          ],
+          [
+            -0.7712687408456467,
+            0.19291772576641594,
+            7.707960095322801
+          ]
+        ]
+      ]
+    }
+  },
+  {
+    "candidate": "W06_SYMMETRIC_SMOOTH",
+    "stage": "G01",
+    "source": "W01_SMOOTH_DEEP/G03",
+    "operation": "Preserve source front half and reflect real vertices/faces across Y=0",
+    "source_front_back_nearest_vertex_error": 0.04389962338867153,
+    "physical_vertices": 102780,
+    "physical_triangles": 205556,
+    "minimum_triangle_area": 5.897596719009237e-12,
+    "failure_cause": "Valley axial map used signed theta relative to a swept G1 event, unlike the preceding mirrored seed.",
+    "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+    "fabrication": "NOT_CHECKED",
+    "original_front_half_vertices": 51513,
+    "front_half_max_movement": 0.0,
+    "seam_shared_vertices": 246,
+    "symmetry": "Copy Y>=0 half to Y<=0; shared seam, reversed reflected triangle winding; X symmetry inherited",
+    "loss": "Original asymmetric front/back event timing replaced by mirrored front events",
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W06_SYMMETRIC_SMOOTH\\G01",
+    "rendered_views": [
+      "front",
+      "oblique",
+      "side"
+    ],
+    "final_validation": {
+      "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\W06_SYMMETRIC_SMOOTH\\G01",
+      "vertices": 102780,
+      "triangles": 205556,
+      "finite": true,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "watertight": true,
+      "winding_consistent": true,
+      "minimum_triangle_area": 5.897596719009237e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "mirror_max_distance": 9.742167503148516e-16,
+      "mirror_pairing_involution": true,
+      "reflected_triangle_set_identical": true,
+      "checker_input": "Authoritative float64 geometry.npz, identical to renderer input",
+      "fabrication_thickness_structure": "NOT_CHECKED",
+      "front_back_reflection": {
+        "maximum_vertex_distance": 0.0,
+        "pairing_involution": true,
+        "reflected_triangle_set_identical": true
+      },
+      "self_intersection": "CONFIRMED",
+      "first_witness_triangle_ids": [
+        [
+          14020,
+          38471
+        ]
+      ],
+      "intersection_scope": "CGAL detect_only first_only. Positive is a witness, not an exhaustive count; zero does not certify fabrication.",
+      "elapsed_seconds": 0.7994403839111328,
+      "witness_centres": [
+        [
+          [
+            0.571302509736961,
+            0.5609718176374302,
+            6.612966906362639
+          ],
+          [
+            0.558241498226132,
+            0.550500980108498,
+            6.599693396537881
+          ]
+        ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "branch": "experiment/curved-fold-side-20261011",
+  "base_commit": "2d9d602f619448aa416faf79ae8bba29f7aff9cf",
+  "output_root": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011",
+  "previous_reference": "E:\\CHESHIRE_DATA\\directional_fold_memory_20261011\\A_FOLD\\G03",
+  "candidate_endpoints": 38,
+  "stored_mesh_checkpoints": 72,
+  "primary": {
+    "folder": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03",
+    "actual_mesh": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03\\gate.ply",
+    "authoritative_float64": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03\\geometry.npz",
+    "checkpoint": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03\\checkpoint.npz",
+    "blender_scene": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\GEO01_FAN_MEMORY\\G03\\column.blend",
+    "status": "Design exploration: self-intersection confirmed; not fabrication validated"
+  },
+  "retained_comparisons": [
+    "W06_SYMMETRIC_SMOOTH/G01",
+    "GEO02_CHEVRON_MEMORY/G03",
+    "GEO03_NESTED_RETURN/G01",
+    "F_W06_SYMMETRIC_SMOOTH/G02"
+  ],
+  "principle_reference": "E:\\CHESHIRE_DATA\\curved_fold_side_20261011\\C04_OBLIQUE_CREASE\\G02",
+  "research": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\curved_fold_side_20261011\\RESEARCH.md",
+  "publication": "LOCAL_ONLY",
+  "camera": {
+    "front": [
+      0,
+      32,
+      5
+    ],
+    "oblique": [
+      -18,
+      28,
+      16
+    ],
+    "side": [
+      -32,
+      0,
+      5
+    ],
+    "target": [
+      0,
+      0,
+      5
+    ],
+    "orthographic_scale": 12,
+    "resolution": 800,
+    "samples": 16
+  },
+  "rendering": "Actual stored triangle mesh, geometric flat normals, uniform material; no normal maps, textures, smoothing modifiers or generated images.",
+  "raw_geometry_policy": "E drive only; small review package contains source, images and JSON."
+}

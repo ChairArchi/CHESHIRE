@@ -1,0 +1,69 @@
+{
+  "OLD_A_FOLD_G3": {
+    "front_all_edges": {
+      "edges": 127473,
+      "angle_p95": 11.116980383586553,
+      "length_fraction_over_30_deg": 0.01121897503854118
+    },
+    "front_quad_fan_internal": {
+      "edges": 85328,
+      "angle_p95": 7.741546511543348,
+      "length_fraction_over_30_deg": 0.0008728847319327667
+    },
+    "side_all_edges": {
+      "edges": 132104,
+      "angle_p95": 10.107501806064365,
+      "length_fraction_over_30_deg": 0.0076195159292539874
+    },
+    "side_quad_fan_internal": {
+      "edges": 88500,
+      "angle_p95": 6.95825559101914,
+      "length_fraction_over_30_deg": 0.0006031775590550438
+    }
+  },
+  "C00_UNALIGNED": {
+    "front_all_edges": {
+      "edges": 48694,
+      "angle_p95": 5.252141316108162,
+      "length_fraction_over_30_deg": 0.0047658163406030084
+    },
+    "front_quad_fan_internal": {
+      "edges": 32632,
+      "angle_p95": 4.718408706726122,
+      "length_fraction_over_30_deg": 0.0009690378088117183
+    },
+    "side_all_edges": {
+      "edges": 48418,
+      "angle_p95": 5.56749626173816,
+      "length_fraction_over_30_deg": 0.005160595341466028
+    },
+    "side_quad_fan_internal": {
+      "edges": 32449,
+      "angle_p95": 5.122207730447339,
+      "length_fraction_over_30_deg": 0.0009504274106695331
+    }
+  },
+  "C01_ALIGNED": {
+    "front_all_edges": {
+      "edges": 48180,
+      "angle_p95": 4.168190936146005,
+      "length_fraction_over_30_deg": 0.004577329059280804
+    },
+    "front_quad_fan_internal": {
+      "edges": 32284,
+      "angle_p95": 4.019515652540013,
+      "length_fraction_over_30_deg": 0.0
+    },
+    "side_all_edges": {
+      "edges": 48480,
+      "angle_p95": 4.239783341849235,
+      "length_fraction_over_30_deg": 0.003499164596956293
+    },
+    "side_quad_fan_internal": {
+      "edges": 32520,
+      "angle_p95": 4.176346752287406,
+      "length_fraction_over_30_deg": 0.0
+    }
+  },
+  "scope": "Descriptive dihedral diagnostics, no ray occlusion; not aesthetic pass thresholds. C00/C01 same continuous geometry, same counts, different mesh alignment."
+}

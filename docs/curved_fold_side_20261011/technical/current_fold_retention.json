@@ -1,0 +1,212 @@
+{
+  "GEO01_FAN_MEMORY/G03": {
+    "lower_valley_centreline_vertices": 66,
+    "lower_centreline_max_movement": 0.0,
+    "upper_valley_centreline_vertices": 70,
+    "upper_centreline_max_movement": 0.0,
+    "maximum_total_displacement": 0.07294043136162304,
+    "generation_metadata": {
+      "candidate": "GEO01_FAN_MEMORY",
+      "stage": "G03",
+      "source": "W03_PLEAT_CONTROL/G01",
+      "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+      "events": [
+        {
+          "id": "LOW_VALLEY_FAN",
+          "axis": "Y",
+          "centre": 0.43,
+          "span": 0.105,
+          "width0": 0.42,
+          "width1": 0.58,
+          "cycles": 10,
+          "depth": 0.07
+        },
+        {
+          "id": "UPPER_SHOULDER_FAN",
+          "axis": "Y",
+          "centre": 0.8,
+          "span": 0.09,
+          "width0": 0.3,
+          "width1": 0.56,
+          "cycles": 8,
+          "depth": 0.055
+        },
+        {
+          "id": "SIDE_BINDING_FAN",
+          "axis": "X",
+          "centre": 0.6,
+          "span": 0.115,
+          "width0": 0.62,
+          "width1": 0.38,
+          "cycles": 6,
+          "depth": 0.06
+        }
+      ],
+      "chevron": false,
+      "prior_feature_history": [
+        {
+          "generation": 1,
+          "prior_feature_core_max_movement": 0.0
+        },
+        {
+          "generation": 2,
+          "prior_feature_core_max_movement": 0.0
+        },
+        {
+          "generation": 3,
+          "prior_feature_core_max_movement": 0.0
+        }
+      ],
+      "physical_vertices": 411114,
+      "physical_triangles": 822224,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "separate_geometric_smoothing": false,
+      "CC_coordinate_averaging": false,
+      "random_noise": false,
+      "physical_fold_solver": false,
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "fabrication": "NOT_CHECKED"
+    }
+  },
+  "GEO02_CHEVRON_MEMORY/G03": {
+    "lower_valley_centreline_vertices": 66,
+    "lower_centreline_max_movement": 0.0,
+    "upper_valley_centreline_vertices": 70,
+    "upper_centreline_max_movement": 0.0,
+    "maximum_total_displacement": 0.0729377273831686,
+    "generation_metadata": {
+      "candidate": "GEO02_CHEVRON_MEMORY",
+      "stage": "G03",
+      "source": "W03_PLEAT_CONTROL/G01",
+      "operation": "Selected converging recessed fold sections + paired axial return + previous-zone memory",
+      "events": [
+        {
+          "id": "LOW_VALLEY_FAN",
+          "axis": "Y",
+          "centre": 0.43,
+          "span": 0.105,
+          "width0": 0.42,
+          "width1": 0.58,
+          "cycles": 10,
+          "depth": 0.07
+        },
+        {
+          "id": "UPPER_SHOULDER_FAN",
+          "axis": "Y",
+          "centre": 0.8,
+          "span": 0.09,
+          "width0": 0.3,
+          "width1": 0.56,
+          "cycles": 8,
+          "depth": 0.055
+        },
+        {
+          "id": "SIDE_BINDING_FAN",
+          "axis": "X",
+          "centre": 0.6,
+          "span": 0.115,
+          "width0": 0.62,
+          "width1": 0.38,
+          "cycles": 6,
+          "depth": 0.06
+        }
+      ],
+      "chevron": true,
+      "prior_feature_history": [
+        {
+          "generation": 1,
+          "prior_feature_core_max_movement": 0.0
+        },
+        {
+          "generation": 2,
+          "prior_feature_core_max_movement": 0.0
+        },
+        {
+          "generation": 3,
+          "prior_feature_core_max_movement": 0.0
+        }
+      ],
+      "physical_vertices": 411114,
+      "physical_triangles": 822224,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "separate_geometric_smoothing": false,
+      "CC_coordinate_averaging": false,
+      "random_noise": false,
+      "physical_fold_solver": false,
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "fabrication": "NOT_CHECKED"
+    }
+  },
+  "GEO03_NESTED_RETURN/G01": {
+    "lower_valley_centreline_vertices": 66,
+    "lower_centreline_max_movement": 0.0,
+    "upper_valley_centreline_vertices": 70,
+    "upper_centreline_max_movement": 0.0,
+    "maximum_total_displacement": 0.24481923219120333,
+    "generation_metadata": {
+      "candidate": "GEO03_NESTED_RETURN",
+      "stage": "G01",
+      "source": "GEO01_FAN_MEMORY/G03",
+      "operation": "Existing rounded return-section events beside protected macro creases and fold fans",
+      "events": [
+        {
+          "id": "LOW_NESTED_RETURN",
+          "direction": 0.0,
+          "height": 0.285,
+          "span": 0.04,
+          "expansion": 0.24,
+          "constriction": 0.1,
+          "reexpansion": 0.17,
+          "return_depth": 0.16,
+          "overlap_width": 0.78,
+          "sweep": -0.13,
+          "mirror": true
+        },
+        {
+          "id": "MID_INNER_RETURN",
+          "direction": 1.5707963267948966,
+          "height": 0.485,
+          "span": 0.035,
+          "expansion": 0.19,
+          "constriction": 0.08,
+          "reexpansion": 0.16,
+          "return_depth": 0.15,
+          "overlap_width": 0.7,
+          "sweep": 0.0,
+          "mirror": false
+        },
+        {
+          "id": "UPPER_NESTED_RETURN",
+          "direction": 0.0,
+          "height": 0.77,
+          "span": 0.032,
+          "expansion": 0.2,
+          "constriction": 0.09,
+          "reexpansion": 0.19,
+          "return_depth": 0.15,
+          "overlap_width": 0.72,
+          "sweep": 0.1,
+          "mirror": true
+        }
+      ],
+      "protected_core_vertices": 45024,
+      "protected_core_max_movement": 0.0,
+      "actual_displacement_maximum": 0.2448192321912034,
+      "physical_vertices": 411114,
+      "physical_triangles": 822224,
+      "minimum_triangle_area": 1.474399179277608e-12,
+      "minimum_area_threshold": 1e-12,
+      "minimum_area_pass": true,
+      "separate_geometric_smoothing": false,
+      "CC_coordinate_averaging": false,
+      "physical_fold_solver": false,
+      "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+      "fabrication": "NOT_CHECKED"
+    }
+  },
+  "scope": "Stored material centreline coordinates, not every fold angle or a unique physical-Z groove depth. Actual section board shows all loops including intersections."
+}
