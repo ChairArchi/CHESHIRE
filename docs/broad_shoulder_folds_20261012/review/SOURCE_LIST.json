@@ -1,0 +1,381 @@
+{
+  "large_outputs": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01",
+  "parent_outputs": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02",
+  "fine_outputs": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01",
+  "base_commit": "191fec7df4595405820f47e1f7c43b94865dd742",
+  "source_hashes": {
+    "experiments\\broad_shoulder_folds_20261012\\archive.py": "2b926fbb81458dc3eb1ff1873a9c765b42ac3f2cbd743cc0b8ec34602f733942",
+    "experiments\\broad_shoulder_folds_20261012\\folds.py": "be20c5208e1fe5c1933eaffb768d38f1b4ae9e2b93fbb67502b79eff1fb4d7ab",
+    "experiments\\broad_shoulder_folds_20261012\\measure.py": "c91b979ea4d9e8a31c2c65773d283a307fa2f2e015ca336f86e6a574dd7cdcad",
+    "experiments\\broad_shoulder_folds_20261012\\render.py": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "experiments\\broad_shoulder_folds_20261012\\render_fans.py": "37e93e243f45cdbb060b2b45202e43a32a10344411d9bee0d0aa8aaced0a5747",
+    "experiments\\broad_shoulder_folds_20261012\\review.py": "575a9c19f0a2f07e1f77fef41505d8933b290b33a1c8c951e6a063ea24cf5cbb",
+    "experiments\\broad_shoulder_folds_20261012\\review_fans.py": "5a704aa96b93dd838ab0bcb8e6ad964d76ebd82de9a0f160db905b578b43fd32",
+    "experiments\\broad_shoulder_folds_20261012\\rooted_fans.py": "ff9fa14c4331ed977c8abd437e82ce0f87d2dac58e50219400fa158cd683a5e8",
+    "experiments\\broad_shoulder_folds_20261012\\study.py": "f3ddbfe5280fdc7aa37f19e84d274f2373a7a27f74c98e819c3d45e66e467670",
+    "experiments\\broad_shoulder_folds_20261012\\study_fans.py": "756b54ca8ca63f893c05e3a83318ffd7e3accb7bb77124724f80f9c13773a8a9",
+    "experiments\\broad_shoulder_folds_20261012\\verify.py": "f99d781d65e263919b243c8ff4069197833f29190d585f5037d37527c1c76e42",
+    "experiments\\broad_shoulder_folds_20261012\\verify_fans.py": "dba0988ce360388a1419d1ca35757d1391049bdee4fffde1cd638c0b4c809591",
+    "tests\\test_broad_shoulder_folds.py": "58a6a8cdc46cd6be5596f6dc217e23f0897b13752eca17ed4f21212805f05416",
+    "tests\\test_broad_shoulder_verify.py": "82ab6713e9bca7e4fdaf5bd963a793b076122c3370390dcf81cbe06d900e5bad",
+    "tests\\test_broad_rooted_fans.py": "ad59804c185a0310bde88f3988b6204f693777c42c69c5cd4301de0d1dd14408",
+    "tests\\test_broad_rooted_verify.py": "79c18677bcddfbaf66f197793f8bb0b5c0a798a9ef2ab921a83c9be9087bfe18"
+  },
+  "copied_evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\RECIPE.json",
+      "archive": "RECIPE.json",
+      "bytes": 2107,
+      "sha256": "fc397085b3f4077a311e52c084397e37a6deb5769a9a3f4f1eaa303ee63d6a87"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\SUMMARY.json",
+      "archive": "SUMMARY.json",
+      "bytes": 27611,
+      "sha256": "f262a8e5aca5b2350dc7e2dc7bfcda4e3647dba2c00e17dad1446b7ae63c74d4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\VERIFICATION.json",
+      "archive": "VERIFICATION.json",
+      "bytes": 26468,
+      "sha256": "e90385e5bb11486b873f6bb6e75168383fed912477ab556e43bd0107fb027c02"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\RENDER_VERIFICATION.json",
+      "archive": "RENDER_VERIFICATION.json",
+      "bytes": 9648,
+      "sha256": "0e28c8b74c5d18b4d15e752632f48c639f4c248ed9944e03fabffb34d82e17d5"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\VISUAL_REVIEW.txt",
+      "archive": "VISUAL_REVIEW.txt",
+      "bytes": 1668,
+      "sha256": "be4e6e382d1c185746863fc0c24eaab31b1c06269bebfbfb6fb8e9dbdccbb6c4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VERIFICATION.json",
+      "archive": "PARENT_VERIFICATION.json",
+      "bytes": 17448,
+      "sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\tests_broad_20261012.txt",
+      "archive": "tests_broad_20261012.txt",
+      "bytes": 204,
+      "sha256": "903891aa64f9019fa9713a4d0f163048b2e3711ca8d2b66f024a43b9aa40de8a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\SPAN\\actual_patch.npz",
+      "archive": "SPAN/actual_patch.npz",
+      "bytes": 473765,
+      "sha256": "1431666ed5ab1c6bfa40cc067e5ab0a41efe5bf2cf288a757be2c1412c09c556"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\SPAN\\G04_incoming_frame.npz",
+      "archive": "SPAN/G04_incoming_frame.npz",
+      "bytes": 336593,
+      "sha256": "d1bb88ef4ae3d4362cf26b1d3a6a2b4348903f1286802224f2399b48ad67cc2a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\SPAN\\G05_incoming_frame.npz",
+      "archive": "SPAN/G05_incoming_frame.npz",
+      "bytes": 357015,
+      "sha256": "1ec461a5d4ff33ec98da5ce85a4fe35bf3452fb9e6ac7250af8581c30f1e487c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\SPAN\\SUMMARY.json",
+      "archive": "SPAN/SUMMARY.json",
+      "bytes": 13818,
+      "sha256": "a1d5b305366b4c804a479c1d94b3f7b2a15d6ca06067b810fbf5d66a9259b2a3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/BASELINE.json",
+      "bytes": 3954,
+      "sha256": "1841cbf1331faf6a48f12caeaf1904fb9ba65f824195702813516a2b563f23a0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/CLEAR_ONLY.json",
+      "bytes": 5501,
+      "sha256": "9b2a3c8d7ecceb190b062898f9fca0c555792b2a6d184ac7f501815b25d3bf5c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/BROAD_ACTIVE.json",
+      "bytes": 7107,
+      "sha256": "50ef840f444b6ab617d8a16b4ecd2992cff1326415385c1a778884ebfd1bb8bd"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\SPAN\\G06\\views\\receipt.json",
+      "archive": "SPAN/BASELINE_render_receipt.json",
+      "bytes": 1319,
+      "sha256": "ba053f2b86d69dbeeab81ebc398178c1654114f19da9ffef6e089b5ebd3b106c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\views\\receipt.json",
+      "archive": "SPAN/CLEAR_ONLY_render_receipt.json",
+      "bytes": 1323,
+      "sha256": "81ff366d0bf08c6ba82039d4882b59f72a758d9efad834dda65cf3fe1bd8a160"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\views\\receipt.json",
+      "archive": "SPAN/BROAD_ACTIVE_render_receipt.json",
+      "bytes": 1327,
+      "sha256": "2b0234bb02ac932b2631745e644cd3caa7ca856589540a8a6def1bd718249a6b"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\COUNTER\\actual_patch.npz",
+      "archive": "COUNTER/actual_patch.npz",
+      "bytes": 474033,
+      "sha256": "16deb989f6b2fada19c7651f97627033365394423d5514efbc386a69ee867288"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\COUNTER\\G04_incoming_frame.npz",
+      "archive": "COUNTER/G04_incoming_frame.npz",
+      "bytes": 339956,
+      "sha256": "54231ef4a4b7fe4b3fc16b23e818085a8bfd8c2bd3b3e0c4250d7f195aad3085"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\COUNTER\\G05_incoming_frame.npz",
+      "archive": "COUNTER/G05_incoming_frame.npz",
+      "bytes": 359526,
+      "sha256": "5db64aec66408e938ed05d463c2bb134a59b48509afe91c89f6814e832a5d809"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\COUNTER\\SUMMARY.json",
+      "archive": "COUNTER/SUMMARY.json",
+      "bytes": 13860,
+      "sha256": "44931410429ada6c91f1e652534a1896d835f9004b0e32e5324804047604acd1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/BASELINE.json",
+      "bytes": 3964,
+      "sha256": "431fdcd54eb2a1d44f94dd7ab03a4a60c0f4675e098cd198d39593f4541ffc34"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/CLEAR_ONLY.json",
+      "bytes": 5514,
+      "sha256": "afe2d002dbd1ff45b1c331eaac76a33153faa5421cfc65e7a63e65e6e718dd59"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/BROAD_ACTIVE.json",
+      "bytes": 7133,
+      "sha256": "baea8d2fca1b97f15f72405499940cb157d757c5cc5160017fe204b1c8b4affe"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\COUNTER\\G06\\views\\receipt.json",
+      "archive": "COUNTER/BASELINE_render_receipt.json",
+      "bytes": 1325,
+      "sha256": "74127cab22e90d946fb5679a0035d837180c674e58df87372a3968b1b2b9eaa3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\views\\receipt.json",
+      "archive": "COUNTER/CLEAR_ONLY_render_receipt.json",
+      "bytes": 1329,
+      "sha256": "d38c763663fa8612c3a1405a7148e39c7a08c78910abd2e2232ea1752f3d8891"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\views\\receipt.json",
+      "archive": "COUNTER/BROAD_ACTIVE_render_receipt.json",
+      "bytes": 1333,
+      "sha256": "d1b1ad339e9ed9e656ecc422c6222a16bd94a13ccf26594dff686564e9bcba64"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\COUNTER_front.png",
+      "archive": "images/COUNTER_front.png",
+      "bytes": 881351,
+      "sha256": "3118ad43d1c20937f2504b06d29e160a7d81668fc1c8c43d3e9d8de99fdc03c0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\COUNTER_shoulder_front.png",
+      "archive": "images/COUNTER_shoulder_front.png",
+      "bytes": 2322819,
+      "sha256": "35b3db7a167f2cd252e02bf40a0d3fd65a47763d657da7bc1d7eb127a74e2553"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "archive": "images/COUNTER_shoulder_oblique.png",
+      "bytes": 1969260,
+      "sha256": "14e8cb9d999eee13f57f4ba2dd0f8f8129c72e7bfb416f44857da2d3824ce8b1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\COUNTER_shoulder_side.png",
+      "archive": "images/COUNTER_shoulder_side.png",
+      "bytes": 1495400,
+      "sha256": "dba6a8bb835dfea1e862fbe33a186c03ed08220fa4e65e361f52a8dd6cc292fc"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\SOURCE_LIST.json",
+      "archive": "images/SOURCE_LIST.json",
+      "bytes": 8203,
+      "sha256": "5f824c7f12fff06dff0771e9f4a383a3c581022538b1a2b6449de30e1333301c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\SPAN_front.png",
+      "archive": "images/SPAN_front.png",
+      "bytes": 866041,
+      "sha256": "e5f7ad6ec412e73be14a3a8c498ccc0edabab8c9b8dfc23f85bb32a0783414e3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\SPAN_shoulder_front.png",
+      "archive": "images/SPAN_shoulder_front.png",
+      "bytes": 2102083,
+      "sha256": "01f96fafe1b47a8de5dda09a6b34242625d996e56e7f485beae5cc5ff564d352"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "archive": "images/SPAN_shoulder_oblique.png",
+      "bytes": 1818078,
+      "sha256": "aebf79640b7bbc1c86f4dc26daba3ec1f97b2db60be990a6e85faf3fce58e50c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\images\\SPAN_shoulder_side.png",
+      "archive": "images/SPAN_shoulder_side.png",
+      "bytes": 1707566,
+      "sha256": "ec63da77afa38613681280ba0149fd02638fc8d6a9b50bb4ca617babd00a28c6"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\RECIPE.json",
+      "archive": "rooted_fans/RECIPE.json",
+      "bytes": 2032,
+      "sha256": "34cdf69f362c3f842774c69b3114ac717597db839ca3e3fe107defd874583d23"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\SUMMARY.json",
+      "archive": "rooted_fans/SUMMARY.json",
+      "bytes": 11524,
+      "sha256": "dc90344ed1607b2376f70212f6c3c85ef8777880b91de90c08f9418d6066bc65"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\VERIFICATION.json",
+      "archive": "rooted_fans/VERIFICATION.json",
+      "bytes": 13980,
+      "sha256": "98e9fc88a96f365c6fdd35232d258d9c49eac0a9d87b7543e4dea04f198ae8d7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\RENDER_VERIFICATION.json",
+      "archive": "rooted_fans/RENDER_VERIFICATION.json",
+      "bytes": 12952,
+      "sha256": "3a8b8f574783d067053777f11de3e0f675e4e84c6687deaffd46a0565889ff49"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\VISUAL_REVIEW.txt",
+      "archive": "rooted_fans/VISUAL_REVIEW.txt",
+      "bytes": 2279,
+      "sha256": "e6eb7af609b5249109afd2d95747a9b721130b856174d73d7ab484cccaf7b764"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\tests_broad_fans_20261012.txt",
+      "archive": "tests_broad_fans_20261012.txt",
+      "bytes": 206,
+      "sha256": "e3cb2f391c9d6a87514ec78f09cab04f950f856fae0ccb62fb80367aa85b66ae"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\SPAN\\G06_incoming_frame.npz",
+      "archive": "rooted_fans/SPAN/G06_incoming_frame.npz",
+      "bytes": 402110,
+      "sha256": "597e17932b82992dfc434ed14b5158a39a2d4bd58cba56a3ffa80ff8d1d74299"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\SPAN\\G06_incoming_curves.npz",
+      "archive": "rooted_fans/SPAN/G06_incoming_curves.npz",
+      "bytes": 108668,
+      "sha256": "dc4c26f45776f5f30e0db975f51a4600d273deac48b0eb108bad41d2ecc26a1b"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\ROOTED_FANS\\SPAN\\G06\\generation.json",
+      "archive": "rooted_fans/SPAN/ROOTED_FANS.json",
+      "bytes": 5111,
+      "sha256": "489648b33fb2bce110b5fb513162fdd930158c8467c468d46d9f721526ae3695"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\ROOTED_FANS\\SPAN\\G06\\views\\receipt.json",
+      "archive": "rooted_fans/SPAN/ROOTED_FANS_render_receipt.json",
+      "bytes": 1433,
+      "sha256": "1728dafdfd3077450d4514cdbc52394e6bb479c06d727408a91a472748ebefb4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\COUNTER\\G06_incoming_frame.npz",
+      "archive": "rooted_fans/COUNTER/G06_incoming_frame.npz",
+      "bytes": 407728,
+      "sha256": "3e5d8e6c129d2eff32d7f28f0107958cd5287493619621463e6322da50e93ade"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\COUNTER\\G06_incoming_curves.npz",
+      "archive": "rooted_fans/COUNTER/G06_incoming_curves.npz",
+      "bytes": 108730,
+      "sha256": "921d0d1783cfc741a242a74702cd2ff6325bf84d188b52d8ff56ecb38d1e97fe"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\ROOTED_FANS\\COUNTER\\G06\\generation.json",
+      "archive": "rooted_fans/COUNTER/ROOTED_FANS.json",
+      "bytes": 5127,
+      "sha256": "8342db35ccb625413d22ed49fa423fffe764d23d49c0327b9086fae4bd83ba9e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\ROOTED_FANS\\COUNTER\\G06\\views\\receipt.json",
+      "archive": "rooted_fans/COUNTER/ROOTED_FANS_render_receipt.json",
+      "bytes": 1439,
+      "sha256": "1486e3fe0568403026ff0a3a3d4001d4a5b6fdf404fac8c54037660323d8074a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\COUNTER_front.png",
+      "archive": "rooted_fans/images/COUNTER_front.png",
+      "bytes": 1529509,
+      "sha256": "9ac863c6dd42fe735c574859f62b73108736147a890825d4b789e8d483647988"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\COUNTER_shoulder_front.png",
+      "archive": "rooted_fans/images/COUNTER_shoulder_front.png",
+      "bytes": 3236545,
+      "sha256": "48ac916b69cdd786e7339741d2e5c3b020f7c948154d987ae8782b2da4f7ee12"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\COUNTER_shoulder_oblique.png",
+      "archive": "rooted_fans/images/COUNTER_shoulder_oblique.png",
+      "bytes": 2873203,
+      "sha256": "dc5c4181c13f152273fed1808427a771a5890c0e28feb6914a2c608c07110a16"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\COUNTER_shoulder_side.png",
+      "archive": "rooted_fans/images/COUNTER_shoulder_side.png",
+      "bytes": 2409073,
+      "sha256": "9d325a9c6458a7aec3fe27942eb0d8a550a01c51132da2fc1f3f626911fe4187"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\SOURCE_LIST.json",
+      "archive": "rooted_fans/images/SOURCE_LIST.json",
+      "bytes": 10311,
+      "sha256": "8247f4d26cf93c95c74b706d2dabbe76a433324c72a131d6f3e855281cd47ab0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\SPAN_front.png",
+      "archive": "rooted_fans/images/SPAN_front.png",
+      "bytes": 1520346,
+      "sha256": "7eaa447256997cddf625ff4307e6c554c5f1a6f63c922a16b512b4371f8c0127"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\SPAN_shoulder_front.png",
+      "archive": "rooted_fans/images/SPAN_shoulder_front.png",
+      "bytes": 2954425,
+      "sha256": "2db359288f4fe93a88dc8d4a333f0e9aba78454484047106f6395d79212de7e7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\SPAN_shoulder_oblique.png",
+      "archive": "rooted_fans/images/SPAN_shoulder_oblique.png",
+      "bytes": 2671566,
+      "sha256": "846138e88eff0e1637e4db2527f65a13275614ba29da366df422391acf754241"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\rooted_fans_trial01\\images\\SPAN_shoulder_side.png",
+      "archive": "rooted_fans/images/SPAN_shoulder_side.png",
+      "bytes": 2604119,
+      "sha256": "b3e6f4029a2d53e2b7d8941a39e07d66de5cd400296eefe8d8eca31f9bdee217"
+    }
+  ],
+  "large_array_scope": "Actual control/native and stage displacement arrays remain at the E output root; no rerender or regeneration in this archive operation"
+}

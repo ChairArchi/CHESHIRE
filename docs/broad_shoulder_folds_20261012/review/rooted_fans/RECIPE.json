@@ -1,0 +1,86 @@
+{
+  "output_generation": 6,
+  "additional_field_passes": 1,
+  "root_centre_arc": 0.54,
+  "root_centre_sweep_arc": 0.075,
+  "primary_start_q": [
+    -0.74,
+    -0.51,
+    -0.22,
+    0.045,
+    0.31,
+    0.46
+  ],
+  "primary_duration_q": [
+    0.6,
+    0.56,
+    0.53,
+    0.49,
+    0.43,
+    0.37
+  ],
+  "primary_side": [
+    -1.0,
+    1.0,
+    -1.0,
+    1.0,
+    -1.0,
+    1.0
+  ],
+  "primary_reach_arc": [
+    0.27,
+    0.25,
+    0.3,
+    0.28,
+    0.25,
+    0.24
+  ],
+  "primary_halfwidth_arc": 0.055,
+  "primary_height_cap": 0.04,
+  "primary_height_width_ratio": 0.06,
+  "child_attachment_fraction": [
+    0.48,
+    0.56,
+    0.44,
+    0.53,
+    0.49,
+    0.57
+  ],
+  "child_end_extension_q": [
+    0.07,
+    0.05,
+    0.08,
+    0.06,
+    0.05,
+    0.07
+  ],
+  "child_reach_arc": [
+    0.1,
+    0.09,
+    0.11,
+    0.095,
+    0.1,
+    0.085
+  ],
+  "child_halfwidth_arc": 0.028,
+  "child_height_cap": 0.016,
+  "child_height_width_ratio": 0.025,
+  "root_turn_fraction": 0.2,
+  "root_height_fade_fraction": 0.12,
+  "tip_height_fade_fraction": 0.24,
+  "groove_root_fade_fraction": 0.28,
+  "groove_ratio": 0.42,
+  "groove_offset_in_halfwidths": 1.45,
+  "groove_halfwidth_ratio": 0.65,
+  "trunk_groove_protection_halfwidth_arc": 0.075,
+  "trunk_groove_protection_fade_arc": 0.055,
+  "end_limits": [
+    0.1,
+    0.9
+  ],
+  "scope": "Two authored connected curve scales on one shared measured broad shoulder; same recipe on both inputs",
+  "lineage": "Additional scalar pass on actual incoming BROAD_ACTIVE G06; no refinement and generation remains 6",
+  "amplitude_scope": "Fine-pass amplitude is an explicit comparison condition; no legacy .65 total-shift design requirement",
+  "normal_scope": "Caller applies height along actual incoming G06 pooled normals and performs constructive material X/Y geometry reflection",
+  "width_scope": "Halfwidth is a fraction of measured G03 transverse surface arc, not an exact perpendicular geodesic distance"
+}

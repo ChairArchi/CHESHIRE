@@ -1,0 +1,183 @@
+{
+  "passed": true,
+  "actual_mesh_states": 6,
+  "source_images": 24,
+  "crop": false,
+  "resize": false,
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "BASELINE",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\geometry.npz",
+      "geometry_sha256": "d07998559b68e1cb13dae78b1e82f3db5e5868bdd3233f53b36754313f65b6b1",
+      "render_receipt_sha256": "ba053f2b86d69dbeeab81ebc398178c1654114f19da9ffef6e089b5ebd3b106c",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\SPAN\\G06\\views\\front.png",
+          "sha256": "3be2388fe65364cd9c91f9ee61df4e6c426f76831c855c28e8edfd1262be0f54"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\SPAN\\G06\\views\\shoulder_front.png",
+          "sha256": "65acc089ed0c9af16ba847655d6a3f4e2ba532a87f042ac632c100fe6b7c6a38"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "e735f687d383045a5c42ac86f4a8d4943d002e7315cfd29e9de4a3aeacbb4b3a"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "687075411d192aa32cbce9372bc48334a035224c7f1af5fea01fbf50cb9560ef"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "CLEAR_ONLY",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\geometry.npz",
+      "geometry_sha256": "5a8f059b0bda97913cc5fb871a8d24089f71e047680e873a8971b727efa085d5",
+      "render_receipt_sha256": "81ff366d0bf08c6ba82039d4882b59f72a758d9efad834dda65cf3fe1bd8a160",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\views\\front.png",
+          "sha256": "45aaf29b7d02eabc2e65bcdbfc6f3318993f81af67b9f26cef5adaada6d9dbb5"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\views\\shoulder_front.png",
+          "sha256": "f9e680b7ded33d26db4ec45799090cd6045cf68e2ad332378cba061f7b460381"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "0865ea6f03c222191dcd348dafb2be6cfe54973efb65b8c0b4ef4c97320922cb"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "c0c29e711e48fb5f33b969dd0060e81e1cd1565ab6798b1ba22808e3747947ae"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "BROAD_ACTIVE",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\geometry.npz",
+      "geometry_sha256": "dd4855db27be7c47f0966d3cfe8a9deb2d35c019565eb2ce00342831d0146317",
+      "render_receipt_sha256": "2b0234bb02ac932b2631745e644cd3caa7ca856589540a8a6def1bd718249a6b",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\views\\front.png",
+          "sha256": "338b53fd532e20e3fc7f1f36fbee37bae629ba8d3deb2c3905ad570cdacda3a7"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\views\\shoulder_front.png",
+          "sha256": "ad937d494b46cc125aad3c3abccd11cce5fba70bc0b8644c089ab303441336f0"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "49aac1849ac5c60c0bd4b6ddb414ae9cf276cf3cecd36987c0e914bb4d8bb1ff"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "c6ff61bc5e0c8f10cadb19702b8c854754a9a4005facd2e9b7d51312cefd4d9c"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BASELINE",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\geometry.npz",
+      "geometry_sha256": "7402db9dba8a77a836e7a5180fb764cbe5ae70f00af8113f7b9184b68bfd417a",
+      "render_receipt_sha256": "74127cab22e90d946fb5679a0035d837180c674e58df87372a3968b1b2b9eaa3",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\COUNTER\\G06\\views\\front.png",
+          "sha256": "58504273cff2879b3c7de45fb7c31e41ade598b399de4f94727cf1fd2cde5255"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\COUNTER\\G06\\views\\shoulder_front.png",
+          "sha256": "c05e9d51547d7755848d0ad7091e3cba87ff790a43589147cb5264880d74c0d1"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "c3ee8b8309bb0fd9efdcba9badbc0fa1878dffe79546df8fec2b940234fa2099"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BASELINE\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "52979729275aca27be849fb9d867ff805a1562ea04d55c7505b429dddd044b19"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "CLEAR_ONLY",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\geometry.npz",
+      "geometry_sha256": "40734a709377d321667a6e473673114ba9bac3511a36fab95e2b42e64526c3ce",
+      "render_receipt_sha256": "d38c763663fa8612c3a1405a7148e39c7a08c78910abd2e2232ea1752f3d8891",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\views\\front.png",
+          "sha256": "c6d4c628a1074bdb74f134e2cfc261753d4170bdb2543879b44b4a60d6904769"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\views\\shoulder_front.png",
+          "sha256": "75e2a5bcc9dfc5389afa10a81a6d339ad0d2bb91d588f63bed04addc0d8c7a9d"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "de0d882b63e23f7e38d49cc5f3eb6dfa734b84f2bf4246498e31aed3b33a75e9"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "81c564dbfa30f6d8dd9fcdc2c99346bb4b0ff09c5cc3747e5bdefae903f10628"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BROAD_ACTIVE",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\geometry.npz",
+      "geometry_sha256": "9de4d6920e38725842b788fdf04ddc5b1e04008b3259519175db856811499878",
+      "render_receipt_sha256": "d1b1ad339e9ed9e656ecc422c6222a16bd94a13ccf26594dff686564e9bcba64",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\views\\front.png",
+          "sha256": "80830a33297d5a679b3c140c2469e556668565c805a44039cbf437ff3a0c5490"
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\views\\shoulder_front.png",
+          "sha256": "db34e629780afcd4eb166757325c43c3dae274f25595c101baf3adca15aade62"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "956005b1f21c8d4b2b519f55fe1fde0a6a442f704c5e2eb9e8f513bf7b885ce9"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "9e1e503d30f5911dd43cfe49d74d431bdcd7e8b221579d16f098ce0404f35d9e"
+        }
+      ]
+    }
+  ]
+}

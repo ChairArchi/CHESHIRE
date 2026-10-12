@@ -1,0 +1,553 @@
+{
+  "cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "both_inputs_complete": true,
+  "geometry_checks_passed": true,
+  "visual_success": "NOT_ASSESSED",
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "CLEAR_ONLY",
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\SPAN\\G03",
+      "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+      "baseline_source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06",
+      "baseline_control_sha256": "4b53295d583df161312962fba51aad6fc2d708c60ee8853c32a6ed8c917fbd75",
+      "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+      "common_reference_xyz_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+      "relaxation_recipe": {
+        "positive": 0.5,
+        "negative": -0.53,
+        "pairs": 6,
+        "maximum_carrier_shift": 0.04,
+        "material_end_limits": [
+          0.1,
+          0.9
+        ],
+        "fade_width": 0.08,
+        "carrier_stage_generation": 3,
+        "graph": "Uniform undirected G03 quad-edge neighbours",
+        "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+      },
+      "selection_recipe": {
+        "parameter_range": [
+          0.7,
+          0.87
+        ],
+        "transverse_range": [
+          0.9,
+          1.5657963267948967
+        ],
+        "longitudinal_samples": 41,
+        "transverse_samples": 129,
+        "axial_plateau_fraction": 0.6,
+        "transverse_fade_fraction": 0.12,
+        "minimum_physical_width": 0.5,
+        "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+        "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+        "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+        "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+      },
+      "recipe": {
+        "output_generation": 6,
+        "active_generations": [
+          4,
+          5
+        ],
+        "maximum_total_shift": 0.65,
+        "end_limits": [
+          0.1,
+          0.9
+        ],
+        "centre_arc": 0.54,
+        "centre_sweep_arc": 0.075,
+        "primary_halfwidth_arc": 0.17,
+        "primary_height_cap": 0.28,
+        "primary_height_width_ratio": 0.4,
+        "side_groove_ratio": 0.42,
+        "side_groove_offset_arc": 0.23,
+        "side_groove_halfwidth_arc": 0.105,
+        "secondary_offset_arc": -0.19,
+        "secondary_halfwidth_arc": 0.075,
+        "secondary_height_cap": 0.085,
+        "secondary_height_width_ratio": 0.13,
+        "secondary_start_q": -0.62,
+        "secondary_gate_span": 0.45,
+        "frame_halfwidth_arc": 0.28,
+        "frame_axial_sigma": 0.13,
+        "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+        "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+        "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+        "topology_scope": "Inherited connectivity is held only for this comparison"
+      },
+      "patch_path": "SPAN\\actual_patch.npz",
+      "patch_sha256": "1431666ed5ab1c6bfa40cc067e5ab0a41efe5bf2cf288a757be2c1412c09c556",
+      "stages": [],
+      "output_generation": 6,
+      "field_iteration_count_added": 0,
+      "new_bulb_evaluations": 0,
+      "lineage": "G3 relaxed source; G4/G5 active only for BROAD_ACTIVE; G6 refinement then broad patch replacement/blend/bound/reflection/exact outside restoration",
+      "comparison": "Same broad replacement patch for CLEAR_ONLY/BROAD_ACTIVE, preserving existing BASELINE outside; these are alternatives at actual G6",
+      "topology_scope": "Same actual native triangle IDs as verified closed oriented BASELINE; independent verifier links actual faces and saved baseline receipt",
+      "self_intersection": "NOT_CHECKED_EXPLORATORY",
+      "visual_success": "NOT_ASSESSED",
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 4.556219494856005e-08,
+        "actual_native_xy_symmetry": {
+          "X": {
+            "material_pair_max_error": 9.019494489765868e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+            "passed": true
+          },
+          "Y": {
+            "material_pair_max_error": 7.364386412590295e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+            "passed": true
+          }
+        },
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "inherited_native_faces_identical_to_baseline": true,
+        "native_xyz_sha256": "e903418c1724df3ed50c895ad59169410a14c4689c27b019543732e313ad87c8",
+        "control_xyz_sha256": "e51bfd51955a82d5fa7232ba751e35d2a03a26538c30ae3ffea06bb1570cad04",
+        "actual_native_outside_baseline_exact": true,
+        "actual_native_ends_baseline_exact": true,
+        "maximum_total_shift": 0.27559037970678374,
+        "actual_changed_native_vertices": 214304,
+        "control_patch_count": 111280,
+        "outside_native_count": 3050254,
+        "support": {
+          "reference_total_native_area": 99.08893557621806,
+          "reference_area_of_affected_triangles": 7.565770391316276,
+          "affected_reference_area_fraction": 0.07635333195699506,
+          "affected_triangles": 432776,
+          "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+        },
+        "passed": true
+      }
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "BROAD_ACTIVE",
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\SPAN\\G03",
+      "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+      "baseline_source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06",
+      "baseline_control_sha256": "4b53295d583df161312962fba51aad6fc2d708c60ee8853c32a6ed8c917fbd75",
+      "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+      "common_reference_xyz_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+      "relaxation_recipe": {
+        "positive": 0.5,
+        "negative": -0.53,
+        "pairs": 6,
+        "maximum_carrier_shift": 0.04,
+        "material_end_limits": [
+          0.1,
+          0.9
+        ],
+        "fade_width": 0.08,
+        "carrier_stage_generation": 3,
+        "graph": "Uniform undirected G03 quad-edge neighbours",
+        "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+      },
+      "selection_recipe": {
+        "parameter_range": [
+          0.7,
+          0.87
+        ],
+        "transverse_range": [
+          0.9,
+          1.5657963267948967
+        ],
+        "longitudinal_samples": 41,
+        "transverse_samples": 129,
+        "axial_plateau_fraction": 0.6,
+        "transverse_fade_fraction": 0.12,
+        "minimum_physical_width": 0.5,
+        "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+        "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+        "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+        "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+      },
+      "recipe": {
+        "output_generation": 6,
+        "active_generations": [
+          4,
+          5
+        ],
+        "maximum_total_shift": 0.65,
+        "end_limits": [
+          0.1,
+          0.9
+        ],
+        "centre_arc": 0.54,
+        "centre_sweep_arc": 0.075,
+        "primary_halfwidth_arc": 0.17,
+        "primary_height_cap": 0.28,
+        "primary_height_width_ratio": 0.4,
+        "side_groove_ratio": 0.42,
+        "side_groove_offset_arc": 0.23,
+        "side_groove_halfwidth_arc": 0.105,
+        "secondary_offset_arc": -0.19,
+        "secondary_halfwidth_arc": 0.075,
+        "secondary_height_cap": 0.085,
+        "secondary_height_width_ratio": 0.13,
+        "secondary_start_q": -0.62,
+        "secondary_gate_span": 0.45,
+        "frame_halfwidth_arc": 0.28,
+        "frame_axial_sigma": 0.13,
+        "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+        "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+        "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+        "topology_scope": "Inherited connectivity is held only for this comparison"
+      },
+      "patch_path": "SPAN\\actual_patch.npz",
+      "patch_sha256": "1431666ed5ab1c6bfa40cc067e5ab0a41efe5bf2cf288a757be2c1412c09c556",
+      "stages": [
+        {
+          "generation": 4,
+          "incoming_xyz_sha256": "27ae213ff3aca3db38d1eed7e6a5f60c85b6f8484ad0586e8dbbec5023c8c900",
+          "raw_delta_sha256": "a49d0cce6392bc1199120006828c85c4d9e44f48eac573759886075327cd805a",
+          "applied_delta_sha256": "9fa68bf30141b6eb935bdd1a4fcdddbecbc837dc7fa2f91e9a7758417874d113",
+          "resulting_xyz_sha256": "c620f5d9aa10e2c0171ce78b92e07690c9c15a986f1310661ba711860d87c94c",
+          "fields_path": "SPAN\\G04_active_fields.npz",
+          "fields_sha256": "5c5503e2bd0a0eb0c77ef4b0338d477f4299fb46bf1cb754c9d34a4ab993764d",
+          "frame_path": "SPAN\\G04_incoming_frame.npz",
+          "frame_sha256": "d1bb88ef4ae3d4362cf26b1d3a6a2b4348903f1286802224f2399b48ad67cc2a",
+          "maximum_active_shift": 0.27999831465089386,
+          "moved_controls": 4564
+        },
+        {
+          "generation": 5,
+          "incoming_xyz_sha256": "4d5ffd897d4cde52de1250387d764e190fa12e505c845c25faa45badfef809df",
+          "raw_delta_sha256": "86ceb36d55b593528803bdd9165ff187aca8847913724687aabf99de932f6df7",
+          "applied_delta_sha256": "6edf4f0492285f771423bc2d6bc9382e79be2ea8bc61244821e50b68459292b8",
+          "resulting_xyz_sha256": "2a6ece53303bbccb89f0ae1ddb08f886e4d4f3e92528fce7f996072ba27ab143",
+          "fields_path": "SPAN\\G05_active_fields.npz",
+          "fields_sha256": "018a2fab5a06a053c7340d8b1edd59e54483b9691dd2c475b75fad8ff88e2afa",
+          "frame_path": "SPAN\\G05_incoming_frame.npz",
+          "frame_sha256": "1ec461a5d4ff33ec98da5ce85a4fe35bf3452fb9e6ac7250af8581c30f1e487c",
+          "maximum_active_shift": 0.08499852636966125,
+          "moved_controls": 8320
+        }
+      ],
+      "output_generation": 6,
+      "field_iteration_count_added": 0,
+      "new_bulb_evaluations": 0,
+      "lineage": "G3 relaxed source; G4/G5 active only for BROAD_ACTIVE; G6 refinement then broad patch replacement/blend/bound/reflection/exact outside restoration",
+      "comparison": "Same broad replacement patch for CLEAR_ONLY/BROAD_ACTIVE, preserving existing BASELINE outside; these are alternatives at actual G6",
+      "topology_scope": "Same actual native triangle IDs as verified closed oriented BASELINE; independent verifier links actual faces and saved baseline receipt",
+      "self_intersection": "NOT_CHECKED_EXPLORATORY",
+      "visual_success": "NOT_ASSESSED",
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 4.556219494856005e-08,
+        "actual_native_xy_symmetry": {
+          "X": {
+            "material_pair_max_error": 9.019494489765868e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+            "passed": true
+          },
+          "Y": {
+            "material_pair_max_error": 7.364386412590295e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+            "passed": true
+          }
+        },
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "inherited_native_faces_identical_to_baseline": true,
+        "native_xyz_sha256": "46e08c51e0c175412bf8a1cdefbb96cdefc3896967a6e2cf33212549b4021aee",
+        "control_xyz_sha256": "21e0aecd1240254a8602808bc186703e74a53ab5a0bbb2ad0eb770fabd4be446",
+        "actual_native_outside_baseline_exact": true,
+        "actual_native_ends_baseline_exact": true,
+        "maximum_total_shift": 0.2799983146508938,
+        "actual_changed_native_vertices": 221284,
+        "control_patch_count": 111280,
+        "outside_native_count": 3050254,
+        "support": {
+          "reference_total_native_area": 99.08893557621806,
+          "reference_area_of_affected_triangles": 7.880897519231537,
+          "affected_reference_area_fraction": 0.07953357732024119,
+          "affected_triangles": 445816,
+          "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+        },
+        "passed": true
+      }
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "CLEAR_ONLY",
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\COUNTER\\G03",
+      "source_control_sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+      "baseline_source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06",
+      "baseline_control_sha256": "ae767bb565c0a2987bbcb92abb353501a4949bec1e42689995995c954181061f",
+      "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+      "common_reference_xyz_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+      "relaxation_recipe": {
+        "positive": 0.5,
+        "negative": -0.53,
+        "pairs": 6,
+        "maximum_carrier_shift": 0.04,
+        "material_end_limits": [
+          0.1,
+          0.9
+        ],
+        "fade_width": 0.08,
+        "carrier_stage_generation": 3,
+        "graph": "Uniform undirected G03 quad-edge neighbours",
+        "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+      },
+      "selection_recipe": {
+        "parameter_range": [
+          0.7,
+          0.87
+        ],
+        "transverse_range": [
+          0.9,
+          1.5657963267948967
+        ],
+        "longitudinal_samples": 41,
+        "transverse_samples": 129,
+        "axial_plateau_fraction": 0.6,
+        "transverse_fade_fraction": 0.12,
+        "minimum_physical_width": 0.5,
+        "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+        "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+        "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+        "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+      },
+      "recipe": {
+        "output_generation": 6,
+        "active_generations": [
+          4,
+          5
+        ],
+        "maximum_total_shift": 0.65,
+        "end_limits": [
+          0.1,
+          0.9
+        ],
+        "centre_arc": 0.54,
+        "centre_sweep_arc": 0.075,
+        "primary_halfwidth_arc": 0.17,
+        "primary_height_cap": 0.28,
+        "primary_height_width_ratio": 0.4,
+        "side_groove_ratio": 0.42,
+        "side_groove_offset_arc": 0.23,
+        "side_groove_halfwidth_arc": 0.105,
+        "secondary_offset_arc": -0.19,
+        "secondary_halfwidth_arc": 0.075,
+        "secondary_height_cap": 0.085,
+        "secondary_height_width_ratio": 0.13,
+        "secondary_start_q": -0.62,
+        "secondary_gate_span": 0.45,
+        "frame_halfwidth_arc": 0.28,
+        "frame_axial_sigma": 0.13,
+        "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+        "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+        "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+        "topology_scope": "Inherited connectivity is held only for this comparison"
+      },
+      "patch_path": "COUNTER\\actual_patch.npz",
+      "patch_sha256": "16deb989f6b2fada19c7651f97627033365394423d5514efbc386a69ee867288",
+      "stages": [],
+      "output_generation": 6,
+      "field_iteration_count_added": 0,
+      "new_bulb_evaluations": 0,
+      "lineage": "G3 relaxed source; G4/G5 active only for BROAD_ACTIVE; G6 refinement then broad patch replacement/blend/bound/reflection/exact outside restoration",
+      "comparison": "Same broad replacement patch for CLEAR_ONLY/BROAD_ACTIVE, preserving existing BASELINE outside; these are alternatives at actual G6",
+      "topology_scope": "Same actual native triangle IDs as verified closed oriented BASELINE; independent verifier links actual faces and saved baseline receipt",
+      "self_intersection": "NOT_CHECKED_EXPLORATORY",
+      "visual_success": "NOT_ASSESSED",
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 3.3867746712003926e-08,
+        "actual_native_xy_symmetry": {
+          "X": {
+            "material_pair_max_error": 9.019494489765868e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+            "passed": true
+          },
+          "Y": {
+            "material_pair_max_error": 7.364386412590295e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+            "passed": true
+          }
+        },
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "inherited_native_faces_identical_to_baseline": true,
+        "native_xyz_sha256": "3180141ee188baef68fbe08c4588ad3170ee9a006753daa74e0d4dd0010b654c",
+        "control_xyz_sha256": "e6a725aa27ede9467f0a76307c331ee27e62a1df31ac77ece1eea87ba9ebaab1",
+        "actual_native_outside_baseline_exact": true,
+        "actual_native_ends_baseline_exact": true,
+        "maximum_total_shift": 0.30000000000000004,
+        "actual_changed_native_vertices": 218304,
+        "control_patch_count": 111280,
+        "outside_native_count": 3050254,
+        "support": {
+          "reference_total_native_area": 110.02731078423285,
+          "reference_area_of_affected_triangles": 7.640064173825989,
+          "affected_reference_area_fraction": 0.06943788882387941,
+          "affected_triangles": 440456,
+          "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+        },
+        "passed": true
+      }
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BROAD_ACTIVE",
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\COUNTER\\G03",
+      "source_control_sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+      "baseline_source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06",
+      "baseline_control_sha256": "ae767bb565c0a2987bbcb92abb353501a4949bec1e42689995995c954181061f",
+      "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+      "common_reference_xyz_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+      "relaxation_recipe": {
+        "positive": 0.5,
+        "negative": -0.53,
+        "pairs": 6,
+        "maximum_carrier_shift": 0.04,
+        "material_end_limits": [
+          0.1,
+          0.9
+        ],
+        "fade_width": 0.08,
+        "carrier_stage_generation": 3,
+        "graph": "Uniform undirected G03 quad-edge neighbours",
+        "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+      },
+      "selection_recipe": {
+        "parameter_range": [
+          0.7,
+          0.87
+        ],
+        "transverse_range": [
+          0.9,
+          1.5657963267948967
+        ],
+        "longitudinal_samples": 41,
+        "transverse_samples": 129,
+        "axial_plateau_fraction": 0.6,
+        "transverse_fade_fraction": 0.12,
+        "minimum_physical_width": 0.5,
+        "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+        "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+        "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+        "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+      },
+      "recipe": {
+        "output_generation": 6,
+        "active_generations": [
+          4,
+          5
+        ],
+        "maximum_total_shift": 0.65,
+        "end_limits": [
+          0.1,
+          0.9
+        ],
+        "centre_arc": 0.54,
+        "centre_sweep_arc": 0.075,
+        "primary_halfwidth_arc": 0.17,
+        "primary_height_cap": 0.28,
+        "primary_height_width_ratio": 0.4,
+        "side_groove_ratio": 0.42,
+        "side_groove_offset_arc": 0.23,
+        "side_groove_halfwidth_arc": 0.105,
+        "secondary_offset_arc": -0.19,
+        "secondary_halfwidth_arc": 0.075,
+        "secondary_height_cap": 0.085,
+        "secondary_height_width_ratio": 0.13,
+        "secondary_start_q": -0.62,
+        "secondary_gate_span": 0.45,
+        "frame_halfwidth_arc": 0.28,
+        "frame_axial_sigma": 0.13,
+        "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+        "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+        "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+        "topology_scope": "Inherited connectivity is held only for this comparison"
+      },
+      "patch_path": "COUNTER\\actual_patch.npz",
+      "patch_sha256": "16deb989f6b2fada19c7651f97627033365394423d5514efbc386a69ee867288",
+      "stages": [
+        {
+          "generation": 4,
+          "incoming_xyz_sha256": "17fabfd6c45352c71fb9bcbfeed3c525cf25cf51334cbe10eaad3501435d8532",
+          "raw_delta_sha256": "7010c51a5707de34e0cb6a2e901670e709940d7171ea7967e6f77afd2e4cc145",
+          "applied_delta_sha256": "2f5d4bc4389af7b61907af0bd35bbbcb9cc660c2c46a2a0f52102790284d5183",
+          "resulting_xyz_sha256": "158d1c77ad13a8a9b21e0a851a0067a63144050ba47819d976614dead2eeda2c",
+          "fields_path": "COUNTER\\G04_active_fields.npz",
+          "fields_sha256": "1f16d2f80c51f8620be6d6e4b4020548a58b41c7bf42e32f9adc1c5c5c5f11f7",
+          "frame_path": "COUNTER\\G04_incoming_frame.npz",
+          "frame_sha256": "54231ef4a4b7fe4b3fc16b23e818085a8bfd8c2bd3b3e0c4250d7f195aad3085",
+          "maximum_active_shift": 0.27998302386061075,
+          "moved_controls": 4964
+        },
+        {
+          "generation": 5,
+          "incoming_xyz_sha256": "9a3d5b073cee9f338ef2bf98df53a8347a48ceb8a2f196ae2959c9af85fbdca0",
+          "raw_delta_sha256": "addddd4a7a044726bcb9fe4e737c08b5df12034e3b69f57c6e3d3813baed1dfd",
+          "applied_delta_sha256": "d79eb6392b464c409a1e603272d5fb1d54ebd3ed9b6338ad1c55fc164244f4eb",
+          "resulting_xyz_sha256": "d42df5978a047b0b2254e4bf503c0eb5dfb9b6eab622d63397d85a8b4a46c311",
+          "fields_path": "COUNTER\\G05_active_fields.npz",
+          "fields_sha256": "97ce85b36a4f2b79d1c925870737027a0c5aa12bcfbf59b4d6a4a2e40f2e4fa4",
+          "frame_path": "COUNTER\\G05_incoming_frame.npz",
+          "frame_sha256": "5db64aec66408e938ed05d463c2bb134a59b48509afe91c89f6814e832a5d809",
+          "maximum_active_shift": 0.08499994343229791,
+          "moved_controls": 9812
+        }
+      ],
+      "output_generation": 6,
+      "field_iteration_count_added": 0,
+      "new_bulb_evaluations": 0,
+      "lineage": "G3 relaxed source; G4/G5 active only for BROAD_ACTIVE; G6 refinement then broad patch replacement/blend/bound/reflection/exact outside restoration",
+      "comparison": "Same broad replacement patch for CLEAR_ONLY/BROAD_ACTIVE, preserving existing BASELINE outside; these are alternatives at actual G6",
+      "topology_scope": "Same actual native triangle IDs as verified closed oriented BASELINE; independent verifier links actual faces and saved baseline receipt",
+      "self_intersection": "NOT_CHECKED_EXPLORATORY",
+      "visual_success": "NOT_ASSESSED",
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 3.3867746712003926e-08,
+        "actual_native_xy_symmetry": {
+          "X": {
+            "material_pair_max_error": 9.019494489765868e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+            "passed": true
+          },
+          "Y": {
+            "material_pair_max_error": 7.364386412590295e-16,
+            "pair_involution": true,
+            "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+            "passed": true
+          }
+        },
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "inherited_native_faces_identical_to_baseline": true,
+        "native_xyz_sha256": "9ebee67a511a78bc2776fe6557a604f435e816d26855bc7e30607e1875a86261",
+        "control_xyz_sha256": "a4c1849040c316d20359a9456a5201d2be576ba928b4731a500a09e7f186e283",
+        "actual_native_outside_baseline_exact": true,
+        "actual_native_ends_baseline_exact": true,
+        "maximum_total_shift": 0.30000000000000004,
+        "actual_changed_native_vertices": 221796,
+        "control_patch_count": 111280,
+        "outside_native_count": 3050254,
+        "support": {
+          "reference_total_native_area": 110.02731078423285,
+          "reference_area_of_affected_triangles": 7.797855391414764,
+          "affected_reference_area_fraction": 0.07087199837780833,
+          "affected_triangles": 446728,
+          "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+        },
+        "passed": true
+      }
+    }
+  ]
+}

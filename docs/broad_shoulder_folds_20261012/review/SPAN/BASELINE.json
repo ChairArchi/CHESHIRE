@@ -1,0 +1,86 @@
+{
+  "input_case": "SPAN",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\SPAN\\G03",
+  "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+  "atlas_source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\bulb_integrated\\atlas\\power8.npz",
+  "atlas_sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02",
+  "original_colonies_source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\bulb_integrated\\INTEGRATED\\SPAN\\G05\\colonies.npz",
+  "original_colonies_sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c",
+  "recipe": {
+    "parent_index": 1,
+    "output_generation": 6,
+    "inactive_refinements": 3,
+    "maximum_relief": 0.3,
+    "middle_amplitude_cap": 0.14,
+    "middle_width_ratio": 0.7,
+    "middle_centre_arc": 0.55,
+    "middle_curve_arc": 0.08,
+    "middle_halfwidth_arc": 0.22,
+    "middle_positive_rim_ratio": 0.18,
+    "parent_core_arc": 0.25,
+    "scope": "One measured shoulder per canonical quadrant; material X/Y reflection",
+    "lineage": "Actual relaxed WALL G3 trough and shoulder, not a generation-number ornament"
+  },
+  "relief_recipe": {
+    "primary_radius": 0.3,
+    "primary_amplitude": 0.22,
+    "secondary_radius": 0.14,
+    "secondary_amplitude": 0.07,
+    "maximum_height": 0.3,
+    "primary_count": 160,
+    "minimum_spacing_in_radii": 1.0,
+    "placement": "physical_farthest_gap",
+    "root_collar_amplitude": 0.035,
+    "root_collar_inner_radius": 0.68,
+    "root_collar_outer_radius": 1.2,
+    "collar_positive_suppression_height": 0.08,
+    "normal_agreement_fade": [
+      0.05,
+      0.3
+    ]
+  },
+  "relaxation_recipe": {
+    "positive": 0.5,
+    "negative": -0.53,
+    "pairs": 6,
+    "maximum_carrier_shift": 0.04,
+    "material_end_limits": [
+      0.1,
+      0.9
+    ],
+    "fade_width": 0.08,
+    "carrier_stage_generation": 3,
+    "graph": "Uniform undirected G03 quad-edge neighbours",
+    "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+  },
+  "common_reference_xyz_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+  "common_incoming_normals_sha256": "08c11a2d5820d678831b4ce0a86502c9266aa9c421e5cb89cc1fc05fb2199fbe",
+  "carrier_relaxation_maximum": 0.04000000000000001,
+  "output_generation": 6,
+  "field_internal_iterations": 10,
+  "topology": "Unchanged inherited quad/fan connectivity; no appended component",
+  "self_intersection": "Exploration proceeds per user preference; not certified",
+  "baseline_comparison": "BASELINE vs VALLEY_PRIORITY changes only parent-core growth priority",
+  "candidate": "BASELINE",
+  "combined_operation": false,
+  "checks": {
+    "finite": true,
+    "minimum_triangle_area": 4.556219494856005e-08,
+    "actual_native_left_right_symmetry": {
+      "passed": true,
+      "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+      "material_pair_max_error": 9.019494489765868e-16,
+      "pair_involution": true,
+      "reflected_oriented_native_triangle_sets_identical": true,
+      "physical_vertices": 3276802,
+      "physical_triangles": 6553600
+    },
+    "native_xyz_sha256": "122cf892b786ac4540889f77ddcd843d3b41c14e42ac5fc0ece7e25eb79cdbfe",
+    "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+    "maximum_total_detail_shift": 0.27559037970678374,
+    "control_xyz_sha256": "038aeec3dadc98e4849182c07859eea6619ff4f98ae2874f077598bad7be1f32",
+    "control_topology_sha256": "7481511123dcdf6a3c211b4cea5fa575637b0e7bb900f3eca42b7b24912698a7",
+    "outside_patch_delta_sha256": "78d8d11506c3f1aee775bb0cf84eb27771f26413b77cc9f3884f306d1082ca5f",
+    "passed": true
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "CLEAR_ONLY",
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 900,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "shoulder_front": [
+      [
+        0,
+        32,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_oblique": [
+      [
+        -18,
+        28,
+        15
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_side": [
+      [
+        -32,
+        0,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ]
+  },
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\CLEAR_ONLY\\COUNTER\\G06\\geometry.npz",
+  "source_sha256": "40734a709377d321667a6e473673114ba9bac3511a36fab95e2b42e64526c3ce",
+  "render_script_sha256": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+  "scope": "Actual saved native geometry; new shoulder cameras are identical between all three states"
+}

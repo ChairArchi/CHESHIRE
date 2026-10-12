@@ -1,0 +1,59 @@
+CHESHIRE broad-shoulder and rooted-fan experiment reproduction
+2026-10-12
+
+Worktree: C:\Users\USER\CHESHIRE\worktrees\broad-shoulder-folds-20261012
+Branch: experiment/broad-shoulder-folds-20261012
+Base commit: 191fec7df4595405820f47e1f7c43b94865dd742
+Python: C:\Users\USER\CHESHIRE\.venv\Scripts\python.exe
+Blender: C:\Users\USER\CHESHIRE\scratch\generative_gate_20261010\external\blender-4.5.4-windows-x64\blender.exe
+
+Large outputs and logs: E:\CHESHIRE_DATA\experiments\broad_shoulder_folds_20261012
+Preserved baseline/source receipt: E:\CHESHIRE_DATA\experiments\parent_guided_detail_20261012\trial02
+
+Use fresh output directories for reproduction. Existing checkpoints and images
+are not overwritten. G6 generation, rendering and actual-state verification
+run sequentially because they share physical memory (minimum 8 GB guard).
+Small unit tests do not load the large meshes. Use -B and an E basetemp.
+
+1. Broad comparison (actual run used separate --case SPAN, then COUNTER):
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/study.py --parent-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02 --output E:/CHESHIRE_DATA/experiments/broad_shoulder_folds_20261012/FRESH_BROAD --case SPAN COUNTER
+
+2. Actual broad replay and matched native rendering:
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/verify.py --root <broad-root> --parent-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02
+blender --background --factory-startup --python experiments/broad_shoulder_folds_20261012/render.py -- --root <broad-root> --parent-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02 --resolution 900 --samples 24
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/review.py --root <broad-root> --parent-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02
+
+3. Small rooted folds on the verified actual broad G6:
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/study_fans.py --parent-root <broad-root> --output E:/CHESHIRE_DATA/experiments/broad_shoulder_folds_20261012/FRESH_FANS --case SPAN COUNTER
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/verify_fans.py --root <fan-root> --parent-root <broad-root>
+blender --background --factory-startup --python experiments/broad_shoulder_folds_20261012/render_fans.py -- --root <fan-root> --parent-root <broad-root> --resolution 900 --samples 24
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/review_fans.py --root <fan-root> --broad-root <broad-root> --baseline-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02
+
+4. Scoped new tests:
+python -X utf8 -B -m pytest -q tests/test_broad_shoulder_folds.py tests/test_broad_shoulder_verify.py tests/test_broad_rooted_fans.py tests/test_broad_rooted_verify.py -p no:cacheprovider --basetemp <fresh E test directory>
+
+5. Lightweight archive after visual records and both verification receipts exist:
+python -X utf8 -B experiments/broad_shoulder_folds_20261012/archive.py --root <broad-root> --parent-root E:/CHESHIRE_DATA/experiments/parent_guided_detail_20261012/trial02 --fan-root <fan-root> --dest docs/broad_shoulder_folds_20261012/review
+
+Generation semantics: G3 common relaxed WALL source -> G4 primary active profile
+-> G5 smaller active profile -> G6 refinement -> broad patch replacement with
+the original BASELINE outside, configured .65 total bound, reflection and exact
+weight-zero restoration. CLEAR_ONLY uses the same patch and no active profile.
+ROOTED_FANS keeps actual G6 and adds one scalar surface-field pass with two
+authored curve scales; it adds no refinement and no Mandelbulb evaluation.
+
+Broad incoming frames pool actual native triangle normals using transverse-arc
+quadrature and longitudinal weights, then PCHIP interpolation. Fine frames are
+measured again on actual BROAD_ACTIVE G6. Saved curve XYZ/UV comes from actual
+incoming triangles and barycentrics; it does not establish automatically
+detected ridge maxima. Max-composition can conceal child crowns at overlaps.
+
+New shoulder views target z=8.05, orthographic scale=3.2, and are identical for
+all alternatives. The whole front matches the earlier front camera. These new
+shoulder crops are cameras, not image cropping or resizing after rendering.
+
+The fine CLI initially hit a legacy module-name collision before creating the
+output directory. It now loads study.py by exact path; a regression test covers
+the collision. The verifier's first tmp_path fixture permission issue was
+replaced by a disk-free inventory corruption test. Old failure evidence and
+successful rerun logs are retained; no old geometry was repaired or overwritten.

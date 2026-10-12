@@ -1,0 +1,61 @@
+{
+  "selection": {
+    "parameter_range": [
+      0.7,
+      0.87
+    ],
+    "transverse_range": [
+      0.9,
+      1.5657963267948967
+    ],
+    "longitudinal_samples": 41,
+    "transverse_samples": 129,
+    "axial_plateau_fraction": 0.6,
+    "transverse_fade_fraction": 0.12,
+    "minimum_physical_width": 0.5,
+    "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+    "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+    "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+    "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+  },
+  "folds": {
+    "output_generation": 6,
+    "active_generations": [
+      4,
+      5
+    ],
+    "maximum_total_shift": 0.65,
+    "end_limits": [
+      0.1,
+      0.9
+    ],
+    "centre_arc": 0.54,
+    "centre_sweep_arc": 0.075,
+    "primary_halfwidth_arc": 0.17,
+    "primary_height_cap": 0.28,
+    "primary_height_width_ratio": 0.4,
+    "side_groove_ratio": 0.42,
+    "side_groove_offset_arc": 0.23,
+    "side_groove_halfwidth_arc": 0.105,
+    "secondary_offset_arc": -0.19,
+    "secondary_halfwidth_arc": 0.075,
+    "secondary_height_cap": 0.085,
+    "secondary_height_width_ratio": 0.13,
+    "secondary_start_q": -0.62,
+    "secondary_gate_span": 0.45,
+    "frame_halfwidth_arc": 0.28,
+    "frame_axial_sigma": 0.13,
+    "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+    "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+    "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+    "topology_scope": "Inherited connectivity is held only for this comparison"
+  },
+  "cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "modes": [
+    "CLEAR_ONLY",
+    "BROAD_ACTIVE"
+  ]
+}

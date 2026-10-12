@@ -1,0 +1,138 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "ROOTED_FANS",
+  "recipe": {
+    "output_generation": 6,
+    "additional_field_passes": 1,
+    "root_centre_arc": 0.54,
+    "root_centre_sweep_arc": 0.075,
+    "primary_start_q": [
+      -0.74,
+      -0.51,
+      -0.22,
+      0.045,
+      0.31,
+      0.46
+    ],
+    "primary_duration_q": [
+      0.6,
+      0.56,
+      0.53,
+      0.49,
+      0.43,
+      0.37
+    ],
+    "primary_side": [
+      -1.0,
+      1.0,
+      -1.0,
+      1.0,
+      -1.0,
+      1.0
+    ],
+    "primary_reach_arc": [
+      0.27,
+      0.25,
+      0.3,
+      0.28,
+      0.25,
+      0.24
+    ],
+    "primary_halfwidth_arc": 0.055,
+    "primary_height_cap": 0.04,
+    "primary_height_width_ratio": 0.06,
+    "child_attachment_fraction": [
+      0.48,
+      0.56,
+      0.44,
+      0.53,
+      0.49,
+      0.57
+    ],
+    "child_end_extension_q": [
+      0.07,
+      0.05,
+      0.08,
+      0.06,
+      0.05,
+      0.07
+    ],
+    "child_reach_arc": [
+      0.1,
+      0.09,
+      0.11,
+      0.095,
+      0.1,
+      0.085
+    ],
+    "child_halfwidth_arc": 0.028,
+    "child_height_cap": 0.016,
+    "child_height_width_ratio": 0.025,
+    "root_turn_fraction": 0.2,
+    "root_height_fade_fraction": 0.12,
+    "tip_height_fade_fraction": 0.24,
+    "groove_root_fade_fraction": 0.28,
+    "groove_ratio": 0.42,
+    "groove_offset_in_halfwidths": 1.45,
+    "groove_halfwidth_ratio": 0.65,
+    "trunk_groove_protection_halfwidth_arc": 0.075,
+    "trunk_groove_protection_fade_arc": 0.055,
+    "end_limits": [
+      0.1,
+      0.9
+    ],
+    "scope": "Two authored connected curve scales on one shared measured broad shoulder; same recipe on both inputs",
+    "lineage": "Additional scalar pass on actual incoming BROAD_ACTIVE G06; no refinement and generation remains 6",
+    "amplitude_scope": "Fine-pass amplitude is an explicit comparison condition; no legacy .65 total-shift design requirement",
+    "normal_scope": "Caller applies height along actual incoming G06 pooled normals and performs constructive material X/Y geometry reflection",
+    "width_scope": "Halfwidth is a fraction of measured G03 transverse surface arc, not an exact perpendicular geodesic distance"
+  },
+  "source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\BROAD_ACTIVE\\COUNTER\\G06",
+  "source_control_sha256": "1e822a5dd473ee94a642ef249c92890e2175989b9e91601a51f4bd8c56be76a9",
+  "source_control_xyz_sha256": "a4c1849040c316d20359a9456a5201d2be576ba928b4731a500a09e7f186e283",
+  "source_generation_sha256": "baea8d2fca1b97f15f72405499940cb157d757c5cc5160017fe204b1c8b4affe",
+  "parent_verification_sha256": "e90385e5bb11486b873f6bb6e75168383fed912477ab556e43bd0107fb027c02",
+  "patch_source": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01\\COUNTER\\actual_patch.npz",
+  "patch_sha256": "16deb989f6b2fada19c7651f97627033365394423d5514efbc386a69ee867288",
+  "frame_path": "COUNTER\\G06_incoming_frame.npz",
+  "frame_sha256": "3e5d8e6c129d2eff32d7f28f0107958cd5287493619621463e6322da50e93ade",
+  "curve_path": "COUNTER\\G06_incoming_curves.npz",
+  "curve_sha256": "921d0d1783cfc741a242a74702cd2ff6325bf84d188b52d8ff56ecb38d1e97fe",
+  "raw_delta_sha256": "e528971fdb21988e813e13203acafb7feeedc6626c469dc771ecd3ebd250b567",
+  "applied_delta_sha256": "d66d9bc61f71e1f5fb491628dd1cfd9d8391dae2e12a101e271bcec972be009e",
+  "output_generation": 6,
+  "added_subdivision_passes": 0,
+  "added_surface_field_passes": 1,
+  "added_mandelbulb_evaluations": 0,
+  "lineage": "Actual verified BROAD_ACTIVE G6 → one rooted fan signed-height pass along actual incoming pooled native normal → constructive material reflection",
+  "scope": "Authored sparse two-scale rooted curves, not automatic branching or a restored Hansmeyer/IAAC algorithm; parent broad geometry stays read-only",
+  "self_intersection": "NOT_CHECKED_EXPLORATORY",
+  "visual_success": "NOT_ASSESSED",
+  "checks": {
+    "finite": true,
+    "minimum_triangle_area": 3.3867746712003926e-08,
+    "actual_native_xy_symmetry": {
+      "X": {
+        "material_pair_max_error": 9.019494489765868e-16,
+        "pair_involution": true,
+        "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+        "passed": true
+      },
+      "Y": {
+        "material_pair_max_error": 7.364386412590295e-16,
+        "pair_involution": true,
+        "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+        "passed": true
+      }
+    },
+    "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+    "inherited_native_faces_identical_to_parent": true,
+    "control_xyz_sha256": "d0ffd7d4dd474aedc3e97e9ffca820f99dd9d5cc91f0206ed53cc712fbec0281",
+    "native_xyz_sha256": "7fb5679956abc3a9146a6ff8ff877fed1b1ccc00e95fd3e4fa8ab618f1e6efb9",
+    "maximum_actual_added_shift": 0.039999999751278485,
+    "actual_native_outside_parent_exact": true,
+    "actual_native_ends_parent_exact": true,
+    "actual_changed_native_vertices": 82792,
+    "passed": true
+  }
+}

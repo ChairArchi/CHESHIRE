@@ -1,0 +1,532 @@
+{
+  "status": "PASS",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\broad_shoulder_folds_20261012\\trial01",
+  "parent_root": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "CLEAR_ONLY",
+    "BROAD_ACTIVE"
+  ],
+  "recipe": {
+    "selection": {
+      "parameter_range": [
+        0.7,
+        0.87
+      ],
+      "transverse_range": [
+        0.9,
+        1.5657963267948967
+      ],
+      "longitudinal_samples": 41,
+      "transverse_samples": 129,
+      "axial_plateau_fraction": 0.6,
+      "transverse_fade_fraction": 0.12,
+      "minimum_physical_width": 0.5,
+      "selection_scope": "One fixed material window on both inputs; actual native XYZ measures its physical support",
+      "selection_limit": "Authored shared window selected by actual width and normal diagnostics; not automatic natural-shoulder detection",
+      "reflection_scope": "Canonical abs material X/Y coordinates; caller constructively reflects geometry",
+      "boundary_scope": "Quintic fade to zero at all four material patch boundaries; front symmetry seam remains outside the patch"
+    },
+    "folds": {
+      "output_generation": 6,
+      "active_generations": [
+        4,
+        5
+      ],
+      "maximum_total_shift": 0.65,
+      "end_limits": [
+        0.1,
+        0.9
+      ],
+      "centre_arc": 0.54,
+      "centre_sweep_arc": 0.075,
+      "primary_halfwidth_arc": 0.17,
+      "primary_height_cap": 0.28,
+      "primary_height_width_ratio": 0.4,
+      "side_groove_ratio": 0.42,
+      "side_groove_offset_arc": 0.23,
+      "side_groove_halfwidth_arc": 0.105,
+      "secondary_offset_arc": -0.19,
+      "secondary_halfwidth_arc": 0.075,
+      "secondary_height_cap": 0.085,
+      "secondary_height_width_ratio": 0.13,
+      "secondary_start_q": -0.62,
+      "secondary_gate_span": 0.45,
+      "frame_halfwidth_arc": 0.28,
+      "frame_axial_sigma": 0.13,
+      "amplitude_scope": "Pilot comparison condition, not a user design constraint",
+      "normal_scope": "Arc-weighted incoming native triangle normals, longitudinally pooled and PCHIP interpolated",
+      "fine_detail_scope": "Existing bulb is replaced in this broad patch in both CLEAR_ONLY and BROAD_ACTIVE; no new bulb evaluation",
+      "topology_scope": "Inherited connectivity is held only for this comparison"
+    },
+    "cases": [
+      "SPAN",
+      "COUNTER"
+    ],
+    "modes": [
+      "CLEAR_ONLY",
+      "BROAD_ACTIVE"
+    ]
+  },
+  "cases": {
+    "SPAN": {
+      "passed": true,
+      "input_case": "SPAN",
+      "baseline_control_xyz_sha256": "038aeec3dadc98e4849182c07859eea6619ff4f98ae2874f077598bad7be1f32",
+      "baseline_generation_main_receipt_linked": true,
+      "actual_measured_patch_replayed": true,
+      "measurement_reconstruction_errors": {
+        "parameter": 0.0,
+        "surface_uv": 0.0,
+        "surface_xyz": 0.0,
+        "triangle_ids": 0.0,
+        "barycentric": 0.0,
+        "surface_normals": 0.0,
+        "normal_pool_arc_weights": 0.0,
+        "transverse_arc": 0.0,
+        "physical_width": 0.0,
+        "chord_length": 0.0,
+        "arc_to_chord_ratio": 0.0,
+        "pooled_normal": 0.0,
+        "tangent": 0.0,
+        "bitangent": 0.0,
+        "longitudinal_tangent": 0.0,
+        "centreline_uv": 0.0,
+        "centreline_xyz": 0.0,
+        "centreline_triangle_ids": 0.0,
+        "centreline_barycentric": 0.0,
+        "centreline_fit_coefficients": 0.0,
+        "normal_angle_degrees": 0.0,
+        "normal_angle_p90_by_row": 0.0,
+        "source_generation": 0.0,
+        "native_sample_max_error": 0.0,
+        "axial_plateau_fraction": 0.0,
+        "transverse_fade_fraction": 0.0
+      },
+      "actual_physical_width": {
+        "minimum": 0.5653300575446738,
+        "median": 0.6693965805521351,
+        "maximum": 0.9975014728051071
+      },
+      "common_reference_reconstructed_exact": true,
+      "common_reference_xyz_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+      "active_stages": [
+        {
+          "passed": true,
+          "generation": 4,
+          "incoming_xyz_sha256": "27ae213ff3aca3db38d1eed7e6a5f60c85b6f8484ad0586e8dbbec5023c8c900",
+          "resulting_xyz_sha256": "c620f5d9aa10e2c0171ce78b92e07690c9c15a986f1310661ba711860d87c94c",
+          "incoming_frame": {
+            "passed": true,
+            "incoming_generation": 4,
+            "actual_native_sample_provenance": {
+              "passed": true,
+              "sample_count": 5289,
+              "actual_xyz_max_error": 0.0,
+              "actual_material_uv_max_error": 2.220446049250313e-16,
+              "tolerance": 3e-12,
+              "barycentric_containment_tolerance": 1e-09,
+              "scope": "Actual saved source native triangle/barycentric XYZ and affine material UV; no nearest-point substitution or authored-curve quality claim."
+            },
+            "actual_frame_reconstruction_errors": {
+              "actual_triangle_normals": 0.0,
+              "actual_transverse_arc": 0.0,
+              "transverse_weights": 0.0,
+              "axial_weights": 0.0,
+              "pooled_normals": 0.0,
+              "pooled_vector_lengths": 0.0
+            },
+            "tolerance": 3e-12,
+            "normal_rule": "Actual native triangle normals → physical transverse-arc quadrature → axial pooling; no control local-normal substitution.",
+            "evidence_scope": "Incoming actual stage before its displacement and before final G06 replacement/blend."
+          },
+          "actual_PCHIP_normal_max_error": 0.0,
+          "actual_PCHIP_reflected_delta_max_error": 0.0,
+          "raw_delta_hash_exact": true,
+          "stored_fields_reflection_delta_exact": true,
+          "resulting_control_hash_exact": true
+        },
+        {
+          "passed": true,
+          "generation": 5,
+          "incoming_xyz_sha256": "4d5ffd897d4cde52de1250387d764e190fa12e505c845c25faa45badfef809df",
+          "resulting_xyz_sha256": "2a6ece53303bbccb89f0ae1ddb08f886e4d4f3e92528fce7f996072ba27ab143",
+          "incoming_frame": {
+            "passed": true,
+            "incoming_generation": 5,
+            "actual_native_sample_provenance": {
+              "passed": true,
+              "sample_count": 5289,
+              "actual_xyz_max_error": 0.0,
+              "actual_material_uv_max_error": 2.220446049250313e-16,
+              "tolerance": 3e-12,
+              "barycentric_containment_tolerance": 1e-09,
+              "scope": "Actual saved source native triangle/barycentric XYZ and affine material UV; no nearest-point substitution or authored-curve quality claim."
+            },
+            "actual_frame_reconstruction_errors": {
+              "actual_triangle_normals": 0.0,
+              "actual_transverse_arc": 0.0,
+              "transverse_weights": 0.0,
+              "axial_weights": 0.0,
+              "pooled_normals": 0.0,
+              "pooled_vector_lengths": 0.0
+            },
+            "tolerance": 3e-12,
+            "normal_rule": "Actual native triangle normals → physical transverse-arc quadrature → axial pooling; no control local-normal substitution.",
+            "evidence_scope": "Incoming actual stage before its displacement and before final G06 replacement/blend."
+          },
+          "actual_PCHIP_normal_max_error": 0.0,
+          "actual_PCHIP_reflected_delta_max_error": 0.0,
+          "raw_delta_hash_exact": true,
+          "stored_fields_reflection_delta_exact": true,
+          "resulting_control_hash_exact": true
+        }
+      ],
+      "states": {
+        "CLEAR_ONLY": {
+          "passed": true,
+          "actual_delta": {
+            "passed": true,
+            "saved_actual_delta_exact": true,
+            "unchanged_baseline_controls_exact": true,
+            "fixed_end_baseline_controls_exact": true,
+            "maximum_actual_total_shift": 0.27559037970678374,
+            "configured_experiment_cap": 0.65,
+            "outside_control_count": 1527122,
+            "fixed_end_control_count": 379906,
+            "scope": "Exact locality is this pilot comparison condition; a cap is checked only when explicitly configured."
+          },
+          "actual_native_guards": {
+            "passed": true,
+            "exact_native_guard_counts": {
+              "outside": 3050254,
+              "ends": 760834
+            }
+          },
+          "final_control_xyz_sha256": "e51bfd51955a82d5fa7232ba751e35d2a03a26538c30ae3ffea06bb1570cad04",
+          "native_xyz_sha256": "e903418c1724df3ed50c895ad59169410a14c4689c27b019543732e313ad87c8",
+          "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+          "native_control_rebuild_exact": true,
+          "actual_native_coordinate_symmetry": {
+            "X": {
+              "material_pair_max_error": 9.019494489765868e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+              "passed": true
+            },
+            "Y": {
+              "material_pair_max_error": 7.364386412590295e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+              "passed": true
+            }
+          },
+          "minimum_actual_native_triangle_area": 4.556219494856005e-08,
+          "actual_changed_native_vertices": 214304,
+          "affected_reference_area": {
+            "reference_total_native_area": 99.08893557621806,
+            "reference_area_of_affected_triangles": 7.565770391316276,
+            "affected_reference_area_fraction": 0.07635333195699506,
+            "affected_triangles": 432776,
+            "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+          },
+          "generation_json_sha256": "9b2a3c8d7ecceb190b062898f9fca0c555792b2a6d184ac7f501815b25d3bf5c",
+          "topology_scope": "Identical actual native faces to main independently verified closed oriented one-component BASELINE; no new connectivity.",
+          "symmetry_scope": "Actual X/Y native XYZ pair checks with material-chart involutions; same inherited native faces, oriented triangle reflection not recomputed here.",
+          "final_G06_postprocessing": "Inactive refinement → same measured broad patch replacement with BASELINE → configured total-vector bound → material reflection → exact weight-zero BASELINE restoration."
+        },
+        "BROAD_ACTIVE": {
+          "passed": true,
+          "actual_delta": {
+            "passed": true,
+            "saved_actual_delta_exact": true,
+            "unchanged_baseline_controls_exact": true,
+            "fixed_end_baseline_controls_exact": true,
+            "maximum_actual_total_shift": 0.2799983146508938,
+            "configured_experiment_cap": 0.65,
+            "outside_control_count": 1527122,
+            "fixed_end_control_count": 379906,
+            "scope": "Exact locality is this pilot comparison condition; a cap is checked only when explicitly configured."
+          },
+          "actual_native_guards": {
+            "passed": true,
+            "exact_native_guard_counts": {
+              "outside": 3050254,
+              "ends": 760834
+            }
+          },
+          "final_control_xyz_sha256": "21e0aecd1240254a8602808bc186703e74a53ab5a0bbb2ad0eb770fabd4be446",
+          "native_xyz_sha256": "46e08c51e0c175412bf8a1cdefbb96cdefc3896967a6e2cf33212549b4021aee",
+          "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+          "native_control_rebuild_exact": true,
+          "actual_native_coordinate_symmetry": {
+            "X": {
+              "material_pair_max_error": 9.019494489765868e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+              "passed": true
+            },
+            "Y": {
+              "material_pair_max_error": 7.364386412590295e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+              "passed": true
+            }
+          },
+          "minimum_actual_native_triangle_area": 4.556219494856005e-08,
+          "actual_changed_native_vertices": 221284,
+          "affected_reference_area": {
+            "reference_total_native_area": 99.08893557621806,
+            "reference_area_of_affected_triangles": 7.880897519231537,
+            "affected_reference_area_fraction": 0.07953357732024119,
+            "affected_triangles": 445816,
+            "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+          },
+          "generation_json_sha256": "50ef840f444b6ab617d8a16b4ecd2992cff1326415385c1a778884ebfd1bb8bd",
+          "topology_scope": "Identical actual native faces to main independently verified closed oriented one-component BASELINE; no new connectivity.",
+          "symmetry_scope": "Actual X/Y native XYZ pair checks with material-chart involutions; same inherited native faces, oriented triangle reflection not recomputed here.",
+          "final_G06_postprocessing": "Inactive refinement → same measured broad patch replacement with BASELINE → configured total-vector bound → material reflection → exact weight-zero BASELINE restoration."
+        }
+      },
+      "comparison_scope": "CLEAR_ONLY and BROAD_ACTIVE share actual patch/weight/carrier/BASELINE; clearing does not run active stages. Residual old detail remains outside and in the taper.",
+      "clearing_scope": "Only the saved BASELINE-minus-common-reference finish is replaced locally; inherited G03 geometry/history is retained. This is not whole-column fractal removal.",
+      "visual_success": "NOT_ASSESSED: width, area, displacement and normal validity are not aesthetic success scores."
+    },
+    "COUNTER": {
+      "passed": true,
+      "input_case": "COUNTER",
+      "baseline_control_xyz_sha256": "81a640cad6b9bfd577e8fc0335687ec60d03e49f8f62bf58f1947160fa3741d0",
+      "baseline_generation_main_receipt_linked": true,
+      "actual_measured_patch_replayed": true,
+      "measurement_reconstruction_errors": {
+        "parameter": 0.0,
+        "surface_uv": 0.0,
+        "surface_xyz": 0.0,
+        "triangle_ids": 0.0,
+        "barycentric": 0.0,
+        "surface_normals": 0.0,
+        "normal_pool_arc_weights": 0.0,
+        "transverse_arc": 0.0,
+        "physical_width": 0.0,
+        "chord_length": 0.0,
+        "arc_to_chord_ratio": 0.0,
+        "pooled_normal": 0.0,
+        "tangent": 0.0,
+        "bitangent": 0.0,
+        "longitudinal_tangent": 0.0,
+        "centreline_uv": 0.0,
+        "centreline_xyz": 0.0,
+        "centreline_triangle_ids": 0.0,
+        "centreline_barycentric": 0.0,
+        "centreline_fit_coefficients": 0.0,
+        "normal_angle_degrees": 0.0,
+        "normal_angle_p90_by_row": 0.0,
+        "source_generation": 0.0,
+        "native_sample_max_error": 0.0,
+        "axial_plateau_fraction": 0.0,
+        "transverse_fade_fraction": 0.0
+      },
+      "actual_physical_width": {
+        "minimum": 0.650673265509952,
+        "median": 0.8171610215460936,
+        "maximum": 1.0440916870867651
+      },
+      "common_reference_reconstructed_exact": true,
+      "common_reference_xyz_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+      "active_stages": [
+        {
+          "passed": true,
+          "generation": 4,
+          "incoming_xyz_sha256": "17fabfd6c45352c71fb9bcbfeed3c525cf25cf51334cbe10eaad3501435d8532",
+          "resulting_xyz_sha256": "158d1c77ad13a8a9b21e0a851a0067a63144050ba47819d976614dead2eeda2c",
+          "incoming_frame": {
+            "passed": true,
+            "incoming_generation": 4,
+            "actual_native_sample_provenance": {
+              "passed": true,
+              "sample_count": 5289,
+              "actual_xyz_max_error": 0.0,
+              "actual_material_uv_max_error": 2.220446049250313e-16,
+              "tolerance": 3e-12,
+              "barycentric_containment_tolerance": 1e-09,
+              "scope": "Actual saved source native triangle/barycentric XYZ and affine material UV; no nearest-point substitution or authored-curve quality claim."
+            },
+            "actual_frame_reconstruction_errors": {
+              "actual_triangle_normals": 0.0,
+              "actual_transverse_arc": 0.0,
+              "transverse_weights": 0.0,
+              "axial_weights": 0.0,
+              "pooled_normals": 0.0,
+              "pooled_vector_lengths": 0.0
+            },
+            "tolerance": 3e-12,
+            "normal_rule": "Actual native triangle normals → physical transverse-arc quadrature → axial pooling; no control local-normal substitution.",
+            "evidence_scope": "Incoming actual stage before its displacement and before final G06 replacement/blend."
+          },
+          "actual_PCHIP_normal_max_error": 0.0,
+          "actual_PCHIP_reflected_delta_max_error": 0.0,
+          "raw_delta_hash_exact": true,
+          "stored_fields_reflection_delta_exact": true,
+          "resulting_control_hash_exact": true
+        },
+        {
+          "passed": true,
+          "generation": 5,
+          "incoming_xyz_sha256": "9a3d5b073cee9f338ef2bf98df53a8347a48ceb8a2f196ae2959c9af85fbdca0",
+          "resulting_xyz_sha256": "d42df5978a047b0b2254e4bf503c0eb5dfb9b6eab622d63397d85a8b4a46c311",
+          "incoming_frame": {
+            "passed": true,
+            "incoming_generation": 5,
+            "actual_native_sample_provenance": {
+              "passed": true,
+              "sample_count": 5289,
+              "actual_xyz_max_error": 0.0,
+              "actual_material_uv_max_error": 2.220446049250313e-16,
+              "tolerance": 3e-12,
+              "barycentric_containment_tolerance": 1e-09,
+              "scope": "Actual saved source native triangle/barycentric XYZ and affine material UV; no nearest-point substitution or authored-curve quality claim."
+            },
+            "actual_frame_reconstruction_errors": {
+              "actual_triangle_normals": 0.0,
+              "actual_transverse_arc": 0.0,
+              "transverse_weights": 0.0,
+              "axial_weights": 0.0,
+              "pooled_normals": 0.0,
+              "pooled_vector_lengths": 0.0
+            },
+            "tolerance": 3e-12,
+            "normal_rule": "Actual native triangle normals → physical transverse-arc quadrature → axial pooling; no control local-normal substitution.",
+            "evidence_scope": "Incoming actual stage before its displacement and before final G06 replacement/blend."
+          },
+          "actual_PCHIP_normal_max_error": 0.0,
+          "actual_PCHIP_reflected_delta_max_error": 0.0,
+          "raw_delta_hash_exact": true,
+          "stored_fields_reflection_delta_exact": true,
+          "resulting_control_hash_exact": true
+        }
+      ],
+      "states": {
+        "CLEAR_ONLY": {
+          "passed": true,
+          "actual_delta": {
+            "passed": true,
+            "saved_actual_delta_exact": true,
+            "unchanged_baseline_controls_exact": true,
+            "fixed_end_baseline_controls_exact": true,
+            "maximum_actual_total_shift": 0.30000000000000004,
+            "configured_experiment_cap": 0.65,
+            "outside_control_count": 1527122,
+            "fixed_end_control_count": 379906,
+            "scope": "Exact locality is this pilot comparison condition; a cap is checked only when explicitly configured."
+          },
+          "actual_native_guards": {
+            "passed": true,
+            "exact_native_guard_counts": {
+              "outside": 3050254,
+              "ends": 760834
+            }
+          },
+          "final_control_xyz_sha256": "e6a725aa27ede9467f0a76307c331ee27e62a1df31ac77ece1eea87ba9ebaab1",
+          "native_xyz_sha256": "3180141ee188baef68fbe08c4588ad3170ee9a006753daa74e0d4dd0010b654c",
+          "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+          "native_control_rebuild_exact": true,
+          "actual_native_coordinate_symmetry": {
+            "X": {
+              "material_pair_max_error": 9.019494489765868e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+              "passed": true
+            },
+            "Y": {
+              "material_pair_max_error": 7.364386412590295e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+              "passed": true
+            }
+          },
+          "minimum_actual_native_triangle_area": 3.3867746712003926e-08,
+          "actual_changed_native_vertices": 218304,
+          "affected_reference_area": {
+            "reference_total_native_area": 110.02731078423285,
+            "reference_area_of_affected_triangles": 7.640064173825989,
+            "affected_reference_area_fraction": 0.06943788882387941,
+            "affected_triangles": 440456,
+            "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+          },
+          "generation_json_sha256": "afe2d002dbd1ff45b1c331eaac76a33153faa5421cfc65e7a63e65e6e718dd59",
+          "topology_scope": "Identical actual native faces to main independently verified closed oriented one-component BASELINE; no new connectivity.",
+          "symmetry_scope": "Actual X/Y native XYZ pair checks with material-chart involutions; same inherited native faces, oriented triangle reflection not recomputed here.",
+          "final_G06_postprocessing": "Inactive refinement → same measured broad patch replacement with BASELINE → configured total-vector bound → material reflection → exact weight-zero BASELINE restoration."
+        },
+        "BROAD_ACTIVE": {
+          "passed": true,
+          "actual_delta": {
+            "passed": true,
+            "saved_actual_delta_exact": true,
+            "unchanged_baseline_controls_exact": true,
+            "fixed_end_baseline_controls_exact": true,
+            "maximum_actual_total_shift": 0.30000000000000004,
+            "configured_experiment_cap": 0.65,
+            "outside_control_count": 1527122,
+            "fixed_end_control_count": 379906,
+            "scope": "Exact locality is this pilot comparison condition; a cap is checked only when explicitly configured."
+          },
+          "actual_native_guards": {
+            "passed": true,
+            "exact_native_guard_counts": {
+              "outside": 3050254,
+              "ends": 760834
+            }
+          },
+          "final_control_xyz_sha256": "a4c1849040c316d20359a9456a5201d2be576ba928b4731a500a09e7f186e283",
+          "native_xyz_sha256": "9ebee67a511a78bc2776fe6557a604f435e816d26855bc7e30607e1875a86261",
+          "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+          "native_control_rebuild_exact": true,
+          "actual_native_coordinate_symmetry": {
+            "X": {
+              "material_pair_max_error": 9.019494489765868e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+              "passed": true
+            },
+            "Y": {
+              "material_pair_max_error": 7.364386412590295e-16,
+              "pair_involution": true,
+              "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+              "passed": true
+            }
+          },
+          "minimum_actual_native_triangle_area": 3.3867746712003926e-08,
+          "actual_changed_native_vertices": 221796,
+          "affected_reference_area": {
+            "reference_total_native_area": 110.02731078423285,
+            "reference_area_of_affected_triangles": 7.797855391414764,
+            "affected_reference_area_fraction": 0.07087199837780833,
+            "affected_triangles": 446728,
+            "scope": "Reference triangles incident to actually changed native XYZ; not projected visible area or a quality score"
+          },
+          "generation_json_sha256": "baea8d2fca1b97f15f72405499940cb157d757c5cc5160017fe204b1c8b4affe",
+          "topology_scope": "Identical actual native faces to main independently verified closed oriented one-component BASELINE; no new connectivity.",
+          "symmetry_scope": "Actual X/Y native XYZ pair checks with material-chart involutions; same inherited native faces, oriented triangle reflection not recomputed here.",
+          "final_G06_postprocessing": "Inactive refinement → same measured broad patch replacement with BASELINE → configured total-vector bound → material reflection → exact weight-zero BASELINE restoration."
+        }
+      },
+      "comparison_scope": "CLEAR_ONLY and BROAD_ACTIVE share actual patch/weight/carrier/BASELINE; clearing does not run active stages. Residual old detail remains outside and in the taper.",
+      "clearing_scope": "Only the saved BASELINE-minus-common-reference finish is replaced locally; inherited G03 geometry/history is retained. This is not whole-column fractal removal.",
+      "visual_success": "NOT_ASSESSED: width, area, displacement and normal validity are not aesthetic success scores."
+    }
+  },
+  "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+  "verifier_module_sha256": "f99d781d65e263919b243c8ff4069197833f29190d585f5037d37527c1c76e42",
+  "scope": "Actual broad measurement and incoming-native triangle/arc/pool/PCHIP frame proof, ordered G04/G05 active replay, exact G06 clearing/active composition, saved native geometry, coordinate symmetry and baseline locality/topology linkage.",
+  "excluded": [
+    "Aesthetic/reference fidelity certification",
+    "Automatic semantic shoulder detection",
+    "Self-intersections",
+    "Fabrication",
+    "Structural performance"
+  ]
+}
