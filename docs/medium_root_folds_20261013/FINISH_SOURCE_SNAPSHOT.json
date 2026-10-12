@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "supplement_of": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\SOURCE_SNAPSHOT.json",
+  "original_manifest_sha256": "c439c164c1a28510a162c6e1895e37eca3f69d357a6fe64f3daac413288338ae",
+  "files": [
+    {
+      "path": "experiments/medium_root_folds_20261013/finish.py",
+      "sha256": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab",
+      "bytes": 13550
+    },
+    {
+      "path": "experiments/medium_root_folds_20261013/finish_render.py",
+      "sha256": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+      "bytes": 9115
+    },
+    {
+      "path": "experiments/medium_root_folds_20261013/finish_boards.py",
+      "sha256": "544d42f4aedb3f2033bcd11da7b6599581ab996b9555185fd484617e212277a9",
+      "bytes": 6805
+    }
+  ],
+  "scope": "Added frozen finish script and two render/board adapters. The original source snapshot is unchanged."
+}

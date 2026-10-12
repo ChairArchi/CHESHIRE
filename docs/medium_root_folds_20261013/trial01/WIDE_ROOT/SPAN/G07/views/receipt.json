@@ -1,0 +1,222 @@
+{
+  "candidate": "WIDE_ROOT",
+  "input_case": "SPAN",
+  "source_generation": 7,
+  "subdivision_generation": 7,
+  "added_CC_passes": 0,
+  "added_normal_field_passes": 2,
+  "cumulative_normal_field_passes": 5,
+  "smoothing_passes": 4,
+  "version": "4.5.4 LTS",
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "body_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        0,
+        0,
+        6.25
+      ],
+      4.3
+    ],
+    "close_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      1.25
+    ]
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "code_sha256": {
+    "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+    "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+    "parent_code_sha256": {
+      "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+      "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+      "parent_code_sha256": {
+        "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+        "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+        "raw_code_sha256": {
+          "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+          "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+          "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+          "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+          "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+          "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+        }
+      }
+    }
+  },
+  "source_arrays": {
+    "xyz_sha256": "6f0d01ed776d2dfbcbe4d951c0c2216375ab01ae0c8aafd3cfc67c3f3b34f13f",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+  },
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "e37df0167b02f493f4c938914ebb2308b1fec4c8ef96d39e1574ad1f1cc36a2a"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "1cd064379ed199cec47d28fc0b4962f37bb31d4201d922a8b42f8003382bd0c9"
+    },
+    {
+      "view": "close_oblique",
+      "filename": "close_oblique.png",
+      "sha256": "892d23c2b7f56cfbda664878c338112d36ef5a1f16d3285907eab30f4cf4e872"
+    }
+  ],
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial01\\WIDE_ROOT\\SPAN\\G07\\geometry.npz",
+  "source_sha256": "1b08cba957665283a1dd7bb13aa9edf7b8fe36c712255e036b11daf7b54cb7d0",
+  "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial01\\WIDE_ROOT\\SPAN\\G07\\generation.json",
+  "generation_sha256": "cc608852e24e6f1569bc820cd9bf6f467b685a508ee1354dad0981cf1e725fc3",
+  "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial01\\WIDE_ROOT\\SPAN\\G07\\control_quad.npz",
+  "control_sha256": "03d3dd8f2de413588fe52913ff8db45c75c00deaa97bc71519b0332736bed210",
+  "parent_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07",
+  "parent_control_sha256": "79f12288d1ba3782f9da6e84a87b17af60725f9b44d5a9999ffe911e21fb4ead",
+  "parent_geometry_sha256": "bdad6b2860dac6080758b8231c89aedfc0d97f8dc8fa5ad285ce517397ce9e35",
+  "parent_generation_sha256": "2caef83776f6b2fe79609d5467ab3dc7e9851c431103fd647d53c3083f1331fc",
+  "scope": "Latest actual saved G7 plus two new normal-field passes and four delta-smoothing passes; no added CC; saved native only; float32 display; no modifiers/maps or geometry certification."
+}

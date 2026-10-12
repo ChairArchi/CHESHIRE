@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "actual_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07",
+  "trials": [
+    {
+      "trial": "trial01",
+      "visual_review_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial01\\VISUAL_REVIEW.json",
+      "visual_review_sha256": "a7120ed219f47d2a7c3af5257f620f20d3581f3ac85cd61b7f0eb8b669c26eac",
+      "disposition": "ACTUAL_MEDIUM_FOLD_PROGRESS_MICRO_FINISH_NOT_ADOPTED",
+      "render_verification_sha256": "163093fd8b7d59f6eaffb2f9820c903cb737c99badeffcba87538d2b59009e92"
+    },
+    {
+      "trial": "trial02",
+      "visual_review_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\VISUAL_REVIEW.json",
+      "visual_review_sha256": "69bcb06d3e717c23515303fc57639b03279e281b1d080bc8409b4f04e7da98ca",
+      "disposition": "MEDIUM_FOLD_WORKING_CHECKPOINT_MICRO_FINISH_INCOMPLETE",
+      "render_verification_sha256": "00506c963ab339ea40e0b5e4c9f6278f6d8dfb5d94ad977e3c4cff84fe20b366"
+    }
+  ],
+  "adopted_working_checkpoint": "trial02",
+  "selection_scope": "Medium-fold development checkpoint; user-selected MIDDLE breathing-room criterion remains active, final design density not selected.",
+  "new_porosity_goal": false,
+  "method_scope": "Two registered normal-displacement scales on existing G7 with displacement-only filtering; no curvature-driven autonomous branch growth or topology transition.",
+  "original_summaries_unchanged": true
+}
