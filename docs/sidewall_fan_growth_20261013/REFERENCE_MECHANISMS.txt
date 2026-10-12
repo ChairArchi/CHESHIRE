@@ -1,0 +1,135 @@
+CHESHIRE — 작은 디테일의 발생 논리와 다음 비교
+2026-10-13 / 원문·보존 연구·현재 코드 교차 검토
+
+결정
+
+사용자의 로댕·찰흙 인상은 관찰이며 형태나 기술을 고정하는 조건이 아니다.
+현재 sweep과 Mandelbulb를 유지할 의무도 없다. 기존 승인 결과와 원본은 보존하되,
+새 실험의 큰 볼륨·위상·분할 순서까지 변경할 수 있다. 대칭과 본체 연결은 계속 확인한다.
+참고 프로젝트의 외관을 높이 텍스처로 흉내 내는 데 그치지 않고 작은 면·능선·틈이
+어떤 점 배치와 연결에서 발생하는지 검토한다. 다음 비교의 성공은 아직 미확인이다.
+
+1. ETH / Hansmeyer: 새 점의 출처와 법선별로 배치 달리하기
+
+Design by Subdivision (2010), pp.167–170, Eq1–4·Figure2–5:
+face/edge/vertex 점을 다른 식으로 계산하고, 다음 세대 면점은 이전 V/E/F 출처를
+구분한다. 법선 돌출은 incident face 크기로 조절한다. 세대별·공간별 가중치와
+모티프·평면성·외부 영향장·태그를 함께 사용한다. Figure8은 CC만으로 생성한 G8,
+Figure9는 공간 가중치와 잠금을 쓴 G9를 제시한다. 정확한 수치 레시피는 제공하지 않는다.
+https://archive.bridgesmathart.org/2010/bridges2010-167.pdf
+
+기존 구현: src/cheshire/reference_subdivision.py:102–180.
+Eq4의 w3/w4, 법선 wf/we/wp, resolved_controls, PLANARITY가 이미 있다.
+현재 experiments/connected_fold_growth_20261012/study.py:80의 weights={} 경로는
+추가 가중치 효과가 없는 중립 CC다. 이는 연결 가지를 시험하려던 대조 설계이며,
+Hansmeyer의 디테일 생성 능력을 모두 사용한 시험이 아니다.
+
+실제 선행 근거: docs/technology_recovery_20261011/code_snapshots/workspace/outputs/
+research_synthesis_20261011_01/REPORT.txt:44–49.
+동일 보존 G4→G5에서 법선 요청 1배/4배 × Eq4 켜기/끄기를 비교했다.
+4배에서 잔돌출이 더 남고 Eq4를 끄면 더 매끈해졌다. 실제 메시·렌더와 수치 경로를
+확인한 결과지만 새 분기와 여러 규모의 접힘 위계를 해결한 증거는 아니다.
+오래된 입력에서 얻은 효과를 최신 SIDEWALL_FAN의 조형 성공으로 일반화하지 않는다.
+
+2. 작동 장소: 현재 기하의 평면성·출생 영역·방향을 함께 읽기
+
+논문은 평면성, 원래 모서리와의 거리, 외부 영향장에 따라 가중치를 달리하는 경로를
+제시한다. 우리 새 topology에는 실제 root/child 소유권과 SOURCE/WALL/CAP 기록이 있다.
+V/E/F 출처는 새 점의 계산 역할이고 SOURCE/WALL/CAP은 구성 부위이므로 서로 다르다.
+부위별로 아무 숫자나 대응시키지 않고 실제 ancestry를 유지한 제어 배열로 연결해야 한다.
+
+정확한 평면성 계약 주의:
+reference_subdivision.fields는 첫 세 점의 평면에서 네 번째 점까지 거리/전체 quad 둘레다.
+위 논문은 나머지 세 점의 둘레를 분모로 설명한다. 보존 REPORT의 진단은 네 순환 선택의
+최댓값이므로 두 구현은 같지 않다. NORMAL_VARIATION과도 동일 지표가 아니다.
+비균일 제어가 대칭을 깨지 않도록 순환·반사에 불변인 집계 또는 명시적 반사 전파가 필요하다.
+기존 생성 코드를 고치지 않고 별도 wrapper의 resolved_controls로 대조할 수 있다.
+
+3. IAAC: 분할로 늘어난 점을 현재 3D 공간에서 다시 평가하고 이동하기
+
+Mesh Subdivision (Stefana Zapuc·Hanna Lepperod·Léa Garguet-Duport, 2020/21):
+공개 페이지는 Mandelbrot와 subdivision의 결합, 여러 볼륨, depth·입력·attractor 변화를
+다룬다. 공개 의사코드 A/B는 분할 후 기존·새 점을 검사하고 중심 또는 외부점 방향으로
+이동한 뒤 재연결·반복하는 경로를 보여 준다. CC 처리 결과는 별도로 구분된다.
+https://www.iaacblog.com/programs/mesh-subdivision/
+https://www.iaacblog.com/wp-content/uploads/2020/12/group-4_python-presentation4.png
+https://www.iaacblog.com/wp-content/uploads/2020/12/group-4_python-presentation2.png
+원 .py/.gh와 정확한 이동식은 확보하지 못했다. Mandelbrot 내부 iteration은 G가 아니다.
+
+공개 도식의 보존 검토: experiments/iaac_mandelbrot_20261011/SOURCES.md:7–10.
+기존 구현 iaac_follow.py:57은 유한 격자 기반 완전 벡터 이동을 이미 제공한다.
+REPORT.md에는 최근접 이동만으로 깊은 접힘을 얻지 못한 결과도 남아 있다.
+따라서 Mandelbulb 강도만 다시 키우는 대신, 새 벽·캡에서 현재 XYZ와 방향을 다시 읽는
+공간장과 V/E/F 배치의 연결을 다음 독립 가설로 남긴다. 원본 IAAC 재현이라고 부르지 않는다.
+
+4. IAAC DragonSkin: 재귀 깊이·offset·attractor의 역할을 분리하기
+
+공개 Definition Logic은 mesh·recursion level·offset depths·attractor curves·range를
+입력으로 받고 두 loop를 사용한다고 설명한다. 원통 외 입력에도 같은 매개변수를 적용한
+비교와 attractor curve 추가 결과를 제시한다. 정확한 코드 복구나 지속적 위계 보존의
+증거는 아니다. 균일한 표면 과밀화를 피하려면 작동 범위와 깊이를 따로 비교할 근거가 된다.
+https://www.iaacblog.com/programs/dragonskin-python-for-grasshopper-mesh-subdivision/
+
+5. Digital Grotesque II: 작은 구멍·겹친 표피도 다른 위상에서 발생
+
+프로젝트 원문은 일반 subdivision이 보존하는 genus를 바꾸는 확장 과정을 설명하고,
+다중 규모의 구멍·중첩 표피·분기를 제시한다. 정확한 연산자와 수치는 공개 페이지에서
+확인되지 않는다. 닫힌 한 표면을 더 촘촘하게 만드는 것만으로 같은 결과를 약속할 수 없다.
+https://michael-hansmeyer.com/digital-grotesque-II.html
+
+Hansmeyer의 근접 정점 fusing은 단순 자기교차와 구별된다. 그러나 우리 Task29의
+결합 24건 중 실제 변경 3건은 모두 genus0였다(docs/TASK29_RESULTS.md:125).
+기존 weld 반복을 다공성 구현으로 설명하지 않는다. 구멍·연결 변화도 연구 범위에 두되,
+향후 검증은 Euler2를 고정 합격 조건으로 쓰지 않고 해당 연산의 위상 계약을 정의한다.
+한 몸체·대칭·유한성·유향 incidence와 자기교차·제작 적합성도 구분한다.
+
+먼저 수행할 최소 비교
+
+새 자식 수를 늘리기 전에 frozen SIDEWALL_FAN의 실제 G4에서 같은 G5 한 단계만 바꾼다.
+G4는 실제 CC로 생성된 V/E/F classes를 사용하고 이벤트 면에 가짜 출처를 배정하지 않는다.
+중립 G5를 기준으로 Eq4 출처별 배치와 법선 돌출을 분리한 2×2를 두 입력에 동일하게 적용한다.
+아래 수치 초안과 적용 영역을 별도 실행 레시피로 고정한다.
+기존 topology·카메라·재질·표면 해석은 같게 두어 새 작은 능선과 골의 원인을 비교한다.
+이는 연구 원리의 새 입력 적용이며 참고 저자의 미공개 수치 복원이 아니다.
+
+수치 재검토에서 확보한 실행 초안:
+  A 중립: w3/w4=0, wf/we/wp=0.
+  B 출처 배치: w3/w4=1.8/.6, wf/we/wp=0.
+  C 법선 돌출: w3/w4=0, local-incident 비율 wf/we/wp=.8/−.2/.4.
+  D 결합: B와 C의 제어를 함께 적용.
+이 값은 새 대조를 위한 CHESHIRE 가설이며 미실행·미채택 상태다.
+과거 ON에는 [1.8,.6] 외에 source-u별 regional profile이 있었고,
+법선 1배/4배는 frozen signed world length의 배수였다. config의 .035/−.012/.02를
+직접 배수한 시험이 아니다. 현재 local-incident 배율로 같은 숫자를 복사할 수 없다.
+현재 저장 G5 evidence의 input face scale 중앙값은 SPAN 약 .0296, COUNTER 약 .0327이다.
+같은 scale 정의에 대한 새 dimensionless 비율로 비교하며 과거 절대 이동량 재현이라고 하지 않는다.
+첫 비교의 support는 실제 G3 face_event_ids>0인 root/child 면의 G4 후손으로 정한다.
+CC의 parent_face로 전달하며 chart 최근접 추정은 쓰지 않는다. edge/vertex 제어는
+incident support의 명시적 평균으로 만들고 경계 halo와 반사 대응을 배열로 저장한다.
+활성 면점이 주변 edge/corner 계산으로 전달되므로 영역 밖 계수가 0이어도 좌표 변화가
+퍼질 수 있다. 그 halo를 측정하며 영역 밖 좌표를 몰래 복원하지 않는다.
+첫 비교에서는 두 요인 외의 Eq10/11·잠금·공간장·DS를 함께 켜지 않는다.
+
+과거 원본 논리 경로:
+C:\Users\USER\CHESHIRE\outputs\late_g5_factorial_20261011_01\run.py
+C:\Users\USER\CHESHIRE\outputs\late_g5_factorial_20261011_01\frozen_fields\g05.npz
+C:\Users\USER\CHESHIRE\outputs\late_g5_factorial_20261011_01\verification.json
+공통 부모는 axial_placement_retention_20261011_01/full/g04이며 mesh.json SHA256은
+7d6f83a5f03fbc992e5fa2537ae0d6428741c8fe03fe082b2ebdf71b58d7e0d1이다.
+이전 legacy 계산은 Eq4 OFF일 때 면점 외 좌표가 같았다. 현재 reference-coupled는
+완성된 면점을 edge/corner에 전달하므로 Eq4가 그 좌표까지 바꾸는 것이 정상이다.
+과거의 'non-face unchanged' 검사를 현재 경로에 그대로 적용하지 않는다.
+중립 조건의 실제 G5 바이트 재현을 먼저 확인하고 기존 두 중립 상태·렌더를 재사용할 수 있다.
+
+그 결과가 셀 격자·가시·넓은 cap 강화에 머물면 역할별·평면성별 작동과 3D 방향장을
+각각 독립 비교한다. CC/DS 혼합과 위상 변화도 열어 두되, 선행 실패를 지우고 재출발하지 않는다.
+DS의 F/E/V face_roles=0/1/2와 현 SOURCE/WALL/CAP=0/1/2는 의미가 다르다.
+dual_subdivision.py의 face/valence3/4 계약과 DS→CC Eq4 fallback도 준수해야 한다.
+docs/TASK30_RESULTS.md:52–53에는 시험한 비균일 DS 출처 가중치를 채택하지 않은 반례가 있다.
+
+판정
+
+같은 규칙이 SPAN/COUNTER에서 작동하는지, 근접 정면·사선·측면에서 서로 다른 규모의
+능선·골·깊이가 실제로 읽히는지 본다. 폴리곤 수·돌출 수·법선 분산 개선은 미적 성공이 아니다.
+현재 SIDEWALL_FAN의 가시성 향상은 유지된 사실이며 미세 위계 판정은 PARTIAL이다.
+이번 문서는 원문 조사와 후속 대조 설계다. 새로운 생성·알고리즘 실행 결과를 주장하지 않는다.

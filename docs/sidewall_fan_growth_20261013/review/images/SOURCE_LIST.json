@@ -1,0 +1,258 @@
+{
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+  "reused_reference_images": 16,
+  "newly_rendered_images": 8,
+  "original_images_total": 24,
+  "source_note": "ROOT_ONLY and BRANCHED: frozen connected trial01 originals; SIDEWALL_FAN: newly rendered originals",
+  "boards": [
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_front.png",
+      "output_sha256": "62fa3f9abe83073a5016604a16a925a14e3bc0d70dd83e15cd96941116672063",
+      "input_case": "SPAN",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\front.png",
+          "sha256": "324e858e79a88a70c5309a03c538e264adf03ebd466824915a21c0397aa67cfb",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\front.png",
+          "sha256": "d642b90b25a8d6b8bbcec31cd1b55fd047f0f9219c735a75912d00d67f1c1316",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\front.png",
+          "sha256": "0fc60bc6fd4ce17f321e7a64d70f3f6242da5d0fa03b6f3e073ee31869f3ae79",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_front.png",
+      "output_sha256": "75757358ae5e76b7588f7cc867949afaf489673d856148faf19674d63bbb58c0",
+      "input_case": "SPAN",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "d0e57ed72153e53ff6256fb376d534113bd46b755d1ce0f19e74d3dd6ed477ea",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "14a5e4b39124396db82722abaa846af81b2ae1e677bd7e5ea2e86f591ceb73d7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "7338794f61a583287dd5598babcd7cd241496363bf6cc8302bcbe9df1f3fea63",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "output_sha256": "cd0e624f4b39f1fe70955777ebe460a5ebffbdc1763404e07a63fe13db504343",
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "830b36eca414eef7d2f4779f0e3f94d7b95bd04180da17a4bb6225d7141ebd95",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "34cfb2cbdf5fd799fff5c6ac256522dfb00eb1de36868a9cf604ee9ce03c2315",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "0be3d8c2663df9a2d148ad9c3f00f0f7b3864289534964dadc32219dc519f202",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "output_sha256": "cd7ac2eae37e30491b83c4e033500c61cc10e6361e6532cba01ba15e2e066809",
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "5001340504f51c8cdf0cba6aef8592448d240e27ed82a991bf268311274f9b91",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "44f7b6ba1fbaca5858f48bde18bb18e717155797fb6e1d4d47f105ab2f326b54",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "7d1272e1732cfbd351f78759a8c34c241720d031dd2e1d2d0cea8d2aadfcdb11",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_front.png",
+      "output_sha256": "fb18320cc60c6538f3d5b991037a0e84440953e9b7e58f66ed625baeb28a9534",
+      "input_case": "COUNTER",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\front.png",
+          "sha256": "cdb7e5abb8a177f039c418dbcd42b2cb63ad03b4c4a544219834210da092b2bd",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "212599e95d568709b6444c0a0dd241c33a33c73386c1d5c66f6d2c7b24a57a71",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\front.png",
+          "sha256": "ce79c2af9c13341c186bd68cbb4c7c747b40a2022a74f1a78d6813a8ff00b9e8",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_front.png",
+      "output_sha256": "b0001a9f684a3dc6699d590a4eb0dde02a1e5c27487475d7dd67029e76c6b74b",
+      "input_case": "COUNTER",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0ba63f219157c7d225d59a54c64a55e2982447287e37432cb3cad17ad4a8b372",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "f89692124f7503572fbfacf4b0f396a3bbea65bed52bf430d66bc6fb65415b62",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "e1b9ee36a8b48d2a6a4ee59a2cf8b8106138528821712c61e595c2d0c74253a4",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "output_sha256": "38b8509281bfbda15a1f4941480f2dac90fd20f7665ef4c9f7b8ef706d316b8f",
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b723884d025ab869d55025c9d9dec0f77d54e2109f2c66dde5d7223df3f77c5e",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "80b777d54223f638aa197160a5adf9024aa05789b8fae226c06ff1c594689c30",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "3beefa87ef6cc82c3749479d4e7445d3ab76b2af3ddb2307009eed03e33119cc",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "output_sha256": "8b00fd440b5ff4ecb946bfe6b1d4b4429e534d0bc84165463ed0c69595e8c2db",
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "69f260c060d349195987ab5b2c72ce5f3d254249607abd98dc4e5792c6f69ad9",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "3a8b34720154c11d9cb01c1e8074b4753a74cbd2242fd72b77e401c405acf9f3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "d34239feb228633a6fff6a033c77808bf12a67bce4f6fb2856d596982de34966",
+          "reused_reference": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+[
+  {
+    "event_id": 2,
+    "status": "accepted",
+    "level": 1,
+    "parent_event_id": 1,
+    "parent_role": 1,
+    "selected_input_faces": [
+      6294,
+      6295,
+      6296,
+      6297,
+      6298,
+      6299,
+      6300,
+      6301,
+      6302,
+      6303,
+      6304,
+      6305,
+      6374,
+      6375,
+      6376,
+      6377,
+      6378,
+      6379,
+      6380,
+      6381,
+      6382,
+      6383,
+      6384,
+      6385
+    ],
+    "generated_cap_faces": [
+      26620,
+      26621,
+      26622,
+      26623,
+      26624,
+      26625,
+      26626,
+      26627,
+      26628,
+      26629,
+      26630,
+      26631,
+      26632,
+      26633,
+      26634,
+      26635,
+      26636,
+      26637,
+      26638,
+      26639,
+      26640,
+      26641,
+      26642,
+      26643
+    ],
+    "generated_cap_tokens": [
+      26644,
+      26645,
+      26646,
+      26647,
+      26648,
+      26649,
+      26650,
+      26651,
+      26652,
+      26653,
+      26654,
+      26655,
+      26656,
+      26657,
+      26658,
+      26659,
+      26660,
+      26661,
+      26662,
+      26663,
+      26664,
+      26665,
+      26666,
+      26667
+    ],
+    "actual_patch_faces": 24,
+    "boundary_vertices": 28,
+    "source_generation": 3,
+    "geometry": {
+      "mechanism": "connected multi-face curved patch sweep",
+      "selection": [
+        6294,
+        6295,
+        6296,
+        6297,
+        6298,
+        6299,
+        6300,
+        6301,
+        6302,
+        6303,
+        6304,
+        6305,
+        6374,
+        6375,
+        6376,
+        6377,
+        6378,
+        6379,
+        6380,
+        6381,
+        6382,
+        6383,
+        6384,
+        6385
+      ],
+      "patch_faces": 24,
+      "boundary_vertices": 28,
+      "centre": [
+        0.35395149141326154,
+        1.1019287896716972,
+        7.797594081263192
+      ],
+      "normal": [
+        -0.8568420172026672,
+        0.31036652586080254,
+        -0.411696948229107
+      ],
+      "direction": [
+        0.05865886903596939,
+        0.8520126872681498,
+        0.5202244879064489
+      ],
+      "area_radius": 0.2948661768601549,
+      "actual_heights": [
+        0.04923370382351861,
+        0.1641123460783954,
+        0.2871966056371919
+      ],
+      "spec": {
+        "heights": [
+          0.16696965500681515,
+          0.5565655166893839,
+          0.9739896542064218
+        ],
+        "scales": [
+          1.0,
+          0.8,
+          0.45
+        ],
+        "bend": 0.3,
+        "direction": [
+          0.05865886903596944,
+          0.8520126872681498,
+          0.5202244879064489
+        ],
+        "twist": 0.0,
+        "projection_guard": false
+      },
+      "topology_changed": true,
+      "genus_changed": false,
+      "new_scope": 2,
+      "projection_admission": null,
+      "caveat": "Designed constructive branches; not emergent branching, no intersection repair."
+    },
+    "proposal": {
+      "sibling_index": 0,
+      "beta_centre": -1.85,
+      "beta_halfwidth": 0.35,
+      "parent_rows": [
+        1,
+        2
+      ],
+      "boundary_columns": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "planned_input_faces": [
+        6294,
+        6295,
+        6296,
+        6297,
+        6298,
+        6299,
+        6300,
+        6301,
+        6302,
+        6303,
+        6304,
+        6305,
+        6374,
+        6375,
+        6376,
+        6377,
+        6378,
+        6379,
+        6380,
+        6381,
+        6382,
+        6383,
+        6384,
+        6385
+      ],
+      "selected_tokens": [
+        6294,
+        6295,
+        6296,
+        6297,
+        6298,
+        6299,
+        6300,
+        6301,
+        6302,
+        6303,
+        6304,
+        6305,
+        6374,
+        6375,
+        6376,
+        6377,
+        6378,
+        6379,
+        6380,
+        6381,
+        6382,
+        6383,
+        6384,
+        6385
+      ],
+      "selected_boundary_beta": [
+        -2.152113495862883,
+        -2.1344686327079683,
+        -2.165391472632364,
+        -2.1519280217324273,
+        -2.0634966107028423,
+        -1.98788439196652,
+        -1.8599352686569557,
+        -1.6835710907774124,
+        -1.5418116092497711,
+        -1.5898594000177682,
+        -1.6150261425346875,
+        -1.5295877865038185
+      ],
+      "selection_rule": "Fixed beta sectors of actual inherited root boundary PCA; sidewall rows 1 and 2 only (zero based)",
+      "proposal_status": "accepted",
+      "direction": [
+        0.05865886903596944,
+        0.8520126872681498,
+        0.5202244879064489
+      ],
+      "pca_origin": [
+        0.35395149141326154,
+        1.1019287896716972,
+        7.797594081263192
+      ],
+      "pca_major": [
+        0.05865886903596944,
+        0.8520126872681498,
+        0.5202244879064489
+      ],
+      "pca_minor": [
+        0.5122312901800175,
+        0.42160052224730676,
+        -0.7482460190347243
+      ],
+      "pca_extent": [
+        0.5488053729075393,
+        0.4177811045002402
+      ],
+      "normal_diagnostics": {
+        "actual_area": 0.2731491104424004,
+        "normal": [
+          -0.8568420172026672,
+          0.31036652586080254,
+          -0.411696948229107
+        ],
+        "normal_coherence": 0.5187899900155123,
+        "normal_spread_max_degrees": 110.97697592337313,
+        "normal_spread_rms_degrees": 63.66131843439883,
+        "angle_to_root_normal_degrees": 80.77584521655928,
+        "scope": "Actual area-weighted incoming normals; diagnostic only, no aesthetic success threshold"
+      }
+    },
+    "root_radius": 0.41028086519598844,
+    "child_radius": 0.2948661768601549,
+    "height_scope": "Absolute heights = authored coefficients times inherited root area radius; Task32 relative heights divided by actual child radius",
+    "chart_rule": "New ring copies actual pre-event input boundary chart; old/interior chart unchanged"
+  },
+  {
+    "event_id": 3,
+    "status": "accepted",
+    "level": 1,
+    "parent_event_id": 1,
+    "parent_role": 1,
+    "selected_input_faces": [
+      6322,
+      6323,
+      6324,
+      6325,
+      6326,
+      6327,
+      6328,
+      6329,
+      6390,
+      6391,
+      6392,
+      6393,
+      6394,
+      6395,
+      6396,
+      6397
+    ],
+    "generated_cap_faces": [
+      26688,
+      26689,
+      26690,
+      26691,
+      26692,
+      26693,
+      26694,
+      26695,
+      26696,
+      26697,
+      26698,
+      26699,
+      26700,
+      26701,
+      26702,
+      26703
+    ],
+    "generated_cap_tokens": [
+      26728,
+      26729,
+      26730,
+      26731,
+      26732,
+      26733,
+      26734,
+      26735,
+      26736,
+      26737,
+      26738,
+      26739,
+      26740,
+      26741,
+      26742,
+      26743
+    ],
+    "actual_patch_faces": 16,
+    "boundary_vertices": 20,
+    "source_generation": 3,
+    "geometry": {
+      "mechanism": "connected multi-face curved patch sweep",
+      "selection": [
+        6322,
+        6323,
+        6324,
+        6325,
+        6326,
+        6327,
+        6328,
+        6329,
+        6390,
+        6391,
+        6392,
+        6393,
+        6394,
+        6395,
+        6396,
+        6397
+      ],
+      "patch_faces": 16,
+      "boundary_vertices": 20,
+      "centre": [
+        0.545032424402702,
+        1.0432136693260177,
+        8.011537345990398
+      ],
+      "normal": [
+        0.9771891277477128,
+        -0.11468153058301822,
+        0.17874438496020104
+      ],
+      "direction": [
+        0.06438762691995138,
+        0.9620327034121291,
+        0.26523067519645577
+      ],
+      "area_radius": 0.1726864924466076,
+      "actual_heights": [
+        0.049233703823518604,
+        0.1641123460783954,
+        0.2871966056371919
+      ],
+      "spec": {
+        "heights": [
+          0.28510454480822245,
+          0.950348482694075,
+          1.663109844714631
+        ],
+        "scales": [
+          1.0,
+          0.8,
+          0.45
+        ],
+        "bend": 0.3,
+        "direction": [
+          0.06438762691995137,
+          0.9620327034121291,
+          0.26523067519645577
+        ],
+        "twist": 0.0,
+        "projection_guard": false
+      },
+      "topology_changed": true,
+      "genus_changed": false,
+      "new_scope": 3,
+      "projection_admission": null,
+      "caveat": "Designed constructive branches; not emergent branching, no intersection repair."
+    },
+    "proposal": {
+      "sibling_index": 1,
+      "beta_centre": 1.3,
+      "beta_halfwidth": 0.35,
+      "parent_rows": [
+        1,
+        2
+      ],
+      "boundary_columns": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "planned_input_faces": [
+        6334,
+        6335,
+        6336,
+        6337,
+        6338,
+        6339,
+        6340,
+        6341,
+        6414,
+        6415,
+        6416,
+        6417,
+        6418,
+        6419,
+        6420,
+        6421
+      ],
+      "selected_tokens": [
+        6334,
+        6335,
+        6336,
+        6337,
+        6338,
+        6339,
+        6340,
+        6341,
+        6414,
+        6415,
+        6416,
+        6417,
+        6418,
+        6419,
+        6420,
+        6421
+      ],
+      "selected_boundary_beta": [
+        1.0066942586748993,
+        1.1479321952537787,
+        1.2146750357958196,
+        1.2300058939496785,
+        1.2978539780177905,
+        1.4109457666914964,
+        1.5340100783226773,
+        1.6269301896190695
+      ],
+      "selection_rule": "Fixed beta sectors of actual inherited root boundary PCA; sidewall rows 1 and 2 only (zero based)",
+      "proposal_status": "accepted",
+      "direction": [
+        0.06438762691995137,
+        0.9620327034121291,
+        0.26523067519645577
+      ],
+      "pca_origin": [
+        0.545032424402702,
+        1.0432136693260177,
+        8.011537345990398
+      ],
+      "pca_major": [
+        0.06438762691995137,
+        0.9620327034121291,
+        0.26523067519645577
+      ],
+      "pca_minor": [
+        -0.20237500367209743,
+        -0.24767160537430793,
+        0.9474719699178609
+      ],
+      "pca_extent": [
+        0.40578601030621964,
+        0.24309794920147818
+      ],
+      "normal_diagnostics": {
+        "actual_area": 0.09368425539976467,
+        "normal": [
+          0.9771891277477128,
+          -0.11468153058301822,
+          0.17874438496020104
+        ],
+        "normal_coherence": 0.8358471665428422,
+        "normal_spread_max_degrees": 62.14359494594975,
+        "normal_spread_rms_degrees": 33.84763135112965,
+        "angle_to_root_normal_degrees": 87.61654810605452,
+        "scope": "Actual area-weighted incoming normals; diagnostic only, no aesthetic success threshold"
+      }
+    },
+    "root_radius": 0.41028086519598844,
+    "child_radius": 0.1726864924466076,
+    "height_scope": "Absolute heights = authored coefficients times inherited root area radius; Task32 relative heights divided by actual child radius",
+    "chart_rule": "New ring copies actual pre-event input boundary chart; old/interior chart unchanged"
+  },
+  {
+    "event_id": 4,
+    "status": "accepted",
+    "level": 1,
+    "parent_event_id": 1,
+    "parent_role": 1,
+    "selected_input_faces": [
+      6306,
+      6307,
+      6308,
+      6309,
+      6310,
+      6311,
+      6312,
+      6366,
+      6367,
+      6368,
+      6369,
+      6370,
+      6371,
+      6372
+    ],
+    "generated_cap_faces": [
+      26744,
+      26745,
+      26746,
+      26747,
+      26748,
+      26749,
+      26750,
+      26751,
+      26752,
+      26753,
+      26754,
+      26755,
+      26756,
+      26757
+    ],
+    "generated_cap_tokens": [
+      26798,
+      26799,
+      26800,
+      26801,
+      26802,
+      26803,
+      26804,
+      26805,
+      26806,
+      26807,
+      26808,
+      26809,
+      26810,
+      26811
+    ],
+    "actual_patch_faces": 14,
+    "boundary_vertices": 18,
+    "source_generation": 3,
+    "geometry": {
+      "mechanism": "connected multi-face curved patch sweep",
+      "selection": [
+        6306,
+        6307,
+        6308,
+        6309,
+        6310,
+        6311,
+        6312,
+        6366,
+        6367,
+        6368,
+        6369,
+        6370,
+        6371,
+        6372
+      ],
+      "patch_faces": 14,
+      "boundary_vertices": 18,
+      "centre": [
+        0.43336699932545103,
+        1.0883372147782513,
+        8.488266439327711
+      ],
+      "normal": [
+        0.07355755073000356,
+        0.0932573625974265,
+        0.9929211202567779
+      ],
+      "direction": [
+        -0.16030963338146367,
+        -0.981565538886075,
+        0.1040668742510787
+      ],
+      "area_radius": 0.19022790446065227,
+      "actual_heights": [
+        0.04923370382351862,
+        0.1641123460783954,
+        0.2871966056371919
+      ],
+      "spec": {
+        "heights": [
+          0.25881430993580845,
+          0.8627143664526948,
+          1.5097501412922159
+        ],
+        "scales": [
+          1.0,
+          0.8,
+          0.45
+        ],
+        "bend": 0.3,
+        "direction": [
+          -0.16030963338146367,
+          -0.981565538886075,
+          0.1040668742510787
+        ],
+        "twist": 0.0,
+        "projection_guard": false
+      },
+      "topology_changed": true,
+      "genus_changed": false,
+      "new_scope": 4,
+      "projection_admission": null,
+      "caveat": "Designed constructive branches; not emergent branching, no intersection repair."
+    },
+    "proposal": {
+      "sibling_index": 2,
+      "beta_centre": 0.05,
+      "beta_halfwidth": 0.35,
+      "parent_rows": [
+        1,
+        2
+      ],
+      "boundary_columns": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "planned_input_faces": [
+        6318,
+        6319,
+        6320,
+        6321,
+        6322,
+        6323,
+        6324,
+        6398,
+        6399,
+        6400,
+        6401,
+        6402,
+        6403,
+        6404
+      ],
+      "selected_tokens": [
+        6318,
+        6319,
+        6320,
+        6321,
+        6322,
+        6323,
+        6324,
+        6398,
+        6399,
+        6400,
+        6401,
+        6402,
+        6403,
+        6404
+      ],
+      "selected_boundary_beta": [
+        -0.20796064090368152,
+        0.0350512338937905,
+        0.13728145165031075,
+        0.1858826757756282,
+        0.2533440430015715,
+        0.35421653732807556,
+        0.37946345800220027
+      ],
+      "selection_rule": "Fixed beta sectors of actual inherited root boundary PCA; sidewall rows 1 and 2 only (zero based)",
+      "proposal_status": "accepted",
+      "direction": [
+        -0.16030963338146367,
+        -0.981565538886075,
+        0.1040668742510787
+      ],
+      "pca_origin": [
+        0.43336699932545103,
+        1.0883372147782513,
+        8.488266439327711
+      ],
+      "pca_major": [
+        0.16030963338146367,
+        0.981565538886075,
+        -0.1040668742510787
+      ],
+      "pca_minor": [
+        -0.9843221567026232,
+        0.1668297251471129,
+        0.05725150331332009
+      ],
+      "pca_extent": [
+        0.3788826702973244,
+        0.1528207197310236
+      ],
+      "normal_diagnostics": {
+        "actual_area": 0.11368373150244236,
+        "normal": [
+          0.07355755073000356,
+          0.0932573625974265,
+          0.9929211202567779
+        ],
+        "normal_coherence": 0.4269660097134257,
+        "normal_spread_max_degrees": 102.73079514102069,
+        "normal_spread_rms_degrees": 68.23550495500298,
+        "angle_to_root_normal_degrees": 81.72300916310319,
+        "scope": "Actual area-weighted incoming normals; diagnostic only, no aesthetic success threshold"
+      }
+    },
+    "root_radius": 0.41028086519598844,
+    "child_radius": 0.19022790446065227,
+    "height_scope": "Absolute heights = authored coefficients times inherited root area radius; Task32 relative heights divided by actual child radius",
+    "chart_rule": "New ring copies actual pre-event input boundary chart; old/interior chart unchanged"
+  }
+]

@@ -1,0 +1,807 @@
+{
+  "passed": true,
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "ROOT_ONLY",
+    "BRANCHED",
+    "SIDEWALL_FAN"
+  ],
+  "subdivision_generation": 5,
+  "actual_mesh_states": 6,
+  "source_images": 24,
+  "reused_reference_images": 16,
+  "newly_rendered_images": 8,
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+  "Blender_version": "4.5.4 LTS",
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_front": {
+      "position": [
+        0.0,
+        32.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "code_sha256": {
+    "render": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+    "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce"
+  },
+  "frozen_code_sha256": {
+    "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+  },
+  "frozen_renderer_sha256_expected": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+  "crop": false,
+  "resize": false,
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "ROOT_ONLY",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "875fd0bf5f792ded1aca870ea256ddbe0ef280cc2b428f9ce599c92d32961f3f",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\generation.json",
+      "generation_sha256": "f868c16132574cddad8b41b160dcef849b105daedbc47eec3c43fbc6bce763e7",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "96e6856a67833176ab0d28aad790b7cccaf5bdeafcf16ef783725a2b34317ce6",
+      "native_arrays": {
+        "xyz_sha256": "cf1ddfbbba3d56674fb82c064987523dd03ff9a8b18deab9ffb04fb1ab7be3c7",
+        "faces_sha256": "891b4109763a0c014a34fbe0933be66cf18b2d7ff0aed3cc1affba64b1859e04",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          849922,
+          3
+        ],
+        "faces_shape": [
+          1699840,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "fe9d49917c555ee5059f0b607a62205b26240488d92bf5f8c33333921bbd9d36",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\front.png",
+          "sha256": "324e858e79a88a70c5309a03c538e264adf03ebd466824915a21c0397aa67cfb",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "d0e57ed72153e53ff6256fb376d534113bd46b755d1ce0f19e74d3dd6ed477ea",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "830b36eca414eef7d2f4779f0e3f94d7b95bd04180da17a4bb6225d7141ebd95",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "5001340504f51c8cdf0cba6aef8592448d240e27ed82a991bf268311274f9b91",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+      "code_sha256": {
+        "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "constructive_event_count_quarter_accepted": 1,
+      "reflected_constructive_event_instances": 4
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "BRANCHED",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "f1b8efc0d4d3b967fe1a40a811f2f108d2a1e939bd4c2b24cd765b3d18ca0d6b",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\generation.json",
+      "generation_sha256": "7c5d1ee0b942f3ca6d9c2277b4000a44f42fc7c337d9f15aeb803b6583ddd3ed",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "1dca11577c67e0923e08af8ba67f3d9c791ece003ffd6e7213f40a042511e7e7",
+      "native_arrays": {
+        "xyz_sha256": "94c8fc129ea05f16bc8a21d26a4e3aed323a2c9182de5bb57d4234726c2bb250",
+        "faces_sha256": "ffdc175b32366a8b05378ee03e0ab5159a7d496491f96533d3171748bcb9bb3d",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          909826,
+          3
+        ],
+        "faces_shape": [
+          1819648,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "931da8daafa19da02d962ed608cad35a46c92717dfc4288b21c8e914b83fa0e4",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\front.png",
+          "sha256": "d642b90b25a8d6b8bbcec31cd1b55fd047f0f9219c735a75912d00d67f1c1316",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "14a5e4b39124396db82722abaa846af81b2ae1e677bd7e5ea2e86f591ceb73d7",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "34cfb2cbdf5fd799fff5c6ac256522dfb00eb1de36868a9cf604ee9ce03c2315",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "44f7b6ba1fbaca5858f48bde18bb18e717155797fb6e1d4d47f105ab2f326b54",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+      "code_sha256": {
+        "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "constructive_event_count_quarter_accepted": 9,
+      "reflected_constructive_event_instances": 36
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "SIDEWALL_FAN",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "83d485b1e844251a2cef08dc77fc32e64c61239ddd6e93683be80300f4f5bb75",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\generation.json",
+      "generation_sha256": "b1df93a7b747fc54055a170ab73657f5ea683ea9d4b6332b5d00aa61d94ec80b",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "d5cc89fd59b64ec37b7ac5eec7555a1d04ce5c9f765c694c2cd1b1cae2819f39",
+      "native_arrays": {
+        "xyz_sha256": "e3deb539a9beb5780febc02b644e05b0819ebff812d5b637724e3bd9a51319b3",
+        "faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "ba66fea93ad18a9274ebc391f36c253e61630ba1d6de41dd728659caf908a1d3",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\front.png",
+          "sha256": "0fc60bc6fd4ce17f321e7a64d70f3f6242da5d0fa03b6f3e073ee31869f3ae79",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "7338794f61a583287dd5598babcd7cd241496363bf6cc8302bcbe9df1f3fea63",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "0be3d8c2663df9a2d148ad9c3f00f0f7b3864289534964dadc32219dc519f202",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "7d1272e1732cfbd351f78759a8c34c241720d031dd2e1d2d0cea8d2aadfcdb11",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\sidewall_fan_growth_20261013\\render.py",
+      "code_sha256": {
+        "render": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce"
+      },
+      "constructive_event_count_quarter_accepted": 4,
+      "reflected_constructive_event_instances": 16
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "ROOT_ONLY",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "d6f9afe646d1d73e4abba1fcf5a73fb742ca0ba48472cc733b72b43858b44dbe",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "b05a3769539a2f9a0d5d6015e14dc768c31dd277886a71632bbcf4b318db4ac1",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "79dd120c0489aaf7aa8aaa308f23723aae2b47ad1780962d389ce0e37e9f368b",
+      "native_arrays": {
+        "xyz_sha256": "b85913d69f2bdd1c01a90cdc6a2e05b2a9143f2d3352e6b9054eb44597516e7a",
+        "faces_sha256": "891b4109763a0c014a34fbe0933be66cf18b2d7ff0aed3cc1affba64b1859e04",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          849922,
+          3
+        ],
+        "faces_shape": [
+          1699840,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "16869ccf823d1a5208264f078ddd29590a52a6a7ada2a5054b977f666acef531",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\front.png",
+          "sha256": "cdb7e5abb8a177f039c418dbcd42b2cb63ad03b4c4a544219834210da092b2bd",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0ba63f219157c7d225d59a54c64a55e2982447287e37432cb3cad17ad4a8b372",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b723884d025ab869d55025c9d9dec0f77d54e2109f2c66dde5d7223df3f77c5e",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "69f260c060d349195987ab5b2c72ce5f3d254249607abd98dc4e5792c6f69ad9",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+      "code_sha256": {
+        "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "constructive_event_count_quarter_accepted": 1,
+      "reflected_constructive_event_instances": 4
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BRANCHED",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "79fc3043ca9ca2a0d297c42efa1973a7d880141770ab07dfa48a316c1b12fd88",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "4a8c2b0b0a240f95fd97b1758d78cf70dc76959c872eda5240057661ec32dafc",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "be562e2a3e8132d8980fb78ee1eb68896fe8929872c60ce57203f7f59d4ecf08",
+      "native_arrays": {
+        "xyz_sha256": "5e6b7f196b6c2c4cbe99a940b9b448251f4d07eafc25c66b698cf1f5f03828e5",
+        "faces_sha256": "f4f53cb176ab5701d05c2e34c191f9cb8c6b6f4c4a7cc15f8255caadab71c302",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          902914,
+          3
+        ],
+        "faces_shape": [
+          1805824,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "11eeca0aba6b6ffaa8baff9a4ab87eb752e8fafa01c6a5dce0b2f51224302f2d",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "212599e95d568709b6444c0a0dd241c33a33c73386c1d5c66f6d2c7b24a57a71",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "f89692124f7503572fbfacf4b0f396a3bbea65bed52bf430d66bc6fb65415b62",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "80b777d54223f638aa197160a5adf9024aa05789b8fae226c06ff1c594689c30",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "3a8b34720154c11d9cb01c1e8074b4753a74cbd2242fd72b77e401c405acf9f3",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+      "code_sha256": {
+        "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "constructive_event_count_quarter_accepted": 9,
+      "reflected_constructive_event_instances": 36
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "SIDEWALL_FAN",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "a19b5e0b75735b1904d47867eda4ac4ecc117145a37378abdc00f3cfc72a7834",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "05f0a61b30426e65c2f4464424b2ca697edb36a43303b535d2e6233f4eb98f8e",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "8f7126f77f477f368c7ff69f31550b3d2246deb8e5bb02338bbc63bfd10c8835",
+      "native_arrays": {
+        "xyz_sha256": "7c0c7141eefe986094b167331ae96b49289c11406a71b202f2f717e294d096f0",
+        "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "a9f417f31453e097224b02df6dab9e40617138fe34286d7153e04e6aa7916f68",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\front.png",
+          "sha256": "ce79c2af9c13341c186bd68cbb4c7c747b40a2022a74f1a78d6813a8ff00b9e8",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "e1b9ee36a8b48d2a6a4ee59a2cf8b8106138528821712c61e595c2d0c74253a4",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "3beefa87ef6cc82c3749479d4e7445d3ab76b2af3ddb2307009eed03e33119cc",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "d34239feb228633a6fff6a033c77808bf12a67bce4f6fb2856d596982de34966",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\sidewall_fan_growth_20261013\\render.py",
+      "code_sha256": {
+        "render": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce"
+      },
+      "constructive_event_count_quarter_accepted": 4,
+      "reflected_constructive_event_instances": 16
+    }
+  ],
+  "scope": "Saved native sources, frozen/new renderer code, common actual cameras/material and original PNG correspondence only",
+  "geometry_certification": "Independent geometric verifier required; this review does not certify visual hierarchy, symmetry or topology",
+  "boards": [
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_front.png",
+      "output_sha256": "62fa3f9abe83073a5016604a16a925a14e3bc0d70dd83e15cd96941116672063",
+      "input_case": "SPAN",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\front.png",
+          "sha256": "324e858e79a88a70c5309a03c538e264adf03ebd466824915a21c0397aa67cfb",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\front.png",
+          "sha256": "d642b90b25a8d6b8bbcec31cd1b55fd047f0f9219c735a75912d00d67f1c1316",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\front.png",
+          "sha256": "0fc60bc6fd4ce17f321e7a64d70f3f6242da5d0fa03b6f3e073ee31869f3ae79",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_front.png",
+      "output_sha256": "75757358ae5e76b7588f7cc867949afaf489673d856148faf19674d63bbb58c0",
+      "input_case": "SPAN",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "d0e57ed72153e53ff6256fb376d534113bd46b755d1ce0f19e74d3dd6ed477ea",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "14a5e4b39124396db82722abaa846af81b2ae1e677bd7e5ea2e86f591ceb73d7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "7338794f61a583287dd5598babcd7cd241496363bf6cc8302bcbe9df1f3fea63",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "output_sha256": "cd0e624f4b39f1fe70955777ebe460a5ebffbdc1763404e07a63fe13db504343",
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "830b36eca414eef7d2f4779f0e3f94d7b95bd04180da17a4bb6225d7141ebd95",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "34cfb2cbdf5fd799fff5c6ac256522dfb00eb1de36868a9cf604ee9ce03c2315",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "0be3d8c2663df9a2d148ad9c3f00f0f7b3864289534964dadc32219dc519f202",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "output_sha256": "cd7ac2eae37e30491b83c4e033500c61cc10e6361e6532cba01ba15e2e066809",
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "5001340504f51c8cdf0cba6aef8592448d240e27ed82a991bf268311274f9b91",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "44f7b6ba1fbaca5858f48bde18bb18e717155797fb6e1d4d47f105ab2f326b54",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "7d1272e1732cfbd351f78759a8c34c241720d031dd2e1d2d0cea8d2aadfcdb11",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_front.png",
+      "output_sha256": "fb18320cc60c6538f3d5b991037a0e84440953e9b7e58f66ed625baeb28a9534",
+      "input_case": "COUNTER",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\front.png",
+          "sha256": "cdb7e5abb8a177f039c418dbcd42b2cb63ad03b4c4a544219834210da092b2bd",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "212599e95d568709b6444c0a0dd241c33a33c73386c1d5c66f6d2c7b24a57a71",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\front.png",
+          "sha256": "ce79c2af9c13341c186bd68cbb4c7c747b40a2022a74f1a78d6813a8ff00b9e8",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_front.png",
+      "output_sha256": "b0001a9f684a3dc6699d590a4eb0dde02a1e5c27487475d7dd67029e76c6b74b",
+      "input_case": "COUNTER",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0ba63f219157c7d225d59a54c64a55e2982447287e37432cb3cad17ad4a8b372",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "f89692124f7503572fbfacf4b0f396a3bbea65bed52bf430d66bc6fb65415b62",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "e1b9ee36a8b48d2a6a4ee59a2cf8b8106138528821712c61e595c2d0c74253a4",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "output_sha256": "38b8509281bfbda15a1f4941480f2dac90fd20f7665ef4c9f7b8ef706d316b8f",
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b723884d025ab869d55025c9d9dec0f77d54e2109f2c66dde5d7223df3f77c5e",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "80b777d54223f638aa197160a5adf9024aa05789b8fae226c06ff1c594689c30",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "3beefa87ef6cc82c3749479d4e7445d3ab76b2af3ddb2307009eed03e33119cc",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "output_sha256": "8b00fd440b5ff4ecb946bfe6b1d4b4429e534d0bc84165463ed0c69595e8c2db",
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "ROOT_ONLY",
+          "caption": "기존 trial01: 부모 접힘",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "69f260c060d349195987ab5b2c72ce5f3d254249607abd98dc4e5792c6f69ad9",
+          "reused_reference": true
+        },
+        {
+          "candidate": "BRANCHED",
+          "caption": "기존 trial01: cap 자식·손자",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "3a8b34720154c11d9cb01c1e8074b4753a74cbd2242fd72b77e401c405acf9f3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "SIDEWALL_FAN",
+          "caption": "새 trial01: sidewall 분기",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "d34239feb228633a6fff6a033c77808bf12a67bce4f6fb2856d596982de34966",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 8,
+  "source_list_sha256": "d650901ca6527267c6e2cf1fe673c2df4fb43e5b2cc0a8ab51023bd7454b384c",
+  "review_script_sha256": "de2cffcf82e18de79f2ddd8e22b833a9bf09d808e3c018161062194d511837e6"
+}
