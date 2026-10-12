@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "source": "E:/CHESHIRE_DATA/experiments/whole_column_detail_20261013/trial01/SURFACE/MIDDLE/SPAN/G07",
+  "chosen_density": "MIDDLE",
+  "review_scope": "Actual saved whole-column G7 renders with matched cameras/material; qualitative assessment is separate from geometry checks.",
+  "trials": [
+    {
+      "trial": "trial01",
+      "actual_subdivision_generation": 7,
+      "added_CC_passes": 0,
+      "summary_sha256": "a0bbab378c75abee50bd9902f5f27d0c90d40a0f17ed51eb3d857ad18fc8f642",
+      "generation_json_sha256": "e3f0c66f4c4e1685057e898be09686bc07fc511e275f0d5c8434a02b0742b18d",
+      "render_verification_sha256": "6d8af73692db26cb46cf7cfce191a0bea0c7ba76738157abb77d0fe7028f06d6",
+      "boards": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial01\\images\\SPAN_front.png",
+          "sha256": "ba73b8a946e3fe2a2479925127f1928a9d98895a3f40ab304bc34cc960445062"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial01\\images\\SPAN_body_oblique.png",
+          "sha256": "95442b73a98c5b374f525fb405057229afdc18b435ecd388022561970983a040"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial01\\images\\SPAN_close_oblique.png",
+          "sha256": "53a9e6e88bdaff91f4eaa576147b11ad4071d42593668cf57c67a2d226fe1bcb"
+        }
+      ],
+      "disposition": "PRESERVED_NOT_ADOPTED",
+      "actual_observations": [
+        "Relief follows parent shoulder bands beyond isolated tips; broad empty surfaces remain.",
+        "Triangular teeth and broken zipper-like rims dominate the close view.",
+        "Independent scales and fine finish are not visually established."
+      ]
+    },
+    {
+      "trial": "trial02",
+      "actual_subdivision_generation": 7,
+      "added_CC_passes": 0,
+      "summary_sha256": "7fd8b1747fb6d81066a16e790948712c073c0f29343663c440defe262763cc45",
+      "generation_json_sha256": "093096735b6e8ac2074e940c2355e4cc71e77f292ce4a5bca7c0d3d1e8db9936",
+      "render_verification_sha256": "0209d15fcdc0dc28dd60fc5b7eda692c5a14cc4f20de6f314bc7860120705f39",
+      "boards": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\images\\SPAN_front.png",
+          "sha256": "155c9e104b2eabad7ac5ab0b174875a18d0d2820b06be48afe8c85155e418e09"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\images\\SPAN_body_oblique.png",
+          "sha256": "b93d77621814e5bac826e51631d7655a5cf754f328e854b27c5fb6be0c08002c"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\images\\SPAN_close_oblique.png",
+          "sha256": "44e9e96058c0e333c49fe4032366b1c33dd5595ef281c5ed2f5e350ebe665c0e"
+        }
+      ],
+      "disposition": "PRESERVED_NOT_ADOPTED_AS_DETAIL_FINISH",
+      "actual_observations": [
+        "Broader connected ribs reduce isolated spikes and interrupted bands.",
+        "Triangular faceting and repeated zipper-like edges remain conspicuous.",
+        "One raised ribbon with teeth dominates rather than distinct child and grandchild scales."
+      ]
+    },
+    {
+      "trial": "trial03",
+      "actual_subdivision_generation": 7,
+      "added_CC_passes": 0,
+      "summary_sha256": "f3fb3ae0f35b52baa0629cfb3dc2829da2199c70185fef156182130b1c939f3c",
+      "generation_json_sha256": "2caef83776f6b2fe79609d5467ab3dc7e9851c431103fd647d53c3083f1331fc",
+      "render_verification_sha256": "224f5712064e1075cb19ddc68405f7fd7e565bf0491da662376cf917cb8c120c",
+      "boards": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_front.png",
+          "sha256": "342fbfb194286a16aaf5a730807d210218c769eb6b4c4333a767d8aca2d8a146"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_body_oblique.png",
+          "sha256": "be99d825312104782f53cdfa086f5cb77842a079186b40898f18e64b4c6a37cd"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_close_oblique.png",
+          "sha256": "780c9b506e981ec344ffba65de07ca3c808f3b63743fa9edae4884266159f919"
+        }
+      ],
+      "disposition": "LIMITED_CONNECTION_CLEANUP_CHECKPOINT",
+      "actual_observations": [
+        "Displacement-only filtering greatly reduces trial02 triangular spikes and zipper edges.",
+        "Compared with the baseline, adjacent light ridges and dark grooves are slightly more separated and connected.",
+        "Broad surfaces, large grooves and whole-column silhouette are retained; full-column visible change is small.",
+        "Small dependent relief is also weakened; a thick ribbon with shallow ripples dominates.",
+        "Original ambiguous rolled tips, missing medium-scale transition and some polygonal faces remain."
+      ],
+      "independent_review": "A second agent viewed actual front and close comparison PNGs and reached the same limited-checkpoint assessment; no claim of completed detail hierarchy."
+    }
+  ],
+  "selection_scope": "Trial03 is a limited working checkpoint, not a replacement of the user-selected MIDDLE baseline and not completed reference-level detail.",
+  "next_technical_gap": "Clear medium-scale transitions between broad surfaces and small folds; more shallow ripples alone did not solve the close-detail problem.",
+  "original_summaries_unchanged": true
+}

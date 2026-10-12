@@ -1,0 +1,295 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03",
+  "source_generation": 7,
+  "subdivision_generation": 7,
+  "added_CC_passes": 0,
+  "added_normal_field_passes": 2,
+  "states": [
+    {
+      "candidate": "MIDDLE_SURFACE",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "d642d3d0ff7efab1280301c9773ca3ffd7156ba5c99ff47184be777fe4c62318",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\generation.json",
+        "generation_sha256": "d29191d99e702263270a51fd681db6fc82f761208ffc4a3a828bc3a3e99fac0e",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "373663eae5b7685e2b833de6e4704eab1af8e345d890a72b37384dbe98a23ceb"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\front.png",
+          "sha256": "0966405510a9a494d66bcaf6e57727e58ac597af26596b6670ef799f5f101fba",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "834d20d5eb0515ee6a1441fd32c4bf5ece99be3f791338a2bd54d56dbfac40ed",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "d88a65df791d6291cda9a244bca76b4d1bf3b7fd41580765e1de904a48336773",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        }
+      ]
+    },
+    {
+      "candidate": "PARENT_LINKED",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "bdad6b2860dac6080758b8231c89aedfc0d97f8dc8fa5ad285ce517397ce9e35",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\generation.json",
+        "generation_sha256": "2caef83776f6b2fe79609d5467ab3dc7e9851c431103fd647d53c3083f1331fc",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "79f12288d1ba3782f9da6e84a87b17af60725f9b44d5a9999ffe911e21fb4ead",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07",
+        "parent_control_sha256": "373663eae5b7685e2b833de6e4704eab1af8e345d890a72b37384dbe98a23ceb",
+        "parent_geometry_sha256": "d642d3d0ff7efab1280301c9773ca3ffd7156ba5c99ff47184be777fe4c62318",
+        "parent_generation_sha256": "d29191d99e702263270a51fd681db6fc82f761208ffc4a3a828bc3a3e99fac0e"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\front.png",
+          "sha256": "e9e099bad5457db2202280d19e8e3bd85d8a8fd6fca254cc995b646ff473c156",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "379730ef144d62766a0336c1711e4decb4311e23c799c09a7f1a1a761fd2974f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "530624cbc35d74c26c8c517b60fa9fe1e50b70ac804f8af5f39d59541fda3a45",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "reused_parent_images": 3,
+  "new_images": 3,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "image_check_script_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0",
+  "scope": "Only preserved MIDDLE_SURFACE G7 and new saved PARENT_LINKED G7; saved code/native-array/image receipts and matched camera/material checks; no other trial replay or geometry/aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_front.png",
+      "sha256": "342fbfb194286a16aaf5a730807d210218c769eb6b4c4333a767d8aca2d8a146",
+      "sources": [
+        {
+          "candidate": "MIDDLE_SURFACE",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\front.png",
+          "sha256": "0966405510a9a494d66bcaf6e57727e58ac597af26596b6670ef799f5f101fba",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        },
+        {
+          "candidate": "PARENT_LINKED",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\front.png",
+          "sha256": "e9e099bad5457db2202280d19e8e3bd85d8a8fd6fca254cc995b646ff473c156",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_body_oblique.png",
+      "sha256": "be99d825312104782f53cdfa086f5cb77842a079186b40898f18e64b4c6a37cd",
+      "sources": [
+        {
+          "candidate": "MIDDLE_SURFACE",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "834d20d5eb0515ee6a1441fd32c4bf5ece99be3f791338a2bd54d56dbfac40ed",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        },
+        {
+          "candidate": "PARENT_LINKED",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "379730ef144d62766a0336c1711e4decb4311e23c799c09a7f1a1a761fd2974f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\images\\SPAN_close_oblique.png",
+      "sha256": "780c9b506e981ec344ffba65de07ca3c808f3b63743fa9edae4884266159f919",
+      "sources": [
+        {
+          "candidate": "MIDDLE_SURFACE",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "d88a65df791d6291cda9a244bca76b4d1bf3b7fd41580765e1de904a48336773",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "6eac5403afd3fb63ff074ad28031bd4d0dad7634018c4980c38bb0e371848e33",
+          "reused_reference": true
+        },
+        {
+          "candidate": "PARENT_LINKED",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "530624cbc35d74c26c8c517b60fa9fe1e50b70ac804f8af5f39d59541fda3a45",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial03\\PARENT_LINKED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e5a519e312ed975eb99f160d240fb01b7a3917cfe270ceab5b56e93ea652bd00",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "ef950ea5b1fb66223db0b01f10339e54d77876717bc6d2bf6764efd2912d587d"
+}

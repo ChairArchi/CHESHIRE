@@ -1,0 +1,216 @@
+{
+  "candidate": "PARENT_LINKED",
+  "input_case": "SPAN",
+  "source_generation": 7,
+  "subdivision_generation": 7,
+  "added_CC_passes": 0,
+  "added_normal_field_passes": 2,
+  "version": "4.5.4 LTS",
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "body_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        0,
+        0,
+        6.25
+      ],
+      4.3
+    ],
+    "close_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      1.25
+    ]
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "code_sha256": {
+    "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+    "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+    "parent_code_sha256": {
+      "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+      "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+      "raw_code_sha256": {
+        "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+        "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      }
+    }
+  },
+  "source_arrays": {
+    "xyz_sha256": "485302b8ee2a0d6f6ec57b47bc920f2319c48f6386a9d70b4e384d740cdb0509",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+  },
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "a0b9ef1792b49dc6a34d6768900a077ecdc707bd28cf096e5e87625844da283e"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "c8f5a5d1072a532972c6ff5bcf5359de47309aca2e193658e1da5539d100b0eb"
+    },
+    {
+      "view": "close_oblique",
+      "filename": "close_oblique.png",
+      "sha256": "a75943727262de9cb1bd2ab904f421034e34f5ded8b1ffa7e912d16a1a5fb1ca"
+    }
+  ],
+  "source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\PARENT_LINKED\\SPAN\\G07\\geometry.npz",
+  "source_sha256": "a9f5587d0286c0cd243f1fbbc0b56dc7e81a3eabc7825eb56cc86af4416a757e",
+  "generation_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\PARENT_LINKED\\SPAN\\G07\\generation.json",
+  "generation_sha256": "093096735b6e8ac2074e940c2355e4cc71e77f292ce4a5bca7c0d3d1e8db9936",
+  "control_source": "E:\\CHESHIRE_DATA\\experiments\\parent_linked_folds_20261013\\trial02\\PARENT_LINKED\\SPAN\\G07\\control_quad.npz",
+  "control_sha256": "633bb765f651c23fe2da1b33c52684b795ec30d4cc01f2375e36c0ecaef990a2",
+  "parent_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07",
+  "parent_control_sha256": "373663eae5b7685e2b833de6e4704eab1af8e345d890a72b37384dbe98a23ceb",
+  "parent_geometry_sha256": "d642d3d0ff7efab1280301c9773ca3ffd7156ba5c99ff47184be777fe4c62318",
+  "parent_generation_sha256": "d29191d99e702263270a51fd681db6fc82f761208ffc4a3a828bc3a3e99fac0e",
+  "scope": "Actual saved G7 plus two parent-linked field passes; no added CC; saved native only; float32 display; no modifiers/maps or geometry certification."
+}

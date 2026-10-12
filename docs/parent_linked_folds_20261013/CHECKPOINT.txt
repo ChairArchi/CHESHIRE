@@ -1,0 +1,107 @@
+CHESHIRE — MIDDLE 부모 접힘에 연결한 두 크기의 표면 변형
+2026-10-13 / Asia-Seoul
+
+작업 범위
+사용자가 선택한 MIDDLE의 큰 골과 넓은 면을 유지하면서 근접 디테일을 개선하는 한 안이다.
+실제 부모는 보존된 MIDDLE SURFACE SPAN G7이다. 과거 선호 모델로 돌아가지 않았다.
+MIDDLE G6의 접힘 위상과 feature support를 저장된 실제 CC V/E/F 대응으로 G7에 운반한다.
+위상은 sin/cos를 운반하여 원형 좌표의 경계 문제를 피하였다.
+이 좌표는 MIDDLE에 적용한 변형의 어깨 위치이며 모든 실제 곡률 능선의 검출 결과는 아니다.
+
+고정 연산 순서
+CHILD: 부모 위상의 양쪽 어깨에 경계에서 0이 되는 좁은 띠를 만들고 능선·홈을 적용한다.
+GRANDCHILD: 첫 번째 변형의 양의 능선 부위 안에서 더 작은 변형을 누적한다.
+기존 incident-normal 변형과 PCHIP 높이 가중치, feature memory, 실제 대칭 ID 운반을 재사용한다.
+각 패스에서 실제 입력 형상의 법선을 다시 계산한다.
+두 패스 모두 실제 G7이며 추가 subdivision과 topology event는 0회이다.
+CHILD와 GRANDCHILD는 형상장의 의존 관계를 뜻하며 topology 분기 확보를 뜻하지 않는다.
+전역 FINE 단계와 매개변수 후보 행렬을 적용하지 않았다.
+중간 CHILD는 별도 native 메시로 저장하지 않고 실제 변위 벡터를 보존한다.
+부모 XYZ + delta_child, 그 결과 + delta_grandchild로 실제 중간·최종 좌표를 복원할 수 있다.
+
+검토 기준
+전체 정면에서 큰 골의 어두운 통로, 넓은 밝은 면과 실루엣이 유지되어야 한다.
+근접에서는 부모 띠를 따라 새 골의 빛·그늘 쌍과 더 작은 변형이 구분되어야 한다.
+평행 톱니, 끝단 장식 또는 면 분절만 증가한 경우 조형 개선으로 판단하지 않는다.
+저장 검사 통과와 조형 개선을 구분한다.
+trial01 실제 렌더 검토
+새 형상은 끝단을 넘어 부모 어깨선을 따라 확장되었으며 넓은 면의 여백은 남았다.
+그러나 근접에서는 좁은 골과 더 작은 형상의 위계보다 삼각 톱니·지퍼 같은 반복이 강하다.
+일부 띠는 끊기며 기존 면 분절과 경쟁한다. 조형 개선안으로 채택하지 않는다.
+연산 범위의 연결은 부분 확보하였으나 정교한 분지와 미세 마무리는 확보하지 못하였다.
+두 변형의 적용 정점 비율은 각각 27.32153461083324%, 9.599400980903768%이다.
+이 수치는 control 정점 비율이며 표면적 비율이나 조형 성과 지표가 아니다.
+실제 G7의 유한 좌표·폐합·유향·단일 연결체·Euler 2·고아 정점 없음·양의 native 면적,
+실제 XYZ 및 유향 quad X/Y 반사 확인을 통과하였다.
+최대 반사 좌표 오차는 4.961703332445539e-14이다.
+자기 교차·제작 적합성·전체 독립 replay·native triangle 집합 정렬은 수행하지 않았다.
+
+단일 교정 trial02
+같은 원본 MIDDLE G7에서 부모 띠·전체 배치·높이 진폭·두 패스 순서를 유지한다.
+CHILD 위상 주기를 3배 넓히고 뾰족한 profile 대신 cosine 단면을 사용한다.
+GRANDCHILD는 수정된 CHILD 위상의 두 배를 사용하며 cosine 단면을 적용한다.
+첫 근접 결과의 톱니와 면 분절을 줄이기 위한 교정이며 새로운 방법 후보 탐색이 아니다.
+기존 trial01 및 실행 코드는 수정하거나 삭제하지 않았다.
+trial02 실제 렌더에서는 띠가 더 넓고 연속적으로 이어지며 분리된 가시가 줄었다.
+그러나 중앙 사선과 긴 세로 띠의 삼각형 면·지퍼 같은 가장자리가 여전히 강하다.
+한 개의 융기 띠와 그 끝의 톱니가 우세하며 두 크기의 접힘이 뚜렷하게 구분되지는 않는다.
+연결 띠의 교정 과정으로 보존하되 최종 근접 디테일로 채택하지 않는다.
+
+변위만 완화하는 마감 trial03
+MIDDLE G7와 trial02 G7의 차이 벡터만 실제 quad 모서리 이웃 평균으로 처리한다.
+delta_next = 0.5 × delta + 0.5 × uniform_neighbor_mean(delta)를 3회 적용한다.
+본래 MIDDLE 좌표를 평균내지 않으며 마지막에 실제 ID로 반사 변위를 운반한다.
+기존 띠의 경계 밖으로 최대 3개 모서리 거리의 작은 영향 범위가 생길 수 있다.
+새 법선 형상장을 계산하지 않으며 trial02의 두 패스 변위가 입력 의존성으로 남는다.
+세대는 실제 G7이고 추가 CC 0회, 추가 형상장 계산 0회, 변위 완화 3회이다.
+baseline과 raw의 faces/classes/rest/anchors/chart/generation/surface가 같은지 확인한다.
+trial03 evidence에는 평균 전·후의 합성 변위와 실제 반사 대응을 보존한다.
+trial03 저장 검사는 유한 좌표·폐합 유향 quad·연결체 1개·Euler 2·고아 정점 없음·양의 native 면적을 통과하였다.
+실제 X/Y 반사 좌표 최대 오차는 모두 4.961703332445539e-14이며 유향 quad 대응도 일치하였다.
+실제 저장 크기는 control 정점 7,002,114개와 quad 7,002,112개, native triangle 28,008,448개이다.
+평균 전·후 최대 추가 변위는 각각 0.01800262675735523, 0.016917604443547233이다.
+단위는 원본 메시 좌표계이며 물리적 길이 단위로 해석하지 않는다.
+baseline XYZ와 완전히 같은 정점은 58.76768073184755%이며 표면적 비율이나 조형 성과 지표가 아니다.
+core checks의 symmetry_scope는 기존 공통 저장기의 미갱신 문구이며 실제 확인 결과는 별도 symmetry 항목이다.
+trial03 실제 렌더 판단
+trial02에 비해 중앙 사선 어깨와 긴 세로 띠의 삼각 가시·지퍼 반복이 크게 줄었다.
+baseline에 비해 큰 골 옆의 밝은 능선과 어두운 홈이 조금 더 분리되고 연결부의 얕은 조직이 이어진다.
+전체 정면의 변화는 작으며 큰 골과 넓은 면, 전체 실루엣의 구성은 유지된다.
+하지만 작은 후속 변형의 독립적인 크기·깊이도 약해져 두꺼운 리본과 얕은 잔주름이 우세하다.
+원래 존재하던 말린 끝과 넓은 면 사이의 중간 형상 부족 및 일부 다각형 면도 남는다.
+독립 시각 검토와 주 작업자 검토 모두 근접 연결부의 제한적 정리로 판단하였다.
+trial03은 작업 체크포인트로 보존하며 사용자가 선택한 MIDDLE 기준 형상의 교체나 디테일 완성으로 취급하지 않는다.
+실제 저장 메시·native 배열·렌더 코드·PNG 해시와 세 카메라·재질 조건 검증을 통과하였다.
+부모 G7 원본 PNG 3장과 새 G7 PNG 3장으로 비교판 3장을 만들었으며 이미지 자르기와 크기 변환은 없다.
+
+이번 결과에서 확인한 기술적 공백
+기존 어깨선을 따라 변형을 연결할 수는 있지만 작은 형상이 자체적으로 분화하는 구조는 확보하지 못하였다.
+같은 G7에서 변위만 완화하여 톱니가 줄었으므로 문제를 전체 세대 수 부족만으로 설명할 수 없다.
+마스크·높은 주파수·입력 법선의 변화가 이웃 정점 변위 차이와 비평면 quad를 키웠을 가능성이 있다.
+이는 실제 이미지와 연산 구조에 따른 추론이며 곡률·법선 원인 분리 실험으로 확정한 사실은 아니다.
+다음 기술 작업은 잔주름의 양을 늘리는 것보다 큰 면에서 작은 접힘으로 넘어가는 중간 크기 형상을 명료하게 만드는 데 집중한다.
+MIDDLE 밀도, 여백, 전체 적용 원칙과 기존 기술을 유지하며 새로운 기술 후보 탐색은 추가하지 않는다.
+
+출력
+E:/CHESHIRE_DATA/experiments/parent_linked_folds_20261013/trial01
+E:/CHESHIRE_DATA/experiments/parent_linked_folds_20261013/trial02
+E:/CHESHIRE_DATA/experiments/parent_linked_folds_20261013/trial03
+PARENT_LINKED/SPAN/G07: 실제 control/native 메시, 변위·마스크 증거 및 generation.json
+SUMMARY.json: 고정 조건, 기하 확인과 실제 대칭 결과
+images: 부모 G7와 수정 G7의 동일 조건 전체·본체·근접 비교
+각 trial에서 기존 부모 PNG 3장을 재사용하고 수정 G7 PNG 3장만 새로 렌더한다.
+카메라·재질·조명·해상도는 부모와 동일하며 smooth shading과 modifier를 사용하지 않는다.
+원본 데이터와 이전 코드·기록은 수정하지 않는다.
+
+코드
+experiments/parent_linked_folds_20261013/study.py
+experiments/parent_linked_folds_20261013/parent_folds.py
+experiments/parent_linked_folds_20261013/render.py
+experiments/parent_linked_folds_20261013/boards.py
+experiments/parent_linked_folds_20261013/connected_ribs.py
+experiments/parent_linked_folds_20261013/finish_ribs.py
+experiments/parent_linked_folds_20261013/smooth_relief.py
+부모 접힘·코드·메시·렌더와 실제 세대는 해시와 기록으로 연결한다.
+SOURCE_SNAPSHOT.json은 최초 6개 코드와 의존 코드의 원본 보존 목록이다.
+FINISH_SOURCE_SNAPSHOT.json은 smooth_relief.py만 더한 보존 목록이며 최초 목록을 덮어쓰지 않는다.
+VISUAL_REVIEW.json은 세 trial의 실제 시각 판단과 해당 렌더 검증 기록을 연결한다.
