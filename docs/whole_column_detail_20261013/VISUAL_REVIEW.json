@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-13",
+  "review_type": "Agent visual inspection of actual matched rendered geometry; qualitative observations only",
+  "sequence": [
+    "DEPTH_08 SPAN G6",
+    "MIDDLE SPAN G6",
+    "FINE SPAN G6",
+    "FINE_SURFACE SPAN G7"
+  ],
+  "observed": [
+    "Whole-front visible middle grooves across the body",
+    "Fine folds spread over the body beyond the earlier selected patches",
+    "One neutral CC pass reduces close-view triangle faceting while retaining major groove flow"
+  ],
+  "remaining": [
+    "Some fine ridges become rounder after neutral CC",
+    "Repeated bands and residual steps remain visible",
+    "Reference-level branching and ornamental hierarchy are not demonstrated"
+  ],
+  "technical_scope": "Two cumulative normal-field passes on saved actual G6, then one neutral CC pass to actual G7; no new field at G7",
+  "design_adoption": "PENDING_USER_DENSITY_REVIEW",
+  "checks": {
+    "G6_saved_integrity": true,
+    "G6_actual_XY_control_reflection": true,
+    "G7_saved_integrity": true,
+    "G7_actual_XY_control_reflection": true,
+    "matched_render_receipts": true
+  },
+  "not_checked": [
+    "Self-intersections",
+    "Fabrication suitability",
+    "Independent full geometry replay",
+    "Independent native triangle-set sorting"
+  ],
+  "source_summary_sha256": "dbe4d77a52facb794a7846a00e91cd41c4a2cbb60a22c58b66d1f33849a27190",
+  "surface_summary_sha256": "faac2655476a4fffba54a5af8e54600e9290a8117bf7a01e914c10a36cbcbf02",
+  "initial_render_verification_sha256": "5819d1e71aad8340338c8622686f0ef83642cb03acf614cd2230a3825c3bf71f",
+  "surface_render_verification_sha256": "d9b7ccb2d65b084a5b61ea558895a7a1d7aaf7c9eca49145045e61601171a98b"
+}

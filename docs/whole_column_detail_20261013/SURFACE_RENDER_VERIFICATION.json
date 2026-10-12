@@ -1,0 +1,304 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01",
+  "stage": "FINE",
+  "output_root": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE",
+  "source_generation": 6,
+  "subdivision_generation": 7,
+  "added_CC_passes": 1,
+  "neutral_passes": 1,
+  "added_normal_field_passes": 0,
+  "states": [
+    {
+      "candidate": "FINE",
+      "subdivision_generation": 6,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\geometry.npz",
+        "source_sha256": "2f62c8f95a95f68a4936e0d580e82f8167df390ef7cacfcf7319014b4fb0105d",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\generation.json",
+        "generation_sha256": "feca3949bc03f0ac94d26bf73fce562836398895f06320acf9922e46f75fb0b5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\control_quad.npz",
+        "control_sha256": "084d53ee416ea83016bcda7b4a568d05cc7beee41e5498b73ffdf2f63e22ccf8",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+        "parent_control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+        "parent_geometry_sha256": "df3ae4a0099618103b4752d56e7f57e0dd73ebd044f6f97ed907b01a25eaa883",
+        "parent_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\MIDDLE\\SPAN\\G06",
+        "parent_stage_control_sha256": "2613c41662228ed241a4b216a4e23cf961134966fd4265b9fbd8ee9ae657422d",
+        "parent_stage_generation_sha256": "7467929ddfd933d41f3eb8e806bdddb468e521b9f1353e1eb0576178e25034cc"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\front.png",
+          "sha256": "7f835f479ab7b2917cefb84251c5f7962db411f60d18ae2f389b80eec297ae64",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\body_oblique.png",
+          "sha256": "3592edf78dc80ef17cff429ddb2870b0b2e55a328743c41623cf76d854676715",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\close_oblique.png",
+          "sha256": "b1cbd187ab2969dbdc32ee6cec6943d2f172dfa423448dad88788926e83e0cf2",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        }
+      ]
+    },
+    {
+      "candidate": "FINE_SURFACE",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "d5350a994eda4d14bac72787f3266628f7e7db58215a77b66a5cbb869d4ae693",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\generation.json",
+        "generation_sha256": "99f4d733c85ecab2e9c7fa11e8847ef55d9ef857bed1532138f42799dbc78e7c",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "c8be9388155b24dbfb80118b994e2355bfc407177ee0468282e4207e127d46f1",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06",
+        "parent_control_sha256": "084d53ee416ea83016bcda7b4a568d05cc7beee41e5498b73ffdf2f63e22ccf8",
+        "parent_geometry_sha256": "2f62c8f95a95f68a4936e0d580e82f8167df390ef7cacfcf7319014b4fb0105d",
+        "parent_generation_sha256": "feca3949bc03f0ac94d26bf73fce562836398895f06320acf9922e46f75fb0b5"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\front.png",
+          "sha256": "0f99b95967506c10190dbde7949aaeaf85cf80216cfc9d495484fa937ea2ca80",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "8dc6a23c3d85754078b20f7eb50e48d07169ef934e3dac2db02e0afb077d7c50",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "662b70f09dd86b938dc785a2408bc4db8e3885db2eef48b2424055df90f6947a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "reused_parent_images": 3,
+  "new_images": 3,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "scope": "Only selected saved G6 and its one-pass neutral-CC G7; saved code/native-array/image receipts and matched camera/material checks; no other trial replay or geometry/aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\images\\SPAN_front.png",
+      "sha256": "fcc81b5cdde4712d814fcacc59e3a1fd4b1e6c844162c769c59487dd967d39ff",
+      "sources": [
+        {
+          "candidate": "FINE",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\front.png",
+          "sha256": "7f835f479ab7b2917cefb84251c5f7962db411f60d18ae2f389b80eec297ae64",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINE_SURFACE",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\front.png",
+          "sha256": "0f99b95967506c10190dbde7949aaeaf85cf80216cfc9d495484fa937ea2ca80",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\images\\SPAN_body_oblique.png",
+      "sha256": "4f39b72711c9589d551bcdead7c972a594c30e9d9d88bc768871fec966e26fc9",
+      "sources": [
+        {
+          "candidate": "FINE",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\body_oblique.png",
+          "sha256": "3592edf78dc80ef17cff429ddb2870b0b2e55a328743c41623cf76d854676715",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINE_SURFACE",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "8dc6a23c3d85754078b20f7eb50e48d07169ef934e3dac2db02e0afb077d7c50",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\images\\SPAN_close_oblique.png",
+      "sha256": "79fcc25e51ba67d96139a103111d9005c35c80afa4dc86b8af75e8a8fc1646b6",
+      "sources": [
+        {
+          "candidate": "FINE",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\close_oblique.png",
+          "sha256": "b1cbd187ab2969dbdc32ee6cec6943d2f172dfa423448dad88788926e83e0cf2",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\FINE\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "90e5b67b2a0e4f417f83e96068571350ab633181f3e4315bf0c7cb80d749c777",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINE_SURFACE",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "662b70f09dd86b938dc785a2408bc4db8e3885db2eef48b2424055df90f6947a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\FINE\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "4462e442a3a0f549ffc8783370c0e57a7bb24c205a5a942ba1a3a6af1946688b",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0"
+}

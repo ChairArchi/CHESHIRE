@@ -1,0 +1,71 @@
+CHESHIRE — 전체 기둥의 중간·미세 접힘 누적
+2026-10-13 / Asia-Seoul
+
+개발 범위
+현재 SPAN DEPTH_08 G6를 보존하고 전체 기둥 한 개를 개발 단위로 삼았다.
+국소 돌출 후보 추가, 새 프랙탈 조사, 수치 행렬 비교는 수행하지 않았다.
+기존 법선 방향 변형과 PCHIP 높이 가중치를 사용하여
+MIDDLE 중간 접힘 → FINE 미세 접힘 순서로 실제 형상을 누적하였다.
+새 연산의 크기는 개별 면의 길이 대신 전체 기둥 높이를 기준으로 정하였다.
+기존 feature memory는 기존 장식 부위의 변형을 완화한다.
+본체에도 연산을 적용하므로 국소 패치 선택에 의해 디테일이 제한되지 않는다.
+이 순서는 CHESHIRE의 고정 제작 조건이며 레퍼런스 알고리즘의 정확한 복제는 아니다.
+
+실제 단계 구분
+출발 DEPTH_08, MIDDLE, FINE은 모두 실제 G6이다.
+MIDDLE과 FINE에서는 topology 및 subdivision 횟수를 변경하지 않았다.
+MIDDLE의 실제 결과에서 법선을 다시 계산하여 FINE을 적용하였다.
+기존 정점·면의 X/Y 반사 대응 ID를 이용하여 변위의 대칭을 유지하였다.
+FINE SURFACE는 FINE G6에 중립 Catmull–Clark 1회만 적용하는 실제 G7이다.
+중립 G7은 각진 면을 확인하기 위한 기술 미리보기이며 FINE 밀도의 디자인 채택을 뜻하지 않는다.
+
+동일 조건 이미지에서 확인한 변화
+MIDDLE은 기존 넓은 면에 중간 골이 이어지는 변화를 보여준다.
+FINE은 작은 주름을 본체 전반에 추가하며 전체 정면에서도 변화가 읽힌다.
+FINE 근접에서는 삼각형 면과 입상으로 뭉치는 부분이 강하게 드러난다.
+표면의 밀도 증가를 레퍼런스 수준의 조형 완성이나 재귀적 자손 구조 확보로 해석하지 않는다.
+SURFACE G7에서 큰 골의 흐름을 유지하면서 근접의 삼각형 면이 완화되었다.
+작은 능선 일부가 둥글어졌고 반복적인 띠와 계단처럼 읽히는 부분은 남아 있다.
+기술적으로 표면 정리 효과는 확인하였으나 정교한 분지 구조를 확보한 결과는 아니다.
+전체 디테일 밀도와 여백의 디자인 선택은 사용자 답변을 기다리고 있다.
+
+기하 확인 범위
+MIDDLE·FINE G6의 유한 좌표, 폐합·유향 control mesh, 단일 연결체,
+Euler 2, 고아 정점 없음, 양의 native 삼각형 면적 확인을 통과하였다.
+실제 control XYZ와 유향 quad의 X/Y 대칭 확인을 통과하였다.
+G6의 최대 반사 좌표 오차는 6.469847894911436e-14이다.
+generation.json의 최상위 symmetry 항목이 실제 반사 ID 검사의 결과이다.
+기존 저장 함수의 checks.symmetry_scope에는 과거의 pending 안내 문자열이 남아 있다.
+전체 독립 geometry replay 및 native triangle 집합 정렬은 수행하지 않았다.
+자기 교차와 제작 적합성은 검사하지 않았다.
+G7도 같은 저장 확인과 실제 control 대칭 확인을 통과하였다.
+G7의 최대 반사 좌표 오차는 4.9892420946600834e-14이다.
+
+출력과 원본
+E:/CHESHIRE_DATA/experiments/whole_column_detail_20261013/trial01
+MIDDLE/SPAN/G06 및 FINE/SPAN/G06: 실제 control/native 메시, 연산 증거, generation.json
+SUMMARY.json: 두 G6 단계의 고정 조건과 확인 결과
+images/SPAN_front.png: 출발 → MIDDLE → FINE 전체 정면
+images/SPAN_body_oblique.png: 같은 세 단계의 본체 사선
+images/SPAN_close_oblique.png: 같은 세 단계의 근접 사선
+images/SOURCE_LIST.json 및 RENDER_VERIFICATION.json: 이미지 출처와 촬영 조건 확인
+전체 비교는 출발 원본 2장을 재사용하고 원본 근접 1장과 수정 단계 6장을 새로 렌더하였다.
+SURFACE/FINE/SPAN/G07: 중립 CC 1회 표면 정리의 실제 G7 저장 위치
+SURFACE/FINE/images: FINE G6와 G7의 동일 조건 비교 위치
+표면 비교에는 기존 FINE 원본 3장을 재사용하고 G7 원본 3장만 새로 렌더하였다.
+모든 비교는 같은 900×900 카메라·재질·조명 조건을 사용한다.
+저장 native 메시를 사용하며 smooth shading, subdivision modifier, normal map은 사용하지 않는다.
+
+코드와 재현 순서
+experiments/whole_column_detail_20261013/study.py: 전체 두 단계 생성
+whole_field.py: 고정 중간·미세 접힘 조건
+render.py 및 boards.py: 실제 G6 전체 비교
+finish_surface.py: 지정 G6의 중립 CC 1회
+surface_render.py 및 surface_boards.py: 실제 G6→G7 표면 비교
+각 출력에는 부모·코드·메시·이미지 SHA256과 실제 subdivision 세대를 기록한다.
+기존 G6, 이전 실험 자료 및 원본 모델링 코드는 수정하지 않았다.
+
+이후 범위
+전체안의 밀도 판단을 반영하여 현재 제작 순서의 적용 강도와 여백을 조정한다.
+다른 알고리즘 조사나 같은 계열의 세대·수치 후보 탐색은 추가하지 않는다.
+큰 골과 작은 접힘의 관계가 불충분하면 그 한계를 남기며 기술 완료로 과장하지 않는다.
