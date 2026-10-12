@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "records": [
+    {
+      "case": "SPAN",
+      "passed": true,
+      "control_max_error": 0.0,
+      "other_control_arrays_identical": true,
+      "omitted_native_and_operation_array_hashes_identical": true,
+      "physical_vertices": 204802,
+      "physical_triangles": 409600,
+      "errors": []
+    },
+    {
+      "case": "COUNTER",
+      "passed": true,
+      "control_max_error": 0.0,
+      "other_control_arrays_identical": true,
+      "omitted_native_and_operation_array_hashes_identical": true,
+      "physical_vertices": 204802,
+      "physical_triangles": 409600,
+      "errors": []
+    }
+  ],
+  "scope": "Exact saved-array replay from packaged WALL G3 controls and child rails. Does not certify aesthetics, self-intersections, fabrication or general recurrence."
+}

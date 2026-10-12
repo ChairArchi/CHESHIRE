@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "Independent native material-chart involutions, actual XYZ reflection and oriented triangle cycles, not field symmetry or render inspection",
+  "records": [
+    {
+      "case": "SPAN",
+      "generation": 5,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "axes": [
+        {
+          "world_axis": "X_front_left_right",
+          "material_pair_max_error": 9.019494489765868e-16,
+          "actual_xyz_max_pair_error": 3.750188105401294e-15,
+          "actual_xyz_rms_pair_error": 6.155834850728861e-16,
+          "material_pair_map_involutive": true,
+          "oriented_native_triangle_sets_identical": true,
+          "passed": true
+        },
+        {
+          "world_axis": "Y_side_front_back",
+          "material_pair_max_error": 7.364386412590295e-16,
+          "actual_xyz_max_pair_error": 3.800791407964896e-15,
+          "actual_xyz_rms_pair_error": 6.062247506350685e-16,
+          "material_pair_map_involutive": true,
+          "oriented_native_triangle_sets_identical": true,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case": "COUNTER",
+      "generation": 5,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "axes": [
+        {
+          "world_axis": "X_front_left_right",
+          "material_pair_max_error": 9.019494489765868e-16,
+          "actual_xyz_max_pair_error": 4.2261452805446086e-15,
+          "actual_xyz_rms_pair_error": 6.482005721975172e-16,
+          "material_pair_map_involutive": true,
+          "oriented_native_triangle_sets_identical": true,
+          "passed": true
+        },
+        {
+          "world_axis": "Y_side_front_back",
+          "material_pair_max_error": 7.364386412590295e-16,
+          "actual_xyz_max_pair_error": 3.9968028886505635e-15,
+          "actual_xyz_rms_pair_error": 6.843715294047876e-16,
+          "material_pair_map_involutive": true,
+          "oriented_native_triangle_sets_identical": true,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "warning": "This establishes full-position and oriented-connectivity X/Y reflection only; does not establish aesthetic coherence or absence of self-intersections."
+}

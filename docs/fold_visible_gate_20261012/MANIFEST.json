@@ -1,0 +1,826 @@
+{
+  "base_revision": "055c42f",
+  "branch": "experiment/fold-visible-gate-20261012",
+  "scope": "New experiment, new report/review assets and scoped new tests. Excludes this manifest and navigation-only README/CURRENT_PATHS edits.",
+  "selected_detail": "RELAXED_G06 on two actual inputs; gate JOINED uses original WALL G3 columns",
+  "files": {
+    "docs/fold_visible_gate_20261012/.gitattributes": {
+      "bytes": 72,
+      "sha256": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f"
+    },
+    "docs/fold_visible_gate_20261012/REPORT.md": {
+      "bytes": 12542,
+      "sha256": "6eb939f2aec76f767dfd2bc6dba4961963e8043b157bcc84109335499a66b456"
+    },
+    "docs/fold_visible_gate_20261012/review/.gitattributes": {
+      "bytes": 62,
+      "sha256": "45c42af55119e78711624ed9760ee640b7babedd494f0eb86a13993ce626260b"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/child_fold.py": {
+      "bytes": 8611,
+      "sha256": "c87314ced238ac14e4ce9bae9dcf54b1ba5bad06ce73fd35f0f9befe0a62cafe"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/control_quad.npz": {
+      "bytes": 2502633,
+      "sha256": "d1f96c82b5ac06809ba586833c9bc1f4c39048fc43034682a3666ab59fbd3d50"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/descend.py": {
+      "bytes": 4420,
+      "sha256": "998048c0f501d225cf4658c2d373d547e80d815a1ce533a56dcdc3ece722055a"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/generation.json": {
+      "bytes": 4939,
+      "sha256": "410e76b2653e701f39ac0cd7fd17dc6c6ba55463f80703ca960ea9b5a475212e"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/rails_0.npz": {
+      "bytes": 844208,
+      "sha256": "95e67d898657bb90d83d6a3cc4f45596231ca50930cfe8a054b69cc9421c7251"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/rails_1.npz": {
+      "bytes": 838107,
+      "sha256": "539752eb92199a029af8b2136fa442f32c98b1eead0f2cbe736fee6dae21775b"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/study.py": {
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/COUNTER/G04/wall_fold.py": {
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/child_fold.py": {
+      "bytes": 8611,
+      "sha256": "c87314ced238ac14e4ce9bae9dcf54b1ba5bad06ce73fd35f0f9befe0a62cafe"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/control_quad.npz": {
+      "bytes": 2450882,
+      "sha256": "d83f2306cdc37c2703171232d40319467595e9c7498ce5767fc1a9e237b90227"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/descend.py": {
+      "bytes": 4420,
+      "sha256": "998048c0f501d225cf4658c2d373d547e80d815a1ce533a56dcdc3ece722055a"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/generation.json": {
+      "bytes": 4924,
+      "sha256": "7c671e52a76a59bb1670e5843cb4037409c4e35826200cf6322a5243420c41e7"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/rails_0.npz": {
+      "bytes": 839962,
+      "sha256": "887371371cd034c48695a9b7451f9accf9b27dd1b34a9a14e77fe8d6eacebde6"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/rails_1.npz": {
+      "bytes": 838595,
+      "sha256": "b4aade5a8e07ae258a48400e81ee496e93dcf9e0be71104ee07f4da3936c8ce5"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/study.py": {
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9"
+    },
+    "docs/fold_visible_gate_20261012/review/CHILD/SPAN/G04/wall_fold.py": {
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712"
+    },
+    "docs/fold_visible_gate_20261012/review/compact_child_replay.json": {
+      "bytes": 883,
+      "sha256": "7787bab1406749a35746f9eb6446cd036b6b04fcaa40f92a4b1e07de2493a172"
+    },
+    "docs/fold_visible_gate_20261012/review/COPY_RECEIPT.json": {
+      "bytes": 21237,
+      "sha256": "5a3d59b36194801cfd774fe551e7c07e1c01aa843dbeb1ae86ba1de20eb05abf"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/.gitattributes": {
+      "bytes": 51,
+      "sha256": "30d59cb686d7912ec40accad985cd714e4e2b8d82704b2df6e13054f0a0a7335"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/atlas/power8.npz": {
+      "bytes": 47363,
+      "sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/atlas/recipe.json": {
+      "bytes": 271,
+      "sha256": "e29c714d745c51c1746d27c0a9b7617831bfb2bb39bce211def5dc31843ee974"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/BOLD_DETAIL/COUNTER/G05/colonies.npz": {
+      "bytes": 35180,
+      "sha256": "dd7385d6976d5723d434863462a63c2c1fd1d83476e02bc1a10c52b910e853ca"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/BOLD_DETAIL/COUNTER/G05/generation.json": {
+      "bytes": 2875,
+      "sha256": "f79a551674d40d5e67f539f7e9c2c3072677340990af464bd5fee61e1be60fc9"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/BOLD_DETAIL/SPAN/G05/colonies.npz": {
+      "bytes": 34627,
+      "sha256": "e0008f4cbea69f132210357b576617ba5f7f28f04bcfdb669ef268585a5ab035"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/BOLD_DETAIL/SPAN/G05/generation.json": {
+      "bytes": 2867,
+      "sha256": "577322526292dee52361c1961e2b79804ad5640f6a2691378939a152b72feca0"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/compact_finish_replay.json": {
+      "bytes": 5419,
+      "sha256": "5cadef87ddb79bee00595edcb4c5a1c0cf6c35935cb75a7932fb202a85be0ab7"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/COPY_RECEIPT.json": {
+      "bytes": 48172,
+      "sha256": "50bce8c166a8417a1392718cda7b5bb65d720d366f6d35e843615c67eb9c36cd"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/INTEGRATED/COUNTER/G05/colonies.npz": {
+      "bytes": 38374,
+      "sha256": "d10bd09dc222cee8c82e460985679910066884614c4e12b902636732489d659a"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/INTEGRATED/COUNTER/G05/generation.json": {
+      "bytes": 3161,
+      "sha256": "1e7889b9076470e73079dacd6e317b43e3161c1e9b37f7f41e656f2914857b51"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/INTEGRATED/SPAN/G05/colonies.npz": {
+      "bytes": 35551,
+      "sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/INTEGRATED/SPAN/G05/generation.json": {
+      "bytes": 3150,
+      "sha256": "6707b72c627a00fac74b872bdb778d19492a2ee40583a7c36197aa710eee9537"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/BOLD_DETAIL/source_reference_verification.json": {
+      "bytes": 1030,
+      "sha256": "e8a2f5b2f521cf10804e0e1a06e2c2b35869f866251d9349b3e884e3b28a534a"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/BOLD_DETAIL/SUMMARY.json": {
+      "bytes": 3991,
+      "sha256": "a9cf724fe95bcefed45a7730222dca3468e45b94b529160d2e1f38ecfdb29841"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/BOLD_DETAIL/verification.json": {
+      "bytes": 1479,
+      "sha256": "0b2593a604a81ec2b095da4a3eb36c66850da2868a8503c2736f2619617097d6"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/independent_native_symmetry.json": {
+      "bytes": 2260,
+      "sha256": "6de6acdb4a666266f08e93d11a7a8cc9dbaa596597506663034e9e5f0ac684d5"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/independent_visual_audit.json": {
+      "bytes": 2863,
+      "sha256": "b1f2e44978c9d8f39a67339a9653deca03357c7239a9d212aaa4506162a7fb34"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/INTEGRATED/source_reference_verification.json": {
+      "bytes": 1030,
+      "sha256": "e8a2f5b2f521cf10804e0e1a06e2c2b35869f866251d9349b3e884e3b28a534a"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/INTEGRATED/SUMMARY.json": {
+      "bytes": 4310,
+      "sha256": "a3e7239ab94b7486e15e4f3c6f03072606f9963dabc4f6f0946948ad78dc02ac"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/receipts/INTEGRATED/verification.json": {
+      "bytes": 1477,
+      "sha256": "880569d2d7774324253a131d52c6e953ff4c761049d22a3725bbdc503be9e05d"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/source_snapshots/BOLD_DETAIL/bulb_detail.py": {
+      "bytes": 24029,
+      "sha256": "6b09616dca60edd9d1d72612846db4ec8be0ef4f0ede9006bdc985d3f9bd3a6c"
+    },
+    "docs/fold_visible_gate_20261012/review/finish/source_snapshots/INTEGRATED/bulb_detail.py": {
+      "bytes": 28761,
+      "sha256": "2c890e86f4facc86dc3258073067ba3c7e6740b135c2acc08634a26507e7f61b"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/.gitattributes": {
+      "bytes": 55,
+      "sha256": "900890f913827bacb0d703fcb6c5c196e23306e85e2568c45bbcbe4a8a7056f4"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/atlas/power8.npz": {
+      "bytes": 47363,
+      "sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/atlas/recipe.json": {
+      "bytes": 271,
+      "sha256": "e29c714d745c51c1746d27c0a9b7617831bfb2bb39bce211def5dc31843ee974"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/compact_finish_g6_replay.json": {
+      "bytes": 5603,
+      "sha256": "3bf5b56eb85a308e29b1aa7f52780f48f29cf34c115c745f92cab5c4fae94275"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/COPY_RECEIPT.json": {
+      "bytes": 10447,
+      "sha256": "2f426e0184713680633dcd4a4a1cbc0e30eae8cf2412cbe5df2511793b7b79d9"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/receipts/independent_visual_audit.json": {
+      "bytes": 3202,
+      "sha256": "61a670e7cc5ef41cd0f6139094e8927d993bad9083f86ea7664a88020551990e"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/receipts/unrelaxed_span/generation.json": {
+      "bytes": 3266,
+      "sha256": "c9dac66ce1a97c42339b2955b7f4954ccdb586d8eb5c075b91c39ad8b33517d4"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/receipts/unrelaxed_span/native_symmetry.json": {
+      "bytes": 294,
+      "sha256": "7e80c4735bde572b31905eec892324c3ff631f88e503ed94a2c4c64a610bbdf8"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/receipts/unrelaxed_span/operation_receipt.json": {
+      "bytes": 1424,
+      "sha256": "ed57724488f422feb516835bed50c89202595269372a14c89a6a8577c60594cf"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/COUNTER/G06/colonies.npz": {
+      "bytes": 38374,
+      "sha256": "d10bd09dc222cee8c82e460985679910066884614c4e12b902636732489d659a"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/COUNTER/G06/generation.json": {
+      "bytes": 3917,
+      "sha256": "dcae4f057e3b00b7980d615272603d8ea0453df3882a1140cdd60ba585cf894d"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/COUNTER/G06/native_symmetry.json": {
+      "bytes": 294,
+      "sha256": "fe4362f08babb3b3eab56a0ee5c4e89f0db9eef3fc9b79aff1563f53d5377984"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/COUNTER/G06/operation_receipt.json": {
+      "bytes": 1484,
+      "sha256": "c79a9a45a1fdd49953fb18f4534ce5b44eeec6741d0eef55709fe948115b9b5a"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/SPAN/G06/colonies.npz": {
+      "bytes": 35551,
+      "sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/SPAN/G06/generation.json": {
+      "bytes": 3925,
+      "sha256": "964b5e0d8686cd5994b8266709727c880afa315d94a589a1acc979b75be4b94b"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/SPAN/G06/native_symmetry.json": {
+      "bytes": 294,
+      "sha256": "7e80c4735bde572b31905eec892324c3ff631f88e503ed94a2c4c64a610bbdf8"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/RELAXED_G06/SPAN/G06/operation_receipt.json": {
+      "bytes": 1498,
+      "sha256": "8268fc2e17ecbcf0f0dfbe9c275bad0b462ca4e6bd3110bda8bb93ce49ca0705"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/source_snapshots/COUNTER/detail_finish.py": {
+      "bytes": 20780,
+      "sha256": "6f3b7ffb4fd2948dd4d1652b6b34ba6bcec4e3762d71cf6737ae3e1e10ab45b7"
+    },
+    "docs/fold_visible_gate_20261012/review/finish_g6/source_snapshots/SPAN/detail_finish.py": {
+      "bytes": 19619,
+      "sha256": "f94e19adecfd1659d2f9c2fccdd1cbaa9d269fe65d179aa16126612f7c1d6f03"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/.gitattributes": {
+      "bytes": 64,
+      "sha256": "73a633ffa637193a81ced612e1678cac9f1f0978e9d40159bce50e34967cbb11"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/compact_gate_replay.json": {
+      "bytes": 4327,
+      "sha256": "d10a4c009619fc903e58cf64339ec7f7a9303efa526d891420382da67833dec1"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/CONTROL/assembly.json": {
+      "bytes": 4093,
+      "sha256": "3f5e9f3daeec3cf0e0ac8128ca5a5d06e1ef3d67fb7c53bf7033cb4ef2735e29"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/CONTROL/views/receipt.json": {
+      "bytes": 898,
+      "sha256": "72fe793f20d858a2981a7db9296c4789a27f5832a77a767952c16bc57ae4bb59"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/COPY_RECEIPT.json": {
+      "bytes": 12623,
+      "sha256": "8062db5cea97a1b83d862f608b2e66193aead021dd0a6a2fea174e6d7c05f6f4"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/CONTROL/G03/control_quad.npz": {
+      "bytes": 653955,
+      "sha256": "185720e4c5d95bf5d624999e64fc4f23594c2472d716515adedf796ba9618605"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/CONTROL/G03/generation.json": {
+      "bytes": 6162,
+      "sha256": "75207d521233711347fdfec0881a36e797bceb52a69be8e3a6a4cd1bb0b1ffbd"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/CONTROL/G03/geometry.npz": {
+      "bytes": 869771,
+      "sha256": "8135bcc813a1636c728d73f6e17442725b247d2f03fc9a720837f740310a61a7"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/CONTROL/G03/operation_fields.npz": {
+      "bytes": 394552,
+      "sha256": "f99788de0804c115049ff3a3ee37c566e683af8fe4b57fe75d7749860916eb06"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/ORIGINAL_G02/control_quad.npz": {
+      "bytes": 149320,
+      "sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/ORIGINAL_G02/generation.json": {
+      "bytes": 10033,
+      "sha256": "e41951b7456b2f54720c45f6444121436ae9b92b62d28adb935bcc722014f534"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/PLAIN/generation.json": {
+      "bytes": 252,
+      "sha256": "477a8c1895181e5a54f42055a9279e453aa39f9ef4e75db8fa9cbf2f90f99f4c"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/PLAIN/geometry.npz": {
+      "bytes": 566,
+      "sha256": "a37cedcae8d4591e932e7140b8ef207466cde748bd1ec251b4bf3f21f633fe69"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/SOURCE/G02/construction.npz": {
+      "bytes": 324530,
+      "sha256": "261db5559ebf84016f9dfa6edd5a62aa755fcf928e53f2601f2344f6ac1c2060"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/SOURCE/G02/control_quad.npz": {
+      "bytes": 155695,
+      "sha256": "d5032ecae2398cd475e102ff79b5db29c675bfd9aeb571dddf5aaeefd2a90fa6"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/SOURCE/G02/generation.json": {
+      "bytes": 5574,
+      "sha256": "ad08d6647b8a58bb8bdf20a6329b57dfbc961566be7193394bec79f8a7f1eb6b"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/SOURCE/G02/geometry.npz": {
+      "bytes": 211099,
+      "sha256": "17d00cc60dc98961b305b1872f4a272ac986898d5654d693bb528ca88680260e"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/control_quad.npz": {
+      "bytes": 653938,
+      "sha256": "2826ef8d747c90f1fc79c801de28ba0b99513433b1807b01ecfc936b1fa9f260"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/generation.json": {
+      "bytes": 6172,
+      "sha256": "46fba13c6b67f3382c1e8d7175245beebb61d562036a9f072ca328e70849cf7e"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/geometry.npz": {
+      "bytes": 869623,
+      "sha256": "996e6139398353bd5771d8643c7e72afaf715e3320a465fbb30226b82a5c79f9"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/guide_0.npz": {
+      "bytes": 145366,
+      "sha256": "343a5cfc0a57a56fe596d7644b4b15f22553f9d6f950139c05d3a2a05dc8fa90"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/guide_1.npz": {
+      "bytes": 146025,
+      "sha256": "b091ae1bdbdd7bdaf97fee4313d9793053c5c8b434f36d5af74e6e3f456281cf"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/guide_2.npz": {
+      "bytes": 144659,
+      "sha256": "039a807d153a367bce2963bd9888fb182695fa9b016c24f10e83abcba1b0edd8"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/guide_3.npz": {
+      "bytes": 144573,
+      "sha256": "3baf6d09d28ebcb269d7658834b5baee03bbe9dd10c0ca7f334def638fde8ccc"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/operation_fields.npz": {
+      "bytes": 863817,
+      "sha256": "32ad9b62264add23e7776109c6a7ae331481b71277f74581392ddd41c470ccec"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/rails_0.npz": {
+      "bytes": 90033,
+      "sha256": "6cddde49ef33323c7a911416829ea1762a2fe464604cf0648d9fc9b8d0afdc21"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/rails_1.npz": {
+      "bytes": 90349,
+      "sha256": "9e38bae1cc6c9bc3c348432a85de523466c10dac474ea77354b4edafc13c9084"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/rails_2.npz": {
+      "bytes": 89142,
+      "sha256": "2f37cfc160b4e1a607a2a7dd63fef93068889f67a30e0e0d51aae4df42d1a1e6"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/lintel/WALL/G03/rails_3.npz": {
+      "bytes": 89504,
+      "sha256": "d2f88f44a9ee5b9bab757bd3de107c5c07cfe9dc12da351ddbd1d078b982bef6"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/PLAIN/assembly.json": {
+      "bytes": 4086,
+      "sha256": "5fe765889745a8634e672cac77e2a365db0a2f602f083ad09235b4ce79e05063"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/PLAIN/views/receipt.json": {
+      "bytes": 896,
+      "sha256": "eeb6dcd8cbe33e42427e6b1fcf752165501c9ec5376fa4ceb30fd23705bda759"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/SUMMARY.json": {
+      "bytes": 6699,
+      "sha256": "f63953d5aa4f271eaca49b2db08ac1d27bdfb35ea4b7dc19073f6bf0fe420a96"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/symmetric_lintel.py": {
+      "bytes": 23193,
+      "sha256": "066b9dbba02f8ac340b4b0b8f3bf9a6710cf2603c9269982248672961cf3f189"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/verification.json": {
+      "bytes": 3266,
+      "sha256": "1fafd5c606cce3903a55f0efa37866dac05a885de9e3b15ba1e9c50871dc451b"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/WALL/assembly.json": {
+      "bytes": 4101,
+      "sha256": "e66697d95e66836adf7a2f691240a72fe0a7acb5df48aa10e9239a86a33504df"
+    },
+    "docs/fold_visible_gate_20261012/review/fixed_gate/WALL/views/receipt.json": {
+      "bytes": 895,
+      "sha256": "8ead28679e73b7cc087214cacc7b0c569e0679635e1c9b8c870e32a57f1b3d6f"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/.gitattributes": {
+      "bytes": 64,
+      "sha256": "73a633ffa637193a81ced612e1678cac9f1f0978e9d40159bce50e34967cbb11"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/beam/JOINED/G03/control_quad.npz": {
+      "bytes": 678041,
+      "sha256": "30c697ebbe9e0f2bae10e7b1f79266dc24ab7dee42643954fd2bad2ad9bc0000"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/beam/JOINED/G03/generation.json": {
+      "bytes": 1329,
+      "sha256": "79c39073fcefc7c583f7952a03fd87d22919d24a374b04ea3d81bd6ccc08ac9f"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/beam/JOINED/G03/operation_fields.npz": {
+      "bytes": 459187,
+      "sha256": "142309c7da1865c35f7af37712d9a508b959f1cd48aaa5ab408e0263d368af92"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/compact_joined_replay.json": {
+      "bytes": 1727,
+      "sha256": "1c6a75d39c967d7dd8405dbc7a59987380cd2546a1042dcf548256fcd7206f79"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/COPY_RECEIPT.json": {
+      "bytes": 3966,
+      "sha256": "15315d0808ec7f7f3493efe399cde137ea0fd7c33d6d4906af7a48bed3c702c8"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/gate_junctions.py": {
+      "bytes": 16510,
+      "sha256": "951ff0320595435998217dfaea1b14ca6c8f73ddf11bea33a518d247e85a93b2"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/JOINED/assembly.json": {
+      "bytes": 4481,
+      "sha256": "a31e4b6f14ee912f698fb0eef6c22ccc426e0db394c989814d7969cf5183ac75"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/SUMMARY.json": {
+      "bytes": 415,
+      "sha256": "8076d3cf65416e803a4a8b9214dfa90e89801555ab4b091561bd8e346fcfa945"
+    },
+    "docs/fold_visible_gate_20261012/review/gate_joined/verification.json": {
+      "bytes": 22880,
+      "sha256": "bc496294869abd1667da38026d0b9c6c7363f0a164232efb4042971206926478"
+    },
+    "docs/fold_visible_gate_20261012/review/images/counter_detail.png": {
+      "bytes": 570639,
+      "sha256": "e15c159f1b6c6863f5f1fd79e4ec315e66b7e580a9395af0e8e6a21a41d060bb"
+    },
+    "docs/fold_visible_gate_20261012/review/images/counter_refinement.png": {
+      "bytes": 1108411,
+      "sha256": "ad353be29b4aa9a2023309e2431be5648b1adacb7c29e83b62dc4b07b49736b7"
+    },
+    "docs/fold_visible_gate_20261012/review/images/counter_whole.png": {
+      "bytes": 519147,
+      "sha256": "09839602005d014a2ddfec7549b48a47fb032679fb30efd02f1c99d8d3cb5728"
+    },
+    "docs/fold_visible_gate_20261012/review/images/finish_close.png": {
+      "bytes": 2068080,
+      "sha256": "7a5200e8cfd965226ae0e15dce501d77637b9602856e1e794be893d546227c48"
+    },
+    "docs/fold_visible_gate_20261012/review/images/finish_whole.png": {
+      "bytes": 625066,
+      "sha256": "84c13689f725e1daaca19107448d61358e7bf4d96530d0fd62a6b672729cb91c"
+    },
+    "docs/fold_visible_gate_20261012/review/images/fixed_gate_detail.png": {
+      "bytes": 310829,
+      "sha256": "bdd9add5c60602f9b9de55148255cb10ed48037a6312fa816e1bd3f699debfc5"
+    },
+    "docs/fold_visible_gate_20261012/review/images/fixed_gate_whole.png": {
+      "bytes": 498670,
+      "sha256": "060fa12b05a9fca8d7569b46d225505821de3e1f8f8980fd2f45e119e04787e4"
+    },
+    "docs/fold_visible_gate_20261012/review/images/joined_gate_detail.png": {
+      "bytes": 273770,
+      "sha256": "fe066af94495019651668200279fc8cc5e74b22a1801b9c086797d60824f4f29"
+    },
+    "docs/fold_visible_gate_20261012/review/images/joined_gate_whole.png": {
+      "bytes": 448168,
+      "sha256": "c10a9ceb8e1de50f231c10db5e34a032fc86a027b5d46e497028e5b8b7a70d52"
+    },
+    "docs/fold_visible_gate_20261012/review/images/span_detail.png": {
+      "bytes": 583077,
+      "sha256": "71ef041deeba8979e030c16eb5108f2318ad93383fe47e2922f1659dbd5ee906"
+    },
+    "docs/fold_visible_gate_20261012/review/images/span_refinement.png": {
+      "bytes": 2477900,
+      "sha256": "9d99189f5214d1db89b1e99b0d6faf979ad3bf6103fe135ae6163ee93e5dcd7c"
+    },
+    "docs/fold_visible_gate_20261012/review/images/span_refinement_whole.png": {
+      "bytes": 545546,
+      "sha256": "5ea990750bd1f14b97ce50b376afa2cb9ec1626e058771c31145701cc950b0e4"
+    },
+    "docs/fold_visible_gate_20261012/review/images/span_whole.png": {
+      "bytes": 523311,
+      "sha256": "5d0ef05e98f6a20b5152bf9d846d9f0d2b9cf80bce0eac6f3f9ddb6340d13f9c"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/child_attempts/COUNTER.json": {
+      "bytes": 843,
+      "sha256": "936fcceed65e34f4753b5a7766c0326624f3299c3e6d31360f1980fc820f7b30"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/child_attempts/SPAN.json": {
+      "bytes": 836,
+      "sha256": "804629085cc9ff9f4f3c6bb477329d2ccbecb674a64b61a006f971cb62e7cbcd"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/child_two_input_verification.json": {
+      "bytes": 2103,
+      "sha256": "39162ebeee2363c62eb08203fe69211e691b4e4e7e250991b5aacc31f67a67ec"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/packaged_wall_verification.json": {
+      "bytes": 2227,
+      "sha256": "feb95b0d041abe00f277e10cbf7a2019be90a66afdb328f9fe3da122ce74b5f4"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/QA_SUMMARY.json": {
+      "bytes": 2057,
+      "sha256": "19f54ab755abeadbd582179b6e99cbc107b94442c6d0247d1b3b818b0775f1e6"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/rejected_primitive_pilot/child_attempts/GATE_COLUMN.json": {
+      "bytes": 851,
+      "sha256": "77a808267369d5526433c990aac958e911bd11c60e07141d2442f7885fc1c374"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/rejected_primitive_pilot/child_attempts/GATE_LINTEL.json": {
+      "bytes": 677,
+      "sha256": "30541825f74d3c2f2842430d3dbd0e9582ca48fed31ec59aec65474fae026592"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/rejected_primitive_pilot/child_verification.json": {
+      "bytes": 3314,
+      "sha256": "713b5584170f60440def19248fc5f32d8ec97c0303f7402464c52425aa170282"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparison_provenance.json": {
+      "bytes": 4303,
+      "sha256": "933fc177b0987548b72ef5aabde2ee9a3d136dd5ca3c580b018a69bb491f76f2"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/counter_integrated_g5.json": {
+      "bytes": 907,
+      "sha256": "9d43078e72131893a5732762e79dde0b10c9ab85b8a7ca4f4d45fc13fe16537b"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/counter_relaxed_g6.json": {
+      "bytes": 926,
+      "sha256": "d8686679c54df11492b94f1a6c3393dcbc6fd5acd00aa09e5bfa371a46fb3845"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/joined_gate.json": {
+      "bytes": 892,
+      "sha256": "074d277fa02d23dddaf99ed432acd8a611b0d024626651c760721a514f1b3830"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/joined_gate_control.json": {
+      "bytes": 893,
+      "sha256": "a22f667f905831d31eb1d7b113c5e67e076bd48ce5e8cfd848fdb2b5e498832f"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/span_bold_g5.json": {
+      "bytes": 1206,
+      "sha256": "443b26300785e2f171a712aa9b91193e1fe36bd8e2dbefa2657589fc163d2ab8"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/span_integrated_g5.json": {
+      "bytes": 1206,
+      "sha256": "97e586a2a671fc81c27c8ae39e5a7d1c3753bdffb28006e1eb5fa258f81659bb"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/span_integrated_g6.json": {
+      "bytes": 1209,
+      "sha256": "e19f983f2de35ed4cb90dd7b7d871e272e0a7cd9ee7b069f4ed14a077a95d8d3"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/span_relaxed_g6.json": {
+      "bytes": 1217,
+      "sha256": "0bdeeabdbffcd749720ad8e89749b5c393f7aad7a45bc5f91839632fc9ea67d6"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/render_comparisons/span_wall_g4.json": {
+      "bytes": 1198,
+      "sha256": "1d485f05af73556b00d31b3cd97929aa3e7ebdbfe31154c9a1a6dbde42075647"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/verification.json": {
+      "bytes": 22584,
+      "sha256": "97f2c30bf6e43507ac7bc7c2dc5af30492af1f7a9d52ede889a10dde45a19368"
+    },
+    "docs/fold_visible_gate_20261012/review/receipts/wall_summary.json": {
+      "bytes": 18046,
+      "sha256": "0328844124fbd47c704bd9bd723a8acea2e27ec1a91336475f6beaedcfc99794"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/control_quad.npz": {
+      "bytes": 615986,
+      "sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/generation.json": {
+      "bytes": 2867,
+      "sha256": "1490ec45373520f80c8577faf1d37a801048b7cf33035fe176c4e14bda838c27"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/geometry.npz": {
+      "bytes": 991611,
+      "sha256": "a5207623f474bab8609454db82eb063fc857def3a10cef476238e5d4c9f76687"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/guide_0.npz": {
+      "bytes": 145969,
+      "sha256": "aa8e9e5ba42aef48a03b9a66c2b0008da08434118dd7f5ffc7579b2d11417904"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/guide_1.npz": {
+      "bytes": 144854,
+      "sha256": "c45447dfd91c78d5fa44914542a9485e9bd87f1ab816206280bedf1d390972d0"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/operation_fields.npz": {
+      "bytes": 624904,
+      "sha256": "f6d18f54cde4d8320e8434de00b284a407d59d11d3981c6e795bfb1637adb354"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/rails_0.npz": {
+      "bytes": 90728,
+      "sha256": "c6bdd63d826972338a7aab7148fba45ed22df646c9d3f9d68282770cca1174b1"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/rails_1.npz": {
+      "bytes": 89747,
+      "sha256": "9e19af336fe8f989b4a23510429db4ffa49a08c75119acd134a0634c868c8fd1"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/study.py": {
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/wall_fold.py": {
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/wall_measurements.json": {
+      "bytes": 4516,
+      "sha256": "e647b704e3b01f5e768109efeef2c05a561e783ad548f92d557fa451b556dd02"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/COUNTER/G03/wall_profiles.npz": {
+      "bytes": 124540,
+      "sha256": "5732271ab131e8c965a76e25bf515f057b6207d796696c50935ab02d6557d1c6"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/control_quad.npz": {
+      "bytes": 603181,
+      "sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/generation.json": {
+      "bytes": 2859,
+      "sha256": "eda0e74b4a25c2f631e17e3574ebb366d90508cb3b5286712399d1c059865273"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/geometry.npz": {
+      "bytes": 984425,
+      "sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/guide_0.npz": {
+      "bytes": 146135,
+      "sha256": "8b4af799ab9865f3ec4462205d57125523369abbb4b5df19787a5d2cc064a5c0"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/guide_1.npz": {
+      "bytes": 145151,
+      "sha256": "492b7be8a3ae9cda6cec06c04a885741c8579ea71b993c4ceabb18f6633fcd70"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/operation_fields.npz": {
+      "bytes": 613704,
+      "sha256": "9c20678632e885136c9732975c3ab1fee6c6322ef3eb6dbbcc61d35909a9e3ef"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/rails_0.npz": {
+      "bytes": 90533,
+      "sha256": "009b89290760283dff6b4839d3cc84cbe6756c9d51943e8e88c2872bf5dae428"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/rails_1.npz": {
+      "bytes": 89679,
+      "sha256": "e4d4746d0c3938af50e419dce77624b01f74fdca2a59ae72eed35ae47b9bcdc3"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/study.py": {
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/wall_fold.py": {
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/wall_measurements.json": {
+      "bytes": 4518,
+      "sha256": "94edec43ba56c0e447c71416301225c96c057092f5f6ed16b9c8e662e6809fca"
+    },
+    "docs/fold_visible_gate_20261012/review/WALL/SPAN/G03/wall_profiles.npz": {
+      "bytes": 124382,
+      "sha256": "e19d5a505122712448620d6fee43e20801bb93e19ae4e5ff24c45a465e4b6c8a"
+    },
+    "docs/fold_visible_gate_20261012/TECHNICAL_NOTES.md": {
+      "bytes": 16735,
+      "sha256": "cc198af916099f30b92daab7391a663d61bfd5053a9920b0e4f211ffbb9787e9"
+    },
+    "experiments/fold_visible_gate_20261012/.gitattributes": {
+      "bytes": 72,
+      "sha256": "308a40fa1d89ae5ea4390b4c9b46a0108b09f171f07898f25d451fa0c69c4e9f"
+    },
+    "experiments/fold_visible_gate_20261012/boards.py": {
+      "bytes": 1816,
+      "sha256": "6207055f794a42ede6489331eaa8265fa42d39c37735110e834ad30905befeb3"
+    },
+    "experiments/fold_visible_gate_20261012/bulb_boards.py": {
+      "bytes": 1529,
+      "sha256": "186636a6d2b85c2cfa556a865ef23b4625c859ecfc5983103d09803bb2e808b6"
+    },
+    "experiments/fold_visible_gate_20261012/bulb_detail.py": {
+      "bytes": 28969,
+      "sha256": "ed315f4a8cfadfc49293726e830437191ab720545529379f15bd5ae0d6683327"
+    },
+    "experiments/fold_visible_gate_20261012/child_fold.py": {
+      "bytes": 8611,
+      "sha256": "c87314ced238ac14e4ce9bae9dcf54b1ba5bad06ce73fd35f0f9befe0a62cafe"
+    },
+    "experiments/fold_visible_gate_20261012/compactpackage_finish.py": {
+      "bytes": 14977,
+      "sha256": "473c7cc75c723ba658b50b4ab6cf9ec4fb07ad996d9a08d10216fe293edf34c6"
+    },
+    "experiments/fold_visible_gate_20261012/compactpackage_finish_g6.py": {
+      "bytes": 20306,
+      "sha256": "035b69f0cb084989b4928b1b2e2fd3422eb42c816f3d68e772ba55bb732a4e6e"
+    },
+    "experiments/fold_visible_gate_20261012/descend.py": {
+      "bytes": 4693,
+      "sha256": "a84706fe9900fa9b1c7947beca872ece469205b9743371784604aea099356a0c"
+    },
+    "experiments/fold_visible_gate_20261012/detail_finish.py": {
+      "bytes": 20780,
+      "sha256": "6f3b7ffb4fd2948dd4d1652b6b34ba6bcec4e3762d71cf6737ae3e1e10ab45b7"
+    },
+    "experiments/fold_visible_gate_20261012/detail_finish_boards.py": {
+      "bytes": 2193,
+      "sha256": "69d91004b6616fd72d4977102fb9ed7947b10ccbe1cef899e9c9efd898ffe282"
+    },
+    "experiments/fold_visible_gate_20261012/finish_comparison.py": {
+      "bytes": 2144,
+      "sha256": "169d12257e0e6562cbfb5b131d7bdc6143cc8f13b2a141691dd97da216e90db2"
+    },
+    "experiments/fold_visible_gate_20261012/fixed_gate_boards.py": {
+      "bytes": 1342,
+      "sha256": "5f01458a9fb8e8e66bb469c36b56422eb063c2469c2c72106076f0ff6b035009"
+    },
+    "experiments/fold_visible_gate_20261012/gate_junctions.py": {
+      "bytes": 16510,
+      "sha256": "951ff0320595435998217dfaea1b14ca6c8f73ddf11bea33a518d247e85a93b2"
+    },
+    "experiments/fold_visible_gate_20261012/gate_layout.py": {
+      "bytes": 11231,
+      "sha256": "89ae5eeadafbbf063f8722444bf360f6aac1f30132733b64191cccba6e0e9c94"
+    },
+    "experiments/fold_visible_gate_20261012/gate_members.py": {
+      "bytes": 13453,
+      "sha256": "99005ae156c1cbcded95ceb5bb9c726eaac7f92136380a8a38b9067dd02aa457"
+    },
+    "experiments/fold_visible_gate_20261012/layout_boards.py": {
+      "bytes": 2568,
+      "sha256": "ce698d4f327f7530cfa7ec62a3100b1f74bc3279f948ca5a9225ea9d5fc2598e"
+    },
+    "experiments/fold_visible_gate_20261012/measure.py": {
+      "bytes": 5416,
+      "sha256": "d24010b8347dd21d9da79be2316f41f5bf0b181e667ac6f336b0321b9ead8c3c"
+    },
+    "experiments/fold_visible_gate_20261012/package_gate.py": {
+      "bytes": 12293,
+      "sha256": "73f03b5c87d8627d11b8291e9f827c2b671cb9b4dfffec0bab39b7e90b6c85c2"
+    },
+    "experiments/fold_visible_gate_20261012/package_joined.py": {
+      "bytes": 10731,
+      "sha256": "85cd64d24838b5991d54172742a66afbbedee2f28c0d1321ef0824158cf8c30f"
+    },
+    "experiments/fold_visible_gate_20261012/package_review.py": {
+      "bytes": 10882,
+      "sha256": "86c5e23f58fdcb8192b88ad6c3c035f3556f27a44890da2420b5015f6f40e0fe"
+    },
+    "experiments/fold_visible_gate_20261012/render.py": {
+      "bytes": 4132,
+      "sha256": "4a17f842ffe79e8ead3c7b02637c07ebbfdb98a709942750c0fb7e75ca8a889e"
+    },
+    "experiments/fold_visible_gate_20261012/study.py": {
+      "bytes": 8927,
+      "sha256": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f"
+    },
+    "experiments/fold_visible_gate_20261012/symmetric_lintel.py": {
+      "bytes": 23193,
+      "sha256": "066b9dbba02f8ac340b4b0b8f3bf9a6710cf2603c9269982248672961cf3f189"
+    },
+    "experiments/fold_visible_gate_20261012/tessellated_detail.py": {
+      "bytes": 21396,
+      "sha256": "5ef653218015ae5bf34e8f2f31ef4445a32c397dbe40f9e481ca2c69818fd868"
+    },
+    "experiments/fold_visible_gate_20261012/verify.py": {
+      "bytes": 15098,
+      "sha256": "fef5b7bed2e435071f90d6c3c447ffef80d6f32a20cb82858f538eb44e7ff633"
+    },
+    "experiments/fold_visible_gate_20261012/verify_child.py": {
+      "bytes": 4595,
+      "sha256": "4dd87586841ac0f53d49c56797abd56ac144b7eff605cd322c73881d09e0e4da"
+    },
+    "experiments/fold_visible_gate_20261012/verify_columns.py": {
+      "bytes": 1811,
+      "sha256": "6a0b399a1eb82c67d7026fc0c9bc3892be3f23c78e8831080f96a4a5c2afd9f8"
+    },
+    "experiments/fold_visible_gate_20261012/wall_fold.py": {
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712"
+    },
+    "tests/.gitattributes": {
+      "bytes": 763,
+      "sha256": "ac9c4cab2ed51bf181bb7208b28fc93a6f6c8299e04ef2b77ae5c94f51fa6b66"
+    },
+    "tests/test_bulb_detail.py": {
+      "bytes": 5774,
+      "sha256": "161dce0c4dca746d00a07f54113fbade96bfa5ec34d640a71f0fa09d86f735f3"
+    },
+    "tests/test_compactpackage_finish_g6.py": {
+      "bytes": 4195,
+      "sha256": "53e264a34002e5ed63852760249d506d61371ae547313094edb5a0a5a98d3444"
+    },
+    "tests/test_detail_finish.py": {
+      "bytes": 2952,
+      "sha256": "f68440b93044622f43891f37d8eddaa553c733f62e9982524b952258fd364127"
+    },
+    "tests/test_gate_junctions.py": {
+      "bytes": 1748,
+      "sha256": "2f6323695405900a9716e10f1586fe4fb233b724d07e00cc3a82ff65d37fd761"
+    },
+    "tests/test_gate_members_pilot.py": {
+      "bytes": 4249,
+      "sha256": "47f07ebe2e8e93fb4bca0604e741b30ddd7e937c25916f8223f90fa32c9f0723"
+    },
+    "tests/test_symmetric_lintel.py": {
+      "bytes": 4490,
+      "sha256": "597be02a24253ccc46325a3e83732e44fedbf922749c6f38dbb0a0456483147f"
+    },
+    "tests/test_visible_child_fold.py": {
+      "bytes": 5607,
+      "sha256": "9b3d411c9dfd44906d6613b4d9c621d21c1883b495d79e2607c984aad6fe1216"
+    },
+    "tests/test_visible_wall_fold.py": {
+      "bytes": 6025,
+      "sha256": "727b0509721032b39db32a6402ffccc6f1a4cc661b501602f47dc48954009f64"
+    }
+  },
+  "file_count": 204,
+  "total_bytes": 32945235
+}

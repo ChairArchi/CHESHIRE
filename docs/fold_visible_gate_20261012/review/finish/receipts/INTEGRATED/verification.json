@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "input_case": "SPAN",
+      "candidate": "INTEGRATED",
+      "raw_delta_max_error": 0.0,
+      "delta_max_error": 0.0,
+      "control_max_error": 8.881784197001252e-16,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "CONTROL",
+      "raw_delta_max_error": 0.0,
+      "delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "INTEGRATED",
+      "raw_delta_max_error": 0.0,
+      "delta_max_error": 0.0,
+      "control_max_error": 8.881784197001252e-16,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "CONTROL",
+      "raw_delta_max_error": 0.0,
+      "delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    }
+  ],
+  "scope": "Saved atlas + colony frames + actual incoming normals reproduce real control displacement and native geometry",
+  "excluded": [
+    "self-intersection",
+    "fabrication",
+    "aesthetic success",
+    "exact infinite Mandelbulb boundary"
+  ]
+}

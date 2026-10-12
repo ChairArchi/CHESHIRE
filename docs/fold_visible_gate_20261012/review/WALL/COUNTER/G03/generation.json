@@ -1,0 +1,100 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "WALL",
+  "recipe": {
+    "name": "measured_three_rail_wall_v1",
+    "angle_degrees": 40.0,
+    "shoulder_fraction": 0.55,
+    "axial_plateau_fraction": 0.6,
+    "input_generation": 2,
+    "output_generation": 3,
+    "note": "Same coefficients across inputs. WALL deliberately rebuilds the interior surface; DEPTH only displaces along the same pooled normal. No field pass or fabrication audit.",
+    "candidate": "WALL"
+  },
+  "input": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\docs\\fold_region_growth_20261012\\review_assets\\COUNTER_G02",
+    "source_control_sha256": "8df4d3f43374e1f59b177fbe1c072f6e06c16c91ed8537567816bd71154d1ca0",
+    "field_passes_inherited": 2,
+    "parent_region_seeds": [
+      {
+        "id": "LOWER_DIAGONAL_RETURN",
+        "direction": 0.35,
+        "height": 0.39,
+        "span": 0.12,
+        "expansion": 0.48,
+        "constriction": 0.28,
+        "reexpansion": 0.38,
+        "return_depth": 0.72,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      },
+      {
+        "id": "UPPER_CROSSING_RETURN",
+        "direction": 1.18,
+        "height": 0.61,
+        "span": 0.12,
+        "expansion": 0.46,
+        "constriction": 0.26,
+        "reexpansion": 0.36,
+        "return_depth": 0.68,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      }
+    ]
+  },
+  "parent_region_seeds": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    }
+  ],
+  "added_field_passes": 0,
+  "maximum_displacement": 0.553927178401969,
+  "moved_controls": 2964,
+  "axial_role_constraint": null,
+  "geometry_operation": "Interior ruled-wall redevelopment",
+  "finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_triangle_area": 7.022484581714122e-06,
+  "reflection_error": [
+    4.100316822212988e-15,
+    3.903187957565046e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ],
+  "quick_integrity": "PASS",
+  "control_vertices": 25602,
+  "physical_vertices": 51202,
+  "physical_triangles": 102400,
+  "source_revision": "055c42f",
+  "self_intersection": "NOT_CHECKED",
+  "fabrication": "NOT_CHECKED"
+}

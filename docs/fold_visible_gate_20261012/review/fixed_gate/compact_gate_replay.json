@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "expected_modes": [
+    "PLAIN",
+    "CONTROL",
+    "WALL"
+  ],
+  "source_reconstruction": {
+    "passed": true,
+    "original_checkpoint_hashes_identical": true,
+    "all_source_construction_arrays_identical": true,
+    "source_control_arrays_identical": true,
+    "source_native_arrays_identical": true,
+    "source_dimension_transform_identical": true,
+    "source_material_pair_ids_identical": true,
+    "material_pair_max_error": 2.482534153247273e-16
+  },
+  "lintel_replay": [
+    {
+      "candidate": "CONTROL",
+      "passed": true,
+      "raw_delta_max_error": 0.0,
+      "pre_axial_delta_max_error": 0.0,
+      "final_delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_axial_pair_ids_identical": true,
+      "material_pair_max_error": 2.7476618026966064e-16
+    },
+    {
+      "candidate": "WALL",
+      "passed": true,
+      "raw_delta_max_error": 0.0,
+      "pre_axial_delta_max_error": 0.0,
+      "final_delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_axial_pair_ids_identical": true,
+      "material_pair_max_error": 2.7476618026966064e-16
+    }
+  ],
+  "assembly_reconstruction": [
+    {
+      "candidate": "PLAIN",
+      "passed": true,
+      "omitted_assembly_array_hashes_identical": true,
+      "fixed_column_bytes_identical": true,
+      "fixed_saved_transforms_identical": true,
+      "part_ranges_identical": true,
+      "physical_vertices": 102418,
+      "physical_triangles": 204824,
+      "geometry": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 4.755632587506077,
+        "passed": true
+      },
+      "global_left_right": {
+        "axis": 0,
+        "plane": 0.0,
+        "maximum_xyz_error": 1.368774871883577e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      }
+    },
+    {
+      "candidate": "CONTROL",
+      "passed": true,
+      "omitted_assembly_array_hashes_identical": true,
+      "fixed_column_bytes_identical": true,
+      "fixed_saved_transforms_identical": true,
+      "part_ranges_identical": true,
+      "physical_vertices": 153606,
+      "physical_triangles": 307200,
+      "geometry": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 2.484576834322693,
+        "passed": true
+      },
+      "global_left_right": {
+        "axis": 0,
+        "plane": 0.0,
+        "maximum_xyz_error": 1.368774871883577e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      }
+    },
+    {
+      "candidate": "WALL",
+      "passed": true,
+      "omitted_assembly_array_hashes_identical": true,
+      "fixed_column_bytes_identical": true,
+      "fixed_saved_transforms_identical": true,
+      "part_ranges_identical": true,
+      "physical_vertices": 153606,
+      "physical_triangles": 307200,
+      "geometry": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 2.4660746560325135,
+        "passed": true
+      },
+      "global_left_right": {
+        "axis": 0,
+        "plane": 0.0,
+        "maximum_xyz_error": 1.368774871883577e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      }
+    }
+  ],
+  "scope": "Exact preserved SOURCE reconstruction, saved lintel operation replay and assembly array hashes. Requires full repository code and packaged actual column; no original output directory dependency.",
+  "excluded": [
+    "self-intersection",
+    "physical bearing/joints",
+    "fabrication",
+    "central seam C1 continuity",
+    "aesthetic success"
+  ]
+}

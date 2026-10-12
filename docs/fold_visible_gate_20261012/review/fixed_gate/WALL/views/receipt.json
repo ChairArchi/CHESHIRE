@@ -1,0 +1,56 @@
+{
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 1000,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        12,
+        1.8
+      ],
+      [
+        0,
+        0,
+        1.8
+      ],
+      5.5
+    ],
+    "oblique": [
+      [
+        -7,
+        10,
+        6
+      ],
+      [
+        0,
+        0,
+        1.8
+      ],
+      5.5
+    ],
+    "detail": [
+      [
+        -3,
+        8,
+        4
+      ],
+      [
+        0,
+        0,
+        2.7
+      ],
+      3.7
+    ]
+  },
+  "objects": [
+    "LEFT",
+    "RIGHT",
+    "LINTEL"
+  ],
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\fixed_gate_final\\WALL\\geometry.npz"
+}

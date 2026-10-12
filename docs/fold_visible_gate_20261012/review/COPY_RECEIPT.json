@@ -1,0 +1,569 @@
+{
+  "source_revision": "055c42f",
+  "source_output": "output/fold_visible_gate_20261012",
+  "copied_bytes": 16309553,
+  "copied_megabytes": 16.309553,
+  "copied_assets": [
+    {
+      "path": "WALL/SPAN/G03/control_quad.npz",
+      "bytes": 603181,
+      "sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/control_quad.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/geometry.npz",
+      "bytes": 984425,
+      "sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/geometry.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/operation_fields.npz",
+      "bytes": 613704,
+      "sha256": "9c20678632e885136c9732975c3ab1fee6c6322ef3eb6dbbcc61d35909a9e3ef",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/operation_fields.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/guide_0.npz",
+      "bytes": 146135,
+      "sha256": "8b4af799ab9865f3ec4462205d57125523369abbb4b5df19787a5d2cc064a5c0",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/guide_0.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/guide_1.npz",
+      "bytes": 145151,
+      "sha256": "492b7be8a3ae9cda6cec06c04a885741c8579ea71b993c4ceabb18f6633fcd70",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/guide_1.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/rails_0.npz",
+      "bytes": 90533,
+      "sha256": "009b89290760283dff6b4839d3cc84cbe6756c9d51943e8e88c2872bf5dae428",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/rails_0.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/rails_1.npz",
+      "bytes": 89679,
+      "sha256": "e4d4746d0c3938af50e419dce77624b01f74fdca2a59ae72eed35ae47b9bcdc3",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/rails_1.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/generation.json",
+      "bytes": 2859,
+      "sha256": "eda0e74b4a25c2f631e17e3574ebb366d90508cb3b5286712399d1c059865273",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/generation.json"
+    },
+    {
+      "path": "WALL/SPAN/G03/wall_profiles.npz",
+      "bytes": 124382,
+      "sha256": "e19d5a505122712448620d6fee43e20801bb93e19ae4e5ff24c45a465e4b6c8a",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/wall_profiles.npz"
+    },
+    {
+      "path": "WALL/SPAN/G03/wall_measurements.json",
+      "bytes": 4518,
+      "sha256": "94edec43ba56c0e447c71416301225c96c057092f5f6ed16b9c8e662e6809fca",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/wall_measurements.json"
+    },
+    {
+      "path": "WALL/SPAN/G03/study.py",
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/study.py"
+    },
+    {
+      "path": "WALL/SPAN/G03/wall_fold.py",
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "source": "output/fold_visible_gate_20261012/WALL/SPAN/G03/wall_fold.py"
+    },
+    {
+      "path": "CHILD/SPAN/G04/control_quad.npz",
+      "bytes": 2450882,
+      "sha256": "d83f2306cdc37c2703171232d40319467595e9c7498ce5767fc1a9e237b90227",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/control_quad.npz"
+    },
+    {
+      "path": "CHILD/SPAN/G04/rails_0.npz",
+      "bytes": 839962,
+      "sha256": "887371371cd034c48695a9b7451f9accf9b27dd1b34a9a14e77fe8d6eacebde6",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/rails_0.npz"
+    },
+    {
+      "path": "CHILD/SPAN/G04/rails_1.npz",
+      "bytes": 838595,
+      "sha256": "b4aade5a8e07ae258a48400e81ee496e93dcf9e0be71104ee07f4da3936c8ce5",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/rails_1.npz"
+    },
+    {
+      "path": "CHILD/SPAN/G04/generation.json",
+      "bytes": 4924,
+      "sha256": "7c671e52a76a59bb1670e5843cb4037409c4e35826200cf6322a5243420c41e7",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/generation.json"
+    },
+    {
+      "path": "CHILD/SPAN/G04/study.py",
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/study.py"
+    },
+    {
+      "path": "CHILD/SPAN/G04/wall_fold.py",
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/wall_fold.py"
+    },
+    {
+      "path": "CHILD/SPAN/G04/child_fold.py",
+      "bytes": 8611,
+      "sha256": "c87314ced238ac14e4ce9bae9dcf54b1ba5bad06ce73fd35f0f9befe0a62cafe",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/child_fold.py"
+    },
+    {
+      "path": "CHILD/SPAN/G04/descend.py",
+      "bytes": 4420,
+      "sha256": "998048c0f501d225cf4658c2d373d547e80d815a1ce533a56dcdc3ece722055a",
+      "source": "output/fold_visible_gate_20261012/CHILD/SPAN/G04/descend.py"
+    },
+    {
+      "path": "images/span_whole.png",
+      "bytes": 523311,
+      "sha256": "5d0ef05e98f6a20b5152bf9d846d9f0d2b9cf80bce0eac6f3f9ddb6340d13f9c",
+      "source": "output/fold_visible_gate_20261012/images/span_whole.png"
+    },
+    {
+      "path": "images/span_detail.png",
+      "bytes": 583077,
+      "sha256": "71ef041deeba8979e030c16eb5108f2318ad93383fe47e2922f1659dbd5ee906",
+      "source": "output/fold_visible_gate_20261012/images/span_detail.png"
+    },
+    {
+      "path": "receipts/child_attempts/SPAN.json",
+      "bytes": 836,
+      "sha256": "804629085cc9ff9f4f3c6bb477329d2ccbecb674a64b61a006f971cb62e7cbcd",
+      "source": "output/fold_visible_gate_20261012/child_attempts/SPAN.json"
+    },
+    {
+      "path": "WALL/COUNTER/G03/control_quad.npz",
+      "bytes": 615986,
+      "sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/control_quad.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/geometry.npz",
+      "bytes": 991611,
+      "sha256": "a5207623f474bab8609454db82eb063fc857def3a10cef476238e5d4c9f76687",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/geometry.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/operation_fields.npz",
+      "bytes": 624904,
+      "sha256": "f6d18f54cde4d8320e8434de00b284a407d59d11d3981c6e795bfb1637adb354",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/operation_fields.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/guide_0.npz",
+      "bytes": 145969,
+      "sha256": "aa8e9e5ba42aef48a03b9a66c2b0008da08434118dd7f5ffc7579b2d11417904",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/guide_0.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/guide_1.npz",
+      "bytes": 144854,
+      "sha256": "c45447dfd91c78d5fa44914542a9485e9bd87f1ab816206280bedf1d390972d0",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/guide_1.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/rails_0.npz",
+      "bytes": 90728,
+      "sha256": "c6bdd63d826972338a7aab7148fba45ed22df646c9d3f9d68282770cca1174b1",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/rails_0.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/rails_1.npz",
+      "bytes": 89747,
+      "sha256": "9e19af336fe8f989b4a23510429db4ffa49a08c75119acd134a0634c868c8fd1",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/rails_1.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/generation.json",
+      "bytes": 2867,
+      "sha256": "1490ec45373520f80c8577faf1d37a801048b7cf33035fe176c4e14bda838c27",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/generation.json"
+    },
+    {
+      "path": "WALL/COUNTER/G03/wall_profiles.npz",
+      "bytes": 124540,
+      "sha256": "5732271ab131e8c965a76e25bf515f057b6207d796696c50935ab02d6557d1c6",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/wall_profiles.npz"
+    },
+    {
+      "path": "WALL/COUNTER/G03/wall_measurements.json",
+      "bytes": 4516,
+      "sha256": "e647b704e3b01f5e768109efeef2c05a561e783ad548f92d557fa451b556dd02",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/wall_measurements.json"
+    },
+    {
+      "path": "WALL/COUNTER/G03/study.py",
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/study.py"
+    },
+    {
+      "path": "WALL/COUNTER/G03/wall_fold.py",
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "source": "output/fold_visible_gate_20261012/WALL/COUNTER/G03/wall_fold.py"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/control_quad.npz",
+      "bytes": 2502633,
+      "sha256": "d1f96c82b5ac06809ba586833c9bc1f4c39048fc43034682a3666ab59fbd3d50",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/control_quad.npz"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/rails_0.npz",
+      "bytes": 844208,
+      "sha256": "95e67d898657bb90d83d6a3cc4f45596231ca50930cfe8a054b69cc9421c7251",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/rails_0.npz"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/rails_1.npz",
+      "bytes": 838107,
+      "sha256": "539752eb92199a029af8b2136fa442f32c98b1eead0f2cbe736fee6dae21775b",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/rails_1.npz"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/generation.json",
+      "bytes": 4939,
+      "sha256": "410e76b2653e701f39ac0cd7fd17dc6c6ba55463f80703ca960ea9b5a475212e",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/generation.json"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/study.py",
+      "bytes": 8785,
+      "sha256": "de4e0c61a473d6eafef070ca4236a99e7d50397a3fefb114cd3a8a80ec69b2d9",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/study.py"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/wall_fold.py",
+      "bytes": 9596,
+      "sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/wall_fold.py"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/child_fold.py",
+      "bytes": 8611,
+      "sha256": "c87314ced238ac14e4ce9bae9dcf54b1ba5bad06ce73fd35f0f9befe0a62cafe",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/child_fold.py"
+    },
+    {
+      "path": "CHILD/COUNTER/G04/descend.py",
+      "bytes": 4420,
+      "sha256": "998048c0f501d225cf4658c2d373d547e80d815a1ce533a56dcdc3ece722055a",
+      "source": "output/fold_visible_gate_20261012/CHILD/COUNTER/G04/descend.py"
+    },
+    {
+      "path": "images/counter_whole.png",
+      "bytes": 519147,
+      "sha256": "09839602005d014a2ddfec7549b48a47fb032679fb30efd02f1c99d8d3cb5728",
+      "source": "output/fold_visible_gate_20261012/images/counter_whole.png"
+    },
+    {
+      "path": "images/counter_detail.png",
+      "bytes": 570639,
+      "sha256": "e15c159f1b6c6863f5f1fd79e4ec315e66b7e580a9395af0e8e6a21a41d060bb",
+      "source": "output/fold_visible_gate_20261012/images/counter_detail.png"
+    },
+    {
+      "path": "receipts/child_attempts/COUNTER.json",
+      "bytes": 843,
+      "sha256": "936fcceed65e34f4753b5a7766c0326624f3299c3e6d31360f1980fc820f7b30",
+      "source": "output/fold_visible_gate_20261012/child_attempts/COUNTER.json"
+    },
+    {
+      "path": "receipts/verification.json",
+      "bytes": 22584,
+      "sha256": "97f2c30bf6e43507ac7bc7c2dc5af30492af1f7a9d52ede889a10dde45a19368",
+      "source": "output/fold_visible_gate_20261012/verification.json"
+    },
+    {
+      "path": "receipts/wall_summary.json",
+      "bytes": 18046,
+      "sha256": "0328844124fbd47c704bd9bd723a8acea2e27ec1a91336475f6beaedcfc99794",
+      "source": "output/fold_visible_gate_20261012/wall_summary.json"
+    },
+    {
+      "path": "receipts/child_two_input_verification.json",
+      "bytes": 2103,
+      "sha256": "39162ebeee2363c62eb08203fe69211e691b4e4e7e250991b5aacc31f67a67ec",
+      "source": "output/fold_visible_gate_20261012/child_two_input_verification.json"
+    },
+    {
+      "path": "receipts/rejected_primitive_pilot/child_verification.json",
+      "bytes": 3314,
+      "sha256": "713b5584170f60440def19248fc5f32d8ec97c0303f7402464c52425aa170282",
+      "source": "output/fold_visible_gate_20261012/child_verification.json"
+    },
+    {
+      "path": "receipts/rejected_primitive_pilot/child_attempts/GATE_COLUMN.json",
+      "bytes": 851,
+      "sha256": "77a808267369d5526433c990aac958e911bd11c60e07141d2442f7885fc1c374",
+      "source": "output/fold_visible_gate_20261012/child_attempts/GATE_COLUMN.json"
+    },
+    {
+      "path": "receipts/rejected_primitive_pilot/child_attempts/GATE_LINTEL.json",
+      "bytes": 677,
+      "sha256": "30541825f74d3c2f2842430d3dbd0e9582ca48fed31ec59aec65474fae026592",
+      "source": "output/fold_visible_gate_20261012/child_attempts/GATE_LINTEL.json"
+    }
+  ],
+  "omitted_child_array_expectations": {
+    "SPAN": {
+      "geometry.npz": {
+        "xyz": {
+          "shape": [
+            204802,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "79342ca6b229e71f3fd6da960850ccc3d17a8c5820743128e1a0a49dbb6632ec"
+        },
+        "faces": {
+          "shape": [
+            409600,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "a0bc7bba64caa230ad73248b5f6b54b1f481710e490e4bccc6c1340cd5377a87"
+        }
+      },
+      "operation_fields.npz": {
+        "reference_xyz": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "4b11c789c43a82c320ed39e18c00440309c5bddd4f4b79558376a00d2bca6f48"
+        },
+        "delta": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "aace6eaf081b12390ab9233d016d760787d1b67b5d2867c528f42e20aa28b919"
+        },
+        "chart": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "b7d290f8171abf0dbcc3cae896d495070d0b7f53bf9531ef60318da0e04485a2"
+        },
+        "input_edges": {
+          "shape": [
+            51200,
+            2
+          ],
+          "dtype": "<i8",
+          "sha256": "868ea0488ee4770007d53db12adcc5e37a4369d32be6f3cf8b1404156b6b7809"
+        },
+        "parent_face": {
+          "shape": [
+            102400
+          ],
+          "dtype": "<i8",
+          "sha256": "946dcaf13e901fa6032c1216a96d4b66f504507c20ca8433fc82120aedacb44a"
+        },
+        "weights": {
+          "shape": [
+            2,
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "75d79740bf5a7eb9f151faedd12a620baf8cdd81585d2580ad6928ccf95e2892"
+        },
+        "targets": {
+          "shape": [
+            2,
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "85158dc8c645eb6037196d7c2d7dc650405a2070b98aa6db0c3928e81a30052f"
+        },
+        "transverse": {
+          "shape": [
+            2,
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "4d5a6df780abbd3bbe2b9355e8937b2029300840d71a0618b0fa57ccc05b5762"
+        },
+        "overlap_denominator": {
+          "shape": [
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "d8f71a226d343c1901cb49dc56e1c78acd334389d31de87db077adf54aafa66d"
+        },
+        "canonical_numerator": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "2ee1f0a04a8c30ad2686316a3c69b4d2b8b9d217005fd00f0eef69af778bbb77"
+        },
+        "strength": {
+          "shape": [
+            1
+          ],
+          "dtype": "<f8",
+          "sha256": "6c3c396ed6b5c36dcae172271f462051b1266b851e92df3deea8ac65478fd712"
+        },
+        "mode": {
+          "shape": [
+            1
+          ],
+          "dtype": "<U4",
+          "sha256": "5b2eb3be862a32415c3973b3ee5d1ef77d8cef1a0281aeedda3281fae368b092"
+        }
+      }
+    },
+    "COUNTER": {
+      "geometry.npz": {
+        "xyz": {
+          "shape": [
+            204802,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "436b5e9e878a2dadb07ce7348950c2a9f62b4bcbb82c3052dcf9c210e9cff238"
+        },
+        "faces": {
+          "shape": [
+            409600,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "a0bc7bba64caa230ad73248b5f6b54b1f481710e490e4bccc6c1340cd5377a87"
+        }
+      },
+      "operation_fields.npz": {
+        "reference_xyz": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "9c9db630c4222a58e9ff0dfbe7cbf21b4cbc92e965abde384a3126805fc8ec26"
+        },
+        "delta": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "045da95ae2213217724315b38a7b080d6d94a8c0f3cc6a1e0b2eefe9461dd3c6"
+        },
+        "chart": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "b7d290f8171abf0dbcc3cae896d495070d0b7f53bf9531ef60318da0e04485a2"
+        },
+        "input_edges": {
+          "shape": [
+            51200,
+            2
+          ],
+          "dtype": "<i8",
+          "sha256": "868ea0488ee4770007d53db12adcc5e37a4369d32be6f3cf8b1404156b6b7809"
+        },
+        "parent_face": {
+          "shape": [
+            102400
+          ],
+          "dtype": "<i8",
+          "sha256": "946dcaf13e901fa6032c1216a96d4b66f504507c20ca8433fc82120aedacb44a"
+        },
+        "weights": {
+          "shape": [
+            2,
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "0f385971a03e221d767505c2715ac83f394db152f91420d1d0507cfca0b4a1b0"
+        },
+        "targets": {
+          "shape": [
+            2,
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "84332df67f2dfb2f95593c8c86b3899f65e6cd4f532df42f58d20928796f283c"
+        },
+        "transverse": {
+          "shape": [
+            2,
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "cfb4e2a479ac5ee74646071e4645b400d72e8a63b1e65d31348a1a0ccfd065e9"
+        },
+        "overlap_denominator": {
+          "shape": [
+            102402
+          ],
+          "dtype": "<f8",
+          "sha256": "d8f71a226d343c1901cb49dc56e1c78acd334389d31de87db077adf54aafa66d"
+        },
+        "canonical_numerator": {
+          "shape": [
+            102402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "cb21633b1ea448b3329233717b35400f6095597d875fd02bafc5739c8320c0d4"
+        },
+        "strength": {
+          "shape": [
+            1
+          ],
+          "dtype": "<f8",
+          "sha256": "6c3c396ed6b5c36dcae172271f462051b1266b851e92df3deea8ac65478fd712"
+        },
+        "mode": {
+          "shape": [
+            1
+          ],
+          "dtype": "<U4",
+          "sha256": "5b2eb3be862a32415c3973b3ee5d1ef77d8cef1a0281aeedda3281fae368b092"
+        }
+      }
+    }
+  },
+  "omitted_files": [
+    "CHILD/*/G04/geometry.npz",
+    "CHILD/*/G04/operation_fields.npz",
+    "member.ply"
+  ],
+  "omission_reason": "Native arrays and operations exactly replayed from packaged controls/rails; PLY is a duplicate export.",
+  "replay_command": "python -B experiments/fold_visible_gate_20261012/package_review.py --verify docs/fold_visible_gate_20261012/review",
+  "scope": {
+    "main_geometry": "WALL and one bounded CHILD generation on SPAN and COUNTER only.",
+    "images": "Unretouched saved matched-camera native-geometry boards. CHILD visibility remains subtle.",
+    "verification.json": "Raw historical full-run receipt also includes rejected primitive gate pilot; only SPAN/COUNTER records support the accepted column work.",
+    "wall_summary.json": "Raw finite-cut/image-difference diagnostics also include pilot records. Neither is an aesthetic score.",
+    "child_two_input_verification.json": "Main explicit expected-case child verification receipt.",
+    "rejected_primitive_pilot": "Diagnostic receipts only. Primitive gate design was rejected after user steering; no pilot geometry is included.",
+    "source_snapshots": "Original generated-folder filenames/bytes retained. Their source_revision is the base revision, not a claim that the new experiment existed in that commit.",
+    "gate": "Accepted fixed-existing-column gate assets are added separately by the gate study."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "copied_assets": [
+    {
+      "path": "beam/JOINED/G03/control_quad.npz",
+      "bytes": 678041,
+      "sha256": "30c697ebbe9e0f2bae10e7b1f79266dc24ab7dee42643954fd2bad2ad9bc0000",
+      "source": "output/fold_visible_gate_20261012/gate_joined/beam/JOINED/G03/control_quad.npz"
+    },
+    {
+      "path": "beam/JOINED/G03/operation_fields.npz",
+      "bytes": 459187,
+      "sha256": "142309c7da1865c35f7af37712d9a508b959f1cd48aaa5ab408e0263d368af92",
+      "source": "output/fold_visible_gate_20261012/gate_joined/beam/JOINED/G03/operation_fields.npz"
+    },
+    {
+      "path": "beam/JOINED/G03/generation.json",
+      "bytes": 1329,
+      "sha256": "79c39073fcefc7c583f7952a03fd87d22919d24a374b04ea3d81bd6ccc08ac9f",
+      "source": "output/fold_visible_gate_20261012/gate_joined/beam/JOINED/G03/generation.json"
+    },
+    {
+      "path": "JOINED/assembly.json",
+      "bytes": 4481,
+      "sha256": "a31e4b6f14ee912f698fb0eef6c22ccc426e0db394c989814d7969cf5183ac75",
+      "source": "output/fold_visible_gate_20261012/gate_joined/JOINED/assembly.json"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 22880,
+      "sha256": "bc496294869abd1667da38026d0b9c6c7363f0a164232efb4042971206926478",
+      "source": "output/fold_visible_gate_20261012/gate_joined/verification.json"
+    },
+    {
+      "path": "SUMMARY.json",
+      "bytes": 415,
+      "sha256": "8076d3cf65416e803a4a8b9214dfa90e89801555ab4b091561bd8e346fcfa945",
+      "source": "output/fold_visible_gate_20261012/gate_joined/SUMMARY.json"
+    },
+    {
+      "path": "gate_junctions.py",
+      "bytes": 16510,
+      "sha256": "951ff0320595435998217dfaea1b14ca6c8f73ddf11bea33a518d247e85a93b2",
+      "source": "output/fold_visible_gate_20261012/gate_joined/gate_junctions.py"
+    }
+  ],
+  "copied_bytes": 1182843,
+  "omitted_array_expectations": {
+    "native": {
+      "xyz": {
+        "shape": [
+          51202,
+          3
+        ],
+        "dtype": "<f8",
+        "sha256": "35efdfae0b7b4f6922f9230c97ae2c318528c68dbf5feed38a459ea9e433b586"
+      },
+      "faces": {
+        "shape": [
+          102400,
+          3
+        ],
+        "dtype": "<i8",
+        "sha256": "cf2ab8f8b5b8ffa3a74bb2d8c12325b61a657a8ff5e58d7f9936b12250fe3083"
+      }
+    },
+    "before_assembly": {
+      "xyz": {
+        "shape": [
+          153606,
+          3
+        ],
+        "dtype": "<f8",
+        "sha256": "5ccf689c24d3ef7243a0f81a4effd69dd691df66acb4cca0c3a8364243b66cc9"
+      },
+      "faces": {
+        "shape": [
+          307200,
+          3
+        ],
+        "dtype": "<i8",
+        "sha256": "e0789541ff379685917e9c58d8a3bfa69ff02714780a20317f60e8046950d822"
+      },
+      "face_member": {
+        "shape": [
+          307200
+        ],
+        "dtype": "|i1",
+        "sha256": "ec7a0d28d609022c27c1fa8b0cd184484a51892c354432d5b6c5c1c34c54e763"
+      }
+    },
+    "after_assembly": {
+      "xyz": {
+        "shape": [
+          153606,
+          3
+        ],
+        "dtype": "<f8",
+        "sha256": "e093209d44f320234194a0da51ceceff29bf8e90726cdb92c40ec48f518e153c"
+      },
+      "faces": {
+        "shape": [
+          307200,
+          3
+        ],
+        "dtype": "<i8",
+        "sha256": "e0789541ff379685917e9c58d8a3bfa69ff02714780a20317f60e8046950d822"
+      },
+      "face_member": {
+        "shape": [
+          307200
+        ],
+        "dtype": "|i1",
+        "sha256": "ec7a0d28d609022c27c1fa8b0cd184484a51892c354432d5b6c5c1c34c54e763"
+      }
+    }
+  },
+  "original_lintel": "../fixed_gate/lintel/WALL/G03",
+  "existing_column": "../WALL/SPAN/G03/geometry.npz",
+  "omission": "No duplicate before/after native or assembly geometry. All omitted original arrays exactly recreated and hashed.",
+  "replay_command": "python -B experiments/fold_visible_gate_20261012/package_joined.py --verify docs/fold_visible_gate_20261012/review/gate_joined"
+}

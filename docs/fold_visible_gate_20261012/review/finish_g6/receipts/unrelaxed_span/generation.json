@@ -1,0 +1,81 @@
+{
+  "input_case": "SPAN",
+  "candidate": "INTEGRATED_G06",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\WALL\\SPAN\\G03",
+  "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+  "source_topology": {
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true
+  },
+  "source_candidate": "WALL",
+  "source_generation": 3,
+  "output_generation": 6,
+  "inactive_refinements": 3,
+  "integrated_source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\bulb_integrated",
+  "atlas_sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02",
+  "colonies_sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c",
+  "relief_recipe": {
+    "primary_radius": 0.3,
+    "primary_amplitude": 0.22,
+    "secondary_radius": 0.14,
+    "secondary_amplitude": 0.07,
+    "maximum_height": 0.3,
+    "primary_count": 160,
+    "minimum_spacing_in_radii": 1.0,
+    "placement": "physical_farthest_gap",
+    "root_collar_amplitude": 0.035,
+    "root_collar_inner_radius": 0.68,
+    "root_collar_outer_radius": 1.2,
+    "collar_positive_suppression_height": 0.08,
+    "normal_agreement_fade": [
+      0.05,
+      0.3
+    ]
+  },
+  "relaxation_recipe": null,
+  "source_xyz_smoothing": false,
+  "new_relief_passes": 1,
+  "normal_rule": "Streamed actual native angle-weighted vertex normals; same colony frames and finite atlas as accepted G05",
+  "memory_guard": {
+    "length": 64,
+    "load": 55,
+    "total_physical": 34280996864,
+    "available_physical": 15264063488,
+    "total_commit": 53608349696,
+    "available_commit": 18759245824,
+    "total_virtual": 140737488224256,
+    "available_virtual": 140731789668352,
+    "reserved": 0,
+    "required_available_physical": 8000000000,
+    "declared_native_counts": {
+      "control_vertices": 1638402,
+      "control_quads": 1638400,
+      "physical_vertices": 3276802,
+      "physical_triangles": 6553600
+    },
+    "execution": "One case and one variant at a time; chunked normals/areas"
+  },
+  "operation": "G05 carrier \u2192 optional bounded geometric Taubin relaxation \u2192 inactive G06 split \u2192 same attached finite-bulb relief",
+  "replay_scope": "Saved source/atlas/colonies/recipe rebuild control/native arrays; hashes record all stages",
+  "checks": {
+    "passed": true,
+    "finite": true,
+    "counts": {
+      "control_vertices": 1638402,
+      "control_quads": 1638400,
+      "physical_vertices": 3276802,
+      "physical_triangles": 6553600
+    },
+    "minimum_triangle_area": 3.2337785246490084e-08,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "topology_scope": "Inherited closed connected oriented source under three native inactive splits; no topology edits or appended geometry",
+    "symmetry_scope": "Actual control XYZ X/Y checked; native triangulation inherits symmetry-equivariant source/split topology",
+    "maximum_carrier_shift": 0.0,
+    "maximum_relief": 0.2743323531675371,
+    "self_intersection": "IGNORED_EXPLORATION_PER_USER",
+    "fabrication": "NOT_CHECKED"
+  }
+}

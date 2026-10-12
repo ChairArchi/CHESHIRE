@@ -1,0 +1,40 @@
+{
+  "candidate": "JOINED",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\fixed_gate_final\\lintel\\WALL\\G03",
+  "source_control_sha256": "2826ef8d747c90f1fc79c801de28ba0b99513433b1807b01ecfc936b1fa9f260",
+  "actual_cross_section_factors": [
+    [
+      1.6499999999999997,
+      1.65
+    ],
+    [
+      1.6499999999999995,
+      1.65
+    ]
+  ],
+  "nominal_section_factor": 1.65,
+  "common_downward_seat_shift": 0.16302306504562372,
+  "axial_station_max_error": 0.0,
+  "target_overlap_per_ray": 0.0340683591310304,
+  "local_geometry_checks": {
+    "finite": true,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.198452253884957e-06,
+    "signed_volume": 1.9703049480628902,
+    "passed": true
+  },
+  "local_axial_reflection": {
+    "axis": 2,
+    "plane": 2.3847851391721275,
+    "maximum_xyz_error": 2.5123012585567537e-15,
+    "pair_map_involutive": true,
+    "reflected_oriented_triangle_sets_identical": true,
+    "passed": true
+  },
+  "operation": "Continuous control deformation; native fan surface regenerated; no new subdivision or Boolean",
+  "structural_joint": "NOT_IMPLEMENTED",
+  "fabrication": "NOT_CHECKED",
+  "self_intersection": "NOT_CHECKED"
+}

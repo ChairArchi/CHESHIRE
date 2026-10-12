@@ -1,0 +1,1452 @@
+{
+  "copied_assets": [
+    {
+      "path": "atlas/power8.npz",
+      "bytes": 47363,
+      "sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/atlas/power8.npz"
+    },
+    {
+      "path": "atlas/recipe.json",
+      "bytes": 271,
+      "sha256": "e29c714d745c51c1746d27c0a9b7617831bfb2bb39bce211def5dc31843ee974",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/atlas/recipe.json"
+    },
+    {
+      "path": "BOLD_DETAIL/SPAN/G05/colonies.npz",
+      "bytes": 34627,
+      "sha256": "e0008f4cbea69f132210357b576617ba5f7f28f04bcfdb669ef268585a5ab035",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/BOLD_DETAIL/SPAN/G05/colonies.npz"
+    },
+    {
+      "path": "BOLD_DETAIL/SPAN/G05/generation.json",
+      "bytes": 2867,
+      "sha256": "577322526292dee52361c1961e2b79804ad5640f6a2691378939a152b72feca0",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/BOLD_DETAIL/SPAN/G05/generation.json"
+    },
+    {
+      "path": "BOLD_DETAIL/COUNTER/G05/colonies.npz",
+      "bytes": 35180,
+      "sha256": "dd7385d6976d5723d434863462a63c2c1fd1d83476e02bc1a10c52b910e853ca",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/BOLD_DETAIL/COUNTER/G05/colonies.npz"
+    },
+    {
+      "path": "BOLD_DETAIL/COUNTER/G05/generation.json",
+      "bytes": 2875,
+      "sha256": "f79a551674d40d5e67f539f7e9c2c3072677340990af464bd5fee61e1be60fc9",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/BOLD_DETAIL/COUNTER/G05/generation.json"
+    },
+    {
+      "path": "receipts/BOLD_DETAIL/verification.json",
+      "bytes": 1479,
+      "sha256": "0b2593a604a81ec2b095da4a3eb36c66850da2868a8503c2736f2619617097d6",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/verification.json"
+    },
+    {
+      "path": "receipts/BOLD_DETAIL/source_reference_verification.json",
+      "bytes": 1030,
+      "sha256": "e8a2f5b2f521cf10804e0e1a06e2c2b35869f866251d9349b3e884e3b28a534a",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/source_reference_verification.json"
+    },
+    {
+      "path": "receipts/BOLD_DETAIL/SUMMARY.json",
+      "bytes": 3991,
+      "sha256": "a9cf724fe95bcefed45a7730222dca3468e45b94b529160d2e1f38ecfdb29841",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/SUMMARY.json"
+    },
+    {
+      "path": "source_snapshots/BOLD_DETAIL/bulb_detail.py",
+      "bytes": 24029,
+      "sha256": "6b09616dca60edd9d1d72612846db4ec8be0ef4f0ede9006bdc985d3f9bd3a6c",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g5/bulb_detail.py"
+    },
+    {
+      "path": "INTEGRATED/SPAN/G05/colonies.npz",
+      "bytes": 35551,
+      "sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/INTEGRATED/SPAN/G05/colonies.npz"
+    },
+    {
+      "path": "INTEGRATED/SPAN/G05/generation.json",
+      "bytes": 3150,
+      "sha256": "6707b72c627a00fac74b872bdb778d19492a2ee40583a7c36197aa710eee9537",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/INTEGRATED/SPAN/G05/generation.json"
+    },
+    {
+      "path": "INTEGRATED/COUNTER/G05/colonies.npz",
+      "bytes": 38374,
+      "sha256": "d10bd09dc222cee8c82e460985679910066884614c4e12b902636732489d659a",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/INTEGRATED/COUNTER/G05/colonies.npz"
+    },
+    {
+      "path": "INTEGRATED/COUNTER/G05/generation.json",
+      "bytes": 3161,
+      "sha256": "1e7889b9076470e73079dacd6e317b43e3161c1e9b37f7f41e656f2914857b51",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/INTEGRATED/COUNTER/G05/generation.json"
+    },
+    {
+      "path": "receipts/INTEGRATED/verification.json",
+      "bytes": 1477,
+      "sha256": "880569d2d7774324253a131d52c6e953ff4c761049d22a3725bbdc503be9e05d",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/verification.json"
+    },
+    {
+      "path": "receipts/INTEGRATED/source_reference_verification.json",
+      "bytes": 1030,
+      "sha256": "e8a2f5b2f521cf10804e0e1a06e2c2b35869f866251d9349b3e884e3b28a534a",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/source_reference_verification.json"
+    },
+    {
+      "path": "receipts/INTEGRATED/SUMMARY.json",
+      "bytes": 4310,
+      "sha256": "a3e7239ab94b7486e15e4f3c6f03072606f9963dabc4f6f0946948ad78dc02ac",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/SUMMARY.json"
+    },
+    {
+      "path": "source_snapshots/INTEGRATED/bulb_detail.py",
+      "bytes": 28761,
+      "sha256": "2c890e86f4facc86dc3258073067ba3c7e6740b135c2acc08634a26507e7f61b",
+      "source": "output/fold_visible_gate_20261012/bulb_integrated/bulb_detail.py"
+    }
+  ],
+  "copied_bytes": 269526,
+  "expected_original_arrays": {
+    "BOLD_DETAIL": {
+      "SPAN": {
+        "BOLD_DETAIL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "9cd7427eaac7fbc05d9818be24694eb8c64cbaf0ed2691db19554115221a7882"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "493742a0e5e7ddb2757b7d1a44045fa6d6797ab8964c04923754f73ed6a2d19f"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5b55c4bc779bbc71b2e435e29d4953320f159f17ee70ed97fcbc13ce9a99d906"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bf15f5e390798159cb3e51bae7b9dd58ce51d7f4a003efa4c81bfdeb6c7ce2da"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d39f14cb13c13ae55ad3b04f6a967495c55578a870cbca84bae494fd4237cbaa"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            },
+            "raw_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "db0b4c8358d5f0781447b76339ad99ddb77506400e45fd9f73c0d4d20debdf66"
+            },
+            "height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "db0b4c8358d5f0781447b76339ad99ddb77506400e45fd9f73c0d4d20debdf66"
+            },
+            "pooled_direction_numerator": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "1f18b9fb0874286bc30268f9d62584fb4b2a64d5e4301e55164f23f20e044c29"
+            },
+            "applied_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "51be25d14d6caf14aadfad61e2fcf062428b2106cd347ae1007b814dd6a77373"
+            },
+            "final_symmetric_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "146b5243dad6a92ba69ba1ba7621fb7f1115b2f41f0320ec727d7a3b163f753e"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "3d34c1477e6b73d486d9e51d50b2f4e0a29f918bff9fd3619c700effd1ef42ba"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        },
+        "CONTROL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "493742a0e5e7ddb2757b7d1a44045fa6d6797ab8964c04923754f73ed6a2d19f"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5b55c4bc779bbc71b2e435e29d4953320f159f17ee70ed97fcbc13ce9a99d906"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "787265387038b951d8a4b2a82df756eabb3439db7b9a69ab5f8994da7bb4ccdf"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "180c646c80a8cfb249b9e51d092ee3153a5e2639d7e050491ac12231a3d53203"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "f1fdf8abf2d4451ddddbc002ac4d66d8a1e7003e0547ec94eef237f800b9ff3e"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        }
+      },
+      "COUNTER": {
+        "BOLD_DETAIL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "6804e9fb3e7e1d3abe82a0708ddf3595f5f0d62342b10ea336d8b3df00498153"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "da8351b23a0b7c11d82ea9f672e6208e19646b26446ea254f56e0ce3d5e3a647"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "42007929312358d936e05eb11853b16749650ce0b5842512ac939c0019d0e4d8"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "7c187841de5bb3f287a6d258d96c023cd75fddbeedce1cbb201364641d3f1bae"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "72c76d6238dc4e540d497e001fddbcb01b5c002a9a85e589bd773c9ab07eecef"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            },
+            "raw_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "fec7adf12aa6a7a5d0c3b3c7d1d2a27f2c923bac05b5e6a61bbdb7ce173e2eb8"
+            },
+            "height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "fec7adf12aa6a7a5d0c3b3c7d1d2a27f2c923bac05b5e6a61bbdb7ce173e2eb8"
+            },
+            "pooled_direction_numerator": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5525a346c768903f29f72ec8cffd92286516b81cb166c0613ace32a7683acb39"
+            },
+            "applied_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "569eb59da3c71ec0f7078317081d1e2143c41456a85819b41ff6e98e3abf0b9d"
+            },
+            "final_symmetric_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "73b63d99033a6ebaf3bad689f21653afbd9371f776215c54a21a6d2c8fcf71ba"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "618adb99756a78189b0c2d2003e33a3ee2b0a4121b5581e7de6f5fb6688684c8"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        },
+        "CONTROL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "da8351b23a0b7c11d82ea9f672e6208e19646b26446ea254f56e0ce3d5e3a647"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "42007929312358d936e05eb11853b16749650ce0b5842512ac939c0019d0e4d8"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "787265387038b951d8a4b2a82df756eabb3439db7b9a69ab5f8994da7bb4ccdf"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "180c646c80a8cfb249b9e51d092ee3153a5e2639d7e050491ac12231a3d53203"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "18b3ecdcb1a1c2cf1e212a54c76f891e6b1ccbfa5f0a5e766dd5393458d593b8"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        }
+      }
+    },
+    "INTEGRATED": {
+      "SPAN": {
+        "INTEGRATED": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "577b54a9be53e6fbb76f8d78a4e6f985a438b3ec1c4aee6a058c7d8c01f94c2b"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "493742a0e5e7ddb2757b7d1a44045fa6d6797ab8964c04923754f73ed6a2d19f"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5b55c4bc779bbc71b2e435e29d4953320f159f17ee70ed97fcbc13ce9a99d906"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d52d1d466229c472a519f61571032d5358854a347951d6e08b83a2d2db30513d"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "947cf19cf11df3b8944658e4acf1042c7da74a91139a064c33331ea86cc9d752"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            },
+            "raw_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "04a6a4ea387745e696b3c4f8c481980b148736b1cb05c4c2ca6cf2030f08a836"
+            },
+            "height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "2a973bf8d92e817a099c7ecc8685d5780c617f9941228f864efbdc9890a42a60"
+            },
+            "positive_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "04a6a4ea387745e696b3c4f8c481980b148736b1cb05c4c2ca6cf2030f08a836"
+            },
+            "root_collar_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "e73afdecf31e1bd5f7f02e6ef37f80a3b2a0aee5e721b92b2e50f8fc1ccbf47e"
+            },
+            "pooled_direction_numerator": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "4df4d3417abf2c24da10bb4c436986d9b26dd823025d01ed34ac0d65bc6a6ee6"
+            },
+            "applied_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "e5530dea679a521062cbfcdcceaf11c4a1aeadf4bf409f507a5e2d7676871422"
+            },
+            "final_symmetric_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "871c84852dd070a9028c3aff670dccc488c471225d317d5476f5a901ca613d42"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "689f0918ca6b8734964fce2306ef4c07f86226cf9658035644457b051211312c"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        },
+        "CONTROL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "493742a0e5e7ddb2757b7d1a44045fa6d6797ab8964c04923754f73ed6a2d19f"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "fb8786fd04c4e83aece1da0b33a132aef6639487bfcf15c72f7b440aca84b4b7"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5b55c4bc779bbc71b2e435e29d4953320f159f17ee70ed97fcbc13ce9a99d906"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "787265387038b951d8a4b2a82df756eabb3439db7b9a69ab5f8994da7bb4ccdf"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "180c646c80a8cfb249b9e51d092ee3153a5e2639d7e050491ac12231a3d53203"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "f1fdf8abf2d4451ddddbc002ac4d66d8a1e7003e0547ec94eef237f800b9ff3e"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        }
+      },
+      "COUNTER": {
+        "INTEGRATED": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "e8c5c797a9d9c37471074291874e92f587c5529efdd8feb19f6db81e1876b33f"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "da8351b23a0b7c11d82ea9f672e6208e19646b26446ea254f56e0ce3d5e3a647"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "42007929312358d936e05eb11853b16749650ce0b5842512ac939c0019d0e4d8"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "621adb3303391fddde40daeb2d2c7c3cbfe459dec131af9a1f1ca1561d9fec27"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "5fc8cbe1b46789c6cd7400d9d5339f98c94440f3aa116c3739d3b66b48392c5b"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            },
+            "raw_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "024c1322a0c35baf85d5b8b7d036e5f36435f1bef13df97859c7bb61061e1a4d"
+            },
+            "height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "aa0bda041b73e5a287776d4604c721ba72bf9c5caa074363204a53f50979da27"
+            },
+            "positive_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "024c1322a0c35baf85d5b8b7d036e5f36435f1bef13df97859c7bb61061e1a4d"
+            },
+            "root_collar_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "a79a27e911c2eaeb54dd4807a71fc71d9486fe14bd5381774d9515f4c2c59638"
+            },
+            "pooled_direction_numerator": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "13fce3942e01bb74a044683c5d76e0cca844f2b71be1ec8bf6b7f245c64b3cee"
+            },
+            "applied_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "1100f4104d9ec45d9c9e686d49193b1522b184c153fafcaa7026a167612d5e08"
+            },
+            "final_symmetric_height": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "9a74d6a51fac1d4c515bf15671d9f6c44d2f87a6d2e7a7b502b748d5088882e0"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "036c28f381a0888e510a4a18776f6af015ec52b5413dcaa95b06e464753ad022"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        },
+        "CONTROL": {
+          "control_quad.npz": {
+            "xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "faces": {
+              "shape": [
+                409600,
+                4
+              ],
+              "dtype": "<i8",
+              "sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "classes": {
+              "shape": [
+                409602
+              ],
+              "dtype": "|i1",
+              "sha256": "f8c421dabd00043a525b7fc0b7819c26664be8bed5342b998458f831584ac4d9"
+            },
+            "rest": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "c511bcbdb8fe6042badd6e1ec77e495c4ab3aec7d5ec4b42d06d9277a8cca0c7"
+            },
+            "anchors": {
+              "shape": [
+                409600,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "30d177c8b7e7d21a516fd6dd85d18083cd860f7e0bc4f92e8865e55c2f43a9a8"
+            },
+            "generation": {
+              "shape": [],
+              "dtype": "<i8",
+              "sha256": "f13ee6ed54ea2aae9fc49a9faeb5da6e8ddef0e12ed5d30d35a624ae813e0485"
+            },
+            "surface": {
+              "shape": [],
+              "dtype": "<U2",
+              "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+            },
+            "memory": {
+              "shape": [
+                409602
+              ],
+              "dtype": "<f8",
+              "sha256": "da8351b23a0b7c11d82ea9f672e6208e19646b26446ea254f56e0ce3d5e3a647"
+            }
+          },
+          "operation_fields.npz": {
+            "reference_xyz": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "bce2d914f782289760a1f45c0263c36f6d7b3064af01a29d3d27b1819aa2fe44"
+            },
+            "chart": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "d8364d935831161cc0570386ce91995f9a0ad8ccce44d8945835d1ee2be7d5cc"
+            },
+            "incoming_normals": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "42007929312358d936e05eb11853b16749650ce0b5842512ac939c0019d0e4d8"
+            },
+            "pre_reflection_delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "787265387038b951d8a4b2a82df756eabb3439db7b9a69ab5f8994da7bb4ccdf"
+            },
+            "delta": {
+              "shape": [
+                409602,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "180c646c80a8cfb249b9e51d092ee3153a5e2639d7e050491ac12231a3d53203"
+            },
+            "input_edges": {
+              "shape": [
+                204800,
+                2
+              ],
+              "dtype": "<i8",
+              "sha256": "a87dba50a14ab72a98a46e2bc9059c0e852d25bcb96e6fec1053e047ce4cc656"
+            },
+            "parent_face": {
+              "shape": [
+                409600
+              ],
+              "dtype": "<i8",
+              "sha256": "ccd99fc48854db6738b29290cdc1bbe18891465b68be179456a7ca867f52476d"
+            }
+          },
+          "geometry.npz": {
+            "xyz": {
+              "shape": [
+                819202,
+                3
+              ],
+              "dtype": "<f8",
+              "sha256": "18b3ecdcb1a1c2cf1e212a54c76f891e6b1ccbfa5f0a5e766dd5393458d593b8"
+            },
+            "faces": {
+              "shape": [
+                1638400,
+                3
+              ],
+              "dtype": "<i8",
+              "sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+            }
+          }
+        }
+      }
+    }
+  },
+  "source_parents": "../WALL/{SPAN,COUNTER}/G03",
+  "shared_atlas_sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02",
+  "no_detached_component_assets": true,
+  "omission": "All four G5 control/native/operation arrays and matched inactive controls are exactly reproduced on demand, avoiding high-resolution duplicate arrays.",
+  "replay_command": "python -B experiments/fold_visible_gate_20261012/compactpackage_finish.py --verify docs/fold_visible_gate_20261012/review/finish"
+}

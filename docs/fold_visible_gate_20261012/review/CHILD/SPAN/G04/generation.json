@@ -1,0 +1,156 @@
+{
+  "input_case": "SPAN",
+  "candidate": "CHILD",
+  "recipe": {
+    "name": "measured_three_rail_wall_v1",
+    "angle_degrees": 40.0,
+    "shoulder_fraction": 0.55,
+    "axial_plateau_fraction": 0.6,
+    "input_generation": 3,
+    "output_generation": 4,
+    "note": "Same coefficients across inputs. WALL deliberately rebuilds the interior surface; DEPTH only displaces along the same pooled normal. No field pass or fabrication audit.",
+    "child_angle_degrees": 30.0,
+    "child_depth_parent_cap": 0.4,
+    "child_footprint_physical_arc": [
+      0.35,
+      0.75
+    ]
+  },
+  "parent": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\WALL\\SPAN\\G03",
+  "parent_geometry_sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe",
+  "parent_recipe": {
+    "name": "measured_three_rail_wall_v1",
+    "angle_degrees": 40.0,
+    "shoulder_fraction": 0.55,
+    "axial_plateau_fraction": 0.6,
+    "input_generation": 2,
+    "output_generation": 3,
+    "note": "Same coefficients across inputs. WALL deliberately rebuilds the interior surface; DEPTH only displaces along the same pooled normal. No field pass or fabrication audit.",
+    "candidate": "WALL"
+  },
+  "parent_region_seeds": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    }
+  ],
+  "input": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\docs\\fold_return_20261012\\review_assets\\OVERLAP_G02",
+    "source_control_sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+    "field_passes_inherited": 2,
+    "parent_region_seeds": [
+      {
+        "id": "LOWER_DIAGONAL_RETURN",
+        "direction": 0.35,
+        "height": 0.39,
+        "span": 0.12,
+        "expansion": 0.48,
+        "constriction": 0.28,
+        "reexpansion": 0.38,
+        "return_depth": 0.72,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      },
+      {
+        "id": "UPPER_CROSSING_RETURN",
+        "direction": 1.18,
+        "height": 0.61,
+        "span": 0.12,
+        "expansion": 0.46,
+        "constriction": 0.26,
+        "reexpansion": 0.36,
+        "return_depth": 0.68,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      }
+    ]
+  },
+  "added_field_passes": 0,
+  "emitted_children": [
+    {
+      "parent_guide": 0,
+      "status": "EMITTED",
+      "actual_parent_detections": 25,
+      "central_rays": 25,
+      "interpolated_rays": 0,
+      "child_depth_range": [
+        0.0062791240903287875,
+        0.030801100343270476
+      ],
+      "maximum_child_parent_depth_ratio": 0.2647658615643493
+    },
+    {
+      "parent_guide": 1,
+      "status": "EMITTED",
+      "actual_parent_detections": 23,
+      "central_rays": 25,
+      "interpolated_rays": 2,
+      "child_depth_range": [
+        0.00594026282697235,
+        0.03788327192124696
+      ],
+      "maximum_child_parent_depth_ratio": 0.20543024107243738
+    }
+  ],
+  "parent_valley_retention": [
+    {
+      "parent_guide": 0,
+      "maximum_sampled_parent_valley_motion": 1.894677997146245e-05,
+      "median_sampled_parent_valley_motion": 2.613916170114954e-07,
+      "scope": "Finite parent valley positions only, not full angle or depth invariance."
+    },
+    {
+      "parent_guide": 1,
+      "maximum_sampled_parent_valley_motion": 0.0035343412522966084,
+      "median_sampled_parent_valley_motion": 1.6855999851945859e-07,
+      "scope": "Finite parent valley positions only, not full angle or depth invariance."
+    }
+  ],
+  "maximum_displacement": 0.09064956142924198,
+  "axial_role_constraint": null,
+  "scope": "One bounded descendant from actual generated walls; not a general recurrence engine.",
+  "finite": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_triangle_area": 1.4447936002463223e-06,
+  "reflection_error": [
+    3.748544367384395e-15,
+    3.800791407964896e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ],
+  "quick_integrity": "PASS",
+  "control_vertices": 102402,
+  "physical_vertices": 204802,
+  "physical_triangles": 409600,
+  "source_revision": "055c42f",
+  "self_intersection": "NOT_CHECKED",
+  "fabrication": "NOT_CHECKED"
+}

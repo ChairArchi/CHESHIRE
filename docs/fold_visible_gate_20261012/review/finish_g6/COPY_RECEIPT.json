@@ -1,0 +1,315 @@
+{
+  "selected_mode": "RELAXED_G06",
+  "expected_generation": 6,
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "common_recipes": {
+    "relief_recipe": {
+      "primary_radius": 0.3,
+      "primary_amplitude": 0.22,
+      "secondary_radius": 0.14,
+      "secondary_amplitude": 0.07,
+      "maximum_height": 0.3,
+      "primary_count": 160,
+      "minimum_spacing_in_radii": 1.0,
+      "placement": "physical_farthest_gap",
+      "root_collar_amplitude": 0.035,
+      "root_collar_inner_radius": 0.68,
+      "root_collar_outer_radius": 1.2,
+      "collar_positive_suppression_height": 0.08,
+      "normal_agreement_fade": [
+        0.05,
+        0.3
+      ]
+    },
+    "relaxation_recipe": {
+      "positive": 0.5,
+      "negative": -0.53,
+      "pairs": 6,
+      "maximum_carrier_shift": 0.04,
+      "material_end_limits": [
+        0.1,
+        0.9
+      ],
+      "fade_width": 0.08,
+      "carrier_stage_generation": 3,
+      "graph": "Uniform undirected G03 quad-edge neighbours",
+      "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+    }
+  },
+  "expected_original_arrays": {
+    "SPAN": {
+      "control_quad.npz": {
+        "xyz": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "038aeec3dadc98e4849182c07859eea6619ff4f98ae2874f077598bad7be1f32"
+        },
+        "faces": {
+          "shape": [
+            1638400,
+            4
+          ],
+          "dtype": "<i8",
+          "sha256": "7481511123dcdf6a3c211b4cea5fa575637b0e7bb900f3eca42b7b24912698a7"
+        },
+        "chart": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "3a3241474efad81ffb7ceb79ca16105b140bd6d0170cbbe532477e99c2177557"
+        },
+        "classes": {
+          "shape": [
+            1638402
+          ],
+          "dtype": "|i1",
+          "sha256": "d14161444fa6a8795ca050be7815b5fcdf2e8304770713bc02aafe6c659a82ff"
+        },
+        "rest": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "653e01b97f80eb263dcde056daae35b6f4e3454b0664055e6448d5882e108c2e"
+        },
+        "anchors": {
+          "shape": [
+            1638400,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "3c13fc122001de3785a6a1c3e5db5239fae2c7b71db911c7933f2fd683d69f94"
+        },
+        "generation": {
+          "shape": [],
+          "dtype": "<i8",
+          "sha256": "23d7f42b1cdc1f0d492ebd756ed0fe8003995dda554d99418d47a81813650207"
+        },
+        "surface": {
+          "shape": [],
+          "dtype": "<U2",
+          "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+        },
+        "memory": {
+          "shape": [
+            1638402
+          ],
+          "dtype": "<f8",
+          "sha256": "3b95b797d6f21035c333a1293046ecb4adaac5f28510233dc664c0645618b3e5"
+        }
+      },
+      "geometry.npz": {
+        "xyz": {
+          "shape": [
+            3276802,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "122cf892b786ac4540889f77ddcd843d3b41c14e42ac5fc0ece7e25eb79cdbfe"
+        },
+        "faces": {
+          "shape": [
+            6553600,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095"
+        }
+      },
+      "carrier_relaxation.npz": {
+        "carrier_delta": {
+          "shape": [
+            25602,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "aeadcc84c0a7bc275a5aed08e86b246321a691dc3cb763db6d95610b76d99c30"
+        }
+      }
+    },
+    "COUNTER": {
+      "control_quad.npz": {
+        "xyz": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "81a640cad6b9bfd577e8fc0335687ec60d03e49f8f62bf58f1947160fa3741d0"
+        },
+        "faces": {
+          "shape": [
+            1638400,
+            4
+          ],
+          "dtype": "<i8",
+          "sha256": "7481511123dcdf6a3c211b4cea5fa575637b0e7bb900f3eca42b7b24912698a7"
+        },
+        "chart": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "3a3241474efad81ffb7ceb79ca16105b140bd6d0170cbbe532477e99c2177557"
+        },
+        "classes": {
+          "shape": [
+            1638402
+          ],
+          "dtype": "|i1",
+          "sha256": "d14161444fa6a8795ca050be7815b5fcdf2e8304770713bc02aafe6c659a82ff"
+        },
+        "rest": {
+          "shape": [
+            1638402,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "653e01b97f80eb263dcde056daae35b6f4e3454b0664055e6448d5882e108c2e"
+        },
+        "anchors": {
+          "shape": [
+            1638400,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "3c13fc122001de3785a6a1c3e5db5239fae2c7b71db911c7933f2fd683d69f94"
+        },
+        "generation": {
+          "shape": [],
+          "dtype": "<i8",
+          "sha256": "23d7f42b1cdc1f0d492ebd756ed0fe8003995dda554d99418d47a81813650207"
+        },
+        "surface": {
+          "shape": [],
+          "dtype": "<U2",
+          "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+        },
+        "memory": {
+          "shape": [
+            1638402
+          ],
+          "dtype": "<f8",
+          "sha256": "c33aaaf83092f9d525c0bf9e54302a72d2c5f25757e397020e56ffcbeed70223"
+        }
+      },
+      "geometry.npz": {
+        "xyz": {
+          "shape": [
+            3276802,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "f46fcbe6100a55ec712d2066ab3ab9d6b464e6a895cf37ad2a9e2365b0421b1b"
+        },
+        "faces": {
+          "shape": [
+            6553600,
+            3
+          ],
+          "dtype": "<i8",
+          "sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095"
+        }
+      },
+      "carrier_relaxation.npz": {
+        "carrier_delta": {
+          "shape": [
+            25602,
+            3
+          ],
+          "dtype": "<f8",
+          "sha256": "e5bcefd605ab9c92c2f1ac659a152d3439fa6c2b0b81da2957502352e093f9c1"
+        }
+      }
+    }
+  },
+  "copied_assets": [
+    {
+      "path": "atlas/power8.npz",
+      "bytes": 47363,
+      "sha256": "e22570115616ca851407c9406aeb8faf8635fed7d5bef45d6a74cf6e7be2fe02",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/atlas/power8.npz"
+    },
+    {
+      "path": "atlas/recipe.json",
+      "bytes": 271,
+      "sha256": "e29c714d745c51c1746d27c0a9b7617831bfb2bb39bce211def5dc31843ee974",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/atlas/recipe.json"
+    },
+    {
+      "path": "RELAXED_G06/SPAN/G06/generation.json",
+      "bytes": 3925,
+      "sha256": "964b5e0d8686cd5994b8266709727c880afa315d94a589a1acc979b75be4b94b",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/RELAXED_G06/SPAN/G06/generation.json"
+    },
+    {
+      "path": "RELAXED_G06/SPAN/G06/operation_receipt.json",
+      "bytes": 1498,
+      "sha256": "8268fc2e17ecbcf0f0dfbe9c275bad0b462ca4e6bd3110bda8bb93ce49ca0705",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/RELAXED_G06/SPAN/G06/operation_receipt.json"
+    },
+    {
+      "path": "RELAXED_G06/SPAN/G06/native_symmetry.json",
+      "bytes": 294,
+      "sha256": "7e80c4735bde572b31905eec892324c3ff631f88e503ed94a2c4c64a610bbdf8",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/RELAXED_G06/SPAN/G06/native_symmetry.json"
+    },
+    {
+      "path": "RELAXED_G06/SPAN/G06/colonies.npz",
+      "bytes": 35551,
+      "sha256": "9de7d29c49ebd03e3e9a94392521103d93a0404c72d7af4300ca2363caa2427c",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/colonies.npz"
+    },
+    {
+      "path": "source_snapshots/SPAN/detail_finish.py",
+      "bytes": 19619,
+      "sha256": "f94e19adecfd1659d2f9c2fccdd1cbaa9d269fe65d179aa16126612f7c1d6f03",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3/detail_finish.py"
+    },
+    {
+      "path": "RELAXED_G06/COUNTER/G06/generation.json",
+      "bytes": 3917,
+      "sha256": "dcae4f057e3b00b7980d615272603d8ea0453df3882a1140cdd60ba585cf894d",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3_counter/RELAXED_G06/COUNTER/G06/generation.json"
+    },
+    {
+      "path": "RELAXED_G06/COUNTER/G06/operation_receipt.json",
+      "bytes": 1484,
+      "sha256": "c79a9a45a1fdd49953fb18f4534ce5b44eeec6741d0eef55709fe948115b9b5a",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3_counter/RELAXED_G06/COUNTER/G06/operation_receipt.json"
+    },
+    {
+      "path": "RELAXED_G06/COUNTER/G06/native_symmetry.json",
+      "bytes": 294,
+      "sha256": "fe4362f08babb3b3eab56a0ee5c4e89f0db9eef3fc9b79aff1563f53d5377984",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3_counter/RELAXED_G06/COUNTER/G06/native_symmetry.json"
+    },
+    {
+      "path": "RELAXED_G06/COUNTER/G06/colonies.npz",
+      "bytes": 38374,
+      "sha256": "d10bd09dc222cee8c82e460985679910066884614c4e12b902636732489d659a",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3_counter/colonies.npz"
+    },
+    {
+      "path": "source_snapshots/COUNTER/detail_finish.py",
+      "bytes": 20780,
+      "sha256": "6f3b7ffb4fd2948dd4d1652b6b34ba6bcec4e3762d71cf6737ae3e1e10ab45b7",
+      "source": "output/fold_visible_gate_20261012/bulb_finish_g6_relaxed_g3_counter/detail_finish.py"
+    }
+  ],
+  "copied_bytes": 173370,
+  "source_parents": "../WALL/{SPAN,COUNTER}/G03",
+  "previous_g05_package_unchanged": true,
+  "omission": "All selected full-resolution controls, native arrays and carrier delta are regenerated from saved recipes on demand; no original output array dependency.",
+  "replay_command": "python -B experiments/fold_visible_gate_20261012/compactpackage_finish_g6.py --verify docs/fold_visible_gate_20261012/review/finish_g6"
+}

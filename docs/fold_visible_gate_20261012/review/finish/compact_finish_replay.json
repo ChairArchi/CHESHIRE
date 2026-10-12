@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "expected_recipes": [
+    "BOLD_DETAIL",
+    "INTEGRATED"
+  ],
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "verified_copied_asset_hashes": 18,
+  "records": [
+    {
+      "recipe": "BOLD_DETAIL",
+      "case": "SPAN",
+      "passed": true,
+      "source_control_sha256_matches": true,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "exact_inactive_control_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "colony_source_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "pooled_frame_orthogonality_max_error": 4.440892098500626e-16,
+        "passed": true
+      },
+      "control_vertices": 409602,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "no_appended_surface_topology": true,
+      "inactive_reference_topology": {
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "physical_vertices": 819202
+      },
+      "maximum_displacement": 0.23499743275212073,
+      "maximum_displacement_bound": 0.28,
+      "bound_passed": true
+    },
+    {
+      "recipe": "INTEGRATED",
+      "case": "SPAN",
+      "passed": true,
+      "source_control_sha256_matches": true,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "exact_inactive_control_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "colony_source_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "pooled_frame_orthogonality_max_error": 4.996003610813204e-16,
+        "passed": true
+      },
+      "control_vertices": 409602,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "no_appended_surface_topology": true,
+      "inactive_reference_topology": {
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "physical_vertices": 819202
+      },
+      "maximum_displacement": 0.27185775322801503,
+      "maximum_displacement_bound": 0.3,
+      "bound_passed": true
+    },
+    {
+      "recipe": "BOLD_DETAIL",
+      "case": "COUNTER",
+      "passed": true,
+      "source_control_sha256_matches": true,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "exact_inactive_control_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "colony_source_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "pooled_frame_orthogonality_max_error": 6.106226635438361e-16,
+        "passed": true
+      },
+      "control_vertices": 409602,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "no_appended_surface_topology": true,
+      "inactive_reference_topology": {
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "physical_vertices": 819202
+      },
+      "maximum_displacement": 0.23765415857833638,
+      "maximum_displacement_bound": 0.28,
+      "bound_passed": true
+    },
+    {
+      "recipe": "INTEGRATED",
+      "case": "COUNTER",
+      "passed": true,
+      "source_control_sha256_matches": true,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "exact_inactive_control_hashes": {
+        "control_quad.npz": true,
+        "operation_fields.npz": true,
+        "geometry.npz": true
+      },
+      "colony_source_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "pooled_frame_orthogonality_max_error": 4.440892098500626e-16,
+        "passed": true
+      },
+      "control_vertices": 409602,
+      "physical_vertices": 819202,
+      "physical_triangles": 1638400,
+      "no_appended_surface_topology": true,
+      "inactive_reference_topology": {
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "physical_vertices": 819202
+      },
+      "maximum_displacement": 0.30000000000000004,
+      "maximum_displacement_bound": 0.3,
+      "bound_passed": true
+    }
+  ],
+  "scope": "All original control, operation and native arrays are regenerated exactly from packaged WALL G3 parents, two inactive refinements, actual native normals, saved atlas/colony frames and recipe JSON. One inherited connected surface; no appended component geometry.",
+  "excluded": [
+    "aesthetic success",
+    "self-intersection validity",
+    "fabrication",
+    "infinite Mandelbulb boundary"
+  ]
+}

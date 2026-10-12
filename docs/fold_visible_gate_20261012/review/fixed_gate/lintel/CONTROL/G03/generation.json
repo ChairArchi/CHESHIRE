@@ -1,0 +1,206 @@
+{
+  "source_control_sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+  "source_generation_metadata_sha256": "e41951b7456b2f54720c45f6444121436ae9b92b62d28adb935bcc722014f534",
+  "source_generation": 2,
+  "source_identity": "Actual earlier SPAN G2; not the finished WALL G3 column",
+  "source_field_passes_in_history": 2,
+  "added_field_passes": 0,
+  "symmetry_operation": "Pair averaging explicitly permitted for this new lintel carrier",
+  "source_axial_reflection_plane": 5.018842938817945,
+  "material_pair_max_error": 2.482534153247273e-16,
+  "fixed_member_dimension_transform": [
+    [
+      0.3196400584361893,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.33809565498964667,
+      0.0,
+      -7.507231613904578e-17
+    ],
+    [
+      0.0,
+      0.0,
+      0.48982819801864674,
+      -0.073585653687676
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "target_local_extent": [
+    0.9733816894580114,
+    0.7467145272190373,
+    4.769570278344255
+  ],
+  "tradeoff": "Pair averaging softens mismatched macro folds; final first-half delta copy may create a central crease and does not promise C1 continuity",
+  "rest_association": "Reset to the explicitly reconstructed G2 carrier positions",
+  "parent_region_seeds": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "AXIAL_MIRROR_LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": -0.28,
+      "mirror": false,
+      "mirrored_from": "LOWER_DIAGONAL_RETURN"
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "AXIAL_MIRROR_UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": -0.28,
+      "mirror": false,
+      "mirrored_from": "UPPER_CROSSING_RETURN"
+    }
+  ],
+  "original_parent_region_seeds": [
+    {
+      "id": "LOWER_DIAGONAL_RETURN",
+      "direction": 0.35,
+      "height": 0.39,
+      "span": 0.12,
+      "expansion": 0.48,
+      "constriction": 0.28,
+      "reexpansion": 0.38,
+      "return_depth": 0.72,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    },
+    {
+      "id": "UPPER_CROSSING_RETURN",
+      "direction": 1.18,
+      "height": 0.61,
+      "span": 0.12,
+      "expansion": 0.46,
+      "constriction": 0.26,
+      "reexpansion": 0.36,
+      "return_depth": 0.68,
+      "overlap_width": 0.46,
+      "sweep": 0.28,
+      "mirror": false
+    }
+  ],
+  "search_symmetry": "Mirrored authored search bands; final symmetry is additionally enforced by a declared first-half copy",
+  "candidate": "CONTROL",
+  "recipe": {
+    "angle_degrees": 40.0,
+    "shoulder_fraction": 0.55,
+    "wall_strength": 1.0,
+    "axial_plateau_fraction": 0.6,
+    "transverse_plateau_fraction": 0.65,
+    "gate_opening_in_column_widths": 2.6,
+    "overhang_in_column_widths": 0.15,
+    "column_display_height": 3.0,
+    "nominal_seat_gap": 0.04,
+    "source_symmetry": "Axial pair average of actual incoming G2 positions and their reflected counterparts",
+    "displacement_symmetry": "Constructive first-half axial copy after existing XY reflection",
+    "envelope": "One fixed source-derived transform; no WALL variant rescaling"
+  },
+  "source_folder": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\fixed_gate_final\\lintel\\SOURCE\\G02",
+  "material_axial_pair_error": 2.7476618026966064e-16,
+  "maximum_displacement": 0.0,
+  "source_refinement": "Existing inactive surface-preserving Task36 split from new symmetric SOURCE G2",
+  "final_axial_constraint": "Copy s<=0.5 displacement to s>0.5 and reverse its local Z component; centre-plane Z displacement zero",
+  "final_envelope_policy": "Same fixed source/control transform; no WALL variant rescaling",
+  "actual_local_bbox": [
+    [
+      -0.48669084472900576,
+      -0.37335726360951865,
+      0.0
+    ],
+    [
+      0.48669084472900576,
+      0.37335726360951865,
+      4.769570278344255
+    ]
+  ],
+  "actual_local_extent": [
+    0.9733816894580115,
+    0.7467145272190373,
+    4.769570278344255
+  ],
+  "control_vertices": 25602,
+  "physical_vertices": 51202,
+  "triangles": 102400,
+  "checks": {
+    "finite": true,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 2.9764414993438148e-06,
+    "signed_volume": 1.1956503518668602,
+    "passed": true,
+    "reflections": [
+      {
+        "axis": 0,
+        "plane": 0.0,
+        "maximum_xyz_error": 1.7772239894833365e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      {
+        "axis": 1,
+        "plane": 0.0,
+        "maximum_xyz_error": 1.7772239894833365e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      {
+        "axis": 2,
+        "plane": 2.3847851391721275,
+        "maximum_xyz_error": 1.7763568394002505e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      }
+    ]
+  },
+  "quick_integrity": "PASS"
+}

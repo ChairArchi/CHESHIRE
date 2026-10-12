@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "modes": [
+    "WALL"
+  ],
+  "expected_states": 2,
+  "verified_states": 2,
+  "common_recipe": true,
+  "records": [
+    {
+      "path": "WALL\\SPAN\\G03",
+      "input_case": "SPAN",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 5.779174401014292e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.48794186647252386
+    },
+    {
+      "path": "WALL\\COUNTER\\G03",
+      "input_case": "COUNTER",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 7.022484581714122e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.553927178401969
+    }
+  ],
+  "scope": "Explicit expected-case saved G3 operations and native reconstruction. No gate, self-intersection, fabrication or aesthetic certification."
+}

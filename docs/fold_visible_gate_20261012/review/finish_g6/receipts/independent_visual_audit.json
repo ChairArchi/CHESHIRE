@@ -1,0 +1,44 @@
+{
+  "audit": "Independent finite visual comparison of actual saved SPAN renders; no G06 heavy array audit in this record",
+  "compared_paths": {
+    "INTEGRATED_G05": "output\\fold_visible_gate_20261012\\bulb_integrated\\INTEGRATED\\SPAN\\G05",
+    "INTEGRATED_G06": "output\\fold_visible_gate_20261012\\bulb_finish_g6\\INTEGRATED_G06\\SPAN\\G06",
+    "RELAXED_G06": "output\\fold_visible_gate_20261012\\bulb_finish_g6_relaxed_g3\\RELAXED_G06\\SPAN\\G06"
+  },
+  "matched_render_recipe": true,
+  "viewed": [
+    "All three: front_micro, oblique_micro, side_micro",
+    "RELAXED_G06: front and side whole views",
+    "INTEGRATED_G05 whole views previously inspected"
+  ],
+  "observations": {
+    "facets": "G06 resolves smaller ridges more finely than G05. The original large carrier facets remain visible; increased sampling alone does not remove them.",
+    "relaxation": "The bounded G03 relaxation modestly improves broad panel continuity and reduces a few distracting facet transitions. Its improvement over unrelaxed G06 is smaller than the main original-to-attached-relief change.",
+    "body_connection": "All three visually read as relief growing from the same body. RELAXED_G06 does not reintroduce the rejected detached branch-component appearance.",
+    "valley_branch_hierarchy": "Deep inherited valleys and fold roots remain readable. Fine terraces and clustered lobes are clearer, but there is still no strong continuous branching hierarchy across all scales.",
+    "silhouette": "Whole front and side views retain the main column proportions, upper and lower masses, deep cavities and sharp outward lips. Local corners are softened, not globally preserved exactly.",
+    "remaining_risk": "Several dense regions still read as thick crust or terraced surface folds. The result remains a locally height-projected detail system rather than free three-dimensional branching."
+  },
+  "recommendation": "Select RELAXED_G06 as the bounded close-detail lead; retain G05 and unrelaxed G06 as causal comparisons.",
+  "aesthetic_status": "PARTIAL: modest further refinement of body-attached detail, not completion of the Hansmeyer/Digital Grotesque reference target.",
+  "metadata_only_checks": {
+    "single_component": 1,
+    "maximum_G03_carrier_shift": 0.04000000000000001,
+    "maximum_relief_relative_to_modified_carrier": 0.2755903797067837,
+    "actual_native_lr_reported": {
+      "passed": true,
+      "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+      "material_pair_max_error": 9.019494489765868e-16,
+      "pair_involution": true,
+      "reflected_oriented_native_triangle_sets_identical": true,
+      "physical_vertices": 3276802,
+      "physical_triangles": 6553600
+    }
+  },
+  "limits": [
+    "This review visually evaluates SPAN only; no claim of identical visual improvement on COUNTER.",
+    "Carrier relaxation and relief are separate movement budgets; their numbers are not the total displacement from original G03.",
+    "G06 topology/symmetry values here are read from saved metadata, not independently recomputed in this visual audit.",
+    "No intersection, fabrication or exact macro-fold preservation claim."
+  ]
+}

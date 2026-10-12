@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "original_packaged_lintel_controls_identical": true,
+  "recomputed_weights_identical": true,
+  "joined_control_arrays_identical": true,
+  "operation_delta_max_error": 0.0,
+  "beam_axial_station_max_error": 0.0,
+  "omitted_native_hashes_identical": true,
+  "omitted_assembly_hashes_identical": {
+    "before_assembly": true,
+    "after_assembly": true
+  },
+  "packaged_column_bytes_identical": true,
+  "transforms_identical": true,
+  "unchanged_column_max_error": 0.0,
+  "unchanged_column_faces_identical": true,
+  "actual_contact_ray_records_identical": true,
+  "actual_head_overlap_passed": true,
+  "passing_rays": {
+    "LEFT": 9,
+    "RIGHT": 9
+  },
+  "actual_joint_sections_identical": true,
+  "actual_section_factors": [
+    [
+      1.6499999999999997,
+      1.65
+    ],
+    [
+      1.6499999999999995,
+      1.65
+    ]
+  ],
+  "geometry": {
+    "finite": true,
+    "components": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.451612026683641e-07,
+    "signed_volume": 3.259231430518723,
+    "passed": true
+  },
+  "global_left_right": {
+    "axis": 0,
+    "plane": 0.0,
+    "maximum_xyz_error": 2.6184557666721354e-15,
+    "pair_map_involutive": true,
+    "reflected_oriented_triangle_sets_identical": true,
+    "passed": true
+  },
+  "scope": "Exact reconstruction from packaged original lintel, new control operation and unchanged existing column. Actual finite native-triangle vertical parity intervals overlap; deliberate member overlap remains separate closed meshes.",
+  "excluded": [
+    "Boolean union",
+    "structural joint",
+    "self-intersection certification",
+    "fabrication"
+  ]
+}

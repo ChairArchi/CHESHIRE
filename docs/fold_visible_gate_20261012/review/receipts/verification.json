@@ -1,0 +1,697 @@
+{
+  "passed": true,
+  "tolerance": 1e-12,
+  "scope": "Saved parent G3 operation replay, native reconstruction, new source determinism, and actual three-part gate geometry/reflection",
+  "excluded_scope": [
+    "G04/CHILD continuation",
+    "self-intersection",
+    "global deformed clearance",
+    "fabrication",
+    "structural connections",
+    "aesthetic success"
+  ],
+  "expected_parent_states": 16,
+  "verified_parent_states": 16,
+  "verified_assemblies": 4,
+  "common_coefficients": {
+    "recipe_identical_across_four_inputs": true,
+    "parent_seed_coefficients_identical": true,
+    "member_role_exception": "GATE_LINTEL alone adds explicit constructive s->1-s reflection after the same wall operator",
+    "replay_constants": {
+      "previous_depth_ratio": 0.28,
+      "wall_strength": 1.0,
+      "wall_angle_degrees": 40.0,
+      "shoulder_fraction": 0.55,
+      "axial_plateau_fraction": 0.6,
+      "transverse_plateau_fraction": 0.65
+    }
+  },
+  "maximum_operation_replay_error": 0.0,
+  "maximum_control_replay_error": 0.0,
+  "maximum_native_reconstruction_error": 0.0,
+  "parent_states": [
+    {
+      "path": "CONTROL\\SPAN\\G03",
+      "input_case": "SPAN",
+      "candidate": "CONTROL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {},
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 5.779174401014292e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.0
+    },
+    {
+      "path": "CONTROL\\COUNTER\\G03",
+      "input_case": "COUNTER",
+      "candidate": "CONTROL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {},
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 7.022484581714122e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.0
+    },
+    {
+      "path": "CONTROL\\GATE_COLUMN\\G03",
+      "input_case": "GATE_COLUMN",
+      "candidate": "CONTROL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {},
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 1.1208331719682134e-05
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.0
+    },
+    {
+      "path": "CONTROL\\GATE_LINTEL\\G03",
+      "input_case": "GATE_LINTEL",
+      "candidate": "CONTROL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {},
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 1.152261653772792e-05
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": "Constructive first-half material reflection for lintel",
+      "maximum_applied_displacement": 0.0
+    },
+    {
+      "path": "PREVIOUS\\SPAN\\G03",
+      "input_case": "SPAN",
+      "candidate": "PREVIOUS",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "region_weights": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 5.779174401014292e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.14891054781543575
+    },
+    {
+      "path": "PREVIOUS\\COUNTER\\G03",
+      "input_case": "COUNTER",
+      "candidate": "PREVIOUS",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "region_weights": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 7.022484581714122e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.20897575098958615
+    },
+    {
+      "path": "PREVIOUS\\GATE_COLUMN\\G03",
+      "input_case": "GATE_COLUMN",
+      "candidate": "PREVIOUS",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "region_weights": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 1.2896606050639645e-05
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.0765483623945236
+    },
+    {
+      "path": "PREVIOUS\\GATE_LINTEL\\G03",
+      "input_case": "GATE_LINTEL",
+      "candidate": "PREVIOUS",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "region_weights": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 6.653221397330177e-06
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": "Constructive first-half material reflection for lintel",
+      "maximum_applied_displacement": 0.06607349417170139
+    },
+    {
+      "path": "DEPTH\\SPAN\\G03",
+      "input_case": "SPAN",
+      "candidate": "DEPTH",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 5.779174401014292e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.1937383645069444
+    },
+    {
+      "path": "DEPTH\\COUNTER\\G03",
+      "input_case": "COUNTER",
+      "candidate": "DEPTH",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 4.849415021499952e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.1694576745134679
+    },
+    {
+      "path": "DEPTH\\GATE_COLUMN\\G03",
+      "input_case": "GATE_COLUMN",
+      "candidate": "DEPTH",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 4.475227008584993e-06
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.13148550762266342
+    },
+    {
+      "path": "DEPTH\\GATE_LINTEL\\G03",
+      "input_case": "GATE_LINTEL",
+      "candidate": "DEPTH",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 7.2399709545310986e-06
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": "Constructive first-half material reflection for lintel",
+      "maximum_applied_displacement": 0.08105815208218607
+    },
+    {
+      "path": "WALL\\SPAN\\G03",
+      "input_case": "SPAN",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 5.779174401014292e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.48794186647252386
+    },
+    {
+      "path": "WALL\\COUNTER\\G03",
+      "input_case": "COUNTER",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 7.022484581714122e-06
+      },
+      "endpoints": null,
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.553927178401969
+    },
+    {
+      "path": "WALL\\GATE_COLUMN\\G03",
+      "input_case": "GATE_COLUMN",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 4.5198387502442924e-06
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": null,
+      "maximum_applied_displacement": 0.20178864257174403
+    },
+    {
+      "path": "WALL\\GATE_LINTEL\\G03",
+      "input_case": "GATE_LINTEL",
+      "candidate": "WALL",
+      "passed": true,
+      "replay_delta_max_error": 0.0,
+      "replay_control_max_error": 0.0,
+      "chart_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true,
+      "saved_rail_coefficient_and_depth_formula_max_error": 0.0,
+      "replay_field_max_errors": {
+        "weights": 0.0,
+        "targets": 0.0,
+        "transverse": 0.0,
+        "overlap_denominator": 0.0,
+        "canonical_numerator": 0.0,
+        "strength": 0.0
+      },
+      "integrity": {
+        "finite": true,
+        "closed": true,
+        "winding_consistent": true,
+        "components": 1,
+        "minimum_triangle_area": 8.578010094914122e-06
+      },
+      "endpoints": {
+        "bottom_local_z_error": 0.0,
+        "top_local_z_error": 0.0,
+        "cap_displacement_error": 0.0,
+        "interpretation": "Member endpoint planes only; no global surface-clearance claim"
+      },
+      "role_constraint": "Constructive first-half material reflection for lintel",
+      "maximum_applied_displacement": 0.13415390915477426
+    }
+  ],
+  "assemblies": [
+    {
+      "path": "assemblies\\CONTROL",
+      "candidate": "CONTROL",
+      "passed": true,
+      "reassembly_xyz_max_error": 0.0,
+      "reassembly_triangle_arrays_identical": true,
+      "face_member_labels_identical": true,
+      "transform_max_error": 0.0,
+      "transform_determinants": {
+        "LEFT": 1.0,
+        "RIGHT": 1.0,
+        "LINTEL": 1.0
+      },
+      "all_transforms_proper": true,
+      "integrity": {
+        "components": 3,
+        "closed": true,
+        "winding_consistent": true,
+        "finite": true,
+        "minimum_triangle_area": 1.120833171968178e-05
+      },
+      "global_left_right": {
+        "maximum_xyz_pair_error": 1.0652501693184373e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      "nominal_seat_gap": 0.03999999999999959,
+      "nominal_gap_max_error": 4.0939474033052647e-16,
+      "gap_scope": "Nominal carrier seats only; deformed closest distances, intersections, bearing and load path NOT_CHECKED"
+    },
+    {
+      "path": "assemblies\\PREVIOUS",
+      "candidate": "PREVIOUS",
+      "passed": true,
+      "reassembly_xyz_max_error": 0.0,
+      "reassembly_triangle_arrays_identical": true,
+      "face_member_labels_identical": true,
+      "transform_max_error": 0.0,
+      "transform_determinants": {
+        "LEFT": 1.0,
+        "RIGHT": 1.0,
+        "LINTEL": 1.0
+      },
+      "all_transforms_proper": true,
+      "integrity": {
+        "components": 3,
+        "closed": true,
+        "winding_consistent": true,
+        "finite": true,
+        "minimum_triangle_area": 6.6532213973293515e-06
+      },
+      "global_left_right": {
+        "maximum_xyz_pair_error": 1.0628066204080184e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      "nominal_seat_gap": 0.03999999999999959,
+      "nominal_gap_max_error": 4.0939474033052647e-16,
+      "gap_scope": "Nominal carrier seats only; deformed closest distances, intersections, bearing and load path NOT_CHECKED"
+    },
+    {
+      "path": "assemblies\\DEPTH",
+      "candidate": "DEPTH",
+      "passed": true,
+      "reassembly_xyz_max_error": 0.0,
+      "reassembly_triangle_arrays_identical": true,
+      "face_member_labels_identical": true,
+      "transform_max_error": 0.0,
+      "transform_determinants": {
+        "LEFT": 1.0,
+        "RIGHT": 1.0,
+        "LINTEL": 1.0
+      },
+      "all_transforms_proper": true,
+      "integrity": {
+        "components": 3,
+        "closed": true,
+        "winding_consistent": true,
+        "finite": true,
+        "minimum_triangle_area": 4.475227008584262e-06
+      },
+      "global_left_right": {
+        "maximum_xyz_pair_error": 1.1226435567921847e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      "nominal_seat_gap": 0.03999999999999959,
+      "nominal_gap_max_error": 4.0939474033052647e-16,
+      "gap_scope": "Nominal carrier seats only; deformed closest distances, intersections, bearing and load path NOT_CHECKED"
+    },
+    {
+      "path": "assemblies\\WALL",
+      "candidate": "WALL",
+      "passed": true,
+      "reassembly_xyz_max_error": 0.0,
+      "reassembly_triangle_arrays_identical": true,
+      "face_member_labels_identical": true,
+      "transform_max_error": 0.0,
+      "transform_determinants": {
+        "LEFT": 1.0,
+        "RIGHT": 1.0,
+        "LINTEL": 1.0
+      },
+      "all_transforms_proper": true,
+      "integrity": {
+        "components": 3,
+        "closed": true,
+        "winding_consistent": true,
+        "finite": true,
+        "minimum_triangle_area": 4.51983875024368e-06
+      },
+      "global_left_right": {
+        "maximum_xyz_pair_error": 1.0628066204080184e-15,
+        "pair_map_involutive": true,
+        "reflected_oriented_triangle_sets_identical": true,
+        "passed": true
+      },
+      "nominal_seat_gap": 0.03999999999999959,
+      "nominal_gap_max_error": 4.0939474033052647e-16,
+      "gap_scope": "Nominal carrier seats only; deformed closest distances, intersections, bearing and load path NOT_CHECKED"
+    }
+  ],
+  "source_replay": [
+    {
+      "path": "sources\\COLUMN\\G00",
+      "kind": "COLUMN",
+      "stage": 0,
+      "maximum_errors": {
+        "xyz": 0.0,
+        "chart": 0.0,
+        "rest": 0.0,
+        "memory": 0.0
+      },
+      "discrete_arrays_identical": true,
+      "generation_identical": true,
+      "passed": true
+    },
+    {
+      "path": "sources\\COLUMN\\G02",
+      "kind": "COLUMN",
+      "stage": 2,
+      "maximum_errors": {
+        "xyz": 0.0,
+        "chart": 0.0,
+        "rest": 0.0,
+        "memory": 0.0
+      },
+      "discrete_arrays_identical": true,
+      "generation_identical": true,
+      "passed": true
+    },
+    {
+      "path": "sources\\LINTEL\\G00",
+      "kind": "LINTEL",
+      "stage": 0,
+      "maximum_errors": {
+        "xyz": 0.0,
+        "chart": 0.0,
+        "rest": 0.0,
+        "memory": 0.0
+      },
+      "discrete_arrays_identical": true,
+      "generation_identical": true,
+      "passed": true
+    },
+    {
+      "path": "sources\\LINTEL\\G02",
+      "kind": "LINTEL",
+      "stage": 2,
+      "maximum_errors": {
+        "xyz": 0.0,
+        "chart": 0.0,
+        "rest": 0.0,
+        "memory": 0.0
+      },
+      "discrete_arrays_identical": true,
+      "generation_identical": true,
+      "passed": true
+    }
+  ],
+  "skipped_g04_directories": [
+    "CHILD\\COUNTER\\G04",
+    "CHILD\\GATE_COLUMN\\G04",
+    "CHILD\\GATE_LINTEL\\G04",
+    "CHILD\\SPAN\\G04"
+  ],
+  "issues": []
+}

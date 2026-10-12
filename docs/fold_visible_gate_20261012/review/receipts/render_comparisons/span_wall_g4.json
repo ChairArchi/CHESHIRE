@@ -1,0 +1,80 @@
+{
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 900,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "side": [
+      [
+        -32,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "front_micro": [
+      [
+        0,
+        32,
+        7.1
+      ],
+      [
+        0,
+        0,
+        7.1
+      ],
+      2.6
+    ],
+    "oblique_micro": [
+      [
+        -18,
+        28,
+        13
+      ],
+      [
+        0,
+        0,
+        7.1
+      ],
+      2.6
+    ],
+    "side_micro": [
+      [
+        -32,
+        0,
+        7.1
+      ],
+      [
+        0,
+        0,
+        7.1
+      ],
+      2.6
+    ]
+  },
+  "objects": [
+    "Actual saved mesh"
+  ],
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\bulb_finish\\CONTROL\\SPAN\\G04\\geometry.npz"
+}

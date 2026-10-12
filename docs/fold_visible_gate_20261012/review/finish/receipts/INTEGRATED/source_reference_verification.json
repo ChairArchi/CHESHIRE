@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "input_case": "SPAN",
+      "source_control_hash_matches": true,
+      "source_refinement_reference_max_error": 0.0,
+      "native_reference_max_error": 0.0,
+      "chart_arrays_identical": true,
+      "topology_arrays_identical": true,
+      "memory_arrays_identical": true,
+      "final_refinement_correspondence_identical": true,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    },
+    {
+      "input_case": "COUNTER",
+      "source_control_hash_matches": true,
+      "source_refinement_reference_max_error": 0.0,
+      "native_reference_max_error": 0.0,
+      "chart_arrays_identical": true,
+      "topology_arrays_identical": true,
+      "memory_arrays_identical": true,
+      "final_refinement_correspondence_identical": true,
+      "native_triangle_arrays_identical": true,
+      "passed": true
+    }
+  ],
+  "scope": "Re-run one/two inactive refinements from actual source WALL G3 and reconstruct CONTROL native geometry"
+}

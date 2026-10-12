@@ -1,0 +1,955 @@
+{
+  "status": "PASS",
+  "source_fixed_gate": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\fixed_gate_final",
+  "source_existing_column_sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe",
+  "source_fixed_assembly_sha256": "868c11388149309f2e27e87d7023fad9f7234d585d351be45389b2343de89142",
+  "source_control_arrays": {
+    "xyz": {
+      "shape": [
+        25602,
+        3
+      ],
+      "dtype": "<f8",
+      "sha256": "391e28f6b858087466ea5960f5f1495f71a34e0b69f2e1690771d220a4942fb4"
+    },
+    "faces": {
+      "shape": [
+        25600,
+        4
+      ],
+      "dtype": "<i8",
+      "sha256": "72f06f13c65885cf303edad9157fc73e5aab9dffb7978f4a57676aaf9857349b"
+    },
+    "chart": {
+      "shape": [
+        25602,
+        3
+      ],
+      "dtype": "<f8",
+      "sha256": "fd1538fa378a32dcb790db9b8821d04d119fa0526265f8c5522a1447f587a3e6"
+    },
+    "classes": {
+      "shape": [
+        25602
+      ],
+      "dtype": "|i1",
+      "sha256": "37b9d3127ae9e6e6a7f62e3fbff7231e932bb9786e63eeb3e6eef9692b469644"
+    },
+    "rest": {
+      "shape": [
+        25602,
+        3
+      ],
+      "dtype": "<f8",
+      "sha256": "947054a78334ce5e71c7cb85811440adb9de110bc5d041a60c4e9a6396cc6443"
+    },
+    "anchors": {
+      "shape": [
+        25600,
+        3
+      ],
+      "dtype": "<i8",
+      "sha256": "44a38d4bd0a5c55526406e8cff9c98631b6a4a4c106d59bd76186fa5830b3700"
+    },
+    "generation": {
+      "shape": [
+        1
+      ],
+      "dtype": "<i8",
+      "sha256": "35be322d094f9d154a8aba4733b8497f180353bd7ae7b0a15f90b586b549f28b"
+    },
+    "surface": {
+      "shape": [
+        1
+      ],
+      "dtype": "<U2",
+      "sha256": "3b05c79f97818ed1e8739d162243fb922c3735f51a2b44ab61a8a10b981f4a92"
+    },
+    "memory": {
+      "shape": [
+        25602
+      ],
+      "dtype": "<f8",
+      "sha256": "6faa0731e336cd55a19c5912b6fedccfea0c460b5e208f81830707720c3c42a9"
+    }
+  },
+  "column_array_max_error": 0.0,
+  "column_triangle_arrays_identical": true,
+  "operation_replay_max_error": 0.0,
+  "beam_axial_station_max_error": 0.0,
+  "section_factor": 1.65,
+  "common_seat_drop": 0.16302306504562372,
+  "joint_support_halfwidth": 0.6326980981477074,
+  "actual_seat_sections_before": [
+    [
+      0.6922676663481864,
+      0.597241186588645
+    ],
+    [
+      0.6922676663481866,
+      0.5972411865886452
+    ]
+  ],
+  "actual_seat_sections_after": [
+    [
+      1.1422416494745073,
+      0.9854479578712642
+    ],
+    [
+      1.1422416494745076,
+      0.9854479578712646
+    ]
+  ],
+  "actual_seat_section_factors": [
+    [
+      1.6499999999999997,
+      1.65
+    ],
+    [
+      1.6499999999999995,
+      1.65
+    ]
+  ],
+  "joint_section_vs_original_global_envelope": [
+    [
+      1.1734776417568722,
+      1.3570539180875592
+    ],
+    [
+      1.1734776417568724,
+      1.3570539180875598
+    ]
+  ],
+  "required_overlap": 0.0340683591310304,
+  "actual_contact_before": [
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630447,
+        0.03390516751358491,
+        0.06481033709675789,
+        0.49299191284075367,
+        0.5924444088972409,
+        2.9425517350873696
+      ],
+      "beam_hits": [
+        3.262165208398469,
+        3.791216481059542
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496514,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        3.209431512623406,
+        3.8439501768346056
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630473,
+        0.0339051675135847,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        3.2621652083984696,
+        3.7912164810595423
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        3.235203781034612,
+        3.8181779084233995
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        0.0
+      ],
+      "central": true,
+      "column_hits": [
+        0.42231087810108703,
+        2.843649493642674
+      ],
+      "beam_hits": [
+        3.1805570115549124,
+        3.872824677903099
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        3.235203781034612,
+        3.8181779084233995
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630529,
+        0.03390516751358504,
+        0.06481033709675778,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        3.206991666909644,
+        3.8463900225483676
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496511,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        3.1240214664900625,
+        3.929360222967949
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630487,
+        0.033905167513585015,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.9425517350873704
+      ],
+      "beam_hits": [
+        3.206991666909644,
+        3.8463900225483676
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630447,
+        0.03390516751358491,
+        0.06481033709675789,
+        0.49299191284075367,
+        0.5924444088972409,
+        2.9425517350873696
+      ],
+      "beam_hits": [
+        3.206991666909644,
+        3.8463900225483676
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496514,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        3.1240214664900625,
+        3.929360222967949
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630473,
+        0.0339051675135847,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        3.206991666909644,
+        3.8463900225483676
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        3.2352037810346124,
+        3.8181779084233995
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        0.0
+      ],
+      "central": true,
+      "column_hits": [
+        0.42231087810108703,
+        2.843649493642674
+      ],
+      "beam_hits": [
+        3.1805570115549124,
+        3.872824677903099
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        3.235203781034612,
+        3.818177908423399
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630529,
+        0.03390516751358504,
+        0.06481033709675778,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        3.2621652083984696,
+        3.7912164810595423
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496511,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        3.209431512623406,
+        3.8439501768346056
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630487,
+        0.033905167513585015,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.9425517350873704
+      ],
+      "beam_hits": [
+        3.262165208398469,
+        3.791216481059542
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.0,
+      "passes": false
+    }
+  ],
+  "actual_contact_after": [
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630447,
+        0.03390516751358491,
+        0.06481033709675789,
+        0.49299191284075367,
+        0.5924444088972409,
+        2.9425517350873696
+      ],
+      "beam_hits": [
+        2.890491975582548,
+        3.836843583784216
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.05205975950482156,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496514,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        2.8401898817091427,
+        3.8871456776576214
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.12149299101779443,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.9272957451268624,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630473,
+        0.0339051675135847,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        2.890491975582548,
+        3.836843583784216
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.052059759504822,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        2.853084224022006,
+        3.874251335344758
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.045595456983198,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        0.0
+      ],
+      "central": true,
+      "column_hits": [
+        0.42231087810108703,
+        2.843649493642674
+      ],
+      "beam_hits": [
+        2.792546954946128,
+        3.934788604420636
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.051102538696545796,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.7520870410244205,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        2.853084224022006,
+        3.874251335344758
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.045595456983198,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630529,
+        0.03390516751358504,
+        0.06481033709675778,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        2.777970359318431,
+        3.9493652000483337
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.16458137576893916,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496511,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        2.6992633055891257,
+        4.028072253777639
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.26241956713781134,
+      "passes": true
+    },
+    {
+      "seat": "LEFT",
+      "world_xy": [
+        -1.5768783369219785,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630487,
+        0.033905167513585015,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.9425517350873704
+      ],
+      "beam_hits": [
+        2.7779703593184304,
+        3.9493652000483332
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.16458137576894005,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630447,
+        0.03390516751358491,
+        0.06481033709675789,
+        0.49299191284075367,
+        0.5924444088972409,
+        2.9425517350873696
+      ],
+      "beam_hits": [
+        2.7779703593184304,
+        3.9493652000483332
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.16458137576893916,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496514,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        2.6992633055891257,
+        4.028072253777639
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.26241956713781134,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.5768783369219785,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630473,
+        0.0339051675135847,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        2.777970359318431,
+        3.9493652000483337
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.16458137576893916,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        2.853084224022006,
+        3.874251335344758
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.045595456983198,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        0.0
+      ],
+      "central": true,
+      "column_hits": [
+        0.42231087810108703,
+        2.843649493642674
+      ],
+      "beam_hits": [
+        2.792546954946128,
+        3.934788604420636
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.051102538696545796,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.7520870410244205,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.193306094858785,
+        2.898679681005204
+      ],
+      "beam_hits": [
+        2.853084224022006,
+        3.8742513353447583
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.045595456983198,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        -0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630529,
+        0.03390516751358504,
+        0.06481033709675778,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.94255173508737
+      ],
+      "beam_hits": [
+        2.8904919755825476,
+        3.8368435837842165
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.052059759504822445,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        0.0
+      ],
+      "central": false,
+      "column_hits": [
+        0.21846153532357482,
+        1.3873591062008452,
+        1.3933487051496511,
+        2.961682872726937
+      ],
+      "beam_hits": [
+        2.8401898817091427,
+        3.8871456776576214
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.12149299101779443,
+      "passes": true
+    },
+    {
+      "seat": "RIGHT",
+      "world_xy": [
+        1.9272957451268624,
+        0.08960574326628447
+      ],
+      "central": false,
+      "column_hits": [
+        0.015035259129630487,
+        0.033905167513585015,
+        0.06481033709675788,
+        0.49299191284075367,
+        0.5924444088972408,
+        2.9425517350873704
+      ],
+      "beam_hits": [
+        2.8904919755825476,
+        3.8368435837842165
+      ],
+      "parity_valid": true,
+      "topmost_column_interval_overlap": 0.05205975950482289,
+      "passes": true
+    }
+  ],
+  "autofit_history": [
+    {
+      "attempt": 0,
+      "common_seat_drop": 0.0,
+      "passing_rays": {
+        "LEFT": 1,
+        "RIGHT": 1
+      },
+      "central_overlap": {
+        "LEFT": 0.0,
+        "RIGHT": 0.0
+      },
+      "passed": false
+    },
+    {
+      "attempt": 1,
+      "common_seat_drop": 0.16302306504562372,
+      "passing_rays": {
+        "LEFT": 9,
+        "RIGHT": 9
+      },
+      "central_overlap": {
+        "LEFT": 0.051102538696545796,
+        "RIGHT": 0.051102538696545796
+      },
+      "passed": true
+    }
+  ],
+  "local_geometry": {
+    "finite": true,
+    "components": 1,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.198452253884957e-06,
+    "signed_volume": 1.9703049480628902,
+    "passed": true
+  },
+  "global_geometry": {
+    "finite": true,
+    "components": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.451612026683641e-07,
+    "signed_volume": 3.259231430518723,
+    "passed": true,
+    "global_left_right": {
+      "axis": 0,
+      "plane": 0.0,
+      "maximum_xyz_error": 2.6184557666721354e-15,
+      "pair_map_involutive": true,
+      "reflected_oriented_triangle_sets_identical": true,
+      "passed": true
+    }
+  },
+  "contact_scope": "18 actual native-triangle vertical ray sections, nine per seat. Positive overlap is measured against the topmost parity interval of the actual column head. Closed self-intersecting sources can have ambiguous physical interiors; this is finite geometric overlap evidence, not volume/structural certification.",
+  "excluded": [
+    "Boolean union",
+    "welded mesh",
+    "load path",
+    "bearing area",
+    "self-intersection validity",
+    "fabrication"
+  ]
+}

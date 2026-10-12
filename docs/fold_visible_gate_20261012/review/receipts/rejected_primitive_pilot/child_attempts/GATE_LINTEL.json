@@ -1,0 +1,23 @@
+{
+  "case": "GATE_LINTEL",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\WALL\\GATE_LINTEL\\G03",
+  "attempts": [
+    {
+      "parent_guide": 0,
+      "status": "EMITTED",
+      "actual_parent_detections": 25,
+      "central_rays": 25,
+      "interpolated_rays": 0,
+      "child_depth_range": [
+        0.006295831035993375,
+        0.012886572683992679
+      ],
+      "maximum_child_parent_depth_ratio": 0.20485162172618687
+    },
+    {
+      "parent_guide": 1,
+      "status": "NOT_EMITTED",
+      "reason": "Actual parent trough absent on majority of central rays: 0/25."
+    }
+  ]
+}

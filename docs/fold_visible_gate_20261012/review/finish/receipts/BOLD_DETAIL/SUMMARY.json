@@ -1,0 +1,147 @@
+{
+  "variants": {
+    "BOLD_DETAIL": {
+      "primary_radius": 0.23,
+      "primary_amplitude": 0.2,
+      "secondary_radius": 0.1,
+      "secondary_amplitude": 0.08,
+      "maximum_height": 0.28,
+      "primary_count": 110,
+      "minimum_spacing_in_radii": 1.35
+    }
+  },
+  "output_generation": 5,
+  "common": {
+    "candidate_samples": 640,
+    "body_material_range": [
+      0.1,
+      0.9
+    ],
+    "secondary_per_primary": 2,
+    "secondary_offset_in_primary_radii": 0.65,
+    "normal_pool_radius_in_colony_radii": 1.0,
+    "normal_agreement_minimum": 0.1,
+    "normal_pool_agreement_minimum": 0.25,
+    "slab_support_in_radii": 1.0,
+    "primary_footprint_diameters": [
+      0.6,
+      0.46
+    ],
+    "secondary_footprint_diameters": [
+      0.22,
+      0.2
+    ],
+    "deep_core_exclusion": false,
+    "source_xyz_smoothing": false,
+    "symmetry": "Constructive material X/Y reflection after relief placement"
+  },
+  "atlas": {
+    "power": 8,
+    "iterations": 10,
+    "bailout": 4.0,
+    "xy_resolution": 129,
+    "z_resolution": 96,
+    "xy_extent": 1.2,
+    "maximum_z": 1.4,
+    "interpretation": "Top finite occupied height along +Z; compact projected height relief, not a full 3D fractal volume"
+  },
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "BOLD_DETAIL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 3.069752858546054e-07,
+        "symmetry_error": [
+          3.820199830714189e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.23499743275212073,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 190864
+      },
+      "primary_colonies": 87,
+      "secondary_colonies": 174
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "CONTROL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 3.6119840005822277e-07,
+        "symmetry_error": [
+          3.8088902694984756e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.0,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 0
+      },
+      "primary_colonies": 0,
+      "secondary_colonies": 0
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BOLD_DETAIL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.389052863562356e-07,
+        "symmetry_error": [
+          4.2261452805446086e-15,
+          3.9968028886505635e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.23765415857833638,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 182440
+      },
+      "primary_colonies": 89,
+      "secondary_colonies": 178
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "CONTROL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.389052863562356e-07,
+        "symmetry_error": [
+          4.242156220644677e-15,
+          3.9968028886505635e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.0,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 0
+      },
+      "primary_colonies": 0,
+      "secondary_colonies": 0
+    }
+  ],
+  "verification_passed": true
+}

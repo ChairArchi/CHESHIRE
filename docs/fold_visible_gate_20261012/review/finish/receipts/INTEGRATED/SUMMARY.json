@@ -1,0 +1,156 @@
+{
+  "variants": {
+    "INTEGRATED": {
+      "primary_radius": 0.3,
+      "primary_amplitude": 0.22,
+      "secondary_radius": 0.14,
+      "secondary_amplitude": 0.07,
+      "maximum_height": 0.3,
+      "primary_count": 160,
+      "minimum_spacing_in_radii": 1.0,
+      "placement": "physical_farthest_gap",
+      "root_collar_amplitude": 0.035,
+      "root_collar_inner_radius": 0.68,
+      "root_collar_outer_radius": 1.2,
+      "collar_positive_suppression_height": 0.08,
+      "normal_agreement_fade": [
+        0.05,
+        0.3
+      ]
+    }
+  },
+  "output_generation": 5,
+  "common": {
+    "candidate_samples": 640,
+    "body_material_range": [
+      0.1,
+      0.9
+    ],
+    "secondary_per_primary": 2,
+    "secondary_offset_in_primary_radii": 0.65,
+    "normal_pool_radius_in_colony_radii": 1.0,
+    "normal_agreement_minimum": 0.1,
+    "normal_pool_agreement_minimum": 0.25,
+    "slab_support_in_radii": 1.0,
+    "primary_footprint_diameters": [
+      0.6,
+      0.46
+    ],
+    "secondary_footprint_diameters": [
+      0.22,
+      0.2
+    ],
+    "deep_core_exclusion": false,
+    "source_xyz_smoothing": false,
+    "symmetry": "Constructive material X/Y reflection after relief placement"
+  },
+  "atlas": {
+    "power": 8,
+    "iterations": 10,
+    "bailout": 4.0,
+    "xy_resolution": 129,
+    "z_resolution": 96,
+    "xy_extent": 1.2,
+    "maximum_z": 1.4,
+    "interpretation": "Top finite occupied height along +Z; compact projected height relief, not a full 3D fractal volume"
+  },
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "INTEGRATED",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 7.912598633933108e-08,
+        "symmetry_error": [
+          3.750188105401294e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.27185775322801503,
+        "minimum_outward_normal_dot": -0.0348894978382192,
+        "moved_controls": 322948
+      },
+      "primary_colonies": 90,
+      "secondary_colonies": 180
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "CONTROL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 3.6119840005822277e-07,
+        "symmetry_error": [
+          3.8088902694984756e-15,
+          3.800791407964896e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.0,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 0
+      },
+      "primary_colonies": 0,
+      "secondary_colonies": 0
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "INTEGRATED",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 2.5561138866640667e-07,
+        "symmetry_error": [
+          4.2261452805446086e-15,
+          3.9968028886505635e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.30000000000000004,
+        "minimum_outward_normal_dot": -0.034921657383567124,
+        "moved_controls": 311564
+      },
+      "primary_colonies": 98,
+      "secondary_colonies": 196
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "CONTROL",
+      "checks": {
+        "finite": true,
+        "components": 1,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 4.389052863562356e-07,
+        "symmetry_error": [
+          4.242156220644677e-15,
+          3.9968028886505635e-15
+        ],
+        "reflected_triangle_sets_identical": [
+          true,
+          true
+        ],
+        "maximum_displacement": 0.0,
+        "minimum_outward_normal_dot": 0.0,
+        "moved_controls": 0
+      },
+      "primary_colonies": 0,
+      "secondary_colonies": 0
+    }
+  ],
+  "verification_passed": true
+}

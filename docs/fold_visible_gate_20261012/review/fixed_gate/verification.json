@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "scope": "Saved lintel operation replay plus native reconstruction, source correspondence, exact fixed-column transforms, and actual oriented gate reflection",
+  "source_preserved_byte_identical": true,
+  "source_control_sha256": "8c46cbbf4edf8b5904a806d46f92e4968355e4e2f561607ecc977f273e09e62f",
+  "fixed_column_geometry_sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe",
+  "replay": [
+    {
+      "candidate": "CONTROL",
+      "passed": true,
+      "raw_delta_max_error": 0.0,
+      "pre_axial_delta_max_error": 0.0,
+      "final_delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true
+    },
+    {
+      "candidate": "WALL",
+      "passed": true,
+      "raw_delta_max_error": 0.0,
+      "pre_axial_delta_max_error": 0.0,
+      "final_delta_max_error": 0.0,
+      "control_max_error": 0.0,
+      "native_xyz_max_error": 0.0,
+      "native_triangle_arrays_identical": true
+    }
+  ],
+  "assemblies": [
+    {
+      "candidate": "PLAIN",
+      "checks": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 4.755632587506077,
+        "passed": true,
+        "global_left_right": {
+          "axis": 0,
+          "plane": 0.0,
+          "maximum_xyz_error": 1.368774871883577e-15,
+          "pair_map_involutive": true,
+          "reflected_oriented_triangle_sets_identical": true,
+          "passed": true
+        },
+        "source_column_max_error": 0.0,
+        "column_triangle_arrays_identical": true
+      }
+    },
+    {
+      "candidate": "CONTROL",
+      "checks": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 2.484576834322693,
+        "passed": true,
+        "global_left_right": {
+          "axis": 0,
+          "plane": 0.0,
+          "maximum_xyz_error": 1.368774871883577e-15,
+          "pair_map_involutive": true,
+          "reflected_oriented_triangle_sets_identical": true,
+          "passed": true
+        },
+        "source_column_max_error": 0.0,
+        "column_triangle_arrays_identical": true
+      }
+    },
+    {
+      "candidate": "WALL",
+      "checks": {
+        "finite": true,
+        "components": 3,
+        "watertight": true,
+        "winding_consistent": true,
+        "minimum_triangle_area": 5.451612026683641e-07,
+        "signed_volume": 2.4660746560325135,
+        "passed": true,
+        "global_left_right": {
+          "axis": 0,
+          "plane": 0.0,
+          "maximum_xyz_error": 1.368774871883577e-15,
+          "pair_map_involutive": true,
+          "reflected_oriented_triangle_sets_identical": true,
+          "passed": true
+        },
+        "source_column_max_error": 0.0,
+        "column_triangle_arrays_identical": true
+      }
+    }
+  ],
+  "excluded": [
+    "self-intersection",
+    "joint bearing",
+    "fabrication",
+    "C1 central-seam continuity",
+    "aesthetic success"
+  ]
+}

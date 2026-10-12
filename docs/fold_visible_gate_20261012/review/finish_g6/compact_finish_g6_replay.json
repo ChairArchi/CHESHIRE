@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "selected_mode": "RELAXED_G06",
+  "expected_generation": 6,
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "verified_copied_asset_hashes": 12,
+  "records": [
+    {
+      "case": "SPAN",
+      "selected_mode": "RELAXED_G06",
+      "passed": true,
+      "output_generation": 6,
+      "source_control_sha256_matches": true,
+      "atlas_and_colony_byte_hashes_match": true,
+      "actual_source_colony_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "passed": true
+      },
+      "actual_source_native_topology": {
+        "passed": true,
+        "finite": true,
+        "closed_oriented_edge_incidence": true,
+        "degenerate_edges": false,
+        "components": 1,
+        "unique_native_edges": 153600,
+        "euler_characteristic": 2,
+        "physical_vertices": 51202,
+        "physical_triangles": 102400,
+        "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded"
+      },
+      "carrier_stage_generation": 3,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "geometry.npz": true,
+        "carrier_relaxation.npz": true
+      },
+      "complete_operation_receipt_equal": true,
+      "historical_raw_g06_key_aliases_declared": false,
+      "counts": {
+        "control_vertices": 1638402,
+        "control_quads": 1638400,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600
+      },
+      "actual_native_lr_symmetry": {
+        "passed": true,
+        "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+        "material_pair_max_error": 9.019494489765868e-16,
+        "pair_involution": true,
+        "reflected_oriented_native_triangle_sets_identical": true,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600
+      },
+      "actual_native_topology": {
+        "passed": true,
+        "finite": true,
+        "closed_oriented_edge_incidence": true,
+        "degenerate_edges": false,
+        "components": 1,
+        "unique_native_edges": 9830400,
+        "euler_characteristic": 2,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600,
+        "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded"
+      },
+      "minimum_triangle_area": 4.556219494856005e-08,
+      "declared_bounds_passed": true,
+      "maximum_carrier_shift": 0.04000000000000001,
+      "maximum_relief": 0.2755903797067837,
+      "memory_available_before_replay": 14835335168
+    },
+    {
+      "case": "COUNTER",
+      "selected_mode": "RELAXED_G06",
+      "passed": true,
+      "output_generation": 6,
+      "source_control_sha256_matches": true,
+      "atlas_and_colony_byte_hashes_match": true,
+      "actual_source_colony_provenance": {
+        "primary_native_reconstruction_max_error": 0.0,
+        "primary_centres_max_error": 0.0,
+        "secondary_native_centres_max_error": 0.0,
+        "passed": true
+      },
+      "actual_source_native_topology": {
+        "passed": true,
+        "finite": true,
+        "closed_oriented_edge_incidence": true,
+        "degenerate_edges": false,
+        "components": 1,
+        "unique_native_edges": 153600,
+        "euler_characteristic": 2,
+        "physical_vertices": 51202,
+        "physical_triangles": 102400,
+        "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded"
+      },
+      "carrier_stage_generation": 3,
+      "exact_saved_array_hashes": {
+        "control_quad.npz": true,
+        "geometry.npz": true,
+        "carrier_relaxation.npz": true
+      },
+      "complete_operation_receipt_equal": true,
+      "historical_raw_g06_key_aliases_declared": false,
+      "counts": {
+        "control_vertices": 1638402,
+        "control_quads": 1638400,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600
+      },
+      "actual_native_lr_symmetry": {
+        "passed": true,
+        "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+        "material_pair_max_error": 9.019494489765868e-16,
+        "pair_involution": true,
+        "reflected_oriented_native_triangle_sets_identical": true,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600
+      },
+      "actual_native_topology": {
+        "passed": true,
+        "finite": true,
+        "closed_oriented_edge_incidence": true,
+        "degenerate_edges": false,
+        "components": 1,
+        "unique_native_edges": 9830400,
+        "euler_characteristic": 2,
+        "physical_vertices": 3276802,
+        "physical_triangles": 6553600,
+        "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded"
+      },
+      "minimum_triangle_area": 3.3867746712003926e-08,
+      "declared_bounds_passed": true,
+      "maximum_carrier_shift": 0.04000000000000001,
+      "maximum_relief": 0.3,
+      "memory_available_before_replay": 14012907520
+    }
+  ],
+  "scope": "Exact selected G06 control/native/carrier arrays and complete operation receipt reconstructed from packaged WALL G03 parents and saved recipes/atlas/colonies. Actual native XYZ and oriented triangle reflection plus native edge topology checked.",
+  "excluded": [
+    "aesthetic judgment",
+    "self-intersection validity",
+    "fabrication",
+    "infinite Mandelbulb boundary"
+  ]
+}

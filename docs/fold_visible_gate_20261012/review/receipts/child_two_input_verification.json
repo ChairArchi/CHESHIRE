@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "records": [
+    {
+      "case": "SPAN",
+      "replay_max_error": 0.0,
+      "children": [
+        {
+          "parent_guide": 0,
+          "maximum_parent_valley_motion_matched_g4": 0.0,
+          "median_parent_valley_motion_matched_g4": 0.0,
+          "maximum_child_parent_depth_ratio": 0.2647658615643493,
+          "child_cuts_with_new_basin": 5,
+          "child_finite_cuts": 15,
+          "interpolated_rays": 0
+        },
+        {
+          "parent_guide": 1,
+          "maximum_parent_valley_motion_matched_g4": 0.0035467977495452327,
+          "median_parent_valley_motion_matched_g4": 0.0,
+          "maximum_child_parent_depth_ratio": 0.20543024107243738,
+          "child_cuts_with_new_basin": 7,
+          "child_finite_cuts": 15,
+          "interpolated_rays": 2
+        }
+      ]
+    },
+    {
+      "case": "COUNTER",
+      "replay_max_error": 0.0,
+      "children": [
+        {
+          "parent_guide": 0,
+          "maximum_parent_valley_motion_matched_g4": 0.0,
+          "median_parent_valley_motion_matched_g4": 0.0,
+          "maximum_child_parent_depth_ratio": 0.2197568280070245,
+          "child_cuts_with_new_basin": 9,
+          "child_finite_cuts": 15,
+          "interpolated_rays": 0
+        },
+        {
+          "parent_guide": 1,
+          "maximum_parent_valley_motion_matched_g4": 5.713008874866704e-07,
+          "median_parent_valley_motion_matched_g4": 0.0,
+          "maximum_child_parent_depth_ratio": 0.18809685708244553,
+          "child_cuts_with_new_basin": 6,
+          "child_finite_cuts": 15,
+          "interpolated_rays": 0
+        }
+      ]
+    }
+  ],
+  "scope": "Saved child operation and actual native replay; finite matched inactive-G4 cuts. New-basin counts are diagnostics, not aesthetic or continuous hierarchy certification.",
+  "retention_note": "Original first-run generation.json compared G3 and G4 affine-chart samples. This receipt uses matched G4 reference and excludes that chart-sampling drift."
+}

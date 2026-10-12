@@ -10,7 +10,13 @@ and supplemental intersection checks. See [results and limitations](docs/TASK36_
 Its overall ornament remains **PARTIAL**; use the report's final selection and
 validation scope rather than an experiment ID as a safety certificate.
 
-The latest [two-input region-fold study](docs/fold_region_growth_20261012/REPORT.md)
+The latest [connected surface detail and gate study](docs/fold_visible_gate_20261012/REPORT.md)
+refines coarse panel transitions and adds finite Mandelbulb relief and root folds
+on two actual connected surfaces. Its gate reuses current columns and a symmetric
+lintel with thicker, overlapping seats. Continuous ornament remains **PARTIAL**;
+fabrication is untested.
+
+The preceding [two-input region-fold study](docs/fold_region_growth_20261012/REPORT.md)
 measures existing native shoulders to place new meso grooves with shared coefficients.
 Local new folds are demonstrated; continuous hierarchy and general recurrence remain
 **PARTIAL**. This opt-in experiment preserves the original candidates and engine paths.

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "base_revision": "055c42f",
+  "selected_detail": "RELAXED_G06",
+  "actual_inputs": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "tests": {
+    "passed": 53,
+    "failed": 0,
+    "elapsed_seconds": 11.15,
+    "command": "python -B -m pytest -q tests/test_fold_region_growth.py tests/test_visible_wall_fold.py tests/test_visible_child_fold.py tests/test_gate_members_pilot.py tests/test_symmetric_lintel.py tests/test_bulb_detail.py tests/test_gate_junctions.py tests/test_detail_finish.py tests/test_compactpackage_finish_g6.py -p no:cacheprovider"
+  },
+  "package_replays": {
+    "compact_child_replay.json": {
+      "status": "PASS",
+      "sha256": "7787bab1406749a35746f9eb6446cd036b6b04fcaa40f92a4b1e07de2493a172"
+    },
+    "fixed_gate/compact_gate_replay.json": {
+      "status": "PASS",
+      "sha256": "d10a4c009619fc903e58cf64339ec7f7a9303efa526d891420382da67833dec1"
+    },
+    "gate_joined/compact_joined_replay.json": {
+      "status": "PASS",
+      "sha256": "1c6a75d39c967d7dd8405dbc7a59987380cd2546a1042dcf548256fcd7206f79"
+    },
+    "finish/compact_finish_replay.json": {
+      "status": "PASS",
+      "sha256": "5cadef87ddb79bee00595edcb4c5a1c0cf6c35935cb75a7932fb202a85be0ab7"
+    },
+    "finish_g6/compact_finish_g6_replay.json": {
+      "status": "PASS",
+      "sha256": "3bf5b56eb85a308e29b1aa7f52780f48f29cf34c115c745f92cab5c4fae94275"
+    }
+  },
+  "previous_manifest_assets_unchanged": 98,
+  "previous_manifest_against_base_revision": "PASS",
+  "g06_native_symmetry_and_topology": "Actual XYZ, oriented reflected triangles, edge incidence and connectivity; see selected compact proof.",
+  "bulk_blender_import_g3_pixels": {
+    "identical": true,
+    "resolution": [
+      900,
+      900
+    ],
+    "maximum_channel_difference": 0
+  },
+  "remaining_form_quality": "PARTIAL: macro-to-micro branch hierarchy and some faceted/crust-like surface transitions",
+  "excluded": [
+    "self-intersection acceptance tests",
+    "fabrication",
+    "structural strength"
+  ]
+}

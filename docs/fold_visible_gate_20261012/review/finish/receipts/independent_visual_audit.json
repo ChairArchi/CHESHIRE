@@ -1,0 +1,62 @@
+{
+  "audit": "Independent source topology and saved actual geometry audit plus finite subjective render review",
+  "technical_status": "PASS",
+  "four_state_receipt_complete": true,
+  "actual_states": [
+    {
+      "case": "SPAN",
+      "actual_vertex_graph_components": 1,
+      "native_faces_array_identical_to_control": true,
+      "finite": true,
+      "maximum_control_movement": 0.27185775322801503,
+      "moved_controls": 322948,
+      "canonical_negative_collar_controls": 19645,
+      "independent_replay": {
+        "input_case": "SPAN",
+        "candidate": "INTEGRATED",
+        "raw_delta_max_error": 0.0,
+        "delta_max_error": 0.0,
+        "control_max_error": 8.881784197001252e-16,
+        "native_xyz_max_error": 0.0,
+        "native_triangle_arrays_identical": true,
+        "passed": true
+      }
+    },
+    {
+      "case": "COUNTER",
+      "actual_vertex_graph_components": 1,
+      "native_faces_array_identical_to_control": true,
+      "finite": true,
+      "maximum_control_movement": 0.30000000000000004,
+      "moved_controls": 311564,
+      "canonical_negative_collar_controls": 17632,
+      "independent_replay": {
+        "input_case": "COUNTER",
+        "candidate": "INTEGRATED",
+        "raw_delta_max_error": 0.0,
+        "delta_max_error": 0.0,
+        "control_max_error": 8.881784197001252e-16,
+        "native_xyz_max_error": 0.0,
+        "native_triangle_arrays_identical": true,
+        "passed": true
+      }
+    }
+  ],
+  "viewed": [
+    "CONTROL/SPAN/G04 front_micro and oblique_micro",
+    "BOLD_DETAIL/SPAN/G05 front_micro,oblique_micro,front",
+    "INTEGRATED/SPAN/G05 front_micro,oblique_micro,side_micro,front,side"
+  ],
+  "qualitative": {
+    "body_attachment": "Improved: relief visibly continues from body faces, with no separately placed components.",
+    "change_from_bold": "Broader overlapping relief occupies previously quiet panels and ties isolated buds into larger folds.",
+    "remaining_tradeoff": "Some broad parent planes are obscured. Overlapping ridges can read as thick crust or terraced facets; branch and fold hierarchy is still weak.",
+    "recommendation": "Use INTEGRATED as the next bounded close-detail lead; preserve BOLD as a lower-density comparison.",
+    "completion": "PARTIAL: stronger attached geometric detail, not a completed Hansmeyer or Digital Grotesque level of continuous multiscale hierarchy."
+  },
+  "caveats": [
+    "CONTROL/G4 and G5 variants share cameras but render pixel sizes differ; this is a subjective geometric comparison, not an image metric.",
+    "Negative collars intentionally move some controls inward; the displacement bound is not an outward-only claim.",
+    "Single connected closed topology does not imply absence of self-intersections; intersections were excluded at user request."
+  ]
+}

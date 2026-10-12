@@ -1,0 +1,166 @@
+{
+  "candidate": "JOINED",
+  "units": "metres for review only",
+  "recipe": {
+    "angle_degrees": 40.0,
+    "shoulder_fraction": 0.55,
+    "wall_strength": 1.0,
+    "axial_plateau_fraction": 0.6,
+    "transverse_plateau_fraction": 0.65,
+    "gate_opening_in_column_widths": 2.6,
+    "overhang_in_column_widths": 0.15,
+    "column_display_height": 3.0,
+    "nominal_seat_gap": 0.04,
+    "source_symmetry": "Axial pair average of actual incoming G2 positions and their reflected counterparts",
+    "displacement_symmetry": "Constructive first-half axial copy after existing XY reflection",
+    "envelope": "One fixed source-derived transform; no WALL variant rescaling"
+  },
+  "fixed_layout": "Accepted B; no new proportion comparison",
+  "source_column": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\WALL\\SPAN\\G03\\geometry.npz",
+  "source_column_sha256": "0b24632e855353b0141374440fe33e06acc7f537fbc0573ab32059355d144cbe",
+  "column_transforms": {
+    "LEFT": [
+      [
+        0.3071351840735178,
+        0.0,
+        0.0,
+        -1.7520870410244205
+      ],
+      [
+        0.0,
+        0.3071351840735178,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.3071351840735178,
+        -0.04146324984992491
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "RIGHT": [
+      [
+        0.3071351840735178,
+        0.0,
+        0.0,
+        1.7520870410244205
+      ],
+      [
+        0.0,
+        0.3071351840735178,
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.3071351840735178,
+        -0.04146324984992491
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "lintel_transform": [
+    [
+      0.0,
+      0.0,
+      1.0,
+      -2.3847851391721275
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      3.5266908447290057
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "target_lintel_length": 4.769570278344255,
+  "target_lintel_vertical_section": 0.9733816894580114,
+  "target_lintel_depth": 0.7467145272190373,
+  "actual_lintel_world_extent": [
+    4.769570278344255,
+    0.7261671365718584,
+    0.9733816894580114
+  ],
+  "target_cross_section_ratio": 1.30355263487794,
+  "actual_lintel_cross_section_ratio": 1.3404375390123286,
+  "actual_column_display_height": 3.0,
+  "opening_width": 2.5307923925908296,
+  "nominal_seat_gap": 0.04,
+  "actual_bbox_vertical_gap": -0.3725599350076738,
+  "overhang_each_side": 0.14600725341870172,
+  "part_names": [
+    "LEFT",
+    "RIGHT",
+    "LINTEL"
+  ],
+  "part_vertex_ranges": {
+    "LEFT": [
+      0,
+      51202
+    ],
+    "RIGHT": [
+      51202,
+      102404
+    ],
+    "LINTEL": [
+      102404,
+      153606
+    ]
+  },
+  "column_operation": "Only the accepted common uniform display scale and translations; actual geometry and triangles unchanged",
+  "lintel_operation": "Thickened local seat regions, actual triangle feedback fitted downward shift, deliberate overlap",
+  "envelope": "One source/control transform only; WALL is not rescaled to hide resulting depth change",
+  "self_intersection": "NOT_CHECKED_EXPLORATION",
+  "structural_connections": "NOT_IMPLEMENTED",
+  "seating": "Positive actual sampled head/beam vertical parity intervals; no welded or structural bearing claim",
+  "fabrication": "NOT_CHECKED",
+  "checks": {
+    "finite": true,
+    "components": 3,
+    "watertight": true,
+    "winding_consistent": true,
+    "minimum_triangle_area": 5.451612026683641e-07,
+    "signed_volume": 3.259231430518723,
+    "passed": true,
+    "global_left_right": {
+      "axis": 0,
+      "plane": 0.0,
+      "maximum_xyz_error": 2.6184557666721354e-15,
+      "pair_map_involutive": true,
+      "reflected_oriented_triangle_sets_identical": true,
+      "passed": true
+    }
+  },
+  "quick_integrity": "PASS",
+  "column_array_max_error": 0.0,
+  "column_triangle_arrays_identical": true,
+  "nominal_section_factor": 1.65,
+  "common_seat_drop": 0.16302306504562372,
+  "intersections": "Beam/column overlap deliberately permitted; self-intersections untested",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\fold-visible-gate-20261012\\output\\fold_visible_gate_20261012\\fixed_gate_final\\WALL"
+}

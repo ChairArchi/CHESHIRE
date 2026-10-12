@@ -6,6 +6,7 @@ reference studies are separate supported paths; legacy operators are not replace
 
 | Path | Entry | Input / output | Purpose |
 | --- | --- | --- | --- |
+| Connected surface detail and gate, 2026-10-12 | `experiments/fold_visible_gate_20261012/detail_finish.py`, `bulb_detail.py`, `symmetric_lintel.py`, `gate_junctions.py` | Two actual WALL parents → bounded carrier refinement + finite Mandelbulb relief on single surfaces; fixed columns and a symmetric overlapping lintel | Opt-in geometric detail and attached gate seats; [results, accepted gate and limits](fold_visible_gate_20261012/REPORT.md) |
 | Measured region folds, 2026-10-12 | `experiments/fold_region_growth_20261012/study.py --orientation height --frames region --root <NEW root>` | Two packaged actual G2 columns → G3 CONTROL/GROOVE/RETURN checkpoints | Opt-in local geometry feedback; [results and limits](fold_region_growth_20261012/REPORT.md); not a recursive or arbitrary-mesh engine |
 | General mesh API | `cheshire` exports, `examples/quad_subdivision.py` | OBJ/COMPAS mesh; fields, budgets, transforms and lineage | Existing compatibility API; bounded one-step operations |
 | Existing Rhino studies | `rhino/CHESHIRE_Run.py` in Rhino 8 | Existing selected Mesh → JSON → external `.venv` worker → comparison objects and `output/task*/<run>` | Host selection/display; Task31 is not a new launcher default |
