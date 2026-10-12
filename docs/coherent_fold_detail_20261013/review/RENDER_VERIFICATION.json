@@ -1,0 +1,1333 @@
+{
+  "passed": true,
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "COMBINED",
+    "COHERENT",
+    "DIRECTIONAL",
+    "ROLE_CURVATURE"
+  ],
+  "expected_new_modes": [
+    "COHERENT",
+    "DIRECTIONAL",
+    "ROLE_CURVATURE"
+  ],
+  "subdivision_generation": 5,
+  "source_generation": 4,
+  "added_CC_passes": 1,
+  "actual_mesh_states": 8,
+  "newly_replayed_mesh_states": 6,
+  "referenced_prior_mesh_states": 2,
+  "source_images": 32,
+  "reused_reference_images": 8,
+  "newly_rendered_images": 24,
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+  "parent_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+  "Blender_version": "4.5.4 LTS",
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_front": {
+      "position": [
+        0.0,
+        32.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "code_sha256": {
+    "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+    "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+    "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+  },
+  "frozen_code_sha256": {
+    "render": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+    "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251"
+  },
+  "frozen_review_sha256": "288828789e1a4366fef1359a256c8ab44c505f1b273dd46972335daea5c58fa1",
+  "independent_geometry_verification": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\VERIFICATION.json",
+  "independent_geometry_verification_sha256": "84067b5c4eca65fb1e5fa61fd18cb3515849caaf681890f74774b92fd3769a54",
+  "baseline_scope": "Two frozen COMBINED states referenced through prior actual PASS, current source/parent/code/receipt/PNG hashes; no baseline rerun.",
+  "shared_scope": "Actual same SIDEWALL_FAN G04 source hashes and ordered G05 control/native faces plus transported chart hashes.",
+  "crop": false,
+  "resize": false,
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "COMBINED",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "8a879f14a41c299f15195260625ec5f1ce6a4e9cc741d57e70dcafba98180c70",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\generation.json",
+      "generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "628845add1b453cb4275a0ebc0c6eab633352beedae7f03ff13c147153af1012",
+      "native_arrays": {
+        "xyz_sha256": "b2542dac821e6e18eed25e38a3be7bf9bee647460775af93b783e0992bdfa07c",
+        "faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "747821ff7ef9ce275e7ce0d2490579d738d50d30729f0096c0812b9dfd81c379",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\front.png",
+          "sha256": "f9ceeee6c7cf1de7767d146a0b7ebc1d4edd7325ba8eb21565b886254624a4ee",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "106aa15fd1731d58d88e11747e999072c54ed445b964c67f770b57cb319a6cf3",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "de467a18a27a5d1639e33c854ddebb9c01ca0e90a06dbe1e7279ab5e409b6e35",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "16f8024ba3cc351c06e082fe3a39e44e2eaeecd06cc0310084924bc3d2413eab",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\late_detail_rules_20261013\\render.py",
+      "code_sha256": {
+        "render": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "COMBINED",
+      "baseline_reference_source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05",
+        "generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+        "control_sha256": "628845add1b453cb4275a0ebc0c6eab633352beedae7f03ff13c147153af1012",
+        "geometry_sha256": "8a879f14a41c299f15195260625ec5f1ce6a4e9cc741d57e70dcafba98180c70",
+        "evidence_sha256": "d0f4ef9539bae718e5fc6922858f3bdacd03468f604a39e02f926e7e4df87e29"
+      },
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\geometry.npz",
+        "source_sha256": "8a879f14a41c299f15195260625ec5f1ce6a4e9cc741d57e70dcafba98180c70",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\generation.json",
+        "generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\control_quad.npz",
+        "control_sha256": "628845add1b453cb4275a0ebc0c6eab633352beedae7f03ff13c147153af1012",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "bf6277f577c6c9513dac46bf8f71f29211562552563a43d0ba7c66a7cade7053",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "e52304a785aa4cfd791c482920885c8157087c0b0875befb52d027c0acf0a870",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+        "parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\generation.json",
+        "parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "prior_geometry_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+      "prior_geometry_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+      "prior_render_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+      "prior_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f",
+      "independent_geometry_generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+      "verification_scope": "Frozen prior actual geometry PASS and current source/PNG hashes; no new baseline mesh or replay.",
+      "common_parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "common_parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949"
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "COHERENT",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "0cb9cde29fe283bc8f91fb1564d2a49a9c5b4f2bead6c156c5e72b21cadc0753",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\generation.json",
+      "generation_sha256": "a527119bcb8337b329ccf620a6a8b970d582987dce169671134ab9b4c1d61a55",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "a9ccbe6cae0b9fb7c41c47c8810a6e504ea6fa1fab608f112da77f82616a98cb",
+      "native_arrays": {
+        "xyz_sha256": "b182371a87827fa0ff31db42ec95c605c8530145702c8b6e8c873a065e92d9bf",
+        "faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "d9e2cfa4088d5c560d3f92f5ccca107c2c479b488cfacac567478a06197b7426",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\front.png",
+          "sha256": "c6814d26b20b5336d3d49b264199352512e93489992b6fa74eef663e22df4458",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "b8822ec6147104e5ab299a3307a75b6d3ae3fba352d3673b046cf1978b0be96d",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "feffde68d7356b39c7c0d48d2b2b1457e713817b9b76c03f2406289ff1f3bf2b",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "83156c9da7b7dec9602dd37a14b0083e58f3bea165934516fd82e9bb1b463f29",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "COHERENT",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\geometry.npz",
+        "source_sha256": "0cb9cde29fe283bc8f91fb1564d2a49a9c5b4f2bead6c156c5e72b21cadc0753",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\generation.json",
+        "generation_sha256": "a527119bcb8337b329ccf620a6a8b970d582987dce169671134ab9b4c1d61a55",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\control_quad.npz",
+        "control_sha256": "a9ccbe6cae0b9fb7c41c47c8810a6e504ea6fa1fab608f112da77f82616a98cb",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+        "parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\generation.json",
+        "parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\generation.json",
+        "baseline_generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "a527119bcb8337b329ccf620a6a8b970d582987dce169671134ab9b4c1d61a55",
+      "common_parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "common_parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+        "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+        "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "DIRECTIONAL",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "177514dd3efcc83923b91261a713e36a5650df069d5f6beebde7ffb9b3d55482",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\generation.json",
+      "generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+      "native_arrays": {
+        "xyz_sha256": "0792df9fcfd1468b3adc1b3d4e7bc6273c150fb8923d4e7f46405e2eeb07ab54",
+        "faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "14d79f59d49d9543b27cb83622f8b399cd01cb21c5c92c03e1a1871f98ae4ad6",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\front.png",
+          "sha256": "df6a200e2da9967a0350169143efbd0e20fb6f49f7caf5f096f482afe53ec764",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "e43a01e0ab4884fecb7708cbf5a31c0d7a896d1d9d531cfe00bd23224e6ae8a9",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "189e19e13eadc3db94b1803d1746ea8ce17137508b321655cf09e3e568b3997f",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "b8b46ed1b3e23cd1fe6862e4892a68f611bc3fa7a4b102855a84331eee4cd565",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "DIRECTIONAL",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\geometry.npz",
+        "source_sha256": "177514dd3efcc83923b91261a713e36a5650df069d5f6beebde7ffb9b3d55482",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\generation.json",
+        "generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\control_quad.npz",
+        "control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+        "parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\generation.json",
+        "parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\generation.json",
+        "baseline_generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "common_parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "common_parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+        "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+        "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "ROLE_CURVATURE",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\geometry.npz",
+      "geometry_sha256": "ec4a2daae7a4574fae3854ac2f5dc95c49aa479d61b36ef6f48291b8b04a4f81",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\generation.json",
+      "generation_sha256": "95bc25db7d0dd3f32f247c05343db1bc58140297a2ae8336a3c31c2d324ffe34",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\control_quad.npz",
+      "control_sha256": "5e60d0f48c4390d017be6552b2478f00dc23a39ce53ace7d19ec8e57e3ea53ce",
+      "native_arrays": {
+        "xyz_sha256": "674e771496f691dfb352c534e1dc2063849f50809ddb97e379ae6c143a1506a1",
+        "faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "f82dec8c76f82cd5ddadcbcfdab29873e46fb7305e01110cbbb5542a2ae80a98",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\front.png",
+          "sha256": "01207ae4402adcb0ac65512a4dd0340c25877dfd227950db24ba4acec2eec6fd",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "c37baacbd4c06f81353e9cd5f33dc0c6cd2efce374484404f9b6e40b0a69c8c0",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d5c7acd03a1e29a6308f73c8149def4a4312a4f48e5d2fc0c05578bef32c6b6a",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "ed9c5efcd8f382126f98037c6f63a69ba105ca3b395f3ef03756f2f4297a58cf",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "ROLE_CURVATURE",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\geometry.npz",
+        "source_sha256": "ec4a2daae7a4574fae3854ac2f5dc95c49aa479d61b36ef6f48291b8b04a4f81",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\generation.json",
+        "generation_sha256": "95bc25db7d0dd3f32f247c05343db1bc58140297a2ae8336a3c31c2d324ffe34",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\control_quad.npz",
+        "control_sha256": "5e60d0f48c4390d017be6552b2478f00dc23a39ce53ace7d19ec8e57e3ea53ce",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+        "parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\generation.json",
+        "parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\generation.json",
+        "baseline_generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "95bc25db7d0dd3f32f247c05343db1bc58140297a2ae8336a3c31c2d324ffe34",
+      "common_parent_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "common_parent_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+        "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+        "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "COMBINED",
+      "subdivision_generation": 5,
+      "reused_reference": true,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "c0b666d7e474dcae9353b4b28b04a79c68ce59eb0f0007df9531c4194662eed2",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "374f1cb9038c4dac1cae81312d75099b1ea65a083231ad43bb2031c3fcbaa410",
+      "native_arrays": {
+        "xyz_sha256": "664616f3976b283294ebca08ed5a893c902d11362808f4ebb49ee41e320f146e",
+        "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "8faf2b5389f7361438400c2141254a5a5d2a5572435831c854dedfe232dd1389",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "07c999f679fa4191e3cc9be0bbdeed15ac6c267f7d452aebde5d6c52e877056c",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "18a617430c07d63b6fa0865e80774327f7aae7db64e694694402da4c6df666f3",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d35d8af9bbcc76a708ba5a4a028a92c211588b6f830025fbba42f0ecb701fc1c",
+          "reused_reference": true
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "2a8080f708685820e5f09ae838e62291e706d6b9f24c49e27582afbb0242a960",
+          "reused_reference": true
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\late_detail_rules_20261013\\render.py",
+      "code_sha256": {
+        "render": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "COMBINED",
+      "baseline_reference_source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05",
+        "generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+        "control_sha256": "374f1cb9038c4dac1cae81312d75099b1ea65a083231ad43bb2031c3fcbaa410",
+        "geometry_sha256": "c0b666d7e474dcae9353b4b28b04a79c68ce59eb0f0007df9531c4194662eed2",
+        "evidence_sha256": "0e93ab2347819fc73198fcf758c21d52c52cb79095f1ee9c6155742cb6c40aaf"
+      },
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\geometry.npz",
+        "source_sha256": "c0b666d7e474dcae9353b4b28b04a79c68ce59eb0f0007df9531c4194662eed2",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+        "generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\control_quad.npz",
+        "control_sha256": "374f1cb9038c4dac1cae81312d75099b1ea65a083231ad43bb2031c3fcbaa410",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "bf6277f577c6c9513dac46bf8f71f29211562552563a43d0ba7c66a7cade7053",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "e52304a785aa4cfd791c482920885c8157087c0b0875befb52d027c0acf0a870",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\control_quad.npz",
+        "parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\generation.json",
+        "parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "prior_geometry_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+      "prior_geometry_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+      "prior_render_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+      "prior_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f",
+      "independent_geometry_generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+      "verification_scope": "Frozen prior actual geometry PASS and current source/PNG hashes; no new baseline mesh or replay.",
+      "common_parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+      "common_parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e"
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "COHERENT",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "8381b705a332122173e7ad68689af42503b855476b76e143c30f8810c8088f27",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "8965cf4f28a16a28e65e08f8db8f8103e1a295c8ce50a4a5ddd425d3e9f658e5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "4d6c9c499b68c9c1a6dbcfba1406da6be7cf58d7a2efaeb72f99e85b81fcfd56",
+      "native_arrays": {
+        "xyz_sha256": "d8e37ba4a2321986854e8070cec33f7c79f7bc15b8a8ef7af77b209a6991e1de",
+        "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "f05064d1b7eef2c720b4da68293763a34c707caf36cf26be024e09ebde44d260",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\front.png",
+          "sha256": "dc9acf7573734264ff10bd03ef86f70206594c2b2db716eddebd7fa9e6b48957",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "557288845e4087ad4e703eebc0ae8715ce16d1c5fbbd7e8e5cb11ada05a23704",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "56b00fcc65d325440992d28d7808f42a5878dcfcc805c6fc499c1bf5d573cb39",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "488aa3a58ce619318d12890b7e343af75242f4271308ef7430b1d4e5d50d6b6f",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "COHERENT",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\geometry.npz",
+        "source_sha256": "8381b705a332122173e7ad68689af42503b855476b76e143c30f8810c8088f27",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\generation.json",
+        "generation_sha256": "8965cf4f28a16a28e65e08f8db8f8103e1a295c8ce50a4a5ddd425d3e9f658e5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\control_quad.npz",
+        "control_sha256": "4d6c9c499b68c9c1a6dbcfba1406da6be7cf58d7a2efaeb72f99e85b81fcfd56",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\control_quad.npz",
+        "parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\generation.json",
+        "parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+        "baseline_generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "8965cf4f28a16a28e65e08f8db8f8103e1a295c8ce50a4a5ddd425d3e9f658e5",
+      "common_parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+      "common_parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+        "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+        "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "DIRECTIONAL",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "dd3b827de8576c91b6522f4dfa9fe406aaaefa226b732a383fb6c824926e3ede",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "02a38c41c464e88857396ee03b2617bb2bdf7f1819f7c17712850ff3ca60e5e5",
+      "native_arrays": {
+        "xyz_sha256": "a673c7886c3d170098718a37b295def2ccaceef9f097d46e406d1d234469e712",
+        "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "17a8a1e1b79549ec8573f8cd4bebc27f3a0efdaa4fba55af930a1d48b469467b",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\front.png",
+          "sha256": "6e2e42bca2bf1c3a621908c8c28b092f59a20bad7cddd018d7585bdecacf2ad3",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "56321b54ee359fe46f161cbe53b4e095fb5a8a2bcacf0eec08463f9fb238bc86",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b4f0fa5de1497835dff02ae923980bbd11ac4653b04463b7eb7774536fa896e5",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "7447e133b5bd068f000a31486f2e5b885340ac60c5fa49d8463084aee74c0e82",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "DIRECTIONAL",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\geometry.npz",
+        "source_sha256": "dd3b827de8576c91b6522f4dfa9fe406aaaefa226b732a383fb6c824926e3ede",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\generation.json",
+        "generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\control_quad.npz",
+        "control_sha256": "02a38c41c464e88857396ee03b2617bb2bdf7f1819f7c17712850ff3ca60e5e5",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\control_quad.npz",
+        "parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\generation.json",
+        "parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+        "baseline_generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+      "common_parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+      "common_parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+        "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+        "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "ROLE_CURVATURE",
+      "subdivision_generation": 5,
+      "reused_reference": false,
+      "source_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\geometry.npz",
+      "geometry_sha256": "85e00e88a31e5371a7532091f03a72a70f8b2e27b345cfde3c0f313d7206eed4",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\generation.json",
+      "generation_sha256": "4cf05cd9aada3b23290046154ef3a81c3c8b2727ee1640e29a80e733d894b2e9",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\control_quad.npz",
+      "control_sha256": "1e32a89dfa503cf6b304da206f6c6a1eecc13ca37bc8f03f11a5bc189377d6e5",
+      "native_arrays": {
+        "xyz_sha256": "2908888236b489f431bbe5745190d463e6ba0bf14ee35f3ac9f6b0fa68e236cd",
+        "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64",
+        "xyz_shape": [
+          875266,
+          3
+        ],
+        "faces_shape": [
+          1750528,
+          3
+        ]
+      },
+      "render_receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\receipt.json",
+      "render_receipt_sha256": "908261c05273b8c9af3f9ccac63b0b3b2eaf05efeec990ecc077bf05cbda39fc",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\front.png",
+          "sha256": "70ffc162872b691847e75be1cf67382447cdc4ee9c13a488dfac94e46f637520",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0fa531a12e8f90dbaaf1d45667420622f53946cdfb1d866a9c527f71903c4524",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "fd027dd7b491e0114fbaca6b06fd508a4226b1f80680a54c1e66bc97af55aa2f",
+          "reused_reference": false
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "21e83de411df9e3112378e11c8ccf496c778228fe7c6e72daa20438a6d6fc78a",
+          "reused_reference": false
+        }
+      ],
+      "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "constructive_event_count_quarter_accepted": null,
+      "reflected_constructive_event_instances": null,
+      "image_candidate": "ROLE_CURVATURE",
+      "source_provenance": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\geometry.npz",
+        "source_sha256": "85e00e88a31e5371a7532091f03a72a70f8b2e27b345cfde3c0f313d7206eed4",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\generation.json",
+        "generation_sha256": "4cf05cd9aada3b23290046154ef3a81c3c8b2727ee1640e29a80e733d894b2e9",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\control_quad.npz",
+        "control_sha256": "1e32a89dfa503cf6b304da206f6c6a1eecc13ca37bc8f03f11a5bc189377d6e5",
+        "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+        "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+        "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+        "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+        "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\control_quad.npz",
+        "parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+        "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\generation.json",
+        "parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+        "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+        "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+        "baseline_generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+        "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+        "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+        "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+      },
+      "independent_geometry_generation_sha256": "4cf05cd9aada3b23290046154ef3a81c3c8b2727ee1640e29a80e733d894b2e9",
+      "common_parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+      "common_parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+      "baseline_shared_hashes": {
+        "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+        "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+        "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+      },
+      "verification_scope": "New actual independent coupled CC replay/topology/symmetry PASS, bound to this exact G05 metadata."
+    }
+  ],
+  "scope": "New independent replay receipt, frozen baseline PASS provenance, actual shared parent/topology/chart, old/new scene conditions and original PNG correspondence.",
+  "visual_success": "NOT_ASSESSED_BY_COMPOSITOR",
+  "geometry_certification": "Geometry claims belong to independently linked receipts; aesthetic/reference fidelity remains unassessed.",
+  "boards": [
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_front.png",
+      "output_sha256": "bd8b226ceb5d6c3c9196d34058332a8aea28bb0c3e9c759f56d91c0517fbe00a",
+      "input_case": "SPAN",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\front.png",
+          "sha256": "f9ceeee6c7cf1de7767d146a0b7ebc1d4edd7325ba8eb21565b886254624a4ee",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\front.png",
+          "sha256": "c6814d26b20b5336d3d49b264199352512e93489992b6fa74eef663e22df4458",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\front.png",
+          "sha256": "df6a200e2da9967a0350169143efbd0e20fb6f49f7caf5f096f482afe53ec764",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\front.png",
+          "sha256": "01207ae4402adcb0ac65512a4dd0340c25877dfd227950db24ba4acec2eec6fd",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_front.png",
+      "output_sha256": "75aa9cb3cf6fb4663210b01b39477a00e853f9c10cfae4faf40c55b6027c4174",
+      "input_case": "SPAN",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "106aa15fd1731d58d88e11747e999072c54ed445b964c67f770b57cb319a6cf3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "b8822ec6147104e5ab299a3307a75b6d3ae3fba352d3673b046cf1978b0be96d",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "e43a01e0ab4884fecb7708cbf5a31c0d7a896d1d9d531cfe00bd23224e6ae8a9",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "c37baacbd4c06f81353e9cd5f33dc0c6cd2efce374484404f9b6e40b0a69c8c0",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "output_sha256": "5abfe70f1e0faa2340c17ed5f83b971db18f029a02a972b99281a98458a72ad2",
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "de467a18a27a5d1639e33c854ddebb9c01ca0e90a06dbe1e7279ab5e409b6e35",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "feffde68d7356b39c7c0d48d2b2b1457e713817b9b76c03f2406289ff1f3bf2b",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "189e19e13eadc3db94b1803d1746ea8ce17137508b321655cf09e3e568b3997f",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d5c7acd03a1e29a6308f73c8149def4a4312a4f48e5d2fc0c05578bef32c6b6a",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "output_sha256": "29b1f96ee22edd73f0d421d498f6037cbb3855c9f6d5bf5992f7f98eaa4504fc",
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "16f8024ba3cc351c06e082fe3a39e44e2eaeecd06cc0310084924bc3d2413eab",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "83156c9da7b7dec9602dd37a14b0083e58f3bea165934516fd82e9bb1b463f29",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "b8b46ed1b3e23cd1fe6862e4892a68f611bc3fa7a4b102855a84331eee4cd565",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "ed9c5efcd8f382126f98037c6f63a69ba105ca3b395f3ef03756f2f4297a58cf",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_front.png",
+      "output_sha256": "4bff7ba4a4445bcb90ecb60f4fecb6823799ff299e59418222de22e3067c6947",
+      "input_case": "COUNTER",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "07c999f679fa4191e3cc9be0bbdeed15ac6c267f7d452aebde5d6c52e877056c",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\front.png",
+          "sha256": "dc9acf7573734264ff10bd03ef86f70206594c2b2db716eddebd7fa9e6b48957",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\front.png",
+          "sha256": "6e2e42bca2bf1c3a621908c8c28b092f59a20bad7cddd018d7585bdecacf2ad3",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\front.png",
+          "sha256": "70ffc162872b691847e75be1cf67382447cdc4ee9c13a488dfac94e46f637520",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_front.png",
+      "output_sha256": "d6c0528ac14128a064e8aafe4ef6127375b7250bbcba29ecc148f15d4fec2515",
+      "input_case": "COUNTER",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "18a617430c07d63b6fa0865e80774327f7aae7db64e694694402da4c6df666f3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "557288845e4087ad4e703eebc0ae8715ce16d1c5fbbd7e8e5cb11ada05a23704",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "56321b54ee359fe46f161cbe53b4e095fb5a8a2bcacf0eec08463f9fb238bc86",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0fa531a12e8f90dbaaf1d45667420622f53946cdfb1d866a9c527f71903c4524",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "output_sha256": "58c325006d9acdf1730b2f659dff948f28dd9d56752bad35088d0961288949ab",
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d35d8af9bbcc76a708ba5a4a028a92c211588b6f830025fbba42f0ecb701fc1c",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "56b00fcc65d325440992d28d7808f42a5878dcfcc805c6fc499c1bf5d573cb39",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b4f0fa5de1497835dff02ae923980bbd11ac4653b04463b7eb7774536fa896e5",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "fd027dd7b491e0114fbaca6b06fd508a4226b1f80680a54c1e66bc97af55aa2f",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "output_sha256": "5c590f43fda0b0903d64db5811eb1be6d7dbc7c7aa0ae50a26cddcc2c16b4c06",
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "2a8080f708685820e5f09ae838e62291e706d6b9f24c49e27582afbb0242a960",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "488aa3a58ce619318d12890b7e343af75242f4271308ef7430b1d4e5d50d6b6f",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "7447e133b5bd068f000a31486f2e5b885340ac60c5fa49d8463084aee74c0e82",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "21e83de411df9e3112378e11c8ccf496c778228fe7c6e72daa20438a6d6fc78a",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 8,
+  "source_list_sha256": "c2dbe7c5a22c55e039d8dd1b07e0985e0030cafbff3cccde184e04301923e64b",
+  "review_script_sha256": "1297166106e278a75a4d5f748c3ef3c4eaa7464a08bfcd9665c1015b83b8cc36"
+}

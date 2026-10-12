@@ -1,0 +1,101 @@
+CHESHIRE — 방향과 부위에 따른 연속 scalar 세분 비교
+2026-10-13
+
+결론
+
+같은 실제 G4에서 두 입력에 세 신규 규칙을 적용했다.
+점 종류마다 따로 튀어나오던 작은 셀·조각 반복은 크게 줄었고,
+DIRECTIONAL은 큰 면의 휘어짐·홈의 벌어짐·경계 턱을 변화시켰다.
+다만 근접 디테일 밀도는 이전 COMBINED보다 줄었으며,
+부모 골에서 중간·작은 골로 이어지는 연속 위계는 아직 확보하지 못했다.
+ROLE_CURVATURE의 추가 조형 이득은 렌더에서 명료하게 식별하기 어렵다.
+기술 구현·두 입력 적용은 확인했지만 fine-detail 조형 목표는 미달이다.
+전체 연구 판정 PARTIAL, 최종 디테일 채택 보류. 승인 기둥과 게이트는 변경하지 않았다.
+
+위치와 계보
+
+Worktree: C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012
+Branch: experiment/connected-fold-growth-20261012
+Base: d4eb66497dee172697dfa4c653d5bd403afa6dd3
+Output: E:\CHESHIRE_DATA\experiments\coherent_fold_detail_20261013\trial01
+Parent: E:\CHESHIRE_DATA\experiments\sidewall_fan_growth_20261013\trial01
+Baseline: E:\CHESHIRE_DATA\experiments\late_detail_rules_20261013\trial01
+부모 G3/G4/기존 G5와 COMBINED의 실제 파일 SHA 및 보존 검증을 SOURCE_INDEX로 연결한다.
+생성 코드 SHA는 원본 6개와 신규 study/operator 2개, 총 8개다.
+확정 커밋과 문서 사본은 E 출력 상위 COMMIT_RECEIPT.json에 별도 보존한다.
+
+실제 비교
+
+신규 COHERENT / DIRECTIONAL / ROLE_CURVATURE × SPAN / COUNTER, 총 여섯 상태.
+실제 G4→G5 coupled CC 한 번이며 추가 topology·Mandelbulb 평가 없음.
+CC 제어값을 정하는 공간 신호를 평가하지만 별도 형상장 변형 pass는 없다.
+모두 control437,634 vertices/437,632 quad, native875,266 vertices/1,750,528 triangles다.
+원본 COMBINED는 같은 G4를 사용한 이전 G5로, 기존 메시와 원본 렌더를 재사용했다.
+재사용한 두 상태를 새로 생성하거나 독립 재생한 여섯 상태에 합산하지 않는다.
+
+규칙과 실제 신호
+
+G3 actual event/role/signs를 G4 parent_face로 전파하며 직접 지원은 10,368/109,408면이다.
+이는 면 개수 비율이며 표면적 비율이 아니다. 기존 SOURCE 면은 직접 지원 밖이다.
+화면의 모든 빈 면을 방향장 실패로 해석하지 않는다.
+모든 신규 안에서 Eq4 위치 혼합 w3/w4 및 w1/w2/w6/w7은 0이다.
+wf=a, we=.5 mean_incident(a), wp=(1−1/degree) mean_incident(a)를 적용했다.
+평면·동일 scale에서의 점 종류별 최종 법선 이동 일치를 지향한 새 가설이다.
+곡면·불균일 scale의 정확한 일치나 보존된 전체 XYZ를 주장하지 않는다.
+
+COHERENT는 지원 안의 constant a=.8이다.
+DIRECTIONAL은 canonical actual G4 면 중심을 보존 root PCA에 투영한 signed band다.
+ROLE_CURVATURE는 같은 band에 WALL/CAP 역할·현재 bending·max4cyclic planarity를 결합한다.
+세 안의 amplitude·좌표 식·gate는 자체 가설이며 참고 연구의 원래 수치가 아니다.
+SOURCE/WALL/CAP 역할과 V/E/F 점 출처는 별도로 보존한다.
+
+물리 파장 SPAN.30178309 / COUNTER.28719661(메시 좌표 단위),
+보존 root minor extent 기준 주기수2.20565 /1.96000이다.
+입력당 지원 인접 edge20,416개, |unwrapped Δphase|>π는0개, 지원 mirror seam도0개다.
+최대 인접 phase 차이는 SPAN1.45417 /COUNTER1.64984 rad다.
+이는 인접 샘플 간격 진단이며 작은 골의 충분한 깊이·해상도·미적 성공 증거가 아니다.
+
+시각 결과
+
+COHERENT: 작은 조각 반복이 줄고 둥글게 부푼 넓은 날·벽이 드러난다.
+DIRECTIONAL: 넓은 면의 접힘·큰 홈과 일부 경계 턱 변화가 두 입력에서 보인다.
+작은 골의 긴 경로나 중간→미세 규모의 분화는 여전히 부족하다.
+ROLE_CURVATURE: DIRECTIONAL과 비교한 추가 차이가 미세하여 독립 조형 이득은 미확인이다.
+기존 COMBINED의 높은 밀도와 신규 안의 큰 면 판독성은 각각 대조 자료로 보존한다.
+현재 세 안은 fine-detail 목표를 충분히 달성한 대안 사이의 선택이 아니다.
+사용자 가치판단을 요구하는 강제 선택 없이 기술적 가설을 더 시험할 수 있다.
+독립 판독은 원본32장과 보드8장을 확인한 VISUAL_REVIEW.txt에 기록한다.
+
+검증
+
+VERIFICATION.json PASS: 실제 부모 G3→G4 ancestry/native/mirror를 재생하고,
+공간·역할·기하 신호와9개 제어를 별도 구성하여 reference CC를 직접 실행했다.
+여섯 신규 G5의 control/native/evidence inventory·dtype·shape·bytes를 정확히 대조했다.
+실제 native 단일 몸체·폐합·유향 edge·Euler2·양의 면적·X/Y XYZ 및 유향 triangle 대칭 PASS.
+전체 실제 XYZ 반사 최대 오차는 약1.18e−14였다.
+각 입력 안의 신규3조건 및 기존 COMBINED가 faces/classes/rest/anchors/chart를 공유함을 확인했다.
+입력 사이의 ordered face ID 동일성이나 factorial 가산성은 주장하지 않는다.
+기존 여섯 sidewall·여덟 late 상태 전체를 새로 재생하지 않았다.
+
+RENDER_VERIFICATION.json PASS: 기존 COMBINED8장+신규24장, 4열 보드8장.
+같은 네 카메라·900px·24samples·무광 재질·광원·flat geometric normals를 사용했다.
+명시적 arithmetic quad-centre fan을 렌더했으며 modifier/map 없음, 원본 crop/resize 없음.
+작은 두 테스트 파일 총25개 PASS(1.27초), cacheprovider 비활성화, 경고 없음.
+전체 저장소 테스트·자기교차·제작성·구조 성능·임의 입력·참고 작품 동등성은 검증하지 않았다.
+
+후속 근거
+
+연속 scalar로 작은 셀을 억제하는 것과 작은 접힘 위계를 만드는 것은 별도 문제다.
+현재 root 폭 약2주기의 band는 작은 child 면에서 한 주기보다 적게 작용할 수 있다.
+동일 방향장의 단순 누적을 최종 디테일 해법으로 채택하지 않는다.
+후속 후보는 실제 DIRECTIONAL G5에서 G6 중립 정리와 더 짧은 파장의 규칙을 분리하는 것이다.
+현 local-scale amplitude를 유지하면 절대 깊이도 작아지므로 파장과 깊이를 구분해야 한다.
+branch 분화가 계속 부족하면 현재 child의 기하와 연결을 바꾸는 topology 실험도 열어둔다.
+G6와 추가 topology 후보는 미실행 상태이며 이번 결과에 포함하지 않는다.
+
+배리에이션 범위
+
+공통 규칙의 입력·지역 제어·방향·세대별 정책을 바꾼 기둥 계열은 후속 목표로 가능하다.
+현재 확인한 적용 범위는 SPAN/COUNTER 두 입력과 이번 recipe다.
+아름다운 배리에이션을 자동으로 안정적으로 만드는 완성된 생성기는 아직 아니다.
+이번에는 새 기둥 계열 생성으로 범위를 넓히지 않았다.

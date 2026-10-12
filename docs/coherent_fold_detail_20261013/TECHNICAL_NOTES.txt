@@ -1,0 +1,58 @@
+CHESHIRE — 연속 scalar와 비균일 세분 규칙의 해석
+2026-10-13
+
+고정 부모와 세대
+
+실제 SIDEWALL_FAN G3 이벤트의 face_event_ids·face_roles·mirror_face_signs를
+실제 G4 parent_face 계보로 전달한다. 현재 형상은 저장된 G4 XYZ에서 읽는다.
+직접 지원은 이벤트 영역이며 기존 SOURCE 면 전체를 활성화한 시험이 아니다.
+지원 face count와 실제 표면적 비율을 구분하고 미활성 면의 공백을 실패로 합산하지 않는다.
+G3 태그와 G4 V/E/F 점 출처는 서로 다른 정보다.
+세 신규 안은 동일한 G4에서 한 번의 실제 CC를 실행하여 G5를 만든다.
+형상장 내부 iteration이나 태그 처리 횟수를 G로 세지 않는다.
+별도의 형상장 변형 pass는 없지만, CC 입력 제어값을 정하는 공간 신호는 평가한다.
+
+연속성 가설
+
+완성된 면점은 edge와 vertex 계산에 다시 공급된다.
+따라서 wf/we/wp를 같은 값으로 지정하는 것은 같은 최종 이동량을 뜻하지 않는다.
+wf=a, we=.5 mean_incident(a), wp=(1−1/degree) mean_incident(a)는
+평면·동일 incident scale에서 그 결합 영향을 보상하려는 새 근사 정책이다.
+곡면·혼합 법선·불균일 scale에서는 오차가 남는다.
+scalar와 실제 출력은 보존하며 좌표를 나중에 복원하거나 대칭 평균하지 않는다.
+
+단위와 방향
+
+a 및 wf/we/wp는 무차원이며 기존 reference CC에서 현재 incident mean-edge scale과
+입력 normal을 곱한다. 특정 world length나 참고 작품의 원래 수치가 아니다.
+면점의 Eq4 위치 혼합 w3/w4 및 w1/w2/w6/w7은 이번 신규 세 안에서 모두 0이다.
+방향성 phase는 canonical actual G4 중심에서 보존 root PCA로 투영하고
+보존 root radius로 나눈 무차원 좌표에서 평가한다.
+현재 입력의 대칭 계보를 사용하며 arbitrary face ID의 교대 무늬를 넣지 않는다.
+같은 식을 두 입력에 사용하지만 PCA·반경·실제 기하 신호는 각 입력에서 읽는다.
+
+부위와 기하
+
+SOURCE/WALL/CAP 태그로 부위 응답을 구별한다.
+role 완화와 현재 normal bending, 반사 불변 planarity를 조합한다.
+이는 branch hierarchy를 자동으로 생성하는 topology 연산이 아니다.
+계수·phase·완화·gate는 자체 실험 가설이며 논문의 미공개 recipe로 표현하지 않는다.
+planarity의 분모는 남은 세 점의 삼각형 둘레이며 네 cyclic 선택 중 최댓값이다.
+기존 reference_subdivision.fields의 한 cyclic 선택/fullquad 둘레 값과 구분한다.
+
+대조의 범위
+
+직전 COMBINED G5는 기존 Eq4와 서로 다른 점 종류의 돌출을 함께 쓴 결과다.
+이번 COHERENT와의 차이는 Eq4 OFF 및 법선 배분 변경을 함께 포함한다.
+따라서 두 안의 차이를 법선 보상 하나의 독립 인과 효과로 단정하지 않는다.
+신규 세 안 내부에서는 공통 coherent 배분에서 signed 방향장과 role/geometry gate를 비교한다.
+같은 입력 안에서 ordered topology·classes·rest·anchors·chart의 일치를 확인한다.
+SPAN과 COUNTER가 같은 ordered face ID를 가진다는 주장은 하지 않는다.
+
+검증과 판독
+
+저장된 실제 메시의 독립 재생 및 native 검증과 렌더 출처 검증을 구분한다.
+메시 규모·반사 오차·테스트 수는 조형의 아름다움을 측정하는 수치가 아니다.
+연결성·방향성이 확인되어도 자기교차·제작성·구조 성능을 인증하지 않는다.
+같은 두 입력에서 재현되어도 임의 입력 일반성이나 레퍼런스 동등성을 인증하지 않는다.
+완료한 실제 수치와 판독 결과는 CHECKPOINT·VISUAL_REVIEW와 영수증을 따른다.

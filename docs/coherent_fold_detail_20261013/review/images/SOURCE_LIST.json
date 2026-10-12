@@ -1,0 +1,348 @@
+{
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+  "referenced_prior_mesh_states": 2,
+  "newly_replayed_mesh_states": 6,
+  "reused_reference_images": 8,
+  "newly_rendered_images": 24,
+  "original_images_total": 32,
+  "source_note": "COMBINED: eight frozen late-detail G05 originals linked to prior actual geometry/render PASS; three new modes: 24 new originals. No new baseline mesh.",
+  "boards": [
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_front.png",
+      "output_sha256": "bd8b226ceb5d6c3c9196d34058332a8aea28bb0c3e9c759f56d91c0517fbe00a",
+      "input_case": "SPAN",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\front.png",
+          "sha256": "f9ceeee6c7cf1de7767d146a0b7ebc1d4edd7325ba8eb21565b886254624a4ee",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\front.png",
+          "sha256": "c6814d26b20b5336d3d49b264199352512e93489992b6fa74eef663e22df4458",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\front.png",
+          "sha256": "df6a200e2da9967a0350169143efbd0e20fb6f49f7caf5f096f482afe53ec764",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\front.png",
+          "sha256": "01207ae4402adcb0ac65512a4dd0340c25877dfd227950db24ba4acec2eec6fd",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_front.png",
+      "output_sha256": "75aa9cb3cf6fb4663210b01b39477a00e853f9c10cfae4faf40c55b6027c4174",
+      "input_case": "SPAN",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "106aa15fd1731d58d88e11747e999072c54ed445b964c67f770b57cb319a6cf3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "b8822ec6147104e5ab299a3307a75b6d3ae3fba352d3673b046cf1978b0be96d",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "e43a01e0ab4884fecb7708cbf5a31c0d7a896d1d9d531cfe00bd23224e6ae8a9",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "c37baacbd4c06f81353e9cd5f33dc0c6cd2efce374484404f9b6e40b0a69c8c0",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "output_sha256": "5abfe70f1e0faa2340c17ed5f83b971db18f029a02a972b99281a98458a72ad2",
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "de467a18a27a5d1639e33c854ddebb9c01ca0e90a06dbe1e7279ab5e409b6e35",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "feffde68d7356b39c7c0d48d2b2b1457e713817b9b76c03f2406289ff1f3bf2b",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "189e19e13eadc3db94b1803d1746ea8ce17137508b321655cf09e3e568b3997f",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d5c7acd03a1e29a6308f73c8149def4a4312a4f48e5d2fc0c05578bef32c6b6a",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "output_sha256": "29b1f96ee22edd73f0d421d498f6037cbb3855c9f6d5bf5992f7f98eaa4504fc",
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "16f8024ba3cc351c06e082fe3a39e44e2eaeecd06cc0310084924bc3d2413eab",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "83156c9da7b7dec9602dd37a14b0083e58f3bea165934516fd82e9bb1b463f29",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "b8b46ed1b3e23cd1fe6862e4892a68f611bc3fa7a4b102855a84331eee4cd565",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "ed9c5efcd8f382126f98037c6f63a69ba105ca3b395f3ef03756f2f4297a58cf",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_front.png",
+      "output_sha256": "4bff7ba4a4445bcb90ecb60f4fecb6823799ff299e59418222de22e3067c6947",
+      "input_case": "COUNTER",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "07c999f679fa4191e3cc9be0bbdeed15ac6c267f7d452aebde5d6c52e877056c",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\front.png",
+          "sha256": "dc9acf7573734264ff10bd03ef86f70206594c2b2db716eddebd7fa9e6b48957",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\front.png",
+          "sha256": "6e2e42bca2bf1c3a621908c8c28b092f59a20bad7cddd018d7585bdecacf2ad3",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\front.png",
+          "sha256": "70ffc162872b691847e75be1cf67382447cdc4ee9c13a488dfac94e46f637520",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_front.png",
+      "output_sha256": "d6c0528ac14128a064e8aafe4ef6127375b7250bbcba29ecc148f15d4fec2515",
+      "input_case": "COUNTER",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "18a617430c07d63b6fa0865e80774327f7aae7db64e694694402da4c6df666f3",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "557288845e4087ad4e703eebc0ae8715ce16d1c5fbbd7e8e5cb11ada05a23704",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "56321b54ee359fe46f161cbe53b4e095fb5a8a2bcacf0eec08463f9fb238bc86",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "0fa531a12e8f90dbaaf1d45667420622f53946cdfb1d866a9c527f71903c4524",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "output_sha256": "58c325006d9acdf1730b2f659dff948f28dd9d56752bad35088d0961288949ab",
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d35d8af9bbcc76a708ba5a4a028a92c211588b6f830025fbba42f0ecb701fc1c",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "56b00fcc65d325440992d28d7808f42a5878dcfcc805c6fc499c1bf5d573cb39",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b4f0fa5de1497835dff02ae923980bbd11ac4653b04463b7eb7774536fa896e5",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "fd027dd7b491e0114fbaca6b06fd508a4226b1f80680a54c1e66bc97af55aa2f",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "output_sha256": "5c590f43fda0b0903d64db5811eb1be6d7dbc7c7aa0ae50a26cddcc2c16b4c06",
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "2a8080f708685820e5f09ae838e62291e706d6b9f24c49e27582afbb0242a960",
+          "reused_reference": true
+        },
+        {
+          "candidate": "COHERENT",
+          "image_candidate": "COHERENT",
+          "caption": "COHERENT · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "488aa3a58ce619318d12890b7e343af75242f4271308ef7430b1d4e5d50d6b6f",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DIRECTIONAL",
+          "image_candidate": "DIRECTIONAL",
+          "caption": "DIRECTIONAL · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "7447e133b5bd068f000a31486f2e5b885340ac60c5fa49d8463084aee74c0e82",
+          "reused_reference": false
+        },
+        {
+          "candidate": "ROLE_CURVATURE",
+          "image_candidate": "ROLE_CURVATURE",
+          "caption": "ROLE_CURVATURE · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\ROLE_CURVATURE\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "21e83de411df9e3112378e11c8ccf496c778228fe7c6e72daa20438a6d6fc78a",
+          "reused_reference": false
+        }
+      ]
+    }
+  ]
+}

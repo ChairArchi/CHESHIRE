@@ -1,0 +1,275 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "COHERENT",
+  "subdivision_generation": 5,
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 900,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "shoulder_front": [
+      [
+        0,
+        32,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_oblique": [
+      [
+        -18,
+        28,
+        15
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_side": [
+      [
+        -32,
+        0,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ]
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_front": {
+      "position": [
+        0.0,
+        32.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "code_sha256": {
+    "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+    "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+    "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+  },
+  "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\render.py",
+  "render_script_sha256": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+  "source_arrays": {
+    "xyz_sha256": "d8e37ba4a2321986854e8070cec33f7c79f7bc15b8a8ef7af77b209a6991e1de",
+    "faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+    "xyz_dtype": "float64",
+    "faces_dtype": "int64",
+    "xyz_shape": [
+      875266,
+      3
+    ],
+    "faces_shape": [
+      1750528,
+      3
+    ]
+  },
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "dc9acf7573734264ff10bd03ef86f70206594c2b2db716eddebd7fa9e6b48957"
+    },
+    {
+      "view": "shoulder_front",
+      "filename": "shoulder_front.png",
+      "sha256": "557288845e4087ad4e703eebc0ae8715ce16d1c5fbbd7e8e5cb11ada05a23704"
+    },
+    {
+      "view": "shoulder_oblique",
+      "filename": "shoulder_oblique.png",
+      "sha256": "56b00fcc65d325440992d28d7808f42a5878dcfcc805c6fc499c1bf5d573cb39"
+    },
+    {
+      "view": "shoulder_side",
+      "filename": "shoulder_side.png",
+      "sha256": "488aa3a58ce619318d12890b7e343af75242f4271308ef7430b1d4e5d50d6b6f"
+    }
+  ],
+  "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\geometry.npz",
+  "source_sha256": "8381b705a332122173e7ad68689af42503b855476b76e143c30f8810c8088f27",
+  "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\generation.json",
+  "generation_sha256": "8965cf4f28a16a28e65e08f8db8f8103e1a295c8ce50a4a5ddd425d3e9f658e5",
+  "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\COHERENT\\COUNTER\\G05\\control_quad.npz",
+  "control_sha256": "4d6c9c499b68c9c1a6dbcfba1406da6be7cf58d7a2efaeb72f99e85b81fcfd56",
+  "recipe_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\RECIPE.json",
+  "recipe_sha256": "f69259d89e5b8d6545a5b34479084046b41b92e1e44d4c6c6e75f2c4936811e3",
+  "source_index_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\source_index.json",
+  "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+  "parent_control_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\control_quad.npz",
+  "parent_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+  "parent_generation_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G04\\generation.json",
+  "parent_generation_sha256": "bef40989d1f6963f007ff4fce1493fc697bc184379067082fc514a1c6d4fb26e",
+  "parent_verification_source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+  "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+  "baseline_generation_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\generation.json",
+  "baseline_generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+  "baseline_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+  "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+  "baseline_render_verification_source": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+  "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f",
+  "source_generation": 4,
+  "added_CC_passes": 1,
+  "added_topology_events": 0,
+  "scope": "Actual saved arithmetic quad-centre-fan native geometry; Blender display coordinates are float32; no geometry modifiers or maps",
+  "geometry_certification": "Not performed by renderer; independent symmetry/topology verification remains separate"
+}

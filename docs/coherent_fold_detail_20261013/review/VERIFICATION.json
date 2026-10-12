@@ -1,0 +1,1037 @@
+{
+  "status": "PASS",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "COHERENT",
+    "DIRECTIONAL",
+    "ROLE_CURVATURE"
+  ],
+  "recipe": {
+    "base_commit": "d4eb66497dee172697dfa4c653d5bd403afa6dd3",
+    "cases": [
+      "SPAN",
+      "COUNTER"
+    ],
+    "modes": [
+      "COHERENT",
+      "DIRECTIONAL",
+      "ROLE_CURVATURE"
+    ],
+    "source_generation": 4,
+    "final_generation": 5,
+    "added_CC_passes": 1,
+    "coherent_rules": {
+      "schema": "ROOT_COHERENT_SIGNED_DETAIL_V1",
+      "source_generation": 4,
+      "output_generation": 5,
+      "subdivision_passes_added": 1,
+      "scale_mode": "LOCAL_INCIDENT_SCALE",
+      "amplitude": 0.8,
+      "band": {
+        "period_root_radius": 0.7,
+        "major_linear": 0.16,
+        "major_warp_amplitude": 0.2,
+        "major_warp_frequency": 0.9,
+        "major_warp_phase": 0.31
+      },
+      "role_weights": {
+        "SOURCE": 0.0,
+        "WALL": 1.0,
+        "CAP": 0.65
+      },
+      "role_pool": {
+        "own_weight": 2.0,
+        "neighbor_mean_weight": 1.0,
+        "divisor": 3.0
+      },
+      "geometry_gain": {
+        "floor": 0.5,
+        "bending_scale": 0.35,
+        "planarity_scale": 0.03
+      },
+      "normal": {
+        "face": "face_scalar",
+        "edge_incident_mean_factor": 0.5,
+        "vertex_incident_mean_factor": "1 - 1 / actual degree"
+      },
+      "fixed_zero": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w6",
+        "w7"
+      ],
+      "modes": {
+        "COHERENT": "constant supported signed scalar",
+        "DIRECTIONAL": "constant scalar times root-oriented cosine bands",
+        "ROLE_CURVATURE": "same bands times pooled role and actual geometry gains"
+      },
+      "planarity": "max four cyclic fourth-plane distances / perimeter of the other three vertices",
+      "bending": "mean over four adjacent faces of 1 - clipped dot of actual unit face normals",
+      "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+      "coefficient_scope": "new dimensionless normal coefficients times current local incident mean-edge scales",
+      "symmetry_scope": "canonical inherited face signs applied to actual XYZ; no XYZ averaging",
+      "support_policy": {
+        "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+        "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+        "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+      }
+    },
+    "geometry_code_sha256": {
+      "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+      "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+      "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+      "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+      "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+      "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+      "experiments\\coherent_fold_detail_20261013\\study.py": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9",
+      "experiments\\coherent_fold_detail_20261013\\fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+    },
+    "preserved_parent_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+    "frozen_baseline_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+    "topology_scope": "Same ordered CC connectivity in all three new conditions and frozen COMBINED baseline; intersections allowed, no repair.",
+    "visual_scope": "Matched original renders; actual fine folds and hierarchy assessed separately from numerical PASS."
+  },
+  "source_index_sha256": "64b8d3264945e98aca68e32a573fc069652b39743f0b3842762fb0964681ccbf",
+  "cases": {
+    "SPAN": {
+      "passed": true,
+      "input_case": "SPAN",
+      "parent": {
+        "passed": true,
+        "frozen_six_stage_metadata_links": true,
+        "original_six_meshes_rerun": false,
+        "actual_G3_to_G4_neutral_CC_and_evidence_exact": true,
+        "actual_G3_G4_native_matches_frozen_PASS": true,
+        "support_and_mirror_ancestry": "Actual replayed G3-to-G4 parent_face/input_edges; overlapping chart nearest matching is not used.",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "states": {
+        "COHERENT": {
+          "passed": true,
+          "candidate": "COHERENT",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "7262be06f06b3a4cca8953210d5d795d21f058c5d5e3de8b1de9576edb944913",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "b182371a87827fa0ff31db42ec95c605c8530145702c8b6e8c873a065e92d9bf",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.30178309181397694,
+            "cycles_across_inherited_root_minor_extent": 2.2056476595980006,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.533477384136233e-07,
+              0.1644286979693707,
+              0.8624943062821179,
+              1.4541718836425317
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "a527119bcb8337b329ccf620a6a8b970d582987dce169671134ab9b4c1d61a55"
+        },
+        "DIRECTIONAL": {
+          "passed": true,
+          "candidate": "DIRECTIONAL",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "7ff9c929708b962c524953152c6ebc235879c909033925af1c36813a5555d42e",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "0792df9fcfd1468b3adc1b3d4e7bc6273c150fb8923d4e7f46405e2eeb07ab54",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 8.73414647949075e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 8.73414647949075e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 1.9761969838327786e-14,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 1.9761969838327786e-14,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.30178309181397694,
+            "cycles_across_inherited_root_minor_extent": 2.2056476595980006,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.533477384136233e-07,
+              0.1644286979693707,
+              0.8624943062821179,
+              1.4541718836425317
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700"
+        },
+        "ROLE_CURVATURE": {
+          "passed": true,
+          "candidate": "ROLE_CURVATURE",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "9ef2696798cac3aea4bf885d0f84c75f3583895c611a9ae1c62f35c92d57142d",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "674e771496f691dfb352c534e1dc2063849f50809ddb97e379ae6c143a1506a1",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 9.932618836903125e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 9.932618836903125e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 2.69340105774063e-13,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.4868995751603507e-14,
+                  "tolerance": 4.4386630132807545e-11
+                },
+                "face_bending": {
+                  "maximum_error": 2.0627943797535409e-13,
+                  "tolerance": 1.2640980457309214e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 4.5569694935923555e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 6.795675133730583e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 2.69340105774063e-13,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.30178309181397694,
+            "cycles_across_inherited_root_minor_extent": 2.2056476595980006,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.533477384136233e-07,
+              0.1644286979693707,
+              0.8624943062821179,
+              1.4541718836425317
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "95bc25db7d0dd3f32f247c05343db1bc58140297a2ae8336a3c31c2d324ffe34"
+        }
+      },
+      "prior_baseline_binding": {
+        "passed": true,
+        "baseline": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05",
+          "generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+          "control_sha256": "628845add1b453cb4275a0ebc0c6eab633352beedae7f03ff13c147153af1012",
+          "geometry_sha256": "8a879f14a41c299f15195260625ec5f1ce6a4e9cc741d57e70dcafba98180c70",
+          "evidence_sha256": "d0f4ef9539bae718e5fc6922858f3bdacd03468f604a39e02f926e7e4df87e29"
+        },
+        "common_actual_G4_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+        "actual_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f",
+        "shared_control_array_hashes": {
+          "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+          "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+          "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+          "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+          "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+        },
+        "common_native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+        "frozen_baseline_mesh_rerun": false,
+        "frozen_baseline_images_reused": true,
+        "scope": "Frozen COMBINED file/metadata/actual-PASS/render-PASS linkage and common ordered arrays; no new baseline mesh or image."
+      },
+      "visual_success": "NOT_ASSESSED; coherent normal-control approximation and numerical validity do not certify actual curves, small folds or hierarchy."
+    },
+    "COUNTER": {
+      "passed": true,
+      "input_case": "COUNTER",
+      "parent": {
+        "passed": true,
+        "frozen_six_stage_metadata_links": true,
+        "original_six_meshes_rerun": false,
+        "actual_G3_to_G4_neutral_CC_and_evidence_exact": true,
+        "actual_G3_G4_native_matches_frozen_PASS": true,
+        "support_and_mirror_ancestry": "Actual replayed G3-to-G4 parent_face/input_edges; overlapping chart nearest matching is not used.",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "states": {
+        "COHERENT": {
+          "passed": true,
+          "candidate": "COHERENT",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "eb3a0f1fc24a00cfe32c804a72e86bf3e08aa724ff1eba68b300f16fc0e86bff",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "d8e37ba4a2321986854e8070cec33f7c79f7bc15b8a8ef7af77b209a6991e1de",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 4.255520180069698e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.821000005975887e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.821000005975887e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.2871966056371919,
+            "cycles_across_inherited_root_minor_extent": 1.9600023327729414,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.282175492573373e-05,
+              0.1581707823080043,
+              0.7717575231180666,
+              1.6498407986382735
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "8965cf4f28a16a28e65e08f8db8f8103e1a295c8ce50a4a5ddd425d3e9f658e5"
+        },
+        "DIRECTIONAL": {
+          "passed": true,
+          "candidate": "DIRECTIONAL",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "a74f441872a5dd4eb90af6e8ae40b343c064471e645f4effb9e96167e140c0f7",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "a673c7886c3d170098718a37b295def2ccaceef9f097d46e406d1d234469e712",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 4.255520180069698e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.987232154250471e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.987232154250471e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 2.0018708912772354e-14,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 2.0018708912772354e-14,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.2871966056371919,
+            "cycles_across_inherited_root_minor_extent": 1.9600023327729414,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.282175492573373e-05,
+              0.1581707823080043,
+              0.7717575231180666,
+              1.6498407986382735
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0"
+        },
+        "ROLE_CURVATURE": {
+          "passed": true,
+          "candidate": "ROLE_CURVATURE",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_spatial_signals_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "f8586fa048e63713aa1e515e35332eaf6b55d8a4ea8976bee8b7364fa342e595",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "2908888236b489f431bbe5745190d463e6ba0bf14ee35f3ac9f6b0fa68e236cd",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 4.255520180069698e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.4930801582266845e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.4930801582266845e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "incoming_scalar_reflection": {
+            "X": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 1.887379141862766e-13,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            },
+            "Y": {
+              "passed": true,
+              "errors": {
+                "input_face_support": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_phase": {
+                  "maximum_error": 2.7533531010703882e-14,
+                  "tolerance": 4.886854735299245e-11
+                },
+                "face_bending": {
+                  "maximum_error": 4.6129766673175254e-14,
+                  "tolerance": 1.4326505086866405e-12
+                },
+                "face_planarity": {
+                  "maximum_error": 5.014044734963363e-14,
+                  "tolerance": 1e-12
+                },
+                "face_role_gain": {
+                  "maximum_error": 0.0,
+                  "tolerance": 1e-12
+                },
+                "face_geometry_gain": {
+                  "maximum_error": 4.150013666048835e-13,
+                  "tolerance": 1e-12
+                },
+                "face_scalar": {
+                  "maximum_error": 1.887379141862766e-13,
+                  "tolerance": 1e-12
+                }
+              },
+              "scope": "Actual incoming G4 face reflection IDs; final native XYZ and oriented triangles are checked separately."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "phase_sampling": {
+            "physical_wavelength": 0.2871966056371919,
+            "cycles_across_inherited_root_minor_extent": 1.9600023327729414,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.282175492573373e-05,
+              0.1581707823080043,
+              0.7717575231180666,
+              1.6498407986382735
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "generation_json_sha256": "4cf05cd9aada3b23290046154ef3a81c3c8b2727ee1640e29a80e733d894b2e9"
+        }
+      },
+      "prior_baseline_binding": {
+        "passed": true,
+        "baseline": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05",
+          "generation_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4",
+          "control_sha256": "374f1cb9038c4dac1cae81312d75099b1ea65a083231ad43bb2031c3fcbaa410",
+          "geometry_sha256": "c0b666d7e474dcae9353b4b28b04a79c68ce59eb0f0007df9531c4194662eed2",
+          "evidence_sha256": "0e93ab2347819fc73198fcf758c21d52c52cb79095f1ee9c6155742cb6c40aaf"
+        },
+        "common_actual_G4_control_sha256": "642dd7edf971d6187e6dc466d57b31ebe9e449354545833e7ca82831217e418a",
+        "actual_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+        "render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f",
+        "shared_control_array_hashes": {
+          "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+          "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+          "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+          "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+          "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+        },
+        "common_native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac",
+        "frozen_baseline_mesh_rerun": false,
+        "frozen_baseline_images_reused": true,
+        "scope": "Frozen COMBINED file/metadata/actual-PASS/render-PASS linkage and common ordered arrays; no new baseline mesh or image."
+      },
+      "visual_success": "NOT_ASSESSED; coherent normal-control approximation and numerical validity do not certify actual curves, small folds or hierarchy."
+    }
+  },
+  "verifier_module_sha256": "cfdbccbbedb0d2814588db3ee8ad657d8c754c45e6d92865ee5d47dea62521e1",
+  "scope": "Frozen sidewall metadata/hash linkage; actual G3-to-G4 CC ancestry; independently reconstructed spatial, role and actual-geometry signals and normal controls; direct coupled G4-to-G5 CC; exact six new saved control/native/evidence states; actual one-body native topology/area/XYZ/oriented-triangle symmetry; and frozen COMBINED comparison linkage.",
+  "excluded": [
+    "Original six sidewall meshes all rerun",
+    "Original eight late-rule meshes all rerun",
+    "New baseline mesh/image generation",
+    "Factorial or exact-curve proof",
+    "Aesthetic/reference fidelity certification",
+    "Exact XYZ pinning outside direct support",
+    "Self-intersections",
+    "Fabrication",
+    "Structural performance",
+    "Arbitrary input generality"
+  ]
+}

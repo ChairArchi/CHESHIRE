@@ -1,0 +1,65 @@
+CHESHIRE — 방향과 부위에 따른 연속 접힘 제어
+2026-10-13
+
+출발점
+
+이전 LATE DETAIL RULES G5의 법선 돌출은 두 입력에서 실제 작은 형상을 만들었으나,
+비늘·셀·파편의 반복이 우세했다. 부모 골에서 작은 골로 이어지는 위계는 미완성이었다.
+단순히 같은 설정을 G7/G8까지 반복하는 대신 같은 실제 G4에서 제어 방식을 바꾼다.
+기존 승인 RELAXED_G06 기둥과 JOINED 게이트는 수정하지 않는다.
+큰 유기적 볼륨이나 찰흙 인상을 유지하는 조건은 두지 않는다.
+
+사전 비교 계약
+
+부모: 보존 SIDEWALL_FAN G4, SPAN / COUNTER.
+각 안: 실제 reference-coupled CC G4→G5 한 번. topology 이벤트와 Mandelbulb 추가 없음.
+신규 조건: COHERENT / DIRECTIONAL / ROLE_CURVATURE, 각 두 입력, 총 여섯 상태.
+대조: 직전 COMBINED G5의 실제 저장 메시·검증·원본 렌더를 재사용한다.
+같은 G4 입력·순서가 같은 연결·선형 chart·카메라·재질에서 규칙 효과를 비교한다.
+개별 계수를 분리한 factorial 시험이나 G6 성과를 주장하지 않는다.
+
+규칙
+
+세 신규 안은 Eq4 위치 혼합을 끈다. 직접 지원은 실제 G3 이벤트 소유권을 G4로 전파한다.
+면의 signed scalar a를 면점 wf=a, 모서리점 we=incident mean(a)/2,
+기존 점 wp=(1−1/degree) incident mean(a)로 전달한다.
+평면·일정 local scale에서 결합식의 점 종류별 법선 이동을 맞추려는 새 가설이다.
+곡면과 불균일 local scale에서 정확한 동일 변위를 보장하는 식은 아니다.
+
+COHERENT는 지원 안에서 a=.8이다.
+DIRECTIONAL은 현재 실제 면 중심을 반사 계보로 canonical 위치에 옮긴 뒤,
+부모 root PCA의 major/minor 및 실제 root radius에 대한 연속 signed band를 평가한다.
+장축을 따라 휘는 ridge/groove를 목표로 하며 face ID별 교대나 event별 phase reset은 없다.
+ROLE_CURVATURE는 같은 band에 실제 WALL/CAP 역할 및 현재 bending/planarity를 결합한다.
+역할은 SOURCE/WALL/CAP이며 계산 점의 V/E/F 출처와 구분한다.
+planarity는 네 cyclic 선택의 fourth-point-plane 거리/남은 삼각형 둘레 중 최댓값이다.
+반사·면 시작 순서에 따른 신호 차이를 피하고 좌표 평균으로 대칭을 보정하지 않는다.
+
+참고 원리와 자체 가설의 구분
+
+Hansmeyer, Design by Subdivision, Bridges 2010:
+https://archive.bridgesmathart.org/2010/bridges2010-167.pdf
+공간별 가중치, 실제 기하 속성 및 태그의 결합을 참고한다.
+이번 band 식·normal 보상·계수·역할 gate는 CHESHIRE의 새 가설이다.
+Digital Grotesque의 비공개 구현이나 수치를 재현했다고 설명하지 않는다.
+
+IAAC DragonSkin:
+https://www.iaacblog.com/programs/dragonskin-python-for-grasshopper-mesh-subdivision/
+방향을 가진 attractor와 재귀적 세분 제어의 비교 대상으로 참고한다.
+그 프로젝트의 원본 코드나 정확한 생성식을 확보한 것으로 간주하지 않는다.
+
+완료 판정
+
+기술: 여섯 실제 상태의 독립 control 구성·CC 재생·저장 배열 일치,
+native 연결·폐합·방향성·양의 면적 및 실제 X/Y 대칭을 확인한다.
+렌더: 기존 여덟 장과 신규 스물네 장을 동일 네 각도로 연결하고 비교 보드 여덟 장을 만든다.
+조형: 작은 골의 연속 길이와 방향, 부모와의 크기 관계, 반복 셀 감소를 원본에서 판독한다.
+테스트와 면 수가 늘었다는 이유로 조형 성공을 선언하지 않는다.
+결과를 보고 미적 장점이 경쟁하여 우선순위가 필요할 경우 실제 비교를 사용자에게 묻는다.
+
+보존
+
+Base commit: d4eb66497dee172697dfa4c653d5bd403afa6dd3
+Output: E:\CHESHIRE_DATA\experiments\coherent_fold_detail_20261013\trial01
+기존 입력·원본 코드·이전 체크포인트를 변경하거나 덮어쓰지 않는다.
+이 문서는 실행 전 계약이며 실제 결과는 이후 CHECKPOINT와 검증 영수증에 기록한다.

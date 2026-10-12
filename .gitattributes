@@ -26,3 +26,8 @@ docs/late_detail_rules_20261013/** -text whitespace=blank-at-eol,blank-at-eof,sp
 experiments/late_detail_rules_20261013/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_late_detail_rules.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_late_detail_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+docs/coherent_fold_detail_20261013/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+experiments/coherent_fold_detail_20261013/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_coherent_fold_detail.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_coherent_fold_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

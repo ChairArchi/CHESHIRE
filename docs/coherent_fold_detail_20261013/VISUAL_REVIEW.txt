@@ -1,0 +1,43 @@
+COHERENT FOLD DETAIL trial01 — 독립 시각 검토
+
+실험·렌더·검토일: 2026-10-13 (Asia/Seoul)
+범위: 기존 COMBINED / 신규 COHERENT / DIRECTIONAL / ROLE_CURVATURE, SPAN / COUNTER, 실제 G05
+확인: 기존 원본 8장 + 신규 원본 24장 + 4열 비교 보드 8장을 모두 view_image로 직접 읽었다. 원본 네 각도는 front / shoulder_front / shoulder_oblique / shoulder_side다.
+
+최종 판정
+
+시각 변화 PASS, 두 입력의 같은 규칙 반응은 이 recipe에 한정하여 PASS다. 작은 반복 조직을 줄이고 큰 면·골의 형태를 바꾼 성과는 있다. 그러나 부모 골 → 중간 접힘 → 작은 접힘의 연속 위계는 목표 미달이다. 전체 연구 성과는 PARTIAL이며, 세 신규안을 fine-detail 개선 또는 최종 조형으로 채택하지 않는다. 큰 면 조형의 대안과 기술적 checkpoint로 보존한다.
+
+모드별 관찰
+
+COMBINED는 기존 큰 부모벽과 자식 날의 표면에 촘촘한 작은 사선 날·삼각 조각이 있는 대조다. 작은 규모의 입체 조직은 보이지만 넓은 면의 긴 골 흐름을 같은 작은 조직으로 덮는 경향이 있다. 이번에 새로 생성하거나 렌더한 성과로 세지 않는다.
+COHERENT는 같은 적용 부위의 촘촘한 작은 조각을 크게 줄이고, 둥글고 부푼 자식 날·큰 면·두꺼운 테두리를 드러낸다. 두 입력 모두 큰 형태는 분리되어 읽히지만 그 내부에는 다시 넓은 면이 주도한다. 가장자리 일부의 작은 톱니형 면과 다각형 면 밴드는 남아 있다. 둥글다는 성격 자체가 아니라 내부의 작은 조직과 진행 경로가 부족하다는 점이 한계다.
+DIRECTIONAL은 COHERENT보다 큰 자식 날의 끝면이 덜 부풀고, 면의 경계가 접히거나 꺾이며 큰 홈이 더 벌어진다. 중간 날 밑면과 아래 그림자가 분리되어 보이고 측면에서 평행 층 사이 홈과 몇 개의 턱이 강조된다. 이는 단순한 밀도 감소 이상의 실제 큰 면·골 변화다. 다만 변화는 기존 큰 날과 몇 개의 큰 홈 규모에 집중한다. 짧은 경계 꺾임·주름이 부모 골에서 더 가는 연속 접힘으로 이어지는 다음 위계를 충분히 만들지는 못했다.
+ROLE_CURVATURE는 네 각도 원본과 보드에서 DIRECTIONAL과 매우 비슷하게 읽힌다. 일부 경계와 음영 차이는 있으나, 독립된 작은 접힘이나 더 풍부한 연결 경로라는 추가 이득을 명료하게 식별하지 못했다. 수치적으로 다른 메시라는 증거를 시각 우월성으로 바꾸지 않는다.
+
+두 입력·네 각도와 적용 범위
+
+SPAN의 대각으로 퍼진 상부 날과 COUNTER의 곧게 선 상부 날이라는 입력 차이는 유지된다. 양 입력 모두 COHERENT의 부푼 큰 면, 방향안의 벌어진 홈·접힌 경계라는 차이를 보인다. shoulder_front는 모드 차이, shoulder_oblique는 큰 볼륨과 밑면 그림자, shoulder_side는 큰 평행 층·홈의 관계를 확인하게 한다. front에서는 전체 실루엣·기둥 비례가 비슷하고 어깨 내부 조직·돌출이 달라진다. 어느 각도에서도 명료한 새 작은 골의 다중 위계는 충분히 읽히지 않았다.
+이 판정은 기존 COMBINED에서 거친 조직이 있던 실제 G03 이벤트 root/child 소유 영역과 새 안의 같은 영역을 비교한 것이다. 주변 기존 SOURCE panel의 비활성 면까지 모두 작은 접힘 실패로 합산하지 않았다. 활성 support의 face-count 비율을 물리적 면적 비율로 해석하지 않는다.
+바깥 큰 어깨·허리에 눈에 띄는 붕괴, 부유 부품, 정면의 뚜렷한 좌우 비대칭은 보이지 않는다. 중앙 깊은 틈과 큰 옆 돌출도 추적할 수 있다. 그러나 새 안은 부모벽·자식의 면과 경계를 바꾸므로 원래 골의 XYZ·가시성 불변을 주장하지 않는다. 원래 WALL 중앙 골의 재구성은 앞선 ROOT_ONLY/SIDEWALL_FAN 경로에서 이미 일어났다. 어두운 홈을 관통 공극으로 부르지 않는다.
+
+가치판단의 범위
+
+COHERENT의 둥근 큰 볼륨, 방향안의 더 벌어진 홈·각진 접힘, 기존 COMBINED의 작은 조각 조직 사이에는 취향 차이가 있을 수 있다. 현재는 모두 목표한 작은 접힘의 연속 위계가 부족하므로, 사용자의 선호를 먼저 받아야만 진전을 판단할 수 있는 장점 경쟁은 아니다. 기존 우선순위로 한계를 판단할 수 있어 불필요한 미적 선택 질문을 만들지 않는다.
+유기적 볼륨 보존·특정 부드러움·Mandelbulb 유지는 필수 성공 조건이 아니다. 찰흙 같은 둥근 인상이나 돌 같은 각진 인상 자체를 실패로 취급하지 않는다. 최종 조형 판단은 디자이너인 사용자가 우선하며, 위 인상은 검토자의 실제 판독이다. 대칭·요소 수·비영점 계수의 기술 성공을 미적 성공으로 선언하지 않는다.
+
+실제 G와 출처
+
+새 안은 COMBINED G05를 후처리한 결과가 아니다. 같은 실제 frozen SIDEWALL_FAN G04에서 공간·역할·실제 기하 신호의 법선 제어를 평가하고 coupled CC 한 번으로 각각 G05를 만들었다. 기존 COMBINED는 동일한 실제 G04를 사용한 별도 G05 대조다. 네 조건은 같은 순서의 control/native faces와 transported chart를 공유한다. 새 topology event·별도 field pass·Mandelbulb 평가는 추가하지 않았다. native는 명시적 arithmetic quad-centre fan이다. 세 schedule의 비교를 정식 factorial 시험·한 신호만의 인과 효과·참조 논문의 정확한 재현으로 확대하지 않는다.
+기존 COMBINED 메시 2개는 prior actual PASS와 현재 source/parent/code/receipt/PNG hash를 연결해 참조한다. 이번 신규 실제 재생은 6상태이며 old baseline 2개를 신규 8상태로 세지 않는다. 기존 이미지 8장을 재사용하고 신규 24장을 렌더했다. 모두 같은 네 카메라, 900×900, Cycles 24 samples, 균일 mineral 재질·flat geometric normals·조명 조건이며 modifiers와 normal maps는 없다. 보드는 COMBINED → COHERENT → DIRECTIONAL → ROLE_CURVATURE 순서로 원본을 자르거나 크기 변경하지 않고 붙였다. 화면에서 축소 표시된 보드의 한계는 따로 읽은 원본으로 보완했다.
+
+독립 기술 검증
+
+최종 VERIFICATION.json과 RENDER_VERIFICATION.json의 PASS를 직접 읽었다. 신규 6상태의 독립 신호·법선 제어 재구성, 실제 G04→G05 CC, control/native/evidence 정확 재생, 실제 native 단일 연결 성분·폐합·방향성 edge incidence·최소 면적, 실제 XYZ·방향성 triangle 집합의 X/Y 대칭이 PASS다. actual G03→G04 ancestry, 기존 COMBINED의 같은 실제 G04 SHA·topology/chart 연결, 원본 32장·보드 8장의 source/recipe/실제 조건/PNG 대응도 확인한 범위다.
+기존 sidewall 여섯 메시와 late-rule 여덟 메시 전체를 다시 실행한 검증은 아니다. self-intersection, 제작·구조 성능, support 바깥 정확한 XYZ pinning, 임의 입력 일반성, 미적·참조 충실도는 제외된다. 이미지만으로 위상·정확한 대칭을 인증하지 않는다. 기술 PASS와 fine-detail 목표 미달은 서로 다른 판정이다.
+
+기하 receipt: E:/CHESHIRE_DATA/experiments/coherent_fold_detail_20261013/trial01/VERIFICATION.json
+렌더 receipt: E:/CHESHIRE_DATA/experiments/coherent_fold_detail_20261013/trial01/RENDER_VERIFICATION.json
+확인한 원본 32장·보드 8장의 정확한 경로·SHA: E:/CHESHIRE_DATA/experiments/coherent_fold_detail_20261013/trial01/images/SOURCE_LIST.json
+
+유효한 단서는 작은 반복 셀을 만드는 제어와 넓은 면·골을 굽히는 제어가 다른 형태를 만든다는 점이다. 새 작은 접힘의 연속성은 미해결이다. 후속 subdivision이나 반복으로 저절로 해결된다고 추정하지 않으며, 이 리뷰에서 추가 실험·코드 수정·새 렌더를 실행하지 않았다.
