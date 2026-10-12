@@ -1,0 +1,321 @@
+{
+  "base_commit": "0ff7387fcfe2fb00cbc0b5d45858576bff664d44",
+  "large_outputs": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+  "started": "2026-10-12",
+  "reviewed": "2026-10-13",
+  "source_hashes": {
+    "experiments\\connected_fold_growth_20261012\\archive.py": "b3c9f2dd471204183b1c0fa1e49efa256bca0b1c65cbca3f714172acfc5a61e2",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "experiments\\connected_fold_growth_20261012\\render.py": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "experiments\\connected_fold_growth_20261012\\review.py": "b3f0f5cc447d5bcbff6ddd23f6d445e10d57e7eb16c183da60424c02d2cac142",
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+    "tests\\test_connected_fold_growth.py": "b12d88c139f97e2e93f68f64a298f34a9b87b8942c6c70f794758cd783da5323",
+    "tests\\test_connected_fold_study.py": "26301a162e18da45c3dd27c0028671f1a39a15863f312ebc83151ef741852e72",
+    "tests\\test_connected_fold_verify.py": "d42510af2893f6cbd87383aeddded12deebea46d4dc9f35cd8a6fffbe98b93b5"
+  },
+  "copied_evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\RECIPE.json",
+      "archive": "RECIPE.json",
+      "bytes": 2982,
+      "sha256": "a51fb7407a80cfdf18db55b61a3a3491bf6a8b7e54bf0ba1d2d1a93f58c4d717"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\source_index.json",
+      "archive": "source_index.json",
+      "bytes": 990,
+      "sha256": "ac639a3da5a4abbd0f2fe36f0de13542d2e090a85b171e2e50f1da0e8087ece1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SUMMARY.json",
+      "archive": "SUMMARY.json",
+      "bytes": 35691,
+      "sha256": "6bacc2879425d2cc6f6a84dd4682a438c30ef2558fcfcd6da1ee9cd76d0b2782"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\VERIFICATION.json",
+      "archive": "VERIFICATION.json",
+      "bytes": 219,
+      "sha256": "37ac057d9f011e7cffa10cdbdec9e91aeceee80d914e0ba00d1834c80535caa2"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\VERIFICATION_RECHECK_01.json",
+      "archive": "VERIFICATION_RECHECK_01.json",
+      "bytes": 70075,
+      "sha256": "ba22ca7f19db10c63aa8fcf12cb758077df71d12d883d0fec9880d8780241dad"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\RENDER_VERIFICATION.json",
+      "archive": "RENDER_VERIFICATION.json",
+      "bytes": 30306,
+      "sha256": "efb76b6ba7a24d371b0a42cc10b30e9b1165821adeb095c47bb44b0e8bf86a0e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\VISUAL_REVIEW.txt",
+      "archive": "VISUAL_REVIEW.txt",
+      "bytes": 8764,
+      "sha256": "a65041e2667c2425344e9ac5133a8e0a5b7b95cf675f74707ae6e0556ab29041"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\PREFLIGHT.json",
+      "archive": "PREFLIGHT.json",
+      "bytes": 4066,
+      "sha256": "7b530d3ace8e8846a298e897cd905c753115b3f7b5c0bed8f49270b1624f0dd3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\tests_recheck_20261013.txt",
+      "archive": "tests_recheck_20261013.txt",
+      "bytes": 101,
+      "sha256": "e8f8337e45fee07fd9380c82f24d51e7f0224e5f06fcd3c5da3cc3a19fe764e7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\verification_trial01.log",
+      "archive": "verification_trial01.log",
+      "bytes": 1644,
+      "sha256": "2090f7f07b9c14e83083760eb1d97cc3510f2fb556416c7895a45f2577006f01"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\verification_recheck_01.log",
+      "archive": "verification_recheck_01.log",
+      "bytes": 131,
+      "sha256": "f032c93e1fe9681bba463eab55a38823d3cf49445b2fb8d5d5a3051d495afb4e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\SPAN\\G03_events\\generation.json",
+      "archive": "SMOOTH_CONTROL/SPAN/G03_events/generation.json",
+      "bytes": 5225,
+      "sha256": "34f6ab012ba52db60fdf41424784fcc4587e844cae79ffaf73edada99e93019a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\SPAN\\G04\\generation.json",
+      "archive": "SMOOTH_CONTROL/SPAN/G04/generation.json",
+      "bytes": 5389,
+      "sha256": "3685570fbdd5cf96a9d662e8ff9fc0231ede110b8f146cf94e18c3b9d14276c1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\SPAN\\G05\\generation.json",
+      "archive": "SMOOTH_CONTROL/SPAN/G05/generation.json",
+      "bytes": 5384,
+      "sha256": "50c14aea84a0a70de1e6f61a29d09df608d7b6804d8506dd61f1275a05b47f4a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\SPAN\\G03_events\\events.json",
+      "archive": "SMOOTH_CONTROL/SPAN/G03_events/events.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\SPAN\\G05\\views\\receipt.json",
+      "archive": "SMOOTH_CONTROL/SPAN/G05/views/receipt.json",
+      "bytes": 6124,
+      "sha256": "43cb4b8b38ffe639b53ec0750883c1e79fa8961db5a7997a36c48c10ba5e2544"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G03_events\\generation.json",
+      "archive": "SMOOTH_CONTROL/COUNTER/G03_events/generation.json",
+      "bytes": 5231,
+      "sha256": "30e1a469756a6e4e5e369f607d41a0e2aac456870d70e73b944353454c38a51c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G04\\generation.json",
+      "archive": "SMOOTH_CONTROL/COUNTER/G04/generation.json",
+      "bytes": 5398,
+      "sha256": "147db68097ffba9c91ca07fe79ca36c9e7bf8b14cc08271034064c63115d29e1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G05\\generation.json",
+      "archive": "SMOOTH_CONTROL/COUNTER/G05/generation.json",
+      "bytes": 5393,
+      "sha256": "467bf05925f489c863703054c4dba78a19fb71bf798a30d96263424b3b699e52"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G03_events\\events.json",
+      "archive": "SMOOTH_CONTROL/COUNTER/G03_events/events.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G05\\views\\receipt.json",
+      "archive": "SMOOTH_CONTROL/COUNTER/G05/views/receipt.json",
+      "bytes": 6136,
+      "sha256": "293d4343f1664aaeeb86600b9f2820b57672c4f81206590b0945c9987bd837ef"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G03_events\\generation.json",
+      "archive": "ROOT_ONLY/SPAN/G03_events/generation.json",
+      "bytes": 5220,
+      "sha256": "6349b4b899b0da6fea32d0c124bdbe864012b0e9fdab933d1a42d70f9b8297e5"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G04\\generation.json",
+      "archive": "ROOT_ONLY/SPAN/G04/generation.json",
+      "bytes": 5380,
+      "sha256": "62804b40a7236f76e7a705c26dbe12839da3f42dd1e80952d5fec5f06292bb92"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\generation.json",
+      "archive": "ROOT_ONLY/SPAN/G05/generation.json",
+      "bytes": 5374,
+      "sha256": "f868c16132574cddad8b41b160dcef849b105daedbc47eec3c43fbc6bce763e7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G03_events\\events.json",
+      "archive": "ROOT_ONLY/SPAN/G03_events/events.json",
+      "bytes": 13939,
+      "sha256": "6dcc27af931a3ade7d839952d054dfd65bc5f12f57cf077b7c14fd018a1973dd"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G05\\views\\receipt.json",
+      "archive": "ROOT_ONLY/SPAN/G05/views/receipt.json",
+      "bytes": 6104,
+      "sha256": "fe9d49917c555ee5059f0b607a62205b26240488d92bf5f8c33333921bbd9d36"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G03_events\\generation.json",
+      "archive": "ROOT_ONLY/COUNTER/G03_events/generation.json",
+      "bytes": 5226,
+      "sha256": "4bf986167784fadf09bffa14be0377c9d5458094d45137b232b1ceb193306bc7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G04\\generation.json",
+      "archive": "ROOT_ONLY/COUNTER/G04/generation.json",
+      "bytes": 5388,
+      "sha256": "a898ea14884e22911b39f38e7a7a264178c839d4b79b151a6d96598fe819436c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\generation.json",
+      "archive": "ROOT_ONLY/COUNTER/G05/generation.json",
+      "bytes": 5382,
+      "sha256": "b05a3769539a2f9a0d5d6015e14dc768c31dd277886a71632bbcf4b318db4ac1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G03_events\\events.json",
+      "archive": "ROOT_ONLY/COUNTER/G03_events/events.json",
+      "bytes": 13939,
+      "sha256": "a953994e2a57d83ed45a3aedeb4dba0c0066c55f4016a8a6ef9de3994ec19af0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\views\\receipt.json",
+      "archive": "ROOT_ONLY/COUNTER/G05/views/receipt.json",
+      "bytes": 6116,
+      "sha256": "16869ccf823d1a5208264f078ddd29590a52a6a7ada2a5054b977f666acef531"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G03_events\\generation.json",
+      "archive": "BRANCHED/SPAN/G03_events/generation.json",
+      "bytes": 5221,
+      "sha256": "2b5b25b3380577173c48d3395716d1fb764545a2db3ef3fa777b872bb86aded0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G04\\generation.json",
+      "archive": "BRANCHED/SPAN/G04/generation.json",
+      "bytes": 5380,
+      "sha256": "76e505afe82e068655b85379b44522c1b7e374db34310adb7166fb0463d86ce4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\generation.json",
+      "archive": "BRANCHED/SPAN/G05/generation.json",
+      "bytes": 5374,
+      "sha256": "7c5d1ee0b942f3ca6d9c2277b4000a44f42fc7c337d9f15aeb803b6583ddd3ed"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G03_events\\events.json",
+      "archive": "BRANCHED/SPAN/G03_events/events.json",
+      "bytes": 54292,
+      "sha256": "0bda7847c7b89998b4e21863cfb04ef95a9933fd0224479f0217a7c9f697df9e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\SPAN\\G05\\views\\receipt.json",
+      "archive": "BRANCHED/SPAN/G05/views/receipt.json",
+      "bytes": 6100,
+      "sha256": "931da8daafa19da02d962ed608cad35a46c92717dfc4288b21c8e914b83fa0e4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G03_events\\generation.json",
+      "archive": "BRANCHED/COUNTER/G03_events/generation.json",
+      "bytes": 5227,
+      "sha256": "a571ab3f4f54709bfd26e5f9ee365e3afa1e3b63ef1b35a801be23680c456758"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G04\\generation.json",
+      "archive": "BRANCHED/COUNTER/G04/generation.json",
+      "bytes": 5388,
+      "sha256": "df0ebde4ae179dae4526d4f26cbf007b8f638c33c187bd5ccedf9a0967a3a546"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\generation.json",
+      "archive": "BRANCHED/COUNTER/G05/generation.json",
+      "bytes": 5382,
+      "sha256": "4a8c2b0b0a240f95fd97b1758d78cf70dc76959c872eda5240057661ec32dafc"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G03_events\\events.json",
+      "archive": "BRANCHED/COUNTER/G03_events/events.json",
+      "bytes": 51881,
+      "sha256": "326cfcc14d2cfcc923b03b4c6143fb742233fef0cef87cb9bf8f49e98b246a5a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\BRANCHED\\COUNTER\\G05\\views\\receipt.json",
+      "archive": "BRANCHED/COUNTER/G05/views/receipt.json",
+      "bytes": 6112,
+      "sha256": "11eeca0aba6b6ffaa8baff9a4ab87eb752e8fafa01c6a5dce0b2f51224302f2d"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\COUNTER_front.png",
+      "archive": "images/COUNTER_front.png",
+      "bytes": 764596,
+      "sha256": "a8586a906c8f1027423b982c27774885ad311ebba39bab954f6eb6a3eda200a4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\COUNTER_shoulder_front.png",
+      "archive": "images/COUNTER_shoulder_front.png",
+      "bytes": 1629678,
+      "sha256": "98dba4956f01f39af9517f42292214cf740e7eecf0f813b75f5041c4d705c692"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "archive": "images/COUNTER_shoulder_oblique.png",
+      "bytes": 1481908,
+      "sha256": "f8f8c768771ff28d05d644c6952678d0b0c477d82e6345ebfe081506e24aaf35"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\COUNTER_shoulder_side.png",
+      "archive": "images/COUNTER_shoulder_side.png",
+      "bytes": 1300058,
+      "sha256": "f60032d898f750a18f87910a6e20c4a913d4997f1aae0ac26bb980d6fa85a527"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\SOURCE_LIST.json",
+      "archive": "images/SOURCE_LIST.json",
+      "bytes": 11103,
+      "sha256": "731d9015a4235a4aa26d4c0d492a76ac76079f29c9542755cdff54f503555131"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\SPAN_front.png",
+      "archive": "images/SPAN_front.png",
+      "bytes": 751181,
+      "sha256": "c6a237acd6d7b97948483f0793e3f710f147c33cd5a471abed29c52937676fe3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\SPAN_shoulder_front.png",
+      "archive": "images/SPAN_shoulder_front.png",
+      "bytes": 1501486,
+      "sha256": "f3ebbc09049b25fdc24036f093a2c8421eca3f1be2c7a408cc54b1d37e87b2f6"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "archive": "images/SPAN_shoulder_oblique.png",
+      "bytes": 1355032,
+      "sha256": "4085d4ca816ff2d3e4d1fe78e3c7c4a75d515b9f8c32abd44b75b940b4ac7d45"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\images\\SPAN_shoulder_side.png",
+      "archive": "images/SPAN_shoulder_side.png",
+      "bytes": 1430881,
+      "sha256": "49928383f9a18c296e3a20b71fa3e5adbca2d86a4a85775db29bc0d9afe92bbf"
+    }
+  ],
+  "scope": "Exact copies of existing evidence; actual control/native/evidence arrays and 24 original renders remain on E. No generation or rendering during archive.",
+  "visual_decision": "ROOT_ONLY PARTIAL; BRANCHED hierarchy FAIL; neither replaces the accepted column or gate."
+}

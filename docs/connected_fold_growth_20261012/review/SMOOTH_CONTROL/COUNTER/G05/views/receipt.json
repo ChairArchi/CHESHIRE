@@ -1,0 +1,254 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "SMOOTH_CONTROL",
+  "subdivision_generation": 5,
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 900,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "shoulder_front": [
+      [
+        0,
+        32,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_oblique": [
+      [
+        -18,
+        28,
+        15
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_side": [
+      [
+        -32,
+        0,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ]
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_front": {
+      "position": [
+        0.0,
+        32.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "code_sha256": {
+    "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+  },
+  "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+  "render_script_sha256": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+  "source_arrays": {
+    "xyz_sha256": "e23ab72ff258a7426e6573b22829f2137a8a45b59b778a34c0ec4467dcb4e223",
+    "faces_sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572",
+    "xyz_dtype": "float64",
+    "faces_dtype": "int64",
+    "xyz_shape": [
+      819202,
+      3
+    ],
+    "faces_shape": [
+      1638400,
+      3
+    ]
+  },
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "05bb2c3137f3f06c9c51eafe269de5b3f9a50d74dda50a7e627fd2195bace11c"
+    },
+    {
+      "view": "shoulder_front",
+      "filename": "shoulder_front.png",
+      "sha256": "478d99923e650c960370ca615599bb938e87a90838a802b60fc814ebb817445d"
+    },
+    {
+      "view": "shoulder_oblique",
+      "filename": "shoulder_oblique.png",
+      "sha256": "670a3f2faabb7181b219e2a7e8710156f7f9d4a8ce417ab95e2dbb4674cf9f11"
+    },
+    {
+      "view": "shoulder_side",
+      "filename": "shoulder_side.png",
+      "sha256": "adeff74bdc8fba2b602ed830e9df516e9ed84d6984013d58e4ffc8b968d2d352"
+    }
+  ],
+  "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G05\\geometry.npz",
+  "source_sha256": "82fbfb06851ecf4c83a903b46d8cb3d4a02ea0a49b8fa30eec76c6b53f4a02ed",
+  "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G05\\generation.json",
+  "generation_sha256": "467bf05925f489c863703054c4dba78a19fb71bf798a30d96263424b3b699e52",
+  "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\SMOOTH_CONTROL\\COUNTER\\G05\\control_quad.npz",
+  "control_sha256": "f6bdb66af11b0346ce0a7f44d5619d7ba0d08840c2eeeca14513aaae6f00c8f8",
+  "constructive_event_count_quarter_accepted": 0,
+  "scope": "Actual saved arithmetic quad-centre-fan native geometry; Blender display coordinates are float32; no geometry modifiers or maps",
+  "geometry_certification": "Not performed by renderer; independent symmetry/topology verification remains separate"
+}

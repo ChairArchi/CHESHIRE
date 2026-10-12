@@ -1,0 +1,120 @@
+{
+  "code_sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+  "recipe": {
+    "source_generation": 3,
+    "output_generation": 3,
+    "root_parameter_centre": 0.785,
+    "root_parameter_halfwidth": 0.075,
+    "root_cross_centre": 1.27,
+    "root_cross_sweep": 0.06,
+    "root_cross_halfwidth": 0.23,
+    "root_heights": [
+      0.3,
+      0.8,
+      1.15
+    ],
+    "root_scales": [
+      0.9,
+      0.82,
+      0.7
+    ],
+    "root_bend": 0.2,
+    "child_positions_major": [
+      -0.3,
+      0.0,
+      0.3
+    ],
+    "child_positions_minor": [
+      -0.035,
+      0.035,
+      -0.035
+    ],
+    "child_halfwidth_major": 0.115,
+    "child_halfwidth_minor": 0.22,
+    "child_heights": [
+      0.3,
+      0.75,
+      1.1
+    ],
+    "child_scales": [
+      0.9,
+      0.78,
+      0.62
+    ],
+    "child_bend": 0.24,
+    "grandchild_positions_major": [
+      -0.24,
+      0.24
+    ],
+    "grandchild_positions_minor": [
+      -0.035,
+      0.035
+    ],
+    "grandchild_halfwidth_major": 0.16,
+    "grandchild_halfwidth_minor": 0.25,
+    "grandchild_heights": [
+      0.25,
+      0.65,
+      1.0
+    ],
+    "grandchild_scales": [
+      0.9,
+      0.78,
+      0.6
+    ],
+    "grandchild_bend": 0.18,
+    "minimum_patch_faces": 2,
+    "seam_tolerance": 1e-11,
+    "source_symmetry_tolerance": 3e-10,
+    "pca_gap_tolerance": 1e-08,
+    "twist": 0.0,
+    "projection_guard": false,
+    "scope": "One authored fixed upper-shoulder search window per canonical quarter, followed by actual-cap geometry selection",
+    "generation_scope": "G03 remains 3; constructive topology events are counted separately from subdivision",
+    "lineage_scope": "Original classes/rest/anchors remain canonical source associations; new or moved-interior births have class -1; event parentage is separate",
+    "surface_scope": "All output quads use new mean-native fan convention, including retained quads; source VF native geometry is not claimed unchanged",
+    "symmetry_scope": "Canonical-quarter ancestry reflected by vertex identity; material seam axis is exactly zero",
+    "collision_scope": "Intersections are permitted; no projection/contact repair or collision certificate"
+  },
+  "records": [
+    {
+      "input_case": "SPAN",
+      "source": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\SPAN\\G03",
+        "control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+        "original_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\generation.json",
+        "original_receipt_sha256": "1841cbf1331faf6a48f12caeaf1904fb9ba65f824195702813516a2b563f23a0"
+      },
+      "selected_faces": 210,
+      "actual_area": 0.583906890082489,
+      "actual_PCA_extent": [
+        1.6716668120155043,
+        0.6656271701657468
+      ],
+      "source_actual_reflection_errors": [
+        3.632058610082554e-15,
+        3.611639285330952e-15
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "source": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\COUNTER\\G03",
+        "control_sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+        "original_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\generation.json",
+        "original_receipt_sha256": "431fdcd54eb2a1d44f94dd7ab03a4a60c0f4675e098cd198d39593f4541ffc34"
+      },
+      "selected_faces": 210,
+      "actual_area": 0.5288255114036127,
+      "actual_PCA_extent": [
+        1.8091144716040648,
+        0.5629060170133666
+      ],
+      "source_actual_reflection_errors": [
+        3.903187957565046e-15,
+        3.820199830714189e-15
+      ]
+    }
+  ],
+  "scope": "Read-only actual saved G3 measurement; no new geometry generated"
+}

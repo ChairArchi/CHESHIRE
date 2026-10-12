@@ -1,0 +1,134 @@
+{
+  "input_case": "SPAN",
+  "candidate": "ROOT_ONLY",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\SPAN\\G03",
+  "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+  "source_generation": 3,
+  "geometry_code_sha256": {
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+    "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+  },
+  "event_recipe": {
+    "source_generation": 3,
+    "output_generation": 3,
+    "root_parameter_centre": 0.785,
+    "root_parameter_halfwidth": 0.075,
+    "root_cross_centre": 1.27,
+    "root_cross_sweep": 0.06,
+    "root_cross_halfwidth": 0.23,
+    "root_heights": [
+      0.3,
+      0.8,
+      1.15
+    ],
+    "root_scales": [
+      0.9,
+      0.82,
+      0.7
+    ],
+    "root_bend": 0.2,
+    "child_positions_major": [
+      -0.3,
+      0.0,
+      0.3
+    ],
+    "child_positions_minor": [
+      -0.035,
+      0.035,
+      -0.035
+    ],
+    "child_halfwidth_major": 0.115,
+    "child_halfwidth_minor": 0.22,
+    "child_heights": [
+      0.3,
+      0.75,
+      1.1
+    ],
+    "child_scales": [
+      0.9,
+      0.78,
+      0.62
+    ],
+    "child_bend": 0.24,
+    "grandchild_positions_major": [
+      -0.24,
+      0.24
+    ],
+    "grandchild_positions_minor": [
+      -0.035,
+      0.035
+    ],
+    "grandchild_halfwidth_major": 0.16,
+    "grandchild_halfwidth_minor": 0.25,
+    "grandchild_heights": [
+      0.25,
+      0.65,
+      1.0
+    ],
+    "grandchild_scales": [
+      0.9,
+      0.78,
+      0.6
+    ],
+    "grandchild_bend": 0.18,
+    "minimum_patch_faces": 2,
+    "seam_tolerance": 1e-11,
+    "source_symmetry_tolerance": 3e-10,
+    "pca_gap_tolerance": 1e-08,
+    "twist": 0.0,
+    "projection_guard": false,
+    "scope": "One authored fixed upper-shoulder search window per canonical quarter, followed by actual-cap geometry selection",
+    "generation_scope": "G03 remains 3; constructive topology events are counted separately from subdivision",
+    "lineage_scope": "Original classes/rest/anchors remain canonical source associations; new or moved-interior births have class -1; event parentage is separate",
+    "surface_scope": "All output quads use new mean-native fan convention, including retained quads; source VF native geometry is not claimed unchanged",
+    "symmetry_scope": "Canonical-quarter ancestry reflected by vertex identity; material seam axis is exactly zero",
+    "collision_scope": "Intersections are permitted; no projection/contact repair or collision certificate"
+  },
+  "constructive_event_count": 1,
+  "reflected_constructive_event_instances": 4,
+  "attempted_canonical_events": 1,
+  "rejected_canonical_events": 0,
+  "accepted_canonical_events_by_level": [
+    1,
+    0,
+    0
+  ],
+  "event_count_scope": "Canonical-quarter accepted events; reflected event instances counted separately",
+  "added_field_passes": 0,
+  "added_mandelbulb_evaluations": 0,
+  "topology_scope": "Actual attached patch sidewalls/caps, followed by two neutral CC refinements; no Boolean or collision repair",
+  "source_surface": "vf",
+  "lineage": "Saved WALL G3 -> topology events at G3 -> actual neutral CC G4 -> actual neutral CC G5",
+  "parent": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\SPAN\\G03_events",
+  "parent_generation_sha256": "6349b4b899b0da6fea32d0c124bdbe864012b0e9fdab933d1a42d70f9b8297e5",
+  "neutral_CC_passes_added": 1,
+  "subdivision_generation": 4,
+  "native_surface": "Explicit arithmetic quad-centre fans",
+  "control_vertices": 106242,
+  "control_quads": 106240,
+  "native_vertices": 212482,
+  "native_triangles": 424960,
+  "control_file_sha256": "7fecdb9012918971ad5155b963c02bc858b776138b9b979ff1429bb6fa75edea",
+  "geometry_file_sha256": "375f768efeb471c489a838f2db11f13bcdef625ba6dfaa4b46bdf96282090e69",
+  "checks": {
+    "finite": true,
+    "closed_oriented_control": true,
+    "control_components": 1,
+    "control_Euler": 2,
+    "no_orphan_controls": true,
+    "minimum_native_triangle_area": 4.5981579984715805e-07,
+    "control_xyz_sha256": "814c9f090e3a5fa6edef09906d207ca2314a3ecd72acf3d7e3f75336a75ac874",
+    "control_faces_sha256": "64d3bdee4f429d002f1a8c6849f867ae4b0089ce31ffa3b32a937231d5f809e7",
+    "chart_sha256": "d44435adee3f1ad9e6ba44e372f35c9ecd5f2381a42ff8bc600967f7e1bca9ae",
+    "native_xyz_sha256": "47788dba53e995d81c81d192765dca22971490ee95927beced5dec96a438ee71",
+    "native_faces_sha256": "cb8a3ece6ab5f55014926cfb10918066e7e7ad5dc324aa63f7e82c98158be240",
+    "symmetry_scope": "Independent actual replay and propagated reflection proof pending",
+    "self_intersection": "NOT_CHECKED_EXPLORATORY",
+    "fabrication": "NOT_CHECKED",
+    "passed": true
+  },
+  "visual_success": "NOT_ASSESSED",
+  "evidence_file_sha256": "eb44bb148900d68fc1a18e89f9db9f73eee7a268e869b731f319b50fb9cb16cf"
+}

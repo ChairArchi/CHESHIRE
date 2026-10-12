@@ -1,0 +1,49 @@
+CHESHIRE — 연결 접힘 재현과 검증 범위
+2026-10-13
+
+Python: C:\Users\USER\CHESHIRE\.venv\Scripts\python.exe
+Blender: C:\Users\USER\CHESHIRE\scratch\generative_gate_20261010\external\blender-4.5.4-windows-x64\blender.exe
+작업 디렉터리는 CHECKPOINT.txt의 새 worktree다. 아래 ROOT는
+E:\CHESHIRE_DATA\experiments\connected_fold_growth_20261012\trial01이다.
+저장 결과가 있으면 생성·렌더·비교 작성은 거부한다. 재현은 별도의 새 출력 폴더에 한다.
+
+실행 순서
+
+python -X utf8 -B experiments/connected_fold_growth_20261012/study.py --root ROOT --case SPAN
+python -X utf8 -B experiments/connected_fold_growth_20261012/study.py --root ROOT --case COUNTER
+blender -b -t 4 --python experiments/connected_fold_growth_20261012/render.py -- --root ROOT
+python -X utf8 -B experiments/connected_fold_growth_20261012/review.py --root ROOT
+python -X utf8 -B experiments/connected_fold_growth_20261012/verify.py --root ROOT --output-receipt VERIFICATION_RECHECK_01.json
+python -X utf8 -B -m pytest -q -p no:cacheprovider tests/test_connected_fold_growth.py tests/test_connected_fold_study.py tests/test_connected_fold_verify.py
+
+명령의 종료 상태와 함께 실제로 저장된 증거 파일을 확인한다.
+
+생성·Blender·큰 배열 재생은 직렬 실행했다. 생성 runner는 여유 물리 메모리 3GB를
+확인한다. 이는 이 약 180만 삼각형 파일럿에 대한 실행 경계이며 일반 메모리 보장은 아니다.
+900×900, 24 samples, 네 고정 카메라, 같은 재질·광원으로 실제 mean-native 메시를 렌더했다.
+렌더 전 displacement/normal map 또는 형상을 바꾸는 modifier를 사용하지 않았다.
+Blender의 표시 좌표는 float32이고 저장·검증 배열은 float64임을 렌더 영수증에 명시했다.
+
+표면·차트·계보
+
+원본 native VF와 새 mean 해석을 분리한다. mean 팬의 삼각형 중심은 산술 quad 평균이다.
+root의 작성 좌표 창은 자동 특징 검출이 아니다. 후손 선택은 실제 생성 cap의 PCA와 범위를
+사용한다. 후손 계획은 형제 생성 전에 동결하고 face token으로 이후 면 번호 변경을 추적한다.
+새 ring은 실제 입력 경계의 차트를 복사하므로 차트는 일대일 표면 매개화가 아니다.
+반사 대응은 차트 최근접점이 아니라 기준 사분면의 정점 ID로 구성한다.
+CC 이후 대응도 실제 edge/face ID에서 전파한다. 축 경계만 정확한 0으로 구성한다.
+원래 rest/classes/anchors는 기준 사분면의 원본 연관이고 새 면의 부모 이벤트와 구분한다.
+새 정점과 이동한 cap 내부 정점의 birth class는 -1이다. 반대 사분면의 원본 계보를
+그대로 보존했다고 주장하지 않는다. G3 events / CC G4 / CC G5를 분리한다.
+
+검증기 수정
+
+첫 실행은 generation.json의 native_surface 설명 'Explicit arithmetic quad-centre fans'를
+control_quad.npz의 enum 'mean'과 잘못 대조하여 중단됐다. 저장 형상 오류가 아니었다.
+JSON 설명·NPZ enum을 각각의 정확한 계약으로 검증하도록 고쳤다. 실제 배열 재생,
+부모 cap 역할, 원본·생성 코드 해시 및 모든 형상 검증 조건은 유지했다.
+기존 FAIL 영수증과 로그는 덮어쓰지 않았다. 새 --output-receipt 옵션도 기존 파일은 거부한다.
+재검증 PASS와 최종 작은 테스트 20개 결과는 각각 별도 파일로 보존했다.
+
+큰 데이터의 원본은 E에 남겼으며 가벼운 JSON·비교판·로그·시각 판정만 review에 복사한다.
+archive.py의 SOURCE_LIST.json은 복사 전후 SHA256, 원본 경로와 새 코드·테스트 해시를 기록한다.

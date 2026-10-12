@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 455, in <module>
+    main()
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 441, in main
+    receipt = run(args.root)
+              ^^^^^^^^^^^^^^
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 423, in run
+    cases = {case: verify_case(root, sources[case], case, runner) for case in CASES}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 391, in verify_case
+    stages = [verify_saved_stage(event_folder, mesh, chart, source, source_surface, case, mode, 0, counts, pairs, runner, evidence)]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 315, in verify_saved_stage
+    require(mesh.generation == 3+cc_passes and info['input_case'] == case and info['candidate'] == mode and
+  File "C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012\experiments\connected_fold_growth_20261012\verify.py", line 26, in require
+    raise ValueError(message)
+ValueError: Saved generation/source/event-count/recipe identity differs.

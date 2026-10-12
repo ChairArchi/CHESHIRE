@@ -1,0 +1,254 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "ROOT_ONLY",
+  "subdivision_generation": 5,
+  "engine": "Blender Cycles",
+  "version": "4.5.4 LTS",
+  "resolution": 900,
+  "samples": 24,
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "shoulder_front": [
+      [
+        0,
+        32,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_oblique": [
+      [
+        -18,
+        28,
+        15
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ],
+    "shoulder_side": [
+      [
+        -32,
+        0,
+        8.05
+      ],
+      [
+        0,
+        0,
+        8.05
+      ],
+      3.2
+    ]
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_front": {
+      "position": [
+        0.0,
+        32.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "material": "Existing uniform mineral; flat geometric normals",
+  "modifiers": [],
+  "normal_maps": false,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "code_sha256": {
+    "render": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+  },
+  "render_script": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\render.py",
+  "render_script_sha256": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+  "source_arrays": {
+    "xyz_sha256": "b85913d69f2bdd1c01a90cdc6a2e05b2a9143f2d3352e6b9054eb44597516e7a",
+    "faces_sha256": "891b4109763a0c014a34fbe0933be66cf18b2d7ff0aed3cc1affba64b1859e04",
+    "xyz_dtype": "float64",
+    "faces_dtype": "int64",
+    "xyz_shape": [
+      849922,
+      3
+    ],
+    "faces_shape": [
+      1699840,
+      3
+    ]
+  },
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "cdb7e5abb8a177f039c418dbcd42b2cb63ad03b4c4a544219834210da092b2bd"
+    },
+    {
+      "view": "shoulder_front",
+      "filename": "shoulder_front.png",
+      "sha256": "0ba63f219157c7d225d59a54c64a55e2982447287e37432cb3cad17ad4a8b372"
+    },
+    {
+      "view": "shoulder_oblique",
+      "filename": "shoulder_oblique.png",
+      "sha256": "b723884d025ab869d55025c9d9dec0f77d54e2109f2c66dde5d7223df3f77c5e"
+    },
+    {
+      "view": "shoulder_side",
+      "filename": "shoulder_side.png",
+      "sha256": "69f260c060d349195987ab5b2c72ce5f3d254249607abd98dc4e5792c6f69ad9"
+    }
+  ],
+  "source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\geometry.npz",
+  "source_sha256": "d6f9afe646d1d73e4abba1fcf5a73fb742ca0ba48472cc733b72b43858b44dbe",
+  "generation_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\generation.json",
+  "generation_sha256": "b05a3769539a2f9a0d5d6015e14dc768c31dd277886a71632bbcf4b318db4ac1",
+  "control_source": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01\\ROOT_ONLY\\COUNTER\\G05\\control_quad.npz",
+  "control_sha256": "79dd120c0489aaf7aa8aaa308f23723aae2b47ad1780962d389ce0e37e9f368b",
+  "constructive_event_count_quarter_accepted": 1,
+  "scope": "Actual saved arithmetic quad-centre-fan native geometry; Blender display coordinates are float32; no geometry modifiers or maps",
+  "geometry_certification": "Not performed by renderer; independent symmetry/topology verification remains separate"
+}

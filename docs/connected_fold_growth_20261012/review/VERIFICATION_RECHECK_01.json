@@ -1,0 +1,1416 @@
+{
+  "status": "PASS",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\connected_fold_growth_20261012\\trial01",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "SMOOTH_CONTROL",
+    "ROOT_ONLY",
+    "BRANCHED"
+  ],
+  "recipe": {
+    "base_commit": "0ff7387fcfe2fb00cbc0b5d45858576bff664d44",
+    "cases": [
+      "SPAN",
+      "COUNTER"
+    ],
+    "modes": [
+      "SMOOTH_CONTROL",
+      "ROOT_ONLY",
+      "BRANCHED"
+    ],
+    "source_generation": 3,
+    "final_generation": 5,
+    "neutral_CC_passes": 2,
+    "patch_growth": {
+      "source_generation": 3,
+      "output_generation": 3,
+      "root_parameter_centre": 0.785,
+      "root_parameter_halfwidth": 0.075,
+      "root_cross_centre": 1.27,
+      "root_cross_sweep": 0.06,
+      "root_cross_halfwidth": 0.23,
+      "root_heights": [
+        0.3,
+        0.8,
+        1.15
+      ],
+      "root_scales": [
+        0.9,
+        0.82,
+        0.7
+      ],
+      "root_bend": 0.2,
+      "child_positions_major": [
+        -0.3,
+        0.0,
+        0.3
+      ],
+      "child_positions_minor": [
+        -0.035,
+        0.035,
+        -0.035
+      ],
+      "child_halfwidth_major": 0.115,
+      "child_halfwidth_minor": 0.22,
+      "child_heights": [
+        0.3,
+        0.75,
+        1.1
+      ],
+      "child_scales": [
+        0.9,
+        0.78,
+        0.62
+      ],
+      "child_bend": 0.24,
+      "grandchild_positions_major": [
+        -0.24,
+        0.24
+      ],
+      "grandchild_positions_minor": [
+        -0.035,
+        0.035
+      ],
+      "grandchild_halfwidth_major": 0.16,
+      "grandchild_halfwidth_minor": 0.25,
+      "grandchild_heights": [
+        0.25,
+        0.65,
+        1.0
+      ],
+      "grandchild_scales": [
+        0.9,
+        0.78,
+        0.6
+      ],
+      "grandchild_bend": 0.18,
+      "minimum_patch_faces": 2,
+      "seam_tolerance": 1e-11,
+      "source_symmetry_tolerance": 3e-10,
+      "pca_gap_tolerance": 1e-08,
+      "twist": 0.0,
+      "projection_guard": false,
+      "scope": "One authored fixed upper-shoulder search window per canonical quarter, followed by actual-cap geometry selection",
+      "generation_scope": "G03 remains 3; constructive topology events are counted separately from subdivision",
+      "lineage_scope": "Original classes/rest/anchors remain canonical source associations; new or moved-interior births have class -1; event parentage is separate",
+      "surface_scope": "All output quads use new mean-native fan convention, including retained quads; source VF native geometry is not claimed unchanged",
+      "symmetry_scope": "Canonical-quarter ancestry reflected by vertex identity; material seam axis is exactly zero",
+      "collision_scope": "Intersections are permitted; no projection/contact repair or collision certificate"
+    },
+    "geometry_code_sha256": {
+      "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+      "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+      "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+      "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+    }
+  },
+  "source_index_sha256": "ac639a3da5a4abbd0f2fe36f0de13542d2e090a85b171e2e50f1da0e8087ece1",
+  "cases": {
+    "SPAN": {
+      "passed": true,
+      "input_case": "SPAN",
+      "source_control_sha256": "96577a663a14452f4b24cc4972a5b0126fd3af0ae6f89cdbe2056a8f294d9624",
+      "source_surface": "vf",
+      "states": {
+        "SMOOTH_CONTROL": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 0,
+            "rejected_canonical_events": 0,
+            "accepted_by_level": [
+              0,
+              0,
+              0
+            ],
+            "reflected_constructive_event_instances": 0
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 0,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "b6dfbc115c10723002ccd0f7cd32c298a17cf9ddc5b28425b30837c491d4f9eb",
+                "control_faces_sha256": "72f06f13c65885cf303edad9157fc73e5aab9dffb7978f4a57676aaf9857349b",
+                "chart_sha256": "fd1538fa378a32dcb790db9b8821d04d119fa0526265f8c5522a1447f587a3e6",
+                "native_xyz_sha256": "f00946eaa4e237de20e4b1a6fe22a3f8aa8a8586ab3b68864018e5aa434c80e8",
+                "native_faces_sha256": "cf2ab8f8b5b8ffa3a74bb2d8c12325b61a657a8ff5e58d7f9936b12250fe3083"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 153600,
+                "euler_characteristic": 2,
+                "physical_vertices": 51202,
+                "physical_triangles": 102400,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 7.030579429665394e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.6826116135695276e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.6687789788066426e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "34f6ab012ba52db60fdf41424784fcc4587e844cae79ffaf73edada99e93019a",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 0,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "9f3f4c029226b7bf30d80c1976699e1c60b715daac590e7d477f45f5a2f0de50",
+                "control_faces_sha256": "2fed33f4acb2afc0118f331a8ce153138aa3e6be543ecab6cbe21a78a06b553c",
+                "chart_sha256": "d7866be6dcd6e6e9ddb62e4c38a259a6fb21cef3e4676cf2933df1d1f7688c51",
+                "native_xyz_sha256": "a8efe03db71e8ff4a62d5e43b4f593e170b46237fc98c62dc0a246b88b426ee6",
+                "native_faces_sha256": "a0bc7bba64caa230ad73248b5f6b54b1f481710e490e4bccc6c1340cd5377a87"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 614400,
+                "euler_characteristic": 2,
+                "physical_vertices": 204802,
+                "physical_triangles": 409600,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.598157998463305e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.3579045697976356e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.3579045697976356e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "3685570fbdd5cf96a9d662e8ff9fc0231ede110b8f146cf94e18c3b9d14276c1",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 0,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "5212986a3c31256483ff0eff306b381e82e53bbfe5fa577036366141bb2cf309",
+                "control_faces_sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e",
+                "chart_sha256": "aa795a2f20f05469394421959146de097a441b7b83df311b3105874f202d17c6",
+                "native_xyz_sha256": "aa1d7636bbae2d9979cca51d5b46c144ff00f0012a7baf8e531f600ffb7784e4",
+                "native_faces_sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2457600,
+                "euler_characteristic": 2,
+                "physical_vertices": 819202,
+                "physical_triangles": 1638400,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 1.5002542709276953e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.3579045697976356e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.36250363036098e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "50c14aea84a0a70de1e6f61a29d09df608d7b6804d8506dd61f1275a05b47f4a",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        },
+        "ROOT_ONLY": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 1,
+            "rejected_canonical_events": 0,
+            "accepted_by_level": [
+              1,
+              0,
+              0
+            ],
+            "reflected_constructive_event_instances": 4,
+            "event_proofs": [
+              {
+                "event_id": 1,
+                "level": 0,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_source_faces": 210,
+                  "parent_event_id": 0
+                },
+                "generated_cap_faces": 210,
+                "generated_wall_faces": 240
+              }
+            ],
+            "scope": "Actual selected input face IDs and immediate cap/sidewall ownership traced through ordered disk edits and explicit canonical mirror ancestry."
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 1,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "2d8e4fb685896516480feedea45746ca5c20ca12839dabc4a7583f4eb07979af",
+                "control_faces_sha256": "fcd515a795030fc0aeda2580605d5f8ae7e8a679a22117547715b4fe528a7eaa",
+                "chart_sha256": "603ead925967252e9f542ea95a356c7e9317626a0540bc74f6e56a44245f5473",
+                "native_xyz_sha256": "a91cebc6784c6190815e10dafa9b61e4727eb5391738807578dd3c7bda77143c",
+                "native_faces_sha256": "be24d62c8912aaea08be8a7cc4e0c47740aae7e6f335f0730f5e2d405f757730"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 159360,
+                "euler_characteristic": 2,
+                "physical_vertices": 53122,
+                "physical_triangles": 106240,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 7.030579429665394e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.553147333202946e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.553147333202946e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "6349b4b899b0da6fea32d0c124bdbe864012b0e9fdab933d1a42d70f9b8297e5",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 1,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "814c9f090e3a5fa6edef09906d207ca2314a3ecd72acf3d7e3f75336a75ac874",
+                "control_faces_sha256": "64d3bdee4f429d002f1a8c6849f867ae4b0089ce31ffa3b32a937231d5f809e7",
+                "chart_sha256": "d44435adee3f1ad9e6ba44e372f35c9ecd5f2381a42ff8bc600967f7e1bca9ae",
+                "native_xyz_sha256": "47788dba53e995d81c81d192765dca22971490ee95927beced5dec96a438ee71",
+                "native_faces_sha256": "cb8a3ece6ab5f55014926cfb10918066e7e7ad5dc324aa63f7e82c98158be240"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 637440,
+                "euler_characteristic": 2,
+                "physical_vertices": 212482,
+                "physical_triangles": 424960,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.5981579984715805e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.556181433338904e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.556181433338904e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "62804b40a7236f76e7a705c26dbe12839da3f42dd1e80952d5fec5f06292bb92",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 1,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "a34ac99f3a2930aa43505fb7595a7ae6f87645bea78655536b53c143ed6897c9",
+                "control_faces_sha256": "93bd010913d64818eef24650d122e0f82d2f2f7010e3cd4b1118fb8c6d90ca2e",
+                "chart_sha256": "53cf2be27faa9488ecd343ebc2b64fd9889354229ad1507625543d1d286a2b33",
+                "native_xyz_sha256": "cf1ddfbbba3d56674fb82c064987523dd03ff9a8b18deab9ffb04fb1ab7be3c7",
+                "native_faces_sha256": "891b4109763a0c014a34fbe0933be66cf18b2d7ff0aed3cc1affba64b1859e04"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2549760,
+                "euler_characteristic": 2,
+                "physical_vertices": 849922,
+                "physical_triangles": 1699840,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 1.5002542709276953e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580791979123119e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580791979123119e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "f868c16132574cddad8b41b160dcef849b105daedbc47eec3c43fbc6bce763e7",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        },
+        "BRANCHED": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 9,
+            "rejected_canonical_events": 1,
+            "accepted_by_level": [
+              1,
+              3,
+              5
+            ],
+            "reflected_constructive_event_instances": 36,
+            "event_proofs": [
+              {
+                "event_id": 1,
+                "level": 0,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_source_faces": 210,
+                  "parent_event_id": 0
+                },
+                "generated_cap_faces": 210,
+                "generated_wall_faces": 240
+              },
+              {
+                "event_id": 2,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 16,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 16,
+                "generated_wall_faces": 60
+              },
+              {
+                "event_id": 3,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 59,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 59,
+                "generated_wall_faces": 102
+              },
+              {
+                "event_id": 4,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 55,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 55,
+                "generated_wall_faces": 102
+              },
+              {
+                "event_id": 6,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 3,
+                  "parent_event_id": 2
+                },
+                "generated_cap_faces": 3,
+                "generated_wall_faces": 24
+              },
+              {
+                "event_id": 7,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 16,
+                  "parent_event_id": 3
+                },
+                "generated_cap_faces": 16,
+                "generated_wall_faces": 60
+              },
+              {
+                "event_id": 8,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 17,
+                  "parent_event_id": 3
+                },
+                "generated_cap_faces": 17,
+                "generated_wall_faces": 60
+              },
+              {
+                "event_id": 9,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 4,
+                  "parent_event_id": 4
+                },
+                "generated_cap_faces": 4,
+                "generated_wall_faces": 30
+              },
+              {
+                "event_id": 10,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 5,
+                  "parent_event_id": 4
+                },
+                "generated_cap_faces": 5,
+                "generated_wall_faces": 30
+              }
+            ],
+            "scope": "Actual selected input face IDs and immediate cap/sidewall ownership traced through ordered disk edits and explicit canonical mirror ancestry."
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 9,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "3796a07b9d46a38cf393c5d7927b2aed4450b80dea518bfa07f5159194eca93b",
+                "control_faces_sha256": "746d2231aa519587ef8f26b6b580b053c23ab35ac90bf7fa91689ef04fbc5a77",
+                "chart_sha256": "caa4fbff77c7182d845a9d3cc99cf1451fca1e643fe350a70b65035c1f982bda",
+                "native_xyz_sha256": "2c8a847199fb3f945e42b5645e539d739cc20abddede5ff8f54502ca6e1121a0",
+                "native_faces_sha256": "0e0011b5f2e716306a836927e1f7bdd2e895291c4d64a6f50633ed5f6eddc78c"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 170592,
+                "euler_characteristic": 2,
+                "physical_vertices": 56866,
+                "physical_triangles": 113728,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 6.161243478166778e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.553147333202946e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.553147333202946e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "2b5b25b3380577173c48d3395716d1fb764545a2db3ef3fa777b872bb86aded0",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 9,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "b3d771f46f78c7b0dc5964087ab39c51bbece510912c4234f3a6213f04132faa",
+                "control_faces_sha256": "18203159fdde29c29730e1321c758d7305bb25177f975710552a006b7674f374",
+                "chart_sha256": "26534de5180b621e881f94a1fe1b4332f9e5aa490854430837d1ab695b1a0038",
+                "native_xyz_sha256": "af3c74406e36ef8345eb65bf51b56ede64fdb676bb2fef861287aec76702b3b7",
+                "native_faces_sha256": "454ade6421301268a2697050244c171926557112faad360e918f6ba8b7de10e3"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 682368,
+                "euler_characteristic": 2,
+                "physical_vertices": 227458,
+                "physical_triangles": 454912,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.5981579984715805e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.560078619640797e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.560078619640797e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "76e505afe82e068655b85379b44522c1b7e374db34310adb7166fb0463d86ce4",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 9,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "80c7bcb36cbe450d8555af2ab5ed060effed9f1e5020a81b17378288d1f2fe9b",
+                "control_faces_sha256": "dc3558c346146a9d5f4c053aa71de88ddda9ae28936a777ce8654c9b490d4812",
+                "chart_sha256": "fc6f9dc533b9063af7d252d14cbb42171a47bc41c29c286b992b245f60e543b0",
+                "native_xyz_sha256": "94c8fc129ea05f16bc8a21d26a4e3aed323a2c9182de5bb57d4234726c2bb250",
+                "native_faces_sha256": "ffdc175b32366a8b05378ee03e0ab5159a7d496491f96533d3171748bcb9bb3d"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2729472,
+                "euler_characteristic": 2,
+                "physical_vertices": 909826,
+                "physical_triangles": 1819648,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 1.5002542709276953e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "7c5d1ee0b942f3ca6d9c2277b4000a44f42fc7c337d9f15aeb803b6583ddd3ed",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        }
+      }
+    },
+    "COUNTER": {
+      "passed": true,
+      "input_case": "COUNTER",
+      "source_control_sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+      "source_surface": "vf",
+      "states": {
+        "SMOOTH_CONTROL": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 0,
+            "rejected_canonical_events": 0,
+            "accepted_by_level": [
+              0,
+              0,
+              0
+            ],
+            "reflected_constructive_event_instances": 0
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 0,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "c9a38942d0d4a3176ea88b26a72ac0878f556452aeac5a710cda9938991e6b43",
+                "control_faces_sha256": "72f06f13c65885cf303edad9157fc73e5aab9dffb7978f4a57676aaf9857349b",
+                "chart_sha256": "fd1538fa378a32dcb790db9b8821d04d119fa0526265f8c5522a1447f587a3e6",
+                "native_xyz_sha256": "d74b832486527e2c2ae114e4b0a750a77defb7dba11afac25f0900d92a68a6f3",
+                "native_faces_sha256": "cf2ab8f8b5b8ffa3a74bb2d8c12325b61a657a8ff5e58d7f9936b12250fe3083"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 153600,
+                "euler_characteristic": 2,
+                "physical_vertices": 51202,
+                "physical_triangles": 102400,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 6.710017672644603e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.903187957565046e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.820199830714189e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "30e1a469756a6e4e5e369f607d41a0e2aac456870d70e73b944353454c38a51c",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 0,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "52943b2c669201c666a495785de02a46bfd7edcca60bc79346dd94e310cb0030",
+                "control_faces_sha256": "2fed33f4acb2afc0118f331a8ce153138aa3e6be543ecab6cbe21a78a06b553c",
+                "chart_sha256": "d7866be6dcd6e6e9ddb62e4c38a259a6fb21cef3e4676cf2933df1d1f7688c51",
+                "native_xyz_sha256": "a26fd0e770fbf47390c90f58174c0ed25770aec110058d1b07ee3d559a82e9bc",
+                "native_faces_sha256": "a0bc7bba64caa230ad73248b5f6b54b1f481710e490e4bccc6c1340cd5377a87"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 614400,
+                "euler_characteristic": 2,
+                "physical_vertices": 204802,
+                "physical_triangles": 409600,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.077371408407531e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.411696693859521e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.3579045697976356e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "147db68097ffba9c91ca07fe79ca36c9e7bf8b14cc08271034064c63115d29e1",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 0,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "ba19367d54612b0a785bda8c616ec6b62a5bee15b14ad8be705533c0d048a0e5",
+                "control_faces_sha256": "3a2d84a2a321834740ffe6cbe8214aeec660db95fd57fd04e389d3cd2dcfc23e",
+                "chart_sha256": "aa795a2f20f05469394421959146de097a441b7b83df311b3105874f202d17c6",
+                "native_xyz_sha256": "e23ab72ff258a7426e6573b22829f2137a8a45b59b778a34c0ec4467dcb4e223",
+                "native_faces_sha256": "4d139d064a80ecf9b1710bda7c563354a943d70af0cc0448ad7cb180bf473572"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2457600,
+                "euler_characteristic": 2,
+                "physical_vertices": 819202,
+                "physical_triangles": 1638400,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.2555201800068895e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.644695297351525e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 5.561098153691632e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "467bf05925f489c863703054c4dba78a19fb71bf798a30d96263424b3b699e52",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        },
+        "ROOT_ONLY": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 1,
+            "rejected_canonical_events": 0,
+            "accepted_by_level": [
+              1,
+              0,
+              0
+            ],
+            "reflected_constructive_event_instances": 4,
+            "event_proofs": [
+              {
+                "event_id": 1,
+                "level": 0,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_source_faces": 210,
+                  "parent_event_id": 0
+                },
+                "generated_cap_faces": 210,
+                "generated_wall_faces": 240
+              }
+            ],
+            "scope": "Actual selected input face IDs and immediate cap/sidewall ownership traced through ordered disk edits and explicit canonical mirror ancestry."
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 1,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "e86dfe3cd41d915067335fbbbf0d83cafa7d44b291902508af45904845465f42",
+                "control_faces_sha256": "fcd515a795030fc0aeda2580605d5f8ae7e8a679a22117547715b4fe528a7eaa",
+                "chart_sha256": "603ead925967252e9f542ea95a356c7e9317626a0540bc74f6e56a44245f5473",
+                "native_xyz_sha256": "68026d2c74b45e6430e42165fd9ef86ad246cbc2a06a23f7fbfe57a8ca15b529",
+                "native_faces_sha256": "be24d62c8912aaea08be8a7cc4e0c47740aae7e6f335f0730f5e2d405f757730"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 159360,
+                "euler_characteristic": 2,
+                "physical_vertices": 53122,
+                "physical_triangles": 106240,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 6.710017672644603e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.552720455057617e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.552720455057617e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "4bf986167784fadf09bffa14be0377c9d5458094d45137b232b1ceb193306bc7",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 1,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "62496792bbb3b2071b0972d2e7ed03bced8063c5b59cfac0ff9e7f5a8e1a1f0b",
+                "control_faces_sha256": "64d3bdee4f429d002f1a8c6849f867ae4b0089ce31ffa3b32a937231d5f809e7",
+                "chart_sha256": "d44435adee3f1ad9e6ba44e372f35c9ecd5f2381a42ff8bc600967f7e1bca9ae",
+                "native_xyz_sha256": "c4f7724c08d57873f369d859d58e09adacd1e142f80107d0403e0cb78b086943",
+                "native_faces_sha256": "cb8a3ece6ab5f55014926cfb10918066e7e7ad5dc324aa63f7e82c98158be240"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 637440,
+                "euler_characteristic": 2,
+                "physical_vertices": 212482,
+                "physical_triangles": 424960,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.077371408407537e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.5596458096434965e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.5596458096434965e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "a898ea14884e22911b39f38e7a7a264178c839d4b79b151a6d96598fe819436c",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 1,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "8e67a9f60c4640beda2b62900a20108392a80257345b04bd14cb8fdcce119491",
+                "control_faces_sha256": "93bd010913d64818eef24650d122e0f82d2f2f7010e3cd4b1118fb8c6d90ca2e",
+                "chart_sha256": "53cf2be27faa9488ecd343ebc2b64fd9889354229ad1507625543d1d286a2b33",
+                "native_xyz_sha256": "b85913d69f2bdd1c01a90cdc6a2e05b2a9143f2d3352e6b9054eb44597516e7a",
+                "native_faces_sha256": "891b4109763a0c014a34fbe0933be66cf18b2d7ff0aed3cc1affba64b1859e04"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2549760,
+                "euler_characteristic": 2,
+                "physical_vertices": 849922,
+                "physical_triangles": 1699840,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.255520180069698e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "b05a3769539a2f9a0d5d6015e14dc768c31dd277886a71632bbcf4b318db4ac1",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        },
+        "BRANCHED": {
+          "passed": true,
+          "ownership": {
+            "passed": true,
+            "accepted_canonical_events": 9,
+            "rejected_canonical_events": 1,
+            "accepted_by_level": [
+              1,
+              3,
+              5
+            ],
+            "reflected_constructive_event_instances": 36,
+            "event_proofs": [
+              {
+                "event_id": 1,
+                "level": 0,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_source_faces": 210,
+                  "parent_event_id": 0
+                },
+                "generated_cap_faces": 210,
+                "generated_wall_faces": 240
+              },
+              {
+                "event_id": 2,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 8,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 8,
+                "generated_wall_faces": 48
+              },
+              {
+                "event_id": 3,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 67,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 67,
+                "generated_wall_faces": 108
+              },
+              {
+                "event_id": 4,
+                "level": 1,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 37,
+                  "parent_event_id": 1
+                },
+                "generated_cap_faces": 37,
+                "generated_wall_faces": 84
+              },
+              {
+                "event_id": 6,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 3,
+                  "parent_event_id": 2
+                },
+                "generated_cap_faces": 3,
+                "generated_wall_faces": 24
+              },
+              {
+                "event_id": 7,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 12,
+                  "parent_event_id": 3
+                },
+                "generated_cap_faces": 12,
+                "generated_wall_faces": 48
+              },
+              {
+                "event_id": 8,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 12,
+                  "parent_event_id": 3
+                },
+                "generated_cap_faces": 12,
+                "generated_wall_faces": 48
+              },
+              {
+                "event_id": 9,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 5,
+                  "parent_event_id": 4
+                },
+                "generated_cap_faces": 5,
+                "generated_wall_faces": 30
+              },
+              {
+                "event_id": 10,
+                "level": 2,
+                "ownership": {
+                  "passed": true,
+                  "actual_selected_parent_cap_faces": 4,
+                  "parent_event_id": 4
+                },
+                "generated_cap_faces": 4,
+                "generated_wall_faces": 24
+              }
+            ],
+            "scope": "Actual selected input face IDs and immediate cap/sidewall ownership traced through ordered disk edits and explicit canonical mirror ancestry."
+          },
+          "stages": [
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 3,
+                "topology_event_count": 9,
+                "added_CC_passes": 0
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "64a8ba6ffe8af9a21951cd3a711f0da85b055a4819bc2a4fa18e07e307fa2d4f",
+                "control_faces_sha256": "c33a8037756b2ce18997e383d3f947dd0ec7ef485a43a61621e11e13383f0ba8",
+                "chart_sha256": "9ae3c32bba037838e83f08b1e27de104d911af0b6b104eb5fe0254de8e6a67ac",
+                "native_xyz_sha256": "0317d9ce8a0561d9b8731799fe360943c250880f3801466c71106d95cee64f62",
+                "native_faces_sha256": "6e7e873e6a54aed53f81b72600486f3a114c495c9b871d320ba497dc028ae7f5"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 169296,
+                "euler_characteristic": 2,
+                "physical_vertices": 56434,
+                "physical_triangles": 112864,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 6.710017672644603e-06,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.552720455057617e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.552720455057617e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "a571ab3f4f54709bfd26e5f9ee365e3afa1e3b63ef1b35a801be23680c456758",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 4,
+                "topology_event_count": 9,
+                "added_CC_passes": 1
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "9716c837f44ab1511482f60bd00780dcefd428346e1d7f8e3055a73a9d827d36",
+                "control_faces_sha256": "66eaf89c599fe7d66faa970ee5f6af9baf36bac712c91a381428ad6481c875dd",
+                "chart_sha256": "a9e5d51754c9436a309760276abf3014c3c662bc30833f31d9c09463f1864d88",
+                "native_xyz_sha256": "3fbf310cb8574d9e39fe32cd64657b740c0d9171e7911451a0be876036a6b8e1",
+                "native_faces_sha256": "d33cef236ba0a19987459c81fefc0d40bc10f98ac5af814a36683200757bd5dd"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 677184,
+                "euler_characteristic": 2,
+                "physical_vertices": 225730,
+                "physical_triangles": 451456,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.077371408407537e-07,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.5596458096434965e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.5596458096434965e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "df0ebde4ae179dae4526d4f26cbf007b8f638c33c187bd5ccedf9a0967a3a546",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            },
+            {
+              "passed": true,
+              "semantics": {
+                "actual_generation": 5,
+                "topology_event_count": 9,
+                "added_CC_passes": 2
+              },
+              "exact_control_native_and_evidence_replay": true,
+              "hashes": {
+                "control_xyz_sha256": "8083e4c49584026c61321faea1d4738851a30da0fbc3307b44a395c16721bca5",
+                "control_faces_sha256": "8f22ac6cede3aa561d6b5bd51e2df8d9c8a56acbd7d69db869f5fbfc115b6c90",
+                "chart_sha256": "d51d299514405571233b391dc6f69c40b7039044793c81f97ff1254563511f0e",
+                "native_xyz_sha256": "5e6b7f196b6c2c4cbe99a940b9b448251f4d07eafc25c66b698cf1f5f03828e5",
+                "native_faces_sha256": "f4f53cb176ab5701d05c2e34c191f9cb8c6b6f4c4a7cc15f8255caadab71c302"
+              },
+              "actual_native_topology": {
+                "passed": true,
+                "finite": true,
+                "closed_oriented_edge_incidence": true,
+                "degenerate_edges": false,
+                "components": 1,
+                "unique_native_edges": 2708736,
+                "euler_characteristic": 2,
+                "physical_vertices": 902914,
+                "physical_triangles": 1805824,
+                "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+                "minimum_actual_triangle_area": 4.255520180069698e-08,
+                "configured_minimum_triangle_area": 1e-14,
+                "self_intersection": "NOT_CHECKED_EXPLORATORY"
+              },
+              "actual_native_symmetry": {
+                "X": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                },
+                "Y": {
+                  "passed": true,
+                  "mirror_involution": true,
+                  "actual_xyz_max_error": 3.580361673049448e-15,
+                  "oriented_native_triangle_sets_identical": true,
+                  "tolerance": 1e-09,
+                  "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+                }
+              },
+              "generation_json_sha256": "4a8c2b0b0a240f95fd97b1758d78cf70dc76959c872eda5240057661ec32dafc",
+              "native_surface_scope": "Explicit arithmetic quad-centre fans. Original source VF interpretation is recorded separately; equal source control XYZ does not imply equal original VF native triangles."
+            }
+          ],
+          "source_surface": "vf",
+          "output_surface": "mean",
+          "original_source_control_hash_linked": true,
+          "source_physical_surface_preservation_claimed": false,
+          "visual_success": "NOT_ASSESSED: accepted topology events, one body and valid symmetry do not establish visible branching hierarchy."
+        }
+      }
+    }
+  },
+  "verifier_module_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+  "scope": "Actual preserved WALL G3 source hashes, ordered connected topology-event replay and parent-cap ownership, two actual neutral CC passes and chart transport, exact saved native geometry, actual edge/connectivity/Euler/area and propagated-ID XYZ/oriented-triangle symmetry.",
+  "generation_scope": "G3 events preserve subdivision generation; G4 and G5 are two real CC passes. Canonical events and four reflected instances are counted separately.",
+  "excluded": [
+    "Aesthetic/reference fidelity certification",
+    "Original VF native surface preservation",
+    "Injective material chart",
+    "Self-intersections",
+    "Fabrication",
+    "Structural performance"
+  ]
+}

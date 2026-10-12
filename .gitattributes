@@ -10,3 +10,9 @@ tests/test_broad_shoulder_folds.py -text whitespace=blank-at-eol,blank-at-eof,sp
 tests/test_broad_shoulder_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_broad_rooted_fans.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_broad_rooted_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+docs/connected_fold_growth_20261012/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+experiments/connected_fold_growth_20261012/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_connected_fold_growth.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_connected_fold_study.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/test_connected_fold_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
