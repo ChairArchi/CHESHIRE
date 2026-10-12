@@ -1,0 +1,155 @@
+{
+  "input_case": "COUNTER",
+  "candidate": "ACTIVE_FOLDS",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\docs\\fold_visible_gate_20261012\\review\\WALL\\COUNTER\\G03",
+  "source_control_sha256": "1ea03fccfd72d4c4cbf95b7c6e8d6170b4dbf316ef6e4b6835131656b935f468",
+  "baseline_source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06",
+  "baseline_control_sha256": "ae767bb565c0a2987bbcb92abb353501a4949bec1e42689995995c954181061f",
+  "recipe": {
+    "parent_index": 1,
+    "output_generation": 6,
+    "active_generations": [
+      4,
+      5
+    ],
+    "maximum_total_shift": 0.45,
+    "end_limits": [
+      0.1,
+      0.9
+    ],
+    "core_arc_halfwidth": 0.25,
+    "core_transverse_fade": 0.1,
+    "core_axial_extension": 0.2,
+    "trunk_base": 0.54,
+    "trunk_linear": 0.035,
+    "trunk_quadratic": -0.02,
+    "branch_starts": [
+      -0.35,
+      0.1
+    ],
+    "branch_durations": [
+      1.1,
+      0.8
+    ],
+    "branch_offsets": [
+      0.22,
+      -0.18
+    ],
+    "branch_gate_span": 0.22,
+    "primary_halfwidth_arc": 0.15,
+    "primary_height_width_ratio": 1.25,
+    "primary_height_cap": 0.24,
+    "primary_branch_ratio": 0.85,
+    "side_groove_ratio": 0.52,
+    "side_groove_offset_in_halfwidths": 1.35,
+    "side_groove_halfwidth_ratio": 0.65,
+    "secondary_offset_arc": 0.085,
+    "secondary_halfwidth_arc": 0.065,
+    "secondary_height_width_ratio": 0.38,
+    "secondary_height_cap": 0.075,
+    "secondary_start_delay": 0.14,
+    "curve_sample_count": 61,
+    "scope": "One measured parent shoulder per material quadrant, same recipe on SPAN/COUNTER",
+    "amplitude_scope": "The .45 total bound is an explicit first comparison condition, not a user-mandated design limit",
+    "inspiration": "Earlier ROLE_ABSOLUTE middle-scale walls/lips are a composition clue; this is a new continuous signed-band operator, not that algorithm",
+    "reference_evidence": "docs/fold_band_growth_20261011/technical/role_ablation_review.md:7"
+  },
+  "relaxation_recipe": {
+    "positive": 0.5,
+    "negative": -0.53,
+    "pairs": 6,
+    "maximum_carrier_shift": 0.04,
+    "material_end_limits": [
+      0.1,
+      0.9
+    ],
+    "fade_width": 0.08,
+    "carrier_stage_generation": 3,
+    "graph": "Uniform undirected G03 quad-edge neighbours",
+    "symmetry": "Constructive material X/Y copy of the carrier delta after bounded relaxation"
+  },
+  "common_reference_xyz_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+  "stages": [
+    {
+      "generation": 4,
+      "incoming_xyz_sha256": "17fabfd6c45352c71fb9bcbfeed3c525cf25cf51334cbe10eaad3501435d8532",
+      "raw_delta_sha256": "44c0aea941968d60f9001b178ae65101f3dcd408713b9a613867b449caaa1f2b",
+      "applied_delta_sha256": "a913e27d71d2baf1dd2477fba19330c7f8c487c2e274550229f70ad75c98fb7a",
+      "resulting_xyz_sha256": "e3f66d8ebb6d405663a234419769e9f25b14869bafa25ddfe7410d80376a3747",
+      "maximum_active_shift": 0.23999860018287866,
+      "positive_height_maximum": 0.23999860018287864,
+      "negative_height_minimum": -0.12463857798695627,
+      "moved_controls": 656,
+      "fields_path": "COUNTER\\G04_active_fields.npz",
+      "fields_sha256": "844772143dd75ab801c8a7813dcf90ac346230f929a884bb2d7f2a844953aa87",
+      "curve_path": "COUNTER\\G04_incoming_curves.npz",
+      "curve_sha256": "6959a1f7cafd636791c6530133fd7bd230ef0b1d8289d0058c16d58a120b8be1"
+    },
+    {
+      "generation": 5,
+      "incoming_xyz_sha256": "6608cdb736ed40554ddf7d4f313f8c65d907619e9ffd0afcb67ee91681142d6f",
+      "raw_delta_sha256": "74337da8dda81b9562c66f4615319cfa021a622ebfbcadefc20fb8deb37ca8d3",
+      "applied_delta_sha256": "988ec2b9ce25cd339565132688651f201bf3c79cf44db4b93778e10c5e681b21",
+      "resulting_xyz_sha256": "54160a3ee41334cf6e32fbebd13fa1a1e4bcdbb885d2c9e47073a04d9ae0c83d",
+      "maximum_active_shift": 0.07499617981555558,
+      "positive_height_maximum": 0.07499617981555556,
+      "negative_height_minimum": -0.03874904749524761,
+      "moved_controls": 532,
+      "fields_path": "COUNTER\\G05_active_fields.npz",
+      "fields_sha256": "3f9082d7f0d051f61319b504b640d9daf43a3c61b5f459af520175c3eb7bc12d",
+      "curve_path": "COUNTER\\G05_incoming_curves.npz",
+      "curve_sha256": "e9a8bc196b3af4383ec04b1e8869b454f191cd4feee2ade8f5ad35319e521206"
+    }
+  ],
+  "output_generation": 6,
+  "inactive_generation": 6,
+  "new_field_atlas": false,
+  "protected_core_scope": "Exact saved BASELINE core/ends/outside restoration, not a claim that the old BASELINE preserved the raw parent valley",
+  "topology_scope": "One closed oriented inherited body; original face IDs and fan connectivity preserved; no appended components",
+  "visual_status": "UNASSESSED: connected ribs/basins and hierarchy require matched actual renders",
+  "branching_scope": "Authored continuous curve bifurcations in an actually measured parent chart; not automatic topology/grammar discovery",
+  "self_intersection": "Not checked, per exploratory scope",
+  "checks": {
+    "finite": true,
+    "minimum_triangle_area": 3.3867746712003926e-08,
+    "actual_native_xy_symmetry": {
+      "X": {
+        "passed": true,
+        "material_pair_max_error": 9.019494489765868e-16,
+        "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+        "pair_involution": true,
+        "reflected_oriented_native_triangles_identical": true
+      },
+      "Y": {
+        "passed": true,
+        "material_pair_max_error": 7.364386412590295e-16,
+        "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+        "pair_involution": true,
+        "reflected_oriented_native_triangles_identical": true
+      }
+    },
+    "source_topology": {
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true
+    },
+    "inherited_native_faces_identical_to_baseline": true,
+    "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+    "native_xyz_sha256": "44d43f93723542240e22c89e901744acebe65128d2b33bf1f592f30911ca3679",
+    "control_xyz_sha256": "af8edbf213f099a29fc87170f1ab5a353ccacba4d18896aa58a4ae1ad63689ef",
+    "maximum_total_shift": 0.30000000000000004,
+    "raw_active_total_shift": 0.23999860018287866,
+    "control_outside_restored_exact": true,
+    "actual_native_outside_baseline_exact": true,
+    "actual_native_ends_baseline_exact": true,
+    "actual_native_core_baseline_exact": true,
+    "outside_error": 0.0,
+    "end_error": 0.0,
+    "core_error": 0.0,
+    "control_patch_count": 13044,
+    "outside_native_count": 3248822,
+    "protected_native_core_count": 30512,
+    "end_native_count": 760834,
+    "passed": true
+  }
+}

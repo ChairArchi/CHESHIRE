@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "candidate": "MESO_ONLY_PATCH",
+  "source_root": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02",
+  "requested_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "same_rule_two_inputs_checked": true,
+  "scope": "Remove new guided bulb relief only in the same tapered measured shoulder patch; keep the saved middle fold and valley priority. Inherited BASELINE atlas relief remains outside the patch and partly in its transition. Not a wholly fractal-free shape.",
+  "ablation_module_sha256": "4d605d74423ff1fb3bbbd31a88d48375d5ddabd0b19ff9fd0aa9ea88d01989ba",
+  "aesthetic_quality": "NOT_CERTIFIED",
+  "self_intersection": "NOT_CHECKED_PER_EXPLORATION_SCOPE",
+  "states": [
+    {
+      "passed": true,
+      "input_case": "SPAN",
+      "candidate": "MESO_ONLY_PATCH",
+      "scope": "Remove new guided bulb relief only in the same tapered measured shoulder patch; keep the saved middle fold and valley priority. Inherited BASELINE atlas relief remains outside the patch and partly in its transition. Not a wholly fractal-free shape.",
+      "source_common_reference_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+      "common_reference_reconstructed_exact": true,
+      "actual_delta": {
+        "maximum_actual_total_detail_shift": 0.27559037970678374,
+        "operation_delta_exact": true,
+        "outside_active_region_equals_baseline": true,
+        "inactive_ends_equal_baseline": true,
+        "inactive_end_control_count": 379906,
+        "maximum_end_relief_from_common_reference": 0.23299659661901245,
+        "endpoint_scope": "New variation versus BASELINE is fixed; inherited BASELINE relief versus common reference is measured only."
+      },
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 5.972315374896403e-08,
+        "actual_native_left_right_symmetry": {
+          "passed": true,
+          "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "reflected_oriented_native_triangle_sets_identical": true,
+          "physical_vertices": 3276802,
+          "physical_triangles": 6553600
+        },
+        "native_xyz_sha256": "168b926c91e3561a952ab01f12de50fd224d32819384e668f6529c1476a36e29",
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "maximum_total_detail_shift": 0.27559037970678374,
+        "control_xyz_sha256": "249fe3de3f9fa588ae591ba6d56e8a885b58f09c5e79590b985a5f9d6a50dea8",
+        "control_topology_sha256": "7481511123dcdf6a3c211b4cea5fa575637b0e7bb900f3eca42b7b24912698a7",
+        "outside_patch_delta_sha256": "d91e4ee93ca71e96165b91b331bc1a4e9b6c548aa1685f1f25a0df078ded0793",
+        "passed": true
+      },
+      "native_faces_identical_to_saved_FLOW_CHAIN": true,
+      "exact_unchanged_baseline_restoration": {
+        "outside_and_ends_restored_from_exact_saved_baseline": true,
+        "preserved_control_count": 1606246,
+        "roundoff_changed_control_count": 55166,
+        "maximum_coordinate_correction": 1.7763568394002505e-15,
+        "correction_tolerance": 3e-12,
+        "scope": "Only controls outside the declared active region or in fixed material ends; active interior retains the same vector cap/reflection."
+      },
+      "actual_native_coordinate_reflections": {
+        "X": {
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+          "passed": true
+        },
+        "Y": {
+          "material_pair_max_error": 7.364386412590295e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+          "passed": true
+        }
+      },
+      "y_reflection_scope": "Actual native XYZ reflection and identical connectivity; oriented Y triangle sets not independently rechecked.",
+      "saved_actual_delta_exact": true,
+      "source_FLOW_replay": {
+        "passed": true,
+        "maximum_control_coordinate_error": 1.7763568394002505e-15,
+        "tolerance": 3e-12,
+        "scope": "Saved actual priority delta is round-tripped through control-minus-reference; replay is tolerance-bound, not claimed byte-exact."
+      },
+      "saved_guided_source_provenance": {
+        "passed": true,
+        "final_source_control_generation": 6,
+        "final_source_carrier_hash_exact": true,
+        "actual_meso_native_centres_max_error": 0.0,
+        "actual_meso_native_source_max_error": 0.0,
+        "tolerance": 3e-12,
+        "colony_count": 9,
+        "frame_source_generation": 3,
+        "scope": "All final G06 centres/source XYZ are reconstructed from meso native triangle IDs and barycentric weights; coarse frame source is retained separately."
+      },
+      "cap_comparison": {
+        "FLOW_CHAIN": {
+          "control_count": 1638402,
+          "maximum_vector_cap": 0.3,
+          "uncapped_maximum": 0.3207861684873052,
+          "cap_active_control_count": 61,
+          "cap_active_beyond_1e_12_count": 61,
+          "cap_boundary_within_1e_12_count": 0,
+          "maximum_removed_vector_length": 0.02078616848730519,
+          "scope": "Euclidean norms before the same total-vector cap and material reflection; boundary count exposes floating-point cap ambiguity."
+        },
+        "MESO_ONLY_PATCH": {
+          "control_count": 1638402,
+          "maximum_vector_cap": 0.3,
+          "uncapped_maximum": 0.27559037970678374,
+          "cap_active_control_count": 0,
+          "cap_active_beyond_1e_12_count": 0,
+          "cap_boundary_within_1e_12_count": 0,
+          "maximum_removed_vector_length": 0.0,
+          "scope": "Euclidean norms before the same total-vector cap and material reflection; boundary count exposes floating-point cap ambiguity."
+        }
+      },
+      "inherited_atlas_internal_iterations": 10,
+      "new_atlas_evaluations": 0,
+      "saved_atlas_relief_resamplings_for_flow_diagnostics": 1,
+      "generation_json_sha256": "30aa6723f0424bdd2ebf272940214a93a895cfaabd326e6e3920d8fa55d78804"
+    },
+    {
+      "passed": true,
+      "input_case": "COUNTER",
+      "candidate": "MESO_ONLY_PATCH",
+      "scope": "Remove new guided bulb relief only in the same tapered measured shoulder patch; keep the saved middle fold and valley priority. Inherited BASELINE atlas relief remains outside the patch and partly in its transition. Not a wholly fractal-free shape.",
+      "source_common_reference_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+      "common_reference_reconstructed_exact": true,
+      "actual_delta": {
+        "maximum_actual_total_detail_shift": 0.30000000000000004,
+        "operation_delta_exact": true,
+        "outside_active_region_equals_baseline": true,
+        "inactive_ends_equal_baseline": true,
+        "inactive_end_control_count": 379906,
+        "maximum_end_relief_from_common_reference": 0.2454575305149405,
+        "endpoint_scope": "New variation versus BASELINE is fixed; inherited BASELINE relief versus common reference is measured only."
+      },
+      "checks": {
+        "finite": true,
+        "minimum_triangle_area": 3.3867746712003926e-08,
+        "actual_native_left_right_symmetry": {
+          "passed": true,
+          "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "reflected_oriented_native_triangle_sets_identical": true,
+          "physical_vertices": 3276802,
+          "physical_triangles": 6553600
+        },
+        "native_xyz_sha256": "837e49ccba0ca960d10319c5af33e782d58b92b6a860bc7fabb97b941ddd87e8",
+        "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+        "maximum_total_detail_shift": 0.30000000000000004,
+        "control_xyz_sha256": "d1b1520767a59b35403d0eada1c423b223797e87b41ccc696d9db165e5b13fcc",
+        "control_topology_sha256": "7481511123dcdf6a3c211b4cea5fa575637b0e7bb900f3eca42b7b24912698a7",
+        "outside_patch_delta_sha256": "3bc873c72d108464ad68b8d3429de91a28e70813136ccd31471f176dad14381e",
+        "passed": true
+      },
+      "native_faces_identical_to_saved_FLOW_CHAIN": true,
+      "exact_unchanged_baseline_restoration": {
+        "outside_and_ends_restored_from_exact_saved_baseline": true,
+        "preserved_control_count": 1606566,
+        "roundoff_changed_control_count": 50517,
+        "maximum_coordinate_correction": 1.7763568394002505e-15,
+        "correction_tolerance": 3e-12,
+        "scope": "Only controls outside the declared active region or in fixed material ends; active interior retains the same vector cap/reflection."
+      },
+      "actual_native_coordinate_reflections": {
+        "X": {
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+          "passed": true
+        },
+        "Y": {
+          "material_pair_max_error": 7.364386412590295e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+          "passed": true
+        }
+      },
+      "y_reflection_scope": "Actual native XYZ reflection and identical connectivity; oriented Y triangle sets not independently rechecked.",
+      "saved_actual_delta_exact": true,
+      "source_FLOW_replay": {
+        "passed": true,
+        "maximum_control_coordinate_error": 1.7763568394002505e-15,
+        "tolerance": 3e-12,
+        "scope": "Saved actual priority delta is round-tripped through control-minus-reference; replay is tolerance-bound, not claimed byte-exact."
+      },
+      "saved_guided_source_provenance": {
+        "passed": true,
+        "final_source_control_generation": 6,
+        "final_source_carrier_hash_exact": true,
+        "actual_meso_native_centres_max_error": 0.0,
+        "actual_meso_native_source_max_error": 0.0,
+        "tolerance": 3e-12,
+        "colony_count": 9,
+        "frame_source_generation": 3,
+        "scope": "All final G06 centres/source XYZ are reconstructed from meso native triangle IDs and barycentric weights; coarse frame source is retained separately."
+      },
+      "cap_comparison": {
+        "FLOW_CHAIN": {
+          "control_count": 1638402,
+          "maximum_vector_cap": 0.3,
+          "uncapped_maximum": 0.3201409733514147,
+          "cap_active_control_count": 102,
+          "cap_active_beyond_1e_12_count": 98,
+          "cap_boundary_within_1e_12_count": 8,
+          "maximum_removed_vector_length": 0.020140973351414737,
+          "scope": "Euclidean norms before the same total-vector cap and material reflection; boundary count exposes floating-point cap ambiguity."
+        },
+        "MESO_ONLY_PATCH": {
+          "control_count": 1638402,
+          "maximum_vector_cap": 0.3,
+          "uncapped_maximum": 0.30000000000000004,
+          "cap_active_control_count": 4,
+          "cap_active_beyond_1e_12_count": 0,
+          "cap_boundary_within_1e_12_count": 8,
+          "maximum_removed_vector_length": 5.551115123125783e-17,
+          "scope": "Euclidean norms before the same total-vector cap and material reflection; boundary count exposes floating-point cap ambiguity."
+        }
+      },
+      "inherited_atlas_internal_iterations": 10,
+      "new_atlas_evaluations": 0,
+      "saved_atlas_relief_resamplings_for_flow_diagnostics": 1,
+      "generation_json_sha256": "a3cfbd7d1bbb847c9f8ec03e64c7b6a0fae2362995c1995db6816101b63b32e2"
+    }
+  ]
+}

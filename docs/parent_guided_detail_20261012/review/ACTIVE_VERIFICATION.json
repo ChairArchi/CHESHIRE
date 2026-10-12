@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01",
+  "parent_root": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "cases": {
+    "SPAN": {
+      "passed": true,
+      "input_case": "SPAN",
+      "baseline_control_xyz_sha256": "038aeec3dadc98e4849182c07859eea6619ff4f98ae2874f077598bad7be1f32",
+      "baseline_linked_to_main_generation_and_verification": true,
+      "common_reference_reconstructed_exact": true,
+      "common_reference_xyz_sha256": "4717a76d2a67fb08f7c465ad4d29a3127f89ea6eb368bc27512317f1551ba379",
+      "active_stages": [
+        {
+          "passed": true,
+          "generation": 4,
+          "incoming_xyz_sha256": "27ae213ff3aca3db38d1eed7e6a5f60c85b6f8484ad0586e8dbbec5023c8c900",
+          "resulting_xyz_sha256": "90c5833879529c110cea13c864cfd485139bf9818ead815d736cdd938cd7bb0b",
+          "actual_incoming_native_normals_max_error": 0.0,
+          "projected_parent_tangent_max_error": 0.0,
+          "normal_tolerance": 3e-12,
+          "raw_delta_hash_exact": true,
+          "applied_delta_and_material_reflection_exact": true,
+          "actual_native_curve_provenance": {
+            "passed": true,
+            "incoming_generation": 4,
+            "triangle_sample_count": 183,
+            "xyz_max_error": 0.0,
+            "chart_uv_max_error": 2.220446049250313e-16,
+            "authored_uv_max_error": 0.0,
+            "actual_triangle_normal_max_error": 0.0,
+            "actual_curve_tangent_max_error": 0.0,
+            "tolerance": 3e-12,
+            "barycentric_containment_tolerance": 1e-09,
+            "scope": "Actual incoming native triangle/UV/XYZ/normal/tangent provenance before this active operation and before final G06 replacement/blend; authored curves are not detected final branches."
+          }
+        },
+        {
+          "passed": true,
+          "generation": 5,
+          "incoming_xyz_sha256": "50b4291637d9b4c838e8287b47f8a281c17f1486ae337e24d214c36f3917bb2d",
+          "resulting_xyz_sha256": "dc9ed7b26df92754dbca7aaad3edc3b05f5b22b45b3a82b238858d182232a220",
+          "actual_incoming_native_normals_max_error": 0.0,
+          "projected_parent_tangent_max_error": 0.0,
+          "normal_tolerance": 3e-12,
+          "raw_delta_hash_exact": true,
+          "applied_delta_and_material_reflection_exact": true,
+          "actual_native_curve_provenance": {
+            "passed": true,
+            "incoming_generation": 5,
+            "triangle_sample_count": 122,
+            "xyz_max_error": 0.0,
+            "chart_uv_max_error": 2.220446049250313e-16,
+            "authored_uv_max_error": 0.0,
+            "actual_triangle_normal_max_error": 0.0,
+            "actual_curve_tangent_max_error": 0.0,
+            "tolerance": 3e-12,
+            "barycentric_containment_tolerance": 1e-09,
+            "scope": "Actual incoming native triangle/UV/XYZ/normal/tangent provenance before this active operation and before final G06 replacement/blend; authored curves are not detected final branches."
+          }
+        }
+      ],
+      "final_control_xyz_sha256": "5bc75337f4dd299e98d4ac0de77983803e25e3d587b2172dcd17a7e4f1b1af1e",
+      "native_xyz_sha256": "6be93b0d4f8ea78904b312999f0b1091963070e0b1e59397b6730d3065f709dc",
+      "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+      "saved_native_rebuild_exact": true,
+      "actual_delta_exact": true,
+      "maximum_actual_total_shift": 0.27559037970678374,
+      "minimum_actual_native_triangle_area": 4.556219494856005e-08,
+      "actual_native_coordinate_symmetry": {
+        "X": {
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 3.820199830714189e-15,
+          "passed": true
+        },
+        "Y": {
+          "material_pair_max_error": 7.364386412590295e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 3.8088902694984756e-15,
+          "passed": true
+        }
+      },
+      "oriented_symmetry_scope": "Generation X/Y oriented native reflection PASS linked to exactly replayed native XYZ/faces; independently recalculated actual coordinate reflections.",
+      "actual_native_baseline_guards_exact": {
+        "outside": 3249650,
+        "ends": 760834,
+        "cores": 31800
+      },
+      "topology_scope": "Same actual native faces as the main verification one-closed-oriented-component BASELINE; no appended connectivity.",
+      "final_G06_postprocessing": "Inactive refine → cap accumulated active displacement → measured patch replacement/blend with BASELINE → total .45 cap/material reflection → exact weight-zero BASELINE restore.",
+      "curve_scope": "G04/G05 curve/frame evidence belongs to actual incoming native states before active displacement and before final G06 blend; it is not final-G06 detected branch evidence.",
+      "generation_json_sha256": "576a8eac0c9690ef286f9f0c40154f34795ef6c6d0de9044fb37472cb54028a7"
+    },
+    "COUNTER": {
+      "passed": true,
+      "input_case": "COUNTER",
+      "baseline_control_xyz_sha256": "81a640cad6b9bfd577e8fc0335687ec60d03e49f8f62bf58f1947160fa3741d0",
+      "baseline_linked_to_main_generation_and_verification": true,
+      "common_reference_reconstructed_exact": true,
+      "common_reference_xyz_sha256": "7eced76035d0756d6a9ecb0d13d1a1484a2be21362bb03d63d6fa8dca99df705",
+      "active_stages": [
+        {
+          "passed": true,
+          "generation": 4,
+          "incoming_xyz_sha256": "17fabfd6c45352c71fb9bcbfeed3c525cf25cf51334cbe10eaad3501435d8532",
+          "resulting_xyz_sha256": "e3f66d8ebb6d405663a234419769e9f25b14869bafa25ddfe7410d80376a3747",
+          "actual_incoming_native_normals_max_error": 0.0,
+          "projected_parent_tangent_max_error": 0.0,
+          "normal_tolerance": 3e-12,
+          "raw_delta_hash_exact": true,
+          "applied_delta_and_material_reflection_exact": true,
+          "actual_native_curve_provenance": {
+            "passed": true,
+            "incoming_generation": 4,
+            "triangle_sample_count": 183,
+            "xyz_max_error": 0.0,
+            "chart_uv_max_error": 2.220446049250313e-16,
+            "authored_uv_max_error": 0.0,
+            "actual_triangle_normal_max_error": 0.0,
+            "actual_curve_tangent_max_error": 0.0,
+            "tolerance": 3e-12,
+            "barycentric_containment_tolerance": 1e-09,
+            "scope": "Actual incoming native triangle/UV/XYZ/normal/tangent provenance before this active operation and before final G06 replacement/blend; authored curves are not detected final branches."
+          }
+        },
+        {
+          "passed": true,
+          "generation": 5,
+          "incoming_xyz_sha256": "6608cdb736ed40554ddf7d4f313f8c65d907619e9ffd0afcb67ee91681142d6f",
+          "resulting_xyz_sha256": "54160a3ee41334cf6e32fbebd13fa1a1e4bcdbb885d2c9e47073a04d9ae0c83d",
+          "actual_incoming_native_normals_max_error": 0.0,
+          "projected_parent_tangent_max_error": 0.0,
+          "normal_tolerance": 3e-12,
+          "raw_delta_hash_exact": true,
+          "applied_delta_and_material_reflection_exact": true,
+          "actual_native_curve_provenance": {
+            "passed": true,
+            "incoming_generation": 5,
+            "triangle_sample_count": 122,
+            "xyz_max_error": 0.0,
+            "chart_uv_max_error": 2.220446049250313e-16,
+            "authored_uv_max_error": 0.0,
+            "actual_triangle_normal_max_error": 0.0,
+            "actual_curve_tangent_max_error": 0.0,
+            "tolerance": 3e-12,
+            "barycentric_containment_tolerance": 1e-09,
+            "scope": "Actual incoming native triangle/UV/XYZ/normal/tangent provenance before this active operation and before final G06 replacement/blend; authored curves are not detected final branches."
+          }
+        }
+      ],
+      "final_control_xyz_sha256": "af8edbf213f099a29fc87170f1ab5a353ccacba4d18896aa58a4ae1ad63689ef",
+      "native_xyz_sha256": "44d43f93723542240e22c89e901744acebe65128d2b33bf1f592f30911ca3679",
+      "native_faces_sha256": "8dfd793b85fe7bc2164df39c18866ef3add8523193425c293a304fc58d576095",
+      "saved_native_rebuild_exact": true,
+      "actual_delta_exact": true,
+      "maximum_actual_total_shift": 0.30000000000000004,
+      "minimum_actual_native_triangle_area": 3.3867746712003926e-08,
+      "actual_native_coordinate_symmetry": {
+        "X": {
+          "material_pair_max_error": 9.019494489765868e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 4.242156220644677e-15,
+          "passed": true
+        },
+        "Y": {
+          "material_pair_max_error": 7.364386412590295e-16,
+          "pair_involution": true,
+          "actual_native_xyz_pair_max_error": 4.003350924564673e-15,
+          "passed": true
+        }
+      },
+      "oriented_symmetry_scope": "Generation X/Y oriented native reflection PASS linked to exactly replayed native XYZ/faces; independently recalculated actual coordinate reflections.",
+      "actual_native_baseline_guards_exact": {
+        "outside": 3248822,
+        "ends": 760834,
+        "cores": 30512
+      },
+      "topology_scope": "Same actual native faces as the main verification one-closed-oriented-component BASELINE; no appended connectivity.",
+      "final_G06_postprocessing": "Inactive refine → cap accumulated active displacement → measured patch replacement/blend with BASELINE → total .45 cap/material reflection → exact weight-zero BASELINE restore.",
+      "curve_scope": "G04/G05 curve/frame evidence belongs to actual incoming native states before active displacement and before final G06 blend; it is not final-G06 detected branch evidence.",
+      "generation_json_sha256": "478c7fbfcc11f711b3725011fc9d2ec773277f2c907c9e2ee545e140a0a7a1ac"
+    }
+  },
+  "recipe": {
+    "parent_index": 1,
+    "output_generation": 6,
+    "active_generations": [
+      4,
+      5
+    ],
+    "maximum_total_shift": 0.45,
+    "end_limits": [
+      0.1,
+      0.9
+    ],
+    "core_arc_halfwidth": 0.25,
+    "core_transverse_fade": 0.1,
+    "core_axial_extension": 0.2,
+    "trunk_base": 0.54,
+    "trunk_linear": 0.035,
+    "trunk_quadratic": -0.02,
+    "branch_starts": [
+      -0.35,
+      0.1
+    ],
+    "branch_durations": [
+      1.1,
+      0.8
+    ],
+    "branch_offsets": [
+      0.22,
+      -0.18
+    ],
+    "branch_gate_span": 0.22,
+    "primary_halfwidth_arc": 0.15,
+    "primary_height_width_ratio": 1.25,
+    "primary_height_cap": 0.24,
+    "primary_branch_ratio": 0.85,
+    "side_groove_ratio": 0.52,
+    "side_groove_offset_in_halfwidths": 1.35,
+    "side_groove_halfwidth_ratio": 0.65,
+    "secondary_offset_arc": 0.085,
+    "secondary_halfwidth_arc": 0.065,
+    "secondary_height_width_ratio": 0.38,
+    "secondary_height_cap": 0.075,
+    "secondary_start_delay": 0.14,
+    "curve_sample_count": 61,
+    "scope": "One measured parent shoulder per material quadrant, same recipe on SPAN/COUNTER",
+    "amplitude_scope": "The .45 total bound is an explicit first comparison condition, not a user-mandated design limit",
+    "inspiration": "Earlier ROLE_ABSOLUTE middle-scale walls/lips are a composition clue; this is a new continuous signed-band operator, not that algorithm",
+    "reference_evidence": "docs/fold_band_growth_20261011/technical/role_ablation_review.md:7"
+  },
+  "parent_verification_sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8",
+  "verifier_module_sha256": "eebdf3f5e2093f6f72b466f801df95bb6e5f0dcd474dca24f7c21ee7ec7cf669",
+  "scope": "Actual incoming-native normals, signed displacement/reflection and triangle/barycentric curve provenance at ordered G04/G05; exact G06 patch blend/cap/restore and saved native reconstruction.",
+  "excluded": [
+    "Aesthetic/reference fidelity certification",
+    "Automatic branch discovery",
+    "Self-intersections",
+    "Fabrication",
+    "Structural performance"
+  ]
+}

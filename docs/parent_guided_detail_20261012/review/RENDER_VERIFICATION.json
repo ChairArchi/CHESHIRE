@@ -1,0 +1,299 @@
+{
+  "passed": true,
+  "resolution": 900,
+  "samples": 24,
+  "crop": false,
+  "material": "Existing uniform mineral; flat geometric normals",
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "BASELINE",
+      "render_receipt_sha256": "be3703444ec0d9efb4d49d5a8ddf473ed0ae6607b445bca5f6b15188f56d3793",
+      "geometry_file_sha256": "d07998559b68e1cb13dae78b1e82f3db5e5868bdd3233f53b36754313f65b6b1",
+      "generation_sha256": "1841cbf1331faf6a48f12caeaf1904fb9ba65f824195702813516a2b563f23a0",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\views\\front_micro.png",
+          "sha256": "6d245b63d5bca1bede2ebdc1433f5f351497454e1fa858cffea316d2616c8b8b"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\views\\oblique_micro.png",
+          "sha256": "a27ec287891f3cd25d29d21ee7e88436ac5cc91e952495a3f711ce6acdcdc759"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\views\\side_micro.png",
+          "sha256": "cb2ab9f7b0f2d0789b39fadbb6b1b0608da7187e0df42cd4ff7c82b4cc477b99"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\views\\front.png",
+          "sha256": "9d906ba5dc700c641d3db5cc266215ad50bbae5bcf07212df415ba5f953df7da"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "VALLEY_PRIORITY",
+      "render_receipt_sha256": "e2f5717da6013b4f049bf6c83e5b9a7cc802069becccaca3d69a9db8980cb0dd",
+      "geometry_file_sha256": "9683bcf8cd4b15a1990aa9b4a50d98b8aca27bdad04eb8e159fe47a086cb496c",
+      "generation_sha256": "dffd456094372db46fcad2bbc1e4ed3fb75c78e2de7c4c9e461022d3a3c0f58a",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\SPAN\\G06\\views\\front_micro.png",
+          "sha256": "919faec769081d72a272b9a0851aec574a9d42b74b71ae40c046eeb5e2e4db10"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\SPAN\\G06\\views\\oblique_micro.png",
+          "sha256": "66e183ffd3b7fd028c5744bd72d0a40579a15a15d9b9508157b2a72b977d7913"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\SPAN\\G06\\views\\side_micro.png",
+          "sha256": "0f5ca6c9848dc15cb233bf81670c173cd0d6fe22a5013ae94a760775b5032907"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\SPAN\\G06\\views\\front.png",
+          "sha256": "aa7c260d15d70a48c955073c1717dc3b2fa1f0f2bc655dd84ca9151ded3dc48c"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "FLOW_CHAIN",
+      "render_receipt_sha256": "5a6d98141e3bba72d418943581f01d34c724871fdceff5565d34bc12abc0d5a2",
+      "geometry_file_sha256": "d7cd8327e6e28ef54a77e4a7f1f3bdbda9faec2a5da50d49c82c28136b794b9b",
+      "generation_sha256": "89d00be8293cdd1d929d60eb47e804dbf6bce9a67f566a44009cc721c2615639",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\SPAN\\G06\\views\\front_micro.png",
+          "sha256": "02d754cc52351c26c072bd2ac12c0c65b37b40c64a43e3d1c7b0d3325cc4e726"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\SPAN\\G06\\views\\oblique_micro.png",
+          "sha256": "65dea2deb4f3e2c9ca4b78856f59c9ec5d5cfaee54bb37f73dca06114f1b43f9"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\SPAN\\G06\\views\\side_micro.png",
+          "sha256": "ec82df3a4dcb65265a0dcc2f0e01fbae87e44ea741737ac0b41c19b0013f5c99"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\SPAN\\G06\\views\\front.png",
+          "sha256": "597f689197135fa7b1ac1fa905c19a8a68917bb2b0e88b2c17cb056136761c6b"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "MESO_ONLY_PATCH",
+      "render_receipt_sha256": "aebaea9459b22d991a07d6af35d0acb4f11dc18efbbca0660da83103bb9024e6",
+      "geometry_file_sha256": "5ba795eb2b14f42af6cf79e2a969b68d473a6d6115bc503f11a22d298bd4c835",
+      "generation_sha256": "30aa6723f0424bdd2ebf272940214a93a895cfaabd326e6e3920d8fa55d78804",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\SPAN\\G06\\views\\front_micro.png",
+          "sha256": "245f8f5cb2354f6d7a646d1b0ea8432b5cd91e66b354bfb8a4c35d994417d88f"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\SPAN\\G06\\views\\oblique_micro.png",
+          "sha256": "e7b781c89b56af7ac132cb751092f7badcdbc5c389765255154c17758a3efb2d"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\SPAN\\G06\\views\\side_micro.png",
+          "sha256": "21c1ceb3d0e013ffd4662ba8ec6b546197f9fe958ba675fbe8b2d513d44d5784"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\SPAN\\G06\\views\\front.png",
+          "sha256": "5bf53771884a39955e25c7e6c13498fc7105926f91883519131771b4835a25c1"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "ACTIVE_FOLDS",
+      "render_receipt_sha256": "9d0565c3c1d53da8843d9124499a6448a0db8b3592535c215a814fb97a721008",
+      "geometry_file_sha256": "53f211ef5fbb57909d5dd8c0529ca9e54574ce2090a412735fa8b3e473733698",
+      "generation_sha256": "576a8eac0c9690ef286f9f0c40154f34795ef6c6d0de9044fb37472cb54028a7",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\SPAN\\G06\\views\\front_micro.png",
+          "sha256": "825541864f5cebd0d1da481aaed27da3b1dea7859ae633fe4bd9139f12612b7f"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\SPAN\\G06\\views\\oblique_micro.png",
+          "sha256": "2b93e36d4738b12008dd551beb3055291d4c41f9b71a21a83ea09935db9c6f6e"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\SPAN\\G06\\views\\side_micro.png",
+          "sha256": "d55f611984eb7734eaf07b9c34a9dd3d64ef8077da7c14bdcfcda398a326197c"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\SPAN\\G06\\views\\front.png",
+          "sha256": "5cee16f785b7cf8b06fbb918e72786817c01082a0a374ffd79c83f8e714b3eab"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BASELINE",
+      "render_receipt_sha256": "44c63288141cf6322c2fdaf892bdb2957235689c7ddcd5025f30a91db7b84ee6",
+      "geometry_file_sha256": "7402db9dba8a77a836e7a5180fb764cbe5ae70f00af8113f7b9184b68bfd417a",
+      "generation_sha256": "431fdcd54eb2a1d44f94dd7ab03a4a60c0f4675e098cd198d39593f4541ffc34",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\views\\front_micro.png",
+          "sha256": "a79b49530ca0ed09767b94397133e3419753da5644c0480943c6fb87720656c7"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\views\\oblique_micro.png",
+          "sha256": "293a48d9712f0d1649e243c20f02064c47611f29a26c3bc13bb868e466152d13"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\views\\side_micro.png",
+          "sha256": "735b6343a380448178ea6a9eefe67cdf12ebd47883264f71e69d19b4e2121b88"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\views\\front.png",
+          "sha256": "0a056fa4b60257f21dab3e73c81bddb3bb8d092e54f1e2855d14818a15c39273"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "VALLEY_PRIORITY",
+      "render_receipt_sha256": "62986c00e5a073e78aa641d1bb8281402406da7193e99b8d0a232b627e06010b",
+      "geometry_file_sha256": "1696573f6eecc7e4bb97027b38c29b21ffd2f1e200dc6ced6874ed950ad49f37",
+      "generation_sha256": "c431302499fefd519940b7505d805e2b8298b635f68e1952f013716ecb680fc6",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\COUNTER\\G06\\views\\front_micro.png",
+          "sha256": "92373d410e6fda28d97d7964185c21ddf62a78ed395821fe8d97dd262e5235de"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\COUNTER\\G06\\views\\oblique_micro.png",
+          "sha256": "1d10f9cb39d92e4a5e173ea0261bc97ca3d7ce489f9e2b034202c09c113b427f"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\COUNTER\\G06\\views\\side_micro.png",
+          "sha256": "f00e7c83c6376fbdf80941e6e552788f72cd86a908d3372766db1cdeb92b198b"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\COUNTER\\G06\\views\\front.png",
+          "sha256": "2c0f5d12d88b23e2823591a9d8ae56f9d579e043edef621f751e50b664a7539e"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "FLOW_CHAIN",
+      "render_receipt_sha256": "4335ec283fa17f80ff65b02b1591121e8d430031268520cc7071231c6f855faf",
+      "geometry_file_sha256": "d4d0d24877ae8780380db720ddf4c2a2639144cfc472954e740fd067984d294a",
+      "generation_sha256": "55134e5e19b5cc61a291a50e7323f23d3de7103edcb27b862594976cf13ca39e",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\COUNTER\\G06\\views\\front_micro.png",
+          "sha256": "ddc38b21c0134b2870d316dcfac192cfd1a040eb1beb1ca5a70eda78875a0728"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\COUNTER\\G06\\views\\oblique_micro.png",
+          "sha256": "400fa14f1520d7ff2dbf4500432097a5fd45c1bba8dd1c6b50f0223339a493c3"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\COUNTER\\G06\\views\\side_micro.png",
+          "sha256": "25d43fbf6b2ed3c1e857abcc16d6c2a88c8ccc1da13d7aa7756dae7d5fd1ea49"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\COUNTER\\G06\\views\\front.png",
+          "sha256": "8aba203a3c6d30cd6a69c78a75456e8a26eda7f90266b59a76c740a98b7d37b6"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "MESO_ONLY_PATCH",
+      "render_receipt_sha256": "16515da304229d9c5038ed9c7864df4497734c0e6d079f6dadf8e7e6a07c16f4",
+      "geometry_file_sha256": "7cb29fdc46ce3bb029fb722dbc982e1dea7212344275a322c68e8debd87c492d",
+      "generation_sha256": "a3cfbd7d1bbb847c9f8ec03e64c7b6a0fae2362995c1995db6816101b63b32e2",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\COUNTER\\G06\\views\\front_micro.png",
+          "sha256": "a6d16ca1cbb04cdb911735ca4b6b39ecc18875fc5f4b55f244c83a663d872cea"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\COUNTER\\G06\\views\\oblique_micro.png",
+          "sha256": "ba69a59e36082e5624f9cf230d6e16e8e079d176a2100faabdda5cb07e41c627"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\COUNTER\\G06\\views\\side_micro.png",
+          "sha256": "e45eb3491324a9d9a86515597cc598b81a554692bdb24dc14219f88589084dc7"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\COUNTER\\G06\\views\\front.png",
+          "sha256": "c1017a0962ec3e36ebd0be60c1fea3383f65eee4499ea3b66f7d61a2ea929773"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "ACTIVE_FOLDS",
+      "render_receipt_sha256": "8fbba856d3492ff9d336f395bb363b55298bcdbf6693f0d0ff72c83089b3ea69",
+      "geometry_file_sha256": "bb6121821bdccebf6c615f3fd7ae944a32f5a07c22a8c039ceda78a93b2c8dcb",
+      "generation_sha256": "478c7fbfcc11f711b3725011fc9d2ec773277f2c907c9e2ee545e140a0a7a1ac",
+      "images": [
+        {
+          "view": "front_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\COUNTER\\G06\\views\\front_micro.png",
+          "sha256": "2e81f489f4ed69e9666a0e6f382a8cd12974fd404b2cfcdc22a44d8be2746bb5"
+        },
+        {
+          "view": "oblique_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\COUNTER\\G06\\views\\oblique_micro.png",
+          "sha256": "ee1a022f56d97fe1efaf63278c73f8103eb5a54cd32f372f0538913789d9f775"
+        },
+        {
+          "view": "side_micro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\COUNTER\\G06\\views\\side_micro.png",
+          "sha256": "970c897a630766944cfc5a6007af8fcae0c6f5b255261265f86e7ccf1464c40d"
+        },
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\COUNTER\\G06\\views\\front.png",
+          "sha256": "559946db09eb15e61470b9972040d7dd9f5433a6fe748c83ec9b3c2518ef598b"
+        }
+      ]
+    }
+  ]
+}

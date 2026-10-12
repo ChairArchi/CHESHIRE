@@ -1,0 +1,49 @@
+{
+  "parent_index": 1,
+  "output_generation": 6,
+  "active_generations": [
+    4,
+    5
+  ],
+  "maximum_total_shift": 0.45,
+  "end_limits": [
+    0.1,
+    0.9
+  ],
+  "core_arc_halfwidth": 0.25,
+  "core_transverse_fade": 0.1,
+  "core_axial_extension": 0.2,
+  "trunk_base": 0.54,
+  "trunk_linear": 0.035,
+  "trunk_quadratic": -0.02,
+  "branch_starts": [
+    -0.35,
+    0.1
+  ],
+  "branch_durations": [
+    1.1,
+    0.8
+  ],
+  "branch_offsets": [
+    0.22,
+    -0.18
+  ],
+  "branch_gate_span": 0.22,
+  "primary_halfwidth_arc": 0.15,
+  "primary_height_width_ratio": 1.25,
+  "primary_height_cap": 0.24,
+  "primary_branch_ratio": 0.85,
+  "side_groove_ratio": 0.52,
+  "side_groove_offset_in_halfwidths": 1.35,
+  "side_groove_halfwidth_ratio": 0.65,
+  "secondary_offset_arc": 0.085,
+  "secondary_halfwidth_arc": 0.065,
+  "secondary_height_width_ratio": 0.38,
+  "secondary_height_cap": 0.075,
+  "secondary_start_delay": 0.14,
+  "curve_sample_count": 61,
+  "scope": "One measured parent shoulder per material quadrant, same recipe on SPAN/COUNTER",
+  "amplitude_scope": "The .45 total bound is an explicit first comparison condition, not a user-mandated design limit",
+  "inspiration": "Earlier ROLE_ABSOLUTE middle-scale walls/lips are a composition clue; this is a new continuous signed-band operator, not that algorithm",
+  "reference_evidence": "docs/fold_band_growth_20261011/technical/role_ablation_review.md:7"
+}

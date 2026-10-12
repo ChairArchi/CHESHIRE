@@ -1,0 +1,118 @@
+CHESHIRE — 부모 골과 중간 접힘의 국소 비교
+2026-10-12
+
+현재 판단
+
+기존 RELAXED_G06 선택안을 유지한다. 이번 새 후보는 채택하지 않는다.
+Mandelbulb 유지 자체는 조건이 아니다. 사용자 목표는 IAAC·Digital Grotesque에
+가까운 근접 디테일이며, 이전 단계로 돌아가는 기술 선택도 위임받았다.
+
+이번에는 실제 부모 골의 방향·어깨 폭을 읽는 기능을 구현하고 같은 규칙을
+SPAN/COUNTER에 적용했다. 그러나 시각적인 개선은 국소적이며 두 입력에서
+원하는 중간 접힘 관계가 함께 나타나지 않았다. 기술 검증 통과와 조형 채택을
+구분한다. 새 후보를 전체 게이트로 확장하지 않는다.
+
+비교 결과
+
+BASELINE: 직전 RELAXED_G06를 정확히 재현한 기준안.
+VALLEY_PRIORITY: 같은 atlas·colony·크기에서 부모 골 주변의 양의 성장을 줄였다.
+  골 주변 여백 정리는 PARTIAL, 새 중간 접힘 형성은 FAIL.
+FLOW_CHAIN: G3 어깨의 음의 접힘과 저진폭 어깨, 부모 방향의 colony 재배치를 결합했다.
+  단순 밀도 감소 이상의 V형 연결 면·홈이 나타났으나 적층 판의 인상이 강하다.
+  중간 접힘 관계는 PARTIAL. 위치·방향만 바꾼 단일 변수 비교가 아니다.
+MESO_ONLY_PATCH: 같은 FLOW 접힘에서 새 guided bulb만 국소적으로 제외했다.
+  기존 줄기·컵과 홈을 드러내는 정리는 PARTIAL, 새 중간 구조는 FAIL.
+  패치 밖과 전이부의 기존 bulb는 남아 있다. 전체 Mandelbulb 제거안이 아니다.
+ACTIVE_FOLDS: G4/G5 실제 입력 표면 법선으로 긴 능선·옆홈과 두 분기를 변형했다.
+  SPAN의 능선·옆홈 분리는 PARTIAL. COUNTER에서는 삼각 판과 벌어진 층이 강해져
+  원하는 관계의 전이는 FAIL. 현 선택안으로 채택하지 않는다.
+
+독립 시각 검토는 두 입력의 대안 16장과 BASELINE/FLOW 비교 8장을 실제로 읽었다.
+전체 정면에서 차이는 작고, side_micro에서 대상 변화는 거의 읽히지 않는다.
+넓은 상부 어깨의 다각형 면과 밀도 조직은 이번 국소 시험에서 거의 변하지 않았다.
+
+다음 방향
+
+좁은 골 띠의 디테일 재배치 확대를 중단한다. 실제로 중간 크기를 가진 넓은 부모
+어깨를 다시 선정하고, 그 면의 곡률을 따라 능선 하나와 양옆 홈이 이어지는지를
+먼저 비교한다. 이번 측정에서 SPAN 선택 어깨의 물리 폭 중앙값은 약 0.119이며,
+ACTIVE의 실제 native 정점 3,276,802개 중 3,249,650개는 패치 밖에서 BASELINE과
+정확히 같다. 이 정점 수는 효과 범위의 상한을 설명하며 표면적이나 조형 성과의
+수치가 아니다. 넓은 어깨의 결과가 없으므로 방법 전체의 가능성까지 부정하지 않는다.
+
+ROLE_ABSOLUTE G2의 골을 가로지르는 두 번째 규모의 wall/lip은 재사용할 단서다.
+세대별 활성 변형과 실제 입력 표면을 읽는 기능은 유지할 수 있다. 중간 크기의
+연결 구조를 먼저 확보한다. Mandelbulb·TISSUE·새로운
+표면/위상 방식은 모두 후보이며 특정 기법, 0.30/0.45 변위 상한, 고정 topology는
+사용자의 조형 필수 조건이 아니다. 이번 실험의 대조 조건이다.
+
+이번에 확보한 기술과 검증 범위
+
+- 실제 G3 native 표면의 골·양 어깨·법선·진행 방향·물리 폭 측정 및 triangle/bary 증거.
+- 서로 만나는 부모 영역의 성장 우선순위와 물리 어깨 좌표를 이용한 국소 변형.
+- G6 실제 meso carrier에 재부착한 colony 위치. 방향 프레임 출처는 G3으로 별도 보존.
+- G4/G5 실제 incoming native 법선, authored 곡선의 UV/triangle/bary 및 변위 이력.
+- 두 입력의 원래 BASELINE 정확 일치, 최종 control/native 정확 재생, X/Y 실제 대칭.
+- 동일 native 면 연결성과 한 개의 닫힌 방향 일관 연결 성분. 최소 면적 양수.
+- ACTIVE의 패치 밖·끝단·부모 core 실제 native XYZ가 BASELINE과 정확히 같다.
+  이는 원래 BASELINE이 원본 부모 골을 고정했다는 주장과 구별한다.
+- 저장된 같은 UV의 양측 chord 진단. 깊이 증가나 minima 수를 시각 성공으로 쓰지 않는다.
+
+G 번호는 실제 refinement 횟수다. 모든 최종 비교는 실제 G6이며 변형안 간의
+연속 세대가 아니다. FLOW는 G3 접힘 후 세 번 inactive refinement한다.
+ACTIVE는 G3→G4 활성 변형→G5 활성 변형→G6 inactive refinement한 다음,
+G6 패치 교체·blend·cap·정확 복원을 수행한다. G6 전체가 비활성인 것은 아니다.
+저장 G4/G5 곡선은 활성 변형 전 incoming 증거이며 최종 검출된 분기의 증거가 아니다.
+기존 유한 Mandelbulb atlas의 내부 iteration 10과 G6를 혼동하지 않는다.
+ACTIVE는 새 atlas를 사용하지 않으며 패치 밖의 기존 디테일을 유지한다.
+
+검증 기록: review/VERIFICATION.json, ABLATION_VERIFICATION.json,
+ACTIVE_VERIFICATION.json, RENDER_VERIFICATION.json, parent_metrics.json.
+기존 관련 53개와 초기 신규 13개를 함께 실행한 66개 테스트가 통과했다.
+최종 신규 29개도 함께 통과했다(앞의 신규 13개와 중복). 전체 저장소 suite는 아니다.
+교차·제작·구조 성능은 이번 검증에 포함하지 않았다.
+
+자료와 저장 위치
+
+큰 실제 메시·단계 배열·렌더·로그의 기본 저장 위치:
+E:\CHESHIRE_DATA\experiments\parent_guided_detail_20261012
+  trial02                  BASELINE / VALLEY_PRIORITY / FLOW_CHAIN
+  meso_only_trial01        MESO_ONLY_PATCH
+  active_folds_trial01     ACTIVE_FOLDS
+  trial02\images           같은 크기·카메라의 원본 렌더 비교
+
+가벼운 재현 증거와 비교 이미지는 이 폴더의 review/에 보존한다.
+상세 파일 출처는 review/SOURCE_LIST.json과 images/*SOURCE_LIST.json을 따른다.
+실행 명령과 조작 순서는 TECHNICAL_NOTES.txt를 따른다.
+
+C 저장 공간 정리
+
+12개 폴더, 13,042개 파일, 21,324,373,700 bytes를 E에 복사했다.
+전체 SHA256·크기·개수 일치와 원본 미변경을 확인한 뒤 C 사본을 정리했다.
+기존 C 경로는 E의 새 위치로 연결했다. 이동 직후 C 여유 공간은 약 21.78GB다.
+원본 코드 저장소와 Git 이력은 유지했다. 권한이 다른 임시 cache를 포함한
+Task20/21 전체 폴더는 이 이동에 포함하지 않았다.
+목록과 파일별 해시는 E:\CHESHIRE_DATA\storage_migration_20261012_parent_guided에 있다.
+
+보존 기준
+
+새 로컬 브랜치: experiment/parent-guided-detail-20261012
+기준 커밋: 7b8e56ab28d7f9476066597fa740f8f97abc7d5b
+기존 root HEAD d0e04f2 및 fold-visible-gate HEAD 7b8e56a의 추적 파일은 수정하지 않았다.
+원격 push와 발표자료 수정은 하지 않았다. 게이트 선택안은 기존 JOINED 그대로이며,
+이번 국소 후보가 게이트에 적용된 결과는 없다.
+
+레퍼런스 해석
+
+Hansmeyer의 여러 규모의 연속적인 articulation과 Digital Grotesque의 성장·접힘은
+조형 판정의 기준이다. 공개 알고리즘을 그대로 복원했거나 동등한 수준을 달성했다는
+주장은 하지 않는다. 이번 signed-band는 CHESHIRE의 새 실험이며 ROLE의 원본 구현도 아니다.
+https://www.michael-hansmeyer.com/subdivided-columns
+https://michael-hansmeyer.com/digital-grotesque-II.html
+https://www.iaacblog.com/programs/mesh-subdivision/
+
+실패 기록
+
+trial01은 진단 배열 broadcasting 오류로 첫 state 저장 전에 중단됐다. 오류를 고치고
+trial02에 새로 생성했다. 첫 pytest 임시 폴더 권한 오류는 별도 basetemp로 해결했다.
+모든 실패 로그와 보존 출력은 덮어쓰지 않았다. 이번 조형적 실패 후보도 삭제하지 않는다.

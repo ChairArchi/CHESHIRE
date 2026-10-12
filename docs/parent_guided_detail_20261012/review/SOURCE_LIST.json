@@ -1,0 +1,329 @@
+{
+  "large_outputs": {
+    "main": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02",
+    "meso_only": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01",
+    "active_folds": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01"
+  },
+  "source_hashes": {
+    "experiments\\parent_guided_detail_20261012\\ablation.py": "4d605d74423ff1fb3bbbd31a88d48375d5ddabd0b19ff9fd0aa9ea88d01989ba",
+    "experiments\\parent_guided_detail_20261012\\active_folds.py": "1fc3f5be869bba31b7fffc105cf7994b9dde7c1628fd95dbe13c5f7c298a105c",
+    "experiments\\parent_guided_detail_20261012\\archive.py": "ba32283b038698a41a6079236226a728bee7471b55df067daa0ef33c8ee6dd99",
+    "experiments\\parent_guided_detail_20261012\\boards.py": "7f2892b039e4c8dcec02507f5625e4e5a1e1d28d151f0d153ab5242c72cdc715",
+    "experiments\\parent_guided_detail_20261012\\guidance.py": "fab0bff777b527f9c7de1be8d265bdc1865a33000fd2a815ae7a92179be91914",
+    "experiments\\parent_guided_detail_20261012\\metrics.py": "fef6037476dfe03394f73647d16eda2b605cec598d87997ee2a34c931f4b1b56",
+    "experiments\\parent_guided_detail_20261012\\render_receipts.py": "9b41e6f2527112560c7bd898bc0a4d238be1417db9e14a768247f6a5041f1754",
+    "experiments\\parent_guided_detail_20261012\\storage_relocate.ps1": "9ceb81a5fac142ab959912dfd8f7207dd353a804d609bec61993427fa58e8679",
+    "experiments\\parent_guided_detail_20261012\\study.py": "872be291a387a336cdd2385ce3bb01063680e401694fffa5c21a8b53151e8078",
+    "experiments\\parent_guided_detail_20261012\\verify.py": "f5341542eec77604290deeecf3df8a5d905850f9559b220ffdab0bfe995fe53c",
+    "experiments\\parent_guided_detail_20261012\\verify_active.py": "eebdf3f5e2093f6f72b466f801df95bb6e5f0dcd474dca24f7c21ee7ec7cf669",
+    "tests\\test_parent_guided_ablation.py": "26b5d97424ce5cc9ee34523e415af491659d6565847a22b38400cc5752737b3b",
+    "tests\\test_parent_guided_active_folds.py": "4ea79dd757f8dd4986ffc055123a7a8a79a2d48c36ee5b6b06619d13f0aa357e",
+    "tests\\test_parent_guided_detail.py": "4de764e14f4ac0e80f5a5b9c62d22510c7bc9cf3519c58cab3fff9fd1ea331aa",
+    "tests\\test_parent_guided_metrics.py": "ebb3c4ae4b5df24c9bd7da0def822d63236c53ba9ad4e7b8af3c2a26c9a492ba",
+    "tests\\test_parent_guided_verify.py": "98879a2001ba975bd77aef7393b4a536b45c2bf5e234a50fae882a7b8944a74e",
+    "tests/test_guidance_parent.py": "5843cc0d061fcb5a9fad10b849964e64430b065340c166fc0cbf358c6d926d75"
+  },
+  "copied_evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\RECIPE.json",
+      "archive": "parent_recipe.json",
+      "bytes": 508,
+      "sha256": "47351a9da410adb4b2cfe93fe027f5dbf055f91573abdf38f1557b8bb18b4f6c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VERIFICATION.json",
+      "archive": "VERIFICATION.json",
+      "bytes": 17448,
+      "sha256": "ea6c543f6a99be1e5e537ffedf5f59ca5eda920bda64c754876a627f569622e8"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\RENDER_VERIFICATION.json",
+      "archive": "RENDER_VERIFICATION.json",
+      "bytes": 15826,
+      "sha256": "3d4df7493df0337f7da2f453caeb05949426553b6766a6c2afd24a6ad236e908"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\metrics\\summary.json",
+      "archive": "parent_metrics.json",
+      "bytes": 279244,
+      "sha256": "ff0db58f2b8b5ab112879d6498d19d2281da71a90066a8b5ab6895daffd2eaa9"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\ABLATION_RECIPE.json",
+      "archive": "meso_recipe.json",
+      "bytes": 976,
+      "sha256": "f9779fed99a42b18a4731b137e433701f578d01f6e4e3aeda323c4086d7d4ae9"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\ABLATION_VERIFICATION.json",
+      "archive": "ABLATION_VERIFICATION.json",
+      "bytes": 11839,
+      "sha256": "3a3c3c79911152ce86b65d33d003f99e7b8c5f9dbd6858f7a761570f54136be7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\RECIPE.json",
+      "archive": "active_recipe.json",
+      "bytes": 1457,
+      "sha256": "530c3df50d0f1fbbe26683d9339381bbe9f2fac5a44d7efae5671464b2edc734"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\SUMMARY.json",
+      "archive": "ACTIVE_FOLDS_SUMMARY.json",
+      "bytes": 15120,
+      "sha256": "e6358081f85c1a6c901d34a46a467993bba1fbadcc6e46e665098dc203e534d5"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_VERIFICATION.json",
+      "archive": "ACTIVE_VERIFICATION.json",
+      "bytes": 12315,
+      "sha256": "3960bd566672d65ed8e0c08e92682e2dbc30532fcd7f34b88f66dd6a238b6ccc"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\tests_new_20261012.txt",
+      "archive": "tests_new_20261012.txt",
+      "bytes": 204,
+      "sha256": "1eff0c9b3443e77bfc5650a88762d2d79f6d54c30cd346b8f2e8b16471c4181e"
+    },
+    {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\parent-guided-detail-20261012\\output\\parent_guided_detail_20261012_tests.txt",
+      "archive": "tests_initial_66.txt",
+      "bytes": 204,
+      "sha256": "e8a12444001463fb233017c61532c1e06b5af5568afaba0265eaf42e33d4ea4c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\storage_migration_20261012_parent_guided\\SUMMARY.json",
+      "archive": "STORAGE_MIGRATION.json",
+      "bytes": 3945,
+      "sha256": "28339ea67bc5c55cd8d9c843e46c46d5485829f351e35aee703c54b6da0d5720"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SOURCE_LIST.json",
+      "archive": "images/SOURCE_LIST.json",
+      "bytes": 4675,
+      "sha256": "2aea72d32890d9893798917e2913c5bfe4eeda90ce60cbb52f0eda7bb4aac42c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\ALTERNATIVES_SOURCE_LIST.json",
+      "archive": "images/ALTERNATIVES_SOURCE_LIST.json",
+      "bytes": 24187,
+      "sha256": "5b0032e75e098a3ff8dacf6967b4f9ccbf6766058ad8e8551aba261a3448258d"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\SPAN\\actual_parent_0.npz",
+      "archive": "SPAN/actual_parent_0.npz",
+      "bytes": 1127575,
+      "sha256": "6c6fc4f7e87d114487ada4b262e2e565ea6cb2aafef48e08e5f9f235846e6509"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\SPAN\\actual_parent_1.npz",
+      "archive": "SPAN/actual_parent_1.npz",
+      "bytes": 1123455,
+      "sha256": "0b4dac52869bfe774308f0e2552b4ea167f70ccbc7cbd2222c4c4f864b0882fe"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\SPAN\\guided_colonies.npz",
+      "archive": "SPAN/guided_colonies.npz",
+      "bytes": 10705,
+      "sha256": "91bce063fa6dbb5d898342d984afd8646a5150b1d603f1f7ef9bbf0e0889bd98"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\SPAN\\G04_incoming_curves.npz",
+      "archive": "SPAN/G04_incoming_curves.npz",
+      "bytes": 16699,
+      "sha256": "04296515f45a2def2af2d8502a092e6d438926842bd39dcbb386cd196cdf39c7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\SPAN\\G05_incoming_curves.npz",
+      "archive": "SPAN/G05_incoming_curves.npz",
+      "bytes": 16952,
+      "sha256": "284d93a499c5a8206e1fcfb2d6fa036b1730d0fcc5c365593769b2d813a4fd8c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/BASELINE.json",
+      "bytes": 3954,
+      "sha256": "1841cbf1331faf6a48f12caeaf1904fb9ba65f824195702813516a2b563f23a0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/VALLEY_PRIORITY.json",
+      "bytes": 3961,
+      "sha256": "dffd456094372db46fcad2bbc1e4ed3fb75c78e2de7c4c9e461022d3a3c0f58a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/FLOW_CHAIN.json",
+      "bytes": 3955,
+      "sha256": "89d00be8293cdd1d929d60eb47e804dbf6bce9a67f566a44009cc721c2615639"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/MESO_ONLY_PATCH.json",
+      "bytes": 6477,
+      "sha256": "30aa6723f0424bdd2ebf272940214a93a895cfaabd326e6e3920d8fa55d78804"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\SPAN\\G06\\generation.json",
+      "archive": "SPAN/ACTIVE_FOLDS.json",
+      "bytes": 6796,
+      "sha256": "576a8eac0c9690ef286f9f0c40154f34795ef6c6d0de9044fb37472cb54028a7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_front_micro.png",
+      "archive": "images/SPAN_front_micro.png",
+      "bytes": 1660157,
+      "sha256": "0f6227d97f0d7dc23b0444ba3c3bf98e40d9e36e0beb481a701fcc263b56952e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_front_micro_alternatives.png",
+      "archive": "images/SPAN_front_micro_alternatives.png",
+      "bytes": 2803546,
+      "sha256": "c407cf36a2a1e40f93815cdfdb32ed957fb4841aab75173245df45ee547490de"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_oblique_micro.png",
+      "archive": "images/SPAN_oblique_micro.png",
+      "bytes": 1529586,
+      "sha256": "04d639c1332a5e69a9efc5a9cd327f49dcce70323ad00ce1dcc4fe12905fdfb9"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_oblique_micro_alternatives.png",
+      "archive": "images/SPAN_oblique_micro_alternatives.png",
+      "bytes": 2660137,
+      "sha256": "2e2b18a3493a65a13738e5b3d542bf49ac0725d667933faedf37c2ef058bc7f5"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_side_micro.png",
+      "archive": "images/SPAN_side_micro.png",
+      "bytes": 1489093,
+      "sha256": "7c546354389dd8d1d1dc108502e1f026b52075322e0ff582ca7890322f5eca41"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_side_micro_alternatives.png",
+      "archive": "images/SPAN_side_micro_alternatives.png",
+      "bytes": 2654086,
+      "sha256": "3b6f6f87d5c4228b4caeb006982476d6ac29cff1ae252607ab7e17656c3cbb28"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_front.png",
+      "archive": "images/SPAN_front.png",
+      "bytes": 836451,
+      "sha256": "570c9d8fb1bd1a9e11be3e45ac141390271785cac78a900c13d18f2034e27e61"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\SPAN_front_alternatives.png",
+      "archive": "images/SPAN_front_alternatives.png",
+      "bytes": 1535175,
+      "sha256": "3db776ca218a17565666f1cf814b378a6fee1d7727e4cc91ce6ab000193853bc"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\COUNTER\\actual_parent_0.npz",
+      "archive": "COUNTER/actual_parent_0.npz",
+      "bytes": 1134053,
+      "sha256": "67a7ad332dafdbf60b4444c0c7839f1f42165317329bdfaf88571a487cd009c6"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\COUNTER\\actual_parent_1.npz",
+      "archive": "COUNTER/actual_parent_1.npz",
+      "bytes": 1123882,
+      "sha256": "94c3c4a1474690d5c1af10af4066181d5a8d46720fef92216f10c643a256bf2a"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\COUNTER\\guided_colonies.npz",
+      "archive": "COUNTER/guided_colonies.npz",
+      "bytes": 10713,
+      "sha256": "211340e9e7c6785556b17909ee91ab7ccec8f9d2c106cfc6406daa0edeeba0f4"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\COUNTER\\G04_incoming_curves.npz",
+      "archive": "COUNTER/G04_incoming_curves.npz",
+      "bytes": 16682,
+      "sha256": "6959a1f7cafd636791c6530133fd7bd230ef0b1d8289d0058c16d58a120b8be1"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\COUNTER\\G05_incoming_curves.npz",
+      "archive": "COUNTER/G05_incoming_curves.npz",
+      "bytes": 16979,
+      "sha256": "e9a8bc196b3af4383ec04b1e8869b454f191cd4feee2ade8f5ad35319e521206"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\BASELINE\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/BASELINE.json",
+      "bytes": 3964,
+      "sha256": "431fdcd54eb2a1d44f94dd7ab03a4a60c0f4675e098cd198d39593f4541ffc34"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\VALLEY_PRIORITY\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/VALLEY_PRIORITY.json",
+      "bytes": 3971,
+      "sha256": "c431302499fefd519940b7505d805e2b8298b635f68e1952f013716ecb680fc6"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\FLOW_CHAIN\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/FLOW_CHAIN.json",
+      "bytes": 3964,
+      "sha256": "55134e5e19b5cc61a291a50e7323f23d3de7103edcb27b862594976cf13ca39e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\meso_only_trial01\\MESO_ONLY_PATCH\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/MESO_ONLY_PATCH.json",
+      "bytes": 6507,
+      "sha256": "a3cfbd7d1bbb847c9f8ec03e64c7b6a0fae2362995c1995db6816101b63b32e2"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\active_folds_trial01\\ACTIVE_FOLDS\\COUNTER\\G06\\generation.json",
+      "archive": "COUNTER/ACTIVE_FOLDS.json",
+      "bytes": 6816,
+      "sha256": "478c7fbfcc11f711b3725011fc9d2ec773277f2c907c9e2ee545e140a0a7a1ac"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_front_micro.png",
+      "archive": "images/COUNTER_front_micro.png",
+      "bytes": 1771181,
+      "sha256": "91b29c7a41ed46fbfe647607c6b9ac3cc971f23fb0053663bdece7f5ab7cf573"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_front_micro_alternatives.png",
+      "archive": "images/COUNTER_front_micro_alternatives.png",
+      "bytes": 3015556,
+      "sha256": "734a7d18572b44c4cb24d3ff0ecfd01c848ea87f5cf80e4604bd05bb8aac2aee"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_oblique_micro.png",
+      "archive": "images/COUNTER_oblique_micro.png",
+      "bytes": 1599457,
+      "sha256": "70bbd731899a1901f79a88ae438abee6f19c55e7563797ae52d19e97bc911db7"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_oblique_micro_alternatives.png",
+      "archive": "images/COUNTER_oblique_micro_alternatives.png",
+      "bytes": 2812652,
+      "sha256": "ea9d55fa3e482f61d76a6f09d433cd4179001662ba34b55596b8d1bbf8ee3f7f"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_side_micro.png",
+      "archive": "images/COUNTER_side_micro.png",
+      "bytes": 1373720,
+      "sha256": "8e64702c050193014ffdd593d8cf37269e00a0c356f963c3ce6a756b4bf3f5b9"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_side_micro_alternatives.png",
+      "archive": "images/COUNTER_side_micro_alternatives.png",
+      "bytes": 2481613,
+      "sha256": "f48a4c964569807e89eea7704d6376c392ae9755c236010031a84c6a2e141b90"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_front.png",
+      "archive": "images/COUNTER_front.png",
+      "bytes": 823361,
+      "sha256": "75a5fcb2229cf59f8ae685582403ed8f3b6a9c2d5dcc42c2411936aae423b9f2"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_guided_detail_20261012\\trial02\\images\\COUNTER_front_alternatives.png",
+      "archive": "images/COUNTER_front_alternatives.png",
+      "bytes": 1506639,
+      "sha256": "cf67b0155f65315387134f87ff804983218f65ec792bcba6ba97b7013c1c5554"
+    }
+  ],
+  "scientific_meshes": "Large control/native geometry remains on E; generation hashes and verified replay link it to this evidence."
+}
