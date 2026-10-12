@@ -1,0 +1,237 @@
+{
+  "status": "PASS",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "DEPTH_08",
+    "DEPTH_16"
+  ],
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "DEPTH_08",
+      "generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+      "proof": {
+        "status": "PASS",
+        "generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+        "quick_integrity": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 1.521348217137097e-09,
+          "control_xyz_sha256": "a7c0741c0942bb523a19866dee4365942685e66fa14b10309dae1b5ec353aa8b",
+          "control_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "chart_sha256": "6ffe706dee83fa430426d83f3d65932ce7091e275cdcfab92ed809d5f09d7258",
+          "native_xyz_sha256": "cdf4301c33a3acd9716b8b343896b867929e633055e9f964843882c984d1b8db",
+          "native_faces_sha256": "8871bad16264812a0817d65e4d77de36e926b6b3499ec8eb62e113099c852ea6",
+          "symmetry_scope": "Actual saved native XYZ, actual control XYZ and oriented control quads; explicit propagated IDs. Full independent replay/native oriented triangle sorting not performed this round.",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true
+        },
+        "quick_symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 6.469847894911436e-14,
+              "actual_native_xyz_max_error": 6.469847894911436e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "7c4e8035e7c907eea9f129887b69aca285ef8ba4d5843a06a69cc6fffbfb8c62",
+              "face_mirror_pair_sha256": "7954537f1117a48477e2171ef4b00c822cf7fe5fb61f97863b1954015dada51a"
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 6.469847894911436e-14,
+              "actual_native_xyz_max_error": 6.469847894911436e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "c04aae60c758c947c9394f008019fb322180aa146fb4cfbdd80d77c05dacd059",
+              "face_mirror_pair_sha256": "a3aa0f8dbabc99ef88f984b89e931a8c688af566765a464fb57b8b4868b6dd39"
+            }
+          },
+          "saved_native_control_prefix_and_actual_quad_centres_exact": true,
+          "native_oriented_triangle_sets": "NOT_INDEPENDENTLY_SORTED_THIS_QUICKCHECK",
+          "full_independent_geometry_replay": "NOT_PERFORMED_THIS_ROUND",
+          "correspondence": "Actual G3 explicit pairs propagated through actual G3/G4/G5 CC input_edges; oriented actual G6 control quads; saved native XYZ reflected with control and fan-centre pairs",
+          "verifier_helper_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd"
+        }
+      }
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "DEPTH_08",
+      "generation_sha256": "ca00296f91eaaacce4e539c2e1a4cafe8706a2ee15f9696f76967d028d8f7a77",
+      "proof": {
+        "status": "PASS",
+        "generation_sha256": "ca00296f91eaaacce4e539c2e1a4cafe8706a2ee15f9696f76967d028d8f7a77",
+        "quick_integrity": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 7.618838970963707e-09,
+          "control_xyz_sha256": "72ced6d2aa07b2b670d17a1d7074fa7fcb695f097dff2d3a84504be2c0a64401",
+          "control_faces_sha256": "5f4698d9b229c710d7eacf17b7552122538d594c29e45f6b846fb28f60bbddcc",
+          "chart_sha256": "f9bb1b45283f6745b9e2025a53d97bf0e360a5bc4298974e9f42852ba5bc5d5e",
+          "native_xyz_sha256": "0621582c4b6aae64bcfa16bb6a403caa5985af66d5110085c9d7dc760d10a96b",
+          "native_faces_sha256": "e3a7399c7d070b59aa8a6f4477472a80cff61491ac311dfff772d36976e6a887",
+          "symmetry_scope": "Actual saved native XYZ, actual control XYZ and oriented control quads; explicit propagated IDs. Full independent replay/native oriented triangle sorting not performed this round.",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true
+        },
+        "quick_symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 6.98302040950918e-14,
+              "actual_native_xyz_max_error": 6.98302040950918e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "7c4e8035e7c907eea9f129887b69aca285ef8ba4d5843a06a69cc6fffbfb8c62",
+              "face_mirror_pair_sha256": "7954537f1117a48477e2171ef4b00c822cf7fe5fb61f97863b1954015dada51a"
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 6.98302040950918e-14,
+              "actual_native_xyz_max_error": 6.98302040950918e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "c04aae60c758c947c9394f008019fb322180aa146fb4cfbdd80d77c05dacd059",
+              "face_mirror_pair_sha256": "a3aa0f8dbabc99ef88f984b89e931a8c688af566765a464fb57b8b4868b6dd39"
+            }
+          },
+          "saved_native_control_prefix_and_actual_quad_centres_exact": true,
+          "native_oriented_triangle_sets": "NOT_INDEPENDENTLY_SORTED_THIS_QUICKCHECK",
+          "full_independent_geometry_replay": "NOT_PERFORMED_THIS_ROUND",
+          "correspondence": "Actual G3 explicit pairs propagated through actual G3/G4/G5 CC input_edges; oriented actual G6 control quads; saved native XYZ reflected with control and fan-centre pairs",
+          "verifier_helper_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd"
+        }
+      }
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "DEPTH_16",
+      "generation_sha256": "1a15680a967354a0b801e43075bb3a0d10af9275b0fad74b4cb33d0016a6f5a3",
+      "proof": {
+        "status": "PASS",
+        "generation_sha256": "1a15680a967354a0b801e43075bb3a0d10af9275b0fad74b4cb33d0016a6f5a3",
+        "quick_integrity": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 1.521348217137097e-09,
+          "control_xyz_sha256": "122b8f8976575ccdf59aac97c5a939a6acdc737d9ddca2e900bba134509d79b6",
+          "control_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "chart_sha256": "6ffe706dee83fa430426d83f3d65932ce7091e275cdcfab92ed809d5f09d7258",
+          "native_xyz_sha256": "234068df7dad4cd2a64c57eed3678566e51478fc59fc647946eebd07da723418",
+          "native_faces_sha256": "8871bad16264812a0817d65e4d77de36e926b6b3499ec8eb62e113099c852ea6",
+          "symmetry_scope": "Actual saved native XYZ, actual control XYZ and oriented control quads; explicit propagated IDs. Full independent replay/native oriented triangle sorting not performed this round.",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true
+        },
+        "quick_symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 1.2959969624701961e-13,
+              "actual_native_xyz_max_error": 1.2959969624701961e-13,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "7c4e8035e7c907eea9f129887b69aca285ef8ba4d5843a06a69cc6fffbfb8c62",
+              "face_mirror_pair_sha256": "7954537f1117a48477e2171ef4b00c822cf7fe5fb61f97863b1954015dada51a"
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 1.2959969624701961e-13,
+              "actual_native_xyz_max_error": 1.2959969624701961e-13,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "c04aae60c758c947c9394f008019fb322180aa146fb4cfbdd80d77c05dacd059",
+              "face_mirror_pair_sha256": "a3aa0f8dbabc99ef88f984b89e931a8c688af566765a464fb57b8b4868b6dd39"
+            }
+          },
+          "saved_native_control_prefix_and_actual_quad_centres_exact": true,
+          "native_oriented_triangle_sets": "NOT_INDEPENDENTLY_SORTED_THIS_QUICKCHECK",
+          "full_independent_geometry_replay": "NOT_PERFORMED_THIS_ROUND",
+          "correspondence": "Actual G3 explicit pairs propagated through actual G3/G4/G5 CC input_edges; oriented actual G6 control quads; saved native XYZ reflected with control and fan-centre pairs",
+          "verifier_helper_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd"
+        }
+      }
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "DEPTH_16",
+      "generation_sha256": "8074da931dac02b8710b885a0e8a888430336817c72ac649679e1d8f314111f1",
+      "proof": {
+        "status": "PASS",
+        "generation_sha256": "8074da931dac02b8710b885a0e8a888430336817c72ac649679e1d8f314111f1",
+        "quick_integrity": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 3.242965889990197e-09,
+          "control_xyz_sha256": "c72a279e26eeb2973c47d01528573f3b022216ec921afd16a7def27fd0cf1f62",
+          "control_faces_sha256": "5f4698d9b229c710d7eacf17b7552122538d594c29e45f6b846fb28f60bbddcc",
+          "chart_sha256": "f9bb1b45283f6745b9e2025a53d97bf0e360a5bc4298974e9f42852ba5bc5d5e",
+          "native_xyz_sha256": "9a1a11b1e88cfacde79e1942983337bb188e82372b585aa85dd262614fb06ce7",
+          "native_faces_sha256": "e3a7399c7d070b59aa8a6f4477472a80cff61491ac311dfff772d36976e6a887",
+          "symmetry_scope": "Actual saved native XYZ, actual control XYZ and oriented control quads; explicit propagated IDs. Full independent replay/native oriented triangle sorting not performed this round.",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true
+        },
+        "quick_symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 1.3960872439240138e-13,
+              "actual_native_xyz_max_error": 1.3960872439240138e-13,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "7c4e8035e7c907eea9f129887b69aca285ef8ba4d5843a06a69cc6fffbfb8c62",
+              "face_mirror_pair_sha256": "7954537f1117a48477e2171ef4b00c822cf7fe5fb61f97863b1954015dada51a"
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 1.3960872439240138e-13,
+              "actual_native_xyz_max_error": 1.3960872439240138e-13,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09,
+              "control_mirror_pair_sha256": "c04aae60c758c947c9394f008019fb322180aa146fb4cfbdd80d77c05dacd059",
+              "face_mirror_pair_sha256": "a3aa0f8dbabc99ef88f984b89e931a8c688af566765a464fb57b8b4868b6dd39"
+            }
+          },
+          "saved_native_control_prefix_and_actual_quad_centres_exact": true,
+          "native_oriented_triangle_sets": "NOT_INDEPENDENTLY_SORTED_THIS_QUICKCHECK",
+          "full_independent_geometry_replay": "NOT_PERFORMED_THIS_ROUND",
+          "correspondence": "Actual G3 explicit pairs propagated through actual G3/G4/G5 CC input_edges; oriented actual G6 control quads; saved native XYZ reflected with control and fan-centre pairs",
+          "verifier_helper_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd"
+        }
+      }
+    }
+  ],
+  "scope": "Finite/closed-oriented connected control body and native minimum area; actual control/native XYZ reflection and oriented control quads.",
+  "excluded": [
+    "Full independent geometry replay",
+    "Native oriented triangle-set sorting",
+    "Self-intersections",
+    "Fabrication suitability",
+    "Aesthetic success"
+  ]
+}

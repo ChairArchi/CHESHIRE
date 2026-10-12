@@ -1,0 +1,554 @@
+{
+  "passed": true,
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01",
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01",
+  "referenced_G05_states": 2,
+  "new_G06_states": 4,
+  "reused_reference_images": 6,
+  "new_images": 12,
+  "states": [
+    {
+      "input_case": "SPAN",
+      "candidate": "BASE_G5",
+      "image_candidate": "DIRECTIONAL",
+      "generation": 5,
+      "reused_reference": true,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\geometry.npz",
+        "source_sha256": "177514dd3efcc83923b91261a713e36a5650df069d5f6beebde7ffb9b3d55482",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\generation.json",
+        "generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\control_quad.npz",
+        "control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\receipt.json",
+      "receipt_sha256": "14d79f59d49d9543b27cb83622f8b399cd01cb21c5c92c03e1a1871f98ae4ad6",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\front.png",
+          "sha256": "df6a200e2da9967a0350169143efbd0e20fb6f49f7caf5f096f482afe53ec764"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "189e19e13eadc3db94b1803d1746ea8ce17137508b321655cf09e3e568b3997f"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "b8b46ed1b3e23cd1fe6862e4892a68f611bc3fa7a4b102855a84331eee4cd565"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "DEPTH_08",
+      "image_candidate": "DEPTH_08",
+      "generation": 6,
+      "reused_reference": false,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\geometry.npz",
+        "source_sha256": "df3ae4a0099618103b4752d56e7f57e0dd73ebd044f6f97ed907b01a25eaa883",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\generation.json",
+        "generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\control_quad.npz",
+        "control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+        "parent_control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+        "parent_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+        "recipe_sha256": "809c161b111f1f67ee5d8391875edd92c8c8bf74593bceba7bbcbe379abea846",
+        "source_index_sha256": "4fb5d987f53a93ef8aa0248dee7cfa90bd401154a34261b9e8a277f83dc9bd34"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\receipt.json",
+      "receipt_sha256": "c5a22534b8592e98b5db3e0e6853156678705cf3bc0cc74a777ca9e835391ef6",
+      "code_sha256": {
+        "render": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\front.png",
+          "sha256": "ed8208083e72b455ae84c86e19b17dfbb858b4d41ac3694aac76e1ce76c0d0a1"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "9a74f302b7dd35cd35e700e6da36d941475ab099f5682cb801514fed659abca7"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "199bdeefdc530684a56b4ceae3cc9f4d6939d067e4fa045fa8dacb57b41691ad"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "candidate": "DEPTH_16",
+      "image_candidate": "DEPTH_16",
+      "generation": 6,
+      "reused_reference": false,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\geometry.npz",
+        "source_sha256": "655dd4b53eab8d6602d9b5c34f1f1f80c345c166481f995cd2511cba223286eb",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\generation.json",
+        "generation_sha256": "1a15680a967354a0b801e43075bb3a0d10af9275b0fad74b4cb33d0016a6f5a3",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\control_quad.npz",
+        "control_sha256": "a92c8288105d5937ad7e82c924f257b392f86c489d44ed21680bb246e2b89b32",
+        "parent_control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+        "parent_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+        "recipe_sha256": "809c161b111f1f67ee5d8391875edd92c8c8bf74593bceba7bbcbe379abea846",
+        "source_index_sha256": "4fb5d987f53a93ef8aa0248dee7cfa90bd401154a34261b9e8a277f83dc9bd34"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\receipt.json",
+      "receipt_sha256": "d686b48ab7c22f92f27eb08657bd2ac3e3d6dbf86d50b1e14099f8b6800e2012",
+      "code_sha256": {
+        "render": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\front.png",
+          "sha256": "752e8b7271fdbd283c91670d77076f1899397a152db67bb33c450176cef9cd0c"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "e66568d90c84ea66e71c1b656dc1a727314548b6f897510ea6af4175003e7e28"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "8270f0e89609b79f38b7c192f2e66aebfa0a3e93a04840bcbc9db38d1d15262e"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "BASE_G5",
+      "image_candidate": "DIRECTIONAL",
+      "generation": 5,
+      "reused_reference": true,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\geometry.npz",
+        "source_sha256": "dd3b827de8576c91b6522f4dfa9fe406aaaefa226b732a383fb6c824926e3ede",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\generation.json",
+        "generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\control_quad.npz",
+        "control_sha256": "02a38c41c464e88857396ee03b2617bb2bdf7f1819f7c17712850ff3ca60e5e5"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\receipt.json",
+      "receipt_sha256": "17a8a1e1b79549ec8573f8cd4bebc27f3a0efdaa4fba55af930a1d48b469467b",
+      "code_sha256": {
+        "render": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+        "frozen_parent_renderer": "7a6687b1f84997cbe83d93fb7036930dd37b143f8add97203926cea8e35480ce",
+        "frozen_sidewall_renderer": "46dca7265908aeff47185a3434ff4b160727a169bb497c3a75c0cd87f4874251",
+        "frozen_late_renderer": "1f6e7afc25fd8303b954b38a672587f55ca564af1a2b18fe8a7b29b0cb1d4586"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\front.png",
+          "sha256": "6e2e42bca2bf1c3a621908c8c28b092f59a20bad7cddd018d7585bdecacf2ad3"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b4f0fa5de1497835dff02ae923980bbd11ac4653b04463b7eb7774536fa896e5"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "7447e133b5bd068f000a31486f2e5b885340ac60c5fa49d8463084aee74c0e82"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "DEPTH_08",
+      "image_candidate": "DEPTH_08",
+      "generation": 6,
+      "reused_reference": false,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\geometry.npz",
+        "source_sha256": "a4ba31b894e3efa33b881440a632ef99eaeb90a697f446431e2dfec86a92e28a",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\generation.json",
+        "generation_sha256": "ca00296f91eaaacce4e539c2e1a4cafe8706a2ee15f9696f76967d028d8f7a77",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\control_quad.npz",
+        "control_sha256": "42bfc5a5196f66c541203f1b288bd789bbfa3235309b58da207d48aac554acc3",
+        "parent_control_sha256": "02a38c41c464e88857396ee03b2617bb2bdf7f1819f7c17712850ff3ca60e5e5",
+        "parent_generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+        "recipe_sha256": "809c161b111f1f67ee5d8391875edd92c8c8bf74593bceba7bbcbe379abea846",
+        "source_index_sha256": "4fb5d987f53a93ef8aa0248dee7cfa90bd401154a34261b9e8a277f83dc9bd34"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\receipt.json",
+      "receipt_sha256": "ced566de1944f42d94d1ba3caf6772d2ac2bccae388b634ce35ba7cdf8d4fe9f",
+      "code_sha256": {
+        "render": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\front.png",
+          "sha256": "c049bb5e4515325555d63a548edb98b5abaeff618a14acf7c4cde3401b27b5b6"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "35a4679a51e4f16b85de880ff13d72e2a84054cbdcfafd7f79f34efb2b789c1b"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "073ce579915b3a21eca560909412b9439d6b92093896fbea1ea97d8295b1e98d"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "candidate": "DEPTH_16",
+      "image_candidate": "DEPTH_16",
+      "generation": 6,
+      "reused_reference": false,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\geometry.npz",
+        "source_sha256": "c4c56bec704b4257c78a9d8c1795d34e702c0902fef900539ae89fd933d7610c",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\generation.json",
+        "generation_sha256": "8074da931dac02b8710b885a0e8a888430336817c72ac649679e1d8f314111f1",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\control_quad.npz",
+        "control_sha256": "0ae358cf2b0f53842ed13fc44c6723f6dff4b7aeda290f750e7d80b4bffe1d40",
+        "parent_control_sha256": "02a38c41c464e88857396ee03b2617bb2bdf7f1819f7c17712850ff3ca60e5e5",
+        "parent_generation_sha256": "2703e0032efa8a31e8706d59dd75bdee38c058273ef884d9aa0a237d8c7607e0",
+        "recipe_sha256": "809c161b111f1f67ee5d8391875edd92c8c8bf74593bceba7bbcbe379abea846",
+        "source_index_sha256": "4fb5d987f53a93ef8aa0248dee7cfa90bd401154a34261b9e8a277f83dc9bd34"
+      },
+      "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\receipt.json",
+      "receipt_sha256": "f5bead25967081cf34ed723881000dea7031fcea45478bca8b4221a24a8ebe61",
+      "code_sha256": {
+        "render": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\front.png",
+          "sha256": "436bf39526cfd203f482a328edb6eec57ebfed946db3bb6a55bf66c83235b227"
+        },
+        {
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "faf6dcc88686fda49349e659df6c8c3e45189934d946ad03a731167970bb48d2"
+        },
+        {
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "b21d011890304715389692c9d85036bb98abc43f117d53254106787bfe235074"
+        }
+      ]
+    }
+  ],
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "shoulder_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        15.0
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        0.5293425917625427,
+        -0.8234215974807739,
+        -0.20438513159751892
+      ]
+    },
+    "shoulder_side": {
+      "position": [
+        -32.0,
+        0.0,
+        8.050000190734863
+      ],
+      "target": [
+        0,
+        0,
+        8.05
+      ],
+      "scale": 3.200000047683716,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "scope": "Saved sources, current renderer/code/native-array receipts, same actual camera/material/scene conditions and original PNG hashes only.",
+  "geometry_certification": "Root geometry checks are separate; no full replay, topology or aesthetic certification by this adapter.",
+  "boards": [
+    {
+      "input_case": "SPAN",
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\SPAN_front.png",
+      "sha256": "23d9b1168fc3810121c127d39292c46f7d56f02a21ea9ed5f7015a151aa74061",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\front.png",
+          "sha256": "df6a200e2da9967a0350169143efbd0e20fb6f49f7caf5f096f482afe53ec764"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\front.png",
+          "sha256": "ed8208083e72b455ae84c86e19b17dfbb858b4d41ac3694aac76e1ce76c0d0a1"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\front.png",
+          "sha256": "752e8b7271fdbd283c91670d77076f1899397a152db67bb33c450176cef9cd0c"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "sha256": "d3d9e0e10a3a754867b4a7510716cd13cc884e826f40a5e618c30c71402e7edc",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "189e19e13eadc3db94b1803d1746ea8ce17137508b321655cf09e3e568b3997f"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "9a74f302b7dd35cd35e700e6da36d941475ab099f5682cb801514fed659abca7"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\shoulder_oblique.png",
+          "sha256": "e66568d90c84ea66e71c1b656dc1a727314548b6f897510ea6af4175003e7e28"
+        }
+      ]
+    },
+    {
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "sha256": "d94295aef4bd5f029f8dc58acbac1b5985502b09a770a4b3423e8b985b26ca69",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "b8b46ed1b3e23cd1fe6862e4892a68f611bc3fa7a4b102855a84331eee4cd565"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "199bdeefdc530684a56b4ceae3cc9f4d6939d067e4fa045fa8dacb57b41691ad"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\SPAN\\G06\\views\\shoulder_side.png",
+          "sha256": "8270f0e89609b79f38b7c192f2e66aebfa0a3e93a04840bcbc9db38d1d15262e"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\COUNTER_front.png",
+      "sha256": "cdc21f5345ffe5de03674b7546ffaaf8283e0938c5e24d8f794528c61f038d9b",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\front.png",
+          "sha256": "6e2e42bca2bf1c3a621908c8c28b092f59a20bad7cddd018d7585bdecacf2ad3"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\front.png",
+          "sha256": "c049bb5e4515325555d63a548edb98b5abaeff618a14acf7c4cde3401b27b5b6"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\front.png",
+          "sha256": "436bf39526cfd203f482a328edb6eec57ebfed946db3bb6a55bf66c83235b227"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "sha256": "33d35a2d88460a7091c57b833f927e40a7c7e07cba1a4ba8837ab6c120d3a7bb",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "b4f0fa5de1497835dff02ae923980bbd11ac4653b04463b7eb7774536fa896e5"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "35a4679a51e4f16b85de880ff13d72e2a84054cbdcfafd7f79f34efb2b789c1b"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "shoulder_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\shoulder_oblique.png",
+          "sha256": "faf6dcc88686fda49349e659df6c8c3e45189934d946ad03a731167970bb48d2"
+        }
+      ]
+    },
+    {
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "sha256": "ec006d704bfda6802b67e4f0ae58bbcbede5d07eae2f342b9f11b503fbc202da",
+      "sources": [
+        {
+          "candidate": "BASE_G5",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "7447e133b5bd068f000a31486f2e5b885340ac60c5fa49d8463084aee74c0e82"
+        },
+        {
+          "candidate": "DEPTH_08",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "073ce579915b3a21eca560909412b9439d6b92093896fbea1ea97d8295b1e98d"
+        },
+        {
+          "candidate": "DEPTH_16",
+          "view": "shoulder_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_16\\COUNTER\\G06\\views\\shoulder_side.png",
+          "sha256": "b21d011890304715389692c9d85036bb98abc43f117d53254106787bfe235074"
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 6,
+  "boards_script_sha256": "f970aa10d906add5fbf9684ee6c6084fda99bb8e29dcd13d5df22371e8231f11"
+}

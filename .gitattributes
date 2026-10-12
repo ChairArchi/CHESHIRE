@@ -31,3 +31,6 @@ docs/coherent_fold_detail_20261013/** -text whitespace=blank-at-eol,blank-at-eof
 experiments/coherent_fold_detail_20261013/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_coherent_fold_detail.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/test_coherent_fold_verify.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+experiments/directional_g6_20261013/*.py -text whitespace=cr-at-eol
+docs/directional_g6_20261013/** -text whitespace=cr-at-eol
