@@ -1,0 +1,56 @@
+{
+  "candidate": "DESIGN_A",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+  "design_revision": "LOW_ROOT_SIDEWALL_CHILDREN_V2",
+  "first_pass_trial01": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01",
+  "first_pass_trial01_access": "READ_ONLY",
+  "subdivision_generation": 6,
+  "added_CC_passes": 0,
+  "authored_canonical_events": 27,
+  "reflected_event_instances": 108,
+  "checks": {
+    "finite": true,
+    "closed_oriented_control": true,
+    "control_components": 1,
+    "control_Euler": 2,
+    "no_orphan_controls": true,
+    "minimum_native_triangle_area": 1.521348217137097e-09,
+    "control_xyz_sha256": "49588cb009cb1266d30e5c9e50ec140b01c21bc862b72473e43c0777165c7bcf",
+    "control_faces_sha256": "27e7530043677beb2029dbc66e628f547d027a6ce22c70b2a71a82ca3d09fea5",
+    "chart_sha256": "2d0447801e13e9410020c1a5c82e1cb9467919471e382dd4de466dbff99388fe",
+    "native_xyz_sha256": "0d412df83880c03144020fe5704ffe55a069f4c2cb3e37c1bfb941de0d3b1f2e",
+    "native_faces_sha256": "dcb63f1ccb8201ab9cda14973b04cb25459c98eb76bf7e6a4b0f26a2bfe4ae81",
+    "symmetry_scope": "Independent actual replay and propagated reflection proof pending",
+    "self_intersection": "NOT_CHECKED_EXPLORATORY",
+    "fabrication": "NOT_CHECKED",
+    "passed": true
+  },
+  "symmetry": {
+    "passed": true,
+    "axes": {
+      "X": {
+        "passed": true,
+        "actual_control_xyz_max_error": 6.469847894911436e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      },
+      "Y": {
+        "passed": true,
+        "actual_control_xyz_max_error": 6.469847894911436e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      }
+    },
+    "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+    "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+  },
+  "visual_success": "PENDING_REVIEW",
+  "generation_json_sha256": "571a667ca0b00641fc01ee352a60e6187048d4a28f1886a412e6169942d2b04e",
+  "visual_review": {
+    "status": "LOCAL_ONLY_NOT_FULL_COLUMN_FINE_FINISH",
+    "full_column_multiscale_continuity": "NOT_DEMONSTRATED",
+    "design_adoption": "USER_DECISION",
+    "local_sequence": "CLOSED_NO_MORE_PARAMETER_OR_GENERATION_SEARCH",
+    "checkpoint": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial02\\CHECKPOINT.txt"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "candidate": "DESIGN_A",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+  "subdivision_generation": 6,
+  "added_CC_passes": 0,
+  "authored_canonical_events": 15,
+  "reflected_event_instances": 60,
+  "checks": {
+    "finite": true,
+    "closed_oriented_control": true,
+    "control_components": 1,
+    "control_Euler": 2,
+    "no_orphan_controls": true,
+    "minimum_native_triangle_area": 1.521348217137097e-09,
+    "control_xyz_sha256": "229401abca6e0b67e102a6b07ca267cc0094645114a5ed05a7eb923a7a501fca",
+    "control_faces_sha256": "c832be6a5c1e41d2959919fc85ab20cf4603840389fc169fac96e2c0e419b9aa",
+    "chart_sha256": "675049f4c47bc349c8093e5b45732f66d8e32a2a737adf221649b482e4c71758",
+    "native_xyz_sha256": "a5a1cb7203bffd588e3c85371b2fcacd8bd9b289576c6d5a995148d5b53543dc",
+    "native_faces_sha256": "f4c4b9f911012e9703749482c0991b3fda90bd84c9a11b454aeea750fdbd651a",
+    "symmetry_scope": "Independent actual replay and propagated reflection proof pending",
+    "self_intersection": "NOT_CHECKED_EXPLORATORY",
+    "fabrication": "NOT_CHECKED",
+    "passed": true
+  },
+  "symmetry": {
+    "passed": true,
+    "axes": {
+      "X": {
+        "passed": true,
+        "actual_control_xyz_max_error": 6.469847894911436e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      },
+      "Y": {
+        "passed": true,
+        "actual_control_xyz_max_error": 6.469847894911436e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      }
+    },
+    "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+    "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+  },
+  "visual_success": "NOT_ASSESSED",
+  "generation_json_sha256": "d64dd033808e0b647b8d3c5248bb165c86f6df6bff37f6949b0bd0902a5d5ceb",
+  "visual_review": {
+    "status": "LOCAL_ONLY_NOT_FULL_COLUMN_FINE_FINISH",
+    "full_column_multiscale_continuity": "NOT_DEMONSTRATED",
+    "design_adoption": "USER_DECISION",
+    "local_sequence": "CLOSED_NO_MORE_PARAMETER_OR_GENERATION_SEARCH",
+    "checkpoint": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\CHECKPOINT.txt"
+  }
+}

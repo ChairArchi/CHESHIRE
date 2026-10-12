@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01",
+  "states": [
+    {
+      "candidate": "DEPTH_08",
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\geometry.npz",
+        "source_sha256": "df3ae4a0099618103b4752d56e7f57e0dd73ebd044f6f97ed907b01a25eaa883",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\generation.json",
+        "generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\control_quad.npz",
+        "control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\front.png",
+          "sha256": "ed8208083e72b455ae84c86e19b17dfbb858b4d41ac3694aac76e1ce76c0d0a1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "c5a22534b8592e98b5db3e0e6853156678705cf3bc0cc74a777ca9e835391ef6",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\body_oblique.png",
+          "sha256": "3f492c8383de8d56caab5afda37662bfb63b4c18bdffcb67b3c2337fd8feffa8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\receipt.json",
+          "receipt_sha256": "063457efa4f0cf7e727ea0e9163486fec64e2d821ee292d9bc17e8bf51c8945c",
+          "reused_reference": false
+        },
+        {
+          "view": "body_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\body_side.png",
+          "sha256": "29f02de6344c9e1ef326057500d74dfb312534e344e81fe7044382017f80ed73",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\receipt.json",
+          "receipt_sha256": "063457efa4f0cf7e727ea0e9163486fec64e2d821ee292d9bc17e8bf51c8945c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "candidate": "DESIGN_A",
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\geometry.npz",
+        "source_sha256": "05327e331a43f2c748f41000a485a7f16b4d8df1bc0f21f9d84f93d5ecff29b5",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\generation.json",
+        "generation_sha256": "d64dd033808e0b647b8d3c5248bb165c86f6df6bff37f6949b0bd0902a5d5ceb",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\control_quad.npz",
+        "control_sha256": "be4a219d05e0103742688bb9db4dafb5c5760226f989b5eed0d6ecf9b5f3daca",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+        "parent_control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+        "parent_geometry_sha256": "df3ae4a0099618103b4752d56e7f57e0dd73ebd044f6f97ed907b01a25eaa883",
+        "parent_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\front.png",
+          "sha256": "26ecf2e183ccaea7fe8ded811e8a6c6dd0681a748f63a075b21eb955d5ee6e20",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\body_oblique.png",
+          "sha256": "69d85e36b956aa288287d1c8034f3252ef1e020043ae5e14b045e18fe6e9baba",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        },
+        {
+          "view": "body_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\body_side.png",
+          "sha256": "b0a8f6205fc1aba76a3fc4dd13b9877c96888d0819fdee982d91436c6f2eed30",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "subdivision_generation": 6,
+  "design_added_CC_passes": 0,
+  "reused_parent_images": 1,
+  "new_parent_body_images": 2,
+  "new_design_images": 3,
+  "new_images": 5,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "body_side": {
+      "position": [
+        -32.0,
+        0.0,
+        6.25
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        1.0,
+        -4.371138828673793e-08,
+        4.371138828673793e-08
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "scope": "Saved geometry/code/native-array receipts, same actual camera/material conditions and PNG hashes; no full lineage or geometry/aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\images\\SPAN_front.png",
+      "sha256": "2f8327c8ead032adace8f88f3934629471f2a9d74c3af780a4af2113251cf9f7",
+      "sources": [
+        {
+          "candidate": "DEPTH_08",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\front.png",
+          "sha256": "ed8208083e72b455ae84c86e19b17dfbb858b4d41ac3694aac76e1ce76c0d0a1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\views\\receipt.json",
+          "receipt_sha256": "c5a22534b8592e98b5db3e0e6853156678705cf3bc0cc74a777ca9e835391ef6",
+          "reused_reference": true
+        },
+        {
+          "candidate": "DESIGN_A",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\front.png",
+          "sha256": "26ecf2e183ccaea7fe8ded811e8a6c6dd0681a748f63a075b21eb955d5ee6e20",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\images\\SPAN_body_oblique.png",
+      "sha256": "789be5ad0749ac72eadb4e87c279e1259c379d445cfbf853afe40b5c055be461",
+      "sources": [
+        {
+          "candidate": "DEPTH_08",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\body_oblique.png",
+          "sha256": "3f492c8383de8d56caab5afda37662bfb63b4c18bdffcb67b3c2337fd8feffa8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\receipt.json",
+          "receipt_sha256": "063457efa4f0cf7e727ea0e9163486fec64e2d821ee292d9bc17e8bf51c8945c",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DESIGN_A",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\body_oblique.png",
+          "sha256": "69d85e36b956aa288287d1c8034f3252ef1e020043ae5e14b045e18fe6e9baba",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_side",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\images\\SPAN_body_side.png",
+      "sha256": "c219129996a9e1ef679c93bba0ebd6db85aa108a706cd1d7bbeae927f76c8915",
+      "sources": [
+        {
+          "candidate": "DEPTH_08",
+          "view": "body_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\body_side.png",
+          "sha256": "29f02de6344c9e1ef326057500d74dfb312534e344e81fe7044382017f80ed73",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\reference_views\\receipt.json",
+          "receipt_sha256": "063457efa4f0cf7e727ea0e9163486fec64e2d821ee292d9bc17e8bf51c8945c",
+          "reused_reference": false
+        },
+        {
+          "candidate": "DESIGN_A",
+          "view": "body_side",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\body_side.png",
+          "sha256": "b0a8f6205fc1aba76a3fc4dd13b9877c96888d0819fdee982d91436c6f2eed30",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\design_one_20261013\\trial01\\DESIGN_A\\SPAN\\G06_designed\\views\\receipt.json",
+          "receipt_sha256": "0fe192e17815afdf2e036b9ff47d1698b7aa08c10dd3b72531e374da6a1c36fb",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "79dd6a2f0bc2320bed6a0f9b9f193f10d8b50e2408cec3df128bbf90db342179"
+}

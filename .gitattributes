@@ -34,3 +34,5 @@ tests/test_coherent_fold_verify.py -text whitespace=blank-at-eol,blank-at-eof,sp
 
 experiments/directional_g6_20261013/*.py -text whitespace=cr-at-eol
 docs/directional_g6_20261013/** -text whitespace=cr-at-eol
+experiments/design_one_20261013/*.py -text whitespace=cr-at-eol
+docs/design_one_20261013/** -text whitespace=cr-at-eol
