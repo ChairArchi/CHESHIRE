@@ -1,0 +1,166 @@
+CHESHIRE와 IAAC Mesh Subdivision — 생성 원리 비교
+2026-10-13 / Asia-Seoul
+CHESHIRE 기준: ../generation_workflow_20261013/WORKFLOW.txt 및 LINEAGE.json
+
+비교 범위
+
+사용자가 첨부한 세 도판을 IAAC 공식 페이지의 같은 이미지와 대조하였다.
+IAAC: Mesh Subdivision, 2020/21 MAA, 공개 게시일 2020-12-11.
+학생 Stefana Zapuc, Hanna Lepperod, Léa Garguet-Duport / 지도 Angel Muñoz.
+원문: https://www.iaacblog.com/programs/mesh-subdivision/
+도판 원본 URL·보존 이미지·SHA는 SOURCE_INDEX.json에 기록한다.
+새 형상·실험·렌더를 생성하지 않았다. 공개 도판의 원리와 실제 CHESHIRE 코드를 비교한다.
+IAAC 원본 실행 코드와 모든 수치 조건을 확보하거나 동일 결과를 복제한 비교가 아니다.
+
+가장 큰 차이
+
+첨부한 두 IAAC pseudocode는 분할 후 형상장을 다시 판정하여 정점을 이동시키는 loop를 보여준다.
+CHESHIRE의 현재 선택 계보는 G1·G2에서 그중 nearest-outside 계열을 재구성해 사용했다.
+G3 이후에는 형상장 반응 loop를 계속하지 않고 벽·공유 경계 돌출·방향성 가중 세분으로 전환했다.
+최근 G6·G7 디테일은 등록된 위상과 현재 표면 법선을 이용한 변형이며 Mandelbulb 재평가가 아니다.
+따라서 'IAAC 방식의 같은 loop를 G7까지 반복했다'는 설명은 현재 기록과 맞지 않는다.
+
+도판 A — 전체 개념도
+
+Point Cloud와 3D Mandelbrot 영역을 사용하여 바깥 점 집합을 구성하고,
+그 점 집합을 따라 내부의 입력 형상이 반응하도록 하는 개념이다.
+형상장 수·Z 위치·각 n 값을 바꾸어 기둥을 따라 다른 void 구성을 만든다.
+뒤에서 triangular, frame/void, quad subdivision 등의 대안을 시험한다.
+
+이 도판의 점 집합 차집합을 곧바로 기둥 메시의 Boolean 관통공 생성으로 해석하지 않는다.
+바깥 점 집합을 정점 이동의 목표로 쓰는 설명과 실제 메시의 genus 변경은 구분해야 한다.
+CHESHIRE의 finite-outside 후보 점 집합은 이 개념과 대응한다.
+현재 CHESHIRE는 두 power4 영역을 Z에 배치했으며, 원본의 모든 n·영역 배치를 복구한 것은 아니다.
+
+도판 B — nearest-outside 시퀀스
+
+Mesh
+ → 기존 face vertex 좌표 확인 + face subdivision
+ → middle vertex 좌표 확인
+ → 3D Mandelbrot grid에서 가까운 바깥 점 찾기
+ → 범위를 벗어난 Z 값 조정
+ → 형상장 안에 있으면 가까운 점을 향해 정점 이동
+ → 새 면 구성
+ → Mesh로 되돌아가 반복
+
+가까운 바깥 점을 목표로 하므로 이동 방향은 단순한 기둥 반경 방향으로 한정되지 않는다.
+도판에는 이동 비율, 거리 상한, 격자 간격, Z 보정식과 종료 조건의 수치가 없다.
+'가장 가까운 점'이 연속 경계의 정확한 최단점인지 격자 후보 중 최단점인지도 구분해야 한다.
+표제의 grid를 근거로 격자 검색 원리는 읽을 수 있지만 원본의 검색 구현까지 확정하지 않는다.
+반복 loop는 읽히나 모든 최종 조형이 이 시퀀스 하나만으로 생성되었다는 증거는 아니다.
+
+CHESHIRE와 대응
+
+G1·G2는 quad split → 실제 old/new control XYZ의 finite inside 판정 →
+sampled outside target 검색 → fraction·budget 제한 이동이라는 골격을 사용한다.
+정확한 현재 구현은 다음과 같다.
+
+I(x)=유한 반복 중 escape radius 4를 넘지 않으면 inside.
+각 변환 영역에서 z0=0, z(k+1)=spherical_power(z(k),n)+c를 평가하고 영역들을 union한다.
+현재 선택값은 n=[4,4], centres=[2.5,7.5], axial=2.8, scales=[1.6,1.6]이다.
+c=(x/1.6,y/1.6,(z-zc)/2.8), zc=2.5 또는 7.5의 변환 영역에서 판정한다.
+t(x)=보존된 finite-outside 후보 점 중 가까운 점. G2에는 국소 후보 refinement도 있다.
+기본 outside 격자는 [-2.4,2.4]^2 × [0,10], 간격 [.06,.06,.0625]이다.
+G2는 coarse target 주변 후보 간격을 절반으로 줄인다. 전역 격자 전체의 세분은 아니다.
+v=.55*(t-x), I(x)=inside인 경우. outside 정점의 형상장 변위는 0.
+delta=v*min(1,budget/max(norm(v),1e-15)).
+G1: iterations4 / budget.35 / target_factor1.
+G2: iterations8 / budget.28 / target_factor2.
+이후 재료 좌표와 반사 대응으로 X/Y 대칭 변위를 운반한다.
+
+이는 연속 signed distance field, 정확한 global nearest boundary, 반드시 바깥에 도달하는
+투영이 아니다. .55 분율과 이동 상한 때문에 결과 정점이 여전히 inside일 수 있다.
+4→8 내부 반복 변경은 finite occupancy를 바꾼다. 단순한 고주파 디테일의 on/off가 아니다.
+XY 대칭 분류와 이동, coarse/local target 검색, fraction/budget은 CHESHIRE의 구현 선택이다.
+도판의 Z 보정식은 확인되지 않았으며 우리 다중 영역 배치와 같다고 쓰지 않는다.
+선택 apply_field에는 동일한 독립 Z 보정 단계가 없다. XYZ target 이동에는 Z 이동도 포함된다.
+또한 선택 G1·G2의 분할은 단순 midpoint/face-centre만이 아니라 Task36의 가중 위치 계산이다.
+
+실제 코드
+experiments/fold_band_growth_20261011/full_loop.py:31 — apply_field
+experiments/fold_band_growth_20261011/ancestry_probe.py:95 — G1 분할 후 형상장
+experiments/directional_growth_20261012/overlap_probe.py:182 — G2 return·분할·형상장
+experiments/column_development_20261011/target_repeat.py:54 — 형상장 구성
+현재 상태 증거: ../generation_workflow_20261013/receipts/01_ancestry_g1.json 및 02_overlap_g2.json
+
+도판 C — inside/outside radial 시퀀스
+
+Mesh → Subdivide Faces → Check Vertex Coordinates → Adjust Z if out of range
+ → inside이면 centre에서 멀어지게 이동
+ → outside이면 centre 쪽으로 이동
+ → Add New Faces → Mesh로 되돌아가 반복
+
+두 방향의 radial 반응을 갖는 별도 대안이다. 도판 B의 바깥 목표점 검색과 합쳐 설명하면 안 된다.
+도판의 centre가 각 형상장 중심인지 기둥 축인지, 이동 크기를 어떻게 정하는지는 명확하지 않다.
+각 도판에 나란히 실린 매끈한 기둥과 거친 기둥을 동일 시퀀스의 연속 세대로 배열하지 않는다.
+
+CHESHIRE에는 이를 참고한 별도 radial_inside_outside 대안 코드가 있다.
+그 대안은 XY 기둥 축을 centre로 해석하여 delta=.22*(inside?+1:-1)*(x,y,0)를 사용한다.
+.22와 기둥 축 해석은 자체 재구성이며 IAAC 원본에서 확인된 수치가 아니다.
+이 radial 대안은 현재 선택 기둥의 G1~G7 계보에 포함되지 않는다.
+원리 출처: experiments/column_development_20261011/target_repeat.py의 radial_io,
+target_equation 및 limitations 기록.
+
+비교 항목별 정리
+
+반복의 핵심
+IAAC 도판: 세분하면서 형상장 내부·외부를 다시 판정하고 정점을 이동시키는 loop.
+CHESHIRE 현재: 초기 두 pass 이후 서로 다른 역할의 연산을 순서대로 결합한 recipe.
+
+큰 형상
+IAAC 도판: 형상장 영역의 수·위치·n 값이 기둥 변형의 중요한 제어이다.
+CHESHIRE 현재: 설계된 G0 PCHIP 매스 + G1/G2 형상장 + G2 return + G3 벽·부착 돌출의 합성이다.
+
+후반 작은 형상
+IAAC 도판: 새 subdivision 정점도 형상장 반응 loop에 들어간다.
+CHESHIRE 현재: G5/G6는 root 방향장에 따른 CC 가중치, G6/G7 추가 디테일은 법선 변위이다.
+G7을 더 조밀하게 분할하는 것과 형상장에 다시 반응시키는 것은 서로 다른 조작이다.
+
+작은 디테일의 좌표 기준
+IAAC 도판: 공간에 배치된 Mandelbrot 영역과 그 내부·외부, 또는 바깥 목표점.
+CHESHIRE 현재: root PCA/event 계보와 등록된 MIDDLE 위상·높이·support, 실제 입력 법선.
+따라서 현재 작은 접힘은 공간 형상장과의 충돌보다 기존 부모 방향 질서에 의존한다.
+
+연결 돌출
+IAAC 도판: subdivision에서 새 면을 구성한다. 이 표기만으로 별도 extrusion을 확정할 수 없다.
+CHESHIRE 현재: G3에 실제 패치 공유 경계·옆면·cap 생성 사건이 별도로 존재한다.
+그 뒤 G7의 CHILD/GRANDCHILD 명칭은 topology 사건이 아니라 필드의 의존관계이다.
+
+설계자가 조절하는 부분
+IAAC 공개 자료: 형상장 배치·n·초기 형상·깊이·subdivision 대안·추가 attractor curve를 탐색한다.
+CHESHIRE 현재: 위 제어에 더해 채택 경로·PCHIP return·패치 위치·위상·진폭·mask·마감 횟수를 정했다.
+두 프로젝트 모두 설계 파라미터와 연산 조합을 사용한다. 단일 무조정 공식만으로 비교하지 않는다.
+공식 페이지의 디자인 단계에는 추가 attractor curve와 초기 형상·깊이 변경도 명시되어 있다.
+
+가능한 해석과 확인하지 못한 것
+
+형상장 loop를 지속하면 매 세대의 새 샘플이 같은 공간 질서에 다시 반응할 수 있다.
+현재 CHESHIRE는 후반에 그 구동 원리를 바꾸었으므로 이 점이 중요한 기술적 차이이다.
+다만 이것이 우리 근접 디테일 부족의 단독 원인이라는 인과 검증은 없다.
+동일한 시퀀스가 자동으로 더 아름다운 결과나 모든 크기의 독립된 접힘을 보장하지도 않는다.
+입력·영역 배치·해상도·이동 크기·반복 조건과 최종 조형 선택이 함께 작용한다.
+IAAC 원본 수치와 subdivision 세대가 불명확하므로 '그쪽은 G몇이면 완성'이라는 비교는 하지 않는다.
+
+G7 Mandelbulb 마감이라는 사용자 제안의 위치
+
+최종 G7에 한 번 더 형상장을 적용하는 것은 현재 recipe 뒤에 추가하는 선택 마감이다.
+G1~G7 내내 동일한 형상장 loop를 유지한 것과는 다른 과정이다.
+nearest-outside를 다시 적용하면 큰 골까지 이동할 수 있고, 얕은 법선 relief를 만들면
+큰 형상을 보호하기 쉽지만 도판 B와 다른 연산을 구현하는 것이다.
+두 방식 모두 현재 실행·채택하지 않았다. 이 문서의 비교는 추가 실험 지시가 아니다.
+
+다음 판단에 사용할 기준
+
+현재 recipe의 입력·연산·계보를 명확히 연결하는 작업과 새로운 형상장 연구를 구분한다.
+기존 nearest-outside 재구성 코드를 보유하므로 이 원리를 처음부터 다시 개발할 필요는 없다.
+향후 사용할 경우 '기존 loop를 어느 단계까지 유지할 것인가'와 '마지막에 다른 마감을 추가할 것인가'를
+별개의 설계 선택으로 기록하면 과정과 결과를 혼동하지 않을 수 있다.
+이번에는 현재 workflow와 참고 원리의 차이를 확인하는 데서 종료한다.
+
+출처
+
+IAAC 공식 본문: https://www.iaacblog.com/programs/mesh-subdivision/
+A 개념도: https://www.iaacblog.com/wp-content/uploads/2020/12/group-4_python-presentation1-730x411.png
+B nearest-outside: https://www.iaacblog.com/wp-content/uploads/2020/12/group-4_python-presentation2-730x411.png
+C radial: https://www.iaacblog.com/wp-content/uploads/2020/12/group-4_python-presentation4-730x411.png
+원본 도판은 references/에 변형 없이 보존하였다. 원본 IAAC 결과와 CHESHIRE 자체 결과를 구분한다.

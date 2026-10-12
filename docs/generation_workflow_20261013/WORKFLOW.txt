@@ -1,0 +1,259 @@
+CHESHIRE — 현재 SPAN 기둥의 생성 워크플로우 v1
+2026-10-13 / Asia-Seoul
+형상 기준 커밋: 657b3ab927d067630071a12fc14bd2b0a8d0681e
+
+이 문서의 역할
+
+현재 결과로 이어진 선택 계보를 기록에서 복원한 문서이다. 새로운 형상을 생성하지 않았다.
+전체 실험 목록이나 처음부터 예정된 하나의 성장식으로 설명하지 않는다.
+각 단계의 원리·선택값·입출력을 고정하여 다음 개발과 배리에이션의 출발점으로 사용한다.
+여기에 기록한 값은 현재 결과의 레시피이며 이후 설계에서 바꿀 수 없는 제약이 아니다.
+선택 계보는 현재 개발 체크포인트의 재현 경로이며 WIDE_ROOT의 밀도나 최종 디자인을
+사용자가 채택했다는 의미는 아니다. 사용자 디자인 선택으로 확인된 기준은 MIDDLE의 여백이다.
+원본 코드·메시·체크포인트·기존 검증 기록은 수정하지 않았다.
+
+판정
+
+현재 기둥은 G0에서 실제 quad subdivision을 7회 거친 결과이다.
+각 단계는 수식과 코드로 정점을 계산한다. 개별 정점을 손으로 조형한 결과가 아니다.
+다만 같은 성장식 하나를 일곱 번 반복한 것도 아니다.
+연구 중 이미지와 검증을 보고 서로 다른 연산·계수·활성 영역·경로를 선택하였다.
+가장 정확한 표현은 '선택된 단계별 레시피를 가진 절차적 생성 방식'이다.
+단계별 재현 근거는 보존되어 있으나 최신 전 과정을 한 번에 실행하는 통합기는 아직 없다.
+이번 작업은 계보·수식·의존성의 문서화이며 통합 실행기나 새 입력 일반성의 검증은 아니다.
+
+번호를 읽는 원칙
+
+G = 실제 quad subdivision 횟수이다. Task36의 custom 분할도 포함한다.
+G1·G2는 표준 중립 Catmull–Clark가 아니다. G3의 interpolating 분할도 중립 CC가 아니다.
+선택 계보의 중립 CC는 G3→G4와 MIDDLE G6→G7이다.
+G4→G5와 G5→G6는 CC 기반 위치 계산에 방향성 법선 제어를 결합한다.
+연결 면 생성 사건, 형상장 적용, 법선 변위와 변위 평활화는 G를 증가시키지 않는다.
+Mandelbulb 내부 iteration 4·8회는 G1·G2와 다른 개념이다.
+G6·G7 뒤의 추가 처리는 단계 이름으로 구분하고 새 G 번호를 붙이지 않는다.
+
+선택한 한 경로
+
+SPAN_SPARSE G0
+  → ANCESTRY_STAGED G1
+  → OVERLAP G2
+  → WALL G3
+  → ROOT_ONLY G3 사건
+  → SIDEWALL_FAN G3 사건
+  → SIDEWALL_FAN 중립 G4
+  → DIRECTIONAL G5
+  → DEPTH_08 G6
+  → MIDDLE G6
+  → MIDDLE_SURFACE G7
+  → 연결 띠 trial02 G7
+  → 연결 띠 변위 마감 trial03 G7
+  → WIDE_ROOT trial01 G7
+  → WIDE_ROOT_FINISHED trial02 G7 [현재]
+
+마감 단계는 단순 직렬 입력 하나가 아니다.
+연결 띠 마감은 MIDDLE_SURFACE와 연결 띠 raw의 두 입력을 필요로 한다.
+WIDE_ROOT 마감은 연결 띠 마감 결과와 WIDE_ROOT raw의 두 입력을 필요로 한다.
+LINEAGE.json은 이 15개 상태와 16개 의존 관계를 별도로 기록한다.
+후반 등록 좌표의 기준은 MIDDLE이며 실제 XYZ는 최신 부모를 이어받는다.
+
+G0 — 초기 매스: 이미 설계된 큰 형상
+
+25 rings / 16 sectors / radius .78의 미분할 carrier: control 402 vertices / 400 quads.
+기존 SPAN legacy_core를 사용하여 PCHIP 반경·높이 왜곡·단부 return을 조합하였다.
+SPAN recipe의 양 끝 반경 ×1.10, DIAGONAL_BRIDGE span ×1.35, return_depth ×1.12를 사용했다.
+큰 팽창부·허리·교차 return은 G0부터 존재한다. 무형의 원기둥에서 모두 자생한 것은 아니다.
+이 단계에는 새 Mandelbulb 적용이 없다.
+원리 출처: experiments/fold_band_growth_20261011/sparse_input.py:32
+초기 매스 함수: experiments/column_development_20261011/seed_mass.py:92
+G0의 전체 radius/event 수치는 receipts/00_seed_g0.json에 보존한다.
+
+G1 — 계보 가중 분할 + finite Mandelbulb
+
+Task36 coupled placement로 quad를 4분할한다. G0→G1 실제 분할은 1회이다.
+평균화 성분 0, stencil 성분 1, normal 성분 1, vertex_memory 1을 사용한다.
+face_gain .65 / edge_gain .18 / feedback 1 / inherited_bias .8 / diagonal_tension -.65.
+edge_tension .5 / vertex_tension -.8 / cap_mode plane_only / surface mean.
+실제 지지 반경·법선·굽힘·이전 V/E/F 출처에 따라 새 점을 배치한다.
+Task36 단계 직후에는 기존 정점을 유지하지만, 이어지는 형상장은 기존 정점도 이동시킬 수 있다.
+이후 finite Mandelbulb 내부 판정으로 nearest sampled outside target을 찾는다.
+fraction .55 / 이동 budget .35 / internal escape iterations 4 / local_target_factor 1.
+형상장은 power4 두 영역, Z centres 2.5·7.5, axial 2.8, scales 1.6·1.6이다.
+이는 IAAC 공개 흐름을 참고한 CHESHIRE 재구성이며 원본 구현의 복구가 아니다.
+원리 출처: experiments/fold_band_growth_20261011/ancestry_probe.py:24,95
+분할 구현: src/cheshire/task36_growth.py:110,136
+
+G2 — 방향이 다른 두 PCHIP return + 같은 분할 + finite Mandelbulb
+
+G1 control에 LOWER_DIAGONAL_RETURN과 UPPER_CROSSING_RETURN을 먼저 적용한다.
+방향 .35·1.18 / 높이 .39·.61 / span .12 / overlap_width .46 / sweep .28.
+return_depth .72·.68 및 각 expansion/constriction/reexpansion은 실제 receipt를 따른다.
+동일 Task36 recipe로 한 번 더 분할한다. 이후 finite field를 다시 적용한다.
+fraction .55 / budget .28 / iterations 8 / local_target_factor 2.
+현재 계보에 남은 finite Mandelbulb pass는 G1·G2 총 2회이다.
+반복 횟수를 늘리면 형상장의 내부·외부 분류 자체가 달라질 수 있다. 단순 미세 주파수 증가가 아니다.
+분율·budget 제한 이동이므로 최종 정점이 반드시 형상장 바깥에 도달한다는 보장은 없다.
+원리 출처: experiments/directional_growth_20261012/overlap_probe.py:144,182
+전체 이벤트와 형상장 조건: receipts/02_overlap_g2.json
+
+G3 — 실제 면을 측정한 벽 재구성 + 연결된 돌출 생성
+
+먼저 inactive interpolating Task36로 한 번 분할한다. 이때 old control XYZ를 유지한다.
+두 G2 return의 재료 좌표 띠에서 양 어깨와 중앙 rail을 측정하고 cubic fit을 구한다.
+골 깊이 = min(작은 수직 어깨 폭 × tan40°, 중앙 반경 중앙값 × .5).
+중앙 골 바닥과 양 어깨를 연결한 ruled target으로 띠 내부를 재구성한다.
+경계로 갈수록 0이 되는 plateau envelope와 겹침 가중 평균을 사용한다.
+기존 띠의 잔여 요철을 덮어쓰는 연산이므로 단순한 변위 추가만으로 설명하지 않는다.
+분할: experiments/fold_transfer_20261012/memory.py:28
+벽: experiments/fold_visible_gate_20261012/study.py:95 및 wall_fold.py:24,104
+
+그다음 ROOT_ONLY: 실제 패치 공유 경계에서 옆면과 cap을 생성한다. G3 유지.
+기준 사분면 root 1개를 X/Y 반사하여 전체 4개 인스턴스로 구성한다.
+SIDEWALL_FAN: root의 실제 sidewall row 1·2와 작성된 beta sector 3개에서 자식을 생성한다.
+높이 [.12,.40,.70]R / scale [1,.80,.45] / bend .30 / twist 0.
+새 canonical child 3개를 반사하여 12개를 추가한다. root 포함 총 16개 인스턴스이다.
+R은 실제 root 면적 반경이다. 작은 자식 면적만 따라 무한히 줄이는 규칙이 아니다.
+자식은 실제 공유 경계에 붙으며 교차 보정·Boolean은 사용하지 않았다.
+원리 출처: experiments/connected_fold_growth_20261012/patch_growth.py:26,281
+자식 출처: experiments/sidewall_fan_growth_20261013/patch_sidewall.py:22,159
+이후 CHILD/GRANDCHILD라는 형상장 이름과 이 실제 topology event를 혼동하지 않는다.
+
+G4 — 중립 Catmull–Clark
+
+SIDEWALL_FAN G3의 연결 구조를 중립 CC로 한 번 세분한다. 추가 돌출·형상장은 없다.
+연결 부재와 주변 면이 함께 평균화되므로 이전 cap XYZ의 불변을 주장하지 않는다.
+원리 출처: experiments/connected_fold_growth_20261012/study.py:80
+
+G5·G6 — 같은 방향성 세분 원리, 다른 파장
+
+root PCA의 major/minor 좌표를 root radius R로 나누어 a,b로 둔다.
+phi = 2*pi*(b/p + .16*a + .20*sin(.90*a+.31))
+s = .8 * support * cos(phi)
+G5: p=.70 / G6 DEPTH_08: p=.35. G6는 파장을 절반으로 줄인 같은 원리이다.
+support는 실제 G3 event 소속 후손 면이다. 넓은 SOURCE 면 전체가 직접 활성화되지는 않는다.
+wf=s / we=.5*incident_mean(s) / wp=(1-1/degree)*incident_mean(s).
+w1,w2,w3,w4,w6,w7은 0이며, 실제 incident 평균 edge length로 변위 크기를 환산한다.
+이 제어값으로 CC 기반 face→edge→vertex 위치 계산과 quad 분할을 각 1회 수행한다.
+전역 weights가 0으로 기록되어도 resolved normal controls가 있으므로 중립 CC가 아니다.
+G5 원리: experiments/coherent_fold_detail_20261013/fold_operator.py:169,226
+G6 원리: experiments/directional_g6_20261013/g6_operator.py:31,104
+
+G6 MIDDLE — 전체 본체로 확장한 중간 접힘
+
+이 단계는 추가 분할 없이 G6를 유지한다. 기존 국소 support는 감쇠 신호로 사용한다.
+z=(Z-zmin)/H / theta=atan2(abs(Y),abs(X)). 실제 입력 H=9.735842284057451.
+phiM = 20*theta + 2*sin(2*theta)*sin(2*pi*z/.085)
+       + .8*sin(4*theta)*sin(2*pi*z/.17) + .35*sin(6*theta)*sin(2*pi*z/.037)
+P(phi)=(((1+cos(phi))/2)^3-.3125)/.6875
+signed=.006*H*B(z)*(1-.55*f)*P(phiM)
+Xmiddle = Xg6 + R[N(Xg6)*signed].
+f는 실제 event ancestry에서 운반한 feature support이며 자동 곡률 검출값이 아니다.
+B는 PCHIP envelope이다. knots [0,.05,.20,.38,.50,.64,.80,.94,1],
+values [0,.40,1,.85,.55,1,1,.45,0].
+원리 출처: experiments/whole_column_detail_20261013/whole_field.py:24,130
+사용자는 MIDDLE의 큰 골과 넓은 면의 여백을 선택하였다. 전역 FINE은 현재 계보에서 제외한다.
+
+G7 — 중립 CC 1회, 이후 같은 G7에서 표면 변형
+
+선택 MIDDLE G6에 중립 CC를 한 번 적용한 결과가 MIDDLE_SURFACE G7이다.
+phiM,z,f를 실제 old-vertex / input-edge / input-face 대응으로 운반한다.
+위상은 sin/cos를 각각 운반한 뒤 atan2로 복원한다.
+이 좌표 운반은 실제 XYZ의 CC stencil과 다르다. 좌표 평균을 geometry refinement로 쓰면 안 된다.
+원리 출처: experiments/whole_column_detail_20261013/finish_surface.py:127
+좌표 계보: experiments/parent_linked_folds_20261013/study.py:46
+
+공통 후반 기호
+N(X): 실제 입력 quad 단위 면 법선을 정점에서 평균·정규화한 법선.
+R(delta): 실제 X/Y 반사 ID의 canonical 변위를 반사 운반하는 연산.
+S(delta)i=.5*deltai + .5*mean(delta_j, 실제 edge 이웃 j).
+S는 새 변위만 평균한다. 기준 XYZ를 평균하는 연산이 아니다.
+u=atan2(sin(phiM),cos(phiM)). B,z,f,H는 등록된 MIDDLE 좌표 기준이다.
+
+G7 연결 띠 raw [parent_linked trial02]
+m=max(0,1-((abs(u)-.84)/.42)^2)^3. abs((abs(u)-.84)/.42)>=1에서는 0.
+q=2*pi*(abs(u)-.84)/.84 + .45*sin(2*pi*z/.065+.5*cos(2*theta))
+b=.55*(.5+.5*sin(2*pi*z/.14+.8*cos(2*theta)))
+p=(1-b)*cos(q)+b*cos(2*q)
+CHILD signed=.0014*H*B*(1-.55*f)*m*p.
+GRANDCHILD mask=m*clip((p-.05)/.95,0,1)^2,
+phase=2*q+.35*sin(2*pi*z/.031+.5*cos(2*theta)), amplitude=.00045*H.
+각 단계에서 실제 입력 법선을 다시 계산하고 R로 변위를 운반한다.
+CHILD/GRANDCHILD는 필드 의존 관계이며 topology가 새로 갈라지는 것을 뜻하지 않는다.
+원리 출처: experiments/parent_linked_folds_20261013/connected_ribs.py:39
+이후 trial03: Xlinked = Xsurface + R[S^3(Xlinked_raw-Xsurface)].
+새 형상장 계산 없이 연결 띠의 합성 변위만 3회 완화한다.
+
+G7 WIDE_ROOT raw [medium_root trial01]
+실제 XYZ 출발점은 Xlinked이다. 과거 MIDDLE 형상으로 돌아가지 않는다.
+theta=atan2(abs(Xlinked_Y),abs(Xlinked_X))를 두 패스에 고정한다.
+m=max(0,1-((abs(u)-1.55)/1.20)^2)^3. 범위 밖에서는 0.
+q=2*pi*(abs(u)-1.55)/2.40 + .30*sin(2*pi*z/.18+.5*cos(2*theta))
+aM=.0065*H*B*(1-.55*f)*m*cos(q)
+deltaM=R[S^2(N(Xlinked)*aM)] / Xm=Xlinked+deltaM
+mS=m*clip((cos(q)+.5)/1.5,0,1)
+aS=.0016*H*B*(1-.55*f)*mS*cos(3*q+.35*sin(2*pi*z/.09+.5*cos(2*theta)))
+deltaS=R[S^2(N(Xm)*aS)] / Xwide_raw=Xm+deltaS
+원리 출처: experiments/medium_root_folds_20261013/root_folds.py:65
+
+현재 최종 G7 [medium_root trial02]
+Xfinal = Xlinked + R[S^3(Xwide_raw-Xlinked)].
+새 normal field나 CC를 추가하지 않고 저장된 합성 변위만 3회 완화한다.
+원리 출처: experiments/medium_root_folds_20261013/finish.py:37
+whole-column 이후 normal field 카운트 5회 = MIDDLE 1 + 연결 띠 2 + WIDE_ROOT 2.
+이는 초기 Mandelbulb나 G5·G6 CC 내부 법선 제어까지 포함한 역사 전체 카운트가 아니다.
+최근 smoothing_passes 7회 = MEDIUM 2 + SMALL 2 + 최종 합성 변위 3회라는 호출 수이다.
+하나의 변위에 S^7을 적용한 수식으로 치환할 수 없다.
+
+배리에이션: 가능한 것과 아직 준비되지 않은 것
+
+현재 같은 parametric seed 계열의 큰 형상·PCHIP 프로필·방향·진폭·파장·띠 폭을 바꾸는 것은
+기술적으로 가능하다. 공통 quad 연산과 후반 build는 특정 정점 수만을 요구하지 않는다.
+세대별로 다른 연산을 쓰더라도 그 조건과 순서를 명시하면 하나의 절차로 구성할 수 있다.
+초기·중간 일부 단계는 SPAN/COUNTER 두 입력 적용·재생 기록이 있다.
+그러나 최신 MIDDLE→최종 G7의 전체 경로는 SPAN 한 기둥에서 확인했다.
+임의의 새 메시나 다른 입력에서도 같은 조형 품질을 낸다는 증거는 없다.
+
+현재 연결이 필요한 부분은 세 가지이다.
+1. 초기 매스·이벤트·단계 선택값을 코드 내부 상수 대신 하나의 외부 recipe로 전달하기.
+2. 단계별 출력을 다음 단계의 실제 입력으로 전달하고 chart·PCA·role·반사 ID를 함께 운반하기.
+3. G0~G7 및 G6/G7 추가 변형을 구별하여 저장하는 하나의 순차 실행 경로로 연결하기.
+이번에 이 통합을 구현하거나 다른 기둥을 생성한 것은 아니다.
+새 형상법 전체를 다시 연구할 필요와, 기존 연산을 연결할 구현 작업을 구분한다.
+
+무엇이 설계 선택이었는가
+
+초기 매스 비례·큰 return 위치, 활성 창, root/child 위치와 크기, 단계별 연산 선택,
+파장·진폭·위상·PCHIP 가중치·마감 횟수는 작성하고 실험에서 선택한 값이다.
+최적의 값이나 레퍼런스 원본 수치로 확인된 값이 아니다.
+현재 형상을 처음부터 예정한 자동 진화 결과로 소급하여 설명하지 않는다.
+반면 선택 후의 정점 배치·분할·반사·변위 계산은 명시된 코드가 수행한다.
+앞으로 변경할 때는 입력, 수식, 파라미터, 실행 순서 중 무엇을 바꿨는지 기록한다.
+G가 같고 topology가 유지된 수정은 단계 버전으로 표시하여 분할 세대와 혼동하지 않는다.
+
+현재 한계와 보존한 미실행 가설
+
+최신 실제 렌더에서는 중간 골의 깊이와 하단 말림으로 이어지는 흐름이 개선되었다.
+작은 골의 독립적인 위계와 근접 삼각 면 억제는 미완이며 넓은 밝은 여백도 줄었다.
+기술적 검사 통과를 조형 완성이나 임의 입력 일반성으로 해석하지 않는다.
+누적 변형이 어색함에 기여했을 가능성은 있으나 동일 입력 대조로 원인을 분리하지 않았다.
+
+사용자가 제안한 '초기 Mandelbulb + G7 최종 Mandelbulb 디테일'은 미실행 마감 가설이다.
+현재 선택 계보에 G7 Mandelbulb를 적용한 것으로 기록하지 않는다.
+초기 nearest-outside 이동을 그대로 재적용하는 것과 얕은 법선 relief로 사용하는 것은
+서로 다른 연산이며, 어느 쪽도 현재 결과의 개선으로 검증되지 않았다.
+이 가설을 실행 지시나 필수 개발 조건으로 취급하지 않는다.
+
+증거와 확인 범위
+
+LINEAGE.json: 실제 15개 receipt, 16개 입력 관계, G 번호, 코드 해시, 원본 경로.
+receipts/: 원래 generation.json 15개의 바이트 사본. 원본을 수정하지 않았다.
+초기 G1/G2 receipt에는 당시 부모 control hash가 없다. 현재 관찰한 SHA를 당시 binding으로
+소급하지 않는다. WALL 이후에는 실제 부모 SHA 연결을 확인할 수 있다.
+이번 확인은 작은 receipt·현재 보존 코드 해시·메타데이터 의존 관계를 대상으로 한다.
+새 메시 생성, 최신 전 과정 독립 재생, 모든 NPZ 재해시, 새 렌더는 수행하지 않았다.
+기존 단계별 검증의 범위는 각 원본 checkpoint를 따른다. 그 수치를 합산해 새 검사로 쓰지 않는다.
+현재 최종의 폐합·연결·대칭 확인과 자기교차·제작 적합성 미검증도 기존 기록 그대로이다.
+
+현재 실제 결과
+E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07
+실제 이미지: 같은 trial02의 images/SPAN_front.png, SPAN_body_oblique.png, SPAN_close_oblique.png.
+워크플로우의 외부 참고 비교는 ../iaac_workflow_comparison_20261013/COMPARISON.txt에 작성한다.

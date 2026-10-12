@@ -1,0 +1,330 @@
+{
+  "input_case": "SPAN",
+  "candidate": "DIRECTIONAL",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04",
+  "source_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+  "source_generation": 4,
+  "source_surface": "mean",
+  "preserved_parent": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04",
+    "generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+    "control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+    "geometry_sha256": "118a4571d056170fdf5d5c4279ff021efcad5591081cd579637c489041bc626d",
+    "evidence_sha256": "74361fd82d0007ec4392b60947351e7d0af1e6d984a03e75d03095dc9d1862a7",
+    "g3": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G03_events",
+      "generation_sha256": "8ca6bc8d1a61dda5aa917b36a8c3be6dc90f967fda5e7d8e76d2633695cb2e31",
+      "control_sha256": "93a5a2bf985db03e77cbaaace2218fcd6d08fafb1d697d6f0c6f844771f8a8ef",
+      "geometry_sha256": "0c5cc528ee203705a2594a1ee1086e983a7904e044c32802e3d6ebf6600f3555",
+      "evidence_sha256": "959210c1deced5bfec9655621d9c62a2d411f1c76061955c3e478c7ea34124ce"
+    },
+    "neutral": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05",
+      "generation_sha256": "b1df93a7b747fc54055a170ab73657f5ea683ea9d4b6332b5d00aa61d94ec80b",
+      "control_sha256": "d5cc89fd59b64ec37b7ac5eec7555a1d04ce5c9f765c694c2cd1b1cae2819f39",
+      "geometry_sha256": "83d485b1e844251a2cef08dc77fc32e64c61239ddd6e93683be80300f4f5bb75",
+      "evidence_sha256": "4a9d1c044e201b91d7738b6e0cefea7a8515cac4028ca293dd10289b43356d67"
+    },
+    "parent_verification": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\VERIFICATION.json",
+    "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2",
+    "parent_recipe": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\RECIPE.json",
+    "parent_recipe_sha256": "b3ebba32a429d2741ddf719c8286852fbd3b52b6f8530b644f82c7fb6a60907a",
+    "baseline": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05",
+      "generation_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210",
+      "control_sha256": "628845add1b453cb4275a0ebc0c6eab633352beedae7f03ff13c147153af1012",
+      "geometry_sha256": "8a879f14a41c299f15195260625ec5f1ce6a4e9cc741d57e70dcafba98180c70",
+      "evidence_sha256": "d0f4ef9539bae718e5fc6922858f3bdacd03468f604a39e02f926e7e4df87e29"
+    },
+    "baseline_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\VERIFICATION.json",
+    "baseline_verification_sha256": "d56de97963f215c966c4273c325ce6ad0408ad6b9590083fbaffe68b74a26ecb",
+    "baseline_render_verification": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\RENDER_VERIFICATION.json",
+    "baseline_render_verification_sha256": "b1bb8647b57b05e8c017b224e67e4db7cc00c4eb76b6551ff82ece1ef160612f"
+  },
+  "geometry_code_sha256": {
+    "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+    "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+    "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+    "experiments\\coherent_fold_detail_20261013\\study.py": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9",
+    "experiments\\coherent_fold_detail_20261013\\fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+  },
+  "coherent_rules": {
+    "schema": "ROOT_COHERENT_SIGNED_DETAIL_V1",
+    "source_generation": 4,
+    "output_generation": 5,
+    "subdivision_passes_added": 1,
+    "scale_mode": "LOCAL_INCIDENT_SCALE",
+    "amplitude": 0.8,
+    "band": {
+      "period_root_radius": 0.7,
+      "major_linear": 0.16,
+      "major_warp_amplitude": 0.2,
+      "major_warp_frequency": 0.9,
+      "major_warp_phase": 0.31
+    },
+    "role_weights": {
+      "SOURCE": 0.0,
+      "WALL": 1.0,
+      "CAP": 0.65
+    },
+    "role_pool": {
+      "own_weight": 2.0,
+      "neighbor_mean_weight": 1.0,
+      "divisor": 3.0
+    },
+    "geometry_gain": {
+      "floor": 0.5,
+      "bending_scale": 0.35,
+      "planarity_scale": 0.03
+    },
+    "normal": {
+      "face": "face_scalar",
+      "edge_incident_mean_factor": 0.5,
+      "vertex_incident_mean_factor": "1 - 1 / actual degree"
+    },
+    "fixed_zero": [
+      "w1",
+      "w2",
+      "w3",
+      "w4",
+      "w6",
+      "w7"
+    ],
+    "modes": {
+      "COHERENT": "constant supported signed scalar",
+      "DIRECTIONAL": "constant scalar times root-oriented cosine bands",
+      "ROLE_CURVATURE": "same bands times pooled role and actual geometry gains"
+    },
+    "planarity": "max four cyclic fourth-plane distances / perimeter of the other three vertices",
+    "bending": "mean over four adjacent faces of 1 - clipped dot of actual unit face normals",
+    "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+    "coefficient_scope": "new dimensionless normal coefficients times current local incident mean-edge scales",
+    "symmetry_scope": "canonical inherited face signs applied to actual XYZ; no XYZ averaging",
+    "support_policy": {
+      "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+      "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+      "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+    }
+  },
+  "operator_metadata": {
+    "generation": 5,
+    "implementation": "REFERENCE_COUPLED",
+    "scale": "LOCAL_INCIDENT_SCALE",
+    "weights": {
+      "wf": 0.0,
+      "w1": 0.0,
+      "we": 0.0,
+      "w2": 0.0,
+      "wp": 0.0,
+      "w3": 0.0,
+      "w4": 0.0,
+      "w6": 0.0,
+      "w7": 0.0
+    },
+    "u_map": {},
+    "unknown_u": 0,
+    "eq4_eligible": 109408,
+    "eq4_fallback": 0,
+    "intrinsic": null,
+    "scale_ranges": {
+      "face": [
+        0.004833058989874463,
+        0.1512153089939997
+      ],
+      "edge": [
+        0.004835391215460947,
+        0.1512153089939997
+      ],
+      "vertex": [
+        0.00553215620879223,
+        0.14462973743286667
+      ]
+    },
+    "locked_vertex_count": 0,
+    "intrinsic_range": null,
+    "dependency": "Eq1/4 -> Eq10 -> Eq2 -> Eq11; completed faces + ORIGINAL edge midpoints -> Eq3",
+    "normals": "unit input face; edge arithmetic mean; vertex normalized incident face mean",
+    "regional_controls": "Explicit absolute arrays, after intrinsic interpolation; opt-in only.",
+    "experiment": "COHERENT_FOLD_DETAIL_20261013",
+    "mode": "DIRECTIONAL",
+    "recipe": {
+      "schema": "ROOT_COHERENT_SIGNED_DETAIL_V1",
+      "source_generation": 4,
+      "output_generation": 5,
+      "subdivision_passes_added": 1,
+      "scale_mode": "LOCAL_INCIDENT_SCALE",
+      "amplitude": 0.8,
+      "band": {
+        "period_root_radius": 0.7,
+        "major_linear": 0.16,
+        "major_warp_amplitude": 0.2,
+        "major_warp_frequency": 0.9,
+        "major_warp_phase": 0.31
+      },
+      "role_weights": {
+        "SOURCE": 0.0,
+        "WALL": 1.0,
+        "CAP": 0.65
+      },
+      "role_pool": {
+        "own_weight": 2.0,
+        "neighbor_mean_weight": 1.0,
+        "divisor": 3.0
+      },
+      "geometry_gain": {
+        "floor": 0.5,
+        "bending_scale": 0.35,
+        "planarity_scale": 0.03
+      },
+      "normal": {
+        "face": "face_scalar",
+        "edge_incident_mean_factor": 0.5,
+        "vertex_incident_mean_factor": "1 - 1 / actual degree"
+      },
+      "fixed_zero": [
+        "w1",
+        "w2",
+        "w3",
+        "w4",
+        "w6",
+        "w7"
+      ],
+      "modes": {
+        "COHERENT": "constant supported signed scalar",
+        "DIRECTIONAL": "constant scalar times root-oriented cosine bands",
+        "ROLE_CURVATURE": "same bands times pooled role and actual geometry gains"
+      },
+      "planarity": "max four cyclic fourth-plane distances / perimeter of the other three vertices",
+      "bending": "mean over four adjacent faces of 1 - clipped dot of actual unit face normals",
+      "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+      "coefficient_scope": "new dimensionless normal coefficients times current local incident mean-edge scales",
+      "symmetry_scope": "canonical inherited face signs applied to actual XYZ; no XYZ averaging",
+      "support_policy": {
+        "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+        "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+        "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+      }
+    },
+    "support_policy": {
+      "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+      "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+      "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+    },
+    "source_generation": 4,
+    "output_generation": 5,
+    "subdivision_passes_added": 1,
+    "added_topology_events": 0,
+    "added_field_passes": 0,
+    "actual_class_counts": {
+      "-1": 0,
+      "0": 27354,
+      "1": 54704,
+      "2": 27352
+    },
+    "supported_face_count": 10368,
+    "resolved_control_ranges": {
+      "wf": [
+        -0.7999994297894448,
+        0.799999999125003
+      ],
+      "w1": [
+        0.0,
+        0.0
+      ],
+      "we": [
+        -0.39993620557837606,
+        0.39997155828297537
+      ],
+      "w2": [
+        0.0,
+        0.0
+      ],
+      "wp": [
+        -0.632629897982716,
+        0.5967623889296816
+      ],
+      "w3": [
+        0.0,
+        0.0
+      ],
+      "w4": [
+        0.0,
+        0.0
+      ],
+      "w6": [
+        0.0,
+        0.0
+      ],
+      "w7": [
+        0.0,
+        0.0
+      ]
+    },
+    "supported_eq4_eligible_count": 10368,
+    "supported_eq4_fallback_count": 0,
+    "phase_diagnostics": {
+      "physical_wavelength": 0.30178309181397694,
+      "cycles_across_inherited_root_minor_extent": 2.2056476595980006,
+      "supported_adjacent_edge_count": 20416,
+      "supported_neighbor_unwrapped_phase_abs_quantiles": [
+        7.533477384136233e-07,
+        0.1644286979693707,
+        0.8624943062821179,
+        1.4541718836425317
+      ],
+      "alias_fraction_over_pi": 0.0,
+      "supported_mirror_seam_edge_count": 0,
+      "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+    },
+    "source_array_hashes": {
+      "xyz": "aa2b407738d89a650eddb1cd3c1b1915c6942e83676f737f0d52c86d1e13e8e0",
+      "faces": "17d170a07f0c711252a3e7fdea06b17197ff351f8b2f0a189047b464ae375616",
+      "classes": "3305468f9b3c8ff246811beb7745bda083ef9a853156a1b713b63c340df3d92e",
+      "g4_parent_face": "e0e69156eb9b123c526751d37d7f06e55885397a6c025bfd4e9f9bb444f4bf7a",
+      "g3_face_event_ids": "26e2f4b6665bdcbb0b4860295b3de49405aeb2566b83c8f231bf549c63b2d906",
+      "g3_face_roles": "676166ee87f7a7de20aa214dcf1d51cc9c0d8d1c40b0c658b53ff86ac27bda86",
+      "g3_mirror_face_signs": "807a06b637aab2f261a1ee35ca1069d3cc5a8bcda954e6d1b0eee6d3968828ba"
+    },
+    "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+    "controls_scope": "Global weights row is zero; actual dimensionless coefficients are saved resolved arrays, not world lengths.",
+    "anatomy_scope": "G03 SOURCE/WALL/CAP roles gate scalar amplitude; never previous-point V/E/F classes.",
+    "amplitude_scope": "No total-shift cap or preservation of organic/clay impression is imposed.",
+    "success_scope": "Actual directional folds, hierarchy and reference fidelity require visual review."
+  },
+  "added_CC_passes": 1,
+  "added_topology_events": 0,
+  "added_field_passes": 0,
+  "added_mandelbulb_evaluations": 0,
+  "lineage": "Frozen SIDEWALL_FAN G4 -> one actual spatially differentiated coherent-rule CC G5",
+  "comparison_scope": "Three coherent normal-control schedules from one actual G4. Role/geometry/root-frame signals evaluated before one CC step; not a factorial or exact reference replication.",
+  "subdivision_generation": 5,
+  "native_surface": "Explicit arithmetic quad-centre fans",
+  "control_vertices": 437634,
+  "control_quads": 437632,
+  "native_vertices": 875266,
+  "native_triangles": 1750528,
+  "control_file_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+  "geometry_file_sha256": "177514dd3efcc83923b91261a713e36a5650df069d5f6beebde7ffb9b3d55482",
+  "checks": {
+    "finite": true,
+    "closed_oriented_control": true,
+    "control_components": 1,
+    "control_Euler": 2,
+    "no_orphan_controls": true,
+    "minimum_native_triangle_area": 1.5002542709276953e-08,
+    "control_xyz_sha256": "7ff9c929708b962c524953152c6ebc235879c909033925af1c36813a5555d42e",
+    "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+    "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+    "native_xyz_sha256": "0792df9fcfd1468b3adc1b3d4e7bc6273c150fb8923d4e7f46405e2eeb07ab54",
+    "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39",
+    "symmetry_scope": "Independent actual replay and propagated reflection proof pending",
+    "self_intersection": "NOT_CHECKED_EXPLORATORY",
+    "fabrication": "NOT_CHECKED",
+    "passed": true
+  },
+  "visual_success": "NOT_ASSESSED",
+  "evidence_file_sha256": "abe38b477bc1c452549465aa86b206ad1b96e1cd19e44d3392450ee801ecab01"
+}

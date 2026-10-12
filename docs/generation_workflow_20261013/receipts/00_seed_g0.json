@@ -1,0 +1,83 @@
+{
+  "candidate": "SPAN_SPARSE",
+  "stage": "G00",
+  "operation": "Existing SPAN legacy_core and unchanged adjusted coarse recipe on unsplit 25-ring/16-sector carrier",
+  "recipe": {
+    "radius": [
+      0.7260000000000001,
+      0.92,
+      0.78,
+      0.63,
+      0.66,
+      0.73,
+      0.88,
+      0.7040000000000001
+    ],
+    "valley": 0.43,
+    "events": [
+      {
+        "id": "LOW_X",
+        "direction": 0,
+        "height": 0.22,
+        "span": 0.115,
+        "expansion": 0.95,
+        "constriction": 0.29,
+        "reexpansion": 0.62,
+        "return_depth": 0.65,
+        "overlap_width": 1.14,
+        "sweep": 0.24,
+        "mirror": false
+      },
+      {
+        "id": "HIGH_Y",
+        "direction": 1.5707963267948966,
+        "height": 0.7,
+        "span": 0.145,
+        "expansion": 0.82,
+        "constriction": 0.27,
+        "reexpansion": 0.9,
+        "return_depth": 0.72,
+        "overlap_width": 1.1,
+        "sweep": -0.2,
+        "mirror": false
+      },
+      {
+        "id": "DIAGONAL_BRIDGE",
+        "direction": 0.7,
+        "height": 0.47,
+        "span": 0.19575,
+        "expansion": 0.49,
+        "constriction": 0.16,
+        "reexpansion": 0.51,
+        "return_depth": 0.5152000000000001,
+        "overlap_width": 0.94,
+        "sweep": 0.24,
+        "mirror": false
+      }
+    ]
+  },
+  "control_vertices": 402,
+  "control_quads": 400,
+  "vertices": 802,
+  "triangles": 1600,
+  "minimum_triangle_area": 0.0020482956954795857,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "watertight": true,
+  "winding_consistent": true,
+  "geometric_reflection_error": [
+    2.91261673054264e-15,
+    2.9873046363423827e-15
+  ],
+  "input_carrier_bilinear_splits": 0,
+  "cap_interior_sampling": "Original unsplit carrier only; no added interior samples",
+  "source_code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\curved-fold-side-20261011\\experiments\\column_development_20261011\\seed_mass.py",
+  "source_function": "seed_mass.legacy_core",
+  "same_recipe_reference": "E:/CHESHIRE_DATA/column_development_20261011/inputs/SPAN_COARSE/G00",
+  "limitation": "Sampling ablation, not exact geometric decimation. Coarse cap samples may lose deep concave end returns. No guarantee of subsequent meso-scale improvement.",
+  "separate_geometric_smoothing": false,
+  "CC_coordinate_averaging": false,
+  "physical_fold_solver": false,
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "fabrication": "NOT_CHECKED"
+}

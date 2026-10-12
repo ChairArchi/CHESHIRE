@@ -1,0 +1,190 @@
+{
+  "signature": {
+    "algorithm": "EXISTING_TASK36_ANCESTRY_PLUS_FINITE_FIELD_V1",
+    "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00",
+    "recipe": {
+      "mode": "coupled",
+      "averaging_gain": 0.0,
+      "stencil_gain": 1.0,
+      "normal_gain": 1.0,
+      "decompose": true,
+      "vertex_memory": 1.0,
+      "face_gain": 0.65,
+      "edge_gain": 0.18,
+      "feedback": 1.0,
+      "inherited_bias": 0.8,
+      "diagonal_tension": -0.65,
+      "edge_tension": 0.5,
+      "vertex_tension": -0.8,
+      "ancestry_gain": 1.0,
+      "cap_mode": "plane_only",
+      "surface": "mean"
+    },
+    "stage": 1,
+    "field_recipe": {
+      "name": "IAAC_REPEAT",
+      "powers": [
+        4,
+        4
+      ],
+      "centres": [
+        2.5,
+        7.5
+      ],
+      "axial": 2.8,
+      "scales": [
+        1.6,
+        1.6
+      ],
+      "orientation": "Z",
+      "roll": 0.0,
+      "offset_y": 0.0,
+      "radius": 0.78,
+      "rings": 11,
+      "sectors": 16,
+      "fraction": 0.55,
+      "eligibility": "all",
+      "refinement": "bilinear",
+      "response": "nearest",
+      "local_step": null,
+      "convention": "polar",
+      "iterations": 4,
+      "family": "public-flow reconstruction"
+    },
+    "fraction": 0.55,
+    "field_budget": 0.35,
+    "local_target_factor": 1,
+    "staged_field": true,
+    "internal_iteration_schedule": [
+      4,
+      8,
+      18
+    ]
+  },
+  "candidate": "ANCESTRY_STAGED",
+  "stage": "G01",
+  "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\checkpoint.npz",
+  "parent": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\checkpoint.npz",
+  "operation": "Exactly one existing ancestry-aware Task36 coupled quad split, no standard CC averaging component, then finite nearest-outside field",
+  "cycle_order": [
+    "Task36_coupled_placement_and_one_quad_split",
+    "finite_nearest_outside_field"
+  ],
+  "quad_splits_per_cycle": 1,
+  "subdivision_passes_total": 1,
+  "field_passes_total": 1,
+  "growth_cycles_total": 1,
+  "task36_recipe": {
+    "mode": "coupled",
+    "averaging_gain": 0.0,
+    "stencil_gain": 1.0,
+    "normal_gain": 1.0,
+    "decompose": true,
+    "vertex_memory": 1.0,
+    "face_gain": 0.65,
+    "edge_gain": 0.18,
+    "feedback": 1.0,
+    "inherited_bias": 0.8,
+    "diagonal_tension": -0.65,
+    "edge_tension": 0.5,
+    "vertex_tension": -0.8,
+    "ancestry_gain": 1.0,
+    "cap_mode": "plane_only",
+    "surface": "mean"
+  },
+  "field_recipe": {
+    "name": "IAAC_REPEAT",
+    "powers": [
+      4,
+      4
+    ],
+    "centres": [
+      2.5,
+      7.5
+    ],
+    "axial": 2.8,
+    "scales": [
+      1.6,
+      1.6
+    ],
+    "orientation": "Z",
+    "roll": 0.0,
+    "offset_y": 0.0,
+    "radius": 0.78,
+    "rings": 11,
+    "sectors": 16,
+    "fraction": 0.55,
+    "eligibility": "all",
+    "refinement": "bilinear",
+    "response": "nearest",
+    "local_step": null,
+    "convention": "polar",
+    "iterations": 4,
+    "family": "public-flow reconstruction"
+  },
+  "field_step": {
+    "field_iterations": 4,
+    "fraction": 0.55,
+    "budget": 0.35,
+    "local_target_factor": 1,
+    "local_target_logs": [],
+    "finite_inside_fraction": 0.8027465667915106,
+    "field_moved_vertices": 1286,
+    "maximum_requested_field_step": 4.706625,
+    "maximum_field_step": 0.35000000000000003,
+    "raw_targets_checked": "Every initially inside query has a confirmed sampled finite-outside target before fraction/budget application",
+    "final_outside_guarantee": false,
+    "final_outside_explanation": "A fractional and budget-limited move can remain inside; no final outside or exact distance-field claim",
+    "extra_subdivision_performed": false
+  },
+  "field_cache": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\variations\\fields\\F02",
+  "field_used": true,
+  "feature_memory": false,
+  "field_iterations": 4,
+  "staged_field": true,
+  "field_staging_interpretation": "4/8/18 is an existing CHESHIRE hypothesis; lower finite iterations expand occupancy and change target geometry, not a pure frequency filter. Three growth cycles remain.",
+  "authored_return_event": null,
+  "authored_return_provenance": null,
+  "maximum_return_step": 0.0,
+  "step_budget_scope": "Field budget only; Task36 placement and optional authored return are separate and summed motion may exceed the field budget.",
+  "ancestry_rule": "Existing V/E/F class pattern enables weighted inherited-diagonal placement. Input anchors retain original cage face IDs; parent_face records immediate lineage. This is not crease-feature memory.",
+  "ancestry_eligible_faces": 0,
+  "incoming_faces": 400,
+  "original_anchor_count": 400,
+  "control_vertices": 1602,
+  "control_quads": 1600,
+  "physical_vertices": 3202,
+  "physical_triangles": 6400,
+  "watertight": true,
+  "winding_consistent": true,
+  "components": 1,
+  "minimum_triangle_area": 0.00020335455949535146,
+  "minimum_area_threshold": 1e-12,
+  "minimum_area_pass": true,
+  "geometric_reflection_error": [
+    3.5652682413748e-15,
+    3.5756248884384146e-15
+  ],
+  "reflected_triangle_sets_identical": [
+    true,
+    true
+  ],
+  "task36_maximum_step": 0.32665442103801956,
+  "task36_raw_to_reflected_maximum_change": 3.5535809346852124e-15,
+  "old_task36_vertex_maximum_step": 0.0,
+  "previous_control_vertex_max_movement": 0.3500000000000002,
+  "previous_control_vertices_moved": 308,
+  "component_maxima": {
+    "applied_averaging_component": 0.0,
+    "applied_stencil_component": 0.09044156688137327,
+    "applied_normal_component": 0.32665442103801956
+  },
+  "component_log_scope": "Raw decomposition bases retained under original Task36 keys; applied_* arrays include declared gains (averaging gain is zero).",
+  "CC_standard_averaging_gain": 0.0,
+  "separate_geometric_smoothing": false,
+  "task36_terminal_policy": "Existing plane_only: terminal V/E Z components constrained, terminal face displacement zero, terminal normal gains suppressed; later field can move these points. Not free-cap placement.",
+  "physical_surface": "Existing Task36 mean quad-centre triangle fans after the final operation, not independent geometry controls",
+  "provenance": "Existing CHESHIRE Task36/reference weighted stencils reused as a declared experiment; not IAAC original formulas or recovered executable source",
+  "self_intersection": "NOT_CHECKED_INTERMEDIATE",
+  "fabrication_thickness_structure": "NOT_CHECKED"
+}
