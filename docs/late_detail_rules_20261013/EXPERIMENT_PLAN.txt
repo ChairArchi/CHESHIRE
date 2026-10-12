@@ -1,0 +1,67 @@
+CHESHIRE — 후기 세분에서 작은 디테일을 발생시키는 규칙
+2026-10-13 / 실행 전 고정한 비교 계약
+
+출발점
+
+Base commit 97db877a2624ae1a82bf067cd246ea07bc5278e0.
+동일 worktree/branch의 별도 late_detail_rules_20261013 실험이다.
+부모는 E:\CHESHIRE_DATA\experiments\sidewall_fan_growth_20261013\trial01의
+실제 SIDEWALL_FAN/SPAN 및 COUNTER/G04다. G3 이벤트와 G4 실제 CC 계보를 연결한다.
+출력은 E:\CHESHIRE_DATA\experiments\late_detail_rules_20261013\trial01이다.
+기존 승인 기둥·게이트·원본 코드·완료 실험은 변경하지 않는다.
+
+연구 근거
+
+Hansmeyer, Design by Subdivision (2010), Eq1–4의 출처별 배치·법선 돌출과 세대별 제어.
+https://archive.bridgesmathart.org/2010/bridges2010-167.pdf
+IAAC의 공간장 이동·Digital Grotesque II의 위상 변화는 이후 독립 후보로 열어 둔다.
+현재 비교에서는 두 요인을 분리하기 위해 추가하지 않는다.
+세부 근거·과거 실험의 반례와 크기 정책 차이는
+docs/sidewall_fan_growth_20261013/REFERENCE_MECHANISMS.txt에 기록했다.
+
+네 조건
+
+NEUTRAL: w3=0, w4=0, wf=0, we=0, wp=0.
+EQ4_ONLY: w3=1.8, w4=.6, wf=0, we=0, wp=0.
+NORMAL_ONLY: w3=0, w4=0, wf=.8, we=−.2, wp=.4.
+COMBINED: w3=1.8, w4=.6, wf=.8, we=−.2, wp=.4.
+w1/w2/w6/w7는 모두 0이다. 법선 계수는 LOCAL_INCIDENT_SCALE 비율이다.
+두 입력에 동일한 계수를 쓴다. 참고 저자의 수치 복원이나 과거 절대 길이 재현이 아니다.
+
+작동 범위
+
+G3 실제 face_event_ids>0인 root/child 소유 면을 G4 parent_face로 전파한다.
+면 제어에는 이 지원 mask, edge/vertex 제어에는 incident face support 평균을 쓴다.
+V/E/F는 바로 이전 실제 CC의 점 출처이며 SOURCE/WALL/CAP 부위 역할과 구별한다.
+기존 reference-coupled CC를 사용한다. 완성된 면점은 edge/corner 계산에도 영향을 준다.
+지원 밖 제어가 0이어도 경계 halo가 생길 수 있으므로 좌표 불변을 주장하지 않는다.
+입력 지원·resolved controls·실제 scale·출처 eligible/fallback을 저장한다.
+
+세대·표면·비교 조건
+
+네 조건 모두 G4→G5 한 번의 실제 CC이며 새 topology 이벤트는 없다.
+면 수와 ordered connectivity는 같다. G는 형상장 iteration이나 새 가지 수가 아니다.
+native는 기존과 같은 명시적 quad arithmetic-centre fan이다.
+추가 smoothing·렌더 modifier·displacement map·Boolean·자기교차 보정은 사용하지 않는다.
+현재 큰 볼륨과 찰흙 인상은 고정 설계 조건이 아니다. 두 요인 이외의 변수만 이번에 고정한다.
+
+검증과 이미지
+
+부모 stage·소스·생성 코드의 SHA를 저장하고 같은 코드로 8상태를 실제 재생한다.
+중립 두 상태는 기존 G5의 모든 control/native 배열 dtype·shape·bytes를 정확히 비교한다.
+실제 대칭 ID를 G3→G4→G5의 CC 연결로 전파하며 chart 최근접 대응은 쓰지 않는다.
+한 닫힌 유향 몸체·유한성·양의 실제 삼각형 면적·고립 정점 없음·Euler2를 확인한다.
+이는 이번 고정 위상 비교의 계약이며 향후 다공성 기술의 고정 조건은 아니다.
+모든 조건의 X/Y 반사 XYZ와 실제 유향 삼각형 대응을 확인한다.
+자기교차·제작·구조 성능·임의 입력 일반성은 별도 범위다.
+
+동일 카메라 4각도·900px·24 samples·같은 무광 재질/광원을 사용한다.
+중립 2상태의 기존 원본8장을 검증 후 재사용하고 신규6상태의 원본24장을 렌더한다.
+자르거나 크기 변경하지 않은 4열 비교 보드8장과 실제 소스 목록을 보존한다.
+
+조형 판정
+
+정면·사선·측면에서 기존 넓은 cap과 벽 내부에 더 가는 능선·골·깊이가 읽히는지 본다.
+기존 외곽의 흔들림, 반복 quad 격자, 균일 가시, 얇은 crust만 늘어나는 결과도 기록한다.
+두 입력에서 같은 규칙의 효과와 부작용을 비교한다. 수치 PASS는 조형 채택이 아니다.
+현재까지 이 문서는 계획이다. 실제 생성·검증·렌더 후 별도 CHECKPOINT에 결론을 기록한다.

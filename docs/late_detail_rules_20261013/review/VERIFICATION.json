@@ -1,0 +1,703 @@
+{
+  "status": "PASS",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+  "expected_cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "expected_modes": [
+    "NEUTRAL",
+    "EQ4_ONLY",
+    "NORMAL_ONLY",
+    "COMBINED"
+  ],
+  "recipe": {
+    "base_commit": "97db877a2624ae1a82bf067cd246ea07bc5278e0",
+    "cases": [
+      "SPAN",
+      "COUNTER"
+    ],
+    "modes": [
+      "NEUTRAL",
+      "EQ4_ONLY",
+      "NORMAL_ONLY",
+      "COMBINED"
+    ],
+    "source_generation": 4,
+    "final_generation": 5,
+    "added_CC_passes": 1,
+    "late_rules": {
+      "schema": "LATE_DETAIL_COUPLED_2X2_V1",
+      "source_generation": 4,
+      "output_generation": 5,
+      "subdivision_passes_added": 1,
+      "scale_mode": "LOCAL_INCIDENT_SCALE",
+      "eq4": {
+        "w3": 1.8,
+        "w4": 0.6
+      },
+      "normal": {
+        "wf": 0.8,
+        "we": -0.2,
+        "wp": 0.4
+      },
+      "fixed_zero": [
+        "w1",
+        "w2",
+        "w6",
+        "w7"
+      ],
+      "factors": {
+        "NEUTRAL": {
+          "eq4": false,
+          "normal": false
+        },
+        "EQ4_ONLY": {
+          "eq4": true,
+          "normal": false
+        },
+        "NORMAL_ONLY": {
+          "eq4": false,
+          "normal": true
+        },
+        "COMBINED": {
+          "eq4": true,
+          "normal": true
+        }
+      },
+      "coefficient_scope": "new hypothesis; dimensionless coefficients times current local incident scale",
+      "class_scope": "actual G04 previous-point V=0/E=1/F=2 classes only; invalid face patterns use declared Eq1 fallback",
+      "ownership_scope": "event ownership defines spatial support, not point classes or DS roles",
+      "support_policy": {
+        "source": "G03 actual face_event_ids > 0 (root and accepted child territory)",
+        "face": "G04 face inherits G03 support through actual G04 evidence parent_face",
+        "edge": "arithmetic mean of the two G04 incident-face supports",
+        "vertex": "arithmetic mean of all G04 incident-face supports",
+        "coupling": "completed new face points feed edge and vertex rules; no XYZ pinning"
+      }
+    },
+    "geometry_code_sha256": {
+      "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+      "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+      "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+      "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+      "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+      "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+      "experiments\\late_detail_rules_20261013\\study.py": "a694de751ece2d8f585c79b12266b1810ac9ae44ffcad19f2cd2dfa7fe995e25",
+      "experiments\\late_detail_rules_20261013\\late_operator.py": "948c8531eed137e183063b0f7d36591f5f2236fe10fa4872172cf9905996f146"
+    },
+    "preserved_parent_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+    "topology_scope": "Same ordered CC connectivity in all four conditions; intersections allowed, no repair.",
+    "visual_scope": "Matched original renders; actual fine folds and hierarchy assessed separately from numerical PASS."
+  },
+  "source_index_sha256": "e52304a785aa4cfd791c482920885c8157087c0b0875befb52d027c0acf0a870",
+  "cases": {
+    "SPAN": {
+      "passed": true,
+      "input_case": "SPAN",
+      "parent": {
+        "passed": true,
+        "frozen_six_stage_metadata_links": true,
+        "original_six_meshes_rerun": false,
+        "actual_G3_to_G4_neutral_CC_and_evidence_exact": true,
+        "actual_G3_G4_native_matches_frozen_PASS": true,
+        "support_and_mirror_ancestry": "Actual replayed G3-to-G4 parent_face/input_edges; overlapping chart nearest matching is not used.",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "states": {
+        "NEUTRAL": {
+          "passed": true,
+          "candidate": "NEUTRAL",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "0262ef285d19bbf31e3f1aecd75865548eab14812f82b669c3dd532173f6358d",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "e3deb539a9beb5780febc02b644e05b0819ebff812d5b637724e3bd9a51319b3",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580791979123119e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580791979123119e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "generation_json_sha256": "5eeba53e4c5c8064874f899f1d8941d0f5aa88130624739148e0797d7f62a1f0",
+          "neutral_identity": {
+            "passed": true,
+            "reference": {
+              "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05",
+              "generation_sha256": "b1df93a7b747fc54055a170ab73657f5ea683ea9d4b6332b5d00aa61d94ec80b",
+              "control_sha256": "d5cc89fd59b64ec37b7ac5eec7555a1d04ce5c9f765c694c2cd1b1cae2819f39",
+              "geometry_sha256": "83d485b1e844251a2cef08dc77fc32e64c61239ddd6e93683be80300f4f5bb75",
+              "evidence_sha256": "4a9d1c044e201b91d7738b6e0cefea7a8515cac4028ca293dd10289b43356d67"
+            },
+            "arrays": {
+              "control_quad.npz": {
+                "array_keys": [
+                  "anchors",
+                  "chart",
+                  "classes",
+                  "faces",
+                  "generation",
+                  "rest",
+                  "surface",
+                  "xyz"
+                ],
+                "exact_dtype_shape_bytes": true
+              },
+              "geometry.npz": {
+                "array_keys": [
+                  "faces",
+                  "xyz"
+                ],
+                "exact_dtype_shape_bytes": true
+              }
+            },
+            "scope": "All control/native array inventories, dtypes, shapes and bytes; NPZ containers and new evidence/metadata are excluded."
+          }
+        },
+        "EQ4_ONLY": {
+          "passed": true,
+          "candidate": "EQ4_ONLY",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "7144b2068fbb05350dc86e0621b3599eeca37271bc56cd8aaf347f5059b20011",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "957b322a20cbb8bd099ecb22b8f0082b8b2277bf98ab108f727daad25664432b",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 8.769526750580652e-09,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.329070518200751e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.329070518200751e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "generation_json_sha256": "6efa1fc390a81c40a1ee077344b6599578e92d883dd1819af321fda0b2088cdb"
+        },
+        "NORMAL_ONLY": {
+          "passed": true,
+          "candidate": "NORMAL_ONLY",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "416289c8215864a8fb55a3283ac9eb8336f0e52868e59fe739375971ee9b59a2",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "474ff378f5272185aff985c36dac1c19f7dabf4b91240b503c7065c03fde11c7",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "generation_json_sha256": "77769da923cdc7dc30873d848abac96bcd45b0c3bb23f44d1e7a71e6760acdca"
+        },
+        "COMBINED": {
+          "passed": true,
+          "candidate": "COMBINED",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "df2dbb5c1b9bc2c15babd79490f16dab25d30e8b38f2434889acad94d5a50ecc",
+            "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+            "native_xyz_sha256": "b2542dac821e6e18eed25e38a3be7bf9bee647460775af93b783e0992bdfa07c",
+            "native_faces_sha256": "e557ec9976806c51883a7ea98cd96aa28cc98d1e70e86590955072c9c54e9f39"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.5002542709276953e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 1.1776740121916979e-14,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "0843015c1a86985ee12ed88704266d12c413beb2ca35d9a84df2879674b974e0",
+            "anchors": "b9711ebc38d61f33ec54bd44404653fe69a8ad5ae800aaf94e6f5be1631edf4c",
+            "chart": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5"
+          },
+          "generation_json_sha256": "a518e3718c96bf592d262e2d98e67a98d95b9ab7f8807ba4dc349d913ee69210"
+        }
+      },
+      "actual_factorial_sanity": {
+        "passed": true,
+        "combined_minus_neutral_equals_sum_of_single_factor_deltas_max_error": 3.582082587194985e-15,
+        "tolerance": 9.883975935465303e-12,
+        "coordinate_scale": 9.883975935465303,
+        "displacement_from_neutral": {
+          "NEUTRAL": {
+            "maximum": 0.0,
+            "rms": 0.0
+          },
+          "EQ4_ONLY": {
+            "maximum": 0.14260881908930909,
+            "rms": 0.008053803302930084
+          },
+          "NORMAL_ONLY": {
+            "maximum": 0.07994989152563219,
+            "rms": 0.0065167111550421325
+          },
+          "COMBINED": {
+            "maximum": 0.16349085734990715,
+            "rms": 0.010366415088128127
+          }
+        },
+        "scope": "Actual saved G5 control XYZ; algebraic sanity only, no aesthetic success threshold."
+      },
+      "visual_success": "NOT_ASSESSED; nonzero rule effects and numerical validity do not certify fine folds or visual hierarchy."
+    },
+    "COUNTER": {
+      "passed": true,
+      "input_case": "COUNTER",
+      "parent": {
+        "passed": true,
+        "frozen_six_stage_metadata_links": true,
+        "original_six_meshes_rerun": false,
+        "actual_G3_to_G4_neutral_CC_and_evidence_exact": true,
+        "actual_G3_G4_native_matches_frozen_PASS": true,
+        "support_and_mirror_ancestry": "Actual replayed G3-to-G4 parent_face/input_edges; overlapping chart nearest matching is not used.",
+        "parent_verification_sha256": "dea998c5ffffe910ac9222e4094d8ce9df50426d17cf52e295050a7fc674cbc2"
+      },
+      "states": {
+        "NEUTRAL": {
+          "passed": true,
+          "candidate": "NEUTRAL",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "7f01fefe9e78d6803bcf14850dfdc59e1a812ba0f36a0e0a8321382c161a9164",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "7c0c7141eefe986094b167331ae96b49289c11406a71b202f2f717e294d096f0",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 4.255520180069698e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580361673049448e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580361673049448e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "generation_json_sha256": "f5f5bbe2faa9bb279aed0bb52c923a7016b09ebb303bffc2eca0659204e2cd2e",
+          "neutral_identity": {
+            "passed": true,
+            "reference": {
+              "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05",
+              "generation_sha256": "05f0a61b30426e65c2f4464424b2ca697edb36a43303b535d2e6233f4eb98f8e",
+              "control_sha256": "8f7126f77f477f368c7ff69f31550b3d2246deb8e5bb02338bbc63bfd10c8835",
+              "geometry_sha256": "a19b5e0b75735b1904d47867eda4ac4ecc117145a37378abdc00f3cfc72a7834",
+              "evidence_sha256": "c040a440878ebe137965427cf9f6ac010e9d3f010cde1ff37080c2e4c89ff815"
+            },
+            "arrays": {
+              "control_quad.npz": {
+                "array_keys": [
+                  "anchors",
+                  "chart",
+                  "classes",
+                  "faces",
+                  "generation",
+                  "rest",
+                  "surface",
+                  "xyz"
+                ],
+                "exact_dtype_shape_bytes": true
+              },
+              "geometry.npz": {
+                "array_keys": [
+                  "faces",
+                  "xyz"
+                ],
+                "exact_dtype_shape_bytes": true
+              }
+            },
+            "scope": "All control/native array inventories, dtypes, shapes and bytes; NPZ containers and new evidence/metadata are excluded."
+          }
+        },
+        "EQ4_ONLY": {
+          "passed": true,
+          "candidate": "EQ4_ONLY",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "2ffd1f2ca5d4b5bf7cda39c5850ffe14346dee8e03bc425cc522bbc479e76d2f",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "bbfb895503ac43cd401064f9c76b7a5bece96d6fab16cb01fd1b155100d3bb7a",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 1.4216865808300198e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580361673049448e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.580361673049448e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "generation_json_sha256": "c7735f3b0b3b806e11cdd4a7f88552c675c1b96fcbadd98461e9dc734ccc4380"
+        },
+        "NORMAL_ONLY": {
+          "passed": true,
+          "candidate": "NORMAL_ONLY",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "462649ead0c030a147f1972398b1419c56987a63cec45f0d7728aa7095a7d115",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "b27e3a34c5969014551ba98dcb7e11a1b895fb5ba81e28fd750f9b04631b4eeb",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 4.255520180069698e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.3486945852147655e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.3486945852147655e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "generation_json_sha256": "7c19b68f7d42051405a0362d53e39daa8e3e251d47280b4fe420a055a0ea9ccb"
+        },
+        "COMBINED": {
+          "passed": true,
+          "candidate": "COMBINED",
+          "actual_generation": 5,
+          "added_CC_passes": 1,
+          "actual_support_controls_and_independent_coupled_CC_replay": true,
+          "exact_control_native_and_evidence_replay": true,
+          "hashes": {
+            "control_xyz_sha256": "084273bc6ba7873bc1c68beebf06e2854eb9485a8ac9fb7c7e81bfcbc8f97e50",
+            "control_faces_sha256": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "chart_sha256": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e",
+            "native_xyz_sha256": "664616f3976b283294ebca08ed5a893c902d11362808f4ebb49ee41e320f146e",
+            "native_faces_sha256": "baaebe269ac98e8101aa3f94750594ad3d2da0e0b0b10f9f8828bd034b50abac"
+          },
+          "actual_native_topology": {
+            "passed": true,
+            "finite": true,
+            "closed_oriented_edge_incidence": true,
+            "degenerate_edges": false,
+            "components": 1,
+            "unique_native_edges": 2625792,
+            "euler_characteristic": 2,
+            "physical_vertices": 875266,
+            "physical_triangles": 1750528,
+            "scope": "Actual native edge incidence, orientation and connectivity; self-intersections excluded",
+            "minimum_actual_triangle_area": 2.0266925554638588e-08,
+            "configured_minimum_triangle_area": 1e-14,
+            "self_intersection": "NOT_CHECKED_EXPLORATORY"
+          },
+          "actual_native_symmetry": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.913435956721791e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 5.913435956721791e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          },
+          "shared_control_array_hashes": {
+            "faces": "a782f33392652c5addd3b6fda0b9cd8216ef69375b78f37bf5ecd8e69c3863ee",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "rest": "de8dba18d3f557e66054f6b91ffed863d5864241776eba44e6150b5cb2f13038",
+            "anchors": "e22a76ddab7311634316fc07a5985bdd78664a14769f7c125a8edafc0abcac9f",
+            "chart": "9b550733ebe3ff5d63a32c93543d190fe0490409a4a27282d9cd707676428b0e"
+          },
+          "generation_json_sha256": "af05d6145260f4319806d66008bcde905ffb462aa84b6bbf178d934ded775ce4"
+        }
+      },
+      "actual_factorial_sanity": {
+        "passed": true,
+        "combined_minus_neutral_equals_sum_of_single_factor_deltas_max_error": 3.58724037616909e-15,
+        "tolerance": 9.930922093187944e-12,
+        "coordinate_scale": 9.930922093187943,
+        "displacement_from_neutral": {
+          "NEUTRAL": {
+            "maximum": 0.0,
+            "rms": 0.0
+          },
+          "EQ4_ONLY": {
+            "maximum": 0.17155972758202617,
+            "rms": 0.00774536701321147
+          },
+          "NORMAL_ONLY": {
+            "maximum": 0.09907004213250517,
+            "rms": 0.006252750807076231
+          },
+          "COMBINED": {
+            "maximum": 0.1979377989961952,
+            "rms": 0.0099609908962114
+          }
+        },
+        "scope": "Actual saved G5 control XYZ; algebraic sanity only, no aesthetic success threshold."
+      },
+      "visual_success": "NOT_ASSESSED; nonzero rule effects and numerical validity do not certify fine folds or visual hierarchy."
+    }
+  },
+  "verifier_module_sha256": "ea622c4e7a80af84faaebfd0ae1a2af0a081c74d35b0c05e8d5a44b5dec6db2d",
+  "scope": "Frozen six-stage sidewall metadata/hash linkage, actual G3-to-G4 CC support/mirror ancestry, independent causal control construction and coupled G4-to-G5 replay, exact eight saved states, actual native one-body topology/area/XYZ/oriented-triangle symmetry, and NEUTRAL identity to existing G5.",
+  "excluded": [
+    "Frozen six original meshes all rerun",
+    "Aesthetic/reference fidelity certification",
+    "Exact XYZ pinning outside direct support",
+    "Self-intersections",
+    "Fabrication",
+    "Structural performance",
+    "Arbitrary input generality"
+  ]
+}

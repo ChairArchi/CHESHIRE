@@ -1,0 +1,79 @@
+{
+  "base_commit": "97db877a2624ae1a82bf067cd246ea07bc5278e0",
+  "cases": [
+    "SPAN",
+    "COUNTER"
+  ],
+  "modes": [
+    "NEUTRAL",
+    "EQ4_ONLY",
+    "NORMAL_ONLY",
+    "COMBINED"
+  ],
+  "source_generation": 4,
+  "final_generation": 5,
+  "added_CC_passes": 1,
+  "late_rules": {
+    "schema": "LATE_DETAIL_COUPLED_2X2_V1",
+    "source_generation": 4,
+    "output_generation": 5,
+    "subdivision_passes_added": 1,
+    "scale_mode": "LOCAL_INCIDENT_SCALE",
+    "eq4": {
+      "w3": 1.8,
+      "w4": 0.6
+    },
+    "normal": {
+      "wf": 0.8,
+      "we": -0.2,
+      "wp": 0.4
+    },
+    "fixed_zero": [
+      "w1",
+      "w2",
+      "w6",
+      "w7"
+    ],
+    "factors": {
+      "NEUTRAL": {
+        "eq4": false,
+        "normal": false
+      },
+      "EQ4_ONLY": {
+        "eq4": true,
+        "normal": false
+      },
+      "NORMAL_ONLY": {
+        "eq4": false,
+        "normal": true
+      },
+      "COMBINED": {
+        "eq4": true,
+        "normal": true
+      }
+    },
+    "coefficient_scope": "new hypothesis; dimensionless coefficients times current local incident scale",
+    "class_scope": "actual G04 previous-point V=0/E=1/F=2 classes only; invalid face patterns use declared Eq1 fallback",
+    "ownership_scope": "event ownership defines spatial support, not point classes or DS roles",
+    "support_policy": {
+      "source": "G03 actual face_event_ids > 0 (root and accepted child territory)",
+      "face": "G04 face inherits G03 support through actual G04 evidence parent_face",
+      "edge": "arithmetic mean of the two G04 incident-face supports",
+      "vertex": "arithmetic mean of all G04 incident-face supports",
+      "coupling": "completed new face points feed edge and vertex rules; no XYZ pinning"
+    }
+  },
+  "geometry_code_sha256": {
+    "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+    "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+    "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+    "experiments\\late_detail_rules_20261013\\study.py": "a694de751ece2d8f585c79b12266b1810ac9ae44ffcad19f2cd2dfa7fe995e25",
+    "experiments\\late_detail_rules_20261013\\late_operator.py": "948c8531eed137e183063b0f7d36591f5f2236fe10fa4872172cf9905996f146"
+  },
+  "preserved_parent_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+  "topology_scope": "Same ordered CC connectivity in all four conditions; intersections allowed, no repair.",
+  "visual_scope": "Matched original renders; actual fine folds and hierarchy assessed separately from numerical PASS."
+}

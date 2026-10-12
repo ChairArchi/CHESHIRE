@@ -1,0 +1,120 @@
+LATE DETAIL RULES trial01 — 독립 시각 검토
+
+실험·렌더·검토일: 2026-10-13 (Asia/Seoul)
+검토 범위: NEUTRAL / EQ4_ONLY / NORMAL_ONLY / COMBINED, SPAN / COUNTER, 실제 G05
+확인한 이미지: 기존 SIDEWALL_FAN 원본을 재사용한 NEUTRAL 8장 + 신규 원본 24장 + 4열 비교 보드 8장을 모두 view_image로 직접 읽었다.
+
+판정
+
+근접 시각 변화: PASS. NORMAL_ONLY와 COMBINED에서는 작은 입체 굴곡과 날의 변화가 분명하다. 이전의 넓고 비어 보이던 부모벽·자식 날 표면에 읽히는 작은 규모가 생겼으므로, 단순히 변화가 없었다고 평가하지 않는다. EQ4_ONLY의 변화는 상대적으로 약하고 주로 경계·횡단 띠·각진 면으로 나타난다.
+두 입력에서 모드별 효과의 재현: PASS, 이 두 입력과 한 recipe에 한정. SPAN과 COUNTER 모두 EQ4_ONLY의 계단형 면, NORMAL_ONLY의 촘촘한 셀 반복, COMBINED의 더 사선적인 작은 날·조각이라는 차이를 보인다. 임의 입력의 일반성이나 원하는 조형 위계의 전이를 인증하는 판정은 아니다.
+부모 골 → 중간 접힘 → 작은 접힘의 연속 위계: 목표 미달. 기존 큰 벽과 옆 돌출은 남아 있고 그 위에 작은 규모가 추가되지만, 새 작은 골의 진행이 부모 골에서 갈라져 중간 구조를 거쳐 이어지는 관계는 네 각도에서 명료하게 읽히지 않는다. 전체 연구 성과는 PARTIAL로 기록한다.
+최종 조형 채택: 보류. NORMAL_ONLY와 COMBINED는 실제 디테일 대안으로 보존할 가치가 있으나, 이번 이미지로 참조 프로젝트 수준의 접힘 위계나 완성도를 달성했다고 소개할 근거는 없다. 두 안 중 무엇이 더 아름다운지는 이 기술 검토가 확정하지 않는다.
+
+판정 기준은 내부에서 읽히는 형태와 규모 관계다. 유기적이고 둥근 볼륨의 보존, 특정한 부드러움, Mandelbulb 형상의 유지는 이번의 필수 성공 조건으로 두지 않았다. 사용자가 언급한 로댕·찰흙의 인상 자체를 실패로 취급하지 않는다. 반대로 셀 수, triangle 수, 대칭 수치, 비영점 변위가 늘었다는 사실만으로 디테일의 조형 성공을 선언하지 않는다. 디자이너인 사용자의 최종 조형 판단을 우선하며, 아래의 인상 표현은 검토자의 실제 이미지 판독이다.
+
+모드별 실제 관찰
+
+NEUTRAL
+이전 SIDEWALL_FAN G05의 실제 이미지다. 큰 부모벽, 옆으로 나온 넓은 자식 날, 아래쪽 평행 층 테두리가 읽힌다. 날 내부와 세로 벽의 넓은 면은 비교적 비어 있고 일부 subdivision 면 밴드가 보인다. 앞선 리뷰의 큰 옆 성장 PARTIAL 판정을 대조로 사용하며, 이번 NEUTRAL이 새 생성 성과라는 뜻으로 세지 않는다.
+
+EQ4_ONLY
+SPAN의 shoulder_front와 shoulder_oblique에서 위·중간 자식의 경계, 세로 벽, 아래 자식으로 이어지는 부위가 잘게 끊긴 계단형 면으로 바뀐다. shoulder_side에서는 위쪽 둥근 끝면 둘레의 가는 평행 띠와 아래 벽의 다각형 단면이 특히 잘 보인다. 기존의 큰 옆 돌출과 그 사이의 넓은 홈은 식별된다.
+COUNTER에서도 같은 종류의 변화가 보인다. 세로로 선 상부 날과 중간 가로 돌출은 유지되며, 하단에는 각진 면과 짧은 층이 늘어난다. 두 입력의 전체 front에서는 NEUTRAL과의 차이가 작다.
+새 작은 규모는 주로 면의 각과 경계 반복으로 나타난다. 긴 부모 골에서 독립된 작은 분기 골의 경로를 추적하기는 어렵다. 따라서 이 단독 안을 접힘 위계의 개선으로 채택하지 않는다.
+
+NORMAL_ONLY
+두 입력 모두 넓은 날과 부모벽에 촘촘한 셀·작은 돌기가 생긴다. shoulder_oblique와 shoulder_side에서 실제 요철의 그림자와 가장자리 변화가 확인되며, 표면 무늬만 바뀐 것으로 읽히지는 않는다. 셀의 배열은 큰 볼륨의 휘어짐을 따라 돌아가므로 완전히 무방향인 잡음으로 평가하지 않는다.
+그러나 가까이 보면 비슷한 간격과 크기의 반복이 강하다. SPAN의 상부·중간 날, COUNTER의 곧게 선 날 끝과 하단 벽에서 격자 또는 와플 같은 표면 조직이 우세하다. 큰 옆 돌출을 식별할 수는 있지만, 그 안의 장거리 골과 작은 접힘의 시작·분기·종료 관계는 약하다. 넓은 면의 공백은 줄었으나, 부모와 자식의 형상 관계를 세밀하게 만드는 것보다 그 표면을 같은 작은 조직으로 덮는 효과가 주도한다.
+
+COMBINED
+두 입력 모두 NORMAL_ONLY보다 셀의 정렬 인상이 약해지고, 작은 사선 날·삼각 조각이 더 두드러진다. SPAN shoulder_oblique의 하부 넓은 벽과 COUNTER의 하단 세로 날에서 방향을 가진 작은 조각들이 보인다. 같은 적용 영역에서 NORMAL_ONLY와 다른 실제 형상 반응을 얻었다는 점은 인정한다.
+작은 조각은 경계 실루엣도 거칠게 만들고, 중간 자식 밑동과 큰 벽의 접속부를 잘게 나누어 보이게 한다. 반복층이 사선으로 바뀐 부분은 있지만, 여러 셀을 가로질러 이어지는 작은 연속 골을 독립된 다음 계층으로 읽기는 어렵다. 검토자에게는 기존 큰 옆 날 위의 잘게 갈라진 얇은 표면층이라는 인상이 우세하다. 이것은 실제로 별도 부품이나 박막을 붙였다는 위상 주장이 아니다.
+COMBINED가 NORMAL_ONLY보다 조형적으로 우수하다는 단정은 하지 않는다. 사선의 흐름과 거친 날을 선호할 수 있고, NORMAL_ONLY의 규칙적 조직을 선호할 수도 있다. 이번의 공통 한계는 부모 골에 근거한 작은 접힘의 연속 경로가 충분히 읽히지 않는다는 것이다.
+
+두 입력과 네 각도의 교차 판독
+
+shoulder_front: 모드 차이가 가장 직접적으로 보인다. SPAN의 대각으로 퍼진 상부 날과 COUNTER의 세로로 선 상부 날이라는 기존 입력 차이는 유지된다. NORMAL_ONLY와 COMBINED의 세밀한 조직은 두 입력 모두에서 나타난다. 새 조직이 중앙 골 양옆의 면과 밑동을 덮어 큰 면의 단순함은 줄이지만, 동시에 원래 부드러운 면에서 읽히던 긴 음영 경로를 잘게 끊는다.
+shoulder_oblique: 작은 요철·날이 실제 입체로 읽힌다. 큰 부모벽과 자식의 방향 차이도 남아 있다. 셀 또는 작은 조각의 증가와 부모에서 자식으로 흐르는 골의 증가를 구별하기에 중요한 각도이며, 후자의 개선은 제한적이다.
+shoulder_side: 기존 평행 층 테두리와 큰 자식의 돌출 규모를 확인할 수 있다. EQ4_ONLY는 층과 각진 단면을 강조하고, NORMAL_ONLY와 COMBINED는 그 넓은 면에 작은 조직을 채운다. 대각 조각이 늘어도 큰 옆 날의 넓은 끝면·짧은 밑동이라는 기본 관계가 완전히 바뀌지는 않는다.
+front: NORMAL_ONLY와 COMBINED의 어깨 부위는 더 진하고 거친 조직으로 구별된다. 전체 기둥의 실루엣과 큰 어깨·허리 비례를 새로 재편하는 규모의 변화는 아니다. 전체 front만으로 이번 작은 디테일의 품질을 판정하지 않았으며 세 근접 각도를 함께 사용했다.
+
+부모, 연결, 대칭의 시각 판독
+
+바깥 큰 어깨와 전체 기둥 흐름에 눈에 띄는 붕괴는 보이지 않는다. 기존 중앙 깊은 틈의 위치와 큰 옆 돌출도 네 모드에서 추적할 수 있다. 다만 NORMAL_ONLY와 COMBINED는 부모벽과 자식의 표면을 바꾸고 접속부의 작은 음영을 늘리므로, 원래 골의 표면 XYZ나 판독성이 그대로 보존되었다고 말하지 않는다. 원래 WALL 중앙 골의 재구성은 앞선 ROOT_ONLY/SIDEWALL_FAN 경로에서 이미 일어났다.
+렌더에서 부유 부품이나 정면의 뚜렷한 좌우 비대칭은 보이지 않는다. COMBINED는 작은 날과 뾰족한 경계 조각이 많아졌으며, 이는 NEUTRAL의 둥근 날과 다른 선택 가능한 성격이다. 작은 가시가 생겼다는 사실 자체를 실패로 세지 않는다. 그 조각들의 방향·크기 관계가 부모 흐름과 충분히 조직되는지는 별도로 남는 문제다.
+이미지는 단일 연결 성분, 폐합, 실제 XYZ·방향성 triangle 대칭, self-intersection 부재를 증명하지 않는다. 붙어 보이는 표면과 어두운 틈의 판독을 위상적 연결·관통 공극의 인증으로 확대하지 않는다.
+
+실험 비교와 G의 의미
+
+같은 실제 SIDEWALL_FAN G04를 출발점으로 두 규칙의 활성 여부를 교차한 네 조건이다. NEUTRAL은 둘 다 비활성, EQ4_ONLY는 Eq.4 관련 위치 규칙만 활성, NORMAL_ONLY는 법선 관련 규칙만 활성, COMBINED는 둘 다 활성이다. 실제 G04에서 실제 subdivision 한 번을 추가하여 모두 G05이며, 이번에 새 topology event를 추가한 것은 아니다. 명시적 arithmetic quad-centre-fan native 표면을 비교한다.
+recipe의 계수는 이번의 국소 incident-scale 가설이다. 이 결과를 논문 전체 기법의 충실한 재현이나 모든 계수 범위의 평가로 확대하지 않는다. 완료된 face point가 edge/vertex 규칙에도 공급되는 결합 연산이므로 COMBINED를 독립 두 변위의 단순 합으로 해석하지 않는다. 이벤트 소유 영역은 적용 support이며 V/E/F point class나 DS 역할을 뜻하지 않는다.
+기존 NEUTRAL 원본 8장은 재렌더하지 않았다. 새 NEUTRAL의 control/native 모든 배열 key·dtype·shape·bytes가 기존 SIDEWALL_FAN G05와 같다는 독립 증명을 전제로 재사용했다. NPZ 컨테이너·evidence·metadata까지 모두 같다는 주장은 아니다. 새로 렌더한 것은 나머지 세 모드의 양 입력 네 각도, 총 24장이다.
+원본 32장은 동일 네 카메라, 900×900, Cycles 24 samples, 같은 균일 mineral 재질·flat geometric normals·조명 조건이다. modifiers와 normal maps는 없다. 서로 다른 렌더 스크립트의 원문 SHA와 공통 recipe SHA, 실제 카메라·재질·장면 조건, 실제 source/code/parent binding 및 PNG 대응을 RENDER_VERIFICATION.json이 PASS로 기록한다. 4열 보드의 순서는 NEUTRAL → EQ4_ONLY → NORMAL_ONLY → COMBINED이며 원본을 자르거나 크기 변경하지 않고 붙였다. 이 검토 화면의 보드는 표시 단계에서 축소되었으므로 세밀한 판독은 따로 읽은 900×900 원본을 근거로 한다.
+
+독립 기술 검증과 한계
+
+VERIFICATION.json의 최종 status는 PASS다. receipt를 직접 읽어 SPAN/COUNTER의 네 상태, 총 8개 G05에 대해 독립 coupled replay와 저장 control/native/evidence 일치, 실제 native 단일 연결 성분·폐합 및 방향성 edge incidence·최소 면적, 실제 XYZ와 방향성 triangle 집합의 X/Y 대칭을 확인한 범위를 검토했다. NEUTRAL 양 입력의 모든 control/native 배열 동일성도 PASS다.
+이 검증은 frozen 부모 metadata/hash 연결과 실제 G03→G04 support·mirror ancestry도 확인한다. frozen 원래 여섯 메시를 모두 다시 실행한 검증은 아니며, self-intersection, 제작·구조 성능, 임의 입력 일반성, 미적·참조 충실도는 제외한다. support 바깥 정확한 XYZ pinning도 인증하지 않는다. 숫자 검증 PASS, 이번 근접 시각 변화 PASS, 접힘 위계 목표 미달은 서로 다른 질문의 답이다.
+최종 독립 기하 receipt: E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/VERIFICATION.json
+최종 렌더 대응 receipt: E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/RENDER_VERIFICATION.json
+원본·보드 대응 목록: E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/SOURCE_LIST.json
+
+이 checkpoint에서 얻은 것은 뒤 단계의 규칙 활성화가 실제 작은 입체 조직을 만들며, 두 규칙의 역할을 같은 부모·분할·렌더 조건에서 구분할 수 있다는 근거다. 아직 해결하지 못한 것은 작은 조직을 큰 골과 자식의 연속 흐름으로 읽히게 하는 형태 관계다. 후속 subdivision이나 반복 적용으로 해결된다고 추정하지 않으며, 이 리뷰에서 새 실험을 실행하지 않았다. 최종 조형 선택은 사용자에게 남긴다.
+
+실제 확인한 원본 32장
+
+NEUTRAL 재사용 — SPAN
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/SPAN/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/SPAN/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/SPAN/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/SPAN/G05/views/shoulder_side.png
+NEUTRAL 재사용 — COUNTER
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/COUNTER/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/COUNTER/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/COUNTER/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/sidewall_fan_growth_20261013/trial01/SIDEWALL_FAN/COUNTER/G05/views/shoulder_side.png
+
+EQ4_ONLY 신규 — SPAN
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/SPAN/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/SPAN/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/SPAN/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/SPAN/G05/views/shoulder_side.png
+EQ4_ONLY 신규 — COUNTER
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/COUNTER/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/COUNTER/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/COUNTER/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/EQ4_ONLY/COUNTER/G05/views/shoulder_side.png
+
+NORMAL_ONLY 신규 — SPAN
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/SPAN/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/SPAN/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/SPAN/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/SPAN/G05/views/shoulder_side.png
+NORMAL_ONLY 신규 — COUNTER
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/COUNTER/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/COUNTER/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/COUNTER/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/NORMAL_ONLY/COUNTER/G05/views/shoulder_side.png
+
+COMBINED 신규 — SPAN
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/SPAN/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/SPAN/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/SPAN/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/SPAN/G05/views/shoulder_side.png
+COMBINED 신규 — COUNTER
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/COUNTER/G05/views/front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/COUNTER/G05/views/shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/COUNTER/G05/views/shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/COMBINED/COUNTER/G05/views/shoulder_side.png
+
+실제 확인한 비교 보드 8장
+
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/SPAN_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/SPAN_shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/SPAN_shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/SPAN_shoulder_side.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/COUNTER_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/COUNTER_shoulder_front.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/COUNTER_shoulder_oblique.png
+E:/CHESHIRE_DATA/experiments/late_detail_rules_20261013/trial01/images/COUNTER_shoulder_side.png

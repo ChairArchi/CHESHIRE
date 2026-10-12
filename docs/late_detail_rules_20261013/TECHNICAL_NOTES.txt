@@ -1,0 +1,59 @@
+CHESHIRE — 후기 세분 규칙의 구현과 해석 범위
+2026-10-13
+
+원리와 구현
+
+Hansmeyer의 Design by Subdivision Eq4는 이전 실제 CC의 V/E/F 점 출처를 구분한다.
+reference_subdivision.subdivide의 기존 reference-coupled 식을 변경 없이 재사용했다.
+이번 시험에서 w3/w4 두 위치 혼합 계수 묶음과 wf/we/wp 세 법선 계수 묶음을 분리했다.
+개별 다섯 계수를 독립 비교한 시험도, 새 가지를 생성한 시험도 아니다.
+IAAC의 3D 공간장 이동, DS, fusing, 잠금, Mandelbulb, 추가 topology는 이번에 넣지 않았다.
+그 경로들은 후속 후보이며 기술 선택의 제한은 아니다.
+
+계수의 단위와 기록
+
+w3/w4는 Eq4 위치 혼합의 무차원 계수다. local edge scale을 곱하지 않는다.
+wf/we/wp는 무차원 법선 계수이며 현재 face/edge/vertex incident mean-edge scale과
+해당 input normal을 곱한다. edge normal은 인접 face unit normal의 산술평균이다.
+직접 법선 요청량과 coupling을 거친 최종 총변위는 같지 않다.
+frozen RECIPE의 coefficient_scope는 이 구분으로 해석한다.
+operator_metadata.weights의 모두 0인 값은 global fallback row다.
+실제 제어는 evidence.npz의 resolved_w3/w4/wf/we/wp 및 나머지 resolved_* 절대 제어 배열이다.
+여기서 '절대 제어 배열'은 전역 기본값을 덮어쓴다는 뜻이며 world-unit 이동 길이라는 뜻이 아니다.
+
+계보와 적용 영역
+
+각 입력은 실제 SIDEWALL_FAN G3 이벤트→중립 CC G4를 거친 보존 메시다.
+G4의 parent_face로 G3 face_event_ids>0 소유권을 전달했다.
+G4의 109,408 quad 중 직접 지원은 10,368개이며 실제 Eq4 eligible은 전부 109,408개다.
+fallback은 0이다. 입력마다 partial support edge/vertex는 각각 640개다.
+SOURCE/WALL/CAP 부위 역할과 V/E/F 계산 출처를 서로 바꾸지 않는다.
+동일 계수·정책을 SPAN/COUNTER에 적용했지만 서로 다른 입력의 ordered face ID를 같다고 하지 않는다.
+ordered topology·classes·rest·anchors·chart 동일성은 각 입력 내부 네 조건의 계약이다.
+
+경계의 coupling
+
+면점 변경은 edge/corner 계산에 전달된다. Eq4-only의 edge/vertex 직접 법선 계수가
+0이어도 최종 edge/corner 좌표가 바뀔 수 있다. 이는 reference-coupled 식의 효과다.
+원래 소유 부위 밖 좌표를 복원하거나 좌표 평균으로 대칭을 보정하지 않았다.
+지원 mask와 incident mean, 실제 mirror ID 전파를 별도로 기록한다.
+과거 legacy 경로의 'Eq4 OFF에서 non-face unchanged' 검사는 그대로 사용하지 않는다.
+
+표면과 세대
+
+G4→G5 한 번의 실제 CC다. 네 조건의 메시 규모 증가는 동일하다.
+추가 이벤트와 형상장 평가 횟수는 0이다. G를 내부 fractal iteration과 혼동하지 않는다.
+control quad의 명시적 산술 중심 fan으로 native를 저장하고 실제 삼각형을 렌더한다.
+렌더 modifier·normal map·displacement map은 없다.
+NEUTRAL의 control/native 모든 배열 dtype·shape·bytes는 이전 G5와 정확히 비교한다.
+새 evidence·generation JSON과 NPZ 컨테이너까지 같다는 의미는 아니다.
+
+판정 범위
+
+실제 검증기는 부모 G3→G4 재생, 독립 support/control 구성, reference CC 직접 실행,
+저장된 8개 G5의 exact replay, 실제 native topology·대칭, 중립 identity를 확인한다.
+2×2 좌표 가산성과 최대/RMS 변위는 의도한 요인 분리의 검사이며 미적 점수가 아니다.
+기존 sidewall 여섯 단계는 보존 PASS·해시로 연결한다. 전부 다시 생성했다고 합산하지 않는다.
+작은 반례 테스트 20개 통과, pytest cache 쓰기 경고 1개가 있었다. 테스트 실패는 없다.
+전체 저장소 테스트, 자기교차·구조·제작·임의 입력 일반성을 인증하지 않는다.
+실제 검증 상태와 시각 판정은 VERIFICATION.json 및 CHECKPOINT/VISUAL_REVIEW가 권위 있는 기록이다.

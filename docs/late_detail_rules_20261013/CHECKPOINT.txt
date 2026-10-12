@@ -1,0 +1,87 @@
+CHESHIRE — 실제 후기 세분 규칙의 네 조건 비교
+2026-10-13
+
+결론
+
+두 입력에서 같은 규칙으로 작은 표면 형상이 발생했다. NORMAL_ONLY와 COMBINED는
+근접 시각 변화가 명확하며, 같은 폴리곤 수에서 비중립 규칙의 효과를 확인했다.
+다만 규칙적인 셀·비늘과 작은 사선 조각이 우세하고, 부모 골에서 더 작은 골로 이어지는
+접힘 위계는 아직 미완성이다. 디테일 밀도 개선과 최종 조형 채택을 구별한다.
+전체 조형 채택은 보류한다. 기존 승인 기둥 RELAXED_G06과 게이트 JOINED는 보존했다.
+
+위치
+
+Worktree: C:\Users\USER\CHESHIRE\worktrees\connected-fold-growth-20261012
+Branch: experiment/connected-fold-growth-20261012
+Base: 97db877a2624ae1a82bf067cd246ea07bc5278e0
+Output: E:\CHESHIRE_DATA\experiments\late_detail_rules_20261013\trial01
+Parent: E:\CHESHIRE_DATA\experiments\sidewall_fan_growth_20261013\trial01
+SOURCE_INDEX와 RECIPE에 실제 G3/G4/기존 G5 파일·완료 검증 및 8개 생성 코드 SHA를 연결한다.
+확정 커밋은 E 출력 상위의 COMMIT_RECEIPT.json에 별도 보존한다.
+
+실제 구현
+
+보존 SIDEWALL_FAN G4에서 Eq4 위치 혼합 두 계수 묶음과 법선 돌출 세 계수 묶음을
+OFF/ON으로 분리했다. NEUTRAL / EQ4_ONLY / NORMAL_ONLY / COMBINED 각 두 입력이다.
+기존 reference-coupled CC와 LOCAL_INCIDENT_SCALE을 재사용했다.
+w3/w4=1.8/.6은 무차원 위치 혼합값이며 local scale을 곱하지 않는다.
+wf/we/wp=.8/−.2/.4에만 현재 local scale과 해당 normal을 곱한다.
+metadata.weights의 0은 기본값이고 실제 활성 제어는 evidence의 resolved_* 배열이다.
+과거 legacy 실험의 고정 world length나 참고 저자의 수치를 복구한 것이 아니다.
+
+G3 실제 root/child 소유권을 G4 parent_face로 전파했다.
+각 G4의 109,408 quad 중 직접 지원은 10,368개(약9.48%)다.
+실제 V/E/F 출처의 Eq4 eligible은 109,408개, fallback은 0이다.
+incident support를 평균한 edge/vertex 제어와 coupled 경계 영향도 함께 기록했다.
+연결 동일성은 각 입력 내부 네 조건에 해당하며 SPAN과 COUNTER의 ordered ID를 같다고 하지 않는다.
+개별 다섯 계수 효과·새 분기 생성·전체 표면 활성화를 시험한 것은 아니다.
+
+세대와 규모
+
+모두 실제 G4→G5 CC 한 번이다. topology 이벤트·공간장·Mandelbulb 추가 평가는 0회다.
+8상태 모두 control437,634 vertices/437,632 quad, native875,266 vertices/1,750,528 triangles다.
+같은 ordered connectivity와 chart를 쓰며 폴리곤 수 증가는 조건 차이가 아니다.
+기존과 같은 명시적 arithmetic quad-centre fan을 렌더하고 modifier/map은 없다.
+현재 큰 유기적 볼륨과 찰흙 인상을 유지하는 제약은 두지 않았다.
+
+시각 결과
+
+EQ4_ONLY는 경계와 벽의 계단형 면·띠를 강화한다.
+NORMAL_ONLY는 곡면을 따라 반복되는 촘촘한 셀·비늘형 돌기를 만든다.
+COMBINED는 보다 사선적인 작은 날·조각과 불규칙한 표면 조직을 만든다.
+두 입력 모두 같은 모드별 경향이 관찰되지만 옆 날을 미세 반복층으로 덮는 인상이 남는다.
+새 작은 골의 진행과 부모→중간→미세 접힘의 연속 위계는 충분히 읽히지 않는다.
+시각 변화와 밀도 개선은 확인됐고, 목표 조형과의 차이는 남는다.
+32개 실제 원본과 8개 비교 보드를 판독한 상세 기록은 VISUAL_REVIEW.txt에 있다.
+
+검증
+
+VERIFICATION.json PASS: 실제 부모 G3→G4 재생으로 지원과 반사 계보를 확인하고,
+독립 support/control 배열 구성과 reference CC 직접 실행으로 8개 G5를 정확 재생했다.
+control/native/evidence 배열 inventory·dtype·shape·bytes 및 코드·소스 SHA를 확인했다.
+두 NEUTRAL은 이전 G5의 모든 control/native 배열과 정확히 일치한다.
+실제 native 한 닫힌 유향 몸체·Euler2·양의 면적·유한성·X/Y 유향 삼각형 대칭을 확인했다.
+네 조건의 faces/classes/rest/anchors/chart가 각 입력 안에서 같음을 확인했다.
+두 요인의 좌표 가산성 최대 오차는 SPAN3.58e−15, COUNTER3.59e−15였다.
+실제 최대 반사 XYZ 오차는 두 입력 전체에서 약1.18e−14였다.
+이 수치들은 요인 분리·대칭의 검사이며 미적 점수가 아니다.
+기존 sidewall6단계는 보존 PASS와 메타데이터·해시로 연결했으며 전부 다시 생성하지 않았다.
+
+RENDER_VERIFICATION.json PASS: 기존 중립8장 재사용+신규24장, 4열 비교 보드8장.
+동일 카메라4각도·900px·24samples·무광 재질·광원이며 원본을 자르거나 크기 변경하지 않았다.
+관련 작은 반례 테스트20개 PASS(0.27초), pytest cache 쓰기 경고1개, 테스트 실패 없음.
+전체 저장소 테스트·자기교차·제작·구조 성능·임의 입력 일반성·레퍼런스 동등성을 인증하지 않는다.
+
+후속 판단
+
+같은 활성값을 G7/G8까지 반복하는 방향은 현재 결과로 채택하지 않는다.
+다음 우선 변수는 지원 영역 내부의 실제 기하·부위 역할·공간 위치에 따른 제어 분화다.
+현재는 지원 안에서 계수가 일정하다. 평면성·방향·출생 역할을 분리해 작동 위치와 부호를
+비교할 근거가 생겼다. 계수 강도나 조명만 바꾸어 목표 위계를 확보했다고 설명하지 않는다.
+
+G6 보조 대조 후보는 동일 COMBINED G5에서 active→neutral과 active→active를 두 입력에
+적용하는 4상태다. G5의 실제 ancestry·classes·normal·local scale을 새로 평가해야 한다.
+이는 잔층 정리/소실과 더 작은 반복층 발생/과밀화를 분리하는 진단이며 미실행 상태다.
+각 G6 native7,002,112 triangles는 고정 CC의 4배 증식에서 계산한 예상치다.
+G6~G7 조형 완성도 목표와 G8 근접 밀도 확장 후보는 설계 추정이며 성공한 결과가 아니다.
+G 번호는 입력 밀도가 다른 Hansmeyer 연구의 G 번호와 직접 대응하지 않는다.

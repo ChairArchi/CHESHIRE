@@ -1,0 +1,346 @@
+{
+  "reference_root": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01",
+  "new_root": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01",
+  "reused_reference_images": 8,
+  "newly_rendered_images": 24,
+  "original_images_total": 32,
+  "source_note": "NEUTRAL: frozen SIDEWALL_FAN G05 originals after independent exact array identity PASS; other three modes: newly rendered originals",
+  "boards": [
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\SPAN_front.png",
+      "output_sha256": "da019e43f193ccd97ecc1261d634048ef62a888c04adcc8461a053d591ea1cf0",
+      "input_case": "SPAN",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\front.png",
+          "sha256": "0fc60bc6fd4ce17f321e7a64d70f3f6242da5d0fa03b6f3e073ee31869f3ae79",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\SPAN\\G05\\views\\front.png",
+          "sha256": "781f0daa959e542fb5115d988edfc4b169ef8bd0006cab3fe32b2cf5c867c170",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\SPAN\\G05\\views\\front.png",
+          "sha256": "d30d33ec924632a33c675e94053d95ef485d8552cfe33352eb149abc45adaa4e",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\front.png",
+          "sha256": "f9ceeee6c7cf1de7767d146a0b7ebc1d4edd7325ba8eb21565b886254624a4ee",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\SPAN_shoulder_front.png",
+      "output_sha256": "e377adaa9ebdc8bc638e7f4a012d0f755845e52306710b8c40aa387ad66fa259",
+      "input_case": "SPAN",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "7338794f61a583287dd5598babcd7cd241496363bf6cc8302bcbe9df1f3fea63",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "f6c095671c2a503eaf0a110d3c67d8defefefb977b09e306eda55a06165b4636",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "fa9d1fe16dd014687bd1face7ac6237133623b74d9b329b092341b19424de758",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_front.png",
+          "sha256": "106aa15fd1731d58d88e11747e999072c54ed445b964c67f770b57cb319a6cf3",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\SPAN_shoulder_oblique.png",
+      "output_sha256": "685a732a40e113b0c57e0f5dc23c9ec773ce3d447f0a74e6a807d1d6ac0fa977",
+      "input_case": "SPAN",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "0be3d8c2663df9a2d148ad9c3f00f0f7b3864289534964dadc32219dc519f202",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "80e9230a00af24047b4828841e5aa76565b6d91dbee7177587e9e67693dabcf4",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "3abbdabae411daf28dfd10f5abe1514baf94443996a78cbc74c83560336d1f3a",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_oblique.png",
+          "sha256": "de467a18a27a5d1639e33c854ddebb9c01ca0e90a06dbe1e7279ab5e409b6e35",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\SPAN_shoulder_side.png",
+      "output_sha256": "f5f27a092e65693bf8e482a7940f7249dbb5084caefe06436d5083cd5ecc0ee9",
+      "input_case": "SPAN",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "7d1272e1732cfbd351f78759a8c34c241720d031dd2e1d2d0cea8d2aadfcdb11",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "deabba98891a3096f110e3aeaafe68c632b52dac336be07e404456ecde3156b6",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "7b0cda594c490dd32da81a8c128762530fed80b584f30d2d5701e73eb90c1a1a",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\SPAN\\G05\\views\\shoulder_side.png",
+          "sha256": "16f8024ba3cc351c06e082fe3a39e44e2eaeecd06cc0310084924bc3d2413eab",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\COUNTER_front.png",
+      "output_sha256": "a5d8dc7af0273e1dad02c775eebf0d7ba5a7d4a5ef2c13207d52957b627156c4",
+      "input_case": "COUNTER",
+      "view": "front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\front.png",
+          "sha256": "ce79c2af9c13341c186bd68cbb4c7c747b40a2022a74f1a78d6813a8ff00b9e8",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\COUNTER\\G05\\views\\front.png",
+          "sha256": "623c4d36a746ff2c411f35b5970fba4639fbead85573f767ad818d080cc12021",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\COUNTER\\G05\\views\\front.png",
+          "sha256": "f247b8ddbf0b6baba8100c388395c8db7a8f7ee44e9ffe72e61e8fc17035c36e",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\front.png",
+          "sha256": "07c999f679fa4191e3cc9be0bbdeed15ac6c267f7d452aebde5d6c52e877056c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\COUNTER_shoulder_front.png",
+      "output_sha256": "ee762dd456fe799cdae5d4f629e14d0c522786a45b8cd25590831cb0ce0a1eda",
+      "input_case": "COUNTER",
+      "view": "shoulder_front",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "e1b9ee36a8b48d2a6a4ee59a2cf8b8106138528821712c61e595c2d0c74253a4",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "52522e1dcc43791aea1f4c8ce850a62dd364f8aa9aaf2b8dc252d0bf2ae2fbf3",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "d36cd5cd89fece5a81dd61bef54acdba82281a293989c28fb49481965374e054",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_front.png",
+          "sha256": "18a617430c07d63b6fa0865e80774327f7aae7db64e694694402da4c6df666f3",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\COUNTER_shoulder_oblique.png",
+      "output_sha256": "f5b194eec72f9dfe19f3b7f41352e71bbba300c0372c19e5031e55335bfe5cb6",
+      "input_case": "COUNTER",
+      "view": "shoulder_oblique",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "3beefa87ef6cc82c3749479d4e7445d3ab76b2af3ddb2307009eed03e33119cc",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "4e9c192deb7da4f4c7a47484e30ec0fcea5adee4811636aefc727bad97aac652",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "9b70d399725ea4f57ddfe84bae4c98d122404728f321846ae3bbfbfe3a0a2047",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_oblique.png",
+          "sha256": "d35d8af9bbcc76a708ba5a4a028a92c211588b6f830025fbba42f0ecb701fc1c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "output": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\images\\COUNTER_shoulder_side.png",
+      "output_sha256": "0fd8d6f7d8448569cb9a0175fc676fabeac27be50a7aab2747993745aa7100c6",
+      "input_case": "COUNTER",
+      "view": "shoulder_side",
+      "crop": false,
+      "resize": false,
+      "sources": [
+        {
+          "candidate": "NEUTRAL",
+          "image_candidate": "SIDEWALL_FAN",
+          "caption": "NEUTRAL · 기존 G05 원본",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "d34239feb228633a6fff6a033c77808bf12a67bce4f6fb2856d596982de34966",
+          "reused_reference": true
+        },
+        {
+          "candidate": "EQ4_ONLY",
+          "image_candidate": "EQ4_ONLY",
+          "caption": "EQ4_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\EQ4_ONLY\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "587d0dc9c658c34488184f7812dc3a84d90a4c167ecdc86ee50f9d1745e842ed",
+          "reused_reference": false
+        },
+        {
+          "candidate": "NORMAL_ONLY",
+          "image_candidate": "NORMAL_ONLY",
+          "caption": "NORMAL_ONLY · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\NORMAL_ONLY\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "a5a9d32f86dda020796a59de3f83bbb4bc577f9c304c5ae7c82ead286d2cbacf",
+          "reused_reference": false
+        },
+        {
+          "candidate": "COMBINED",
+          "image_candidate": "COMBINED",
+          "caption": "COMBINED · 신규",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\late_detail_rules_20261013\\trial01\\COMBINED\\COUNTER\\G05\\views\\shoulder_side.png",
+          "sha256": "2a8080f708685820e5f09ae838e62291e706d6b9f24c49e27582afbb0242a960",
+          "reused_reference": false
+        }
+      ]
+    }
+  ]
+}
