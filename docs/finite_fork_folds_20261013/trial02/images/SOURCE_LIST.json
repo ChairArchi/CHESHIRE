@@ -1,0 +1,528 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02",
+  "source_generation": 7,
+  "subdivision_generation": 7,
+  "added_CC_passes": 0,
+  "added_topology_events": 0,
+  "added_normal_field_passes": 1,
+  "added_mandelbulb_evaluations": 0,
+  "operation_record": {
+    "counts": {
+      "source_generation": 7,
+      "added_CC_passes": 0,
+      "added_topology_events": 0,
+      "added_normal_field_passes": 1,
+      "cumulative_normal_field_passes": 6,
+      "added_mandelbulb_evaluations": 0
+    },
+    "generator_operations": {
+      "source_geometry_averaged": true,
+      "geometry_taubin": {
+        "steps": 72,
+        "pairs": 36,
+        "lambda_value": 0.5,
+        "mu_value": -0.53
+      },
+      "normal_pooling_steps": 3,
+      "delta_smoothing_steps": 3,
+      "normal_pooling_scope": "Three topological uniform quad-edge averages of actual fairing-surface normals, then unit normalization; not a fixed physical footprint."
+    },
+    "operator_metadata": {
+      "experiment": "FINITE_FORK_FOLDS_20261013",
+      "recipe": {
+        "schema": "CHESHIRE_BOUNDED_FAIRING_FINITE_FORK_V2",
+        "revision_reason": "One visual correction after trial01: fork readability and mesh-scale zipper reduction were insufficient. Same original SPAN baseline; no stacking trial01 geometry.",
+        "source_generation": 7,
+        "output_generation": 7,
+        "sequence": [
+          "BOUNDED_SOURCE_TAUBIN",
+          "FINITE_FORK_NORMAL_RELIEF"
+        ],
+        "added_CC_passes": 0,
+        "added_topology_events": 0,
+        "normal_field_passes": 1,
+        "added_mandelbulb_evaluations": 0,
+        "source_geometry_averaged": true,
+        "geometry_smoothing_steps": 72,
+        "taubin_pairs": 36,
+        "taubin_lambda": 0.5,
+        "taubin_mu": -0.53,
+        "taubin_equation": "Xnext=X+c*E*L(X); L(X)=2*(S(X)-X); S(X)=.5*X+.5*uniform_actual_quad_edge_neighbor_mean(X)",
+        "fairing_envelope": "E=PCHIPenv(z)*(1-feature_support), applied in every positive and negative substep",
+        "fairing_cap_height_fraction": 0.0015,
+        "fairing_cap_scope": "Cap final accumulated source delta only; no per-substep clipping. Then actual-ID reflection.",
+        "fairing_interpretation": "Bounded source geometry averaging. The displacement cap does not prove exact silhouette or low-frequency preservation.",
+        "envelope": {
+          "interpolation": "PCHIP",
+          "knots": [
+            0.0,
+            0.05,
+            0.2,
+            0.38,
+            0.5,
+            0.64,
+            0.8,
+            0.94,
+            1.0
+          ],
+          "values": [
+            0.0,
+            0.4,
+            1.0,
+            0.85,
+            0.55,
+            1.0,
+            1.0,
+            0.45,
+            0.0
+          ]
+        },
+        "coordinates": "Fixed inherited parent_phase/z/support/H; theta=atan2(abs(actual_original_source_Y),abs(actual_original_source_X)). Neither phase nor height is re-inferred after fairing.",
+        "ribbon_coordinate": "u=atan2(sin(parent_phase),cos(parent_phase)); r=abs(u)-1.55",
+        "ribbon_mask": "One inside abs(r)<=.75; quintic fade to zero at abs(r)>=1.20",
+        "axial_centres": [
+          0.16,
+          0.29,
+          0.43,
+          0.57,
+          0.72,
+          0.86
+        ],
+        "axial_stagger": ".018*sin(6*theta)**2; continuous and mirror-smooth, common to all centres at each vertex",
+        "pulse_length_height_fraction": 0.1,
+        "pulse_half_length_height_fraction": 0.05,
+        "pulse_progress": "s=(z-centre-stagger)/.05; only abs(s)<1 participates",
+        "pulse_PCHIP_knots": [
+          -1.0,
+          -0.85,
+          -0.5,
+          0.0,
+          0.5,
+          0.85,
+          1.0
+        ],
+        "pulse_PCHIP_values": [
+          0.0,
+          0.0,
+          0.7,
+          1.0,
+          0.7,
+          0.0,
+          0.0
+        ],
+        "fork_centre": "a=.70*quintic_smoothstep(clip((s+.40)/.80,0,1)); two transverse centres r=+a and r=-a",
+        "kernel": "K(t)=max(0,1-t*t)**3 for abs(t)<1, otherwise zero",
+        "one_arm_profile": "R(t)=K(t/.45)-.35*K(t/.85)",
+        "fork_profile": "(R(r-a)+R(r+a))/1.30",
+        "fork_profile_conservative_range": [
+          -0.5384615384615384,
+          1.0
+        ],
+        "profile_bound_derivation": "Each R is between -.35 and .65; two arms divided by 1.30 give [-7/13,1]. At a=0,r=0 the stem is 1; at a=.70,r=+/-.70 the separated arm is .50 before envelopes.",
+        "fold_amplitude_height_fraction": 0.0055,
+        "fold_signed_request": ".0055*H*PCHIPenv(z)*(1-support)*ribbon_mask*pulse_PCHIP(s)*fork_profile",
+        "normal": "Normalize the arithmetic mean of incident actual-input unit face normals; recompute for each stage.",
+        "normal_implementation": "Chunked quad-centroid cross-sum face normals and incident accumulation; mathematically identical to reference_subdivision.fields(...)[nv], without edge topology/scale work.",
+        "normal_pooling_steps": 3,
+        "normal_pooling_scope": "Three topological uniform quad-edge averages of actual fairing-surface normals, then unit normalization; not a fixed physical footprint.",
+        "delta_smoothing_steps": 3,
+        "delta_smoothing_scope": "Three existing S averages of only the newly requested fold delta; source geometry is not an operand in this second filter.",
+        "fully_protected_controls": "Exact support==1 controls and z endpoints remain fixed in both final deltas; filtering may create a three-edge relief halo elsewhere.",
+        "reflection": "Actual commuting X/Y source involutions; canonical vector transport, fixed-ID seam components zero; no XYZ welding or reflection repair.",
+        "geometry_scope": "SourceXYZ+delta_fairing+delta_fold; G7 topology/classes/rest/anchors/chart unchanged.",
+        "interpretation": "One authored finite fork-shaped surface relief after bounded fairing. Not topological branching, reference-exact implementation, or established visual success."
+      },
+      "source_generation": 7,
+      "output_generation": 7,
+      "added_CC_passes": 0,
+      "added_topology_events": 0,
+      "normal_field_passes": 1,
+      "added_mandelbulb_evaluations": 0,
+      "source_geometry_averaged": true,
+      "geometry_smoothing_steps": 72,
+      "taubin_pairs": 36,
+      "taubin_lambda": 0.5,
+      "taubin_mu": -0.53,
+      "fairing_cap_height_fraction": 0.0015,
+      "normal_pooling_steps": 3,
+      "normal_pooling_scope": "Three topological uniform quad-edge averages of actual fairing-surface normals, then unit normalization; not a fixed physical footprint.",
+      "delta_smoothing_steps": 3,
+      "inherited_height": 9.735842284057451,
+      "input_xyz_sha256": "780db079fb62cf9f43b5a08ed475c71fb2ef8ec1de92f0ce961ee1bdd348bb34",
+      "fairing_xyz_sha256": "3f58a644d44f1a9d8567d97b24cf1385b44a5ddadf0e09856b4ccf35669d2095",
+      "output_xyz_sha256": "0bee61c8ac340f8329158a7f69264a9fda03629d2fb52d35186ec2519e99d853",
+      "input_vertex_normal_sha256": "d726d1defaf3025fa708fd4c11fb0933a617d051d733f8800ed464e580c5365f",
+      "pooled_vertex_normal_sha256": "2213db6d084fe77029d908fd138b7dc811eae5ba5b5d7df68c014fc014d9af18",
+      "raw_fold_delta_sha256": "0b23815e107405f680ae95fb1f72a1b0bb44c47940bf4334e05e04eb6735d3d7",
+      "signed_fold_request_range": [
+        -0.01289791945282132,
+        0.047550798327356904
+      ],
+      "fairing": {
+        "amplitude_norm_bound": 0.014603763426086177,
+        "maximum_actual_displacement": 0.014603763426086177,
+        "maximum_actual_height_fraction": 0.0015,
+        "rms_actual_displacement": 0.0006886000513115438,
+        "nonzero_displacement_vertex_count": 6346230,
+        "nonzero_displacement_vertex_fraction": 0.9063305738809737,
+        "displacement_vector_sha256": "f313738dcc22224c0b6b1bb11f85eed100aeec2119c336a3fd92009f495a9ec5",
+        "statistics_scope": "Chunked exact max/count/RMS; no sampled quantiles",
+        "uncapped_maximum_actual_displacement": 0.02604468807068616,
+        "cap_applied_vertex_count": 1,
+        "cap_applied_vertex_fraction": 1.4281401302520925e-07
+      },
+      "fold": {
+        "amplitude_norm_bound": 0.053547132562315976,
+        "maximum_actual_displacement": 0.044097268474358575,
+        "maximum_actual_height_fraction": 0.004529373749877639,
+        "rms_actual_displacement": 0.004300318588787298,
+        "nonzero_displacement_vertex_count": 2427099,
+        "nonzero_displacement_vertex_fraction": 0.34662374819947234,
+        "displacement_vector_sha256": "d629c56f93ccd2185d7bdc13a28c9741ae4100d139cacd90432d071401ebff3f",
+        "statistics_scope": "Chunked exact max/count/RMS; no sampled quantiles"
+      },
+      "total_displacement": {
+        "amplitude_norm_bound": 0.06815089598840215,
+        "maximum_actual_displacement": 0.04473259763185126,
+        "maximum_actual_height_fraction": 0.004594630472301444,
+        "rms_actual_displacement": 0.004339171283092812,
+        "nonzero_displacement_vertex_count": 6346230,
+        "nonzero_displacement_vertex_fraction": 0.9063305738809737,
+        "statistics_scope": "Chunked exact sum-delta max/count/RMS; no full temporary total-delta array"
+      },
+      "pulse_support": {
+        "nonzero_mask_vertex_count": 2500532,
+        "nonzero_mask_vertex_fraction": 0.3571110096179525,
+        "mask_range": [
+          -2.0588537904665301e-16,
+          0.9999999999640375
+        ],
+        "fraction_scope": "Share of control vertices, not surface area."
+      },
+      "ribbon_support": {
+        "nonzero_mask_vertex_count": 5249889,
+        "nonzero_mask_vertex_fraction": 0.7497577160269028,
+        "mask_range": [
+          -2.220446049250313e-16,
+          1.0
+        ],
+        "fraction_scope": "Share of control vertices, not surface area."
+      },
+      "fully_protected_control_count": 655884,
+      "fully_protected_controls_unchanged": true,
+      "input_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "input_chart_sha256": "87d7b993200e548f4d5528067f15fbbb886637f0428e06468f995ee141cf966d",
+      "input_classes_sha256": "9e0330c79f9292bec1adfca027720aba3e45e52415a9588dad211be644aa4c1b",
+      "input_rest_sha256": "99c372598a09527a1ee610f933ba1fe876a240874ea7b37f362f4c83bcb0ce72",
+      "input_anchors_sha256": "fde552043e3eee243a3d5d17c7440148da855e4540569316219da51cd2ec4986",
+      "geometry_code_sha256": {
+        "experiments\\medium_root_folds_20261013\\root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+        "experiments\\parent_linked_folds_20261013\\study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+        "experiments\\parent_linked_folds_20261013\\parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+        "experiments\\parent_linked_folds_20261013\\smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+        "experiments\\whole_column_detail_20261013\\whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+        "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+        "experiments/finite_fork_folds_20261013/fold_operator_v2.py": "6068c58871eb58663d65446b759e3c87e7e830c97072ab8fd37af75f133f95d2"
+      },
+      "taubin_precedent": {
+        "path": "experiments/fold_visible_gate_20261012/detail_finish.py",
+        "sha256": "6f3b7ffb4fd2948dd4d1652b6b34ba6bcec4e3762d71cf6737ae3e1e10ab45b7",
+        "scope": "Existing bounded lambda/mu source-relaxation precedent; its G3 runner is not called."
+      },
+      "input_mutated": false,
+      "topology_associations_preserved": true,
+      "interpretation": "One authored finite fork-shaped surface relief after bounded fairing. Not topological branching, reference-exact implementation, or established visual success.",
+      "visual_status": "PENDING_MATCHED_RENDER"
+    },
+    "renderer_geometry_processing": "NONE: only saved native arrays are displayed",
+    "distinction": "Source-geometry Taubin averaging, normal pooling and new-delta filtering are separate generator operations; none is a subdivision generation or render modifier."
+  },
+  "states": [
+    {
+      "candidate": "WIDE_ROOT_FINISHED",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+        "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        }
+      ]
+    },
+    {
+      "candidate": "FINITE_FORK",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "bee43e9e500809c65f6d5ac5124b3331c3069f00fcdd69d59ba71ea4e3aa37ae",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\generation.json",
+        "generation_sha256": "3a6a6c64cb01e7cdaf8d75b3518e379aef04ac73c9dd30b0f73d0bb3dcf0fbc5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "1590965cb1960e1bd6d6aef5a8b12be82cce21d91733fc9135d070f653b534fa",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+        "parent_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+        "parent_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "parent_generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\front.png",
+          "sha256": "dfafa9111e87b5049f75d04b3bd1b5e7f108fa3217ecbfa3ac45692ab23e27d3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "afedb3c714b81a4517b355948ed221ea44591bf0fa68f3af63ef2e3afeaa1635",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "8de84eba40b9c427023ef69d3e59aa52af9a9c132454de34fa5662a14c8a548a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "reused_parent_images": 3,
+  "new_images": 3,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "image_check_script_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0",
+  "scope": "Existing saved WIDE_ROOT_FINISHED SPAN G7 versus one saved FINITE_FORK G7. Original PNGs reused; native/source/code/image receipts and matched actual camera/material checks only. Generator geometry averaging is distinct from rendering; no independent geometry replay or aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_front.png",
+      "sha256": "bc5da6956f21bf7c25c95827386ba8ad7ad8fcc1e0cca53dad3aa1483ebef603",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINITE_FORK",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\front.png",
+          "sha256": "dfafa9111e87b5049f75d04b3bd1b5e7f108fa3217ecbfa3ac45692ab23e27d3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_body_oblique.png",
+      "sha256": "2f8cf44529c8101813ecf47343fb6d79e7e18a3d3f9cc95abe8ae615296eee20",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINITE_FORK",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "afedb3c714b81a4517b355948ed221ea44591bf0fa68f3af63ef2e3afeaa1635",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_close_oblique.png",
+      "sha256": "146e74742ac1a9d2fa8a449edcb5fa31b3a16809f64ae36e8389d5637a990334",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "FINITE_FORK",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "8de84eba40b9c427023ef69d3e59aa52af9a9c132454de34fa5662a14c8a548a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "b10b45f7b58d0edd4d20d5fd0ff49c06aa939c834bf122fd55793d296689c8fe"
+}

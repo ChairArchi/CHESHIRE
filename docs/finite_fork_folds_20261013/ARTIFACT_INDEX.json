@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "data_root": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013",
+  "selected_design_baseline": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "input_scope": "Only existing SPAN developed; CENTRAL_SPINDLE untouched",
+  "trial_records": [
+    {
+      "trial": "trial01",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07",
+      "generation_sha256": "1839d97f3c7e9d65bc7075e665d921038e942fe05e0402c209f72ce9ea19b27d",
+      "recipe_sha256": "f80142f98338ae900b0ff498d9fa70f1a575a39a45cc3f6931b9dc7f74880b5b",
+      "source_snapshot_files": 25,
+      "render_source_sha256": {
+        "experiments/finite_fork_folds_20261013/render.py": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+        "experiments/finite_fork_folds_20261013/boards.py": "2d37640dd7301f22c04d1d59bf99b5a23b1b7a3a7db63df1e7e6fab6bf0680c7"
+      },
+      "render_verification_sha256": "8130abf30f9c32b25883989020e3e65c3f29062e7490cf3b1fd8fc8f1452ad4a",
+      "actual_final_state_bytes": 1029014342,
+      "actual_generation_seconds": 321.56257259997074,
+      "actual_peak_working_set_bytes": 6319947776,
+      "boards": [
+        {
+          "view": "front",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\images\\SPAN_front.png",
+          "sha256": "13e710862c505a1a77dab8217a6c5c7f6c77cc41a3df9d48aaad997dbd38b806",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "front",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+              "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "front",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\front.png",
+              "sha256": "8bd3e83f865376d75894c0ff46b2e7c5d02bc2c8d50fc602fbcfddae9a398eb1",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "7c6d5d803b548fbcc7f938ede9c1cc6e3c9876cf0b7e69bb0bb3716a92d1268c",
+              "reused_reference": false
+            }
+          ]
+        },
+        {
+          "view": "body_oblique",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\images\\SPAN_body_oblique.png",
+          "sha256": "bd276234804ff8bcb55ef41656a93fba13d11a0d20ad747331c58b44aff2b03d",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "body_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+              "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "body_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\body_oblique.png",
+              "sha256": "af0a9e9a81dc068ec484982a04edfafbeb96c8d35421688b32a3694ace7ac110",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "7c6d5d803b548fbcc7f938ede9c1cc6e3c9876cf0b7e69bb0bb3716a92d1268c",
+              "reused_reference": false
+            }
+          ]
+        },
+        {
+          "view": "close_oblique",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\images\\SPAN_close_oblique.png",
+          "sha256": "75291b6f55952cc9a7a2cf26935e409d8d6a271d97fbf8f3aa4d13054e6212b3",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "close_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+              "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "close_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\close_oblique.png",
+              "sha256": "15a298f7dbd90ebff8aeb5c900accdf24c90ddf70017aae00be1f977e5cb586a",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "7c6d5d803b548fbcc7f938ede9c1cc6e3c9876cf0b7e69bb0bb3716a92d1268c",
+              "reused_reference": false
+            }
+          ]
+        }
+      ],
+      "visual_review": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial01\\VISUAL_REVIEW.json"
+    },
+    {
+      "trial": "trial02",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07",
+      "generation_sha256": "3a6a6c64cb01e7cdaf8d75b3518e379aef04ac73c9dd30b0f73d0bb3dcf0fbc5",
+      "recipe_sha256": "0406b4f0daf12cd2d85e5562d37f24fef667da0541d27152b830a938c82dd132",
+      "source_snapshot_files": 25,
+      "render_source_sha256": {
+        "experiments/finite_fork_folds_20261013/render_v2.py": "35c58f7582ce233cbd1a55070228b30c7b7111fff95fea5b8db194195e8c36da",
+        "experiments/finite_fork_folds_20261013/boards_v2.py": "b10b45f7b58d0edd4d20d5fd0ff49c06aa939c834bf122fd55793d296689c8fe"
+      },
+      "render_verification_sha256": "990fb289d251e9209a6f1074afb710f1364537760ca5b04a2a01f0239d4e18da",
+      "actual_final_state_bytes": 1049858802,
+      "actual_generation_seconds": 805.538498400012,
+      "actual_peak_working_set_bytes": 6321025024,
+      "boards": [
+        {
+          "view": "front",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_front.png",
+          "sha256": "bc5da6956f21bf7c25c95827386ba8ad7ad8fcc1e0cca53dad3aa1483ebef603",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "front",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+              "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "front",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\front.png",
+              "sha256": "dfafa9111e87b5049f75d04b3bd1b5e7f108fa3217ecbfa3ac45692ab23e27d3",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+              "reused_reference": false
+            }
+          ]
+        },
+        {
+          "view": "body_oblique",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_body_oblique.png",
+          "sha256": "2f8cf44529c8101813ecf47343fb6d79e7e18a3d3f9cc95abe8ae615296eee20",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "body_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+              "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "body_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\body_oblique.png",
+              "sha256": "afedb3c714b81a4517b355948ed221ea44591bf0fa68f3af63ef2e3afeaa1635",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+              "reused_reference": false
+            }
+          ]
+        },
+        {
+          "view": "close_oblique",
+          "output": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\images\\SPAN_close_oblique.png",
+          "sha256": "146e74742ac1a9d2fa8a449edcb5fa31b3a16809f64ae36e8389d5637a990334",
+          "sources": [
+            {
+              "candidate": "WIDE_ROOT_FINISHED",
+              "view": "close_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+              "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+              "reused_reference": true
+            },
+            {
+              "candidate": "FINITE_FORK",
+              "view": "close_oblique",
+              "path": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\close_oblique.png",
+              "sha256": "8de84eba40b9c427023ef69d3e59aa52af9a9c132454de34fa5662a14c8a548a",
+              "receipt": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\FINITE_FORK\\SPAN\\G07\\views\\receipt.json",
+              "receipt_sha256": "08699e75cd12b94ba59ffd2759a5a89810ef47d1a8e3c75b6c45903331bea87f",
+              "reused_reference": false
+            }
+          ]
+        }
+      ],
+      "visual_review": "E:\\CHESHIRE_DATA\\experiments\\finite_fork_folds_20261013\\trial02\\VISUAL_REVIEW.json"
+    }
+  ],
+  "decision": "Both FINITE_FORK trials preserved but not promoted to design baseline; close-detail targets unmet",
+  "scope": "Small source/receipt/image byte verification only; no additional geometry generation or full replay"
+}

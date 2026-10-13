@@ -1,0 +1,60 @@
+CHESHIRE · 기존 SPAN G7의 유한 분지 접힘 및 제한된 면 정리
+2026-10-13 · Asia/Seoul
+
+작업 범위
+사용자는 중앙이 불룩한 두 번째 CENTRAL_SPINDLE을 더 발전시키지 않고 조형이 괜찮은 기존 기둥만 발전시키도록 지시하였다. 이번 작업의 실제 기하 입력은 두 시험 모두 최신 SPAN WIDE_ROOT_FINISHED G7이다. CENTRAL_SPINDLE과 이전 모델·코드·체크포인트는 수정하지 않았다.
+기준 입력: E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07
+기준 generation.json SHA256: c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5
+
+결론과 채택 상태
+기존 전체 실루엣, 상하 덩어리, 긴 골과 말린 장식의 흐름은 두 시험에서 유지된다. 다만 작은 분지의 가독성과 근접 반복 삼각형·지퍼 잔결의 감소는 충분하지 않았다. 두 번째 보정에서도 일부 면의 굴곡은 강해졌으나 목표한 디테일 개선으로 채택하기 어렵다.
+원래 WIDE_ROOT_FINISHED를 계속 디자인 기준으로 유지한다. FINITE_FORK trial01과 trial02는 검증된 메시를 가진 보존 실험이며, 새로운 성공 디자인이나 근접 완성 모델로 승격하지 않는다. 같은 계열의 추가 강도 탐색을 진행하지 않았다.
+
+기존 문제에 대한 관찰
+동일 촬영 조건의 MIDDLE_SURFACE → parent_linked trial03 → WIDE_ROOT_FINISHED 근접 원본을 비교하였다. 반복 잔결은 MIDDLE 단계부터 같은 부위에 있었고 후속 결과에서 더 뚜렷하게 읽혔다.
+기존 1-ring unit-face normal 평균과 실제 새 표면의 법선 재사용은 잔결을 후속 변형에 전달할 수 있다. 마지막 delta-only finish는 기존 XYZ를 다루지 않으므로 부모 잔결을 제거 대상으로 삼지 않았다. 이 구조는 코드로 확인된다. 잔결의 원인별 기여율 및 flat quad-centre fan 표시와 실제 기하의 기여 분리는 확인하지 않았다.
+
+단일 연산 시퀀스
+첫 단계는 실제 source G7의 제한된 Taubin 면 정리이다. 기존 uniform quad-edge 평균 S를 재사용하여 L(X)=2(S(X)-X), Xnext=X+c*E*L(X)를 적용한다. c는 양의 .50과 음의 -.53을 교대로 사용한다. E는 기존 PCHIP height envelope와 (1-feature_support)의 곱이다.
+최종 누적 면 정리 변위만 H*.0015로 제한하고 실제 X/Y 대응 ID로 반사한다. 이번 단계는 source geometry 자체의 평균을 명시적으로 포함한다. 이전의 delta-only finish와 구별한다. 변위 제한은 큰 형상이 정확히 불변이거나 저주파가 정확히 보존된다는 증거가 아니다.
+두 번째 단계는 넓은 리본 면의 유한 길이 Y형 signed relief이다. 기존 registered parent phase에서 r=abs(atan2(sin(phase),cos(phase)))-1.55를 사용하고, 여섯 높이 중심 [.16,.29,.43,.57,.72,.86]에 연속 theta stagger를 적용한다. 유한 PCHIP pulse 안에서 한 능선 중심을 두 방향으로 벌리고 compact kernel의 양의 능선과 낮은 옆골을 조합한다.
+면 정리 후 실제 표면의 법선을 한 번 계산하고, 법선 3회 topological pooling과 새 relief delta 3회 pooling을 별도로 수행한다. 이는 물리 폭에 따른 법선 pooling이 아니다. 최종 ID 반사 후 원본 XYZ+delta_fairing+delta_fold로 저장한다.
+관통공이나 실제 topology 분지, 새로운 Mandelbulb 적용, 추가 subdivision은 없다. 유한 분지는 표면 relief의 명칭이며 생성만으로 조형 가독성을 주장하지 않는다.
+
+두 시험의 관계
+trial01: Taubin 6쌍/12 substep, pulse 길이 .08H, fork 최대 벌어짐 ±.50 phase, relief 진폭 bound .0024H.
+trial02: 첫 실제 렌더의 가독성 부족에 대한 한 번의 보정이다. Taubin 36쌍/72 substep, pulse 길이 .10H, fork 최대 벌어짐 ±.70 phase, relief 진폭 bound .0055H. 법선/delta pooling 각각 3회와 면 정리 cap .0015H는 유지한다.
+trial02도 원래 WIDE_ROOT_FINISHED에서 시작하였다. trial01 결과를 누적하여 만들지 않았다. 각 시험의 실제 소스 바이트와 식·수치는 source_snapshot과 RECIPE.json으로 구분하여 보존하였다.
+
+실제 생성과 검증 수치
+두 시험 모두 G7, control 정점 7,002,114개, quad 7,002,112개, native 삼각형 28,008,448개이다. topology와 chart/classes/rest/anchors는 유지한다.
+Finite, 폐합·방향 일치, 단일 control component, Euler 2, orphan 없음과 native 최소 면적 검사를 통과하였다. 실제 control 좌표와 방향 있는 quad의 X/Y 반사 검사를 통과하였으며, 양 축 최대 좌표 오차는 약 4.962e-14, 허용오차는 1e-9이다.
+Native quad-centre fan은 확인된 control 반사 관계를 계승한다. Native 삼각형 전체 집합의 독립 정렬 비교, 독립 전체 재생성, 자기교차 또는 제작 적합성 검사는 수행하지 않았다.
+재사용 저장기의 checks.symmetry_scope에는 과거 pending 문구가 남는다. 이번 실제 대칭 결과는 top-level symmetry 및 SUMMARY.json에 있다. 보존된 생성 기록은 사후 수정하지 않았다.
+Source XYZ의 비수정 해시, 실제 원본·RAW frame 파일 SHA, 원본과 frame의 association ZIP member 바이트 일치, 실행 전후 frozen code 바이트를 검사하였다. RAW evidence는 좌표/위상 프레임을 제공하며 실제 기하 입력은 최신 SPAN이다.
+완전히 보호한 control 655,884개는 두 결과에서 실제 XYZ가 그대로이다. 이는 전체 장식이 정확히 불변이라는 뜻이 아니라 support==1 또는 height endpoint로 정의된 control 집합에 관한 수치이다.
+
+trial01 실제 실행
+생성·필수 검증·저장 시간 321.563초, 약 5.36분. 렌더/정리 시간 제외.
+Windows 단일 Python 생성 프로세스 peak working set 6,319,947,776 bytes, 약 6.32GB. 렌더 프로세스 제외.
+면 정리 최대 실제 변위 약 .012580, relief 최대 .019644, 합성 최대 .019606이다. 단위는 모델 좌표이며 임의로 mm로 환산하지 않는다.
+Native 최소 삼각형 면적 약 4.955e-10. 면 정리 cap 적용 정점 0개.
+
+trial02 실제 실행
+생성·필수 검증·저장 시간 805.538초, 약 13.43분. 렌더/정리 시간 제외.
+Windows 단일 Python 생성 프로세스 peak working set 6,321,025,024 bytes, 약 6.32GB. 렌더 프로세스 제외.
+면 정리 최대 실제 변위 .014604, relief 최대 .044097, 합성 최대 .044733이다. 면 정리 cap은 누적 delta의 정점 1개에 적용되었다.
+Native 최소 삼각형 면적 약 4.685e-10. Relief의 nonzero control 비율 약 34.66%는 면적 비율이나 성과 지표가 아니다.
+
+실제 시각 검토
+각 시험의 전체 정면·본체 사선·근접 사선 원본 3장을 새로 렌더하였다. 기존 SPAN의 원본 3장을 재사용하여 같은 카메라·재질·조명·900x900·24 samples의 전후 비교판을 구성하였다. Blender 4.5.4 LTS이며 flat native 삼각형, modifier/map 없음, 원본 crop/resize 없음이다.
+첫 시험은 얕은 변화가 있으나 Y형 사건으로 따라 읽기 어렵고 지퍼 띠 감소도 부족하다. 보정판은 국소 굴곡이 더 강해졌지만 작은 독립 접힘의 위계는 여전히 불명확하다. 일부 지퍼 경계는 오히려 더 강하게 보인다. 근접 목표 달성을 선언하지 않는다.
+면 정리만의 중간 native 렌더는 수행하지 않았다. 따라서 최종 전후 이미지에서 면 정리와 새 relief의 효과를 독립 원인으로 분리하지 않는다. 실제 중간 좌표는 저장된 delta_fairing으로 복원할 수 있다.
+각 trial의 VISUAL_REVIEW.json에 root와 독립 검토자의 실제 이미지 관찰을 구분하였다. 기술적 mesh PASS와 조형 성과 판정은 별개이다.
+
+보존과 후속 기준
+데이터: E:/CHESHIRE_DATA/experiments/finite_fork_folds_20261013/trial01 및 trial02
+코드: experiments/finite_fork_folds_20261013/의 원본 실행기·연산자·렌더·보드와 별도 _v2 파일.
+무거운 메시, evidence, source snapshot과 임시파일은 E 드라이브에 둔다. 저장소에는 작은 보고·receipt·비교판만 보존한다.
+G8, 게이트, 두 번째 중앙 팽창 기둥, 새 입력 또는 별도 후보군을 시작하지 않았다.
+이번 결과를 다음 누적 변형의 기본 입력으로 삼지 않는다. 다음 근접 개선은 유지된 원래 SPAN을 대상으로, 실제 골 방향과 물리 폭에 맞는 좌표 및 기하의 잔결을 분리해 다루는 방향이 필요하다. 이는 후속 기술 판단이며 이번에 구현·검증한 성과가 아니다.
