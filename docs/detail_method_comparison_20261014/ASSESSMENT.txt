@@ -1,0 +1,80 @@
+CHESHIRE — 원본 복원과 국소 근접 장식 방법의 기술 비교
+2026-10-14 / Asia/Seoul
+
+현재 범위
+사용자는 체적 재구성으로 뭉갠 형상을 거부하고 원래 형상을 기준으로 돌아가도록 지시했다.
+Mandelbulb 적용은 아이디어이며 실행 지시가 아니다. 이번 후반 작업은 기존 자료와 공식 기술 자료의 검토만 수행한다.
+원래 G7은 수정되지 않았으므로 새 메시를 생성하여 복구하지 않는다. 실제 기준 경로·해시는 BASELINE_AND_SCOPE.json에 있다.
+앞선 volume_finish_clean의 잠정 수용은 최신 사용자 판단으로 대체된다. 이전 기록 자체는 변경하지 않는다.
+
+문제의 구분
+1. 원래 말림 끝의 얇은 면이 겹치고 방향이 불명료하다.
+2. 가까이에서 작은 규모의 입체 위계가 충분하지 않다.
+3. 새 장식이 몸체에서 떠 보이거나 큰 주름의 여백을 흐릴 수 있다.
+새 장식을 만드는 기술이 2번을 개선할 수는 있지만 1번의 접속 논리까지 자동으로 고친다고 볼 수 없다.
+수풀 같은 장식으로 그 부위를 재구성하는 것은 가능한 설계 방향이다. 자연스러운 접속과 조형적 우위는 실제 결과로 판단해야 한다.
+
+기존 실험에서 직접 확인한 것
+2026-10-11 B_LOCAL은 유한 Mandelbulb 신호의 국소 법선 변위다. 거친 얕은 변형을 얻었으나 조형적 우위는 없었다.
+2026-10-12 INTEGRATED는 유한 power-8 점유장의 위쪽 높이 투영을 실제 표면에 적용했다.
+atlas 해상도 129x129, 깊이 샘플 96, 반복 10회. 두 크기의 돌기와 안쪽 root collar를 구현했다.
+그 결과의 실제 렌더에서 군집과 뿌리 연결의 부분 개선을 확인했다.
+그러나 높이 투영은 완전한 3D 프랙탈 표면의 언더컷·가지·내부 공간을 보존하지 않는다.
+자료: docs/fold_visible_gate_20261012/REPORT.md, experiments/fold_visible_gate_20261012/bulb_detail.py,
+docs/fold_visible_gate_20261012/review/images/finish_close.png.
+2026-10-14 SECONDARY_RELIEF는 낮은 분석적 FINE 위상을 전체에 적용한 별도 후보다.
+유효한 실제 기하는 추가됐으나 갈매기형 반복 무늬가 큰 S자 주름을 가로질러 조형적으로 거부했다.
+이 결과는 원본에 반영되지 않는다. 현재 원본에 곡률·방향 등록이 충분하지 않은 일반 무늬 덧입히기를 권하지 않는다.
+
+방법 A — 기존 국소 Mandelbulb 높이 부조
+장점: 유한 atlas·표면 colony·뿌리 collar 코드가 이미 존재한다. 원본 표면의 실제 변위로 몸체 연결을 유지하기 쉽다.
+한계: 한 방향의 높이로 투영되어 수풀 같은 입체 가지·언더컷의 표현이 제한된다. 기존 뒤엉킨 면을 더 거칠게 만들 수 있다.
+판단: 빠른 비교 또는 마지막 표면 보강에는 타당하다. 현재 목표 전체를 해결할 주력으로 단정하지 않는다.
+
+방법 B — 작은 실제 3D Mandelbulb 장식 군집
+장점: 봉오리 안의 작은 봉오리 등 여러 크기의 실제 입체 표면을 별도로 만들 수 있다. 원래 기둥의 해상도와 독립적으로 장식 해상도를 확보할 수 있다.
+남은 구현: 유한 프랙탈 영역의 표면 추출, 실제 끝에 맞춘 방향·축척, 뿌리의 몸체 내부 중첩, 떠 있는 잔여 성분 처리, 전체 장식의 정확한 대칭 복제.
+원본 기둥 좌표를 고정한 채 국소 장식만 만들 수 있으며 전역 remesh나 평활화가 필수는 아니다.
+한계: 산호·로마네스코처럼 읽힐 수 있다. 장식이 원래 주름의 자손처럼 연결된다는 보장은 없다. 현재 CHESHIRE에서 이 완전한 경로를 이미 구현했다고 주장하지 않는다.
+판단: 사용자가 제안한 수풀 같은 근접 복잡도에 직접 대응하는 유력 후보.
+
+방법 C — 제어된 잎·말림 컴포넌트의 국소 변형 배치
+Tissue 방식 또는 자체 배치 도구로 몇 가지 작은 장식 컴포넌트를 소수의 실제 가이드 패치에 맞춘다.
+장점: 끝의 예리함, 접힘의 방향, 잎의 수와 두께, 크기의 위계를 직접 제어할 수 있어 바로크적 장식 형상의 통제가 쉽다.
+남은 구현: 좋은 컴포넌트 조형, 원래 G7 곡면에 맞춘 변형, 뿌리 접속. Tissue 설치 여부·현재 Blender 호환은 이번에 실행 검증하지 않았다.
+Tissue의 UV/가중치 방향·선택 면·상대 두께·컴포넌트 집합 기능을 공식 코드에서 확인했다.
+Tissue의 Merge는 인접 경계 정점을 병합하는 기능이며 닫힌 기둥과의 자동 Boolean 결합이나 기존 교차 해소를 의미하지 않는다.
+원래 수백만 quad 각각에 컴포넌트를 놓는 방식은 적합하지 않다. 소수의 별도 가이드 패치가 필요하다.
+한계: 반복 부품을 붙인 인상과 밀도 과잉이 생길 수 있다.
+판단: 작은 장식의 미적 통제와 개발 효율을 중시할 때 방법 B와 비교할 유력 후보. Tissue 도입 자체가 필수라는 뜻은 아니다.
+
+방법 D — 부모 방향에 연결된 재귀 접힘·분기
+Hansmeyer의 modified CC는 면·edge·정점 법선 돌출, 공간별·세대별 가중치와 tagged lock을 결합한다.
+CHESHIRE에는 가중 subdivision 기반, Task32 연결 패치·자손 생성 및 기존 ID 보존이 이미 있다.
+남은 핵심은 부모 주름의 접선과 크기에서 낮은 자식의 방향·크기를 결정하는 조형 규칙이다.
+Task32 cap 재귀는 CHESHIRE의 문법이며 Hansmeyer의 공개 논문 구현과 동일하다고 표현하지 않는다.
+한계: 연결 위상 확보와 자연스러운 장식 발달은 다르다. 과거 ATTACHED_LEAF가 자연스러운 근접 조형을 이미 증명한 것은 아니다.
+판단: 장기적으로 기존 주름과 가장 연속적인 방향이나, 현재 짧은 설계 단계에서는 주력 비교 두 안 다음 순위.
+
+권고 — 아직 실행하지 않음
+원래 G7과 사용자가 표시한 같은 돌출 영역을 기준으로 향후 두 후보만 비교하는 구성이 합리적이다.
+B: 실제 국소 3D Mandelbulb 군집. C: 제어된 잎·말림 컴포넌트 군집.
+두 안의 전체 크기·돌출량·근접 카메라를 맞추면 프랙탈과 제어된 장식의 차이를 판단하기 쉽다.
+기존 높이 부조는 과거 실제 결과를 참조하고 같은 기술을 전면 재검증하지 않는다.
+현재 원본 전체를 다시 뭉개거나, 전역 G8을 추가하거나, 단순 무늬 진폭 조정으로 방향 문제를 해결하려 하지 않는다.
+아름다움·바로크적 연속성·완성도는 이 기술 조사에서 인증할 수 없다.
+
+검토한 1차 출처
+Daniel White, Mandelbulb: https://www.skytopia.com/project/fractal/mandelbulb.html
+IAAC Mesh Subdivision: https://www.iaacblog.com/programs/mesh-subdivision/
+Michael Hansmeyer, Design by Subdivision (2010): https://archive.bridgesmathart.org/2010/bridges2010-167.pdf
+Michael Hansmeyer, Subdivided Columns: https://www.michael-hansmeyer.com/subdivided-columns.html
+Tissue 공식 저장소: https://github.com/alessandro-zomparelli/tissue
+Tissue Tessellate: https://github.com/alessandro-zomparelli/tissue/wiki/Tessellate
+Tissue 방향·두께·컴포넌트 설정: https://raw.githubusercontent.com/alessandro-zomparelli/tissue/master/tissue_properties.py
+Tissue tessellation 구현: https://raw.githubusercontent.com/alessandro-zomparelli/tissue/master/tessellate_numpy.py
+Mandelbulber 공식 저장소 (3D object export 명시): https://github.com/buddhi1980/mandelbulber2
+scikit-image marching_cubes 공식 문서: https://scikit-image.org/docs/stable/api/skimage.measure.html
+
+이번 기술 판단은 문헌·실제 기존 이미지·소스 검토에 근거한 에이전트의 추론이다.
+Mandelbulber·Tissue 설치, 새 프랙탈 표면 추출, 새 컴포넌트 제작, 추가 모델링은 수행하지 않았다.

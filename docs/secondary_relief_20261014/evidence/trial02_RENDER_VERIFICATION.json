@@ -1,0 +1,369 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02",
+  "candidate": "SECONDARY_RELIEF",
+  "source_candidate": "G7_DERIVED_VOLUME_FINISH_CLEAN",
+  "source": {
+    "geometry": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\geometry.npz",
+    "geometry_sha256": "aa1c8c5e34491d51df32c069b66f28b52222ed75e915fd0d7e59b3749aa07200",
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\RECEIPT.json",
+    "receipt_sha256": "7f7b0be10cc346f9bb1da1ac6619d6b2ad1f656499712b186afcd78cd9bf6477",
+    "run_request": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\RUN_REQUEST.json",
+    "run_request_sha256": "37663f97687f96c50122ff70f3ed249128820b09510a760d2d0b5a1fb363b40e",
+    "source_geometry": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\geometry.npz",
+    "source_geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+    "source_finish_receipt_sha256": "7f4bbe35bc887637cae4ed3952c3d6d0e0a0a0c3483166c3b7c1d1b60bd367e1",
+    "source_verification_sha256": "60bc763830ac873ffaab16e8a68f7450886e916b2d3656a8f313b57ab53afb2e"
+  },
+  "source_arrays": {
+    "xyz_sha256": "0de2c53e7ae39721ae15cffc4f230f8dd37b1ce7d14a480a4b5c602ff3d12f2c",
+    "faces_sha256": "2642e2026a98e805a8b127140faffa1b8e169a7b7c9379b3e5da05b6902269f3"
+  },
+  "states": [
+    {
+      "label": "Accepted clean finish",
+      "images": {
+        "front": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "22a3dc72d2803ef1065d3557b28688e944cd7af270af65cc5a722b4a803a2b9f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        },
+        "body_oblique": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "7932dfb3fe031c379d6cca77bd748d7e0239350c4323b0e73779b86d10f22e2a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        },
+        "close_oblique": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "74200b5b463860a33e8cc9790c75ed890d4f8d22d9434a4a5a52c952678cb272",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        }
+      }
+    },
+    {
+      "label": "Secondary relief",
+      "images": {
+        "front": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "b05664de4b9f103ec98e18701fd56617ebbdff174ff0413ddd06a231d16dc724",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        },
+        "body_oblique": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "3d12e1af2b421763dbad8f168750d48d35f794c3b3b91568f3889f3c2d712cc1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        },
+        "close_oblique": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "8519785e3ae157ffd7c253bbea38a722fcec80d0e1bf4914bac92553d7e619ef",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        }
+      }
+    }
+  ],
+  "reused_accepted_clean_images": 3,
+  "new_saved_relief_images": 3,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "operation_record": {
+    "recipe": {
+      "schema": "CHESHIRE_TRIANGLE_NATIVE_SECONDARY_RELIEF_20261014",
+      "source": "G7-derived cleaned volumetric finish accepted by user",
+      "phase": "Reuse exact whole_field.py FINE analytic phase, profile, modulation and PCHIP envelope; no new MIDDLE geometry.",
+      "amplitude_height_fraction": 0.0006,
+      "old_FINE_amplitude_height_fraction": 0.0018,
+      "actual_source_normal": "Unit mean of actual incident triangle unit normals; no normal/shading map.",
+      "current_feature_policy": "No inherited feature_support exists on remesh; do not substitute or claim old support. Instead attenuate where incident normals disagree.",
+      "normal_coherence": "norm(mean(incident triangle unit normals)), in [0,1].",
+      "coherence_attenuation": "smoothstep(clip((coherence-.75)/.20,0,1)); hard or folded-back junctions attenuated, smooth faces retain amplitude.",
+      "displacement": "actual_source_XYZ + transported_actual_normal * signed_amplitude",
+      "reflection": "Actual clean mirror_x/y_vertex_pairs; frozen _transport; exact source ID topology retained.",
+      "added_source_subdivision_passes": 0,
+      "added_topology_events": 0,
+      "added_voxel_passes": 0,
+      "added_mandelbulb_evaluations": 0,
+      "added_normal_displacement_passes": 1,
+      "source_geometry_averaged": false,
+      "original_growth_G8": false,
+      "curvature_amplitude_cap": "B=.10*incident_mean_triangle_edge_length/sqrt(max(2*(1-coherence),1e-12)); signed <- B*tanh(signed/B). This is a local geometric radius proxy, not certified principal curvature/reach.",
+      "orientation_limiter": "If source-relative triangle reversal remains, union its incident vertex IDs across actual X/Y orbits, zero new displacement there, feather by four incident-face scalar mean iterations, reset core zero each time. At most three limiter updates; no source XYZ averaging.",
+      "scope": "One authored low-amplitude whole-column relief. Analytic theta/height phase gives mostly longitudinal direction; it does not track every actual material fold, restore old chart/feature ancestry, or add branching ornament."
+    },
+    "normal_displacement_passes": 1,
+    "added_subdivision_passes": 0,
+    "added_topology_events": 0,
+    "added_voxel_passes": 0,
+    "source_triangle_indices_unchanged": true,
+    "renderer_geometry_processing": false,
+    "distinction": "One low-amplitude normal displacement on the accepted clean remesh. The inherited analytic theta/height phase does not track actual fold ridges or recover original feature memory. This is not growth G8, CC, voxel processing, branching ornament, or source-geometry smoothing. Actual generator recipe is retained verbatim; renderer applies no geometry processing."
+  },
+  "render_code_sha256": {
+    "render": "59dbc56bc416fd1f90f4e05d0f60e8e7f03378c2b506d8798dfe4908509fcfff",
+    "preserved_scene_helper_sha256": "366db5b07c43e5b0aface45493f4f76284a3ee525dbc72d71c25fd7ffec0af05",
+    "source_clean_renderer_sha256": "33e25954fc657191c19b273163f5135556995ade6ca57c6ffde1882ddd95ba7a",
+    "preserved_renderer_hashes": {
+      "render": "366db5b07c43e5b0aface45493f4f76284a3ee525dbc72d71c25fd7ffec0af05",
+      "native_helpers_renderer": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+      "preserved_native_code_sha256": {
+        "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+        "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+        "parent_code_sha256": {
+          "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+          "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+          "raw_code_sha256": {
+            "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+            "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+            "parent_code_sha256": {
+              "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+              "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+              "parent_code_sha256": {
+                "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                "raw_code_sha256": {
+                  "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                  "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                  "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                  "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                  "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                  "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "render_source_snapshots": [
+    {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\secondary_relief_20261014\\render.py",
+      "relative_path": "experiments/secondary_relief_20261014/render.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\source_snapshot_render\\experiments\\secondary_relief_20261014\\render.py",
+      "sha256": "59dbc56bc416fd1f90f4e05d0f60e8e7f03378c2b506d8798dfe4908509fcfff"
+    },
+    {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\secondary_relief_20261014\\boards.py",
+      "relative_path": "experiments/secondary_relief_20261014/boards.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\source_snapshot_render\\experiments\\secondary_relief_20261014\\boards.py",
+      "sha256": "2c697132295c711c9bd3a85043265eae15920b84391c10392090591e7f1863e6"
+    }
+  ],
+  "crop": false,
+  "resize": false,
+  "renderer_geometry_processing": false,
+  "original_growth_G8": false,
+  "source_triangle_indices_unchanged": true,
+  "scope": "Actual accepted clean-source PNGs versus one saved secondary-relief candidate, equal camera, material, lighting, sampling and flat native shading. One low-amplitude analytic theta/height normal displacement; no added CC, voxel or topology. The phase does not track actual fold ridges and does not recover inherited feature memory. Saved provenance and image checks do not certify near-view aesthetic success, self-intersection freedom or fabrication.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\images\\SPAN_front.png",
+      "sha256": "666d3b62274ef17642913a9e7d35a0d2a124d08c8842e4e8e0cc6f3a24c6eac1",
+      "sources": [
+        {
+          "label": "Accepted clean finish",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "22a3dc72d2803ef1065d3557b28688e944cd7af270af65cc5a722b4a803a2b9f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        },
+        {
+          "label": "Secondary relief",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "b05664de4b9f103ec98e18701fd56617ebbdff174ff0413ddd06a231d16dc724",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\images\\SPAN_body_oblique.png",
+      "sha256": "0ab6727c11856cd250c5f1cd9633cea8da0ffc7ed38277f6e5e5a68cf4718a82",
+      "sources": [
+        {
+          "label": "Accepted clean finish",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "7932dfb3fe031c379d6cca77bd748d7e0239350c4323b0e73779b86d10f22e2a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        },
+        {
+          "label": "Secondary relief",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "3d12e1af2b421763dbad8f168750d48d35f794c3b3b91568f3889f3c2d712cc1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\images\\SPAN_close_oblique.png",
+      "sha256": "aacbc5b005927bdc1b56058829635302e4883c1b63ed9cdd21a1cf12a9dac81f",
+      "sources": [
+        {
+          "label": "Accepted clean finish",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "74200b5b463860a33e8cc9790c75ed890d4f8d22d9434a4a5a52c952678cb272",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\receipt.json",
+          "receipt_sha256": "44e422785660d5eb41625666e70325d387b929bfead14dcf554c34d980efd8fa",
+          "reused_reference": true
+        },
+        {
+          "label": "Secondary relief",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "8519785e3ae157ffd7c253bbea38a722fcec80d0e1bf4914bac92553d7e619ef",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\views\\receipt.json",
+          "receipt_sha256": "69847170af21bd5da8d208a3f89538fd9023569b9536f91b0b4384f314e93a75",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "2c697132295c711c9bd3a85043265eae15920b84391c10392090591e7f1863e6"
+}

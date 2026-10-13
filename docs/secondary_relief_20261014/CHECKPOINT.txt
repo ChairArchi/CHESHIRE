@@ -1,0 +1,42 @@
+CHESHIRE — 낮은 분석적 잔주름 후보의 종료 기록
+2026-10-14 / Asia/Seoul
+
+최신 지시와 현재 기준
+사용자는 후속 대화에서 체적 마감의 뭉개짐을 거부하고 원래 G7로 기준 복원을 지시했다.
+현재 설계 기준과 연구 전용 범위: docs/detail_method_comparison_20261014/BASELINE_AND_SCOPE.json.
+USER_DIRECTION.json의 앞선 잠정 수용은 최신 명시적 판단으로 대체된다. 과거 기록은 수정하지 않는다.
+현재 후속 작업은 국소 Mandelbulb와 다른 장식 방법의 기술 비교이며 새 형상을 생성하지 않는다.
+
+앞서 실제로 실행한 것
+별도 clean 부모에서 기존 whole_field.py FINE의 분석적 theta/height 위상·profile·PCHIP·modulation을 재사용했다.
+새 진폭 .0006H, 실제 삼각형 법선 평균, 법선 일치도 감쇠를 사용했다.
+trial01은 출력 전 전체 면 방향 검사에서 58,824개 반전을 검출해 중단했다. 출력·렌더가 없다.
+trial02는 같은 clean 부모에서 국소 변위 상한을 보완했다. 이전 실패 geometry를 누적하지 않았다.
+상한 B=.10*incident_mean_edge_length/sqrt(max(2*(1-coherence),1e-12)); signed=B*tanh(signed/B).
+이 값은 곡률의 대리값이며 주곡률·reach·충돌의 인증값이 아니다.
+남은 반전 면의 정점에만 실제 X/Y 궤도와 scalar feather를 사용하여 새 변위를 제한했다.
+실제 검사 과정의 반전/퇴화 수는 1160 -> 8 -> 0이었다. 원본 XYZ를 평균하지 않았다.
+
+실제 저장 결과
+E:\CHESHIRE_DATA\experiments\secondary_relief_20261014\trial02
+정점 15,400,258 / 삼각면 30,802,840. 동일한 triangle 연결을 유지한다.
+최대 새 변위 0.005838532098476422 / 상한 0.005838532099127769.
+실제 원본+저장 delta와 저장 출력이 모든 정점에서 정확히 일치한다.
+limiter core 1,708개 정점은 부모 좌표와 동일하다. scalar feather 영향 정점은 22,050개다.
+최종 실제 X/Y ID 대칭, 양의 면적, source-relative orientation을 검사했다.
+닫힘·방향 있는 edge graph·단일 연결·고립점 부재는 정확히 유지한 부모 triangle 배열의 검사 결과를 계승한다.
+새 subdivision·voxel·topology 이벤트·Mandelbulb 평가는 0회다. 자기교차·G1·제작 정합성은 인증하지 않는다.
+
+실제 렌더와 판정
+현재 clean 부모의 실제 3개 PNG를 재사용하고 새 후보를 같은 카메라·재질·조명으로 렌더했다.
+900x900 / 24 samples / flat native / 렌더 중 형상 처리 없음.
+root와 독립 검토자가 정면·몸체·근접 세 시점을 비교했다.
+작은 형상은 분명히 생겼으나 사선의 갈매기/헤링본 무늬가 큰 S자 주름을 가로지르고 여백을 채운다.
+기술적으로 실제 작은 변위는 확인됐으나 조형적으로 채택하지 않는다.
+문제는 실제 부모 주름의 방향과 분석적 위상의 등록 공백이다. 일반 무늬의 진폭 조정만으로 해결됐다고 보지 않는다.
+이 후보는 원래 G7이나 현재 설계 기준에 반영하지 않는다.
+
+기록
+원본·실패·실제 후보·렌더·코드 snapshot은 모두 별도로 보존한다. 무거운 NPZ는 E 드라이브에 있다.
+현재 원본 복원과 네 장식 방식의 조사 결과는 docs/detail_method_comparison_20261014/ASSESSMENT.txt에 정리했다.
+사용자의 기술 판단 전용 지시 이후 새 Mandelbulb, 새 컴포넌트, 새 메시 실험은 실행하지 않았다.

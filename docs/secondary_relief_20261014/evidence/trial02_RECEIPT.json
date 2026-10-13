@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-14",
+  "candidate": "SECONDARY_RELIEF",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean",
+  "source_geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "geometry": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\geometry.npz",
+  "geometry_sha256": "aa1c8c5e34491d51df32c069b66f28b52222ed75e915fd0d7e59b3749aa07200",
+  "xyz_sha256": "0de2c53e7ae39721ae15cffc4f230f8dd37b1ce7d14a480a4b5c602ff3d12f2c",
+  "faces_sha256": "2642e2026a98e805a8b127140faffa1b8e169a7b7c9379b3e5da05b6902269f3",
+  "vertices": 15400258,
+  "triangles": 30802840,
+  "recipe": {
+    "schema": "CHESHIRE_TRIANGLE_NATIVE_SECONDARY_RELIEF_20261014",
+    "source": "G7-derived cleaned volumetric finish accepted by user",
+    "phase": "Reuse exact whole_field.py FINE analytic phase, profile, modulation and PCHIP envelope; no new MIDDLE geometry.",
+    "amplitude_height_fraction": 0.0006,
+    "old_FINE_amplitude_height_fraction": 0.0018,
+    "actual_source_normal": "Unit mean of actual incident triangle unit normals; no normal/shading map.",
+    "current_feature_policy": "No inherited feature_support exists on remesh; do not substitute or claim old support. Instead attenuate where incident normals disagree.",
+    "normal_coherence": "norm(mean(incident triangle unit normals)), in [0,1].",
+    "coherence_attenuation": "smoothstep(clip((coherence-.75)/.20,0,1)); hard or folded-back junctions attenuated, smooth faces retain amplitude.",
+    "displacement": "actual_source_XYZ + transported_actual_normal * signed_amplitude",
+    "reflection": "Actual clean mirror_x/y_vertex_pairs; frozen _transport; exact source ID topology retained.",
+    "added_source_subdivision_passes": 0,
+    "added_topology_events": 0,
+    "added_voxel_passes": 0,
+    "added_mandelbulb_evaluations": 0,
+    "added_normal_displacement_passes": 1,
+    "source_geometry_averaged": false,
+    "original_growth_G8": false,
+    "curvature_amplitude_cap": "B=.10*incident_mean_triangle_edge_length/sqrt(max(2*(1-coherence),1e-12)); signed <- B*tanh(signed/B). This is a local geometric radius proxy, not certified principal curvature/reach.",
+    "orientation_limiter": "If source-relative triangle reversal remains, union its incident vertex IDs across actual X/Y orbits, zero new displacement there, feather by four incident-face scalar mean iterations, reset core zero each time. At most three limiter updates; no source XYZ averaging.",
+    "scope": "One authored low-amplitude whole-column relief. Analytic theta/height phase gives mostly longitudinal direction; it does not track every actual material fold, restore old chart/feature ancestry, or add branching ornament."
+  },
+  "physical_height": 9.730886831879616,
+  "amplitude_bound": 0.005838532099127769,
+  "maximum_actual_displacement": 0.005838532098476422,
+  "displacement_quantiles": [
+    0.0,
+    0.001566373757048795,
+    0.003003655339882586,
+    0.004817206904326334,
+    0.005838532098476422
+  ],
+  "normal_coherence_quantiles": [
+    0.017531484696540027,
+    0.936999255788191,
+    0.9906773899622633,
+    0.999093437142587,
+    1.0
+  ],
+  "attenuated_vertex_count": 214182,
+  "normal_displacement_passes": 1,
+  "added_topology_events": 0,
+  "added_subdivision_passes": 0,
+  "local_safety_history": [
+    {
+      "update": 0,
+      "reversed_or_collapsed_triangles": 1160,
+      "minimum_area": 4.98520008085574e-10
+    },
+    {
+      "update": 1,
+      "reversed_or_collapsed_triangles": 8,
+      "minimum_area": 1.7427266632217308e-10
+    },
+    {
+      "update": 2,
+      "reversed_or_collapsed_triangles": 0,
+      "minimum_area": 1.7427266632217308e-10
+    }
+  ],
+  "local_safety_zero_core_vertices": 1708,
+  "local_safety_feather_vertices": 22050,
+  "exact_XY_vertex_ID_symmetry": true,
+  "source_triangle_indices_unchanged": true,
+  "minimum_output_triangle_area": 1.7427266632217308e-10,
+  "source_orientation_reversed_triangles": 0,
+  "minimum_source_output_normal_dot": 0.008499034871188815,
+  "inherited_topology_checks": {
+    "finite": true,
+    "indexed_triangles": true,
+    "positive_triangle_area": true,
+    "closed_two_face_edges": true,
+    "consistently_oriented_edges": true,
+    "no_orphans": true,
+    "connected_single_component": true,
+    "actual_XY_geometric_symmetry": true,
+    "original_files_unchanged": true
+  },
+  "inherited_topology_verification_sha256": "60bc763830ac873ffaab16e8a68f7450886e916b2d3656a8f313b57ab53afb2e",
+  "topology_check_scope": "Exact unchanged triangle array inherits proven closed connected oriented edge graph and no orphans; all current output positions/triangle areas and relative orientation checked.",
+  "displacement_file_sha256": "805a01abd674fff6e0a2542cb4fc28ff71b3a8afd47c577c03f8a5710b844bc6",
+  "geometry_code_sha256": {
+    "experiments/secondary_relief_20261014/run_v2.py": "e3e5f5cd28a5fd22aed70275dfc4addba53eb214569b7ce86e040d840f650cc0",
+    "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+    "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+  },
+  "elapsed_seconds": 100.7370673000114,
+  "source_unchanged": true,
+  "visual_status": "PENDING_ACTUAL_MATCHED_RENDER",
+  "self_intersection": "NOT_CHECKED",
+  "G1_continuity": "NOT_CERTIFIED"
+}

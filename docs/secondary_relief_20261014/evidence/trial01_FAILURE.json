@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "phase": "ACTUAL_ALL_TRIANGLE_ORIENTATION_CHECK",
+  "status": "STOPPED_BEFORE_OUTPUT",
+  "output_geometry_saved": false,
+  "actual_render_generated": false,
+  "minimum_trial_triangle_area": 1.7087203482022726e-09,
+  "source_relative_reversed_triangles": 58824,
+  "source_triangles": 30802840,
+  "reason": "Raw normal displacement reversed high-curvature source triangles. No failed geometry was promoted or used as a parent.",
+  "next_action": "Same accepted source, add local curvature-proxy amplitude cap and bounded orientation limiter; one later actual candidate."
+}

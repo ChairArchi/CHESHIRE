@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-14",
+  "trial01": "STOPPED_BEFORE_OUTPUT",
+  "trial02": "ACTUAL_GENERATED_RENDERED_NOT_ADOPTED",
+  "records": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial01\\FAILURE.json",
+      "sha256": "98e701bd722b7f3476fa74491d83df37e3ece4932fdfaf5c12fed5fa84efa51c",
+      "repository_copy": "docs/secondary_relief_20261014/evidence/trial01_FAILURE.json"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\RECEIPT.json",
+      "sha256": "7f7b0be10cc346f9bb1da1ac6619d6b2ad1f656499712b186afcd78cd9bf6477",
+      "repository_copy": "docs/secondary_relief_20261014/evidence/trial02_RECEIPT.json"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\SAVED_VERIFICATION.json",
+      "sha256": "ff533841a417ea33f532542d821bc7668d0c06bac822b1d749e473d32fd74858",
+      "repository_copy": "docs/secondary_relief_20261014/evidence/trial02_SAVED_VERIFICATION.json"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\RENDER_VERIFICATION.json",
+      "sha256": "657bcde1568db9331b92cf6796804077913e4aead264628d0ae6d60a4e595186",
+      "repository_copy": "docs/secondary_relief_20261014/evidence/trial02_RENDER_VERIFICATION.json"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\images\\SPAN_body_oblique.png",
+      "sha256": "0ab6727c11856cd250c5f1cd9633cea8da0ffc7ed38277f6e5e5a68cf4718a82",
+      "repository_copy": "docs/secondary_relief_20261014/images/SPAN_body_oblique.png"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\secondary_relief_20261014\\trial02\\images\\SPAN_close_oblique.png",
+      "sha256": "aacbc5b005927bdc1b56058829635302e4883c1b63ed9cdd21a1cf12a9dac81f",
+      "repository_copy": "docs/secondary_relief_20261014/images/SPAN_close_oblique.png"
+    },
+    {
+      "kind": "source",
+      "path": "experiments/secondary_relief_20261014/boards.py",
+      "sha256": "2c697132295c711c9bd3a85043265eae15920b84391c10392090591e7f1863e6"
+    },
+    {
+      "kind": "source",
+      "path": "experiments/secondary_relief_20261014/render.py",
+      "sha256": "59dbc56bc416fd1f90f4e05d0f60e8e7f03378c2b506d8798dfe4908509fcfff"
+    },
+    {
+      "kind": "source",
+      "path": "experiments/secondary_relief_20261014/run.py",
+      "sha256": "629e071fb115c988f2e4c53da419b22233a4542d4677a69466aab0ee9abf961c"
+    },
+    {
+      "kind": "source",
+      "path": "experiments/secondary_relief_20261014/run_v2.py",
+      "sha256": "e3e5f5cd28a5fd22aed70275dfc4addba53eb214569b7ce86e040d840f650cc0"
+    },
+    {
+      "kind": "source",
+      "path": "experiments/secondary_relief_20261014/verify_saved.py",
+      "sha256": "898df93f38edbc5d8c5130fb0c10b497a1cb9a8da007e2d2b7709500be7318e0"
+    }
+  ],
+  "latest_baseline_record": "docs/detail_method_comparison_20261014/BASELINE_AND_SCOPE.json",
+  "original_geometry_unchanged": true,
+  "new_geometry_after_research_only_direction": false
+}
