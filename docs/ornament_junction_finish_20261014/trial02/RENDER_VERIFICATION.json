@@ -1,0 +1,615 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02",
+  "source_generation": 7,
+  "subdivision_generation": 7,
+  "added_CC_passes": 0,
+  "added_topology_events": 0,
+  "added_normal_field_passes": 0,
+  "added_mandelbulb_evaluations": 0,
+  "operation_record": {
+    "counts": {
+      "source_generation": 7,
+      "added_CC_passes": 0,
+      "added_topology_events": 0,
+      "added_normal_field_passes": 0,
+      "cumulative_normal_field_passes": 5,
+      "added_mandelbulb_evaluations": 0,
+      "source_geometry_averaged": true
+    },
+    "target_computations": {
+      "smooth_target_CC_evaluations": 3,
+      "target_neutral_CC_passes": 3,
+      "added_source_to_output_subdivision_generations": 0
+    },
+    "operator_metadata": {
+      "experiment": "ORNAMENT_JUNCTION_FINISH_NEUTRAL_TARGET_V2_20261014",
+      "recipe": {
+        "schema": "CHESHIRE_ORNAMENT_JUNCTION_NEUTRAL_TARGET_V2_20261014",
+        "source_generation": 7,
+        "output_generation": 7,
+        "intended_coarse_level": 4,
+        "taubin_pairs": 12,
+        "lambda_step": 0.5,
+        "mu_step": -0.53,
+        "averaging": "Arithmetic average of unique neighbors on actual preserved coarse quad edges.",
+        "substep": "P <- P + coefficient*effective_coarse_mask*(neighbor_mean(P)-P); anchors and mask-zero controls remain exact at every substep.",
+        "coarse_geometry": "Actual latest source G7.xyz[:coarse_vertex_count]; no earlier coarse-stage XYZ is substituted.",
+        "lift": "At each actual saved stage linearly lift mask as old-V, endpoint mean, face mean. Reconstruct target XYZ with actual neutral Catmull-Clark stencils and verify exact saved child face order.",
+        "lift_scope": "Linear V/E/F mask interpolation; actual neutral-CC smooth target construction from current-G7 coarse prefix. Not historical growth replay.",
+        "radial_component_gain": 0.35,
+        "radial_direction": "Fixed actual input G7 XY radial direction, applied once to FINAL target-minus-source blended displacement.",
+        "radial_anchor_theta_bin_radians": 0.06,
+        "radial_anchor_z_bin_height_fraction": 0.025,
+        "radial_anchor_tolerance_height_fraction": 0.0005,
+        "radial_anchor_rule": "Within selected coarse mask, group by floor(atan2(abs(Y),abs(X))/.06) and floor((Z-source_zmin)/(.025H)); retain radius >= bin maximum-.0005H. Union actual X/Y ID orbits.",
+        "fine_radial_anchor_tolerance_height_fraction": 0.00025,
+        "anchor_neighborhood_averages": 2,
+        "anchor_neighborhood": "Two actual quad-edge averages of binary movable weights, resetting all anchor weights to zero after each average; multiply the supplied lifted feather mask. Mask-zero source stays exact.",
+        "target_formula": "target=neutral_CC^3(filtered_actual_G7_coarse_prefix); delta=(target-actual_G7)*blend_mask, then final radial attenuation, actual-ID reflection, smooth norm cap and exact anchor pins.",
+        "radial_anchor_scope": "Fixed selected original coarse controls plus selected actual G7 fine radial crests. Both are fixed exactly in the final output.",
+        "maximum_displacement_height_fraction": 0.0075,
+        "displacement_cap": "D <- D*(B*tanh(norm(D)/B)/norm(D)), B=.0075H; zero displacement remains zero.",
+        "reflection": "Frozen whole_field._transport reflects minimum-ID representative delta through actual commuting source X/Y involutions; input geometry is not reconstructed.",
+        "mask_scope": "Supplied selected WALL-born overlap-band feather mask, not a new root/end-cap semantic classifier.",
+        "added_CC_passes": 0,
+        "added_topology_events": 0,
+        "added_mandelbulb_evaluations": 0,
+        "normal_field_passes": 0,
+        "source_geometry_averaged": true,
+        "preservation": "Exact faces/classes/rest/anchors/chart and source coordinates where full lifted mask is zero; exact original coarse and selected actual-G7 radial anchors.",
+        "smooth_target_CC_evaluations": "Actual count of supplied coarse-to-source saved levels; output generation stays G7, added subdivision generations=0.",
+        "interpretation": "Local geometry fairing to organize existing ornament junctions. No new ornament or detail, no guaranteed G1 continuity, no collision repair, and no automatic visual success."
+      },
+      "source_generation": 7,
+      "output_generation": 7,
+      "coarse_level": 4,
+      "coarse_vertex_count": 109410,
+      "coarse_quad_count": 109408,
+      "coarse_unique_edge_count": 218816,
+      "actual_source_control_count": 7002114,
+      "actual_source_quad_count": 7002112,
+      "physical_height": 9.735842284057451,
+      "mask_definition_scope": "Supplied selected WALL-born overlap-band feather mask, not a new root/end-cap semantic classifier.",
+      "mask_zero_source_coordinates_exact": true,
+      "original_coarse_radial_anchors_exact": true,
+      "anchor_statistics": {
+        "selected_coarse_control_count": 1988,
+        "occupied_radial_bins": 28,
+        "radial_anchor_raw_count": 196,
+        "radial_anchor_orbit_count": 196,
+        "radial_anchor_fraction_of_selected": 0.09859154929577464,
+        "radial_anchor_tolerance": 0.0048679211420287255,
+        "theta_bin_width_radians": 0.06,
+        "axial_bin_width": 0.2433960571014363
+      },
+      "actual_G7_fine_radial_anchors_exact": true,
+      "fine_anchor_statistics": {
+        "selected_coarse_control_count": 157752,
+        "occupied_radial_bins": 34,
+        "radial_anchor_raw_count": 1328,
+        "radial_anchor_orbit_count": 1328,
+        "radial_anchor_fraction_of_selected": 0.008418276788883818,
+        "radial_anchor_tolerance": 0.0024339605710143627,
+        "theta_bin_width_radians": 0.06,
+        "axial_bin_width": 0.2433960571014363
+      },
+      "all_radial_anchor_count": 1520,
+      "anchor_neighborhood_average_count": 2,
+      "anchor_neighborhood_weight_sha256": "6ec6c4602473fcaa1cd7774b3ff0a815f2854e6ce33b6ed99b26016805af1e78",
+      "blend_mask_sha256": "8592e103c2cb028443b3154ff587fadf9b404b24af44d6d1ee1c88d2e3830d77",
+      "taubin_pairs": 12,
+      "taubin_substeps": 24,
+      "movable_coarse_control_count": 1792,
+      "selected_coarse_control_count": 1988,
+      "selected_full_control_count": 157752,
+      "changed_actual_control_count": 156232,
+      "maximum_actual_displacement": 0.0591663736427029,
+      "displacement_bound": 0.07301881713043089,
+      "selected_displacement_norm": {
+        "count": 157752,
+        "minimum": 0.0,
+        "maximum": 0.0591663736427029,
+        "quantiles": [
+          0.0,
+          0.0073170316903125535,
+          0.01759921903416444,
+          0.03400468365075001,
+          0.0591663736427029
+        ]
+      },
+      "lifted_displacement_norm_before_cap": {
+        "count": 157752,
+        "minimum": 0.0,
+        "maximum": 0.08235581569982764,
+        "quantiles": [
+          0.0,
+          0.007341671736004226,
+          0.017952405666081455,
+          0.03684253743769514,
+          0.08235581569982764
+        ]
+      },
+      "coarse_laplacian_norm_before": {
+        "count": 1988,
+        "minimum": 0.00069604525578157,
+        "maximum": 0.07859635165062402,
+        "quantiles": [
+          0.00069604525578157,
+          0.013445313066554783,
+          0.026721547214324484,
+          0.059555080930346144,
+          0.07859635165062402
+        ]
+      },
+      "coarse_laplacian_norm_after": {
+        "count": 1988,
+        "minimum": 0.0004865551543023682,
+        "maximum": 0.06701955804085917,
+        "quantiles": [
+          0.0004865551543023682,
+          0.00547483096113997,
+          0.014462352958993485,
+          0.03538596300346353,
+          0.06701955804085917
+        ]
+      },
+      "laplacian_metric_scope": "Uniform coarse-edge Laplacian magnitude proxy on actual source/output coarse OLD-V prefix; not principal curvature or a continuity guarantee.",
+      "input_radial_extrema": {
+        "global_radius": {
+          "count": 7002114,
+          "minimum": 1.0005033273918204e-19,
+          "maximum": 1.6261454068052972,
+          "quantiles": [
+            1.0005033273918204e-19,
+            0.9047837047016334,
+            1.2161496247851142,
+            1.4129997427263767,
+            1.6261454068052972
+          ]
+        },
+        "selected_radius": {
+          "count": 157752,
+          "minimum": 0.740617019697089,
+          "maximum": 1.127418148909341,
+          "quantiles": [
+            0.740617019697089,
+            0.8865761415113425,
+            0.9524036958297876,
+            1.1031110460600184,
+            1.127418148909341
+          ]
+        }
+      },
+      "output_radial_extrema": {
+        "global_radius": {
+          "count": 7002114,
+          "minimum": 1.0005033273918204e-19,
+          "maximum": 1.6261454068052972,
+          "quantiles": [
+            1.0005033273918204e-19,
+            0.9047221044788608,
+            1.2161496247851142,
+            1.4129997427263767,
+            1.6261454068052972
+          ]
+        },
+        "selected_radius": {
+          "count": 157752,
+          "minimum": 0.7435214049140197,
+          "maximum": 1.127418148909341,
+          "quantiles": [
+            0.7435214049140197,
+            0.8866522620451834,
+            0.9512039729647923,
+            1.1017360067977255,
+            1.127418148909341
+          ]
+        }
+      },
+      "actual_lift_maps": [
+        {
+          "stage": 0,
+          "input_vertex_count": 109410,
+          "edge_birth_count": 218816,
+          "face_birth_count": 109408,
+          "output_vertex_count": 437634,
+          "input_edges_sha256": "35cc3d55c0bef701d3edd1cdc62d40e9618ace17b81e5766a68248611a5a094d",
+          "input_faces_sha256": "17d170a07f0c711252a3e7fdea06b17197ff351f8b2f0a189047b464ae375616"
+        },
+        {
+          "stage": 1,
+          "input_vertex_count": 437634,
+          "edge_birth_count": 875264,
+          "face_birth_count": 437632,
+          "output_vertex_count": 1750530,
+          "input_edges_sha256": "5524bfaff784bfd677692c494a1cd4cfc38ed1a1eaf8882293c53b8037456677",
+          "input_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1"
+        },
+        {
+          "stage": 2,
+          "input_vertex_count": 1750530,
+          "edge_birth_count": 3501056,
+          "face_birth_count": 1750528,
+          "output_vertex_count": 7002114,
+          "input_edges_sha256": "c55ba5b6a46b7761d4e17aafbeb327baad5ab17b3dd337952d5508935662cdc0",
+          "input_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8"
+        }
+      ],
+      "smooth_target_CC_records": [
+        {
+          "input_control_count": 109410,
+          "input_quad_count": 109408,
+          "actual_edge_count": 218816,
+          "output_control_count": 437634,
+          "actual_closed_two_face_edges": true,
+          "exact_saved_child_face_order": true,
+          "output_xyz_sha256": "aa755612040e77ac95433e2823471f70c23e854221020d244149b06e962404b1",
+          "stencil": "F=mean quad; E=(endpoints+two adjacent F)/4; V=(mean incident F+2*mean original edge midpoints+(degree-3)*P)/degree",
+          "interpretation": "Actual neutral CC target evaluation, not historical weighted-growth replay.",
+          "stage": 0
+        },
+        {
+          "input_control_count": 437634,
+          "input_quad_count": 437632,
+          "actual_edge_count": 875264,
+          "output_control_count": 1750530,
+          "actual_closed_two_face_edges": true,
+          "exact_saved_child_face_order": true,
+          "output_xyz_sha256": "893d776065c49eb25609426b41dbe29a139fe658344cb7dbcd74caed25f7922b",
+          "stencil": "F=mean quad; E=(endpoints+two adjacent F)/4; V=(mean incident F+2*mean original edge midpoints+(degree-3)*P)/degree",
+          "interpretation": "Actual neutral CC target evaluation, not historical weighted-growth replay.",
+          "stage": 1
+        },
+        {
+          "input_control_count": 1750530,
+          "input_quad_count": 1750528,
+          "actual_edge_count": 3501056,
+          "output_control_count": 7002114,
+          "actual_closed_two_face_edges": true,
+          "exact_saved_child_face_order": true,
+          "output_xyz_sha256": "d9755af9223f78d13c919c6cf6362e4a6765896c041b7bfa9801afd213dd5426",
+          "stencil": "F=mean quad; E=(endpoints+two adjacent F)/4; V=(mean incident F+2*mean original edge midpoints+(degree-3)*P)/degree",
+          "interpretation": "Actual neutral CC target evaluation, not historical weighted-growth replay.",
+          "stage": 2
+        }
+      ],
+      "smooth_target_CC_evaluations": 3,
+      "target_neutral_CC_passes": 3,
+      "added_subdivision_generations": 0,
+      "target_is_historical_growth_replay": false,
+      "target_final_xyz_sha256": "d9755af9223f78d13c919c6cf6362e4a6765896c041b7bfa9801afd213dd5426",
+      "lift_is_exact_catmull_clark_propagation": false,
+      "neutral_target_stencil_scope": "Actual neutral Catmull-Clark target, verified saved child face/vertex ordering; not propagation of original historical weighted growth.",
+      "input_xyz_sha256": "780db079fb62cf9f43b5a08ed475c71fb2ef8ec1de92f0ce961ee1bdd348bb34",
+      "output_xyz_sha256": "9af6bbd4c586d9f8a1d3255ab4382b311a5c20960a0606e6914b1f6bfea19298",
+      "input_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "output_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "supplied_coarse_mask_sha256": "cead58376064dcb427d9ce0e39202f0e5bbd52ab8c74b2e5d1ca3c27b53d99a4",
+      "effective_reflected_coarse_mask_sha256": "cead58376064dcb427d9ce0e39202f0e5bbd52ab8c74b2e5d1ca3c27b53d99a4",
+      "full_mask_sha256": "6d8cb0dfe26670da4a0597627d7d1d0617b93e9ac86972fbe0e20d0b97470300",
+      "coarse_anchor_mask_sha256": "388428475c5f3bef82c2dc501fa719fc141b00be0636641af37843de3a830c77",
+      "fine_anchor_mask_sha256": "6ffa459695deb0530f2831adc1d7f634fa9cf9359731b47f17d3a5cd247221ef",
+      "all_anchor_mask_sha256": "2820534f20f28e9f6b0e97293abfb6cefcc8659993f5268bcd7e1b61d55ec865",
+      "displacement_vector_sha256": "0aa3ac47f20b7820a4905e70f35fad9dfe4cea2987bdca2965fa3cf45f613ced",
+      "saved_displacement_scope": "Authored transported capped vector; output=actual source+vector with exact zero-mask/anchor assignment. Actual subtraction may retain floating-point rounding residuals.",
+      "faces_unchanged": true,
+      "classes_rest_anchors_unchanged": true,
+      "chart_unchanged": true,
+      "source_geometry_averaged": true,
+      "geometry_averaging_scope": "Authorized coarse fairing; actual neutral-CC target reconstruction followed by a local feathered blend that suppresses preexisting fine residuals inside the selected band.",
+      "added_CC_passes": 0,
+      "added_topology_events": 0,
+      "added_control_count": 0,
+      "added_quad_count": 0,
+      "added_mandelbulb_evaluations": 0,
+      "normal_field_passes": 0,
+      "fixed_x_vertex_count": 6656,
+      "fixed_y_vertex_count": 6656,
+      "source_pair_hashes": {
+        "X": "9c0b796f1cbe79d6835571dc56ad81432b394961e287679958e099093a0bdb0d",
+        "Y": "8087216bf4c301e505a8522fd5edb6c2f23da7c169ba97759b019b1d8b001993"
+      },
+      "geometry_code_sha256": {
+        "experiments/ornament_junction_finish_20261014/junction_operator_v2.py": "65cd37b7c48cc86674e5a3d5e15369ea3781b2b56452bac01ef2f01c1b51fb20",
+        "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+        "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+      },
+      "symmetry_scope": "Frozen whole_field._transport reflects minimum-ID representative delta through actual commuting source X/Y involutions; input geometry is not reconstructed.",
+      "self_intersection": "NOT_CHECKED",
+      "G1_continuity": "NOT_GUARANTEED",
+      "fabrication": "NOT_CHECKED",
+      "visual_status": "PENDING_MATCHED_RENDER",
+      "interpretation": "Local geometry fairing to organize existing ornament junctions. No new ornament or detail, no guaranteed G1 continuity, no collision repair, and no automatic visual success."
+    },
+    "renderer_geometry_processing": "NONE: saved native arrays only",
+    "distinction": "Three neutral CC computations construct a smooth G7 target from the current source G4 old-control guide; a locally masked target-minus-current displacement is blended into the unchanged G7 topology. The local mask and actual displacement bounds remain in the saved operator metadata. These target computations are recorded separately from the zero source-to-output generation delta. This is not whole-G7 Taubin smoothing, a new normal field or an added topology event. Renderer introduces no geometry processing."
+  },
+  "states": [
+    {
+      "candidate": "WIDE_ROOT_FINISHED",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+        "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        }
+      ]
+    },
+    {
+      "candidate": "JUNCTION_TARGET",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "e569dc96a57f62c82866978fa4fe66bf276e994acaa7396556c13e3b11b0ea80",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\generation.json",
+        "generation_sha256": "3ce6750af5b462dbe64542df7a6b8b653faf8f95810ebfaa0cc59cc0e0d54a4e",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "96851b87edadf4a6665acefce1849839a585c6fb881c9601cf399ff16af2f8ea",
+        "parent_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+        "parent_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+        "parent_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "parent_generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\front.png",
+          "sha256": "c92c94b661a4e7b79ba74d14a2cccb64242069e574d63534b5606165458aa0c5",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "4c56ccd8dfcb39fab159b662a548e99ccdc8b8ea764104f48d6b777b9f8019a3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "d67d0476a178e4fcffa3f211409039930b52718cc8ee84c7da3a10665cd6ba74",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "reused_parent_images": 3,
+  "new_images": 3,
+  "source_images": 6,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "image_check_script_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0",
+  "scope": "Original WIDE_ROOT_FINISHED SPAN G7 versus one saved JUNCTION_TARGET G7. Three neutral CC computations form a smooth G7 target; locally masked target-minus-current geometry is blended into unchanged G7 topology. Target computations are distinct from zero added output generations. No whole-G7 Taubin smoothing or new normal field is asserted. Saved native/source/code/image receipts and matched camera/material checks only; no independent geometry replay or aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_front.png",
+      "sha256": "095309cff5c25eea6d08586319c7440d313a89662a2dc6287c6cce910ed7a2ff",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "JUNCTION_TARGET",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\front.png",
+          "sha256": "c92c94b661a4e7b79ba74d14a2cccb64242069e574d63534b5606165458aa0c5",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_body_oblique.png",
+      "sha256": "cfe1d7ad98e7725584934fa42cc7082dd0adeac4b5ea840ec8d2e2a0a73d95ca",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "JUNCTION_TARGET",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "4c56ccd8dfcb39fab159b662a548e99ccdc8b8ea764104f48d6b777b9f8019a3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_close_oblique.png",
+      "sha256": "fa4cd31086e2aa299bd5f5e831aca3022670681ec56af5cc7b5c73c2493e0b68",
+      "sources": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "JUNCTION_TARGET",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "d67d0476a178e4fcffa3f211409039930b52718cc8ee84c7da3a10665cd6ba74",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "c16a02de589ddffdbf5e6e10a7122a5918f96fd114f5fb23cc9f3d079e9353b7"
+}

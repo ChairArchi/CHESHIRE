@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "reviewers": ["root", "micro_detail_strategy"],
+  "candidate": "JUNCTION_TARGET",
+  "actual_comparison_views": 3,
+  "technical_checks": "PASS within recorded preservation, actual control symmetry and closed-mesh checks",
+  "technical_visual_result": "Localized residual reduction is visible",
+  "design_result": "NATURAL_JUNCTION_REPAIR_NOT_ACHIEVED",
+  "observations": [
+    "안쪽 면의 잔변형은 감소하고 국소적인 변화는 분명해졌다.",
+    "중앙의 둥근 말림 끝은 납작하고 불명확해져 원래의 개성이 약해졌다.",
+    "주변 말림의 테두리는 여전히 각지거나 좁게 조이며, 정돈된 말림의 흐름으로 읽히지 않는다.",
+    "전체 실루엣은 대체로 유지되지만 근접 품질의 저하를 상쇄하지 않는다."
+  ],
+  "design_baseline": "Original WIDE_ROOT_FINISHED/SPAN/G07",
+  "selected_as_design_improvement": false,
+  "decision": "Preserve both candidates as research only. Keep the original baseline. Do not run a stronger smoothing variant or new detail pass.",
+  "pending_design_judgement": "May individual rolled-end shapes be reshaped while keeping protrusion amount and overall flow, or must their current individual shapes be preserved?",
+  "scope": "Actual matched flat native renders; local technical residual reduction is separate from natural architectural ornament quality."
+}

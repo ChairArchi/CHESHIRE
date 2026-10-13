@@ -1,0 +1,208 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "basis_commit": "723f778e550ba82bf0b7be0846b4475daa407d15",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_receipt_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+  "candidate": "JUNCTION_FINISH",
+  "input_case": "SPAN",
+  "subdivision_generation": 7,
+  "purpose": "Repair the existing user-marked awkward overlaps before small detail; preserve protrusion amount and overall feeling.",
+  "new_detail_deferred": true,
+  "new_micro_lip_geometry_executed": false,
+  "excluded_inputs": [
+    "CENTRAL_SPINDLE",
+    "FINITE_FORK",
+    "ATTACHED_LEAF"
+  ],
+  "recipe": {
+    "schema": "CHESHIRE_ORNAMENT_JUNCTION_CONSTRAINED_FAIRING_20261014",
+    "source_generation": 7,
+    "output_generation": 7,
+    "intended_coarse_level": 4,
+    "taubin_pairs": 12,
+    "lambda_step": 0.5,
+    "mu_step": -0.53,
+    "averaging": "Arithmetic average of unique neighbors on actual preserved coarse quad edges.",
+    "substep": "P <- P + coefficient*effective_coarse_mask*(neighbor_mean(P)-P); anchors and mask-zero controls remain exact at every substep.",
+    "coarse_geometry": "Actual latest source G7.xyz[:coarse_vertex_count]; no earlier coarse-stage XYZ is substituted.",
+    "lift": "At each actual saved stage concatenate(old-V delta, mean endpoint delta per input_edges, mean corner delta per input_faces). Same rule lifts mask.",
+    "lift_scope": "Linear ID-associated V/E/F displacement interpolation, not exact Catmull-Clark propagation or regeneration.",
+    "radial_component_gain": 0.35,
+    "radial_direction": "Fixed input XY radial unit vector, applied once to accumulated coarse displacement before lifting.",
+    "radial_anchor_theta_bin_radians": 0.06,
+    "radial_anchor_z_bin_height_fraction": 0.025,
+    "radial_anchor_tolerance_height_fraction": 0.0005,
+    "radial_anchor_rule": "Within selected coarse mask, group by floor(atan2(abs(Y),abs(X))/.06) and floor((Z-source_zmin)/(.025H)); retain radius >= bin maximum-.0005H. Union actual X/Y ID orbits.",
+    "radial_anchor_scope": "Fixed selected original coarse controls only. Interpolated newly born controls can still move.",
+    "maximum_displacement_height_fraction": 0.0075,
+    "displacement_cap": "D <- D*(B*tanh(norm(D)/B)/norm(D)), B=.0075H; zero displacement remains zero.",
+    "reflection": "Frozen whole_field._transport reflects minimum-ID representative delta through actual commuting source X/Y involutions; input geometry is not reconstructed.",
+    "mask_scope": "Supplied selected WALL-born overlap-band feather mask, not a new root/end-cap semantic classifier.",
+    "added_CC_passes": 0,
+    "added_topology_events": 0,
+    "added_mandelbulb_evaluations": 0,
+    "normal_field_passes": 0,
+    "source_geometry_averaged": true,
+    "preservation": "Exact faces/classes/rest/anchors/chart and source coordinates where full lifted mask is zero; exact original coarse radial anchors.",
+    "interpretation": "Local geometry fairing to organize existing ornament junctions. No new ornament or detail, no guaranteed G1 continuity, no collision repair, and no automatic visual success."
+  },
+  "selected_region": {
+    "camera": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "image_size": [
+        900,
+        900
+      ],
+      "feather_pixels": 32.0,
+      "visible_depth_tolerance": 0.1,
+      "scope": "Approximate trace of the user-marked band in the exact saved close camera; original native image is not edited."
+    },
+    "pixel_polygon": [
+      [
+        84.0,
+        870.0
+      ],
+      [
+        75.0,
+        810.0
+      ],
+      [
+        110.0,
+        745.0
+      ],
+      [
+        178.0,
+        670.0
+      ],
+      [
+        260.0,
+        616.0
+      ],
+      [
+        355.0,
+        568.0
+      ],
+      [
+        525.0,
+        525.0
+      ],
+      [
+        735.0,
+        487.0
+      ],
+      [
+        810.0,
+        502.0
+      ],
+      [
+        850.0,
+        558.0
+      ],
+      [
+        823.0,
+        623.0
+      ],
+      [
+        752.0,
+        682.0
+      ],
+      [
+        682.0,
+        718.0
+      ],
+      [
+        546.0,
+        764.0
+      ],
+      [
+        407.0,
+        822.0
+      ],
+      [
+        231.0,
+        858.0
+      ]
+    ],
+    "canonical_visible_count": 497,
+    "reflected_selected_coarse_count": 1988,
+    "boundary_collar_edges": 2,
+    "selection_sha256": "cead58376064dcb427d9ce0e39202f0e5bbd52ab8c74b2e5d1ca3c27b53d99a4",
+    "target": "Original WALL-born irregular overlap band in the user annotation; not later top Task32 events or ATTACHED_LEAF."
+  },
+  "hierarchy": [
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "input_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+      "input_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "output_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "output_evidence_sha256": "abe38b477bc1c452549465aa86b206ad1b96e1cd19e44d3392450ee801ecab01"
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "input_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "input_control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+      "output_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+      "output_evidence_sha256": "0c3af89f8901329daac8f2f2e83e4af39b373f60f4f92eba93c8af23f984e1d5"
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07",
+      "input_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+      "input_control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+      "output_generation_sha256": "d29191d99e702263270a51fd681db6fc82f761208ffc4a3a828bc3a3e99fac0e",
+      "output_evidence_sha256": "ca08819a3a44aa6b7f73b398c7d32bef7b28e8ccd2051ae0c0ec755165401a8c"
+    }
+  ],
+  "geometry_code_sha256": {
+    "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+    "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+    "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+    "experiments\\coherent_fold_detail_20261013\\study.py": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9",
+    "experiments\\coherent_fold_detail_20261013\\fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+    "experiments\\directional_g6_20261013\\study.py": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7",
+    "experiments\\directional_g6_20261013\\g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+    "experiments\\whole_column_detail_20261013\\study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+    "experiments\\whole_column_detail_20261013\\whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+    "experiments\\design_one_20261013\\study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+    "experiments\\design_one_20261013\\batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+    "experiments\\whole_column_detail_20261013\\finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+    "experiments\\parent_linked_folds_20261013\\study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+    "experiments\\parent_linked_folds_20261013\\parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+    "experiments\\parent_linked_folds_20261013\\finish_ribs.py": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78",
+    "experiments\\parent_linked_folds_20261013\\connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+    "experiments\\parent_linked_folds_20261013\\smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+    "experiments\\medium_root_folds_20261013\\root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+    "experiments\\medium_root_folds_20261013\\run.py": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9",
+    "experiments\\medium_root_folds_20261013\\finish.py": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab",
+    "experiments/ornament_junction_finish_20261014/junction_operator.py": "7468f83cd192202aaa3bff0346fdd15f46a9ccdfbb51ac0e6977cae6764041b4",
+    "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+    "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+    "experiments/ornament_junction_finish_20261014/run.py": "6d9ab896ff4a5d6c73b7697e76cb5b2751411006c1899779fc6dd9ee3c2d537c",
+    "experiments/finite_fork_folds_20261013/run.py": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa",
+    "experiments/finite_fork_folds_20261013/fold_operator.py": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71"
+  },
+  "frame_bindings": {
+    "source_summary": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\SUMMARY.json",
+    "source_summary_sha256": "81bbd7db5240535b1294fad3a7bc41744332e885da9abd045ff67305e28cb718",
+    "frame_folder": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial01\\WIDE_ROOT\\SPAN\\G07",
+    "frame_receipt_sha256": "cc608852e24e6f1569bc820cd9bf6f467b685a508ee1354dad0981cf1e725fc3",
+    "frame_control_sha256": "03d3dd8f2de413588fe52913ff8db45c75c00deaa97bc71519b0332736bed210",
+    "frame_evidence_sha256": "7529b12517dc14afc3cd9523523f3277be555e40ea1e91a03676de58a8869d50"
+  }
+}

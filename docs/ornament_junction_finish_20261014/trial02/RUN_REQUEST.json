@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "basis_commit": "723f778e550ba82bf0b7be0846b4475daa407d15",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_receipt_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+  "candidate": "JUNCTION_TARGET",
+  "input_case": "SPAN",
+  "subdivision_generation": 7,
+  "purpose": "One correction after crumpled delta-only trial01; smooth local target on the same original marked SPAN, retaining protrusion and actual coarse/fine rim anchors.",
+  "new_detail_deferred": true,
+  "new_micro_lip_geometry_executed": false,
+  "excluded_inputs": [
+    "CENTRAL_SPINDLE",
+    "FINITE_FORK",
+    "ATTACHED_LEAF"
+  ],
+  "recipe": {
+    "schema": "CHESHIRE_ORNAMENT_JUNCTION_NEUTRAL_TARGET_V2_20261014",
+    "source_generation": 7,
+    "output_generation": 7,
+    "intended_coarse_level": 4,
+    "taubin_pairs": 12,
+    "lambda_step": 0.5,
+    "mu_step": -0.53,
+    "averaging": "Arithmetic average of unique neighbors on actual preserved coarse quad edges.",
+    "substep": "P <- P + coefficient*effective_coarse_mask*(neighbor_mean(P)-P); anchors and mask-zero controls remain exact at every substep.",
+    "coarse_geometry": "Actual latest source G7.xyz[:coarse_vertex_count]; no earlier coarse-stage XYZ is substituted.",
+    "lift": "At each actual saved stage linearly lift mask as old-V, endpoint mean, face mean. Reconstruct target XYZ with actual neutral Catmull-Clark stencils and verify exact saved child face order.",
+    "lift_scope": "Linear V/E/F mask interpolation; actual neutral-CC smooth target construction from current-G7 coarse prefix. Not historical growth replay.",
+    "radial_component_gain": 0.35,
+    "radial_direction": "Fixed actual input G7 XY radial direction, applied once to FINAL target-minus-source blended displacement.",
+    "radial_anchor_theta_bin_radians": 0.06,
+    "radial_anchor_z_bin_height_fraction": 0.025,
+    "radial_anchor_tolerance_height_fraction": 0.0005,
+    "radial_anchor_rule": "Within selected coarse mask, group by floor(atan2(abs(Y),abs(X))/.06) and floor((Z-source_zmin)/(.025H)); retain radius >= bin maximum-.0005H. Union actual X/Y ID orbits.",
+    "fine_radial_anchor_tolerance_height_fraction": 0.00025,
+    "anchor_neighborhood_averages": 2,
+    "anchor_neighborhood": "Two actual quad-edge averages of binary movable weights, resetting all anchor weights to zero after each average; multiply the supplied lifted feather mask. Mask-zero source stays exact.",
+    "target_formula": "target=neutral_CC^3(filtered_actual_G7_coarse_prefix); delta=(target-actual_G7)*blend_mask, then final radial attenuation, actual-ID reflection, smooth norm cap and exact anchor pins.",
+    "radial_anchor_scope": "Fixed selected original coarse controls plus selected actual G7 fine radial crests. Both are fixed exactly in the final output.",
+    "maximum_displacement_height_fraction": 0.0075,
+    "displacement_cap": "D <- D*(B*tanh(norm(D)/B)/norm(D)), B=.0075H; zero displacement remains zero.",
+    "reflection": "Frozen whole_field._transport reflects minimum-ID representative delta through actual commuting source X/Y involutions; input geometry is not reconstructed.",
+    "mask_scope": "Supplied selected WALL-born overlap-band feather mask, not a new root/end-cap semantic classifier.",
+    "added_CC_passes": 0,
+    "added_topology_events": 0,
+    "added_mandelbulb_evaluations": 0,
+    "normal_field_passes": 0,
+    "source_geometry_averaged": true,
+    "preservation": "Exact faces/classes/rest/anchors/chart and source coordinates where full lifted mask is zero; exact original coarse and selected actual-G7 radial anchors.",
+    "smooth_target_CC_evaluations": "Actual count of supplied coarse-to-source saved levels; output generation stays G7, added subdivision generations=0.",
+    "interpretation": "Local geometry fairing to organize existing ornament junctions. No new ornament or detail, no guaranteed G1 continuity, no collision repair, and no automatic visual success."
+  },
+  "selected_region": {
+    "camera": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "image_size": [
+        900,
+        900
+      ],
+      "feather_pixels": 32.0,
+      "visible_depth_tolerance": 0.1,
+      "scope": "Approximate trace of the user-marked band in the exact saved close camera; original native image is not edited."
+    },
+    "pixel_polygon": [
+      [
+        84.0,
+        870.0
+      ],
+      [
+        75.0,
+        810.0
+      ],
+      [
+        110.0,
+        745.0
+      ],
+      [
+        178.0,
+        670.0
+      ],
+      [
+        260.0,
+        616.0
+      ],
+      [
+        355.0,
+        568.0
+      ],
+      [
+        525.0,
+        525.0
+      ],
+      [
+        735.0,
+        487.0
+      ],
+      [
+        810.0,
+        502.0
+      ],
+      [
+        850.0,
+        558.0
+      ],
+      [
+        823.0,
+        623.0
+      ],
+      [
+        752.0,
+        682.0
+      ],
+      [
+        682.0,
+        718.0
+      ],
+      [
+        546.0,
+        764.0
+      ],
+      [
+        407.0,
+        822.0
+      ],
+      [
+        231.0,
+        858.0
+      ]
+    ],
+    "canonical_visible_count": 497,
+    "reflected_selected_coarse_count": 1988,
+    "boundary_collar_edges": 2,
+    "selection_sha256": "cead58376064dcb427d9ce0e39202f0e5bbd52ab8c74b2e5d1ca3c27b53d99a4",
+    "target": "Original WALL-born irregular overlap band in the user annotation; not later top Task32 events or ATTACHED_LEAF."
+  },
+  "hierarchy": [
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "input_generation_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+      "input_control_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+      "output_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "output_evidence_sha256": "abe38b477bc1c452549465aa86b206ad1b96e1cd19e44d3392450ee801ecab01"
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "input_generation_sha256": "8767c1a46a3206b4a54e0d0cd23640781bbca65384ca8aa46fb93257929ba700",
+      "input_control_sha256": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+      "output_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+      "output_evidence_sha256": "0c3af89f8901329daac8f2f2e83e4af39b373f60f4f92eba93c8af23f984e1d5"
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07",
+      "input_generation_sha256": "3970f9aee293f1109e780ae12df3b5fb53776934720547341623028e3fe8dfde",
+      "input_control_sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+      "output_generation_sha256": "d29191d99e702263270a51fd681db6fc82f761208ffc4a3a828bc3a3e99fac0e",
+      "output_evidence_sha256": "ca08819a3a44aa6b7f73b398c7d32bef7b28e8ccd2051ae0c0ec755165401a8c"
+    }
+  ]
+}

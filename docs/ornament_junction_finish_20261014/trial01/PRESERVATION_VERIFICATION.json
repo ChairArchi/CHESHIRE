@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "passed": true,
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+  "output_generation_sha256": "eab74764b93acc3aa490a7433399a1cb4679aa380a348dabe6f98fbc125a8cd8",
+  "output_control_sha256": "3de8888195f4e5afd7854bb2a5b2ae5007d567f4cc73985e036d150b163368ef",
+  "output_evidence_sha256": "88f0507cd784fbb74f1b2f9872bdfd5b3128cdfb3dbf508c007ed3cc23ab1707",
+  "unchanged_associations": {
+    "faces": true,
+    "chart": true,
+    "classes": true,
+    "rest": true,
+    "anchors": true,
+    "generation": true,
+    "surface": true
+  },
+  "original_control_count": 7002114,
+  "actual_changed_control_count": 151648,
+  "outside_mask_control_count": 6844362,
+  "outside_mask_changed_count": 0,
+  "fixed_original_coarse_anchor_count": 196,
+  "fixed_original_coarse_anchors_exact": true,
+  "actual_source_plus_saved_delta_exact": true,
+  "maximum_actual_displacement": 0.05103598760832061,
+  "displacement_bound": 0.07301881713043089,
+  "maximum_actual_radius_change": 0.013701566844593893,
+  "maximum_selected_radius_change": 0.013701566844593893,
+  "code_sha256": "61c3405317cdff2b6091037db5c44bc03007f3cb0762c6b0ca34237793b769e5",
+  "scope": "Saved actual array comparison, all source controls and unchanged associations. Radial anchor preservation is not a guarantee that every newer tip or silhouette pixel is fixed. No geometry generation, full replay, collision repair or aesthetic certification."
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-14",
+  "reviewers": ["root", "micro_detail_strategy"],
+  "candidate": "JUNCTION_FINISH",
+  "actual_comparison_views": 3,
+  "technical_checks": "PASS within recorded preservation, actual control symmetry and closed-mesh checks",
+  "visual_result": "FAIL_AS_SELECTED_IMPROVEMENT",
+  "observations": [
+    "전체 돌출량과 실루엣은 대체로 유지된다.",
+    "근접 중앙의 두꺼운 끝부분은 더 구겨지고 각져 보인다.",
+    "작은 말림의 연결은 여전히 끊기거나 좁게 조이는 인상이다."
+  ],
+  "diagnosis": "Coarse guide delta changes the low-frequency shape while retaining the inherited fine residual; this is consistent with compressed wrinkles in the actual close view, not a separately isolated causal experiment.",
+  "decision": "Preserve failed local diagnostic; do not promote as an aesthetic improvement. Make one smooth-target correction on the same original source and marked region.",
+  "scope": "Actual matched flat native renders, not a topology-based aesthetic judgement."
+}

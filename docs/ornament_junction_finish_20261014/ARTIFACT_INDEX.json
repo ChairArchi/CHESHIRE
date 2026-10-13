@@ -1,0 +1,566 @@
+{
+  "date": "2026-10-14",
+  "basis_commit": "723f778e550ba82bf0b7be0846b4475daa407d15",
+  "design_baseline": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "selected_design_improvement": null,
+  "repair_objective_achieved": false,
+  "next_design_judgement_pending": true,
+  "new_microdetail_geometry_generated": false,
+  "deferred_code_archive": "E:/CHESHIRE_DATA/experiments/micro_attached_lips_20261014/deferred_code_20261014",
+  "trials": {
+    "trial01": {
+      "candidate": "JUNCTION_FINISH",
+      "generation": 7,
+      "state_folder": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07",
+      "state_files": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\control_quad.npz",
+          "bytes": 251381278,
+          "sha256": "3de8888195f4e5afd7854bb2a5b2ae5007d567f4cc73985e036d150b163368ef"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\evidence.npz",
+          "bytes": 46375289,
+          "sha256": "88f0507cd784fbb74f1b2f9872bdfd5b3128cdfb3dbf508c007ed3cc23ab1707"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\generation.json",
+          "bytes": 24534,
+          "sha256": "eab74764b93acc3aa490a7433399a1cb4679aa380a348dabe6f98fbc125a8cd8"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\geometry.npz",
+          "bytes": 431884319,
+          "sha256": "8e569e2ffe7a1a784bc85b2c4869ba82665d21403276a7a7b3f66bbcf01c938b"
+        }
+      ],
+      "state_bytes": 729665420,
+      "generation_source_hash_entries": 29,
+      "unique_generation_snapshot_files": 27,
+      "generation_snapshots": {
+        "experiments/sidewall_fan_growth_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\study.py",
+          "bytes": 9565,
+          "sha256": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a"
+        },
+        "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py",
+          "bytes": 21307,
+          "sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e"
+        },
+        "experiments/connected_fold_growth_20261012/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\connected_fold_growth_20261012\\study.py",
+          "bytes": 12291,
+          "sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3"
+        },
+        "experiments/connected_fold_growth_20261012/patch_growth.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\connected_fold_growth_20261012\\patch_growth.py",
+          "bytes": 23023,
+          "sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba"
+        },
+        "src/cheshire/task32_patches.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\src\\cheshire\\task32_patches.py",
+          "bytes": 14341,
+          "sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6"
+        },
+        "src/cheshire/reference_subdivision.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\src\\cheshire\\reference_subdivision.py",
+          "bytes": 11340,
+          "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+        },
+        "experiments/coherent_fold_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\study.py",
+          "bytes": 10273,
+          "sha256": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9"
+        },
+        "experiments/coherent_fold_detail_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\fold_operator.py",
+          "bytes": 15930,
+          "sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+        },
+        "experiments/directional_g6_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\directional_g6_20261013\\study.py",
+          "bytes": 17006,
+          "sha256": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7"
+        },
+        "experiments/directional_g6_20261013/g6_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\directional_g6_20261013\\g6_operator.py",
+          "bytes": 9454,
+          "sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06"
+        },
+        "experiments/whole_column_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\study.py",
+          "bytes": 6183,
+          "sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96"
+        },
+        "experiments/whole_column_detail_20261013/whole_field.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\whole_field.py",
+          "bytes": 12339,
+          "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+        },
+        "experiments/design_one_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\design_one_20261013\\study.py",
+          "bytes": 11240,
+          "sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05"
+        },
+        "experiments/design_one_20261013/batch_sweep.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\design_one_20261013\\batch_sweep.py",
+          "bytes": 10503,
+          "sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8"
+        },
+        "experiments/whole_column_detail_20261013/finish_surface.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\finish_surface.py",
+          "bytes": 12690,
+          "sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067"
+        },
+        "experiments/parent_linked_folds_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\study.py",
+          "bytes": 10073,
+          "sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b"
+        },
+        "experiments/parent_linked_folds_20261013/parent_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\parent_folds.py",
+          "bytes": 12519,
+          "sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b"
+        },
+        "experiments/parent_linked_folds_20261013/finish_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\finish_ribs.py",
+          "bytes": 5387,
+          "sha256": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78"
+        },
+        "experiments/parent_linked_folds_20261013/connected_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\connected_ribs.py",
+          "bytes": 12797,
+          "sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da"
+        },
+        "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+          "bytes": 14772,
+          "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+        },
+        "experiments/medium_root_folds_20261013/root_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\root_folds.py",
+          "bytes": 12810,
+          "sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db"
+        },
+        "experiments/medium_root_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\run.py",
+          "bytes": 8340,
+          "sha256": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9"
+        },
+        "experiments/medium_root_folds_20261013/finish.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\finish.py",
+          "bytes": 13550,
+          "sha256": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab"
+        },
+        "experiments/ornament_junction_finish_20261014/junction_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\ornament_junction_finish_20261014\\junction_operator.py",
+          "bytes": 18389,
+          "sha256": "7468f83cd192202aaa3bff0346fdd15f46a9ccdfbb51ac0e6977cae6764041b4"
+        },
+        "experiments/ornament_junction_finish_20261014/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\ornament_junction_finish_20261014\\run.py",
+          "bytes": 12732,
+          "sha256": "6d9ab896ff4a5d6c73b7697e76cb5b2751411006c1899779fc6dd9ee3c2d537c"
+        },
+        "experiments/finite_fork_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\finite_fork_folds_20261013\\run.py",
+          "bytes": 12890,
+          "sha256": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa"
+        },
+        "experiments/finite_fork_folds_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot\\experiments\\finite_fork_folds_20261013\\fold_operator.py",
+          "bytes": 15982,
+          "sha256": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71"
+        }
+      },
+      "frozen_render_sources": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot_render\\experiments\\ornament_junction_finish_20261014\\render.py",
+          "bytes": 11795,
+          "sha256": "817e5a3e63d9c22248b9e50252f7048c38fa7f7211ec11c4e644a5b7585b6ed8"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot_render\\experiments\\ornament_junction_finish_20261014\\boards.py",
+          "bytes": 6006,
+          "sha256": "16fd86d17972e13f3925cae10d001df1d8f066c3c241456385dba2ccd663ac23"
+        }
+      ],
+      "validation_source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\source_snapshot_validation\\verify.py",
+        "bytes": 5061,
+        "sha256": "61c3405317cdff2b6091037db5c44bc03007f3cb0762c6b0ca34237793b769e5"
+      },
+      "records": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\RUN_REQUEST.json",
+          "bytes": 6880,
+          "sha256": "761769b4f8466b064c83130cb335dcdc8272eeb4ab63be93f716fe20c167f8f3"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\RECIPE.json",
+          "bytes": 11296,
+          "sha256": "2057445fbb416ef61c71bf66a8361a12680f704ac8c96c62aa97ec968e915f6e"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\SUMMARY.json",
+          "bytes": 21012,
+          "sha256": "ad6b9d92c857bce4a12be7409b4b6fcd30f48de8b6c0a0937c8209199cbd33d8"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\PRESERVATION_VERIFICATION.json",
+          "bytes": 1645,
+          "sha256": "dcfef9b7127d477fd46477f5d18073bc5434594b361adb34646228aa483de697"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\RENDER_VERIFICATION.json",
+          "bytes": 25624,
+          "sha256": "784cc2a1c601d001ca569252315d09f664e04ca003cbc0eab858cec5e1cf6b1f"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\VISUAL_REVIEW.json",
+          "bytes": 1056,
+          "sha256": "83fe9838b3340d29f27db1e88422574fd41a8f599f38663312338182537605dc"
+        }
+      ],
+      "raw_views": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\views\\front.png",
+          "bytes": 898058,
+          "sha256": "6febbd1d200c3603ee7ceeab4c96d252f34e7c1bc918cef70ebec76e7c048b92"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\views\\body_oblique.png",
+          "bytes": 1102517,
+          "sha256": "c8b62b47de5d57aa4b4fadfe6621adaaec71dfc04a3a88d11a8dc6e6729b5034"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\views\\close_oblique.png",
+          "bytes": 1150344,
+          "sha256": "e3efd2a95d661972115235581c85a07d34ddcd1ee244e1254ede012628bdd96d"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\JUNCTION_FINISH\\SPAN\\G07\\views\\receipt.json",
+          "bytes": 19453,
+          "sha256": "a4fc092ae7eab3702ad5ed203ad0962d271b6b5dfec6964914f168ea682b7f32"
+        }
+      ],
+      "comparison_boards": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\images\\SPAN_front.png",
+          "bytes": 733765,
+          "sha256": "b5244d6988a93dc144dfeccfa65358a5e4b2087e9f6e6a5300fd4d7c6f1994e6"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\images\\SPAN_body_oblique.png",
+          "bytes": 1040608,
+          "sha256": "99fdc75ae56adebdc344765a5df727f33cfd4d924be5600c517d5be02143c22e"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\images\\SPAN_close_oblique.png",
+          "bytes": 1446505,
+          "sha256": "0096f9335e7240f91740314ca9e30525c3d2bbea399bc680cb360d2542d2cd60"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial01\\images\\SOURCE_LIST.json",
+          "bytes": 25624,
+          "sha256": "784cc2a1c601d001ca569252315d09f664e04ca003cbc0eab858cec5e1cf6b1f"
+        }
+      ],
+      "technical_checks_passed": true,
+      "selected_as_design_improvement": false,
+      "elapsed_generation_seconds": 147.9280645000399,
+      "peak_working_set_bytes": 5926637568,
+      "changed_control_count": 151648,
+      "outside_mask_control_count": 6844362,
+      "maximum_actual_displacement": 0.05103598760832061,
+      "maximum_actual_radius_change": 0.013701566844593893
+    },
+    "trial02": {
+      "candidate": "JUNCTION_TARGET",
+      "generation": 7,
+      "state_folder": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07",
+      "state_files": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\control_quad.npz",
+          "bytes": 251376467,
+          "sha256": "96851b87edadf4a6665acefce1849839a585c6fb881c9601cf399ff16af2f8ea"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\evidence.npz",
+          "bytes": 47043553,
+          "sha256": "fd7ad5bb8b5df4c7415a8f4d88f4844d3477dadc70f1ae3e4ecd2732a9204459"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\generation.json",
+          "bytes": 28910,
+          "sha256": "3ce6750af5b462dbe64542df7a6b8b653faf8f95810ebfaa0cc59cc0e0d54a4e"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\geometry.npz",
+          "bytes": 431871940,
+          "sha256": "e569dc96a57f62c82866978fa4fe66bf276e994acaa7396556c13e3b11b0ea80"
+        }
+      ],
+      "state_bytes": 730320870,
+      "generation_source_hash_entries": 29,
+      "unique_generation_snapshot_files": 27,
+      "generation_snapshots": {
+        "experiments/sidewall_fan_growth_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\study.py",
+          "bytes": 9565,
+          "sha256": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a"
+        },
+        "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py",
+          "bytes": 21307,
+          "sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e"
+        },
+        "experiments/connected_fold_growth_20261012/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\connected_fold_growth_20261012\\study.py",
+          "bytes": 12291,
+          "sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3"
+        },
+        "experiments/connected_fold_growth_20261012/patch_growth.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\connected_fold_growth_20261012\\patch_growth.py",
+          "bytes": 23023,
+          "sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba"
+        },
+        "src/cheshire/task32_patches.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\src\\cheshire\\task32_patches.py",
+          "bytes": 14341,
+          "sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6"
+        },
+        "src/cheshire/reference_subdivision.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\src\\cheshire\\reference_subdivision.py",
+          "bytes": 11340,
+          "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+        },
+        "experiments/coherent_fold_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\study.py",
+          "bytes": 10273,
+          "sha256": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9"
+        },
+        "experiments/coherent_fold_detail_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\fold_operator.py",
+          "bytes": 15930,
+          "sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+        },
+        "experiments/directional_g6_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\directional_g6_20261013\\study.py",
+          "bytes": 17006,
+          "sha256": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7"
+        },
+        "experiments/directional_g6_20261013/g6_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\directional_g6_20261013\\g6_operator.py",
+          "bytes": 9454,
+          "sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06"
+        },
+        "experiments/whole_column_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\study.py",
+          "bytes": 6183,
+          "sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96"
+        },
+        "experiments/whole_column_detail_20261013/whole_field.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\whole_field.py",
+          "bytes": 12339,
+          "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+        },
+        "experiments/design_one_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\design_one_20261013\\study.py",
+          "bytes": 11240,
+          "sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05"
+        },
+        "experiments/design_one_20261013/batch_sweep.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\design_one_20261013\\batch_sweep.py",
+          "bytes": 10503,
+          "sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8"
+        },
+        "experiments/whole_column_detail_20261013/finish_surface.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\finish_surface.py",
+          "bytes": 12690,
+          "sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067"
+        },
+        "experiments/parent_linked_folds_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\study.py",
+          "bytes": 10073,
+          "sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b"
+        },
+        "experiments/parent_linked_folds_20261013/parent_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\parent_folds.py",
+          "bytes": 12519,
+          "sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b"
+        },
+        "experiments/parent_linked_folds_20261013/finish_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\finish_ribs.py",
+          "bytes": 5387,
+          "sha256": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78"
+        },
+        "experiments/parent_linked_folds_20261013/connected_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\connected_ribs.py",
+          "bytes": 12797,
+          "sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da"
+        },
+        "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+          "bytes": 14772,
+          "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+        },
+        "experiments/medium_root_folds_20261013/root_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\root_folds.py",
+          "bytes": 12810,
+          "sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db"
+        },
+        "experiments/medium_root_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\run.py",
+          "bytes": 8340,
+          "sha256": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9"
+        },
+        "experiments/medium_root_folds_20261013/finish.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\finish.py",
+          "bytes": 13550,
+          "sha256": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab"
+        },
+        "experiments/ornament_junction_finish_20261014/junction_operator_v2.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\ornament_junction_finish_20261014\\junction_operator_v2.py",
+          "bytes": 25995,
+          "sha256": "65cd37b7c48cc86674e5a3d5e15369ea3781b2b56452bac01ef2f01c1b51fb20"
+        },
+        "experiments/ornament_junction_finish_20261014/run_v2.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\ornament_junction_finish_20261014\\run_v2.py",
+          "bytes": 12966,
+          "sha256": "85363ef7ffb47b2599f98071ed053cc999177fb4f2150c481718cc75afca15cf"
+        },
+        "experiments/finite_fork_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\finite_fork_folds_20261013\\run.py",
+          "bytes": 12890,
+          "sha256": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa"
+        },
+        "experiments/finite_fork_folds_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot\\experiments\\finite_fork_folds_20261013\\fold_operator.py",
+          "bytes": 15982,
+          "sha256": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71"
+        }
+      },
+      "frozen_render_sources": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot_render\\experiments\\ornament_junction_finish_20261014\\render_v2.py",
+          "bytes": 12683,
+          "sha256": "2d43dae4d6ef9e66d79ff150cd5aab44165b180176243d83c85e3898345fcf86"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot_render\\experiments\\ornament_junction_finish_20261014\\boards_v2.py",
+          "bytes": 6082,
+          "sha256": "c16a02de589ddffdbf5e6e10a7122a5918f96fd114f5fb23cc9f3d079e9353b7"
+        }
+      ],
+      "validation_source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\source_snapshot_validation\\verify_v2.py",
+        "bytes": 5810,
+        "sha256": "09e1b90879af09e9f525dd76fd4c81fbc0e2158cdffa969a95437336308c5bcf"
+      },
+      "records": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\RUN_REQUEST.json",
+          "bytes": 7745,
+          "sha256": "543455a2d4a84f568f6f2bbea9c6cfaa70acfa919164ae65fa45aeb485566ebf"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\RECIPE.json",
+          "bytes": 12167,
+          "sha256": "4061d6a5f70547f65bac8abef8fcd5754a03b7c8e7f1bd2ff294fc18b664afb2"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\SUMMARY.json",
+          "bytes": 25274,
+          "sha256": "f4a8cd9d3acde76cc8def4094747ff570589c1a59ee83cfc7f372e329777d2f6"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\PRESERVATION_VERIFICATION.json",
+          "bytes": 1892,
+          "sha256": "5632d192cda709b3bf975e04d39be5902d0a702d5301733220b692ba103dc50f"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\RENDER_VERIFICATION.json",
+          "bytes": 30459,
+          "sha256": "1b34748d27c5f137706ef5f965951a03c6b583ebb59155f6d837c5a67b383fe2"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\VISUAL_REVIEW.json",
+          "bytes": 1405,
+          "sha256": "dad58c6d8d50e727ccbc6f1049549afb3ec9f9c4372e40d572f365ae8bb358f2"
+        }
+      ],
+      "raw_views": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\front.png",
+          "bytes": 898435,
+          "sha256": "c92c94b661a4e7b79ba74d14a2cccb64242069e574d63534b5606165458aa0c5"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\body_oblique.png",
+          "bytes": 1101059,
+          "sha256": "4c56ccd8dfcb39fab159b662a548e99ccdc8b8ea764104f48d6b777b9f8019a3"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\close_oblique.png",
+          "bytes": 1143878,
+          "sha256": "d67d0476a178e4fcffa3f211409039930b52718cc8ee84c7da3a10665cd6ba74"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\JUNCTION_TARGET\\SPAN\\G07\\views\\receipt.json",
+          "bytes": 24306,
+          "sha256": "397b6cb2ae4acd099ac92cfac6a40ec1ce031b00bc8c0a5cd3bedd1b78188758"
+        }
+      ],
+      "comparison_boards": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_front.png",
+          "bytes": 734995,
+          "sha256": "095309cff5c25eea6d08586319c7440d313a89662a2dc6287c6cce910ed7a2ff"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_body_oblique.png",
+          "bytes": 1048746,
+          "sha256": "cfe1d7ad98e7725584934fa42cc7082dd0adeac4b5ea840ec8d2e2a0a73d95ca"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SPAN_close_oblique.png",
+          "bytes": 1468481,
+          "sha256": "fa4cd31086e2aa299bd5f5e831aca3022670681ec56af5cc7b5c73c2493e0b68"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\trial02\\images\\SOURCE_LIST.json",
+          "bytes": 30459,
+          "sha256": "1b34748d27c5f137706ef5f965951a03c6b583ebb59155f6d837c5a67b383fe2"
+        }
+      ],
+      "technical_checks_passed": true,
+      "selected_as_design_improvement": false,
+      "elapsed_generation_seconds": 145.59729750000406,
+      "peak_working_set_bytes": 6052614144,
+      "changed_control_count": 156232,
+      "outside_mask_control_count": 6844362,
+      "maximum_actual_displacement": 0.0591663736427029,
+      "maximum_actual_radius_change": 0.022080812984925258
+    }
+  },
+  "selection_diagnostic": [
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\selection_check\\SELECTION.json",
+      "bytes": 1747,
+      "sha256": "a35ab218fa9358e54b0eb53044c0d48a41c49234abc289e455aea5aec9e32102"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\selection_check\\selected_coarse_controls.png",
+      "bytes": 866334,
+      "sha256": "a0934d1dd0d7f8a3c395a153832e92d4669dafa9b481505f1296dc032bf8a11f"
+    }
+  ],
+  "close_inspection_source_list": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\ornament_junction_finish_20261014\\CLOSE_INSPECTION_SOURCE_LIST.json",
+    "bytes": 1424,
+    "sha256": "87d4c18977a09823b2224cf3d707dd767a842dc0322ac21c27560d17759f990c"
+  },
+  "conversation_inspection_path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\junction-inspection\\junction-comparison.html"
+}
