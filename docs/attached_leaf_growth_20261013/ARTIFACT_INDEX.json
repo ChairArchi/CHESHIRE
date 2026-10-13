@@ -1,0 +1,569 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "basis_commit": "4240d236d28a37551a26ce182cefafd70e662ebb",
+  "selected_design_baseline": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "current_research_checkpoint": "trial02",
+  "approved_aesthetic_improvement": false,
+  "selected_low_attached_direction_implemented": false,
+  "trials": {
+    "trial01": {
+      "date": "2026-10-13",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07",
+      "generation": 7,
+      "added_CC_passes": 0,
+      "added_topology_events": 76,
+      "control_vertices": 7086290,
+      "control_quads": 7086288,
+      "native_triangles": 28345152,
+      "elapsed_generation_seconds": 175.8156028999947,
+      "peak_working_set_bytes": 5981310976,
+      "generation_source_hash_entries": 30,
+      "unique_generation_source_snapshot_files": 27,
+      "generation_source_snapshots": {
+        "experiments/sidewall_fan_growth_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\study.py",
+          "bytes": 9565,
+          "sha256": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a"
+        },
+        "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py",
+          "bytes": 21307,
+          "sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e"
+        },
+        "experiments/connected_fold_growth_20261012/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\connected_fold_growth_20261012\\study.py",
+          "bytes": 12291,
+          "sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3"
+        },
+        "experiments/connected_fold_growth_20261012/patch_growth.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\connected_fold_growth_20261012\\patch_growth.py",
+          "bytes": 23023,
+          "sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba"
+        },
+        "src/cheshire/task32_patches.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\src\\cheshire\\task32_patches.py",
+          "bytes": 14341,
+          "sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6"
+        },
+        "src/cheshire/reference_subdivision.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\src\\cheshire\\reference_subdivision.py",
+          "bytes": 11340,
+          "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+        },
+        "experiments/coherent_fold_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\study.py",
+          "bytes": 10273,
+          "sha256": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9"
+        },
+        "experiments/coherent_fold_detail_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\fold_operator.py",
+          "bytes": 15930,
+          "sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+        },
+        "experiments/directional_g6_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\directional_g6_20261013\\study.py",
+          "bytes": 17006,
+          "sha256": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7"
+        },
+        "experiments/directional_g6_20261013/g6_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\directional_g6_20261013\\g6_operator.py",
+          "bytes": 9454,
+          "sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06"
+        },
+        "experiments/whole_column_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\study.py",
+          "bytes": 6183,
+          "sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96"
+        },
+        "experiments/whole_column_detail_20261013/whole_field.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\whole_field.py",
+          "bytes": 12339,
+          "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+        },
+        "experiments/design_one_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\design_one_20261013\\study.py",
+          "bytes": 11240,
+          "sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05"
+        },
+        "experiments/design_one_20261013/batch_sweep.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\design_one_20261013\\batch_sweep.py",
+          "bytes": 10503,
+          "sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8"
+        },
+        "experiments/whole_column_detail_20261013/finish_surface.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\whole_column_detail_20261013\\finish_surface.py",
+          "bytes": 12690,
+          "sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067"
+        },
+        "experiments/parent_linked_folds_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\study.py",
+          "bytes": 10073,
+          "sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b"
+        },
+        "experiments/parent_linked_folds_20261013/parent_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\parent_folds.py",
+          "bytes": 12519,
+          "sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b"
+        },
+        "experiments/parent_linked_folds_20261013/finish_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\finish_ribs.py",
+          "bytes": 5387,
+          "sha256": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78"
+        },
+        "experiments/parent_linked_folds_20261013/connected_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\connected_ribs.py",
+          "bytes": 12797,
+          "sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da"
+        },
+        "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+          "bytes": 14772,
+          "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+        },
+        "experiments/medium_root_folds_20261013/root_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\root_folds.py",
+          "bytes": 12810,
+          "sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db"
+        },
+        "experiments/medium_root_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\run.py",
+          "bytes": 8340,
+          "sha256": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9"
+        },
+        "experiments/medium_root_folds_20261013/finish.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\medium_root_folds_20261013\\finish.py",
+          "bytes": 13550,
+          "sha256": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab"
+        },
+        "experiments/attached_leaf_growth_20261013/leaf_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\attached_leaf_growth_20261013\\leaf_operator.py",
+          "bytes": 28278,
+          "sha256": "8c19456be5a7fb4524157eb699b4770df17ec459dc3d579e1b3df86bbd6beca1"
+        },
+        "experiments/attached_leaf_growth_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\attached_leaf_growth_20261013\\run.py",
+          "bytes": 8735,
+          "sha256": "30cc5281fff0cfdc721c049850b9b05012f383061487fc41658d903dcbfdbbc0"
+        },
+        "experiments/finite_fork_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\finite_fork_folds_20261013\\run.py",
+          "bytes": 12890,
+          "sha256": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa"
+        },
+        "experiments/finite_fork_folds_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot\\experiments\\finite_fork_folds_20261013\\fold_operator.py",
+          "bytes": 15982,
+          "sha256": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71"
+        }
+      },
+      "render_source_snapshots": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot_render\\experiments\\attached_leaf_growth_20261013\\render.py",
+          "bytes": 9706,
+          "sha256": "fc5e36e3199f27e25e87b89d3be2f26e6630c8fe8ca4252fba570685a8138bdf"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot_render\\experiments\\attached_leaf_growth_20261013\\boards.py",
+          "bytes": 5939,
+          "sha256": "30d73e48a68b56c5f43cc9152bee2c04612b7a08e7abe7bf9e5826efdf5ba514"
+        }
+      ],
+      "verifier_source_snapshot": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\source_snapshot_validation\\verify_interface.py",
+        "bytes": 4750,
+        "sha256": "e948624ee7567d0d25d150e5455a62dd9fbe0f9d4fac7bf0d81176e2b49a86d9"
+      },
+      "state_files": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\control_quad.npz",
+          "bytes": 253932285,
+          "sha256": "af82eb67ffd85876c2795a5d851509fc82935bd10ebde7c9f50d8cd92e73ce1a"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\evidence.npz",
+          "bytes": 64681866,
+          "sha256": "243bad58b8fc93eef54f6f6fdf398c24fa9647e475926a117974f80559db6fc2"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\generation.json",
+          "bytes": 1089897,
+          "sha256": "fe3668cd8c5129d102390f4f09de9cd4f96d1d563b57ba1e6c7d868334dbfbef"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\geometry.npz",
+          "bytes": 437142366,
+          "sha256": "89c7c9d3ddbc47f3a66ae36618ec9b97ac0e24fe10c7e90910e90601eb229f2d"
+        }
+      ],
+      "records": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\RUN_REQUEST.json",
+          "bytes": 846,
+          "sha256": "243bc98fb717c5957635e9ee93a707c273be3734d1dd9caf38784d17869ccaca"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\RECIPE.json",
+          "bytes": 7705,
+          "sha256": "19b0748409e9ef282c682bcc6c67f8f092696d20914b5149de43b91664a75aad"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\SUMMARY.json",
+          "bytes": 1085106,
+          "sha256": "a99036df76d1a0ae891354675646f31f073f1c57bb7f6069a7bb899a1afc9992"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\INTERFACE_VERIFICATION.json",
+          "bytes": 1147,
+          "sha256": "f3851acbdd0e7011d9cdab3f32e8fdcef321223b7986a971448563ce97652b32"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\RENDER_VERIFICATION.json",
+          "bytes": 1208196,
+          "sha256": "a90202bd9d7f770206e872b157126b76755d02a849da790568b38b09c78308b2"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\VISUAL_REVIEW.json",
+          "bytes": 1294,
+          "sha256": "2b9c6b19d580b10af38e975e4df7af0dc0d64ab790b9be7ba04496964bd7d504"
+        }
+      ],
+      "raw_views": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\views\\front.png",
+          "bytes": 901150,
+          "sha256": "179206b9317da1dab317f035a314f9ed8bf47ffe86ed4ccf3c3f48ad820c6ba5"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\views\\body_oblique.png",
+          "bytes": 1108350,
+          "sha256": "dd269b53081da8a3073db3681b78e577b6d61a89ba164c4704524a34a9ea5f5f"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\views\\close_oblique.png",
+          "bytes": 1149193,
+          "sha256": "21da71cbf47e9d9c61786a90f39cbdde3bf38e8ef7932f8b93bed5d5cc933204"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\ATTACHED_LEAF\\SPAN\\G07\\views\\receipt.json",
+          "bytes": 1202150,
+          "sha256": "02084f566681600b99e3a202ff1288260c27ae11d9b5697f6c1785891255be2b"
+        }
+      ],
+      "boards": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\images\\SPAN_front.png",
+          "bytes": 872028,
+          "sha256": "23c3872ad67d51d89c9589bde8f9d1f762f4236a039048546edb2835cd9514fa"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\images\\SPAN_body_oblique.png",
+          "bytes": 1291836,
+          "sha256": "f20fd97eb50eb28f1a999c8df98bf9f7fb2ff44bba8475bf069c933d622847d1"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\images\\SPAN_close_oblique.png",
+          "bytes": 1414695,
+          "sha256": "02f580bd67d04179207669023a7590440491243abadf6e163fef250b5b77b2a3"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial01\\images\\SOURCE_LIST.json",
+          "bytes": 1208196,
+          "sha256": "a90202bd9d7f770206e872b157126b76755d02a849da790568b38b09c78308b2"
+        }
+      ],
+      "technical_checks_passed": true,
+      "visual_success": "LOCAL_ONLY_NOT_BROAD_DETAIL_SUCCESS",
+      "scope": "Actual connected patch topology; matched flat native renders; no independent full geometry replay, self-intersection or fabrication certification.",
+      "state_file_bytes": 756846414
+    },
+    "trial02": {
+      "date": "2026-10-14",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07",
+      "generation": 7,
+      "added_CC_passes": 0,
+      "added_topology_events": 76,
+      "control_vertices": 7224738,
+      "control_quads": 7224736,
+      "native_triangles": 28898944,
+      "elapsed_generation_seconds": 223.26164599996991,
+      "peak_working_set_bytes": 6099849216,
+      "generation_source_hash_entries": 31,
+      "unique_generation_source_snapshot_files": 28,
+      "generation_source_snapshots": {
+        "experiments/sidewall_fan_growth_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\study.py",
+          "bytes": 9565,
+          "sha256": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a"
+        },
+        "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py",
+          "bytes": 21307,
+          "sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e"
+        },
+        "experiments/connected_fold_growth_20261012/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\connected_fold_growth_20261012\\study.py",
+          "bytes": 12291,
+          "sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3"
+        },
+        "experiments/connected_fold_growth_20261012/patch_growth.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\connected_fold_growth_20261012\\patch_growth.py",
+          "bytes": 23023,
+          "sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba"
+        },
+        "src/cheshire/task32_patches.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\src\\cheshire\\task32_patches.py",
+          "bytes": 14341,
+          "sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6"
+        },
+        "src/cheshire/reference_subdivision.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\src\\cheshire\\reference_subdivision.py",
+          "bytes": 11340,
+          "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+        },
+        "experiments/coherent_fold_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\study.py",
+          "bytes": 10273,
+          "sha256": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9"
+        },
+        "experiments/coherent_fold_detail_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\coherent_fold_detail_20261013\\fold_operator.py",
+          "bytes": 15930,
+          "sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f"
+        },
+        "experiments/directional_g6_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\directional_g6_20261013\\study.py",
+          "bytes": 17006,
+          "sha256": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7"
+        },
+        "experiments/directional_g6_20261013/g6_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\directional_g6_20261013\\g6_operator.py",
+          "bytes": 9454,
+          "sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06"
+        },
+        "experiments/whole_column_detail_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\study.py",
+          "bytes": 6183,
+          "sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96"
+        },
+        "experiments/whole_column_detail_20261013/whole_field.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\whole_field.py",
+          "bytes": 12339,
+          "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+        },
+        "experiments/design_one_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\design_one_20261013\\study.py",
+          "bytes": 11240,
+          "sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05"
+        },
+        "experiments/design_one_20261013/batch_sweep.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\design_one_20261013\\batch_sweep.py",
+          "bytes": 10503,
+          "sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8"
+        },
+        "experiments/whole_column_detail_20261013/finish_surface.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\whole_column_detail_20261013\\finish_surface.py",
+          "bytes": 12690,
+          "sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067"
+        },
+        "experiments/parent_linked_folds_20261013/study.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\study.py",
+          "bytes": 10073,
+          "sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b"
+        },
+        "experiments/parent_linked_folds_20261013/parent_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\parent_folds.py",
+          "bytes": 12519,
+          "sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b"
+        },
+        "experiments/parent_linked_folds_20261013/finish_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\finish_ribs.py",
+          "bytes": 5387,
+          "sha256": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78"
+        },
+        "experiments/parent_linked_folds_20261013/connected_ribs.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\connected_ribs.py",
+          "bytes": 12797,
+          "sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da"
+        },
+        "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+          "bytes": 14772,
+          "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+        },
+        "experiments/medium_root_folds_20261013/root_folds.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\root_folds.py",
+          "bytes": 12810,
+          "sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db"
+        },
+        "experiments/medium_root_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\run.py",
+          "bytes": 8340,
+          "sha256": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9"
+        },
+        "experiments/medium_root_folds_20261013/finish.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\medium_root_folds_20261013\\finish.py",
+          "bytes": 13550,
+          "sha256": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab"
+        },
+        "experiments/attached_leaf_growth_20261013/leaf_operator_v2.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\attached_leaf_growth_20261013\\leaf_operator_v2.py",
+          "bytes": 33417,
+          "sha256": "f066c7d7ee6325569e655b3929f7390a44c72d66c2bb102fd5a5f715075adb3a"
+        },
+        "experiments/attached_leaf_growth_20261013/leaf_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\attached_leaf_growth_20261013\\leaf_operator.py",
+          "bytes": 28278,
+          "sha256": "8c19456be5a7fb4524157eb699b4770df17ec459dc3d579e1b3df86bbd6beca1"
+        },
+        "experiments/attached_leaf_growth_20261013/run_v2.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\attached_leaf_growth_20261013\\run_v2.py",
+          "bytes": 8951,
+          "sha256": "24171b6bdeed45932ddc87a2a8825e621b86045445182f32f89cd6d63a21eece"
+        },
+        "experiments/finite_fork_folds_20261013/run.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\finite_fork_folds_20261013\\run.py",
+          "bytes": 12890,
+          "sha256": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa"
+        },
+        "experiments/finite_fork_folds_20261013/fold_operator.py": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot\\experiments\\finite_fork_folds_20261013\\fold_operator.py",
+          "bytes": 15982,
+          "sha256": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71"
+        }
+      },
+      "render_source_snapshots": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot_render\\experiments\\attached_leaf_growth_20261013\\render.py",
+          "bytes": 9706,
+          "sha256": "fc5e36e3199f27e25e87b89d3be2f26e6630c8fe8ca4252fba570685a8138bdf"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot_render\\experiments\\attached_leaf_growth_20261013\\boards.py",
+          "bytes": 5939,
+          "sha256": "30d73e48a68b56c5f43cc9152bee2c04612b7a08e7abe7bf9e5826efdf5ba514"
+        }
+      ],
+      "verifier_source_snapshot": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\source_snapshot_validation\\verify_interface_v2.py",
+        "bytes": 4844,
+        "sha256": "4336a2626b27e3c374d5fc57790446af7dd28939cc57aeb7ea17639538ab18c8"
+      },
+      "state_files": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\control_quad.npz",
+          "bytes": 257811781,
+          "sha256": "b1e8130551a1125de1d1d1136cb7134d97a8d7a67d3fe2ab3d0fad4a688a7b0e"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\evidence.npz",
+          "bytes": 65649694,
+          "sha256": "96f5bfbfa12f345c93bc1e6806dcf2562eda6139a06f3618255c38f2389351b9"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\generation.json",
+          "bytes": 1267668,
+          "sha256": "29c0630713bdcf5dfa48ec2fdbe291b491e865da574bf07fb50f7ce96028bb9d"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\geometry.npz",
+          "bytes": 445254317,
+          "sha256": "d946505417c5333df9d6efd427bf12bdb1a7ae2c0082fff7231884eeea6e3dcf"
+        }
+      ],
+      "records": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\RUN_REQUEST.json",
+          "bytes": 887,
+          "sha256": "71f6e73da1d34f29fe30375a97fd8ee166e035ad9daaed3ec429ab8b23159b77"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\RECIPE.json",
+          "bytes": 11840,
+          "sha256": "28b9452942a7c494296cf9fea3579808ac40c6368eb26689dc8b0e8928c6a5ee"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\SUMMARY.json",
+          "bytes": 1262855,
+          "sha256": "b83fd9faf2ce75598eeacd2558161f7061708c6823cba5c480191ef3dac2de27"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\INTERFACE_VERIFICATION.json",
+          "bytes": 1147,
+          "sha256": "98f7cae3197fa6347b03777534dbf22d30c7ae7269c0abc4589649b822b742e5"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\RENDER_VERIFICATION.json",
+          "bytes": 1392572,
+          "sha256": "60c3d03e96419077b858c2ef2b9ff7e554ab37d53b4c1f8490a8294e1f235172"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\VISUAL_REVIEW.json",
+          "bytes": 1584,
+          "sha256": "89eeea4f32dfacbae6b06f0b15f97efe1fb07c0d17a83a07c33b9a218ea73fe7"
+        }
+      ],
+      "raw_views": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\views\\front.png",
+          "bytes": 901078,
+          "sha256": "3b293dd43b96580c03a0a033fd5ffc9c577878c646f1ec1c1b7fcd031e79d89e"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\views\\body_oblique.png",
+          "bytes": 1110852,
+          "sha256": "1b51f60e541f40d7fa0923b023981ad020545e8ba8d55d2fc7c2cb15971634ce"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\views\\close_oblique.png",
+          "bytes": 1148858,
+          "sha256": "38102ad1d5be94feba1df164850dbfdfbbf244d8598a98b126edb7952f841d81"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\ATTACHED_LEAF\\SPAN\\G07\\views\\receipt.json",
+          "bytes": 1386526,
+          "sha256": "95ae9cd171d2bdb1340c5608d9c98d4168365589941fc8b9071708d835534a66"
+        }
+      ],
+      "boards": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\images\\SPAN_front.png",
+          "bytes": 892807,
+          "sha256": "ad06545c8a8b48ae3341d1fe9ca7cbcb7e616665bf8e05f08158f37dcb0c1e13"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\images\\SPAN_body_oblique.png",
+          "bytes": 1351653,
+          "sha256": "aa130004339e939658e33e9e54ec4ac0b1585400d589d8c950ee165d91536580"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\images\\SPAN_close_oblique.png",
+          "bytes": 1480983,
+          "sha256": "d8f1d2b39dda8f6ff6fc19a8c1bf3e102c9a18315a893054cba340da857f1fc6"
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\trial02\\images\\SOURCE_LIST.json",
+          "bytes": 1392572,
+          "sha256": "60c3d03e96419077b858c2ef2b9ff7e554ab37d53b4c1f8490a8294e1f235172"
+        }
+      ],
+      "technical_checks_passed": true,
+      "visual_success": "LOCAL_ONLY_NOT_BROAD_DETAIL_SUCCESS",
+      "scope": "Actual connected patch topology; matched flat native renders; no independent full geometry replay, self-intersection or fabrication certification.",
+      "state_file_bytes": 769983460
+    }
+  },
+  "inspection": {
+    "source_list": "E:\\CHESHIRE_DATA\\experiments\\attached_leaf_growth_20261013\\CLOSE_INSPECTION_SOURCE_LIST.json",
+    "crop_box": [
+      285,
+      540,
+      610,
+      850
+    ],
+    "interactive_view": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\attached-leaf-inspection\\close-change.html",
+    "scope": "Exact original pixels, separate from uncropped comparison boards; no geometry generation."
+  }
+}

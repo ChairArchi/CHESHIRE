@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "candidate": "ATTACHED_LEAF",
+  "trial": "trial02",
+  "reviewers": ["root", "gate_source_audit"],
+  "actual_comparison_boards_viewed": 3,
+  "technical_result": "PASS within recorded topology, source preservation, control symmetry, and interface checks; no self-intersection or fabrication certification",
+  "visual_result": "Localized returning curl is readable; broad near-surface detail improvement is not established",
+  "observations": [
+    "근접 하단의 C자 끝과 내부 골이 구분되며, trial01의 넓은 끝면 인상은 완화된다.",
+    "두꺼운 반원과 평행 테두리는 기존 긴 주름의 작은 분화보다 별도 볼류트 장식처럼 읽힌다.",
+    "부모와 자손의 위계는 작은 겹침 속에 묻혀 명료하지 않다.",
+    "기존의 넓은 면과 반복 잔결은 대부분 유지되므로 전체 근접 품질의 진전으로 확대 해석하지 않는다."
+  ],
+  "user_feedback": "근데 난 인간이라 그런가 차이를 잘 모르겠긴하다",
+  "selected_next_direction": "몸체에 낮게 밀착된 작은 접힘으로 줄이기",
+  "selected_next_direction_implemented": false,
+  "design_baseline": "Original WIDE_ROOT_FINISHED/SPAN/G07",
+  "decision": "Preserve both trials as research checkpoints; do not promote either as an approved aesthetic improvement. No third geometry trial in this checkpoint.",
+  "scope": "Matched actual flat native renders and a separately documented exact-pixel inspection crop. Technical success is distinct from visual success."
+}
