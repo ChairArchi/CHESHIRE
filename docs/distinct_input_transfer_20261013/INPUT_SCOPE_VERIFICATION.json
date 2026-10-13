@@ -1,0 +1,154 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "CENTRAL_SPINDLE",
+  "passed": true,
+  "changed_scope": "G0 input-generation function and macro design values; unchanged closed carrier/chart/alignment and all G1--G7 geometric recipes.",
+  "original_method": "seed_mass.legacy_core with fixed inherited deep fold",
+  "distinct_method": "seed_mass.evaluate; authored input change from prior SPAN legacy_core",
+  "original_input_recipe": {
+    "radius": [
+      0.7260000000000001,
+      0.92,
+      0.78,
+      0.63,
+      0.66,
+      0.73,
+      0.88,
+      0.7040000000000001
+    ],
+    "valley": 0.43,
+    "events": [
+      {
+        "id": "LOW_X",
+        "direction": 0,
+        "height": 0.22,
+        "span": 0.115,
+        "expansion": 0.95,
+        "constriction": 0.29,
+        "reexpansion": 0.62,
+        "return_depth": 0.65,
+        "overlap_width": 1.14,
+        "sweep": 0.24,
+        "mirror": false
+      },
+      {
+        "id": "HIGH_Y",
+        "direction": 1.5707963267948966,
+        "height": 0.7,
+        "span": 0.145,
+        "expansion": 0.82,
+        "constriction": 0.27,
+        "reexpansion": 0.9,
+        "return_depth": 0.72,
+        "overlap_width": 1.1,
+        "sweep": -0.2,
+        "mirror": false
+      },
+      {
+        "id": "DIAGONAL_BRIDGE",
+        "direction": 0.7,
+        "height": 0.47,
+        "span": 0.19575,
+        "expansion": 0.49,
+        "constriction": 0.16,
+        "reexpansion": 0.51,
+        "return_depth": 0.5152000000000001,
+        "overlap_width": 0.94,
+        "sweep": 0.24,
+        "mirror": false
+      }
+    ]
+  },
+  "distinct_input_recipe": {
+    "radius": [
+      0.44,
+      0.5,
+      0.66,
+      1.15,
+      1.85,
+      1.15,
+      0.64,
+      0.44
+    ],
+    "valley": 0.18,
+    "events": [
+      {
+        "id": "CENTRE_X",
+        "direction": 0.0,
+        "height": 0.5,
+        "span": 0.18,
+        "expansion": 0.3,
+        "constriction": 0.1,
+        "reexpansion": 0.2,
+        "return_depth": 0.28,
+        "overlap_width": 1.1,
+        "sweep": 0.2,
+        "mirror": false
+      },
+      {
+        "id": "CENTRE_Y",
+        "direction": 1.5707963267948966,
+        "height": 0.5,
+        "span": 0.18,
+        "expansion": 0.3,
+        "constriction": 0.1,
+        "reexpansion": 0.2,
+        "return_depth": 0.28,
+        "overlap_width": 1.1,
+        "sweep": -0.2,
+        "mirror": false
+      },
+      {
+        "id": "CENTRAL_DIAGONAL",
+        "direction": 0.65,
+        "height": 0.5,
+        "span": 0.2,
+        "expansion": 0.12,
+        "constriction": 0.04,
+        "reexpansion": 0.1,
+        "return_depth": 0.14,
+        "overlap_width": 1.05,
+        "sweep": 0.15,
+        "mirror": false
+      }
+    ]
+  },
+  "actual_input_shape": {
+    "maximum_actual_control_distance": 1.571957908809489,
+    "mean_actual_control_distance": 0.5312697282089863,
+    "moved_controls": 401,
+    "control_count": 402,
+    "faces_identical": true,
+    "chart_identical": true,
+    "original_radius_by_material_band": {
+      "0.2": 1.3779648938012374,
+      "0.5": 1.1403474267877818,
+      "0.8": 1.5846144302780638
+    },
+    "distinct_radius_by_material_band": {
+      "0.2": 1.0614718153567038,
+      "0.5": 1.9064247857037218,
+      "0.8": 0.94487085628115
+    }
+  },
+  "downstream_early_recipe_equalities": {
+    "G01_ANCESTRY_task36": true,
+    "G01_ANCESTRY_finite_field": true,
+    "G02_OVERLAP_task36": true,
+    "G02_OVERLAP_finite_field": true,
+    "G02_returns": true,
+    "G03_wall": true,
+    "G03_root": true,
+    "G03_sidewall": true
+  },
+  "late_selected_recipe_equalities_checked_before_generation": {
+    "g5_directional": true,
+    "g6_depth08": true,
+    "g6_middle": true,
+    "g7_linked": true,
+    "g7_wide": true,
+    "saved_delta_finish": true
+  },
+  "scope": "Actual small G0 arrays and recipe values; not a full independent geometry replay or an aesthetic success certificate."
+}

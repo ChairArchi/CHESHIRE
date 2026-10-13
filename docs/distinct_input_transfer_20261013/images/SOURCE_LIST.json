@@ -1,0 +1,920 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01",
+  "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+  "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2",
+  "selected_stages": [
+    "G00_INPUT",
+    "G01_ANCESTRY",
+    "G02_OVERLAP",
+    "G03_SIDEWALL",
+    "G04_NEUTRAL",
+    "G05_DIRECTIONAL",
+    "G06_MIDDLE",
+    "G07_FINAL"
+  ],
+  "states": [
+    {
+      "stage_id": "G00_INPUT",
+      "candidate": "CENTRAL_SPINDLE",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 0,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\geometry.npz",
+        "source_sha256": "b19e041050e91cfafc519e71c52f9cdf8f866db0c03f129284c902c69ca84af3",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\generation.json",
+        "generation_sha256": "5c5741082e9f36690bc4da1b010818e441296b3dff4a0bf6ac0026b149216aa4",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\control_quad.npz",
+        "control_sha256": "2fda6665ccc7897bb8cf0f46671e8add2b9cf5373f4eef7ac4d2a4a9a30a4da7",
+        "stage_id": "G00_INPUT",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\front.png",
+          "sha256": "b54012e39bfe62fd9c067557aa040f6c4f1aba112028592e960ab261c8e32481",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\whole_oblique.png",
+          "sha256": "912fbcc70d2bfca41cb32e0d81875092da858c3eca294d620201563e43e295d3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "field_passes_total": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 802,
+      "native_triangles": 1600
+    },
+    {
+      "stage_id": "G01_ANCESTRY",
+      "candidate": "ANCESTRY_STAGED",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 1,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\geometry.npz",
+        "source_sha256": "6410192d586dd0b456d796601c585f12a78e09d219555b2246e776351533f6b4",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\generation.json",
+        "generation_sha256": "cc160c4351a6abe8e718bc3398b81e4174a2bae24129d0d4f9e1a061e3c99200",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\control_quad.npz",
+        "control_sha256": "2f47bd306c4f1f1a186ebbd88d9f46171c2a937bc4571c43e8bef6ad25080f9f",
+        "stage_id": "G01_ANCESTRY",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\front.png",
+          "sha256": "436ddd52af49a74f5a8e80ced4f9e865ead7fc3810798f4105c171567a335f58",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "c7afc2a17c48a9c08fdc468e36ce883fe12ff3202e683e1c50855c732eebf41b",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\whole_oblique.png",
+          "sha256": "6cedaff608cbc98ae348be843caa20b233bd2bf7c35286e2fe7033af830fdb95",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "c7afc2a17c48a9c08fdc468e36ce883fe12ff3202e683e1c50855c732eebf41b",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 0,
+        "field_passes_total": 1,
+        "field_iterations": 4,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 3202,
+      "native_triangles": 6400
+    },
+    {
+      "stage_id": "G02_OVERLAP",
+      "candidate": "OVERLAP",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 2,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\geometry.npz",
+        "source_sha256": "ede6fe403c00324d95cc88137cc8b918136e58812d2c96acf61131189779281a",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\generation.json",
+        "generation_sha256": "34400b395cf00c74eec6900c76db653a70008d598800c7f373330d8e2079afc6",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\control_quad.npz",
+        "control_sha256": "8c93623b6b1b0004a63fc6111b47ef7d087dc9c471f98c5c67d919710992b5eb",
+        "stage_id": "G02_OVERLAP",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\front.png",
+          "sha256": "ff9133f5f3e4ee2eb8cc2f39a8a93de4a4b7e0fb211fca587cd513b87eabab13",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "de170357f0eebb311dc5ce6cdc9a6f841346aab588725d7e1f66641c1a0f421b",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\whole_oblique.png",
+          "sha256": "2fa8fb976a13eb6260fb45f3559ecf50975de15058c35d78407eb21ec4ef2589",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "de170357f0eebb311dc5ce6cdc9a6f841346aab588725d7e1f66641c1a0f421b",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 1,
+        "field_passes_total": 2,
+        "field_iterations": 8,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 12802,
+      "native_triangles": 25600
+    },
+    {
+      "stage_id": "G03_SIDEWALL",
+      "candidate": "SIDEWALL_FAN",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 3,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\geometry.npz",
+        "source_sha256": "fa405567e0fbab33e554236389bba91f2faa93ff06f207a37fcf141338f6322a",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\generation.json",
+        "generation_sha256": "42708bb5c87d68d528193ef9dcca44962be04954d547b20ac6d37c7c446d823b",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\control_quad.npz",
+        "control_sha256": "ae47bbfc69e8ee357415571bfc0cb9e6c8bb0f4087074709ae581a2fbfbce6cf",
+        "stage_id": "G03_SIDEWALL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\front.png",
+          "sha256": "ee77143beab4b8b34d7497a6454cebf2c6fe0d9ba82f82c7ae02af613c5fdab5",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "765335ef44a752880ae2ea2227788f1ad4991d38839a4cb0185cba9dc882e916",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\whole_oblique.png",
+          "sha256": "bc24514a27630f98b9cb2dfce680c0738fa07103acd92150e3ed5d59e60b32c9",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "765335ef44a752880ae2ea2227788f1ad4991d38839a4cb0185cba9dc882e916",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 3,
+        "added_field_passes": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 54994,
+      "native_triangles": 109984
+    },
+    {
+      "stage_id": "G04_NEUTRAL",
+      "candidate": "SIDEWALL_FAN",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 4,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\geometry.npz",
+        "source_sha256": "f5680f5f179d90339e345b2eb7b9b4b94307eb4b430f3179d3b9c877db9f7e7d",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\generation.json",
+        "generation_sha256": "d0b1e635b185dc500dc99e5a4a0c0e82a3fc37ea528dda0c915e78253938e2b7",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\control_quad.npz",
+        "control_sha256": "3428b52f8ba1dbe07fcd224e25d532adbba22faf2f6144b2a937b815e0df18ad",
+        "stage_id": "G04_NEUTRAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\front.png",
+          "sha256": "5d6a9e0ee2cf4e579f416be67903080a1ce184864785f6c845b5e4efc42fcedc",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "7fd08be4bcde9818e985f8dd51d84a965c47cbe96f5431ea889bdda8bfee0687",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\whole_oblique.png",
+          "sha256": "dd70c1a3844f09be8697b5315d002ad65e388f4c2d788713f8bf21e513846cd1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "7fd08be4bcde9818e985f8dd51d84a965c47cbe96f5431ea889bdda8bfee0687",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 3,
+        "added_CC_passes": 1,
+        "added_field_passes": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 219970,
+      "native_triangles": 439936
+    },
+    {
+      "stage_id": "G05_DIRECTIONAL",
+      "candidate": "G05_DIRECTIONAL",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 5,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\geometry.npz",
+        "source_sha256": "d72519cf43116739bd6950cdaf8005ce9a8ad7b6833e0cfa1737b5d24bf18289",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\generation.json",
+        "generation_sha256": "6bc32680321d5e1f0128b8162488a71a7fe6454c7c213ade2c3338045d5aa3e7",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\control_quad.npz",
+        "control_sha256": "b33f9e8f5aa9f8687330d766c765f02e73d1cd2204913b93ca309bb2d12d2d5b",
+        "stage_id": "G05_DIRECTIONAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\front.png",
+          "sha256": "2c875a11962f0bf5034b27b3a8a30b4ea1dab66a2b76a92c7eeeccdc721e385f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "fe25096935cf5bffb2dd499a81ea5b5e9dbb6f0d94d4d09f2deca099b93131ef",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\whole_oblique.png",
+          "sha256": "9e559d07f9c64ebcd9f7b0bdff9dfdec65f38d7d2c504c6cfa691b8e0f92f650",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "fe25096935cf5bffb2dd499a81ea5b5e9dbb6f0d94d4d09f2deca099b93131ef",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 4,
+        "added_CC_passes": 1,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 0
+      },
+      "native_vertices": 879874,
+      "native_triangles": 1759744
+    },
+    {
+      "stage_id": "G06_MIDDLE",
+      "candidate": "G06_MIDDLE",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 6,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\geometry.npz",
+        "source_sha256": "0b81ecb40e3c51694868a7aacc42565ac8a1fdbae0f371a052f016fc199c4433",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\generation.json",
+        "generation_sha256": "b58fe2c365bf01a3d38455e21e6ade686ece9f87f9f049bf03ded051c23a31df",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\control_quad.npz",
+        "control_sha256": "7198243b67906221076ae32699100f645600a33e47af64e59be9387556e1e2a4",
+        "stage_id": "G06_MIDDLE",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\front.png",
+          "sha256": "c2bd06ce4b3fee801fd1954a9e8d8f8a0fcf93562b15a8e6898de7e82f331373",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "ba5ddc245cbc29e7e15f3b3702a5eb38776e5027da46c1df582aca24ccfa92f9",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\whole_oblique.png",
+          "sha256": "ce3d768bb734c42be8822e64373054587680a2767332ef48b46cf130d81df095",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "ba5ddc245cbc29e7e15f3b3702a5eb38776e5027da46c1df582aca24ccfa92f9",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 6,
+        "added_CC_passes": 0,
+        "added_normal_field_passes": 1,
+        "cumulative_normal_field_passes": 1
+      },
+      "native_vertices": 3519490,
+      "native_triangles": 7038976
+    },
+    {
+      "stage_id": "G07_FINAL",
+      "candidate": "G07_FINAL",
+      "input_case": "CENTRAL_SPINDLE",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\geometry.npz",
+        "source_sha256": "d220dd05ac6f22bfe29fa80e98d5f5eff13fa074496db5c617c9639b6b731014",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\generation.json",
+        "generation_sha256": "7f07c044bb573a60e06f487dddd88c08440fa742a05ee199a0f33459d84a79d3",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\control_quad.npz",
+        "control_sha256": "a5bc0e69a9d4a82f12964c046dd61a3976d13d1d8ea843821161c6dbe8ecdad1",
+        "stage_id": "G07_FINAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "646c4bd16fa57e88873b749d0d5261e41856f6b4810ccd6e0008d3b05e61a4e1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\whole_oblique.png",
+          "sha256": "fc035cab12cfebecd2a4030b0fb9ac22069f6046ffc617c1422042622c25963a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\body_oblique.png",
+          "sha256": "7ecb1fe8115743cbf11642ce964a6282b071acc2029b75f5b4a11521759ca763",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\close_oblique.png",
+          "sha256": "9645bf94164e80c0e5ce033cf94e92343e86a594e8e280ef8958c53c64a44c64",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 7,
+        "added_CC_passes": 0,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 5
+      },
+      "native_vertices": 14077954,
+      "native_triangles": 28155904
+    }
+  ],
+  "baseline": {
+    "stage_id": "PRESERVED_FINAL",
+    "candidate": "WIDE_ROOT_FINISHED",
+    "input_case": "SPAN",
+    "subdivision_generation": 7,
+    "source": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    },
+    "images": [
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+        "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+        "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      },
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+        "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      }
+    ]
+  },
+  "rendered_progression_generations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "new_images": 20,
+  "reused_baseline_images": 3,
+  "source_images": 23,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "whole_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        0.5291830897331238,
+        -0.8231734037399292,
+        -0.20579329133033752
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "render_code_sha256": {
+    "render": "8b83b9b322809fb24d2dd4ac9236af890e5fbfc9ef78c97149d3039bd1b572b2",
+    "frozen_transfer_renderer": "37839ec4f2e6009e8f975e6a93e5af5eb737a9476e9de44e3db38dcea46dc556",
+    "preserved_scene_code_sha256": {
+      "render": "37839ec4f2e6009e8f975e6a93e5af5eb737a9476e9de44e3db38dcea46dc556",
+      "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+      "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+      "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91"
+    }
+  },
+  "baseline_renderer_sha256": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+  "scope": "One distinct G0 input, unchanged downstream selected recipe. Eight actual G0-G7 stages. Stored original SPAN G0 is rendered twice without rebuilding; existing final SPAN G7 PNGs are reused. Native/source/image receipts only; no independent geometry replay or aesthetic certification.",
+  "input_case": "CENTRAL_SPINDLE",
+  "baseline_initial": {
+    "stage_id": "ORIGINAL_G00_INPUT",
+    "candidate": "SPAN_SPARSE",
+    "input_case": "SPAN",
+    "subdivision_generation": 0,
+    "source": {
+      "source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\geometry.npz",
+      "source_sha256": "2f5c039ecbd96d0277be51371390a9ff653964d74feb46af155ad960d5337f59",
+      "control_source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\control_quad.npz",
+      "control_sha256": "cff9089de50aac6019684829cd70303d77e3fceaaabf3f090a06636f4f6cbf55",
+      "generation_source": "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\generation.json",
+      "generation_sha256": "6226ab8043dbd50732da3be842e9a0d2fb3f6fd8a1906dc5d9e1936564a615e1",
+      "stage_id": "ORIGINAL_G00_INPUT",
+      "legacy_metadata_missing_native_array_hashes": true,
+      "native_array_hashes_computed_from_saved_geometry": true,
+      "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\STAGES.json",
+      "manifest_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2"
+    },
+    "images": [
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\front.png",
+        "sha256": "fd10a094981540452a35d473af8a64a3cb56de573743968dbdb6191d12f70cee",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\receipt.json",
+        "receipt_sha256": "500887076ad96ec67cdb95223e7955f457f84c54c577041abb1bf811ee014912",
+        "reused_reference": false,
+        "preserved_geometry_new_render": true
+      },
+      {
+        "view": "whole_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\whole_oblique.png",
+        "sha256": "ca37eb000fe380a8b1d792d841e3990318c88000faf0ae7fbf4ff8be92d2d25e",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\receipt.json",
+        "receipt_sha256": "500887076ad96ec67cdb95223e7955f457f84c54c577041abb1bf811ee014912",
+        "reused_reference": false,
+        "preserved_geometry_new_render": true
+      }
+    ]
+  },
+  "new_variant_images": 18,
+  "new_original_input_reference_images": 2,
+  "frozen_boards_sha256": "2368533ac09aaec75ab5ff5c35fbe7e603a87b277ce18429e589c3a23218800b",
+  "boards": [
+    {
+      "view": "front",
+      "kind": "progression",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\PROGRESSION_front.png",
+      "sha256": "17daa5818dcda39afce41ff0e1993110f3991a662a6abc1bf4abf7b64896f26b",
+      "sources": [
+        {
+          "stage_id": "G00_INPUT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\front.png",
+          "sha256": "b54012e39bfe62fd9c067557aa040f6c4f1aba112028592e960ab261c8e32481",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G01_ANCESTRY",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\front.png",
+          "sha256": "436ddd52af49a74f5a8e80ced4f9e865ead7fc3810798f4105c171567a335f58",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "c7afc2a17c48a9c08fdc468e36ce883fe12ff3202e683e1c50855c732eebf41b",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G02_OVERLAP",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\front.png",
+          "sha256": "ff9133f5f3e4ee2eb8cc2f39a8a93de4a4b7e0fb211fca587cd513b87eabab13",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "de170357f0eebb311dc5ce6cdc9a6f841346aab588725d7e1f66641c1a0f421b",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G03_SIDEWALL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\front.png",
+          "sha256": "ee77143beab4b8b34d7497a6454cebf2c6fe0d9ba82f82c7ae02af613c5fdab5",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "765335ef44a752880ae2ea2227788f1ad4991d38839a4cb0185cba9dc882e916",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G04_NEUTRAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\front.png",
+          "sha256": "5d6a9e0ee2cf4e579f416be67903080a1ce184864785f6c845b5e4efc42fcedc",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "7fd08be4bcde9818e985f8dd51d84a965c47cbe96f5431ea889bdda8bfee0687",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G05_DIRECTIONAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\front.png",
+          "sha256": "2c875a11962f0bf5034b27b3a8a30b4ea1dab66a2b76a92c7eeeccdc721e385f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "fe25096935cf5bffb2dd499a81ea5b5e9dbb6f0d94d4d09f2deca099b93131ef",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G06_MIDDLE",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\front.png",
+          "sha256": "c2bd06ce4b3fee801fd1954a9e8d8f8a0fcf93562b15a8e6898de7e82f331373",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "ba5ddc245cbc29e7e15f3b3702a5eb38776e5027da46c1df582aca24ccfa92f9",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "646c4bd16fa57e88873b749d0d5261e41856f6b4810ccd6e0008d3b05e61a4e1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "whole_oblique",
+      "kind": "progression",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\PROGRESSION_whole_oblique.png",
+      "sha256": "125c60c88c2f78b0e87c437a1e6037c9a326789a29c7fa3e3bcfe05a3ee0ad18",
+      "sources": [
+        {
+          "stage_id": "G00_INPUT",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\whole_oblique.png",
+          "sha256": "912fbcc70d2bfca41cb32e0d81875092da858c3eca294d620201563e43e295d3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G01_ANCESTRY",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\whole_oblique.png",
+          "sha256": "6cedaff608cbc98ae348be843caa20b233bd2bf7c35286e2fe7033af830fdb95",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "c7afc2a17c48a9c08fdc468e36ce883fe12ff3202e683e1c50855c732eebf41b",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G02_OVERLAP",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\whole_oblique.png",
+          "sha256": "2fa8fb976a13eb6260fb45f3559ecf50975de15058c35d78407eb21ec4ef2589",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "de170357f0eebb311dc5ce6cdc9a6f841346aab588725d7e1f66641c1a0f421b",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G03_SIDEWALL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\whole_oblique.png",
+          "sha256": "bc24514a27630f98b9cb2dfce680c0738fa07103acd92150e3ed5d59e60b32c9",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "765335ef44a752880ae2ea2227788f1ad4991d38839a4cb0185cba9dc882e916",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G04_NEUTRAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\whole_oblique.png",
+          "sha256": "dd70c1a3844f09be8697b5315d002ad65e388f4c2d788713f8bf21e513846cd1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "7fd08be4bcde9818e985f8dd51d84a965c47cbe96f5431ea889bdda8bfee0687",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G05_DIRECTIONAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\whole_oblique.png",
+          "sha256": "9e559d07f9c64ebcd9f7b0bdff9dfdec65f38d7d2c504c6cfa691b8e0f92f650",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "fe25096935cf5bffb2dd499a81ea5b5e9dbb6f0d94d4d09f2deca099b93131ef",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G06_MIDDLE",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\whole_oblique.png",
+          "sha256": "ce3d768bb734c42be8822e64373054587680a2767332ef48b46cf130d81df095",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "ba5ddc245cbc29e7e15f3b3702a5eb38776e5027da46c1df582aca24ccfa92f9",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\whole_oblique.png",
+          "sha256": "fc035cab12cfebecd2a4030b0fb9ac22069f6046ffc617c1422042622c25963a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "kind": "initial_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\INPUT_COMPARE_front.png",
+      "sha256": "e4cd45787da7bc44b13e897b001bfb872c64aecabf87b420724aa758d59373ec",
+      "sources": [
+        {
+          "stage_id": "ORIGINAL_G00_INPUT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\front.png",
+          "sha256": "fd10a094981540452a35d473af8a64a3cb56de573743968dbdb6191d12f70cee",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\receipt.json",
+          "receipt_sha256": "500887076ad96ec67cdb95223e7955f457f84c54c577041abb1bf811ee014912",
+          "reused_reference": false,
+          "preserved_geometry_new_render": true
+        },
+        {
+          "stage_id": "G00_INPUT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\front.png",
+          "sha256": "b54012e39bfe62fd9c067557aa040f6c4f1aba112028592e960ab261c8e32481",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "whole_oblique",
+      "kind": "initial_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\INPUT_COMPARE_whole_oblique.png",
+      "sha256": "5ff3b45f24a972136d433b879a335a5f7a4fc56964ce45a4cfd9643250be7d08",
+      "sources": [
+        {
+          "stage_id": "ORIGINAL_G00_INPUT",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\whole_oblique.png",
+          "sha256": "ca37eb000fe380a8b1d792d841e3990318c88000faf0ae7fbf4ff8be92d2d25e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\reference_views\\G00_INPUT\\receipt.json",
+          "receipt_sha256": "500887076ad96ec67cdb95223e7955f457f84c54c577041abb1bf811ee014912",
+          "reused_reference": false,
+          "preserved_geometry_new_render": true
+        },
+        {
+          "stage_id": "G00_INPUT",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\whole_oblique.png",
+          "sha256": "912fbcc70d2bfca41cb32e0d81875092da858c3eca294d620201563e43e295d3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "a897f29ed00ec7f5511270765c17fa08a2829d71c9a483ba013a012f5b318a1c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_front.png",
+      "sha256": "3e16894ae7ba7d10225db14f19b3ee41655fb3551a14290eedae636f8bb6f998",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "646c4bd16fa57e88873b749d0d5261e41856f6b4810ccd6e0008d3b05e61a4e1",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_body_oblique.png",
+      "sha256": "b2ad1cec6823cf75750bfe1184ed1158ca708842f93cb35b09743eae29a9687b",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\body_oblique.png",
+          "sha256": "7ecb1fe8115743cbf11642ce964a6282b071acc2029b75f5b4a11521759ca763",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_close_oblique.png",
+      "sha256": "85f8f2b3163993882473c0e46f57dd8da332a0d932ebf36b177fd161849270ef",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\close_oblique.png",
+          "sha256": "9645bf94164e80c0e5ce033cf94e92343e86a594e8e280ef8958c53c64a44c64",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "ae2f259076ef633f3d33c25856b8af853d40ba0b496a36e6f28818bd1a39cd93",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "progression_boards": 2,
+  "initial_comparison_boards": 2,
+  "final_comparison_boards": 3,
+  "boards_script_sha256": "3c654213fb45a464ac719116283c35bf4b6e94dc1fa6425042f374c45ab58090"
+}

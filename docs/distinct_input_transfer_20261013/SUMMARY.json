@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "CENTRAL_SPINDLE",
+  "complete_generation_sequence": true,
+  "actual_final_generation": 7,
+  "actual_saved_states": 15,
+  "changed_input_only": {
+    "field": "G0 complete macro geometry",
+    "definition": {
+      "case": "CENTRAL_SPINDLE",
+      "generator": "existing seed_mass.evaluate",
+      "radius": [
+        0.44,
+        0.5,
+        0.66,
+        1.15,
+        1.85,
+        1.15,
+        0.64,
+        0.44
+      ],
+      "valley": 0.18,
+      "event_layout": "Three central returns; no inherited legacy deep-fold component"
+    }
+  },
+  "unchanged_downstream_recipe_completed_without_retuning": true,
+  "all_required_stage_checks_passed": true,
+  "native_stage_count": 11,
+  "control_only_intermediate_count": 4,
+  "final_control_vertices": 7038978,
+  "final_control_quads": 7038976,
+  "final_native_triangles": 28155904,
+  "final_symmetry": {
+    "passed": true,
+    "axes": {
+      "X": {
+        "passed": true,
+        "actual_control_xyz_max_error": 1.868085097292109e-12,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      },
+      "Y": {
+        "passed": true,
+        "actual_control_xyz_max_error": 1.868085097292109e-12,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      }
+    },
+    "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+    "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+  },
+  "elapsed_generation_seconds": 663.8279999999795,
+  "source_snapshot_files": 84,
+  "recipe_sha256": "10b25318b3b9bb9435d4374a096e7221b5a24e8c223a3809cf35c40fb3d7acac",
+  "stages_sha256": "bb64d740ca743f597eecc3a663ce9747c0a86353e70c522f0e032ca7ef880ca2",
+  "visual_success": "PENDING_MATCHED_ACTUAL_RENDER_REVIEW",
+  "generality_scope": "One distinct G0 macro geometry on the same aligned closed carrier, not arbitrary topology.",
+  "exclusions": [
+    "New reference research",
+    "Parameter search",
+    "Full baseline regeneration",
+    "Full independent transfer replay",
+    "Self-intersection/fabrication certification"
+  ]
+}

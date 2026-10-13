@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "data_root": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01",
+  "repository": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012",
+  "geometry_source_files": 84,
+  "render_source_sha256": {
+    "experiments/distinct_input_transfer_20261013/render.py": "8b83b9b322809fb24d2dd4ac9236af890e5fbfc9ef78c97149d3039bd1b572b2",
+    "experiments/distinct_input_transfer_20261013/boards.py": "3c654213fb45a464ac719116283c35bf4b6e94dc1fa6425042f374c45ab58090",
+    "experiments/recipe_transfer_20261013/render.py": "37839ec4f2e6009e8f975e6a93e5af5eb737a9476e9de44e3db38dcea46dc556",
+    "experiments/recipe_transfer_20261013/boards.py": "2368533ac09aaec75ab5ff5c35fbe7e603a87b277ce18429e589c3a23218800b"
+  },
+  "actual_stage_records": [
+    {
+      "id": "G00_INPUT",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G00_INPUT",
+      "generation": 0,
+      "generation_json_sha256": "5c5741082e9f36690bc4da1b010818e441296b3dff4a0bf6ac0026b149216aa4",
+      "candidate": "CENTRAL_SPINDLE",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G01_ANCESTRY",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G01_ANCESTRY",
+      "generation": 1,
+      "generation_json_sha256": "cc160c4351a6abe8e718bc3398b81e4174a2bae24129d0d4f9e1a061e3c99200",
+      "candidate": "ANCESTRY_STAGED",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G02_OVERLAP",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G02_OVERLAP",
+      "generation": 2,
+      "generation_json_sha256": "34400b395cf00c74eec6900c76db653a70008d598800c7f373330d8e2079afc6",
+      "candidate": "OVERLAP",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_WALL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_WALL",
+      "generation": 3,
+      "generation_json_sha256": "15110d44412066354c169d01334b895c39daa04c3147577a98b2e75326f697a8",
+      "candidate": "WALL",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_ROOT",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_ROOT",
+      "generation": 3,
+      "generation_json_sha256": "8c222a3e0015b4a31f7dc668c61b762071f85fffd18151ababc13fc850a44ee6",
+      "candidate": "ROOT_ONLY",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_SIDEWALL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G03_SIDEWALL",
+      "generation": 3,
+      "generation_json_sha256": "42708bb5c87d68d528193ef9dcca44962be04954d547b20ac6d37c7c446d823b",
+      "candidate": "SIDEWALL_FAN",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G04_NEUTRAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G04_NEUTRAL",
+      "generation": 4,
+      "generation_json_sha256": "d0b1e635b185dc500dc99e5a4a0c0e82a3fc37ea528dda0c915e78253938e2b7",
+      "candidate": "SIDEWALL_FAN",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G05_DIRECTIONAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL",
+      "generation": 5,
+      "generation_json_sha256": "6bc32680321d5e1f0128b8162488a71a7fe6454c7c213ade2c3338045d5aa3e7",
+      "candidate": "G05_DIRECTIONAL",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G06_DEPTH08",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_DEPTH08",
+      "generation": 6,
+      "generation_json_sha256": "dc64830e7d52977bd072f84035cb9b713df6815b326d43c9f3e2c24480e00b58",
+      "candidate": "G06_DEPTH08",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G06_MIDDLE",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G06_MIDDLE",
+      "generation": 6,
+      "generation_json_sha256": "b58fe2c365bf01a3d38455e21e6ade686ece9f87f9f049bf03ded051c23a31df",
+      "candidate": "G06_MIDDLE",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_SURFACE",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_SURFACE",
+      "generation": 7,
+      "generation_json_sha256": "b3b2bc496316cc5fbc0fe043ac35d6221a98caf7a80a9331a0f20bb378e76b76",
+      "candidate": "G07_SURFACE",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_LINKED_RAW",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_LINKED_RAW",
+      "generation": 7,
+      "generation_json_sha256": "575d279c70f178413e5c6f17ce3a42c2db66aca11c15841cd9aa2386f45a9798",
+      "candidate": "G07_LINKED_RAW",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_LINKED_FINISHED",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_LINKED_FINISHED",
+      "generation": 7,
+      "generation_json_sha256": "2ed7eb3a065f0a3c122a5db0dc2a9aae76abf9dc4e2107aa7bf240b5e13071d7",
+      "candidate": "G07_LINKED_FINISHED",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_WIDE_RAW",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_WIDE_RAW",
+      "generation": 7,
+      "generation_json_sha256": "5d753778e1f0e25672201ead461a001191741f10a467446fd77d718ad63b3f41",
+      "candidate": "G07_WIDE_RAW",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_FINAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\states\\G07_FINAL",
+      "generation": 7,
+      "generation_json_sha256": "7f07c044bb573a60e06f487dddd88c08440fa742a05ee199a0f33459d84a79d3",
+      "candidate": "G07_FINAL",
+      "native_available": true,
+      "checks_passed": true
+    }
+  ],
+  "boards": [
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\PROGRESSION_front.png",
+      "sha256": "17daa5818dcda39afce41ff0e1993110f3991a662a6abc1bf4abf7b64896f26b",
+      "kind": "progression"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\PROGRESSION_whole_oblique.png",
+      "sha256": "125c60c88c2f78b0e87c437a1e6037c9a326789a29c7fa3e3bcfe05a3ee0ad18",
+      "kind": "progression"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\INPUT_COMPARE_front.png",
+      "sha256": "e4cd45787da7bc44b13e897b001bfb872c64aecabf87b420724aa758d59373ec",
+      "kind": "initial_comparison"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\INPUT_COMPARE_whole_oblique.png",
+      "sha256": "5ff3b45f24a972136d433b879a335a5f7a4fc56964ce45a4cfd9643250be7d08",
+      "kind": "initial_comparison"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_front.png",
+      "sha256": "3e16894ae7ba7d10225db14f19b3ee41655fb3551a14290eedae636f8bb6f998",
+      "kind": "final_comparison"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_body_oblique.png",
+      "sha256": "b2ad1cec6823cf75750bfe1184ed1158ca708842f93cb35b09743eae29a9687b",
+      "kind": "final_comparison"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\images\\FINAL_COMPARE_close_oblique.png",
+      "sha256": "85f8f2b3163993882473c0e46f57dd8da332a0d932ebf36b177fd161849270ef",
+      "kind": "final_comparison"
+    }
+  ],
+  "visual_review": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\VISUAL_REVIEW.json",
+  "checkpoint": "E:\\CHESHIRE_DATA\\experiments\\distinct_input_transfer_20261013\\trial01\\CHECKPOINT.txt",
+  "scope": "Small receipts, sources, and original board bytes checked; heavy saved meshes remain on E. No additional generation or independent full replay."
+}

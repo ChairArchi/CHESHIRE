@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "CENTRAL_SPINDLE",
+  "basis_commit": "ae21b874ce256ebbfc17e64759a6f0095c327e01",
+  "original_geometry_commit": "657b3ab927d067630071a12fc14bd2b0a8d0681e",
+  "changed_input_only": {
+    "field": "G0 complete macro geometry",
+    "definition": {
+      "case": "CENTRAL_SPINDLE",
+      "generator": "existing seed_mass.evaluate",
+      "radius": [
+        0.44,
+        0.5,
+        0.66,
+        1.15,
+        1.85,
+        1.15,
+        0.64,
+        0.44
+      ],
+      "valley": 0.18,
+      "event_layout": "Three central returns; no inherited legacy deep-fold component"
+    }
+  },
+  "unchanged": [
+    "G0 carrier/chart/topology and X/Y/Z coordinate contract",
+    "All G1--G7 geometric formulas and selected modes",
+    "Mandelbulb world volumes, iterations and movement budgets",
+    "Material root window and child beta windows",
+    "All phase, amplitude, envelope and smoothing values"
+  ],
+  "stage_sequence": [
+    "G00_INPUT",
+    "G01_ANCESTRY",
+    "G02_OVERLAP",
+    "G03_WALL",
+    "G03_ROOT",
+    "G03_SIDEWALL",
+    "G04_NEUTRAL",
+    "G05_DIRECTIONAL",
+    "G06_DEPTH08",
+    "G06_MIDDLE",
+    "G07_SURFACE",
+    "G07_LINKED_RAW",
+    "G07_LINKED_FINISHED",
+    "G07_WIDE_RAW",
+    "G07_FINAL"
+  ],
+  "run_file_sha256": "513939df467437cf5a3798a1e79a0ef2d3f65a0c36091f216e1adf592c8159b7",
+  "scope": "One distinct macro input on the same closed carrier and aligned chart; not arbitrary-input generality or aesthetic success certification."
+}
