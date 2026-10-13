@@ -1,0 +1,77 @@
+CHESHIRE - ROLLED END REBUILD CHECKPOINT
+2026-10-14 / Asia/Seoul
+
+DECISION
+Reject trial03 as a design improvement; preserve it as a research result.
+The original WIDE_ROOT_FINISHED/SPAN/G07 remains the selected design baseline.
+The user's permission to reshape individual ends was authorization to try this
+method, not approval of this candidate's visual result.
+
+USER-CONFIRMED SCOPE
+Reshape individual rolled ends while retaining protrusion amount and the large
+fold flow. Correct the marked irregular overlap band before adding micro detail.
+Use the original actual SPAN G7; do not stack a previously rejected candidate.
+Original data and checkpoints remain unchanged.
+
+ACTUAL ATTEMPTS
+trial01: stopped before any output mesh or render. A broad interpolation context
+contained noninjective chart UV: 65 exact duplicates with different source XYZ.
+The recorded maximum world spread was approximately .598177 source units.
+trial02: stopped before any output mesh or render. Body-only local context passed,
+but a projected 2D guide diagnostic found 3 sampled crossings. The next version
+kept crossings as diagnostics, because this is not a 3D self-intersection test
+and the user allowed overlap. This was an admission-rule correction, not a claim
+that the crossings were repaired.
+trial03: one actual saved and rendered reconstruction, using a fixed asymmetric
+quintic Bezier guide calibrated against measured source radial envelopes.
+It rebuilt 4 canonical components / 6 lobes, with local memberships and
+endpoint feathering, and reflected source-ID displacement transport.
+It did not average source geometry or add topology, CC subdivision, normal fields,
+Mandelbulb, a new input, a gate, or micro ornaments. Output remains actual G7.
+
+TECHNICAL RESULTS - TRIAL03 ONLY
+Control vertices: 7,002,114; control quads: 7,002,112.
+Native triangles: 28,008,448. Added controls and quads: 0.
+Actual changed controls: 152,572.
+Outside-mask controls: 6,849,542; outside-mask changed controls: 0.
+Faces, chart, classes, rest, anchors, generation and surface associations remained
+exactly unchanged. Actual source + saved delta matched output exactly.
+Maximum displacement: 0.12828374242738277 source units;
+recorded bound: 0.2433960571014363 source units.
+Maximum absolute binned radial-peak change: 0.056059704339039729;
+RMS binned radial-peak change: 0.013364747839895342 source units.
+These measured changes do not establish exact protrusion-envelope preservation.
+Finite XYZ, closed oriented control topology, one component, no orphan controls,
+and positive native areas passed. Actual X/Y control reflection error was
+4.961703332445539e-14, below the recorded 1e-9 tolerance; oriented quads matched.
+Generation/check/save: 149.752817 seconds.
+Peak working set: 5,936,799,744 bytes for this generation Python process;
+render processes are excluded from both reported resource figures.
+
+VISUAL RESULTS - REJECTED
+Matched close view regressed: thin angular plates and flat cut ends became more
+prominent. The original rounded cup-like end lost its rounded character.
+The diagonal junction read as disconnected, mechanically cut fragments.
+Large surrounding folds and whole-column family were mostly retained, but the
+front view showed no clear whole-column improvement. Technical passes therefore
+did not establish near-view beauty, natural curl continuity or aesthetic success.
+The independent review is recorded in VISUAL_REVIEW.json.
+
+RENDER AND VALIDATION SCOPE
+Three new saved native PNGs plus three reused original PNGs were checked at
+matched cameras/material/light settings: Blender 4.5.4 LTS, 900x900, 24 samples,
+flat native geometry, no modifiers or normal maps. The three comparison boards
+are uncropped and unresized. Self-intersection, G1 continuity, fabrication,
+independent full generation replay and independently sorted native triangle
+reflection sets were not certified.
+SUMMARY/operation records retain their execution-time PENDING visual strings;
+VISUAL_REVIEW.json records the subsequent rejection without rewriting evidence.
+
+LOCATION AND FOLLOW-UP BOUNDARY
+Source: E:\CHESHIRE_DATA\experiments\medium_root_folds_20261013\trial02\WIDE_ROOT_FINISHED\SPAN\G07
+Rejected actual candidate: E:\CHESHIRE_DATA\experiments\rolled_end_rebuild_20261014\trial03\ROLLED_END_REBUILD\SPAN\G07
+All heavy meshes remain on E:. No heavy NPZ is copied into repository docs.
+Two critical comparison boards and three exact JSON evidence copies are preserved
+here; the front board remains referenced on E: to keep the documentation compact.
+A separate local-envelope projection direction may be investigated independently.
+This checkpoint makes no claim that a follow-up succeeded or was selected.

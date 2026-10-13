@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-14",
+  "reviewer": "root",
+  "source": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "local_projection": {
+    "root": "E:/CHESHIRE_DATA/experiments/volume_junction_target_20261014/trial01",
+    "candidate": "VOLUME_JUNCTION_TARGET",
+    "reviewed_views": ["front", "body_oblique", "close_oblique"],
+    "decision": "NOT_ADOPTED",
+    "observation": "정면과 큰 주름의 인상은 유지되지만 근접 띠의 얇고 잘게 겹친 면이 남아 접속 형태의 개선이 충분하지 않다.",
+    "technical_distinction": "원래 G7 위상에서 좌표만 이동했으므로 내부 면을 실제로 합치거나 제거한 결과가 아니다."
+  },
+  "coarse_voxel_target": {
+    "path": "E:/CHESHIRE_DATA/experiments/volume_junction_target_20261014/trial01/target_geometry.npz",
+    "reviewed_views": ["close_oblique"],
+    "decision": "NOT_ADOPTED",
+    "observation": "겹친 부분의 외피는 단순화되지만 근접 표면의 거친 voxel 면과 전역 세부 손실이 크다.",
+    "scope": "목표면 자체의 실제 저장 배열을 렌더한 진단 이미지이며 국소 투영 결과와 구별한다."
+  },
+  "next_technical_step": "원본을 보존한 별도 G7 파생 마감으로 더 촘촘한 실제 체적 재구성, 표시 부위의 추가 평활화, X/Y 반사 및 기하학적 마감 1회를 검토한다. 이 단계의 성공 여부는 이 문서에서 판단하지 않는다."
+}

@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-14",
+  "basis_commit": "78d6f3fefcb61f16253b53b886853fa56a257350",
+  "original_source": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "original_source_unchanged": true,
+  "current_finish_candidate": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean",
+  "original_growth_generation": 7,
+  "growth_G8": false,
+  "new_microdetail_added": false,
+  "new_mandelbulb_added": false,
+  "states": [
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\VOLUME_JUNCTION_TARGET\\SPAN\\G07",
+      "status": "ACTUAL_GENERATED_AND_RENDERED_NOT_ADOPTED",
+      "reason": "Original overlapping layers remain; insufficient near cleanup."
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\target_geometry.npz",
+      "status": "ACTUAL_SAVED_TARGET_RENDERED_NOT_ADOPTED",
+      "reason": "Coarse voxel facets and global fine loss."
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish",
+      "status": "NATIVE_CPP_BAD_ALLOC_CRASH_NO_OUTPUT_NO_RENDER"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_v2",
+      "status": "ACTUAL_SAVED_AND_RENDERED_REQUIRES_CLEANUP",
+      "reason": "598 minor nonprimary components/isolates and small numerical symmetry residual."
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean",
+      "status": "ACTUAL_SAVED_RENDERED_GEOMETRY_CHECKS_PASS_PARTIAL_VISUAL_GAIN",
+      "reason": "Broad folds/root consolidation improved; arbitrary ends and serrated rims remain. Aesthetic baseline decision pending."
+    }
+  ],
+  "records": [
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\SUMMARY.json",
+      "sha256": "882a9c5f3297a0b30d4435411ff25f5382cdc3e21efea87e45eb0af1114cd80d",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/projection_SUMMARY.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\TARGET_RECEIPT.json",
+      "sha256": "0dc0797cd3ee29c63449eb3889b3bbd804427211aafa9327be347e3f52e4eb2a",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/projection_TARGET_RECEIPT.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\PRESERVATION_VERIFICATION.json",
+      "sha256": "8b9cf618a1f987829e9089d2e12fbfd312acd92cbc304561db423f8236a43dca",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/projection_PRESERVATION_VERIFICATION.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "sha256": "66dd187430e992150d198982ca0e9695d34601d77f08fc4a45c52e54afdb92cb",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/projection_RENDER_VERIFICATION.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish\\FAILURE.json",
+      "sha256": "d91d29b6366980f7b7315ac3b9ec6726b5005b0b8b9cd17d5e5600245b92a3d7",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/crashed_finish_FAILURE.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_v2\\FINISH_RECEIPT.json",
+      "sha256": "4075c4b92d9ed121f50b4c3a47de3f041a172509b42fbb2274eb2d515157be9a",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/unclean_finish_FINISH_RECEIPT.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_v2\\VERIFICATION.json",
+      "sha256": "5804bc438332d53c30c4636383acca4e513455e40210f1f91c80bdf5bffcaf2c",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/unclean_finish_VERIFICATION.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\FINISH_RECEIPT.json",
+      "sha256": "7f4bbe35bc887637cae4ed3952c3d6d0e0a0a0c3483166c3b7c1d1b60bd367e1",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/clean_finish_FINISH_RECEIPT.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\VERIFICATION.json",
+      "sha256": "60bc763830ac873ffaab16e8a68f7450886e916b2d3656a8f313b57ab53afb2e",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/clean_finish_VERIFICATION.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\PROTRUSION_REVIEW.json",
+      "sha256": "f957eb15ec42e14075f2bf7194ab5aa3e5f13cb87496f8ae03bfef1b11f5f7e3",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/clean_finish_PROTRUSION_REVIEW.json"
+    },
+    {
+      "kind": "actual_record",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\RENDER_VERIFICATION.json",
+      "sha256": "bf33757156fbc3eef1b4fb53ec52336e493e1376dce4040633d385e0c0360a80",
+      "repository_copy": "docs/volume_junction_target_20261014/evidence/clean_finish_RENDER_VERIFICATION.json"
+    },
+    {
+      "kind": "actual_comparison_board",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SPAN_close_oblique.png",
+      "sha256": "c145b23ed056b0fe08df8124d788f54ef11749023e491228ab6023f5091ba0d6",
+      "repository_copy": "docs/volume_junction_target_20261014/images/SPAN_close_oblique.png"
+    },
+    {
+      "kind": "actual_comparison_board",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SPAN_body_oblique.png",
+      "sha256": "c81cf7b4e06a68d05381c292083061878b6a18df38689127edeab1bcb90fd04f",
+      "repository_copy": "docs/volume_junction_target_20261014/images/SPAN_body_oblique.png"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/boards.py",
+      "sha256": "03c693936a0023cc0ddda19754ef88ab34850727a03ad5a85f0aca483a9c4efa"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/build_target.py",
+      "sha256": "a3ab663a4638e90258c93ffd5745e0d4ce5829f35f992c1565ba21fbc93b2848"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/clean_boards.py",
+      "sha256": "d20e0728ee3c6ece9e8a562d9eed43b6adc3ad9cc3b3e094856b5e9e90b200ca"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/clean_finish.py",
+      "sha256": "e5011e14367e31b6a9a6039816c54b86091ae3c7639ccb88380eb2d056ae6773"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/clean_render.py",
+      "sha256": "33e25954fc657191c19b273163f5135556995ade6ca57c6ffde1882ddd95ba7a"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/clean_verify.py",
+      "sha256": "4844e047277a82e412c516033916d47443b080080b4422251ee9f5aa9eada1d1"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish.py",
+      "sha256": "c61c39cde92f5de5248310df0d9861dc9c849399b9b4520aab56cc8dd1b67175"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_boards.py",
+      "sha256": "ed19407ee208aad61142fd7a5f047e54e1889506be67694bf981f351ebbf88ec"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_render.py",
+      "sha256": "22b30c172e60905b91069a40aaeb64d5c36db9444dc4cf22ac359c0f858b8a8f"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_render_v2.py",
+      "sha256": "00a9154c6d78ea130cd0314fb34143728493ef123489efd39776a82e2e6a67b2"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_v2.py",
+      "sha256": "f197383230a3a01894d320f8533803b6e69beb377f66c86972015b515b9c5ce4"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_verify.py",
+      "sha256": "f2265841d08e4b394584dcc6b8dae9ad25b40265d33aefd7ebe265a29176ec3d"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/finish_verify_v2.py",
+      "sha256": "0048f75ddb02b7247c07cb2e1ee2fdec66d052816e40cb3e5534f3ea7f570c88"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/measure_finish.py",
+      "sha256": "07c98393bd451c51fc61bb4e1427c4f83fc2dca48f6d06daf61e2c13ff53c0d5"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/render.py",
+      "sha256": "366db5b07c43e5b0aface45493f4f76284a3ee525dbc72d71c25fd7ffec0af05"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/run.py",
+      "sha256": "ea0f4d1a4360357d0d1c2f0eadd7ac145393857a193f4d8e12d8c2fa8f0f2ab3"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/target_preview.py",
+      "sha256": "ec9fbe708cab02ad2eddcd48efc2d0752395a890bc1dea435b26a38a45b2b2b2"
+    },
+    {
+      "kind": "source_code",
+      "repository_path": "experiments/volume_junction_target_20261014/verify.py",
+      "sha256": "7e31c0cbd145088e9ed90fff5ef946020a70e0e65a1ee2ed693e6fe98ae67ad3"
+    }
+  ],
+  "actual_final_comparison_source_list": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SOURCE_LIST.json",
+  "geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "inline_comparison_provenance": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\volume-finish-inspection\\SOURCE_LIST.json",
+  "code_only_never_executed": [
+    "finish_render.py",
+    "finish_verify.py",
+    "finish_boards.py"
+  ],
+  "scope": "Actual outputs and failures distinguished. Heavy geometry remains E:. Source growth recipe remains preserved; new remesh is a separate finish branch without original chart/face-ID ancestry."
+}

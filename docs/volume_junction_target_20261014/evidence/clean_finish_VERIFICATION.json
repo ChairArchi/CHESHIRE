@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-14",
+  "checks": {
+    "finite": true,
+    "indexed_triangles": true,
+    "positive_triangle_area": true,
+    "closed_two_face_edges": true,
+    "consistently_oriented_edges": true,
+    "no_orphans": true,
+    "connected_single_component": true,
+    "actual_XY_geometric_symmetry": true,
+    "original_files_unchanged": true
+  },
+  "all_required_checks_pass": true,
+  "vertices": 15400258,
+  "triangles": 30802840,
+  "unique_edges": 46204260,
+  "Euler_characteristic": -1162,
+  "connected_components": 1,
+  "component_sizes_descending": [
+    15400258
+  ],
+  "minimum_triangle_area": 1.7427266632217308e-10,
+  "total_surface_area": 132.41025537573083,
+  "bounding_box_minimum": [
+    -1.575424313545227,
+    -1.4970262050628662,
+    0.1497417539358139
+  ],
+  "bounding_box_maximum": [
+    1.575424313545227,
+    1.4970262050628662,
+    9.88062858581543
+  ],
+  "symmetry": {
+    "X": {
+      "maximum_nearest_vertex_residual": 0.0,
+      "rms_nearest_vertex_residual": 0.0,
+      "tested_vertices": 15400258
+    },
+    "Y": {
+      "maximum_nearest_vertex_residual": 0.0,
+      "rms_nearest_vertex_residual": 0.0,
+      "tested_vertices": 15400258
+    }
+  },
+  "symmetry_tolerance": 1e-07,
+  "geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "finish_receipt_sha256": "7f4bbe35bc887637cae4ed3952c3d6d0e0a0a0c3483166c3b7c1d1b60bd367e1",
+  "verifier_code_sha256": "4844e047277a82e412c516033916d47443b080080b4422251ee9f5aa9eada1d1",
+  "elapsed_seconds": 32.072411700035445,
+  "scope": "Every saved vertex/triangle/edge; full geometric nearest-vertex reflection check. New topology has no original source-ID ancestry. This does not certify non-self-intersection, tangent continuity, volume preservation, fabrication or visual quality."
+}

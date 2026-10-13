@@ -1,0 +1,209 @@
+{
+  "passed": true,
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SPAN_front.png",
+      "sha256": "1127604e4918458545a1eb9753bbad0ebbc3180bc40492ffb286ba8e298d5575",
+      "sources": [
+        {
+          "label": "Original G7",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "label": "Volumetric finish | not growth G8",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "22a3dc72d2803ef1065d3557b28688e944cd7af270af65cc5a722b4a803a2b9f"
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SPAN_body_oblique.png",
+      "sha256": "c81cf7b4e06a68d05381c292083061878b6a18df38689127edeab1bcb90fd04f",
+      "sources": [
+        {
+          "label": "Original G7",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "label": "Volumetric finish | not growth G8",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "7932dfb3fe031c379d6cca77bd748d7e0239350c4323b0e73779b86d10f22e2a"
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\images\\SPAN_close_oblique.png",
+      "sha256": "c145b23ed056b0fe08df8124d788f54ef11749023e491228ab6023f5091ba0d6",
+      "sources": [
+        {
+          "label": "Original G7",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "label": "Volumetric finish | not growth G8",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish_clean\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "74200b5b463860a33e8cc9790c75ed890d4f8d22d9434a4a5a52c952678cb272"
+        }
+      ]
+    }
+  ],
+  "reused_original_images": 3,
+  "new_actual_finish_images": 3,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25
+    }
+  },
+  "source_finish_geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "original_source_generation": 7,
+  "candidate": "G7_DERIVED_VOLUME_FINISH",
+  "original_face_ID_ancestry_retained": false,
+  "original_growth_G8": false,
+  "crop": false,
+  "resize": false,
+  "renderer_geometry_processing": false,
+  "actual_recipe": {
+    "schema": "CHESHIRE_G7_DERIVED_VOLUME_FINISH_20261014",
+    "voxel_size_height_fraction": 0.00075,
+    "remesh_mode": "VOXEL",
+    "adaptivity": 0.0,
+    "marked_region_target_smooth_factor": 0.65,
+    "marked_region_target_smooth_iterations": 3,
+    "smoothing_weight": "Closest actual original G7 control in the marked axial support plus .03H collar; use preserved full_mask scalar. All other remeshed controls have zero smoothing weight.",
+    "symmetry": "Applied X/Y Mirror with bisect, merge and clipping at source origin before geometric subdivision.",
+    "geometric_finish": "One actual Catmull-Clark subdivision of the NEW remesh topology, applied and saved; use_limit_surface=False, quality=1. This is a finish pass, not original source subdivision G8.",
+    "original_growth_source_generation": 7,
+    "remesh_finish_CC_passes": 1,
+    "CC_use_limit_surface": false,
+    "CC_quality": 1,
+    "original_chart_face_ID_ancestry_retained": false,
+    "new_ornament_events": 0,
+    "added_mandelbulb_evaluations": 0,
+    "scope": "A separate whole-column volumetric finish candidate. Voxel remesh changes geometry globally; extra smoothing is restricted to marked support. Original G1-G7 files/formula remain untouched. No exact volume, undercut retention, self-intersection or fabrication certification.",
+    "cleanup": "Retain only largest actual connected component; snap only abs(X/Y)<=3e-6 to the mirror planes, extract canonical x<=0,y>=0 triangles, then explicitly reflect vertices and reverse winding across each axis. No voxel/CC rerun.",
+    "cleanup_axis_snap_tolerance": 3e-06,
+    "cleanup_added_voxel_passes": 0,
+    "cleanup_added_CC_passes": 0
+  },
+  "boards_code_sha256": "d20e0728ee3c6ece9e8a562d9eed43b6adc3ad9cc3b3e094856b5e9e90b200ca",
+  "scope": "Actual original and saved finish PNGs, equal cameras, material, lighting, sampling and flat shading. Geometry changed globally by remesh; extra smoothing is marked-region weighted. One CC pass finishes the new topology. No aesthetic or fabrication certification."
+}

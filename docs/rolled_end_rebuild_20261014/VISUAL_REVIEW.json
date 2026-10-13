@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "experiment": "ROLLED_END_REBUILD",
+  "trial": "trial03",
+  "candidate_folder": "E:/CHESHIRE_DATA/experiments/rolled_end_rebuild_20261014/trial03/ROLLED_END_REBUILD/SPAN/G07",
+  "source_folder": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07",
+  "comparison_images": [
+    "E:/CHESHIRE_DATA/experiments/rolled_end_rebuild_20261014/trial03/images/SPAN_close_oblique.png",
+    "E:/CHESHIRE_DATA/experiments/rolled_end_rebuild_20261014/trial03/images/SPAN_body_oblique.png",
+    "E:/CHESHIRE_DATA/experiments/rolled_end_rebuild_20261014/trial03/images/SPAN_front.png"
+  ],
+  "reviewers": [
+    "/root",
+    "/root/end_rebuild_design_audit"
+  ],
+  "decision": "REJECT_AS_DESIGN_IMPROVEMENT_PRESERVE_RESEARCH_RESULT",
+  "selected_for_further_design": false,
+  "close_oblique": {
+    "assessment": "REGRESSION",
+    "observations": [
+      "재조형된 대각선 접속부에서 각진 얇은 판과 평평한 절단면이 두드러짐.",
+      "기존 중앙의 둥근 컵 모양 말림이 평평하고 잘린 조각처럼 변함.",
+      "접속부의 선형 잔결과 조각 간 단절이 강조되어 자연스러운 말림 연결로 읽히지 않음."
+    ]
+  },
+  "body_oblique": {
+    "assessment": "REGRESSION_LOCAL_FLOW_OTHERWISE_RETAINED",
+    "observations": [
+      "표시 영역의 말림 띠가 기존보다 기계적으로 끊어진 판 조각처럼 읽힘.",
+      "주변의 긴 주름과 몸체의 큰 흐름은 대체로 유지됨."
+    ]
+  },
+  "front": {
+    "assessment": "NO_CLEAR_WHOLE_COLUMN_IMPROVEMENT",
+    "observations": [
+      "전체 정면에서는 기존 기둥의 실루엣과 조형 계열이 유지되나 근접 형상 개선을 입증할 변화는 명료하지 않음."
+    ]
+  },
+  "technical_visual_distinction": "저장된 메시의 유한 좌표, 연결성, 양의 native 면적 및 대칭 검증 통과는 근접 말림의 조형적 성공을 의미하지 않음.",
+  "user_decision_scope": "사용자는 개별 끝 모양의 재조형을 허용하고 돌출량과 큰 흐름의 유지를 요청하였음. 이 trial03의 조형적 성공을 승인한 것은 아님.",
+  "design_baseline": "Original WIDE_ROOT_FINISHED/SPAN/G07 remains selected; trial03 is preserved as a rejected research result.",
+  "next_direction": "추가 Bézier 형상 조정 대신 기존 중첩 표면의 외피를 이용한 국소 좌표 정리 검토. 신규 미세 디테일 추가는 보류.",
+  "limitations": [
+    "동일 조건의 저장 렌더 3개에 대한 시각 판정임.",
+    "전체 3D 자기교차 제거, G1 연속성 및 제작 적합성을 인증하지 않음.",
+    "사용자에게 새 형상 선호를 재질문하여 실패 판정을 전가하지 않음."
+  ]
+}

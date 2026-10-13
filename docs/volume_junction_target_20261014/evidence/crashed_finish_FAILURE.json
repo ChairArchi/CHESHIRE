@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "status": "BLENDER_NATIVE_PROCESS_CRASH",
+  "phase": "ONE_REAL_GEOMETRIC_CC_FINISH",
+  "exit_code": 1,
+  "actual_output_geometry_saved": false,
+  "actual_render_generated": false,
+  "stack_evidence": "__scrt_throw_std_bad_alloc -> OpenSubdiv WeightTable/StencilBuilder -> modifier_apply",
+  "interpretation": "Memory allocation failure during limit-surface subdivision. Exact peak process memory was not captured; no successful output is claimed.",
+  "preserved_run_request": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish\\RUN_REQUEST.json",
+  "source_snapshot": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\volume_finish\\source_snapshot"
+}

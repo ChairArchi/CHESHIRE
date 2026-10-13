@@ -1,0 +1,371 @@
+{
+  "date": "2026-10-14",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "candidate": "VOLUME_JUNCTION_TARGET",
+  "folder": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\VOLUME_JUNCTION_TARGET\\SPAN\\G07",
+  "subdivision_generation": 7,
+  "control_vertices": 7002114,
+  "control_quads": 7002112,
+  "native_triangles": 28008448,
+  "generation_json_sha256": "78377b7b31c314eb31de1c3f752a806e3348ad1537c7a30d687ca455ffe4cda0",
+  "checks": {
+    "finite": true,
+    "closed_oriented_control": true,
+    "control_components": 1,
+    "control_Euler": 2,
+    "no_orphan_controls": true,
+    "minimum_native_triangle_area": 5.174028306371695e-10,
+    "control_xyz_sha256": "979e3535dfdafb1b63cf9684527948bbd8cb7f6ac56ed34180c694df0e7a09f2",
+    "control_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+    "chart_sha256": "87d7b993200e548f4d5528067f15fbbb886637f0428e06468f995ee141cf966d",
+    "native_xyz_sha256": "390bcaf287f11765e8859957a70331d6e205f011395a172d45c3257b7360e217",
+    "native_faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "symmetry_scope": "Independent actual replay and propagated reflection proof pending",
+    "self_intersection": "NOT_CHECKED_EXPLORATORY",
+    "fabrication": "NOT_CHECKED",
+    "passed": true
+  },
+  "symmetry": {
+    "passed": true,
+    "axes": {
+      "X": {
+        "passed": true,
+        "actual_control_xyz_max_error": 4.961703332445539e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      },
+      "Y": {
+        "passed": true,
+        "actual_control_xyz_max_error": 4.961703332445539e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      }
+    },
+    "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+    "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+  },
+  "operator_metadata": {
+    "recipe": {
+      "schema": "CHESHIRE_LOCAL_VOLUME_ENVELOPE_PROJECTION_20261014",
+      "source_generation": 7,
+      "output_generation": 7,
+      "target_method": "Blender VOXEL Remesh followed by actual geometry Smooth modifier; target only.",
+      "voxel_size_height_fraction": 0.0018,
+      "target_smooth_factor": 0.65,
+      "target_smooth_iterations": 6,
+      "projection": "Actual closest target-surface point, within maximum distance; source and target normal dot >= 0.",
+      "maximum_projection_distance_height_fraction": 0.0075,
+      "projection_blend": 0.85,
+      "mask_promotion": "quintic_smoothstep(clip(original_coarse_marked_mask/.30,0,1)), then actual linear V/E/F scalar lifts.",
+      "delta_relaxation_iterations": 2,
+      "delta_relaxation_factor": 0.5,
+      "delta_relaxation": "Two uniform edge-neighbor averages of NEW displacement only, blended .5; zero mask and ineligible IDs reset to zero. Source coordinates are never averaged.",
+      "reflection": "Canonical x<0,y>0 query; explicitly reflect vectors onto all actual X/Y ID partners before frozen representative transport.",
+      "preservation": "Original G7 topology, classes, chart, rest, anchors and mask-zero coordinates remain exact.",
+      "added_CC_passes": 0,
+      "added_topology_events": 0,
+      "added_mandelbulb_evaluations": 0,
+      "source_geometry_averaged": false,
+      "source_geometry_parametrically_rebuilt": false,
+      "source_geometry_envelope_projected": true,
+      "interpretation": "Bounded local coordinate projection to a volumetric envelope. Original internal layers remain; no actual final-mesh fusion, collision repair or tangent-continuity certification."
+    },
+    "physical_height": 9.735842284057451,
+    "displacement_bound": 0.062065994560866256,
+    "selected_full_control_count": 157752,
+    "queried_canonical_control_count": 39438,
+    "eligible_canonical_control_count": 22718,
+    "changed_actual_control_count": 90872,
+    "maximum_actual_displacement": 0.051680615824699516,
+    "selected_radius_before": {
+      "count": 157752,
+      "minimum": 0.740617019697089,
+      "maximum": 1.127418148909341,
+      "quantiles": [
+        0.740617019697089,
+        0.8865761415113425,
+        0.9524036958297876,
+        1.1031110460600184,
+        1.127418148909341
+      ]
+    },
+    "selected_radius_after": {
+      "count": 157752,
+      "minimum": 0.7428992213501154,
+      "maximum": 1.123689926613111,
+      "quantiles": [
+        0.7428992213501154,
+        0.8875266616223817,
+        0.9520259074879913,
+        1.1029067455397008,
+        1.123689926613111
+      ]
+    },
+    "target_receipt_sha256": "0dc0797cd3ee29c63449eb3889b3bbd804427211aafa9327be347e3f52e4eb2a",
+    "target_receipt": {
+      "date": "2026-10-14",
+      "timezone": "Asia/Seoul",
+      "recipe": {
+        "schema": "CHESHIRE_ACTUAL_VOLUME_JUNCTION_TARGET_20261014",
+        "voxel_size_height_fraction": 0.0018,
+        "remesh_mode": "VOXEL",
+        "remesh_adaptivity": 0.0,
+        "remesh_use_remove_disconnected": false,
+        "remesh_use_smooth_shade": false,
+        "smooth_factor": 0.65,
+        "smooth_iterations": 6,
+        "smooth_axes": [
+          true,
+          true,
+          true
+        ],
+        "maximum_projection_distance_height_fraction": 0.0075,
+        "eligible_rule": "A nearest target point exists within .0075H, actual measured point distance <= .0075H, and normalized original-source normal dot normalized actual-target normal >= 0.",
+        "target_scope": "Full original saved native geometry -> applied Blender voxel remesh -> applied Smooth modifier. Actual post-modifier target arrays are saved once.",
+        "application_scope": "Only requested canonical original G7 controls are queried. This script does not apply any projected point to source geometry.",
+        "interpretation": "One geometric volumetric target; no render smoothing trick, Mandelbulb evaluation, source subdivision, added source topology or automatic aesthetic certification."
+      },
+      "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "request_json": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.json",
+      "request_npz": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.npz",
+      "height": 9.735842284057451,
+      "target_path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\target_geometry.npz",
+      "projection_path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_result.npz",
+      "target_file_sha256": "581119c6a9cd2fb20112289d274ba52915eb83eb31dd66b6c31c054cf5221784",
+      "projection_file_sha256": "35da99b578bcd7fdef9641a5c433fef075aa84b94e03c9619d8b5b23e12ad962",
+      "input_hashes": {
+        "source_native_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "request_json_sha256": "40cce7ad1507030f2f6ab1de1c3b85a5ccb22ecd39175e65c87d8fe08468b645",
+        "request_npz_sha256": "e5a80eee35ace9fca07029c0e2e249f3571133e639b01d7cd38fe5aa038208f2",
+        "build_target_code_sha256": "a3ab663a4638e90258c93ffd5745e0d4ce5829f35f992c1565ba21fbc93b2848"
+      },
+      "native_source": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "xyz_sha256": "622839528a36c31042fb8da4074d659c5a20296b9dc3bf5eed18e175f7ad8bc3",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "xyz_dtype": "float64",
+        "faces_dtype": "int64"
+      },
+      "actual_target": {
+        "remesh_actual_properties": {
+          "name": "Actual fixed voxel target",
+          "type": "REMESH",
+          "show_viewport": true,
+          "show_render": true,
+          "show_in_editmode": false,
+          "show_on_cage": false,
+          "show_expanded": true,
+          "is_active": true,
+          "use_pin_to_last": false,
+          "is_override_data": false,
+          "use_apply_on_spline": false,
+          "execution_time": 0.0,
+          "persistent_uid": 1879751496,
+          "mode": "VOXEL",
+          "scale": 0.8999999761581421,
+          "threshold": 1.0,
+          "octree_depth": 4,
+          "sharpness": 1.0,
+          "voxel_size": 0.017524516209959984,
+          "adaptivity": 0.0,
+          "use_remove_disconnected": false,
+          "use_smooth_shade": false
+        },
+        "smooth_actual_properties": {
+          "name": "Actual fixed target smoothing",
+          "type": "SMOOTH",
+          "show_viewport": true,
+          "show_render": true,
+          "show_in_editmode": false,
+          "show_on_cage": false,
+          "show_expanded": true,
+          "is_active": true,
+          "use_pin_to_last": false,
+          "is_override_data": false,
+          "use_apply_on_spline": false,
+          "execution_time": 0.0,
+          "persistent_uid": 486562295,
+          "use_x": true,
+          "use_y": true,
+          "use_z": true,
+          "factor": 0.6499999761581421,
+          "iterations": 6,
+          "vertex_group": "",
+          "invert_vertex_group": false
+        },
+        "after_voxel_counts": {
+          "vertices": 598564,
+          "polygons": 598586
+        },
+        "target_vertex_count": 598564,
+        "target_triangle_count": 1197172,
+        "target_polygon_count": 598586,
+        "target_xyz_sha256": "9a6702b7007350ce7bf552643a7fa3e46085380fff8aaf4b1c269df7285f795d",
+        "target_triangles_sha256": "11b72b12fe7c506d2c07ec41023ead18ad13a557188d356cb60877c2ec0f8a75",
+        "target_xyz_dtype": "float32",
+        "target_triangles_dtype": "int32",
+        "object_matrix_world": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "remaining_modifier_count": 0,
+        "target_triangle_scope": "Actual Blender calc_loop_triangles of the applied post-Smooth target mesh."
+      },
+      "actual_projection": {
+        "requested_canonical_control_count": 39438,
+        "rejection_counts": {
+          "rejected_invalid_source_normal": 0,
+          "rejected_no_nearest_within_distance": 115,
+          "rejected_actual_distance": 0,
+          "rejected_target_normal": 0,
+          "rejected_opposed_normal": 16605,
+          "accepted": 22718
+        },
+        "actual_distance": {
+          "count": 39438,
+          "finite_count": 39323,
+          "minimum": 7.277670666778974e-07,
+          "maximum": 0.07274935164436908,
+          "quantiles": [
+            7.277670666778974e-07,
+            0.008951496318581659,
+            0.026151583594082033,
+            0.04618403713811232,
+            0.07274935164436908
+          ]
+        },
+        "eligible_distance": {
+          "count": 22718,
+          "finite_count": 22718,
+          "minimum": 2.5440860051835354e-06,
+          "maximum": 0.07269836637744082,
+          "quantiles": [
+            2.5440860051835354e-06,
+            0.009618727617703961,
+            0.026729597724967698,
+            0.047952036953137406,
+            0.07269836637744082
+          ]
+        },
+        "eligible_source_target_normal_dot": {
+          "count": 22718,
+          "finite_count": 22718,
+          "minimum": 9.332683911421336e-06,
+          "maximum": 0.9999984033620383,
+          "quantiles": [
+            9.332683911421336e-06,
+            0.7676439168610406,
+            0.9808039703030845,
+            0.9985791770356092,
+            0.9999984033620383
+          ]
+        },
+        "maximum_projection_distance": 0.07301881713043089,
+        "bvh": "mathutils.bvhtree.BVHTree.FromObject of the actual target with all modifiers already applied",
+        "no_hit_storage": "Original source point, zero target normal, distance=+inf, face_index=-1, eligible=False.",
+        "rejected_hit_storage": "Actual nearest point retained for evidence; eligible=False prevents application.",
+        "target_normal_scope": "Actual BVH geometric normal; normalized before the original-source-normal dot guard.",
+        "arrays": {
+          "points_sha256": "3d3566169a17e7039b1af376526a4d9a690c7f9624536e61f3be4ae9449e32a8",
+          "normal_sha256": "5ef4249a8165b89098d49ee6ff3f2ffa0f9c2da8e0ce6a9abb7fb66f32d038bb",
+          "distance_sha256": "b062cbdcae0cbd52054cb4b0cee2400de2466a843c7c64e012c759ceb0e26f3d",
+          "eligible_sha256": "4d2644477544540d2bd4d1655d6472e11d9b6de1cf81bbb498be68c11cff5217",
+          "normal_dot_sha256": "149a12704b782f95bbb223d318d79c5a605207eb6d74329ef70715658103623b",
+          "target_face_index_sha256": "abd2fe99aff8420bebf5db88b1d1df4acb9730c9134b20e06b57a5644a7572eb"
+        }
+      },
+      "original_request_arrays": {
+        "xyz_sha256": "a621f2cf6b5b14e893f7b977e4f9e4d4ab702d79603bd63092aea4f65abd673f",
+        "vertex_ids_sha256": "aa1f63c5cb984155f30a6e999863728c739a8ff7d5c5426d8b4fb19d13e9ad81",
+        "source_normals_sha256": "2b4fb0ede75c6fd2ed3ab75717798d4631b9cc71ee3336b7b75347de84f8bbfc"
+      },
+      "blender_version": "4.5.4 LTS",
+      "blender_version_tuple": [
+        4,
+        5,
+        4
+      ],
+      "elapsed_target_and_projection_seconds": 54.29651630000444,
+      "source_files_unchanged": true,
+      "original_G7_geometry_modified": false,
+      "geometry_target_saved": true,
+      "renderer_geometry_processing": false,
+      "source_output_subdivision_generations": 0,
+      "added_source_topology_events": 0,
+      "self_intersection": "NOT_CERTIFIED",
+      "fabrication": "NOT_CHECKED",
+      "visual_success": "NOT_ASSESSED_BY_TARGET_BUILDER"
+    },
+    "full_mask_sha256": "bfdf5b4aa78ea94c3256582dec28a5fe3e61d93ead7fd03a7c6265142aa9e226",
+    "source_geometry_averaged": false,
+    "target_geometry_averaged": true,
+    "original_topology_preserved": true,
+    "actual_final_mesh_topological_fusion": false,
+    "G1_continuity": "NOT_CERTIFIED",
+    "self_intersection": "NOT_CHECKED",
+    "visual_status": "PENDING_ACTUAL_RENDER"
+  },
+  "geometry_code_sha256": {
+    "experiments\\sidewall_fan_growth_20261013\\study.py": "a71f014b9ce6c7f4ab9936fa9c324665b508ffae6b744ad9af7b79d6c62f667a",
+    "experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+    "experiments\\connected_fold_growth_20261012\\study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+    "experiments\\connected_fold_growth_20261012\\patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+    "src\\cheshire\\task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+    "src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+    "experiments\\coherent_fold_detail_20261013\\study.py": "e3f98267ebb1e9c07ae78e5fa4a94345bf5f9483aaf8c6a4015d49cf81fd86a9",
+    "experiments\\coherent_fold_detail_20261013\\fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+    "experiments\\directional_g6_20261013\\study.py": "d06df5c55a7a6ca7aaff614b6877d5d9d042ea745297d6831c7dd925368828e7",
+    "experiments\\directional_g6_20261013\\g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+    "experiments\\whole_column_detail_20261013\\study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+    "experiments\\whole_column_detail_20261013\\whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+    "experiments\\design_one_20261013\\study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+    "experiments\\design_one_20261013\\batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+    "experiments\\whole_column_detail_20261013\\finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+    "experiments\\parent_linked_folds_20261013\\study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+    "experiments\\parent_linked_folds_20261013\\parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+    "experiments\\parent_linked_folds_20261013\\finish_ribs.py": "d31e43023ff1a93294e6dbe6a764ddd536c192749c724857e6c0dadcb345fe78",
+    "experiments\\parent_linked_folds_20261013\\connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+    "experiments\\parent_linked_folds_20261013\\smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+    "experiments\\medium_root_folds_20261013\\root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+    "experiments\\medium_root_folds_20261013\\run.py": "001a4486433e4e85e56cdede3dc67787bdeef3488546741faf429f0a142dd7f9",
+    "experiments\\medium_root_folds_20261013\\finish.py": "e91d5eef1e44bae56a09c98a412735210e2534da5cd6dfabc78b9e79251e99ab",
+    "experiments/volume_junction_target_20261014/run.py": "ea0f4d1a4360357d0d1c2f0eadd7ac145393857a193f4d8e12d8c2fa8f0f2ab3",
+    "experiments/volume_junction_target_20261014/build_target.py": "a3ab663a4638e90258c93ffd5745e0d4ce5829f35f992c1565ba21fbc93b2848",
+    "experiments/finite_fork_folds_20261013/run.py": "35b77f901de753d69e8877ffb9c944a39985ed1fe7479d07bf4c152dfe4443fa",
+    "experiments/finite_fork_folds_20261013/fold_operator.py": "3423bb635e45a4842de025f693a647cf342954f99c3293de2a0753dcefd56b71",
+    "experiments/ornament_junction_finish_20261014/run.py": "6d9ab896ff4a5d6c73b7697e76cb5b2751411006c1899779fc6dd9ee3c2d537c",
+    "experiments/ornament_junction_finish_20261014/junction_operator.py": "7468f83cd192202aaa3bff0346fdd15f46a9ccdfbb51ac0e6977cae6764041b4",
+    "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+  },
+  "elapsed_apply_seconds": 145.17331800004467,
+  "actual_generation_process_memory": {
+    "peak_working_set_bytes": 6051176448,
+    "current_working_set_bytes": 1571946496,
+    "peak_pagefile_usage_bytes": 7049330688,
+    "scope": "Windows counters for this one generation Python process; render processes excluded."
+  },
+  "visual_success": "PENDING_ACTUAL_MATCHED_RENDER_REVIEW"
+}

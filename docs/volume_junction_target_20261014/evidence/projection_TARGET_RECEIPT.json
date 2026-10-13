@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "recipe": {
+    "schema": "CHESHIRE_ACTUAL_VOLUME_JUNCTION_TARGET_20261014",
+    "voxel_size_height_fraction": 0.0018,
+    "remesh_mode": "VOXEL",
+    "remesh_adaptivity": 0.0,
+    "remesh_use_remove_disconnected": false,
+    "remesh_use_smooth_shade": false,
+    "smooth_factor": 0.65,
+    "smooth_iterations": 6,
+    "smooth_axes": [
+      true,
+      true,
+      true
+    ],
+    "maximum_projection_distance_height_fraction": 0.0075,
+    "eligible_rule": "A nearest target point exists within .0075H, actual measured point distance <= .0075H, and normalized original-source normal dot normalized actual-target normal >= 0.",
+    "target_scope": "Full original saved native geometry -> applied Blender voxel remesh -> applied Smooth modifier. Actual post-modifier target arrays are saved once.",
+    "application_scope": "Only requested canonical original G7 controls are queried. This script does not apply any projected point to source geometry.",
+    "interpretation": "One geometric volumetric target; no render smoothing trick, Mandelbulb evaluation, source subdivision, added source topology or automatic aesthetic certification."
+  },
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+  "request_json": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.json",
+  "request_npz": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.npz",
+  "height": 9.735842284057451,
+  "target_path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\target_geometry.npz",
+  "projection_path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_result.npz",
+  "target_file_sha256": "581119c6a9cd2fb20112289d274ba52915eb83eb31dd66b6c31c054cf5221784",
+  "projection_file_sha256": "35da99b578bcd7fdef9641a5c433fef075aa84b94e03c9619d8b5b23e12ad962",
+  "input_hashes": {
+    "source_native_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+    "request_json_sha256": "40cce7ad1507030f2f6ab1de1c3b85a5ccb22ecd39175e65c87d8fe08468b645",
+    "request_npz_sha256": "e5a80eee35ace9fca07029c0e2e249f3571133e639b01d7cd38fe5aa038208f2",
+    "build_target_code_sha256": "a3ab663a4638e90258c93ffd5745e0d4ce5829f35f992c1565ba21fbc93b2848"
+  },
+  "native_source": {
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "xyz_sha256": "622839528a36c31042fb8da4074d659c5a20296b9dc3bf5eed18e175f7ad8bc3",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "xyz_dtype": "float64",
+    "faces_dtype": "int64"
+  },
+  "actual_target": {
+    "remesh_actual_properties": {
+      "name": "Actual fixed voxel target",
+      "type": "REMESH",
+      "show_viewport": true,
+      "show_render": true,
+      "show_in_editmode": false,
+      "show_on_cage": false,
+      "show_expanded": true,
+      "is_active": true,
+      "use_pin_to_last": false,
+      "is_override_data": false,
+      "use_apply_on_spline": false,
+      "execution_time": 0.0,
+      "persistent_uid": 1879751496,
+      "mode": "VOXEL",
+      "scale": 0.8999999761581421,
+      "threshold": 1.0,
+      "octree_depth": 4,
+      "sharpness": 1.0,
+      "voxel_size": 0.017524516209959984,
+      "adaptivity": 0.0,
+      "use_remove_disconnected": false,
+      "use_smooth_shade": false
+    },
+    "smooth_actual_properties": {
+      "name": "Actual fixed target smoothing",
+      "type": "SMOOTH",
+      "show_viewport": true,
+      "show_render": true,
+      "show_in_editmode": false,
+      "show_on_cage": false,
+      "show_expanded": true,
+      "is_active": true,
+      "use_pin_to_last": false,
+      "is_override_data": false,
+      "use_apply_on_spline": false,
+      "execution_time": 0.0,
+      "persistent_uid": 486562295,
+      "use_x": true,
+      "use_y": true,
+      "use_z": true,
+      "factor": 0.6499999761581421,
+      "iterations": 6,
+      "vertex_group": "",
+      "invert_vertex_group": false
+    },
+    "after_voxel_counts": {
+      "vertices": 598564,
+      "polygons": 598586
+    },
+    "target_vertex_count": 598564,
+    "target_triangle_count": 1197172,
+    "target_polygon_count": 598586,
+    "target_xyz_sha256": "9a6702b7007350ce7bf552643a7fa3e46085380fff8aaf4b1c269df7285f795d",
+    "target_triangles_sha256": "11b72b12fe7c506d2c07ec41023ead18ad13a557188d356cb60877c2ec0f8a75",
+    "target_xyz_dtype": "float32",
+    "target_triangles_dtype": "int32",
+    "object_matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "remaining_modifier_count": 0,
+    "target_triangle_scope": "Actual Blender calc_loop_triangles of the applied post-Smooth target mesh."
+  },
+  "actual_projection": {
+    "requested_canonical_control_count": 39438,
+    "rejection_counts": {
+      "rejected_invalid_source_normal": 0,
+      "rejected_no_nearest_within_distance": 115,
+      "rejected_actual_distance": 0,
+      "rejected_target_normal": 0,
+      "rejected_opposed_normal": 16605,
+      "accepted": 22718
+    },
+    "actual_distance": {
+      "count": 39438,
+      "finite_count": 39323,
+      "minimum": 7.277670666778974e-07,
+      "maximum": 0.07274935164436908,
+      "quantiles": [
+        7.277670666778974e-07,
+        0.008951496318581659,
+        0.026151583594082033,
+        0.04618403713811232,
+        0.07274935164436908
+      ]
+    },
+    "eligible_distance": {
+      "count": 22718,
+      "finite_count": 22718,
+      "minimum": 2.5440860051835354e-06,
+      "maximum": 0.07269836637744082,
+      "quantiles": [
+        2.5440860051835354e-06,
+        0.009618727617703961,
+        0.026729597724967698,
+        0.047952036953137406,
+        0.07269836637744082
+      ]
+    },
+    "eligible_source_target_normal_dot": {
+      "count": 22718,
+      "finite_count": 22718,
+      "minimum": 9.332683911421336e-06,
+      "maximum": 0.9999984033620383,
+      "quantiles": [
+        9.332683911421336e-06,
+        0.7676439168610406,
+        0.9808039703030845,
+        0.9985791770356092,
+        0.9999984033620383
+      ]
+    },
+    "maximum_projection_distance": 0.07301881713043089,
+    "bvh": "mathutils.bvhtree.BVHTree.FromObject of the actual target with all modifiers already applied",
+    "no_hit_storage": "Original source point, zero target normal, distance=+inf, face_index=-1, eligible=False.",
+    "rejected_hit_storage": "Actual nearest point retained for evidence; eligible=False prevents application.",
+    "target_normal_scope": "Actual BVH geometric normal; normalized before the original-source-normal dot guard.",
+    "arrays": {
+      "points_sha256": "3d3566169a17e7039b1af376526a4d9a690c7f9624536e61f3be4ae9449e32a8",
+      "normal_sha256": "5ef4249a8165b89098d49ee6ff3f2ffa0f9c2da8e0ce6a9abb7fb66f32d038bb",
+      "distance_sha256": "b062cbdcae0cbd52054cb4b0cee2400de2466a843c7c64e012c759ceb0e26f3d",
+      "eligible_sha256": "4d2644477544540d2bd4d1655d6472e11d9b6de1cf81bbb498be68c11cff5217",
+      "normal_dot_sha256": "149a12704b782f95bbb223d318d79c5a605207eb6d74329ef70715658103623b",
+      "target_face_index_sha256": "abd2fe99aff8420bebf5db88b1d1df4acb9730c9134b20e06b57a5644a7572eb"
+    }
+  },
+  "original_request_arrays": {
+    "xyz_sha256": "a621f2cf6b5b14e893f7b977e4f9e4d4ab702d79603bd63092aea4f65abd673f",
+    "vertex_ids_sha256": "aa1f63c5cb984155f30a6e999863728c739a8ff7d5c5426d8b4fb19d13e9ad81",
+    "source_normals_sha256": "2b4fb0ede75c6fd2ed3ab75717798d4631b9cc71ee3336b7b75347de84f8bbfc"
+  },
+  "blender_version": "4.5.4 LTS",
+  "blender_version_tuple": [
+    4,
+    5,
+    4
+  ],
+  "elapsed_target_and_projection_seconds": 54.29651630000444,
+  "source_files_unchanged": true,
+  "original_G7_geometry_modified": false,
+  "geometry_target_saved": true,
+  "renderer_geometry_processing": false,
+  "source_output_subdivision_generations": 0,
+  "added_source_topology_events": 0,
+  "self_intersection": "NOT_CERTIFIED",
+  "fabrication": "NOT_CHECKED",
+  "visual_success": "NOT_ASSESSED_BY_TARGET_BUILDER"
+}

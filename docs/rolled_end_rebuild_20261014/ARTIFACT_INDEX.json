@@ -1,0 +1,340 @@
+{
+  "schema": "CHESHIRE_REJECTED_ROLLED_END_REBUILD_ARTIFACT_INDEX_V1",
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "experiment": "ROLLED_END_REBUILD",
+  "basis_commit": "78d6f3fefcb61f16253b53b886853fa56a257350",
+  "decision": "REJECT_AS_DESIGN_IMPROVEMENT_PRESERVE_RESEARCH_RESULT",
+  "selected_for_further_design": false,
+  "actual_attempt_counts": {
+    "stopped_before_output_mesh": 2,
+    "generated_candidate_meshes": 1,
+    "rendered_candidate_meshes": 1
+  },
+  "user_decision": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\USER_DECISION.json",
+    "bytes": 706,
+    "sha256": "02235b83c3a1f9d37a480aad78d21e322303b690521dbcd8d4620c55905c0da7"
+  },
+  "visual_review": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\VISUAL_REVIEW.json",
+    "bytes": 2804,
+    "sha256": "743515151af0363405027be7ebd22b7355993d3b4060edac729be9923789301f"
+  },
+  "design_baseline": {
+    "folder": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+    "selected": true,
+    "unchanged": true,
+    "recorded_state": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    }
+  },
+  "failed_pre_output_attempts": [
+    {
+      "trial": "trial01",
+      "evidence": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial01\\FAILURE.json",
+        "bytes": 777,
+        "sha256": "ff89b15434f1f8816e90bcc1bb463d2b4a0d8e178cf70b9fc364ee7302d52e17"
+      },
+      "failure": {
+        "date": "2026-10-14",
+        "status": "STOPPED_BEFORE_OUTPUT_MESH",
+        "stage": "Local source interpolation context admission",
+        "error": "Noninjective local chart UV maps to different actual source positions.",
+        "cause_verified_read_only": "Broad context included later Task32 event1 incidence: 65 exact UV duplicates; maximum world spread approximately .598177 source units. Selected marked WALL faces remain valid.",
+        "source_unchanged": true,
+        "output_geometry_generated": false,
+        "render_executed": false,
+        "operator_sha256": "cfecc28bf9c88d1ada0ec8b42c1cab4f7aa943d1710e3f6237d7b403ea824fd6",
+        "correction": "Preserve recipe/profile; filter interpolation context by exact event0-only vertex incidence and t<=.700 in a new frozen source version/root."
+      },
+      "recipe": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial01\\RECIPE.json",
+        "bytes": 13381,
+        "sha256": "de7c38ecec274ff9dfef749f8726fb47c14a2088d562a5bd4c6c1f70ba5da7c0"
+      },
+      "run_request": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial01\\RUN_REQUEST.json",
+        "bytes": 8709,
+        "sha256": "545769e3f25ceadb06452417e12f2f88b5cdee35665e8d463779bf05e666ae46"
+      },
+      "actual_native_output_exists": false
+    },
+    {
+      "trial": "trial02",
+      "evidence": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial02\\FAILURE.json",
+        "bytes": 675,
+        "sha256": "c33f609e6f384a73695bee62d60718f596f6195a086dc7b514506406112b5470"
+      },
+      "failure": {
+        "date": "2026-10-14",
+        "status": "STOPPED_BEFORE_OUTPUT_MESH",
+        "stage": "Projected guide-profile diagnostic",
+        "error": "The fixed authored profile has sampled 2D self-crossings: 3",
+        "source_unchanged": true,
+        "output_geometry_generated": false,
+        "render_executed": false,
+        "operator_sha256": "b712e57cc1311018c86aa8bca404401516d72638335b3990642902e03d1a67c6",
+        "context_admission_passed": true,
+        "correction": "Same geometry parameters in a new frozen version: retain projected guide crossing counts as diagnostics. They are not a 3D intersection admission test; user explicitly permits overlap. Full actual mesh validity checks stay required."
+      },
+      "recipe": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial02\\RECIPE.json",
+        "bytes": 14472,
+        "sha256": "d3f60f97a117899bcbda12d88d5cead4f8576ef00f5b274039b51fb8585eb1d3"
+      },
+      "run_request": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial02\\RUN_REQUEST.json",
+        "bytes": 9794,
+        "sha256": "db7066e1b901ea2f44f71d63ccac895cfc760b227157cd5c208caee3e58e640c"
+      },
+      "actual_native_output_exists": false
+    }
+  ],
+  "actual_rejected_trial": {
+    "trial": "trial03",
+    "folder": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07",
+    "selected": false,
+    "recorded_state": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "fcb6705885dcbcf7555e050c4b8e621700c0de16eee54805241a773353c13563",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\generation.json",
+      "generation_sha256": "ad805510b336a695111c9e4cef81045f5bf5a92d55d419328349baa7136f44a6",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "b9d5064a841df469a89b84d351d880857ef2260cf569ffb1cc93b53e105ae827",
+      "parent_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+      "parent_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+      "parent_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "parent_generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5"
+    },
+    "summary": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\SUMMARY.json",
+      "bytes": 127501,
+      "sha256": "185630d84716ad732e9d10eb891c968f93827ff577a6bbdeeef4d15b0556d7c8"
+    },
+    "preservation_verification": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\PRESERVATION_VERIFICATION.json",
+      "bytes": 16409,
+      "sha256": "053a60af85428fbf0f8bfc9bf07afb06e68550629fcca6dccbad7cf16440b5a1"
+    },
+    "render_verification": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\RENDER_VERIFICATION.json",
+      "bytes": 138757,
+      "sha256": "cbc5251190095f0473a660b6364ca21f79e99d95b68e29301eb3ac365223c36d"
+    },
+    "recipe": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\RECIPE.json",
+      "bytes": 14472,
+      "sha256": "764f9ca3b8fe340fa8ab3e48d50e334562cc5bbdce453cef7552546f6613310e"
+    },
+    "run_request": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\RUN_REQUEST.json",
+      "bytes": 9794,
+      "sha256": "db7066e1b901ea2f44f71d63ccac895cfc760b227157cd5c208caee3e58e640c"
+    },
+    "native_render_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\receipt.json",
+      "bytes": 132646,
+      "sha256": "782c0158562ebd4dd96072d2dc08e1b463351b4e1963505b8381d6b2bd57dcfa"
+    },
+    "generation_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\generation.json",
+      "bytes": 131143,
+      "sha256": "ad805510b336a695111c9e4cef81045f5bf5a92d55d419328349baa7136f44a6"
+    },
+    "evidence_npz": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\evidence.npz",
+      "sha256_recorded_in_preservation_verification": "cea71fc6ae019caabd5b5ef10d5c5a2bc181581b1a825800608dcab5206a71e8"
+    },
+    "subdivision_generation": 7,
+    "added_CC_passes": 0,
+    "added_topology_events": 0,
+    "added_normal_field_passes": 0,
+    "added_mandelbulb_evaluations": 0,
+    "technical_checks_passed": true,
+    "preservation_verification_passed": true,
+    "matched_render_verification_passed": true,
+    "aesthetic_success": false,
+    "resource_measurements": {
+      "elapsed_generation_seconds": 149.75281660002656,
+      "peak_working_set_bytes": 5936799744,
+      "current_working_set_bytes": 1459191808,
+      "peak_pagefile_usage_bytes": 7000121344,
+      "scope": "Windows counters for this one generation Python process; render processes excluded."
+    },
+    "actual_counts": {
+      "control_vertices": 7002114,
+      "control_quads": 7002112,
+      "native_triangles": 28008448
+    },
+    "changed_control_count": 152572,
+    "outside_mask_changed_control_count": 0
+  },
+  "comparison_boards": [
+    {
+      "view": "front",
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\images\\SPAN_front.png",
+      "bytes": 738832,
+      "sha256": "b15bc2fed600ac5f9ac08308fdca0669a7e2a6f0ec9e5b2040843ea70fa2a312",
+      "source_images": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "ROLLED_END_REBUILD",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\front.png",
+          "sha256": "6cac80dff635b44cc91b238a8f290e0fb383724d8fddf5c969ffffd7c7a2dfb5",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "782c0158562ebd4dd96072d2dc08e1b463351b4e1963505b8381d6b2bd57dcfa",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\images\\SPAN_body_oblique.png",
+      "bytes": 1058969,
+      "sha256": "50b7dcb674fb8b9c5a741dc241927ad7b38f3450e25be2149c6b18e2e0dfa992",
+      "source_images": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "ROLLED_END_REBUILD",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "c2c0868202f337f4750ca8196edc7abc7bcb010a33eab1088bf69397de51d42f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "782c0158562ebd4dd96072d2dc08e1b463351b4e1963505b8381d6b2bd57dcfa",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\images\\SPAN_close_oblique.png",
+      "bytes": 1507345,
+      "sha256": "1ad40772bf3e394a089686ae776e7d2ed7843165b4cdd457b4494d37c71f5d50",
+      "source_images": [
+        {
+          "candidate": "WIDE_ROOT_FINISHED",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "ROLLED_END_REBUILD",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "7e7d07680d7fec2f224eda297be084b9fc949e40ca893fe9a36f83cbd5873efc",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\ROLLED_END_REBUILD\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "782c0158562ebd4dd96072d2dc08e1b463351b4e1963505b8381d6b2bd57dcfa",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "documentation_copies": [
+    {
+      "source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\SUMMARY.json",
+        "bytes": 127501,
+        "sha256": "185630d84716ad732e9d10eb891c968f93827ff577a6bbdeeef4d15b0556d7c8"
+      },
+      "repository_copy": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\evidence\\SUMMARY.json",
+        "bytes": 127501,
+        "sha256": "185630d84716ad732e9d10eb891c968f93827ff577a6bbdeeef4d15b0556d7c8"
+      }
+    },
+    {
+      "source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\PRESERVATION_VERIFICATION.json",
+        "bytes": 16409,
+        "sha256": "053a60af85428fbf0f8bfc9bf07afb06e68550629fcca6dccbad7cf16440b5a1"
+      },
+      "repository_copy": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\evidence\\PRESERVATION_VERIFICATION.json",
+        "bytes": 16409,
+        "sha256": "053a60af85428fbf0f8bfc9bf07afb06e68550629fcca6dccbad7cf16440b5a1"
+      }
+    },
+    {
+      "source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\RENDER_VERIFICATION.json",
+        "bytes": 138757,
+        "sha256": "cbc5251190095f0473a660b6364ca21f79e99d95b68e29301eb3ac365223c36d"
+      },
+      "repository_copy": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\evidence\\RENDER_VERIFICATION.json",
+        "bytes": 138757,
+        "sha256": "cbc5251190095f0473a660b6364ca21f79e99d95b68e29301eb3ac365223c36d"
+      }
+    },
+    {
+      "source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\images\\SPAN_body_oblique.png",
+        "bytes": 1058969,
+        "sha256": "50b7dcb674fb8b9c5a741dc241927ad7b38f3450e25be2149c6b18e2e0dfa992"
+      },
+      "repository_copy": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\images\\SPAN_body_oblique.png",
+        "bytes": 1058969,
+        "sha256": "50b7dcb674fb8b9c5a741dc241927ad7b38f3450e25be2149c6b18e2e0dfa992"
+      },
+      "view": "body_oblique"
+    },
+    {
+      "source": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rolled_end_rebuild_20261014\\trial03\\images\\SPAN_close_oblique.png",
+        "bytes": 1507345,
+        "sha256": "1ad40772bf3e394a089686ae776e7d2ed7843165b4cdd457b4494d37c71f5d50"
+      },
+      "repository_copy": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\images\\SPAN_close_oblique.png",
+        "bytes": 1507345,
+        "sha256": "1ad40772bf3e394a089686ae776e7d2ed7843165b4cdd457b4494d37c71f5d50"
+      },
+      "view": "close_oblique"
+    }
+  ],
+  "documentation_copied_bytes": 2848981,
+  "checkpoint": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\rolled_end_rebuild_20261014\\CHECKPOINT.txt",
+    "bytes": 4768,
+    "sha256": "bb4bcbaeabecfe6a1626f414c8d81a0999a8472eebba610ecef71dbf3d4a3408"
+  },
+  "preservation_scope": "All heavy NPZ remain on E:. Small copied JSON/PNG byte hashes were checked here. Heavy-file hashes are recorded from existing receipts and were not recomputed by this packaging task.",
+  "visual_status_precedence": "Execution-time PENDING strings in immutable generation evidence are superseded for design selection by the later REJECT VISUAL_REVIEW.json.",
+  "limitations": [
+    "No exact final protrusion-envelope or exact volume guarantee.",
+    "No full self-intersection certification.",
+    "No G1 continuity or fabrication certification.",
+    "No independent full generation replay.",
+    "Native triangles inherit verified control-cycle symmetry but were not independently sorted for reflection."
+  ],
+  "follow_up_scope": "Any separate volume-envelope investigation is outside this rejected checkpoint. No follow-up success or adoption is asserted."
+}

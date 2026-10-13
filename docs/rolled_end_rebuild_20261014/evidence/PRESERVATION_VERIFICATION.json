@@ -1,0 +1,501 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "passed": true,
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+  "output_generation_sha256": "ad805510b336a695111c9e4cef81045f5bf5a92d55d419328349baa7136f44a6",
+  "output_control_sha256": "b9d5064a841df469a89b84d351d880857ef2260cf569ffb1cc93b53e105ae827",
+  "output_evidence_sha256": "cea71fc6ae019caabd5b5ef10d5c5a2bc181581b1a825800608dcab5206a71e8",
+  "unchanged_associations": {
+    "faces": true,
+    "chart": true,
+    "classes": true,
+    "rest": true,
+    "anchors": true,
+    "generation": true,
+    "surface": true
+  },
+  "original_control_count": 7002114,
+  "actual_changed_control_count": 152572,
+  "outside_mask_control_count": 6849542,
+  "outside_mask_changed_count": 0,
+  "actual_source_plus_saved_delta_exact": true,
+  "maximum_actual_displacement": 0.12828374242738277,
+  "displacement_bound": 0.2433960571014363,
+  "maximum_actual_radius_change": 0.11616419062152206,
+  "radial_envelope_bins": [
+    {
+      "material_t_bin": 28,
+      "material_theta_bin": 12,
+      "controls": 640,
+      "original_radius_maximum": 1.0855827429323466,
+      "rebuilt_radius_maximum": 1.0873910836889291,
+      "peak_change": 0.0018083407565825382
+    },
+    {
+      "material_t_bin": 28,
+      "material_theta_bin": 13,
+      "controls": 400,
+      "original_radius_maximum": 1.1204702482940734,
+      "rebuilt_radius_maximum": 1.115737640972501,
+      "peak_change": -0.004732607321572324
+    },
+    {
+      "material_t_bin": 29,
+      "material_theta_bin": 11,
+      "controls": 92,
+      "original_radius_maximum": 1.1041535236219444,
+      "rebuilt_radius_maximum": 1.1041472777171615,
+      "peak_change": -6.245904782931078e-06
+    },
+    {
+      "material_t_bin": 29,
+      "material_theta_bin": 12,
+      "controls": 3092,
+      "original_radius_maximum": 1.119621362702042,
+      "rebuilt_radius_maximum": 1.1195995617756185,
+      "peak_change": -2.1800926423454214e-05
+    },
+    {
+      "material_t_bin": 29,
+      "material_theta_bin": 13,
+      "controls": 2684,
+      "original_radius_maximum": 1.127418148909341,
+      "rebuilt_radius_maximum": 1.1252659460136467,
+      "peak_change": -0.0021522028956941774
+    },
+    {
+      "material_t_bin": 29,
+      "material_theta_bin": 14,
+      "controls": 836,
+      "original_radius_maximum": 0.9672641697173359,
+      "rebuilt_radius_maximum": 0.9660491664817022,
+      "peak_change": -0.001215003235633616
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 3,
+      "controls": 640,
+      "original_radius_maximum": 0.8652235782482827,
+      "rebuilt_radius_maximum": 0.8682696727821827,
+      "peak_change": 0.0030460945339000345
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 4,
+      "controls": 2592,
+      "original_radius_maximum": 0.9369718012340268,
+      "rebuilt_radius_maximum": 0.9068873762729835,
+      "peak_change": -0.030084424961043243
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 5,
+      "controls": 2496,
+      "original_radius_maximum": 0.8928620795777221,
+      "rebuilt_radius_maximum": 0.9061379149335412,
+      "peak_change": 0.01327583535581911
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 6,
+      "controls": 2312,
+      "original_radius_maximum": 0.9011948337265895,
+      "rebuilt_radius_maximum": 0.8979542736049493,
+      "peak_change": -0.0032405601216402014
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 7,
+      "controls": 964,
+      "original_radius_maximum": 0.9144225246882313,
+      "rebuilt_radius_maximum": 0.9124184529271477,
+      "peak_change": -0.0020040717610835257
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 9,
+      "controls": 3080,
+      "original_radius_maximum": 0.9591403788795859,
+      "rebuilt_radius_maximum": 1.0152000832186256,
+      "peak_change": 0.05605970433903973
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 10,
+      "controls": 5024,
+      "original_radius_maximum": 0.9695254593745711,
+      "rebuilt_radius_maximum": 1.013789982396717,
+      "peak_change": 0.044264523022145785
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 11,
+      "controls": 5824,
+      "original_radius_maximum": 0.9376257875554534,
+      "rebuilt_radius_maximum": 0.9386774943260541,
+      "peak_change": 0.0010517067706006245
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 12,
+      "controls": 4724,
+      "original_radius_maximum": 0.9223908405298419,
+      "rebuilt_radius_maximum": 0.9232545168326304,
+      "peak_change": 0.0008636763027884964
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 13,
+      "controls": 3304,
+      "original_radius_maximum": 0.9145430412232648,
+      "rebuilt_radius_maximum": 0.9410590980123523,
+      "peak_change": 0.026516056789087528
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 14,
+      "controls": 2864,
+      "original_radius_maximum": 0.9090900283614239,
+      "rebuilt_radius_maximum": 0.8848543706675397,
+      "peak_change": -0.02423565769388425
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 17,
+      "controls": 336,
+      "original_radius_maximum": 0.8119646096951363,
+      "rebuilt_radius_maximum": 0.8119642100270787,
+      "peak_change": -3.9966805753799406e-07
+    },
+    {
+      "material_t_bin": 30,
+      "material_theta_bin": 18,
+      "controls": 320,
+      "original_radius_maximum": 0.8050563918841699,
+      "rebuilt_radius_maximum": 0.8055267944956376,
+      "peak_change": 0.0004704026114676907
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 3,
+      "controls": 3964,
+      "original_radius_maximum": 0.9037920691528039,
+      "rebuilt_radius_maximum": 0.9036184541836941,
+      "peak_change": -0.00017361496910972551
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 4,
+      "controls": 6696,
+      "original_radius_maximum": 0.9501132930111008,
+      "rebuilt_radius_maximum": 0.9624914548547067,
+      "peak_change": 0.01237816184360585
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 5,
+      "controls": 6448,
+      "original_radius_maximum": 0.9661372805500164,
+      "rebuilt_radius_maximum": 0.9665919951380405,
+      "peak_change": 0.0004547145880241521
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 6,
+      "controls": 6448,
+      "original_radius_maximum": 0.9179281773490792,
+      "rebuilt_radius_maximum": 0.9393680634879389,
+      "peak_change": 0.02143988613885972
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 7,
+      "controls": 6416,
+      "original_radius_maximum": 0.9341866203934375,
+      "rebuilt_radius_maximum": 0.9368753713021187,
+      "peak_change": 0.002688750908681259
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 8,
+      "controls": 5616,
+      "original_radius_maximum": 0.9680099952427715,
+      "rebuilt_radius_maximum": 0.9733779361523532,
+      "peak_change": 0.005367940909581703
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 9,
+      "controls": 6256,
+      "original_radius_maximum": 1.029152670758277,
+      "rebuilt_radius_maximum": 1.0278196961555992,
+      "peak_change": -0.0013329746026777833
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 10,
+      "controls": 6696,
+      "original_radius_maximum": 1.021997178733638,
+      "rebuilt_radius_maximum": 1.023278042371394,
+      "peak_change": 0.0012808636377561466
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 11,
+      "controls": 5528,
+      "original_radius_maximum": 0.9314263021256408,
+      "rebuilt_radius_maximum": 0.9391185685666181,
+      "peak_change": 0.007692266440977313
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 12,
+      "controls": 916,
+      "original_radius_maximum": 0.8798956987365555,
+      "rebuilt_radius_maximum": 0.8972047682261955,
+      "peak_change": 0.01730906948964006
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 16,
+      "controls": 2760,
+      "original_radius_maximum": 0.8662828170388208,
+      "rebuilt_radius_maximum": 0.8684507342747121,
+      "peak_change": 0.00216791723589127
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 17,
+      "controls": 5616,
+      "original_radius_maximum": 0.8444960793648645,
+      "rebuilt_radius_maximum": 0.8622852267488964,
+      "peak_change": 0.017789147384031923
+    },
+    {
+      "material_t_bin": 31,
+      "material_theta_bin": 18,
+      "controls": 1680,
+      "original_radius_maximum": 0.823981005470812,
+      "rebuilt_radius_maximum": 0.8239798428131357,
+      "peak_change": -1.162657676245793e-06
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 3,
+      "controls": 16,
+      "original_radius_maximum": 0.8984533095025801,
+      "rebuilt_radius_maximum": 0.898338190077146,
+      "peak_change": -0.00011511942543407372
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 4,
+      "controls": 1972,
+      "original_radius_maximum": 0.9633829349103374,
+      "rebuilt_radius_maximum": 0.9633788567315205,
+      "peak_change": -4.078178816979694e-06
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 5,
+      "controls": 4344,
+      "original_radius_maximum": 0.9638107844926903,
+      "rebuilt_radius_maximum": 0.9638095974244283,
+      "peak_change": -1.1870682620207518e-06
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 6,
+      "controls": 6280,
+      "original_radius_maximum": 0.9432222076618865,
+      "rebuilt_radius_maximum": 0.9432221828389044,
+      "peak_change": -2.4822982114258707e-08
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 7,
+      "controls": 6180,
+      "original_radius_maximum": 0.9283757450504295,
+      "rebuilt_radius_maximum": 0.936640855030608,
+      "peak_change": 0.008265109980178487
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 8,
+      "controls": 2032,
+      "original_radius_maximum": 0.9187384878404442,
+      "rebuilt_radius_maximum": 0.9253071589265217,
+      "peak_change": 0.006568671086077504
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 9,
+      "controls": 188,
+      "original_radius_maximum": 0.9273086359446433,
+      "rebuilt_radius_maximum": 0.9264752644257247,
+      "peak_change": -0.000833371518918602
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 10,
+      "controls": 576,
+      "original_radius_maximum": 0.913395257587752,
+      "rebuilt_radius_maximum": 0.9132862166246333,
+      "peak_change": -0.0001090409631187006
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 11,
+      "controls": 1184,
+      "original_radius_maximum": 0.8732906272471809,
+      "rebuilt_radius_maximum": 0.8672454351012086,
+      "peak_change": -0.006045192145972322
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 16,
+      "controls": 2684,
+      "original_radius_maximum": 0.8554488446521706,
+      "rebuilt_radius_maximum": 0.8544847980678243,
+      "peak_change": -0.0009640465843463453
+    },
+    {
+      "material_t_bin": 32,
+      "material_theta_bin": 17,
+      "controls": 4784,
+      "original_radius_maximum": 0.8626790051753574,
+      "rebuilt_radius_maximum": 0.8619566577016567,
+      "peak_change": -0.0007223474737007018
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 6,
+      "controls": 968,
+      "original_radius_maximum": 0.9455063176954901,
+      "rebuilt_radius_maximum": 0.9455064126987225,
+      "peak_change": 9.500323239208797e-08
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 7,
+      "controls": 2296,
+      "original_radius_maximum": 0.9259251185008509,
+      "rebuilt_radius_maximum": 0.9258142013149883,
+      "peak_change": -0.00011091718586264676
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 8,
+      "controls": 2452,
+      "original_radius_maximum": 0.8879125270317142,
+      "rebuilt_radius_maximum": 0.9036268071914809,
+      "peak_change": 0.015714280159766725
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 11,
+      "controls": 288,
+      "original_radius_maximum": 0.8840302353029434,
+      "rebuilt_radius_maximum": 0.8797529411404793,
+      "peak_change": -0.00427729416246414
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 12,
+      "controls": 1376,
+      "original_radius_maximum": 0.867523705394702,
+      "rebuilt_radius_maximum": 0.874050640956134,
+      "peak_change": 0.0065269355614320235
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 13,
+      "controls": 992,
+      "original_radius_maximum": 0.8284423552407604,
+      "rebuilt_radius_maximum": 0.8297682306097748,
+      "peak_change": 0.0013258753690144065
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 14,
+      "controls": 1264,
+      "original_radius_maximum": 0.8492476565657232,
+      "rebuilt_radius_maximum": 0.8804762813510159,
+      "peak_change": 0.031228624785292647
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 15,
+      "controls": 1984,
+      "original_radius_maximum": 0.8521109629938105,
+      "rebuilt_radius_maximum": 0.850379989743278,
+      "peak_change": -0.0017309732505325082
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 16,
+      "controls": 176,
+      "original_radius_maximum": 0.8457619147743466,
+      "rebuilt_radius_maximum": 0.8457019275196227,
+      "peak_change": -5.9987254723892214e-05
+    },
+    {
+      "material_t_bin": 33,
+      "material_theta_bin": 17,
+      "controls": 132,
+      "original_radius_maximum": 0.8548787164964683,
+      "rebuilt_radius_maximum": 0.8548786027594603,
+      "peak_change": -1.1373700803396503e-07
+    },
+    {
+      "material_t_bin": 34,
+      "material_theta_bin": 11,
+      "controls": 252,
+      "original_radius_maximum": 0.8842132640875104,
+      "rebuilt_radius_maximum": 0.8805898651332098,
+      "peak_change": -0.0036233989543006384
+    },
+    {
+      "material_t_bin": 34,
+      "material_theta_bin": 12,
+      "controls": 700,
+      "original_radius_maximum": 0.8745363849115434,
+      "rebuilt_radius_maximum": 0.8729209231136462,
+      "peak_change": -0.0016154617978971775
+    },
+    {
+      "material_t_bin": 34,
+      "material_theta_bin": 13,
+      "controls": 728,
+      "original_radius_maximum": 0.8214553681605763,
+      "rebuilt_radius_maximum": 0.8149731789206139,
+      "peak_change": -0.006482189239962355
+    },
+    {
+      "material_t_bin": 34,
+      "material_theta_bin": 14,
+      "controls": 1236,
+      "original_radius_maximum": 0.8825023534454909,
+      "rebuilt_radius_maximum": 0.8825016285237003,
+      "peak_change": -7.249217905958005e-07
+    },
+    {
+      "material_t_bin": 34,
+      "material_theta_bin": 15,
+      "controls": 224,
+      "original_radius_maximum": 0.8669465712293779,
+      "rebuilt_radius_maximum": 0.8668809408034964,
+      "peak_change": -6.563042588147994e-05
+    }
+  ],
+  "radial_envelope_bin_widths": {
+    "material_t": 0.02,
+    "material_theta_radians": 0.08
+  },
+  "maximum_absolute_binned_peak_change": 0.05605970433903973,
+  "rms_binned_peak_change": 0.013364747839895342,
+  "code_sha256": "6640a88a4537a5bd4b6e46b31c18cb77995ccfb83d08fd0acc030fdc550b84f8",
+  "scope": "Actual saved arrays, all source controls and unchanged associations. Binned radial peaks measure protrusion-envelope changes; they do not certify visual quality, exact volume or continuity. Individual end shapes may change by user decision. No full independent replay or self-intersection certification."
+}

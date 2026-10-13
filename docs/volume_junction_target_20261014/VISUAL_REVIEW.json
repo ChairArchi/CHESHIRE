@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-14",
+  "candidate": "G7_DERIVED_VOLUME_FINISH_CLEAN",
+  "folder": "E:/CHESHIRE_DATA/experiments/volume_junction_target_20261014/trial01/volume_finish_clean",
+  "geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "root_reviewed_final_views": ["front", "body_oblique", "close_oblique"],
+  "independent_review": {
+    "agent": "end_rebuild_design_audit",
+    "reviewed_stage": "volume_finish_v2 before removal of minor disconnected residue and exact reflection reconstruction",
+    "reviewed_views": ["front", "body_oblique", "close_oblique"],
+    "verdict": "PARTIAL_CLEANUP_GAIN_NOT_NATURAL_END_PROBLEM_SOLVED"
+  },
+  "final_root_verdict": "PARTIAL_CLEANUP_GAIN_PRESERVE_AS_FINISH_CANDIDATE",
+  "observed_gains": [
+    "넓은 S자 주름의 면과 어깨가 명료해졌으며 기존 삼각형 잔결과 조밀한 지퍼 무늬가 감소했다.",
+    "작은 장식의 뿌리가 더 두껍고 결속된 덩어리로 읽힌다.",
+    "정면과 몸체에서 큰 주름의 위계, 주요 돌출과 실루엣이 유지된다.",
+    "실제 본체 연결 성분만 남기고 X/Y 반사를 명시적으로 재구성한 최종 렌더에서도 큰 조형 변화가 유지된다."
+  ],
+  "remaining_limits": [
+    "표시한 대각선 장식 무리의 개별 말림 끝은 여전히 일부 뒤엉키고 찌그러진 형태로 남는다.",
+    "오른쪽 위 대각선 가장자리와 왼쪽 긴 날에서 비교적 굵은 계단과 톱니가 보인다.",
+    "전역 체적 재구성으로 얇은 날과 잔결이 부드러워졌으며 작은 통공이 남은 곳이 있다.",
+    "이 결과를 자연스러운 바로크 마감이나 근접 디테일 완성으로 평가하지 않는다."
+  ],
+  "design_decision_pending": "새 마감의 약간 두껍고 부드러워진 인상을 다음 수정의 기준으로 삼을지는 사용자 조형 판단을 받는다.",
+  "baseline": "Original WIDE_ROOT_FINISHED/SPAN/G07 remains untouched; finish is separately preserved.",
+  "new_microdetail_added": false,
+  "new_mandelbulb_field_added": false,
+  "growth_G8": false
+}

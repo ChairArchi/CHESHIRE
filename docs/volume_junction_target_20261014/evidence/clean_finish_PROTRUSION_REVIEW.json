@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-14",
+  "geometry_sha256": "74db70348be271c24f6284a94680c3d9136cb2c25a339b563c89e30b91a16122",
+  "original_control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+  "source_selected_controls": 157752,
+  "source_selected_radius_maximum": 1.127418148909341,
+  "matched_finish_radius_maximum": 1.1235369457154658,
+  "selected_radius_peak_change": -0.0038812031938750824,
+  "source_radius_quantiles": [
+    0.740617019697089,
+    0.8865761415113425,
+    0.9524036958297876,
+    1.1031110460600184,
+    1.127418148909341
+  ],
+  "matched_finish_radius_quantiles": [
+    0.7415765065890854,
+    0.8865153702883483,
+    0.9521074609885294,
+    1.1024953327446205,
+    1.1235369457154658
+  ],
+  "source_to_finish_nearest_vertex_distance_quantiles": [
+    6.878646707580197e-05,
+    0.0028222486901449927,
+    0.01305018402669831,
+    0.028963917028620174,
+    0.08740691257079497
+  ],
+  "original_bbox_minimum": [
+    -1.5774001971596674,
+    -1.4977856196093098,
+    0.14752006444328683
+  ],
+  "original_bbox_maximum": [
+    1.5774001971596674,
+    1.4977856196093098,
+    9.88315671500315
+  ],
+  "finish_bbox_minimum": [
+    -1.575424313545227,
+    -1.4970262050628662,
+    0.1497417539358139
+  ],
+  "finish_bbox_maximum": [
+    1.575424313545227,
+    1.4970262050628662,
+    9.88062858581543
+  ],
+  "actual_symmetry_scope": "See VERIFICATION.json: every saved vertex tested.",
+  "code_sha256": "07c98393bd451c51fc61bb4e1427c4f83fc2dca48f6d06daf61e2c13ff53c0d5",
+  "scope": "All original marked controls matched to the closest actual finish VERTEX. This is geometric proximity and radial-envelope evidence, not preserved chart/feature-ID ancestry, exact surface distance, exact volume or aesthetic success. Removed internal layers can have large nearest-point distances."
+}
