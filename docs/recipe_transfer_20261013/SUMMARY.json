@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "WAIST_FULL",
+  "complete_generation_sequence": true,
+  "actual_final_generation": 7,
+  "actual_saved_states": 15,
+  "changed_input_only": {
+    "field": "G0 adjusted SPAN radius[0:8]",
+    "multipliers": [
+      1.0,
+      0.82,
+      0.88,
+      1.2,
+      1.16,
+      1.02,
+      0.86,
+      1.0
+    ]
+  },
+  "unchanged_recipe_completed_without_retuning": true,
+  "all_required_stage_checks_passed": true,
+  "native_stage_count": 11,
+  "control_only_intermediate_count": 4,
+  "final_control_vertices": 7002114,
+  "final_control_quads": 7002112,
+  "final_native_triangles": 28008448,
+  "final_symmetry": {
+    "passed": true,
+    "axes": {
+      "X": {
+        "passed": true,
+        "actual_control_xyz_max_error": 3.3370282817689916e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      },
+      "Y": {
+        "passed": true,
+        "actual_control_xyz_max_error": 3.3370282817689916e-14,
+        "oriented_control_faces_identical": true,
+        "tolerance": 1e-09
+      }
+    },
+    "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+    "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+  },
+  "elapsed_generation_seconds": 656.8589999999967,
+  "source_snapshot_files": 81,
+  "recipe_sha256": "7a193871dc175843d158cc5038b3726c966212d27ae69f926eded1e0e39f6c50",
+  "stages_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7",
+  "visual_success": "PENDING_MATCHED_ACTUAL_RENDER_REVIEW",
+  "generality_scope": "One input-only change within the aligned SPAN parametric family, not arbitrary columns.",
+  "exclusions": [
+    "New reference research",
+    "Parameter search",
+    "Full baseline regeneration",
+    "Full independent transfer replay",
+    "Self-intersection/fabrication certification"
+  ]
+}

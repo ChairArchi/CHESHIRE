@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "WAIST_FULL",
+  "basis_commit": "22d95179f02e538052c6b5e8e97361a74b7e0eab",
+  "original_geometry_commit": "657b3ab927d067630071a12fc14bd2b0a8d0681e",
+  "changed_input_only": {
+    "field": "G0 adjusted SPAN radius[0:8]",
+    "multipliers": [
+      1.0,
+      0.82,
+      0.88,
+      1.2,
+      1.16,
+      1.02,
+      0.86,
+      1.0
+    ]
+  },
+  "unchanged": [
+    "G0 events/axial warp/carrier/chart/topology",
+    "All subsequent geometric formulas and selected modes",
+    "Mandelbulb world volumes, iterations and movement budgets",
+    "Material root window and child beta windows",
+    "All phase, amplitude, envelope and smoothing values"
+  ],
+  "stage_sequence": [
+    "G00_INPUT",
+    "G01_ANCESTRY",
+    "G02_OVERLAP",
+    "G03_WALL",
+    "G03_ROOT",
+    "G03_SIDEWALL",
+    "G04_NEUTRAL",
+    "G05_DIRECTIONAL",
+    "G06_DEPTH08",
+    "G06_MIDDLE",
+    "G07_SURFACE",
+    "G07_LINKED_RAW",
+    "G07_LINKED_FINISHED",
+    "G07_WIDE_RAW",
+    "G07_FINAL"
+  ],
+  "run_file_sha256": "7dee32898f88b775ebce550f63cbdeabce91eb6f82c6d1a10141ddcfd8cb5906",
+  "scope": "One new whole column, same aligned parametric input family; not arbitrary-input generality or aesthetic success certification."
+}

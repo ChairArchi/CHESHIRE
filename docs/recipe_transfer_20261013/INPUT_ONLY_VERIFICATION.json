@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "input_case": "WAIST_FULL",
+  "passed": true,
+  "changed_recipe_keys": [
+    "radius"
+  ],
+  "only_input_radius_changed": true,
+  "initial_state": {
+    "original_vertices": 402,
+    "original_faces": 400,
+    "faces_identical": true,
+    "chart_identical": true,
+    "maximum_actual_control_distance": 0.15734826388888914,
+    "moved_controls": 368,
+    "original_radius": [
+      0.7260000000000001,
+      0.92,
+      0.78,
+      0.63,
+      0.66,
+      0.73,
+      0.88,
+      0.7040000000000001
+    ],
+    "new_radius": [
+      0.7260000000000001,
+      0.7544,
+      0.6864,
+      0.756,
+      0.7656,
+      0.7446,
+      0.7568,
+      0.7040000000000001
+    ]
+  },
+  "early_selected_recipe_equalities": {
+    "G01_ANCESTRY_task36": true,
+    "G01_ANCESTRY_finite_field": true,
+    "G02_OVERLAP_task36": true,
+    "G02_OVERLAP_finite_field": true,
+    "G02_returns": true,
+    "G03_wall": true,
+    "G03_root": true,
+    "G03_sidewall": true
+  },
+  "late_selected_recipe_equalities_checked_before_generation": {
+    "g5_directional": true,
+    "g6_depth08": true,
+    "g6_middle": true,
+    "g7_linked": true,
+    "g7_wide": true,
+    "saved_delta_finish": true
+  },
+  "scope": "Small G0 actual arrays and saved recipe values only; not an independent full geometry replay or visual quality claim."
+}

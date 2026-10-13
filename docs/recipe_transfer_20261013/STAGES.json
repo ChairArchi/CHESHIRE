@@ -1,0 +1,142 @@
+{
+  "schema": "CHESHIRE_RECIPE_TRANSFER_STAGES_V1",
+  "input_case": "WAIST_FULL",
+  "stages": [
+    {
+      "id": "G00_INPUT",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT",
+      "generation": 0,
+      "generation_json_sha256": "5430ae306f26fc563cfc6fbde358e5b2ff92833fa02cde6209d8753d2422bc65",
+      "candidate": "SPAN_SPARSE",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G01_ANCESTRY",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY",
+      "generation": 1,
+      "generation_json_sha256": "31577fcb6d2470ae2346509f4c5e4aee8da398923b76671361c2da7e47fdebf0",
+      "candidate": "ANCESTRY_STAGED",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G02_OVERLAP",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP",
+      "generation": 2,
+      "generation_json_sha256": "3baf89a9eea0ba69e9ef2468f124b74d8201f53245749caf38525ad7632e07ec",
+      "candidate": "OVERLAP",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_WALL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_WALL",
+      "generation": 3,
+      "generation_json_sha256": "96d14431c95fb95d09b3ed4865bff1449161f2f0a88429c295bfd350a93c9c04",
+      "candidate": "WALL",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_ROOT",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_ROOT",
+      "generation": 3,
+      "generation_json_sha256": "26da7d2de843630d04bde0d93d228e15494792faf8dbc9f368dfa5c1c7edee9b",
+      "candidate": "ROOT_ONLY",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G03_SIDEWALL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL",
+      "generation": 3,
+      "generation_json_sha256": "1bcbadbfb059385a5503b9e6db021ad64043d40c873d2f545ae36e5229c2a3c9",
+      "candidate": "SIDEWALL_FAN",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G04_NEUTRAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL",
+      "generation": 4,
+      "generation_json_sha256": "acd52c55760f6cebba9e8670d041518a80e38ac283b928213841c43793ec9938",
+      "candidate": "SIDEWALL_FAN",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G05_DIRECTIONAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL",
+      "generation": 5,
+      "generation_json_sha256": "e10b6830295ed7ffb8ae26d5ae89bb954b078ecbedc5df0bfb1f1b478457fbf6",
+      "candidate": "G05_DIRECTIONAL",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G06_DEPTH08",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_DEPTH08",
+      "generation": 6,
+      "generation_json_sha256": "990d0cf07173d7f672042a132c04144abb7695ef77b9046c068fd153319ca64d",
+      "candidate": "G06_DEPTH08",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G06_MIDDLE",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE",
+      "generation": 6,
+      "generation_json_sha256": "61e71736239f30127046d28fe699b9b5fbe3ab7a285129f56a80d9294e7fe6ea",
+      "candidate": "G06_MIDDLE",
+      "native_available": true,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_SURFACE",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_SURFACE",
+      "generation": 7,
+      "generation_json_sha256": "2090c7aacce1d5b694ddca3445ffe1c6f9f12ee7c5a397c42cf36474712a25c0",
+      "candidate": "G07_SURFACE",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_LINKED_RAW",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_LINKED_RAW",
+      "generation": 7,
+      "generation_json_sha256": "79831b62c55f659ac93e987c15f8d37e6c791e2ca5963b9c142f60ae1b1554aa",
+      "candidate": "G07_LINKED_RAW",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_LINKED_FINISHED",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_LINKED_FINISHED",
+      "generation": 7,
+      "generation_json_sha256": "865b6c0e47846d0eb4aed03a21a2e48c0cfd06ce91fb157c8b51eb4cd3024859",
+      "candidate": "G07_LINKED_FINISHED",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_WIDE_RAW",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_WIDE_RAW",
+      "generation": 7,
+      "generation_json_sha256": "5c84360ff2570ef230cf495af67f93005f3415b5d9ee78e9d40b77968f48ee1e",
+      "candidate": "G07_WIDE_RAW",
+      "native_available": false,
+      "checks_passed": true
+    },
+    {
+      "id": "G07_FINAL",
+      "folder": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL",
+      "generation": 7,
+      "generation_json_sha256": "a13930b7c11d5292fcc0ac45288890ca7dc7c8000540cf731a9032698b55cfbf",
+      "candidate": "G07_FINAL",
+      "native_available": true,
+      "checks_passed": true
+    }
+  ],
+  "generation_scope": "Actual quad subdivision count; same-G detail stages have separate IDs."
+}

@@ -1,0 +1,818 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01",
+  "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+  "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7",
+  "selected_stages": [
+    "G00_INPUT",
+    "G01_ANCESTRY",
+    "G02_OVERLAP",
+    "G03_SIDEWALL",
+    "G04_NEUTRAL",
+    "G05_DIRECTIONAL",
+    "G06_MIDDLE",
+    "G07_FINAL"
+  ],
+  "states": [
+    {
+      "stage_id": "G00_INPUT",
+      "candidate": "SPAN_SPARSE",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 0,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\geometry.npz",
+        "source_sha256": "9d0ce40ef6ec5607210dddcbde5030d1fd0257d075516d61123da8bed3f33b29",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\generation.json",
+        "generation_sha256": "5430ae306f26fc563cfc6fbde358e5b2ff92833fa02cde6209d8753d2422bc65",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\control_quad.npz",
+        "control_sha256": "db6b9d8a5b1fdadf618a6a002a1a7a15bf37ae893f3247c61a61ba9d78cbc049",
+        "stage_id": "G00_INPUT",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\front.png",
+          "sha256": "d2646a97efbbf9f7fd684ec1206ee87fa25608a0a2c50761558e39ba9f6311db",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "337f562e52fce967c6b3f865a34383dd893c5d9e9b819a3e3f48b19af3340d47",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\whole_oblique.png",
+          "sha256": "9df644d24134bd57d778c86425a9c7133f1c339b557e781e6c31d6915141ee46",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "337f562e52fce967c6b3f865a34383dd893c5d9e9b819a3e3f48b19af3340d47",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "field_passes_total": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 802,
+      "native_triangles": 1600
+    },
+    {
+      "stage_id": "G01_ANCESTRY",
+      "candidate": "ANCESTRY_STAGED",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 1,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\geometry.npz",
+        "source_sha256": "28beeb9ef083a18861919df6a9e3a7a4d6d5f79ff263e390e57363cd988f4764",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\generation.json",
+        "generation_sha256": "31577fcb6d2470ae2346509f4c5e4aee8da398923b76671361c2da7e47fdebf0",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\control_quad.npz",
+        "control_sha256": "5e0ca21c4d7719084f064dbcc3a2a9a2da375cddd3a02f0fb99fc38acb91fc75",
+        "stage_id": "G01_ANCESTRY",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\front.png",
+          "sha256": "0e32f75d4ed1e757823a30ba67d822f245e2c6bc733bed8da86e8e497885e60e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "78cc462d6243db4a5f1e2f223a57ac8f32857b39593ccf2195412301f49d9139",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\whole_oblique.png",
+          "sha256": "0e5124f679488bd4e341ffbc62184a548eb106ddee459d3551902bb8743b25d8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "78cc462d6243db4a5f1e2f223a57ac8f32857b39593ccf2195412301f49d9139",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 0,
+        "field_passes_total": 1,
+        "field_iterations": 4,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 3202,
+      "native_triangles": 6400
+    },
+    {
+      "stage_id": "G02_OVERLAP",
+      "candidate": "OVERLAP",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 2,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\geometry.npz",
+        "source_sha256": "48356417d1319a410d3c454fdd4cf0d1d926f1783e83d677ced2e48d9e6027cc",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\generation.json",
+        "generation_sha256": "3baf89a9eea0ba69e9ef2468f124b74d8201f53245749caf38525ad7632e07ec",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\control_quad.npz",
+        "control_sha256": "8c00827d421efb027c1266f62aec468e37e21547a28279d56b940a2d0054d6a0",
+        "stage_id": "G02_OVERLAP",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\front.png",
+          "sha256": "ca5262be859c347ca0cda82eeabb2b84838d589b21567911fed6aef9b34e55cf",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "6fcf49398960e4f82d27afbf010ea1134f46e934c98baf72c78372bc12da72c2",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\whole_oblique.png",
+          "sha256": "9328b41e9322898f4d95a0e0c224fca9edd00bcb4ee3091e24874458392e03b6",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "6fcf49398960e4f82d27afbf010ea1134f46e934c98baf72c78372bc12da72c2",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 1,
+        "field_passes_total": 2,
+        "field_iterations": 8,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 12802,
+      "native_triangles": 25600
+    },
+    {
+      "stage_id": "G03_SIDEWALL",
+      "candidate": "SIDEWALL_FAN",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 3,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\geometry.npz",
+        "source_sha256": "1da5cb47186c17caaea1174d61e5cf0cb50f94134c67fe2ff241763ef6230a4d",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\generation.json",
+        "generation_sha256": "1bcbadbfb059385a5503b9e6db021ad64043d40c873d2f545ae36e5229c2a3c9",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\control_quad.npz",
+        "control_sha256": "cfb959cbe728450f9c7ce24b60ced80743882d6a64972ccade8c72aab143d86a",
+        "stage_id": "G03_SIDEWALL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\front.png",
+          "sha256": "9eda444379656a74ccbe2523a3a18f6964ae5421930a42af27f705cc774d8fb3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "7c2ad86deef7242dd41b4fba68b82e471e2960829372ba03184c487afc9945d6",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\whole_oblique.png",
+          "sha256": "c8c9c05e34787caedef14b568544488cd221207cd83649f6a6b5bdc786e262b3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "7c2ad86deef7242dd41b4fba68b82e471e2960829372ba03184c487afc9945d6",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 3,
+        "added_field_passes": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 54706,
+      "native_triangles": 109408
+    },
+    {
+      "stage_id": "G04_NEUTRAL",
+      "candidate": "SIDEWALL_FAN",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 4,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\geometry.npz",
+        "source_sha256": "5ea8ec54737f26dcfafc0aa9bb83292251d6716312ba30b77068d1f93fe83a20",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\generation.json",
+        "generation_sha256": "acd52c55760f6cebba9e8670d041518a80e38ac283b928213841c43793ec9938",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\control_quad.npz",
+        "control_sha256": "de1b04635bb2d240760cc405dd3095cc290b19fae48c6c65eecdb9a6d2349d13",
+        "stage_id": "G04_NEUTRAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\front.png",
+          "sha256": "b2839c7571ab37559f57f676a6ffccca9be62b9f54b1c80bdc7ef1510eda128d",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "89bc13bcaefab4739a02cb992f3c104bf87574bb9a668bc13f5b40d229e8304c",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\whole_oblique.png",
+          "sha256": "11d30a518e7fd47e9bef052b201517195d7b6bfc3da93a93935ed7642effa576",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "89bc13bcaefab4739a02cb992f3c104bf87574bb9a668bc13f5b40d229e8304c",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 3,
+        "added_CC_passes": 1,
+        "added_field_passes": 0,
+        "added_normal_field_passes": 0
+      },
+      "native_vertices": 218818,
+      "native_triangles": 437632
+    },
+    {
+      "stage_id": "G05_DIRECTIONAL",
+      "candidate": "G05_DIRECTIONAL",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 5,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\geometry.npz",
+        "source_sha256": "3c896e64e8a67de64605943e2ce867ea8e6f7b5a330e02ece83a754123126df6",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\generation.json",
+        "generation_sha256": "e10b6830295ed7ffb8ae26d5ae89bb954b078ecbedc5df0bfb1f1b478457fbf6",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\control_quad.npz",
+        "control_sha256": "6c7144516f2a8b97cd7ac5daecc36ad1b467c2e3fe04c2519731e68c26392dfd",
+        "stage_id": "G05_DIRECTIONAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\front.png",
+          "sha256": "22deed9aac27f6154ec023c91076d5673cda4256e4d5e915fb2030b9d2355788",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "bc4cb3ffcd6d61b428ce7a9910eeabfc75b58114984336e620f701cb18a17329",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\whole_oblique.png",
+          "sha256": "3eba389471390171e8badfa13a8aa2cb849e172e26fa83aee811faf78d0655fd",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "bc4cb3ffcd6d61b428ce7a9910eeabfc75b58114984336e620f701cb18a17329",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 4,
+        "added_CC_passes": 1,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 0
+      },
+      "native_vertices": 875266,
+      "native_triangles": 1750528
+    },
+    {
+      "stage_id": "G06_MIDDLE",
+      "candidate": "G06_MIDDLE",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 6,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\geometry.npz",
+        "source_sha256": "77ea1fa6557c496e539275c4551c440c7383e33402881287675eab32258c5c47",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\generation.json",
+        "generation_sha256": "61e71736239f30127046d28fe699b9b5fbe3ab7a285129f56a80d9294e7fe6ea",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\control_quad.npz",
+        "control_sha256": "65c458c1079ad09f4bf62fd93a2843709226429ddf7625de8729fc48ede61e91",
+        "stage_id": "G06_MIDDLE",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\front.png",
+          "sha256": "f8fd514d2cba6afd10e2855d0381360bc53339d107d38a2a347e6fc5ebfb4560",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "b89ab5d2fe394f93f542071788a14e2ef1c7a1ae8da9dc5c069cc23a1568d4e9",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\whole_oblique.png",
+          "sha256": "9d997e49bdcd5758f2917d213b47638702aaaa180a4c28fe3abc52141c991009",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "b89ab5d2fe394f93f542071788a14e2ef1c7a1ae8da9dc5c069cc23a1568d4e9",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 6,
+        "added_CC_passes": 0,
+        "added_normal_field_passes": 1,
+        "cumulative_normal_field_passes": 1
+      },
+      "native_vertices": 3501058,
+      "native_triangles": 7002112
+    },
+    {
+      "stage_id": "G07_FINAL",
+      "candidate": "G07_FINAL",
+      "input_case": "WAIST_FULL",
+      "subdivision_generation": 7,
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\geometry.npz",
+        "source_sha256": "c2d919c64de963855f8f6827a7b6f8250195d80f5e90150a094aaa7829d2e894",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\generation.json",
+        "generation_sha256": "a13930b7c11d5292fcc0ac45288890ca7dc7c8000540cf731a9032698b55cfbf",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\control_quad.npz",
+        "control_sha256": "2be2839fdf653a08f608f10d6f131b89057824c9e3868e548010bd58de38332e",
+        "stage_id": "G07_FINAL",
+        "manifest_source": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\STAGES.json",
+        "manifest_sha256": "ed8fd99245c3ecbf6582dfa5a5e0f2b1497c74fbaea6d974a1d974a468a86fc7"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "50071e7dfba0049c9da7e12ad36b297cc991d6bddbf58f3dbdb650636cc3a9d8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        },
+        {
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\whole_oblique.png",
+          "sha256": "0a68666dea0ba8ba76a26e5da6bb9c8a9ff5e0c04931a5a65be6b459b48fdbc0",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\body_oblique.png",
+          "sha256": "1874371be7f41ad26dd2b8a53967506061a2ba27beb484b4e38748a7de42322f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\close_oblique.png",
+          "sha256": "0b4b30cb8676353bd5bbe1e36d3d659f8e8b010fae22b92da6e33974c285616a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ],
+      "operation_counts": {
+        "source_generation": 7,
+        "added_CC_passes": 0,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 5
+      },
+      "native_vertices": 14004226,
+      "native_triangles": 28008448
+    }
+  ],
+  "baseline": {
+    "stage_id": "PRESERVED_FINAL",
+    "candidate": "WIDE_ROOT_FINISHED",
+    "input_case": "SPAN",
+    "subdivision_generation": 7,
+    "source": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    },
+    "images": [
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+        "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+        "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      },
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+        "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true
+      }
+    ]
+  },
+  "rendered_progression_generations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "new_images": 18,
+  "reused_baseline_images": 3,
+  "source_images": 21,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "whole_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        0.5291830897331238,
+        -0.8231734037399292,
+        -0.20579329133033752
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "crop": false,
+  "resize": false,
+  "render_code_sha256": {
+    "render": "37839ec4f2e6009e8f975e6a93e5af5eb737a9476e9de44e3db38dcea46dc556",
+    "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031",
+    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91"
+  },
+  "baseline_renderer_sha256": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+  "scope": "One new input with the saved selected recipe. Eight actual G0-G7 states, fixed whole-column cameras, final body/close comparisons. Other saved intermediates are not rendered. Source/native/image receipts only; no independent geometry replay or aesthetic certification.",
+  "boards": [
+    {
+      "view": "front",
+      "kind": "progression",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\images\\PROGRESSION_front.png",
+      "sha256": "5a9a54ef032409a01bdd4e35ee6621fa8024b369aa813bcdeb8bd118c29e1f38",
+      "sources": [
+        {
+          "stage_id": "G00_INPUT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\front.png",
+          "sha256": "d2646a97efbbf9f7fd684ec1206ee87fa25608a0a2c50761558e39ba9f6311db",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "337f562e52fce967c6b3f865a34383dd893c5d9e9b819a3e3f48b19af3340d47",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G01_ANCESTRY",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\front.png",
+          "sha256": "0e32f75d4ed1e757823a30ba67d822f245e2c6bc733bed8da86e8e497885e60e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "78cc462d6243db4a5f1e2f223a57ac8f32857b39593ccf2195412301f49d9139",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G02_OVERLAP",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\front.png",
+          "sha256": "ca5262be859c347ca0cda82eeabb2b84838d589b21567911fed6aef9b34e55cf",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "6fcf49398960e4f82d27afbf010ea1134f46e934c98baf72c78372bc12da72c2",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G03_SIDEWALL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\front.png",
+          "sha256": "9eda444379656a74ccbe2523a3a18f6964ae5421930a42af27f705cc774d8fb3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "7c2ad86deef7242dd41b4fba68b82e471e2960829372ba03184c487afc9945d6",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G04_NEUTRAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\front.png",
+          "sha256": "b2839c7571ab37559f57f676a6ffccca9be62b9f54b1c80bdc7ef1510eda128d",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "89bc13bcaefab4739a02cb992f3c104bf87574bb9a668bc13f5b40d229e8304c",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G05_DIRECTIONAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\front.png",
+          "sha256": "22deed9aac27f6154ec023c91076d5673cda4256e4d5e915fb2030b9d2355788",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "bc4cb3ffcd6d61b428ce7a9910eeabfc75b58114984336e620f701cb18a17329",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G06_MIDDLE",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\front.png",
+          "sha256": "f8fd514d2cba6afd10e2855d0381360bc53339d107d38a2a347e6fc5ebfb4560",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "b89ab5d2fe394f93f542071788a14e2ef1c7a1ae8da9dc5c069cc23a1568d4e9",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "50071e7dfba0049c9da7e12ad36b297cc991d6bddbf58f3dbdb650636cc3a9d8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "whole_oblique",
+      "kind": "progression",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\images\\PROGRESSION_whole_oblique.png",
+      "sha256": "067a2697d744574e2661e8ea6907d22dbeca6b2f51823980d179783d9ff5f089",
+      "sources": [
+        {
+          "stage_id": "G00_INPUT",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\whole_oblique.png",
+          "sha256": "9df644d24134bd57d778c86425a9c7133f1c339b557e781e6c31d6915141ee46",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G00_INPUT\\views\\receipt.json",
+          "receipt_sha256": "337f562e52fce967c6b3f865a34383dd893c5d9e9b819a3e3f48b19af3340d47",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G01_ANCESTRY",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\whole_oblique.png",
+          "sha256": "0e5124f679488bd4e341ffbc62184a548eb106ddee459d3551902bb8743b25d8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G01_ANCESTRY\\views\\receipt.json",
+          "receipt_sha256": "78cc462d6243db4a5f1e2f223a57ac8f32857b39593ccf2195412301f49d9139",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G02_OVERLAP",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\whole_oblique.png",
+          "sha256": "9328b41e9322898f4d95a0e0c224fca9edd00bcb4ee3091e24874458392e03b6",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G02_OVERLAP\\views\\receipt.json",
+          "receipt_sha256": "6fcf49398960e4f82d27afbf010ea1134f46e934c98baf72c78372bc12da72c2",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G03_SIDEWALL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\whole_oblique.png",
+          "sha256": "c8c9c05e34787caedef14b568544488cd221207cd83649f6a6b5bdc786e262b3",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G03_SIDEWALL\\views\\receipt.json",
+          "receipt_sha256": "7c2ad86deef7242dd41b4fba68b82e471e2960829372ba03184c487afc9945d6",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G04_NEUTRAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\whole_oblique.png",
+          "sha256": "11d30a518e7fd47e9bef052b201517195d7b6bfc3da93a93935ed7642effa576",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G04_NEUTRAL\\views\\receipt.json",
+          "receipt_sha256": "89bc13bcaefab4739a02cb992f3c104bf87574bb9a668bc13f5b40d229e8304c",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G05_DIRECTIONAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\whole_oblique.png",
+          "sha256": "3eba389471390171e8badfa13a8aa2cb849e172e26fa83aee811faf78d0655fd",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G05_DIRECTIONAL\\views\\receipt.json",
+          "receipt_sha256": "bc4cb3ffcd6d61b428ce7a9910eeabfc75b58114984336e620f701cb18a17329",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G06_MIDDLE",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\whole_oblique.png",
+          "sha256": "9d997e49bdcd5758f2917d213b47638702aaaa180a4c28fe3abc52141c991009",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G06_MIDDLE\\views\\receipt.json",
+          "receipt_sha256": "b89ab5d2fe394f93f542071788a14e2ef1c7a1ae8da9dc5c069cc23a1568d4e9",
+          "reused_reference": false
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "whole_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\whole_oblique.png",
+          "sha256": "0a68666dea0ba8ba76a26e5da6bb9c8a9ff5e0c04931a5a65be6b459b48fdbc0",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "front",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\images\\FINAL_COMPARE_front.png",
+      "sha256": "cf8151b5b2f5899ad3a45d50991a0a43f240c7be481fbac47c6df889ec6aa231",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\front.png",
+          "sha256": "50071e7dfba0049c9da7e12ad36b297cc991d6bddbf58f3dbdb650636cc3a9d8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\images\\FINAL_COMPARE_body_oblique.png",
+      "sha256": "21512b6a0e53f33c62191501d9de8f7d2d7d6c853a01e2544172a2337080f3bc",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\body_oblique.png",
+          "sha256": "1874371be7f41ad26dd2b8a53967506061a2ba27beb484b4e38748a7de42322f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "kind": "final_comparison",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\images\\FINAL_COMPARE_close_oblique.png",
+      "sha256": "bb351cc5ce48f18af06a7a7ad10c31aca860d5141baa48a9d1f08b7b27029be7",
+      "sources": [
+        {
+          "stage_id": "PRESERVED_FINAL",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "stage_id": "G07_FINAL",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\close_oblique.png",
+          "sha256": "0b4b30cb8676353bd5bbe1e36d3d659f8e8b010fae22b92da6e33974c285616a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\recipe_transfer_20261013\\trial01\\states\\G07_FINAL\\views\\receipt.json",
+          "receipt_sha256": "3a108d9e9057e72d134d71e16f027b993c5194b5cae89e907974610470efe53c",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "progression_boards": 2,
+  "final_comparison_boards": 3,
+  "boards_script_sha256": "2368533ac09aaec75ab5ff5c35fbe7e603a87b277ce18429e589c3a23218800b"
+}
