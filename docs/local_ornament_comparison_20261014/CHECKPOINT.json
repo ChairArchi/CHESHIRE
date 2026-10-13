@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-14",
+  "status": "COMPLETED_TWO_LOCAL_COMPARISON_PROTOTYPES_NOT_ADOPTED",
+  "heavy_data_root": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01",
+  "basis_commit": "f88e299ce2f66744f6e2db83a106498c090de8fe",
+  "source_preserved": true,
+  "original_body_unchanged": true,
+  "matched_original_images": 3,
+  "new_actual_render_images": 6,
+  "comparison_boards": 3,
+  "body_generation": 7,
+  "new_G8": false,
+  "global_smoothing": false,
+  "Boolean_fusion": false,
+  "variant_counts": {
+    "MANDELBULB": {
+      "vertices": 5684064,
+      "triangles": 11495904,
+      "actual_constructive_XY_symmetry_residual": 0.0
+    },
+    "LEAF_CLUSTER": {
+      "vertices": 442512,
+      "triangles": 884736,
+      "actual_constructive_XY_symmetry_residual": 0.0
+    }
+  },
+  "files": [
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\local_ornament_comparison_20261014\\RECEIPT.json",
+      "original": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\RECEIPT.json",
+      "sha256": "ff27f575ce4e91125a02d18c218f86f574c0fd8499752f1d5d0cdf93c151576a"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\local_ornament_comparison_20261014\\PLACEMENT.json",
+      "original": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\PLACEMENT.json",
+      "sha256": "24916240508d6a775b4dc9a0220b6df148cda6e7bff61fc20eb728c4cff9d7b8"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\local_ornament_comparison_20261014\\RENDER_VERIFICATION.json",
+      "original": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "sha256": "79f77611c9ccc761b9af4636b5c8da88c18658c121a3ba7ef67bbcdedfc4792a"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\local_ornament_comparison_20261014\\MANDELBULB_PROTOTYPE_RECEIPT.json",
+      "original": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\MANDELBULB_PROTOTYPE_RECEIPT.json",
+      "sha256": "31e52ebcedeff705f0dbfcfd85f149cd64bef01754550ae27a2a40a7bb263a43"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\local_ornament_comparison_20261014\\LEAF_PROTOTYPE_RECEIPT.json",
+      "original": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\LEAF_PROTOTYPE_RECEIPT.json",
+      "sha256": "61a09081001809b56c405b74eaf3df1206296ce85ab723dbc711b6b9067e534d"
+    }
+  ],
+  "inline_preview": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\local-ornament-comparison\\local-ornament-comparison.html",
+    "sha256": "79ba657f99edb302a9530a969a4ea51726f259765b2db350dc9719f501e717bc",
+    "bytes": 225366,
+    "sources": {
+      "ORIGINAL": {
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+        "original_png_sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+        "crop_box": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_jpeg_sha256": "280d11be658e97df7de1643093bcd74d7e3b572a3b7c0877ac836e534f0e5811",
+        "preview_size": [
+          780,
+          400
+        ],
+        "quality": 90
+      },
+      "MANDELBULB": {
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\close_oblique.png",
+        "original_png_sha256": "6242a0b698280eb216e4260d732a94a0ba3b69c7b01617883ef6fc444209164d",
+        "crop_box": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_jpeg_sha256": "242f9bf0256be04b66fd88baa71f6a61e1fc06e261016fd6c9646308ce897fe7",
+        "preview_size": [
+          780,
+          400
+        ],
+        "quality": 90
+      },
+      "LEAF_CLUSTER": {
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\close_oblique.png",
+        "original_png_sha256": "93bc417dbbf6d24097b1e2c6cfb3e1a9c6e63389d6aac17b6f8c26e3304a6a30",
+        "crop_box": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_jpeg_sha256": "0316ddfb22dffbe39f56b8e77f1a34acff896aba8ebca8e868b4056ff2a8d769",
+        "preview_size": [
+          780,
+          400
+        ],
+        "quality": 90
+      }
+    },
+    "scope": "Same rectangular crop; JPEG90 presentation preview only. Actual uncropped 900-square PNGs and unresized2700x1020 boards remain preserved."
+  }
+}

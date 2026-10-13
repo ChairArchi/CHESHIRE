@@ -1,0 +1,116 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "authorization": "Latest explicit user instruction: 시험해보자 바로. Two bounded tests from preceding method comparison.",
+  "basis_commit": "f88e299ce2f66744f6e2db83a106498c090de8fe",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+  "source_native_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+  "source_generation": 7,
+  "source_hashes_after": {
+    "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+    "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+  },
+  "placement_sha256": "24916240508d6a775b4dc9a0220b6df148cda6e7bff61fc20eb728c4cff9d7b8",
+  "variants": {
+    "MANDELBULB": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\geometry.npz",
+      "geometry_sha256": "dd1ac35136366aa4520e954bb6c75e1713a62a21b5e77d4e1548217558d25021",
+      "xyz_sha256": "115ba1777ce6e9823ef29eadcab6cd18894f7f3485eb28ce96b261fd29fd23a5",
+      "faces_sha256": "31bcdf8940d15812b9347c175983626d1fc75f2d97042d12670d256be9768734",
+      "vertices": 5684064,
+      "triangles": 11495904,
+      "prototype": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\MANDELBULB.npz",
+      "prototype_sha256": "d23022c14bf13fabb3873f6bb6371dc124d24f8a36bb639df2c0db8fa0bebdd0",
+      "prototype_vertices": 236836,
+      "prototype_triangles": 478996,
+      "prototype_interior_root": [
+        0.10118415762288492,
+        0.05111771714149447,
+        0.22
+      ],
+      "root_contact": {
+        "slice_z": 0.22,
+        "actual_triangle_id": 303519,
+        "inward_horizontal_offset": 0.0005,
+        "positive_ray_crossings": 3,
+        "actual_closed_triangle_parity_inside": true,
+        "scope": "Actual source vertex is placed strictly inside added prototype. Overlap is verified; no Boolean union or tangent continuity is claimed."
+      },
+      "local_scale": [
+        0.06364533561736338,
+        0.06364533561736338,
+        0.05841505370434471
+      ],
+      "min_triangle_double_area": 5.816207162596395e-17,
+      "actual_constructive_XY_symmetry_residual": 0.0,
+      "local_normal_extent": [
+        -0.012851311814955836,
+        0.04556374188938887
+      ],
+      "actual_footprint_radius": 0.0389433691362298,
+      "contact_scope": "24 actual original body vertices lie inside their corresponding closed ornament prototype by invertible placement. Independent overlapping meshes; no Boolean fusion, global collision repair or tangent continuity certification."
+    },
+    "LEAF_CLUSTER": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\geometry.npz",
+      "geometry_sha256": "9c55a2d0c7d1e692886b0cec3e08ed56d8a2c2cf2b40908dce9320359fc38b64",
+      "xyz_sha256": "ec71dfa22365f487c4d9126074e25ea37b9b69d821eb592f7b699c548bfa2018",
+      "faces_sha256": "e3f4ce9cfaec948a09932eaab038931d2d50ef12b716e991cb059cd03c3c580f",
+      "vertices": 442512,
+      "triangles": 884736,
+      "prototype": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\LEAF_CLUSTER.npz",
+      "prototype_sha256": "19151226dcc67523fabdb3902dfadc7b430c70cd19ac946df257eb349edcc5d9",
+      "prototype_vertices": 18438,
+      "prototype_triangles": 36864,
+      "prototype_interior_root": [
+        0.0009313708597502705,
+        -0.007461548236972659,
+        0.22
+      ],
+      "root_contact": {
+        "slice_z": 0.22,
+        "actual_triangle_id": 2672,
+        "inward_horizontal_offset": 0.0005,
+        "positive_ray_crossings": 3,
+        "actual_closed_triangle_parity_inside": true,
+        "scope": "Actual source vertex is placed strictly inside added prototype. Overlap is verified; no Boolean union or tangent continuity is claimed."
+      },
+      "local_scale": [
+        0.11334735870485226,
+        0.11334735870485226,
+        0.05841505370434471
+      ],
+      "min_triangle_double_area": 5.8412468155285716e-09,
+      "actual_constructive_XY_symmetry_residual": 0.0,
+      "local_normal_extent": [
+        -0.012851311814955836,
+        0.04556374188938887
+      ],
+      "actual_footprint_radius": 0.038943369136229804,
+      "contact_scope": "24 actual original body vertices lie inside their corresponding closed ornament prototype by invertible placement. Independent overlapping meshes; no Boolean fusion, global collision repair or tangent continuity certification."
+    }
+  },
+  "body_geometry_changed": false,
+  "body_reconstructed": false,
+  "added_CC_passes": 0,
+  "prototype_copies_per_variant": 24,
+  "source_snapshots": {
+    "run.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\run.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot\\local_ornament_comparison_20261014\\run.py",
+      "sha256": "59c408cd0170171bc7e67e8b53b8dea18fbdf81be9d92f3ed5e5a2460cfc87a2"
+    },
+    "mandel_prototype.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\mandel_prototype.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot\\local_ornament_comparison_20261014\\mandel_prototype.py",
+      "sha256": "2cb0122203dee9465ac646b59cc6ed7687fcf4275eed576cec23820e17185024"
+    },
+    "leaf_prototype.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\leaf_prototype.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot\\local_ornament_comparison_20261014\\leaf_prototype.py",
+      "sha256": "8e23a97e8958997034e34c3248d320b6f76f838b865d48e544054f0685802762"
+    }
+  },
+  "seconds": 27.260023700015154,
+  "scope": "Original G7 plus independent local ornament meshes only. Two prototypes, one placement recipe, no parameter sweep. Visual success requires matched rendered review."
+}

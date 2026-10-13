@@ -1,0 +1,760 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01",
+  "states": [
+    {
+      "candidate": "ORIGINAL_G7",
+      "source": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+        "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+        "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+        "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+        "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+        "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        }
+      ]
+    },
+    {
+      "candidate": "MANDELBULB",
+      "source": {
+        "geometry": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\geometry.npz",
+        "geometry_sha256": "dd1ac35136366aa4520e954bb6c75e1713a62a21b5e77d4e1548217558d25021",
+        "xyz_sha256": "115ba1777ce6e9823ef29eadcab6cd18894f7f3485eb28ce96b261fd29fd23a5",
+        "faces_sha256": "31bcdf8940d15812b9347c175983626d1fc75f2d97042d12670d256be9768734",
+        "vertices": 5684064,
+        "triangles": 11495904,
+        "prototype": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\MANDELBULB.npz",
+        "prototype_sha256": "d23022c14bf13fabb3873f6bb6371dc124d24f8a36bb639df2c0db8fa0bebdd0",
+        "prototype_vertices": 236836,
+        "prototype_triangles": 478996,
+        "prototype_interior_root": [
+          0.10118415762288492,
+          0.05111771714149447,
+          0.22
+        ],
+        "root_contact": {
+          "slice_z": 0.22,
+          "actual_triangle_id": 303519,
+          "inward_horizontal_offset": 0.0005,
+          "positive_ray_crossings": 3,
+          "actual_closed_triangle_parity_inside": true,
+          "scope": "Actual source vertex is placed strictly inside added prototype. Overlap is verified; no Boolean union or tangent continuity is claimed."
+        },
+        "local_scale": [
+          0.06364533561736338,
+          0.06364533561736338,
+          0.05841505370434471
+        ],
+        "min_triangle_double_area": 5.816207162596395e-17,
+        "actual_constructive_XY_symmetry_residual": 0.0,
+        "local_normal_extent": [
+          -0.012851311814955836,
+          0.04556374188938887
+        ],
+        "actual_footprint_radius": 0.0389433691362298,
+        "contact_scope": "24 actual original body vertices lie inside their corresponding closed ornament prototype by invertible placement. Independent overlapping meshes; no Boolean fusion, global collision repair or tangent continuity certification."
+      },
+      "images": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "7fceb22b4b429c8785a8832859a5a6f5911b59b438154d642b0a29af413c2245",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "f7f09cc499964c4fc18066843853abe70c5750d23987eb3410c108546ba7bcbc",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "6242a0b698280eb216e4260d732a94a0ba3b69c7b01617883ef6fc444209164d",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        }
+      ],
+      "render_source_snapshots": [
+        {
+          "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\render.py",
+          "relative_path": "experiments/local_ornament_comparison_20261014/render.py",
+          "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot_render\\experiments\\local_ornament_comparison_20261014\\render.py",
+          "sha256": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e"
+        },
+        {
+          "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\boards.py",
+          "relative_path": "experiments/local_ornament_comparison_20261014/boards.py",
+          "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot_render\\experiments\\local_ornament_comparison_20261014\\boards.py",
+          "sha256": "4896a2b4b0a8fb79dae5b190285fd78610e534580a37d3cbfe7f9367ce4e179a"
+        }
+      ],
+      "original_body_display_readback": {
+        "xyz_float32_sha256": "e9d6bcdd918b1894c60453219f600624503fa090450a948850c4a78d86deaf4e",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      }
+    },
+    {
+      "candidate": "LEAF_CLUSTER",
+      "source": {
+        "geometry": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\geometry.npz",
+        "geometry_sha256": "9c55a2d0c7d1e692886b0cec3e08ed56d8a2c2cf2b40908dce9320359fc38b64",
+        "xyz_sha256": "ec71dfa22365f487c4d9126074e25ea37b9b69d821eb592f7b699c548bfa2018",
+        "faces_sha256": "e3f4ce9cfaec948a09932eaab038931d2d50ef12b716e991cb059cd03c3c580f",
+        "vertices": 442512,
+        "triangles": 884736,
+        "prototype": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\LEAF_CLUSTER.npz",
+        "prototype_sha256": "19151226dcc67523fabdb3902dfadc7b430c70cd19ac946df257eb349edcc5d9",
+        "prototype_vertices": 18438,
+        "prototype_triangles": 36864,
+        "prototype_interior_root": [
+          0.0009313708597502705,
+          -0.007461548236972659,
+          0.22
+        ],
+        "root_contact": {
+          "slice_z": 0.22,
+          "actual_triangle_id": 2672,
+          "inward_horizontal_offset": 0.0005,
+          "positive_ray_crossings": 3,
+          "actual_closed_triangle_parity_inside": true,
+          "scope": "Actual source vertex is placed strictly inside added prototype. Overlap is verified; no Boolean union or tangent continuity is claimed."
+        },
+        "local_scale": [
+          0.11334735870485226,
+          0.11334735870485226,
+          0.05841505370434471
+        ],
+        "min_triangle_double_area": 5.8412468155285716e-09,
+        "actual_constructive_XY_symmetry_residual": 0.0,
+        "local_normal_extent": [
+          -0.012851311814955836,
+          0.04556374188938887
+        ],
+        "actual_footprint_radius": 0.038943369136229804,
+        "contact_scope": "24 actual original body vertices lie inside their corresponding closed ornament prototype by invertible placement. Independent overlapping meshes; no Boolean fusion, global collision repair or tangent continuity certification."
+      },
+      "images": [
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "8012050b13a91368b3114e832ee88bd0e9dcbfcd5e506599b21e2ced731abc87",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "5ee9e318cf55ac38e6a70a5219cf00ff64c326527206d78619ee4f345be5cf37",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        },
+        {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "93bc417dbbf6d24097b1e2c6cfb3e1a9c6e63389d6aac17b6f8c26e3304a6a30",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        }
+      ],
+      "render_source_snapshots": [
+        {
+          "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\render.py",
+          "relative_path": "experiments/local_ornament_comparison_20261014/render.py",
+          "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot_render\\experiments\\local_ornament_comparison_20261014\\render.py",
+          "sha256": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e"
+        },
+        {
+          "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\boards.py",
+          "relative_path": "experiments/local_ornament_comparison_20261014/boards.py",
+          "snapshot": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\source_snapshot_render\\experiments\\local_ornament_comparison_20261014\\boards.py",
+          "sha256": "4896a2b4b0a8fb79dae5b190285fd78610e534580a37d3cbfe7f9367ce4e179a"
+        }
+      ],
+      "original_body_display_readback": {
+        "xyz_float32_sha256": "e9d6bcdd918b1894c60453219f600624503fa090450a948850c4a78d86deaf4e",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      }
+    }
+  ],
+  "binding": {
+    "root": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01",
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\RECEIPT.json",
+    "receipt_sha256": "ff27f575ce4e91125a02d18c218f86f574c0fd8499752f1d5d0cdf93c151576a",
+    "placement": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\PLACEMENT.json",
+    "placement_sha256": "24916240508d6a775b4dc9a0220b6df148cda6e7bff61fc20eb728c4cff9d7b8",
+    "original_source": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    }
+  },
+  "saved_placement": {
+    "date": "2026-10-14",
+    "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+    "source_generation": 7,
+    "source_hashes": {
+      "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+      "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+    },
+    "marked_selection": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+    "marked_selection_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+    "original_normal_request": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.npz",
+    "original_normal_request_sha256": "e5a80eee35ace9fca07029c0e2e249f3571133e639b01d7cd38fe5aa038208f2",
+    "reused_scope": "Only original source vertex IDs/coordinates/normals and marked mask reused. No rejected volume geometry is loaded.",
+    "coarse_topology": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+    "coarse_topology_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+    "anchor_rule": "Three theta bands of main marked component plus three other non-singleton components; maximal actual radius among mask>=.6 and original close-camera facing>.3.",
+    "canonical_anchors": [
+      {
+        "source_control_vertex_id": 7272,
+        "source_xyz": [
+          -0.8846544829716599,
+          0.33977906479810044,
+          6.394714497971233
+        ],
+        "source_outward_normal": [
+          -0.6111246673420144,
+          0.27666028454340674,
+          -0.7416102264144377
+        ],
+        "frame_columns": [
+          [
+            -0.6756042609971694,
+            0.4124142619849378,
+            -0.6111246673420144
+          ],
+          [
+            0.30585063420719294,
+            0.9109964195930844,
+            0.27666028454340674
+          ],
+          [
+            0.6708310309441017,
+            0.0,
+            -0.7416102264144377
+          ]
+        ],
+        "marked_component": 0,
+        "marked_component_coarse_vertices": 406,
+        "source_mask_weight": 1.0
+      },
+      {
+        "source_control_vertex_id": 8893,
+        "source_xyz": [
+          -0.7327369816278471,
+          0.6460258674976391,
+          6.338973374423243
+        ],
+        "source_outward_normal": [
+          0.25306047771297563,
+          0.6832685833667516,
+          -0.6849119925973506
+        ],
+        "frame_columns": [
+          [
+            0.23787814686687106,
+            0.9377496370902332,
+            0.25306047771297563
+          ],
+          [
+            0.642275972496914,
+            -0.3473119896247985,
+            0.6832685833667516
+          ],
+          [
+            0.7286258040972243,
+            0.0,
+            -0.6849119925973506
+          ]
+        ],
+        "marked_component": 0,
+        "marked_component_coarse_vertices": 406,
+        "source_mask_weight": 1.0
+      },
+      {
+        "source_control_vertex_id": 12781,
+        "source_xyz": [
+          -0.43472649511243294,
+          0.8106374873806813,
+          6.1509696082414225
+        ],
+        "source_outward_normal": [
+          0.42367442138089906,
+          0.4703448867030054,
+          0.7741289764760763
+        ],
+        "frame_columns": [
+          [
+            -0.5181108824592027,
+            0.7430081413718876,
+            0.42367442138089906
+          ],
+          [
+            -0.5751841319936111,
+            -0.6692823782642819,
+            0.4703448867030054
+          ],
+          [
+            0.6330279044245227,
+            0.0,
+            0.7741289764760763
+          ]
+        ],
+        "marked_component": 0,
+        "marked_component_coarse_vertices": 406,
+        "source_mask_weight": 1.0
+      },
+      {
+        "source_control_vertex_id": 43114,
+        "source_xyz": [
+          -0.18261589794508676,
+          0.8180530112181084,
+          6.116240923265669
+        ],
+        "source_outward_normal": [
+          -0.630295611127909,
+          0.13797152664632442,
+          -0.7639969243575384
+        ],
+        "frame_columns": [
+          [
+            -0.7463252757388957,
+            0.21383644541133995,
+            -0.630295611127909
+          ],
+          [
+            0.1633703866098124,
+            0.9768694767541072,
+            0.13797152664632442
+          ],
+          [
+            0.6452198846689566,
+            1.3877787807814457e-17,
+            -0.7639969243575384
+          ]
+        ],
+        "marked_component": 1,
+        "marked_component_coarse_vertices": 54,
+        "source_mask_weight": 1.0
+      },
+      {
+        "source_control_vertex_id": 93144,
+        "source_xyz": [
+          -0.3630609834249526,
+          0.7632704901734236,
+          6.180777005945463
+        ],
+        "source_outward_normal": [
+          -0.8985655921171943,
+          0.2848767777839723,
+          -0.33380398161570424
+        ],
+        "frame_columns": [
+          [
+            -0.3181956777634676,
+            0.3022108325585363,
+            -0.8985655921171943
+          ],
+          [
+            0.10087917919543635,
+            0.9532411094179041,
+            0.2848767777839723
+          ],
+          [
+            0.9426425101052374,
+            0.0,
+            -0.33380398161570424
+          ]
+        ],
+        "marked_component": 2,
+        "marked_component_coarse_vertices": 19,
+        "source_mask_weight": 1.0
+      },
+      {
+        "source_control_vertex_id": 92393,
+        "source_xyz": [
+          -0.5871854767482817,
+          0.916382311891712,
+          6.20641149147471
+        ],
+        "source_outward_normal": [
+          -0.4013416078799512,
+          0.7845816061356148,
+          -0.47260619663520564
+        ],
+        "frame_columns": [
+          [
+            -0.2152299846439214,
+            0.8902813979268088,
+            -0.4013416078799512
+          ],
+          [
+            0.42075250540926323,
+            0.4554108392490095,
+            0.7845816061356148
+          ],
+          [
+            0.8812737275682313,
+            -2.7755575615628914e-17,
+            -0.47260619663520564
+          ]
+        ],
+        "marked_component": 3,
+        "marked_component_coarse_vertices": 16,
+        "source_mask_weight": 1.0
+      }
+    ],
+    "reflection_signs": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "prototype_copies": 24,
+    "frame_rule": "Local Z is original area-weighted outward normal; local X is global up projected into its tangent plane.",
+    "physical_height": 9.735842284057451,
+    "footprint_radius": 0.038943369136229804,
+    "prototype_normal_height": 0.05841505370434471,
+    "root_embedding_fraction": 0.22,
+    "visible_normal_height": 0.04556374188938887,
+    "body_geometry_changed": false,
+    "added_CC_passes": 0,
+    "added_global_smoothing": 0
+  },
+  "reused_original_images": 3,
+  "new_actual_variant_images": 6,
+  "source_images": 9,
+  "comparison_columns": 3,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "Blender_version": "4.5.4 LTS",
+  "source_growth_generation": 7,
+  "new_source_growth_G8": false,
+  "fusion_performed": false,
+  "original_body_unchanged": true,
+  "renderer_geometry_processing": false,
+  "crop": false,
+  "resize": false,
+  "image_checker_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0",
+  "render_code_sha256": {
+    "render": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+    "native_helper_sha256": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+    "preserved_renderer_hashes": {
+      "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+      "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+      "parent_code_sha256": {
+        "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+        "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+        "raw_code_sha256": {
+          "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+          "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+          "parent_code_sha256": {
+            "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+            "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+            "parent_code_sha256": {
+              "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+              "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+              "raw_code_sha256": {
+                "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "scope": "Original saved G7 native PNGs and two actual local-added-geometry variants with identical cameras, material, lights, sampling and flat native shading. Original body is immutable and was loaded once for both candidate renders; additions are separate baked meshes, not a union or new source subdivision generation. Attachment, component aesthetics and intersection freedom are not certified by source/image verification.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\images\\SPAN_front.png",
+      "sha256": "17b88a59db21755499d91d348d20c6458007dc60fed36d383a56cfe874d1a607",
+      "sources": [
+        {
+          "candidate": "ORIGINAL_G7",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "MANDELBULB",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "7fceb22b4b429c8785a8832859a5a6f5911b59b438154d642b0a29af413c2245",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        },
+        {
+          "candidate": "LEAF_CLUSTER",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\front.png",
+          "view": "front",
+          "filename": "front.png",
+          "sha256": "8012050b13a91368b3114e832ee88bd0e9dcbfcd5e506599b21e2ced731abc87",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\images\\SPAN_body_oblique.png",
+      "sha256": "8d84b753f525bf51fb277c1779b3ad9811cc6e76e09534efe87988559f2d9118",
+      "sources": [
+        {
+          "candidate": "ORIGINAL_G7",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "MANDELBULB",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "f7f09cc499964c4fc18066843853abe70c5750d23987eb3410c108546ba7bcbc",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        },
+        {
+          "candidate": "LEAF_CLUSTER",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\body_oblique.png",
+          "view": "body_oblique",
+          "filename": "body_oblique.png",
+          "sha256": "5ee9e318cf55ac38e6a70a5219cf00ff64c326527206d78619ee4f345be5cf37",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\images\\SPAN_close_oblique.png",
+      "sha256": "f7de9da0e40f7027fe5368730fdf5708c7daec5ccf7766102544021ad286764d",
+      "sources": [
+        {
+          "candidate": "ORIGINAL_G7",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+          "reused_reference": true
+        },
+        {
+          "candidate": "MANDELBULB",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "6242a0b698280eb216e4260d732a94a0ba3b69c7b01617883ef6fc444209164d",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\MANDELBULB\\views\\receipt.json",
+          "receipt_sha256": "b5732f8ee9e65b875bb7b01d0d919e6ecd0de7a28b7621fe504c756a4eb20fe1",
+          "reused_reference": false
+        },
+        {
+          "candidate": "LEAF_CLUSTER",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\close_oblique.png",
+          "view": "close_oblique",
+          "filename": "close_oblique.png",
+          "sha256": "93bc417dbbf6d24097b1e2c6cfb3e1a9c6e63389d6aac17b6f8c26e3304a6a30",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\LEAF_CLUSTER\\views\\receipt.json",
+          "receipt_sha256": "a772a3a3c5faf95580212a692a0ebff2a06119b10c5a2242428a48a4c3ded334",
+          "reused_reference": false
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 3,
+  "boards_script_sha256": "4896a2b4b0a8fb79dae5b190285fd78610e534580a37d3cbfe7f9367ce4e179a"
+}

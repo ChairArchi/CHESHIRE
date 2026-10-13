@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-14",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_generation": 7,
+  "source_hashes": {
+    "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+    "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+  },
+  "marked_selection": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+  "marked_selection_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+  "original_normal_request": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\projection_request.npz",
+  "original_normal_request_sha256": "e5a80eee35ace9fca07029c0e2e249f3571133e639b01d7cd38fe5aa038208f2",
+  "reused_scope": "Only original source vertex IDs/coordinates/normals and marked mask reused. No rejected volume geometry is loaded.",
+  "coarse_topology": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz",
+  "coarse_topology_sha256": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+  "anchor_rule": "Three theta bands of main marked component plus three other non-singleton components; maximal actual radius among mask>=.6 and original close-camera facing>.3.",
+  "canonical_anchors": [
+    {
+      "source_control_vertex_id": 7272,
+      "source_xyz": [
+        -0.8846544829716599,
+        0.33977906479810044,
+        6.394714497971233
+      ],
+      "source_outward_normal": [
+        -0.6111246673420144,
+        0.27666028454340674,
+        -0.7416102264144377
+      ],
+      "frame_columns": [
+        [
+          -0.6756042609971694,
+          0.4124142619849378,
+          -0.6111246673420144
+        ],
+        [
+          0.30585063420719294,
+          0.9109964195930844,
+          0.27666028454340674
+        ],
+        [
+          0.6708310309441017,
+          0.0,
+          -0.7416102264144377
+        ]
+      ],
+      "marked_component": 0,
+      "marked_component_coarse_vertices": 406,
+      "source_mask_weight": 1.0
+    },
+    {
+      "source_control_vertex_id": 8893,
+      "source_xyz": [
+        -0.7327369816278471,
+        0.6460258674976391,
+        6.338973374423243
+      ],
+      "source_outward_normal": [
+        0.25306047771297563,
+        0.6832685833667516,
+        -0.6849119925973506
+      ],
+      "frame_columns": [
+        [
+          0.23787814686687106,
+          0.9377496370902332,
+          0.25306047771297563
+        ],
+        [
+          0.642275972496914,
+          -0.3473119896247985,
+          0.6832685833667516
+        ],
+        [
+          0.7286258040972243,
+          0.0,
+          -0.6849119925973506
+        ]
+      ],
+      "marked_component": 0,
+      "marked_component_coarse_vertices": 406,
+      "source_mask_weight": 1.0
+    },
+    {
+      "source_control_vertex_id": 12781,
+      "source_xyz": [
+        -0.43472649511243294,
+        0.8106374873806813,
+        6.1509696082414225
+      ],
+      "source_outward_normal": [
+        0.42367442138089906,
+        0.4703448867030054,
+        0.7741289764760763
+      ],
+      "frame_columns": [
+        [
+          -0.5181108824592027,
+          0.7430081413718876,
+          0.42367442138089906
+        ],
+        [
+          -0.5751841319936111,
+          -0.6692823782642819,
+          0.4703448867030054
+        ],
+        [
+          0.6330279044245227,
+          0.0,
+          0.7741289764760763
+        ]
+      ],
+      "marked_component": 0,
+      "marked_component_coarse_vertices": 406,
+      "source_mask_weight": 1.0
+    },
+    {
+      "source_control_vertex_id": 43114,
+      "source_xyz": [
+        -0.18261589794508676,
+        0.8180530112181084,
+        6.116240923265669
+      ],
+      "source_outward_normal": [
+        -0.630295611127909,
+        0.13797152664632442,
+        -0.7639969243575384
+      ],
+      "frame_columns": [
+        [
+          -0.7463252757388957,
+          0.21383644541133995,
+          -0.630295611127909
+        ],
+        [
+          0.1633703866098124,
+          0.9768694767541072,
+          0.13797152664632442
+        ],
+        [
+          0.6452198846689566,
+          1.3877787807814457e-17,
+          -0.7639969243575384
+        ]
+      ],
+      "marked_component": 1,
+      "marked_component_coarse_vertices": 54,
+      "source_mask_weight": 1.0
+    },
+    {
+      "source_control_vertex_id": 93144,
+      "source_xyz": [
+        -0.3630609834249526,
+        0.7632704901734236,
+        6.180777005945463
+      ],
+      "source_outward_normal": [
+        -0.8985655921171943,
+        0.2848767777839723,
+        -0.33380398161570424
+      ],
+      "frame_columns": [
+        [
+          -0.3181956777634676,
+          0.3022108325585363,
+          -0.8985655921171943
+        ],
+        [
+          0.10087917919543635,
+          0.9532411094179041,
+          0.2848767777839723
+        ],
+        [
+          0.9426425101052374,
+          0.0,
+          -0.33380398161570424
+        ]
+      ],
+      "marked_component": 2,
+      "marked_component_coarse_vertices": 19,
+      "source_mask_weight": 1.0
+    },
+    {
+      "source_control_vertex_id": 92393,
+      "source_xyz": [
+        -0.5871854767482817,
+        0.916382311891712,
+        6.20641149147471
+      ],
+      "source_outward_normal": [
+        -0.4013416078799512,
+        0.7845816061356148,
+        -0.47260619663520564
+      ],
+      "frame_columns": [
+        [
+          -0.2152299846439214,
+          0.8902813979268088,
+          -0.4013416078799512
+        ],
+        [
+          0.42075250540926323,
+          0.4554108392490095,
+          0.7845816061356148
+        ],
+        [
+          0.8812737275682313,
+          -2.7755575615628914e-17,
+          -0.47260619663520564
+        ]
+      ],
+      "marked_component": 3,
+      "marked_component_coarse_vertices": 16,
+      "source_mask_weight": 1.0
+    }
+  ],
+  "reflection_signs": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1,
+      1
+    ]
+  ],
+  "prototype_copies": 24,
+  "frame_rule": "Local Z is original area-weighted outward normal; local X is global up projected into its tangent plane.",
+  "physical_height": 9.735842284057451,
+  "footprint_radius": 0.038943369136229804,
+  "prototype_normal_height": 0.05841505370434471,
+  "root_embedding_fraction": 0.22,
+  "visible_normal_height": 0.04556374188938887,
+  "body_geometry_changed": false,
+  "added_CC_passes": 0,
+  "added_global_smoothing": 0
+}
