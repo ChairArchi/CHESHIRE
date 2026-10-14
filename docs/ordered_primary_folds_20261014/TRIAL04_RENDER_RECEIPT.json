@@ -1,0 +1,830 @@
+{
+  "state": "ORDERED",
+  "phase": "review",
+  "saved_geometry": {
+    "geometry": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED\\geometry.npz",
+    "geometry_sha256": "bc155aa4780d5d9e2b228c193f01d0a29964b60b7cd4abdbc2e7b1975ba9be53",
+    "xyz_sha256": "f94e925f113a452b508142945ffb982e9e920d58213c1a6db4ca7cb01f2e9369",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "validation": {
+      "mesh": {
+        "all_finite": true,
+        "positive_area_triangles": 28008448,
+        "degenerate_triangles": 0,
+        "minimum_triangle_area": 7.419761553445555e-11
+      },
+      "output_XY_position_symmetry_error": 3.2862601528904634e-14,
+      "actual_neutral_CC": {
+        "actual_G6_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+        "actual_G6_input_edges_sha256": "c55ba5b6a46b7761d4e17aafbeb327baad5ab17b3dd337952d5508935662cdc0",
+        "actual_G7_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+        "actual_following_edge_ids_sha256": "9ee04e4aede35f446ed5b23e2f59c3bc8edb0a3d3600baf52f496caadb8fb179",
+        "old_corner_ids_exact": true,
+        "face_center_ids_exact": true,
+        "preceding_edge_ids_exact": true,
+        "every_edge_matches_actual_G6_endpoints": true,
+        "every_edge_has_two_face_incidences": true,
+        "source_vertex_edge_degree_equals_face_degree": true,
+        "G6_vertices": 1750530,
+        "G6_edges": 3501056,
+        "G6_quads": 1750528,
+        "G7_vertices": 7002114,
+        "G7_quads": 7002112,
+        "checked_saved_SURFACE_max_coordinate_error": 3.552713678800501e-15
+      },
+      "primary": {
+        "implementation": "RETAINED_MIDDLE_PRIMARY_HIERARCHY_V3",
+        "source_generation": 6,
+        "output_generation": 6,
+        "added_CC_passes": 0,
+        "added_topology_events": 0,
+        "source_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz",
+        "source_control_sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+        "source_evidence": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\evidence.npz",
+        "source_evidence_sha256": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+        "original_MIDDLE_reconstruction_exact": true,
+        "phase": "Actual saved unwrapped G6 MIDDLE directional_phase; original family paths preserved.",
+        "phase_cycles_per_quarter": 5,
+        "family": "p=1-(1-exp(-((phase/(2*pi)-1)/.70)^4))*(1-exp(-((phase/(2*pi)-4)/.70)^4))",
+        "gain": "1+1.6*p*(1-.75*actual_feature_support)",
+        "gain_range": [
+          1.0000000005580814,
+          2.6
+        ],
+        "old_NESTED_primary_gain": ".95+.35*p; maximum 1.30",
+        "new_primary_gain_maximum": 2.6,
+        "event_support_one_gain_maximum": 1.4,
+        "source_geometry_averaged": false,
+        "new_displacement_filter_passes": 0,
+        "delta": "Actual saved MIDDLE displacement multiplied by the declared reflection-invariant family gain; canonical actual-ID mirror-vector transport only.",
+        "envelope": "Conservative orbit-min(.006H*saved_envelope*(1-.55*saved_support)*new_gain).",
+        "maximum_actual_displacement": 0.1518791388129518,
+        "actual_delta_norm_quantiles": [
+          0.0,
+          0.005239866741750351,
+          0.026178383178459774,
+          0.059886344593028745,
+          0.13509106705702742,
+          0.1518791388129518
+        ],
+        "maximum_added_displacement": 0.09346408542335496,
+        "input_xyz_sha256": "189e26b6cc2615e1835e57167d4633c364862a9ce693a4b5190630ccc2b8ebfc",
+        "output_xyz_sha256": "b7b371d210165af45fa528768fc0a2c0902acf962e0ffc61e5aaf8f02fade0d3",
+        "saved_phase_sha256": "cc3f306019c3892e6c92513e2adfcb4d758c392d7de982e000a0452cc2f36d17",
+        "saved_delta_sha256": "e43364cdcbaf15916eda14df684bb139aa4028eea256220ad2248b5d0a073c0a",
+        "output_delta_sha256": "41c05e86e31f0b9519c02e6105224dcdc69f618e0fc3d0ab35fa5bc2e40e7bee",
+        "parent_envelope_sha256": "9d0f0862ffafa203936cbe903d12b45fe87c4f6f841348e81c64fd42c138701b",
+        "code_sha256": "742c1000a49db863207395080fd96232296dd67b87ee876f465a96b173fb55c6",
+        "limitations": "Existing geometric vocabulary retained and amplified in two inherited phase families. Not new semantic ridge detection, topology growth, a collision certificate, or visual success before actual renders."
+      },
+      "subordinate": {
+        "implementation": "ACTUAL_PARENT_LOCAL_NESTED_FLANK_FOLDS_V2_READABLE",
+        "source_generation": 7,
+        "output_generation": 7,
+        "added_CC_passes": 0,
+        "added_topology_events": 0,
+        "normal_field_passes": 2,
+        "sequence": [
+          "CHILD",
+          "SMALL"
+        ],
+        "old_LINKED_WIDE_reused": false,
+        "global_micro_FLOW_added": false,
+        "physical_height_reference": 9.735842284057451,
+        "parent_support": "s=(abs(wrapped inherited parent phase)-.55)/1.8; W=64*s^3*(1-s)^3 inside 0<s<1, otherwise zero",
+        "child_phase": "qchild=2*pi*(s-.5); no independent axial oscillation",
+        "child_request": "min(.40*actual_parent_envelope,.12*actual_local_flank_width)*W*cos(qchild)",
+        "small_support": "W*quintic(clip((cos(qchild)-.15)/.65,0,1))",
+        "small_request": "min(.28*child_budget,.075*actual_local_flank_width/3)*small_mask*cos(3*qchild)",
+        "parent_envelope_scope": "Caller-bound actual G6 .006H*saved_envelope*(1-.55*saved_feature_support), transported through actual G6-to-G7 V/E/F IDs and multiplied by the declared primary MIDDLE gain.",
+        "displacement_filter": "One frozen .5*self+.5*actual_edge_neighbor_mean pass on each new delta only, then compact re-mask, pointwise norm cap, and canonical mirror-vector transport.",
+        "width_metric": {
+          "method": "Actual incoming quad diagonal Gram solve; incident RMS intrinsic phase gradient.",
+          "equation": "e1=x1-x3; e2=x2-x0; g2=(c*dphi1^2-2*b*dphi1*dphi2+a*dphi2^2)/(a*c-b^2); width=min(1.8/sqrt(mean_incident(g2)),.08H)",
+          "phase_difference": "Direct differences of actual supplied unwrapped inherited phase; no modulo aliasing.",
+          "gram_relative_threshold": 1e-08,
+          "invalid_quad_count": 0,
+          "invalid_incident_vertex_count": 0,
+          "minimum_valid_relative_gram_determinant": 1.6344579265168132e-07,
+          "maximum_actual_diagonal_phase_span": 11.615537682372647,
+          "zero_width_vertex_count": 0,
+          "flank_width_quantiles": [
+            0.00019905407809565304,
+            0.05813480615419371,
+            0.08152404934782025,
+            0.11373861975024771,
+            0.16088238828991963,
+            0.24952697995308146,
+            0.7720551997113372,
+            0.7788673827245961
+          ],
+          "small_widths_floored": false,
+          "maximum_flank_width": 0.7788673827245961,
+          "scalar_reflection": "Conservative minimum over each actual X/Y reflection orbit.",
+          "limitation": "First-order intrinsic phase spacing, not a geodesic crest-distance or remote-sheet gap/collision certificate."
+        },
+        "child": {
+          "input_xyz_sha256": "d3ab2c98c960fb67412a45e8224b4198f087a665d999eec116f6a9bc83ddc98e",
+          "input_normal_sha256": "95452f5b812dbf2dd4f163acdbaa2db16017ca4c83ce89fb5466814f70c0670d",
+          "delta_sha256": "5bc3723675e3430493326f36e7ebc09b4f0716a662262815b15f032ff4f9f413",
+          "maximum_displacement": 0.030202872304068953,
+          "displacement_quantiles": [
+            0.0,
+            1.0745253337257043e-06,
+            0.00893337528427457,
+            0.02124285546164689,
+            0.030202872304068953
+          ],
+          "amplitude_budget_quantiles": [
+            0.0,
+            0.012224632567613468,
+            0.02246272555748467,
+            0.03033560296343464,
+            0.030375827926259175
+          ],
+          "maximum_budget_violation": 3.469446951953614e-18,
+          "protected_delta_maximum": 0.0,
+          "nonzero_mask_control_vertices": 3943445,
+          "moved_control_vertices": 3943441,
+          "fresh_normal_evaluation": true
+        },
+        "small": {
+          "input_xyz_sha256": "842a0b4b9b88a96e5d6bb6e3ad02acfc22a4529fb3884a49066f4c082ec26987",
+          "input_normal_sha256": "92ab7f17ff584dfe43e301bb27e04edfbdc484458493fe39084c3bc3a43b8267",
+          "delta_sha256": "f490cf750a8f06fb0ce35e215c4b6bab07359bab9fa40a9da2fe45c17323fd41",
+          "maximum_displacement": 0.008418509973928187,
+          "displacement_quantiles": [
+            0.0,
+            0.0,
+            0.000977946313590006,
+            0.00353676694054894,
+            0.008418509973928187
+          ],
+          "amplitude_budget_quantiles": [
+            0.0,
+            0.002742189429411872,
+            0.0053412486908066175,
+            0.007897831243040885,
+            0.00850523181935257
+          ],
+          "maximum_budget_violation": 8.673617379884035e-19,
+          "protected_delta_maximum": 0.0,
+          "nonzero_mask_control_vertices": 1780404,
+          "moved_control_vertices": 1780400,
+          "fresh_normal_evaluation": true
+        },
+        "child_budget_max_parent_fraction": 0.4,
+        "small_budget_max_child_fraction": 0.28,
+        "actual_child_parent_budget_maximum_violation": 0.0,
+        "actual_small_child_budget_maximum_violation": 0.0,
+        "actual_small_parent_mask_maximum_violation": 0.0,
+        "protected_control_vertices": 3058669,
+        "protected_output_maximum_motion": 0.0,
+        "input_xyz_sha256": "d3ab2c98c960fb67412a45e8224b4198f087a665d999eec116f6a9bc83ddc98e",
+        "input_quads_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+        "input_parent_phase_sha256": "a6e30ce8d733182e2b8bdc0d264927109c0c8f28672d44fe87604f6ba9d69afa",
+        "input_parent_envelope_sha256": "2363152bfb445ecfca099436632050bffba7083818b157e48df1ec889d54ed59",
+        "intermediate_child_xyz_sha256": "842a0b4b9b88a96e5d6bb6e3ad02acfc22a4529fb3884a49066f4c082ec26987",
+        "output_xyz_sha256": "a90efe7c833bf736d4b881ed28259e70e17c28bc4480c6492d1d68cc18af7f24",
+        "source_geometry_averaged": false,
+        "associations_unchanged": true,
+        "scalar_reflection": "Masks use the minimum-ID orbit representative; physical width/envelope caps use conservative reflection-orbit minima.",
+        "code_binding": {
+          "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py": "5f9693775aa17e01a4347790a21d46ddc55f216de52956abdf1c3e20b193fde5",
+          "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844",
+          "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+        },
+        "support_scope": "Counts refer to control vertices, not measured surface area.",
+        "limitations": "Authored field dependency on actual inherited MIDDLE phase, not semantic ridge/termination detection or a recursive topology branch. First-order physical width caps do not prove global collision freedom. Visual hierarchy remains subject to matched whole-column and close render review."
+      },
+      "child_budget": {
+        "rule": "Keep previous NESTED02 budget; conservatively min with actual CC parent envelope.",
+        "actual_saved_NESTED02_budget_max_reproduction_error": 0.0,
+        "actual_saved_NESTED02_state": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\PARENT_STATE.npz",
+        "clipped_control_vertices": 20,
+        "maximum_budget_reduction": 0.001996657540412127,
+        "unchanged_old_budget_sha256": "6bf7f1622d2918a9feddfa7dd256d41afcadb5701455289ca01e59fd985b3eec",
+        "supplied_budget_sha256": "2363152bfb445ecfca099436632050bffba7083818b157e48df1ec889d54ed59"
+      },
+      "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "self_intersection_checked": false,
+      "aesthetic_success": "Pending actual matched render."
+    },
+    "control_quad": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED\\control_quad.npz",
+    "control_quad_sha256": "21f2cb3610774f2f9f83ef4ffbbaa40c13f30958893b40b25d7ba28c682f0025"
+  },
+  "candidate_binding": {
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\RECEIPT.json",
+    "receipt_sha256": "f0e014664cac6f5a85e8e7fdff70089abbf27a480fc63f88f1bfcf2bd55b58a2"
+  },
+  "source_binding": {
+    "state": "CURRENT_NESTED",
+    "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+    "source_native_geometry_sha256": "cde95d13f64d86739ac25e134e67024533d6be4fafec7a5d4c7a46896b65403e",
+    "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json",
+    "source_receipt_sha256": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+    "source_render_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+    "source_render_receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508",
+    "saved_geometry": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+      "geometry_sha256": "cde95d13f64d86739ac25e134e67024533d6be4fafec7a5d4c7a46896b65403e",
+      "xyz_sha256": "2e403bec551d284a96cb0dfcc514dfcf33137b878a9a8d1ba91703b2e257fa31",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "validation": {
+        "mesh": {
+          "all_finite": true,
+          "positive_area_triangles": 28008448,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area": 8.468270444954222e-11
+        },
+        "nested": {
+          "implementation": "ACTUAL_PARENT_LOCAL_NESTED_FLANK_FOLDS_V2_READABLE",
+          "source_generation": 7,
+          "output_generation": 7,
+          "added_CC_passes": 0,
+          "added_topology_events": 0,
+          "normal_field_passes": 2,
+          "sequence": [
+            "CHILD",
+            "SMALL"
+          ],
+          "old_LINKED_WIDE_reused": false,
+          "global_micro_FLOW_added": false,
+          "physical_height_reference": 9.735842284057451,
+          "parent_support": "s=(abs(wrapped inherited parent phase)-.55)/1.8; W=64*s^3*(1-s)^3 inside 0<s<1, otherwise zero",
+          "child_phase": "qchild=2*pi*(s-.5); no independent axial oscillation",
+          "child_request": "min(.40*actual_parent_envelope,.12*actual_local_flank_width)*W*cos(qchild)",
+          "small_support": "W*quintic(clip((cos(qchild)-.15)/.65,0,1))",
+          "small_request": "min(.28*child_budget,.075*actual_local_flank_width/3)*small_mask*cos(3*qchild)",
+          "parent_envelope_scope": "Caller-bound actual G6 .006H*saved_envelope*(1-.55*saved_feature_support), transported through actual G6-to-G7 V/E/F IDs and multiplied by the declared primary MIDDLE gain.",
+          "displacement_filter": "One frozen .5*self+.5*actual_edge_neighbor_mean pass on each new delta only, then compact re-mask, pointwise norm cap, and canonical mirror-vector transport.",
+          "width_metric": {
+            "method": "Actual incoming quad diagonal Gram solve; incident RMS intrinsic phase gradient.",
+            "equation": "e1=x1-x3; e2=x2-x0; g2=(c*dphi1^2-2*b*dphi1*dphi2+a*dphi2^2)/(a*c-b^2); width=min(1.8/sqrt(mean_incident(g2)),.08H)",
+            "phase_difference": "Direct differences of actual supplied unwrapped inherited phase; no modulo aliasing.",
+            "gram_relative_threshold": 1e-08,
+            "invalid_quad_count": 0,
+            "invalid_incident_vertex_count": 0,
+            "minimum_valid_relative_gram_determinant": 2.2185581446990284e-08,
+            "maximum_actual_diagonal_phase_span": 11.615537682372647,
+            "zero_width_vertex_count": 0,
+            "flank_width_quantiles": [
+              0.0002745891306568283,
+              0.05722501207045341,
+              0.0776929993130612,
+              0.10413580481138025,
+              0.1393416041587975,
+              0.1970965622657195,
+              0.6800804650627303,
+              0.7788673827245961
+            ],
+            "small_widths_floored": false,
+            "maximum_flank_width": 0.7788673827245961,
+            "scalar_reflection": "Conservative minimum over each actual X/Y reflection orbit.",
+            "limitation": "First-order intrinsic phase spacing, not a geodesic crest-distance or remote-sheet gap/collision certificate."
+          },
+          "child": {
+            "input_xyz_sha256": "298a7c8853da37c6add586bb697c1c06fa9325d89dc64ea807d7f75a2de35755",
+            "input_normal_sha256": "c7a789a30e6a0b90d99d61318aff36aed60141234f76301c091ecad0f150abd6",
+            "delta_sha256": "e8247c4b5b18dc761d627e04bef80f155c5c98a0968edd088a11e33add89ac85",
+            "maximum_displacement": 0.030192364092097947,
+            "displacement_quantiles": [
+              0.0,
+              1.0155205491933236e-06,
+              0.007950736178748273,
+              0.016563128988509094,
+              0.030192364092097947
+            ],
+            "amplitude_budget_quantiles": [
+              0.0,
+              0.011498877965672913,
+              0.019123810241396567,
+              0.027125835006679384,
+              0.030375827926259175
+            ],
+            "maximum_budget_violation": 3.469446951953614e-18,
+            "protected_delta_maximum": 0.0,
+            "nonzero_mask_control_vertices": 3943445,
+            "moved_control_vertices": 3943441,
+            "fresh_normal_evaluation": true
+          },
+          "small": {
+            "input_xyz_sha256": "432ae645bc6066e75a1273fe955c6e50564dc4e2d7dabcbe1213220d4060c5cc",
+            "input_normal_sha256": "2a63c0e791b3a6189e913f183748c1655ea1fb58f1f40cbc77fcf508586d6c18",
+            "delta_sha256": "d7ac993cdc1dc84482d4045626f206bd15d0176a3af5ad7ff9b0d936cb5cd61f",
+            "maximum_displacement": 0.008443540122804991,
+            "displacement_quantiles": [
+              0.0,
+              0.0,
+              0.0008440259866673951,
+              0.0029355192672902404,
+              0.008443540122804991
+            ],
+            "amplitude_budget_quantiles": [
+              0.0,
+              0.002545373403711889,
+              0.004190281486294455,
+              0.0069976109920234526,
+              0.00850523181935257
+            ],
+            "maximum_budget_violation": 8.673617379884035e-19,
+            "protected_delta_maximum": 0.0,
+            "nonzero_mask_control_vertices": 1780404,
+            "moved_control_vertices": 1780400,
+            "fresh_normal_evaluation": true
+          },
+          "child_budget_max_parent_fraction": 0.4,
+          "small_budget_max_child_fraction": 0.28,
+          "actual_child_parent_budget_maximum_violation": 0.0,
+          "actual_small_child_budget_maximum_violation": 0.0,
+          "actual_small_parent_mask_maximum_violation": 0.0,
+          "protected_control_vertices": 3058669,
+          "protected_output_maximum_motion": 0.0,
+          "input_xyz_sha256": "298a7c8853da37c6add586bb697c1c06fa9325d89dc64ea807d7f75a2de35755",
+          "input_quads_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+          "input_parent_phase_sha256": "a6e30ce8d733182e2b8bdc0d264927109c0c8f28672d44fe87604f6ba9d69afa",
+          "input_parent_envelope_sha256": "6bf7f1622d2918a9feddfa7dd256d41afcadb5701455289ca01e59fd985b3eec",
+          "intermediate_child_xyz_sha256": "432ae645bc6066e75a1273fe955c6e50564dc4e2d7dabcbe1213220d4060c5cc",
+          "output_xyz_sha256": "ec3a6d98809a5b1f65b101bef2cb6cd6cf9f6ca59a9e8600d5c913db3461d028",
+          "source_geometry_averaged": false,
+          "associations_unchanged": true,
+          "scalar_reflection": "Masks use the minimum-ID orbit representative; physical width/envelope caps use conservative reflection-orbit minima.",
+          "code_binding": {
+            "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py": "5f9693775aa17e01a4347790a21d46ddc55f216de52956abdf1c3e20b193fde5",
+            "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844",
+            "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+            "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+            "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+          },
+          "support_scope": "Counts refer to control vertices, not measured surface area.",
+          "limitations": "Authored field dependency on actual inherited MIDDLE phase, not semantic ridge/termination detection or a recursive topology branch. First-order physical width caps do not prove global collision freedom. Visual hierarchy remains subject to matched whole-column and close render review."
+        },
+        "output_XY_position_symmetry_error": 3.3084646133829665e-14,
+        "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "native_fan_centres": "Arithmetic means of moved G7 quad corners; no independent lift.",
+        "self_intersection_checked": false,
+        "aesthetic_success": "Pending actual matched render."
+      },
+      "control_quad": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz",
+      "control_quad_sha256": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3"
+    },
+    "views": {
+      "close_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        1.25
+      ],
+      "body_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          0,
+          0,
+          6.25
+        ],
+        4.3
+      ],
+      "front": [
+        [
+          0,
+          32,
+          5
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        12.0
+      ]
+    },
+    "actual_views": {
+      "close_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        "scale": 1.25,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      },
+      "body_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          0,
+          0,
+          6.25
+        ],
+        "scale": 4.300000190734863,
+        "forward": [
+          0.5328656435012817,
+          -0.8289023041725159,
+          -0.17022091150283813
+        ]
+      },
+      "front": {
+        "position": [
+          0.0,
+          32.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          5
+        ],
+        "scale": 12.0,
+        "forward": [
+          -1.1399865765455465e-14,
+          -1.0,
+          7.549790126404332e-08
+        ]
+      }
+    },
+    "conditions": {
+      "engine": "CYCLES",
+      "resolution": [
+        900,
+        900
+      ],
+      "resolution_percentage": 100,
+      "samples": 24,
+      "denoising": true,
+      "view_transform": "AgX",
+      "image_format": "PNG",
+      "camera_type": "ORTHO",
+      "material_base_color": [
+        0.5,
+        0.4699999988079071,
+        0.4099999964237213,
+        1.0
+      ],
+      "material_roughness": 0.8399999737739563,
+      "smooth_polygons": 0,
+      "modifiers": [],
+      "normal_maps": false,
+      "world_color": [
+        0.054999999701976776,
+        0.06300000101327896,
+        0.07500000298023224,
+        1.0
+      ],
+      "world_strength": 0.4000000059604645,
+      "lights": {
+        "Key": {
+          "position": [
+            -20.0,
+            25.0,
+            32.0
+          ],
+          "power": 36000.0,
+          "size": 17.0,
+          "shape": "DISK"
+        },
+        "Fill": {
+          "position": [
+            24.0,
+            13.0,
+            15.0
+          ],
+          "power": 8500.0,
+          "size": 18.0,
+          "shape": "DISK"
+        },
+        "Rim": {
+          "position": [
+            0.0,
+            -23.0,
+            29.0
+          ],
+          "power": 26000.0,
+          "size": 13.0,
+          "shape": "DISK"
+        }
+      }
+    },
+    "Blender_version": "4.5.4 LTS",
+    "geometry_counts": {
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "source_arrays": {
+        "xyz_sha256": "2e403bec551d284a96cb0dfcc514dfcf33137b878a9a8d1ba91703b2e257fa31",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+      },
+      "expected_display_arrays": {
+        "xyz_float32_sha256": "70197fba8d7a3c4236bd336298392650aeb67fc7f95b2ce48c0b229fb046e8bb",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      }
+    },
+    "display_readback": {
+      "geometry": {
+        "xyz_float32_sha256": "70197fba8d7a3c4236bd336298392650aeb67fc7f95b2ce48c0b229fb046e8bb",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      },
+      "smooth_polygons": 0,
+      "polygons": 28008448,
+      "use_smooth_flags_sha256": "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+      "all_use_smooth": false,
+      "geometry_unchanged": true,
+      "modifiers": [],
+      "custom_normal_map": false
+    },
+    "images": [
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\close_oblique.png",
+        "sha256": "574dea2b021c1ea9833846187b521a170baa2d73fa7858685d3ab85099dc2b57",
+        "reused_reference": true,
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+        "receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\body_oblique.png",
+        "sha256": "47d12e482eb31be4ac150d8a4db4814772d86edf4df8a0aadb25ee2839bccbf1",
+        "reused_reference": true,
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+        "receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+      },
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\front.png",
+        "sha256": "06a4218510d982946319384989560ea2a6a12f2bc2c55803e26bcf45e277dbeb",
+        "reused_reference": true,
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+        "receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+      }
+    ]
+  },
+  "geometry_counts": {
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "source_arrays": {
+      "xyz_sha256": "f94e925f113a452b508142945ffb982e9e920d58213c1a6db4ca7cb01f2e9369",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+    },
+    "expected_display_arrays": {
+      "xyz_float32_sha256": "1e6b73f17b14e344f3e991a9aa128b7b9fbac97de00635ff31788cd8fa4a10ce",
+      "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+    }
+  },
+  "display_readback": {
+    "geometry": {
+      "xyz_float32_sha256": "1e6b73f17b14e344f3e991a9aa128b7b9fbac97de00635ff31788cd8fa4a10ce",
+      "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+    },
+    "smooth_polygons": 0,
+    "polygons": 28008448,
+    "use_smooth_flags_sha256": "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+    "all_use_smooth": false,
+    "geometry_unchanged": true,
+    "modifiers": [],
+    "custom_normal_map": false
+  },
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    }
+  },
+  "images": [
+    {
+      "view": "close_oblique",
+      "filename": "close_oblique.png",
+      "sha256": "d5708d80033be2452c00720e99dd6c77e56dcb3d12f2908e937443b908573d00"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "87f284db0d54c3923ccc9332eb8881e7b2119fd18a17559a4e04790ee68f4041"
+    },
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "4db056bf3180d56aaf643dac7d786aa74e1c837e907cdf471a0986d03d07a65d"
+    }
+  ],
+  "geometry_unchanged_by_renderer": true,
+  "all_flat": true,
+  "geometry_processing": false,
+  "normal_maps": false,
+  "modifiers": [],
+  "version": "4.5.4 LTS",
+  "code_sha256": {
+    "renderer": "a5973a77346ab068b24f6dd659e4dc6804337a649240702ac4a2a3a167ccda06",
+    "preserved_renderer_sha256": "2f7777d71643cd179e8d6a33e7c729f915b1e7830aba84b29777f10675423f36",
+    "preserved_renderer_code": {
+      "renderer": "2f7777d71643cd179e8d6a33e7c729f915b1e7830aba84b29777f10675423f36",
+      "preserved_renderer_sha256": "019b2b9746d6a3eeef5a10886fe876bd9fe7aa0d0b2bfdeb753597c6bba704a2",
+      "preserved_renderer_code": {
+        "renderer": "019b2b9746d6a3eeef5a10886fe876bd9fe7aa0d0b2bfdeb753597c6bba704a2",
+        "frozen_renderer_sha256": "991f51a0f86c75f7e150e1c70c064782e2a83b4ede064d504c5136d2348f4588",
+        "frozen_renderer_code": {
+          "render": "991f51a0f86c75f7e150e1c70c064782e2a83b4ede064d504c5136d2348f4588",
+          "preserved_renderer_sha256": "f38dbaea29bdd71ef6000f64328bdd4db7515404901253365ce072588c2db141",
+          "preserved_renderer_code": {
+            "render": "f38dbaea29bdd71ef6000f64328bdd4db7515404901253365ce072588c2db141",
+            "preserved_renderer_sha256": "8a82a55ed86afbbd923e7252ad2508844c19814bfe54f1f1f7d238d58b7324fb",
+            "preserved_renderer_code": {
+              "render": "8a82a55ed86afbbd923e7252ad2508844c19814bfe54f1f1f7d238d58b7324fb",
+              "scaffold_sha256": "08c503ae0895869090693ca01301394332583cdb6d3d129abc97300629496c13",
+              "preserved_scaffold_code": {
+                "render": "08c503ae0895869090693ca01301394332583cdb6d3d129abc97300629496c13",
+                "scaffold_sha256": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+                "preserved_scaffold_code": {
+                  "render": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+                  "preserved_renderer_sha256": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+                  "preserved_renderer_code": {
+                    "render": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+                    "preserved_native_renderer": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+                    "preserved_native_code": {
+                      "render": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+                      "native_helper_sha256": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+                      "preserved_renderer_hashes": {
+                        "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+                        "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+                        "parent_code_sha256": {
+                          "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+                          "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                          "raw_code_sha256": {
+                            "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                            "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                            "parent_code_sha256": {
+                              "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                              "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                              "parent_code_sha256": {
+                                "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                                "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                                "raw_code_sha256": {
+                                  "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                                  "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                                  "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                                  "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                                  "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                                  "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "image_checker_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "source_snapshot": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\ordered_primary_folds_20261014\\render.py",
+    "snapshot": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\source_snapshot_render\\experiments\\ordered_primary_folds_20261014\\render.py",
+    "sha256": "a5973a77346ab068b24f6dd659e4dc6804337a649240702ac4a2a3a167ccda06"
+  },
+  "comparison_scope": "Latest actual NESTED versus ordered-primary G7 design. Existing source PNGs are reused; the saved candidate alone is loaded and rendered. Same cameras, material, lights, resolution, samples, native faces/counts and all-flat shading. No geometry processing or normal-map detail is performed by the renderer."
+}

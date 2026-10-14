@@ -1,0 +1,56 @@
+<div id="cheshire-ordered-primary-folds">
+  <div class="viz-controls" aria-label="결과 비교">
+    <button type="button" class="btn" data-state="before" aria-pressed="false">이전 결과</button>
+    <button type="button" class="btn" data-state="after" aria-pressed="true">주축 강조</button>
+  </div>
+  <div class="viz-controls" aria-label="보기">
+    <button type="button" class="btn" data-view="front" aria-pressed="false">전체 정면</button>
+    <button type="button" class="btn" data-view="body" aria-pressed="true">기둥 몸체</button>
+    <button type="button" class="btn" data-view="close" aria-pressed="false">근접</button>
+  </div>
+  <figure>
+    <img data-image alt="주축 강조의 기둥 몸체 렌더" src="__DEFAULT_IMAGE__">
+    <figcaption class="text-small" data-caption aria-live="polite">주축 강조 · 기둥 몸체</figcaption>
+  </figure>
+</div>
+<style>
+  #cheshire-ordered-primary-folds figure { margin: 0; }
+  #cheshire-ordered-primary-folds img { display: block; width: 100%; height: auto; }
+  #cheshire-ordered-primary-folds figcaption { padding-top: 8px; color: var(--muted-foreground); }
+</style>
+<script>
+(() => {
+  const root = document.getElementById('cheshire-ordered-primary-folds');
+  const images = __IMAGE_DATA__;
+  const stateNames = {before: '이전 결과', after: '주축 강조'};
+  const viewNames = {front: '전체 정면', body: '기둥 몸체', close: '근접'};
+  let state = 'after';
+  let view = 'body';
+  const picture = root.querySelector('[data-image]');
+  const caption = root.querySelector('[data-caption]');
+  function draw() {
+    picture.src = images[state][view];
+    picture.alt = stateNames[state] + '의 ' + viewNames[view] + ' 렌더';
+    caption.textContent = stateNames[state] + ' · ' + viewNames[view];
+    root.querySelectorAll('[data-state]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.state === state)));
+    root.querySelectorAll('[data-view]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === view)));
+  }
+  function restore(snapshot) {
+    const value = snapshot && snapshot.modelContent;
+    if (value && value.comparison === 'ordered-primary-folds') {
+      if (Object.hasOwn(images, value.state)) state = value.state;
+      if (Object.hasOwn(viewNames, value.view)) view = value.view;
+    }
+    draw();
+  }
+  function save() {
+    if (window.openai && window.openai.setWidgetState) {
+      window.openai.setWidgetState({modelContent: {comparison: 'ordered-primary-folds', state, view}, privateContent: null}).catch(() => {});
+    }
+  }
+  root.querySelectorAll('[data-state]').forEach(button => button.addEventListener('click', () => { state = button.dataset.state; draw(); save(); }));
+  root.querySelectorAll('[data-view]').forEach(button => button.addEventListener('click', () => { view = button.dataset.view; draw(); save(); }));
+  window.addEventListener('openai:set_globals', event => restore(event.detail && event.detail.globals && event.detail.globals.widgetState));
+  restore(window.openai && window.openai.widgetState);
+})();
+</script>

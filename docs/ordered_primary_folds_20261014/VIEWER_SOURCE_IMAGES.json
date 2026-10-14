@@ -1,0 +1,247 @@
+{
+  "comparison": "Latest actual NESTED02 versus actual ORDERED",
+  "native_geometry_before": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+  "native_geometry_before_sha256": "cde95d13f64d86739ac25e134e67024533d6be4fafec7a5d4c7a46896b65403e",
+  "native_geometry_after": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED\\geometry.npz",
+  "native_geometry_after_sha256": "bc155aa4780d5d9e2b228c193f01d0a29964b60b7cd4abdbc2e7b1975ba9be53",
+  "candidate_generation_receipt": {
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\RECEIPT.json",
+    "receipt_sha256": "f0e014664cac6f5a85e8e7fdff70089abbf27a480fc63f88f1bfcf2bd55b58a2"
+  },
+  "candidate_render_receipt": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED_FLAT\\review\\receipt.json",
+  "candidate_render_receipt_sha256": "24acc4d2113c73b84489c145b8f23216dc4ffbfe93dc6c2062891e1bc3f867f9",
+  "baseline_render_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+  "baseline_render_receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508",
+  "same_actual_cameras": true,
+  "same_actual_conditions": true,
+  "all_flat": true,
+  "geometry_processing": false,
+  "normal_maps": false,
+  "images": [
+    {
+      "state": "before",
+      "view": "front",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\front.png",
+      "source_png_sha256": "06a4218510d982946319384989560ea2a6a12f2bc2c55803e26bcf45e277dbeb",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\before_front.jpg",
+      "derivative_jpeg_sha256": "ee2511af040025e7718cff08e6e23b4b5599fd38ca2812a67ed3076dcd862661",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          0.0,
+          32.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          5
+        ],
+        "scale": 12.0,
+        "forward": [
+          -1.1399865765455465e-14,
+          -1.0,
+          7.549790126404332e-08
+        ]
+      }
+    },
+    {
+      "state": "before",
+      "view": "body_oblique",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\body_oblique.png",
+      "source_png_sha256": "47d12e482eb31be4ac150d8a4db4814772d86edf4df8a0aadb25ee2839bccbf1",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\before_body.jpg",
+      "derivative_jpeg_sha256": "fd78ae5ae0056bd522ae15198892c39111d170c1b171a9d1b5332bcbd62dcbf3",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          0,
+          0,
+          6.25
+        ],
+        "scale": 4.300000190734863,
+        "forward": [
+          0.5328656435012817,
+          -0.8289023041725159,
+          -0.17022091150283813
+        ]
+      }
+    },
+    {
+      "state": "before",
+      "view": "close_oblique",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\close_oblique.png",
+      "source_png_sha256": "574dea2b021c1ea9833846187b521a170baa2d73fa7858685d3ab85099dc2b57",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\before_close.jpg",
+      "derivative_jpeg_sha256": "460a4bb12760341b3d98d6d6c11dde7e08415661a334f9a2efe362654a9f0c54",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        "scale": 1.25,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      }
+    },
+    {
+      "state": "after",
+      "view": "front",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED_FLAT\\review\\front.png",
+      "source_png_sha256": "4db056bf3180d56aaf643dac7d786aa74e1c837e907cdf471a0986d03d07a65d",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\after_front.jpg",
+      "derivative_jpeg_sha256": "b438179fc6ad7931a8bb6eee215d81c9627e85a6a47d3f1ea240e6dd9f7d8bb6",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          0.0,
+          32.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          5
+        ],
+        "scale": 12.0,
+        "forward": [
+          -1.1399865765455465e-14,
+          -1.0,
+          7.549790126404332e-08
+        ]
+      }
+    },
+    {
+      "state": "after",
+      "view": "body_oblique",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED_FLAT\\review\\body_oblique.png",
+      "source_png_sha256": "87f284db0d54c3923ccc9332eb8881e7b2119fd18a17559a4e04790ee68f4041",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\after_body.jpg",
+      "derivative_jpeg_sha256": "8afb9bb773e857265330cf381f5c156ed808220dc490a171577acb8c93eef6d5",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          0,
+          0,
+          6.25
+        ],
+        "scale": 4.300000190734863,
+        "forward": [
+          0.5328656435012817,
+          -0.8289023041725159,
+          -0.17022091150283813
+        ]
+      }
+    },
+    {
+      "state": "after",
+      "view": "close_oblique",
+      "source_png": "E:\\CHESHIRE_DATA\\experiments\\ordered_primary_folds_20261014\\trial04\\ORDERED_FLAT\\review\\close_oblique.png",
+      "source_png_sha256": "d5708d80033be2452c00720e99dd6c77e56dcb3d12f2908e937443b908573d00",
+      "derivative_jpeg": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\after_close.jpg",
+      "derivative_jpeg_sha256": "057c98d12059af9d029d4425c538840969ebddd345f5c7ecda7e7519a49936a9",
+      "source_size": [
+        900,
+        900
+      ],
+      "derivative_size": [
+        680,
+        680
+      ],
+      "crop": false,
+      "jpeg_quality": 82,
+      "actual_camera": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        "scale": 1.25,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      }
+    }
+  ],
+  "viewer_path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\ordered-primary-folds\\ordered-primary-folds.html",
+  "viewer_sha256": "2aa9ee7716d6ab5c2032c22df1ca376087fe094a03b4962fbf56919c6bd79e9b",
+  "viewer_bytes": 374138,
+  "default_state": "after",
+  "default_view": "body",
+  "template": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\ordered_primary_folds_20261014\\viewer.fragment.html",
+  "template_sha256": "35d5faf103b08e22b6fbbd04031f6609b20e7c27076191b319f3a8328cdfbf04",
+  "builder": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\ordered_primary_folds_20261014\\build_viewer.py",
+  "builder_sha256": "6507e28eca5d4832b92a806fc9531c0ed0eeab110bcca2eff285e93fa7cc1699"
+}
