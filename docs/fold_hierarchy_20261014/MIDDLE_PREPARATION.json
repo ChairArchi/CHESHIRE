@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "schema": "CHESHIRE_ACTUAL_NEUTRAL_CC_MIDDLE_DELTA_EXTRACTION_V1",
+  "candidate_generated": false,
+  "accepted_source": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+    "sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+    "xyz_sha256": "ff3dcba308680422050a77e8a29b88c68ae117847649e70a5f89d5fd01db0c13",
+    "association_npy_sha256": {
+      "faces": "c92bcbaca9a86a778373580a86d9f57d8381d3ef4f0e57a8164426ceb9991317",
+      "chart": "dd26c392d18bd83d37bbdcf81ed4f6ef041d8b88a62cc1c1b5df74bf31f69b2e",
+      "classes": "b3afcb311ab544c43ee0d5ba33071e9fc17f9c798c75688f5e0050fb5a741357",
+      "rest": "c6edf617534971894ce652d2b017573d72f3cf3f4fcfe317a0ddc4ff466c0c84",
+      "anchors": "4711ba77d699cbd4310cd9cafaf7dd641bb707422bc0fe9744fe9d7ff4bc4b44",
+      "generation": "bf829c4710025ea559002e4a00d3d062c0ff73f046ff4419e374d3656ce1c1c3",
+      "surface": "5e15d49e1511131fb2eedc67f799d809fdc0e52d7d3535233c18393478f696f0"
+    }
+  },
+  "prior_preparation": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\PREPARATION.json",
+    "sha256": "0c413ec2ba61d40b6f12be01f2acab32c42183552a7a087dbd8bd3d528dcc247"
+  },
+  "actual_proofs": {
+    "original": {
+      "actual_G6_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+      "actual_G6_input_edges_sha256": "c55ba5b6a46b7761d4e17aafbeb327baad5ab17b3dd337952d5508935662cdc0",
+      "actual_G7_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "actual_following_edge_ids_sha256": "9ee04e4aede35f446ed5b23e2f59c3bc8edb0a3d3600baf52f496caadb8fb179",
+      "old_corner_ids_exact": true,
+      "face_center_ids_exact": true,
+      "preceding_edge_ids_exact": true,
+      "every_edge_matches_actual_G6_endpoints": true,
+      "every_edge_has_two_face_incidences": true,
+      "source_vertex_edge_degree_equals_face_degree": true,
+      "G6_vertices": 1750530,
+      "G6_edges": 3501056,
+      "G6_quads": 1750528,
+      "G7_vertices": 7002114,
+      "G7_quads": 7002112,
+      "checked_saved_SURFACE_max_coordinate_error": 3.552713678800501e-15,
+      "coordinate_reproduction_tolerance": 1e-13,
+      "actual_MIDDLE_delta_reconstructs_its_output_array_exact": true,
+      "actual_incoming_G6_control": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\control_quad.npz",
+        "sha256": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50"
+      },
+      "actual_G6_delta_sha256": "475ab2d0dcefe16abe644ebd61095f877bd4f50937535c70c8d1ba1b14459b8f",
+      "actual_lifted_G7_delta_sha256": "c9aac66b5b12dabe941f903971e8d4fea7faa79015b8126c2947b0e19b6df56d",
+      "actual_G6_evidence_sha256": "06c313bf7c492c91cefdd62f43ee3aa8ca4349ab3fc7f6bc28657e87fd708806",
+      "actual_G7_evidence_sha256": "ca08819a3a44aa6b7f73b398c7d32bef7b28e8ccd2051ae0c0ec755165401a8c"
+    },
+    "replay": {
+      "actual_G6_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+      "actual_G6_input_edges_sha256": "c55ba5b6a46b7761d4e17aafbeb327baad5ab17b3dd337952d5508935662cdc0",
+      "actual_G7_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "actual_following_edge_ids_sha256": "9ee04e4aede35f446ed5b23e2f59c3bc8edb0a3d3600baf52f496caadb8fb179",
+      "old_corner_ids_exact": true,
+      "face_center_ids_exact": true,
+      "preceding_edge_ids_exact": true,
+      "every_edge_matches_actual_G6_endpoints": true,
+      "every_edge_has_two_face_incidences": true,
+      "source_vertex_edge_degree_equals_face_degree": true,
+      "G6_vertices": 1750530,
+      "G6_edges": 3501056,
+      "G6_quads": 1750528,
+      "G7_vertices": 7002114,
+      "G7_quads": 7002112,
+      "checked_saved_SURFACE_max_coordinate_error": 3.552713678800501e-15,
+      "coordinate_reproduction_tolerance": 1e-13,
+      "actual_MIDDLE_delta_reconstructs_its_output_array_exact": true,
+      "actual_incoming_G6_control": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\control_quad.npz",
+        "sha256": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1"
+      },
+      "actual_G6_delta_sha256": "e43364cdcbaf15916eda14df684bb139aa4028eea256220ad2248b5d0a073c0a",
+      "actual_lifted_G7_delta_sha256": "a6f061d1c6296ee68a992bb7ee99b690fd0f5f19fe6ec2402b60df06bb13d66b",
+      "actual_G6_evidence_sha256": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+      "actual_G7_evidence_sha256": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e"
+    }
+  },
+  "stencil": {
+    "face": "mean(delta at four actual G6 quad corners)",
+    "edge": "(delta_a+delta_b+sum(two actual incident completed face deltas))/4",
+    "vertex": "(Fbar+2*Rbar+(degree-3)*delta_vertex)/degree",
+    "actual_ID_order": "Actual saved G7 old vertices, original input_edges, input_faces. Actual G7 child IDs validate all associations and edge incidence.",
+    "no_normals_or_global_topology_sort": true,
+    "numerical_scope": "Same mathematical weights-zero reference operator; summation order may differ by inherited floating-point roundoff, measured on actual saved surfaces before delta extraction."
+  },
+  "effective_formula": "delta_middle=neutralCC(deltaM6_original)+saved_end_mask*(neutralCC(deltaM6_replay)-neutralCC(deltaM6_original))",
+  "mask": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+    "sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab"
+  },
+  "output": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\MIDDLE_COMPONENT.npz",
+    "sha256": "4b856cb97b111e567e97ef6c93436b87532a5a5488eefe2c9bda6e07744e833f",
+    "bytes": 159764954,
+    "array": "delta_middle",
+    "shape": [
+      7002114,
+      3
+    ],
+    "dtype": "float64",
+    "array_sha256": "c1a88bfd52add6e6f6a3b9ea343edd15859786a3cd929246bd08ddb471a238cc",
+    "maximum_norm": 0.05840343341947133
+  },
+  "executed_source_sha256": {
+    "middle_lift": "a690992d598b80edda23fdcb6f0319b91acafe2d1f531f0d9226022e20b44105",
+    "frozen_prepare": "5e833d00b8639b70ab8f018fc25d97b88b93a3959a67d121b70a4614a62e0f29"
+  },
+  "elapsed_seconds": 33.164259499986656,
+  "scope": "Only accepted MIDDLE normal-field contribution transported by actual verified neutral G6->G7 operator. No candidate geometry, global G8, new G1-G7 growth rule, or source-code/data changes."
+}

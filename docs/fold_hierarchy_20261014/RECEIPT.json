@@ -1,0 +1,387 @@
+{
+  "kind": "ONE_HIERARCHY_AND_PARENT_SCALE_G7_UPDATE",
+  "date": "2026-10-14",
+  "source_control_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "design_source_native_path": "E:/CHESHIRE_DATA/experiments/comb_scale_refinement_20261014/trial01/REFINED/geometry.npz",
+  "design_source_native_geometry_sha256": "37549b71c997a65943fbb6416d008b748ecba4ab05898eadfea95bc994e3a710",
+  "variants": {
+    "HIERARCHY": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\HIERARCHY\\geometry.npz",
+      "geometry_sha256": "e58961ffe5cbf5cdbd12ba37c4460a3c54820e75ba539fbcc484088d86f79d46",
+      "xyz_sha256": "f77c2f5e3835b5dff576b50eb2aa554df276a4f5cacc034cbeb30f54036039e4",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "validation": {
+        "hierarchy": {
+          "implementation": "SAVED_COMPONENT_PARENT_HIERARCHY_V1",
+          "generation": 7,
+          "full_G1_G7_replay": false,
+          "new_G8": false,
+          "component_reconstruction_maximum_error": 1.7763568394002505e-15,
+          "phase_cycles_range": [
+            0.0,
+            5.0
+          ],
+          "primary_cycles_per_quadrant": [
+            1,
+            4
+          ],
+          "primary_profile": "p=1-(1-exp(-((k-1)/.70)^4))*(1-exp(-((k-4)/.70)^4)); k=saved_unwrapped_phase/(2*pi)",
+          "gains": {
+            "MIDDLE": ".45+.55*p",
+            "LINKED": ".30+.70*p",
+            "WIDE": ".18+.82*p"
+          },
+          "gain_quantiles": {
+            "MIDDLE": [
+              0.4500000007661414,
+              0.45001935147092825,
+              0.7250275641520463,
+              0.999622225845594,
+              1.0
+            ],
+            "LINKED": [
+              0.300000000975089,
+              0.3000246291448177,
+              0.6500350816480587,
+              0.9995191965307559,
+              1.0
+            ],
+            "WIDE": [
+              0.1800000011422471,
+              0.18002885128392931,
+              0.5900410956448687,
+              0.9994367730788856,
+              1.0
+            ]
+          },
+          "changed_control_vertices": 7001550,
+          "displacement_norm_quantiles": [
+            5.942167460979114e-06,
+            0.003638608929706642,
+            0.023582450668303074,
+            0.036342347403737686,
+            0.06832803024196075
+          ],
+          "source_XY_position_symmetry_error": 4.785061236134425e-14,
+          "finished_XY_position_symmetry_error": 4.785061236134425e-14,
+          "method": "Actual verified neutral-CC-lifted G6 MIDDLE and actual G7 LINKED/WIDE saved coordinate contributions reweighted. Canonical actual vertex mirror delta transported without source averaging.",
+          "limits": "Saved field contribution reweighting; later field normals are not regenerated on the new carrier. Not a full replay or a new variation pipeline. Global intersections and end morphology remain unverified."
+        },
+        "mesh": {
+          "all_finite": true,
+          "positive_area_triangles": 28008448,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area": 4.431676303493e-11
+        },
+        "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "connectivity": "Exact original G7 native fan indices; original topology inherited."
+      },
+      "control_quad": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\HIERARCHY\\control_quad.npz",
+      "control_quad_sha256": "194d9c05648778c4d56dc22a9a54bd6a934933ec33f56f6c7f1d15b3e4e9f0ba"
+    },
+    "FINISHED": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\FINISHED\\geometry.npz",
+      "geometry_sha256": "5187bc2e59616b16165f9252af0e76ad792fd87b327f987ecd84c492a5d56725",
+      "xyz_sha256": "191dda6be3239ccb74501af179406808623468faed8a3c77cd0d93c40806fbac",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "validation": {
+        "hierarchy": {
+          "implementation": "SAVED_COMPONENT_PARENT_HIERARCHY_V1",
+          "generation": 7,
+          "full_G1_G7_replay": false,
+          "new_G8": false,
+          "component_reconstruction_maximum_error": 1.7763568394002505e-15,
+          "phase_cycles_range": [
+            0.0,
+            5.0
+          ],
+          "primary_cycles_per_quadrant": [
+            1,
+            4
+          ],
+          "primary_profile": "p=1-(1-exp(-((k-1)/.70)^4))*(1-exp(-((k-4)/.70)^4)); k=saved_unwrapped_phase/(2*pi)",
+          "gains": {
+            "MIDDLE": ".45+.55*p",
+            "LINKED": ".30+.70*p",
+            "WIDE": ".18+.82*p"
+          },
+          "gain_quantiles": {
+            "MIDDLE": [
+              0.4500000007661414,
+              0.45001935147092825,
+              0.7250275641520463,
+              0.999622225845594,
+              1.0
+            ],
+            "LINKED": [
+              0.300000000975089,
+              0.3000246291448177,
+              0.6500350816480587,
+              0.9995191965307559,
+              1.0
+            ],
+            "WIDE": [
+              0.1800000011422471,
+              0.18002885128392931,
+              0.5900410956448687,
+              0.9994367730788856,
+              1.0
+            ]
+          },
+          "changed_control_vertices": 7001550,
+          "displacement_norm_quantiles": [
+            5.942167460979114e-06,
+            0.003638608929706642,
+            0.023582450668303074,
+            0.036342347403737686,
+            0.06832803024196075
+          ],
+          "source_XY_position_symmetry_error": 4.785061236134425e-14,
+          "finished_XY_position_symmetry_error": 4.785061236134425e-14,
+          "method": "Actual verified neutral-CC-lifted G6 MIDDLE and actual G7 LINKED/WIDE saved coordinate contributions reweighted. Canonical actual vertex mirror delta transported without source averaging.",
+          "limits": "Saved field contribution reweighting; later field normals are not regenerated on the new carrier. Not a full replay or a new variation pipeline. Global intersections and end morphology remain unverified."
+        },
+        "texture": {
+          "implementation": "PARENT_COARSE_DIAGONAL_NATIVE_RELIEF_V1",
+          "source_control_vertices": 7002114,
+          "source_control_quads": 7002112,
+          "native_vertices": 14004226,
+          "native_triangles": 28008448,
+          "actual_parent_patches": 1750528,
+          "requested_parent_patches": 1111612,
+          "accepted_parent_patches": 1083952,
+          "unsafe_parent_patches_excluded": 27660,
+          "fixed_parent_patches_left_untouched": 0,
+          "changed_native_prefix_centres": 1083736,
+          "changed_native_child_fan_centres": 4334764,
+          "unchanged_native_prefix_vertices": 5918378,
+          "hierarchy_and_texture_scope": "One native diagonal repeat spans four actual G7 children of one G6 parent; approximately twice the corresponding linear material footprint. Existing curved G7 parent boundaries are retained; no G8 or additional subdivision.",
+          "profile": "Parent centre +h*N; two higher-diagonal child fan centres +h*N; other child fan centres +.25h*N. Eight curved boundary points remain unchanged.",
+          "height": "h=min(.55*prepared_parent_weight*minimum_positive_projected_8boundary_altitude,H*.0012)",
+          "physical_height_reference": 9.735842284057451,
+          "height_cap": 0.01168301074086894,
+          "height_cap_parent_count": 0,
+          "height_quantiles": [
+            1.3400526261339618e-06,
+            0.0003711459626447017,
+            0.0015851153731528892,
+            0.002846183936500119
+          ],
+          "minimum_new_changed_triangle_area": 2.6905903979390618e-09,
+          "minimum_changed_triangle_old_new_normal_cosine": 0.005880750881610603,
+          "source_fan_pitch_quantiles_degrees": [
+            1.1047515273094177,
+            4.915616989135742,
+            16.7600736618042,
+            44.29106521606445
+          ],
+          "finished_fan_pitch_quantiles_degrees": [
+            1.6791383624076843,
+            11.11520528793335,
+            34.5965461730957,
+            50.799625396728516
+          ],
+          "maximum_delta_XY_symmetry_error": 8.881784197001252e-16,
+          "maximum_source_plus_delta_reconstruction_error": 0.0,
+          "unchanged_source_boundary_and_other_prefix_vertices_checked": true,
+          "source_native_fan_topology_exact": true,
+          "zero_weight_native_geometry_effect": true,
+          "validation": "All 16 actually changed triangles per parent have positive area and positive old/new cross product dot. Unsafe whole mirror orbits excluded once; no amplitude retry.",
+          "source_control_xyz_sha256": "17d920014557cec688ae19c3f32e19d76116f5f4f7b4fea125478335e1db75a8",
+          "source_control_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+          "native_xyz_sha256": "191dda6be3239ccb74501af179406808623468faed8a3c77cd0d93c40806fbac",
+          "native_faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+          "limits": "Native detail displaces existing G7 parent-centre prefix vertices. Saved control carrier is immutable and differs from that native prefix intentionally. No global self-intersection or fabrication certificate."
+        },
+        "support": {
+          "source_mask": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MASK.npz",
+          "source_sha256": "db4b3b8f0bebd4907f25e3316cdd3a918e987bf99d941811586c365fdbf8a88a",
+          "aggregation": "Mean of four actual G7 child weights per G6 parent",
+          "feather": "One .65*self + .35*mean_of_four_actual_edge_neighbors pass",
+          "exact_actual_parent_mirror_transport": true,
+          "fine_child_support_count": null,
+          "parent_support_before": 938604,
+          "parent_support_after": 1111612,
+          "parent_count": 1750528,
+          "note": "No new coarse-cell size gate or world-axis gate; support inherits the accepted broad mask."
+        },
+        "mesh": {
+          "all_finite": true,
+          "positive_area_triangles": 28008448,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area": 4.431676303493e-11
+        },
+        "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "self_intersection_checked": false,
+        "aesthetic_success": "Requires actual rendered comparison"
+      }
+    }
+  },
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+    "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MASK.npz": "db4b3b8f0bebd4907f25e3316cdd3a918e987bf99d941811586c365fdbf8a88a",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\COMPONENTS.npz": "3d2f4c1e1b46ad1ae881bf0f2130ebf85d9587bc3c2506604bf6f0346176314c",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\MIDDLE_COMPONENT.npz": "4b856cb97b111e567e97ef6c93436b87532a5a5488eefe2c9bda6e07744e833f",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\texture.py": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a"
+  },
+  "source_snapshots": {
+    "run.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\run.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\source_snapshot_run\\run.py",
+      "sha256": "7d16d720b3da8f94eb76c322a9d8e24a7a7ca4507371dbbf82bc233c465d2939"
+    },
+    "texture.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\source_snapshot_run\\texture.py",
+      "sha256": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a"
+    },
+    "prepare.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\prepare.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\source_snapshot_run\\prepare.py",
+      "sha256": "5e833d00b8639b70ab8f018fc25d97b88b93a3959a67d121b70a4614a62e0f29"
+    },
+    "middle_lift.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\middle_lift.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\source_snapshot_run\\middle_lift.py",
+      "sha256": "a690992d598b80edda23fdcb6f0319b91acafe2d1f531f0d9226022e20b44105"
+    }
+  },
+  "preparation_receipts": {
+    "PREPARATION.json": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\PREPARATION.json",
+      "sha256": "0c413ec2ba61d40b6f12be01f2acab32c42183552a7a087dbd8bd3d528dcc247"
+    },
+    "MIDDLE_PREPARATION.json": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\MIDDLE_PREPARATION.json",
+      "sha256": "177b0e14b9745ed6927cb1845430d4d46dce541dc0c4bb8bcf42fc053b1f7f93"
+    }
+  },
+  "hierarchy": {
+    "implementation": "SAVED_COMPONENT_PARENT_HIERARCHY_V1",
+    "generation": 7,
+    "full_G1_G7_replay": false,
+    "new_G8": false,
+    "component_reconstruction_maximum_error": 1.7763568394002505e-15,
+    "phase_cycles_range": [
+      0.0,
+      5.0
+    ],
+    "primary_cycles_per_quadrant": [
+      1,
+      4
+    ],
+    "primary_profile": "p=1-(1-exp(-((k-1)/.70)^4))*(1-exp(-((k-4)/.70)^4)); k=saved_unwrapped_phase/(2*pi)",
+    "gains": {
+      "MIDDLE": ".45+.55*p",
+      "LINKED": ".30+.70*p",
+      "WIDE": ".18+.82*p"
+    },
+    "gain_quantiles": {
+      "MIDDLE": [
+        0.4500000007661414,
+        0.45001935147092825,
+        0.7250275641520463,
+        0.999622225845594,
+        1.0
+      ],
+      "LINKED": [
+        0.300000000975089,
+        0.3000246291448177,
+        0.6500350816480587,
+        0.9995191965307559,
+        1.0
+      ],
+      "WIDE": [
+        0.1800000011422471,
+        0.18002885128392931,
+        0.5900410956448687,
+        0.9994367730788856,
+        1.0
+      ]
+    },
+    "changed_control_vertices": 7001550,
+    "displacement_norm_quantiles": [
+      5.942167460979114e-06,
+      0.003638608929706642,
+      0.023582450668303074,
+      0.036342347403737686,
+      0.06832803024196075
+    ],
+    "source_XY_position_symmetry_error": 4.785061236134425e-14,
+    "finished_XY_position_symmetry_error": 4.785061236134425e-14,
+    "method": "Actual verified neutral-CC-lifted G6 MIDDLE and actual G7 LINKED/WIDE saved coordinate contributions reweighted. Canonical actual vertex mirror delta transported without source averaging.",
+    "limits": "Saved field contribution reweighting; later field normals are not regenerated on the new carrier. Not a full replay or a new variation pipeline. Global intersections and end morphology remain unverified."
+  },
+  "texture": {
+    "implementation": "PARENT_COARSE_DIAGONAL_NATIVE_RELIEF_V1",
+    "source_control_vertices": 7002114,
+    "source_control_quads": 7002112,
+    "native_vertices": 14004226,
+    "native_triangles": 28008448,
+    "actual_parent_patches": 1750528,
+    "requested_parent_patches": 1111612,
+    "accepted_parent_patches": 1083952,
+    "unsafe_parent_patches_excluded": 27660,
+    "fixed_parent_patches_left_untouched": 0,
+    "changed_native_prefix_centres": 1083736,
+    "changed_native_child_fan_centres": 4334764,
+    "unchanged_native_prefix_vertices": 5918378,
+    "hierarchy_and_texture_scope": "One native diagonal repeat spans four actual G7 children of one G6 parent; approximately twice the corresponding linear material footprint. Existing curved G7 parent boundaries are retained; no G8 or additional subdivision.",
+    "profile": "Parent centre +h*N; two higher-diagonal child fan centres +h*N; other child fan centres +.25h*N. Eight curved boundary points remain unchanged.",
+    "height": "h=min(.55*prepared_parent_weight*minimum_positive_projected_8boundary_altitude,H*.0012)",
+    "physical_height_reference": 9.735842284057451,
+    "height_cap": 0.01168301074086894,
+    "height_cap_parent_count": 0,
+    "height_quantiles": [
+      1.3400526261339618e-06,
+      0.0003711459626447017,
+      0.0015851153731528892,
+      0.002846183936500119
+    ],
+    "minimum_new_changed_triangle_area": 2.6905903979390618e-09,
+    "minimum_changed_triangle_old_new_normal_cosine": 0.005880750881610603,
+    "source_fan_pitch_quantiles_degrees": [
+      1.1047515273094177,
+      4.915616989135742,
+      16.7600736618042,
+      44.29106521606445
+    ],
+    "finished_fan_pitch_quantiles_degrees": [
+      1.6791383624076843,
+      11.11520528793335,
+      34.5965461730957,
+      50.799625396728516
+    ],
+    "maximum_delta_XY_symmetry_error": 8.881784197001252e-16,
+    "maximum_source_plus_delta_reconstruction_error": 0.0,
+    "unchanged_source_boundary_and_other_prefix_vertices_checked": true,
+    "source_native_fan_topology_exact": true,
+    "zero_weight_native_geometry_effect": true,
+    "validation": "All 16 actually changed triangles per parent have positive area and positive old/new cross product dot. Unsafe whole mirror orbits excluded once; no amplitude retry.",
+    "source_control_xyz_sha256": "17d920014557cec688ae19c3f32e19d76116f5f4f7b4fea125478335e1db75a8",
+    "source_control_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+    "native_xyz_sha256": "191dda6be3239ccb74501af179406808623468faed8a3c77cd0d93c40806fbac",
+    "native_faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "limits": "Native detail displaces existing G7 parent-centre prefix vertices. Saved control carrier is immutable and differs from that native prefix intentionally. No global self-intersection or fabrication certificate."
+  },
+  "support": {
+    "source_mask": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MASK.npz",
+    "source_sha256": "db4b3b8f0bebd4907f25e3316cdd3a918e987bf99d941811586c365fdbf8a88a",
+    "aggregation": "Mean of four actual G7 child weights per G6 parent",
+    "feather": "One .65*self + .35*mean_of_four_actual_edge_neighbors pass",
+    "exact_actual_parent_mirror_transport": true,
+    "fine_child_support_count": null,
+    "parent_support_before": 938604,
+    "parent_support_after": 1111612,
+    "parent_count": 1750528,
+    "note": "No new coarse-cell size gate or world-axis gate; support inherits the accepted broad mask."
+  },
+  "elapsed_seconds": 202.18707069999073,
+  "scope": "One fixed recipe. Original research/checkpoints immutable. Bare hierarchy and combined finished result retained separately for matched-camera evidence. No new G8, broad parameter matrix, global remesh or ornament addition."
+}

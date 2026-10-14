@@ -1,0 +1,66 @@
+{
+  "hierarchy": {
+    "implementation": "SAVED_COMPONENT_PARENT_HIERARCHY_V1",
+    "generation": 7,
+    "full_G1_G7_replay": false,
+    "new_G8": false,
+    "component_reconstruction_maximum_error": 1.7763568394002505e-15,
+    "phase_cycles_range": [
+      0.0,
+      5.0
+    ],
+    "primary_cycles_per_quadrant": [
+      1,
+      4
+    ],
+    "primary_profile": "p=1-(1-exp(-((k-1)/.70)^4))*(1-exp(-((k-4)/.70)^4)); k=saved_unwrapped_phase/(2*pi)",
+    "gains": {
+      "MIDDLE": ".45+.55*p",
+      "LINKED": ".30+.70*p",
+      "WIDE": ".18+.82*p"
+    },
+    "gain_quantiles": {
+      "MIDDLE": [
+        0.4500000007661414,
+        0.45001935147092825,
+        0.7250275641520463,
+        0.999622225845594,
+        1.0
+      ],
+      "LINKED": [
+        0.300000000975089,
+        0.3000246291448177,
+        0.6500350816480587,
+        0.9995191965307559,
+        1.0
+      ],
+      "WIDE": [
+        0.1800000011422471,
+        0.18002885128392931,
+        0.5900410956448687,
+        0.9994367730788856,
+        1.0
+      ]
+    },
+    "changed_control_vertices": 7001550,
+    "displacement_norm_quantiles": [
+      5.942167460979114e-06,
+      0.003638608929706642,
+      0.023582450668303074,
+      0.036342347403737686,
+      0.06832803024196075
+    ],
+    "source_XY_position_symmetry_error": 4.785061236134425e-14,
+    "finished_XY_position_symmetry_error": 4.785061236134425e-14,
+    "method": "Actual verified neutral-CC-lifted G6 MIDDLE and actual G7 LINKED/WIDE saved coordinate contributions reweighted. Canonical actual vertex mirror delta transported without source averaging.",
+    "limits": "Saved field contribution reweighting; later field normals are not regenerated on the new carrier. Not a full replay or a new variation pipeline. Global intersections and end morphology remain unverified."
+  },
+  "mesh": {
+    "all_finite": true,
+    "positive_area_triangles": 28008448,
+    "degenerate_triangles": 0,
+    "minimum_triangle_area": 4.431676303493e-11
+  },
+  "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+  "connectivity": "Exact original G7 native fan indices; original topology inherited."
+}
