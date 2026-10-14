@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+  "source_native_geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+  "source_control_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "source_hashes_after": {
+    "geometry.npz": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+    "control_quad.npz": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27"
+  },
+  "mask_path": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MASK.npz",
+  "mask_sha256": "db4b3b8f0bebd4907f25e3316cdd3a918e987bf99d941811586c365fdbf8a88a",
+  "measurement_path": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MEASUREMENT.json",
+  "measurement_sha256": "c12012fbe4da267bb8595915e702bfb74bda3d007d90a30f795d4bbb20ce932c",
+  "geometry_code_sha256": {
+    "experiments/comb_relief_20261014/run.py": "7cc2e23493bd090f65ad58215c2bb780ac86224e1f6d7ffb0ae608d1ed99aea3"
+  },
+  "variants": {
+    "RELIEF": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\geometry.npz",
+      "geometry_sha256": "e874da795215bcd28f31a153f052d774bb2313b828c58cc381989dc115ed3f9e",
+      "xyz_sha256": "48639bb473345ca9e8054ec6878683f5dab6e2373d51f002424e397cbfa58fb0",
+      "faces_sha256": "b6414f6d42d4d15fa3c3899d3cd378653cd976eee79eec1b498f6d8497094cd5",
+      "vertices": 17134802,
+      "triangles": 34269600,
+      "ridge_state": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\ridge_state.npz",
+      "ridge_state_sha256": "8ee43315100ec89ff9048515ee636863442f2dceb5c12202e2e4954da10bc2d6",
+      "validation": {
+        "control_corners_byte_identical": true,
+        "unselected_centers_and_faces_byte_identical": true,
+        "actual_source_fourfan_indices_checked": true,
+        "actual_mirror_corner_associations_checked": true,
+        "actual_oriented_boundary_cycles_checked": true,
+        "actual_roof_XY_coordinate_symmetry": true,
+        "all_new_roof_projected_signed_areas_positive": true,
+        "local_template": {
+          "vertices": 6,
+          "edges": 11,
+          "triangles": 6,
+          "Euler_disk": 1,
+          "oriented_boundary": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "internal_edge_incidence": "Each interior edge occurs twice with opposite direction."
+        },
+        "topology_scope": "Each selected source disk replaced with same oriented outer boundary. Inherited closed one-component source connectivity; +1V,+3E,+2F per disk, no isolated ornaments. No global edge sort repeated.",
+        "limits": "No global self-intersection or fabrication certificate. Native finish is not a control subdivision and is not automatically carried by future control refinement."
+      }
+    }
+  },
+  "statistics": {
+    "source_control_corners": 7002114,
+    "unchanged_control_corners": 7002114,
+    "changed_control_corners": 0,
+    "source_native_vertices": 14004226,
+    "source_native_triangles": 28008448,
+    "roof_quads": 3130576,
+    "source_quad_fraction": 0.4470902493419128,
+    "added_native_vertices": 3130576,
+    "added_native_triangles": 6261152,
+    "source_fixed_face_orbits_left_untouched": 0,
+    "unsafe_roof_quads_excluded": 672,
+    "minimum_new_triangle_area": 7.797349930442193e-09,
+    "minimum_roof_height": 3.9899019734541375e-22,
+    "maximum_roof_height": 0.004925018099682726,
+    "height_quantiles": [
+      3.4160584179296983e-06,
+      0.00044726678301237324,
+      0.0013729234644563229,
+      0.002495136289811477
+    ],
+    "source_fan_pitch_quantiles_degrees": [
+      1.2510995864868164,
+      3.7400295734405518,
+      14.360335350036621,
+      38.19044467926043
+    ],
+    "roof_wing_pitch_quantiles_degrees": [
+      1.7003402233123777,
+      17.69338607788086,
+      36.45479125976564,
+      52.85464984893817
+    ],
+    "roof_wing_fraction_pitch_over15_degrees": 0.5511944127853788,
+    "maximum_roof_pitch_degrees": 89.99761645228575,
+    "exact_ridge_XY_coordinate_symmetry": true
+  },
+  "recipe": {
+    "stage": "INTEGRAL_DIAGONAL_NATIVE_RELIEF_G7",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "input": "Same REVISED body as user-liked reference; original design baseline retained.",
+    "selection": "Frozen broad fine warped-cell weight, no aspect or world-axis gates; no selective shading.",
+    "ridge": "Choose actual higher source diagonal. R0=.4*A+.6*O+h*N; R1=.4*C+.6*O+h*N.",
+    "height": "h=min(.65*weight*minimum_positive_source_fan_projected_altitude,H*.0006)",
+    "construction": "Replace four fan triangles by six-triangle integral ridge disk. Reuse original center for R0, append one R1 per selected quad.",
+    "feather_scope": "Weight feathers ridge height; discrete diagonal re-triangulation also changes the source nonplanar fan surface even as height approaches zero.",
+    "symmetry": "Canonical actual face orbit, reflected original corner IDs and ridge coordinates, odd-reflection winding reversal. Fixed-face orbits unchanged.",
+    "changes": "Native surface/topology only. All control corners and oriented quad boundaries unchanged. No Mandelbulb, external ornaments, Boolean or remesh."
+  },
+  "seconds": 94.57933440001216,
+  "visual_success": "PENDING_MATCHED_ACTUAL_RENDERS"
+}

@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "decision": "KEEP_VISIBLE_INTEGRAL_COMB_RELIEF_CANDIDATE_AESTHETIC_INTENSITY_PENDING",
+  "one_candidate": true,
+  "source_growth_generation": 7,
+  "added_G8": false,
+  "user_direction": "Meaningful visible small diagonal comb/scale detail over the broad existing pattern; original major fold language retained.",
+  "original_checkpoint": "WIDE_ROOT_FINISHED/SPAN/G07 remains read-only and separate. Same REVISED body as user attachment is the reference source for this study.",
+  "recipe": {
+    "stage": "INTEGRAL_DIAGONAL_NATIVE_RELIEF_G7",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "input": "Same REVISED body as user-liked reference; original design baseline retained.",
+    "selection": "Frozen broad fine warped-cell weight, no aspect or world-axis gates; no selective shading.",
+    "ridge": "Choose actual higher source diagonal. R0=.4*A+.6*O+h*N; R1=.4*C+.6*O+h*N.",
+    "height": "h=min(.65*weight*minimum_positive_source_fan_projected_altitude,H*.0006)",
+    "construction": "Replace four fan triangles by six-triangle integral ridge disk. Reuse original center for R0, append one R1 per selected quad.",
+    "feather_scope": "Weight feathers ridge height; discrete diagonal re-triangulation also changes the source nonplanar fan surface even as height approaches zero.",
+    "symmetry": "Canonical actual face orbit, reflected original corner IDs and ridge coordinates, odd-reflection winding reversal. Fixed-face orbits unchanged.",
+    "changes": "Native surface/topology only. All control corners and oriented quad boundaries unchanged. No Mandelbulb, external ornaments, Boolean or remesh."
+  },
+  "geometry_statistics": {
+    "source_control_corners": 7002114,
+    "unchanged_control_corners": 7002114,
+    "changed_control_corners": 0,
+    "source_native_vertices": 14004226,
+    "source_native_triangles": 28008448,
+    "roof_quads": 3130576,
+    "source_quad_fraction": 0.4470902493419128,
+    "added_native_vertices": 3130576,
+    "added_native_triangles": 6261152,
+    "source_fixed_face_orbits_left_untouched": 0,
+    "unsafe_roof_quads_excluded": 672,
+    "minimum_new_triangle_area": 7.797349930442193e-09,
+    "minimum_roof_height": 3.9899019734541375e-22,
+    "maximum_roof_height": 0.004925018099682726,
+    "height_quantiles": [
+      3.4160584179296983e-06,
+      0.00044726678301237324,
+      0.0013729234644563229,
+      0.002495136289811477
+    ],
+    "source_fan_pitch_quantiles_degrees": [
+      1.2510995864868164,
+      3.7400295734405518,
+      14.360335350036621,
+      38.19044467926043
+    ],
+    "roof_wing_pitch_quantiles_degrees": [
+      1.7003402233123777,
+      17.69338607788086,
+      36.45479125976564,
+      52.85464984893817
+    ],
+    "roof_wing_fraction_pitch_over15_degrees": 0.5511944127853788,
+    "maximum_roof_pitch_degrees": 89.99761645228575,
+    "exact_ridge_XY_coordinate_symmetry": true
+  },
+  "geometry_validation": {
+    "control_corners_byte_identical": true,
+    "unselected_centers_and_faces_byte_identical": true,
+    "actual_source_fourfan_indices_checked": true,
+    "actual_mirror_corner_associations_checked": true,
+    "actual_oriented_boundary_cycles_checked": true,
+    "actual_roof_XY_coordinate_symmetry": true,
+    "all_new_roof_projected_signed_areas_positive": true,
+    "local_template": {
+      "vertices": 6,
+      "edges": 11,
+      "triangles": 6,
+      "Euler_disk": 1,
+      "oriented_boundary": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "internal_edge_incidence": "Each interior edge occurs twice with opposite direction."
+    },
+    "topology_scope": "Each selected source disk replaced with same oriented outer boundary. Inherited closed one-component source connectivity; +1V,+3E,+2F per disk, no isolated ornaments. No global edge sort repeated.",
+    "limits": "No global self-intersection or fabrication certificate. Native finish is not a control subdivision and is not automatically carried by future control refinement."
+  },
+  "deferred_Mandelbulb": "No Mandelbulb or flower-covering experiment performed; user explicitly deferred it.",
+  "executed_source_sha256": {
+    "measure.py": "bdf9871881a9170ba3d71e5209405fd8d4d318895a9ef3ed12ffd9105668a825",
+    "render.py": "08c503ae0895869090693ca01301394332583cdb6d3d129abc97300629496c13",
+    "boards.py": "eb41128068312fa4f4609b373acc190d226dd295a6c0bc294a268e447f7c9c14",
+    "run.py": "7cc2e23493bd090f65ad58215c2bb780ac86224e1f6d7ffb0ae608d1ed99aea3"
+  },
+  "evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RECEIPT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\RECEIPT.json",
+      "sha256": "2373a46b3fd1192966b0205bd96f174394fa97ba58cc8715a3a83de4daf4cdbc"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\MEASUREMENT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\MEASUREMENT.json",
+      "sha256": "c12012fbe4da267bb8595915e702bfb74bda3d007d90a30f795d4bbb20ce932c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\RENDER_VERIFICATION.json",
+      "sha256": "d816d933deb692e417ec9aec4d75ef6534c0b6875b2c2287772f5d6bd6951372"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\images\\SOURCE_LIST.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\images\\SOURCE_LIST.json",
+      "sha256": "d816d933deb692e417ec9aec4d75ef6534c0b6875b2c2287772f5d6bd6951372"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\images\\SPAN_macro.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\images\\SPAN_macro.png",
+      "sha256": "965f5d95ada358b46d47b3e782f9d5de987a8832718240f9494262e124e80477"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\images\\SPAN_front.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\images\\SPAN_front.png",
+      "sha256": "b0e5518f849f917fee76aea985f17e5c0ac5d8d2733a08021b1e60edf5d2f904"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\images\\SPAN_close_oblique.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_relief_20261014\\images\\SPAN_close_oblique.png",
+      "sha256": "36682b4205849946e43d0d6ee5924fd05da9b0ec4dd4cf8445e7d7dd36a9c999"
+    }
+  ],
+  "visual_review": {
+    "date": "2026-10-14",
+    "decision": "KEEP_VISIBLE_INTEGRAL_COMB_RELIEF_CANDIDATE_AESTHETIC_INTENSITY_PENDING",
+    "scope": "One stronger native G7 finish on the same REVISED body as the user reference; original WIDE_ROOT_FINISHED design checkpoint remains separate and unchanged.",
+    "visible_result": "Matched all-flat macro comparison shows clear geometric change. Previously faint comb regions have raised diagonal ridges and scale-like shadows over broad folded strips. Close view shows the pattern following the existing large S folds while valleys retain open areas.",
+    "whole_column": "Full front silhouette and major fold organization look almost unchanged at the recorded camera scale. Body-oblique view gains a subtler surface grain. This is a near-detail development rather than a replacement of the large column form.",
+    "technical_result": "Six-triangle short-ridge disks replace source four-fan disks within selected fine quad boundaries. All original control corners and oriented boundaries are retained. Native positions, indices and all-flat flags are verified against saved candidate arrays before and after rendering.",
+    "limits": "Some larger cells now read as angular triangular or diamond plates. Existing blunt cup ends and awkward sheet overlaps remain. Do not claim natural Baroque end repair, reference-level completion, fabrication readiness or global collision freedom.",
+    "independent_review": "Separate read-only agent reviewed all four actual source/candidate views and recommended keeping this as a clearly visible design candidate, without another automatic candidate.",
+    "aesthetic_question": "User asked to choose whether to retain current clear broad comb and reduce only coarser plates, or retain coverage and lower ridge height for a finer expression. No additional candidate is generated while that future design choice is pending.",
+    "diagnostic_scope": "Source fan pitch and new central roof-wing pitch refer to different facet sets. Their distributions document construction strength and must not be presented as an aesthetic score or a direct identical-face improvement ratio.",
+    "Mandelbulb": "No Mandelbulb or flower-covering experiment performed; the user explicitly deferred that proposal."
+  }
+}

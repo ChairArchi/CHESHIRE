@@ -1,0 +1,39 @@
+VISIBLE INTEGRAL COMB RELIEF / 2026-10-14
+
+RESULT
+One actual saved native finishing candidate makes the small diagonal comb
+clearly visible under the same all-flat shading, material, light and cameras.
+Four matched comparisons confirm a broad local pattern change, with the major
+S folds, their open valleys and the full-column reading retained.
+The local ridges are part of the same surface, not floating ornaments.
+
+WHAT CHANGED
+The failed aspect/world-axis mask was removed. Actual fine source warpage and
+physical cell size define the broad support. Each selected quad keeps its four
+boundary corners and edges, with a short higher-diagonal ridge inside. Two
+interior ridge points form six triangles; the existing center ID is reused and
+one native vertex is appended. This is G7 native re-triangulation and relief,
+not another control subdivision or G8.
+
+CHECKS
+All 7,002,114 source controls and actual oriented boundary cycles are unchanged.
+3,130,576 valid roof disks were saved; 672 unsafe local roofs were excluded.
+All new projected fan areas are positive; ridge positions have exact X/Y
+reflection correspondence. Unselected native centers and faces are unchanged.
+Each disk has the source oriented boundary and reciprocal internal edge
+incidence, inheriting the source connection without welding or added components.
+Actual candidate XYZ/index arrays and flat flags were read back unchanged by
+Blender. Source hashes, source snapshots and image hashes are preserved on E.
+
+DESIGN LIMITS
+The stronger pattern reads as triangular/diamond scales in some regions.
+Larger cells can still read as angular plates. Existing cup ends and overlaps
+are not repaired by this finish. This is a visible fine-detail candidate, not
+a finished reference-level design or a manufacturing/intersection certificate.
+The user's next intensity choice is a design decision; no automatic extra
+candidate or Mandelbulb experiment follows this checkpoint.
+
+EVIDENCE
+E:/CHESHIRE_DATA/experiments/comb_relief_20261014/trial01
+RELIEF/geometry.npz; RELIEF/ridge_state.npz; MASK.npz; MEASUREMENT.json;
+RECEIPT.json; RENDER_VERIFICATION.json; images/SOURCE_LIST.json.
