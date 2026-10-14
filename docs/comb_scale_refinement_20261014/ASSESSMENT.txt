@@ -1,0 +1,35 @@
+LOCAL LARGE-SCALE REFINEMENT / 2026-10-14
+
+One fixed physical-size selection replaces the largest accepted scale cells
+with four smaller cells, retaining the clear broad comb language selected by
+the user. The matched macro shows finer units on selected upper-central and
+curled strips. The preferred lower-right fine pattern is largely retained.
+Whole-column reading and large S folds remain visually similar.
+
+This is a local change, not removal of every visually angular plate. Some
+unselected scales still appear coarse and transitions between sizes remain.
+Existing cup ends and sheet overlaps are not repaired by this stage.
+
+496,536 parent roofs were replaced, 196 unsafe parents excluded as complete
+mirror orbits, and 2,634,040 other accepted roofs preserved. Original controls
+and all unrefined native positions are byte-identical. Shared original edges
+have exactly two opposite old incidences; neighbor splits preserve their old
+planar surface (maximum measured plane residual about4.04e-14). Transported
+child ridges and parent centers retain exact X/Y coordinate reflection.
+
+The source's two private parent ridge IDs are reused. New shared midpoints,
+parent-base centers and child ridge points are referenced by the connected
+patches; no global reindex or orphan cleanup is needed. This is a G7 native
+finish rather than a whole G8 or a changed control-growth sequence.
+
+The actual candidate and source image arrays, camera/material/light conditions
+and all-flat flags were verified separately. Native topology differs, so no
+source/candidate native-index identity is claimed. Numerical checks support
+this local replacement; they do not certify global intersection clearance or
+fabrication. Earlier source geometry and checkpoints remain unchanged.
+
+Heavy evidence:
+E:/CHESHIRE_DATA/experiments/comb_scale_refinement_20261014/trial01
+REFINED/geometry.npz; REFINED/refinement_state.npz; RECEIPT.json;
+MEASUREMENT.json; COARSE_QUADS.npz; RENDER_VERIFICATION.json;
+images/SOURCE_LIST.json and four matched comparison images.

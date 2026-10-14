@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "decision": "KEEP_LOCAL_SCALE_REFINEMENT_WITH_CLEAR_BROAD_COMB_RETAINED",
+  "user_choice": "Retain clear broad comb relief. Reduce only oversized scales; preserve the accepted small scales.",
+  "one_local_refinement_candidate": true,
+  "source_growth_generation": 7,
+  "added_G8": false,
+  "accepted_source": "comb_relief_20261014/trial01/RELIEF remains read-only; previous checkpoints and original controls unchanged.",
+  "recipe": {
+    "stage": "LOCAL_NATIVE_COMB_SCALE_REFINEMENT_G7",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "selection": "Only measured oversized accepted roofs; no new aspect or world-axis gate; one complete source-face-orbit safety exclusion.",
+    "base": "Return selected large cells to unchanged SOURCE quad corners, edge midpoints and arithmetic parent center; replace rather than cumulatively subdivide the old raised ornament.",
+    "child": "Four children each retain the accepted higher-diagonal six-triangle roof formula.",
+    "height": "min(.65*inherited_parent_weight*child_projected_fan_altitude, .5*actual_accepted_parent_height)",
+    "conformity": "One midpoint per original control edge, opposite old incidences checked; neighboring original triangle split into two coplanar triangles.",
+    "preservation": "All original control corners and unrefined native coordinates unchanged. Unrefined neighbor face indices may split while preserving their old planar surface.",
+    "symmetry": "Canonical parent construction, actual corner-ID reflection, exact transported child ridges/parent centers, odd-reflection winding reversal.",
+    "scope": "One local native 2x2 scale replacement, no global refinement, new ornament language, Mandelbulb, Boolean or remesh."
+  },
+  "statistics": {
+    "requested_parent_roofs": 496732,
+    "refined_parent_roofs": 496536,
+    "one_orbit_unsafe_parents_excluded": 196,
+    "preserved_other_accepted_roofs": 2634040,
+    "child_roofs": 1986144,
+    "net_added_roofs": 1489608,
+    "unique_shared_midpoints": 1231688,
+    "neighbor_triangles_split": 477232,
+    "changed_source_control_corners": 0,
+    "unchanged_source_control_corners": 7002114,
+    "unchanged_old_native_coordinates": 16141730,
+    "reused_old_private_ridge_vertices": 993072,
+    "added_native_vertices": 4707440,
+    "added_native_triangles": 9414880,
+    "minimum_new_roof_triangle_area": 1.3325268499701397e-08,
+    "minimum_new_roof_projected_double_area": 1.7872007801107838e-09,
+    "child_height_quantiles": [
+      1.172199303584903e-05,
+      0.000392963561102567,
+      0.00100221280813773,
+      0.0016805227751795393,
+      0.002462509049841363
+    ],
+    "child_wing_pitch_quantiles_degrees": [
+      1.1926177740097046,
+      17.947535514831543,
+      31.45884132385254,
+      41.84291458129883
+    ],
+    "child_height_never_exceeds_half_parent": true,
+    "symmetric_midpoint_source_error": 4.6405861586569575e-14,
+    "unrefined_split_max_plane_error": 4.0314539900832e-14,
+    "unrefined_split_max_double_area_sum_error": 3.3741388047285603e-16,
+    "transported_child_ridge_XY_residual": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "validation": {
+    "control_corners_byte_identical": true,
+    "all_unrefined_native_coordinates_byte_identical": true,
+    "unrelated_old_triangle_rows_byte_identical": true,
+    "accepted_parent_six_triangle_slots_and_ridge_coordinates_checked": true,
+    "accepted_oriented_parent_boundary_cycles_checked": true,
+    "all_new_child_roof_projected_signed_areas_positive": true,
+    "conforming_edge_old_incidence_exactly_two_and_oppositely_oriented": true,
+    "neighbor_splits_preserve_old_planar_surface": true,
+    "child_ridge_and_parent_center_reflection_exact": true,
+    "no_orphan_scope": "Both private old parent ridge IDs are reused by child0. Every appended grid center, midpoint and child ridge ID is referenced by the four-child disks or conforming neighbor split.",
+    "local_template": {
+      "vertices": 17,
+      "edges": 40,
+      "triangles": 24,
+      "Euler_disk": 1,
+      "boundary": [
+        [
+          0,
+          4
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "internal_edges_oppositely_paired": true
+    },
+    "topology_scope": "Four-child disk has the original oriented boundary split at shared original-edge midpoints; the two old edge incidences conform to the same midpoint. Source closed one-component connectivity is inherited without global edge sorting.",
+    "limits": "No global collision, self-intersection or fabrication certificate. This local native finish is not an additional global Catmull-Clark generation."
+  },
+  "visual_review": {
+    "date": "2026-10-14",
+    "decision": "KEEP_LOCAL_SCALE_REFINEMENT_WITH_CLEAR_BROAD_COMB_RETAINED",
+    "user_choice": "Retain clear broad diagonal comb and reduce only oversized scales.",
+    "visible_result": "Matched macro shows smaller scale units within selected parts of the upper central plate and the lower curled strip. The broad diagonal comb language and fine lower-right pattern remain visible. Close view has a finer grain in the replaced areas while large S folds and valleys remain readable.",
+    "whole_column": "Front and body-oblique comparisons preserve the overall column reading at the saved camera scale. This is a local ornament-size refinement, not a new major column form.",
+    "preservation": "All source controls and all unrefined native coordinates are byte-identical. Neighbor boundary triangles can be split, but occupy the same prior planar surface within inherited floating residual. Source and candidate are rendered under the same all-flat material/light/camera conditions.",
+    "size_scope": "The one physical cutoff selects the largest tail, not every visually angular plate. 496536 accepted parent roofs were replaced by four smaller roofs each; 2634040 other accepted roofs were retained. The preferred fine macro ROI was mostly outside the size selection.",
+    "strength": "Child ridge height scales with footprint and is limited to half the parent's actual height. The construction preserves the accepted kind of fold rather than globally lowering existing small ridges. Pitch distributions are diagnostics on different facet sets, not aesthetic scores.",
+    "remaining_limits": "Mixed coarse/fine transitions and some unselected angular plates remain. Existing blunt ends and overlapping sheets are unchanged. Do not claim that every large-looking plate, reference-level close detail, global collisions or fabrication readiness is resolved.",
+    "geometry_generation": "One local native 2x2 replacement only; no global G8, new control growth, Mandelbulb, smoothing or remesh.",
+    "evidence": "E:/CHESHIRE_DATA/experiments/comb_scale_refinement_20261014/trial01/RENDER_VERIFICATION.json"
+  },
+  "executed_source_sha256": {
+    "measure.py": "0e197a2f437664e5b9db134f0e9c0d7a39398913800653150eac842c48a8bf58",
+    "render.py": "8a82a55ed86afbbd923e7252ad2508844c19814bfe54f1f1f7d238d58b7324fb",
+    "boards.py": "4ec89ecdfc7ac8162fabf174d94f8abf6b39c3b0ee9eb890e32adf761d33ba1c",
+    "run.py": "6d13a2b1b821cd46868a8464db1a07ad579d738c29e99160bedfdd43fe834516"
+  },
+  "evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\RECEIPT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\RECEIPT.json",
+      "sha256": "507e9feaec57f86b709fec6a5cca5ac426dd74fcd2a97e5ca3d2b4c7d2748c37"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\MEASUREMENT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\MEASUREMENT.json",
+      "sha256": "b2908e59f057fa37596b78da90033e4c009ec26db399838575b8204774667b6f"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\RENDER_VERIFICATION.json",
+      "sha256": "99816f14c356649aa491cc532f888457489e54d969e8b3748005a26845ef70a0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\images\\SOURCE_LIST.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\images\\SOURCE_LIST.json",
+      "sha256": "99816f14c356649aa491cc532f888457489e54d969e8b3748005a26845ef70a0"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\images\\SPAN_macro.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\images\\SPAN_macro.png",
+      "sha256": "ba70cec27caaaf6b88b8572af556b3de18f07d0ba01dfd256e066e0ff1c66bb5"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\images\\SPAN_close_oblique.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\images\\SPAN_close_oblique.png",
+      "sha256": "15413f6841b5b785f013f4ad452a20dd6cdc434b7f457536d7f8675f6174d279"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\images\\SPAN_front.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\comb_scale_refinement_20261014\\images\\SPAN_front.png",
+      "sha256": "59cb73d8c874d40ee6dad9a9afacc2faeee592bcdf8f0098f4f0abdd9da2594f"
+    }
+  ],
+  "Mandelbulb": "No deferred Mandelbulb/flower experiment performed."
+}

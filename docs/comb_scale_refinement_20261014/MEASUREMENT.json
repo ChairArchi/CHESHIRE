@@ -1,0 +1,603 @@
+{
+  "date": "2026-10-14",
+  "source_native": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\geometry.npz",
+  "source_native_geometry_sha256": "e874da795215bcd28f31a153f052d774bb2313b828c58cc381989dc115ed3f9e",
+  "source_candidate_receipt": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RECEIPT.json",
+  "source_candidate_receipt_sha256": "2373a46b3fd1192966b0205bd96f174394fa97ba58cc8715a3a83de4daf4cdbc",
+  "source_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "source_ridge_state": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\ridge_state.npz",
+  "source_ridge_state_sha256": "8ee43315100ec89ff9048515ee636863442f2dceb5c12202e2e4954da10bc2d6",
+  "source_render_receipt": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF_FLAT\\views\\receipt.json",
+  "source_render_receipt_sha256": "25c6ede28b883992c4dccb64b3f73e92857f8e709fbc6f3b95834ed197bf4e3a",
+  "original_face_pairs": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz",
+    "sha256": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21"
+  },
+  "physical_height": 9.735842284057451,
+  "cutoff": {
+    "metric": "maximum actual original quad edge length",
+    "height_fraction": 0.0012,
+    "physical_length": 0.01168301074086894,
+    "strict_comparison": ">",
+    "aspect_gate": false,
+    "world_axis_gate": false,
+    "selection_scope": "Existing saved roof cells only; exact actual face-orbit representative, fixed-face orbits excluded."
+  },
+  "global_roof_metrics": {
+    "max_edge": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.0004088674141708205,
+        0.0021588313228274457,
+        0.0038529809260826127,
+        0.00700315982132373,
+        0.013336292642376655,
+        0.02077448963737605,
+        0.02920637391327224
+      ]
+    },
+    "projected_footprint_area": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        6.800798270423089e-08,
+        1.1965928718554723e-06,
+        4.6337546705544395e-06,
+        1.931065177816015e-05,
+        6.0726252878899015e-05,
+        0.00015665080939136108,
+        0.0006320745334606319
+      ]
+    },
+    "sqrt_projected_footprint_area": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.00026078340189557867,
+        0.0010938888754601504,
+        0.0021526157740187728,
+        0.00439438866944653,
+        0.0077927051066301115,
+        0.012516022107337502,
+        0.02514109252718807
+      ]
+    },
+    "source_fourfan_area": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        8.984578300419925e-08,
+        1.231639073339062e-06,
+        4.743966944004697e-06,
+        1.9566021934579148e-05,
+        6.12788749259883e-05,
+        0.00015737375080118515,
+        0.0006325356057081366
+      ]
+    },
+    "actual_ridge_span": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        4.123040020428793e-05,
+        0.000660948288798646,
+        0.001480749204814224,
+        0.0032235229063962726,
+        0.006545724092635726,
+        0.010192429093876399,
+        0.021570627264061414
+      ]
+    },
+    "actual_max_wing_span": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.00011383154723855188,
+        0.0004064884926600283,
+        0.0010921224233428391,
+        0.002755058598704469,
+        0.005649603388602102,
+        0.010037848498506802,
+        0.02769431758352919
+      ]
+    },
+    "roof_height": {
+      "samples": 3130576,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        3.9899019734541375e-22,
+        1.5717443326894308e-09,
+        3.4160584179296983e-06,
+        0.00044726678301237324,
+        0.0013729234644563229,
+        0.002495136289811477,
+        0.004925018099682726
+      ]
+    }
+  },
+  "global_roof_count": 3130576,
+  "coarse_roof_count": 496732,
+  "coarse_roof_fraction": 0.15867111994725572,
+  "unchanged_other_roof_count": 2633844,
+  "fixed_roofs_excluded": 0,
+  "approximate_visible_macro_roof_count": 16708,
+  "approximate_visible_macro_coarse_count": 1607,
+  "image_ROIs": {
+    "upper_central_plate": {
+      "pixel_ROI": [
+        300,
+        25,
+        530,
+        250
+      ],
+      "actual_roof_samples": 1004,
+      "coarse_roofs": 236,
+      "coarse_fraction": 0.2350597609561753,
+      "size_metrics": {
+        "max_edge": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.002586750738811686,
+            0.0031265522064721817,
+            0.004815738625830471,
+            0.00818288412529157,
+            0.013123857408492662,
+            0.020680946745558117,
+            0.027035808547087495
+          ]
+        },
+        "projected_footprint_area": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            1.2639581293121593e-06,
+            1.5332479968288374e-06,
+            3.7373667880524227e-06,
+            1.3819076250407905e-05,
+            5.901600498757651e-05,
+            8.881710716202929e-05,
+            0.00012124536711048526
+          ]
+        },
+        "sqrt_projected_footprint_area": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.0011242589244974484,
+            0.0012382432879954235,
+            0.0019332270171179319,
+            0.003717401811724963,
+            0.007682187012338892,
+            0.009424282846032864,
+            0.011011147402086908
+          ]
+        },
+        "source_fourfan_area": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            1.2713339629816254e-06,
+            1.5596174575943242e-06,
+            4.4410805732098756e-06,
+            1.5252788711990811e-05,
+            5.9180233297110294e-05,
+            8.916488163258877e-05,
+            0.0001213126321589375
+          ]
+        },
+        "actual_ridge_span": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.0003243193397466976,
+            0.000450119710884758,
+            0.0014583596523423357,
+            0.004136292530704262,
+            0.007104013789993183,
+            0.009091230851878686,
+            0.010048444411222764
+          ]
+        },
+        "actual_max_wing_span": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.00027262528737370136,
+            0.00042751702433632504,
+            0.0008569334476494006,
+            0.001817105778682638,
+            0.0045115567147981876,
+            0.008077678887065629,
+            0.009012143956432994
+          ]
+        },
+        "roof_height": {
+          "samples": 1004,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            7.420755728181566e-10,
+            1.0558907579367508e-06,
+            7.27818058155443e-05,
+            0.000391272828423291,
+            0.0014384327318780303,
+            0.0018752254292919873,
+            0.0020162011884237926
+          ]
+        }
+      },
+      "max_edge_height_fraction_quantiles": [
+        0.0002656935746635418,
+        0.0003211383376240539,
+        0.0004946401641814079,
+        0.0008404906207951964,
+        0.0013479940436158383,
+        0.002124207248038867,
+        0.002776935755354103
+      ],
+      "representative_quad_ids": [
+        2750085,
+        2762273,
+        2762458,
+        2762742,
+        2765517,
+        2766156,
+        2817859,
+        2818036,
+        4539787,
+        6290275,
+        6292253,
+        6293311
+      ]
+    },
+    "preferred_fine_lower_right_strip": {
+      "pixel_ROI": [
+        475,
+        700,
+        740,
+        899
+      ],
+      "actual_roof_samples": 1161,
+      "coarse_roofs": 29,
+      "coarse_fraction": 0.024978466838931956,
+      "size_metrics": {
+        "max_edge": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.0017769026235480304,
+            0.0024630092498855783,
+            0.003720890555170053,
+            0.006991237248892988,
+            0.010618601239293854,
+            0.013994718493308652,
+            0.015119520794900886
+          ]
+        },
+        "projected_footprint_area": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            6.753756297871184e-07,
+            1.5006286161126506e-06,
+            7.856548155542374e-06,
+            1.5255775158164855e-05,
+            3.0840085629900275e-05,
+            4.83848292352675e-05,
+            9.387852858984752e-05
+          ]
+        },
+        "sqrt_projected_footprint_area": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.0008218124054716615,
+            0.0012242098029277971,
+            0.002802953470099419,
+            0.0039058642011934896,
+            0.005553385060474402,
+            0.006955886941445367,
+            0.009689093280067415
+          ]
+        },
+        "source_fourfan_area": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            7.107267125092923e-07,
+            1.5709655981397583e-06,
+            7.92985887302117e-06,
+            1.5343491635179516e-05,
+            3.1680979895040863e-05,
+            5.0996345068078174e-05,
+            9.458474906930287e-05
+          ]
+        },
+        "actual_ridge_span": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.00034447020780325674,
+            0.0007991131204258263,
+            0.0015283648509498142,
+            0.0032267797568653733,
+            0.005209265234364054,
+            0.007194662952570035,
+            0.008691420887074358
+          ]
+        },
+        "actual_max_wing_span": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            0.00033175192567991795,
+            0.0006746945469518689,
+            0.0013653209724978784,
+            0.002439003829396003,
+            0.0038239728189009923,
+            0.006444640734964884,
+            0.007304663487135839
+          ]
+        },
+        "roof_height": {
+          "samples": 1161,
+          "quantiles": [
+            0.0,
+            0.01,
+            0.1,
+            0.5,
+            0.9,
+            0.99,
+            1.0
+          ],
+          "values": [
+            3.0530134491916255e-10,
+            6.968265171290369e-08,
+            2.7412254444071716e-05,
+            0.0005731485767494507,
+            0.0012036341787316084,
+            0.0015713848441036703,
+            0.0023145524503498972
+          ]
+        }
+      },
+      "max_edge_height_fraction_quantiles": [
+        0.00018251144294497538,
+        0.0002529836842076605,
+        0.00038218476086686944,
+        0.0007180926975718594,
+        0.0010906710410338025,
+        0.0014374430157137158,
+        0.0015529751154308722
+      ],
+      "representative_quad_ids": [
+        2677140,
+        2678174,
+        2678816,
+        2678929,
+        2679146,
+        2679466,
+        2680215,
+        6226434,
+        6226594,
+        6227358,
+        6229379,
+        6351487
+      ]
+    }
+  },
+  "macro_camera": {
+    "position": [
+      -18.212759017944336,
+      27.706071853637695,
+      11.769917488098145
+    ],
+    "target": [
+      -0.8127592552124007,
+      0.42607142838364565,
+      6.369917540048999
+    ],
+    "scale": 0.30000001192092896,
+    "forward": [
+      0.5304190516471863,
+      -0.831599771976471,
+      -0.16461288928985596
+    ]
+  },
+  "visibility_scope": "Saved macro .30 orthobox; actual six-vertex roof means and source unselected quad means, facing>.05, per-pixel nearest-centroid-depth tolerance .001H. Approximate visibility only.",
+  "metric_scope": "Physical source-bound footprint, source fourfan area, saved ridge span and maximum 3D corner-to-ridge-line wing span. No image-direction/aspect proxy is used to select cells.",
+  "one_level_refinement_scale": "A regular midpoint 2x2 subdivision halves each straight boundary edge; physical projected cell areas are approximately quartered. Curved/nonplanar interiors require actual generator validation.",
+  "count_estimate": {
+    "parent_roofs_to_replace": 496732,
+    "child_roofs_if_four_per_parent": 1986928,
+    "net_additional_roofs": 1490196,
+    "caveat": "Shared edge midpoints and conformity triangles on adjacent unrefined roof disks add generator-dependent vertices/faces; this audit does not claim final mesh counts or execution time."
+  },
+  "outputs": {
+    "coarse_quad_ids": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\COARSE_QUADS.npz",
+      "sha256": "525b00cf7a3249324d88ddf035862fcec5cdb0443e9f2c6ebe90d57694533d09",
+      "array_sha256": "616eaacfe139b632595b8482571e4e13dc8e644eafe611460e59e939f2349acd"
+    },
+    "size_metrics": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\SIZE_METRICS.npz",
+      "sha256": "be79865b127fa91f313eba8558fad207a5703a0145d590a4a71ef66d764bfc51",
+      "dtype": "float32 metrics; cutoff selection used original float64 values"
+    }
+  },
+  "source_snapshot": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\comb_scale_refinement_20261014\\measure.py",
+    "snapshot": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\source_snapshot\\comb_scale_refinement_20261014\\measure.py",
+    "sha256": "0e197a2f437664e5b9db134f0e9c0d7a39398913800653150eac842c48a8bf58"
+  },
+  "actual_XY_coarse_face_selection_exact": true,
+  "original_mask_or_roof_heights_changed": false,
+  "source_geometry_changed": false,
+  "candidate_geometry_generated": false,
+  "shading_changed": false,
+  "threshold_sweep_performed": false,
+  "seconds": 34.69821250002133,
+  "scope": "One preapproved physical-size cutoff measured once. This is selection evidence for one local native refinement, not G8 or a control subdivision."
+}

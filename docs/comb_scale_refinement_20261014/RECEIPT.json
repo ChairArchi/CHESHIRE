@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\geometry.npz",
+  "source_native_geometry_sha256": "e874da795215bcd28f31a153f052d774bb2313b828c58cc381989dc115ed3f9e",
+  "source_control_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "source_ridge_state": "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\ridge_state.npz",
+  "source_ridge_state_sha256": "8ee43315100ec89ff9048515ee636863442f2dceb5c12202e2e4954da10bc2d6",
+  "source_hashes_after": {
+    "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\geometry.npz": "e874da795215bcd28f31a153f052d774bb2313b828c58cc381989dc115ed3f9e",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RELIEF\\ridge_state.npz": "8ee43315100ec89ff9048515ee636863442f2dceb5c12202e2e4954da10bc2d6",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+    "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_relief_20261014\\trial01\\RECEIPT.json": "2373a46b3fd1192966b0205bd96f174394fa97ba58cc8715a3a83de4daf4cdbc",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\COARSE_QUADS.npz": "525b00cf7a3249324d88ddf035862fcec5cdb0443e9f2c6ebe90d57694533d09",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\MEASUREMENT.json": "b2908e59f057fa37596b78da90033e4c009ec26db399838575b8204774667b6f"
+  },
+  "selection_path": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\COARSE_QUADS.npz",
+  "selection_sha256": "525b00cf7a3249324d88ddf035862fcec5cdb0443e9f2c6ebe90d57694533d09",
+  "measurement_path": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\MEASUREMENT.json",
+  "measurement_sha256": "b2908e59f057fa37596b78da90033e4c009ec26db399838575b8204774667b6f",
+  "geometry_code_sha256": {
+    "experiments/comb_scale_refinement_20261014/run.py": "6d13a2b1b821cd46868a8464db1a07ad579d738c29e99160bedfdd43fe834516"
+  },
+  "variants": {
+    "REFINED": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\REFINED\\geometry.npz",
+      "geometry_sha256": "37549b71c997a65943fbb6416d008b748ecba4ab05898eadfea95bc994e3a710",
+      "xyz_sha256": "bf1576a557e7737cd536a34437f127ec4405eaae07d88a9cd9653c3acec8e98e",
+      "faces_sha256": "27946c804e3705195c7c1fcd7bebf6924e3e3fa4a5fa9fca127ab7d348b1a7e7",
+      "vertices": 21842242,
+      "triangles": 43684480,
+      "refinement_state": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\REFINED\\refinement_state.npz",
+      "refinement_state_sha256": "416edec484fdb2d6c47de8c2512c3336c887109158546a130f6a851ccde53a0f",
+      "validation": {
+        "control_corners_byte_identical": true,
+        "all_unrefined_native_coordinates_byte_identical": true,
+        "unrelated_old_triangle_rows_byte_identical": true,
+        "accepted_parent_six_triangle_slots_and_ridge_coordinates_checked": true,
+        "accepted_oriented_parent_boundary_cycles_checked": true,
+        "all_new_child_roof_projected_signed_areas_positive": true,
+        "conforming_edge_old_incidence_exactly_two_and_oppositely_oriented": true,
+        "neighbor_splits_preserve_old_planar_surface": true,
+        "child_ridge_and_parent_center_reflection_exact": true,
+        "no_orphan_scope": "Both private old parent ridge IDs are reused by child0. Every appended grid center, midpoint and child ridge ID is referenced by the four-child disks or conforming neighbor split.",
+        "local_template": {
+          "vertices": 17,
+          "edges": 40,
+          "triangles": 24,
+          "Euler_disk": 1,
+          "boundary": [
+            [
+              0,
+              4
+            ],
+            [
+              7,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          "internal_edges_oppositely_paired": true
+        },
+        "topology_scope": "Four-child disk has the original oriented boundary split at shared original-edge midpoints; the two old edge incidences conform to the same midpoint. Source closed one-component connectivity is inherited without global edge sorting.",
+        "limits": "No global collision, self-intersection or fabrication certificate. This local native finish is not an additional global Catmull-Clark generation."
+      }
+    }
+  },
+  "statistics": {
+    "requested_parent_roofs": 496732,
+    "refined_parent_roofs": 496536,
+    "one_orbit_unsafe_parents_excluded": 196,
+    "preserved_other_accepted_roofs": 2634040,
+    "child_roofs": 1986144,
+    "net_added_roofs": 1489608,
+    "unique_shared_midpoints": 1231688,
+    "neighbor_triangles_split": 477232,
+    "changed_source_control_corners": 0,
+    "unchanged_source_control_corners": 7002114,
+    "unchanged_old_native_coordinates": 16141730,
+    "reused_old_private_ridge_vertices": 993072,
+    "added_native_vertices": 4707440,
+    "added_native_triangles": 9414880,
+    "minimum_new_roof_triangle_area": 1.3325268499701397e-08,
+    "minimum_new_roof_projected_double_area": 1.7872007801107838e-09,
+    "child_height_quantiles": [
+      1.172199303584903e-05,
+      0.000392963561102567,
+      0.00100221280813773,
+      0.0016805227751795393,
+      0.002462509049841363
+    ],
+    "child_wing_pitch_quantiles_degrees": [
+      1.1926177740097046,
+      17.947535514831543,
+      31.45884132385254,
+      41.84291458129883
+    ],
+    "child_height_never_exceeds_half_parent": true,
+    "symmetric_midpoint_source_error": 4.6405861586569575e-14,
+    "unrefined_split_max_plane_error": 4.0314539900832e-14,
+    "unrefined_split_max_double_area_sum_error": 3.3741388047285603e-16,
+    "transported_child_ridge_XY_residual": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "recipe": {
+    "stage": "LOCAL_NATIVE_COMB_SCALE_REFINEMENT_G7",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "selection": "Only measured oversized accepted roofs; no new aspect or world-axis gate; one complete source-face-orbit safety exclusion.",
+    "base": "Return selected large cells to unchanged SOURCE quad corners, edge midpoints and arithmetic parent center; replace rather than cumulatively subdivide the old raised ornament.",
+    "child": "Four children each retain the accepted higher-diagonal six-triangle roof formula.",
+    "height": "min(.65*inherited_parent_weight*child_projected_fan_altitude, .5*actual_accepted_parent_height)",
+    "conformity": "One midpoint per original control edge, opposite old incidences checked; neighboring original triangle split into two coplanar triangles.",
+    "preservation": "All original control corners and unrefined native coordinates unchanged. Unrefined neighbor face indices may split while preserving their old planar surface.",
+    "symmetry": "Canonical parent construction, actual corner-ID reflection, exact transported child ridges/parent centers, odd-reflection winding reversal.",
+    "scope": "One local native 2x2 scale replacement, no global refinement, new ornament language, Mandelbulb, Boolean or remesh."
+  },
+  "seconds": 130.1315563999815,
+  "visual_success": "PENDING_MATCHED_ACTUAL_RENDERS"
+}
