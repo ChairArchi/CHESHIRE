@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial02\\FLOW\\geometry.npz",
+  "source_sha256": "bff9a77b6ecdfbb9ab33cb6c3c8f1314b135cf4132b1b5b49fde4ff57023610a",
+  "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial02\\RECEIPT.json",
+  "source_receipt_sha256": "13b588ffcc699c21cd6a9029011b3c08d4daced7259eb41614250dbe9f29b38b",
+  "export_code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\export_curved.py",
+  "export_code_sha256": "0e5f1c94f4dc091bbe03c6ab2e7c2a50d8d32a973ac5e04adb58576ea7722ad4",
+  "preserved_helper": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\model_exports_20261014\\export_latest.py",
+  "preserved_helper_sha256": "86ca0cb13856af317efbe9d63a461ddedb704e49b3af1207d454c9a5121feb62",
+  "checkpoint": null,
+  "classification": "Stored continuous-flow study result; prior accepted model remains preserved.",
+  "full": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_FLOW_FOLDS_CURVED\\CHESHIRE_COLUMN_G7_FLOW_FOLDS_CURVED_FULL.ply",
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "bytes": 700211643,
+    "sha256": "6977e98d0073bb4175d75927e979c3fc4a4535509805dfa04e7b8cc47df92906",
+    "exact_coordinate_and_triangle_roundtrip": true,
+    "coordinates": "binary float64; unchanged source axes/model units",
+    "faces": "uchar3 + signed int32 indices"
+  },
+  "detail": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_FLOW_FOLDS_CURVED\\CHESHIRE_COLUMN_G7_FLOW_FOLDS_CURVED_DETAIL.ply",
+    "vertices": 92069,
+    "triangles": 181710,
+    "bytes": 4572276,
+    "sha256": "7d6988682b18fdd6c03491330e5f4d7a848c87794482872515d12c0fd4aa8bea",
+    "exact_coordinate_and_triangle_roundtrip": true,
+    "coordinates": "binary float64; unchanged source axes/model units",
+    "faces": "uchar3 + signed int32 indices",
+    "scope": "Exact stored triangle subset; open cut boundary, no caps or new surface.",
+    "selection": "Triangle centroids within radius of the same saved macro-camera target.",
+    "target": [
+      -0.8127592552124007,
+      0.42607142838364565,
+      6.369917540048999
+    ],
+    "radius": 0.28
+  },
+  "detail_source_ids": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_FLOW_FOLDS_CURVED\\DETAIL_SOURCE_IDS.npz",
+    "sha256": "5ccef9ac570fcd9472cac597b17774c38bbcfd6f7e5d145e6f4d68cee74327e4"
+  },
+  "source_geometry_modified": false,
+  "simplification": false,
+  "units": "Unchanged source model units; no scale conversion applied.",
+  "seconds": 24.99547209998127
+}

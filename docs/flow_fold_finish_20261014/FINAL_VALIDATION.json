@@ -1,0 +1,138 @@
+{
+  "hierarchy": {
+    "profile": "Same saved unwrapped k phase; primary parents k1,k4, width .70, union of exp(-distance^4)",
+    "middle_gain": ".95+.35*p",
+    "linked_and_wide_gain": ".80+.20*p",
+    "method": "Enhance selected primary saved MIDDLE contribution, retain 80-100% of actual late LINKED/WIDE contributions.",
+    "middle_gain_range": [
+      0.9500000004875444,
+      1.2999999999999998
+    ],
+    "late_gain_range": [
+      0.8000000002785969,
+      1.0
+    ],
+    "delta_norm_quantiles": [
+      0.0006326346566367599,
+      0.002592509924630057,
+      0.007556604970522656,
+      0.015289842990538247,
+      0.017477923715221364
+    ],
+    "carrier_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+    "full_G1_G7_replay": false,
+    "scope": "Saved contribution reweighting with verified neutral CC lift of MIDDLE; not a regenerated G1-G7 growth recipe."
+  },
+  "fine": {
+    "implementation": "INHERITED_PARENT_CONTINUOUS_FINE_FOLDS_V1_CURVED",
+    "source_generation": 7,
+    "output_generation": 7,
+    "added_CC_passes": 0,
+    "added_topology_events": 0,
+    "normal_field_passes": 1,
+    "formula": "psi=12*saved_unwrapped_parent_phase+2*pi*125*saved_normalized_z",
+    "signed_request": "H*.00025*S(z/.06)*S((1-z)/.06)*(.55+.45*sin(parent_phase)^2)*sampling_gain*cos(psi)",
+    "smoothstep": "S(t)=clip(t,0,1)^3*(10-15*clip(t,0,1)+6*clip(t,0,1)^2)",
+    "sampling": "sampling_gain=min(1,((pi/2)/max_actual_incident_edge_abs_delta_psi)^2); positive, continuous amplitude attenuation, no binary surface support or warpage mask.",
+    "displacement_filter": "Exactly one .5*new_delta+.5*uniform_actual_edge_neighbor_mean(new_delta); actual source geometry is not averaged.",
+    "physical_height_reference": 9.735842284057451,
+    "fixed_amplitude_bound": 0.0024339605710143627,
+    "source_vertices": 7002114,
+    "source_quads": 7002112,
+    "actual_changed_control_vertices": 7002114,
+    "raw_signed_request_nonzero_vertices": 7002106,
+    "final_nonzero_delta_vertices": 7002114,
+    "final_nonzero_delta_vertex_fraction": 1.0,
+    "positive_signed_request_vertices": 3511065,
+    "negative_signed_request_vertices": 3491041,
+    "body_endfade_nonzero_vertices": 7002106,
+    "sampling_gain_range": [
+      0.00013663772559785125,
+      1.0
+    ],
+    "sampling_gain_quantiles": [
+      0.2115568087134502,
+      0.8078911969956594,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sampling_gain_below_half_fraction": 0.05192917453214843,
+    "max_incident_phase_gap_quantiles": [
+      0.3338842603238512,
+      0.8096768592306489,
+      1.7476056457186018,
+      3.4151231858353963
+    ],
+    "representative_edge_phase_gap_quantiles": [
+      0.0812097953747184,
+      0.5021332293546266,
+      1.3464889223820364,
+      1.7664559506908173,
+      2.88007738415007
+    ],
+    "representative_edge_phase_below_pi_over2_fraction": 0.931924539338988,
+    "edge_sample_scope": "Every 32nd quad in deterministic 65536-face chunks; all edges used for actual amplitude attenuation.",
+    "flank_gain_range": [
+      0.55,
+      0.9999999999990885
+    ],
+    "raw_delta_norm_quantiles": [
+      0.00013254146894287153,
+      0.001049037653777989,
+      0.0020005904983572903,
+      0.002385050128280702,
+      0.002433959603777101
+    ],
+    "filtered_delta_norm_quantiles": [
+      0.00011884952097747981,
+      0.0008992107589572617,
+      0.0017618043129764374,
+      0.0022056351012316815,
+      0.0024217539254532713
+    ],
+    "maximum_delta_XY_symmetry_error": 0.0,
+    "source_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+    "output_xyz_sha256": "b06eb7a7339c871e4d372ab163e65247aeb70510877a51592bcafae0b6f4382a",
+    "unchanged_control_quad_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+    "source_normal_sha256": "35d21a3c493a6cfd5c86fdeb4f51a3a4607a13c7fe486111cd6ffa79e08147bb",
+    "inherited_parent_phase_sha256": "7ebe87316ea9aaf846731baca032ab308b4442f28b208b0836e4734b211afc84",
+    "inherited_normalized_z_sha256": "244feac25cc21eeb2f1232729d7920d27fe279cb994e9576067a55b092d5da94",
+    "delta_sha256": "958a14c3ad7622573e46cc2aedac017d660676a67284a690adec558d140c3823",
+    "source_geometry_averaged": false,
+    "fan_centres_independently_lifted": false,
+    "native_roof_added": false,
+    "code_binding": {
+      "normal_and_mirror_helper": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py",
+        "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+      },
+      "copied_uniform_delta_average_recipe": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+        "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+      },
+      "imported_unit_dependency": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py",
+        "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+      },
+      "operator": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py",
+        "sha256": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844"
+      }
+    },
+    "limits": "Inherited authored phase sets variable physical pitch. Geometry effect is continuous across shared controls; numerical checks do not establish visual quality, global collision freedom, or fabrication suitability."
+  },
+  "mesh": {
+    "all_finite": true,
+    "positive_area_triangles": 28008448,
+    "degenerate_triangles": 0,
+    "minimum_triangle_area": 3.0051551325526944e-10
+  },
+  "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+  "source_XY_position_symmetry_error": 4.785061236134425e-14,
+  "output_XY_position_symmetry_error": 4.785061236134425e-14,
+  "native_fan_centres": "Arithmetic mean of actual moved carrier quad corners; no independent centre lift.",
+  "connectivity": "Exact original G7 native fan indices; inherited topology, no G8, added vertices or orphan creation.",
+  "self_intersection_checked": false,
+  "aesthetic_success": "Pending actual matched render comparison"
+}

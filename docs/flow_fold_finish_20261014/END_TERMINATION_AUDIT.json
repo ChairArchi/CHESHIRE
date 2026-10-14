@@ -1,0 +1,68 @@
+{
+  "schema": "CHESHIRE_END_TERMINATION_SOURCE_AUDIT_V1",
+  "date": "2026-10-14",
+  "scope": "Read-only actual image and saved control coordinate audit. No new geometry, render or repair.",
+  "finding": "Conspicuous straight flat plate endings appear in end_rule REVISED before later roof/continuous-fine finishes. Actual local displacement decomposition shows the original/replay mask-splice gradient strongly magnifies deformation in this region. Current fine texture does not repair the inherited major termination.",
+  "matched_images": {
+    "original": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07/views/close_oblique.png",
+    "original_image_sha256_from_saved_receipt": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+    "revised_before_fine": "E:/CHESHIRE_DATA/experiments/end_rule_revision_20261014/trial01/REVISED_FLAT/views/close_oblique.png",
+    "revised_image_sha256_from_saved_receipt": "d4ad8073ce4e9d0467e58982b3651fea32b8bc886205fde5cf4b73d83d42b344",
+    "conditions": "Same actual close camera, 900px, orthographic scale1.25 and saved all-flat render conditions.",
+    "observation": "Original WIDE retains rounded cups/returns in the central lower band; REVISED introduces straighter flat plate endings."
+  },
+  "sources_loaded": {
+    "original_control": "E:/CHESHIRE_DATA/experiments/medium_root_folds_20261013/trial02/WIDE_ROOT_FINISHED/SPAN/G07/control_quad.npz",
+    "revised_control": "E:/CHESHIRE_DATA/experiments/end_rule_revision_20261014/trial01/REVISED/control_quad.npz",
+    "full_replay_control": "E:/CHESHIRE_DATA/experiments/end_rule_revision_20261014/trial01/replay/states/G07_FINAL/control_quad.npz",
+    "mask": "E:/CHESHIRE_DATA/experiments/volume_junction_target_20261014/trial01/selection.npz",
+    "binding_scope": "Actual arrays loaded; prior exact association/file bindings retained in PREPARATION.json and end_rule receipt. Full large-file hashes were not repeated in this audit."
+  },
+  "operator": {
+    "code": "experiments/end_rule_revision_20261014/run.py::splice",
+    "formula": "Xrevised=Xoriginal+m*(Xfull_replay-Xoriginal)",
+    "mask_origin": "Previous marked-band volume-junction mask: quintic(coarse_mask/.30), then actual V/E/F scalar lifts. Reused for the larger early-rule replay difference.",
+    "old_WIDE_support": "max(0,1-((abs(wrapped_phase)-1.55)/1.20)^2)^3; old WIDE already includes it without the same new flat endings. It is not supported as the primary new cause."
+  },
+  "measurement": {
+    "screen_ROI_pixels": [300, 540, 600, 680],
+    "projection_scope": "Saved controls projected into the inherited camera; rounded-pixel minimum control depth is an approximate front-surface filter, not exact rendered triangle-ID picking.",
+    "exact_decomposition": "For D=Xfull_replay-Xoriginal: m_a*D_a-m_b*D_b=((m_a+m_b)/2)*(D_a-D_b)+(m_a-m_b)*((D_a+D_b)/2). Terms are replay-displacement gradient and mask gradient respectively.",
+    "edges": [
+      {
+        "vertex_ids": [52332, 1959852],
+        "projected_revised_midpoint_pixels": [560.0992696708761, 563.7710455480685],
+        "mask_weights": [0.0, 0.125],
+        "original_edge_length": 0.00014165283134492224,
+        "revised_splice_edge_length": 0.014685489644724742,
+        "full_replay_edge_length": 0.0018496890469050535,
+        "mask_gradient_term_norm": 0.014524489301771377,
+        "replay_displacement_gradient_term_norm": 0.00011546212063505441
+      },
+      {
+        "vertex_ids": [3932787, 5959763],
+        "projected_revised_midpoint_pixels": [587.426414227378, 545.9330100321336],
+        "mask_weights": [0.21875, 0.109375],
+        "original_edge_length": 0.00028079095405008145,
+        "revised_splice_edge_length": 0.017051277655572034,
+        "full_replay_edge_length": 0.0032010177384233208,
+        "mask_gradient_term_norm": 0.01710098194710541,
+        "replay_displacement_gradient_term_norm": 0.0005695085142781182
+      },
+      {
+        "vertex_ids": [2838143, 809144],
+        "projected_revised_midpoint_pixels": [416.6148178415077, 674.6183501769355],
+        "mask_weights": [0.625, 0.75],
+        "original_edge_length": 0.0005098887207874318,
+        "revised_splice_edge_length": 0.01644354574738331,
+        "full_replay_edge_length": 0.00913306793685964,
+        "mask_gradient_term_norm": 0.010408498316319955,
+        "replay_displacement_gradient_term_norm": 0.006193576389708733
+      }
+    ]
+  },
+  "interpretation": "A continuous mask does not ensure a gentle geometric blend when a large replay difference changes across a short physical edge. Its gradient is a measured dominant contributor on representative affected edges. The visual cut is not proof of an open mesh boundary.",
+  "limits": "Full replay also changes local morphology. No full-replay matched render, exclusive sole-cause claim or completed repair. Exact visible ownership of every overlapping sheet remains unresolved.",
+  "next_direction_not_executed": "Separate major termination repair from fine texture: broaden/redesign the local original-replay blend to limit displacement gradients, or locally restore the original rounded end before reusing the continuous fine field. Avoid global smoothing or covering the termination with more ornament.",
+  "checkpoint": "Current research preserved; new experiments stopped."
+}

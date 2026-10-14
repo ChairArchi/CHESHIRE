@@ -1,0 +1,329 @@
+{
+  "kind": "CONTINUOUS_PARENT_FLOW_FINE_FOLD_REPLACEMENT",
+  "date": "2026-10-14",
+  "variants": {
+    "FLOW": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\FLOW\\geometry.npz",
+      "geometry_sha256": "af2b7340015caaa6d8e9ca741d927aead85f379d6146b5ec45cf353ec6434d49",
+      "xyz_sha256": "1df3f4cbc98197811bfc2ba3df6085b21de0bcb9eb2bd602dad529970c6290d8",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "validation": {
+        "hierarchy": {
+          "profile": "Same saved unwrapped k phase; primary parents k1,k4, width .70, union of exp(-distance^4)",
+          "middle_gain": ".95+.35*p",
+          "linked_and_wide_gain": ".80+.20*p",
+          "method": "Enhance selected primary saved MIDDLE contribution, retain 80-100% of actual late LINKED/WIDE contributions.",
+          "middle_gain_range": [
+            0.9500000004875444,
+            1.2999999999999998
+          ],
+          "late_gain_range": [
+            0.8000000002785969,
+            1.0
+          ],
+          "delta_norm_quantiles": [
+            0.0006326346566367599,
+            0.002592509924630057,
+            0.007556604970522656,
+            0.015289842990538247,
+            0.017477923715221364
+          ],
+          "carrier_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+          "full_G1_G7_replay": false,
+          "scope": "Saved contribution reweighting with verified neutral CC lift of MIDDLE; not a regenerated G1-G7 growth recipe."
+        },
+        "fine": {
+          "implementation": "INHERITED_PARENT_CONTINUOUS_FINE_FOLDS_V1",
+          "source_generation": 7,
+          "output_generation": 7,
+          "added_CC_passes": 0,
+          "added_topology_events": 0,
+          "normal_field_passes": 1,
+          "formula": "psi=12*saved_unwrapped_parent_phase+2*pi*400*saved_normalized_z",
+          "signed_request": "H*.00025*S(z/.06)*S((1-z)/.06)*(.55+.45*sin(parent_phase)^2)*sampling_gain*cos(psi)",
+          "smoothstep": "S(t)=clip(t,0,1)^3*(10-15*clip(t,0,1)+6*clip(t,0,1)^2)",
+          "sampling": "sampling_gain=min(1,((pi/2)/max_actual_incident_edge_abs_delta_psi)^2); positive, continuous amplitude attenuation, no binary surface support or warpage mask.",
+          "displacement_filter": "Exactly one .5*new_delta+.5*uniform_actual_edge_neighbor_mean(new_delta); actual source geometry is not averaged.",
+          "physical_height_reference": 9.735842284057451,
+          "fixed_amplitude_bound": 0.0024339605710143627,
+          "source_vertices": 7002114,
+          "source_quads": 7002112,
+          "actual_changed_control_vertices": 7002114,
+          "raw_signed_request_nonzero_vertices": 7002106,
+          "final_nonzero_delta_vertices": 7002114,
+          "final_nonzero_delta_vertex_fraction": 1.0,
+          "positive_signed_request_vertices": 3507220,
+          "negative_signed_request_vertices": 3494886,
+          "body_endfade_nonzero_vertices": 7002106,
+          "sampling_gain_range": [
+            0.00013134946026469965,
+            1.0
+          ],
+          "sampling_gain_quantiles": [
+            0.126087069351131,
+            0.43909797207452056,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "sampling_gain_below_half_fraction": 0.11952933071355308,
+          "max_incident_phase_gap_quantiles": [
+            0.46818713717225374,
+            1.0985083069360257,
+            2.370495642612835,
+            4.4236891525923845
+          ],
+          "representative_edge_phase_gap_quantiles": [
+            0.14223049199546267,
+            0.7146375371798257,
+            1.8463537451157208,
+            2.4019159084447996,
+            3.7869128630744626
+          ],
+          "representative_edge_phase_below_pi_over2_fraction": 0.8535916020766305,
+          "edge_sample_scope": "Every 32nd quad in deterministic 65536-face chunks; all edges used for actual amplitude attenuation.",
+          "flank_gain_range": [
+            0.55,
+            0.9999999999990885
+          ],
+          "raw_delta_norm_quantiles": [
+            0.00010914995298562169,
+            0.0009238779262331405,
+            0.0019407536888902592,
+            0.002378057950975325,
+            0.002433956322621124
+          ],
+          "filtered_delta_norm_quantiles": [
+            7.562415306407054e-05,
+            0.0007164922532348128,
+            0.0016364124717403786,
+            0.002141447480274257,
+            0.0024293517716780055
+          ],
+          "maximum_delta_XY_symmetry_error": 0.0,
+          "source_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+          "output_xyz_sha256": "d8780c47591eb9032f8e666d682ad2ee93ccaad0a9eb393d3cd3ca3a25a90f00",
+          "unchanged_control_quad_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+          "source_normal_sha256": "35d21a3c493a6cfd5c86fdeb4f51a3a4607a13c7fe486111cd6ffa79e08147bb",
+          "inherited_parent_phase_sha256": "7ebe87316ea9aaf846731baca032ab308b4442f28b208b0836e4734b211afc84",
+          "inherited_normalized_z_sha256": "244feac25cc21eeb2f1232729d7920d27fe279cb994e9576067a55b092d5da94",
+          "delta_sha256": "9221cb57a78b4fff1b060696208fd4b496446d3ff5af1214714352196764e2af",
+          "source_geometry_averaged": false,
+          "fan_centres_independently_lifted": false,
+          "native_roof_added": false,
+          "code_binding": {
+            "normal_and_mirror_helper": {
+              "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py",
+              "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+            },
+            "copied_uniform_delta_average_recipe": {
+              "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+              "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+            },
+            "imported_unit_dependency": {
+              "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py",
+              "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+            },
+            "operator": {
+              "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_operator.py",
+              "sha256": "1fb82c98788cd84d904907b5d897fe31ec12d6a2aaba4a3e5683e94070f77dd8"
+            }
+          },
+          "limits": "Inherited authored phase sets variable physical pitch. Geometry effect is continuous across shared controls; numerical checks do not establish visual quality, global collision freedom, or fabrication suitability."
+        },
+        "mesh": {
+          "all_finite": true,
+          "positive_area_triangles": 28008448,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area": 7.857203127893801e-10
+        },
+        "original_native_topology_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "source_XY_position_symmetry_error": 4.785061236134425e-14,
+        "output_XY_position_symmetry_error": 4.785061236134425e-14,
+        "native_fan_centres": "Arithmetic mean of actual moved carrier quad corners; no independent centre lift.",
+        "connectivity": "Exact original G7 native fan indices; inherited topology, no G8, added vertices or orphan creation.",
+        "self_intersection_checked": false,
+        "aesthetic_success": "Pending actual matched render comparison"
+      },
+      "control_quad": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\FLOW\\control_quad.npz",
+      "control_quad_sha256": "5589067827b5b94054a04dacc1dd5fe6ef4a1709350c7f363f9247b8f1a81399"
+    }
+  },
+  "source_control_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "design_source_native_path": "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\REFINED\\geometry.npz",
+  "design_source_native_geometry_sha256": "37549b71c997a65943fbb6416d008b748ecba4ab05898eadfea95bc994e3a710",
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+    "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\COMPONENTS.npz": "3d2f4c1e1b46ad1ae881bf0f2130ebf85d9587bc3c2506604bf6f0346176314c",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\MIDDLE_COMPONENT.npz": "4b856cb97b111e567e97ef6c93436b87532a5a5488eefe2c9bda6e07744e833f",
+    "E:\\CHESHIRE_DATA\\experiments\\comb_scale_refinement_20261014\\trial01\\REFINED\\geometry.npz": "37549b71c997a65943fbb6416d008b748ecba4ab05898eadfea95bc994e3a710"
+  },
+  "source_snapshots": {
+    "experiments/flow_fold_finish_20261014/run.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\run.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\run.py",
+      "sha256": "d60b96924f7dc914e92ff56fd0f2e64a8cdd92d68cc36513f297ae147cb0a27f"
+    },
+    "experiments/flow_fold_finish_20261014/flow_operator.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_operator.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\flow_operator.py",
+      "sha256": "1fb82c98788cd84d904907b5d897fe31ec12d6a2aaba4a3e5683e94070f77dd8"
+    },
+    "experiments/fold_hierarchy_20261014/run.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\run.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\run.py",
+      "sha256": "7d16d720b3da8f94eb76c322a9d8e24a7a7ca4507371dbbf82bc233c465d2939"
+    },
+    "experiments/fold_hierarchy_20261014/texture.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "sha256": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a"
+    },
+    "experiments/whole_column_detail_20261013/whole_field.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\whole_column_detail_20261013\\whole_field.py",
+      "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+    },
+    "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+      "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+    },
+    "src/cheshire/reference_subdivision.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\flow_fold_finish_20261014\\trial01\\source_snapshot_run\\src\\cheshire\\reference_subdivision.py",
+      "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+    }
+  },
+  "hierarchy": {
+    "profile": "Same saved unwrapped k phase; primary parents k1,k4, width .70, union of exp(-distance^4)",
+    "middle_gain": ".95+.35*p",
+    "linked_and_wide_gain": ".80+.20*p",
+    "method": "Enhance selected primary saved MIDDLE contribution, retain 80-100% of actual late LINKED/WIDE contributions.",
+    "middle_gain_range": [
+      0.9500000004875444,
+      1.2999999999999998
+    ],
+    "late_gain_range": [
+      0.8000000002785969,
+      1.0
+    ],
+    "delta_norm_quantiles": [
+      0.0006326346566367599,
+      0.002592509924630057,
+      0.007556604970522656,
+      0.015289842990538247,
+      0.017477923715221364
+    ],
+    "carrier_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+    "full_G1_G7_replay": false,
+    "scope": "Saved contribution reweighting with verified neutral CC lift of MIDDLE; not a regenerated G1-G7 growth recipe."
+  },
+  "fine": {
+    "implementation": "INHERITED_PARENT_CONTINUOUS_FINE_FOLDS_V1",
+    "source_generation": 7,
+    "output_generation": 7,
+    "added_CC_passes": 0,
+    "added_topology_events": 0,
+    "normal_field_passes": 1,
+    "formula": "psi=12*saved_unwrapped_parent_phase+2*pi*400*saved_normalized_z",
+    "signed_request": "H*.00025*S(z/.06)*S((1-z)/.06)*(.55+.45*sin(parent_phase)^2)*sampling_gain*cos(psi)",
+    "smoothstep": "S(t)=clip(t,0,1)^3*(10-15*clip(t,0,1)+6*clip(t,0,1)^2)",
+    "sampling": "sampling_gain=min(1,((pi/2)/max_actual_incident_edge_abs_delta_psi)^2); positive, continuous amplitude attenuation, no binary surface support or warpage mask.",
+    "displacement_filter": "Exactly one .5*new_delta+.5*uniform_actual_edge_neighbor_mean(new_delta); actual source geometry is not averaged.",
+    "physical_height_reference": 9.735842284057451,
+    "fixed_amplitude_bound": 0.0024339605710143627,
+    "source_vertices": 7002114,
+    "source_quads": 7002112,
+    "actual_changed_control_vertices": 7002114,
+    "raw_signed_request_nonzero_vertices": 7002106,
+    "final_nonzero_delta_vertices": 7002114,
+    "final_nonzero_delta_vertex_fraction": 1.0,
+    "positive_signed_request_vertices": 3507220,
+    "negative_signed_request_vertices": 3494886,
+    "body_endfade_nonzero_vertices": 7002106,
+    "sampling_gain_range": [
+      0.00013134946026469965,
+      1.0
+    ],
+    "sampling_gain_quantiles": [
+      0.126087069351131,
+      0.43909797207452056,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sampling_gain_below_half_fraction": 0.11952933071355308,
+    "max_incident_phase_gap_quantiles": [
+      0.46818713717225374,
+      1.0985083069360257,
+      2.370495642612835,
+      4.4236891525923845
+    ],
+    "representative_edge_phase_gap_quantiles": [
+      0.14223049199546267,
+      0.7146375371798257,
+      1.8463537451157208,
+      2.4019159084447996,
+      3.7869128630744626
+    ],
+    "representative_edge_phase_below_pi_over2_fraction": 0.8535916020766305,
+    "edge_sample_scope": "Every 32nd quad in deterministic 65536-face chunks; all edges used for actual amplitude attenuation.",
+    "flank_gain_range": [
+      0.55,
+      0.9999999999990885
+    ],
+    "raw_delta_norm_quantiles": [
+      0.00010914995298562169,
+      0.0009238779262331405,
+      0.0019407536888902592,
+      0.002378057950975325,
+      0.002433956322621124
+    ],
+    "filtered_delta_norm_quantiles": [
+      7.562415306407054e-05,
+      0.0007164922532348128,
+      0.0016364124717403786,
+      0.002141447480274257,
+      0.0024293517716780055
+    ],
+    "maximum_delta_XY_symmetry_error": 0.0,
+    "source_xyz_sha256": "9dc3028fc229a5ca43a8113305b7c816709ff1f36e5df94603d39211df96a479",
+    "output_xyz_sha256": "d8780c47591eb9032f8e666d682ad2ee93ccaad0a9eb393d3cd3ca3a25a90f00",
+    "unchanged_control_quad_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+    "source_normal_sha256": "35d21a3c493a6cfd5c86fdeb4f51a3a4607a13c7fe486111cd6ffa79e08147bb",
+    "inherited_parent_phase_sha256": "7ebe87316ea9aaf846731baca032ab308b4442f28b208b0836e4734b211afc84",
+    "inherited_normalized_z_sha256": "244feac25cc21eeb2f1232729d7920d27fe279cb994e9576067a55b092d5da94",
+    "delta_sha256": "9221cb57a78b4fff1b060696208fd4b496446d3ff5af1214714352196764e2af",
+    "source_geometry_averaged": false,
+    "fan_centres_independently_lifted": false,
+    "native_roof_added": false,
+    "code_binding": {
+      "normal_and_mirror_helper": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py",
+        "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+      },
+      "copied_uniform_delta_average_recipe": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+        "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+      },
+      "imported_unit_dependency": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py",
+        "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+      },
+      "operator": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_operator.py",
+        "sha256": "1fb82c98788cd84d904907b5d897fe31ec12d6a2aaba4a3e5683e94070f77dd8"
+      }
+    },
+    "limits": "Inherited authored phase sets variable physical pitch. Geometry effect is continuous across shared controls; numerical checks do not establish visual quality, global collision freedom, or fabrication suitability."
+  },
+  "elapsed_seconds": 178.59455529996194,
+  "generation": 7,
+  "new_G8": false,
+  "scope": "One fixed combined correction: mild primary reinforcement preserving late folds, then signed continuous flow field on actual carrier controls. Replaces roof finish; no old sparse warpage mask. Actual render and saved mesh retained separately from prior accepted design. No claim of reference-exact recursive algorithm or global collision repair."
+}
