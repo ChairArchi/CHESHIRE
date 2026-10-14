@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "input_case": "SPAN",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+  "source_native_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+  "source_hashes_after": {
+    "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+    "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+  },
+  "source_growth_generation": 7,
+  "added_G8": false,
+  "added_ornaments": 0,
+  "one_rule_revision": true,
+  "variants": {
+    "REVISED": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+      "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+      "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+      "control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+      "statistics": {
+        "selected_controls": 157752,
+        "changed_controls": 157752,
+        "unchanged_outside_controls": 6844362,
+        "changed_outside_controls": 0,
+        "maximum_delta": 0.2365885966343256,
+        "rms_selected_delta": 0.05708856081784679,
+        "actual_source_region_max_radius": 1.127418148909341,
+        "actual_candidate_region_max_radius": 1.1279598513028373,
+        "original_selected_z_range": [
+          6.022680987590552,
+          6.491012677011528
+        ],
+        "candidate_selected_z_range": [
+          6.028831534051084,
+          6.582342624782285
+        ],
+        "affected_quads": 162304,
+        "checked_affected_native_triangles": 649216,
+        "minimum_affected_native_triangle_area": 1.6206618802853392e-09,
+        "old_new_normal_dot_negative_triangles": 193940,
+        "maximum_old_new_triangle_normal_angle_degrees": 179.95405519982688,
+        "normal_scope": "Old/new normal angle is a deformation diagnostic, not a self-intersection or invariant orientation certificate.",
+        "actual_XY_reflection_max_error": {
+          "x": 4.961703332445539e-14,
+          "y": 4.961703332445539e-14
+        }
+      },
+      "topology_scope": "Exact original control topology/associations and native triangle indices; inherited original one-component closed oriented topology, no added components.",
+      "replay_final": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL",
+      "replay_final_generation_sha256": "d9f23217bb65c48f77a3039670d19cf9c22a74c888242ff08293bb9a276e80ff",
+      "mask": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+      "mask_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+      "combination": "Xfinal=Xoriginal+saved_original_mask*(Xexact_revised_replay−Xoriginal). Exact replay interior with feathered transition; outside mask original XYZ is byte-identical."
+    }
+  },
+  "geometry_code_sha256": {
+    "experiments/end_rule_revision_20261014/run.py": "74e0f54cf1e3cb877b01743efc700fa90ad4b51eba971cbc782ee66f9e96bf08",
+    "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa"
+  },
+  "seconds": 824.2964911000454,
+  "visual_success": "PENDING_MATCHED_FLAT_AND_SMOOTH_REVIEW",
+  "scope": "One modified early field-direction rule with actual downstream regeneration. Final candidate is restricted to original marked ends; all original data and prior candidates remain untouched."
+}

@@ -1,0 +1,27 @@
+READ-ONLY VISUAL COVERAGE AUDIT / 2026-10-14
+
+The initial source-based selective shading mask does not adequately preserve
+the user's preferred broad comb pattern. It smooths much of that pattern even
+before the candidate's native centers are modified. Therefore its render pair
+cannot establish improvement over the user's original all-FLAT reference.
+
+Measured approximate-visible source-quad ROI in actual 900-square macro:
+lost lower-right strip [475,700,740,899]: 1,356 quads; 134 flat (9.88%).
+Long-axis abs(Z)<=.15: 598; >=.95: 2.
+Median aspect 1.676; corresponding median aspect gain about .0135.
+580 quads have aspect<=1.5; aspect gain<.35 excludes 805 faces.
+Diagonal gain<.35 affects 717; warpage gain<.35 affects 250.
+Only 9 faces fail geometric safety. These counts overlap; do not add them.
+
+Surviving right rim [775,700,885,875]: 1,322 quads; 295 flat (22.31%).
+Median aspect 3.125 and long-axis abs(Z)=.718 are favored by the mask.
+
+Conclusion: world-axis direction and source-quad anisotropy are weak proxies
+for the visible native triangle comb. Nearly isotropic quads and quads whose
+long axis is near horizontal can carry the preferred rendered diagonal pattern.
+The mask remains frozen as a documented failed coverage selection. No threshold
+sweep or candidate regeneration was performed in this audit.
+
+Same-candidate all-FLAT renders are required to assess the actual geometric
+accent while preserving the original comb appearance. This adds a presentation
+comparison only, not another geometry candidate or Mandelbulb experiment.

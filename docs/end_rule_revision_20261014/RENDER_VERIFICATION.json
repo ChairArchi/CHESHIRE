@@ -1,0 +1,997 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01",
+  "states": [
+    {
+      "state": "ORIGINAL_FLAT",
+      "source_geometry": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "shading": "FLAT_NATIVE_TRIANGLES",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\macro.png",
+          "sha256": "b4c888a58be0b0301ffda3ed692e6dfa43007ce4b07d945bcdaf9f8dc1257e95",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "02cdc37033f24d77fd34f7f6ac3f9866852c2b0be596be1f73ebf7b37f02264e"
+        }
+      ],
+      "geometry_readback": {
+        "xyz_float32_sha256": "e9d6bcdd918b1894c60453219f600624503fa090450a948850c4a78d86deaf4e",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      },
+      "actual_smooth_polygons": 0,
+      "flag_evidence": "Preserved actual original flat-render code checks all use_smooth flags false; receipt conditions record zero smooth polygons."
+    },
+    {
+      "state": "REVISED_FLAT",
+      "source_geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+      "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+      "shading": "FLAT_NATIVE_TRIANGLES",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\front.png",
+          "sha256": "22c11675f3387c0444fb40a78e2838e08de3ea9f7075c94e70fa87aba4505aa8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\body_oblique.png",
+          "sha256": "5bb06f44dabffeaf14703772e1b7ca946143dacceb9ccc10359d6a82442a4727",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\close_oblique.png",
+          "sha256": "d4ad8073ce4e9d0467e58982b3651fea32b8bc886205fde5cf4b73d83d42b344",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\macro.png",
+          "sha256": "c000ec1768e8140b0be6e3ee2177a63d7585085c36aa96ac9b477feffd400844",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ],
+      "geometry_readback": {
+        "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      },
+      "actual_smooth_polygons": 0,
+      "actual_flag_hash": "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+      "source_arrays": {
+        "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+      },
+      "geometry_counts": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "source_arrays": {
+          "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+          "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        }
+      }
+    },
+    {
+      "state": "ORIGINAL_SMOOTH",
+      "source_geometry": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\front.png",
+          "sha256": "89d005b66c3b737506b568732cb1f9c788d161303f036649c20a1d37b2b0edd4",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\body_oblique.png",
+          "sha256": "011c6d0b5385f361b673332c004d89cc24a93c40bd57c3efa437028429d7358f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\close_oblique.png",
+          "sha256": "3930c023cea82317ec01a2054ada8d65cabe17b84b110e2fc3a30de8e0c0bcb6",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\macro.png",
+          "sha256": "4b58b2b718091161b4a58c1ae2e63ce088dacf9cf4ffccaab14e3d85282d969b",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ],
+      "geometry_readback": {
+        "xyz_float32_sha256": "e9d6bcdd918b1894c60453219f600624503fa090450a948850c4a78d86deaf4e",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      },
+      "actual_smooth_polygons": 28008448,
+      "actual_flag_hash": "ca611e69c617bb26cc1290c6f7777c14eb065c3aea473c235b494cc2811ae7ab",
+      "source_arrays": {
+        "xyz_sha256": "622839528a36c31042fb8da4074d659c5a20296b9dc3bf5eed18e175f7ad8bc3",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+      },
+      "geometry_counts": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "source_arrays": {
+          "xyz_sha256": "622839528a36c31042fb8da4074d659c5a20296b9dc3bf5eed18e175f7ad8bc3",
+          "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "e9d6bcdd918b1894c60453219f600624503fa090450a948850c4a78d86deaf4e",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        }
+      }
+    },
+    {
+      "state": "REVISED_SMOOTH",
+      "source_geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+      "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+      "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\front.png",
+          "sha256": "fad2f153119e9c9950bc3057751e8ff36e6c71e2af22f1546f9623d5b9dfc325",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\body_oblique.png",
+          "sha256": "6d904e1c275a2e8c57685d64b0d76502d35ada4cc9aa20f24c2a00f01f0bfc1a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\close_oblique.png",
+          "sha256": "927dd3d75749ed8bd7d1fcd8ec0ccf4c084a660adc83c3344ad7c989d8fae8a7",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\macro.png",
+          "sha256": "a9cc7c5caf8cb0f8c5858d550b0a7ae9e8b11d4eca9d3d938ab4192f75b16ac8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ],
+      "geometry_readback": {
+        "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+        "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+      },
+      "actual_smooth_polygons": 28008448,
+      "actual_flag_hash": "ca611e69c617bb26cc1290c6f7777c14eb065c3aea473c235b494cc2811ae7ab",
+      "source_arrays": {
+        "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+      },
+      "geometry_counts": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "source_arrays": {
+          "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+          "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        }
+      }
+    }
+  ],
+  "source_binding": {
+    "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+    "source_native_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+    "original_source": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    },
+    "camera_placement": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\PLACEMENT.json",
+    "camera_placement_sha256": "23f2a9f2f0af1d9bcf2cc72604ae1e13c52c7602795801537b2519c87c12b8ae",
+    "views": {
+      "front": [
+        [
+          0,
+          32,
+          5
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        12.0
+      ],
+      "body_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          0,
+          0,
+          6.25
+        ],
+        4.3
+      ],
+      "close_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        1.25
+      ],
+      "macro": [
+        [
+          -18.2127592552124,
+          27.70607142838365,
+          11.769917540049
+        ],
+        [
+          -0.8127592552124007,
+          0.42607142838364565,
+          6.369917540048999
+        ],
+        0.3
+      ]
+    },
+    "actual_reference_views": {
+      "front": {
+        "position": [
+          0.0,
+          32.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          5
+        ],
+        "scale": 12.0,
+        "forward": [
+          -1.1399865765455465e-14,
+          -1.0,
+          7.549790126404332e-08
+        ]
+      },
+      "body_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          0,
+          0,
+          6.25
+        ],
+        "scale": 4.300000190734863,
+        "forward": [
+          0.5328656435012817,
+          -0.8289023041725159,
+          -0.17022091150283813
+        ]
+      },
+      "close_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        "scale": 1.25,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      },
+      "macro": {
+        "position": [
+          -18.212759017944336,
+          27.706071853637695,
+          11.769917488098145
+        ],
+        "target": [
+          -0.8127592552124007,
+          0.42607142838364565,
+          6.369917540048999
+        ],
+        "scale": 0.30000001192092896,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      }
+    },
+    "reference_images": [
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+        "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true,
+        "shading": "FLAT"
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+        "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true,
+        "shading": "FLAT"
+      },
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+        "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+        "receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7",
+        "reused_reference": true,
+        "shading": "FLAT"
+      },
+      {
+        "view": "macro",
+        "filename": "macro.png",
+        "sha256": "b4c888a58be0b0301ffda3ed692e6dfa43007ce4b07d945bcdaf9f8dc1257e95",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\macro.png",
+        "receipt": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\receipt.json",
+        "receipt_sha256": "02cdc37033f24d77fd34f7f6ac3f9866852c2b0be596be1f73ebf7b37f02264e",
+        "reused_reference": true,
+        "shading": "FLAT"
+      }
+    ],
+    "reference_conditions": {
+      "engine": "CYCLES",
+      "resolution": [
+        900,
+        900
+      ],
+      "resolution_percentage": 100,
+      "samples": 24,
+      "denoising": true,
+      "view_transform": "AgX",
+      "image_format": "PNG",
+      "camera_type": "ORTHO",
+      "material_base_color": [
+        0.5,
+        0.4699999988079071,
+        0.4099999964237213,
+        1.0
+      ],
+      "material_roughness": 0.8399999737739563,
+      "smooth_polygons": 0,
+      "modifiers": [],
+      "normal_maps": false,
+      "world_color": [
+        0.054999999701976776,
+        0.06300000101327896,
+        0.07500000298023224,
+        1.0
+      ],
+      "world_strength": 0.4000000059604645,
+      "lights": {
+        "Key": {
+          "position": [
+            -20.0,
+            25.0,
+            32.0
+          ],
+          "power": 36000.0,
+          "size": 17.0,
+          "shape": "DISK"
+        },
+        "Fill": {
+          "position": [
+            24.0,
+            13.0,
+            15.0
+          ],
+          "power": 8500.0,
+          "size": 18.0,
+          "shape": "DISK"
+        },
+        "Rim": {
+          "position": [
+            0.0,
+            -23.0,
+            29.0
+          ],
+          "power": 26000.0,
+          "size": 13.0,
+          "shape": "DISK"
+        }
+      }
+    },
+    "reference_Blender_version": "4.5.4 LTS"
+  },
+  "candidate_binding": {
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\RECEIPT.json",
+    "receipt_sha256": "b77a701e01a53976e08ad07b963fb022931bf8e4efcc08d21485a55fddd31569",
+    "variant": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+      "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+      "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+      "control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+      "statistics": {
+        "selected_controls": 157752,
+        "changed_controls": 157752,
+        "unchanged_outside_controls": 6844362,
+        "changed_outside_controls": 0,
+        "maximum_delta": 0.2365885966343256,
+        "rms_selected_delta": 0.05708856081784679,
+        "actual_source_region_max_radius": 1.127418148909341,
+        "actual_candidate_region_max_radius": 1.1279598513028373,
+        "original_selected_z_range": [
+          6.022680987590552,
+          6.491012677011528
+        ],
+        "candidate_selected_z_range": [
+          6.028831534051084,
+          6.582342624782285
+        ],
+        "affected_quads": 162304,
+        "checked_affected_native_triangles": 649216,
+        "minimum_affected_native_triangle_area": 1.6206618802853392e-09,
+        "old_new_normal_dot_negative_triangles": 193940,
+        "maximum_old_new_triangle_normal_angle_degrees": 179.95405519982688,
+        "normal_scope": "Old/new normal angle is a deformation diagnostic, not a self-intersection or invariant orientation certificate.",
+        "actual_XY_reflection_max_error": {
+          "x": 4.961703332445539e-14,
+          "y": 4.961703332445539e-14
+        }
+      },
+      "topology_scope": "Exact original control topology/associations and native triangle indices; inherited original one-component closed oriented topology, no added components.",
+      "replay_final": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL",
+      "replay_final_generation_sha256": "d9f23217bb65c48f77a3039670d19cf9c22a74c888242ff08293bb9a276e80ff",
+      "mask": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+      "mask_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+      "combination": "Xfinal=Xoriginal+saved_original_mask*(Xexact_revised_replay−Xoriginal). Exact replay interior with feathered transition; outside mask original XYZ is byte-identical."
+    },
+    "original_source": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+      "source_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+      "generation_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+      "generation_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+      "control_source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz",
+      "control_sha256": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6"
+    }
+  },
+  "comparison_columns": 4,
+  "source_images": 16,
+  "reused_original_flat_images": 4,
+  "new_original_smooth_images": 4,
+  "new_revised_flat_images": 4,
+  "new_revised_smooth_images": 4,
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    },
+    "macro": {
+      "position": [
+        -18.212759017944336,
+        27.706071853637695,
+        11.769917488098145
+      ],
+      "target": [
+        -0.8127592552124007,
+        0.42607142838364565,
+        6.369917540048999
+      ],
+      "scale": 0.30000001192092896,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "reference_conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "only_allowed_condition_difference": "smooth_polygons: zero for FLAT; all native triangles for SMOOTH",
+  "flat_smooth_coordinates_and_connectivity_identical": true,
+  "original_and_revised_triangle_connectivity_identical": true,
+  "geometry_success_certified": false,
+  "aesthetic_success_certified": false,
+  "smooth_normal_diagnostic_is_geometry_improvement": false,
+  "source_growth_generation": 7,
+  "new_source_growth_G8": false,
+  "ornaments_added": false,
+  "modifiers": [],
+  "renderer_geometry_processing": false,
+  "crop": false,
+  "resize": false,
+  "render_code_sha256": {
+    "render": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+    "preserved_renderer_sha256": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+    "preserved_renderer_code": {
+      "render": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+      "preserved_native_renderer": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+      "preserved_native_code": {
+        "render": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+        "native_helper_sha256": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+        "preserved_renderer_hashes": {
+          "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+          "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+          "parent_code_sha256": {
+            "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+            "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+            "raw_code_sha256": {
+              "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+              "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+              "parent_code_sha256": {
+                "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                "parent_code_sha256": {
+                  "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                  "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                  "raw_code_sha256": {
+                    "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                    "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                    "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                    "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                    "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                    "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "image_checker_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0"
+  },
+  "boards_code_sha256": "899443800b890ef3ea84a04b1ded081d978ccc8c9349038b7aad60a50cde445e",
+  "scope": "Four actual source/candidate body states at four matched cameras. Adjacent FLAT columns compare actual saved geometry; adjacent SMOOTH columns compare the same bodies with normal interpolation. Smooth flags are the only allowed render-condition difference. Coordinate/connectivity hashes are identical between each body's FLAT/SMOOTH states. This verifies provenance and diagnostic separation, not geometry quality, intersection freedom, aesthetics or successful end reconstruction.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\images\\SPAN_front.png",
+      "sha256": "c31646819bfcc24c5c37ca83c0324e0e071e69cff2a9c0674d1773ea65bbff18",
+      "sources": [
+        {
+          "state": "ORIGINAL_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\front.png",
+          "sha256": "ff1f7912bb18797698affa6e1abf14dc835c8c0edd1aded17533fe50df3a941e",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "state": "REVISED_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\front.png",
+          "sha256": "22c11675f3387c0444fb40a78e2838e08de3ea9f7075c94e70fa87aba4505aa8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "ORIGINAL_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\front.png",
+          "sha256": "89d005b66c3b737506b568732cb1f9c788d161303f036649c20a1d37b2b0edd4",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "REVISED_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\front.png",
+          "sha256": "fad2f153119e9c9950bc3057751e8ff36e6c71e2af22f1546f9623d5b9dfc325",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\images\\SPAN_body_oblique.png",
+      "sha256": "12c037e172c1d3f9d6dd86e1a482ce3c3a86e03623cc74dd3ee6ad7f07666892",
+      "sources": [
+        {
+          "state": "ORIGINAL_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\body_oblique.png",
+          "sha256": "91cd28d86747503b66178b36bbcd7aa2d8f3f73175a711430d536c00e84e8036",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "state": "REVISED_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\body_oblique.png",
+          "sha256": "5bb06f44dabffeaf14703772e1b7ca946143dacceb9ccc10359d6a82442a4727",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "ORIGINAL_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\body_oblique.png",
+          "sha256": "011c6d0b5385f361b673332c004d89cc24a93c40bd57c3efa437028429d7358f",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "REVISED_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\body_oblique.png",
+          "sha256": "6d904e1c275a2e8c57685d64b0d76502d35ada4cc9aa20f24c2a00f01f0bfc1a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\images\\SPAN_close_oblique.png",
+      "sha256": "b9c7a3af1bc312bfd4876a7282252475dc0d96370ab5f4bf754613e3c0dec875",
+      "sources": [
+        {
+          "state": "ORIGINAL_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+          "sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "e71e6326dce2d929d856d631d6b4cf02a1b6a5ec6a0ab9f3ea89acf88885dea7"
+        },
+        {
+          "state": "REVISED_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\close_oblique.png",
+          "sha256": "d4ad8073ce4e9d0467e58982b3651fea32b8bc886205fde5cf4b73d83d42b344",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "ORIGINAL_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\close_oblique.png",
+          "sha256": "3930c023cea82317ec01a2054ada8d65cabe17b84b110e2fc3a30de8e0c0bcb6",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "REVISED_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\close_oblique.png",
+          "sha256": "927dd3d75749ed8bd7d1fcd8ec0ccf4c084a660adc83c3344ad7c989d8fae8a7",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ]
+    },
+    {
+      "view": "macro",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\images\\SPAN_macro.png",
+      "sha256": "8a976840a99c3aa6476bf0de6ab77122070bad4cad5e02a750afc61be8db24cd",
+      "sources": [
+        {
+          "state": "ORIGINAL_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\macro.png",
+          "sha256": "b4c888a58be0b0301ffda3ed692e6dfa43007ce4b07d945bcdaf9f8dc1257e95",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_FLAT\\receipt.json",
+          "receipt_sha256": "9b9c589aa31823c168ef92f8443d51128a655e6fe03b50e4b31dd6252a4de748",
+          "reused_reference": true,
+          "underlying_reference_receipt": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\receipt.json",
+          "underlying_reference_receipt_sha256": "02cdc37033f24d77fd34f7f6ac3f9866852c2b0be596be1f73ebf7b37f02264e"
+        },
+        {
+          "state": "REVISED_FLAT",
+          "shading": "FLAT_NATIVE_TRIANGLES",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\macro.png",
+          "sha256": "c000ec1768e8140b0be6e3ee2177a63d7585085c36aa96ac9b477feffd400844",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "ORIGINAL_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\macro.png",
+          "sha256": "4b58b2b718091161b4a58c1ae2e63ce088dacf9cf4ffccaab14e3d85282d969b",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\ORIGINAL_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "6e2bf7ec1fdceed8622b1a0cf3836814aef76a9ed250dc6376bae9471c754c3b",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        },
+        {
+          "state": "REVISED_SMOOTH",
+          "shading": "SMOOTH_NORMAL_INTERPOLATION_ONLY",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\macro.png",
+          "sha256": "a9cc7c5caf8cb0f8c5858d550b0a7ae9e8b11d4eca9d3d938ab4192f75b16ac8",
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_SMOOTH\\views\\receipt.json",
+          "receipt_sha256": "0924c475c99c4e850f91f980c297c83bb8e8c9f7066c82f6e0cbc0af3650b072",
+          "reused_reference": false,
+          "underlying_reference_receipt": null,
+          "underlying_reference_receipt_sha256": null
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 4,
+  "boards_source_snapshot": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\end_rule_revision_20261014\\boards.py",
+    "relative_path": "experiments/end_rule_revision_20261014/boards.py",
+    "snapshot": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\source_snapshot_boards\\experiments\\end_rule_revision_20261014\\boards.py",
+    "sha256": "899443800b890ef3ea84a04b1ded081d978ccc8c9349038b7aad60a50cde445e"
+  }
+}

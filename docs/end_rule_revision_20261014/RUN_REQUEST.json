@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-14",
+  "basis_commit": "34063f2cb424f3896bdd4114862321611b8dd5f0",
+  "input_case": "SPAN",
+  "one_candidate": true,
+  "source": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07",
+  "source_hashes": {
+    "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+    "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+  },
+  "changed_rule": "G1/G2 finite-field applied Z component only: axial_gain=1−.75*material_mask. XY, Task36 and authored returns unchanged.",
+  "exact_replay_stages": [
+    "early",
+    "G05_DIRECTIONAL",
+    "G06_DEPTH08",
+    "G06_MIDDLE",
+    "G07_SURFACE",
+    "G07_LINKED_RAW",
+    "G07_LINKED_FINISHED",
+    "G07_WIDE_RAW",
+    "G07_FINAL"
+  ],
+  "final_output": "Source-bound feathered original G7 end mask; no extra ornaments or G8.",
+  "geometry_code_sha256": {
+    "experiments/end_rule_revision_20261014/run.py": "74e0f54cf1e3cb877b01743efc700fa90ad4b51eba971cbc782ee66f9e96bf08",
+    "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa"
+  }
+}

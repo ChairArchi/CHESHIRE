@@ -1,0 +1,880 @@
+{
+  "date": "2026-10-14",
+  "recipe": {
+    "schema": "CHESHIRE_EXISTING_FINE_DIAGONAL_FACET_MASK_V1",
+    "normalized_height_support": [
+      0.08,
+      0.94
+    ],
+    "height_feather": 0.03,
+    "maximum_quad_edge_height_fraction": 0.003,
+    "minimum_quad_edge_height_fraction": 2e-05,
+    "minimum_native_fan_altitude_height_fraction": 1e-05,
+    "native_fan_projection_safety": "All four native triangle signed areas projected onto the summed source-quad normal must be strictly positive.",
+    "aspect_gain_interval": [
+      1.5,
+      3.0
+    ],
+    "diagonal_long_axis_abs_Z_interval": [
+      0.15,
+      0.95
+    ],
+    "diagonal_lower_feather": 0.15,
+    "diagonal_upper_feather": 0.1,
+    "fan_pair_normal_spread_gain_degrees": [
+      1.0,
+      8.0
+    ],
+    "flat_weight_threshold": 0.35,
+    "equation": "quad_weight=height_support*binary_geometric_safety*aspect_gain*diagonal_gain*existing_warpage_gain; flat_quads=geometric_safety and quad_weight>=.35",
+    "interpolation": "C2 quintic smoothstep for all nonbinary gains",
+    "symmetry": "Minimum-ID source X/Y face-orbit representative copied to all actual paired faces.",
+    "intent": "Prefer existing small anisotropic diagonal nonplanar cells; exclude large coarse plates and nearly degenerate native fan triangles. No new noise or geometric pattern is generated."
+  },
+  "physical_height": 9.735842284057451,
+  "source_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "source_candidate_receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\RECEIPT.json",
+  "source_candidate_receipt_sha256": "b77a701e01a53976e08ad07b963fb022931bf8e4efcc08d21485a55fddd31569",
+  "source_native": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+  "source_native_geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+  "source_native_faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+  "original_face_pairs": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz",
+    "sha256": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21",
+    "original_generation_receipt": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\generation.json",
+    "original_generation_receipt_sha256": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5"
+  },
+  "source_flat_render_receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+  "source_flat_render_receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995",
+  "source_macro_camera": {
+    "position": [
+      -18.212759017944336,
+      27.706071853637695,
+      11.769917488098145
+    ],
+    "target": [
+      -0.8127592552124007,
+      0.42607142838364565,
+      6.369917540048999
+    ],
+    "scale": 0.30000001192092896,
+    "forward": [
+      0.5304190516471863,
+      -0.831599771976471,
+      -0.16461288928985596
+    ]
+  },
+  "source_actual_z_bounds": [
+    0.14752006444328683,
+    9.88315671500315
+  ],
+  "actual_source_z_span": 9.735636650559863,
+  "height_scope": "Inherited H scales physical size thresholds; normalized body-height support uses actual final source zmin/zspan. The final CC finish makes the two spans differ slightly.",
+  "previous_attempt": "The first source snapshot measure.py is preserved. That attempt stopped on an overly strict inherited-H/final-height equality guard before computing a mask. Threshold values were not changed.",
+  "control_vertices": 7002114,
+  "control_quads": 7002112,
+  "native_fan_definition": "Four cyclic control-edge-to-arithmetic-quad-centre triangles per source quad, established by the actual revised native receipt; the full native mesh was not reloaded by this measurement.",
+  "global_metrics": {
+    "max_edge_H": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.7664342934385095e-05,
+        0.00020287308698821002,
+        0.0003339390039594181,
+        0.0005888247746709549,
+        0.001211733291287336,
+        0.0020091746327584523,
+        0.0046576757223082
+      ]
+    },
+    "min_edge_H": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        5.978838189752248e-07,
+        4.618027466968066e-05,
+        0.0001359085074386406,
+        0.0003318211731372269,
+        0.0006463419667085297,
+        0.001124033392109816,
+        0.0025351342287934894
+      ]
+    },
+    "edge_max_min_ratio": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.0020032224131759,
+        1.0254808665076836,
+        1.1291793470209361,
+        1.7351811610379455,
+        4.134376586166873,
+        10.77498966406256,
+        705.5507317876794
+      ]
+    },
+    "opposite_edge_aspect": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.0000114519459848,
+        1.0090999265156542,
+        1.0939459602374013,
+        1.6575394967080848,
+        3.874173707508814,
+        9.407072864838323,
+        196.78208298215682
+      ]
+    },
+    "min_fan_altitude_H": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        3.015343291020623e-08,
+        1.2546502668434244e-05,
+        5.2282939630553295e-05,
+        0.0001424758682887763,
+        0.0002701269684960987,
+        0.0004947881603064578,
+        0.0012364391066362246
+      ]
+    },
+    "min_fan_projected_signed_area_H2": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        -6.732642039289587e-08,
+        1.3735838679127805e-09,
+        9.735396446787711e-09,
+        3.9069387022461856e-08,
+        1.3180104718679654e-07,
+        3.6896860204070127e-07,
+        1.916278927870327e-06
+      ]
+    },
+    "fan_pair_normal_spread_degrees": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.3713635377634418e-05,
+        0.024828069117400955,
+        0.27460077088131263,
+        3.2585919197169804,
+        23.800447023837606,
+        82.8031499573382,
+        179.93022080474995
+      ]
+    },
+    "long_axis_abs_Z": {
+      "finite_samples": 218816,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        4.319777776906908e-06,
+        0.008975984624029187,
+        0.08672237589654609,
+        0.5419211491817378,
+        0.960619424440342,
+        0.9974822036176019,
+        0.9999997691386673
+      ]
+    },
+    "material_t_vector_norm_H": {
+      "finite_samples": 196860,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.005118198535527307,
+        0.18218044178657197,
+        0.5616120099982896,
+        1.3761293697462806,
+        2.5785386317054564,
+        4.7361617966228176,
+        12.908758833337455
+      ]
+    },
+    "material_theta_vector_norm_H": {
+      "finite_samples": 196860,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.0010880975722050922,
+        0.025033092083495457,
+        0.0668676776034235,
+        0.14642611974389974,
+        0.33629179705680423,
+        0.6364034144730771,
+        7852476761461.924
+      ]
+    },
+    "material_t_theta_abs_cosine": {
+      "finite_samples": 196860,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        5.816497510103703e-06,
+        0.006137088130212087,
+        0.06200703652247044,
+        0.3753753040717739,
+        0.8496968730849714,
+        0.9832708594500414,
+        0.9999982723319494
+      ]
+    }
+  },
+  "global_quantile_scope": "Deterministic every-32nd actual quad; representative quantiles, not exact full-population quantiles.",
+  "global_metric_samples": 218816,
+  "macro_metrics": {
+    "max_edge_H": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.00010449588707972578,
+        0.0001792390862523149,
+        0.0003177990201056616,
+        0.000618451710846625,
+        0.0011230956516360359,
+        0.0016024297737831927,
+        0.0030623433261482446
+      ]
+    },
+    "min_edge_H": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        7.192308153522821e-06,
+        4.499186730766513e-05,
+        0.00010230380542955736,
+        0.0002405141117594298,
+        0.0005453496816779158,
+        0.0008971052812920492,
+        0.0019680414818282897
+      ]
+    },
+    "edge_max_min_ratio": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.0018303954048653,
+        1.0311420854108135,
+        1.1920333216701688,
+        2.208298972366026,
+        6.641172574433605,
+        13.071582878122275,
+        93.4167275709937
+      ]
+    },
+    "opposite_edge_aspect": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.0000419967742231,
+        1.0114093419907868,
+        1.1281656251373855,
+        2.031316931991947,
+        6.113838531535438,
+        11.310469142599423,
+        78.97638812599924
+      ]
+    },
+    "min_fan_altitude_H": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        1.5705182337193218e-07,
+        8.451390328928075e-06,
+        3.1153932676682195e-05,
+        8.835203187654124e-05,
+        0.00019744035638099175,
+        0.0003265749902259819,
+        0.0007824837869359664
+      ]
+    },
+    "min_fan_projected_signed_area_H2": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        -1.3488888310319035e-07,
+        4.274370932575997e-10,
+        5.724974056826481e-09,
+        2.5760049946062087e-08,
+        7.331215532501225e-08,
+        1.8291990768110706e-07,
+        5.919744668054908e-07
+      ]
+    },
+    "fan_pair_normal_spread_degrees": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.00025126777436147615,
+        0.02763954054266246,
+        0.2988861491669854,
+        4.967560229369412,
+        41.56979737916096,
+        116.90285942080027,
+        179.89758192000048
+      ]
+    },
+    "long_axis_abs_Z": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        4.4248921089600636e-05,
+        0.010427155775000106,
+        0.10361607668860263,
+        0.5855205271885139,
+        0.9738104304794051,
+        0.9948568970879759,
+        0.9999909736320873
+      ]
+    },
+    "material_t_vector_norm_H": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.01656665810619472,
+        0.1574413606337151,
+        0.3562949280363309,
+        0.8246361323221754,
+        2.2111662191355026,
+        3.817724345823474,
+        9.3213320169294
+      ]
+    },
+    "material_theta_vector_norm_H": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        0.00372860841007791,
+        0.030296068966827246,
+        0.08645410076139028,
+        0.17245770213416092,
+        0.34929984717238294,
+        0.46256758109954577,
+        0.9115408594570958
+      ]
+    },
+    "material_t_theta_abs_cosine": {
+      "finite_samples": 29051,
+      "quantiles": [
+        0.0,
+        0.01,
+        0.1,
+        0.5,
+        0.9,
+        0.99,
+        1.0
+      ],
+      "values": [
+        4.8007709253196257e-05,
+        0.008474705780138599,
+        0.09517082145269343,
+        0.5579272722316331,
+        0.9331704078138554,
+        0.9926520788146465,
+        0.9999978218072547
+      ]
+    }
+  },
+  "macro_metric_samples": 29051,
+  "macro_scope": "Actual quad centroids in the saved user macro camera, facing>.05, with per900-square-pixel minimum-centroid-depth tolerance .001H. Approximate visibility; not exact ray-traced triangle occlusion.",
+  "material_rank_valid_quads": 6301776,
+  "material_vector_scope": "Local least-squares inherited chart partial vectors. Rank-deficient copied Task32 charts are explicitly excluded from vector statistics, without pretending a global inverse chart exists.",
+  "representative_macro_material_vectors": [
+    {
+      "face_id": 2676820,
+      "source_control_ids": [
+        3586882,
+        480546,
+        1793442,
+        5920791
+      ],
+      "dXYZ_dt": [
+        -11.448097725457261,
+        -13.842167893058692,
+        13.994112923565805
+      ],
+      "dXYZ_dtheta": [
+        0.408523078859824,
+        -0.6801694576172578,
+        -0.21143992588038257
+      ],
+      "quad_normal": [
+        -0.6686486376097085,
+        -0.17710415433554313,
+        -0.7221794222627594
+      ],
+      "quad_weight_before_symmetry": 0.9520100652746099
+    },
+    {
+      "face_id": 2676821,
+      "source_control_ids": [
+        1793442,
+        10727,
+        1793440,
+        5920791
+      ],
+      "dXYZ_dt": [
+        -15.769870298390138,
+        -18.326657782991635,
+        12.05958004264311
+      ],
+      "dXYZ_dtheta": [
+        0.3323648882513605,
+        -0.7861272706357749,
+        -0.26524624417036574
+      ],
+      "quad_normal": [
+        -0.6129026508372065,
+        0.007466826662052356,
+        -0.7901231467918935
+      ],
+      "quad_weight_before_symmetry": 0.9573630337896111
+    },
+    {
+      "face_id": 2676822,
+      "source_control_ids": [
+        1793440,
+        480544,
+        3586878,
+        5920791
+      ],
+      "dXYZ_dt": [
+        -15.032633369657212,
+        -17.316424717258357,
+        12.633828123428357
+      ],
+      "dXYZ_dtheta": [
+        0.32929815398953644,
+        -0.7480894473964221,
+        -0.25657107540050555
+      ],
+      "quad_normal": [
+        -0.6339301782062365,
+        -0.013840911929082305,
+        -0.7732664213040551
+      ],
+      "quad_weight_before_symmetry": 0.9176018304121799
+    },
+    {
+      "face_id": 2676823,
+      "source_control_ids": [
+        3586878,
+        1480199,
+        3586882,
+        5920791
+      ],
+      "dXYZ_dt": [
+        -10.819132612064568,
+        -12.852031611863676,
+        14.37307792309511
+      ],
+      "dXYZ_dtheta": [
+        0.39954721067160315,
+        -0.6396751681782887,
+        -0.20822818615421848
+      ],
+      "quad_normal": [
+        -0.6871383318293194,
+        -0.2020197978058442,
+        -0.6978745691206307
+      ],
+      "quad_weight_before_symmetry": 0.9677466639413255
+    },
+    {
+      "face_id": 2676824,
+      "source_control_ids": [
+        3586878,
+        480544,
+        2359802,
+        5920792
+      ],
+      "dXYZ_dt": [
+        -14.351196184733581,
+        -16.25946587774811,
+        13.129721226427915
+      ],
+      "dXYZ_dtheta": [
+        0.31870949542413224,
+        -0.7099646406981429,
+        -0.2506174754484177
+      ],
+      "quad_normal": [
+        -0.6567586562240244,
+        -0.0288218012542305,
+        -0.7535498465577943
+      ],
+      "quad_weight_before_symmetry": 0.8891045049464907
+    },
+    {
+      "face_id": 2676825,
+      "source_control_ids": [
+        2359802,
+        152320,
+        2359804,
+        5920792
+      ],
+      "dXYZ_dt": [
+        -13.717171285393905,
+        -15.166481719933907,
+        13.570266161169279
+      ],
+      "dXYZ_dtheta": [
+        0.2989738790070551,
+        -0.6677570314958929,
+        -0.24673165996219956
+      ],
+      "quad_normal": [
+        -0.6825205587394821,
+        -0.03585902789155751,
+        -0.7299861759078851
+      ],
+      "quad_weight_before_symmetry": 0.8814119882836323
+    },
+    {
+      "face_id": 2676826,
+      "source_control_ids": [
+        2359804,
+        961086,
+        4547962,
+        5920792
+      ],
+      "dXYZ_dt": [
+        -9.6822761580501,
+        -10.908204131731546,
+        15.12878583301634
+      ],
+      "dXYZ_dtheta": [
+        0.36077945924107113,
+        -0.5568167514518617,
+        -0.20339815380391196
+      ],
+      "quad_normal": [
+        -0.730208896419162,
+        -0.23937145493680148,
+        -0.6399189590500882
+      ],
+      "quad_weight_before_symmetry": 0.9994886456753397
+    },
+    {
+      "face_id": 2676827,
+      "source_control_ids": [
+        4547962,
+        1480199,
+        3586878,
+        5920792
+      ],
+      "dXYZ_dt": [
+        -10.234485892946845,
+        -11.872900948862423,
+        14.747003594430849
+      ],
+      "dXYZ_dtheta": [
+        0.38426578724203575,
+        -0.5999753133066076,
+        -0.2056601142461042
+      ],
+      "quad_normal": [
+        -0.7074098939516457,
+        -0.22319209580045718,
+        -0.6706388971059769
+      ],
+      "quad_weight_before_symmetry": 0.9878555750364924
+    },
+    {
+      "face_id": 2676832,
+      "source_control_ids": [
+        4547963,
+        961086,
+        2359804,
+        5920794
+      ],
+      "dXYZ_dt": [
+        -9.151205848712639,
+        -9.959408436551218,
+        15.529718383632716
+      ],
+      "dXYZ_dtheta": [
+        0.32940936953641775,
+        -0.5099184430690018,
+        -0.20121375205939465
+      ],
+      "quad_normal": [
+        -0.7558634824611142,
+        -0.24941533872817448,
+        -0.6053613670270567
+      ],
+      "quad_weight_before_symmetry": 1.0
+    },
+    {
+      "face_id": 2676833,
+      "source_control_ids": [
+        2359804,
+        152320,
+        2359803,
+        5920794
+      ],
+      "dXYZ_dt": [
+        -13.122511776811379,
+        -14.043966283623964,
+        13.976776488981839
+      ],
+      "dXYZ_dtheta": [
+        0.2702315366967878,
+        -0.6215869559265597,
+        -0.2446579907841881
+      ],
+      "quad_normal": [
+        -0.7117419368407644,
+        -0.0332535694864469,
+        -0.7016534867429702
+      ],
+      "quad_weight_before_symmetry": 0.8971675951049652
+    },
+    {
+      "face_id": 2676834,
+      "source_control_ids": [
+        2359803,
+        614535,
+        3854860,
+        5920794
+      ],
+      "dXYZ_dt": [
+        -12.559873512210393,
+        -12.894014641831413,
+        14.371292837126656
+      ],
+      "dXYZ_dtheta": [
+        0.23239449584293806,
+        -0.5675793779231688,
+        -0.2438021632044538
+      ],
+      "quad_normal": [
+        -0.7446479424986313,
+        -0.01829819145131261,
+        -0.6672065781466532
+      ],
+      "quad_weight_before_symmetry": 0.9317857870882161
+    },
+    {
+      "face_id": 2676835,
+      "source_control_ids": [
+        3854860,
+        1480200,
+        4547963,
+        5920794
+      ],
+      "dXYZ_dt": [
+        -8.629658542824501,
+        -9.028272058181079,
+        15.959994665744023
+      ],
+      "dXYZ_dtheta": [
+        0.2898508235677993,
+        -0.45536736672248257,
+        -0.19851555914737867
+      ],
+      "quad_normal": [
+        -0.7843452334967858,
+        -0.25217859397912307,
+        -0.5667526016081312
+      ],
+      "quad_weight_before_symmetry": 1.0
+    }
+  ],
+  "counts": {
+    "geometrically_safe_quads": 6931828,
+    "nonzero_weight_quads": 1899960,
+    "flat_quads": 594320,
+    "nonzero_weight_fraction": 0.27134098968996784,
+    "flat_fraction": 0.08487724846446329,
+    "macro_nonzero_weight_quads": 11056,
+    "macro_flat_quads": 4526,
+    "maximum_weight": 1.0
+  },
+  "actual_XY_face_mask_symmetry_exact": true,
+  "max_weight_reflection_difference_before_canonical_transport": 1.352136735910392e-10,
+  "mask": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MASK.npz",
+    "sha256": "cafecec4936f7afc2712a1a9a36e0d2272f2a4d258c7f13275f72ab0aeb8e607",
+    "quad_weight_sha256": "5dde93063566c3cc786bb9bdad31180fad846ee4249eb4c5c0608cb4669e0b98",
+    "flat_quads_sha256": "cc6cb4708f487442b85b92b6ac8ae4a615be86c849c534ab52d29548f1c09909"
+  },
+  "source_snapshot": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\diagonal_facet_finish_20261014\\measure.py",
+    "snapshot": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\source_snapshot\\diagonal_facet_finish_20261014\\measure_v2.py",
+    "sha256": "40a19abf240bb79cfe6fe4ed328a5fba7cb663ebdf2c5fab794dd4a962b19c02"
+  },
+  "source_geometry_changed": false,
+  "renderer_changed": false,
+  "candidate_geometry_generated": false,
+  "scope": "One fixed measurement and fine-facet mask on REVISED as a visual-study input. This does not adopt the whole end revision as a new design baseline or establish aesthetic success.",
+  "seconds": 24.330932999961078
+}

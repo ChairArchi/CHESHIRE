@@ -1,0 +1,905 @@
+{
+  "passed": true,
+  "root": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01",
+  "states": [
+    {
+      "state": "SOURCE_FLAT",
+      "saved_geometry": {
+        "geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+        "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+        "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+        "control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+        "statistics": {
+          "selected_controls": 157752,
+          "changed_controls": 157752,
+          "unchanged_outside_controls": 6844362,
+          "changed_outside_controls": 0,
+          "maximum_delta": 0.2365885966343256,
+          "rms_selected_delta": 0.05708856081784679,
+          "actual_source_region_max_radius": 1.127418148909341,
+          "actual_candidate_region_max_radius": 1.1279598513028373,
+          "original_selected_z_range": [
+            6.022680987590552,
+            6.491012677011528
+          ],
+          "candidate_selected_z_range": [
+            6.028831534051084,
+            6.582342624782285
+          ],
+          "affected_quads": 162304,
+          "checked_affected_native_triangles": 649216,
+          "minimum_affected_native_triangle_area": 1.6206618802853392e-09,
+          "old_new_normal_dot_negative_triangles": 193940,
+          "maximum_old_new_triangle_normal_angle_degrees": 179.95405519982688,
+          "normal_scope": "Old/new normal angle is a deformation diagnostic, not a self-intersection or invariant orientation certificate.",
+          "actual_XY_reflection_max_error": {
+            "x": 4.961703332445539e-14,
+            "y": 4.961703332445539e-14
+          }
+        },
+        "topology_scope": "Exact original control topology/associations and native triangle indices; inherited original one-component closed oriented topology, no added components.",
+        "replay_final": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL",
+        "replay_final_generation_sha256": "d9f23217bb65c48f77a3039670d19cf9c22a74c888242ff08293bb9a276e80ff",
+        "mask": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+        "mask_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+        "combination": "Xfinal=Xoriginal+saved_original_mask*(Xexact_revised_replay−Xoriginal). Exact replay interior with feathered transition; outside mask original XYZ is byte-identical."
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\front.png",
+          "sha256": "22c11675f3387c0444fb40a78e2838e08de3ea9f7075c94e70fa87aba4505aa8",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\body_oblique.png",
+          "sha256": "5bb06f44dabffeaf14703772e1b7ca946143dacceb9ccc10359d6a82442a4727",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\close_oblique.png",
+          "sha256": "d4ad8073ce4e9d0467e58982b3651fea32b8bc886205fde5cf4b73d83d42b344",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\macro.png",
+          "sha256": "c000ec1768e8140b0be6e3ee2177a63d7585085c36aa96ac9b477feffd400844",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        }
+      ],
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        },
+        "smooth_polygons": 0,
+        "polygons": 28008448,
+        "use_smooth_flags_sha256": "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "geometry_counts": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "source_arrays": {
+          "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+          "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "0c478bf8b1c7741862ac306f2726000ff9ed81ae55133c68ef7fc3ae10f8c782",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        }
+      },
+      "conditions": {
+        "engine": "CYCLES",
+        "resolution": [
+          900,
+          900
+        ],
+        "resolution_percentage": 100,
+        "samples": 24,
+        "denoising": true,
+        "view_transform": "AgX",
+        "image_format": "PNG",
+        "camera_type": "ORTHO",
+        "material_base_color": [
+          0.5,
+          0.4699999988079071,
+          0.4099999964237213,
+          1.0
+        ],
+        "material_roughness": 0.8399999737739563,
+        "smooth_polygons": 0,
+        "modifiers": [],
+        "normal_maps": false,
+        "world_color": [
+          0.054999999701976776,
+          0.06300000101327896,
+          0.07500000298023224,
+          1.0
+        ],
+        "world_strength": 0.4000000059604645,
+        "lights": {
+          "Key": {
+            "position": [
+              -20.0,
+              25.0,
+              32.0
+            ],
+            "power": 36000.0,
+            "size": 17.0,
+            "shape": "DISK"
+          },
+          "Fill": {
+            "position": [
+              24.0,
+              13.0,
+              15.0
+            ],
+            "power": 8500.0,
+            "size": 18.0,
+            "shape": "DISK"
+          },
+          "Rim": {
+            "position": [
+              0.0,
+              -23.0,
+              29.0
+            ],
+            "power": 26000.0,
+            "size": 13.0,
+            "shape": "DISK"
+          }
+        }
+      },
+      "actual_views": {
+        "front": {
+          "position": [
+            0.0,
+            32.0,
+            5.0
+          ],
+          "target": [
+            0,
+            0,
+            5
+          ],
+          "scale": 12.0,
+          "forward": [
+            -1.1399865765455465e-14,
+            -1.0,
+            7.549790126404332e-08
+          ]
+        },
+        "body_oblique": {
+          "position": [
+            -18.0,
+            28.0,
+            12.0
+          ],
+          "target": [
+            0,
+            0,
+            6.25
+          ],
+          "scale": 4.300000190734863,
+          "forward": [
+            0.5328656435012817,
+            -0.8289023041725159,
+            -0.17022091150283813
+          ]
+        },
+        "close_oblique": {
+          "position": [
+            -18.0,
+            28.0,
+            12.0
+          ],
+          "target": [
+            -0.6,
+            0.72,
+            6.6
+          ],
+          "scale": 1.25,
+          "forward": [
+            0.5304190516471863,
+            -0.831599771976471,
+            -0.16461288928985596
+          ]
+        },
+        "macro": {
+          "position": [
+            -18.212759017944336,
+            27.706071853637695,
+            11.769917488098145
+          ],
+          "target": [
+            -0.8127592552124007,
+            0.42607142838364565,
+            6.369917540048999
+          ],
+          "scale": 0.30000001192092896,
+          "forward": [
+            0.5304190516471863,
+            -0.831599771976471,
+            -0.16461288928985596
+          ]
+        }
+      },
+      "Blender_version": "4.5.4 LTS",
+      "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+      "source_receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+    },
+    {
+      "state": "ACCENT_FLAT",
+      "saved_geometry": {
+        "geometry": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\geometry.npz",
+        "geometry_sha256": "6b5e084390a92d8be7c9b0b1973b5d277526c7396f4afb502dadcbe4aa9be4ab",
+        "xyz_sha256": "50a8986f489200da11b56f631732c81e9c356d8b0926dc581315f6d6bd023b11",
+        "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "native_center_delta": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\native_center_delta.npz",
+        "native_center_delta_sha256": "00f048ef92fba07031fe9f78c32738a5beb147c2b9a6bf4a09e1b383b94433f8"
+      },
+      "images": [
+        {
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\front.png",
+          "sha256": "bfe275d549173bda0948ed5859a94caa6f8529da79aff791df0c68bb723d77b1",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        },
+        {
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\body_oblique.png",
+          "sha256": "31e175202343f43e35ac44b22a909a8244113cdf825dcfcc7ad061ef911c0126",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        },
+        {
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\close_oblique.png",
+          "sha256": "c7519d4f4c69fcba3177dc92d5cadf9f5f4564004505e034b0bd4dd91448494f",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        },
+        {
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\macro.png",
+          "sha256": "3261b637131d5895b53a91e6233a5e9626052845bd4b0cde47b638f51fc94100",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        }
+      ],
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "6796981d827f63857c18b2acabf333b06b950ed30f9c466226918b1ebe62b15e",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        },
+        "smooth_polygons": 0,
+        "polygons": 28008448,
+        "use_smooth_flags_sha256": "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "geometry_counts": {
+        "vertices": 14004226,
+        "triangles": 28008448,
+        "source_arrays": {
+          "xyz_sha256": "50a8986f489200da11b56f631732c81e9c356d8b0926dc581315f6d6bd023b11",
+          "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "6796981d827f63857c18b2acabf333b06b950ed30f9c466226918b1ebe62b15e",
+          "triangle_indices_int32_sha256": "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+        }
+      }
+    }
+  ],
+  "source_binding": {
+    "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+    "source_native_geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+    "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\RECEIPT.json",
+    "source_receipt_sha256": "b77a701e01a53976e08ad07b963fb022931bf8e4efcc08d21485a55fddd31569",
+    "saved_source": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+      "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+      "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+      "control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+      "statistics": {
+        "selected_controls": 157752,
+        "changed_controls": 157752,
+        "unchanged_outside_controls": 6844362,
+        "changed_outside_controls": 0,
+        "maximum_delta": 0.2365885966343256,
+        "rms_selected_delta": 0.05708856081784679,
+        "actual_source_region_max_radius": 1.127418148909341,
+        "actual_candidate_region_max_radius": 1.1279598513028373,
+        "original_selected_z_range": [
+          6.022680987590552,
+          6.491012677011528
+        ],
+        "candidate_selected_z_range": [
+          6.028831534051084,
+          6.582342624782285
+        ],
+        "affected_quads": 162304,
+        "checked_affected_native_triangles": 649216,
+        "minimum_affected_native_triangle_area": 1.6206618802853392e-09,
+        "old_new_normal_dot_negative_triangles": 193940,
+        "maximum_old_new_triangle_normal_angle_degrees": 179.95405519982688,
+        "normal_scope": "Old/new normal angle is a deformation diagnostic, not a self-intersection or invariant orientation certificate.",
+        "actual_XY_reflection_max_error": {
+          "x": 4.961703332445539e-14,
+          "y": 4.961703332445539e-14
+        }
+      },
+      "topology_scope": "Exact original control topology/associations and native triangle indices; inherited original one-component closed oriented topology, no added components.",
+      "replay_final": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL",
+      "replay_final_generation_sha256": "d9f23217bb65c48f77a3039670d19cf9c22a74c888242ff08293bb9a276e80ff",
+      "mask": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+      "mask_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+      "combination": "Xfinal=Xoriginal+saved_original_mask*(Xexact_revised_replay−Xoriginal). Exact replay interior with feathered transition; outside mask original XYZ is byte-identical."
+    },
+    "mask": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MASK.npz",
+      "sha256": "cafecec4936f7afc2712a1a9a36e0d2272f2a4d258c7f13275f72ab0aeb8e607",
+      "key": "flat_quads",
+      "flat_quads_array_sha256": "cc6cb4708f487442b85b92b6ac8ae4a615be86c849c534ab52d29548f1c09909",
+      "quads": 7002112,
+      "flat_quads": 594320,
+      "control_vertices": 7002114,
+      "rule": "smooth_triangle = NOT flat_quads[unique_native_center_vertex_id - control_vertices]"
+    },
+    "views": {
+      "front": [
+        [
+          0,
+          32,
+          5
+        ],
+        [
+          0,
+          0,
+          5
+        ],
+        12.0
+      ],
+      "body_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          0,
+          0,
+          6.25
+        ],
+        4.3
+      ],
+      "close_oblique": [
+        [
+          -18,
+          28,
+          12
+        ],
+        [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        1.25
+      ],
+      "macro": [
+        [
+          -18.2127592552124,
+          27.70607142838365,
+          11.769917540049
+        ],
+        [
+          -0.8127592552124007,
+          0.42607142838364565,
+          6.369917540048999
+        ],
+        0.3
+      ]
+    },
+    "actual_reference_views": {
+      "front": {
+        "position": [
+          0.0,
+          32.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          5
+        ],
+        "scale": 12.0,
+        "forward": [
+          -1.1399865765455465e-14,
+          -1.0,
+          7.549790126404332e-08
+        ]
+      },
+      "body_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          0,
+          0,
+          6.25
+        ],
+        "scale": 4.300000190734863,
+        "forward": [
+          0.5328656435012817,
+          -0.8289023041725159,
+          -0.17022091150283813
+        ]
+      },
+      "close_oblique": {
+        "position": [
+          -18.0,
+          28.0,
+          12.0
+        ],
+        "target": [
+          -0.6,
+          0.72,
+          6.6
+        ],
+        "scale": 1.25,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      },
+      "macro": {
+        "position": [
+          -18.212759017944336,
+          27.706071853637695,
+          11.769917488098145
+        ],
+        "target": [
+          -0.8127592552124007,
+          0.42607142838364565,
+          6.369917540048999
+        ],
+        "scale": 0.30000001192092896,
+        "forward": [
+          0.5304190516471863,
+          -0.831599771976471,
+          -0.16461288928985596
+        ]
+      }
+    },
+    "reference_conditions": {
+      "engine": "CYCLES",
+      "resolution": [
+        900,
+        900
+      ],
+      "resolution_percentage": 100,
+      "samples": 24,
+      "denoising": true,
+      "view_transform": "AgX",
+      "image_format": "PNG",
+      "camera_type": "ORTHO",
+      "material_base_color": [
+        0.5,
+        0.4699999988079071,
+        0.4099999964237213,
+        1.0
+      ],
+      "material_roughness": 0.8399999737739563,
+      "smooth_polygons": 0,
+      "modifiers": [],
+      "normal_maps": false,
+      "world_color": [
+        0.054999999701976776,
+        0.06300000101327896,
+        0.07500000298023224,
+        1.0
+      ],
+      "world_strength": 0.4000000059604645,
+      "lights": {
+        "Key": {
+          "position": [
+            -20.0,
+            25.0,
+            32.0
+          ],
+          "power": 36000.0,
+          "size": 17.0,
+          "shape": "DISK"
+        },
+        "Fill": {
+          "position": [
+            24.0,
+            13.0,
+            15.0
+          ],
+          "power": 8500.0,
+          "size": 18.0,
+          "shape": "DISK"
+        },
+        "Rim": {
+          "position": [
+            0.0,
+            -23.0,
+            29.0
+          ],
+          "power": 26000.0,
+          "size": 13.0,
+          "shape": "DISK"
+        }
+      }
+    },
+    "reference_Blender_version": "4.5.4 LTS",
+    "camera_placement": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\PLACEMENT.json",
+    "camera_placement_sha256": "23f2a9f2f0af1d9bcf2cc72604ae1e13c52c7602795801537b2519c87c12b8ae"
+  },
+  "candidate_binding": {
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\RECEIPT.json",
+    "receipt_sha256": "76da6c9463f902dde108db57ce754e0fdb642bf8fac9ddf15f0b69a558a6d708",
+    "variant": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\geometry.npz",
+      "geometry_sha256": "6b5e084390a92d8be7c9b0b1973b5d277526c7396f4afb502dadcbe4aa9be4ab",
+      "xyz_sha256": "50a8986f489200da11b56f631732c81e9c356d8b0926dc581315f6d6bd023b11",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "native_center_delta": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\native_center_delta.npz",
+      "native_center_delta_sha256": "00f048ef92fba07031fe9f78c32738a5beb147c2b9a6bf4a09e1b383b94433f8"
+    }
+  },
+  "source_images": 8,
+  "reused_source_flat_images": 4,
+  "new_accent_flat_images": 4,
+  "comparison_columns": 2,
+  "conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "actual_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    },
+    "macro": {
+      "position": [
+        -18.212759017944336,
+        27.706071853637695,
+        11.769917488098145
+      ],
+      "target": [
+        -0.8127592552124007,
+        0.42607142838364565,
+        6.369917540048999
+      ],
+      "scale": 0.30000001192092896,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "native_triangle_indices_identical": true,
+  "actual_all_flat_normal_flags_identical": true,
+  "coordinates_match_each_actual_saved_body": true,
+  "geometry_unchanged_by_renderer": true,
+  "same_saved_ACCENT_geometry": true,
+  "new_geometry_experiment": false,
+  "selective_mask_used": false,
+  "selective_mask_modified": false,
+  "geometric_success_certified": false,
+  "aesthetic_success_certified": false,
+  "crop": false,
+  "resize": false,
+  "modifiers": [],
+  "normal_maps": false,
+  "renderer_geometry_processing": false,
+  "render_code_sha256": {
+    "render_allflat": "56c6d783c9b5ee8ecaaffed3c099ea3496a39f9a7fa915296aa2894b849c5264",
+    "selective_renderer_sha256": "c544eaa4633ac07a0e9ae3fd42cc5bc2b500065be8c232158bccd13409543e73",
+    "preserved_selective_code": {
+      "render": "c544eaa4633ac07a0e9ae3fd42cc5bc2b500065be8c232158bccd13409543e73",
+      "scaffold_sha256": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+      "preserved_scaffold_code": {
+        "render": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+        "preserved_renderer_sha256": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+        "preserved_renderer_code": {
+          "render": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+          "preserved_native_renderer": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+          "preserved_native_code": {
+            "render": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+            "native_helper_sha256": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+            "preserved_renderer_hashes": {
+              "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+              "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+              "parent_code_sha256": {
+                "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+                "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                "raw_code_sha256": {
+                  "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                  "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                  "parent_code_sha256": {
+                    "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                    "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                    "parent_code_sha256": {
+                      "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                      "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                      "raw_code_sha256": {
+                        "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                        "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                        "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "image_checker_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0"
+      }
+    }
+  },
+  "boards_code_sha256": "41ba664daaddbd1111205d57f67623ba483e6e0676d7c61002af65829e61c07f",
+  "scope": "Rendering diagnosis of the exact same saved source/ACCENT bodies under identical all-flat native shading and four fixed cameras. The source's four actual existing all-flat PNGs are reused. No geometry, selective mask or prior render changed. Native indices and actual all-false normal flags match; coordinates match each saved body. This tests pattern visibility under the earlier flat presentation, not new geometry or certified geometric/aesthetic improvement.",
+  "boards": [
+    {
+      "view": "front",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_front.png",
+      "sha256": "c8375cdb5c202fbad091bd582756cb475f133c7eb4e4638b894df2bc59d89be1",
+      "sources": [
+        {
+          "state": "SOURCE_FLAT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\front.png",
+          "sha256": "22c11675f3387c0444fb40a78e2838e08de3ea9f7075c94e70fa87aba4505aa8",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "state": "ACCENT_FLAT",
+          "view": "front",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\front.png",
+          "sha256": "bfe275d549173bda0948ed5859a94caa6f8529da79aff791df0c68bb723d77b1",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        }
+      ]
+    },
+    {
+      "view": "body_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_body_oblique.png",
+      "sha256": "4b571c1dec1cd95cade04ec5aa579647fd206201e059a5f8a68f5b208cba336a",
+      "sources": [
+        {
+          "state": "SOURCE_FLAT",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\body_oblique.png",
+          "sha256": "5bb06f44dabffeaf14703772e1b7ca946143dacceb9ccc10359d6a82442a4727",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "state": "ACCENT_FLAT",
+          "view": "body_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\body_oblique.png",
+          "sha256": "31e175202343f43e35ac44b22a909a8244113cdf825dcfcc7ad061ef911c0126",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        }
+      ]
+    },
+    {
+      "view": "close_oblique",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_close_oblique.png",
+      "sha256": "a8532a0c52e671bb8b51f36e8c64d06f7a2618326e851e869bf6f639f3ae6eb8",
+      "sources": [
+        {
+          "state": "SOURCE_FLAT",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\close_oblique.png",
+          "sha256": "d4ad8073ce4e9d0467e58982b3651fea32b8bc886205fde5cf4b73d83d42b344",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "state": "ACCENT_FLAT",
+          "view": "close_oblique",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\close_oblique.png",
+          "sha256": "c7519d4f4c69fcba3177dc92d5cadf9f5f4564004505e034b0bd4dd91448494f",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        }
+      ]
+    },
+    {
+      "view": "macro",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_macro.png",
+      "sha256": "db983aa60c5bbfe5d2b9779459457f33c474e807cdc7d38453628ccff56f3bc3",
+      "sources": [
+        {
+          "state": "SOURCE_FLAT",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\macro.png",
+          "sha256": "c000ec1768e8140b0be6e3ee2177a63d7585085c36aa96ac9b477feffd400844",
+          "reused_reference": true,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED_FLAT\\views\\receipt.json",
+          "receipt_sha256": "28d2e6a0eb9229901bba3c3f57faf35fb86461f0d6843128ad10a9cde76ac995"
+        },
+        {
+          "state": "ACCENT_FLAT",
+          "view": "macro",
+          "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\macro.png",
+          "sha256": "3261b637131d5895b53a91e6233a5e9626052845bd4b0cde47b638f51fc94100",
+          "reused_reference": false,
+          "receipt": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT_FLAT\\views\\receipt.json",
+          "receipt_sha256": "d5e60edf9d5659de1476565d00df2bd7500224b2c4e549806cd9ca6ce98693b7"
+        }
+      ]
+    }
+  ],
+  "comparison_boards": 4,
+  "boards_source_snapshot": {
+    "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\diagonal_facet_finish_20261014\\boards_allflat.py",
+    "relative_path": "experiments/diagonal_facet_finish_20261014/boards_allflat.py",
+    "snapshot": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\source_snapshot_allflat_boards\\experiments\\diagonal_facet_finish_20261014\\boards_allflat.py",
+    "sha256": "41ba664daaddbd1111205d57f67623ba483e6e0676d7c61002af65829e61c07f"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+  "source_native_geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+  "source_control_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+  "source_control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+  "source_hashes_after": {
+    "geometry.npz": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+    "control_quad.npz": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27"
+  },
+  "mask_path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MASK.npz",
+  "mask_sha256": "cafecec4936f7afc2712a1a9a36e0d2272f2a4d258c7f13275f72ab0aeb8e607",
+  "measurement_path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MEASUREMENT.json",
+  "measurement_sha256": "44569ebadda2855db71bb7f1cb5ac6d0bbc7584a1a2299a297a35e738a434560",
+  "geometry_code_sha256": {
+    "experiments/diagonal_facet_finish_20261014/run.py": "d87c89fc2dd97e6b751f0c64cf95ed61dde32a1d1842602033d3d54e009cc4f0"
+  },
+  "variants": {
+    "ACCENT": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\geometry.npz",
+      "geometry_sha256": "6b5e084390a92d8be7c9b0b1973b5d277526c7396f4afb502dadcbe4aa9be4ab",
+      "xyz_sha256": "50a8986f489200da11b56f631732c81e9c356d8b0926dc581315f6d6bd023b11",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "native_center_delta": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\ACCENT\\native_center_delta.npz",
+      "native_center_delta_sha256": "00f048ef92fba07031fe9f78c32738a5beb147c2b9a6bf4a09e1b383b94433f8"
+    }
+  },
+  "statistics": {
+    "selected_flat_quads": 594320,
+    "changed_centers": 594320,
+    "unchanged_control_corners": 7002114,
+    "changed_control_corners": 0,
+    "added_vertices": 0,
+    "added_triangles": 0,
+    "safety_rejected_quads": 0,
+    "maximum_delta": 0.0010216432195644196,
+    "rms_changed_delta": 0.00021660442817115718,
+    "minimum_changed_triangle_area": 2.0055948828860578e-08,
+    "minimum_old_new_normal_cosine": 0.9903986045998673,
+    "maximum_old_new_normal_angle_degrees": 7.946079523286248,
+    "displacement_reflection_residual": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "recipe": {
+    "stage": "EXPLICIT_NATIVE_FINISH_NOT_CONTROL_SUBDIVISION",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "input": "User-selected REVISED saved native body; original design baseline retained separately.",
+    "selection": "One measured source-based fine anisotropic warped-cell mask; identical selective shading before/after.",
+    "displacement": "weight*min_edge*(.07*source_fan_normal+.10*short_tangent_toward_selected_long_edge)",
+    "cap": "Combined displacement <= .20 minimum positive source fan altitude.",
+    "direction": "Choose long-edge side by increasing inherited material theta; exact ties increasing material t. Canonical face-orbit transport.",
+    "safety": "One orbit-wide rejection for nonpositive baseline/projected fan area or nonpositive old/new triangle normal dot. No retuning.",
+    "control": "Source control_quad.npz unchanged, referenced not copied. Finished native centers are no longer arithmetic quad centers.",
+    "topology": "Exact source native triangle indices; inherited connectivity. No new components, ornaments, remesh or Boolean.",
+    "limits": "No global self-intersection/fabrication certificate; local fine-cell native finish is not automatically carried by a future control subdivision."
+  },
+  "seconds": 79.18908139999257,
+  "visual_success": "PENDING_MATCHED_RENDER"
+}

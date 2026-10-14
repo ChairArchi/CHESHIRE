@@ -1,0 +1,253 @@
+{
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+  "source_native_geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+  "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\RECEIPT.json",
+  "source_receipt_sha256": "b77a701e01a53976e08ad07b963fb022931bf8e4efcc08d21485a55fddd31569",
+  "saved_source": {
+    "geometry": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\geometry.npz",
+    "geometry_sha256": "952386874740ca35a26dcb0a5a42cda4fb91eaa8f814f7668550d839a2b688ce",
+    "xyz_sha256": "28fce682a3035688bc980c03dc47774eb3e9a9b0091c09d68fc3fed6c0b46015",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\REVISED\\control_quad.npz",
+    "control_sha256": "0915ac8f56509768c6329a7d848793c6936b903d4d9316e01b1076a76aba8e27",
+    "statistics": {
+      "selected_controls": 157752,
+      "changed_controls": 157752,
+      "unchanged_outside_controls": 6844362,
+      "changed_outside_controls": 0,
+      "maximum_delta": 0.2365885966343256,
+      "rms_selected_delta": 0.05708856081784679,
+      "actual_source_region_max_radius": 1.127418148909341,
+      "actual_candidate_region_max_radius": 1.1279598513028373,
+      "original_selected_z_range": [
+        6.022680987590552,
+        6.491012677011528
+      ],
+      "candidate_selected_z_range": [
+        6.028831534051084,
+        6.582342624782285
+      ],
+      "affected_quads": 162304,
+      "checked_affected_native_triangles": 649216,
+      "minimum_affected_native_triangle_area": 1.6206618802853392e-09,
+      "old_new_normal_dot_negative_triangles": 193940,
+      "maximum_old_new_triangle_normal_angle_degrees": 179.95405519982688,
+      "normal_scope": "Old/new normal angle is a deformation diagnostic, not a self-intersection or invariant orientation certificate.",
+      "actual_XY_reflection_max_error": {
+        "x": 4.961703332445539e-14,
+        "y": 4.961703332445539e-14
+      }
+    },
+    "topology_scope": "Exact original control topology/associations and native triangle indices; inherited original one-component closed oriented topology, no added components.",
+    "replay_final": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL",
+    "replay_final_generation_sha256": "d9f23217bb65c48f77a3039670d19cf9c22a74c888242ff08293bb9a276e80ff",
+    "mask": "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz",
+    "mask_sha256": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+    "combination": "Xfinal=Xoriginal+saved_original_mask*(Xexact_revised_replay−Xoriginal). Exact replay interior with feathered transition; outside mask original XYZ is byte-identical."
+  },
+  "mask": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MASK.npz",
+    "sha256": "cafecec4936f7afc2712a1a9a36e0d2272f2a4d258c7f13275f72ab0aeb8e607",
+    "key": "flat_quads",
+    "flat_quads_array_sha256": "cc6cb4708f487442b85b92b6ac8ae4a615be86c849c534ab52d29548f1c09909",
+    "quads": 7002112,
+    "flat_quads": 594320,
+    "control_vertices": 7002114,
+    "rule": "smooth_triangle = NOT flat_quads[unique_native_center_vertex_id - control_vertices]"
+  },
+  "views": {
+    "front": [
+      [
+        0,
+        32,
+        5
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      12.0
+    ],
+    "body_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        0,
+        0,
+        6.25
+      ],
+      4.3
+    ],
+    "close_oblique": [
+      [
+        -18,
+        28,
+        12
+      ],
+      [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      1.25
+    ],
+    "macro": [
+      [
+        -18.2127592552124,
+        27.70607142838365,
+        11.769917540049
+      ],
+      [
+        -0.8127592552124007,
+        0.42607142838364565,
+        6.369917540048999
+      ],
+      0.3
+    ]
+  },
+  "actual_reference_views": {
+    "front": {
+      "position": [
+        0.0,
+        32.0,
+        5.0
+      ],
+      "target": [
+        0,
+        0,
+        5
+      ],
+      "scale": 12.0,
+      "forward": [
+        -1.1399865765455465e-14,
+        -1.0,
+        7.549790126404332e-08
+      ]
+    },
+    "body_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        0,
+        0,
+        6.25
+      ],
+      "scale": 4.300000190734863,
+      "forward": [
+        0.5328656435012817,
+        -0.8289023041725159,
+        -0.17022091150283813
+      ]
+    },
+    "close_oblique": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    },
+    "macro": {
+      "position": [
+        -18.212759017944336,
+        27.706071853637695,
+        11.769917488098145
+      ],
+      "target": [
+        -0.8127592552124007,
+        0.42607142838364565,
+        6.369917540048999
+      ],
+      "scale": 0.30000001192092896,
+      "forward": [
+        0.5304190516471863,
+        -0.831599771976471,
+        -0.16461288928985596
+      ]
+    }
+  },
+  "reference_conditions": {
+    "engine": "CYCLES",
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 24,
+    "denoising": true,
+    "view_transform": "AgX",
+    "image_format": "PNG",
+    "camera_type": "ORTHO",
+    "material_base_color": [
+      0.5,
+      0.4699999988079071,
+      0.4099999964237213,
+      1.0
+    ],
+    "material_roughness": 0.8399999737739563,
+    "smooth_polygons": 0,
+    "modifiers": [],
+    "normal_maps": false,
+    "world_color": [
+      0.054999999701976776,
+      0.06300000101327896,
+      0.07500000298023224,
+      1.0
+    ],
+    "world_strength": 0.4000000059604645,
+    "lights": {
+      "Key": {
+        "position": [
+          -20.0,
+          25.0,
+          32.0
+        ],
+        "power": 36000.0,
+        "size": 17.0,
+        "shape": "DISK"
+      },
+      "Fill": {
+        "position": [
+          24.0,
+          13.0,
+          15.0
+        ],
+        "power": 8500.0,
+        "size": 18.0,
+        "shape": "DISK"
+      },
+      "Rim": {
+        "position": [
+          0.0,
+          -23.0,
+          29.0
+        ],
+        "power": 26000.0,
+        "size": 13.0,
+        "shape": "DISK"
+      }
+    }
+  },
+  "reference_Blender_version": "4.5.4 LTS",
+  "camera_placement": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\PLACEMENT.json",
+  "camera_placement_sha256": "23f2a9f2f0af1d9bcf2cc72604ae1e13c52c7602795801537b2519c87c12b8ae"
+}

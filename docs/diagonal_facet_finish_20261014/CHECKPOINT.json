@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "one_geometry_candidate": true,
+  "native_finish_only": true,
+  "G": 7,
+  "added_G8": false,
+  "decision": "RETAIN_ORIGINAL_PATTERN_DISPLAY_ACCENT_PRESERVED_AS_SUBTLE_STUDY",
+  "user_pattern_choice": "Small diagonal comb/scale facets; requested more visible coverage.",
+  "original_design_baseline": "WIDE_ROOT_FINISHED/SPAN/G07 unchanged; REVISED used only as selected visual-study source.",
+  "native_finish": {
+    "stage": "EXPLICIT_NATIVE_FINISH_NOT_CONTROL_SUBDIVISION",
+    "source_growth_generation": 7,
+    "added_G8": false,
+    "input": "User-selected REVISED saved native body; original design baseline retained separately.",
+    "selection": "One measured source-based fine anisotropic warped-cell mask; identical selective shading before/after.",
+    "displacement": "weight*min_edge*(.07*source_fan_normal+.10*short_tangent_toward_selected_long_edge)",
+    "cap": "Combined displacement <= .20 minimum positive source fan altitude.",
+    "direction": "Choose long-edge side by increasing inherited material theta; exact ties increasing material t. Canonical face-orbit transport.",
+    "safety": "One orbit-wide rejection for nonpositive baseline/projected fan area or nonpositive old/new triangle normal dot. No retuning.",
+    "control": "Source control_quad.npz unchanged, referenced not copied. Finished native centers are no longer arithmetic quad centers.",
+    "topology": "Exact source native triangle indices; inherited connectivity. No new components, ornaments, remesh or Boolean.",
+    "limits": "No global self-intersection/fabrication certificate; local fine-cell native finish is not automatically carried by a future control subdivision."
+  },
+  "geometry_statistics": {
+    "selected_flat_quads": 594320,
+    "changed_centers": 594320,
+    "unchanged_control_corners": 7002114,
+    "changed_control_corners": 0,
+    "added_vertices": 0,
+    "added_triangles": 0,
+    "safety_rejected_quads": 0,
+    "maximum_delta": 0.0010216432195644196,
+    "rms_changed_delta": 0.00021660442817115718,
+    "minimum_changed_triangle_area": 2.0055948828860578e-08,
+    "minimum_old_new_normal_cosine": 0.9903986045998673,
+    "maximum_old_new_normal_angle_degrees": 7.946079523286248,
+    "displacement_reflection_residual": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "selective_shading_decision": "REJECTED: source-world-direction and quad-aspect selection hides much preferred comb even before geometry accent.",
+  "allflat_comparison": "Same actual ACCENT geometry rendered under the same all-flat camera/material conditions as user reference; no regeneration.",
+  "deferred_user_suggestion": "Flower-like Mandelbulb covering only very small awkward end clusters; explicitly not to experiment now. No Mandelbulb experiment performed.",
+  "executed_source_sha256": {
+    "measure.py": "40a19abf240bb79cfe6fe4ed328a5fba7cb663ebdf2c5fab794dd4a962b19c02",
+    "render.py": "c544eaa4633ac07a0e9ae3fd42cc5bc2b500065be8c232158bccd13409543e73",
+    "boards.py": "43f87a1096e3ec6edd3cecf482fdf08c1227ec61bdd95ad5f2455f034ba9851d",
+    "render_allflat.py": "56c6d783c9b5ee8ecaaffed3c099ea3496a39f9a7fa915296aa2894b849c5264",
+    "boards_allflat.py": "41ba664daaddbd1111205d57f67623ba483e6e0676d7c61002af65829e61c07f",
+    "run.py": "d87c89fc2dd97e6b751f0c64cf95ed61dde32a1d1842602033d3d54e009cc4f0"
+  },
+  "evidence": [
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\RECEIPT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\RECEIPT.json",
+      "sha256": "76da6c9463f902dde108db57ce754e0fdb642bf8fac9ddf15f0b69a558a6d708"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\MEASUREMENT.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\MEASUREMENT.json",
+      "sha256": "44569ebadda2855db71bb7f1cb5ac6d0bbc7584a1a2299a297a35e738a434560"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\SOURCE_BINDING.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\SOURCE_BINDING.json",
+      "sha256": "042e62557ca32e2c92e1988cf8b1a9147e43b609ff0106dafbf4a58af59de643"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\RENDER_VERIFICATION.json",
+      "sha256": "87218a5f3356d91c835df9d7be73112fe03dc00348cb4498c263f40bb55dcca2"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\FLAT_RENDER_VERIFICATION.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\FLAT_RENDER_VERIFICATION.json",
+      "sha256": "4ab785fff00b79683278c275b453accf0852d984a93b7e146c8604e96b06b75e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images\\SOURCE_LIST.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\images\\SOURCE_LIST.json",
+      "sha256": "87218a5f3356d91c835df9d7be73112fe03dc00348cb4498c263f40bb55dcca2"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images\\SPAN_macro.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\images\\SPAN_macro.png",
+      "sha256": "81ca3f2c14d6e994f7f509ab1ff0360c4d108f913e85267b4162fbe346067d4c"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SOURCE_LIST.json",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\images_allflat\\SOURCE_LIST.json",
+      "sha256": "4ab785fff00b79683278c275b453accf0852d984a93b7e146c8604e96b06b75e"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_macro.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\images_allflat\\SPAN_macro.png",
+      "sha256": "db983aa60c5bbfe5d2b9779459457f33c474e807cdc7d38453628ccff56f3bc3"
+    },
+    {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\diagonal_facet_finish_20261014\\trial01\\images_allflat\\SPAN_front.png",
+      "preserved": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\diagonal_facet_finish_20261014\\images_allflat\\SPAN_front.png",
+      "sha256": "c8375cdb5c202fbad091bd582756cb475f133c7eb4e4638b894df2bc59d89be1"
+    }
+  ],
+  "visual_review": {
+    "date": "2026-10-14",
+    "decision": "RETAIN_ORIGINAL_PATTERN_DISPLAY_ACCENT_PRESERVED_AS_SUBTLE_STUDY",
+    "baseline": "Original WIDE_ROOT_FINISHED remains unchanged; attached REVISED_FLAT body is the source for this fine-pattern study.",
+    "selective_shading": "Rejected. It hides broad comb patterns before any geometric accent. Mask direction/aspect proxies do not match the actual visible native triangle pattern.",
+    "allflat_result": "Same-candidate all-flat rendering restores broad source-pattern coverage. Native-center accent modestly sharpens some fine faces, most visible at upper-left curved patch and fine rims. It does not produce a major overall near-detail improvement.",
+    "actual_geometry": "594320 existing native centers changed; 7002114 source controls and all native triangle indices unchanged. Maximum changed triangle normal angle is7.946 degrees. No G8 or additional ornament component.",
+    "visual_limit": "Most broad source geometry remains identical. Blunt ends, coarse planes and awkward crossing sheets remain. Do not call shade restoration a new geometric-detail success.",
+    "adoption": "No replacement of the active original design checkpoint. Preserve the small facet language and all-flat source reference; do not adopt the failed selective appearance.",
+    "user_steering": "User explicitly prefers repeated small diagonal comb/scales, asks for clearer visibility and broader existing coverage. Mandelbulb flower-cluster covering is a deferred suggestion; no such experiment is authorized now.",
+    "matched_conditions": "Four source/candidate cameras and material/light/Blender conditions are verified for all-flat and identical-selective-mask comparisons separately.",
+    "evidence": "E:/CHESHIRE_DATA/experiments/diagonal_facet_finish_20261014/trial01/FLAT_RENDER_VERIFICATION.json"
+  }
+}
