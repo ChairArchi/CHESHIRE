@@ -1,0 +1,194 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "schema": "CHESHIRE_PHYSICAL_G4_GEODESIC_MASK_V1",
+  "candidate_geometry_generated": false,
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\evidence.npz": "226c22ca83f9c71e69059d817e42140483d19a46228d66c6710170bc1ac17e21",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_FINAL\\control_quad.npz": "09be1bf0ad67f718f110bc9de1d2ba108998b53ca00edfc8fc2ad046c2916f23",
+    "E:\\CHESHIRE_DATA\\experiments\\volume_junction_target_20261014\\trial01\\selection.npz": "7bbfb7cdb50b3fad320451dc096b23f8f662c7a09a425324949cba39396584ab",
+    "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\control_quad.npz": "a8ff83f00582c489867414a2540ec62bd30c7a79cb785f2c2e3e8a0111aee43a",
+    "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\control_quad.npz": "f164ef1c25bd08c1119d57c5388d624d733adc3b6d6142d6f670dca2f254e357",
+    "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\control_quad.npz": "215f6e3c929a500043e70eee4984245874d719bc9a6c20ef1bb92389b6217c50",
+    "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\control_quad.npz": "373663eae5b7685e2b833de6e4704eab1af8e345d890a72b37384dbe98a23ceb",
+    "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05\\evidence.npz": "abe38b477bc1c452549465aa86b206ad1b96e1cd19e44d3392450ee801ecab01",
+    "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06\\evidence.npz": "0c3af89f8901329daac8f2f2e83e4af39b373f60f4f92eba93c8af23f984e1d5",
+    "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07\\evidence.npz": "ca08819a3a44aa6b7f73b398c7d32bef7b28e8ccd2051ae0c0ec755165401a8c"
+  },
+  "recipe": {
+    "core": "quintic(clip(saved_old_coarse_mask/.30,0,1))>=.9",
+    "core_vertices": 1988,
+    "reference_height": 9.735842284057451,
+    "physical_collar_width": 0.7788673827245961,
+    "physical_collar_height_fraction": 0.08,
+    "graph": "Actual G4 input_edges, weighted by Euclidean lengths of original final G7 old-G4-prefix coordinates. No spatial-nearest-neighbour cross-sheet edges.",
+    "solve": "One multi-source sparse weighted Dijkstra, limit=L",
+    "mask": "C2 quintic(clip(1-geodesic_distance/L,0,1)); exact plateau1 on core, exact0 beyond collar",
+    "geometry_scope": "Only scalar mask. No averaging/rebuilding of geometry, normals or original replay deltas.",
+    "physical_bound_scope": "Coarse graph distance is 1-Lipschitz on its weighted edges; quintic derivative <=1.875/L. Fine lifted values require their actual G7 displacement-gradient check; no fine-geometry guarantee inferred solely from coarse distance."
+  },
+  "old_mask": {
+    "nonzero_coarse": 1988,
+    "promoted_exact_one_vertices": 1984,
+    "promoted_nonzero_min": 0.9986190362154858,
+    "nonzero_full": 157752
+  },
+  "output": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\end_continuity_20261014\\trial01\\PHYSICAL_MASK.npz",
+    "sha256": "d7037d916b4fb4f9bae7e1b62e87f511ebe19d0deb80d19ef4c0b35a41dad174",
+    "bytes": 6578233,
+    "full_count": 7002114,
+    "nonzero_full": 934480,
+    "full_mask_array_sha256": "995328cde737d9696c6cbd1931ed8ab5fa61fa7ff59acba0db5a42d9729c6222",
+    "nonzero_coarse": 14246,
+    "coarse_mask_array_sha256": "4ad1e9152333350ffaada83ccbdcca3f73067049c93a4eba241c6e2e9df7c465",
+    "coarse_distance_outside_limit": "Infinity; diagnostic only. Mask is exactly zero there."
+  },
+  "actual_scalar_mirror_transport": {
+    "coarse_precopy_max_error": 9.492406860545088e-15,
+    "final_precopy_max_error": 3.3306690738754696e-16,
+    "canonical_minimum_ID_orbit_copy": true,
+    "final_XY_scalar_equal": true
+  },
+  "lifts": [
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "input_count": 109410,
+      "input_edges": 218816,
+      "input_faces": 109408,
+      "output_count": 437634,
+      "actual_input_edges_sha256": "35cc3d55c0bef701d3edd1cdc62d40e9618ace17b81e5766a68248611a5a094d",
+      "actual_input_faces_sha256": "17d170a07f0c711252a3e7fdea06b17197ff351f8b2f0a189047b464ae375616",
+      "actual_output_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+      "actual_child_ID_layout_verified": true,
+      "scalar_transport": "Old values + actual edge means + actual face means; scalar association, not a geometry subdivision."
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\coherent_fold_detail_20261013\\trial01\\DIRECTIONAL\\SPAN\\G05",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "input_count": 437634,
+      "input_edges": 875264,
+      "input_faces": 437632,
+      "output_count": 1750530,
+      "actual_input_edges_sha256": "5524bfaff784bfd677692c494a1cd4cfc38ed1a1eaf8882293c53b8037456677",
+      "actual_input_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+      "actual_output_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+      "actual_child_ID_layout_verified": true,
+      "scalar_transport": "Old values + actual edge means + actual face means; scalar association, not a geometry subdivision."
+    },
+    {
+      "input": "E:\\CHESHIRE_DATA\\experiments\\directional_g6_20261013\\trial01\\DEPTH_08\\SPAN\\G06",
+      "output": "E:\\CHESHIRE_DATA\\experiments\\whole_column_detail_20261013\\trial01\\SURFACE\\MIDDLE\\SPAN\\G07",
+      "input_count": 1750530,
+      "input_edges": 3501056,
+      "input_faces": 1750528,
+      "output_count": 7002114,
+      "actual_input_edges_sha256": "c55ba5b6a46b7761d4e17aafbeb327baad5ab17b3dd337952d5508935662cdc0",
+      "actual_input_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+      "actual_output_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+      "actual_child_ID_layout_verified": true,
+      "scalar_transport": "Old values + actual edge means + actual face means; scalar association, not a geometry subdivision."
+    }
+  ],
+  "spatial": {
+    "source_G7_prefix_support_z_bounds": [
+      5.343189151511441,
+      7.0975147344523135
+    ],
+    "graph_edge_length_quantiles": [
+      0.0003145380417760905,
+      0.0147580953691215,
+      0.03352418821017218,
+      0.06506225276452712,
+      0.20356380635585306
+    ]
+  },
+  "representative_edge_decomposition": [
+    {
+      "vertex_ids": [
+        52332,
+        1959852
+      ],
+      "original_edge_length": 0.00014165283134492224,
+      "old": {
+        "weights": [
+          0.0,
+          0.125
+        ],
+        "mask_gradient_term_norm": 0.014524489301771377,
+        "replay_gradient_term_norm": 0.00011546212063505441,
+        "total_displacement_difference_norm": 0.014551554820830785,
+        "mask_term_per_original_edge_length": 102.53582059651524
+      },
+      "physical": {
+        "weights": [
+          0.9996442963829926,
+          0.9996887593351185
+        ],
+        "mask_gradient_term_norm": 5.166413379822576e-06,
+        "replay_gradient_term_norm": 0.001846777875751812,
+        "total_displacement_difference_norm": 0.0018479763675802708,
+        "mask_term_per_original_edge_length": 0.03647236225898265
+      }
+    },
+    {
+      "vertex_ids": [
+        3932787,
+        5959763
+      ],
+      "original_edge_length": 0.00028079095405008145,
+      "old": {
+        "weights": [
+          0.21875,
+          0.109375
+        ],
+        "mask_gradient_term_norm": 0.01710098194710541,
+        "replay_gradient_term_norm": 0.0005695085142781182,
+        "total_displacement_difference_norm": 0.017038316828062325,
+        "mask_term_per_original_edge_length": 60.90289484203007
+      },
+      "physical": {
+        "weights": [
+          0.9998086141277016,
+          0.9997962950120209
+        ],
+        "mask_gradient_term_norm": 1.9261163415720496e-06,
+        "replay_gradient_term_norm": 0.0034706042543158704,
+        "total_displacement_difference_norm": 0.0034703611585029984,
+        "mask_term_per_original_edge_length": 0.006859609662597999
+      }
+    },
+    {
+      "vertex_ids": [
+        2838143,
+        809144
+      ],
+      "original_edge_length": 0.0005098887207874318,
+      "old": {
+        "weights": [
+          0.625,
+          0.75
+        ],
+        "mask_gradient_term_norm": 0.010408498316319955,
+        "replay_gradient_term_norm": 0.006193576389708733,
+        "total_displacement_difference_norm": 0.01630094537862302,
+        "mask_term_per_original_edge_length": 20.413274292959244
+      },
+      "physical": {
+        "weights": [
+          0.9996215259702247,
+          0.9997476839801498
+        ],
+        "mask_gradient_term_norm": 1.0504923471165736e-05,
+        "replay_gradient_term_norm": 0.009005997042224904,
+        "total_displacement_difference_norm": 0.009015695593995262,
+        "mask_term_per_original_edge_length": 0.020602384486840115
+      }
+    }
+  ],
+  "executed_source_sha256": "f00619a1ef0e95fc99c101eec9837e25bc9cbbbdf2ddc1a494728e2097addaf1",
+  "elapsed_seconds": 27.905138199974317,
+  "limits": "Physical scalar collar does not itself establish improved endings, full replay quality, no foldover/intersection, or an adopted design. Root constructs and reviews any candidate separately."
+}
