@@ -1,0 +1,276 @@
+{
+  "date": "2026-10-15",
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\RECEIPT.json": "811cfdfcb1278f3e9fd773fcea026015432ee3a930c900a1c0553d4fcd4fc31c",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\audit01\\MEASUREMENTS.json": "60573ddbf3e8dd4e2b17ad2ad00223e5a54cf6e43e6330ee2a9846646b9e3850",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_continuity_20261014\\measure_parent.py": "42be48cdd62a43a0bc4ad6b626fb41759d7cb35e192ee6b65cc8779ab172ef43",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_continuity_20261014\\compare_changes.py": "94103216b021bb167e0ac5c914d7e4e355e9b57b05c68c383929d3e40e894314",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\PARENT_GUARDED\\control_quad.npz": "f9a72768538b2a86bdc37474b76b247b29335e77f730f34275dd8d7d33d989ff",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\PARENT_GUARDED\\geometry.npz": "6e9b9fa2498ae441f4adb015ccedfc6123d2fd8a1af3d96ec2f2865c9e78d443",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\GEOMETRY_GUARD_STATE.npz": "6ff44f2e79c97785818c0ebafc919ec8e1ac4c792848e20a1e548ed352d3cdb2",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\NESTED_STATE.npz": "4d60077dd304f948685eb1dc6f108b7a24e20d953184c6a8ccfac0be07904974",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\PARENT_STATE.npz": "e5d3261aeb8fba6b423542f8a6c190521d029749403962c1f30be28ca7c02a10",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\trial01\\PARENT_STATE.npz": "e5d3261aeb8fba6b423542f8a6c190521d029749403962c1f30be28ca7c02a10"
+  },
+  "actual_same_parent_carrier": true,
+  "actual_candidate_deltas_reproduce_final": true,
+  "original_native_face_sha256_binding": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+  "actual_native_prefix_matches_final_controls": true,
+  "protected_zero_guard_controls": 1765502,
+  "protected_max_coordinate_error": 0.0,
+  "hard_G7_descendant_faces": 1574400,
+  "hard_G7_corner_max_coordinate_error": 0.0,
+  "hard_G7_actual_native_fan_centre_max_coordinate_error": 0.0,
+  "geometric_guard_footprint": {
+    "total_control_vertices": 7002114,
+    "total_control_quads": 7002112,
+    "zero_guard_controls": 1765502,
+    "all_zero_guard_faces": 1637568,
+    "all_zero_guard_face_fraction": 0.23386772448084236,
+    "partial_guard_controls": 4509040,
+    "full_guard_controls": 727572
+  },
+  "previous_parent_to_final_face_degrees": {
+    "count": 7002112,
+    "maximum": 179.759434400796,
+    "sampled_quantile_probabilities": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "sampled_quantiles": [
+      0.0,
+      0.0,
+      0.07039172950087616,
+      9.55991931392327,
+      33.54736958237582,
+      45.995387431471364,
+      68.25445065242896,
+      179.21170856837284
+    ],
+    "quantile_sample_count": 226081,
+    "quantile_stride": 31,
+    "thresholds": [
+      5.0,
+      15.0,
+      30.0,
+      60.0
+    ],
+    "all_incidence_exceed_counts": [
+      2004648,
+      1487324,
+      802432,
+      94268
+    ],
+    "all_incidence_exceed_fractions": [
+      0.28629190735595206,
+      0.2124107697791752,
+      0.11459856683240714,
+      0.01346279522521205
+    ]
+  },
+  "guarded_parent_to_final_face_degrees": {
+    "count": 7002112,
+    "maximum": 177.4728641486866,
+    "sampled_quantile_probabilities": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "sampled_quantiles": [
+      0.0,
+      0.0,
+      1.2074182697257333e-06,
+      1.5809032499523816,
+      21.635842944329344,
+      37.59926939488895,
+      53.61964264881582,
+      161.1560305601173
+    ],
+    "quantile_sample_count": 226081,
+    "quantile_stride": 31,
+    "thresholds": [
+      5.0,
+      15.0,
+      30.0,
+      60.0
+    ],
+    "all_incidence_exceed_counts": [
+      1461172,
+      1002752,
+      498956,
+      28012
+    ],
+    "all_incidence_exceed_fractions": [
+      0.2086758966437555,
+      0.14320707809300964,
+      0.07125792903626792,
+      0.004000507275519157
+    ]
+  },
+  "face_exceedance_comparison": {
+    "thresholds": [
+      5.0,
+      15.0,
+      30.0,
+      60.0
+    ],
+    "previous_counts": [
+      2004648,
+      1487324,
+      802432,
+      94268
+    ],
+    "new_counts": [
+      1461172,
+      1002752,
+      498956,
+      28012
+    ],
+    "exceed_fraction_changes_new_minus_old": [
+      -0.07761601071219656,
+      -0.06920369168616555,
+      -0.043340637796139225,
+      -0.009462287949692894
+    ]
+  },
+  "previous_parent_to_final_edge_relative_delta": {
+    "count": 28008448,
+    "maximum": 251.59725694007827,
+    "sampled_quantile_probabilities": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "sampled_quantiles": [
+      0.0,
+      0.0,
+      0.0004111880900437647,
+      0.07669854983159438,
+      0.40208205203307684,
+      0.6537385072339194,
+      1.0139166018801686,
+      120.51540311406067
+    ],
+    "quantile_sample_count": 903684,
+    "quantile_stride": 31,
+    "thresholds": [
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "all_incidence_exceed_counts": [
+      6538160,
+      4360928,
+      2149264,
+      303016,
+      87496
+    ],
+    "all_incidence_exceed_fractions": [
+      0.23343528352588477,
+      0.15570045152091255,
+      0.07673627614068441,
+      0.010818735832845861,
+      0.0031239146131909917
+    ]
+  },
+  "guarded_parent_to_final_edge_relative_delta": {
+    "count": 28008448,
+    "maximum": 16.633156105405597,
+    "sampled_quantile_probabilities": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "sampled_quantiles": [
+      0.0,
+      0.0,
+      0.0,
+      0.016123244503719405,
+      0.23460860775586592,
+      0.43961764284272975,
+      0.8563583809131197,
+      16.633156105405597
+    ],
+    "quantile_sample_count": 903684,
+    "quantile_stride": 31,
+    "thresholds": [
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "all_incidence_exceed_counts": [
+      4423560,
+      2666784,
+      1172832,
+      103184,
+      13792
+    ],
+    "all_incidence_exceed_fractions": [
+      0.15793663397557767,
+      0.09521355842351564,
+      0.04187422309154724,
+      0.003684031332260895,
+      0.0004924228575606903
+    ]
+  },
+  "edge_exceedance_comparison": {
+    "thresholds": [
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "previous_counts": [
+      6538160,
+      4360928,
+      2149264,
+      303016,
+      87496
+    ],
+    "new_counts": [
+      4423560,
+      2666784,
+      1172832,
+      103184,
+      13792
+    ],
+    "exceed_fraction_changes_new_minus_old": [
+      -0.0754986495503071,
+      -0.06048689309739691,
+      -0.03486205304913718,
+      -0.007134704500584966,
+      -0.0026314917556303015
+    ]
+  },
+  "measurement_rule": "Face direction counts use all actual quads. Edge counts use all four oriented quad-edge incidences, so each shared edge is counted twice. Quantiles use deterministic every-31st incidence samples; exceedance counts and maxima use all incidences.",
+  "scope": "One actual parent-to-final traversal, same thresholds/stride/chunks as audit01. Exact selected source preservation and local geometric change only; no aesthetic success, semantic ridge recognition, inherited-defect repair or collision certificate. Geometry is never written or modified.",
+  "elapsed_seconds": 29.616348000010476
+}

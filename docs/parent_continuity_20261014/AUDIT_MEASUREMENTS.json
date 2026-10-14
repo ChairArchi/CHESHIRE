@@ -1,0 +1,504 @@
+{
+  "date": "2026-10-14",
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\PARENT_STATE.npz": "e5d3261aeb8fba6b423542f8a6c190521d029749403962c1f30be28ca7c02a10",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_STATE.npz": "ec30d6bd0cd29e2f6acce6bb504c823117396eddaa3e15de49649f78fe87c258",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\generation.json": "f79197a633cf5809e8c734c3e5871a17975d80f2e03e6577698a231b91661ddd",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\generation.json": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685"
+  },
+  "code": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_continuity_20261014\\measure_parent.py",
+    "sha256": "42be48cdd62a43a0bc4ad6b626fb41759d7cb35e192ee6b65cc8779ab172ef43"
+  },
+  "actual_carrier_reproduced": true,
+  "actual_child_and_small_reproduce_final": true,
+  "actual_native_model_generated": false,
+  "face_direction_change_degrees": {
+    "SURFACE_to_PRIMARY_WEIGHTED_CARRIER": {
+      "count": 7002112,
+      "maximum": 179.82560380816426,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        1.679570459689203e-05,
+        0.675412228549576,
+        1.4795963039347106,
+        3.6152586938346363,
+        7.168003184464922,
+        8.928227999195737,
+        35.64958901645888,
+        179.79552038725382
+      ],
+      "quantile_sample_count": 226081,
+      "quantile_stride": 31,
+      "thresholds": [
+        5.0,
+        15.0,
+        30.0,
+        60.0
+      ],
+      "all_incidence_exceed_counts": [
+        1298804,
+        169476,
+        81820,
+        38576
+      ],
+      "all_incidence_exceed_fractions": [
+        0.18548746435361216,
+        0.02420355458467388,
+        0.01168504588329921,
+        0.005509194940040947
+      ]
+    },
+    "CARRIER_to_CHILD": {
+      "count": 7002112,
+      "maximum": 179.85066601599846,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        0.07039836039530063,
+        8.66915114983557,
+        29.79966202791072,
+        35.88121133506229,
+        57.417973596755814,
+        179.4821289966441
+      ],
+      "quantile_sample_count": 226081,
+      "quantile_stride": 31,
+      "thresholds": [
+        5.0,
+        15.0,
+        30.0,
+        60.0
+      ],
+      "all_incidence_exceed_counts": [
+        1974036,
+        1438924,
+        694436,
+        69040
+      ],
+      "all_incidence_exceed_fractions": [
+        0.2819200835405089,
+        0.20549856957443696,
+        0.09917522027639661,
+        0.009859882275519158
+      ]
+    },
+    "CHILD_to_FINAL": {
+      "count": 7002112,
+      "maximum": 179.54364447409898,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        8.537736462515939e-07,
+        0.24883220129225014,
+        8.816776574592362,
+        13.900822512300012,
+        20.566173091219714,
+        177.57745939628364
+      ],
+      "quantile_sample_count": 226081,
+      "quantile_stride": 31,
+      "thresholds": [
+        5.0,
+        15.0,
+        30.0,
+        60.0
+      ],
+      "all_incidence_exceed_counts": [
+        1075484,
+        295852,
+        29376,
+        15380
+      ],
+      "all_incidence_exceed_fractions": [
+        0.15359422985522084,
+        0.04225182344983913,
+        0.004195305644925417,
+        0.0021964801477040072
+      ]
+    },
+    "CARRIER_to_FINAL": {
+      "count": 7002112,
+      "maximum": 179.759434400796,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        0.07039172950087616,
+        9.55991931392327,
+        33.54736958237582,
+        45.995387431471364,
+        68.25445065242896,
+        179.21170856837284
+      ],
+      "quantile_sample_count": 226081,
+      "quantile_stride": 31,
+      "thresholds": [
+        5.0,
+        15.0,
+        30.0,
+        60.0
+      ],
+      "all_incidence_exceed_counts": [
+        2004648,
+        1487324,
+        802432,
+        94268
+      ],
+      "all_incidence_exceed_fractions": [
+        0.28629190735595206,
+        0.2124107697791752,
+        0.11459856683240714,
+        0.01346279522521205
+      ]
+    }
+  },
+  "edge_relative_delta_change": {
+    "SURFACE_to_PRIMARY_WEIGHTED_CARRIER": {
+      "count": 28008448,
+      "maximum": 22.196245800966047,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        2.066194981707585e-06,
+        0.010442476748276124,
+        0.026438419294467462,
+        0.05843928201262531,
+        0.13838155479927997,
+        0.20282670599147468,
+        0.3882929228023261,
+        22.196245800966047
+      ],
+      "quantile_sample_count": 903684,
+      "quantile_stride": 31,
+      "thresholds": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "all_incidence_exceed_counts": [
+        4133424,
+        710656,
+        168788,
+        37136,
+        7900
+      ],
+      "all_incidence_exceed_fractions": [
+        0.14757775939602222,
+        0.025372916057326705,
+        0.006026324628911963,
+        0.001325885675636151,
+        0.0002820577562883884
+      ]
+    },
+    "CARRIER_to_CHILD": {
+      "count": 28008448,
+      "maximum": 254.9841347673328,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        0.00041119811244366884,
+        0.0742919265718963,
+        0.3742167095380094,
+        0.5414339985212026,
+        0.7941927548207767,
+        124.70006454500438
+      ],
+      "quantile_sample_count": 903684,
+      "quantile_stride": 31,
+      "thresholds": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "all_incidence_exceed_counts": [
+        6459744,
+        4116088,
+        1716840,
+        188064,
+        75488
+      ],
+      "all_incidence_exceed_fractions": [
+        0.23063555681485814,
+        0.14695880328677977,
+        0.06129722003875402,
+        0.006714545554255631,
+        0.0026951868236326413
+      ]
+    },
+    "CHILD_to_FINAL": {
+      "count": 28008448,
+      "maximum": 112.77580656911073,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.0005675668788324359,
+        0.11277785505743779,
+        0.19859067785817078,
+        0.34480198149679114,
+        51.067840467031786
+      ],
+      "quantile_sample_count": 903684,
+      "quantile_stride": 31,
+      "thresholds": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "all_incidence_exceed_counts": [
+        3091080,
+        908848,
+        88032,
+        35640,
+        14944
+      ],
+      "all_incidence_exceed_fractions": [
+        0.11036241636809009,
+        0.03244906679584674,
+        0.003143051696402457,
+        0.0012724732195086282,
+        0.000533553305059959
+      ]
+    },
+    "CARRIER_to_FINAL": {
+      "count": 28008448,
+      "maximum": 251.59725694007827,
+      "sampled_quantile_probabilities": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99,
+        1.0
+      ],
+      "sampled_quantiles": [
+        0.0,
+        0.0,
+        0.0004111880900437647,
+        0.07669854983159438,
+        0.40208205203307684,
+        0.6537385072339194,
+        1.0139166018801686,
+        120.51540311406067
+      ],
+      "quantile_sample_count": 903684,
+      "quantile_stride": 31,
+      "thresholds": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "all_incidence_exceed_counts": [
+        6538160,
+        4360928,
+        2149264,
+        303016,
+        87496
+      ],
+      "all_incidence_exceed_fractions": [
+        0.23343528352588477,
+        0.15570045152091255,
+        0.07673627614068441,
+        0.010818735832845861,
+        0.0031239146131909917
+      ]
+    }
+  },
+  "neutral_CC_G6_parent_to_G7_each_child_face_degrees": {
+    "count": 7002112,
+    "maximum": 179.92307057534165,
+    "sampled_quantile_probabilities": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "sampled_quantiles": [
+      0.0006684731430247311,
+      0.7543092278625781,
+      1.510100433125251,
+      3.07996493470319,
+      6.4147379055379,
+      11.1327177837956,
+      37.55121262851587,
+      179.34606647116564
+    ],
+    "quantile_sample_count": 226081,
+    "quantile_stride": 31,
+    "thresholds": [
+      5.0,
+      15.0,
+      30.0,
+      60.0
+    ],
+    "all_incidence_exceed_counts": [
+      956668,
+      231316,
+      90824,
+      43084
+    ],
+    "all_incidence_exceed_fractions": [
+      0.13662563523691137,
+      0.03303517567271132,
+      0.012970943623866627,
+      0.006153000694647558
+    ]
+  },
+  "carrier_incident_normal_dispersion_angle_degrees": {
+    "quantiles": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "values": [
+      0.008473918586395755,
+      0.926600522076153,
+      1.7229223344577398,
+      3.3344377836941868,
+      6.935130317045309,
+      11.714015366392637,
+      47.13664185829151,
+      89.99247552622371
+    ],
+    "groups": {
+      "5.0deg": {
+        "vertices": 1051006,
+        "old_phase_mask_protected": 573077,
+        "child_or_small_moved": 475905,
+        "delta_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.00017432582520852857,
+          0.0052371356131458045,
+          0.009660619438919346,
+          0.01733527097319522,
+          0.038069849656362655
+        ]
+      },
+      "15.0deg": {
+        "vertices": 258320,
+        "old_phase_mask_protected": 143175,
+        "child_or_small_moved": 114593,
+        "delta_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          9.177225203846619e-05,
+          0.003367164008978887,
+          0.0074109702107335584,
+          0.012945327804754646,
+          0.037804082979492115
+        ]
+      },
+      "30.0deg": {
+        "vertices": 119868,
+        "old_phase_mask_protected": 67755,
+        "child_or_small_moved": 51809,
+        "delta_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          6.308615405875714e-05,
+          0.0023945419347326784,
+          0.0060590902302387695,
+          0.01085783748034724,
+          0.027842424196616453
+        ]
+      }
+    },
+    "definition": "acos(norm(mean(incident actual carrier unit quad normals))); unsigned vertex normal-cone dispersion, not signed principal curvature."
+  },
+  "counting": "Face direction counts use all actual quads. Edge counts use all four oriented quad-edge incidences, so each shared edge is counted twice. Quantiles use deterministic every-31st incidence samples; exceedance counts and maxima use all incidences.",
+  "interpretation": "Stage-separated geometric changes only. Nonzero angle/edge change is not automatically damage. Actual G6/G7 correspondence is checked; CC child direction change includes intended smoothing. Existing source defects cannot be attributed to new CHILD/SMALL from these statistics. No semantic ridge/termination detection, self-intersection test or aesthetic verdict.",
+  "elapsed_seconds": 106.46364709996851
+}
