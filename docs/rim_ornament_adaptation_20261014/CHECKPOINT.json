@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-14",
+  "status": "THREE_ACTUAL_ADAPTATION_VISUALIZATIONS_COMPLETED_NOT_ADOPTED",
+  "basis_commit": "2e3df44fa58a761efab50c28691d016a1fc44678",
+  "heavy_data_root": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01",
+  "source_preserved": true,
+  "body_generation": 7,
+  "new_body_subdivision": false,
+  "Boolean_fusion": false,
+  "source_derived_groups": 6,
+  "smaller_support_group": 3,
+  "source_derived_guide_roots": 18,
+  "canonical_actual_inside_tests_passed": 24,
+  "exact_reflection_residuals": {
+    "MANDEL_RIBBON": 0.0,
+    "LEAF_FAN": 0.0,
+    "HYBRID": 0.0
+  },
+  "variant_counts": {
+    "MANDEL_RIBBON": {
+      "vertices": 5684064,
+      "triangles": 11495904,
+      "canonical_pieces": 6,
+      "reflected_pieces": 24
+    },
+    "LEAF_FAN": {
+      "vertices": 442512,
+      "triangles": 884736,
+      "canonical_pieces": 6,
+      "reflected_pieces": 24
+    },
+    "HYBRID": {
+      "vertices": 11810640,
+      "triangles": 23876544,
+      "canonical_pieces": 18,
+      "reflected_pieces": 72
+    }
+  },
+  "new_actual_renders": 13,
+  "reused_original_images": 3,
+  "matched_views": 4,
+  "unresized_comparison_boards": 4,
+  "source_records": [
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\PLACEMENT.json",
+      "sha256": "23f2a9f2f0af1d9bcf2cc72604ae1e13c52c7602795801537b2519c87c12b8ae"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\RECEIPT.json",
+      "sha256": "b02816597a2c7d22de44b7e1096ba75b9f3f0f80e8d90cac4b3b0df969b18621"
+    },
+    {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\RENDER_VERIFICATION.json",
+      "sha256": "9dca985dd40ba0274c9938f20cd34ae7495e908543da305a52f219775c809499"
+    }
+  ],
+  "preview": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\output\\rim-ornament-adaptation\\rim-ornament-adaptation.html",
+    "sha256": "e217750304b58251e299d2dc2b0f02714e45abe43733d1827580794a85d4f5de",
+    "bytes": 725038,
+    "images": [
+      {
+        "variant": "ORIGINAL_G7",
+        "view": "macro",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\ORIGINAL_G7\\views\\macro.png",
+        "original_png_sha256": "b4c888a58be0b0301ffda3ed692e6dfa43007ce4b07d945bcdaf9f8dc1257e95",
+        "crop": null,
+        "preview_size": [
+          720,
+          720
+        ],
+        "preview_jpeg_sha256": "2a0a3f8f84affb218406a7d57a10d047e9ccb5f08ace59952f09e06b2e80a592",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "ORIGINAL_G7",
+        "view": "context",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\views\\close_oblique.png",
+        "original_png_sha256": "68f23f6920ea2ec86cb1a571f8099bc6ffdc1916f3021afddbb766e2309a557a",
+        "crop": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_size": [
+          780,
+          400
+        ],
+        "preview_jpeg_sha256": "4be5366cf40496941a8745117a5affd145109e070b7eff2f207eee73375228a4",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "MANDEL_RIBBON",
+        "view": "macro",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\MANDEL_RIBBON\\views\\macro.png",
+        "original_png_sha256": "50509c94b05695c9fa797b4e35f670280b87e6eb953ac547ca2acd2d25660100",
+        "crop": null,
+        "preview_size": [
+          720,
+          720
+        ],
+        "preview_jpeg_sha256": "332bdcbd1f376f55b14d29484236ddeb800e292dda6195c8dec471d38eeac20b",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "MANDEL_RIBBON",
+        "view": "context",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\MANDEL_RIBBON\\views\\close_oblique.png",
+        "original_png_sha256": "9fdbbc01ddd31c33574dd288dfcbd4267ab98798252cdf1cb6fc678f5f53e571",
+        "crop": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_size": [
+          780,
+          400
+        ],
+        "preview_jpeg_sha256": "26c98a53a9e4103a8342bafcb109582da748c07002f48d532d39da15fc4df30f",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "LEAF_FAN",
+        "view": "macro",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\LEAF_FAN\\views\\macro.png",
+        "original_png_sha256": "ce6bf34b1bbe494a746925ae13b3c5409349fbb9dfdfc4075296a68c7671c34c",
+        "crop": null,
+        "preview_size": [
+          720,
+          720
+        ],
+        "preview_jpeg_sha256": "3d83160cd1acb1f601ad96371c5b6e74d6ed7d9945bec1208ab778e339f51736",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "LEAF_FAN",
+        "view": "context",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\LEAF_FAN\\views\\close_oblique.png",
+        "original_png_sha256": "43ac2c82692dd2139e3def9cdb382a686a009a4d958a4761a5df2411ae464f60",
+        "crop": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_size": [
+          780,
+          400
+        ],
+        "preview_jpeg_sha256": "bc3f05203587d04957567bcdfc25eb51362f3cf6411b02310fc3c5424d66b888",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "HYBRID",
+        "view": "macro",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\HYBRID\\views\\macro.png",
+        "original_png_sha256": "5d1dc679126aebb62211c6dcf7279361b1350d9109cc1f7dffb922dd2e205f43",
+        "crop": null,
+        "preview_size": [
+          720,
+          720
+        ],
+        "preview_jpeg_sha256": "8d9cb4f0a33dabe7eb49c2c2310e76cbce1dd56cc7523b0c9b06190762139477",
+        "jpeg_quality": 88
+      },
+      {
+        "variant": "HYBRID",
+        "view": "context",
+        "original_png": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\HYBRID\\views\\close_oblique.png",
+        "original_png_sha256": "4defd5c2aa2cfe6dba5f016e5f6b2120e929ecf1477ca3711c6aaac281598d94",
+        "crop": [
+          80,
+          480,
+          860,
+          880
+        ],
+        "preview_size": [
+          780,
+          400
+        ],
+        "preview_jpeg_sha256": "38b7005bdb2bc1fa9944b63254dc30d319e03c8f2622096e73d9d7b3be667723",
+        "jpeg_quality": 88
+      }
+    ]
+  },
+  "decision": "Preserve original G7. Retain tangent-growth correction and curved placement implementation, do not adopt broad leaf geometry, bark-like ribbon, or independent granular-button hybrid as the current design."
+}

@@ -1,0 +1,602 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "authorization": "User delegated technically feasible visualizations after two initial prototypes; no further motif-selection approval required.",
+  "basis_commit": "2e3df44fa58a761efab50c28691d016a1fc44678",
+  "source_native_path": "E:\\CHESHIRE_DATA\\experiments\\medium_root_folds_20261013\\trial02\\WIDE_ROOT_FINISHED\\SPAN\\G07\\geometry.npz",
+  "source_native_geometry_sha256": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91",
+  "source_hashes_after": {
+    "generation.json": "c7452dc63998c61783215f0bb23434ea5e9b223d89fcd836d1a4081907ab2cf5",
+    "control_quad.npz": "0d966671a028cd56f49d0c5d1e626207652e789d281a9fa69475c3492f95fdc6",
+    "geometry.npz": "98a88c6727045e0a5aad67df6cd6295de6c14655a78ac0ca95812a5f37841e91"
+  },
+  "placement_sha256": "23f2a9f2f0af1d9bcf2cc72604ae1e13c52c7602795801537b2519c87c12b8ae",
+  "previous_trial": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01",
+  "previous_receipt_sha256": "ff27f575ce4e91125a02d18c218f86f574c0fd8499752f1d5d0cdf93c151576a",
+  "prototypes": {
+    "MANDELBULB": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\MANDELBULB.npz",
+      "sha256": "d23022c14bf13fabb3873f6bb6371dc124d24f8a36bb639df2c0db8fa0bebdd0"
+    },
+    "LEAF_CLUSTER": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\local_ornament_comparison_20261014\\trial01\\prototypes\\LEAF_CLUSTER.npz",
+      "sha256": "19151226dcc67523fabdb3902dfadc7b430c70cd19ac946df257eb349edcc5d9"
+    }
+  },
+  "recipe": {
+    "mandel": {
+      "length": 0.16,
+      "width": 0.074,
+      "normal_height": 0.045,
+      "interior": [
+        0.0,
+        0.0,
+        0.22
+      ]
+    },
+    "leaf": {
+      "length": 0.16,
+      "fan_width_scale": 0.2,
+      "normal_scale": 0.22,
+      "arch": 0.018,
+      "forward_rise": 0.025
+    },
+    "hybrid_accents": [
+      {
+        "leaf_z": 0.47,
+        "leaf_x": -0.025,
+        "length": 0.036,
+        "width": 0.026,
+        "normal_height": 0.018
+      },
+      {
+        "leaf_z": 0.72,
+        "leaf_x": 0.04,
+        "length": 0.026,
+        "width": 0.019,
+        "normal_height": 0.013
+      }
+    ],
+    "guide": "PCHIP through three actual connected-patch source vertices; normalized linear source-normal interpolation. Outside guide, straight endpoint continuation with constant endpoint normal.",
+    "body_geometry_changed": false,
+    "added_CC_passes": 0,
+    "smoothing_passes": 0,
+    "interpretation": "Actual closed prototype meshes bent along source-derived local guides. Independent overlaps, not Boolean unions, source regeneration, G8 or a reference-exact algorithm."
+  },
+  "variants": {
+    "MANDEL_RIBBON": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\MANDEL_RIBBON\\geometry.npz",
+      "geometry_sha256": "b8be980f030f9e66d3f259ca1ae880cf1ef0d7e77af4bbfd729b36d1cc3e76cc",
+      "xyz_sha256": "5ef809e018c32db29f0222bc7428b2a7345774dcf4285e0f59d2d6cad8bc16f1",
+      "faces_sha256": "31bcdf8940d15812b9347c175983626d1fc75f2d97042d12670d256be9768734",
+      "vertices": 5684064,
+      "triangles": 11495904,
+      "actual_XY_reflection_residual": 0.0,
+      "canonical_pieces": 6,
+      "reflected_pieces": 24
+    },
+    "LEAF_FAN": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\LEAF_FAN\\geometry.npz",
+      "geometry_sha256": "733b6ee50e29744b14514dd3180e36ba3bc828ca24bec39ef17e975cb3f9c377",
+      "xyz_sha256": "5d0d84e450d67fd045752c5c79c9f43c7f1a419f1c4f2ab340a1f01d55952d87",
+      "faces_sha256": "e3f4ce9cfaec948a09932eaab038931d2d50ef12b716e991cb059cd03c3c580f",
+      "vertices": 442512,
+      "triangles": 884736,
+      "actual_XY_reflection_residual": 0.0,
+      "canonical_pieces": 6,
+      "reflected_pieces": 24
+    },
+    "HYBRID": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\HYBRID\\geometry.npz",
+      "geometry_sha256": "2841e885f857ad77f323d4b3eea8fc218ed9aeb6480f81f425b4bee90c285a79",
+      "xyz_sha256": "d7eaae4df7da00f521a435fef462e117497ddebd3c2f6981a5afd2dbf1ee6c3a",
+      "faces_sha256": "d1f8abbff4edee051e1ab40f3af5a6033e6386ebee55af27d7e248f79087600f",
+      "vertices": 11810640,
+      "triangles": 23876544,
+      "actual_XY_reflection_residual": 0.0,
+      "canonical_pieces": 18,
+      "reflected_pieces": 72
+    }
+  },
+  "actual_local_checks": [
+    {
+      "group": 0,
+      "source_control_vertex_id": 967655,
+      "mandel": {
+        "actual_minimum_double_area": 9.818739473078496e-17,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 1,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 2.9750064520906934e-08,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.8419912871139552,
+            0.4613315201455748,
+            6.4008494806608685
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.036,
+            "width": 0.026,
+            "normal_height": 0.018
+          },
+          "checks": {
+            "actual_minimum_double_area": 9.417732807889109e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.8286361728475141,
+            0.49132958992384695,
+            6.42541139826244
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.026,
+            "width": 0.019,
+            "normal_height": 0.013
+          },
+          "checks": {
+            "actual_minimum_double_area": 4.9596411258836825e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.10995787121331448,
+          0.0,
+          0.0364669272766865
+        ],
+        "guide_chord_span": 0.14642479849000098,
+        "actual_query_range": [
+          -0.08,
+          0.12480000000000001
+        ],
+        "ornament_size_factor": 1.0,
+        "endpoint_extension": [
+          0.0,
+          0.0883330727233135
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    },
+    {
+      "group": 1,
+      "source_control_vertex_id": 2359992,
+      "mandel": {
+        "actual_minimum_double_area": 9.639071411797112e-17,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 1,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 2.9750064519832632e-08,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.7211100089085035,
+            0.6008664065270768,
+            6.259776440613106
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.036,
+            "width": 0.026,
+            "normal_height": 0.018
+          },
+          "checks": {
+            "actual_minimum_double_area": 9.417732600879214e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 3,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.7518470448131326,
+            0.5651460242346934,
+            6.271696759890591
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.026,
+            "width": 0.019,
+            "normal_height": 0.013
+          },
+          "checks": {
+            "actual_minimum_double_area": 4.959642947514974e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 7,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.07206589245701216,
+          0.0,
+          0.06999404452597636
+        ],
+        "guide_chord_span": 0.14205993698298852,
+        "actual_query_range": [
+          -0.08,
+          0.12480000000000001
+        ],
+        "ornament_size_factor": 1.0,
+        "endpoint_extension": [
+          0.007934107542987845,
+          0.05480595547402364
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    },
+    {
+      "group": 2,
+      "source_control_vertex_id": 5928492,
+      "mandel": {
+        "actual_minimum_double_area": 1.0410889293371743e-16,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 7,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 1.1699106809917333e-08,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.4479155080113323,
+            0.7508523796540225,
+            6.222825274586625
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.036,
+            "width": 0.026,
+            "normal_height": 0.018
+          },
+          "checks": {
+            "actual_minimum_double_area": 9.41773281126854e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.46999124449112234,
+            0.7218718682653987,
+            6.22943303315234
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.026,
+            "width": 0.019,
+            "normal_height": 0.013
+          },
+          "checks": {
+            "actual_minimum_double_area": 4.959643119374e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 3,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.06286995105708075,
+          0.0,
+          0.07845198444985967
+        ],
+        "guide_chord_span": 0.14132193550694042,
+        "actual_query_range": [
+          -0.08,
+          0.12480000000000001
+        ],
+        "ornament_size_factor": 1.0,
+        "endpoint_extension": [
+          0.01713004894291925,
+          0.04634801555014034
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    },
+    {
+      "group": 3,
+      "source_control_vertex_id": 4537953,
+      "mandel": {
+        "actual_minimum_double_area": 1.802175155935696e-17,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 1,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 3.18368071504008e-09,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.194264592277682,
+            0.816005222379569,
+            6.101025615673453
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.01368,
+            "width": 0.00988,
+            "normal_height": 0.00684
+          },
+          "checks": {
+            "actual_minimum_double_area": 1.3599205246071576e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.18488846287791347,
+            0.819511695558555,
+            6.087700027580167
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.00988,
+            "width": 0.00722,
+            "normal_height": 0.00494
+          },
+          "checks": {
+            "actual_minimum_double_area": 7.161723297387535e-19,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.016896627157485456,
+          0.0,
+          0.02054289264708087
+        ],
+        "guide_chord_span": 0.03743951980456633,
+        "actual_query_range": [
+          -0.030400000000000003,
+          0.047424
+        ],
+        "ornament_size_factor": 0.38,
+        "endpoint_extension": [
+          0.013503372842514547,
+          0.02688110735291913
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    },
+    {
+      "group": 4,
+      "source_control_vertex_id": 4548840,
+      "mandel": {
+        "actual_minimum_double_area": 1.1080445205397284e-16,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 2.9750064518076382e-08,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.4020114597091932,
+            0.6640823047242294,
+            6.249977905959356
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.036,
+            "width": 0.026,
+            "normal_height": 0.018
+          },
+          "checks": {
+            "actual_minimum_double_area": 9.417730356297468e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.3909627860353047,
+            0.6358157817254019,
+            6.285646108526962
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.026,
+            "width": 0.019,
+            "normal_height": 0.013
+          },
+          "checks": {
+            "actual_minimum_double_area": 4.959642740505837e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.07781941691249034,
+          0.0,
+          0.05289341027276678
+        ],
+        "guide_chord_span": 0.13071282718525712,
+        "actual_query_range": [
+          -0.08,
+          0.12480000000000001
+        ],
+        "ornament_size_factor": 1.0,
+        "endpoint_extension": [
+          0.002180583087509666,
+          0.07190658972723322
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    },
+    {
+      "group": 5,
+      "source_control_vertex_id": 4499237,
+      "mandel": {
+        "actual_minimum_double_area": 8.240848328302655e-17,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "leaf": {
+        "actual_minimum_double_area": 2.9750064519680606e-08,
+        "actual_contact_point_inside": true,
+        "ray_positive_crossings": 3,
+        "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+      },
+      "accents": [
+        {
+          "actual_leaf_vertex_id": 2833,
+          "actual_leaf_point": [
+            -0.515562710008874,
+            0.9889720077211986,
+            6.135067370849031
+          ],
+          "recipe": {
+            "leaf_z": 0.47,
+            "leaf_x": -0.025,
+            "length": 0.036,
+            "width": 0.026,
+            "normal_height": 0.018
+          },
+          "checks": {
+            "actual_minimum_double_area": 9.417731961671222e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 3,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        },
+        {
+          "actual_leaf_vertex_id": 4237,
+          "actual_leaf_point": [
+            -0.4854603995407821,
+            0.9998819506373533,
+            6.114018368800369
+          ],
+          "recipe": {
+            "leaf_z": 0.72,
+            "leaf_x": 0.04,
+            "length": 0.026,
+            "width": 0.019,
+            "normal_height": 0.013
+          },
+          "checks": {
+            "actual_minimum_double_area": 4.9596414477278754e-18,
+            "actual_contact_point_inside": true,
+            "ray_positive_crossings": 1,
+            "contact_scope": "Ray parity on actual transformed closed triangles; no weld, collision freedom or tangent-continuity claim."
+          }
+        }
+      ],
+      "guide": {
+        "actual_guide_root_count": 3,
+        "anchor_root_index": 1,
+        "root_arc_distances": [
+          -0.07935302602966172,
+          0.0,
+          0.05512320583651169
+        ],
+        "guide_chord_span": 0.1344762318661734,
+        "actual_query_range": [
+          -0.08,
+          0.12480000000000001
+        ],
+        "ornament_size_factor": 1.0,
+        "endpoint_extension": [
+          0.0006469739703382771,
+          0.06967679416348832
+        ],
+        "scope": "The guide roots are actual source points on a connected selected patch. PCHIP interiors and endpoint extensions are ornament guides, not certified source-surface projections or exact fold crests."
+      }
+    }
+  ],
+  "source_snapshots": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\rim_ornament_adaptation_20261014\\run.py": {
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\source_snapshot\\rim_ornament_adaptation_20261014\\run.py",
+      "sha256": "812342ea390470210524c846ad327ce059d42bd2a7fb6d11a65e6470bb501c6c"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\rim_ornament_adaptation_20261014\\placement.py": {
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\source_snapshot\\rim_ornament_adaptation_20261014\\placement.py",
+      "sha256": "39a19d0ecc0b68604378ffbda01deb35c0535347323e62c7d0c4a8a1a9b3afee"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\local_ornament_comparison_20261014\\run.py": {
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\rim_ornament_adaptation_20261014\\trial01\\source_snapshot\\local_ornament_comparison_20261014\\run.py",
+      "sha256": "59c408cd0170171bc7e67e8b53b8dea18fbdf81be9d92f3ed5e5a2460cfc87a2"
+    }
+  },
+  "body_geometry_changed": false,
+  "added_CC_passes": 0,
+  "seconds": 62.72133380000014,
+  "visual_success": "PENDING_ACTUAL_MATCHED_RENDER",
+  "scope": "Three actual saved local additions on unchanged original G7. Source-derived guide adaptation and one fixed hybrid hierarchy; no candidate matrix, whole-column smoothing, body tip replacement, Boolean fusion or new growth generation."
+}
