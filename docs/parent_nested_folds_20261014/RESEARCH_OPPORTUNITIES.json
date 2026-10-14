@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-14",
+  "scope": "Read-only public-source feasibility review. No external installation, adoption, port or new geometry experiment.",
+  "assessment_kind": "Source capabilities are verified; applicability, cost and priority are engineering judgments, not tested CHESHIRE results.",
+  "shortlist": [
+    {
+      "project": "HE_Mesh",
+      "priority": "First: selective descendant scheduling",
+      "borrow": "Keep named cap descendants eligible for the next inset/extrusion; retain walls and root as separate roles.",
+      "source_verified": [
+        {"function": "HEM_Extrude.applyFlatToOneFace", "url": "https://github.com/wblut/HE_Mesh/blob/d4133a7257857c5e97852da076b1be3948cb87d5/src/hemesh_modifiers/wblut/hemesh/HEM_Extrude.java#L958-L1100", "blob_sha": "f893cc42628a736398310827686503873261ab25", "capability": "Relative inset toward parent face center, retained cap, attached sidewall ring and named output selections."},
+        {"function": "HES_QuadSplit.applySelf(HE_Selection)", "url": "https://github.com/wblut/HE_Mesh/blob/d4133a7257857c5e97852da076b1be3948cb87d5/src/hemesh_subdividors/wblut/hemesh/HES_QuadSplit.java#L223-L231", "capability": "Register subdivided child faces as derived from the selected actual parent face."},
+        {"function": "HE_Mesh.addDerivedElement", "url": "https://github.com/wblut/HE_Mesh/blob/d4133a7257857c5e97852da076b1be3948cb87d5/src/core/wblut/hemesh/HE_Mesh.java#L268-L281", "blob_sha": "f8aa8049419ea85a73b9f046c003b296e4a027a4", "capability": "Propagate named selection membership to derived faces."}
+      ],
+      "local_gap": "Task32 already constructs cap/wall topology and stores parent_event/parent_face associations. Late MIDDLE/LINKED/WIDE fields do not use persistent cap/wall roles to schedule the next ornament. Borrow organization, not a replacement mesh kernel.",
+      "proposed_sequence_only": "Tag parent cap patch -> relative inset/extrusion -> subdivision -> reselect only cap descendants for the next ornament.",
+      "cost_assessment": "Low-to-medium for role scheduling on existing coarse ancestry arrays; high and unjustified for migrating 7M controls into a Java object-mesh library.",
+      "limits": "Relative inset shrinks footprint, but extrusion height is independently supplied. Named membership is not a complete parent-ID genealogy. No collision, visual hierarchy or ornament-quality guarantee.",
+      "license": "Inspected HEM_Extrude/HES_QuadSplit/HE_Mesh headers and README: CC0/Public Domain; other enumerated files and external packages have separate terms.",
+      "license_url": "https://github.com/wblut/HE_Mesh/blob/d4133a7257857c5e97852da076b1be3948cb87d5/README.md#license",
+      "implemented": false
+    },
+    {
+      "project": "Directional",
+      "priority": "Conditional: constrained directions at turns and junctions",
+      "borrow": "Solve a smooth tangent line field constrained by actual parent-fold tangents, rather than introducing another independent global phase.",
+      "source_verified": [
+        {"function": "power_field", "url": "https://github.com/avaxman/Directional/blob/master/include/directional/power_field.h", "blob_sha": "77f3a327abdcbdc1b1b4f613fdda89cafa55ed36", "capability": "N-RoSy field with supplied tangent-space constraints and hard or soft alignment weights; N=2 is a line field."},
+        {"function": "polyvector_precompute / polyvector_field", "url": "https://github.com/avaxman/Directional/blob/master/include/directional/polyvector_field.h", "blob_sha": "d9590a4d41333391b46f0fa223d0ba70302127ed", "capability": "Tangent-space connections, smoothness matrices and constrained sparse solve."}
+      ],
+      "local_gap": "Existing inherited scalar phase and intrinsic gradient already provide direction in ordinary parent regions. The added value is reconciling several parent-direction constraints around transition/junction regions.",
+      "cost_assessment": "Medium: C++/Eigen solver and correspondence between a smaller carrier field and current dense controls. Dense G7 global solve is not recommended without measured need.",
+      "limits": "Field-only evaluation need not change current IDs. Full setup_integration cuts the mesh and duplicates vertices, so it would require new V/E/F and mirror correspondence management. Does not generate ornament, enforce parent scale or guarantee aesthetics.",
+      "integration_url": "https://github.com/avaxman/Directional/blob/master/include/directional/setup_integration.h",
+      "license": "MPL-2.0 in the inspected source headers.",
+      "implemented": false
+    }
+  ],
+  "deferred": [
+    {"project": "Tissue", "url": "https://github.com/alessandro-zomparelli/tissue/blob/master/tessellate_numpy.py", "blob_sha": "bb07b64a1262086b3b3caa707eeecbbb642149d6", "verified": "tessellate_patch maps component UV coordinates to actual surface patches, interpolates weights and repeats generated geometry as the next base. Optional adjacent-boundary merging exists.", "judgment": "Useful only if a well-shaped small fold/leaf component is already designed and needs controlled surface attachment. Whole-face repeated component placement does not itself establish parent hierarchy and may reintroduce tiled or attached decoration. Not a current priority.", "license": "GPL-2.0-or-later header."},
+    {"project": "OpenSubdiv", "url": "https://github.com/PixarAnimationStudios/OpenSubdiv/blob/dev/opensubdiv/far/topologyRefiner.cpp", "patch_url": "https://github.com/PixarAnimationStudios/OpenSubdiv/blob/dev/opensubdiv/far/patchTableFactory.h", "verified": "Selected-face adaptive refinement and patch tables with base-face/UV correspondence.", "judgment": "Potential future memory/resolution optimization. Does not create hierarchical ornament or automatically reproduce CHESHIRE custom directional subdivision. Output IDs differ; currently not worth replacing the pipeline.", "license": "TOST 1.0; not Apache-2.0 alone.", "license_url": "https://github.com/PixarAnimationStudios/OpenSubdiv/blob/dev/LICENSE.txt"},
+    {"project": "polyhedronisme", "url": "https://github.com/levskaya/polyhedronisme/blob/master/topo_operators.js#L545-L603", "verified": "insetN constructs inset caps and sidewalls with global popout and polygon-degree selection.", "judgment": "Largely duplicates existing Task32 geometry and lacks the persistent role/descendant schedule sought here. No adoption value for this cycle.", "license": "MIT", "license_url": "https://github.com/levskaya/polyhedronisme/blob/master/LICENSE"}
+  ],
+  "current_geometry_checkpoint": "parent_nested_folds_20261014/trial02 was generated before this external-source research and does not use either shortlisted external technique.",
+  "code_adopted": false,
+  "software_installed": false
+}

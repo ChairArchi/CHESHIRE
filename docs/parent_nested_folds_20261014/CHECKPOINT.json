@@ -1,0 +1,238 @@
+{
+    "date":  "2026-10-14",
+    "timezone":  "Asia/Seoul",
+    "kind":  "SELECTED_PARENT_NESTED_G7_HIERARCHY_CHECKPOINT",
+    "selected_trial":  "trial02",
+    "selected_variant":  "NESTED",
+    "selected_geometry":  "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+    "selected_geometry_sha256":  "cde95d13f64d86739ac25e134e67024533d6be4fafec7a5d4c7a46896b65403e",
+    "comparison_geometry":  "E:\\CHESHIRE_DATA\\experiments\\end_continuity_20261014\\trial02\\COHERENT_FLOW\\geometry.npz",
+    "comparison_geometry_sha256":  "e7adee3cd77d4882143aba82623e8cf839193c693866ab21315b410fb05bd34c",
+    "selection_evidence":  {
+                               "trial01_role":  "Preserved first lower-amplitude candidate, not selected",
+                               "result":  "trial02 selected: large fold flow is clearer and late fields are subordinate; child detail remains visually quiet",
+                               "review":  "Root inspected actual matched close_oblique, body_oblique and front PNGs for trial01 and trial02"
+                           },
+    "actual_sequence":  "Saved coherent G7 SURFACE plus the same declared MIDDLE primary gain, then newly evaluated CHILD and SMALL fields",
+    "omitted_previous_late_fields":  [
+                                         "LINKED",
+                                         "WIDE",
+                                         "global FLOW"
+                                     ],
+    "generation":  7,
+    "added_CC_passes":  0,
+    "added_topology_events":  0,
+    "fresh_normal_field_passes":  2,
+    "native_vertices":  14004226,
+    "native_triangles":  28008448,
+    "native_faces_sha256":  "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "parent_relative_limits":  {
+                                   "phase":  "qchild=2*pi*(s-.5); no independent axial oscillation",
+                                   "support_scope":  "Counts refer to control vertices, not measured surface area.",
+                                   "small":  "min(.28*child_budget,.075*actual_local_flank_width/3)*small_mask*cos(3*qchild)",
+                                   "parent_envelope_scope":  "Caller-bound actual G6 .006H*saved_envelope*(1-.55*saved_feature_support), transported through actual G6-to-G7 V/E/F IDs and multiplied by the declared primary MIDDLE gain.",
+                                   "child":  "min(.40*actual_parent_envelope,.12*actual_local_flank_width)*W*cos(qchild)"
+                               },
+    "generator_verification":  {
+                                   "protected_control_vertices":  3058669,
+                                   "self_intersection_checked":  false,
+                                   "protected_output_maximum_motion":  0.0,
+                                   "actual_child_parent_budget_maximum_violation":  0.0,
+                                   "output_XY_position_symmetry_error":  3.3084646133829665E-14,
+                                   "mesh":  {
+                                                "all_finite":  true,
+                                                "positive_area_triangles":  28008448,
+                                                "degenerate_triangles":  0,
+                                                "minimum_triangle_area":  8.4682704449542221E-11
+                                            },
+                                   "actual_small_child_budget_maximum_violation":  0.0
+                               },
+    "render_verification":  {
+                                "display_readback":  {
+                                                         "geometry":  {
+                                                                          "xyz_float32_sha256":  "70197fba8d7a3c4236bd336298392650aeb67fc7f95b2ce48c0b229fb046e8bb",
+                                                                          "triangle_indices_int32_sha256":  "026e6987322f27b65c8a4ab786d521cb6cbe2c0228966ac214ee85cf5529f968"
+                                                                      },
+                                                         "smooth_polygons":  0,
+                                                         "polygons":  28008448,
+                                                         "use_smooth_flags_sha256":  "7fec496b8d64de42f38ea58408ea10b29aada522dffeec8a967354f0570c1aef",
+                                                         "all_use_smooth":  false,
+                                                         "geometry_unchanged":  true,
+                                                         "modifiers":  [
+
+                                                                       ],
+                                                         "custom_normal_map":  false
+                                                     },
+                                "version":  "4.5.4 LTS",
+                                "all_flat":  true,
+                                "geometry_processing":  false,
+                                "geometry_unchanged_by_renderer":  true,
+                                "actual_views":  [
+                                                     "close_oblique",
+                                                     "body_oblique",
+                                                     "front"
+                                                 ],
+                                "images":  [
+                                               {
+                                                   "view":  "close_oblique",
+                                                   "filename":  "close_oblique.png",
+                                                   "sha256":  "574dea2b021c1ea9833846187b521a170baa2d73fa7858685d3ab85099dc2b57"
+                                               },
+                                               {
+                                                   "view":  "body_oblique",
+                                                   "filename":  "body_oblique.png",
+                                                   "sha256":  "47d12e482eb31be4ac150d8a4db4814772d86edf4df8a0aadb25ee2839bccbf1"
+                                               },
+                                               {
+                                                   "view":  "front",
+                                                   "filename":  "front.png",
+                                                   "sha256":  "06a4218510d982946319384989560ea2a6a12f2bc2c55803e26bcf45e277dbeb"
+                                               }
+                                           ],
+                                "conditions":  {
+                                                   "engine":  "CYCLES",
+                                                   "resolution":  [
+                                                                      900,
+                                                                      900
+                                                                  ],
+                                                   "resolution_percentage":  100,
+                                                   "samples":  24,
+                                                   "denoising":  true,
+                                                   "view_transform":  "AgX",
+                                                   "image_format":  "PNG",
+                                                   "camera_type":  "ORTHO",
+                                                   "material_base_color":  [
+                                                                               0.5,
+                                                                               0.4699999988079071,
+                                                                               0.4099999964237213,
+                                                                               1.0
+                                                                           ],
+                                                   "material_roughness":  0.8399999737739563,
+                                                   "smooth_polygons":  0,
+                                                   "modifiers":  [
+
+                                                                 ],
+                                                   "normal_maps":  false,
+                                                   "world_color":  [
+                                                                       0.054999999701976776,
+                                                                       0.06300000101327896,
+                                                                       0.07500000298023224,
+                                                                       1.0
+                                                                   ],
+                                                   "world_strength":  0.4000000059604645,
+                                                   "lights":  {
+                                                                  "Key":  {
+                                                                              "position":  [
+                                                                                               -20.0,
+                                                                                               25.0,
+                                                                                               32.0
+                                                                                           ],
+                                                                              "power":  36000.0,
+                                                                              "size":  17.0,
+                                                                              "shape":  "DISK"
+                                                                          },
+                                                                  "Fill":  {
+                                                                               "position":  [
+                                                                                                24.0,
+                                                                                                13.0,
+                                                                                                15.0
+                                                                                            ],
+                                                                               "power":  8500.0,
+                                                                               "size":  18.0,
+                                                                               "shape":  "DISK"
+                                                                           },
+                                                                  "Rim":  {
+                                                                              "position":  [
+                                                                                               0.0,
+                                                                                               -23.0,
+                                                                                               29.0
+                                                                                           ],
+                                                                              "power":  26000.0,
+                                                                              "size":  13.0,
+                                                                              "shape":  "DISK"
+                                                                          }
+                                                              }
+                                               }
+                            },
+    "exports":  {
+                    "detail":  {
+                                   "path":  "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\CHESHIRE_COLUMN_G7_PARENT_NESTED_DETAIL.ply",
+                                   "vertices":  84750,
+                                   "triangles":  167905,
+                                   "bytes":  4217147,
+                                   "sha256":  "6316802a032ce9bad81c2ee0d943188d13564bf97681287303a39adaedcdfa16",
+                                   "exact_coordinate_and_triangle_roundtrip":  true,
+                                   "coordinates":  "binary float64; unchanged source axes/model units",
+                                   "faces":  "uchar3 + signed int32 indices",
+                                   "scope":  "Exact stored triangle subset; open cut boundary, no caps or new surface.",
+                                   "selection":  "Source triangle centroids within radius of the same saved macro-camera target.",
+                                   "target":  [
+                                                  -0.8127592552124007,
+                                                  0.42607142838364565,
+                                                  6.369917540048999
+                                              ],
+                                   "radius":  0.28
+                               },
+                    "detail_source_ids":  {
+                                              "path":  "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\DETAIL_SOURCE_IDS.npz",
+                                              "sha256":  "51be6f4f64b7d0153740a7d84b465c97e759062c6fb2901df89ed19856b7fac8"
+                                          },
+                    "full":  {
+                                 "path":  "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\CHESHIRE_COLUMN_G7_PARENT_NESTED_FULL.ply",
+                                 "vertices":  14004226,
+                                 "triangles":  28008448,
+                                 "bytes":  700211635,
+                                 "sha256":  "79d8e425b3c8faf80789298c890d83d7d08b03f1941afa3d42df019c61e9bcf2",
+                                 "exact_coordinate_and_triangle_roundtrip":  true,
+                                 "coordinates":  "binary float64; unchanged source axes/model units",
+                                 "faces":  "uchar3 + signed int32 indices"
+                             },
+                    "simplification":  false,
+                    "source_geometry_modified":  false
+                },
+    "limitations":  [
+                        "Only the two replacement late fields are parent-contained; earlier G1-G7 ornament hierarchy has not been comprehensively rebuilt or certified.",
+                        "Inherited phase and the actual MIDDLE envelope define field dependencies; these are not semantic ridge/termination detection or recursive topology branches.",
+                        "Original LINKED, WIDE and global FLOW contributions are omitted, so this is a combined late-stage redesign rather than amplitude-only smoothing.",
+                        "Existing earlier curled ends, awkward overlaps and coarse angular regions remain; final near-detail design is not complete.",
+                        "First-order physical phase-width caps do not establish remote-sheet clearance or global collision freedom.",
+                        "Positive triangle area and symmetry checks establish the stated numerical properties, not aesthetic quality or fabrication suitability.",
+                        "Latest G7 finish has not been applied to the gate or revalidated across additional base-input variations."
+                    ],
+    "source_copies":  [
+                          {
+                              "copy":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\parent_nested_folds_20261014\\TRIAL01_GENERATION_RECEIPT.json",
+                              "sha256":  "38b73925ea6f6682826ff4aadeec3060df014c5b4df8b22ddaf6b683c2df6f8b",
+                              "byte_exact":  true,
+                              "source":  "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial01\\RECEIPT.json"
+                          },
+                          {
+                              "copy":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\parent_nested_folds_20261014\\TRIAL01_RENDER_RECEIPT.json",
+                              "sha256":  "cf60090dcd1f76936bb0aa2694e88a4e4f84148062ab1e14d929fa93bc044c2f",
+                              "byte_exact":  true,
+                              "source":  "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial01\\NESTED_FLAT\\review\\receipt.json"
+                          },
+                          {
+                              "copy":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\parent_nested_folds_20261014\\TRIAL02_GENERATION_RECEIPT.json",
+                              "sha256":  "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+                              "byte_exact":  true,
+                              "source":  "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json"
+                          },
+                          {
+                              "copy":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\parent_nested_folds_20261014\\TRIAL02_RENDER_RECEIPT.json",
+                              "sha256":  "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508",
+                              "byte_exact":  true,
+                              "source":  "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json"
+                          },
+                          {
+                              "copy":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\parent_nested_folds_20261014\\EXPORT_MANIFEST.json",
+                              "sha256":  "ea5f60e05b38016c74ba40e8276b194a55c66513364f1a451c0c919dcf5dbf5e",
+                              "byte_exact":  true,
+                              "source":  "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\MANIFEST.json"
+                          }
+                      ],
+    "executed_export_code":  {
+                                 "sha256":  "289c0318dccb01d73242284baf835ef0e5e6abd82e14f082d777cfb72fe0479a",
+                                 "path":  "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\export_model.py"
+                             }
+}

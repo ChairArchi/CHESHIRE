@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Seoul",
+  "source": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+  "source_sha256": "cde95d13f64d86739ac25e134e67024533d6be4fafec7a5d4c7a46896b65403e",
+  "source_receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json",
+  "source_receipt_sha256": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+  "source_variant": "NESTED",
+  "native_faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+  "checked_generation_sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\fold_hierarchy_20261014\\trial01\\PREPARATION.json": "0c413ec2ba61d40b6f12be01f2acab32c42183552a7a087dbd8bd3d528dcc247",
+    "E:\\CHESHIRE_DATA\\experiments\\end_continuity_20261014\\trial02\\RECEIPT.json": "a7cb4e8934df4af5a98efb2978f22eff74c1f4eda129ed7079a15aa3ff26abe3",
+    "E:\\CHESHIRE_DATA\\experiments\\end_continuity_20261014\\trial02\\COHERENT_FLOW\\geometry.npz": "e7adee3cd77d4882143aba82623e8cf839193c693866ab21315b410fb05bd34c",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\generation.json": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\evidence.npz": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\generation.json": "f79197a633cf5809e8c734c3e5871a17975d80f2e03e6577698a231b91661ddd",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\evidence.npz": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\control_quad.npz": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1"
+  },
+  "checked_generation_code_snapshots": {
+    "experiments/parent_nested_folds_20261014/run_readable.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\run_readable.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_nested_folds_20261014\\run_readable.py",
+      "sha256": "269b661efd74867aba78aae2f208ffb402b66493ad364a36b8ad710765a2ea16"
+    },
+    "experiments/parent_nested_folds_20261014/parent_nested_readable.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py",
+      "sha256": "5f9693775aa17e01a4347790a21d46ddc55f216de52956abdf1c3e20b193fde5"
+    },
+    "experiments/end_continuity_20261014/coherent_finish.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\end_continuity_20261014\\coherent_finish.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\end_continuity_20261014\\coherent_finish.py",
+      "sha256": "73d89b3e7f7764c6cfbe62b0c1b9a7bb4bea752a1cec185d8770370f456d88a5"
+    },
+    "experiments/fold_hierarchy_20261014/middle_lift.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\middle_lift.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\middle_lift.py",
+      "sha256": "a690992d598b80edda23fdcb6f0319b91acafe2d1f531f0d9226022e20b44105"
+    },
+    "experiments/fold_hierarchy_20261014/prepare.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\prepare.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\prepare.py",
+      "sha256": "5e833d00b8639b70ab8f018fc25d97b88b93a3959a67d121b70a4614a62e0f29"
+    },
+    "experiments/fold_hierarchy_20261014/run.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\run.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\run.py",
+      "sha256": "7d16d720b3da8f94eb76c322a9d8e24a7a7ca4507371dbbf82bc233c465d2939"
+    },
+    "experiments/fold_hierarchy_20261014/texture.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "sha256": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a"
+    },
+    "experiments/flow_fold_finish_20261014/run_curved.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\run_curved.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\run_curved.py",
+      "sha256": "3e96806bea5f876623da0474b0482ab2df13a9f423286871e7d1e3f311fe4745"
+    },
+    "experiments/flow_fold_finish_20261014/flow_curved_operator.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py",
+      "sha256": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844"
+    },
+    "experiments/whole_column_detail_20261013/whole_field.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\whole_column_detail_20261013\\whole_field.py",
+      "sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094"
+    },
+    "experiments/parent_linked_folds_20261013/smooth_relief.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+      "sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb"
+    },
+    "src/cheshire/reference_subdivision.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\src\\cheshire\\reference_subdivision.py",
+      "sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a"
+    }
+  },
+  "export_code": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\export_model.py",
+  "export_code_sha256": "289c0318dccb01d73242284baf835ef0e5e6abd82e14f082d777cfb72fe0479a",
+  "preserved_dependencies": [
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\end_continuity_20261014\\export_finish.py",
+      "sha256": "3d4ddf75094611b2c87230e903923b9106f38949faaaf00861e849ed01ba1584"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\model_exports_20261014\\export_latest.py",
+      "sha256": "86ca0cb13856af317efbe9d63a461ddedb704e49b3af1207d454c9a5121feb62"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\export_model.py",
+      "sha256": "194fb0515f5aea7ffee30ab56feb13a0f1c12d457ec121df1e785c7e9aadc444"
+    }
+  ],
+  "checkpoint": null,
+  "full": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\CHESHIRE_COLUMN_G7_PARENT_NESTED_FULL.ply",
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "bytes": 700211635,
+    "sha256": "79d8e425b3c8faf80789298c890d83d7d08b03f1941afa3d42df019c61e9bcf2",
+    "exact_coordinate_and_triangle_roundtrip": true,
+    "coordinates": "binary float64; unchanged source axes/model units",
+    "faces": "uchar3 + signed int32 indices"
+  },
+  "detail": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\CHESHIRE_COLUMN_G7_PARENT_NESTED_DETAIL.ply",
+    "vertices": 84750,
+    "triangles": 167905,
+    "bytes": 4217147,
+    "sha256": "6316802a032ce9bad81c2ee0d943188d13564bf97681287303a39adaedcdfa16",
+    "exact_coordinate_and_triangle_roundtrip": true,
+    "coordinates": "binary float64; unchanged source axes/model units",
+    "faces": "uchar3 + signed int32 indices",
+    "scope": "Exact stored triangle subset; open cut boundary, no caps or new surface.",
+    "selection": "Source triangle centroids within radius of the same saved macro-camera target.",
+    "target": [
+      -0.8127592552124007,
+      0.42607142838364565,
+      6.369917540048999
+    ],
+    "radius": 0.28
+  },
+  "detail_source_ids": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261014\\COLUMN_PARENT_NESTED\\DETAIL_SOURCE_IDS.npz",
+    "sha256": "51be6f4f64b7d0153740a7d84b465c97e759062c6fb2901df89ed19856b7fac8"
+  },
+  "source_geometry_modified": false,
+  "simplification": false,
+  "units": "Unchanged source model units; no scale conversion applied.",
+  "seconds": 35.17565429996466
+}
