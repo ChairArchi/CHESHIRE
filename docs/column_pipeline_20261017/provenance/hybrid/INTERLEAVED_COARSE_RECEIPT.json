@@ -1,0 +1,195 @@
+{
+  "kind": "ACTUAL_G6_MANDELBULB_THEN_PAIRED_NEUTRAL_CATMULL_CLARK_TO_G7",
+  "coarse_profile": {
+    "period": 0.9,
+    "primary_lobe_spacing": 0.1125,
+    "class_amplitudes": [
+      0.025,
+      0.025,
+      0.012,
+      0.02,
+      0.022
+    ],
+    "actual_surface_coordinates_used": true,
+    "actual_surface_normals_used": true,
+    "finite_boundary_sha256": "d2c75eb8b003ff6b63a5ae6a38f92f81ccbc9a03181bcaad6f66fdd69595383d",
+    "raw": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\NEW_COARSE_G6_DELTA.npy",
+      "sha256": "d6cab23e2c6d03f4a30a6c46df3ef70a6bbd0c16036424d490afd103aa0a25a4"
+    },
+    "height": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\NEW_COARSE_G6_PROFILE_HEIGHT.npy",
+      "sha256": "8fc79f0722c4d6a86db4aa2c4563b33da9e11220d860e752e2069ac9102c20b5"
+    },
+    "amplitudes": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\NEW_COARSE_G6_AMPLITUDE.npy",
+      "sha256": "83260eb0f5b1a5afd609aedd3f3ff063c85d36b7870d5a1fed0ef5ff28671a78"
+    },
+    "physical_atlas": "Certified physical arc and transverse coordinates; same atlas, newly evaluated profile."
+  },
+  "base_CC": {
+    "input_counts": {
+      "vertices": 1750530,
+      "edges": 3501056,
+      "quads": 1750528
+    },
+    "output_counts": {
+      "vertices": 7002114,
+      "quads": 7002112,
+      "native_fan_vertices": 14004226,
+      "native_fan_triangles": 28008448
+    },
+    "closed_input": true,
+    "boundary_vertices": 0,
+    "opposite_edge_incidence_checks": 3501056,
+    "input_Euler_characteristic": 2,
+    "output_Euler_characteristic": 2,
+    "degree_quantiles": [
+      3.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0
+    ],
+    "vertex_order": "old V, sorted undirected E, original F",
+    "child_order": "[previous_E, original_corner_V, next_E, original_F]",
+    "parent_face": "PARENT_FACE; equivalently child_face//4",
+    "parent_corner_ordinal": "child_face%4",
+    "parent_corner_vertex": "CHILD_QUADS[:,1]",
+    "geometry": "Neutral true Catmull-Clark: F=mean original corners; E=(original endpoints+two completed F)/4; V=(mean incident F+2*mean ORIGINAL edge midpoints+(degree-3)*original V)/degree.",
+    "scalar_attributes": "V unchanged, E endpoint mean, F corner mean; cap masks any endpoint/corner. Attributes do not use CC geometry averaging.",
+    "maximum_expected_RAM_GiB": 8.0,
+    "chunk": 65536
+  },
+  "decorated_CC": {
+    "input_counts": {
+      "vertices": 1750530,
+      "edges": 3501056,
+      "quads": 1750528
+    },
+    "output_counts": {
+      "vertices": 7002114,
+      "quads": 7002112,
+      "native_fan_vertices": 14004226,
+      "native_fan_triangles": 28008448
+    },
+    "closed_input": true,
+    "boundary_vertices": 0,
+    "opposite_edge_incidence_checks": 3501056,
+    "input_Euler_characteristic": 2,
+    "output_Euler_characteristic": 2,
+    "degree_quantiles": [
+      3.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0
+    ],
+    "vertex_order": "old V, sorted undirected E, original F",
+    "child_order": "[previous_E, original_corner_V, next_E, original_F]",
+    "parent_face": "PARENT_FACE; equivalently child_face//4",
+    "parent_corner_ordinal": "child_face%4",
+    "parent_corner_vertex": "CHILD_QUADS[:,1]",
+    "geometry": "Neutral true Catmull-Clark: F=mean original corners; E=(original endpoints+two completed F)/4; V=(mean incident F+2*mean ORIGINAL edge midpoints+(degree-3)*original V)/degree.",
+    "scalar_attributes": "V unchanged, E endpoint mean, F corner mean; cap masks any endpoint/corner. Attributes do not use CC geometry averaging.",
+    "maximum_expected_RAM_GiB": 8.0,
+    "chunk": 65536
+  },
+  "differential": "CC(G6+fresh coarse Mandel)-CC(G6); exact whole G7 child quad identity.",
+  "raw_difference": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\CC_COARSE_G7_RAW_DIFFERENCE.npy",
+    "sha256": "1faeb475fbf602ed686c49ae0e7802fddc29cadecf9edde4a6de072a8a7d787e"
+  },
+  "normal_projected_difference": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\CC_COARSE_G7_DELTA.npy",
+    "sha256": "2591639e98a3ec3d5f109221a0609fcb11193b0468af95083108ff0c59acd9a6"
+  },
+  "maximum_removed_tangent_component": 0.022101242253159913,
+  "column_underlay_smoothed": false,
+  "adapter": "Project only transported decoration differential onto original G7 normals; original NESTED XYZ retained.",
+  "classification": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json",
+    "sha256": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241"
+  },
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\evidence.npz": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial03b_refined\\working_arrays\\4_representatives.npy": "f6f900ca4f8bc7efb58d3d148d0d5772bc17a551b6ae87949730dfca67b9a34e",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial03b_refined\\working_arrays\\2_degree.npy": "5bb74602322be5c9d64029677c13ba52cd73d3ab43d2000719a2198a0fbce6ab",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial03b_refined\\working_arrays\\3_body_degree.npy": "f831e97fc5d6dea84090d610b9b403870e04a3cf4c493bf65dd11f972b5d4a51",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_FIELD_RECEIPT.json": "6fd01a7480c4663f13f9eb78acf4181fe3e1cbec9cc69e4eae87c032d12eff74",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_ORIGINAL_NORMALS.npy": "688d8b660a56fea7bee4fed1c825bd072e104dba2ae6c37c890d39d97b3bd245",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_NORMAL_SAFETY_CAP.npy": "77b37d5b7198d711565e7d23fe054d59608d0e064b2bddddc490d4dad52c0a01",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_FINE_WEIGHT.npy": "4ae0b78c5a213cd4a7d0fd5316b4972c533d1995dbd07182f07a2034db29c009",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_BODY_ELIGIBILITY.npy": "e8a12ff5a3f969016f510f39cc50f47fead111c9b2eae2013079f2dc5d10c850",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_CAP_PROTECTION.npy": "4b187e4524e82eb9429649849b746ba12b7eb92e392600a895f45fde31c4b558",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\FLOW_CORE_GUARD.npy": "a11c4c131e369116a4a626107f4032688283c2e659aa54391a462b898761b817",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_VALLEY_GUARD.npy": "3067ca4437e9ddb78a3d3472b3ed6b62286e5a8f08babcba3a0cbcdc8afe6d96",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant22_flow_corrected_visible_relief_whole_hybrid_20261016\\RECEIPT.json": "f2d472c7b9f2b51204ea0920314fbe16da6e2abf05043eeb851a6929a6144f64",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant22_flow_corrected_visible_relief_whole_hybrid_20261016\\MANDEL\\control_quad.npz": "83f5e0fe73d2d2672b80df09ccde51c1cf684446263faf9c83065a14a81d6ab0",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant22_flow_corrected_visible_relief_whole_hybrid_20261016\\CLASSIFICATION.json": "931e4cc9124786df7ef7d4957c95b476682396e38e0d3db0c7ed8df650bf9296",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant22_flow_corrected_visible_relief_whole_hybrid_20261016\\DISPLAY_FLOW_PROTECTION.npy": "7225a683d12ecc621c3856084afca8ecb2dabdeddda101d30b3bd35e75650d90",
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241",
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_G6.npy": "bcc4103775542751dfdbbbbb1f7e5d67b68b0ae1ed615aa13a3bd645f196bf63",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial12c_all_small_mandel_replacement\\MANDELBULB_PROFILE.json": "a29f74f93ecef80af40cb2b0693000ded2bbbc3db3e8fe2ebf05a7d5a1a87eae",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial12c_all_small_mandel_replacement\\MANDELBULB_PROFILE.npz": "c020a31fb93dd2b8776b0490390d236a7b35b6f550bb083da4f8c1e934289f17",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial02_continuous\\FIELD_DELTA.npz": "0dfc76986b9aed262a3e1061ba3acfe592861351a300116c3fa1ca1c955453d3",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial06_density_low_20261016\\working_arrays\\1_shared_exact_density_attributes.npy": "1b5269a5caca48c5114f934542ca6f7f5ea65c182768246cdb305463b9c30cb2",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial06_density_low_20261016\\working_arrays\\2_shared_exact_density_weight.npy": "7c42b5731a25beafa61b227c31a95cf7c0ddd7cb63d4b2c1886ad985a77af7e3"
+  },
+  "elapsed_seconds": 74.33245560000069,
+  "source_snapshots": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\run_generation_mirror_hybrid_20261016.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\run_generation_mirror_hybrid_20261016.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_generation_mirror_hybrid_20261016.py",
+      "sha256": "bfbcbca68360cda851438f1c04f7c2c320acc3c905f6a033b071fc9e202fcf74"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\ornament_subdivision.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\ornament_subdivision.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\ornament_subdivision.py",
+      "sha256": "9001f9a57082884dbee430ae2082c8e453ed61792301915683a462916f30c068"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_visible_organic_flow_whole_hybrid_20261016.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_visible_organic_flow_whole_hybrid_20261016.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_visible_organic_flow_whole_hybrid_20261016.py",
+      "sha256": "1f1f677171a0e0be334f70b944ee1dedfa27286dd3cb7c4aa00222f99e90e377"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_whole_hybrid_20261016.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_whole_hybrid_20261016.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_whole_hybrid_20261016.py",
+      "sha256": "9fc0c8760eeddf07773ccbd9739ea4f9d6cc234ca421558fbd283d22e2389ce2"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_continuous.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_continuous.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_continuous.py",
+      "sha256": "4c023d81f56a594290511be12b383e86e6c0debcfc6c7bcd79f7ff8f82373a88"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_refined_stream.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_refined_stream.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_refined_stream.py",
+      "sha256": "7459bf5b1aa082831bbe193bd8f6bec00c2061b7f9990df6d5611043e5c7f627"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\run_spine_reconstruction_v7.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\run_spine_reconstruction_v7.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_spine_reconstruction_v7.py",
+      "sha256": "33da2cdce3803d83d892dab4243d252f89c5b8d447c10795999b66f0fc267925"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\mandelbulb_surface_replacement.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\mandelbulb_surface_replacement.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\mandelbulb_surface_replacement.py",
+      "sha256": "d52bd5cc11bfba3f1491d3d1e9eff721a475a4e8ee82cb17fb6741f5c5073bd8"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\run_history_classification.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\run_history_classification.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_history_classification.py",
+      "sha256": "e06917906fec75f7351c00812b25f4083411d71f8b2efe9b6cb7badaaab48313"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\history_classifier.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\history_classifier.py",
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\history_classifier.py",
+      "sha256": "4eb44513098b402c4447db2412b91f6bc7926918c90e5b83ed4adcf6886ae0c1"
+    }
+  }
+}

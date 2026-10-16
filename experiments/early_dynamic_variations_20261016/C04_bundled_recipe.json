@@ -1,0 +1,86 @@
+{
+  "id": "C04",
+  "label_ko": "새 초기 캐리어 · 한 구간의 큰 귀환과 긴 줄기",
+  "family": "coherent_G2_bundle",
+  "length_scale": 1.4,
+  "radius_scale_profile": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "macro_fields": {},
+  "global_XY_reflection": true,
+  "bundled_fields": {
+    "order": 2,
+    "strength": 0.22,
+    "curvature": 0.34,
+    "secondary": 0.2,
+    "crown_strength": 0.65,
+    "crown_return": 0.65,
+    "crown_centre": 0.79,
+    "crown_width": 0.11,
+    "lower_strength": 0.02,
+    "tangent_strength": 0.14,
+    "bound_radius_fraction": 0.7,
+    "envelope_knots": [
+      0.0,
+      0.06,
+      0.25,
+      0.45,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "envelope_values": [
+      0.0,
+      0.0,
+      0.02,
+      0.08,
+      0.2,
+      1.0,
+      1.0,
+      0.3,
+      0.0
+    ]
+  },
+  "macro_injection_stage": "G02_OVERLAP_BEFORE_WALL",
+  "genuine_early_replay": true,
+  "detail_added": false,
+  "fabrication_certified": false,
+  "seed_mode": "fresh_profile_carrier",
+  "fresh_radius_profile": {
+    "knots": [
+      0.0,
+      0.05,
+      0.2,
+      0.42,
+      0.58,
+      0.68,
+      0.78,
+      0.9,
+      0.97,
+      1.0
+    ],
+    "values": [
+      0.62,
+      0.65,
+      0.55,
+      0.5,
+      0.55,
+      1.1,
+      1.55,
+      1.45,
+      1.05,
+      1.0
+    ]
+  },
+  "spatial_scale_scope": "New G0 profile removes the inherited two-bulb massing. One localized large crown return; long quiet lower context.",
+  "unchanged_branch_grammar": "One canonical root and three canonical sidewalls; spatial extent and early carrier/folds differ, not the branch count."
+}

@@ -1,0 +1,550 @@
+{
+  "schema": "CHESHIRE_SELECTIVE_OVERLAP_DERIVED_RECIPE_RECORD_V1",
+  "baseline": "Actual original SPAN legacy_core at49rings16sectors",
+  "original_primary_two_exact": true,
+  "primary_anchors": "Original authored template parameters, not newly optimized",
+  "guards_derived_from_actual_geometry": true,
+  "guard_derivation": "Original49 material-section area radius; local minima prominence>=.15/distance4rings; radius<=minimum+.15*prominence contiguous core plus half-ring margin",
+  "manually_configured_constraints": {
+    "end_scope": [
+      0.15,
+      0.9
+    ],
+    "secondary_counts": [
+      4,
+      6
+    ],
+    "angular_lanes": "Declared pi/8,pi/4,3pi/8, .95rad; original mirror flags retained",
+    "compact_max_span": 0.032,
+    "compact_min_span": 0.018,
+    "conservative_support": "[height-2.2span,height+.05+2span]",
+    "phase_landmark": "Existing original radial contraction u=.15"
+  },
+  "placement_derivation": "Compact: two longest eligible complement lobes of measured guards, support-contained h interval and existing generation templates. Phase: original LOW/HIGH contraction landmarks + measured middle waist.",
+  "candidates": {
+    "S06_LOBES": {
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "LOBED_G2_1",
+            "direction": 0.39269908169872414,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": false
+          },
+          {
+            "id": "LOBED_G2_2",
+            "direction": 1.1780972450961724,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "LOBED_G3_1",
+            "direction": 0.7853981633974483,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": true
+          },
+          {
+            "id": "LOBED_G3_2",
+            "direction": 0.39269908169872414,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Conservative full original support contained in selected broad lobes",
+        "placements": [
+          {
+            "generation": 2,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 2,
+            "template_index": 1,
+            "lobe_interval": [
+              0.5207246639566223,
+              0.7580628076122109
+            ],
+            "support_interval": [
+              0.5432616482145526,
+              0.7276616482145526
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "lobe_interval": [
+              0.5207246639566223,
+              0.7580628076122109
+            ],
+            "support_interval": [
+              0.5432616482145526,
+              0.7276616482145526
+            ],
+            "conservative_support_outside_waists": true
+          }
+        ]
+      },
+      "total_events": 6,
+      "primary_count": 2,
+      "secondary_count": 4
+    },
+    "S08_LOBES": {
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "LOBED_G2_1",
+            "direction": 0.39269908169872414,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": false
+          },
+          {
+            "id": "LOBED_G2_2",
+            "direction": 1.1780972450961724,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": false
+          },
+          {
+            "id": "LOBED_G2_3",
+            "direction": 0.7853981633974483,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "LOBED_G3_1",
+            "direction": 0.7853981633974483,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": true
+          },
+          {
+            "id": "LOBED_G3_2",
+            "direction": 0.39269908169872414,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": true
+          },
+          {
+            "id": "LOBED_G3_3",
+            "direction": 0.95,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Conservative full original support contained in selected broad lobes",
+        "placements": [
+          {
+            "generation": 2,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 2,
+            "template_index": 1,
+            "lobe_interval": [
+              0.5207246639566223,
+              0.7580628076122109
+            ],
+            "support_interval": [
+              0.5432616482145526,
+              0.7276616482145526
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 2,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "lobe_interval": [
+              0.5207246639566223,
+              0.7580628076122109
+            ],
+            "support_interval": [
+              0.5432616482145526,
+              0.7276616482145526
+            ],
+            "conservative_support_outside_waists": true
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "lobe_interval": [
+              0.29661682836661174,
+              0.45667717081331544
+            ],
+            "support_interval": [
+              0.30061682836661174,
+              0.45267717081331543
+            ],
+            "conservative_support_outside_waists": true
+          }
+        ]
+      },
+      "total_events": 8,
+      "primary_count": 2,
+      "secondary_count": 6
+    },
+    "S08_PHASE": {
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "PHASE_G2_1",
+            "direction": 0.39269908169872414,
+            "height": 0.26175000000000004,
+            "span": 0.045,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": false
+          },
+          {
+            "id": "PHASE_G2_2",
+            "direction": 0.7853981633974483,
+            "height": 0.48265567527507947,
+            "span": 0.04,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": false
+          },
+          {
+            "id": "PHASE_G2_3",
+            "direction": 1.1780972450961724,
+            "height": 0.758,
+            "span": 0.05,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "PHASE_G3_1",
+            "direction": 1.1780972450961724,
+            "height": 0.26430000000000003,
+            "span": 0.028,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": true
+          },
+          {
+            "id": "PHASE_G3_2",
+            "direction": 0.39269908169872414,
+            "height": 0.48415567527507947,
+            "span": 0.03,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": true
+          },
+          {
+            "id": "PHASE_G3_3",
+            "direction": 0.7853981633974483,
+            "height": 0.7606999999999999,
+            "span": 0.032,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.3,
+            "sweep": 0.0,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Secondary contraction phase aligned with existing narrow sections",
+        "placements": [
+          {
+            "generation": 2,
+            "template_index": 0,
+            "contraction_warped_t": 0.2685,
+            "selected_meridian": 0.39269908169872414,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          },
+          {
+            "generation": 2,
+            "template_index": 1,
+            "contraction_warped_t": 0.48865567527507947,
+            "selected_meridian": 0.7853981633974483,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          },
+          {
+            "generation": 2,
+            "template_index": 0,
+            "contraction_warped_t": 0.7655,
+            "selected_meridian": 1.1780972450961724,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "contraction_warped_t": 0.2685,
+            "selected_meridian": 1.1780972450961724,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "contraction_warped_t": 0.48865567527507947,
+            "selected_meridian": 0.39269908169872414,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          },
+          {
+            "generation": 3,
+            "template_index": 0,
+            "contraction_warped_t": 0.7655,
+            "selected_meridian": 0.7853981633974483,
+            "offset_rule": "h = target - .15*span; local_h angular offset is zero at selected meridian"
+          }
+        ],
+        "exact_guard_invariance_claimed": false
+      },
+      "total_events": 8,
+      "primary_count": 2,
+      "secondary_count": 6
+    }
+  },
+  "no_postXYZ_geometry_mask": true,
+  "no_new_field_or_primitive": true,
+  "no_G4_replay": true,
+  "recommended_for_visual_review": [
+    "S06_LOBES",
+    "S08_LOBES"
+  ],
+  "diagnostic_not_recommended": {
+    "S08_PHASE": "Independent broad actual section area grows about1.34/1.41x; centre radius alone insufficient"
+  },
+  "exact_full_waist_XYZ_preservation_claimed": false
+}

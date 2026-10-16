@@ -1,0 +1,254 @@
+{
+  "kind": "TRIAL08_ACTUAL_RENDER_AND_CAUSAL_REVIEW",
+  "date": "2026-10-15",
+  "timezone": "Asia/Seoul",
+  "status": "NOT_ADOPTED",
+  "decision_ko": "?? ? ?? ??? ????? ?? ?? ??? ???? ???? ???. ??? ?? ??? close ??? ???.",
+  "trial_root": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation",
+  "generation_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\RECEIPT.json",
+    "sha256": "b5a59c076c0b15c2dd6a48d548c8093d32ed40095bf4b31f2179cb7c3d3a34c7"
+  },
+  "candidate_render_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\RECURSIVE_FLAT\\review\\receipt.json",
+    "sha256": "f51635b75c04373d2594c35b7b31204616f930828f1c95a7f26232a224b76da9"
+  },
+  "neutral_render_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\audit01\\G07_SURFACE_FLAT\\review\\receipt.json",
+    "sha256": "2a7fa6bd64a885533c6f2bd66d0926fab76aa65a1457b8681227601fedb2041f"
+  },
+  "accepted_NESTED02_render_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+    "sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+  },
+  "source_PNGs": {
+    "candidate": [
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\RECURSIVE_FLAT\\review\\body_oblique.png",
+        "sha256": "aafc574201e3b8af2ce8a3d0178a1a0d39d36911540fb668a37ad775bc46f967",
+        "hash_source": "actual saved render receipt"
+      },
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\RECURSIVE_FLAT\\review\\close_oblique.png",
+        "sha256": "69189a22ac5b24cc44fbcebc69029de63989d409210044489e5f144d2064b988",
+        "hash_source": "actual saved render receipt"
+      },
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\RECURSIVE_FLAT\\review\\front.png",
+        "sha256": "974ddd5b7788173232b3f2a918ec808d59a9728c1b4581027aa1f3b162cae9ab",
+        "hash_source": "actual saved render receipt"
+      }
+    ],
+    "paired_neutral": [
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\audit01\\G07_SURFACE_FLAT\\review\\close_oblique.png",
+        "sha256": "e560eeb345049112a948a3106f14e3f8d7a09067c9b7d14f5d8e1e3a5a5ec82a",
+        "hash_source": "actual saved render receipt"
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\audit01\\G07_SURFACE_FLAT\\review\\body_oblique.png",
+        "sha256": "a61164097077e84713ff18fc37e1834beed2fea136bad4fa93d06d0bf3f29d89",
+        "hash_source": "actual saved render receipt"
+      }
+    ],
+    "accepted_NESTED02": [
+      {
+        "view": "close_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\close_oblique.png",
+        "sha256": "574dea2b021c1ea9833846187b521a170baa2d73fa7858685d3ab85099dc2b57",
+        "hash_source": "actual saved render receipt"
+      },
+      {
+        "view": "body_oblique",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\body_oblique.png",
+        "sha256": "47d12e482eb31be4ac150d8a4db4814772d86edf4df8a0aadb25ee2839bccbf1",
+        "hash_source": "actual saved render receipt"
+      },
+      {
+        "view": "front",
+        "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\front.png",
+        "sha256": "06a4218510d982946319384989560ea2a6a12f2bc2c55803e26bcf45e277dbeb",
+        "hash_source": "actual saved render receipt"
+      }
+    ]
+  },
+  "formation": {
+    "input_generation": 6,
+    "output_generation": 7,
+    "actual_formation_cycles": 1,
+    "formed_parent_families": 1,
+    "moved_control_vertices": 52500,
+    "total_control_vertices": 7002114,
+    "maximum_displacement_model_units": 0.05350273154694276,
+    "family0_material_t_range": [
+      0.2883,
+      0.5151
+    ],
+    "family1_status": "TERMINATED",
+    "family1_reason": "Inherited owned strip leaves actual SOURCE chart; 74 guide samples outside native chart."
+  },
+  "pixel_measurement": {
+    "method": "Absolute RGB differences on original 900x900 PNGs; each pixel threshold uses max(abs(candidate-reference)) across R/G/B. Threshold is strict >. No denoising, alignment, resizing or image editing applied.",
+    "pixel_count_per_view": 810000,
+    "paired_neutral": {
+      "close_oblique": {
+        "mean_absolute_RGB": 0.0040530864197530865,
+        "maximum_channel_difference": 3,
+        "pixels_gt5": 0,
+        "pixels_gt10": 0,
+        "pixels_gt20": 0
+      },
+      "body_oblique": {
+        "mean_absolute_RGB": 0.039767489711934154,
+        "maximum_channel_difference": 161,
+        "pixels_gt5": 875,
+        "pixels_gt10": 522,
+        "fraction_gt10": 0.0006444444444444444,
+        "pixels_gt20": 310,
+        "bbox_gt10_xyxy_exclusive": [
+          237,
+          756,
+          647,
+          900
+        ],
+        "largest_gt10_connected_component": {
+          "pixels": 298,
+          "bbox_xyxy_exclusive": [
+            615,
+            844,
+            647,
+            881
+          ]
+        }
+      }
+    },
+    "accepted_NESTED02": {
+      "close_oblique": {
+        "pixels_gt10": 173595,
+        "fraction_gt10": 0.21431481481481482
+      },
+      "body_oblique": {
+        "pixels_gt10": 73705,
+        "fraction_gt10": 0.09099382716049383
+      },
+      "front": {
+        "pixels_gt10": 21026,
+        "fraction_gt10": 0.025958024691358026
+      }
+    },
+    "interpretation_ko": "NESTED02 ?? ? ???? late field ??? ?? ??. ?? ??? ??? neutral ?? ??? ????, close ??? ???? ???."
+  },
+  "frame_visibility": {
+    "source": "NEXT_FOLD_STATE actual lower_xyz,centre_xyz,upper_xyz rail samples; all four recorded X/Y reflected copies projected through unchanged render actual_views.",
+    "sample_count": 444,
+    "close_oblique": {
+      "inside_frame_samples": 0,
+      "projected_bbox_xyxy": [
+        -434.752963137587,
+        1343.2302398725421,
+        1163.857921457009,
+        3330.3468127316164
+      ]
+    },
+    "body_oblique": {
+      "inside_frame_samples": 238,
+      "projected_bbox_xyxy": [
+        217.6192430137741,
+        668.2711859208467,
+        682.3807569862258,
+        1247.5343894874345
+      ]
+    },
+    "front": {
+      "inside_frame_samples": 444,
+      "projected_bbox_xyxy": [
+        376.116087470461,
+        445.8435143393182,
+        523.8839125295391,
+        633.9185926646728
+      ]
+    },
+    "scope": "Projection establishes frame inclusion only; visibility and occlusion are not certified."
+  },
+  "neutral_reuse": {
+    "eligible_views": [
+      "body_oblique",
+      "close_oblique"
+    ],
+    "neutral_front_available": false,
+    "new_reference_geometry": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial08_recursive_generation\\REFERENCE_G7\\geometry.npz",
+      "geometry_sha256": "80928b87a12f8ba0a6c426adda31e3e9861e1c0e855a2c36358e689eabd1d7b1",
+      "xyz_sha256": "01739daf00df22ae7e765ea94cdd1699c7fa95796e585e27b7fb4476f1892429",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448,
+      "validation": {
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz",
+        "source_generation": 7,
+        "source_sha256": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+        "actual_saved_neutral_counterfactual": true,
+        "native_area": {
+          "finite": true,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area": 7.414750310469154e-11
+        }
+      }
+    },
+    "existing_audit_display_geometry": {
+      "geometry": "E:\\CHESHIRE_DATA\\experiments\\parent_continuity_20261014\\audit01\\G07_SURFACE\\display_geometry.npz",
+      "geometry_sha256": "80928b87a12f8ba0a6c426adda31e3e9861e1c0e855a2c36358e689eabd1d7b1",
+      "xyz_sha256": "01739daf00df22ae7e765ea94cdd1699c7fa95796e585e27b7fb4476f1892429",
+      "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+      "vertices": 14004226,
+      "triangles": 28008448
+    },
+    "actual_geometry_files_SHA256_checked_equal": true,
+    "geometry_SHA256": "80928b87a12f8ba0a6c426adda31e3e9861e1c0e855a2c36358e689eabd1d7b1",
+    "xyz_SHA256": "01739daf00df22ae7e765ea94cdd1699c7fa95796e585e27b7fb4476f1892429",
+    "faces_SHA256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "array_hashes_and_counts_match": true,
+    "conditions_match": true,
+    "camera_records_match": true,
+    "old_PNG_hashes_checked": true,
+    "label_ko": "Neutral G7 ?? ???? ?? ?? fan ??; audit01 ?? PNG ???. ?? ?? native? ???? ???? audit ??? ????."
+  },
+  "art_critique_ko": "?? ?, ? ?? ??? ?? ??? ??? ????? ??? ??-?? ?? ?? ??? ??? ???. calmer appearance? ?? ???? ???? ???.",
+  "causal_assessment": {
+    "SOURCE_mask": "Actual G3_SIDEWALL face_event_ids==0 repeated through G3-to-G6 ancestry.",
+    "initial_parent_domains": "Only saved G3_WALL rails_0 and rails_1, inherited early PCHIP/WALL domains.",
+    "mismatch_ko": "?? ? G3 ?? ??? ??? ?? 20theta ???? ??? G6 MIDDLE ??? ?? ??? ???. ?? G6 ??? ????? ??.",
+    "coverage_caution_ko": "?? ? rail? coverage ????? ?? G6 ??? ?? ??? ???? ???. SOURCE ??? ?? ??? chart alias? ?? ?? ?? ??? ??? ? ??.",
+    "source_evidence": [
+      {
+        "path": "experiments/fold_junction_development_20261015/run_recursive.py",
+        "line": 134,
+        "finding": "G3 SOURCE-only mask inherited into actual G6"
+      },
+      {
+        "path": "experiments/fold_junction_development_20261015/run_recursive.py",
+        "line": 138,
+        "finding": "Exactly G3_WALL rails indices0,1 seed initialize"
+      },
+      {
+        "path": "experiments/fold_junction_development_20261015/recursive_parent_folds.py",
+        "line": 97,
+        "finding": "Actual SOURCE canonical-quarter sampler filters out attachment chart aliases"
+      }
+    ]
+  },
+  "preservation": {
+    "PNG_files_modified": false,
+    "trial_files_modified": false,
+    "rerendered_for_review_document": false,
+    "pixel_analysis_repeated_for_review_document": false,
+    "numeric_results": "Transcribed from completed read-only trial08 analysis; only small receipt files read/hashed for artifact bindings."
+  }
+}

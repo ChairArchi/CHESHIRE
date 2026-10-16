@@ -1,5 +1,10 @@
 # CHESHIRE execution paths — current index, 2026-10-12
 
+For the retained column-design process, use the [2026-10-17 G7 pipeline checkpoint](column_pipeline_20261017/README.md).
+It preserves the original 25-ring input through the selected G7 NESTED/hybrid
+finish. Overlap and shortened G5 alternatives are deferred; this checkpoint does
+not start a new model-generation run.
+
 Use this index for present work. Task reports, recipes, handoffs and `studies/` snapshots
 retain their research-time statements. The public COMPAS engine and later ArrayMesh
 reference studies are separate supported paths; legacy operators are not replaced.

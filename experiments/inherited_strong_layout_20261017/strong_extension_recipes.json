@@ -1,0 +1,67 @@
+{
+  "schema": "CHESHIRE_INHERITED_STRONG_SEED_LAYOUT_EXTENSION_RECIPES_V1",
+  "baseline_id": "J00",
+  "original_catalogue_unchanged": true,
+  "recipes": [
+    {
+      "id": "J04",
+      "label_ko": "네 개의 불균일한 주접힘",
+      "family": "unequal_four",
+      "seed_events": {
+        "1": [
+          {
+            "template_index": 0,
+            "id": "LOW_COMPACT",
+            "height": 0.16,
+            "span": 0.04,
+            "direction": 0.05
+          },
+          {
+            "template_index": 1,
+            "id": "LONG_MIDDLE",
+            "height": 0.46,
+            "span": 0.12,
+            "direction": 1.2
+          },
+          {
+            "template_index": 0,
+            "id": "UPPER_MID",
+            "height": 0.69,
+            "span": 0.055,
+            "direction": 0.4
+          },
+          {
+            "template_index": 1,
+            "id": "CROWN_SHORT",
+            "height": 0.84,
+            "span": 0.045,
+            "direction": 1.35
+          }
+        ]
+      }
+    },
+    {
+      "id": "J05",
+      "label_ko": "긴 중앙 접힘과 짧은 상부 접힘",
+      "family": "long_centre_short_crown",
+      "seed_events": {
+        "1": [
+          {
+            "template_index": 0,
+            "id": "LONG_CENTRE",
+            "height": 0.4,
+            "span": 0.18,
+            "direction": 0.85
+          },
+          {
+            "template_index": 1,
+            "id": "SHORT_CROWN",
+            "height": 0.81,
+            "span": 0.045,
+            "direction": 0.12
+          }
+        ]
+      }
+    }
+  ]
+}

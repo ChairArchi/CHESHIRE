@@ -1,0 +1,1522 @@
+{
+  "kind": "COFFER_REUSED_SOURCE_AND_FORMING_CORRESPONDENCE_REVIEW",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain",
+  "preflight_passed": false,
+  "requested_canonical_orbits": 4,
+  "selected_components": [
+    2,
+    12,
+    25
+  ],
+  "rejected": [
+    {
+      "component": 40,
+      "reason": "Infinitesimal-positive corridor still fails at tiny finite width; along geometry resolution required."
+    },
+    {
+      "component": 42,
+      "reason": "Retained body path lacks architectural material-height coverage."
+    }
+  ],
+  "shared_operator_helper_AST_equal": {
+    "quintic": true,
+    "unit": true,
+    "incident": true,
+    "topology": true,
+    "coupled": true
+  },
+  "reused_parents": [
+    {
+      "component": 2,
+      "exact_array_comparisons": [
+        {
+          "scope": "foundation",
+          "path": "measurement/xyz0",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/chart0",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/phi",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/valid",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/status",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/s",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/across_distances",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_chart",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_phi",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/normal",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/across",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/frame_valid",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/search_half_width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/unbounded_search_half_width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/intrinsic_phase_gradient_norm",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/profile_height",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/confirmed",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/depth",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/prominence",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/geometric_peak_index",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/shoulder_indices",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/xyz",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/chart",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/phi",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/normal",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/gradient",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/valid",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/s",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_grid_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            9
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_grid_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_recentered_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "requested_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_ridge_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_ridge_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_uv0",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            9,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/xyz",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/chart",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/phi",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/normal",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/gradient",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/valid",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/across",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/uv",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/across_uv",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/tangent_uv",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/s",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/native_segment_index",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "xyz0",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart0",
+          "exact_array_equal": true,
+          "shape": [
+            241,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "actual_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "node_height",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "raw_parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "raw_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "requested_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_chi",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_s",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "node_envelope",
+          "exact_array_equal": true,
+          "shape": [
+            241
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "cell_count",
+          "exact_array_equal": true,
+          "shape": []
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "neutral_refined",
+          "exact_array_equal": true,
+          "shape": [
+            31713,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "quads_refined",
+          "exact_array_equal": true,
+          "shape": [
+            30720,
+            4
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart_refined",
+          "exact_array_equal": true,
+          "shape": [
+            31713,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_refined",
+          "exact_array_equal": true,
+          "shape": [
+            31713,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "activity_refined",
+          "exact_array_equal": true,
+          "shape": [
+            31713
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_uv_refined",
+          "exact_array_equal": true,
+          "shape": [
+            31713,
+            2
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart_transfer",
+          "exact_array_equal": true,
+          "shape": [
+            31713,
+            3
+          ]
+        }
+      ],
+      "formed_minus_neutral_exact_delta": true,
+      "local_section_gate_passed": true
+    },
+    {
+      "component": 12,
+      "exact_array_comparisons": [
+        {
+          "scope": "foundation",
+          "path": "measurement/xyz0",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/chart0",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/phi",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/valid",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/status",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/s",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/across_distances",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_chart",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/centre_phi",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/normal",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/across",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/frame_valid",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/search_half_width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/unbounded_search_half_width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/intrinsic_phase_gradient_norm",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/profile_height",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            33
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/confirmed",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/width",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/depth",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/prominence",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/geometric_peak_index",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/shoulder_indices",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            127
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "measurement/ridge_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            127,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/xyz",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/chart",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/phi",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/normal",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/gradient",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/valid",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/s",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "dense_curve/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_grid_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            9
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_grid_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_recentered_xyz",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "requested_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_ridge_triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            181
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "actual_ridge_barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            181,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_uv0",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            9,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/xyz",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/chart",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/phi",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/normal",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/gradient",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/valid",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/triangle_ids",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/barycentric",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/tangent",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/across",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            3
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/uv",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/across_uv",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/tangent_uv",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            2
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/s",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_curve/native_segment_index",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "foundation",
+          "path": "source_usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "xyz0",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart0",
+          "exact_array_equal": true,
+          "shape": [
+            184,
+            9,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "actual_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "node_height",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "raw_parent_width",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "raw_parent_depth",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "requested_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "usable_base_width",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_chi",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_s",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "node_envelope",
+          "exact_array_equal": true,
+          "shape": [
+            184
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "cell_count",
+          "exact_array_equal": true,
+          "shape": []
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "neutral_refined",
+          "exact_array_equal": true,
+          "shape": [
+            24189,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "quads_refined",
+          "exact_array_equal": true,
+          "shape": [
+            23424,
+            4
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart_refined",
+          "exact_array_equal": true,
+          "shape": [
+            24189,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "logical_refined",
+          "exact_array_equal": true,
+          "shape": [
+            24189,
+            3
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "activity_refined",
+          "exact_array_equal": true,
+          "shape": [
+            24189
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_uv_refined",
+          "exact_array_equal": true,
+          "shape": [
+            24189,
+            2
+          ]
+        },
+        {
+          "scope": "formation_invariant",
+          "path": "source_chart_transfer",
+          "exact_array_equal": true,
+          "shape": [
+            24189,
+            3
+          ]
+        }
+      ],
+      "formed_minus_neutral_exact_delta": true,
+      "local_section_gate_passed": true
+    }
+  ],
+  "reviewed_invariants": [
+    "Cached reconstruction uses immutable original registered source_curve frame, and copies tangent before its normal projection.",
+    "Source XYZ/chart, physical guide measures, usable-width/height budgets, longitudinal phase, neutral refined geometry, topology, activity and affine source transfer are unchanged for reused parents.",
+    "New caller requires exact refined source topology/chart equality before reusing certified source UV.",
+    "New families use the existing covered-source curve solver and affine source-coordinate partition; local UV Jacobians and per-parent coarse positive-area overlaps are checked.",
+    "G7 transfer uses exact saved material chart and actual mirror vertex maps. Distinct-family support conflicts are checked at all eligible actual G7 representative controls, before export.",
+    "Full native geometry is arithmetic-fan conversion of the final saved G7 control geometry."
+  ],
+  "qualifications": [
+    "Per-parent source-UV nonoverlap is numerical, and is not a 3D collision certificate.",
+    "The inter-family conflict gate tests all actual G7 controls, not a separate continuous union-atlas overlap theorem.",
+    "Same-family reflected footprints use maximum support taper. Exact output symmetry does not independently certify a visually smooth internal reflection join.",
+    "The local section gate is a fitted forming-frame structural test over adequately tall core samples; it does not certify each individual pocket depth, collision freedom or beauty.",
+    "This audit reads already-saved arrays and code. No formation, new surface measurement, parameter test, geometry output, ray or image is generated."
+  ],
+  "array_equality_method": "Identical dtype, shape and all array bytes, including preserved NaN payloads. The initial audit helper stopped because ordinary np.array_equal treats matching NaNs as unequal."
+}

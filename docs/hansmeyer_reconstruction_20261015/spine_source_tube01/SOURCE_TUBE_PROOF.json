@@ -1,0 +1,316 @@
+{
+  "passed": true,
+  "info": {
+    "component": 2,
+    "mirror_component_orbit": [
+      2,
+      3
+    ],
+    "phase_level": 1,
+    "periodic": false,
+    "total_length": 16.554944554604035,
+    "preflight_samples": 127,
+    "adequate_rows": 123,
+    "original_curve_nodes": 13244,
+    "retained_body_curve_nodes": 6009,
+    "source_coverage_cut": {
+      "original_arc_interval": [
+        0.13142021217664918,
+        16.690366946434445
+      ],
+      "retained_native_arc_length": 16.554944554604035,
+      "retained_profile_rows": 127
+    },
+    "adequate_fraction": 0.968503937007874,
+    "physical_width_quantiles": [
+      0.12310630290745067,
+      0.20443275387941376,
+      0.2891460294575934,
+      0.4462563096106875,
+      0.5666629677474097
+    ],
+    "prominence_quantiles": [
+      0.010547657806138032,
+      0.02809200055586443,
+      0.06220426078518681,
+      0.09635568063772214,
+      0.1520699898460826
+    ],
+    "raw_confirmed_depth_width_ratio_quantiles": [
+      0.012397607726864716,
+      0.07777428424201538,
+      0.2002897606875732,
+      0.2814651604965833,
+      0.3674744255556059
+    ],
+    "selection_geometry_gate": "At least75% geometrically confirmed source-covered rows with width>.04; no uniform D/W aspect gate. Visibility is separately checked by actual predicted median nodeheight>=.020.",
+    "usable_base_width_quantiles": [
+      0.07297055227964792,
+      0.1280249096293452,
+      0.18236782164845242,
+      0.2794550672740662,
+      0.36833092903581627
+    ],
+    "usable_base_bound": "Full base=min(.65 measured forming-scale parent width,.90/pooled path geodesic curvature); half-base is at most .45 local curvature radius.",
+    "predicted_node_height_median": 0.0378093624570902,
+    "node_count": 60,
+    "recenter": "Actual same-sheet geodesic offset to measured peak, pooled on half node-pitch; source XYZ not globally filtered.",
+    "phase_origin": 0.0,
+    "phase_rule": "Even integer node count on closed curves and canonical mirror reversal origin; final G7 source-ID reflection exact.",
+    "source_tube": {
+      "stationing": {
+        "kind": "IMMUTABLE_NATIVE_CURVE_SOURCE_UV_REFINEMENT",
+        "periodic": false,
+        "expected_source_orientation_sign": -1.0,
+        "passed": true,
+        "stop_reason": "POSITIVE_CENTRE_ORIENTATION",
+        "initial_stations": 241,
+        "final_stations": 241,
+        "max_rounds": 12,
+        "max_stations": 1025,
+        "inserted_native_graph_vertices": 0,
+        "inserted_midpoints": 0,
+        "unresolved_interval_indices": [],
+        "unresolved_arc_intervals": [],
+        "history": [
+          {
+            "round": 0,
+            "stations": 241,
+            "bad_intervals": 0,
+            "minimum_start_signed_determinant": 0.0001831221304638138,
+            "minimum_end_signed_determinant": 0.00019005769757649758
+          }
+        ],
+        "differential": "Exact fan Gram derivative of source chart, then dtheta=(cx*dcy-cy*dcx)/(cx^2+cy^2). B=N cross immutable native contour T.",
+        "criterion": "Both signed det(nextCentreUV-centreUV, Buv endpoint) must exceed scale-relative floating-point tolerance.",
+        "refinement": "Only failing intervals; immutable graph vertex with maximum UV chord deviation, physical midpoint if no useful interior vertex.",
+        "limitations": "One-sided native tangent at an exact graph vertex can have a genuine kink; unresolved intervals stop explicitly. This is not finite-width or global atlas injectivity, a new ridge measurement, geometry generation, or a world-angle cut."
+      },
+      "domain_history": [
+        {
+          "iteration": 0,
+          "nonconvex_intervals": 50,
+          "global_overlap_triangle_pairs": -1,
+          "global_overlap_interval_pairs": 0,
+          "median_usable_base": 0.18236782164845242,
+          "minimum_usable_base": 0.07297055227964792
+        },
+        {
+          "iteration": 1,
+          "nonconvex_intervals": 5,
+          "global_overlap_triangle_pairs": -1,
+          "global_overlap_interval_pairs": 0,
+          "median_usable_base": 0.16121605158175803,
+          "minimum_usable_base": 0.009243721079279177
+        },
+        {
+          "iteration": 2,
+          "nonconvex_intervals": 1,
+          "global_overlap_triangle_pairs": -1,
+          "global_overlap_interval_pairs": 0,
+          "median_usable_base": 0.16121605158175803,
+          "minimum_usable_base": 0.007879042958642168
+        },
+        {
+          "iteration": 3,
+          "nonconvex_intervals": 0,
+          "global_overlap_triangle_pairs": 177,
+          "global_overlap_interval_pairs": 15,
+          "median_usable_base": 0.16121605158175803,
+          "minimum_usable_base": 0.007879042958642168
+        },
+        {
+          "iteration": 4,
+          "nonconvex_intervals": 2,
+          "global_overlap_triangle_pairs": -1,
+          "global_overlap_interval_pairs": 0,
+          "median_usable_base": 0.15774034403645185,
+          "minimum_usable_base": 0.005046865182918544
+        },
+        {
+          "iteration": 5,
+          "nonconvex_intervals": 0,
+          "global_overlap_triangle_pairs": 0,
+          "global_overlap_interval_pairs": 0,
+          "median_usable_base": 0.15615635701391975,
+          "minimum_usable_base": 0.005046865182918544
+        }
+      ],
+      "requested_rows": 241,
+      "certified_rows": 241,
+      "source_uv": "Actual native-source t/theta; convex coarse quads with all-pair positive-area overlap exclusion. Affine UV birth-coordinate refinement partitions these quads.",
+      "guide": "Original registered phase contour, cached actual shoulder/prominence budgets; no independent peak offsets.",
+      "node_height_median": 0.030705244830345736
+    }
+  },
+  "formation": {
+    "kind": "CONNECTED_BN_NODE_CAGE_PLUS_TWO_COUPLED_CC_PASSES",
+    "source": "Actual curved source strip; fine carrier is not globally averaged or replaced.",
+    "scaffold_generations": 2,
+    "original_G_generation_unchanged": true,
+    "periodic": false,
+    "cell_count": 60,
+    "physical_length": 16.554944554604035,
+    "phase_origin": 0.0,
+    "logical_type": "Open linear normalized arc, zero, across u",
+    "parent_width_quantiles": [
+      0.12310630290745067,
+      0.20443275387941376,
+      0.2891460294575934,
+      0.4462563096106875,
+      0.5666629677474097
+    ],
+    "node_height_quantiles": [
+      0.0017664028140214904,
+      0.01449342548532748,
+      0.030705244830345736,
+      0.0524190227512016,
+      0.08927174205916331
+    ],
+    "node_pitch_quantiles": [
+      0.1200286453347644,
+      0.1993219350324284,
+      0.2819173787211535,
+      0.43509990187042036,
+      0.5524963935537244
+    ],
+    "usable_base_width_quantiles": [
+      0.005046865182918544,
+      0.06421370465046937,
+      0.15615635701391975,
+      0.23852890119200273,
+      0.3463750147702722
+    ],
+    "width_guides_prepooled": true,
+    "guide_pooling": "Gaussian on measured widths/depths and frame vectors only, half local node pitch; source XYZ is not filtered.",
+    "guide_pooling_sigma_samples": 2.0435033977283763,
+    "maximum_scaffold_delta": 0.06664585970056522,
+    "stages": [
+      {
+        "scaffold_generation": 1,
+        "formed": {
+          "input_vertices": 2169,
+          "input_quads": 1920,
+          "output_vertices": 8177,
+          "output_quads": 7680,
+          "wf": -0.22,
+          "we": 0.11,
+          "wp": 0.055,
+          "w1": -0.5,
+          "w2": -2.0,
+          "w3": 0.25,
+          "w4": 0.25,
+          "eq4_eligible": 0,
+          "boundary_vertex_count": 496,
+          "boundary_rule": "Ordinary CC boundary midpoints and (6V+boundary-neighbours)/8 for both paths.",
+          "fresh_incoming_normals": true,
+          "face_scale_quantiles": [
+            0.0062335946609790435,
+            0.030059115157770655,
+            0.044487624574433865,
+            0.059723953727824436,
+            0.09122112893445972
+          ]
+        },
+        "neutral": {
+          "input_vertices": 2169,
+          "input_quads": 1920,
+          "output_vertices": 8177,
+          "output_quads": 7680,
+          "wf": 0.0,
+          "we": 0.0,
+          "wp": 0.0,
+          "w1": -0.5,
+          "w2": -2.0,
+          "w3": 0.25,
+          "w4": 0.25,
+          "eq4_eligible": 0,
+          "boundary_vertex_count": 496,
+          "boundary_rule": "Ordinary CC boundary midpoints and (6V+boundary-neighbours)/8 for both paths.",
+          "fresh_incoming_normals": true,
+          "face_scale_quantiles": [
+            0.01012250801015076,
+            0.028859748017804887,
+            0.04264425697054417,
+            0.054373606587771545,
+            0.08488814796367034
+          ]
+        },
+        "formed_xyz_sha256": "e7b56929aa0161b1c9f91963f9152005e4fd50836bb34dbbca46bbaabbc6e6bc",
+        "neutral_xyz_sha256": "03c9db96be5c629d939f2812cade04a0e3833cebab8d64d82ee5850158f54bcd",
+        "topology_sha256": "fa33dd47b9a8541a29162a925c1b8459712d0e1135bac8db1c9e7ed33f46848e"
+      },
+      {
+        "scaffold_generation": 2,
+        "formed": {
+          "input_vertices": 8177,
+          "input_quads": 7680,
+          "output_vertices": 31713,
+          "output_quads": 30720,
+          "wf": -0.14,
+          "we": 0.07,
+          "wp": 0.035,
+          "w1": -0.5,
+          "w2": -2.0,
+          "w3": 0.25,
+          "w4": 0.25,
+          "eq4_eligible": 7680,
+          "boundary_vertex_count": 992,
+          "boundary_rule": "Ordinary CC boundary midpoints and (6V+boundary-neighbours)/8 for both paths.",
+          "fresh_incoming_normals": true,
+          "face_scale_quantiles": [
+            0.0033002157378270325,
+            0.01400495436727146,
+            0.021972209335306435,
+            0.028577357312094324,
+            0.04677619720317051
+          ]
+        },
+        "neutral": {
+          "input_vertices": 8177,
+          "input_quads": 7680,
+          "output_vertices": 31713,
+          "output_quads": 30720,
+          "wf": 0.0,
+          "we": 0.0,
+          "wp": 0.0,
+          "w1": -0.5,
+          "w2": -2.0,
+          "w3": 0.25,
+          "w4": 0.25,
+          "eq4_eligible": 7680,
+          "boundary_vertex_count": 992,
+          "boundary_rule": "Ordinary CC boundary midpoints and (6V+boundary-neighbours)/8 for both paths.",
+          "fresh_incoming_normals": true,
+          "face_scale_quantiles": [
+            0.0028288456507249114,
+            0.012899241585692167,
+            0.02077908348978822,
+            0.025870245779324248,
+            0.03724557837635102
+          ]
+        },
+        "formed_xyz_sha256": "4770c14e183b621beee0646d7061b0497a1da397ead1bbe2c3be2469de161514",
+        "neutral_xyz_sha256": "aef5bb94ca0b24aadef165fa8b3c3d73835363f24208ec4e3d26c5de8f68686b",
+        "topology_sha256": "7471c43ff1d7082a2bf33b4c2e202c9e7c7aa7870c2d2ae343bdff65353f7994"
+      }
+    ],
+    "geometry": "Continuous stem, paired broad crowns, deep inter-node side intervals; signed BN return in the cage plus causal completed-F E/V subdivision.",
+    "limitations": "No collision or beauty certificate. Physical source-strip confirmation/injectivity and canonical mirror phase are caller prerequisites."
+  },
+  "atlas": {
+    "triangles": 61440,
+    "periodic_seam_copies": 0,
+    "local_jacobian_minimum": 4.617936777057284e-09,
+    "nonadjacent_triangle_overlaps": 0,
+    "inverse": "All possible containing triangles inside proven centroid radius; exact bbox and barycentric membership. No Delaunay or nearest-world projection.",
+    "completeness_radius": 0.028091238545418614
+  },
+  "evidence": {
+    "array_file": "docs\\hansmeyer_reconstruction_20261015\\spine_source_tube01\\CERTIFIED_PARENT.npz",
+    "array_file_sha256": "8a22b7842e7bc8613ee51a8798bb8e103cba6fa42c6564ef889cddc385e1aa55",
+    "description": "docs\\hansmeyer_reconstruction_20261015\\spine_source_tube01\\CERTIFIED_PARENT.json"
+  },
+  "global_injectivity": "Proved on convex coarse source quads by all-pair SAT; affine source-coordinate midpoint/face-centre refinement partitions the same quads.",
+  "helper_sha256": "e7a51134c6460c3c24ce70310a43692a73a750df0f05ce59dfe8630c82a3a3b9"
+}

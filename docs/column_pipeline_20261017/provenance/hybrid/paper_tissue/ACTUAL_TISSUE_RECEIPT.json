@@ -1,0 +1,82 @@
+{
+  "kind": "ACTUAL_PAPER_DERIVED_UPSTREAM_TISSUE_QUAD_LAST_COMPONENT",
+  "actual_Tissue_call_succeeded": true,
+  "generated_source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_GENERATED_CELL.json",
+  "generated_source_sha256": "cd0da7b293ae1ad80b69cacab638e4fa14bc4988854bb34a55c506841b7734ed",
+  "height_grid": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_HEIGHT_GRID.npz",
+  "height_grid_sha256": "d5f5e2ad70975f6ef2f2548725db9671faec4c29682da2f530e56b0ec01668ca",
+  "input_component": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\paper_derived_component.json",
+  "input_component_sha256": "bc9b7fa2460a6e5e09aed0edf2b3fb0d946faeb45713037c591cf02ffe1b79e7",
+  "actual_operator": "Actual object.tissue_tessellate QUAD/LAST with matching boundary merge",
+  "Tissue_version": [
+    0,
+    3,
+    75
+  ],
+  "checks": {
+    "vertices": 2145,
+    "polygons": 2048,
+    "triangles": 4096,
+    "components": 1,
+    "boundary_edges": 192,
+    "nonmanifold_edges": 0,
+    "minimum_triangle_area": 0.00048828125,
+    "finite": true,
+    "premerge_component_vertices": 2178,
+    "boundary_vertices_merged": 33,
+    "inner_apertures_filled_by_component": true,
+    "outer_shell_boundary_open": true,
+    "whole_column_join": false
+  },
+  "source_paper_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+    "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d"
+  },
+  "source_closed_component": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\06_actual_paper_CC1_component.npz",
+    "sha256": "1711d1ff049df80bd7a6e86ba9e3f6ee946c7654a5832d33fdda0da050ec660e"
+  },
+  "seed_manifold_validation": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\SEED_TO_SOLID_VALIDATION.json",
+    "sha256": "0152e5cc8b64babc3daae1ef356240b66a3518d0427c7f26c66bac761ac5f816"
+  },
+  "exact_top_ray_adapter": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\PAPER_EXACT_TOP_RAY_ADAPTER.npz",
+    "sha256": "dbd3e2f37de8172839645f760660cdff69cc11a8d164e6911e1a4b01eb6e3e68"
+  },
+  "projection_actual_hit_samples": 644,
+  "projection_samples": 1089,
+  "projection_multilayer_samples": 644,
+  "source_closed_component_genus": 119,
+  "closed_3D_asset_preserved": true,
+  "closed_topology_transferred_to_whole": false,
+  "topmost_rays_not_average_height": true,
+  "geometry_nearest_correspondence": false,
+  "paper_graph_fraction": 0.88,
+  "filled_inflation_fraction": 0.12,
+  "single_C2_envelope": true,
+  "no_duplicate_unit_outer_tapers": true,
+  "exact_zero_outer_edge_height": true,
+  "raw_height_max": 0.054752543568611145,
+  "normalized_height_quantiles": [
+    0.0,
+    0.0,
+    0.007755870032088398,
+    0.22023566690552776,
+    0.6459720018147275,
+    0.7916477088249695,
+    1.0
+  ],
+  "old_component_scaled_or_relabelled": false,
+  "whole_model_not_yet_assembled": true,
+  "original_host_XYZ_smoothed": false,
+  "limits": [
+    "A single-valued UV height graph retains sampled relief but cannot transfer the closed component handles or overhang topology.",
+    "The full actual 3D paper component remains an independent source asset. Empty ray columns become low filled depressions."
+  ],
+  "generator": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\prepare_paper_tissue_adapter.py",
+    "sha256": "f9a6791143b7511de62fc5eeeb2986b137861507055f58e513e7a42c8fe162de"
+  },
+  "elapsed_seconds": 5.627713499998208
+}

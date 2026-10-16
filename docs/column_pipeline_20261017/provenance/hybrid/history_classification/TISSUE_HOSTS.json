@@ -1,0 +1,30 @@
+{
+  "kind": "ACTUAL_EVENTS_INTERFACES_AND_HISTORY_COMPLEX_SOURCE_HOSTS",
+  "data": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz",
+    "sha256": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33"
+  },
+  "full_priority": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOST_PRIORITY_G3.npy",
+    "sha256": "ec2d1966693d9189e531e5dee681ef0a8ef97f3e1f45e5aec73af75d432bf926"
+  },
+  "counts": {
+    "selected_faces": 10340,
+    "actual_event_faces": 2592,
+    "interface_faces": 220,
+    "new_history_SOURCE_faces": 7528,
+    "old_host_faces": 5232,
+    "added_vs_old": 6512,
+    "removed_vs_old": 1404
+  },
+  "columns": {
+    "face_ids": "actual G3 SIDEWALL quad IDs",
+    "face_weights": "one normalized admission weight [0,1]",
+    "normal_height_amplitude": "explicit model-unit peak .04..06 from actual registered middle residual activity",
+    "phase_dUV": "registered parent-phase exact four-corner mean derivatives in local material u,v"
+  },
+  "new_host_orientation": "Use actual phase_dUV; isophase majoraxis v if abs(du)>abs(dv), else u. Existing saved orientations may be retained for common hosts.",
+  "caps_excluded": true,
+  "final_G7_flow_guards_not_baked_in_twice": true,
+  "feature_birth_claimed": false
+}

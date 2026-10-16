@@ -1,0 +1,116 @@
+{
+  "schema": "CHESHIRE_HANSMEYER_STRUCTURE_GATE_V1",
+  "status": "research_only_no_generation_or_render_executed",
+  "user_quote": "척추마냥 새로운 장식이 타고 흐르면",
+  "priority": "Selective continuous volumetric segmented spine/rib chain flowing along an actual G6 cloth-like wrinkle, with deep grooves between connected nodes and coherent bends/merges. Retain calm cloth grounds.",
+  "candidate_budget": {
+    "meaningful_candidates": 1,
+    "parameter_sweep": false,
+    "show_poor_or_minor_variants": false
+  },
+  "control": {
+    "name": "accepted NESTED02",
+    "root": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02",
+    "native": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\geometry.npz",
+    "xyz_sha256": "2e403bec551d284a96cb0dfcc514dfcf33137b878a9a8d1ba91703b2e257fa31",
+    "faces_sha256": "67109d7c7378b6cdfe82a713c74a860c98cdd53adcdce311f8612b3e6565a9ee",
+    "receipt": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json",
+    "receipt_sha256": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+  },
+  "reference_photos": [
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\scratch\\hansmeyer_primary_20261015\\columns_detail.jpg",
+      "sha256": "a69613b7eedb9d57df7baaf838406e10b405da13c4070912558fc584ac9f2dc9"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\scratch\\hansmeyer_primary_20261015\\sixth_order_detail.jpg",
+      "sha256": "6860ad58cbb11e7d4b2e2b619c7364831e9e2d16b1907310bd4df12157bca4ba"
+    }
+  ],
+  "reference_interpretation": {
+    "observed": "Connected solid ribs, recesses and ordered formations change scale and bend with larger folds. Facets and oblique cell edges can be coherent.",
+    "not_proved": "Exact reference subdivision weights, ancestry rules or pass count. Fine horizontal fabrication bands are not the algorithmic ornament target."
+  },
+  "parent_and_region": {
+    "immediate_parent": "Actual G6 MIDDLE body wrinkle geometry; original macro8S rails are a different level.",
+    "close_region": "Existing close_oblique view: central S shoulder and middle-lower return junction; keep this camera unchanged.",
+    "close_camera": {
+      "position": [
+        -18.0,
+        28.0,
+        12.0
+      ],
+      "target": [
+        -0.6,
+        0.72,
+        6.6
+      ],
+      "scale": 1.25
+    },
+    "before_forming": "Bind one actual 3D parent trace and selected landmark vertex IDs/coordinates from the saved source. Do not use camera coordinates to place the ornament.",
+    "landmarks": [
+      "main S crest at bend",
+      "adjacent valley",
+      "return root/merge",
+      "flanking calm cloth grounds"
+    ],
+    "record_measurements": [
+      "baseline/candidate landmark XYZ and displacement",
+      "parent trace location and width relative to the same source landmarks"
+    ],
+    "interpretation": "Measured movement supports macro preservation review; no invented universal tolerance or automatic beauty score.",
+    "placement": "Old G7 mask/phase placement is not mandatory. Parallel inherited phase alone does not prove a spine or 2D organization."
+  },
+  "render_contract": {
+    "frozen_camera_scene_helper": {
+      "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\render.py",
+      "sha256": "e3b09479583ecddef2501659b09a5a0fe3cedf7f519e9643c019e4b29304865f"
+    },
+    "scene_source": "control receipt actual_views and conditions; same flat material, lighting, samples and camera per paired view",
+    "resolution": [
+      900,
+      900
+    ],
+    "close_first": "close_oblique",
+    "if_close_is_compelling": [
+      "front",
+      "body_oblique"
+    ],
+    "all_flat": true,
+    "geometry_modifiers": [],
+    "normal_maps": false,
+    "native_geometry": "Render the actual saved candidate native XYZ/faces. Bind file/array hashes, counts, Blender display readbacks and PNG receipts; no remesh, smoothing or image edits for presentation.",
+    "topology": "Genuine generated topology changes are allowed and documented; compare counts to the candidate receipt, not to baseline counts."
+  },
+  "internal_visual_checks": [
+    {
+      "id": "continuous_chain",
+      "pass": "Trace a clearly visible volumetric segmented chain along the S bend into its return. Connected nodes and intervening deep grooves read as one organized structure, not isolated ornaments."
+    },
+    {
+      "id": "direction_and_junction",
+      "pass": "Node/rib-row frames turn with the actual G6 wrinkle; transverse ribs/recesses support the chain and its coherent merge or divergence. Individual facet edges need not be parallel."
+    },
+    {
+      "id": "relief_hierarchy",
+      "pass": "Parent fold, chain/node mass and smaller recesses are distinct in actual geometry under the same flat lighting; meaningful depth replaces mere cross-pleating."
+    },
+    {
+      "id": "calm_ground_and_macro",
+      "pass": "Whole view retains the good broad cloth-like S flow and calm planes; selective ornament has clear contrast against those grounds. Review recorded source landmarks alongside the image."
+    }
+  ],
+  "fail_conditions": [
+    "Minor or effectively invisible change from control.",
+    "Support band bends but internal geometry remains unrelated cross-pleats or a fixed grid.",
+    "Uniform waffle/cell/fractal coat overwhelms the cloth grounds.",
+    "Sharp foil plates, microserrations, disconnected-looking cups or clumped junctions replace coherent connected mass.",
+    "Literal anatomical bone graft used as a substitute for generated flowing structure.",
+    "A flattering crop/light/shading change is needed to conceal a failed whole or close view."
+  ],
+  "decision": {
+    "basis": "Human structural and visual review of one actual candidate plus provenance; vertex/face counts, orientation statistics or phase angles cannot confer beauty.",
+    "if_fail": "Record a concise text-only internal verdict; do not show/export a poor or minor candidate and do not start a variant sweep.",
+    "if_pass": "Root reviews both whole and close evidence before showing the user. Visible improvement is required; artifact review is distinct from final beauty adoption."
+  }
+}

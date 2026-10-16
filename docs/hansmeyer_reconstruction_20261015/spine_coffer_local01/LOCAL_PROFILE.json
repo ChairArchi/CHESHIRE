@@ -1,0 +1,305 @@
+{
+  "kind": "ONE_FIXED_COFFER_SECTION_LOCAL_FORMATION",
+  "full_model_generated": false,
+  "operator": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\recursive_spine_operator_v2.py",
+  "operator_sha256": "4853c1f584c4773e48e6ab08703ff75f4c623f8d77d5f21ca5dea66b2ea1ebea",
+  "parents": [
+    {
+      "component": 2,
+      "source_evidence": {
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial01_spine_chain\\PARENT_00.json": "b5fc74a7d420258b5c81e87c70eb0e652cf4f839d75b0cdff8057704050592bc",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial01_spine_chain\\PARENT_00.npz": "337f30833212a4a19c89af4e3532eadce254319be1c4159f0e04ac3a28cf8262"
+      },
+      "section": {
+        "passed": true,
+        "checks": {
+          "centre_node_to_interval_contrast_at_least_half_H": true,
+          "interval_centre_at_or_below_005H": true,
+          "continuous_sidewall_neck_above_025H": true,
+          "enclosed_interval_depth_above_035H": true,
+          "transverse_node_centre_above_045H": true
+        },
+        "sections": {
+          "centre": {
+            "samples": 742,
+            "harmonic_coefficients_N_over_H": [
+              0.28402360426373036,
+              0.4069854875040584,
+              0.06730767885482836
+            ],
+            "node_N_over_H": 0.758316770622617,
+            "neck_N_over_H": -0.05565420438549967,
+            "node_minus_neck_N_over_H": 0.8139709750081168,
+            "N_physical_quantiles": [
+              -0.005693389334893472,
+              -0.0023918225959365515,
+              0.007530361424804153,
+              0.02859741877996547,
+              0.0721196493132921
+            ],
+            "absB_physical_quantiles": [
+              2.3277876084262794e-06,
+              4.5069085150022224e-05,
+              0.0003256228403947289,
+              0.0013647386379374855,
+              0.008413452534096024
+            ]
+          },
+          "inner": {
+            "samples": 1484,
+            "harmonic_coefficients_N_over_H": [
+              0.4838095868385745,
+              0.29692850908265145,
+              0.05524914709354564
+            ],
+            "node_N_over_H": 0.8359872430147717,
+            "neck_N_over_H": 0.2421302248494687,
+            "node_minus_neck_N_over_H": 0.5938570181653029,
+            "N_physical_quantiles": [
+              0.0010275804690072464,
+              0.007736406581791878,
+              0.01529425326780932,
+              0.03342632576914404,
+              0.07731988014012399
+            ],
+            "absB_physical_quantiles": [
+              4.26479757341695e-07,
+              8.442428466472123e-05,
+              0.0006437893595311139,
+              0.0022505556862114206,
+              0.012919969366482166
+            ]
+          },
+          "sidewall": {
+            "samples": 1484,
+            "harmonic_coefficients_N_over_H": [
+              0.6340098801142676,
+              0.14307515346842373,
+              0.03210575297820297
+            ],
+            "node_N_over_H": 0.8091907865608943,
+            "neck_N_over_H": 0.5230404796240469,
+            "node_minus_neck_N_over_H": 0.28615030693684745,
+            "N_physical_quantiles": [
+              0.002030925718414252,
+              0.014632508174827473,
+              0.022048553035856226,
+              0.034227541462222774,
+              0.06992952863888059
+            ],
+            "absB_physical_quantiles": [
+              3.398711991876857e-08,
+              0.000140968341133125,
+              0.0015263915687214512,
+              0.005994144724613787,
+              0.017907644716213582
+            ]
+          },
+          "outer": {
+            "samples": 1484,
+            "harmonic_coefficients_N_over_H": [
+              0.19388726223090297,
+              0.018294260797819564,
+              0.0067543153750956675
+            ],
+            "node_N_over_H": 0.2189358384038182,
+            "neck_N_over_H": 0.18234731680817906,
+            "node_minus_neck_N_over_H": 0.03658852159563913,
+            "N_physical_quantiles": [
+              -0.0010227629473061614,
+              0.004571775699427997,
+              0.007012886986087174,
+              0.010220731136254397,
+              0.01744046920162506
+            ],
+            "absB_physical_quantiles": [
+              3.6729574505148417e-06,
+              0.0005177000042387111,
+              0.002768154547305577,
+              0.00821176351607259,
+              0.021557904441532917
+            ]
+          }
+        },
+        "enclosed_interval_depth_over_H": 0.5786946840095466,
+        "median_nominal_H": 0.030705244830345736,
+        "fitted_median_centre_node_interval_contrast": 0.024993178072419457,
+        "intended_node_N": [
+          0.0,
+          0.12,
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.12,
+          0.0
+        ],
+        "intended_neck_N": [
+          0.0,
+          0.12,
+          0.65,
+          0.2,
+          -0.25,
+          0.2,
+          0.65,
+          0.12,
+          0.0
+        ],
+        "scope": "Numerical forming-frame structure gate on one fixed section after two causal local CC passes; not image beauty, native collision or exact surface-depth certificate."
+      },
+      "maximum_local_delta": 0.07734199998016755,
+      "same_source_birth_topology": true,
+      "same_source_birth_chart": true
+    },
+    {
+      "component": 12,
+      "source_evidence": {
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial01_spine_chain\\PARENT_01.json": "861273d6117d3714e05f605a449dd530d65b1db7598028a4323e4ce167adf2fa",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial01_spine_chain\\PARENT_01.npz": "0aa2a2a3c8b6349bed8f0849acb214b0531d7e15f2881b2f9a667df629e72b90"
+      },
+      "section": {
+        "passed": true,
+        "checks": {
+          "centre_node_to_interval_contrast_at_least_half_H": true,
+          "interval_centre_at_or_below_005H": true,
+          "continuous_sidewall_neck_above_025H": true,
+          "enclosed_interval_depth_above_035H": true,
+          "transverse_node_centre_above_045H": true
+        },
+        "sections": {
+          "centre": {
+            "samples": 564,
+            "harmonic_coefficients_N_over_H": [
+              0.2873130339154076,
+              0.4124460778416655,
+              0.06283658082310373
+            ],
+            "node_N_over_H": 0.7625956925801768,
+            "neck_N_over_H": -0.062296463103154176,
+            "node_minus_neck_N_over_H": 0.824892155683331,
+            "N_physical_quantiles": [
+              -0.007661587291747152,
+              -0.002519594189717805,
+              0.007927742641249512,
+              0.029981896967172857,
+              0.058008979044004566
+            ],
+            "absB_physical_quantiles": [
+              1.1180319201627327e-07,
+              2.9854706040788936e-05,
+              0.00024492574751096004,
+              0.0009543964926186504,
+              0.003471501401231144
+            ]
+          },
+          "inner": {
+            "samples": 1128,
+            "harmonic_coefficients_N_over_H": [
+              0.48733182435001987,
+              0.29944201570415657,
+              0.046721257592649335
+            ],
+            "node_N_over_H": 0.8334950976468257,
+            "neck_N_over_H": 0.23461106623851263,
+            "node_minus_neck_N_over_H": 0.5988840314083131,
+            "N_physical_quantiles": [
+              0.004802286944582569,
+              0.007770533457562848,
+              0.015710420358356198,
+              0.034224231733067184,
+              0.06056230653187266
+            ],
+            "absB_physical_quantiles": [
+              2.9096869400887376e-06,
+              6.854316339222291e-05,
+              0.0005683845634574158,
+              0.0018295296065592155,
+              0.0043618225639346425
+            ]
+          },
+          "sidewall": {
+            "samples": 1128,
+            "harmonic_coefficients_N_over_H": [
+              0.6374257234367768,
+              0.14262103008305185,
+              0.020544480212803903
+            ],
+            "node_N_over_H": 0.8005912337326325,
+            "neck_N_over_H": 0.5153491735665289,
+            "node_minus_neck_N_over_H": 0.2852420601661037,
+            "N_physical_quantiles": [
+              0.010643745198425546,
+              0.01483447583847927,
+              0.023198874128481595,
+              0.037049660645799495,
+              0.053395781454348014
+            ],
+            "absB_physical_quantiles": [
+              1.6630312716519897e-07,
+              0.00011669723350974355,
+              0.0013930227074275083,
+              0.006147083523990259,
+              0.014762447315735585
+            ]
+          },
+          "outer": {
+            "samples": 1128,
+            "harmonic_coefficients_N_over_H": [
+              0.1924697489477846,
+              0.014726503211128896,
+              0.0019509369536831345
+            ],
+            "node_N_over_H": 0.20914718911259664,
+            "neck_N_over_H": 0.17969418269033885,
+            "node_minus_neck_N_over_H": 0.02945300642225779,
+            "N_physical_quantiles": [
+              0.0021028085338530085,
+              0.00469590875266699,
+              0.006963624463380119,
+              0.01079558388396549,
+              0.013893030150675454
+            ],
+            "absB_physical_quantiles": [
+              1.030980072157326e-05,
+              0.0005818194448733689,
+              0.003086857734179926,
+              0.008412057250207236,
+              0.01594041147253607
+            ]
+          }
+        },
+        "enclosed_interval_depth_over_H": 0.577645636669683,
+        "median_nominal_H": 0.03225633225997955,
+        "fitted_median_centre_node_interval_contrast": 0.0266079954523723,
+        "intended_node_N": [
+          0.0,
+          0.12,
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.12,
+          0.0
+        ],
+        "intended_neck_N": [
+          0.0,
+          0.12,
+          0.65,
+          0.2,
+          -0.25,
+          0.2,
+          0.65,
+          0.12,
+          0.0
+        ],
+        "scope": "Numerical forming-frame structure gate on one fixed section after two causal local CC passes; not image beauty, native collision or exact surface-depth certificate."
+      },
+      "maximum_local_delta": 0.06060434590072859,
+      "same_source_birth_topology": true,
+      "same_source_birth_chart": true
+    }
+  ],
+  "passed": true
+}

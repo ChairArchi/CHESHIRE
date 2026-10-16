@@ -1,0 +1,125 @@
+{
+  "kind": "ONLY_NEW_INCREMENT_RECOVERY_TOWARD_ACTUAL_SAFE22",
+  "passes": [
+    {
+      "bad_triangles": 158144,
+      "bad_quads": 65652,
+      "minimum_triangle_cross_dot": -6.862211188270009e-09,
+      "iteration": 0
+    },
+    {
+      "bad_triangles": 60192,
+      "bad_quads": 29032,
+      "minimum_triangle_cross_dot": -3.2936235210231505e-09,
+      "iteration": 1
+    },
+    {
+      "bad_triangles": 27900,
+      "bad_quads": 15592,
+      "minimum_triangle_cross_dot": -1.5031370416336227e-09,
+      "iteration": 2
+    },
+    {
+      "bad_triangles": 12960,
+      "bad_quads": 8492,
+      "minimum_triangle_cross_dot": -6.063456404968542e-10,
+      "iteration": 3
+    },
+    {
+      "bad_triangles": 6376,
+      "bad_quads": 4792,
+      "minimum_triangle_cross_dot": -1.9012937637670198e-10,
+      "iteration": 4
+    },
+    {
+      "bad_triangles": 3340,
+      "bad_quads": 2784,
+      "minimum_triangle_cross_dot": -6.048898574241205e-11,
+      "iteration": 5
+    },
+    {
+      "bad_triangles": 1936,
+      "bad_quads": 1728,
+      "minimum_triangle_cross_dot": -1.9729324625226117e-12,
+      "iteration": 6
+    },
+    {
+      "bad_triangles": 1184,
+      "bad_quads": 1088,
+      "minimum_triangle_cross_dot": -2.3717656034110493e-12,
+      "iteration": 7
+    },
+    {
+      "bad_triangles": 676,
+      "bad_quads": 632,
+      "minimum_triangle_cross_dot": -3.2899927129732985e-13,
+      "iteration": 8
+    },
+    {
+      "bad_triangles": 368,
+      "bad_quads": 344,
+      "minimum_triangle_cross_dot": -2.589621605196696e-13,
+      "iteration": 9
+    },
+    {
+      "bad_triangles": 196,
+      "bad_quads": 192,
+      "minimum_triangle_cross_dot": -2.0574882414887168e-14,
+      "iteration": 10
+    },
+    {
+      "bad_triangles": 124,
+      "bad_quads": 120,
+      "minimum_triangle_cross_dot": -7.253549465314337e-13,
+      "iteration": 11
+    },
+    {
+      "bad_triangles": 80,
+      "bad_quads": 80,
+      "minimum_triangle_cross_dot": -6.811900451505768e-14,
+      "iteration": 12
+    },
+    {
+      "bad_triangles": 36,
+      "bad_quads": 36,
+      "minimum_triangle_cross_dot": -1.237244453459684e-15,
+      "iteration": 13
+    },
+    {
+      "bad_triangles": 12,
+      "bad_quads": 12,
+      "minimum_triangle_cross_dot": -6.756104167774668e-18,
+      "iteration": 14
+    },
+    {
+      "bad_triangles": 4,
+      "bad_quads": 4,
+      "minimum_triangle_cross_dot": -2.6811968904129198e-18,
+      "iteration": 15
+    },
+    {
+      "bad_triangles": 4,
+      "bad_quads": 4,
+      "minimum_triangle_cross_dot": -6.437440403633925e-19,
+      "iteration": 16
+    },
+    {
+      "bad_triangles": 0,
+      "bad_quads": 0,
+      "minimum_triangle_cross_dot": 3.421678034223332e-21,
+      "iteration": 17
+    }
+  ],
+  "gain": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\COARSE_STAGE_LOCAL_GAIN.npy",
+    "sha256": "f745670b1e73f7f9ed2d81eb1fba43817acb12e835b03ebf79b542cc0963c2e7"
+  },
+  "output": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\COARSE_STAGE_RECOVERED_XYZ.npy",
+    "sha256": "893903bdf6f52cfe2085416ea8bd68734a434c31207693d2146c930a9bf13347"
+  },
+  "orientation_reference": "Actual original NESTED complete native centroid fan, not only safe22.",
+  "exact_protected_safe22": true,
+  "zero_gain_limit": "Actual safe22 coordinates",
+  "locally_attenuated_controls": 434282
+}

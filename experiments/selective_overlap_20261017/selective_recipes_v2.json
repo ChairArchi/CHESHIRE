@@ -1,0 +1,1075 @@
+{
+  "schema": "CHESHIRE_SELECTIVE_193_PARAMETER_COMPARISON_RECORD_V2",
+  "carrier_sampling": {
+    "rings": 193,
+    "sectors": 16,
+    "radius": 0.78
+  },
+  "strategies": 1,
+  "original_kernel_body_unchanged": true,
+  "no_G4": true,
+  "candidates": {
+    "B193": {
+      "original_seed_recipe": {
+        "radius": [
+          0.7260000000000001,
+          0.92,
+          0.78,
+          0.63,
+          0.66,
+          0.73,
+          0.88,
+          0.7040000000000001
+        ],
+        "valley": 0.43,
+        "events": [
+          {
+            "id": "LOW_X",
+            "direction": 0,
+            "height": 0.22,
+            "span": 0.115,
+            "expansion": 0.95,
+            "constriction": 0.29,
+            "reexpansion": 0.62,
+            "return_depth": 0.65,
+            "overlap_width": 1.14,
+            "sweep": 0.24,
+            "mirror": false
+          },
+          {
+            "id": "HIGH_Y",
+            "direction": 1.5707963267948966,
+            "height": 0.7,
+            "span": 0.145,
+            "expansion": 0.82,
+            "constriction": 0.27,
+            "reexpansion": 0.9,
+            "return_depth": 0.72,
+            "overlap_width": 1.1,
+            "sweep": -0.2,
+            "mirror": false
+          },
+          {
+            "id": "DIAGONAL_BRIDGE",
+            "direction": 0.7,
+            "height": 0.47,
+            "span": 0.19575,
+            "expansion": 0.49,
+            "constriction": 0.16,
+            "reexpansion": 0.51,
+            "return_depth": 0.5152000000000001,
+            "overlap_width": 0.94,
+            "sweep": 0.24,
+            "mirror": false
+          }
+        ]
+      },
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "FRONT_LINK",
+            "direction": 1.5707963267948966,
+            "height": 0.455,
+            "span": 0.115,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 1.03,
+            "sweep": 0.0,
+            "mirror": false
+          },
+          {
+            "id": "BACK_RETURN",
+            "direction": -1.5707963267948966,
+            "height": 0.6,
+            "span": 0.09,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.92,
+            "sweep": 0.0,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "DIAGONAL_SHOULDER",
+            "direction": 0.68,
+            "height": 0.655,
+            "span": 0.105,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.67,
+            "sweep": 0.2,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Original complete two-primary/three-ancillary source at same193 sampling"
+      },
+      "primary_event_count": 2,
+      "total_event_count": 5,
+      "actual_files": {
+        "geometry.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\B193\\geometry.npz",
+          "sha256": "8c71dc3cface7727be0fe5ecde4859df5c99f3dbc79d9c425afa78d3ca1d8328"
+        },
+        "control_quad.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\B193\\control_quad.npz",
+          "sha256": "d2dca40f385650ddb18f262a1ed1ee43631a14d9699fbd0a7f514445d9abcdbc"
+        },
+        "operation_fields.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\B193\\operation_fields.npz",
+          "sha256": "f09adca606e93646311e60799047292c686e0e5b72b436a7dcb59de92a9e7b1e"
+        }
+      },
+      "waist_guards": [
+        {
+          "index": 50,
+          "t": 0.2604166666666667,
+          "radius": 0.33948046416349503,
+          "prominence": 0.7019729075606465,
+          "interval": [
+            0.2421875,
+            0.2838541666666667
+          ]
+        },
+        {
+          "index": 91,
+          "t": 0.47395833333333337,
+          "radius": 0.5830980226905383,
+          "prominence": 0.356312827365992,
+          "interval": [
+            0.4557291666666667,
+            0.5026041666666666
+          ]
+        },
+        {
+          "index": 126,
+          "t": 0.65625,
+          "radius": 0.7792490613004328,
+          "prominence": 0.1580598792011857,
+          "interval": [
+            0.6432291666666667,
+            0.6692708333333334
+          ]
+        },
+        {
+          "index": 147,
+          "t": 0.765625,
+          "radius": 0.6103382699474948,
+          "prominence": 0.41911956429862207,
+          "interval": [
+            0.7473958333333334,
+            0.7786458333333334
+          ]
+        }
+      ]
+    },
+    "L08_PRIMARY_193": {
+      "original_seed_recipe": {
+        "radius": [
+          0.7260000000000001,
+          0.92,
+          0.78,
+          0.63,
+          0.66,
+          0.73,
+          0.88,
+          0.7040000000000001
+        ],
+        "valley": 0.43,
+        "events": [
+          {
+            "id": "LOW_X",
+            "direction": 0,
+            "height": 0.22,
+            "span": 0.115,
+            "expansion": 0.95,
+            "constriction": 0.29,
+            "reexpansion": 0.62,
+            "return_depth": 0.65,
+            "overlap_width": 1.14,
+            "sweep": 0.24,
+            "mirror": false
+          },
+          {
+            "id": "HIGH_Y",
+            "direction": 1.5707963267948966,
+            "height": 0.7,
+            "span": 0.145,
+            "expansion": 0.82,
+            "constriction": 0.27,
+            "reexpansion": 0.9,
+            "return_depth": 0.72,
+            "overlap_width": 1.1,
+            "sweep": -0.2,
+            "mirror": false
+          },
+          {
+            "id": "DIAGONAL_BRIDGE",
+            "direction": 0.7,
+            "height": 0.47,
+            "span": 0.19575,
+            "expansion": 0.49,
+            "constriction": 0.16,
+            "reexpansion": 0.51,
+            "return_depth": 0.5152000000000001,
+            "overlap_width": 0.94,
+            "sweep": 0.24,
+            "mirror": false
+          }
+        ]
+      },
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_1_MAJOR_1",
+            "direction": 0.39269908169872414,
+            "height": 0.35931558611922004,
+            "span": 0.02567111909067586,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.32,
+            "sweep": 0.18,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_1_MAJOR_2",
+            "direction": 0.7853981633974483,
+            "height": 0.35931558611922004,
+            "span": 0.02567111909067586,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.36,
+            "sweep": -0.2,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_2_MAJOR_1",
+            "direction": 0.39269908169872414,
+            "height": 0.5644916396070436,
+            "span": 0.021737174389993577,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.32,
+            "sweep": 0.18,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_2_MAJOR_2",
+            "direction": 0.7853981633974483,
+            "height": 0.5644916396070436,
+            "span": 0.021737174389993577,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.36,
+            "sweep": -0.2,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_3_MAJOR_1",
+            "direction": 0.39269908169872414,
+            "height": 0.8561257342768659,
+            "span": 0.026270466194900324,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.32,
+            "sweep": 0.18,
+            "mirror": true
+          },
+          {
+            "id": "SELECTED_LOBE_3_MAJOR_2",
+            "direction": 0.7853981633974483,
+            "height": 0.8561257342768659,
+            "span": 0.026270466194900324,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.36,
+            "sweep": -0.2,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "FRONT_LINK",
+            "direction": 1.5707963267948966,
+            "height": 0.455,
+            "span": 0.115,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 1.03,
+            "sweep": 0.0,
+            "mirror": false
+          },
+          {
+            "id": "BACK_RETURN",
+            "direction": -1.5707963267948966,
+            "height": 0.6,
+            "span": 0.09,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.92,
+            "sweep": 0.0,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "DIAGONAL_SHOULDER",
+            "direction": 0.68,
+            "height": 0.655,
+            "span": 0.105,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.67,
+            "sweep": 0.2,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "All original events retained; six original major templates appended only inside three measured lobe intervals",
+        "placements": [
+          {
+            "lobe": 1,
+            "template_index": 0,
+            "lobe_warped_interval": [
+              0.2988391241197331,
+              0.46465782430057173
+            ],
+            "support_warped_interval": [
+              0.3028391241197331,
+              0.4606578243005717
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 20.701190434721013
+          },
+          {
+            "lobe": 1,
+            "template_index": 1,
+            "lobe_warped_interval": [
+              0.2988391241197331,
+              0.46465782430057173
+            ],
+            "support_warped_interval": [
+              0.3028391241197331,
+              0.4606578243005717
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 20.701190434721013
+          },
+          {
+            "lobe": 2,
+            "template_index": 0,
+            "lobe_warped_interval": [
+              0.5126698559490578,
+              0.6619659883870308
+            ],
+            "support_warped_interval": [
+              0.5166698559490578,
+              0.6579659883870308
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 17.52885742809082
+          },
+          {
+            "lobe": 2,
+            "template_index": 1,
+            "lobe_warped_interval": [
+              0.5126698559490578,
+              0.6619659883870308
+            ],
+            "support_warped_interval": [
+              0.5166698559490578,
+              0.6579659883870308
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 17.52885742809082
+          },
+          {
+            "lobe": 3,
+            "template_index": 0,
+            "lobe_warped_interval": [
+              0.7943307086480852,
+              0.9626666666666666
+            ],
+            "support_warped_interval": [
+              0.7983307086480852,
+              0.9586666666666666
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 21.184503939567623
+          },
+          {
+            "lobe": 3,
+            "template_index": 1,
+            "lobe_warped_interval": [
+              0.7943307086480852,
+              0.9626666666666666
+            ],
+            "support_warped_interval": [
+              0.7983307086480852,
+              0.9586666666666666
+            ],
+            "conservative_support_outside_guards": true,
+            "span_below_preferred_point02": false,
+            "axial_samples_across_full_support_at193": 21.184503939567623
+          }
+        ],
+        "original_primary_two_retained": true,
+        "original_ancillary_three_retained": true,
+        "primary_event_count": 8,
+        "total_event_count": 11,
+        "crown_scope_material_t": 0.96,
+        "waist_geometry_projected_or_masked": false
+      },
+      "primary_event_count": 8,
+      "total_event_count": 11,
+      "actual_files": {
+        "geometry.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\L08_PRIMARY_193\\geometry.npz",
+          "sha256": "5db0ab1718975803696eac649dbf5ac7078535191e23f95f8f0b1037cd38e377"
+        },
+        "control_quad.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\L08_PRIMARY_193\\control_quad.npz",
+          "sha256": "5ab64cb61e1ba8611ce5b18b3e06497b6ded18585d52d34254ae18a93e6a062b"
+        },
+        "operation_fields.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\L08_PRIMARY_193\\operation_fields.npz",
+          "sha256": "ee13c9370d894ce968892b986f03cab627d565da6f8a426f633a59c9c1aeb88b"
+        }
+      },
+      "waist_guards": [
+        {
+          "index": 50,
+          "t": 0.2604166666666667,
+          "radius": 0.33948046416349503,
+          "prominence": 0.7019729075606465,
+          "interval": [
+            0.2421875,
+            0.2838541666666667
+          ]
+        },
+        {
+          "index": 91,
+          "t": 0.47395833333333337,
+          "radius": 0.5830980226905383,
+          "prominence": 0.356312827365992,
+          "interval": [
+            0.4557291666666667,
+            0.5026041666666666
+          ]
+        },
+        {
+          "index": 126,
+          "t": 0.65625,
+          "radius": 0.7792490613004328,
+          "prominence": 0.1580598792011857,
+          "interval": [
+            0.6432291666666667,
+            0.6692708333333334
+          ]
+        },
+        {
+          "index": 147,
+          "t": 0.765625,
+          "radius": 0.6103382699474948,
+          "prominence": 0.41911956429862207,
+          "interval": [
+            0.7473958333333334,
+            0.7786458333333334
+          ]
+        }
+      ]
+    },
+    "K08_193": {
+      "original_seed_recipe": {
+        "radius": [
+          0.7260000000000001,
+          0.92,
+          0.78,
+          0.63,
+          0.66,
+          0.73,
+          0.88,
+          0.7040000000000001
+        ],
+        "valley": 0.43,
+        "events": [
+          {
+            "id": "LOW_X",
+            "direction": 0,
+            "height": 0.22,
+            "span": 0.115,
+            "expansion": 0.95,
+            "constriction": 0.29,
+            "reexpansion": 0.62,
+            "return_depth": 0.65,
+            "overlap_width": 1.14,
+            "sweep": 0.24,
+            "mirror": false
+          },
+          {
+            "id": "HIGH_Y",
+            "direction": 1.5707963267948966,
+            "height": 0.7,
+            "span": 0.145,
+            "expansion": 0.82,
+            "constriction": 0.27,
+            "reexpansion": 0.9,
+            "return_depth": 0.72,
+            "overlap_width": 1.1,
+            "sweep": -0.2,
+            "mirror": false
+          },
+          {
+            "id": "DIAGONAL_BRIDGE",
+            "direction": 0.7,
+            "height": 0.47,
+            "span": 0.19575,
+            "expansion": 0.49,
+            "constriction": 0.16,
+            "reexpansion": 0.51,
+            "return_depth": 0.5152000000000001,
+            "overlap_width": 0.94,
+            "sweep": 0.24,
+            "mirror": false
+          }
+        ]
+      },
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "FOLD_01",
+            "direction": 0.05,
+            "height": 0.15,
+            "span": 0.045,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.52,
+            "sweep": 0.18,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_02",
+            "direction": 1.3,
+            "height": 0.27,
+            "span": 0.08,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.6,
+            "sweep": -0.22,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_03",
+            "direction": 0.5,
+            "height": 0.4,
+            "span": 0.055,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.52,
+            "sweep": 0.2,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_04",
+            "direction": 0.9,
+            "height": 0.52,
+            "span": 0.105,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.52,
+            "sweep": -0.25,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_05",
+            "direction": 1.5,
+            "height": 0.63,
+            "span": 0.045,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.46,
+            "sweep": 0.18,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_06",
+            "direction": 0.2,
+            "height": 0.7,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.5,
+            "sweep": -0.2,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_07",
+            "direction": 1.15,
+            "height": 0.81,
+            "span": 0.06,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 0.54,
+            "sweep": 0.22,
+            "mirror": true
+          },
+          {
+            "id": "FOLD_08",
+            "direction": 0.6,
+            "height": 0.87,
+            "span": 0.035,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.44,
+            "sweep": -0.18,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "FRONT_LINK",
+            "direction": 1.5707963267948966,
+            "height": 0.455,
+            "span": 0.115,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 1.03,
+            "sweep": 0.0,
+            "mirror": false
+          },
+          {
+            "id": "BACK_RETURN",
+            "direction": -1.5707963267948966,
+            "height": 0.6,
+            "span": 0.09,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.92,
+            "sweep": 0.0,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "DIAGONAL_SHOULDER",
+            "direction": 0.68,
+            "height": 0.655,
+            "span": 0.105,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.67,
+            "sweep": 0.2,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Frozen previous all-eight-G1 source at same193 sampling"
+      },
+      "primary_event_count": 8,
+      "total_event_count": 11,
+      "actual_files": {
+        "geometry.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\K08_193\\geometry.npz",
+          "sha256": "03d8eff383175bf62281de25d04ab533eba8d0e2c199ca957de932e745329a42"
+        },
+        "control_quad.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\K08_193\\control_quad.npz",
+          "sha256": "ba7b211e3dd30a30a1e91b4be6de7af4a2da552cecb71a3de107f51db1803cba"
+        },
+        "operation_fields.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\K08_193\\operation_fields.npz",
+          "sha256": "e2e7cc9be11d35b6ee925338f2e0d07463f77ceeb6a9ee300c519f0b59efdd47"
+        }
+      },
+      "waist_guards": [
+        {
+          "index": 50,
+          "t": 0.2604166666666667,
+          "radius": 0.33948046416349503,
+          "prominence": 0.7019729075606465,
+          "interval": [
+            0.2421875,
+            0.2838541666666667
+          ]
+        },
+        {
+          "index": 91,
+          "t": 0.47395833333333337,
+          "radius": 0.5830980226905383,
+          "prominence": 0.356312827365992,
+          "interval": [
+            0.4557291666666667,
+            0.5026041666666666
+          ]
+        },
+        {
+          "index": 126,
+          "t": 0.65625,
+          "radius": 0.7792490613004328,
+          "prominence": 0.1580598792011857,
+          "interval": [
+            0.6432291666666667,
+            0.6692708333333334
+          ]
+        },
+        {
+          "index": 147,
+          "t": 0.765625,
+          "radius": 0.6103382699474948,
+          "prominence": 0.41911956429862207,
+          "interval": [
+            0.7473958333333334,
+            0.7786458333333334
+          ]
+        }
+      ]
+    },
+    "S08_HIER_193": {
+      "original_seed_recipe": {
+        "radius": [
+          0.7260000000000001,
+          0.92,
+          0.78,
+          0.63,
+          0.66,
+          0.73,
+          0.88,
+          0.7040000000000001
+        ],
+        "valley": 0.43,
+        "events": [
+          {
+            "id": "LOW_X",
+            "direction": 0,
+            "height": 0.22,
+            "span": 0.115,
+            "expansion": 0.95,
+            "constriction": 0.29,
+            "reexpansion": 0.62,
+            "return_depth": 0.65,
+            "overlap_width": 1.14,
+            "sweep": 0.24,
+            "mirror": false
+          },
+          {
+            "id": "HIGH_Y",
+            "direction": 1.5707963267948966,
+            "height": 0.7,
+            "span": 0.145,
+            "expansion": 0.82,
+            "constriction": 0.27,
+            "reexpansion": 0.9,
+            "return_depth": 0.72,
+            "overlap_width": 1.1,
+            "sweep": -0.2,
+            "mirror": false
+          },
+          {
+            "id": "DIAGONAL_BRIDGE",
+            "direction": 0.7,
+            "height": 0.47,
+            "span": 0.19575,
+            "expansion": 0.49,
+            "constriction": 0.16,
+            "reexpansion": 0.51,
+            "return_depth": 0.5152000000000001,
+            "overlap_width": 0.94,
+            "sweep": 0.24,
+            "mirror": false
+          }
+        ]
+      },
+      "resolved_legacy_events": {
+        "1": [
+          {
+            "id": "LOW_X",
+            "direction": 0.0,
+            "height": 0.255,
+            "span": 0.09,
+            "expansion": 0.7,
+            "constriction": 0.28,
+            "reexpansion": 0.38,
+            "return_depth": 0.48,
+            "overlap_width": 1.0,
+            "sweep": 0.25,
+            "mirror": true
+          },
+          {
+            "id": "HIGH_X",
+            "direction": 0.0,
+            "height": 0.755,
+            "span": 0.07,
+            "expansion": 0.49,
+            "constriction": 0.24,
+            "reexpansion": 0.64,
+            "return_depth": 0.42,
+            "overlap_width": 0.88,
+            "sweep": -0.32,
+            "mirror": true
+          }
+        ],
+        "2": [
+          {
+            "id": "LOBED_G2_1",
+            "direction": 0.39269908169872414,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": false
+          },
+          {
+            "id": "LOBED_G2_2",
+            "direction": 1.1780972450961724,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.44,
+            "constriction": 0.2,
+            "reexpansion": 0.58,
+            "return_depth": 0.46,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": false
+          },
+          {
+            "id": "LOBED_G2_3",
+            "direction": 0.7853981633974483,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.6,
+            "constriction": 0.24,
+            "reexpansion": 0.4,
+            "return_depth": 0.55,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": false
+          }
+        ],
+        "3": [
+          {
+            "id": "LOBED_G3_1",
+            "direction": 0.7853981633974483,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": true
+          },
+          {
+            "id": "LOBED_G3_2",
+            "direction": 0.39269908169872414,
+            "height": 0.6136616482145526,
+            "span": 0.032,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": -0.16,
+            "mirror": true
+          },
+          {
+            "id": "LOBED_G3_3",
+            "direction": 0.95,
+            "height": 0.3540770077434565,
+            "span": 0.024300081534929453,
+            "expansion": 0.31,
+            "constriction": 0.13,
+            "reexpansion": 0.4,
+            "return_depth": 0.31,
+            "overlap_width": 0.4,
+            "sweep": 0.14,
+            "mirror": true
+          }
+        ]
+      },
+      "proposal": {
+        "strategy": "Frozen v1 hierarchical eight-total source at same193 sampling"
+      },
+      "primary_event_count": 2,
+      "total_event_count": 8,
+      "actual_files": {
+        "geometry.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\S08_HIER_193\\geometry.npz",
+          "sha256": "9de9a01594c415131d37dee328baf9f6f5b4d66d82e77bb8bac7954922b09e88"
+        },
+        "control_quad.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\S08_HIER_193\\control_quad.npz",
+          "sha256": "3a50aabe08ba55563b859d50b9921da4c00e6ab8906d72e31fdfdfe98dfc2f80"
+        },
+        "operation_fields.npz": {
+          "path": "E:\\CHESHIRE_DATA\\experiments\\selective_overlap_20261017\\source_candidates_v2\\S08_HIER_193\\operation_fields.npz",
+          "sha256": "fa037586c014c9ac328a7e1b12017ec43d3ab56110ba0675b1387459b783f290"
+        }
+      },
+      "waist_guards": [
+        {
+          "index": 50,
+          "t": 0.2604166666666667,
+          "radius": 0.33948046416349503,
+          "prominence": 0.7019729075606465,
+          "interval": [
+            0.2421875,
+            0.2838541666666667
+          ]
+        },
+        {
+          "index": 91,
+          "t": 0.47395833333333337,
+          "radius": 0.5830980226905383,
+          "prominence": 0.356312827365992,
+          "interval": [
+            0.4557291666666667,
+            0.5026041666666666
+          ]
+        },
+        {
+          "index": 126,
+          "t": 0.65625,
+          "radius": 0.7792490613004328,
+          "prominence": 0.1580598792011857,
+          "interval": [
+            0.6432291666666667,
+            0.6692708333333334
+          ]
+        },
+        {
+          "index": 147,
+          "t": 0.765625,
+          "radius": 0.6103382699474948,
+          "prominence": 0.41911956429862207,
+          "interval": [
+            0.7473958333333334,
+            0.7786458333333334
+          ]
+        }
+      ]
+    }
+  },
+  "guard_method": "Same material minimum separation4/48 and prominence.15; contiguous minimum+.15prominence core plus half current ring. These are narrow measured cores.",
+  "exact_scope": "L08 full original XYZ exact only at declared material guard controls; wider bands/actual world planes are independently reported.",
+  "automatic": "Measured193 baseline section minima, complement lobe intervals, support-fit spans and heights.",
+  "configured": "Six append events; three widest lobes;2per lobe;pi/8 andpi/4 directions;original template0/1;angular widths.32/.36;maxspan.03;crown endmaterial.96",
+  "source_density_change_only": true,
+  "smoothing": false,
+  "new_primitive": false,
+  "field_cache_changed": false,
+  "self_intersections_certified": false
+}

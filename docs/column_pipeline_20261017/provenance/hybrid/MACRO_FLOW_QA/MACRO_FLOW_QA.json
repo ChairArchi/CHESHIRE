@@ -1,0 +1,177 @@
+{
+  "kind": "EXACT_MATERIAL_CORRESPONDENCE_FOUR_CERTIFIED_MACRO_RIDGE_PRESERVATION_QA",
+  "candidate_root": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016",
+  "candidate_generation_receipt_sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769",
+  "original_control_quad_sha256": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3",
+  "final_control_quad_sha256": "d8d5548286efa75e1696095b671770724c0a2143277e72ef60494afc36080128",
+  "quad_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+  "material_chart_sha256": "87d7b993200e548f4d5528067f15fbbb886637f0428e06468f995ee141cf966d",
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\RECEIPT.json": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3",
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL\\control_quad.npz": "d8d5548286efa75e1696095b671770724c0a2143277e72ef60494afc36080128",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PREFLIGHT.json": "214c69b602c7130da52acbd5f6af5e04a80f50884d8daac68afd38c70fe7f80f",
+    "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_LINEAGE_RECEIPT.json": "f2ddfa48ae52eb96edcc0f0a2af91ddf4ca64e39c7602af2ebfe91cacfdd7d5b",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json": "db706c48cd375788ab61198818166bf1968b78f49ba0750c0e50cc7d2a643429",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.npz": "37c28891b311367cc5cb8170bd303e5c39058f7c941aa7b0c5c2b9ba03ec0171",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json": "f41b6666dea6b976881066671a7f336e886d67577fbff899f3263abf5b362aff",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.npz": "78827c84d8be3fe1cff8890d14ca5b8234b679ad72a3485ff460611dfd1f91a5",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json": "7aeca7fd3ed45f433472a75d8bb127a77efa26bd14deb1ef0482c997589811fe",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.npz": "c23aa5d598795779a58ae16ecdf204c8f169064377284aa0ff8117cfa560282f",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json": "22979e2967660b5125bff35babaca862b60564b39b418764dd5d2dd5dc71a95f",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.npz": "bab36f8cd2f5e7c6463a3b0434424ee6a9f40af7cfed555ce3e98439db58f76a"
+  },
+  "components": [
+    {
+      "component": 2,
+      "measured_stations": 120,
+      "original_confirmed_stations": 125,
+      "material_mapping": {
+        "valid_G6_samples": 4191,
+        "mapped_G7_samples": 4191,
+        "unmapped_G7_samples": 0,
+        "G6_material_chart_reconstruction_error": 0.0,
+        "G6_surface_reconstruction_error": 0.0,
+        "G7_material_uv_reconstruction_error": 2.220446049250313e-16,
+        "candidate_scope": "Only four actual G7 child quads / sixteen native fan triangles of the actual G6 parent quad",
+        "barycentric_tolerance": 1e-09,
+        "world_nearest_used": false
+      },
+      "prominence_retention_quantiles": [
+        0.7578757904787743,
+        0.9105446473632809,
+        0.9991242300266033,
+        1.0592589689420937,
+        1.234341930570297
+      ],
+      "absolute_peak_shift_quantiles": [
+        5.898776835943503e-06,
+        0.0010697848085763073,
+        0.005434088153975503,
+        0.01423979990192302
+      ],
+      "retention_below_80_percent": 4,
+      "peak_shift_over_075": 0
+    },
+    {
+      "component": 12,
+      "measured_stations": 124,
+      "original_confirmed_stations": 125,
+      "material_mapping": {
+        "valid_G6_samples": 4191,
+        "mapped_G7_samples": 4191,
+        "unmapped_G7_samples": 0,
+        "G6_material_chart_reconstruction_error": 0.0,
+        "G6_surface_reconstruction_error": 0.0,
+        "G7_material_uv_reconstruction_error": 2.220446049250313e-16,
+        "candidate_scope": "Only four actual G7 child quads / sixteen native fan triangles of the actual G6 parent quad",
+        "barycentric_tolerance": 1e-09,
+        "world_nearest_used": false
+      },
+      "prominence_retention_quantiles": [
+        0.748576291540604,
+        0.9338919566213717,
+        0.9972059688775381,
+        1.0522695613143709,
+        1.1393268835979762
+      ],
+      "absolute_peak_shift_quantiles": [
+        8.45294833775375e-06,
+        0.0008640880503684506,
+        0.004899172467669817,
+        0.01360425444023479
+      ],
+      "retention_below_80_percent": 1,
+      "peak_shift_over_075": 0
+    },
+    {
+      "component": 25,
+      "measured_stations": 119,
+      "original_confirmed_stations": 121,
+      "material_mapping": {
+        "valid_G6_samples": 4158,
+        "mapped_G7_samples": 4158,
+        "unmapped_G7_samples": 0,
+        "G6_material_chart_reconstruction_error": 0.0,
+        "G6_surface_reconstruction_error": 0.0,
+        "G7_material_uv_reconstruction_error": 2.220446049250313e-16,
+        "candidate_scope": "Only four actual G7 child quads / sixteen native fan triangles of the actual G6 parent quad",
+        "barycentric_tolerance": 1e-09,
+        "world_nearest_used": false
+      },
+      "prominence_retention_quantiles": [
+        0.7820594323048863,
+        0.9191302943260643,
+        0.9982656530140834,
+        1.0512013765614643,
+        1.293799920267898
+      ],
+      "absolute_peak_shift_quantiles": [
+        1.17069635296764e-05,
+        0.001388640983082919,
+        0.004651469097280324,
+        0.11393356992207021
+      ],
+      "retention_below_80_percent": 1,
+      "peak_shift_over_075": 1
+    },
+    {
+      "component": 40,
+      "measured_stations": 123,
+      "original_confirmed_stations": 125,
+      "material_mapping": {
+        "valid_G6_samples": 4158,
+        "mapped_G7_samples": 4158,
+        "unmapped_G7_samples": 0,
+        "G6_material_chart_reconstruction_error": 0.0,
+        "G6_surface_reconstruction_error": 0.0,
+        "G7_material_uv_reconstruction_error": 2.220446049250313e-16,
+        "candidate_scope": "Only four actual G7 child quads / sixteen native fan triangles of the actual G6 parent quad",
+        "barycentric_tolerance": 1e-09,
+        "world_nearest_used": false
+      },
+      "prominence_retention_quantiles": [
+        0.8001028022167265,
+        0.9199504313681193,
+        1.0029429453082828,
+        1.058967717819805,
+        1.3528235780362872
+      ],
+      "absolute_peak_shift_quantiles": [
+        3.797906750206692e-05,
+        0.001367558294491835,
+        0.004290992236931992,
+        0.014544811688101358
+      ],
+      "retention_below_80_percent": 0,
+      "peak_shift_over_075": 0
+    }
+  ],
+  "filter": {
+    "type": "One-dimensional Gaussian on measured physical cross-profile samples",
+    "FWHM": 0.075,
+    "sigma": 0.031849567510800716,
+    "applied_to_analysis_height_only": true,
+    "XYZ_smoothing": false
+  },
+  "correspondence": "G6 native fan triangle identifies its actual parent quad; only its four saved G7 child quads and sixteen fans are tested for locally unwrapped material (s,theta) barycentric containment. Same G7 indices/weights sample original and final.",
+  "world_nearest_used": false,
+  "geometry_changed": false,
+  "original_source_files_changed": false,
+  "sampled_stations": 486,
+  "plots": [],
+  "sample_arrays_sha256": "58557d3b0a28193b4e1bd5f9932eccf7ecd30f37a204e0c8aa88acf8ca228df3",
+  "station_table_sha256": "0b69f6986c49b5ec7e8619e28692da3ec38d212cd9e083a34427880685bba34d",
+  "thresholds_are_review_flags_not_automatic_beauty_adoption": true,
+  "limitations": [
+    "The four certified ridge atlases are sampled, not every SOURCE fold.",
+    "Fixed .075 Gaussian FWHM is a physical analysis bandwidth, not geometry filtering.",
+    "Measured shoulders can be search-interval endpoints and macro curvature can contribute prominence.",
+    "Unmapped material samples are reported and excluded; no nearest-surface fallback is used.",
+    "This checks sampled macro prominence/peak shift, not global collision or beauty."
+  ],
+  "checker": "E:\\CHESHIRE_DATA\\experiments\\whole_hybrid_flow_qa_20261016\\qa_certified_macro_flow.py",
+  "checker_sha256": "cbff2b433c316d7ffbd0b66e1d6e2b0b4bd2feb000476ee329782a88ea055759",
+  "elapsed_seconds": 6.315790799999377
+}

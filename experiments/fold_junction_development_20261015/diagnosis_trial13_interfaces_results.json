@@ -1,0 +1,273 @@
+{
+  "schema": "TRIAL13_SAVED_ACTUAL_PROTECTED_INTERFACE_DELTA_AUDIT_V1",
+  "trial": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation",
+  "exact_source_bindings": {
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": {
+      "sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+      "bytes": 62679109
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz": {
+      "sha256": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+      "bytes": 251203065
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\FORMED\\control_quad.npz": {
+      "sha256": "21ffdcecef369439d234b8437c35fcb18204cfbc6368b34fc981504060570597",
+      "bytes": 251187505
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\evidence.npz": {
+      "sha256": "59a74daaaa2defe02b071d59530d95f66e38978d8330d0a0a1e057e51ddbba51",
+      "bytes": 817906
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\control_quad.npz": {
+      "sha256": "89b5e58f6b08f8f5958cb7654e1a417be7632bf13e3d765dc7a082970eeec055",
+      "bytes": 967451
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\RECEIPT.json": {
+      "sha256": "570a33681ceb52c232f8086322454bf5432628820172e8443c0dbfb2d33d6188",
+      "bytes": 76045
+    }
+  },
+  "audit_code": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\diagnosis_trial13_interfaces.py",
+    "sha256": "0827d141492fc085cf1187e7d916eaa8ade8da0253fa44fbe3b84b64da265849"
+  },
+  "compared": "Actual saved FORMED G7 controls minus exact same-G6 saved neutral G07_SURFACE controls.",
+  "tolerance": 1e-12,
+  "counts": {
+    "G3_quads": 27352,
+    "G6_vertices": 1750530,
+    "G6_edges": 3501056,
+    "G6_quads": 1750528,
+    "G7_vertices": 7002114,
+    "source_G6_quads": 1584640,
+    "owned_G6_quads": 165888
+  },
+  "ancestry": {
+    "G6_to_G3_old_corners_exact": true,
+    "G7_to_G6_old_corners_exact": true,
+    "following_and_preceding_edge_birth_ids_exact": true,
+    "face_centre_birth_ids_exact": true,
+    "every_G6_edge_has_two_face_incidents": true
+  },
+  "actual_delta": {
+    "all_controls": {
+      "controls": 7002114,
+      "moved_above_tolerance": 244784,
+      "maximum_delta_norm": 0.013342290639783972,
+      "maximum_absolute_delta_XYZ": [
+        0.008864601528495886,
+        0.00883584938798454,
+        0.013059859978991284
+      ],
+      "norm_quantiles": [
+        0.0,
+        0.0,
+        8.882868333007365e-16,
+        0.00249370669016424,
+        0.013342290639783972
+      ]
+    },
+    "old_V_callback_ineligible_owned_incident": {
+      "controls": 167172,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.9513490972119323e-14,
+      "maximum_absolute_delta_XYZ": [
+        1.5765166949677223e-14,
+        3.3084646133829665e-14,
+        1.9539925233402755e-14
+      ],
+      "norm_quantiles": [
+        0.0,
+        0.0,
+        1.7763568394002505e-15,
+        3.5700187674544474e-15,
+        3.9513490972119323e-14
+      ]
+    },
+    "old_V_SOURCE_attachment_shared_interface": {
+      "controls": 2560,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 5.3579045697976356e-15,
+      "maximum_absolute_delta_XYZ": [
+        4.6074255521944e-15,
+        1.9984014443252818e-15,
+        5.329070518200751e-15
+      ],
+      "norm_quantiles": [
+        0.0,
+        0.0,
+        8.881784197001252e-16,
+        2.357600809509052e-15,
+        5.3579045697976356e-15
+      ]
+    },
+    "old_V_owned_interior_only": {
+      "controls": 164612,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.9513490972119323e-14,
+      "maximum_absolute_delta_XYZ": [
+        1.5765166949677223e-14,
+        3.3084646133829665e-14,
+        1.9539925233402755e-14
+      ],
+      "norm_quantiles": [
+        0.0,
+        0.0,
+        1.7763568394002505e-15,
+        3.5700187674544474e-15,
+        3.9513490972119323e-14
+      ]
+    },
+    "new_E_callback_ineligible_not_two_SOURCE_faces": {
+      "controls": 333056,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.49506954399299e-14,
+      "maximum_absolute_delta_XYZ": [
+        1.4210854715202004e-14,
+        2.842170943040401e-14,
+        1.9539925233402755e-14
+      ],
+      "norm_quantiles": [
+        0.0,
+        1.1102230246251565e-16,
+        1.7763568394002505e-15,
+        3.582082587194985e-15,
+        3.49506954399299e-14
+      ]
+    },
+    "new_E_SOURCE_attachment_shared_interface": {
+      "controls": 2560,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 5.511002163945225e-15,
+      "maximum_absolute_delta_XYZ": [
+        3.9968028886505635e-15,
+        1.5543122344752192e-15,
+        3.552713678800501e-15
+      ],
+      "norm_quantiles": [
+        0.0,
+        2.7755575615628914e-17,
+        9.019494489765868e-16,
+        1.8531093534676033e-15,
+        5.511002163945225e-15
+      ]
+    },
+    "new_E_owned_interior_only": {
+      "controls": 330496,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.49506954399299e-14,
+      "maximum_absolute_delta_XYZ": [
+        1.4210854715202004e-14,
+        2.842170943040401e-14,
+        1.9539925233402755e-14
+      ],
+      "norm_quantiles": [
+        0.0,
+        1.1102230246251565e-16,
+        1.7763568394002505e-15,
+        3.582082587194985e-15,
+        3.49506954399299e-14
+      ]
+    },
+    "new_F_callback_ineligible_owned_face": {
+      "controls": 165888,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.07521757594526e-14,
+      "maximum_absolute_delta_XYZ": [
+        1.354472090042691e-14,
+        2.4646951146678475e-14,
+        1.7763568394002505e-14
+      ],
+      "norm_quantiles": [
+        0.0,
+        2.220446049250313e-16,
+        1.7817696036042146e-15,
+        3.5652682413748e-15,
+        3.07521757594526e-14
+      ]
+    },
+    "material_t0_or_t1_terminals": {
+      "controls": 264194,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 3.554447978966673e-15,
+      "maximum_absolute_delta_XYZ": [
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        3.552713678800501e-15
+      ],
+      "norm_quantiles": [
+        0.0,
+        0.0,
+        1.1102230246251565e-16,
+        1.7772239894833365e-15,
+        3.554447978966673e-15
+      ]
+    },
+    "edge_zero_own_request_nonzero_coupled_halo": {
+      "controls": 2080,
+      "moved_above_tolerance": 2080,
+      "maximum_delta_norm": 5.271375566945777e-05,
+      "maximum_absolute_delta_XYZ": [
+        1.5108311923639484e-05,
+        1.968662342832772e-05,
+        5.2240483873866594e-05
+      ],
+      "norm_quantiles": [
+        1.0366150790560505e-12,
+        2.6055650181164e-10,
+        1.5001111431697466e-05,
+        2.584217376675037e-05,
+        5.271375566945777e-05
+      ]
+    },
+    "edge_zero_own_request_halo_on_protected_owned_incident": {
+      "controls": 0,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 0.0,
+      "maximum_absolute_delta_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm_quantiles": []
+    },
+    "vertex_zero_own_request_nonzero_coupled_halo": {
+      "controls": 1872,
+      "moved_above_tolerance": 1872,
+      "maximum_delta_norm": 2.1202100339755122e-05,
+      "maximum_absolute_delta_XYZ": [
+        6.793757856948801e-06,
+        9.81963860902102e-06,
+        2.1005595804979293e-05
+      ],
+      "norm_quantiles": [
+        1.0270682996711676e-12,
+        7.099984541799821e-10,
+        7.610878165811274e-06,
+        1.3129416089183047e-05,
+        2.1202100339755122e-05
+      ]
+    },
+    "vertex_zero_own_request_halo_on_protected_owned_incident": {
+      "controls": 0,
+      "moved_above_tolerance": 0,
+      "maximum_delta_norm": 0.0,
+      "maximum_absolute_delta_XYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "norm_quantiles": []
+    }
+  },
+  "limitation": "Topological SOURCE/attachment interfaces and caller field eligibility only. This does not certify preservation of every semantic macro crest/valley, volume, silhouette, continuous self-intersection or beauty.",
+  "saved_field_evidence_binding": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\CAUSAL_STAGE_EVIDENCE.json",
+    "sha256": "e4c083668c055b63aad6146df4300b1104e91b7ca095529923cb41cb911dd975",
+    "array_file": "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\CAUSAL_STAGE_EVIDENCE.npz",
+    "array_file_sha256": "03c17f1d1097f739bd8a2f46d7fab886c7a8c6f443d361544799bede157930fa"
+  },
+  "elapsed_seconds": 4.064374700014014,
+  "no_model_generation_or_render": true,
+  "source_files_modified": false
+}

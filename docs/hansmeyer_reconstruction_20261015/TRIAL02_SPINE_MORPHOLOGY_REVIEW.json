@@ -1,0 +1,44 @@
+{
+  "schema": "CHESHIRE_SPINE_READ_ONLY_MORPHOLOGY_REVIEW_V1",
+  "trial": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume",
+  "status": "rejected_no_new_model_or_render",
+  "references": [
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\scratch\\hansmeyer_primary_20261015\\columns_detail.jpg",
+      "sha256": "a69613b7eedb9d57df7baaf838406e10b405da13c4070912558fc584ac9f2dc9"
+    },
+    {
+      "path": "C:\\Users\\USER\\CHESHIRE\\scratch\\hansmeyer_primary_20261015\\sixth_order_detail.jpg",
+      "sha256": "6860ad58cbb11e7d4b2e2b619c7364831e9e2d16b1907310bd4df12157bca4ba"
+    }
+  ],
+  "actual_review_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume\\SPINE_REVIEW\\REVIEW_RECEIPT.json",
+    "sha256": "cf7d9bd76133e679f1f9adebc7935851ab9d2c5bf2b13d0067da1b2276cada16"
+  },
+  "reference_observations": [
+    "Broad facets and deep concave compartments are bounded by interconnected bright ribs or walls. Negative interior space is a major visible component, not only added positive bumps.",
+    "Repeated mid-scale compartments occupy meaningful shoulder width, taper and widen with larger folds, and retain an ordered relation through bends.",
+    "Crests, enclosing walls and interior recesses together create a strong intermediate scale between the main fold and fine geometry.",
+    "Horizontal fabrication layers in the installed-column photo are not treated as generated ornament."
+  ],
+  "actual_observations": [
+    "The preserved broad cloth flow remains strong, but new periodic changes read mainly as shallow shoulder undulations and small angular facets.",
+    "A node does not visibly swell into a broad central mass and contract into a distinctly deeper neck. A deep cell interior with coherent connected boundary walls also does not clearly read.",
+    "Existing local cup and plate junctions remain dominant in the fixed close view; those are not counted as new successful spine nodes."
+  ],
+  "code_interpretation": {
+    "observed_coefficients": {
+      "center_NODE_N": 0.62,
+      "center_NECK_N": 0.48
+    },
+    "inference": "The small .14*H axial center variation is consistent with a nearly continuous-height stem and stronger variation confined to the shoulders: a scalloped ribbon rather than articulated broad compartments. This is a hypothesis for numerical formed/neutral/transfer section comparison, not a derived Hansmeyer recipe."
+  },
+  "next_evidence": "Compare intended cage, causal-CC formed minus neutral, and delivered G7 differential at the same registered node/neck and cross-strip locations, before expanding ridge coverage. Review normal and tangential section together.",
+  "limitations": "Fixed body/front have lower magnification than close. Their weak node reading does not prove absent geometry everywhere. Official photos do not disclose exact subdivision weights, topology, or generation count.",
+  "new_models": 0,
+  "new_renders": 0,
+  "beauty_adoption": false,
+  "package_created": false,
+  "user_images_emitted": false
+}

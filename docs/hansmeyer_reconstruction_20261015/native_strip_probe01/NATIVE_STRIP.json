@@ -1,0 +1,85 @@
+{
+  "kind": "ONE_ACTUAL_NATIVE_STRIP_MEASUREMENT",
+  "date": "2026-10-15",
+  "sources_and_sha256": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\phase_curve_probe01\\PHASE_CURVE_GRAPH.json": "9e5b2bfb78429304169667681c74c733ad8c42e2abacf848d233523aa44d145b",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\phase_curve_probe01\\PHASE_CURVE_GRAPH.npz": "e301c0013be2ec8bbd51b9204505ae0a027ec8fed64889ab930aaa906b40eb3e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\evidence.npz": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\evidence.npz": "59a74daaaa2defe02b071d59530d95f66e38978d8330d0a0a1e057e51ddbba51",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\native_strip_surface.py": "a1e266fdee3405c0a46fad2ab992cc5bd85ed3770f3df30c7a270532b331e701",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\probe_native_strip.py": "6b0a341733952e6cf91c56828041fc5ce9915c08b3b70826485bdd474ac0bd3f"
+  },
+  "source_hashes_verified_after_read": true,
+  "component": {
+    "component": 3,
+    "level_index": 1,
+    "nodes": 13244,
+    "edges": 13244,
+    "status": "CLOSED_REGULAR_LOOP",
+    "physical_arc_length": 38.154054559009865,
+    "endpoints": 0,
+    "source_boundary_endpoints": 0,
+    "nonboundary_endpoints": 0,
+    "branch_nodes": 0,
+    "maximum_degree": 2,
+    "bounds_min": [
+      -1.5650279873787654,
+      -0.5204267510955788,
+      0.1901842692589922
+    ],
+    "bounds_max": [
+      -0.010664836371749366,
+      0.5204267510955787,
+      9.867301261637056
+    ]
+  },
+  "selection": "Longest actual saved regular SOURCE phase component by physical arc, no camera selection.",
+  "curve_samples": "33 uniform physical arc stations on saved native graph; tangent from the exact native contour segment, not coarse sample chords.",
+  "search": "1.35*pi/actual intrinsic phase-gradient norm; one physical safety ceiling .03*incoming full height. No parameter sweep.",
+  "geometry_generated": false,
+  "source_geometry_modified": false,
+  "render_generated": false,
+  "adjacency": {
+    "source_quads": 1584640,
+    "shared_source_quad_edges": 3168000,
+    "source_boundary_quad_edges": 2560,
+    "native_triangle_id": "4*global_quad_id+corner",
+    "crossing": "Intraquad fan spokes directly; quad boundary through exact shared control-edge IDs.",
+    "source_geometry_modified": false
+  },
+  "measurement": {
+    "geometry": "Exact piecewise-flat geodesic across SOURCE native fan; hinge transport across actual shared edges.",
+    "phase": "Saved registered phase is only a candidate-crest and first-order search-spacing hint.",
+    "confirmation": "Local actual outward normal chord-height maximum nearest nominal centre in central half of the same-sheet cross-profile; positive prominence above flanking actual sampled minima.",
+    "thresholds": "Prominence > max(1e-10*input_extent,1e-6*search_half_width); numerical existence, not a beauty threshold.",
+    "shoulders": "Actual sampled minima in the searched interval; can be interval endpoints and are not guaranteed independent anatomical boundaries.",
+    "arc": "Caller curve_s preserves original native contour polyline arc; without it, chord lengths of supplied samples approximate arc. Periodic tangent uses cyclic adjacent samples.",
+    "limitations": "Measured positive crest may include pre-existing macro curvature. Phase origin does not isolate MIDDLE causal contribution. Native faceted normals, finite cross sampling and arbitrary curve orientation remain explicit. Closed-loop frame/arc phase and mirror transport belong to caller. No model formation, XYZ-nearest lookup, collision or beauty certification."
+  },
+  "summary": {
+    "stations": 33,
+    "cross_samples_per_station": 33,
+    "source_covered_rows": 33,
+    "confirmed_actual_positive_crest_rows": 31,
+    "status_counts": {
+      "OK": 1089
+    },
+    "confirmed_width_quantiles": [
+      0.020777673881477866,
+      0.30793896745250476,
+      0.5841505370434471
+    ],
+    "confirmed_prominence_quantiles": [
+      0.004011496371249013,
+      0.07179853259202494,
+      0.17210459809593753
+    ],
+    "surface_build_seconds": 1.926537899998948,
+    "elapsed_seconds": 3.454034600057639
+  },
+  "evidence": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\native_strip_probe01\\NATIVE_STRIP.npz",
+    "sha256": "761f676c07985f42acba62cd07c58fdb77c89ce6ae7499b82ae9a66f05999b7a"
+  }
+}

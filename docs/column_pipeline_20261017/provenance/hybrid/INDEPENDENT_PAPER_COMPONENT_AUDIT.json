@@ -1,0 +1,136 @@
+{
+  "kind": "INDEPENDENT_ACTUAL_PAPER_COMPONENT_AUDIT",
+  "component_operator_passed": true,
+  "whole_application_pending": true,
+  "receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+    "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d"
+  },
+  "stages": [
+    {
+      "iteration": 1,
+      "halfspace_minimum_signed_distance": -7.632783294297951e-17,
+      "reflection_coordinate_maximum_error": 4.440892098500626e-16,
+      "discarded_negative_vertices": 6525,
+      "crossed_original_edges": 518,
+      "actual_Boolean_union_API": "manifold3d.Manifold.__add__",
+      "independently_measured_selected_union_quality": {
+        "vertices": 12610,
+        "faces": 25668,
+        "corners": 3,
+        "edges": 38502,
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_fans": 0,
+        "minimum_fan_area": 3.247518294180198e-11,
+        "euler_characteristic": -224
+      },
+      "source_hashes": {
+        "half": "66ba567272cf4b5b4c233c4324863c181828fb113ae47f6e46d0479e0cb9cf3b",
+        "reflected": "f14375a5cb98b29508ed4a4f932d9c0131acdbcb1aafe9d1a11eafdf57cdfc92",
+        "union": "0c5c5b67f4678a0daecb50f371927a57a98dd40372a44f4d6ecfc4a9fe023b0e"
+      }
+    },
+    {
+      "iteration": 2,
+      "halfspace_minimum_signed_distance": -2.3592239273284576e-16,
+      "reflection_coordinate_maximum_error": 5.551115123125783e-16,
+      "discarded_negative_vertices": 6911,
+      "crossed_original_edges": 539,
+      "actual_Boolean_union_API": "manifold3d.Manifold.__add__",
+      "independently_measured_selected_union_quality": {
+        "vertices": 11667,
+        "faces": 23658,
+        "corners": 3,
+        "edges": 35487,
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_fans": 0,
+        "minimum_fan_area": 1.2268488193075668e-10,
+        "euler_characteristic": -162
+      },
+      "source_hashes": {
+        "half": "4630dde57c820023230f115b8497a8fcf6491a56905b60f52cbb3b100266ce76",
+        "reflected": "d97474173309388e8ee666b9884c1f5de49dac615ef293975fdaa24d95ee5d9c",
+        "union": "526253d0104ec2687d3b2f2bbc24fe414cee2bc897707be3785ba86896e92a95"
+      }
+    },
+    {
+      "iteration": 3,
+      "halfspace_minimum_signed_distance": -2.220446049250313e-16,
+      "reflection_coordinate_maximum_error": 3.3306690738754696e-16,
+      "discarded_negative_vertices": 6322,
+      "crossed_original_edges": 524,
+      "actual_Boolean_union_API": "manifold3d.Manifold.__add__",
+      "independently_measured_selected_union_quality": {
+        "vertices": 10983,
+        "faces": 22338,
+        "corners": 3,
+        "edges": 33507,
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_fans": 0,
+        "minimum_fan_area": 1.0627535876613254e-11,
+        "euler_characteristic": -186
+      },
+      "source_hashes": {
+        "half": "f9171b3422c1560683c82b71b3e6b072c3b05e17d9ef7976acdf20006b926618",
+        "reflected": "26d474b4237404180c9ad96149d7c3c4bae66ff18bce9c10ef44e36805f46374",
+        "union": "8ba41722515a18585bc5ee89ef6c40c20bb6c1f27316a7b8d6ff38ab0d900835"
+      }
+    },
+    {
+      "iteration": 4,
+      "halfspace_minimum_signed_distance": -1.6653345369377348e-16,
+      "reflection_coordinate_maximum_error": 4.440892098500626e-16,
+      "discarded_negative_vertices": 6528,
+      "crossed_original_edges": 421,
+      "actual_Boolean_union_API": "manifold3d.Manifold.__add__",
+      "independently_measured_selected_union_quality": {
+        "vertices": 9408,
+        "faces": 19288,
+        "corners": 3,
+        "edges": 28932,
+        "components": 1,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "degenerate_fans": 0,
+        "minimum_fan_area": 4.746419559546529e-11,
+        "euler_characteristic": -236
+      },
+      "source_hashes": {
+        "half": "8ee68eb501e068e82c857f582b15d2ddbfd284a8eeebe3f79875ff709dc42a6e",
+        "reflected": "93e9703d0869dacb14bb14220c70b12b1ed92473c967a00e2a7e5cf7c7965a0a",
+        "union": "6bf5d1338dd1aa10c7ec0fd15b6a5130ff4beb58ed926354f023f19d4ac0204f"
+      }
+    }
+  ],
+  "actual_CC_backend": {
+    "name": "COMPAS",
+    "version": "2.15.1",
+    "operation": "Mesh.subdivided"
+  },
+  "actual_CC_level": 1,
+  "independent_CC_counts_and_topology_passed": true,
+  "final_quality": {
+    "vertices": 57628,
+    "faces": 57864,
+    "corners": 4,
+    "edges": 115728,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_fans": 0,
+    "minimum_fan_area": 6.371187564870485e-09,
+    "euler_characteristic": -236
+  },
+  "limitations": [
+    "No independent Boolean operator rerun; executed kernel source and hash-bound actual arrays checked.",
+    "Raw marching-cubes seed includes contact singularities; final actual Boolean-selected/CC geometry is independently closed and connected.",
+    "Closed component topology does not yet establish its application to the whole column.",
+    "Component envelope transfer and actual Tissue output need separate final field binding."
+  ]
+}

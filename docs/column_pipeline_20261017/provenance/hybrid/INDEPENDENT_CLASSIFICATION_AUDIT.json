@@ -1,0 +1,86 @@
+{
+  "kind": "INDEPENDENT_NEW_CLASSIFICATION_ARRAY_AUDIT",
+  "new_classification_actually_changed": true,
+  "scope": "SOURCE-body G3 material faces; separate from dominant new G7 display after Tissue/flow overrides.",
+  "source_body_faces": 23736,
+  "dominant_changed_faces": 3212,
+  "dominant_changed_fraction": 0.13532187394674755,
+  "old_to_new_dominant_confusion": [
+    [
+      3624,
+      684,
+      428,
+      0,
+      1200
+    ],
+    [
+      0,
+      4112,
+      12,
+      0,
+      8
+    ],
+    [
+      0,
+      288,
+      6776,
+      0,
+      340
+    ],
+    [
+      0,
+      176,
+      0,
+      2200,
+      0
+    ],
+    [
+      0,
+      48,
+      28,
+      0,
+      3812
+    ]
+  ],
+  "continuous_L1_quantile_positions": [
+    0,
+    0.1,
+    0.5,
+    0.9,
+    1
+  ],
+  "continuous_L1_quantiles": [
+    0.13015262921007992,
+    0.5143961095128045,
+    1.0292693763484855,
+    1.4,
+    1.4000000000000004
+  ],
+  "no_early_L1_quantiles": [
+    0.020033172520684275,
+    0.17736915193130104,
+    0.2978010689376447,
+    0.5117186432081051,
+    0.9999691977744171
+  ],
+  "dominant_changed_by_early_term": 5940,
+  "history_confidence_quantiles": [
+    0.625,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "confidence_is_model_evidence_score_not_class_probability": true,
+  "feature_birth_claimed": false,
+  "normalized_new_weight_max_error": 4.440892098500626e-16,
+  "receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json",
+    "sha256": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241"
+  },
+  "weights": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_WEIGHTS_G3.npz",
+    "sha256": "d38abfc1d1c0a222ef5a68cda030db98ed78731321168d8452e94698a2037a08"
+  },
+  "whole_geometry_application_pending": true
+}

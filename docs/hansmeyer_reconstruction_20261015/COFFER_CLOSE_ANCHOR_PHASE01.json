@@ -1,0 +1,711 @@
+{
+  "kind": "COFFER_EXISTING_CLOSE_ANCHOR_NORMAL_SCREEN_AND_NODE_PHASE_AUDIT",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain",
+  "anchors": [
+    {
+      "label": "prior_visible_source_sample_00",
+      "previous_normalized_image_xy": [
+        0.3,
+        0.25
+      ],
+      "original_G6_hit_xyz": [
+        -0.3799253532457846,
+        0.8398590674369718,
+        6.913935992207538
+      ],
+      "source_phase": 23.53341621061179,
+      "source_G6_quad_id": 710300,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.09099352768304315,
+        0.28574991374996905,
+        0.6232565585669878
+      ],
+      "source_logical_square_uv": [
+        0.3116282792834939,
+        0.40262180696653704
+      ],
+      "candidate_G7_quad_id": 2841200,
+      "candidate_native_triangle_id": 11364803,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.4285001725000619,
+        0.18198705536608628,
+        0.3895127721338518
+      ],
+      "G7_quad_control_ids": [
+        4950203,
+        1162206,
+        2762044,
+        5961886
+      ],
+      "native_face_centre_id": 9843314,
+      "baseline_xyz": [
+        -0.3874894441200748,
+        0.8383219228746842,
+        6.911566293652402
+      ],
+      "candidate_xyz": [
+        -0.38748923218444287,
+        0.8383226244784445,
+        6.911566178151399
+      ],
+      "displacement": [
+        2.1193563193300236e-07,
+        7.016037603113645e-07,
+        -1.1550100253998608e-07
+      ],
+      "displacement_length": 7.419602618426606e-07,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.7623443669944437,
+        -0.6441042024222722,
+        -0.06293522490473503
+      ],
+      "displacement_normal_to_baseline_G7_fan": -6.062047840497741e-07,
+      "displacement_tangential_to_baseline_G7_fan": 4.278092915643561e-07,
+      "frozen_close_displacement_pixels_xy": [
+        -0.0004003013962291423,
+        0.0001386264948644443
+      ],
+      "frozen_close_displacement_pixels_length": 0.00042362543939357866,
+      "source_chart": [
+        0.700968992005675,
+        -0.39486259818645775,
+        0.9157416740817719
+      ],
+      "source_field_memberships": [
+        {
+          "parent_index": 3,
+          "component": 40,
+          "phase_level": 4,
+          "reflection": [
+            -1.0,
+            1.0
+          ],
+          "support_taper": 0.000637504941846046,
+          "parent_arc_fraction": 0.007561660121111185,
+          "parent_arc_s": 0.07589196090272442,
+          "across_u": -0.986479464159473,
+          "along_node_chi": 0.1962451710279215,
+          "node_envelope": 0.4431341997954996,
+          "nominal_height": 0.04817448481025881,
+          "nominal_usable_base_width": 0.26318057745655427,
+          "initial_cage_section_N_over_H": 0.0064898572034529775,
+          "saved_continuous_refined_field_delta": [
+            2.1702237443748136e-09,
+            5.620358593920385e-09,
+            -1.1874046681859135e-09
+          ],
+          "saved_field_normal_to_baseline_G7_fan": -5.1998248562607686e-09,
+          "field_vs_native_interpolated_delta_error": 7.358410294330714e-07
+        }
+      ]
+    },
+    {
+      "label": "prior_visible_source_sample_01",
+      "previous_normalized_image_xy": [
+        0.28,
+        0.4
+      ],
+      "original_G6_hit_xyz": [
+        -0.32012182715660764,
+        0.7925877008837005,
+        6.7118243760788605
+      ],
+      "source_phase": 23.34633439621015,
+      "source_G6_quad_id": 710192,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.35404268675333933,
+        0.4982041891294129,
+        0.14775312411724784
+      ],
+      "source_logical_square_uv": [
+        0.42791924881196325,
+        0.9261234379413761
+      ],
+      "candidate_G7_quad_id": 2840771,
+      "candidate_native_triangle_id": 11363087,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.0035916217411743334,
+        0.7080853735066787,
+        0.288323004752147
+      ],
+      "G7_quad_control_ids": [
+        3856135,
+        1490446,
+        4950212,
+        5961778
+      ],
+      "native_face_centre_id": 9842885,
+      "baseline_xyz": [
+        -0.3182843196979994,
+        0.7891289016992058,
+        6.7119373565463665
+      ],
+      "candidate_xyz": [
+        -0.31826965713686933,
+        0.7891701002504049,
+        6.711927438073729
+      ],
+      "displacement": [
+        1.466256113008546e-05,
+        4.1198551199106426e-05,
+        -9.918472637870934e-06
+      ],
+      "displacement_length": 4.4840689326403986e-05,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.9775865696976577,
+        -0.09353562437595428,
+        -0.18861491383071227
+      ],
+      "displacement_normal_to_baseline_G7_fan": -1.631668318601129e-05,
+      "displacement_tangential_to_baseline_G7_fan": 4.176665259599358e-05,
+      "frozen_close_displacement_pixels_xy": [
+        -0.024852061608137726,
+        0.010226137780390453
+      ],
+      "frozen_close_displacement_pixels_length": 0.026873757833213465,
+      "source_chart": [
+        0.6949400515942787,
+        -0.38812703596640136,
+        0.9202422328715898
+      ],
+      "source_field_memberships": [
+        {
+          "parent_index": 3,
+          "component": 40,
+          "phase_level": 4,
+          "reflection": [
+            -1.0,
+            1.0
+          ],
+          "support_taper": 0.051555524229749086,
+          "parent_arc_fraction": 0.024568877518324254,
+          "parent_arc_s": 0.24658345683097027,
+          "across_u": -0.9578835440948102,
+          "along_node_chi": 0.6489404239056781,
+          "node_envelope": 0.04138005693855743,
+          "nominal_height": 0.050113539154682744,
+          "nominal_usable_base_width": 0.24045371991705472,
+          "initial_cage_section_N_over_H": 0.02021589883449108,
+          "saved_continuous_refined_field_delta": [
+            7.60437419768948e-06,
+            2.0311466805252645e-05,
+            -4.472893454014895e-06
+          ],
+          "saved_field_normal_to_baseline_G7_fan": -8.490125402834437e-06,
+          "field_vs_native_interpolated_delta_error": 2.2709967633095865e-05
+        }
+      ]
+    },
+    {
+      "label": "prior_visible_source_sample_02",
+      "previous_normalized_image_xy": [
+        0.32,
+        0.55
+      ],
+      "original_G6_hit_xyz": [
+        -0.3414048579513269,
+        0.7329764510393489,
+        6.515253648678363
+      ],
+      "source_phase": 21.446811232872548,
+      "source_G6_quad_id": 709596,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.7228088299273219,
+        0.06997601733920174,
+        0.2072151527334764
+      ],
+      "source_logical_square_uv": [
+        0.8963924236332619,
+        0.17358359370593995
+      ],
+      "candidate_G7_quad_id": 2838385,
+      "candidate_native_triangle_id": 11353541,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.44561765985464385,
+        0.13995203467840367,
+        0.4144303054669525
+      ],
+      "G7_quad_control_ids": [
+        2747828,
+        249326,
+        2747827,
+        5961182
+      ],
+      "native_face_centre_id": 9840499,
+      "baseline_xyz": [
+        -0.33791455795292513,
+        0.7307556067092679,
+        6.516556817349546
+      ],
+      "candidate_xyz": [
+        -0.33791455795292513,
+        0.7307556067092679,
+        6.516556817349546
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.7496816731508145,
+        0.5726613782002753,
+        -0.33171725137465585
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.0,
+      "displacement_tangential_to_baseline_G7_fan": 0.0,
+      "frozen_close_displacement_pixels_xy": [
+        0.0,
+        0.0
+      ],
+      "frozen_close_displacement_pixels_length": 0.0,
+      "source_chart": [
+        0.6860849065145145,
+        -0.40348509036780866,
+        0.9099803090005669
+      ],
+      "source_field_memberships": []
+    },
+    {
+      "label": "prior_visible_source_sample_03",
+      "previous_normalized_image_xy": [
+        0.45,
+        0.35
+      ],
+      "original_G6_hit_xyz": [
+        -0.5108574711750762,
+        0.6964648188431412,
+        6.778781533982143
+      ],
+      "source_phase": 19.163403204612038,
+      "source_G6_quad_id": 710251,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.2504562785294557,
+        0.4155161753466092,
+        0.3340275461239351
+      ],
+      "source_logical_square_uv": [
+        0.5825299484085767,
+        0.16701377306196755
+      ],
+      "candidate_G7_quad_id": 2841005,
+      "candidate_native_triangle_id": 11364023,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.16896764930678154,
+        0.5009125570589115,
+        0.330119793634307
+      ],
+      "G7_quad_control_ids": [
+        3240988,
+        372616,
+        3240986,
+        5961837
+      ],
+      "native_face_centre_id": 9843119,
+      "baseline_xyz": [
+        -0.5093525328485304,
+        0.6948203461219644,
+        6.779650149288647
+      ],
+      "candidate_xyz": [
+        -0.5129954870210118,
+        0.6985615388664568,
+        6.777845133551155
+      ],
+      "displacement": [
+        -0.003642954172481394,
+        0.003741192744492361,
+        -0.0018050157374922549
+      ],
+      "displacement_length": 0.00552500860332693,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.11457504682612571,
+        0.9806578282617376,
+        0.15869083941350587
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.0037997821342827002,
+      "displacement_tangential_to_baseline_G7_fan": 0.004010907104237469,
+      "frozen_close_displacement_pixels_xy": [
+        0.7628638918830758,
+        1.887907701962216
+      ],
+      "frozen_close_displacement_pixels_length": 2.0362113860469515,
+      "source_chart": [
+        0.696723316258504,
+        -0.4515348362921282,
+        0.8778744952164867
+      ],
+      "source_field_memberships": [
+        {
+          "parent_index": 2,
+          "component": 25,
+          "phase_level": 3,
+          "reflection": [
+            -1.0,
+            -1.0
+          ],
+          "support_taper": 0.6218110830663331,
+          "parent_arc_fraction": 0.9554098528337461,
+          "parent_arc_s": 10.248271595344665,
+          "across_u": 0.16310250502686294,
+          "along_node_chi": 38.29891908737433,
+          "node_envelope": 0.12160886538624305,
+          "nominal_height": 0.03495516887543137,
+          "nominal_usable_base_width": 0.16083660212469408,
+          "initial_cage_section_N_over_H": 0.1828979565669134,
+          "saved_continuous_refined_field_delta": [
+            -0.0034787047698150576,
+            0.0036024988559093044,
+            -0.0017345016597653804
+          ],
+          "saved_field_normal_to_baseline_G7_fan": 0.0036561419418949526,
+          "field_vs_native_interpolated_delta_error": 0.0002262434444668162
+        }
+      ]
+    },
+    {
+      "label": "prior_visible_source_sample_04",
+      "previous_normalized_image_xy": [
+        0.5,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.5028168709667463,
+        0.5676347264352208,
+        6.569839718575887
+      ],
+      "source_phase": 15.529419997925928,
+      "source_G6_quad_id": 709774,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.059612895234998776,
+        0.45505732000889054,
+        0.48532978475611066
+      ],
+      "source_logical_square_uv": [
+        0.7573351076219447,
+        0.6977222123869459
+      ],
+      "candidate_G7_quad_id": 2839098,
+      "candidate_native_triangle_id": 11356395,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.08988535998221892,
+        0.1192257904699976,
+        0.7908888495477835
+      ],
+      "G7_quad_control_ids": [
+        2838812,
+        1200590,
+        5026971,
+        5961360
+      ],
+      "native_face_centre_id": 9841212,
+      "baseline_xyz": [
+        -0.5034581693107781,
+        0.5688182277022604,
+        6.569636207266042
+      ],
+      "candidate_xyz": [
+        -0.5034581693107781,
+        0.5688182277022604,
+        6.569636207266042
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.4671550972511802,
+        0.8723662537659449,
+        -0.14402511726296713
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.0,
+      "displacement_tangential_to_baseline_G7_fan": 0.0,
+      "frozen_close_displacement_pixels_xy": [
+        0.0,
+        0.0
+      ],
+      "frozen_close_displacement_pixels_length": 0.0,
+      "source_chart": [
+        0.6837517349559755,
+        -0.4876025628825717,
+        0.8537748107904385
+      ],
+      "source_field_memberships": []
+    },
+    {
+      "label": "prior_visible_source_sample_05",
+      "previous_normalized_image_xy": [
+        0.65,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.7281931400391011,
+        0.5723115377944222,
+        6.590724315974393
+      ],
+      "source_phase": 11.295953348709741,
+      "source_G6_quad_id": 705529,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.15464283001041024,
+        0.2648096977555374,
+        0.5805474722340523
+      ],
+      "source_logical_square_uv": [
+        0.29027373611702617,
+        0.4449165661274364
+      ],
+      "candidate_G7_quad_id": 2822116,
+      "candidate_native_triangle_id": 11288467,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.47038060448892516,
+        0.3092856600208205,
+        0.22033373549025437
+      ],
+      "G7_quad_control_ids": [
+        3900595,
+        637402,
+        1950298,
+        5957115
+      ],
+      "native_face_centre_id": 9824230,
+      "baseline_xyz": [
+        -0.7362126112650436,
+        0.5612688881428455,
+        6.5911499903270885
+      ],
+      "candidate_xyz": [
+        -0.7362126112650436,
+        0.5612688881428455,
+        6.5911499903270885
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.7456477247190155,
+        -0.3754374564416279,
+        -0.5505053922733147
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.0,
+      "displacement_tangential_to_baseline_G7_fan": 0.0,
+      "frozen_close_displacement_pixels_xy": [
+        0.0,
+        0.0
+      ],
+      "frozen_close_displacement_pixels_length": 0.0,
+      "source_chart": [
+        0.682581325889406,
+        -0.7182511825988853,
+        0.6904280058113854
+      ],
+      "source_field_memberships": []
+    },
+    {
+      "label": "prior_visible_source_sample_06",
+      "previous_normalized_image_xy": [
+        0.8,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.850971014121054,
+        0.4161329344790168,
+        6.579768032168983
+      ],
+      "source_phase": 6.935124810560172,
+      "source_G6_quad_id": 704450,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.7221143916859911,
+        0.06538349821914294,
+        0.21250211009486594
+      ],
+      "source_logical_square_uv": [
+        0.828365446733424,
+        0.893748944952567
+      ],
+      "candidate_G7_quad_id": 2817802,
+      "candidate_native_triangle_id": 11271209,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.444228783371982,
+        0.13076699643828582,
+        0.42500422018973216
+      ],
+      "G7_quad_control_ids": [
+        2394397,
+        978383,
+        4582556,
+        5956036
+      ],
+      "native_face_centre_id": 9819916,
+      "baseline_xyz": [
+        -0.85969125572158,
+        0.4208873602951695,
+        6.577397679586996
+      ],
+      "candidate_xyz": [
+        -0.8752451334863178,
+        0.4298760882363205,
+        6.573461525566475
+      ],
+      "displacement": [
+        -0.015553877764737822,
+        0.00898872794115102,
+        -0.003936154020521165
+      ],
+      "displacement_length": 0.01839058596112967,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.13367325057201748,
+        0.983237394367316,
+        0.1239987435391243
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.010429112686425253,
+      "displacement_tangential_to_baseline_G7_fan": 0.015147516646881215,
+      "frozen_close_displacement_pixels_xy": [
+        5.961425113882078,
+        4.6849047055544135
+      ],
+      "frozen_close_displacement_pixels_length": 7.582013023501729,
+      "source_chart": [
+        0.6704611754210505,
+        -0.8395625567365261,
+        0.5088727042001233
+      ],
+      "source_field_memberships": [
+        {
+          "parent_index": 0,
+          "component": 2,
+          "phase_level": 1,
+          "reflection": [
+            -1.0,
+            -1.0
+          ],
+          "support_taper": 1.0,
+          "parent_arc_fraction": 0.28767347400339915,
+          "parent_arc_s": 4.762418411956598,
+          "across_u": -0.5029848228382505,
+          "along_node_chi": 16.65124899922927,
+          "node_envelope": 0.043802659830725246,
+          "nominal_height": 0.03660164671293707,
+          "nominal_usable_base_width": 0.1592197321348592,
+          "initial_cage_section_N_over_H": 0.6544920973611513,
+          "saved_continuous_refined_field_delta": [
+            -0.015914962876330565,
+            0.009374686319366204,
+            -0.004077004088091706
+          ],
+          "saved_field_normal_to_baseline_G7_fan": 0.010839403585749398,
+          "field_vs_native_interpolated_delta_error": 0.0005469781248487584
+        }
+      ]
+    },
+    {
+      "label": "prior_visible_source_sample_07",
+      "previous_normalized_image_xy": [
+        0.4,
+        0.7
+      ],
+      "original_G6_hit_xyz": [
+        -0.39381088629915234,
+        0.6291812095787372,
+        6.315259179395778
+      ],
+      "source_phase": 21.35459991607012,
+      "source_G6_quad_id": 709166,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.2705616563210891,
+        0.488277895965699,
+        0.24116044771321193
+      ],
+      "source_logical_square_uv": [
+        0.8794197761433941,
+        0.608858119822305
+      ],
+      "candidate_G7_quad_id": 2836666,
+      "candidate_native_triangle_id": 11346667,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.023444208068601924,
+        0.5411233126421782,
+        0.4354324792892199
+      ],
+      "G7_quad_control_ids": [
+        2761589,
+        1161979,
+        4949749,
+        5960752
+      ],
+      "native_face_centre_id": 9838780,
+      "baseline_xyz": [
+        -0.3921370750006285,
+        0.6257194620006818,
+        6.314699482089531
+      ],
+      "candidate_xyz": [
+        -0.3921370750006285,
+        0.6257194620006818,
+        6.314699482089531
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0,
+      "baseline_G7_native_fan_normal": [
+        -0.28601942918234113,
+        0.9557375605122379,
+        0.06898261778393043
+      ],
+      "displacement_normal_to_baseline_G7_fan": 0.0,
+      "displacement_tangential_to_baseline_G7_fan": 0.0,
+      "frozen_close_displacement_pixels_xy": [
+        0.0,
+        0.0
+      ],
+      "frozen_close_displacement_pixels_length": 0.0,
+      "source_chart": [
+        0.6688744413282408,
+        -0.4745387342215186,
+        0.862503782031192
+      ],
+      "source_field_memberships": []
+    }
+  ],
+  "method": "The already-registered G7 native fan/control IDs provide its actual baseline normal and unchanged source chart. Actual saved candidate−baseline anchor displacement is resolved into normal/tangent and frozen900px orthographic screen basis. Stored certified coffer source fields are queried by exact atlas membership to explain along-node phase; no nearest projection, new measurement or geometry is produced.",
+  "limitations": [
+    "All eight locations were inherited from old G6 ray hits. They are approximate registered source anchors, not new candidate image samples.",
+    "Pixel displacement is geometric projection, without an occlusion test or claim that ornament contrast equals point movement.",
+    "Continuous source-field queries and actual G7 fan interpolation can differ, particularly near support edges. Their difference is explicitly reported; exact equality is not asserted.",
+    "Initial cage N/H explains intended node/neck section; it is not an exact post-subdivision visible pocket-depth measurement.",
+    "Normal direction is the actual accepted G7 native fan normal at the registered anchor, not a smoothed or independently fitted ridge normal.",
+    "No collision, full normal-angle scan or beauty certificate."
+  ]
+}

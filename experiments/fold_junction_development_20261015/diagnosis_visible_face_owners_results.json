@@ -1,0 +1,310 @@
+{
+  "kind": "EXACT_ACTUAL_G6_VISIBLE_FACE_OWNERSHIP_RAYS",
+  "date": "2026-10-15",
+  "camera": {
+    "position": [
+      -18.0,
+      28.0,
+      12.0
+    ],
+    "target": [
+      -0.6,
+      0.72,
+      6.6
+    ],
+    "scale": 1.25,
+    "forward": [
+      0.5304190516471863,
+      -0.831599771976471,
+      -0.16461288928985596
+    ]
+  },
+  "source_bindings": {
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\evidence.npz": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\evidence.npz": "59a74daaaa2defe02b071d59530d95f66e38978d8330d0a0a1e057e51ddbba51",
+    "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED_FLAT\\review\\receipt.json": "d0bbb3d1cfafb14d92660dd1e003cab19a69dfca20e42722c9ec0ccb773cf508"
+  },
+  "source_generation": 6,
+  "control_vertices": 1750530,
+  "control_quads": 1750528,
+  "tested_native_fan_triangles": 7002112,
+  "rays": [
+    {
+      "normalized_image_xy": [
+        0.3,
+        0.25
+      ],
+      "hit_xyz": [
+        -0.3799253532457846,
+        0.8398590674369718,
+        6.913935992207538
+      ],
+      "G6_quad_id": 710300,
+      "native_fan_corner": 3,
+      "global_native_triangle_id": 2841203,
+      "barycentric": [
+        0.09099352768304315,
+        0.28574991374996905,
+        0.6232565585669878
+      ],
+      "G3_face_id": 11098,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 23.53341621061179,
+      "phase_cycle": 4,
+      "material_t": 0.700968992005675,
+      "face_normal": [
+        -0.8666792737258876,
+        0.24070851922135358,
+        -0.43695130766280044
+      ],
+      "camera_depth": 32.76962277590693
+    },
+    {
+      "normalized_image_xy": [
+        0.28,
+        0.4
+      ],
+      "hit_xyz": [
+        -0.32012182715660764,
+        0.7925877008837005,
+        6.7118243760788605
+      ],
+      "G6_quad_id": 710192,
+      "native_fan_corner": 2,
+      "global_native_triangle_id": 2840770,
+      "barycentric": [
+        0.35404268675333933,
+        0.4982041891294129,
+        0.14775312411724784
+      ],
+      "G3_face_id": 11096,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 23.34633439621015,
+      "phase_cycle": 4,
+      "material_t": 0.6949400515942787,
+      "face_normal": [
+        -0.8988971609656533,
+        0.37291269523736403,
+        -0.2300435083602518
+      ],
+      "camera_depth": 32.87392473755032
+    },
+    {
+      "normalized_image_xy": [
+        0.32,
+        0.55
+      ],
+      "hit_xyz": [
+        -0.3414048579513269,
+        0.7329764510393489,
+        6.515253648678363
+      ],
+      "G6_quad_id": 709596,
+      "native_fan_corner": 1,
+      "global_native_triangle_id": 2838385,
+      "barycentric": [
+        0.7228088299273219,
+        0.06997601733920174,
+        0.2072151527334764
+      ],
+      "G3_face_id": 11087,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 21.446811232872548,
+      "phase_cycle": 3,
+      "material_t": 0.6860849065145145,
+      "face_normal": [
+        -0.8048124281358976,
+        0.5093027449610131,
+        -0.30477478487102244
+      ],
+      "camera_depth": 32.94456657627621
+    },
+    {
+      "normalized_image_xy": [
+        0.45,
+        0.35
+      ],
+      "hit_xyz": [
+        -0.5108574711750762,
+        0.6964648188431412,
+        6.778781533982143
+      ],
+      "G6_quad_id": 710251,
+      "native_fan_corner": 0,
+      "global_native_triangle_id": 2841004,
+      "barycentric": [
+        0.2504562785294557,
+        0.4155161753466092,
+        0.3340275461239351
+      ],
+      "G3_face_id": 11097,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 19.163403204612038,
+      "phase_cycle": 3,
+      "material_t": 0.6967233162585039,
+      "face_normal": [
+        0.0012610275989903587,
+        0.9797337110810443,
+        0.20030043729547692
+      ],
+      "camera_depth": 32.84166864749885
+    },
+    {
+      "normalized_image_xy": [
+        0.5,
+        0.5
+      ],
+      "hit_xyz": [
+        -0.5028168709667463,
+        0.5676347264352208,
+        6.569839718575887
+      ],
+      "G6_quad_id": 709774,
+      "native_fan_corner": 1,
+      "global_native_triangle_id": 2839097,
+      "barycentric": [
+        0.059612895234998776,
+        0.45505732000889054,
+        0.48532978475611066
+      ],
+      "G3_face_id": 11090,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 15.529419997925928,
+      "phase_cycle": 2,
+      "material_t": 0.6837517349559754,
+      "face_normal": [
+        -0.47648587690886945,
+        0.8660179536409666,
+        -0.15157213819795018
+      ],
+      "camera_depth": 32.98746311305501
+    },
+    {
+      "normalized_image_xy": [
+        0.65,
+        0.5
+      ],
+      "hit_xyz": [
+        -0.7281931400391011,
+        0.5723115377944222,
+        6.590724315974393
+      ],
+      "G6_quad_id": 705529,
+      "native_fan_corner": 3,
+      "global_native_triangle_id": 2822119,
+      "barycentric": [
+        0.15464283001041024,
+        0.2648096977555374,
+        0.5805474722340523
+      ],
+      "G3_face_id": 11023,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 11.295953348709741,
+      "phase_cycle": 2,
+      "material_t": 0.682581325889406,
+      "face_normal": [
+        -0.6242926000126554,
+        -0.7809151861240178,
+        -0.02074178512879884
+      ],
+      "camera_depth": 32.860592109141734
+    },
+    {
+      "normalized_image_xy": [
+        0.8,
+        0.5
+      ],
+      "hit_xyz": [
+        -0.850971014121054,
+        0.4161329344790168,
+        6.579768032168983
+      ],
+      "G6_quad_id": 704450,
+      "native_fan_corner": 2,
+      "global_native_triangle_id": 2817802,
+      "barycentric": [
+        0.7221143916859911,
+        0.06538349821914294,
+        0.21250211009486594
+      ],
+      "G3_face_id": 11007,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 6.935124810560172,
+      "phase_cycle": 1,
+      "material_t": 0.6704611754210505,
+      "face_normal": [
+        -0.25153569982889457,
+        0.9654926224382009,
+        0.0674817584906758
+      ],
+      "camera_depth": 32.927149998624955
+    },
+    {
+      "normalized_image_xy": [
+        0.4,
+        0.7
+      ],
+      "hit_xyz": [
+        -0.39381088629915234,
+        0.6291812095787372,
+        6.315259179395778
+      ],
+      "G6_quad_id": 709166,
+      "native_fan_corner": 1,
+      "global_native_triangle_id": 2836665,
+      "barycentric": [
+        0.2705616563210891,
+        0.488277895965699,
+        0.24116044771321193
+      ],
+      "G3_face_id": 11080,
+      "event_owner": 0,
+      "face_role": 0,
+      "role_name": "SOURCE",
+      "source_only_operator_eligible": true,
+      "phase": 21.35459991607012,
+      "phase_cycle": 3,
+      "material_t": 0.6688744413282408,
+      "face_normal": [
+        -0.31617494193447276,
+        0.9356853934248431,
+        0.15660859051830256
+      ],
+      "camera_depth": 33.03600716737602
+    }
+  ],
+  "hit_rays": 8,
+  "SOURCE_ray_count": 8,
+  "event_owned_ray_count": 0,
+  "SOURCE_percentage": 100.0,
+  "event_owned_percentage": 0.0,
+  "algorithm": "Every actual G6 quad-centre fan triangle is considered in chunks. Projected AABB culling plus exact 2D barycentric containment and minimum positive orthographic depth. No nearest-point fallback or coarse ancestry sampling.",
+  "ownership": "G6 face index // 64 identifies the actual G3_SIDEWALL ancestor; G3 face_event_ids and face_roles are read unchanged.",
+  "source_surface": "Declared arithmetic quad-centre fan of actual preserved G06_MIDDLE controls. Original intermediate native was not stored; this diagnostic evaluates its declared actual control surface.",
+  "geometry_generated": false,
+  "render_generated": false,
+  "limitation": "Eight authored diagnostic rays, not surface-area percentages or a complete visible-image segmentation. SOURCE eligibility here is face ownership; incident nonSOURCE vertices can still be pinned by the formation operator.",
+  "source_hashes_verified_after_read": true
+}

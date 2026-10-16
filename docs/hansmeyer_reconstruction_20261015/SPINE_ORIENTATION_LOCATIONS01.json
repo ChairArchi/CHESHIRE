@@ -1,0 +1,681 @@
+{
+  "kind": "SPINE_RELATIVE_NORMAL_TURNOVER_SOURCE_AND_CAMERA_CONCENTRATION",
+  "candidate_root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume",
+  "total_turnover_triangles": 31812,
+  "mapped_parent_centroids": 31260,
+  "unmapped_centroids": 552,
+  "changed_baseline_area_sum": 19.200196164659626,
+  "turnover_baseline_area": {
+    "count": 31812,
+    "probabilities": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      0.99,
+      1
+    ],
+    "values": [
+      2.0323017667322281e-10,
+      8.801035505284168e-08,
+      9.418107494352118e-07,
+      4.2266186272318255e-06,
+      1.1793726915559739e-05,
+      4.880641546893378e-05
+    ]
+  },
+  "turnover_candidate_area": {
+    "count": 31812,
+    "probabilities": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      0.99,
+      1
+    ],
+    "values": [
+      6.763025814760773e-10,
+      1.2208615194618876e-07,
+      1.1147059421667374e-06,
+      4.5430172887789175e-06,
+      1.655892317249391e-05,
+      6.339461436587643e-05
+    ]
+  },
+  "turnover_baseline_area_sum": 0.054072066617072215,
+  "turnover_candidate_area_sum": 0.06633434234101113,
+  "turnover_fraction_of_changed_baseline_area": 0.0028162246965267286,
+  "minimum_changed_baseline_area": 2.0323017667322281e-10,
+  "minimum_changed_candidate_area": 6.763025814760773e-10,
+  "source_material_t": {
+    "count": 31812,
+    "probabilities": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      0.99,
+      1
+    ],
+    "values": [
+      0.034016927083333336,
+      0.09868706597222222,
+      0.4210611979166667,
+      0.7244466145833334,
+      0.9498155381944445,
+      0.9511176215277778
+    ]
+  },
+  "projected_inside_existing_close": 1848,
+  "parent_concentration": [
+    {
+      "parent_index": 0,
+      "component": 2,
+      "triangle_count": 20860,
+      "source_arc_fraction": {
+        "count": 20860,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          0.022474625343216165,
+          0.1948539265119677,
+          0.47550331951888863,
+          0.8727501711544349,
+          0.9446370781360964,
+          0.9641883385208592
+        ]
+      },
+      "absolute_across_u": {
+        "count": 20860,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          0.00011991129089821957,
+          0.0586085469637512,
+          0.5445678083550924,
+          0.7480748673353307,
+          0.9300860537034349,
+          0.9967607102844973
+        ]
+      },
+      "arc_decile_counts": [
+        1384,
+        816,
+        1112,
+        2504,
+        7064,
+        748,
+        440,
+        2112,
+        4336,
+        344
+      ],
+      "across_counts": {
+        "stem_abs_u_lt_022": 5376,
+        "crown_022_to_078": 13824,
+        "outer_taper_ge_078": 1660
+      },
+      "node_envelope_counts": {
+        "crown_ge_05": 15552,
+        "neck_le_01": 2188,
+        "transition": 3120
+      },
+      "local_usable_base": {
+        "count": 20860,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          0.007996738461301289,
+          0.06042153931537285,
+          0.11787438109024825,
+          0.2669793684724975,
+          0.2754846551680532,
+          0.34354029536208774
+        ]
+      },
+      "parent_median_usable_base": 0.15615635701391975,
+      "local_base_below_quarter_parent_median": 324,
+      "baseline_area_sum": 0.03502700943905033,
+      "candidate_area_sum": 0.04458778345861152,
+      "projected_inside_existing_close": 778
+    },
+    {
+      "parent_index": 1,
+      "component": 12,
+      "triangle_count": 10400,
+      "source_arc_fraction": {
+        "count": 10400,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          0.039754730272154135,
+          0.04821519663187857,
+          0.3229218981726172,
+          0.8755449362430561,
+          0.9619088594540944,
+          0.9761138662445242
+        ]
+      },
+      "absolute_across_u": {
+        "count": 10400,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          4.3217580541790404e-05,
+          0.07385079641683133,
+          0.5279138317018115,
+          0.8359350182937468,
+          0.9441142176880823,
+          0.9963468420936086
+        ]
+      },
+      "arc_decile_counts": [
+        3116,
+        1472,
+        532,
+        1404,
+        176,
+        260,
+        712,
+        1420,
+        456,
+        852
+      ],
+      "across_counts": {
+        "stem_abs_u_lt_022": 2176,
+        "crown_022_to_078": 6772,
+        "outer_taper_ge_078": 1452
+      },
+      "node_envelope_counts": {
+        "crown_ge_05": 5968,
+        "neck_le_01": 2604,
+        "transition": 1828
+      },
+      "local_usable_base": {
+        "count": 10400,
+        "probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          0.99,
+          1
+        ],
+        "values": [
+          0.003255941858897808,
+          0.05602143056496593,
+          0.15132842907712063,
+          0.244840651975929,
+          0.25333507427391955,
+          0.2661625392624146
+        ]
+      },
+      "parent_median_usable_base": 0.15758816818375526,
+      "local_base_below_quarter_parent_median": 596,
+      "baseline_area_sum": 0.018149181252644947,
+      "candidate_area_sum": 0.020507343196937873,
+      "projected_inside_existing_close": 1008
+    }
+  ],
+  "top_angle_triangles": [
+    {
+      "G7_quad_id": 2045502,
+      "native_fan_corner": 1,
+      "native_triangle_id": 8182009,
+      "angle_degrees": 179.94107090292667,
+      "baseline_area": 1.6996758110099978e-06,
+      "candidate_area": 9.273784699002107e-07,
+      "candidate_centroid": [
+        -0.7325676749788129,
+        0.334623749507015,
+        1.707999541669792
+      ],
+      "frozen_close_normalized_xy": [
+        0.7552047958697806,
+        4.326812456173251
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": -1,
+      "parent_arc_fraction": 0.0,
+      "parent_across_u": 0.0
+    },
+    {
+      "G7_quad_id": 3796030,
+      "native_fan_corner": 1,
+      "native_triangle_id": 15184121,
+      "angle_degrees": 179.94107090292667,
+      "baseline_area": 1.6996758110099978e-06,
+      "candidate_area": 9.273784699002107e-07,
+      "candidate_centroid": [
+        0.7325676749788129,
+        -0.334623749507015,
+        1.707999541669792
+      ],
+      "frozen_close_normalized_xy": [
+        0.0549120250588927,
+        4.148750434464018
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": -1,
+      "parent_arc_fraction": 0.0,
+      "parent_across_u": 0.0
+    },
+    {
+      "G7_quad_id": 5546748,
+      "native_fan_corner": 0,
+      "native_triangle_id": 22186992,
+      "angle_degrees": 179.94107090292047,
+      "baseline_area": 1.699675811009998e-06,
+      "candidate_area": 9.273784699002714e-07,
+      "candidate_centroid": [
+        -0.7325676749788129,
+        -0.334623749507015,
+        1.707999541669792
+      ],
+      "frozen_close_normalized_xy": [
+        1.0431177988581586,
+        4.2525070986361415
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": -1,
+      "parent_arc_fraction": 0.0,
+      "parent_across_u": 0.0
+    },
+    {
+      "G7_quad_id": 295164,
+      "native_fan_corner": 0,
+      "native_triangle_id": 1180656,
+      "angle_degrees": 179.94107090292047,
+      "baseline_area": 1.699675811009998e-06,
+      "candidate_area": 9.273784699002714e-07,
+      "candidate_centroid": [
+        0.7325676749788129,
+        0.334623749507015,
+        1.707999541669792
+      ],
+      "frozen_close_normalized_xy": [
+        -0.23300097792948526,
+        4.223055792001128
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": -1,
+      "parent_arc_fraction": 0.0,
+      "parent_across_u": 0.0
+    },
+    {
+      "G7_quad_id": 5550120,
+      "native_fan_corner": 2,
+      "native_triangle_id": 22200482,
+      "angle_degrees": 179.60149756077666,
+      "baseline_area": 1.1688052984130544e-06,
+      "candidate_area": 1.0364614509032904e-06,
+      "candidate_centroid": [
+        -0.7331290632896801,
+        -0.3212193966073494,
+        1.7072677129591254
+      ],
+      "frozen_close_normalized_xy": [
+        1.0377298372628534,
+        4.254612592194004
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.8491180823376506,
+      "parent_across_u": 0.9912153096594334
+    },
+    {
+      "G7_quad_id": 298536,
+      "native_fan_corner": 2,
+      "native_triangle_id": 1194146,
+      "angle_degrees": 179.60149756077666,
+      "baseline_area": 1.1688052984130544e-06,
+      "candidate_area": 1.0364614509032904e-06,
+      "candidate_centroid": [
+        0.7331290632896801,
+        0.3212193966073494,
+        1.7072677129591254
+      ],
+      "frozen_close_normalized_xy": [
+        -0.22761301633418007,
+        4.2221052509089265
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.8491180823376506,
+      "parent_across_u": 0.9912153096594334
+    },
+    {
+      "G7_quad_id": 2049218,
+      "native_fan_corner": 3,
+      "native_triangle_id": 8196875,
+      "angle_degrees": 179.60149756077575,
+      "baseline_area": 1.1688052984130546e-06,
+      "candidate_area": 1.0364614509032908e-06,
+      "candidate_centroid": [
+        -0.7331290632896801,
+        0.3212193966073494,
+        1.7072677129591254
+      ],
+      "frozen_close_normalized_xy": [
+        0.7613500488240834,
+        4.325941426886484
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.8491180823376506,
+      "parent_across_u": 0.9912153096594334
+    },
+    {
+      "G7_quad_id": 3799746,
+      "native_fan_corner": 3,
+      "native_triangle_id": 15198987,
+      "angle_degrees": 179.60149756077575,
+      "baseline_area": 1.1688052984130546e-06,
+      "candidate_area": 1.0364614509032908e-06,
+      "candidate_centroid": [
+        0.7331290632896801,
+        -0.3212193966073494,
+        1.7072677129591254
+      ],
+      "frozen_close_normalized_xy": [
+        0.048766772104589795,
+        4.150776416216447
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.8491180823376506,
+      "parent_across_u": 0.9912153096594334
+    },
+    {
+      "G7_quad_id": 1398265,
+      "native_fan_corner": 2,
+      "native_triangle_id": 5593062,
+      "angle_degrees": 179.58773756863823,
+      "baseline_area": 4.91000772307217e-09,
+      "candidate_area": 1.1727711164418324e-08,
+      "candidate_centroid": [
+        0.824800443930584,
+        0.2531663120867085,
+        9.504322413413716
+      ],
+      "frozen_close_normalized_xy": [
+        -0.2601668949688698,
+        -1.9444938884142076
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022532257633280373,
+      "parent_across_u": -0.16384310742020985
+    },
+    {
+      "G7_quad_id": 6649849,
+      "native_fan_corner": 2,
+      "native_triangle_id": 26599398,
+      "angle_degrees": 179.58773756863823,
+      "baseline_area": 4.91000772307217e-09,
+      "candidate_area": 1.1727711164418324e-08,
+      "candidate_centroid": [
+        -0.824800443930584,
+        -0.2531663120867085,
+        9.504322413413716
+      ],
+      "frozen_close_normalized_xy": [
+        1.070283715897543,
+        -1.8838911155451337
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022532257633280373,
+      "parent_across_u": -0.16384310742020985
+    },
+    {
+      "G7_quad_id": 4899121,
+      "native_fan_corner": 3,
+      "native_triangle_id": 19596487,
+      "angle_degrees": 179.58773756470057,
+      "baseline_area": 4.9100077229224095e-09,
+      "candidate_area": 1.172771116440711e-08,
+      "candidate_centroid": [
+        0.8248004439305839,
+        -0.2531663120867085,
+        9.504322413413716
+      ],
+      "frozen_close_normalized_xy": [
+        -0.04234053543592475,
+        -2.000711097634021
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022532257633280373,
+      "parent_across_u": -0.16384310742020985
+    },
+    {
+      "G7_quad_id": 3148593,
+      "native_fan_corner": 3,
+      "native_triangle_id": 12594375,
+      "angle_degrees": 179.58773756470057,
+      "baseline_area": 4.9100077229224095e-09,
+      "candidate_area": 1.172771116440711e-08,
+      "candidate_centroid": [
+        -0.8248004439305839,
+        0.2531663120867085,
+        9.504322413413716
+      ],
+      "frozen_close_normalized_xy": [
+        0.8524573563645981,
+        -1.82767390632532
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022532257633280373,
+      "parent_across_u": -0.16384310742020985
+    },
+    {
+      "G7_quad_id": 3809293,
+      "native_fan_corner": 2,
+      "native_triangle_id": 15237174,
+      "angle_degrees": 179.58336908333905,
+      "baseline_area": 2.755465660174616e-06,
+      "candidate_area": 3.623656478276838e-06,
+      "candidate_centroid": [
+        0.8630789239350752,
+        -0.5028271647746565,
+        2.083860527976065
+      ],
+      "frozen_close_normalized_xy": [
+        0.039246478691049524,
+        3.824245808617298
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 1,
+      "parent_arc_fraction": 0.23542732092131194,
+      "parent_across_u": -0.508631718419283
+    },
+    {
+      "G7_quad_id": 2058765,
+      "native_fan_corner": 2,
+      "native_triangle_id": 8235062,
+      "angle_degrees": 179.58336908333905,
+      "baseline_area": 2.755465660174616e-06,
+      "candidate_area": 3.623656478276838e-06,
+      "candidate_centroid": [
+        -0.8630789239350752,
+        0.5028271647746565,
+        2.083860527976065
+      ],
+      "frozen_close_normalized_xy": [
+        0.7708703422376237,
+        4.058143342655631
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 1,
+      "parent_arc_fraction": 0.23542732092131194,
+      "parent_across_u": -0.508631718419283
+    },
+    {
+      "G7_quad_id": 308461,
+      "native_fan_corner": 3,
+      "native_triangle_id": 1233847,
+      "angle_degrees": 179.58336908333814,
+      "baseline_area": 2.755465660174616e-06,
+      "candidate_area": 3.6236564782768375e-06,
+      "candidate_centroid": [
+        0.8630789239350752,
+        0.5028271647746565,
+        2.083860527976065
+      ],
+      "frozen_close_normalized_xy": [
+        -0.39339011452054007,
+        3.935901817232934
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 1,
+      "parent_arc_fraction": 0.23542732092131194,
+      "parent_across_u": -0.508631718419283
+    },
+    {
+      "G7_quad_id": 5560045,
+      "native_fan_corner": 3,
+      "native_triangle_id": 22240183,
+      "angle_degrees": 179.58336908333814,
+      "baseline_area": 2.755465660174616e-06,
+      "candidate_area": 3.6236564782768375e-06,
+      "candidate_centroid": [
+        -0.8630789239350752,
+        -0.5028271647746565,
+        2.083860527976065
+      ],
+      "frozen_close_normalized_xy": [
+        1.2035069354492134,
+        3.9464873340399946
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 1,
+      "parent_arc_fraction": 0.23542732092131194,
+      "parent_across_u": -0.508631718419283
+    },
+    {
+      "G7_quad_id": 3147963,
+      "native_fan_corner": 3,
+      "native_triangle_id": 12591855,
+      "angle_degrees": 179.5597620596858,
+      "baseline_area": 8.388148980031154e-09,
+      "candidate_area": 5.2979314984757634e-08,
+      "candidate_centroid": [
+        -0.8235973244205771,
+        0.27367478623210895,
+        9.502996983924591
+      ],
+      "frozen_close_normalized_xy": [
+        0.8428230460615989,
+        -1.8244362097786304
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022797999691306164,
+      "parent_across_u": -0.4743016063834892
+    },
+    {
+      "G7_quad_id": 4898491,
+      "native_fan_corner": 3,
+      "native_triangle_id": 19593967,
+      "angle_degrees": 179.5597620596858,
+      "baseline_area": 8.388148980031154e-09,
+      "candidate_area": 5.2979314984757634e-08,
+      "candidate_centroid": [
+        0.8235973244205771,
+        -0.27367478623210895,
+        9.502996983924591
+      ],
+      "frozen_close_normalized_xy": [
+        -0.03270622513292554,
+        -2.0018570368689073
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022797999691306164,
+      "parent_across_u": -0.4743016063834892
+    },
+    {
+      "G7_quad_id": 6648947,
+      "native_fan_corner": 2,
+      "native_triangle_id": 26595790,
+      "angle_degrees": 179.55976205968415,
+      "baseline_area": 8.388148980031154e-09,
+      "candidate_area": 5.297931498476172e-08,
+      "candidate_centroid": [
+        -0.8235973244205771,
+        -0.2736747862321089,
+        9.502996983924591
+      ],
+      "frozen_close_normalized_xy": [
+        1.0782950639992768,
+        -1.8852074576946203
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022797999691306185,
+      "parent_across_u": -0.4743016063834896
+    },
+    {
+      "G7_quad_id": 1397363,
+      "native_fan_corner": 2,
+      "native_triangle_id": 5589454,
+      "angle_degrees": 179.55976205968415,
+      "baseline_area": 8.388148980031154e-09,
+      "candidate_area": 5.297931498476172e-08,
+      "candidate_centroid": [
+        0.8235973244205771,
+        0.2736747862321089,
+        9.502996983924591
+      ],
+      "frozen_close_normalized_xy": [
+        -0.26817824307060356,
+        -1.9410857889529174
+      ],
+      "projected_inside_existing_close": false,
+      "parent_index": 0,
+      "parent_arc_fraction": 0.022797999691306185,
+      "parent_across_u": -0.4743016063834896
+    }
+  ],
+  "method": "All exact changed quads, same native arithmetic fan. For dot<=0 centroids, existing G7 source chart is interpolated on the same triangle; already-certified parent atlas exact membership gives along/across. Query symmetry and taper selection match frozen v4. No nearest world coordinates, new ridge measurement, collision test or generated geometry.",
+  "limitations": [
+    "A triangle centroid can lie outside the support even though one of its controls moves; unmapped centroids are retained, not discarded.",
+    "Projected close-frame inclusion does not mean visible; no depth/occlusion test is performed.",
+    "Parent node-envelope and width thresholds only describe concentration; none is an acceptance gate.",
+    "Normal turnover relative to baseline does not prove a self-intersection."
+  ],
+  "elapsed_seconds": 9.238212399999611
+}

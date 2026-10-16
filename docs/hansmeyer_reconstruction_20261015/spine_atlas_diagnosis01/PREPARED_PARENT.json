@@ -1,0 +1,791 @@
+{
+  "array_file": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_atlas_diagnosis01\\PREPARED_PARENT.npz",
+  "array_file_sha256": "429d0a946aefea870889091eb40da08d16549fe9fade9b52e23e79a2c041abde",
+  "tree": {
+    "strip": {
+      "xyz0": {
+        "npz_key": "A000000",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "aa6dfc2e363fbdc490081774280d8fe85124f73561604667db3c3392966c465f"
+      },
+      "chart0": {
+        "npz_key": "A000001",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "f39d3292ea8ad57511037c346a35e07ed350ad04ebc7b47034d18dc9e67e0cba"
+      },
+      "normal": {
+        "npz_key": "A000002",
+        "shape": [
+          241,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "5a4d06c0c0bf4d763e42442fb14d774dea3df27876c854a4ef61696b578ee4c7"
+      },
+      "across": {
+        "npz_key": "A000003",
+        "shape": [
+          241,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "0680f8f681d4617bc69eb51f1258b1e8c6814789f0efb50fe1d31d96ae6bb8d0"
+      },
+      "width": {
+        "npz_key": "A000004",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3654d8692059898dff0d6c4e9ab642575f51aa11d0b5ea377718da79c754cd6a"
+      },
+      "prominence": {
+        "npz_key": "A000005",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3a799761ca8b28395076208c9dfa58aa299cd3dab65d9f5318fe97c9dcbc7475"
+      },
+      "base_width": {
+        "npz_key": "A000006",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "dbc332ade00b065cef0d57cd05af5fd560840460dd513022556668c5093f69c4"
+      },
+      "guides_prepooled": true,
+      "s": {
+        "npz_key": "A000007",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "510b801d0668c3142ceddca3fd74396a9b43fe59a67b099d0451d8ca53cefa2d"
+      }
+    },
+    "info": {
+      "component": 2,
+      "mirror_component_orbit": [
+        2,
+        3
+      ],
+      "phase_level": 1,
+      "periodic": false,
+      "total_length": 16.554944554604035,
+      "preflight_samples": 127,
+      "adequate_rows": 123,
+      "original_curve_nodes": 13244,
+      "retained_body_curve_nodes": 6009,
+      "source_coverage_cut": {
+        "original_arc_interval": [
+          0.13142021217664918,
+          16.690366946434445
+        ],
+        "retained_native_arc_length": 16.554944554604035,
+        "retained_profile_rows": 127
+      },
+      "adequate_fraction": 0.968503937007874,
+      "physical_width_quantiles": [
+        0.12310630290745067,
+        0.20443275387941376,
+        0.2891460294575934,
+        0.4462563096106875,
+        0.5666629677474097
+      ],
+      "prominence_quantiles": [
+        0.010547657806138032,
+        0.02809200055586443,
+        0.06220426078518681,
+        0.09635568063772214,
+        0.1520699898460826
+      ],
+      "raw_confirmed_depth_width_ratio_quantiles": [
+        0.012397607726864716,
+        0.07777428424201538,
+        0.2002897606875732,
+        0.2814651604965833,
+        0.3674744255556059
+      ],
+      "selection_geometry_gate": "At least75% geometrically confirmed source-covered rows with width>.04; no uniform D/W aspect gate. Visibility is separately checked by actual predicted median nodeheight>=.020.",
+      "usable_base_width_quantiles": [
+        0.07297055227964792,
+        0.1280249096293452,
+        0.18236782164845242,
+        0.2794550672740662,
+        0.36833092903581627
+      ],
+      "usable_base_bound": "Full base=min(.65 measured forming-scale parent width,.90/pooled path geodesic curvature); half-base is at most .45 local curvature radius.",
+      "predicted_node_height_median": 0.0378093624570902,
+      "node_count": 60,
+      "recenter": "Actual same-sheet geodesic offset to measured peak, pooled on half node-pitch; source XYZ not globally filtered.",
+      "phase_origin": 0.0,
+      "phase_rule": "Even integer node count on closed curves and canonical mirror reversal origin; final G7 source-ID reflection exact."
+    },
+    "evidence": {
+      "measurement": {
+        "xyz0": {
+          "npz_key": "A000008",
+          "shape": [
+            127,
+            33,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "6ef605b0453194798f7bf5ebea1dcf3fde0e9976f3e87d89225dc1658290b210"
+        },
+        "chart0": {
+          "npz_key": "A000009",
+          "shape": [
+            127,
+            33,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "ff7c0dd719355607758dd2112710a461a9cbe4b952dbe7964eedf6c342a056a0"
+        },
+        "phi": {
+          "npz_key": "A000010",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "float64",
+          "sha256": "68dda3a7eb71c4c3a893c5b59e633726e9c72c4b11834b36d09ff132e0ed0524"
+        },
+        "triangle_ids": {
+          "npz_key": "A000011",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "int64",
+          "sha256": "067307421a72425b2c2745a2ded3c605b35010ca08f57198a64be0804a65103d"
+        },
+        "barycentric": {
+          "npz_key": "A000012",
+          "shape": [
+            127,
+            33,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "c44a90a2a932a56aef9e4a480e4bccca00515240973023255cf04fdff722c2b4"
+        },
+        "valid": {
+          "npz_key": "A000013",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "bool",
+          "sha256": "00653852b16918e743bf1e7ee88285dfb9154a892ad9c387dd459c2c7c172879"
+        },
+        "status": {
+          "npz_key": "A000014",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "<U32",
+          "sha256": "65386fa4fccbf679b41b1c5aecb5f58a7faf7cbad5531c4862251b2a78b7331c"
+        },
+        "s": {
+          "npz_key": "A000015",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "ee2ed67e40e5c9025880dec6c1038b63d44779bdcc1231b0eaac0efe9a2496c0"
+        },
+        "across_distances": {
+          "npz_key": "A000016",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "float64",
+          "sha256": "be3d7c00d8deb8f9f2a081013e95cebafbc2edcacd102cde67ceeca6cca9d11c"
+        },
+        "centre_xyz": {
+          "npz_key": "A000017",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "c26321bd6d6ab277e2c7e10fd82e77cbc4832b59f267829c9f66aec7367617e2"
+        },
+        "centre_chart": {
+          "npz_key": "A000018",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "3e0057500a63745611bed931b07b0d52c6d6970e1722d7507a8874ac1840c1c9"
+        },
+        "centre_phi": {
+          "npz_key": "A000019",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "359989117d0b84c98d5fd28e5a15a2aab2b0ad091dca32c88a684ac4675e134b"
+        },
+        "tangent": {
+          "npz_key": "A000020",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "95d9bcc98c8f6f365df392562d08d650505fb9f0c255441d7d6c6e1cde4fbc5b"
+        },
+        "normal": {
+          "npz_key": "A000021",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "10799fdfaebe08f910783382352c9979523146fae5b574c439da4bf12ddbeff8"
+        },
+        "across": {
+          "npz_key": "A000022",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "969b66fe2f8770427a8f9e49fecf6cf455b7fc3d8686765ac16059e5e8ddf528"
+        },
+        "frame_valid": {
+          "npz_key": "A000023",
+          "shape": [
+            127
+          ],
+          "dtype": "bool",
+          "sha256": "b57444d0764cef85bc7ddc6e606adb6b64d5b9df9f5debc008f39ddc1760ff4b"
+        },
+        "search_half_width": {
+          "npz_key": "A000024",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "4d1370baaa11928dc8ec19d292f3d11231055dacd0c7ac74f335fc83c53f8929"
+        },
+        "unbounded_search_half_width": {
+          "npz_key": "A000025",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "414c22afbc31198a6a6c70e6866dc75479a473fd065d0027fce8eb43e8fb484d"
+        },
+        "intrinsic_phase_gradient_norm": {
+          "npz_key": "A000026",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "2ea395181f5d95249b9643e1f67c81ab2251abb87b940b0d2a5e2d55aa0f4111"
+        },
+        "profile_height": {
+          "npz_key": "A000027",
+          "shape": [
+            127,
+            33
+          ],
+          "dtype": "float64",
+          "sha256": "46a821887fdd722501346a8a00f0ea4274c6f8748d89f3ae22356eb57fe3d509"
+        },
+        "confirmed": {
+          "npz_key": "A000028",
+          "shape": [
+            127
+          ],
+          "dtype": "bool",
+          "sha256": "745eb78684d004d1ae60a6a75b00e3018c5f257edcce329f1d3e6cb52ca7a0f3"
+        },
+        "width": {
+          "npz_key": "A000029",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "c1c2731ca204b6b0313f29a4bc95f810056a10ed1a2fc8d29f6b9a4444d49477"
+        },
+        "depth": {
+          "npz_key": "A000030",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "c6d63418ae3c466b3f6084a7838514134016fe76ff9dfc5df0f970aee6ed138c"
+        },
+        "prominence": {
+          "npz_key": "A000031",
+          "shape": [
+            127
+          ],
+          "dtype": "float64",
+          "sha256": "c6d63418ae3c466b3f6084a7838514134016fe76ff9dfc5df0f970aee6ed138c"
+        },
+        "geometric_peak_index": {
+          "npz_key": "A000032",
+          "shape": [
+            127
+          ],
+          "dtype": "int64",
+          "sha256": "0c3ba8d4e6188e12be2bdd2e2e3867dd9268a90131b9f34ccf2297655ae8330b"
+        },
+        "shoulder_indices": {
+          "npz_key": "A000033",
+          "shape": [
+            127,
+            2
+          ],
+          "dtype": "int64",
+          "sha256": "bd79abdf70d541122c92f6c8096e7b1bb2059f0db73497f845c34dc49c2b9df4"
+        },
+        "ridge_xyz": {
+          "npz_key": "A000034",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "6d9a00c0cb205edef2e958ba5d67a1b174db1bc1b6258c9f443947134ae94d6f"
+        },
+        "ridge_triangle_ids": {
+          "npz_key": "A000035",
+          "shape": [
+            127
+          ],
+          "dtype": "int64",
+          "sha256": "32ae6618c00f8b81b06e9cc8f5deecd92f47089910aea97047671ff1f30948a2"
+        },
+        "ridge_barycentric": {
+          "npz_key": "A000036",
+          "shape": [
+            127,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "4dc01e30ac2e2d194f6b19192a976269ea5d545ca0d16c996f5adc255616abe1"
+        },
+        "metadata": {
+          "geometry": "Exact piecewise-flat geodesic across SOURCE native fan; hinge transport across actual shared edges.",
+          "phase": "Saved registered phase is only a candidate-crest and first-order search-spacing hint.",
+          "confirmation": "Local actual outward normal chord-height maximum nearest nominal centre in central half of the same-sheet cross-profile; positive prominence above flanking actual sampled minima.",
+          "thresholds": "Prominence > max(1e-10*input_extent,1e-6*search_half_width); numerical existence, not a beauty threshold.",
+          "shoulders": "Actual sampled minima in the searched interval; can be interval endpoints and are not guaranteed independent anatomical boundaries.",
+          "arc": "Caller curve_s preserves original native contour polyline arc; without it, chord lengths of supplied samples approximate arc. Periodic tangent uses cyclic adjacent samples.",
+          "limitations": "Measured positive crest may include pre-existing macro curvature. Phase origin does not isolate MIDDLE causal contribution. Native faceted normals, finite cross sampling and arbitrary curve orientation remain explicit. Closed-loop frame/arc phase and mirror transport belong to caller. No model formation, XYZ-nearest lookup, collision or beauty certification."
+        }
+      },
+      "dense_curve": {
+        "xyz": {
+          "npz_key": "A000037",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "946b62dbbcb71f8bb45f52a5c3c96b7d3e606fb57d3997d2db875b4eb4c1c102"
+        },
+        "chart": {
+          "npz_key": "A000038",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "8796a7d895514435e2418235246a5d7e9342d8ca71a0d98bd48135e6f8a732ba"
+        },
+        "phi": {
+          "npz_key": "A000039",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "sha256": "268556ba30ca5a6bcac6af9869e233e68d69c7489390558dadea32df34ac612a"
+        },
+        "normal": {
+          "npz_key": "A000040",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "e6b923d77ab73cb1edd69c6ba446cc89f58bd57af96bda8bc6c1d51a020ba06f"
+        },
+        "gradient": {
+          "npz_key": "A000041",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "2831b30cd60e3b44f0c8589467cdb5f1fde4c1bc39eb4e9af5c68871054f09d6"
+        },
+        "valid": {
+          "npz_key": "A000042",
+          "shape": [
+            241
+          ],
+          "dtype": "bool",
+          "sha256": "b63238a92c83797e6a58aa0901f14c53f4c33e753053fe5c156416c3fc8bd3ce"
+        },
+        "triangle_ids": {
+          "npz_key": "A000043",
+          "shape": [
+            241
+          ],
+          "dtype": "int64",
+          "sha256": "64bee097561d3a6cc25926ae931473fe7bdaccacd908bf8c4292c1fbc1b253d8"
+        },
+        "barycentric": {
+          "npz_key": "A000044",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "bdcee484cdea752d32ed39fd7f1f7dd10a37a694c5e499ff432eea0d1a73d73b"
+        },
+        "s": {
+          "npz_key": "A000045",
+          "shape": [
+            241
+          ],
+          "dtype": "float64",
+          "sha256": "510b801d0668c3142ceddca3fd74396a9b43fe59a67b099d0451d8ca53cefa2d"
+        },
+        "tangent": {
+          "npz_key": "A000046",
+          "shape": [
+            241,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "83f0f2af9ef2ccaae1b089e1de67b3ad034f4d78a000d7fbec8954173e8012d0"
+        },
+        "total_length": 16.55494455460405,
+        "periodic": false
+      },
+      "source_grid_triangle_ids": {
+        "npz_key": "A000047",
+        "shape": [
+          241,
+          9
+        ],
+        "dtype": "int64",
+        "sha256": "ecc97add386ceb5dfe3e4d80c1cb8a793cc5aa26b0074b4f6741d989b2bd652e"
+      },
+      "source_grid_barycentric": {
+        "npz_key": "A000048",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "486cf2ae184a5ec18903f45d970b8a0aa43fd6f679f78ee3b4b6345a2f623260"
+      },
+      "actual_recentered_xyz": {
+        "npz_key": "A000049",
+        "shape": [
+          241,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "527baff093af377165a3ea5eb325d87a0dcde6ceea0a005d71d7964234639a33"
+      },
+      "actual_parent_width": {
+        "npz_key": "A000050",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3654d8692059898dff0d6c4e9ab642575f51aa11d0b5ea377718da79c754cd6a"
+      },
+      "actual_parent_depth": {
+        "npz_key": "A000051",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3a799761ca8b28395076208c9dfa58aa299cd3dab65d9f5318fe97c9dcbc7475"
+      },
+      "usable_base_width": {
+        "npz_key": "A000052",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "dbc332ade00b065cef0d57cd05af5fd560840460dd513022556668c5093f69c4"
+      },
+      "requested_base_width": {
+        "npz_key": "A000053",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "74bf090d999be818d84752a211f557c6500bcbec979c7d716ef641ddfc47f883"
+      },
+      "actual_ridge_triangle_ids": {
+        "npz_key": "A000054",
+        "shape": [
+          241
+        ],
+        "dtype": "int64",
+        "sha256": "4aa5897a9c94e1b991248f4a8b351e0e09291327ae6c5c43ef820f4ce917b46b"
+      },
+      "actual_ridge_barycentric": {
+        "npz_key": "A000055",
+        "shape": [
+          241,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "70d01cbf1bfe60633f2cf9d8148bb64e126d6a219226e1460df625180567871d"
+      }
+    },
+    "formation": {
+      "xyz0": {
+        "npz_key": "A000056",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "aa6dfc2e363fbdc490081774280d8fe85124f73561604667db3c3392966c465f"
+      },
+      "source_chart0": {
+        "npz_key": "A000057",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "f39d3292ea8ad57511037c346a35e07ed350ad04ebc7b47034d18dc9e67e0cba"
+      },
+      "formed_cage": {
+        "npz_key": "A000058",
+        "shape": [
+          241,
+          9,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "4a707536b538cbfa931c4265c4d6c003b5af5d524ed79d90f6884ca2124a194e"
+      },
+      "normal_delta": {
+        "npz_key": "A000059",
+        "shape": [
+          241,
+          9
+        ],
+        "dtype": "float64",
+        "sha256": "8f985f7ea0ff20edc15cb9a01bbde18fa3be60b296b7b11a0ebf9e8ccf78494a"
+      },
+      "across_delta": {
+        "npz_key": "A000060",
+        "shape": [
+          241,
+          9
+        ],
+        "dtype": "float64",
+        "sha256": "c6cc601d1aa247e14b63830bdc22d9916beea6b98ebf27e598ee53321c8aada1"
+      },
+      "parent_width": {
+        "npz_key": "A000061",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3654d8692059898dff0d6c4e9ab642575f51aa11d0b5ea377718da79c754cd6a"
+      },
+      "actual_parent_depth": {
+        "npz_key": "A000062",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3a799761ca8b28395076208c9dfa58aa299cd3dab65d9f5318fe97c9dcbc7475"
+      },
+      "node_height": {
+        "npz_key": "A000063",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "edcee9720f6cda0ecf22da73b0434922930b01260410d7dd4e44ca789dfb024f"
+      },
+      "raw_parent_width": {
+        "npz_key": "A000064",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3654d8692059898dff0d6c4e9ab642575f51aa11d0b5ea377718da79c754cd6a"
+      },
+      "raw_parent_depth": {
+        "npz_key": "A000065",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "3a799761ca8b28395076208c9dfa58aa299cd3dab65d9f5318fe97c9dcbc7475"
+      },
+      "requested_base_width": {
+        "npz_key": "A000066",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "74bf090d999be818d84752a211f557c6500bcbec979c7d716ef641ddfc47f883"
+      },
+      "usable_base_width": {
+        "npz_key": "A000067",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "dbc332ade00b065cef0d57cd05af5fd560840460dd513022556668c5093f69c4"
+      },
+      "logical_chi": {
+        "npz_key": "A000068",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "4572404496882bda79b29492e741dce72c7e09d15b504a164e592b5a6b01b457"
+      },
+      "logical_s": {
+        "npz_key": "A000069",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "510b801d0668c3142ceddca3fd74396a9b43fe59a67b099d0451d8ca53cefa2d"
+      },
+      "node_envelope": {
+        "npz_key": "A000070",
+        "shape": [
+          241
+        ],
+        "dtype": "float64",
+        "sha256": "a7b062439b71d93f338a87231b4c258ab89511ce8a01f8804fe87e64916a3546"
+      },
+      "cell_count": {
+        "npz_key": "A000071",
+        "shape": [],
+        "dtype": "int64",
+        "sha256": "3fe8adee83a670dd3131f667e963775b2256f3f59d5a996984eb47f8375efd7c"
+      },
+      "formed_refined": {
+        "npz_key": "A000072",
+        "shape": [
+          31713,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "6c3039589ed5f06016b8064f10b392ffc4f800548119610f2f85d044fff19d78"
+      },
+      "neutral_refined": {
+        "npz_key": "A000073",
+        "shape": [
+          31713,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "63283a925065e49cff282310794137fa3556fc01d28c5ab29aef4eba39aa7cb3"
+      },
+      "delta_refined": {
+        "npz_key": "A000074",
+        "shape": [
+          31713,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "b2f07a7454106902a236699c15f35c726e2503adb0718792d59f0cb271549011"
+      },
+      "quads_refined": {
+        "npz_key": "A000075",
+        "shape": [
+          30720,
+          4
+        ],
+        "dtype": "int64",
+        "sha256": "7471c43ff1d7082a2bf33b4c2e202c9e7c7aa7870c2d2ae343bdff65353f7994"
+      },
+      "source_chart_refined": {
+        "npz_key": "A000076",
+        "shape": [
+          31713,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "db98488fcf8a5fbebab8234723837f572ccbdd08b6ef42fc31143c4c2c22aa27"
+      },
+      "logical_refined": {
+        "npz_key": "A000077",
+        "shape": [
+          31713,
+          3
+        ],
+        "dtype": "float64",
+        "sha256": "6f912f4127271b9a176021739d9b7eaa7e885547556ed1a4db021e704b094506"
+      },
+      "activity_refined": {
+        "npz_key": "A000078",
+        "shape": [
+          31713
+        ],
+        "dtype": "float64",
+        "sha256": "9cd3928c237fe453286650f8b43850e61195980483c0cc13a18b590212911d92"
+      }
+    },
+    "raw_determinant": {
+      "npz_key": "A000079",
+      "shape": [
+        3840
+      ],
+      "dtype": "float64",
+      "sha256": "5b463b41c8bb0e6e29d34f7f634b69334d89d839f936b518685998bbcd0d9caa"
+    },
+    "refined_determinant": {
+      "npz_key": "A000080",
+      "shape": [
+        61440
+      ],
+      "dtype": "float64",
+      "sha256": "10f7a92aa4b5d2c92a1a0c95c42b3dbc58d3120b2d96e6483091d7829d971a60"
+    },
+    "nominal_vs_actual_tangent_angle": {
+      "npz_key": "A000081",
+      "shape": [
+        241
+      ],
+      "dtype": "float64",
+      "sha256": "c54e2f33bf8df965dc2219ebae91e0706371cdc8ce9ba1e6e146233f9700c180"
+    }
+  }
+}

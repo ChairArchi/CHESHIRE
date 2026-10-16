@@ -1,0 +1,984 @@
+{
+  "kind": "ACTUAL_LOCAL_FORMATION_CAUSAL_DIAGNOSTIC",
+  "input_manifest": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\manifest.json",
+    "sha256": "8b878d633010588a6ad18236f4f741f3b7a356b60dcfc95a451fe4a7e197f6cf",
+    "value": {
+      "schema": "CHESHIRE_LOCAL_FORMATION_DIAGNOSTIC_V1",
+      "meshes": {
+        "NEUTRAL": {
+          "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\NEUTRAL.npz",
+          "geometry_sha256": "3b3727e058368146319cf2d479f421a9c6f787c4d2ee239a8dedeb4d13fd7304",
+          "xyz_sha256": "6b8ec09c93d533db3621ab80556e77239de18c29168087c16ffb2c5801f366f0",
+          "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+          "vertices": 3998,
+          "triangles": 7808,
+          "source_quad_count": 1952
+        },
+        "FORMED": {
+          "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\FORMED.npz",
+          "geometry_sha256": "285b2142c388e5ff9edaa20733247ef987c0ec2e5696678d260fa5ab9c5f62d5",
+          "xyz_sha256": "96f058e06ebc5d83d3e9f0fcb1436086c65a4c92d9b922dde83612c66a3920f4",
+          "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+          "vertices": 3998,
+          "triangles": 7808,
+          "source_quad_count": 1952
+        },
+        "CARRIER": {
+          "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\CARRIER.npz",
+          "geometry_sha256": "397be804ea400acec771f86ea5bf1b45d7f25afb58a500a588758adf8af936c7",
+          "xyz_sha256": "55d9bc462b9e97690e507e490f16031752da012a043925fd0c18133fee44f83a",
+          "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+          "vertices": 25983,
+          "triangles": 51084,
+          "source_quad_count": 12771
+        },
+        "DELIVERED": {
+          "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\DELIVERED.npz",
+          "geometry_sha256": "13b6d6d8b50bcef10214254c0788ea30b6e9e709beeca3e2c71bcfb9b2f02f2f",
+          "xyz_sha256": "ffe5de26810ea384fee132e4dd9d7f038f8bc77eb6bc161001eb976ea2302fdb",
+          "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+          "vertices": 25983,
+          "triangles": 51084,
+          "source_quad_count": 12771
+        }
+      },
+      "frame": {
+        "center": [
+          0.24070178570781026,
+          0.7270913239472829,
+          1.363283493304111
+        ],
+        "normal": [
+          -0.30410464883212185,
+          0.9526008059592057,
+          0.008489231093773298
+        ],
+        "tangent": [
+          0.04841518710214075,
+          0.024354418034753095,
+          -0.99853033603394
+        ],
+        "across": [
+          -0.9513898061310045,
+          -0.3033022960561754,
+          -0.0535271332789411
+        ]
+      },
+      "sources": {
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\RECEIPT.json": "e93973d4b23aada4fb9cf27f986e6061538d5410b4b5ec1d672fcea6dd016b3c",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json": "7aeca7fd3ed45f433472a75d8bb127a77efa26bd14deb1ef0482c997589811fe",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.npz": "c23aa5d598795779a58ae16ecdf204c8f169064377284aa0ff8117cfa560282f",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json": "22979e2967660b5125bff35babaca862b60564b39b418764dd5d2dd5dc71a95f",
+        "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.npz": "bab36f8cd2f5e7c6463a3b0434424ee6a9f40af7cfed555ce3e98439db58f76a"
+      },
+      "component": 40,
+      "selected_cell_interval": [
+        32,
+        35
+      ],
+      "selection": "Three-cell core window nearest parent median nominal height and usable base; no camera or visually attractive-region selection.",
+      "correspondence": "FORMED/NEUTRAL are actual cached local2CC quads reconstructed as arithmetic native fans. CARRIER/DELIVERED are true original G7 native fan subsets with unchanged original control and face IDs, not resampled proxies. Different topology is intentional; same source corridor and world camera.",
+      "visual_success": false
+    }
+  },
+  "source_diagnostic_result": {
+    "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\RESULT.json",
+    "sha256": "de6840f19f2dd04dca47c8b602a9f79a41d78c6530dcadca4ecf67034e6b8fc0"
+  },
+  "conditions": {
+    "resolution": [
+      900,
+      900
+    ],
+    "resolution_percentage": 100,
+    "samples": 32,
+    "engine": "CYCLES",
+    "denoising": true,
+    "view_transform": "AgX",
+    "camera": {
+      "position": [
+        -1.7731685638427734,
+        4.043185710906982,
+        0.7807275652885437
+      ],
+      "target": [
+        0.24070178570781026,
+        0.7270913239472829,
+        1.363283493304111
+      ],
+      "rotation_quaternion": [
+        0.6329225301742554,
+        -0.7239001989364624,
+        -0.22408364713191986,
+        0.15863220393657684
+      ],
+      "ortho_scale": 0.9808008670806885,
+      "clip_start": 0.000980800949037075,
+      "clip_end": 98.08008575439453,
+      "right": [
+        0.8492446912022367,
+        0.525232152775384,
+        0.05398740738129031
+      ],
+      "up": [
+        0.12362458938846249,
+        -0.09839124466109642,
+        -0.9874391747710713
+      ],
+      "back": [
+        -0.5133229152914875,
+        0.8452516481291095,
+        -0.1484898514096916
+      ]
+    },
+    "lights": [
+      {
+        "name": "LocalKey",
+        "position": [
+          1.3546432256698608,
+          4.196536064147949,
+          -1.444818139076233
+        ],
+        "rotation": [
+          -0.9142197370529175,
+          -3.1415927410125732,
+          -0.3106749653816223
+        ],
+        "power": 125.05615234375,
+        "size": 0.8827208280563354
+      },
+      {
+        "name": "LocalFill",
+        "position": [
+          -3.1457574367523193,
+          1.7082182168960571,
+          1.0265672206878662
+        ],
+        "rotation": [
+          1.6660102605819702,
+          -9.424054780993174e-08,
+          -1.8527958393096924
+        ],
+        "power": 33.66896438598633,
+        "size": 1.275041103363037
+      },
+      {
+        "name": "LocalRim",
+        "position": [
+          2.5002219676971436,
+          0.4354025721549988,
+          -0.49876368045806885
+        ],
+        "rotation": [
+          2.2560019493103027,
+          4.264613906457271e-08,
+          1.442413091659546
+        ],
+        "power": 67.33792877197266,
+        "size": 0.6865606307983398
+      }
+    ],
+    "material": {
+      "name": "Untextured mineral",
+      "base_color": [
+        0.5,
+        0.4699999988079071,
+        0.4099999964237213,
+        1.0
+      ],
+      "roughness": 0.8399999737739563
+    },
+    "world": {
+      "color": [
+        0.054999999701976776,
+        0.06300000101327896,
+        0.07500000298023224,
+        1.0
+      ],
+      "strength": 0.4000000059604645
+    },
+    "all_flat": true,
+    "normal_maps": false,
+    "modifiers": []
+  },
+  "stages": {
+    "NEUTRAL": {
+      "saved_geometry": {
+        "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\NEUTRAL.npz",
+        "geometry_sha256": "3b3727e058368146319cf2d479f421a9c6f787c4d2ee239a8dedeb4d13fd7304",
+        "xyz_sha256": "6b8ec09c93d533db3621ab80556e77239de18c29168087c16ffb2c5801f366f0",
+        "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+        "vertices": 3998,
+        "triangles": 7808,
+        "source_quad_count": 1952
+      },
+      "geometry_counts": {
+        "vertices": 3998,
+        "triangles": 7808,
+        "source_arrays": {
+          "xyz_sha256": "6b8ec09c93d533db3621ab80556e77239de18c29168087c16ffb2c5801f366f0",
+          "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "0b894da94c4173d4f84a7749dd5f81d66d22ff632db0eadd3e4dcda177e08c2c",
+          "triangle_indices_int32_sha256": "51e82fad7a2292cb18b6427c76bf899c1ada417350b114f3a259953f425b13c5"
+        }
+      },
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "0b894da94c4173d4f84a7749dd5f81d66d22ff632db0eadd3e4dcda177e08c2c",
+          "triangle_indices_int32_sha256": "51e82fad7a2292cb18b6427c76bf899c1ada417350b114f3a259953f425b13c5"
+        },
+        "smooth_polygons": 0,
+        "polygons": 7808,
+        "use_smooth_flags_sha256": "b77ee6575e6146ffb43f6385dfdb4acc38595647eedb2ee8783631913b116761",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "loading": {
+        "source_load_and_verification_seconds": 0.005424799979664385,
+        "Blender_array_construction_seconds": 0.007577299955300987,
+        "seconds": 0.01300239993724972,
+        "Blender_edges": 0,
+        "edge_graph_omitted": true,
+        "Mesh_update_called": false,
+        "material_recipe_unchanged": true,
+        "material_recipe_executed_on_zero_polygon_template": true,
+        "supported_scope": "Exact saved all-flat native triangles, no modifiers or smooth normals."
+      },
+      "image": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\NEUTRAL.png",
+        "sha256": "9e1bb0624fe5b56ccd995ea64d4f4794735546c45140723b3b31ad5a46107964"
+      },
+      "conditions": {
+        "resolution": [
+          900,
+          900
+        ],
+        "resolution_percentage": 100,
+        "samples": 32,
+        "engine": "CYCLES",
+        "denoising": true,
+        "view_transform": "AgX",
+        "camera": {
+          "position": [
+            -1.7731685638427734,
+            4.043185710906982,
+            0.7807275652885437
+          ],
+          "target": [
+            0.24070178570781026,
+            0.7270913239472829,
+            1.363283493304111
+          ],
+          "rotation_quaternion": [
+            0.6329225301742554,
+            -0.7239001989364624,
+            -0.22408364713191986,
+            0.15863220393657684
+          ],
+          "ortho_scale": 0.9808008670806885,
+          "clip_start": 0.000980800949037075,
+          "clip_end": 98.08008575439453,
+          "right": [
+            0.8492446912022367,
+            0.525232152775384,
+            0.05398740738129031
+          ],
+          "up": [
+            0.12362458938846249,
+            -0.09839124466109642,
+            -0.9874391747710713
+          ],
+          "back": [
+            -0.5133229152914875,
+            0.8452516481291095,
+            -0.1484898514096916
+          ]
+        },
+        "lights": [
+          {
+            "name": "LocalKey",
+            "position": [
+              1.3546432256698608,
+              4.196536064147949,
+              -1.444818139076233
+            ],
+            "rotation": [
+              -0.9142197370529175,
+              -3.1415927410125732,
+              -0.3106749653816223
+            ],
+            "power": 125.05615234375,
+            "size": 0.8827208280563354
+          },
+          {
+            "name": "LocalFill",
+            "position": [
+              -3.1457574367523193,
+              1.7082182168960571,
+              1.0265672206878662
+            ],
+            "rotation": [
+              1.6660102605819702,
+              -9.424054780993174e-08,
+              -1.8527958393096924
+            ],
+            "power": 33.66896438598633,
+            "size": 1.275041103363037
+          },
+          {
+            "name": "LocalRim",
+            "position": [
+              2.5002219676971436,
+              0.4354025721549988,
+              -0.49876368045806885
+            ],
+            "rotation": [
+              2.2560019493103027,
+              4.264613906457271e-08,
+              1.442413091659546
+            ],
+            "power": 67.33792877197266,
+            "size": 0.6865606307983398
+          }
+        ],
+        "material": {
+          "name": "Untextured mineral",
+          "base_color": [
+            0.5,
+            0.4699999988079071,
+            0.4099999964237213,
+            1.0
+          ],
+          "roughness": 0.8399999737739563
+        },
+        "world": {
+          "color": [
+            0.054999999701976776,
+            0.06300000101327896,
+            0.07500000298023224,
+            1.0
+          ],
+          "strength": 0.4000000059604645
+        },
+        "all_flat": true,
+        "normal_maps": false,
+        "modifiers": []
+      }
+    },
+    "FORMED": {
+      "saved_geometry": {
+        "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\FORMED.npz",
+        "geometry_sha256": "285b2142c388e5ff9edaa20733247ef987c0ec2e5696678d260fa5ab9c5f62d5",
+        "xyz_sha256": "96f058e06ebc5d83d3e9f0fcb1436086c65a4c92d9b922dde83612c66a3920f4",
+        "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+        "vertices": 3998,
+        "triangles": 7808,
+        "source_quad_count": 1952
+      },
+      "geometry_counts": {
+        "vertices": 3998,
+        "triangles": 7808,
+        "source_arrays": {
+          "xyz_sha256": "96f058e06ebc5d83d3e9f0fcb1436086c65a4c92d9b922dde83612c66a3920f4",
+          "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "f0cc1a36e8c907d4a4f198cd8f8f2dfbecae05a24c1a709a216376b9a3471f0f",
+          "triangle_indices_int32_sha256": "51e82fad7a2292cb18b6427c76bf899c1ada417350b114f3a259953f425b13c5"
+        }
+      },
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "f0cc1a36e8c907d4a4f198cd8f8f2dfbecae05a24c1a709a216376b9a3471f0f",
+          "triangle_indices_int32_sha256": "51e82fad7a2292cb18b6427c76bf899c1ada417350b114f3a259953f425b13c5"
+        },
+        "smooth_polygons": 0,
+        "polygons": 7808,
+        "use_smooth_flags_sha256": "b77ee6575e6146ffb43f6385dfdb4acc38595647eedb2ee8783631913b116761",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "loading": {
+        "source_load_and_verification_seconds": 0.005439399974420667,
+        "Blender_array_construction_seconds": 0.007496500038541853,
+        "seconds": 0.012936499901115894,
+        "Blender_edges": 0,
+        "edge_graph_omitted": true,
+        "Mesh_update_called": false,
+        "material_recipe_unchanged": true,
+        "material_recipe_executed_on_zero_polygon_template": true,
+        "supported_scope": "Exact saved all-flat native triangles, no modifiers or smooth normals."
+      },
+      "image": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\FORMED.png",
+        "sha256": "e7ef61f0c21d15364888c30d5ea51c81247f3ba163e06568967ea80332dcd299"
+      },
+      "conditions": {
+        "resolution": [
+          900,
+          900
+        ],
+        "resolution_percentage": 100,
+        "samples": 32,
+        "engine": "CYCLES",
+        "denoising": true,
+        "view_transform": "AgX",
+        "camera": {
+          "position": [
+            -1.7731685638427734,
+            4.043185710906982,
+            0.7807275652885437
+          ],
+          "target": [
+            0.24070178570781026,
+            0.7270913239472829,
+            1.363283493304111
+          ],
+          "rotation_quaternion": [
+            0.6329225301742554,
+            -0.7239001989364624,
+            -0.22408364713191986,
+            0.15863220393657684
+          ],
+          "ortho_scale": 0.9808008670806885,
+          "clip_start": 0.000980800949037075,
+          "clip_end": 98.08008575439453,
+          "right": [
+            0.8492446912022367,
+            0.525232152775384,
+            0.05398740738129031
+          ],
+          "up": [
+            0.12362458938846249,
+            -0.09839124466109642,
+            -0.9874391747710713
+          ],
+          "back": [
+            -0.5133229152914875,
+            0.8452516481291095,
+            -0.1484898514096916
+          ]
+        },
+        "lights": [
+          {
+            "name": "LocalKey",
+            "position": [
+              1.3546432256698608,
+              4.196536064147949,
+              -1.444818139076233
+            ],
+            "rotation": [
+              -0.9142197370529175,
+              -3.1415927410125732,
+              -0.3106749653816223
+            ],
+            "power": 125.05615234375,
+            "size": 0.8827208280563354
+          },
+          {
+            "name": "LocalFill",
+            "position": [
+              -3.1457574367523193,
+              1.7082182168960571,
+              1.0265672206878662
+            ],
+            "rotation": [
+              1.6660102605819702,
+              -9.424054780993174e-08,
+              -1.8527958393096924
+            ],
+            "power": 33.66896438598633,
+            "size": 1.275041103363037
+          },
+          {
+            "name": "LocalRim",
+            "position": [
+              2.5002219676971436,
+              0.4354025721549988,
+              -0.49876368045806885
+            ],
+            "rotation": [
+              2.2560019493103027,
+              4.264613906457271e-08,
+              1.442413091659546
+            ],
+            "power": 67.33792877197266,
+            "size": 0.6865606307983398
+          }
+        ],
+        "material": {
+          "name": "Untextured mineral",
+          "base_color": [
+            0.5,
+            0.4699999988079071,
+            0.4099999964237213,
+            1.0
+          ],
+          "roughness": 0.8399999737739563
+        },
+        "world": {
+          "color": [
+            0.054999999701976776,
+            0.06300000101327896,
+            0.07500000298023224,
+            1.0
+          ],
+          "strength": 0.4000000059604645
+        },
+        "all_flat": true,
+        "normal_maps": false,
+        "modifiers": []
+      }
+    },
+    "CARRIER": {
+      "saved_geometry": {
+        "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\CARRIER.npz",
+        "geometry_sha256": "397be804ea400acec771f86ea5bf1b45d7f25afb58a500a588758adf8af936c7",
+        "xyz_sha256": "55d9bc462b9e97690e507e490f16031752da012a043925fd0c18133fee44f83a",
+        "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+        "vertices": 25983,
+        "triangles": 51084,
+        "source_quad_count": 12771
+      },
+      "geometry_counts": {
+        "vertices": 25983,
+        "triangles": 51084,
+        "source_arrays": {
+          "xyz_sha256": "55d9bc462b9e97690e507e490f16031752da012a043925fd0c18133fee44f83a",
+          "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "2603787746f9dad7decae2a1571f21f40625c9216044d7226cc970be8f2d8387",
+          "triangle_indices_int32_sha256": "9d8fa4f82256cf8ec43cdcb8fc57d8f616219f5e364098ee774f8610dad64ec9"
+        }
+      },
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "2603787746f9dad7decae2a1571f21f40625c9216044d7226cc970be8f2d8387",
+          "triangle_indices_int32_sha256": "9d8fa4f82256cf8ec43cdcb8fc57d8f616219f5e364098ee774f8610dad64ec9"
+        },
+        "smooth_polygons": 0,
+        "polygons": 51084,
+        "use_smooth_flags_sha256": "101bdf4575967aebbc8736a98f17679f7bb657777eb26dc1c3e0002ff3b0e7fa",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "loading": {
+        "source_load_and_verification_seconds": 0.027635300066322088,
+        "Blender_array_construction_seconds": 0.05192400002852082,
+        "seconds": 0.0795599000994116,
+        "Blender_edges": 0,
+        "edge_graph_omitted": true,
+        "Mesh_update_called": false,
+        "material_recipe_unchanged": true,
+        "material_recipe_executed_on_zero_polygon_template": true,
+        "supported_scope": "Exact saved all-flat native triangles, no modifiers or smooth normals."
+      },
+      "image": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\CARRIER.png",
+        "sha256": "69719510be180b401daba961525de595486a3b6a239ecff78eaae43d02904f54"
+      },
+      "conditions": {
+        "resolution": [
+          900,
+          900
+        ],
+        "resolution_percentage": 100,
+        "samples": 32,
+        "engine": "CYCLES",
+        "denoising": true,
+        "view_transform": "AgX",
+        "camera": {
+          "position": [
+            -1.7731685638427734,
+            4.043185710906982,
+            0.7807275652885437
+          ],
+          "target": [
+            0.24070178570781026,
+            0.7270913239472829,
+            1.363283493304111
+          ],
+          "rotation_quaternion": [
+            0.6329225301742554,
+            -0.7239001989364624,
+            -0.22408364713191986,
+            0.15863220393657684
+          ],
+          "ortho_scale": 0.9808008670806885,
+          "clip_start": 0.000980800949037075,
+          "clip_end": 98.08008575439453,
+          "right": [
+            0.8492446912022367,
+            0.525232152775384,
+            0.05398740738129031
+          ],
+          "up": [
+            0.12362458938846249,
+            -0.09839124466109642,
+            -0.9874391747710713
+          ],
+          "back": [
+            -0.5133229152914875,
+            0.8452516481291095,
+            -0.1484898514096916
+          ]
+        },
+        "lights": [
+          {
+            "name": "LocalKey",
+            "position": [
+              1.3546432256698608,
+              4.196536064147949,
+              -1.444818139076233
+            ],
+            "rotation": [
+              -0.9142197370529175,
+              -3.1415927410125732,
+              -0.3106749653816223
+            ],
+            "power": 125.05615234375,
+            "size": 0.8827208280563354
+          },
+          {
+            "name": "LocalFill",
+            "position": [
+              -3.1457574367523193,
+              1.7082182168960571,
+              1.0265672206878662
+            ],
+            "rotation": [
+              1.6660102605819702,
+              -9.424054780993174e-08,
+              -1.8527958393096924
+            ],
+            "power": 33.66896438598633,
+            "size": 1.275041103363037
+          },
+          {
+            "name": "LocalRim",
+            "position": [
+              2.5002219676971436,
+              0.4354025721549988,
+              -0.49876368045806885
+            ],
+            "rotation": [
+              2.2560019493103027,
+              4.264613906457271e-08,
+              1.442413091659546
+            ],
+            "power": 67.33792877197266,
+            "size": 0.6865606307983398
+          }
+        ],
+        "material": {
+          "name": "Untextured mineral",
+          "base_color": [
+            0.5,
+            0.4699999988079071,
+            0.4099999964237213,
+            1.0
+          ],
+          "roughness": 0.8399999737739563
+        },
+        "world": {
+          "color": [
+            0.054999999701976776,
+            0.06300000101327896,
+            0.07500000298023224,
+            1.0
+          ],
+          "strength": 0.4000000059604645
+        },
+        "all_flat": true,
+        "normal_maps": false,
+        "modifiers": []
+      }
+    },
+    "DELIVERED": {
+      "saved_geometry": {
+        "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\DELIVERED.npz",
+        "geometry_sha256": "13b6d6d8b50bcef10214254c0788ea30b6e9e709beeca3e2c71bcfb9b2f02f2f",
+        "xyz_sha256": "ffe5de26810ea384fee132e4dd9d7f038f8bc77eb6bc161001eb976ea2302fdb",
+        "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+        "vertices": 25983,
+        "triangles": 51084,
+        "source_quad_count": 12771
+      },
+      "geometry_counts": {
+        "vertices": 25983,
+        "triangles": 51084,
+        "source_arrays": {
+          "xyz_sha256": "ffe5de26810ea384fee132e4dd9d7f038f8bc77eb6bc161001eb976ea2302fdb",
+          "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c"
+        },
+        "expected_display_arrays": {
+          "xyz_float32_sha256": "9f396a28d1d42a3fb176f8d99caa0a69554e5fb9f51a5211752a20b657228cc0",
+          "triangle_indices_int32_sha256": "9d8fa4f82256cf8ec43cdcb8fc57d8f616219f5e364098ee774f8610dad64ec9"
+        }
+      },
+      "display_readback": {
+        "geometry": {
+          "xyz_float32_sha256": "9f396a28d1d42a3fb176f8d99caa0a69554e5fb9f51a5211752a20b657228cc0",
+          "triangle_indices_int32_sha256": "9d8fa4f82256cf8ec43cdcb8fc57d8f616219f5e364098ee774f8610dad64ec9"
+        },
+        "smooth_polygons": 0,
+        "polygons": 51084,
+        "use_smooth_flags_sha256": "101bdf4575967aebbc8736a98f17679f7bb657777eb26dc1c3e0002ff3b0e7fa",
+        "all_use_smooth": false,
+        "geometry_unchanged": true,
+        "modifiers": [],
+        "custom_normal_map": false
+      },
+      "loading": {
+        "source_load_and_verification_seconds": 0.02595929999370128,
+        "Blender_array_construction_seconds": 0.04534890002105385,
+        "seconds": 0.07130920002236962,
+        "Blender_edges": 0,
+        "edge_graph_omitted": true,
+        "Mesh_update_called": false,
+        "material_recipe_unchanged": true,
+        "material_recipe_executed_on_zero_polygon_template": true,
+        "supported_scope": "Exact saved all-flat native triangles, no modifiers or smooth normals."
+      },
+      "image": {
+        "path": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\DELIVERED.png",
+        "sha256": "9ff0bed777749f7726952068064b5db935466047a1367bee8a810de558968415"
+      },
+      "conditions": {
+        "resolution": [
+          900,
+          900
+        ],
+        "resolution_percentage": 100,
+        "samples": 32,
+        "engine": "CYCLES",
+        "denoising": true,
+        "view_transform": "AgX",
+        "camera": {
+          "position": [
+            -1.7731685638427734,
+            4.043185710906982,
+            0.7807275652885437
+          ],
+          "target": [
+            0.24070178570781026,
+            0.7270913239472829,
+            1.363283493304111
+          ],
+          "rotation_quaternion": [
+            0.6329225301742554,
+            -0.7239001989364624,
+            -0.22408364713191986,
+            0.15863220393657684
+          ],
+          "ortho_scale": 0.9808008670806885,
+          "clip_start": 0.000980800949037075,
+          "clip_end": 98.08008575439453,
+          "right": [
+            0.8492446912022367,
+            0.525232152775384,
+            0.05398740738129031
+          ],
+          "up": [
+            0.12362458938846249,
+            -0.09839124466109642,
+            -0.9874391747710713
+          ],
+          "back": [
+            -0.5133229152914875,
+            0.8452516481291095,
+            -0.1484898514096916
+          ]
+        },
+        "lights": [
+          {
+            "name": "LocalKey",
+            "position": [
+              1.3546432256698608,
+              4.196536064147949,
+              -1.444818139076233
+            ],
+            "rotation": [
+              -0.9142197370529175,
+              -3.1415927410125732,
+              -0.3106749653816223
+            ],
+            "power": 125.05615234375,
+            "size": 0.8827208280563354
+          },
+          {
+            "name": "LocalFill",
+            "position": [
+              -3.1457574367523193,
+              1.7082182168960571,
+              1.0265672206878662
+            ],
+            "rotation": [
+              1.6660102605819702,
+              -9.424054780993174e-08,
+              -1.8527958393096924
+            ],
+            "power": 33.66896438598633,
+            "size": 1.275041103363037
+          },
+          {
+            "name": "LocalRim",
+            "position": [
+              2.5002219676971436,
+              0.4354025721549988,
+              -0.49876368045806885
+            ],
+            "rotation": [
+              2.2560019493103027,
+              4.264613906457271e-08,
+              1.442413091659546
+            ],
+            "power": 67.33792877197266,
+            "size": 0.6865606307983398
+          }
+        ],
+        "material": {
+          "name": "Untextured mineral",
+          "base_color": [
+            0.5,
+            0.4699999988079071,
+            0.4099999964237213,
+            1.0
+          ],
+          "roughness": 0.8399999737739563
+        },
+        "world": {
+          "color": [
+            0.054999999701976776,
+            0.06300000101327896,
+            0.07500000298023224,
+            1.0
+          ],
+          "strength": 0.4000000059604645
+        },
+        "all_flat": true,
+        "normal_maps": false,
+        "modifiers": []
+      }
+    }
+  },
+  "source_snapshots": {
+    "render_local_formation_diagnostic.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\render_local_formation_diagnostic.py",
+      "snapshot": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\source_snapshot\\render_local_formation_diagnostic.py",
+      "sha256": "480aa10f8bf3ceb048ccc0eda016494b9df25fc03c5312891d766ed883a86b30"
+    },
+    "fast_render.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\fast_render.py",
+      "snapshot": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\source_snapshot\\fast_render.py",
+      "sha256": "45a48c67b5f260f83d74e1b481ac1e3d37dfbc9441a25e3185a8b9621b3c2247"
+    },
+    "render.py": {
+      "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\render.py",
+      "snapshot": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\source_snapshot\\render.py",
+      "sha256": "e3b09479583ecddef2501659b09a5a0fe3cedf7f519e9643c019e4b29304865f"
+    }
+  },
+  "code_sha256": {
+    "fast_renderer": "45a48c67b5f260f83d74e1b481ac1e3d37dfbc9441a25e3185a8b9621b3c2247",
+    "preserved_matched_renderer": {
+      "renderer": "e3b09479583ecddef2501659b09a5a0fe3cedf7f519e9643c019e4b29304865f",
+      "preserved_renderer_sha256": "1e95b3bf58bbee1012d70ccd4599ec687d045027b5fc181e02c389602bab1cbf",
+      "preserved_renderer_code": {
+        "renderer": "1e95b3bf58bbee1012d70ccd4599ec687d045027b5fc181e02c389602bab1cbf",
+        "preserved_renderer_sha256": "a5973a77346ab068b24f6dd659e4dc6804337a649240702ac4a2a3a167ccda06",
+        "preserved_renderer_code": {
+          "renderer": "a5973a77346ab068b24f6dd659e4dc6804337a649240702ac4a2a3a167ccda06",
+          "preserved_renderer_sha256": "2f7777d71643cd179e8d6a33e7c729f915b1e7830aba84b29777f10675423f36",
+          "preserved_renderer_code": {
+            "renderer": "2f7777d71643cd179e8d6a33e7c729f915b1e7830aba84b29777f10675423f36",
+            "preserved_renderer_sha256": "019b2b9746d6a3eeef5a10886fe876bd9fe7aa0d0b2bfdeb753597c6bba704a2",
+            "preserved_renderer_code": {
+              "renderer": "019b2b9746d6a3eeef5a10886fe876bd9fe7aa0d0b2bfdeb753597c6bba704a2",
+              "frozen_renderer_sha256": "991f51a0f86c75f7e150e1c70c064782e2a83b4ede064d504c5136d2348f4588",
+              "frozen_renderer_code": {
+                "render": "991f51a0f86c75f7e150e1c70c064782e2a83b4ede064d504c5136d2348f4588",
+                "preserved_renderer_sha256": "f38dbaea29bdd71ef6000f64328bdd4db7515404901253365ce072588c2db141",
+                "preserved_renderer_code": {
+                  "render": "f38dbaea29bdd71ef6000f64328bdd4db7515404901253365ce072588c2db141",
+                  "preserved_renderer_sha256": "8a82a55ed86afbbd923e7252ad2508844c19814bfe54f1f1f7d238d58b7324fb",
+                  "preserved_renderer_code": {
+                    "render": "8a82a55ed86afbbd923e7252ad2508844c19814bfe54f1f1f7d238d58b7324fb",
+                    "scaffold_sha256": "08c503ae0895869090693ca01301394332583cdb6d3d129abc97300629496c13",
+                    "preserved_scaffold_code": {
+                      "render": "08c503ae0895869090693ca01301394332583cdb6d3d129abc97300629496c13",
+                      "scaffold_sha256": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+                      "preserved_scaffold_code": {
+                        "render": "58b8dff2f1ef9b91a438d97b5d7174dca3048e3f6e9af44e56b2bfdadf0c1ce8",
+                        "preserved_renderer_sha256": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+                        "preserved_renderer_code": {
+                          "render": "bdb0264f017969467eab4a195a6370d83f6f2d79af0987cd676f7746f0a28391",
+                          "preserved_native_renderer": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+                          "preserved_native_code": {
+                            "render": "2e3246c8311ee9bedd3b387861d3f2abd5134b6b3440c7a232d63ceefac0f78e",
+                            "native_helper_sha256": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+                            "preserved_renderer_hashes": {
+                              "render": "8d3d1a29285ecc94b84b2fd9ece0990df8d86e2808b67b9c730b859f3f9f69ee",
+                              "parent_renderer": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+                              "parent_code_sha256": {
+                                "render": "212aefe64f0115ce4c5be5fe5b18056e299842b890f881e25bcca828474b5c14",
+                                "raw_renderer": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                                "raw_code_sha256": {
+                                  "render": "42dea9023a652f0d96af892733a9c49acc8d885f9f1ca9f5bb3847f01501f0c3",
+                                  "parent_renderer": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                                  "parent_code_sha256": {
+                                    "render": "ffea4c1cfec42101a1dc1c0adf7cabe5d91655f1756d4671fb64f80483950d56",
+                                    "parent_renderer": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                                    "parent_code_sha256": {
+                                      "render": "991bdc01c84afac27c0c2bde365a6293c4756234021e671c68eaffb4e4d69bcc",
+                                      "raw_renderer": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                                      "raw_code_sha256": {
+                                        "render": "f5ce95165c264df3d4f5c77c0eff483e8db29094e64f3fca06e77a43de906700",
+                                        "frozen_renderer": "fcea58674b2d8b000a4d626c27f503fb5e01d0553993105336e3fbf325d4f237",
+                                        "parent_renderer": "f73887a4b519f786981a2a806bb6577e34154a4cb4f719d58b2d0ec5a93bd327",
+                                        "body_reference_renderer": "5079523e49468d5a24602d835b9ccf0557ce9ffcb56acc2d658f37ab743f4094",
+                                        "broad_camera_recipe": "f8a290812b64104b957016a6aa8ab97ab60566dcf2ffac54f0b5db99f53a1e91",
+                                        "shared_material_scene_recipe": "0eb6acf7c088ffc77797e3271504f2f3745f269d9600c8d0181f396c36a26031"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "image_checker_sha256": "b2276f3fbda604637f90a6f4dec7cc71528687c92ec8dcd7dfe3cea6bb5ea6f0"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mesh_loading": "Exact float32/int32 display arrays; no Mesh.update or edge generation; all flat."
+  },
+  "local_renderer_sha256": "480aa10f8bf3ceb048ccc0eda016494b9df25fc03c5312891d766ed883a86b30",
+  "version": "4.5.4 LTS",
+  "elapsed_seconds": 14.548917099949904,
+  "actual_saved_arrays_only": true,
+  "same_camera_material_lights_resolution": true,
+  "geometry_processing": false,
+  "smooth_shading": false,
+  "baseline_full_rerendered": false,
+  "internal_engineering_diagnostic": true,
+  "beauty_adoption": false,
+  "scope": "One intrinsic local view of the exact same node interval in neutral, true formed and delivered geometry. Optional original-carrier patch is a fourth actual state, not a deformation variant. This different local camera is internal engineering evidence only; it cannot conceal or reverse the failed whole-column close verdict."
+}

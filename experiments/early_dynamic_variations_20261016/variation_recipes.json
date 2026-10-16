@@ -1,0 +1,1772 @@
+{
+  "schema": "CHESHIRE_EARLY_DYNAMIC_VARIATIONS_V1",
+  "recipes": [
+    {
+      "id": "B00",
+      "label_ko": "기준형 · 기존 초기 연산",
+      "family": "baseline",
+      "length_scale": 1.0,
+      "macro_fields": {}
+    },
+    {
+      "id": "O01",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 1 · 3마디 · 길이 1.0배",
+      "length_scale": 1.0,
+      "radius_scale_profile": [
+        1.0,
+        1.0995004165278026,
+        1.0267498828624588,
+        0.9198856384453067,
+        0.9151899968289592,
+        1.0186512369422576,
+        1.0983268438442584,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        [
+          0.0,
+          0.31717435813659817,
+          0.5836518399067091,
+          0.7841317538546209,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 3,
+        "node_width": 0.23,
+        "phase": 0.1,
+        "phase_advance": 0.67,
+        "angular_order": 2,
+        "radial_strength": 0.42,
+        "axial_strength": 0.5,
+        "tangent_strength": 0.12000000000000001,
+        "hierarchy": 0.335,
+        "turns": 0.53,
+        "return_bias": 0.135,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.745,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0987510413195065,
+          0.9405894386191683,
+          0.6834309946800439
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false
+    },
+    {
+      "id": "O02",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 2 · 4마디 · 길이 1.1배",
+      "length_scale": 1.1,
+      "radius_scale_profile": [
+        1.0,
+        1.0900447102352677,
+        0.9920879111193266,
+        0.904221276244691,
+        0.9384997623474426,
+        1.0512085477241842,
+        1.0986118663792512,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.24116063185070105,
+          0.43098270383970466,
+          0.5818942949651892,
+          0.7633274298479497,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 4,
+        "node_width": 0.19,
+        "phase": 0.45,
+        "phase_advance": 0.79,
+        "angular_order": 3,
+        "radial_strength": 0.48,
+        "axial_strength": 0.58,
+        "tangent_strength": 0.14,
+        "hierarchy": 0.39,
+        "turns": 0.71,
+        "return_bias": 0.17,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.77,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0751117755881692,
+          0.855198706950773,
+          0.6296044510304284,
+          0.6448601606651099
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.35,
+          "direction": 0.35,
+          "sweep": 0.22999999999999998,
+          "return_depth": 0.6900000000000001
+        },
+        {
+          "height": 0.66,
+          "direction": 1.18,
+          "sweep": 0.30000000000000004,
+          "return_depth": 0.72
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.27,
+          0.74,
+          1.1500000000000001
+        ],
+        "root_scales": [
+          0.92,
+          0.82,
+          0.65
+        ],
+        "root_bend": 0.29000000000000004
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.4,
+          0.73
+        ],
+        "bend": 0.35000000000000003
+      }
+    },
+    {
+      "id": "O03",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 3 · 5마디 · 길이 1.2배",
+      "length_scale": 1.2,
+      "radius_scale_profile": [
+        1.0,
+        1.0621609968270664,
+        0.9495153895400142,
+        0.9012520230091134,
+        0.978920420056922,
+        1.083471278483916,
+        1.0815725100125357,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.18699846997273573,
+          0.3267379909032818,
+          0.4528886647024066,
+          0.6190282861636932,
+          0.8201507480715179,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 5,
+        "node_width": 0.16,
+        "phase": 0.9,
+        "phase_advance": 0.91,
+        "angular_order": 1,
+        "radial_strength": 0.55,
+        "axial_strength": 0.64,
+        "tangent_strength": 0.16,
+        "hierarchy": 0.44500000000000006,
+        "turns": 0.89,
+        "return_bias": 0.20500000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.7949999999999999,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.005402492067666,
+          0.7459632908632143,
+          0.6002162124316801,
+          0.7274347946648251,
+          0.9885935840447904
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.365,
+          "direction": 0.375,
+          "sweep": 0.255,
+          "return_depth": 0.7150000000000001
+        },
+        {
+          "height": 0.67,
+          "direction": 1.145,
+          "sweep": 0.28,
+          "return_depth": 0.7
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.27,
+          0.74,
+          1.195
+        ],
+        "root_scales": [
+          0.92,
+          0.82,
+          0.65
+        ],
+        "root_bend": 0.325
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.4,
+          0.765
+        ],
+        "bend": 0.385
+      }
+    },
+    {
+      "id": "O04",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 4 · 6마디 · 길이 1.3배",
+      "length_scale": 1.3,
+      "radius_scale_profile": [
+        1.0,
+        1.0267498828624588,
+        0.9198856384453067,
+        0.9151899968289592,
+        1.0186512369422576,
+        1.0983268438442584,
+        1.0526077517381105,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.14285714285714285,
+          0.2857142857142857,
+          0.42857142857142855,
+          0.5714285714285714,
+          0.7142857142857142,
+          0.8571428571428571,
+          1.0
+        ],
+        [
+          0.0,
+          0.1561178415802303,
+          0.2726483103871954,
+          0.3937894862611286,
+          0.5569847523874171,
+          0.7380681512094929,
+          0.886667568864022,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 6,
+        "node_width": 0.14,
+        "phase": 1.3,
+        "phase_advance": 1.03,
+        "angular_order": 2,
+        "radial_strength": 0.58,
+        "axial_strength": 0.7,
+        "tangent_strength": 0.18,
+        "hierarchy": 0.5,
+        "turns": 1.0699999999999998,
+        "return_bias": 0.24000000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.82,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.9168747071561468,
+          0.6656515711146885,
+          0.6158858281773009,
+          0.8219618682662365,
+          1.05867819620979,
+          1.0673493725874563
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.85,
+        "edge_gain": 0.26,
+        "inherited_bias": 0.95,
+        "diagonal_tension": -0.9,
+        "vertex_tension": -0.95
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.38,
+          "direction": 0.4,
+          "sweep": 0.28,
+          "return_depth": 0.74
+        },
+        {
+          "height": 0.68,
+          "direction": 1.1099999999999999,
+          "sweep": 0.26,
+          "return_depth": 0.68
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.27,
+          0.74,
+          1.24
+        ],
+        "root_scales": [
+          0.92,
+          0.82,
+          0.65
+        ],
+        "root_bend": 0.36
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.4,
+          0.8
+        ],
+        "bend": 0.42000000000000004
+      }
+    },
+    {
+      "id": "O05",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 5 · 4마디 · 길이 1.4배",
+      "length_scale": 1.4,
+      "radius_scale_profile": [
+        1.0,
+        0.9871155505704475,
+        0.902904183485041,
+        0.9425176053466731,
+        1.055437433617916,
+        1.0976587625728023,
+        1.0153373862037864,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.19315113424571095,
+          0.34510884632024486,
+          0.5252508998697033,
+          0.7616649322505343,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 4,
+        "node_width": 0.22,
+        "phase": 1.7,
+        "phase_advance": 1.15,
+        "angular_order": 3,
+        "radial_strength": 0.65,
+        "axial_strength": 0.75,
+        "tangent_strength": 0.2,
+        "hierarchy": 0.555,
+        "turns": 1.25,
+        "return_bias": 0.275,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.845,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.8177888764261189,
+          0.6144444148328354,
+          0.668516923949965,
+          0.9209155463658065
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.9,
+        "edge_gain": 0.12,
+        "inherited_bias": -0.25,
+        "diagonal_tension": 0.25,
+        "vertex_tension": -1.0
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.395,
+          "direction": 0.425,
+          "sweep": 0.305,
+          "return_depth": 0.765
+        },
+        {
+          "height": 0.6900000000000001,
+          "direction": 1.075,
+          "sweep": 0.24000000000000002,
+          "return_depth": 0.66
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.27,
+          0.74,
+          1.2850000000000001
+        ],
+        "root_scales": [
+          0.92,
+          0.82,
+          0.65
+        ],
+        "root_bend": 0.395
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.4,
+          0.8350000000000001
+        ],
+        "bend": 0.45500000000000007
+      }
+    },
+    {
+      "id": "O06",
+      "family": "overlap",
+      "label_ko": "큰 주름 겹침 6 · 5마디 · 길이 1.5배",
+      "length_scale": 1.5,
+      "radius_scale_profile": [
+        1.0,
+        0.9495153895400142,
+        0.9012520230091134,
+        0.978920420056922,
+        1.083471278483916,
+        1.0815725100125357,
+        0.9756455846264209,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.15054664606249635,
+          0.2821012808267538,
+          0.4528940899207463,
+          0.6636712416541208,
+          0.8566017486964778,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "overlap",
+        "nodes": 5,
+        "node_width": 0.18,
+        "phase": 2.1,
+        "phase_advance": 1.27,
+        "angular_order": 1,
+        "radial_strength": 0.6,
+        "axial_strength": 0.8,
+        "tangent_strength": 0.22,
+        "hierarchy": 0.6100000000000001,
+        "turns": 1.4300000000000002,
+        "return_bias": 0.31000000000000005,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.87,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.7237884738500355,
+          0.6004263060513118,
+          0.7498002069800063,
+          1.0086732189856586,
+          1.0941469064320057
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.92,
+        "edge_gain": 0.3,
+        "inherited_bias": 1.0,
+        "diagonal_tension": -0.95,
+        "vertex_tension": -1.15
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.41000000000000003,
+          "direction": 0.45,
+          "sweep": 0.33,
+          "return_depth": 0.79
+        },
+        {
+          "height": 0.7,
+          "direction": 1.04,
+          "sweep": 0.22000000000000003,
+          "return_depth": 0.64
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.27,
+          0.74,
+          1.33
+        ],
+        "root_scales": [
+          0.92,
+          0.82,
+          0.65
+        ],
+        "root_bend": 0.43000000000000005
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.4,
+          0.8700000000000001
+        ],
+        "bend": 0.49000000000000005
+      }
+    },
+    {
+      "id": "F01",
+      "family": "fan",
+      "label_ko": "부채형 위계 1 · 3마디 · 길이 1.0배",
+      "length_scale": 1.0,
+      "radius_scale_profile": [
+        1.0,
+        1.098006657784124,
+        1.016996714290024,
+        0.9143111246631053,
+        0.9209032288085583,
+        1.0283662185463227,
+        1.0996542097023219,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        [
+          0.0,
+          0.19306930693069307,
+          0.4240924092409241,
+          0.693069306930693,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 3,
+        "node_width": 0.23,
+        "phase": 0.2,
+        "phase_advance": 0.67,
+        "angular_order": 2,
+        "radial_strength": 0.45,
+        "axial_strength": 0.45,
+        "tangent_strength": 0.12000000000000001,
+        "hierarchy": 0.335,
+        "turns": 0.53,
+        "return_bias": 0.135,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.745,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0950166444603104,
+          0.9168747071561468,
+          0.6656515711146885
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false
+    },
+    {
+      "id": "F02",
+      "family": "fan",
+      "label_ko": "부채형 위계 2 · 4마디 · 길이 1.1배",
+      "length_scale": 1.1,
+      "radius_scale_profile": [
+        1.0,
+        1.076484218728449,
+        0.9676710433136496,
+        0.9000864849726721,
+        0.9599200827920025,
+        1.070866977429126,
+        1.091438314823532,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.15445544554455445,
+          0.3316831683168317,
+          0.5316831683168317,
+          0.7544554455445545,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 4,
+        "node_width": 0.2,
+        "phase": 0.7,
+        "phase_advance": 0.79,
+        "angular_order": 3,
+        "radial_strength": 0.5,
+        "axial_strength": 0.5,
+        "tangent_strength": 0.14,
+        "hierarchy": 0.39,
+        "turns": 0.71,
+        "return_bias": 0.17,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.77,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0412105468211221,
+          0.7931994763267282,
+          0.6072604587126023,
+          0.686589094784097
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.35,
+          "direction": 0.5700000000000001,
+          "sweep": 0.22999999999999998,
+          "return_depth": 0.6900000000000001
+        },
+        {
+          "height": 0.66,
+          "direction": 1.18,
+          "sweep": 0.30000000000000004,
+          "return_depth": 0.72
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.22,
+          0.7000000000000001,
+          1.17
+        ],
+        "root_scales": [
+          0.98,
+          0.78,
+          0.55
+        ],
+        "root_bend": 0.16999999999999998
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.1,
+          0.34,
+          0.6699999999999999
+        ],
+        "scales": [
+          1.0,
+          0.72,
+          0.38
+        ],
+        "bend": 0.25
+      }
+    },
+    {
+      "id": "F03",
+      "family": "fan",
+      "label_ko": "부채형 위계 3 · 5마디 · 길이 1.2배",
+      "length_scale": 1.2,
+      "radius_scale_profile": [
+        1.0,
+        1.0453596121425577,
+        0.9333723978720176,
+        0.9063543312709204,
+        0.9987611336537109,
+        1.0927478430744035,
+        1.0684546666442807,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.12871287128712872,
+          0.2726072607260726,
+          0.4316831683168317,
+          0.6059405940594059,
+          0.7953795379537953,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 5,
+        "node_width": 0.17,
+        "phase": 1.1,
+        "phase_advance": 0.91,
+        "angular_order": 1,
+        "radial_strength": 0.58,
+        "axial_strength": 0.6,
+        "tangent_strength": 0.16,
+        "hierarchy": 0.44500000000000006,
+        "turns": 0.89,
+        "return_bias": 0.20500000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.7949999999999999,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.9633990303563943,
+          0.7028747206861635,
+          0.6031300575227838,
+          0.7731667825053952,
+          1.0271674435728149
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.365,
+          "direction": 0.595,
+          "sweep": 0.255,
+          "return_depth": 0.7150000000000001
+        },
+        {
+          "height": 0.67,
+          "direction": 1.145,
+          "sweep": 0.28,
+          "return_depth": 0.7
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.22,
+          0.7250000000000001,
+          1.23
+        ],
+        "root_scales": [
+          0.98,
+          0.78,
+          0.5650000000000001
+        ],
+        "root_bend": 0.195
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.1,
+          0.34,
+          0.715
+        ],
+        "scales": [
+          1.0,
+          0.72,
+          0.38
+        ],
+        "bend": 0.275
+      }
+    },
+    {
+      "id": "F04",
+      "family": "fan",
+      "label_ko": "부채형 위계 4 · 6마디 · 길이 1.3배",
+      "length_scale": 1.3,
+      "radius_scale_profile": [
+        1.0,
+        1.0070737201667703,
+        0.9095927857982938,
+        0.927406769579986,
+        1.037797774271298,
+        1.0999858636383415,
+        1.0346635317835027,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.14285714285714285,
+          0.2857142857142857,
+          0.42857142857142855,
+          0.5714285714285714,
+          0.7142857142857142,
+          0.8571428571428571,
+          1.0
+        ],
+        [
+          0.0,
+          0.11032531824611032,
+          0.23149457802923148,
+          0.3635077793493635,
+          0.5063649222065063,
+          0.6600660066006601,
+          0.8246110325318246,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 6,
+        "node_width": 0.145,
+        "phase": 1.5,
+        "phase_advance": 1.03,
+        "angular_order": 2,
+        "radial_strength": 0.62,
+        "axial_strength": 0.65,
+        "tangent_strength": 0.18,
+        "hierarchy": 0.5,
+        "turns": 1.0699999999999998,
+        "return_bias": 0.24000000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.82,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.8676843004169257,
+          0.6357778116577631,
+          0.6379749920723979,
+          0.8718747458598618,
+          1.081869607686009,
+          1.038475563585826
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.5,
+        "edge_gain": 0.38,
+        "inherited_bias": 0.9,
+        "diagonal_tension": 0.6,
+        "vertex_tension": -0.45
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.38,
+          "direction": 0.62,
+          "sweep": 0.28,
+          "return_depth": 0.74
+        },
+        {
+          "height": 0.68,
+          "direction": 1.1099999999999999,
+          "sweep": 0.26,
+          "return_depth": 0.68
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.22,
+          0.75,
+          1.29
+        ],
+        "root_scales": [
+          0.98,
+          0.78,
+          0.5800000000000001
+        ],
+        "root_bend": 0.22
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.1,
+          0.34,
+          0.76
+        ],
+        "scales": [
+          1.0,
+          0.72,
+          0.38
+        ],
+        "bend": 0.30000000000000004
+      }
+    },
+    {
+      "id": "F05",
+      "family": "fan",
+      "label_ko": "부채형 위계 5 · 4마디 · 길이 1.4배",
+      "length_scale": 1.4,
+      "radius_scale_profile": [
+        1.0,
+        0.9676710433136496,
+        0.9000864849726721,
+        0.9599200827920025,
+        1.070866977429126,
+        1.091438314823532,
+        0.9953997874360463,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.15445544554455445,
+          0.3316831683168317,
+          0.5316831683168317,
+          0.7544554455445545,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 4,
+        "node_width": 0.22,
+        "phase": 1.9,
+        "phase_advance": 1.15,
+        "angular_order": 3,
+        "radial_strength": 0.68,
+        "axial_strength": 0.7,
+        "tangent_strength": 0.2,
+        "hierarchy": 0.555,
+        "turns": 1.25,
+        "return_bias": 0.275,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.845,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.7691776082841242,
+          0.6025018758498886,
+          0.7062940133666826,
+          0.9671291678250943
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.75,
+        "edge_gain": 0.32,
+        "inherited_bias": -0.45,
+        "diagonal_tension": -0.85,
+        "vertex_tension": -0.45
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.395,
+          "direction": 0.645,
+          "sweep": 0.305,
+          "return_depth": 0.765
+        },
+        {
+          "height": 0.6900000000000001,
+          "direction": 1.075,
+          "sweep": 0.24000000000000002,
+          "return_depth": 0.66
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.22,
+          0.775,
+          1.35
+        ],
+        "root_scales": [
+          0.98,
+          0.78,
+          0.595
+        ],
+        "root_bend": 0.245
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.1,
+          0.34,
+          0.8049999999999999
+        ],
+        "scales": [
+          1.0,
+          0.72,
+          0.38
+        ],
+        "bend": 0.325
+      }
+    },
+    {
+      "id": "F06",
+      "family": "fan",
+      "label_ko": "부채형 위계 6 · 5마디 · 길이 1.5배",
+      "length_scale": 1.5,
+      "radius_scale_profile": [
+        1.0,
+        0.9333723978720176,
+        0.9063543312709204,
+        0.9987611336537109,
+        1.0927478430744035,
+        1.0684546666442807,
+        0.9568623155029379,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.12871287128712872,
+          0.2726072607260726,
+          0.4316831683168317,
+          0.6059405940594059,
+          0.7953795379537953,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "fan",
+        "nodes": 5,
+        "node_width": 0.19,
+        "phase": 2.3,
+        "phase_advance": 1.27,
+        "angular_order": 1,
+        "radial_strength": 0.65,
+        "axial_strength": 0.75,
+        "tangent_strength": 0.22,
+        "hierarchy": 0.6100000000000001,
+        "turns": 1.4300000000000002,
+        "return_bias": 0.31000000000000005,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.87,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.683430994680044,
+          0.6083004518551347,
+          0.797301050142305,
+          1.0438914696275623,
+          1.0785957870588299
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.9,
+        "edge_gain": 0.42,
+        "inherited_bias": 0.55,
+        "diagonal_tension": 0.3,
+        "vertex_tension": -0.95
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.41000000000000003,
+          "direction": 0.67,
+          "sweep": 0.33,
+          "return_depth": 0.79
+        },
+        {
+          "height": 0.7,
+          "direction": 1.04,
+          "sweep": 0.22000000000000003,
+          "return_depth": 0.64
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.22,
+          0.8,
+          1.4100000000000001
+        ],
+        "root_scales": [
+          0.98,
+          0.78,
+          0.61
+        ],
+        "root_bend": 0.27
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.1,
+          0.34,
+          0.85
+        ],
+        "scales": [
+          1.0,
+          0.72,
+          0.38
+        ],
+        "bend": 0.35000000000000003
+      }
+    },
+    {
+      "id": "T01",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 1 · 3마디 · 길이 1.0배",
+      "length_scale": 1.0,
+      "radius_scale_profile": [
+        1.0,
+        1.1,
+        1.0362357754476674,
+        0.9262606284458754,
+        0.9103241583665853,
+        1.0087498983439447,
+        1.0960170286650366,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        [
+          0.0,
+          0.2971547916521057,
+          0.5182021312648443,
+          0.7123515092479995,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 3,
+        "node_width": 0.24,
+        "phase": 0.0,
+        "phase_advance": 0.67,
+        "angular_order": 2,
+        "radial_strength": 0.4,
+        "axial_strength": 0.35,
+        "tangent_strength": 0.255,
+        "hierarchy": 0.335,
+        "turns": 0.53,
+        "return_bias": 0.135,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.745,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.1,
+          0.9633990303563943,
+          0.7028747206861635
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false
+    },
+    {
+      "id": "T02",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 2 · 4마디 · 길이 1.1배",
+      "length_scale": 1.1,
+      "radius_scale_profile": [
+        1.0,
+        1.0921060994002885,
+        0.9970800477698711,
+        0.9057777659331342,
+        0.9346356379136388,
+        1.0468516671300376,
+        1.0993184918758192,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.23734915355083702,
+          0.4006469580309021,
+          0.572156101934771,
+          0.8124073141780302,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 4,
+        "node_width": 0.2,
+        "phase": 0.4,
+        "phase_advance": 0.79,
+        "angular_order": 3,
+        "radial_strength": 0.48,
+        "axial_strength": 0.4,
+        "tangent_strength": 0.29000000000000004,
+        "hierarchy": 0.39,
+        "turns": 0.71,
+        "return_bias": 0.17,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.77,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0802652485007211,
+          0.8676843004169257,
+          0.6357778116577631,
+          0.6379749920723979
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.35,
+          "direction": 0.27,
+          "sweep": 0.22999999999999998,
+          "return_depth": 0.6900000000000001
+        },
+        {
+          "height": 0.66,
+          "direction": 1.18,
+          "sweep": 0.30000000000000004,
+          "return_depth": 0.72
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.28,
+          0.72,
+          1.1
+        ],
+        "root_bend": 0.26,
+        "twist": 0.07
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.38,
+          0.6799999999999999
+        ],
+        "bend": 0.31,
+        "twist": -0.09
+      }
+    },
+    {
+      "id": "T03",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 3 · 5마디 · 길이 1.2배",
+      "length_scale": 1.2,
+      "radius_scale_profile": [
+        1.0,
+        1.0696706709347166,
+        0.9583853163452858,
+        0.9001705224205246,
+        0.9692667130021579,
+        1.077556587851025,
+        1.0869397490349826,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.19852971344949694,
+          0.3317133919380025,
+          0.4972243383744459,
+          0.7071791828663423,
+          0.8560702623061546,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 5,
+        "node_width": 0.18,
+        "phase": 0.8,
+        "phase_advance": 0.91,
+        "angular_order": 1,
+        "radial_strength": 0.55,
+        "axial_strength": 0.5,
+        "tangent_strength": 0.325,
+        "hierarchy": 0.44500000000000006,
+        "turns": 0.89,
+        "return_bias": 0.20500000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.7949999999999999,
+        "length_scale": 1.0,
+        "node_strengths": [
+          1.0241766773367913,
+          0.7691776082841241,
+          0.6025018758498886,
+          0.7062940133666828,
+          0.9671291678250943
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "overlap_events": [
+        {
+          "height": 0.365,
+          "direction": 0.29500000000000004,
+          "sweep": 0.255,
+          "return_depth": 0.7150000000000001
+        },
+        {
+          "height": 0.67,
+          "direction": 1.145,
+          "sweep": 0.28,
+          "return_depth": 0.7
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.28,
+          0.72,
+          1.135
+        ],
+        "root_bend": 0.29000000000000004,
+        "twist": -0.10500000000000001
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.38,
+          0.71
+        ],
+        "bend": 0.335,
+        "twist": 0.135
+      }
+    },
+    {
+      "id": "T04",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 4 · 6마디 · 길이 1.3배",
+      "length_scale": 1.3,
+      "radius_scale_profile": [
+        1.0,
+        1.0362357754476674,
+        0.9262606284458754,
+        0.9103241583665853,
+        1.0087498983439447,
+        1.0960170286650366,
+        1.0608351314532254,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.14285714285714285,
+          0.2857142857142857,
+          0.42857142857142855,
+          0.5714285714285714,
+          0.7142857142857142,
+          0.8571428571428571,
+          1.0
+        ],
+        [
+          0.0,
+          0.15338935106826876,
+          0.2606675546300891,
+          0.4113916380511868,
+          0.5801356696153137,
+          0.6937824988600378,
+          0.8250340813081939,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 6,
+        "node_width": 0.15,
+        "phase": 1.2,
+        "phase_advance": 1.03,
+        "angular_order": 2,
+        "radial_strength": 0.6,
+        "axial_strength": 0.55,
+        "tangent_strength": 0.36,
+        "hierarchy": 0.5,
+        "turns": 1.0699999999999998,
+        "return_bias": 0.24000000000000002,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.82,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.9405894386191684,
+          0.683430994680044,
+          0.6083004518551347,
+          0.797301050142305,
+          1.0438914696275625,
+          1.0785957870588299
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.75,
+        "edge_gain": 0.24,
+        "inherited_bias": 0.35,
+        "diagonal_tension": -0.95,
+        "vertex_tension": -0.4
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.38,
+          "direction": 0.32,
+          "sweep": 0.28,
+          "return_depth": 0.74
+        },
+        {
+          "height": 0.68,
+          "direction": 1.1099999999999999,
+          "sweep": 0.26,
+          "return_depth": 0.68
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.28,
+          0.72,
+          1.17
+        ],
+        "root_bend": 0.32,
+        "twist": 0.14
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.38,
+          0.74
+        ],
+        "bend": 0.36,
+        "twist": -0.18
+      }
+    },
+    {
+      "id": "T05",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 5 · 4마디 · 길이 1.4배",
+      "length_scale": 1.4,
+      "radius_scale_profile": [
+        1.0,
+        0.9970800477698711,
+        0.9057777659331342,
+        0.9346356379136388,
+        1.0468516671300376,
+        1.0993184918758192,
+        1.0251259842582257,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        [
+          0.0,
+          0.20632037841640216,
+          0.36739915488883557,
+          0.6068254229846273,
+          0.8408354397608728,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 4,
+        "node_width": 0.23,
+        "phase": 1.6,
+        "phase_advance": 1.15,
+        "angular_order": 3,
+        "radial_strength": 0.62,
+        "axial_strength": 0.6,
+        "tangent_strength": 0.395,
+        "hierarchy": 0.555,
+        "turns": 1.25,
+        "return_bias": 0.275,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.845,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.8427001194246778,
+          0.6239819644957347,
+          0.6522580720213959,
+          0.8966280923556439
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.55,
+        "edge_gain": 0.42,
+        "inherited_bias": -0.55,
+        "diagonal_tension": 0.4,
+        "vertex_tension": -1.05
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.395,
+          "direction": 0.345,
+          "sweep": 0.305,
+          "return_depth": 0.765
+        },
+        {
+          "height": 0.6900000000000001,
+          "direction": 1.075,
+          "sweep": 0.24000000000000002,
+          "return_depth": 0.66
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.28,
+          0.72,
+          1.205
+        ],
+        "root_bend": 0.35,
+        "twist": -0.17500000000000002
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.38,
+          0.77
+        ],
+        "bend": 0.385,
+        "twist": 0.22499999999999998
+      }
+    },
+    {
+      "id": "T06",
+      "family": "mirrored_twist",
+      "label_ko": "반사 비틀림 6 · 5마디 · 길이 1.5배",
+      "length_scale": 1.5,
+      "radius_scale_profile": [
+        1.0,
+        0.9583853163452858,
+        0.9001705224205246,
+        0.969266713002158,
+        1.077556587851025,
+        1.0869397490349826,
+        0.9854499966191387,
+        1.0
+      ],
+      "material_axial_knots": [
+        [
+          0.0,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.5,
+          0.6666666666666666,
+          0.8333333333333333,
+          1.0
+        ],
+        [
+          0.0,
+          0.15373861639964667,
+          0.294778729302467,
+          0.5018743184055248,
+          0.6789583184259345,
+          0.8093917095169362,
+          1.0
+        ]
+      ],
+      "macro_fields": {
+        "family": "mirrored_twist",
+        "nodes": 5,
+        "node_width": 0.2,
+        "phase": 2.0,
+        "phase_advance": 1.27,
+        "angular_order": 1,
+        "radial_strength": 0.66,
+        "axial_strength": 0.65,
+        "tangent_strength": 0.43000000000000005,
+        "hierarchy": 0.6100000000000001,
+        "turns": 1.4300000000000002,
+        "return_bias": 0.31000000000000005,
+        "cap_fade": 0.075,
+        "displacement_bound": 0.87,
+        "length_scale": 1.0,
+        "node_strengths": [
+          0.7459632908632143,
+          0.6002162124316801,
+          0.7274347946648251,
+          0.9885935840447904,
+          1.0982962296895482
+        ]
+      },
+      "macro_injection_stage": "G03_SIDEWALL_BEFORE_G04_NEUTRAL",
+      "global_XY_reflection": true,
+      "global_chiral_twist": false,
+      "experimental": true,
+      "fabrication_certified": false,
+      "task36_recipe": {
+        "face_gain": 0.88,
+        "edge_gain": 0.34,
+        "inherited_bias": 0.95,
+        "diagonal_tension": -0.25,
+        "vertex_tension": -1.2
+      },
+      "upstream_child_placement_changed": true,
+      "overlap_events": [
+        {
+          "height": 0.41000000000000003,
+          "direction": 0.37,
+          "sweep": 0.33,
+          "return_depth": 0.79
+        },
+        {
+          "height": 0.7,
+          "direction": 1.04,
+          "sweep": 0.22000000000000003,
+          "return_depth": 0.64
+        }
+      ],
+      "root_recipe": {
+        "root_heights": [
+          0.28,
+          0.72,
+          1.24
+        ],
+        "root_bend": 0.38,
+        "twist": 0.21000000000000002
+      },
+      "sidewall_recipe": {
+        "heights_root_radius": [
+          0.12,
+          0.38,
+          0.8
+        ],
+        "bend": 0.41000000000000003,
+        "twist": -0.27
+      }
+    }
+  ],
+  "baseline_id": "B00",
+  "variation_count": 18,
+  "meaning_ko": "초기 부모의 길이·마디·겹침·부채·반사 비틀림을 바꾼 뒤 실제 후속 연산을 다시 계산하는 비교입니다.",
+  "length_scope": "Top-level length_scale is applied once at G0. macro_fields.length_scale stays 1.",
+  "topology_scope": "Macro coordinate fields retain topology; historical root/sidewall events still run.",
+  "symmetry_scope": "All variants retain global X/Y reflections. Twist is counter-handed across mirror planes.",
+  "stronger_variants": "O04..06/F04..06/T04..06 also change actual G1/G2 coupled subdivision face, edge, ancestry and tension controls.",
+  "units": "Macro strengths and bound are fractions of actual parent median radius; node widths use inherited material t.",
+  "noise_used": false,
+  "aesthetic_success_claimed": false
+}

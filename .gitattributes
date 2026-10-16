@@ -109,3 +109,35 @@ experiments/ordered_primary_folds_20261014/** -text whitespace=cr-at-eol
 docs/ordered_primary_folds_20261014/** -text whitespace=cr-at-eol
 experiments/parent_continuity_20261014/** -text whitespace=cr-at-eol
 docs/parent_continuity_20261014/** -text whitespace=cr-at-eol
+
+# Preserve October 15-17 research and retained G7 checkpoint bytes.
+docs/column_pipeline_20261017/** -text whitespace=cr-at-eol
+docs/ADAPTIVE_ORNAMENT.md -text whitespace=cr-at-eol
+docs/fold_junction_development_20261015/** -text whitespace=cr-at-eol
+docs/hansmeyer_reconstruction_20261015/** -text whitespace=cr-at-eol
+examples/adaptive_ornament_transfer.py -text whitespace=cr-at-eol
+experiments/*_20261016.py -text whitespace=cr-at-eol
+experiments/early_dynamic_variations_20261016/** -text whitespace=cr-at-eol
+experiments/fold_junction_development_20261015/** -text whitespace=cr-at-eol
+experiments/hansmeyer_reconstruction_20261015/** -text whitespace=cr-at-eol
+experiments/inherited_rule_variations_20261017/** -text whitespace=cr-at-eol
+experiments/inherited_strong_layout_20261017/** -text whitespace=cr-at-eol
+experiments/overlapping_fold_layout_20261017/** -text whitespace=cr-at-eol
+experiments/selective_overlap_20261017/** -text whitespace=cr-at-eol
+experiments/structural_grammar_20261016/** -text whitespace=cr-at-eol
+src/cheshire/adaptive_ornament.py -text whitespace=cr-at-eol
+src/cheshire/ornament_analysis.py -text whitespace=cr-at-eol
+src/cheshire/ornament_assembly.py -text whitespace=cr-at-eol
+src/cheshire/ornament_subdivision.py -text whitespace=cr-at-eol
+src/cheshire/structural_assembly.py -text whitespace=cr-at-eol
+tests/test_adaptive_ornament.py -text whitespace=cr-at-eol
+tests/test_ornament_assembly.py -text whitespace=cr-at-eol
+tests/test_structural_assembly.py -text whitespace=cr-at-eol
+tools/preserve_column_pipeline_20261017.py -text whitespace=cr-at-eol
+
+# These executed source snapshots retain their recorded terminal blank line.
+experiments/hansmeyer_reconstruction_20261015/recursive_spine_operator_v3.py whitespace=-blank-at-eof,cr-at-eol
+experiments/selective_overlap_20261017/generate_selective.py whitespace=-blank-at-eof,cr-at-eol
+experiments/selective_overlap_20261017/generate_selective_v2.py whitespace=-blank-at-eof,cr-at-eol
+experiments/selective_overlap_20261017/layout_methods.py whitespace=-blank-at-eof,cr-at-eol
+experiments/selective_overlap_20261017/layout_methods_v2.py whitespace=-blank-at-eof,cr-at-eol

@@ -1,0 +1,1174 @@
+{
+  "kind": "ACTUAL_PAPER_RECURSIVE_SYMMETRY_FINITE_MANDEL_COMPONENT",
+  "actual_operator_succeeded": true,
+  "paper": {
+    "path": "C:\\Users\\USER\\Downloads\\mirror.pdf",
+    "sha256": "9c4e5aaae89271778cc4cc0a7db74bc7cabcb795fa20279dc6721019fb3939b8",
+    "doi": "10.1016/j.cad.2016.09.002",
+    "section": "2.1",
+    "figure": "3; plane traversal order influences outcome"
+  },
+  "seed": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\00_finite_Mandel_seed.npz",
+    "sha256": "c22771a4fd398c513395ba08cdb5ccd253cc070f0cd7b7edb854805377cca493",
+    "quality": {
+      "vertices": 12600,
+      "faces": 25584,
+      "edges": 38340,
+      "face_corners": 3,
+      "components": 16,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 36,
+      "euler_characteristic": -156,
+      "genus_if_closed_connected": null,
+      "finite": true,
+      "degenerate_fans": 0,
+      "minimum_fan_area": 0.00017392047250363977,
+      "bbox": [
+        [
+          -1.0309090971946717,
+          -1.0309090971946717,
+          -1.079999989271164
+        ],
+        [
+          1.0309092044830321,
+          1.0309092044830321,
+          1.0309092044830321
+        ]
+      ]
+    }
+  },
+  "finite_Mandel": {
+    "power": 8,
+    "iterations": 8,
+    "bailout_radius": 2.0,
+    "grid_resolution": [
+      56,
+      56,
+      56
+    ],
+    "bounds": [
+      -1.35,
+      1.35
+    ],
+    "membership_source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\parent_local_mandelbulb.py",
+    "membership_source_sha256": "f9551e9c063c2a97965526da5bb49b2e164bea596800d9019b2858de6c6ece1b",
+    "finite_volume_is_approximation": true
+  },
+  "stages": [
+    {
+      "half": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\01_cut_positive.npz",
+        "sha256": "66ba567272cf4b5b4c233c4324863c181828fb113ae47f6e46d0479e0cb9cf3b",
+        "quality": {
+          "vertices": 6337,
+          "faces": 12882,
+          "edges": 19323,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -104,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 3.247518302912698e-11,
+          "bbox": [
+            [
+              -0.16208421136107048,
+              -1.0309090971946717,
+              -0.9085289887955167
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "reflected": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\01_reflected.npz",
+        "sha256": "f14375a5cb98b29508ed4a4f932d9c0131acdbcb1aafe9d1a11eafdf57cdfc92",
+        "quality": {
+          "vertices": 6337,
+          "faces": 12882,
+          "edges": 19323,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -104,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 3.2475182995200374e-11,
+          "bbox": [
+            [
+              -0.9685672728084878,
+              -1.0352634729712602,
+              -0.9901985594392615
+            ],
+            [
+              0.25869504305474816,
+              1.0309092044830321,
+              1.0105609208149158
+            ]
+          ]
+        }
+      },
+      "union": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\01_union_largest.npz",
+        "sha256": "0c5c5b67f4678a0daecb50f371927a57a98dd40372a44f4d6ecfc4a9fe023b0e",
+        "quality": {
+          "vertices": 12610,
+          "faces": 25668,
+          "edges": 38502,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -224,
+          "genus_if_closed_connected": 113,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 3.247518294180198e-11,
+          "bbox": [
+            [
+              -0.9685672728084878,
+              -1.0352634729712602,
+              -0.9901985594392615
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "operator": {
+        "iteration": 1,
+        "requested_plane": {
+          "normal": [
+            1.0,
+            0.18,
+            0.12
+          ],
+          "offset": 0.05
+        },
+        "normal": [
+          0.9773905664828937,
+          0.17593030196692086,
+          0.11728686797794724
+        ],
+        "actual_offset": 0.05,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 12506,
+        "input_triangles": 25408,
+        "discarded_negative_vertices": 6525,
+        "crossed_input_edges": 518,
+        "cut_vertices": 6337,
+        "cut_triangles": 12882,
+        "reflected_vertices": 6337,
+        "reflection_coordinate_max_error": 4.440892098500626e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 2.459317544478407,
+        "half_volume": 1.2296587722392032,
+        "union_double_half_volume_error": 4.440892098500626e-16,
+        "output_seam_vertices": 651,
+        "largest_component": {
+          "components_before_selection": 2,
+          "component_surface_areas": [
+            23.195528417778657,
+            1.0983386049680094e-06
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 12610,
+          "faces": 25668,
+          "edges": 38502,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -224,
+          "genus_if_closed_connected": 113,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 3.247518294180198e-11,
+          "bbox": [
+            [
+              -0.9685672728084878,
+              -1.0352634729712602,
+              -0.9901985594392615
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "half": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\02_cut_positive.npz",
+        "sha256": "4630dde57c820023230f115b8497a8fcf6491a56905b60f52cbb3b100266ce76",
+        "quality": {
+          "vertices": 5991,
+          "faces": 12146,
+          "edges": 18219,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -82,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 9.458920775275639e-12,
+          "bbox": [
+            [
+              -0.8516644259156609,
+              -0.15701830185677432,
+              -0.88363636136055
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "reflected": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\02_reflected.npz",
+        "sha256": "d97474173309388e8ee666b9884c1f5de49dac615ef293975fdaa24d95ee5d9c",
+        "quality": {
+          "vertices": 5991,
+          "faces": 12146,
+          "edges": 18219,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -82,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 9.458920671475028e-12,
+          "bbox": [
+            [
+              -0.9395018723798185,
+              -0.8610301887229939,
+              -0.9830996269786546
+            ],
+            [
+              0.9718618506202811,
+              0.3404100252386781,
+              1.0101268752302883
+            ]
+          ]
+        }
+      },
+      "union": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\02_union_largest.npz",
+        "sha256": "526253d0104ec2687d3b2f2bbc24fe414cee2bc897707be3785ba86896e92a95",
+        "quality": {
+          "vertices": 11667,
+          "faces": 23658,
+          "edges": 35487,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -162,
+          "genus_if_closed_connected": 82,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.2268488193075668e-10,
+          "bbox": [
+            [
+              -0.9395018723798185,
+              -0.8610301887229939,
+              -0.9830996269786546
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "operator": {
+        "iteration": 2,
+        "requested_plane": {
+          "normal": [
+            0.23,
+            1.0,
+            0.18
+          ],
+          "offset": 0.1
+        },
+        "normal": [
+          0.22077654594557197,
+          0.9598980258503129,
+          0.17278164465305632
+        ],
+        "actual_offset": 0.1,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 12610,
+        "input_triangles": 25668,
+        "discarded_negative_vertices": 6911,
+        "crossed_input_edges": 539,
+        "cut_vertices": 5991,
+        "cut_triangles": 12146,
+        "reflected_vertices": 5991,
+        "reflection_coordinate_max_error": 5.551115123125783e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 2.1379431182283564,
+        "half_volume": 1.0689715591141782,
+        "union_double_half_volume_error": 0.0,
+        "output_seam_vertices": 295,
+        "largest_component": {
+          "components_before_selection": 4,
+          "component_surface_areas": [
+            19.347655776486572,
+            0.10190035859308924,
+            0.10190035859309153,
+            0.0028884540966758318
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 11667,
+          "faces": 23658,
+          "edges": 35487,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -162,
+          "genus_if_closed_connected": 82,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.2268488193075668e-10,
+          "bbox": [
+            [
+              -0.9395018723798185,
+              -0.8610301887229939,
+              -0.9830996269786546
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "half": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\03_cut_positive.npz",
+        "sha256": "f9171b3422c1560683c82b71b3e6b072c3b05e17d9ef7976acdf20006b926618",
+        "quality": {
+          "vertices": 5705,
+          "faces": 11578,
+          "edges": 17367,
+          "face_corners": 3,
+          "components": 5,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -84,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.062753587637185e-11,
+          "bbox": [
+            [
+              -0.8155843997739608,
+              -0.7154897859651544,
+              -0.14841398395218205
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "reflected": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\03_reflected.npz",
+        "sha256": "26d474b4237404180c9ad96149d7c3c4bae66ff18bce9c10ef44e36805f46374",
+        "quality": {
+          "vertices": 5705,
+          "faces": 11578,
+          "edges": 17367,
+          "face_corners": 3,
+          "components": 5,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -84,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.0627535876619589e-11,
+          "bbox": [
+            [
+              -0.8155843997739607,
+              -0.8073261984517704,
+              -0.7960744265331361
+            ],
+            [
+              0.9859240779936099,
+              1.0309092044830324,
+              0.3461797110275502
+            ]
+          ]
+        }
+      },
+      "union": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\03_union_largest.npz",
+        "sha256": "8ba41722515a18585bc5ee89ef6c40c20bb6c1f27316a7b8d6ff38ab0d900835",
+        "quality": {
+          "vertices": 10983,
+          "faces": 22338,
+          "edges": 33507,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -186,
+          "genus_if_closed_connected": 94,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.0627535876613254e-11,
+          "bbox": [
+            [
+              -0.8155843997739608,
+              -0.8073261984517704,
+              -0.7960744265331361
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      "operator": {
+        "iteration": 3,
+        "requested_plane": {
+          "normal": [
+            0.15,
+            0.26,
+            1.0
+          ],
+          "offset": 0.15
+        },
+        "normal": [
+          0.14366735268878203,
+          0.24902341132722217,
+          0.9577823512585468
+        ],
+        "actual_offset": 0.15,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 11667,
+        "input_triangles": 23658,
+        "discarded_negative_vertices": 6322,
+        "crossed_input_edges": 524,
+        "cut_vertices": 5705,
+        "cut_triangles": 11578,
+        "reflected_vertices": 5705,
+        "reflection_coordinate_max_error": 3.3306690738754696e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 1.7697890076663616,
+        "half_volume": 0.884894503833181,
+        "union_double_half_volume_error": 4.440892098500626e-16,
+        "output_seam_vertices": 328,
+        "largest_component": {
+          "components_before_selection": 5,
+          "component_surface_areas": [
+            18.48545805135352,
+            0.03530049027438652,
+            0.0004465705609835579,
+            0.003078227709665617,
+            0.0003435120312082011
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 10983,
+          "faces": 22338,
+          "edges": 33507,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -186,
+          "genus_if_closed_connected": 94,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.0627535876613254e-11,
+          "bbox": [
+            [
+              -0.8155843997739608,
+              -0.8073261984517704,
+              -0.7960744265331361
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              1.0309092044830321
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "half": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\04_cut_positive.npz",
+        "sha256": "8ee68eb501e068e82c857f582b15d2ddbfd284a8eeebe3f79875ff709dc42a6e",
+        "quality": {
+          "vertices": 4717,
+          "faces": 9642,
+          "edges": 14463,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -104,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 4.7464195820887405e-11,
+          "bbox": [
+            [
+              -0.37507004122289284,
+              -0.4951407945657095,
+              -0.7264029519046139
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              0.990992781720311
+            ]
+          ]
+        }
+      },
+      "reflected": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\04_reflected.npz",
+        "sha256": "93e9703d0869dacb14bb14220c70b12b1ed92473c967a00e2a7e5cf7c7965a0a",
+        "quality": {
+          "vertices": 4717,
+          "faces": 9642,
+          "edges": 14463,
+          "face_corners": 3,
+          "components": 2,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -104,
+          "genus_if_closed_connected": null,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 4.746419607699104e-11,
+          "bbox": [
+            [
+              -0.7383633233064946,
+              -0.7436076507493833,
+              -0.7264029519046139
+            ],
+            [
+              0.6341579273916962,
+              0.8535987785621754,
+              0.9911403476201092
+            ]
+          ]
+        }
+      },
+      "union": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\04_union_largest.npz",
+        "sha256": "6bf5d1338dd1aa10c7ec0fd15b6a5130ff4beb58ed926354f023f19d4ac0204f",
+        "quality": {
+          "vertices": 9408,
+          "faces": 19288,
+          "edges": 28932,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -236,
+          "genus_if_closed_connected": 119,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 4.746419559546529e-11,
+          "bbox": [
+            [
+              -0.7383633233064946,
+              -0.7436076507493833,
+              -0.7264029519046136
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              0.9911403476201092
+            ]
+          ]
+        }
+      },
+      "operator": {
+        "iteration": 4,
+        "requested_plane": {
+          "normal": [
+            0.82,
+            0.62,
+            -0.22
+          ],
+          "offset": 0.2
+        },
+        "normal": [
+          0.7799978655649777,
+          0.5897544837198613,
+          -0.20926772002962818
+        ],
+        "actual_offset": 0.2,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 10983,
+        "input_triangles": 22338,
+        "discarded_negative_vertices": 6528,
+        "crossed_input_edges": 421,
+        "cut_vertices": 4717,
+        "cut_triangles": 9642,
+        "reflected_vertices": 4717,
+        "reflection_coordinate_max_error": 4.440892098500626e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 1.2482962213396847,
+        "half_volume": 0.6241481106698423,
+        "union_double_half_volume_error": 0.0,
+        "output_seam_vertices": 502,
+        "largest_component": {
+          "components_before_selection": 4,
+          "component_surface_areas": [
+            15.711333101549458,
+            0.0005360066002107779,
+            0.0049096678227183175,
+            0.004909667822718313
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 9408,
+          "faces": 19288,
+          "edges": 28932,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -236,
+          "genus_if_closed_connected": 119,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 4.746419559546529e-11,
+          "bbox": [
+            [
+              -0.7383633233064946,
+              -0.7436076507493833,
+              -0.7264029519046136
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              0.9911403476201092
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "paper_operator": {
+    "initial_largest_component": {
+      "components_before_selection": 16,
+      "component_surface_areas": [
+        21.006524539565515,
+        0.004174098097499253,
+        0.004174101476207253,
+        0.0041741048549179885,
+        0.0041741048549179885,
+        0.0041741048549179885,
+        0.004174101476208621,
+        0.0041741048549179885,
+        0.004174094718792619,
+        0.004174114991062501,
+        0.004174114991062501,
+        0.004174108233630091,
+        0.004174101476208621,
+        0.00417409809750062,
+        0.010990375746352655,
+        0.004174091340087354
+      ],
+      "selected_component": 0,
+      "criterion": "largest surface area, as in paper"
+    },
+    "iterations": [
+      {
+        "iteration": 1,
+        "requested_plane": {
+          "normal": [
+            1.0,
+            0.18,
+            0.12
+          ],
+          "offset": 0.05
+        },
+        "normal": [
+          0.9773905664828937,
+          0.17593030196692086,
+          0.11728686797794724
+        ],
+        "actual_offset": 0.05,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 12506,
+        "input_triangles": 25408,
+        "discarded_negative_vertices": 6525,
+        "crossed_input_edges": 518,
+        "cut_vertices": 6337,
+        "cut_triangles": 12882,
+        "reflected_vertices": 6337,
+        "reflection_coordinate_max_error": 4.440892098500626e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 2.459317544478407,
+        "half_volume": 1.2296587722392032,
+        "union_double_half_volume_error": 4.440892098500626e-16,
+        "output_seam_vertices": 651,
+        "largest_component": {
+          "components_before_selection": 2,
+          "component_surface_areas": [
+            23.195528417778657,
+            1.0983386049680094e-06
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 12610,
+          "faces": 25668,
+          "edges": 38502,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -224,
+          "genus_if_closed_connected": 113,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 3.247518294180198e-11,
+          "bbox": [
+            [
+              -0.9685672728084878,
+              -1.0352634729712602,
+              -0.9901985594392615
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      {
+        "iteration": 2,
+        "requested_plane": {
+          "normal": [
+            0.23,
+            1.0,
+            0.18
+          ],
+          "offset": 0.1
+        },
+        "normal": [
+          0.22077654594557197,
+          0.9598980258503129,
+          0.17278164465305632
+        ],
+        "actual_offset": 0.1,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 12610,
+        "input_triangles": 25668,
+        "discarded_negative_vertices": 6911,
+        "crossed_input_edges": 539,
+        "cut_vertices": 5991,
+        "cut_triangles": 12146,
+        "reflected_vertices": 5991,
+        "reflection_coordinate_max_error": 5.551115123125783e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 2.1379431182283564,
+        "half_volume": 1.0689715591141782,
+        "union_double_half_volume_error": 0.0,
+        "output_seam_vertices": 295,
+        "largest_component": {
+          "components_before_selection": 4,
+          "component_surface_areas": [
+            19.347655776486572,
+            0.10190035859308924,
+            0.10190035859309153,
+            0.0028884540966758318
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 11667,
+          "faces": 23658,
+          "edges": 35487,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -162,
+          "genus_if_closed_connected": 82,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.2268488193075668e-10,
+          "bbox": [
+            [
+              -0.9395018723798185,
+              -0.8610301887229939,
+              -0.9830996269786546
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830321,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      {
+        "iteration": 3,
+        "requested_plane": {
+          "normal": [
+            0.15,
+            0.26,
+            1.0
+          ],
+          "offset": 0.15
+        },
+        "normal": [
+          0.14366735268878203,
+          0.24902341132722217,
+          0.9577823512585468
+        ],
+        "actual_offset": 0.15,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 11667,
+        "input_triangles": 23658,
+        "discarded_negative_vertices": 6322,
+        "crossed_input_edges": 524,
+        "cut_vertices": 5705,
+        "cut_triangles": 11578,
+        "reflected_vertices": 5705,
+        "reflection_coordinate_max_error": 3.3306690738754696e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 1.7697890076663616,
+        "half_volume": 0.884894503833181,
+        "union_double_half_volume_error": 4.440892098500626e-16,
+        "output_seam_vertices": 328,
+        "largest_component": {
+          "components_before_selection": 5,
+          "component_surface_areas": [
+            18.48545805135352,
+            0.03530049027438652,
+            0.0004465705609835579,
+            0.003078227709665617,
+            0.0003435120312082011
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 10983,
+          "faces": 22338,
+          "edges": 33507,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -186,
+          "genus_if_closed_connected": 94,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 1.0627535876613254e-11,
+          "bbox": [
+            [
+              -0.8155843997739608,
+              -0.8073261984517704,
+              -0.7960744265331361
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              1.0309092044830321
+            ]
+          ]
+        }
+      },
+      {
+        "iteration": 4,
+        "requested_plane": {
+          "normal": [
+            0.82,
+            0.62,
+            -0.22
+          ],
+          "offset": 0.2
+        },
+        "normal": [
+          0.7799978655649777,
+          0.5897544837198613,
+          -0.20926772002962818
+        ],
+        "actual_offset": 0.2,
+        "plane_adjusted_to_intersect_largest": false,
+        "input_vertices": 10983,
+        "input_triangles": 22338,
+        "discarded_negative_vertices": 6528,
+        "crossed_input_edges": 421,
+        "cut_vertices": 4717,
+        "cut_triangles": 9642,
+        "reflected_vertices": 4717,
+        "reflection_coordinate_max_error": 4.440892098500626e-16,
+        "Boolean_union_API": "manifold3d.Manifold.__add__",
+        "exact_operator": "trim_by_plane(positive halfspace) -> reflect across actual plane -> Boolean union -> largest connected surface area",
+        "union_volume": 1.2482962213396847,
+        "half_volume": 0.6241481106698423,
+        "union_double_half_volume_error": 0.0,
+        "output_seam_vertices": 502,
+        "largest_component": {
+          "components_before_selection": 4,
+          "component_surface_areas": [
+            15.711333101549458,
+            0.0005360066002107779,
+            0.0049096678227183175,
+            0.004909667822718313
+          ],
+          "selected_component": 0,
+          "criterion": "largest surface area, as in paper"
+        },
+        "quality": {
+          "vertices": 9408,
+          "faces": 19288,
+          "edges": 28932,
+          "face_corners": 3,
+          "components": 1,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "euler_characteristic": -236,
+          "genus_if_closed_connected": 119,
+          "finite": true,
+          "degenerate_fans": 0,
+          "minimum_fan_area": 4.746419559546529e-11,
+          "bbox": [
+            [
+              -0.7383633233064946,
+              -0.7436076507493833,
+              -0.7264029519046136
+            ],
+            [
+              1.0309092044830321,
+              1.0309092044830324,
+              0.9911403476201092
+            ]
+          ]
+        }
+      }
+    ],
+    "final_quality": {
+      "vertices": 9408,
+      "faces": 19288,
+      "edges": 28932,
+      "face_corners": 3,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "euler_characteristic": -236,
+      "genus_if_closed_connected": 119,
+      "finite": true,
+      "degenerate_fans": 0,
+      "minimum_fan_area": 4.746419559546529e-11,
+      "bbox": [
+        [
+          -0.7383633233064946,
+          -0.7436076507493833,
+          -0.7264029519046136
+        ],
+        [
+          1.0309092044830321,
+          1.0309092044830324,
+          0.9911403476201092
+        ]
+      ]
+    },
+    "cut_discard_reflect_Boolean_union_actual": true,
+    "largest_component_by_area": true,
+    "plane_order_is_material": true,
+    "manifold_status": "Error.NoError"
+  },
+  "pre_CC": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\05_paper_pre_CC.npz",
+    "sha256": "6bf5d1338dd1aa10c7ec0fd15b6a5130ff4beb58ed926354f023f19d4ac0204f",
+    "quality": {
+      "vertices": 9408,
+      "faces": 19288,
+      "edges": 28932,
+      "face_corners": 3,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "euler_characteristic": -236,
+      "genus_if_closed_connected": 119,
+      "finite": true,
+      "degenerate_fans": 0,
+      "minimum_fan_area": 4.746419559546529e-11,
+      "bbox": [
+        [
+          -0.7383633233064946,
+          -0.7436076507493833,
+          -0.7264029519046136
+        ],
+        [
+          1.0309092044830321,
+          1.0309092044830324,
+          0.9911403476201092
+        ]
+      ]
+    }
+  },
+  "actual_CC1": {
+    "backend": {
+      "name": "COMPAS",
+      "version": "2.15.1",
+      "operation": "Mesh.subdivided"
+    },
+    "scheme": "catmullclark",
+    "level": 1,
+    "terminal_derivative": true,
+    "semantic_lineage": "NOT IMPLEMENTED",
+    "boundary_policy": "Fix existing naked-boundary vertices; crease only naked-boundary edges at 2; k=1.",
+    "fixed_vertex_count": 0,
+    "creased_edge_count": 0,
+    "boundary_crease": 2,
+    "components_before": 1,
+    "components_after": 1,
+    "input": {
+      "vertex_count": 9408,
+      "face_count": 19288,
+      "edge_count": 28932,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        1.7692725277895267,
+        1.7745168552324158,
+        1.7175432995247228
+      ]
+    },
+    "output": {
+      "vertex_count": 57628,
+      "face_count": 57864,
+      "edge_count": 115728,
+      "boundary_edge_count": 0,
+      "is_manifold": true,
+      "is_closed": true,
+      "bounding_box": [
+        1.763524494780555,
+        1.7696837177228308,
+        1.7054926848390166
+      ]
+    },
+    "budget": {
+      "estimated_output_vertices": 57628,
+      "estimated_output_faces": 57864,
+      "budget_checks": {
+        "face": "SAFE",
+        "vertex": "SAFE",
+        "generation": null
+      },
+      "status": "SAFE",
+      "reasons": []
+    },
+    "retained_vertex_displacement": {
+      "count": 9408,
+      "median": 0.004545262130604102,
+      "maximum": 0.3736780652050961
+    },
+    "boundary_preservation": {
+      "status": "PASS",
+      "maximum_vertex_displacement": 0.0,
+      "maximum_midpoint_error": 0.0,
+      "checked_segments": 0,
+      "tolerance": 1.7745168552324158e-10
+    },
+    "elapsed_seconds": 3.7155901000005542
+  },
+  "final": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\06_actual_paper_CC1_component.npz",
+    "sha256": "1711d1ff049df80bd7a6e86ba9e3f6ee946c7654a5832d33fdda0da050ec660e",
+    "quality": {
+      "vertices": 57628,
+      "faces": 57864,
+      "edges": 115728,
+      "face_corners": 4,
+      "components": 1,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "euler_characteristic": -236,
+      "genus_if_closed_connected": 119,
+      "finite": true,
+      "degenerate_fans": 0,
+      "minimum_fan_area": 6.371187564870485e-09,
+      "bbox": [
+        [
+          -0.7326152902975228,
+          -0.7387745132397989,
+          -0.718319890432611
+        ],
+        [
+          1.0309092044830321,
+          1.030909204483032,
+          0.9871727944064056
+        ]
+      ]
+    }
+  },
+  "component_geometry": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\ACTUAL_PAPER_COMPONENT.json",
+  "component_geometry_sha256": "2499252cad3b18ecacb9cf6207df784f7763a333dc41188ed6fef54c1354f53e",
+  "actual_closed_3D_geometry_retained": true,
+  "whole_column_not_yet_assembled": true,
+  "original_column_modified": false,
+  "no_post_CC_profile_filter": true,
+  "elapsed_seconds": 6.66200260000187,
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\generate_paper_component.py": "91075b9f62904289dbab7aa51ea66db6ab6a59f5a546d32473be4298e9a5d575",
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_component_kernel.py": "248c51de3a9007dbcffe9d1ff4a2c456c2cfe404ab453560fb428c8f4893e34e",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\surface.py": "4a2abbdc681c4319a442dfb401529c41161d2cfc5c1341c04437dab34feaf7d4"
+  }
+}

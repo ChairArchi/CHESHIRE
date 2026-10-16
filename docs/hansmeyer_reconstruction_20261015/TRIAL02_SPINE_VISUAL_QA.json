@@ -1,0 +1,42 @@
+{
+  "schema": "CHESHIRE_SPINE_INTERNAL_VISUAL_QA_V1",
+  "status": "diagnostic_rejected_close",
+  "candidate_root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume",
+  "generation_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume\\RECEIPT.json",
+    "sha256": "98365d2367cd0f8fda4c22ff0480e9547f55897f46b5ccd1e6ae9229e94acf4d"
+  },
+  "review_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial02_spine_chain_resume\\SPINE_REVIEW\\REVIEW_RECEIPT.json",
+    "sha256": "cf7d9bd76133e679f1f9adebc7935851ab9d2c5bf2b13d0067da1b2276cada16"
+  },
+  "reviewed_actual_views": [
+    "close_oblique",
+    "front",
+    "body_oblique"
+  ],
+  "matched_control": "Original accepted NESTED02 PNGs; never rerendered",
+  "verdict": "Not visually adopted. No model package or user image delivery.",
+  "checks": {
+    "continuous_chain": false,
+    "relief_hierarchy": false,
+    "calm_ground_and_macro": true,
+    "direction_and_junction": "Small periodic perturbations on some long wrinkles are visible, but no clear broad linked nodes or coherent deep neck grooves."
+  },
+  "observations": [
+    "Frozen close is dominated by unchanged broad S cloth, fine serrations, and pre-existing cup/plate junctions. No clear volumetric segmented spine reads along that parent.",
+    "Fixed body comparison confirms small periodic swells and depressions on some long wrinkles. They read as shallow ribbon perturbations and occasional angular facets rather than broad connected node masses.",
+    "Whole front remains dominated by the baseline cloth flow. This preserves calm ground but does not demonstrate meaningful relief hierarchy.",
+    "No newly dominant needle/foil catastrophe is visible at these 900px views. This is not a self-intersection certificate."
+  ],
+  "conclusion": "Close coverage is deficient, but coverage alone is not established as the main visual limitation. Do not expand all four ridge families until actual formed-cage versus transferred surface mass/section is compared.",
+  "context_authorization": "Root explicitly authorized fixed front/body diagnostic only in the already loaded session after close failed. No beauty adoption or package authorized.",
+  "user_images_emitted": false,
+  "package_created": false,
+  "production_receipts_modified": false,
+  "render_adapter": {
+    "path": "experiments/fold_junction_development_20261015/render_spine_review_v2.py",
+    "sha256": "a4fc6b0e256c03efe5754f56bef2ed24cf1bf87a926293925b8d2f76216b38ea"
+  },
+  "adapter_correction": "Preserved executed v1. V2 unpacks native loader obj/counts/loading and records loading; no shape/camera/material/lighting changes."
+}

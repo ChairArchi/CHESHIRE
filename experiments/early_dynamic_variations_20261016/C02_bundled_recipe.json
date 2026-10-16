@@ -1,0 +1,59 @@
+{
+  "id": "C02",
+  "label_ko": "길게 굽은 주름 다발 · 길이 70%",
+  "family": "coherent_G2_bundle",
+  "length_scale": 1.35,
+  "radius_scale_profile": [
+    1.0,
+    0.9,
+    0.92,
+    0.95,
+    0.92,
+    1.15,
+    1.08,
+    1.0
+  ],
+  "macro_fields": {},
+  "global_XY_reflection": true,
+  "bundled_fields": {
+    "order": 2,
+    "strength": 0.48,
+    "curvature": 0.38,
+    "secondary": 0.34,
+    "crown_strength": 0.18,
+    "crown_return": 0.28,
+    "crown_centre": 0.75,
+    "crown_width": 0.16,
+    "lower_strength": 0.1,
+    "tangent_strength": 0.12,
+    "bound_radius_fraction": 0.7,
+    "envelope_knots": [
+      0.0,
+      0.06,
+      0.16,
+      0.3,
+      0.52,
+      0.7,
+      0.86,
+      0.96,
+      1.0
+    ],
+    "envelope_values": [
+      0.0,
+      0.1,
+      0.85,
+      1.0,
+      1.0,
+      1.0,
+      0.85,
+      0.1,
+      0.0
+    ]
+  },
+  "macro_injection_stage": "G02_OVERLAP_BEFORE_WALL",
+  "genuine_early_replay": true,
+  "detail_added": false,
+  "fabrication_certified": false,
+  "spatial_scale_scope": "Continuous large curved flutes over 70% height; secondary folds follow the same phase at a smaller scale.",
+  "unchanged_branch_grammar": "One canonical root and three canonical sidewalls; spatial extent and early carrier/folds differ, not the branch count."
+}

@@ -1,0 +1,1928 @@
+{
+  "shape_vertex_fields": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_G7.npy",
+    "sha256": "02fb2cf195f21e903042b2b6d928269285ec75a9a206787d186b2b062cbda457"
+  },
+  "protected_cap_mask": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant16_whole_hybrid_20261016\\SOURCE_CAP_PROTECTION.npy",
+    "sha256": "4b187e4524e82eb9429649849b746ba12b7eb92e392600a895f45fde31c4b558"
+  },
+  "display_flow_protection": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\variant22_flow_corrected_visible_relief_whole_hybrid_20261016\\DISPLAY_FLOW_PROTECTION.npy",
+    "sha256": "7225a683d12ecc621c3856084afca8ecb2dabdeddda101d30b3bd35e75650d90"
+  },
+  "tissue_host_faces": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz",
+    "sha256": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33"
+  },
+  "lineage_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_LINEAGE_RECEIPT.json",
+    "sha256": "f2ddfa48ae52eb96edcc0f0a2af91ddf4ca64e39c7602af2ebfe91cacfdd7d5b"
+  },
+  "classification_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json",
+    "sha256": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241"
+  },
+  "tissue_host_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\RAW_TISSUE_RECEIPT.json",
+    "sha256": "850639555b6756d7c74339adf1fcb76808edcfb53e711391cea0ea6f4e8106bc"
+  },
+  "SOURCE": {
+    "kind": "ACTUAL_MULTIGENERATION_AUTHORED_HISTORY_SOURCE_CLASSIFICATION",
+    "prototype": true,
+    "config": {
+      "config": {
+        "radius": 0.45,
+        "length_scale": 9.735842284057451,
+        "minimum_samples": 8,
+        "minimum_G2_ancestor_faces": 3,
+        "maximum_gradient_condition": 20.0,
+        "prior_mix": 0.7,
+        "early_turn_start": 0.01,
+        "early_turn_full": 0.12,
+        "middle_amplitude_start_fraction": 0.0005,
+        "middle_amplitude_full_fraction": 0.0025,
+        "late_amplitude_start_fraction": 8e-05,
+        "late_amplitude_full_fraction": 0.0006,
+        "tissue_history_threshold": 0.52
+      },
+      "class_names": [
+        "calm",
+        "weak_fold",
+        "strong_coherent_fold",
+        "rounded_bulge",
+        "multidirectional_junction_candidate"
+      ],
+      "early_evidence": "Actual G2/G3/G4/G5 normal-turning distribution and sign-free one-axis persistence in one fixed physical/material window; not curvature fitting.",
+      "residual_semantics": "Actual-minus-neutral-predicted vertex placement and fields, not pure fold delta.",
+      "history_units": "All coordinates/radius/length_scale share model units; amplitude thresholds are fractions of one global declared length scale.",
+      "feature_birth_claimed": false,
+      "topological_vertex_birth_is_not_feature_birth": true,
+      "correspondence_required": true,
+      "insufficient_history_fallback": "Keep prior; never infer pre-event absence from an undefined counterpart.",
+      "junction_semantics": "Multidirectional shape candidate, not certified topological branching.",
+      "flow_priority": "Final actual G7 ridge and weak-profile scalar guards preserve principal corridors independently of class/host admission."
+    },
+    "source_hashes": {
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_WEIGHTS_G3.npz": "d38abfc1d1c0a222ef5a68cda030db98ed78731321168d8452e94698a2037a08",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\HISTORY_FEATURES.npz": "9648720a0c4659cbe131208aa8ec57906df5f18c8be386fa4fce6dd5b43ae152",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\AUTHORED_STAGE_RESIDUALS.npz": "55001fa18c8156f13b494c66f2547d825b5522e8de99eb2e5ed184e64a08eb75",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.json": "1f7b3875653a08ab883027fe198ccb8f2db2d9530208f0d7efaf9fd9f8175a41",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33",
+      "E:\\CHESHIRE_DATA\\experiments\\interleaved_mandel_subdivision_20261016\\generation_analysis\\ANALYSIS_RECEIPT.json": "4e89e3024c18f323f6297ffc010fb164ca2bc7c015391fb83b1003216a2c1451",
+      "E:\\CHESHIRE_DATA\\experiments\\interleaved_mandel_subdivision_20261016\\generation_analysis\\EXACT_EARLY_ANCESTRY.npz": "d8d146c1c58bf0b37c6acd6a5e5414ce8a96e24f6ad993f7920b99ed00e3b997",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\generation.json": "c79e2227de6ffe60b278f8a79838c14fe8795eb8c3f221158e57156d0329d47b",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\control_quad.npz": "89b5e58f6b08f8f5958cb7654e1a417be7632bf13e3d765dc7a082970eeec055",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL\\generation.json": "2b676e3cc450fe215877e77b74d2d954f6b622b39fa3737f389aaee5b94d56b6",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL\\control_quad.npz": "56ea4dd32d979ed6daa368ee93d57509e431addfb38ef44d3250ca6b41f84abc",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL\\generation.json": "768c0a3c7a88d78e12baef0f0bc9063c0d4c522cf6ffb05df27a3dc2d10a628d",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL\\control_quad.npz": "e87f517a02d6ab8e042cabd09c9236d52422b5dfcb4cd196c9b53e61949fad6d",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\generation.json": "9b7c3bb53f1d6128c969b1143cb96fa1c50852084ee1961b0f031e2f20d59534",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\control_quad.npz": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\generation.json": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\generation.json": "f79197a633cf5809e8c734c3e5871a17975d80f2e03e6577698a231b91661ddd",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL\\evidence.npz": "0fc9678d9c74575311d0f7748938f366e2ceec33481c78d9c004166bb8f7eaca",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL\\evidence.npz": "7d06ad7c69b627a1843d9001b26ecbf8a8801d5dd89f2ed4195929055eb99b1a",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\evidence.npz": "3ae532ad0ec4e09367a6bfe02017b1618c06ee3e6407dd57771ad121f6abe1c7",
+      "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\evidence.npz": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e"
+    },
+    "source_snapshots": {
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\resume_history_transport.py": "b068a7d3fe9ca12e80202a5f4a2ce9bb967780b38b407e1c30dd00faaa6848dd",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\run_history_classification.py": "e06917906fec75f7351c00812b25f4083411d71f8b2efe9b6cb7badaaab48313",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\run_history_classification_failed_transport.py": "0fd70ed14adc234843d546d265b6302f35b9405ba29c319d7e0bcadbd20ddc15",
+      "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\history_classifier.py": "4eb44513098b402c4447db2412b91f6bc7926918c90e5b83ed4adcf6886ae0c1"
+    },
+    "actual_stage_operator_metadata": {
+      "G03_SIDEWALL": {
+        "input_case": "SPAN",
+        "candidate": "SIDEWALL_FAN",
+        "transfer_schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "selected_recipe_receipt": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G03_events\\generation.json",
+        "selected_recipe_receipt_sha256": "8ca6bc8d1a61dda5aa917b36a8c3be6dc90f967fda5e7d8e76d2633695cb2e31",
+        "input_only_change": "No G0 change. One bounded G1/G2 applied finite-field axial attenuation; dependent later operators recompute on revised parents.",
+        "added_normal_field_passes": 0,
+        "self_intersection": "NOT_CHECKED_EXPLORATORY",
+        "fabrication": "NOT_CHECKED",
+        "event_recipe": {
+          "source_generation": 3,
+          "output_generation": 3,
+          "parent_event_id": 1,
+          "parent_role": 1,
+          "parent_rows": [
+            1,
+            2
+          ],
+          "beta_centres": [
+            -1.85,
+            1.3,
+            0.05
+          ],
+          "beta_halfwidth": 0.35,
+          "heights_root_radius": [
+            0.12,
+            0.4,
+            0.7
+          ],
+          "scales": [
+            1.0,
+            0.8,
+            0.45
+          ],
+          "bend": 0.3,
+          "twist": 0.0,
+          "projection_guard": false,
+          "minimum_patch_faces": 2,
+          "seam_tolerance": 1e-11,
+          "source_symmetry_tolerance": 0.0,
+          "pca_gap_tolerance": 1e-08,
+          "selection_scope": "Fixed beta sectors of actual inherited root boundary PCA; sidewall rows 1 and 2 only (zero based)",
+          "coefficient_scope": "A single authored alternative recipe; coefficients are not user design constraints",
+          "generation_scope": "G03 remains 3; inherited root and new topology events are counted separately from subdivision",
+          "symmetry_scope": "Actual saved parent involutions checked; canonical complete faces reflected by vertex identity",
+          "collision_scope": "Intersections allowed; no collision checks or repair",
+          "cap_scope": "Inherited root control-cap XYZ exact before subsequent CC; no later CC cap-invariance claim",
+          "lineage_scope": "Existing births and source associations inherited; new or moved interior birth uses event ID and class -1; mirrored source associations mean canonical ancestry"
+        },
+        "source_surface": "mean",
+        "added_topology_events": 3,
+        "constructive_event_count": 4,
+        "inherited_canonical_root_events": 1,
+        "new_canonical_sidewall_events": 3,
+        "reflected_constructive_event_instances": 16,
+        "reflected_new_sidewall_event_instances": 12,
+        "accepted_canonical_events_by_level": [
+          1,
+          3,
+          0
+        ],
+        "added_field_passes": 0,
+        "added_mandelbulb_evaluations": 0,
+        "subdivision_passes_added": 0,
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_ROOT",
+        "source_generation": 3,
+        "source_control_sha256": "a3f3073e61528a6a210f475704bf74a362768522ab829118535fd7da95e696b1",
+        "source_generation_json_sha256": "1cbfc79c6552da8b540a27d02c4246c161f554a4e831c73599bf5a00ca349e6f",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_ROOT",
+        "source_rule_revision_recipe": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 0.0,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 0.0,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "correspondence": "Actual source/chart or attached-event IDs; no XYZ repair",
+          "actual_native": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.553147333202946e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.553147333202946e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          }
+        },
+        "subdivision_generation": 3,
+        "native_surface": "Explicit arithmetic quad-centre fans",
+        "control_vertices": 27354,
+        "control_quads": 27352,
+        "native_vertices": 54706,
+        "native_triangles": 109408,
+        "control_file_sha256": "89b5e58f6b08f8f5958cb7654e1a417be7632bf13e3d765dc7a082970eeec055",
+        "geometry_file_sha256": "379aae89888aa9c58f6db9aef5414d5156646f3566cca3330f696d1569c7c0d4",
+        "checks": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 7.030579429665394e-06,
+          "control_xyz_sha256": "5be52d4c6f5d051a0e007a5dcfa3236416c08198e6973f32897e4cfd6b113489",
+          "control_faces_sha256": "74a1c1a4fc7bb6912432cd645a03f160291ada430749e7510fd3c2997ed86e57",
+          "chart_sha256": "9a759d1b68a4c5a062e6836362936239586ff2de73ef24732573acbcf47c3b7b",
+          "native_xyz_sha256": "db00495c687f1a32046b6cc7652108ce4ae1291ab7ab7a132778f8473112ba57",
+          "native_faces_sha256": "1203f51d83a99dceba71cf361bd9b1e23595ce92561f47d325223995b1c69ef2",
+          "symmetry_scope": "Actual control XYZ and oriented quads checked using explicit involutions",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true,
+          "minimum_native_triangle_area_threshold": 1e-14
+        },
+        "visual_success": "NOT_ASSESSED",
+        "evidence_file_sha256": "59a74daaaa2defe02b071d59530d95f66e38978d8330d0a0a1e057e51ddbba51",
+        "events_file_sha256": "79ef22611fb97dad79ef694f5ca21e9734b5521cdb681e1bb6308e419cd613aa"
+      },
+      "G04_NEUTRAL": {
+        "input_case": "SPAN",
+        "candidate": "SIDEWALL_FAN",
+        "transfer_schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "selected_recipe_receipt": "E:\\CHESHIRE_DATA\\experiments\\sidewall_fan_growth_20261013\\trial01\\SIDEWALL_FAN\\SPAN\\G04\\generation.json",
+        "selected_recipe_receipt_sha256": "4082952577e3d34f25a2867009376ec91f28fd28189cefef67f064d4a3769949",
+        "input_only_change": "No G0 change. One bounded G1/G2 applied finite-field axial attenuation; dependent later operators recompute on revised parents.",
+        "added_normal_field_passes": 0,
+        "self_intersection": "NOT_CHECKED_EXPLORATORY",
+        "fabrication": "NOT_CHECKED",
+        "neutral_CC_passes_added": 1,
+        "added_CC_passes": 1,
+        "added_topology_events": 0,
+        "added_field_passes": 0,
+        "added_mandelbulb_evaluations": 0,
+        "parent": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL",
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL",
+        "source_generation": 3,
+        "source_control_sha256": "89b5e58f6b08f8f5958cb7654e1a417be7632bf13e3d765dc7a082970eeec055",
+        "source_generation_json_sha256": "c79e2227de6ffe60b278f8a79838c14fe8795eb8c3f221158e57156d0329d47b",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL",
+        "source_rule_revision_recipe": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 3.552713678800501e-15,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 3.552713678800501e-15,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "correspondence": "Actual source/chart or attached-event IDs; no XYZ repair",
+          "actual_native": {
+            "X": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.556181433338904e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            },
+            "Y": {
+              "passed": true,
+              "mirror_involution": true,
+              "actual_xyz_max_error": 3.556181433338904e-15,
+              "oriented_native_triangle_sets_identical": true,
+              "tolerance": 1e-09,
+              "correspondence": "Explicit control mirror IDs plus actual reflected quad-to-fan-centre correspondence; no nearest-point matching."
+            }
+          }
+        },
+        "subdivision_generation": 4,
+        "native_surface": "Explicit arithmetic quad-centre fans",
+        "control_vertices": 109410,
+        "control_quads": 109408,
+        "native_vertices": 218818,
+        "native_triangles": 437632,
+        "control_file_sha256": "56ea4dd32d979ed6daa368ee93d57509e431addfb38ef44d3250ca6b41f84abc",
+        "geometry_file_sha256": "93b69bcb1f23dcc1ec215d8d00257b5dfe0497f696def35d32dc74d70d0e2bcb",
+        "checks": {
+          "finite": true,
+          "closed_oriented_control": true,
+          "control_components": 1,
+          "control_Euler": 2,
+          "no_orphan_controls": true,
+          "minimum_native_triangle_area": 2.8731252466906756e-07,
+          "control_xyz_sha256": "79ad39a99c0785f6eb292851dc913b56c4461f7f0ee3e9c48a8095472f45aa44",
+          "control_faces_sha256": "17d170a07f0c711252a3e7fdea06b17197ff351f8b2f0a189047b464ae375616",
+          "chart_sha256": "04b10e7b5564949e2b3e531030b41847d3d059b5b7cb29e149cca12da851565f",
+          "native_xyz_sha256": "17771d91edad4719f7f7e6e9c69a7d272d8e1521ba92d07b66912ac7d9199cce",
+          "native_faces_sha256": "15b93dc83b5d51ec59ba4c63d01bb91ff9138aad2aab05ce2bfeb59db8b92a14",
+          "symmetry_scope": "Actual control XYZ and oriented quads checked using explicit involutions",
+          "self_intersection": "NOT_CHECKED_EXPLORATORY",
+          "fabrication": "NOT_CHECKED",
+          "passed": true,
+          "minimum_native_triangle_area_threshold": 1e-14
+        },
+        "visual_success": "NOT_ASSESSED",
+        "evidence_file_sha256": "0fc9678d9c74575311d0f7748938f366e2ceec33481c78d9c004166bb8f7eaca"
+      },
+      "G05_DIRECTIONAL": {
+        "input_case": "SPAN",
+        "candidate": "G05_DIRECTIONAL",
+        "stage_id": "G05_DIRECTIONAL",
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL",
+        "source_generation": 4,
+        "source_control_sha256": "56ea4dd32d979ed6daa368ee93d57509e431addfb38ef44d3250ca6b41f84abc",
+        "source_generation_json_sha256": "2b676e3cc450fe215877e77b74d2d954f6b622b39fa3737f389aaee5b94d56b6",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL",
+        "parent_control_sha256": "56ea4dd32d979ed6daa368ee93d57509e431addfb38ef44d3250ca6b41f84abc",
+        "parent_generation_json_sha256": "2b676e3cc450fe215877e77b74d2d954f6b622b39fa3737f389aaee5b94d56b6",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "operator_metadata": {
+          "generation": 5,
+          "implementation": "REFERENCE_COUPLED",
+          "scale": "LOCAL_INCIDENT_SCALE",
+          "weights": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0,
+          "eq4_eligible": 109408,
+          "eq4_fallback": 0,
+          "intrinsic": null,
+          "scale_ranges": {
+            "face": [
+              0.004833058989874463,
+              0.1512153089939997
+            ],
+            "edge": [
+              0.004835391215460947,
+              0.1512153089939997
+            ],
+            "vertex": [
+              0.00553215620879223,
+              0.14462973743286667
+            ]
+          },
+          "locked_vertex_count": 0,
+          "intrinsic_range": null,
+          "dependency": "Eq1/4 -> Eq10 -> Eq2 -> Eq11; completed faces + ORIGINAL edge midpoints -> Eq3",
+          "normals": "unit input face; edge arithmetic mean; vertex normalized incident face mean",
+          "regional_controls": "Explicit absolute arrays, after intrinsic interpolation; opt-in only.",
+          "experiment": "COHERENT_FOLD_DETAIL_20261013",
+          "mode": "DIRECTIONAL",
+          "recipe": {
+            "schema": "ROOT_COHERENT_SIGNED_DETAIL_V1",
+            "source_generation": 4,
+            "output_generation": 5,
+            "subdivision_passes_added": 1,
+            "scale_mode": "LOCAL_INCIDENT_SCALE",
+            "amplitude": 0.8,
+            "band": {
+              "period_root_radius": 0.7,
+              "major_linear": 0.16,
+              "major_warp_amplitude": 0.2,
+              "major_warp_frequency": 0.9,
+              "major_warp_phase": 0.31
+            },
+            "role_weights": {
+              "SOURCE": 0.0,
+              "WALL": 1.0,
+              "CAP": 0.65
+            },
+            "role_pool": {
+              "own_weight": 2.0,
+              "neighbor_mean_weight": 1.0,
+              "divisor": 3.0
+            },
+            "geometry_gain": {
+              "floor": 0.5,
+              "bending_scale": 0.35,
+              "planarity_scale": 0.03
+            },
+            "normal": {
+              "face": "face_scalar",
+              "edge_incident_mean_factor": 0.5,
+              "vertex_incident_mean_factor": "1 - 1 / actual degree"
+            },
+            "fixed_zero": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w6",
+              "w7"
+            ],
+            "modes": {
+              "COHERENT": "constant supported signed scalar",
+              "DIRECTIONAL": "constant scalar times root-oriented cosine bands",
+              "ROLE_CURVATURE": "same bands times pooled role and actual geometry gains"
+            },
+            "planarity": "max four cyclic fourth-plane distances / perimeter of the other three vertices",
+            "bending": "mean over four adjacent faces of 1 - clipped dot of actual unit face normals",
+            "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+            "coefficient_scope": "new dimensionless normal coefficients times current local incident mean-edge scales",
+            "symmetry_scope": "canonical inherited face signs applied to actual XYZ; no XYZ averaging",
+            "support_policy": {
+              "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+              "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+              "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+            }
+          },
+          "support_policy": {
+            "face": "G03 actual face_event_ids > 0 transported by actual G04 parent_face",
+            "edge_vertex": "incident G04 face means; signed scalar pooled before normal coefficients",
+            "boundary": "final face scalar is multiplied by face support; coupled XYZ halo is allowed"
+          },
+          "source_generation": 4,
+          "output_generation": 5,
+          "subdivision_passes_added": 1,
+          "added_topology_events": 0,
+          "added_field_passes": 0,
+          "actual_class_counts": {
+            "-1": 0,
+            "0": 27354,
+            "1": 54704,
+            "2": 27352
+          },
+          "supported_face_count": 10368,
+          "resolved_control_ranges": {
+            "wf": [
+              -0.7999781945621844,
+              0.7999977870776799
+            ],
+            "w1": [
+              0.0,
+              0.0
+            ],
+            "we": [
+              -0.3999643617880582,
+              0.39998409765570425
+            ],
+            "w2": [
+              0.0,
+              0.0
+            ],
+            "wp": [
+              -0.6316052616170189,
+              0.5968065236265827
+            ],
+            "w3": [
+              0.0,
+              0.0
+            ],
+            "w4": [
+              0.0,
+              0.0
+            ],
+            "w6": [
+              0.0,
+              0.0
+            ],
+            "w7": [
+              0.0,
+              0.0
+            ]
+          },
+          "supported_eq4_eligible_count": 10368,
+          "supported_eq4_fallback_count": 0,
+          "phase_diagnostics": {
+            "physical_wavelength": 0.2994304201482167,
+            "cycles_across_inherited_root_minor_extent": 2.2480510828464113,
+            "supported_adjacent_edge_count": 20416,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              7.639404452608467e-05,
+              0.16460667187994704,
+              0.8587245205196066,
+              1.4657253386156253
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Sampling diagnostic only; not an aesthetic PASS threshold. Phase is unwrapped."
+          },
+          "source_array_hashes": {
+            "xyz": "79ad39a99c0785f6eb292851dc913b56c4461f7f0ee3e9c48a8095472f45aa44",
+            "faces": "17d170a07f0c711252a3e7fdea06b17197ff351f8b2f0a189047b464ae375616",
+            "classes": "3305468f9b3c8ff246811beb7745bda083ef9a853156a1b713b63c340df3d92e",
+            "g4_parent_face": "e0e69156eb9b123c526751d37d7f06e55885397a6c025bfd4e9f9bb444f4bf7a",
+            "g3_face_event_ids": "26e2f4b6665bdcbb0b4860295b3de49405aeb2566b83c8f231bf549c63b2d906",
+            "g3_face_roles": "676166ee87f7a7de20aa214dcf1d51cc9c0d8d1c40b0c658b53ff86ac27bda86",
+            "g3_mirror_face_signs": "807a06b637aab2f261a1ee35ca1069d3cc5a8bcda954e6d1b0eee6d3968828ba"
+          },
+          "coherence_scope": "flat regular-scale constant-field approximation; not exact for curved/nonuniform regions",
+          "controls_scope": "Global weights row is zero; actual dimensionless coefficients are saved resolved arrays, not world lengths.",
+          "anatomy_scope": "G03 SOURCE/WALL/CAP roles gate scalar amplitude; never previous-point V/E/F classes.",
+          "amplitude_scope": "No total-shift cap or preservation of organic/clay impression is imposed.",
+          "success_scope": "Actual directional folds, hierarchy and reference fidelity require visual review."
+        },
+        "added_subdivision_passes": 1,
+        "added_CC_passes": 1,
+        "added_topology_events": 0,
+        "added_mandelbulb_evaluations": 0,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 0,
+        "smoothing_passes_this_stage": 0,
+        "recipe_scope": "Original SPAN G0 loaded exactly; bounded G1/G2 field axial attenuation; all later selected operators and coefficients reused on actual revised parents.",
+        "validation_scope": "Actual new parent hashes and reflection IDs; one native integrity check per rendered stage. G7 intermediate control checkpoints explicitly omit native meshes.",
+        "exclusions": [
+          "Additional parameter matrix",
+          "Added ornament meshes",
+          "Whole-column remeshing",
+          "Independent unchanged-baseline replay",
+          "Self-intersection repair",
+          "Fabrication certification"
+        ],
+        "source_rule_revision": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.592042499930296e-15,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.592042499930296e-15,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+          "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+        },
+        "subdivision_generation": 5,
+        "checkpoint_kind": "CONTROL_AND_EVIDENCE_ONLY",
+        "native_surface": "NOT_STORED_INTERMEDIATE",
+        "control_vertices": 437634,
+        "control_quads": 437632,
+        "control_file_sha256": "e87f517a02d6ab8e042cabd09c9236d52422b5dfcb4cd196c9b53e61949fad6d",
+        "evidence_file_sha256": "7d06ad7c69b627a1843d9001b26ecbf8a8801d5dd89f2ed4195929055eb99b1a",
+        "checks": {
+          "passed": true,
+          "finite": true,
+          "control_xyz_sha256": "059fb4ce2863a377097ecb6efc025ad51e10dcdd7807cc552396afc2c2558693",
+          "control_faces_sha256": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+          "chart_sha256": "de0f2f091e61dfcd4e8e69a708599d3167d1717f88e0fa57f37bbf1a6de21fe5",
+          "scope": "Finite actual controls and actual XYZ/oriented quad reflection; topology follows unchanged verified operators. Native mesh/area not checked at this intermediate."
+        },
+        "visual_success": "NOT_ASSESSED"
+      },
+      "G06_DEPTH08": {
+        "input_case": "SPAN",
+        "candidate": "G06_DEPTH08",
+        "stage_id": "G06_DEPTH08",
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL",
+        "source_generation": 5,
+        "source_control_sha256": "e87f517a02d6ab8e042cabd09c9236d52422b5dfcb4cd196c9b53e61949fad6d",
+        "source_generation_json_sha256": "768c0a3c7a88d78e12baef0f0bc9063c0d4c522cf6ffb05df27a3dc2d10a628d",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL",
+        "parent_control_sha256": "e87f517a02d6ab8e042cabd09c9236d52422b5dfcb4cd196c9b53e61949fad6d",
+        "parent_generation_json_sha256": "768c0a3c7a88d78e12baef0f0bc9063c0d4c522cf6ffb05df27a3dc2d10a628d",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "operator_metadata": {
+          "generation": 6,
+          "implementation": "REFERENCE_COUPLED",
+          "scale": "LOCAL_INCIDENT_SCALE",
+          "weights": {
+            "wf": 0.0,
+            "w1": 0.0,
+            "we": 0.0,
+            "w2": 0.0,
+            "wp": 0.0,
+            "w3": 0.0,
+            "w4": 0.0,
+            "w6": 0.0,
+            "w7": 0.0
+          },
+          "u_map": {},
+          "unknown_u": 0,
+          "eq4_eligible": 437632,
+          "eq4_fallback": 0,
+          "intrinsic": null,
+          "scale_ranges": {
+            "face": [
+              0.0016021048673541074,
+              0.07662674707860141
+            ],
+            "edge": [
+              0.0016356752875996896,
+              0.07662674707860141
+            ],
+            "vertex": [
+              0.0022132866224507117,
+              0.07321983814903414
+            ]
+          },
+          "locked_vertex_count": 0,
+          "intrinsic_range": null,
+          "dependency": "Eq1/4 -> Eq10 -> Eq2 -> Eq11; completed faces + ORIGINAL edge midpoints -> Eq3",
+          "normals": "unit input face; edge arithmetic mean; vertex normalized incident face mean",
+          "regional_controls": "Explicit absolute arrays, after intrinsic interpolation; opt-in only.",
+          "experiment": "DIRECTIONAL_G6_20261013",
+          "mode": "DEPTH_08",
+          "recipe": {
+            "schema": "DIRECTIONAL_HALF_PERIOD_G6_V1",
+            "source_generation": 5,
+            "output_generation": 6,
+            "subdivision_passes_added": 1,
+            "source_candidate": "DIRECTIONAL",
+            "scale_mode": "LOCAL_INCIDENT_SCALE",
+            "amplitudes": {
+              "DEPTH_08": 0.8,
+              "DEPTH_16": 1.6
+            },
+            "band": {
+              "period_root_radius": 0.35,
+              "major_linear": 0.16,
+              "major_warp_amplitude": 0.2,
+              "major_warp_frequency": 0.9,
+              "major_warp_phase": 0.31
+            },
+            "normal": {
+              "face": "face_scalar",
+              "edge_incident_mean_factor": 0.5,
+              "vertex_incident_mean_factor": "1 - 1 / actual degree"
+            },
+            "fixed_zero": [
+              "w1",
+              "w2",
+              "w3",
+              "w4",
+              "w6",
+              "w7"
+            ],
+            "support": "actual G05 parent_face -> actual G04 parent_face -> G03 face_event_ids > 0",
+            "reflection": "same ancestry maps actual G03 mirror_face_signs to G05 centroids; no absolute-value clamp or XYZ averaging",
+            "phase": "2*pi*(minor/.35 + .16*major + .20*sin(.90*major+.31)); root coordinates divided by inherited root radius",
+            "coefficient_scope": "new dimensionless normal amplitudes times actual G05 local incident mean-edge scale",
+            "coherence_scope": "flat regular-scale constant-field approximation; not exact on curved/nonuniform regions",
+            "scope": "two amplitudes at one period; no role/curvature gate, Eq4, new topology event, or Mandelbulb pass"
+          },
+          "source_generation": 5,
+          "output_generation": 6,
+          "source_candidate": "DIRECTIONAL",
+          "subdivision_passes_added": 1,
+          "added_topology_events": 0,
+          "added_field_passes": 0,
+          "applied_amplitude": 0.8,
+          "supported_face_count": 41472,
+          "resolved_control_ranges": {
+            "wf": [
+              -0.799999999867985,
+              0.7999999546573665
+            ],
+            "w1": [
+              0.0,
+              0.0
+            ],
+            "we": [
+              -0.39999751787907617,
+              0.39999990604348845
+            ],
+            "w2": [
+              0.0,
+              0.0
+            ],
+            "wp": [
+              -0.6322989922133355,
+              0.5994123186058102
+            ],
+            "w3": [
+              0.0,
+              0.0
+            ],
+            "w4": [
+              0.0,
+              0.0
+            ],
+            "w6": [
+              0.0,
+              0.0
+            ],
+            "w7": [
+              0.0,
+              0.0
+            ]
+          },
+          "phase_diagnostics": {
+            "physical_wavelength": 0.14971521007410835,
+            "cycles_across_inherited_root_minor_extent": 4.496102165692823,
+            "supported_adjacent_edge_count": 82304,
+            "supported_neighbor_unwrapped_phase_abs_quantiles": [
+              1.312589186674984e-05,
+              0.155048084975554,
+              0.879784343546735,
+              1.9499475587865387
+            ],
+            "alias_fraction_over_pi": 0.0,
+            "supported_mirror_seam_edge_count": 0,
+            "interpretation": "Unwrapped adjacent-phase sampling diagnostic; not an aesthetic or full-resolution certificate."
+          },
+          "source_array_hashes": {
+            "xyz": "059fb4ce2863a377097ecb6efc025ad51e10dcdd7807cc552396afc2c2558693",
+            "faces": "56860c9454af0cc01cdba1d76a908449fcb9e2b8b6e9eba339c1cab1e31d5ea1",
+            "classes": "f7e431b4e0e7324ca773a4738370761a8e2a9a3152e64e529796a9e0cdfccafe",
+            "g5_parent_face": "18b3e9c868c4ddb28ab44fa8455f4a0c8af7ac85c2f1c3f659b55c55b4803348",
+            "g4_parent_face": "e0e69156eb9b123c526751d37d7f06e55885397a6c025bfd4e9f9bb444f4bf7a",
+            "g3_face_event_ids": "26e2f4b6665bdcbb0b4860295b3de49405aeb2566b83c8f231bf549c63b2d906",
+            "g3_mirror_face_signs": "807a06b637aab2f261a1ee35ca1069d3cc5a8bcda954e6d1b0eee6d3968828ba"
+          },
+          "controls_scope": "Actual resolved coefficients override the zero fallback row; wf/we/wp are dimensionless local-scale requests.",
+          "amplitude_scope": "A=1.6 doubles the new request; it does not guarantee preserved absolute depth or a total-displacement cap.",
+          "coherence_scope": "flat regular-scale constant-field approximation; not exact on curved/nonuniform regions",
+          "success_scope": "Fine-fold visibility and hierarchy require actual matched renders; no reference-exact replication claim."
+        },
+        "added_subdivision_passes": 1,
+        "added_CC_passes": 1,
+        "added_topology_events": 0,
+        "added_mandelbulb_evaluations": 0,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 0,
+        "smoothing_passes_this_stage": 0,
+        "recipe_scope": "Original SPAN G0 loaded exactly; bounded G1/G2 field axial attenuation; all later selected operators and coefficients reused on actual revised parents.",
+        "validation_scope": "Actual new parent hashes and reflection IDs; one native integrity check per rendered stage. G7 intermediate control checkpoints explicitly omit native meshes.",
+        "exclusions": [
+          "Additional parameter matrix",
+          "Added ornament meshes",
+          "Whole-column remeshing",
+          "Independent unchanged-baseline replay",
+          "Self-intersection repair",
+          "Fabrication certification"
+        ],
+        "source_rule_revision": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.3076092512079385e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.3076092512079385e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+          "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+        },
+        "subdivision_generation": 6,
+        "checkpoint_kind": "CONTROL_AND_EVIDENCE_ONLY",
+        "native_surface": "NOT_STORED_INTERMEDIATE",
+        "control_vertices": 1750530,
+        "control_quads": 1750528,
+        "control_file_sha256": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1",
+        "evidence_file_sha256": "3ae532ad0ec4e09367a6bfe02017b1618c06ee3e6407dd57771ad121f6abe1c7",
+        "checks": {
+          "passed": true,
+          "finite": true,
+          "control_xyz_sha256": "189e26b6cc2615e1835e57167d4633c364862a9ce693a4b5190630ccc2b8ebfc",
+          "control_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "chart_sha256": "6ffe706dee83fa430426d83f3d65932ce7091e275cdcfab92ed809d5f09d7258",
+          "scope": "Finite actual controls and actual XYZ/oriented quad reflection; topology follows unchanged verified operators. Native mesh/area not checked at this intermediate."
+        },
+        "visual_success": "NOT_ASSESSED"
+      },
+      "G06_MIDDLE": {
+        "input_case": "SPAN",
+        "candidate": "G06_MIDDLE",
+        "stage_id": "G06_MIDDLE",
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08",
+        "source_generation": 6,
+        "source_control_sha256": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1",
+        "source_generation_json_sha256": "9b7c3bb53f1d6128c969b1143cb96fa1c50852084ee1961b0f031e2f20d59534",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08",
+        "parent_control_sha256": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1",
+        "parent_generation_json_sha256": "9b7c3bb53f1d6128c969b1143cb96fa1c50852084ee1961b0f031e2f20d59534",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "operator_metadata": {
+          "experiment": "WHOLE_COLUMN_DETAIL_20261013",
+          "stage": "MIDDLE",
+          "recipe": {
+            "schema": "CHESHIRE_WHOLE_COLUMN_FIXED_FIELD_V1",
+            "source_generation": 6,
+            "output_generation": 6,
+            "added_CC_passes": 0,
+            "added_topology_events": 0,
+            "sequence": [
+              "MIDDLE",
+              "FINE"
+            ],
+            "coordinates": "z=(actual_input_Z-zmin)/actual_input_height; theta=atan2(abs(actual_input_Y),abs(actual_input_X))",
+            "middle_phase": "20*theta+2*sin(2*theta)*sin(2*pi*z/.085)+.8*sin(4*theta)*sin(2*pi*z/.17)+.35*sin(6*theta)*sin(2*pi*z/.037)",
+            "fine_phase": "72*theta+3.5*sin(2*theta)*sin(2*pi*z/.023)+.9*sin(6*theta)*sin(2*pi*z/.049)+1.2*sin(4*theta)*sin(phi_middle)",
+            "profile": "((.5+.5*cos(phi))**3-.3125)/.6875",
+            "profile_scope": "Range [-5/11,1]; zero mean for uniform phase sampling, not guaranteed zero angular mean after phase warping.",
+            "envelope": {
+              "interpolation": "PCHIP",
+              "knots": [
+                0.0,
+                0.05,
+                0.2,
+                0.38,
+                0.5,
+                0.64,
+                0.8,
+                0.94,
+                1.0
+              ],
+              "values": [
+                0.0,
+                0.4,
+                1.0,
+                0.85,
+                0.55,
+                1.0,
+                1.0,
+                0.45,
+                0.0
+              ]
+            },
+            "middle_amplitude_height_fraction": 0.006,
+            "middle_feature_attenuation": "1-.55*actual_inherited_vertex_feature_support",
+            "fine_amplitude_height_fraction": 0.0018,
+            "fine_middle_modulation": ".7+.3*cos(phi_middle)**2",
+            "fine_feature_attenuation": "1-.25*actual_inherited_vertex_feature_support",
+            "normal": "Normalize the arithmetic mean of incident actual-input unit face normals; recompute for each stage.",
+            "normal_implementation": "Chunked quad-centroid cross-sum face normals and incident accumulation; mathematically identical to reference_subdivision.fields(...)[nv], without edge topology/scale work.",
+            "reflection": "Evaluate actual full input, then transport minimum-ID orbit representative displacement through actual commuting X/Y involutions; fixed-ID seam normal components are zero.",
+            "geometry_scope": "xyz_out=actual_input_xyz+transported_displacement; faces, classes, rest, anchors, and G6 remain unchanged.",
+            "interpretation": "Fixed CHESHIRE whole-body design sequence; visual success requires matched renders, not numerical displacement alone."
+          },
+          "source_generation": 6,
+          "output_generation": 6,
+          "subdivision_generation": 6,
+          "added_CC_passes": 0,
+          "added_topology_events": 0,
+          "physical_height": 9.735842284057451,
+          "actual_input_z_bounds": [
+            0.14742674766401315,
+            9.883269031721465
+          ],
+          "amplitude_bound": 0.05841505370434471,
+          "maximum_actual_displacement": 0.05841505370434472,
+          "displacement_norm_quantiles": [
+            0.0,
+            0.017380776796240976,
+            0.03985265754824388,
+            0.0574272540296809,
+            0.05841505370434472
+          ],
+          "signed_displacement_quantiles": [
+            -0.026552297138338503,
+            -0.0050424698637557145,
+            0.03985265754824388,
+            0.0574272540296809,
+            0.05841505370434471
+          ],
+          "nonzero_displacement_vertex_count": 1750526,
+          "nonzero_displacement_vertex_fraction": 0.9999977149777496,
+          "inherited_feature_vertex_count": 167172,
+          "inherited_feature_vertex_fraction": 0.0954979349111412,
+          "zero_input_normal_count": 0,
+          "fixed_x_vertex_count": 3328,
+          "fixed_y_vertex_count": 3328,
+          "actual_input_normal_sha256": "5ab2a15af2acd3f19a56f22b4b85ca8773c35b9a86fa25686be7b163f3182a32",
+          "input_xyz_sha256": "189e26b6cc2615e1835e57167d4633c364862a9ce693a4b5190630ccc2b8ebfc",
+          "input_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "output_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "faces_unchanged": true,
+          "classes_rest_anchors_unchanged": true,
+          "chart_unchanged": true,
+          "physical_frequency_scope": "Height-based axial wavelengths and fixed angular harmonics; no edge-length attenuation or additional subdivision.",
+          "reflection_scope": "Transported displacement is exactly reflected by source IDs; existing source XYZ values are retained, including their original floating-point residuals.",
+          "state_scope": "Input normals are hashed rather than saved; saved displacement_vector plus actual parent XYZ reproduces the output exactly.",
+          "validation_scope": "No claim of visual success, collision freedom, or watertight geometric embedding. Runner checks actual mesh and rendered result."
+        },
+        "added_subdivision_passes": 0,
+        "added_CC_passes": 0,
+        "added_topology_events": 0,
+        "added_mandelbulb_evaluations": 0,
+        "added_normal_field_passes": 1,
+        "cumulative_normal_field_passes": 1,
+        "smoothing_passes_this_stage": 0,
+        "recipe_scope": "Original SPAN G0 loaded exactly; bounded G1/G2 field axial attenuation; all later selected operators and coefficients reused on actual revised parents.",
+        "validation_scope": "Actual new parent hashes and reflection IDs; one native integrity check per rendered stage. G7 intermediate control checkpoints explicitly omit native meshes.",
+        "exclusions": [
+          "Additional parameter matrix",
+          "Added ornament meshes",
+          "Whole-column remeshing",
+          "Independent unchanged-baseline replay",
+          "Self-intersection repair",
+          "Fabrication certification"
+        ],
+        "source_rule_revision": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.3076092512079385e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 5.3076092512079385e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+          "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+        },
+        "subdivision_generation": 6,
+        "checkpoint_kind": "CONTROL_AND_EVIDENCE_ONLY",
+        "native_surface": "NOT_STORED_INTERMEDIATE",
+        "control_vertices": 1750530,
+        "control_quads": 1750528,
+        "control_file_sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+        "evidence_file_sha256": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+        "checks": {
+          "passed": true,
+          "finite": true,
+          "control_xyz_sha256": "4a04a3843db03358c03786aa30eabf5f6517722357146e3fd03f51f2f0071a24",
+          "control_faces_sha256": "2a0295d57b01e4e11211eb34d3704c402113310d68f3208aa018f052964f3bb8",
+          "chart_sha256": "6ffe706dee83fa430426d83f3d65932ce7091e275cdcfab92ed809d5f09d7258",
+          "scope": "Finite actual controls and actual XYZ/oriented quad reflection; topology follows unchanged verified operators. Native mesh/area not checked at this intermediate."
+        },
+        "visual_success": "NOT_ASSESSED"
+      },
+      "G07_SURFACE": {
+        "input_case": "SPAN",
+        "candidate": "G07_SURFACE",
+        "stage_id": "G07_SURFACE",
+        "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE",
+        "source_generation": 6,
+        "source_control_sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+        "source_generation_json_sha256": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+        "parent_stage": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE",
+        "parent_control_sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+        "parent_generation_json_sha256": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+        "geometry_code_sha256": {
+          "experiments/coherent_fold_detail_20261013/fold_operator.py": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+          "experiments/column_development_20261011/seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+          "experiments/column_development_20261011/target_repeat.py": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+          "experiments/connected_fold_growth_20261012/patch_growth.py": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+          "experiments/connected_fold_growth_20261012/study.py": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+          "experiments/connected_fold_growth_20261012/verify.py": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+          "experiments/curved_fold_side_20261011/a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+          "experiments/curved_fold_side_20261011/conforming_a.py": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+          "experiments/curved_fold_side_20261011/growth_follow.py": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+          "experiments/curved_fold_side_20261011/side_symmetry.py": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+          "experiments/curved_fold_side_20261011/smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+          "experiments/curved_fold_side_20261011/valley_study.py": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+          "experiments/design_one_20261013/batch_sweep.py": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+          "experiments/design_one_20261013/study.py": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+          "experiments/directional_fold_memory_20261011/study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+          "experiments/directional_g6_20261013/g6_operator.py": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+          "experiments/directional_growth_20261012/overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+          "experiments/end_rule_revision_20261014/replay.py": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+          "experiments/fold_band_growth_20261011/ancestry_probe.py": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+          "experiments/fold_band_growth_20261011/curve_growth.py": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+          "experiments/fold_band_growth_20261011/full_loop.py": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+          "experiments/fold_band_growth_20261011/role_growth.py": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+          "experiments/fold_band_growth_20261011/sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+          "experiments/fold_coherence_20261012/fold_profile.py": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+          "experiments/fold_coherence_20261012/study.py": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+          "experiments/fold_region_growth_20261012/region_fold.py": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+          "experiments/fold_region_growth_20261012/study.py": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+          "experiments/fold_return_20261012/study.py": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+          "experiments/fold_transfer_20261012/inputs.py": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+          "experiments/fold_transfer_20261012/memory.py": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+          "experiments/fold_transfer_20261012/study.py": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+          "experiments/fold_visible_gate_20261012/study.py": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+          "experiments/fold_visible_gate_20261012/wall_fold.py": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+          "experiments/iaac_mandelbrot_20261011/column_study.py": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+          "experiments/iaac_mandelbrot_20261011/study.py": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+          "experiments/iaac_mandelbrot_20261011/variation_study.py": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+          "experiments/medium_root_folds_20261013/root_folds.py": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+          "experiments/parent_linked_folds_20261013/connected_ribs.py": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+          "experiments/parent_linked_folds_20261013/parent_folds.py": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+          "experiments/parent_linked_folds_20261013/smooth_relief.py": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+          "experiments/parent_linked_folds_20261013/study.py": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+          "experiments/recipe_transfer_20261013/early.py": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+          "experiments/recipe_transfer_20261013/late.py": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+          "experiments/sidewall_fan_growth_20261013/patch_sidewall.py": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+          "experiments/terminal_fold_20261011/field_follow.py": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+          "experiments/terminal_fold_20261011/iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+          "experiments/terminal_fold_20261011/iaac_repeat.py": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+          "experiments/terminal_fold_20261011/study.py": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+          "experiments/whole_column_detail_20261013/finish_surface.py": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+          "experiments/whole_column_detail_20261013/study.py": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+          "experiments/whole_column_detail_20261013/whole_field.py": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+          "src/cheshire/__init__.py": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+          "src/cheshire/artifact_root.py": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+          "src/cheshire/attributes.py": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+          "src/cheshire/branching.py": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+          "src/cheshire/execution.py": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+          "src/cheshire/generational_subdivision.py": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+          "src/cheshire/inheritance.py": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+          "src/cheshire/lineage.py": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+          "src/cheshire/mapping.py": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+          "src/cheshire/mesh_io.py": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+          "src/cheshire/mola.py": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+          "src/cheshire/normalization.py": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+          "src/cheshire/ornament.py": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+          "src/cheshire/progressive_gates.py": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+          "src/cheshire/reference_subdivision.py": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+          "src/cheshire/rules.py": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+          "src/cheshire/subdivision.py": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+          "src/cheshire/task32_patches.py": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+          "src/cheshire/task33_folds.py": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+          "src/cheshire/task36_growth.py": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+          "src/cheshire/transforms.py": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+          "src/cheshire/validation.py": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+          "src/cheshire/weighted_doosabin.py": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+          "src/cheshire/weighted_subdivision.py": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422"
+        },
+        "operator_metadata": {
+          "implementation": "REFERENCE_COUPLED_NEUTRAL_CC",
+          "weights": {},
+          "physical_height": 9.735842284057451,
+          "frame_scope": "Actual new MIDDLE phase/support/z through actual new CC V/E/F IDs; no historical SPAN frame imported."
+        },
+        "added_subdivision_passes": 1,
+        "added_CC_passes": 1,
+        "added_topology_events": 0,
+        "added_mandelbulb_evaluations": 0,
+        "added_normal_field_passes": 0,
+        "cumulative_normal_field_passes": 1,
+        "smoothing_passes_this_stage": 0,
+        "recipe_scope": "Original SPAN G0 loaded exactly; bounded G1/G2 field axial attenuation; all later selected operators and coefficients reused on actual revised parents.",
+        "validation_scope": "Actual new parent hashes and reflection IDs; one native integrity check per rendered stage. G7 intermediate control checkpoints explicitly omit native meshes.",
+        "exclusions": [
+          "Additional parameter matrix",
+          "Added ornament meshes",
+          "Whole-column remeshing",
+          "Independent unchanged-baseline replay",
+          "Self-intersection repair",
+          "Fabrication certification"
+        ],
+        "source_rule_revision": {
+          "schema": "CHESHIRE_ORIGINAL_SPAN_FIELD_AXIAL_ATTENUATION_V1",
+          "source_case": "SPAN",
+          "original_G0_geometry_loaded_exactly": true,
+          "revised_stages": [
+            1,
+            2
+          ],
+          "coordinates": "Inherited early material chart: t=chart[:,0], theta=atan2(abs(chart[:,2]),abs(chart[:,1])). No current-XYZ inverse map.",
+          "mask": {
+            "t_centre": 0.63,
+            "t_halfwidth": 0.085,
+            "theta_centre": 0.86,
+            "theta_halfwidth": 0.66,
+            "plateau_start": 0.6
+          },
+          "weight_equation": "w=plateau((t-.63)/.085,.60)*plateau((theta-.86)/.66,.60)",
+          "axial_gain_equation": "gain=1-.75*w",
+          "minimum_axial_gain": 0.25,
+          "revision_equation": "applied_field_delta_new=(raw_applied_dx,raw_applied_dy,gain*raw_applied_dz)",
+          "unchanged": [
+            "Original G0 XYZ, quads and chart",
+            "G1/G2 Task36 recipe",
+            "Authored G2 PCHIP returns",
+            "Raw finite-field target search and budgets",
+            "Measured WALL rule",
+            "Task32 topology-event rules",
+            "G4-G7 subdivision, whole-field, linked and wide-root rules"
+          ],
+          "dependent_geometry": "Original later operators recompute their geometry-dependent normals, rails and frames on the revised actual parents.",
+          "field_semantics": "Authored axial attenuation of the existing finite-field vector. The revised applied vector is not generally directed at the nearest finite-outside target. No final-outside guarantee is asserted.",
+          "validation_scope": "One revised replay, not an independent unchanged-baseline replay. Final source correspondence and localized splice belong to the orchestrator."
+        },
+        "symmetry": {
+          "passed": true,
+          "axes": {
+            "X": {
+              "passed": true,
+              "actual_control_xyz_max_error": 3.9513490972119323e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            },
+            "Y": {
+              "passed": true,
+              "actual_control_xyz_max_error": 3.9513490972119323e-14,
+              "oriented_control_faces_identical": true,
+              "tolerance": 1e-09
+            }
+          },
+          "native_scope": "Arithmetic quad-centre fans inherit the verified reflected control cycles; native triangle sets not independently sorted.",
+          "full_independent_replay": "NOT_PERFORMED_THIS_DESIGN_ITERATION"
+        },
+        "subdivision_generation": 7,
+        "checkpoint_kind": "CONTROL_AND_EVIDENCE_ONLY",
+        "native_surface": "NOT_STORED_INTERMEDIATE",
+        "control_vertices": 7002114,
+        "control_quads": 7002112,
+        "control_file_sha256": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+        "evidence_file_sha256": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e",
+        "checks": {
+          "passed": true,
+          "finite": true,
+          "control_xyz_sha256": "d983140000e88d814d613b470e68e4c8e3868657c8f0fb2600c61cc294481fc5",
+          "control_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+          "chart_sha256": "87d7b993200e548f4d5528067f15fbbb886637f0428e06468f995ee141cf966d",
+          "scope": "Finite actual controls and actual XYZ/oriented quad reflection; topology follows unchanged verified operators. Native mesh/area not checked at this intermediate."
+        },
+        "visual_success": "NOT_ASSESSED"
+      }
+    },
+    "neutral_replay_maximum_errors": {
+      "G3_to_G4": 1.7763568394002505e-15,
+      "G6middle_to_G7surface": 3.552713678800501e-15
+    },
+    "exact_material_ancestry_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\interleaved_mandel_subdivision_20261016\\generation_analysis\\ANALYSIS_RECEIPT.json",
+      "sha256": "4e89e3024c18f323f6297ffc010fb164ca2bc7c015391fb83b1003216a2c1451"
+    },
+    "scalar_lineage_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_LINEAGE_RECEIPT.json",
+      "sha256": "f2ddfa48ae52eb96edcc0f0a2af91ddf4ca64e39c7602af2ebfe91cacfdd7d5b"
+    },
+    "outputs": {
+      "SOURCE5_G6": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_G6.npy",
+        "sha256": "bcc4103775542751dfdbbbbb1f7e5d67b68b0ae1ed615aa13a3bd645f196bf63",
+        "shape": [
+          1750530,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "SOURCE5_G7": {
+        "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_G7.npy",
+        "sha256": "02fb2cf195f21e903042b2b6d928269285ec75a9a206787d186b2b062cbda457",
+        "shape": [
+          7002114,
+          5
+        ],
+        "dtype": "float64"
+      }
+    },
+    "G3_weights": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_WEIGHTS_G3.npz",
+      "sha256": "d38abfc1d1c0a222ef5a68cda030db98ed78731321168d8452e94698a2037a08"
+    },
+    "features": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\HISTORY_FEATURES.npz",
+      "sha256": "9648720a0c4659cbe131208aa8ec57906df5f18c8be386fa4fce6dd5b43ae152"
+    },
+    "authored_stage_residuals": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\AUTHORED_STAGE_RESIDUALS.npz",
+      "sha256": "55001fa18c8156f13b494c66f2547d825b5522e8de99eb2e5ed184e64a08eb75"
+    },
+    "Tissue_hosts": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.json",
+      "sha256": "1f7b3875653a08ab883027fe198ccb8f2db2d9530208f0d7efaf9fd9f8175a41"
+    },
+    "old_new_classification": {
+      "SOURCE_body_faces": 23736,
+      "dominant_changed_faces": 3212,
+      "dominant_changed_fraction": 0.13532187394674755,
+      "old_to_new_dominant_confusion": [
+        [
+          3624,
+          684,
+          428,
+          0,
+          1200
+        ],
+        [
+          0,
+          4112,
+          12,
+          0,
+          8
+        ],
+        [
+          0,
+          288,
+          6776,
+          0,
+          340
+        ],
+        [
+          0,
+          176,
+          0,
+          2200,
+          0
+        ],
+        [
+          0,
+          48,
+          28,
+          0,
+          3812
+        ]
+      ],
+      "posterior_L1_quantiles": [
+        0.13015262921007992,
+        0.5143961095128045,
+        1.0292693763484855,
+        1.4,
+        1.4000000000000004
+      ],
+      "early_term_on_off_L1_quantiles": [
+        0.020033172520684275,
+        0.17736915193130104,
+        0.2978010689376447,
+        0.5117186432081051,
+        0.9999691977744171
+      ],
+      "early_term_changes_dominant_faces": 5940,
+      "history_confidence_at_least_050_faces": 23736,
+      "changed_dominant_at_confidence_050": 3212
+    },
+    "Tissue_host_changes": {
+      "selected_faces": 10340,
+      "actual_event_faces": 2592,
+      "interface_faces": 220,
+      "new_history_SOURCE_faces": 7528,
+      "old_host_faces": 5232,
+      "added_vs_old": 6512,
+      "removed_vs_old": 1404
+    },
+    "classification_actually_changed": true,
+    "feature_birth_claimed": false,
+    "current22_and_wholeCC1_preserved": true,
+    "scalar_transport": "Actual G3 incident-face average and saved V/E/F lineage toG4/G5/G6/G7; quintic-normalized continuous five weights atG6/G7.",
+    "early_evidence_effect": "Actual G2/G3/G4/G5 normal-turning and one-axis persistence affect posterior; explicit no-early ablation is saved.",
+    "completed_history_arrays_reused_without_reanalysis": true,
+    "transport_recovery": "Failed old-V target slice lacked final stop. Failed source and incompleteG4 preserved; completedG3/features/hosts remain unchanged; corrected transport resumed.",
+    "limitations": [
+      "Observed normal distributions are not a curvature fit or absolute age.",
+      "Authored residual includes vertex placement and fields, not isolated physical fold generation.",
+      "NewSOURCE Tissue hosts are history-complex candidates, not certified forks.",
+      "Global length scale/radius are fixture config; generic helper has no project paths/seed IDs."
+    ],
+    "elapsed_seconds_since_transport_resume": 11.914327900001808
+  },
+  "Tissue": {
+    "kind": "NEW_ACTUAL_PAPER_TISSUE_EXACT_G7_RAW_FIELDS_BEFORE_GUARDS",
+    "height": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\TISSUE_RAW_HEIGHT.npy",
+      "sha256": "5865a59eb075819c94a43307fd27039c31e2b7a3e49fc7985e4fcfe8a6a58f6c"
+    },
+    "priority": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\TISSUE_PRIORITY_WEIGHT.npy",
+      "sha256": "1e759917db3d57fa94abc6bad56eb0d873098ebe0075f682bd573b5e5728a4d3"
+    },
+    "host_control_vertices": 7002114,
+    "host_control_quad": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz",
+      "sha256": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3"
+    },
+    "host_quad_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+    "actual_Tissue_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+      "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44"
+    },
+    "actual_generated_height_grid": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_HEIGHT_GRID.npz",
+      "sha256": "d5f5e2ad70975f6ef2f2548725db9671faec4c29682da2f530e56b0ec01668ca"
+    },
+    "source_paper_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+      "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d"
+    },
+    "source_closed_component": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\06_actual_paper_CC1_component.npz",
+      "sha256": "1711d1ff049df80bd7a6e86ba9e3f6ee946c7654a5832d33fdda0da050ec660e"
+    },
+    "semantic_hosts": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz",
+      "sha256": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33"
+    },
+    "semantic_host_count": 10340,
+    "UV_pattern": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_PATTERN.npy",
+      "sha256": "b46ea7495f80b6bbb552da41316cb4c13d384a284009db7c028f2aa27491f970"
+    },
+    "UV_lineage": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_LINEAGE_RECEIPT.json",
+      "sha256": "f2ddfa48ae52eb96edcc0f0a2af91ddf4ca64e39c7602af2ebfe91cacfdd7d5b"
+    },
+    "orientation": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\FACE_UV_ORIENTATION.npz",
+      "sha256": "cbc3b798277edb6cff4e00c95ace282f1bd7808ae9a69507aa8c8cce5beb44f6"
+    },
+    "original_orientation": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\broad_component_v21\\FACE_UV_ORIENTATION_V21.npz",
+      "sha256": "ef0804871b1f7624ad7386841fa706f362e8abcfbbc6368aa8d4e696db3d8f92"
+    },
+    "actual_orientation_metric": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\SHARED_G3_SHAPE_METRICS.npz",
+      "sha256": "edf8f8f903ce1812edc7d3507865009052d223e59237f2e0f3eeeaa35797396a"
+    },
+    "actual_registered_phase_evidence": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\evidence.npz",
+      "sha256": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e"
+    },
+    "reflection_representatives": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial03b_refined\\working_arrays\\4_representatives.npy",
+      "sha256": "f6f900ca4f8bc7efb58d3d148d0d5772bc17a551b6ae87949730dfca67b9a34e"
+    },
+    "original_hosts_with_retained_orientation": 3828,
+    "new_hosts_with_measured_orientation": 6512,
+    "orientation_mode_counts": {
+      "1": 7716,
+      "2": 2624,
+      "3": 0
+    },
+    "orientation_rule": "Keep original orientation for admitted original hosts. New hosts use actual registered phase isophase tangent (-dv*U+du*V); zero/invalid phase uses actual two-ring low-absolute-curvature tangent, then physical host U fallback.",
+    "physical_peak_budget": [
+      0.04,
+      0.06
+    ],
+    "cell_frequency": 1.0,
+    "G3_ports_exact_zero": true,
+    "shared_vertex_height_max_error": 0.0,
+    "native_reflection_exact": true,
+    "semantic_controls": 2699584,
+    "positive_height_controls": 2326500,
+    "positive_height_quantiles": [
+      1.6298998322537114e-05,
+      0.0003835848480214772,
+      0.0016869128119948455,
+      0.013244848283256798,
+      0.027780425553967324,
+      0.03817840832585348,
+      0.05907541569586823
+    ],
+    "semantic_height_quantiles": [
+      0.0,
+      0.0,
+      0.0004957065853643833,
+      0.009407681985853723,
+      0.025103627462825785,
+      0.036970906583740235,
+      0.05907541569586823
+    ],
+    "height_already_semantically_weighted_once": true,
+    "priority_already_semantically_weighted_once": true,
+    "flow_guards_applied": false,
+    "cap_guards_applied": false,
+    "safety_cap_applied": false,
+    "whole_geometry_not_yet_changed": true,
+    "previous_Tissue_field_reused": false,
+    "source_grid_from_new_actual_paper_and_actual_Tissue": true,
+    "complete_closed_component_topology_transferred_to_height_graph": false,
+    "generator": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\map_paper_tissue_native.py",
+      "sha256": "a27622d7264352120924d67e8f213338639b085996b4acf70296851f800e5d1a"
+    },
+    "elapsed_seconds": 12.894456099998933
+  },
+  "priority": "Constructive structure, protected established flow, generation-responsive SOURCE5, actual paper-origin Tissue."
+}

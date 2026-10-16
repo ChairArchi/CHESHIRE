@@ -1,0 +1,103 @@
+{
+  "schema": "CHESHIRE_INHERITED_STRONG_SEED_LAYOUT_RECIPES_V1",
+  "baseline_id": "J00",
+  "scope_ko": "원 SPAN 생성기의 실제 주접힘 위치·폭·방향·개수만 재배치한다. 원 반지름·돌출 진폭·끝부·기존 후속 연산은 유지한다.",
+  "recipes": [
+    {
+      "id": "J00",
+      "label_ko": "원래 SPAN 주형 기준",
+      "family": "baseline"
+    },
+    {
+      "id": "J01",
+      "label_ko": "짧은 하부와 긴 상부 접힘",
+      "family": "unequal_two",
+      "seed_events": {
+        "1": [
+          {
+            "template_index": 0,
+            "id": "LOW_SHORT",
+            "height": 0.18,
+            "span": 0.05,
+            "direction": 0.2,
+            "sweep": 0.25
+          },
+          {
+            "template_index": 1,
+            "id": "HIGH_LONG",
+            "height": 0.72,
+            "span": 0.17,
+            "direction": 1.1,
+            "sweep": -0.24
+          }
+        ]
+      }
+    },
+    {
+      "id": "J02",
+      "label_ko": "다른 축으로 엇갈린 세 주접힘",
+      "family": "unequal_three",
+      "seed_events": {
+        "1": [
+          {
+            "template_index": 0,
+            "id": "LOW_COMPACT",
+            "height": 0.2,
+            "span": 0.055,
+            "direction": 0.12,
+            "sweep": 0.15
+          },
+          {
+            "template_index": 1,
+            "id": "MIDDLE_MAJOR",
+            "height": 0.52,
+            "span": 0.105,
+            "direction": 1.05,
+            "sweep": -0.18
+          },
+          {
+            "template_index": 0,
+            "id": "CROWN_SHORT",
+            "height": 0.8,
+            "span": 0.045,
+            "direction": 0.55,
+            "sweep": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "id": "J03",
+      "label_ko": "긴 중부와 압축된 상부 군집",
+      "family": "clustered_crown",
+      "seed_events": {
+        "1": [
+          {
+            "template_index": 0,
+            "id": "LONG_MIDDLE",
+            "height": 0.48,
+            "span": 0.16,
+            "direction": 0.8,
+            "sweep": 0.22
+          },
+          {
+            "template_index": 1,
+            "id": "CROWN_FIRST",
+            "height": 0.71,
+            "span": 0.065,
+            "direction": 0.12,
+            "sweep": -0.2
+          },
+          {
+            "template_index": 1,
+            "id": "CROWN_SECOND",
+            "height": 0.84,
+            "span": 0.035,
+            "direction": 1.25,
+            "sweep": 0.15
+          }
+        ]
+      }
+    }
+  ]
+}

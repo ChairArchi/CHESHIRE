@@ -1,0 +1,137 @@
+{
+  "kind": "ONLY_NEW_INCREMENT_RECOVERY_TOWARD_ACTUAL_SAFE22",
+  "passes": [
+    {
+      "bad_triangles": 498000,
+      "bad_quads": 207212,
+      "minimum_triangle_cross_dot": -6.862705125821495e-09,
+      "iteration": 0
+    },
+    {
+      "bad_triangles": 151968,
+      "bad_quads": 70596,
+      "minimum_triangle_cross_dot": -3.2939271182572707e-09,
+      "iteration": 1
+    },
+    {
+      "bad_triangles": 52436,
+      "bad_quads": 27704,
+      "minimum_triangle_cross_dot": -1.5033029973647096e-09,
+      "iteration": 2
+    },
+    {
+      "bad_triangles": 20612,
+      "bad_quads": 12484,
+      "minimum_triangle_cross_dot": -6.064321576413388e-10,
+      "iteration": 3
+    },
+    {
+      "bad_triangles": 9440,
+      "bad_quads": 6596,
+      "minimum_triangle_cross_dot": -1.9017603900284618e-10,
+      "iteration": 4
+    },
+    {
+      "bad_triangles": 4728,
+      "bad_quads": 3680,
+      "minimum_triangle_cross_dot": -2.6068008868060015e-10,
+      "iteration": 5
+    },
+    {
+      "bad_triangles": 2648,
+      "bad_quads": 2236,
+      "minimum_triangle_cross_dot": -9.745956712707834e-12,
+      "iteration": 6
+    },
+    {
+      "bad_triangles": 1536,
+      "bad_quads": 1376,
+      "minimum_triangle_cross_dot": -2.740400721964056e-11,
+      "iteration": 7
+    },
+    {
+      "bad_triangles": 788,
+      "bad_quads": 728,
+      "minimum_triangle_cross_dot": -2.7374354790444175e-13,
+      "iteration": 8
+    },
+    {
+      "bad_triangles": 444,
+      "bad_quads": 420,
+      "minimum_triangle_cross_dot": -2.29178716932319e-13,
+      "iteration": 9
+    },
+    {
+      "bad_triangles": 232,
+      "bad_quads": 224,
+      "minimum_triangle_cross_dot": -2.0574882414887168e-14,
+      "iteration": 10
+    },
+    {
+      "bad_triangles": 140,
+      "bad_quads": 136,
+      "minimum_triangle_cross_dot": -7.253549465314337e-13,
+      "iteration": 11
+    },
+    {
+      "bad_triangles": 76,
+      "bad_quads": 76,
+      "minimum_triangle_cross_dot": -3.999784756360312e-15,
+      "iteration": 12
+    },
+    {
+      "bad_triangles": 40,
+      "bad_quads": 40,
+      "minimum_triangle_cross_dot": -1.237244453459684e-15,
+      "iteration": 13
+    },
+    {
+      "bad_triangles": 24,
+      "bad_quads": 24,
+      "minimum_triangle_cross_dot": -2.328612230749942e-16,
+      "iteration": 14
+    },
+    {
+      "bad_triangles": 8,
+      "bad_quads": 8,
+      "minimum_triangle_cross_dot": -1.7451140097877433e-17,
+      "iteration": 15
+    },
+    {
+      "bad_triangles": 8,
+      "bad_quads": 8,
+      "minimum_triangle_cross_dot": -7.707477750024082e-18,
+      "iteration": 16
+    },
+    {
+      "bad_triangles": 4,
+      "bad_quads": 4,
+      "minimum_triangle_cross_dot": -2.835646234989217e-18,
+      "iteration": 17
+    },
+    {
+      "bad_triangles": 4,
+      "bad_quads": 4,
+      "minimum_triangle_cross_dot": -3.997308094486128e-19,
+      "iteration": 18
+    },
+    {
+      "bad_triangles": 0,
+      "bad_quads": 0,
+      "minimum_triangle_cross_dot": 3.593754241550043e-21,
+      "iteration": 19
+    }
+  ],
+  "gain": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\FINAL_LOCAL_GAIN.npy",
+    "sha256": "1e499aaf5d115cfe9db8148771d831d49a26cc8849f2a3600ae65aa6397e75e6"
+  },
+  "output": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\FINAL_RECOVERED_XYZ.npy",
+    "sha256": "5006d0f419a14085d46e057ebdbd7c1817e37f6057783e8f77f852313307045c"
+  },
+  "orientation_reference": "Actual original NESTED complete native centroid fan, not only safe22.",
+  "exact_protected_safe22": true,
+  "zero_gain_limit": "Actual safe22 coordinates",
+  "locally_attenuated_controls": 1269050
+}

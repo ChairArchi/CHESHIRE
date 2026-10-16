@@ -1,0 +1,3644 @@
+{
+  "kind": "COFFER_EXPORT_EXACT_CONTROL_SOURCE_AND_SPARSE_DIFFERENTIAL_AUDIT",
+  "root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain",
+  "receipt_sha256": "e93973d4b23aada4fb9cf27f986e6061538d5410b4b5ec1d672fcea6dd016b3c",
+  "controls": 7002114,
+  "quads": 7002112,
+  "exact_topology_equal": true,
+  "exact_source_chart_equal": true,
+  "sparse_listed_ids_equal_exported_meaningful_ids": true,
+  "saved_sparse_differential_plus_baseline_equal_export_at_listed_ids": true,
+  "exact_changed_controls": 1417148,
+  "meaningful_changed_controls": 1416200,
+  "exact_untouched_controls": 5584966,
+  "tiny_changed_controls_omitted_from_sparse": 948,
+  "maximum_unlisted_tiny_displacement": 9.948505829394036e-13,
+  "meaningful_control_displacements": {
+    "count": 1416200,
+    "probabilities": [
+      0.0,
+      0.1,
+      0.5,
+      0.9,
+      0.99,
+      1.0
+    ],
+    "values": [
+      1.0016791756692127e-12,
+      0.0003939735328003123,
+      0.00944822480341816,
+      0.026288965252115833,
+      0.04422751177529044,
+      0.07607031014598412
+    ]
+  },
+  "selected_components": [
+    2,
+    12,
+    25,
+    40
+  ],
+  "section_gates_passed": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "source_anchors": [
+    {
+      "label": "prior_visible_source_sample_00",
+      "previous_normalized_image_xy": [
+        0.3,
+        0.25
+      ],
+      "original_G6_hit_xyz": [
+        -0.3799253532457846,
+        0.8398590674369718,
+        6.913935992207538
+      ],
+      "source_phase": 23.53341621061179,
+      "source_G6_quad_id": 710300,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.09099352768304315,
+        0.28574991374996905,
+        0.6232565585669878
+      ],
+      "source_logical_square_uv": [
+        0.3116282792834939,
+        0.40262180696653704
+      ],
+      "candidate_G7_quad_id": 2841200,
+      "candidate_native_triangle_id": 11364803,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.4285001725000619,
+        0.18198705536608628,
+        0.3895127721338518
+      ],
+      "G7_quad_control_ids": [
+        4950203,
+        1162206,
+        2762044,
+        5961886
+      ],
+      "native_face_centre_id": 9843314,
+      "baseline_xyz": [
+        -0.3874894441200748,
+        0.8383219228746842,
+        6.911566293652402
+      ],
+      "candidate_xyz": [
+        -0.38748923218444287,
+        0.8383226244784445,
+        6.911566178151399
+      ],
+      "displacement": [
+        2.1193563193300236e-07,
+        7.016037603113645e-07,
+        -1.1550100253998608e-07
+      ],
+      "displacement_length": 7.419602618426606e-07,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_01",
+      "previous_normalized_image_xy": [
+        0.28,
+        0.4
+      ],
+      "original_G6_hit_xyz": [
+        -0.32012182715660764,
+        0.7925877008837005,
+        6.7118243760788605
+      ],
+      "source_phase": 23.34633439621015,
+      "source_G6_quad_id": 710192,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.35404268675333933,
+        0.4982041891294129,
+        0.14775312411724784
+      ],
+      "source_logical_square_uv": [
+        0.42791924881196325,
+        0.9261234379413761
+      ],
+      "candidate_G7_quad_id": 2840771,
+      "candidate_native_triangle_id": 11363087,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.0035916217411743334,
+        0.7080853735066787,
+        0.288323004752147
+      ],
+      "G7_quad_control_ids": [
+        3856135,
+        1490446,
+        4950212,
+        5961778
+      ],
+      "native_face_centre_id": 9842885,
+      "baseline_xyz": [
+        -0.3182843196979994,
+        0.7891289016992058,
+        6.7119373565463665
+      ],
+      "candidate_xyz": [
+        -0.31826965713686933,
+        0.7891701002504049,
+        6.711927438073729
+      ],
+      "displacement": [
+        1.466256113008546e-05,
+        4.1198551199106426e-05,
+        -9.918472637870934e-06
+      ],
+      "displacement_length": 4.4840689326403986e-05,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_02",
+      "previous_normalized_image_xy": [
+        0.32,
+        0.55
+      ],
+      "original_G6_hit_xyz": [
+        -0.3414048579513269,
+        0.7329764510393489,
+        6.515253648678363
+      ],
+      "source_phase": 21.446811232872548,
+      "source_G6_quad_id": 709596,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.7228088299273219,
+        0.06997601733920174,
+        0.2072151527334764
+      ],
+      "source_logical_square_uv": [
+        0.8963924236332619,
+        0.17358359370593995
+      ],
+      "candidate_G7_quad_id": 2838385,
+      "candidate_native_triangle_id": 11353541,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.44561765985464385,
+        0.13995203467840367,
+        0.4144303054669525
+      ],
+      "G7_quad_control_ids": [
+        2747828,
+        249326,
+        2747827,
+        5961182
+      ],
+      "native_face_centre_id": 9840499,
+      "baseline_xyz": [
+        -0.33791455795292513,
+        0.7307556067092679,
+        6.516556817349546
+      ],
+      "candidate_xyz": [
+        -0.33791455795292513,
+        0.7307556067092679,
+        6.516556817349546
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_03",
+      "previous_normalized_image_xy": [
+        0.45,
+        0.35
+      ],
+      "original_G6_hit_xyz": [
+        -0.5108574711750762,
+        0.6964648188431412,
+        6.778781533982143
+      ],
+      "source_phase": 19.163403204612038,
+      "source_G6_quad_id": 710251,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.2504562785294557,
+        0.4155161753466092,
+        0.3340275461239351
+      ],
+      "source_logical_square_uv": [
+        0.5825299484085767,
+        0.16701377306196755
+      ],
+      "candidate_G7_quad_id": 2841005,
+      "candidate_native_triangle_id": 11364023,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.16896764930678154,
+        0.5009125570589115,
+        0.330119793634307
+      ],
+      "G7_quad_control_ids": [
+        3240988,
+        372616,
+        3240986,
+        5961837
+      ],
+      "native_face_centre_id": 9843119,
+      "baseline_xyz": [
+        -0.5093525328485304,
+        0.6948203461219644,
+        6.779650149288647
+      ],
+      "candidate_xyz": [
+        -0.5129954870210118,
+        0.6985615388664568,
+        6.777845133551155
+      ],
+      "displacement": [
+        -0.003642954172481394,
+        0.003741192744492361,
+        -0.0018050157374922549
+      ],
+      "displacement_length": 0.00552500860332693,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_04",
+      "previous_normalized_image_xy": [
+        0.5,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.5028168709667463,
+        0.5676347264352208,
+        6.569839718575887
+      ],
+      "source_phase": 15.529419997925928,
+      "source_G6_quad_id": 709774,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.059612895234998776,
+        0.45505732000889054,
+        0.48532978475611066
+      ],
+      "source_logical_square_uv": [
+        0.7573351076219447,
+        0.6977222123869459
+      ],
+      "candidate_G7_quad_id": 2839098,
+      "candidate_native_triangle_id": 11356395,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.08988535998221892,
+        0.1192257904699976,
+        0.7908888495477835
+      ],
+      "G7_quad_control_ids": [
+        2838812,
+        1200590,
+        5026971,
+        5961360
+      ],
+      "native_face_centre_id": 9841212,
+      "baseline_xyz": [
+        -0.5034581693107781,
+        0.5688182277022604,
+        6.569636207266042
+      ],
+      "candidate_xyz": [
+        -0.5034581693107781,
+        0.5688182277022604,
+        6.569636207266042
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_05",
+      "previous_normalized_image_xy": [
+        0.65,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.7281931400391011,
+        0.5723115377944222,
+        6.590724315974393
+      ],
+      "source_phase": 11.295953348709741,
+      "source_G6_quad_id": 705529,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.15464283001041024,
+        0.2648096977555374,
+        0.5805474722340523
+      ],
+      "source_logical_square_uv": [
+        0.29027373611702617,
+        0.4449165661274364
+      ],
+      "candidate_G7_quad_id": 2822116,
+      "candidate_native_triangle_id": 11288467,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.47038060448892516,
+        0.3092856600208205,
+        0.22033373549025437
+      ],
+      "G7_quad_control_ids": [
+        3900595,
+        637402,
+        1950298,
+        5957115
+      ],
+      "native_face_centre_id": 9824230,
+      "baseline_xyz": [
+        -0.7362126112650436,
+        0.5612688881428455,
+        6.5911499903270885
+      ],
+      "candidate_xyz": [
+        -0.7362126112650436,
+        0.5612688881428455,
+        6.5911499903270885
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_06",
+      "previous_normalized_image_xy": [
+        0.8,
+        0.5
+      ],
+      "original_G6_hit_xyz": [
+        -0.850971014121054,
+        0.4161329344790168,
+        6.579768032168983
+      ],
+      "source_phase": 6.935124810560172,
+      "source_G6_quad_id": 704450,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.7221143916859911,
+        0.06538349821914294,
+        0.21250211009486594
+      ],
+      "source_logical_square_uv": [
+        0.828365446733424,
+        0.893748944952567
+      ],
+      "candidate_G7_quad_id": 2817802,
+      "candidate_native_triangle_id": 11271209,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.444228783371982,
+        0.13076699643828582,
+        0.42500422018973216
+      ],
+      "G7_quad_control_ids": [
+        2394397,
+        978383,
+        4582556,
+        5956036
+      ],
+      "native_face_centre_id": 9819916,
+      "baseline_xyz": [
+        -0.85969125572158,
+        0.4208873602951695,
+        6.577397679586996
+      ],
+      "candidate_xyz": [
+        -0.8752451334863178,
+        0.4298760882363205,
+        6.573461525566475
+      ],
+      "displacement": [
+        -0.015553877764737822,
+        0.00898872794115102,
+        -0.003936154020521165
+      ],
+      "displacement_length": 0.01839058596112967,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "prior_visible_source_sample_07",
+      "previous_normalized_image_xy": [
+        0.4,
+        0.7
+      ],
+      "original_G6_hit_xyz": [
+        -0.39381088629915234,
+        0.6291812095787372,
+        6.315259179395778
+      ],
+      "source_phase": 21.35459991607012,
+      "source_G6_quad_id": 709166,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.2705616563210891,
+        0.488277895965699,
+        0.24116044771321193
+      ],
+      "source_logical_square_uv": [
+        0.8794197761433941,
+        0.608858119822305
+      ],
+      "candidate_G7_quad_id": 2836666,
+      "candidate_native_triangle_id": 11346667,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.023444208068601924,
+        0.5411233126421782,
+        0.4354324792892199
+      ],
+      "G7_quad_control_ids": [
+        2761589,
+        1161979,
+        4949749,
+        5960752
+      ],
+      "native_face_centre_id": 9838780,
+      "baseline_xyz": [
+        -0.3921370750006285,
+        0.6257194620006818,
+        6.314699482089531
+      ],
+      "candidate_xyz": [
+        -0.3921370750006285,
+        0.6257194620006818,
+        6.314699482089531
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.25_existing_measured_peak",
+      "parent_component": 2,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 4.070351437845917,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1140369,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.148424062959252,
+        0.2976064515425415,
+        0.5539694854982065
+      ],
+      "source_logical_square_uv": [
+        0.27698474274910323,
+        0.42540880570835526
+      ],
+      "candidate_G7_quad_id": 4561476,
+      "candidate_native_triangle_id": 18245907,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.404787096914917,
+        0.29684812591850407,
+        0.29836477716657894
+      ],
+      "G7_quad_control_ids": [
+        4042031,
+        708120,
+        2021016,
+        6391955
+      ],
+      "native_face_centre_id": 11563590,
+      "baseline_xyz": [
+        1.1347802215899403,
+        -0.3039526357147042,
+        7.129182667008675
+      ],
+      "candidate_xyz": [
+        1.1454090514736444,
+        -0.3038205261244858,
+        7.124798547549239
+      ],
+      "displacement": [
+        0.01062882988370406,
+        0.00013210959021842106,
+        -0.004384119459436064
+      ],
+      "displacement_length": 0.011498259915098202,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.25_existing_measured_left_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 4,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 4.070351437845917,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1139516,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.06417902701160288,
+        0.876618561673961,
+        0.05920241131443613
+      ],
+      "source_logical_square_uv": [
+        0.970398794342782,
+        0.906219767331179
+      ],
+      "candidate_G7_quad_id": 4558066,
+      "candidate_native_triangle_id": 18232264,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.12835805402320588,
+        0.753237123347922,
+        0.11840482262887209
+      ],
+      "G7_quad_control_ids": [
+        2947939,
+        837077,
+        4299945,
+        6391102
+      ],
+      "native_face_centre_id": 11560180,
+      "baseline_xyz": [
+        1.0265110524948537,
+        -0.3487446051064641,
+        7.105710921594617
+      ],
+      "candidate_xyz": [
+        1.0265110524948537,
+        -0.3487446051064641,
+        7.105710921594617
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.25_existing_measured_right_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 30,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 4.070351437845917,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1140236,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.2962568699574305,
+        0.4101311703717268,
+        0.29361195967084275
+      ],
+      "source_logical_square_uv": [
+        0.4430628497928519,
+        0.8531940201645787
+      ],
+      "candidate_G7_quad_id": 4560947,
+      "candidate_native_triangle_id": 18243791,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.1797376592565464,
+        0.5925137399148611,
+        0.2277486008285925
+      ],
+      "G7_quad_control_ids": [
+        4300038,
+        1597957,
+        5112435,
+        6391822
+      ],
+      "native_face_centre_id": 11563061,
+      "baseline_xyz": [
+        1.0802639122888578,
+        -0.1953246971531448,
+        7.196103806255908
+      ],
+      "candidate_xyz": [
+        1.0802639122888578,
+        -0.1953246971531448,
+        7.196103806255908
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.25_flanking_profile_left_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 4.070351437845917,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1139465,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.18735238193966208,
+        0.19844435367364585,
+        0.6142032643866921
+      ],
+      "source_logical_square_uv": [
+        0.505545985866992,
+        0.3071016321933461
+      ],
+      "candidate_G7_quad_id": 4557861,
+      "candidate_native_triangle_id": 18231447,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.6031112926527082,
+        0.37470476387932394,
+        0.022183943467967815
+      ],
+      "G7_quad_control_ids": [
+        2004927,
+        63601,
+        2004928,
+        6391051
+      ],
+      "native_face_centre_id": 11559975,
+      "baseline_xyz": [
+        1.019420820401308,
+        -0.3777106245169067,
+        7.085124890279392
+      ],
+      "candidate_xyz": [
+        1.019420820401308,
+        -0.3777106245169067,
+        7.085124890279392
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.25_flanking_profile_right_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 4.070351437845917,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1140252,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.44392801442256224,
+        0.5386809711761952,
+        0.017391014401242553
+      ],
+      "source_logical_square_uv": [
+        0.45262352162318353,
+        0.9913044927993787
+      ],
+      "candidate_G7_quad_id": 4561011,
+      "candidate_native_triangle_id": 18244044,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.8878560288451245,
+        0.07736194235239036,
+        0.034782028802485154
+      ],
+      "G7_quad_control_ids": [
+        4300034,
+        1597961,
+        5072203,
+        6391838
+      ],
+      "native_face_centre_id": 11563125,
+      "baseline_xyz": [
+        1.0888822337434165,
+        -0.1809444011146784,
+        7.203593337379946
+      ],
+      "candidate_xyz": [
+        1.0888822337434165,
+        -0.1809444011146784,
+        7.203593337379946
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.50_existing_measured_peak",
+      "parent_component": 2,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 15,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 8.275798227498692,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1025594,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.34958405178098917,
+        0.10043474857892326,
+        0.5499811996400876
+      ],
+      "source_logical_square_uv": [
+        0.2749905998200438,
+        0.624574651601033
+      ],
+      "candidate_G7_quad_id": 4102379,
+      "candidate_native_triangle_id": 16409518,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.2008694971578464,
+        0.30083189643802166,
+        0.4982986064041319
+      ],
+      "G7_quad_control_ids": [
+        5132860,
+        1569296,
+        4038783,
+        6277180
+      ],
+      "native_face_centre_id": 11104493,
+      "baseline_xyz": [
+        0.7537531647937008,
+        -0.29343801257460045,
+        4.122646131381096
+      ],
+      "candidate_xyz": [
+        0.7333354708713863,
+        -0.3008544066979604,
+        4.1156922488957175
+      ],
+      "displacement": [
+        -0.020417693922314517,
+        -0.007416394123359926,
+        -0.0069538824853783154
+      ],
+      "displacement_length": 0.022808805503988543,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.50_existing_measured_left_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 8.275798227498692,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1023499,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.21318357099346355,
+        0.25729696114245787,
+        0.5295194678640787
+      ],
+      "source_logical_square_uv": [
+        0.7352402660679608,
+        0.5220566950744971
+      ],
+      "candidate_G7_quad_id": 4093998,
+      "candidate_native_triangle_id": 16375995,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.48540607771508415,
+        0.42636714198692727,
+        0.08822678029798858
+      ],
+      "G7_quad_control_ids": [
+        3319298,
+        1029374,
+        4684539,
+        6275085
+      ],
+      "native_face_centre_id": 11096112,
+      "baseline_xyz": [
+        0.9053169091590929,
+        -0.3433471311591703,
+        4.204383437624808
+      ],
+      "candidate_xyz": [
+        0.9058172955593253,
+        -0.3432529226705684,
+        4.204052409750844
+      ],
+      "displacement": [
+        0.0005003864002324221,
+        9.420848860192121e-05,
+        -0.00033102787396455113
+      ],
+      "displacement_length": 0.0006073230130694133,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.50_existing_measured_right_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 8.275798227498692,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1040716,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.39844601726850554,
+        0.13884708155629522,
+        0.4627069011751993
+      ],
+      "source_logical_square_uv": [
+        0.37020053214389487,
+        0.23135345058759965
+      ],
+      "candidate_G7_quad_id": 4162864,
+      "candidate_native_triangle_id": 16651458,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.27769416311259043,
+        0.20310796546298904,
+        0.5191978714244205
+      ],
+      "G7_quad_control_ids": [
+        5100851,
+        1237530,
+        2912692,
+        6292302
+      ],
+      "native_face_centre_id": 11164978,
+      "baseline_xyz": [
+        0.7554064365978139,
+        -0.2897593797430369,
+        4.113288400602369
+      ],
+      "candidate_xyz": [
+        0.7830327856688668,
+        -0.28633200906719103,
+        4.111608280097387
+      ],
+      "displacement": [
+        0.02762634907105288,
+        0.0034273706758458644,
+        -0.0016801205049814527
+      ],
+      "displacement_length": 0.02788879412338532,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.50_flanking_profile_left_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 8.275798227498692,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1023499,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.21318357099346355,
+        0.25729696114245787,
+        0.5295194678640787
+      ],
+      "source_logical_square_uv": [
+        0.7352402660679608,
+        0.5220566950744971
+      ],
+      "candidate_G7_quad_id": 4093998,
+      "candidate_native_triangle_id": 16375995,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.48540607771508415,
+        0.42636714198692727,
+        0.08822678029798858
+      ],
+      "G7_quad_control_ids": [
+        3319298,
+        1029374,
+        4684539,
+        6275085
+      ],
+      "native_face_centre_id": 11096112,
+      "baseline_xyz": [
+        0.9053169091590929,
+        -0.3433471311591703,
+        4.204383437624808
+      ],
+      "candidate_xyz": [
+        0.9058172955593253,
+        -0.3432529226705684,
+        4.204052409750844
+      ],
+      "displacement": [
+        0.0005003864002324221,
+        9.420848860192121e-05,
+        -0.00033102787396455113
+      ],
+      "displacement_length": 0.0006073230130694133,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.50_flanking_profile_right_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 8.275798227498692,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 1040716,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.39844601726850554,
+        0.13884708155629522,
+        0.4627069011751993
+      ],
+      "source_logical_square_uv": [
+        0.37020053214389487,
+        0.23135345058759965
+      ],
+      "candidate_G7_quad_id": 4162864,
+      "candidate_native_triangle_id": 16651458,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.27769416311259043,
+        0.20310796546298904,
+        0.5191978714244205
+      ],
+      "G7_quad_control_ids": [
+        5100851,
+        1237530,
+        2912692,
+        6292302
+      ],
+      "native_face_centre_id": 11164978,
+      "baseline_xyz": [
+        0.7554064365978139,
+        -0.2897593797430369,
+        4.113288400602369
+      ],
+      "candidate_xyz": [
+        0.7830327856688668,
+        -0.28633200906719103,
+        4.111608280097387
+      ],
+      "displacement": [
+        0.02762634907105288,
+        0.0034273706758458644,
+        -0.0016801205049814527
+      ],
+      "displacement_length": 0.02788879412338532,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.75_existing_measured_peak",
+      "parent_component": 2,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 12.349824804974816,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 974731,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.5046299276939149,
+        0.3018857757411557,
+        0.19348429656492935
+      ],
+      "source_logical_square_uv": [
+        0.09674214828246468,
+        0.6013720759763795
+      ],
+      "candidate_G7_quad_id": 3898927,
+      "candidate_native_triangle_id": 15595709,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.009259855387829807,
+        0.6037715514823115,
+        0.3869685931298587
+      ],
+      "G7_quad_control_ids": [
+        4681491,
+        1556580,
+        5117842,
+        6226317
+      ],
+      "native_face_centre_id": 10901041,
+      "baseline_xyz": [
+        1.009034867600754,
+        -0.25489048744912396,
+        2.1210589518533283
+      ],
+      "candidate_xyz": [
+        1.0334525072951817,
+        -0.2600381865294859,
+        2.117481226218231
+      ],
+      "displacement": [
+        0.024417639694427784,
+        -0.005147699080361945,
+        -0.003577725635097284
+      ],
+      "displacement_length": 0.025209523097212427,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.75_existing_measured_left_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 3,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 12.349824804974816,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 974757,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.04632896081851142,
+        0.44361481193518243,
+        0.5100562272463062
+      ],
+      "source_logical_square_uv": [
+        0.7449718863768469,
+        0.6986429255583355
+      ],
+      "candidate_G7_quad_id": 3899030,
+      "candidate_native_triangle_id": 15596123,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.11277037612963525,
+        0.09265792163702269,
+        0.7945717022333421
+      ],
+      "G7_quad_control_ids": [
+        1808054,
+        495158,
+        3616107,
+        6226343
+      ],
+      "native_face_centre_id": 10901144,
+      "baseline_xyz": [
+        0.8998153087021317,
+        -0.3111442117671386,
+        2.1024560245543062
+      ],
+      "candidate_xyz": [
+        0.8998153087021317,
+        -0.3111442117671386,
+        2.1024560245543062
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.75_existing_measured_right_shoulder",
+      "parent_component": 2,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 29,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 12.349824804974816,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 974652,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.12927004319191482,
+        0.5953995366759356,
+        0.2753304201321496
+      ],
+      "source_logical_square_uv": [
+        0.7330647467420104,
+        0.1376652100660748
+      ],
+      "candidate_G7_quad_id": 3898609,
+      "candidate_native_triangle_id": 15594436,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.25854008638382964,
+        0.19079907335187118,
+        0.5506608402642992
+      ],
+      "G7_quad_control_ids": [
+        2942693,
+        298042,
+        2942691,
+        6226238
+      ],
+      "native_face_centre_id": 10900723,
+      "baseline_xyz": [
+        0.9329973689171097,
+        -0.1747168047959486,
+        2.1794240332826456
+      ],
+      "candidate_xyz": [
+        0.9329973689171097,
+        -0.1747168047959486,
+        2.1794240332826456
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.75_flanking_profile_left_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 12.349824804974816,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 959650,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.4463752812008295,
+        0.006531675028089046,
+        0.5470930437710815
+      ],
+      "source_logical_square_uv": [
+        0.7264534781144593,
+        0.2800781969136298
+      ],
+      "candidate_G7_quad_id": 3838601,
+      "candidate_native_triangle_id": 15354406,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.013063350056178091,
+        0.10724943759834105,
+        0.8796872123454809
+      ],
+      "G7_quad_control_ids": [
+        2418263,
+        166935,
+        2418264,
+        6211236
+      ],
+      "native_face_centre_id": 10840715,
+      "baseline_xyz": [
+        0.8997365356390565,
+        -0.33597645890839667,
+        2.0925271868036597
+      ],
+      "candidate_xyz": [
+        0.8997365356390565,
+        -0.33597645890839667,
+        2.0925271868036597
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_00_0.75_flanking_profile_right_endpoint",
+      "parent_component": 2,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 12.349824804974816,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_00.json",
+      "source_G6_quad_id": 974634,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.14488901120942457,
+        0.6690227327862561,
+        0.18608825600431927
+      ],
+      "source_logical_square_uv": [
+        0.7620668607884158,
+        0.09304412800215964
+      ],
+      "candidate_G7_quad_id": 3898537,
+      "candidate_native_triangle_id": 15594148,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.2897780224188491,
+        0.3380454655725123,
+        0.37217651200863855
+      ],
+      "G7_quad_control_ids": [
+        2878458,
+        281984,
+        2878460,
+        6226220
+      ],
+      "native_face_centre_id": 10900651,
+      "baseline_xyz": [
+        0.9413459145548391,
+        -0.1521763696624831,
+        2.1898896357713267
+      ],
+      "candidate_xyz": [
+        0.9413459145548391,
+        -0.1521763696624831,
+        2.1898896357713267
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.25_existing_measured_peak",
+      "parent_component": 12,
+      "parent_profile_row": 32,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.994513201957146,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 947276,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.180120944192035,
+        0.3270721657635052,
+        0.4928068900444599
+      ],
+      "source_logical_square_uv": [
+        0.24640344502222994,
+        0.42652438921426494
+      ],
+      "candidate_G7_quad_id": 3789104,
+      "candidate_native_triangle_id": 15156419,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.34585566847298976,
+        0.36024188838407,
+        0.29390244314294023
+      ],
+      "G7_quad_control_ids": [
+        5090323,
+        1232266,
+        2902164,
+        6198862
+      ],
+      "native_face_centre_id": 10791218,
+      "baseline_xyz": [
+        0.9582593221507381,
+        -0.5614159108837682,
+        2.086887320267709
+      ],
+      "candidate_xyz": [
+        0.9655607721905912,
+        -0.5689397526008951,
+        2.078784943113686
+      ],
+      "displacement": [
+        0.007301450039853163,
+        -0.0075238417171269445,
+        -0.008102377154023177
+      ],
+      "displacement_length": 0.013250203108439064,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.25_existing_measured_left_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 32,
+      "recorded_profile_column": 7,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.994513201957146,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 947511,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.3496766103228066,
+        0.5490679101196725,
+        0.10125547955752101
+      ],
+      "source_logical_square_uv": [
+        0.5996956498984329,
+        0.050627739778760505
+      ],
+      "candidate_G7_quad_id": 3790045,
+      "candidate_native_triangle_id": 15160180,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.6993532206456131,
+        0.09813582023934486,
+        0.20251095911504202
+      ],
+      "G7_quad_control_ids": [
+        3300303,
+        387445,
+        3300302,
+        6199097
+      ],
+      "native_face_centre_id": 10792159,
+      "baseline_xyz": [
+        0.9446138092145049,
+        -0.45277313132203545,
+        2.1488363516307816
+      ],
+      "candidate_xyz": [
+        0.9446138092145049,
+        -0.45277313132203545,
+        2.1488363516307816
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.25_existing_measured_right_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 32,
+      "recorded_profile_column": 28,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.994513201957146,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 952349,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.6052220058171924,
+        0.3905074619435007,
+        0.004270532239306887
+      ],
+      "source_logical_square_uv": [
+        0.9978647338803466,
+        0.39264272806315414
+      ],
+      "candidate_G7_quad_id": 3809397,
+      "candidate_native_triangle_id": 15237589,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.21044401163438486,
+        0.7810149238870014,
+        0.008541064478613691
+      ],
+      "G7_quad_control_ids": [
+        2138274,
+        96938,
+        2138276,
+        6203935
+      ],
+      "native_face_centre_id": 10811511,
+      "baseline_xyz": [
+        0.8461921593979199,
+        -0.5249655067019605,
+        2.1084957373774795
+      ],
+      "candidate_xyz": [
+        0.8488041157142082,
+        -0.5278807208728223,
+        2.1055367297486773
+      ],
+      "displacement": [
+        0.0026119563162882997,
+        -0.002915214170861824,
+        -0.0029590076288021905
+      ],
+      "displacement_length": 0.004906782612619139,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.25_flanking_profile_left_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 32,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.994513201957146,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 947999,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.16694753540383428,
+        0.5201360229717931,
+        0.3129164416243726
+      ],
+      "source_logical_square_uv": [
+        0.3234057562160206,
+        0.8435417791878137
+      ],
+      "candidate_G7_quad_id": 3791999,
+      "candidate_native_triangle_id": 15167996,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.33389507080766856,
+        0.04027204594358624,
+        0.6258328832487452
+      ],
+      "G7_quad_control_ids": [
+        5066151,
+        1549897,
+        5098237,
+        6199585
+      ],
+      "native_face_centre_id": 10794113,
+      "baseline_xyz": [
+        1.0038372192008929,
+        -0.3743375508206903,
+        2.1710260223227777
+      ],
+      "candidate_xyz": [
+        1.0038372192008929,
+        -0.3743375508206903,
+        2.1710260223227777
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.25_flanking_profile_right_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 32,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.994513201957146,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 952368,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.1485889958268795,
+        0.30074541016224404,
+        0.5506655940108764
+      ],
+      "source_logical_square_uv": [
+        0.7246672029945618,
+        0.5760782071676822
+      ],
+      "candidate_G7_quad_id": 3809474,
+      "candidate_native_triangle_id": 15237899,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.398509179675512,
+        0.29717799165375913,
+        0.30431282867072884
+      ],
+      "G7_quad_control_ids": [
+        2865166,
+        666729,
+        3959249,
+        6203954
+      ],
+      "native_face_centre_id": 10811588,
+      "baseline_xyz": [
+        0.8786033654441702,
+        -0.5453299086037745,
+        2.0735476557412347
+      ],
+      "candidate_xyz": [
+        0.8853371654047276,
+        -0.5494943354309196,
+        2.0699419509472268
+      ],
+      "displacement": [
+        0.006733799960557452,
+        -0.004164426827145129,
+        -0.0036057047940079023
+      ],
+      "displacement_length": 0.008699863204038392,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.50_existing_measured_peak",
+      "parent_component": 12,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.895700498461173,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1011276,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.2895375952604262,
+        0.30823384373752,
+        0.4022285610020538
+      ],
+      "source_logical_square_uv": [
+        0.4906518757614531,
+        0.7988857194989731
+      ],
+      "candidate_G7_quad_id": 4045107,
+      "candidate_native_triangle_id": 16180431,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.3835323125249599,
+        0.5790751905208524,
+        0.03739249695418767
+      ],
+      "G7_quad_control_ids": [
+        4283920,
+        1565717,
+        5110419,
+        6262862
+      ],
+      "native_face_centre_id": 11047221,
+      "baseline_xyz": [
+        0.9099544693224262,
+        -0.5412894046261448,
+        3.6884393170349004
+      ],
+      "candidate_xyz": [
+        0.9151552446290334,
+        -0.5463723195893495,
+        3.6896266808197526
+      ],
+      "displacement": [
+        0.00520077530660723,
+        -0.005082914963204677,
+        0.001187363784852291
+      ],
+      "displacement_length": 0.00736844088464882,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.50_existing_measured_left_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 2,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.895700498461173,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1011399,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.6506483301864705,
+        0.19938425102087676,
+        0.14996741879265285
+      ],
+      "source_logical_square_uv": [
+        0.9250162906036736,
+        0.2743679604172032
+      ],
+      "candidate_G7_quad_id": 4045597,
+      "candidate_native_triangle_id": 16182389,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.3012966603729409,
+        0.3987685020417536,
+        0.2999348375853055
+      ],
+      "G7_quad_control_ids": [
+        3316274,
+        391438,
+        3316275,
+        6262985
+      ],
+      "native_face_centre_id": 11047711,
+      "baseline_xyz": [
+        0.9803827329379109,
+        -0.4944605970240781,
+        3.693248080809586
+      ],
+      "candidate_xyz": [
+        0.9803808741595792,
+        -0.4948435660458985,
+        3.693155956219023
+      ],
+      "displacement": [
+        -1.8587783316981188e-06,
+        -0.0003829690218204451,
+        -9.212459056318067e-05
+      ],
+      "displacement_length": 0.00039389804127137857,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.50_existing_measured_right_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 30,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.895700498461173,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1012325,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.7131994839550121,
+        0.04332803438813577,
+        0.24347248165685223
+      ],
+      "source_logical_square_uv": [
+        0.8349357247834382,
+        0.8782637591715741
+      ],
+      "candidate_G7_quad_id": 4049302,
+      "candidate_native_triangle_id": 16197209,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.42639896791002463,
+        0.08665606877627163,
+        0.48694496331370374
+      ],
+      "G7_quad_control_ids": [
+        1807402,
+        494506,
+        3614802,
+        6263911
+      ],
+      "native_face_centre_id": 11051416,
+      "baseline_xyz": [
+        0.8270038784963769,
+        -0.5583070497026247,
+        3.675479167518712
+      ],
+      "candidate_xyz": [
+        0.8274868801775623,
+        -0.5581629486722901,
+        3.675589118515311
+      ],
+      "displacement": [
+        0.0004830016811854243,
+        0.00014410103033457577,
+        0.00010995099659893981
+      ],
+      "displacement_length": 0.0005158923847320609,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.50_flanking_profile_left_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.895700498461173,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1011407,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.19777774093166464,
+        0.49835838233939433,
+        0.303863876728941
+      ],
+      "source_logical_square_uv": [
+        0.6502903207038648,
+        0.1519319383644705
+      ],
+      "candidate_G7_quad_id": 4045629,
+      "candidate_native_triangle_id": 16182519,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.0032832353212113308,
+        0.39555548186332934,
+        0.6011612828154593
+      ],
+      "G7_quad_control_ids": [
+        3316277,
+        391438,
+        3316276,
+        6262993
+      ],
+      "native_face_centre_id": 11047743,
+      "baseline_xyz": [
+        0.9931611015504114,
+        -0.49513172562212016,
+        3.6984118945412554
+      ],
+      "candidate_xyz": [
+        0.9931611015504114,
+        -0.49513172562212016,
+        3.6984118945412554
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.50_flanking_profile_right_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.895700498461173,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1013348,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.013070907195452074,
+        0.706302877218318,
+        0.28062621558623
+      ],
+      "source_logical_square_uv": [
+        0.846615985011433,
+        0.140313107793115
+      ],
+      "candidate_G7_quad_id": 4053393,
+      "candidate_native_triangle_id": 16213572,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.026141814390904017,
+        0.41260575443663594,
+        0.56125243117246
+      ],
+      "G7_quad_control_ids": [
+        2415653,
+        166282,
+        2415650,
+        6264934
+      ],
+      "native_face_centre_id": 11055507,
+      "baseline_xyz": [
+        0.813758048384359,
+        -0.5607116960125696,
+        3.673420308320536
+      ],
+      "candidate_xyz": [
+        0.813758048384359,
+        -0.5607116960125696,
+        3.673420308320536
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.75_existing_measured_peak",
+      "parent_component": 12,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.796887794965201,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1109702,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.5855896230458709,
+        0.07488476714666667,
+        0.33952560980746244
+      ],
+      "source_logical_square_uv": [
+        0.16976280490373122,
+        0.7553524279496021
+      ],
+      "candidate_G7_quad_id": 4438811,
+      "candidate_native_triangle_id": 17755245,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.17117924609174184,
+        0.14976953429333334,
+        0.6790512196149249
+      ],
+      "G7_quad_control_ids": [
+        4689924,
+        1590323,
+        3657859,
+        6361288
+      ],
+      "native_face_centre_id": 11440925,
+      "baseline_xyz": [
+        0.7305509551605225,
+        -0.4636624910555055,
+        6.043867876415542
+      ],
+      "candidate_xyz": [
+        0.7367322698435073,
+        -0.46527490907465,
+        6.044054145443825
+      ],
+      "displacement": [
+        0.006181314682984773,
+        -0.0016124180191445237,
+        0.00018626902828344782
+      ],
+      "displacement_length": 0.006390871554760177,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.75_existing_measured_left_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 6,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.796887794965201,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1108954,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.06827280747589423,
+        0.32282495517799203,
+        0.6089022373461137
+      ],
+      "source_logical_square_uv": [
+        0.6272760738510489,
+        0.30445111867305685
+      ],
+      "candidate_G7_quad_id": 4435817,
+      "candidate_native_triangle_id": 17743271,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.35435008964401593,
+        0.13654561495178852,
+        0.5091042954041956
+      ],
+      "G7_quad_control_ids": [
+        2895330,
+        286202,
+        2895332,
+        6360540
+      ],
+      "native_face_centre_id": 11437931,
+      "baseline_xyz": [
+        0.7039497112116491,
+        -0.375801140475389,
+        6.024798725303258
+      ],
+      "candidate_xyz": [
+        0.7039497112116491,
+        -0.375801140475389,
+        6.024798725303258
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.75_existing_measured_right_shoulder",
+      "parent_component": 12,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 27,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.796887794965201,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1110614,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.26427100330661263,
+        0.11103779154541328,
+        0.6246912051479742
+      ],
+      "source_logical_square_uv": [
+        0.42338339411940035,
+        0.3123456025739871
+      ],
+      "candidate_G7_quad_id": 4442456,
+      "candidate_native_triangle_id": 17769826,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.22207558309082653,
+        0.47145799338677485,
+        0.3064664235223986
+      ],
+      "G7_quad_control_ids": [
+        3636361,
+        505285,
+        2458766,
+        6362200
+      ],
+      "native_face_centre_id": 11444570,
+      "baseline_xyz": [
+        0.636245706406698,
+        -0.5037604815063712,
+        6.073484790653523
+      ],
+      "candidate_xyz": [
+        0.636245706406698,
+        -0.5037604815063712,
+        6.073484790653523
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.75_flanking_profile_left_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.796887794965201,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1109205,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.17863608133210684,
+        0.42518936988786815,
+        0.39617454878002506
+      ],
+      "source_logical_square_uv": [
+        0.6232766442778807,
+        0.19808727439001253
+      ],
+      "candidate_G7_quad_id": 4436821,
+      "candidate_native_triangle_id": 17747287,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.1496212602242637,
+        0.3572721626642137,
+        0.4931065771115226
+      ],
+      "G7_quad_control_ids": [
+        1820691,
+        17540,
+        1820689,
+        6360791
+      ],
+      "native_face_centre_id": 11438935,
+      "baseline_xyz": [
+        0.743997260372755,
+        -0.3479035281320922,
+        5.989852787655076
+      ],
+      "candidate_xyz": [
+        0.743997260372755,
+        -0.3479035281320922,
+        5.989852787655076
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_01_0.75_flanking_profile_right_endpoint",
+      "parent_component": 12,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.796887794965201,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_01.json",
+      "source_G6_quad_id": 1110593,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.10585127032784859,
+        0.28129649660116357,
+        0.6128522330709878
+      ],
+      "source_logical_square_uv": [
+        0.693573883464506,
+        0.5877226131366575
+      ],
+      "candidate_G7_quad_id": 4442374,
+      "candidate_native_triangle_id": 17769499,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.43740700679767297,
+        0.21170254065569694,
+        0.3508904525466301
+      ],
+      "G7_quad_control_ids": [
+        2008947,
+        696051,
+        4017893,
+        6362179
+      ],
+      "native_face_centre_id": 11444488,
+      "baseline_xyz": [
+        0.6157969230654408,
+        -0.5460823997646854,
+        6.094401660730882
+      ],
+      "candidate_xyz": [
+        0.6157969230654408,
+        -0.5460823997646854,
+        6.094401660730882
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.25_existing_measured_peak",
+      "parent_component": 25,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 15,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.6592827165243684,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 971515,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.8227728212656394,
+        0.16481716288662718,
+        0.012410015847733373
+      ],
+      "source_logical_square_uv": [
+        0.0062050079238666865,
+        0.8289778291895061
+      ],
+      "candidate_G7_quad_id": 3886063,
+      "candidate_native_triangle_id": 15544253,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.6455456425312789,
+        0.32963432577325436,
+        0.024820031695466746
+      ],
+      "G7_quad_control_ids": [
+        4665577,
+        1555776,
+        5130704,
+        6223101
+      ],
+      "native_face_centre_id": 10888177,
+      "baseline_xyz": [
+        0.3493798989996066,
+        -0.40182072874791946,
+        1.9987210811832143
+      ],
+      "candidate_xyz": [
+        0.3601898770538691,
+        -0.40811185881798234,
+        1.9981896265352275
+      ],
+      "displacement": [
+        0.010809978054262537,
+        -0.006291130070062878,
+        -0.0005314546479868731
+      ],
+      "displacement_length": 0.012518641585050425,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.25_existing_measured_left_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.6592827165243684,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 971408,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.09328391303938775,
+        0.5554229005614445,
+        0.35129318639916773
+      ],
+      "source_logical_square_uv": [
+        0.7310694937610284,
+        0.17564659319958387
+      ],
+      "candidate_G7_quad_id": 3885633,
+      "candidate_native_triangle_id": 15542532,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.18656782607877553,
+        0.110845801122889,
+        0.7025863727983355
+      ],
+      "G7_quad_control_ids": [
+        2942541,
+        298004,
+        2942538,
+        6222994
+      ],
+      "native_face_centre_id": 10887747,
+      "baseline_xyz": [
+        0.3704151188719338,
+        -0.33022851822407173,
+        2.0585613740961737
+      ],
+      "candidate_xyz": [
+        0.3704151188719338,
+        -0.33022851822407173,
+        2.0585613740961737
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.25_existing_measured_right_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 30,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.6592827165243684,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 971500,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.11543636775728387,
+        0.7714999385939746,
+        0.11306369364874161
+      ],
+      "source_logical_square_uv": [
+        0.9434681531756293,
+        0.8280317854183454
+      ],
+      "candidate_G7_quad_id": 3886002,
+      "candidate_native_triangle_id": 15544008,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.23087273551456766,
+        0.5429998771879494,
+        0.22612738729748294
+      ],
+      "G7_quad_control_ids": [
+        2891007,
+        826574,
+        4278938,
+        6223086
+      ],
+      "native_face_centre_id": 10888116,
+      "baseline_xyz": [
+        0.2541378903484885,
+        -0.3915999505323997,
+        2.0088975862160305
+      ],
+      "candidate_xyz": [
+        0.2541378903484885,
+        -0.3915999505323997,
+        2.0088975862160305
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.25_flanking_profile_left_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.6592827165243684,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 971408,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.09328391303938775,
+        0.5554229005614445,
+        0.35129318639916773
+      ],
+      "source_logical_square_uv": [
+        0.7310694937610284,
+        0.17564659319958387
+      ],
+      "candidate_G7_quad_id": 3885633,
+      "candidate_native_triangle_id": 15542532,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.18656782607877553,
+        0.110845801122889,
+        0.7025863727983355
+      ],
+      "G7_quad_control_ids": [
+        2942541,
+        298004,
+        2942538,
+        6222994
+      ],
+      "native_face_centre_id": 10887747,
+      "baseline_xyz": [
+        0.3704151188719338,
+        -0.33022851822407173,
+        2.0585613740961737
+      ],
+      "candidate_xyz": [
+        0.3704151188719338,
+        -0.33022851822407173,
+        2.0585613740961737
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.25_flanking_profile_right_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.6592827165243684,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 971500,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.14936037696106685,
+        0.4999122282496703,
+        0.3507273947892629
+      ],
+      "source_logical_square_uv": [
+        0.3247240743556983,
+        0.8246363026053686
+      ],
+      "candidate_G7_quad_id": 3886003,
+      "candidate_native_triangle_id": 15544015,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.00017554350065940305,
+        0.2987207539221337,
+        0.7011037025772069
+      ],
+      "G7_quad_control_ids": [
+        4278938,
+        1555773,
+        5079167,
+        6223086
+      ],
+      "native_face_centre_id": 10888117,
+      "baseline_xyz": [
+        0.23982785277077917,
+        -0.3969533633483705,
+        2.0081313914201995
+      ],
+      "candidate_xyz": [
+        0.23982785277077917,
+        -0.3969533633483705,
+        2.0081313914201995
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.50_existing_measured_peak",
+      "parent_component": 25,
+      "parent_profile_row": 62,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.320742425060266,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1015326,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.1132981170062001,
+        0.5232874345555469,
+        0.3634144484382529
+      ],
+      "source_logical_square_uv": [
+        0.18170722421912644,
+        0.2950053412253265
+      ],
+      "candidate_G7_quad_id": 4061304,
+      "candidate_native_triangle_id": 16245216,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.22659623401240014,
+        0.0465748691110941,
+        0.7268288968765058
+      ],
+      "G7_quad_control_ids": [
+        4284423,
+        829316,
+        2922307,
+        6266912
+      ],
+      "native_face_centre_id": 11063418,
+      "baseline_xyz": [
+        0.5184782936975798,
+        -0.7237671182708643,
+        3.5295131110433022
+      ],
+      "candidate_xyz": [
+        0.5176783008310573,
+        -0.7433584462831544,
+        3.528299653659525
+      ],
+      "displacement": [
+        -0.0007999928665225475,
+        -0.019591328012290132,
+        -0.0012134573837774276
+      ],
+      "displacement_length": 0.01964516736232794,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.50_existing_measured_left_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 62,
+      "recorded_profile_column": 3,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.320742425060266,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1014834,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.6804632484728518,
+        0.053085221618285494,
+        0.2664515299088628
+      ],
+      "source_logical_square_uv": [
+        0.18631098657271689,
+        0.1332257649544314
+      ],
+      "candidate_G7_quad_id": 4059336,
+      "candidate_native_triangle_id": 16237345,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.36092649694570345,
+        0.10617044323657099,
+        0.5329030598177256
+      ],
+      "G7_quad_control_ids": [
+        3960821,
+        667515,
+        2465851,
+        6266420
+      ],
+      "native_face_centre_id": 11061450,
+      "baseline_xyz": [
+        0.5960749236816191,
+        -0.6777467618400836,
+        3.433717532470279
+      ],
+      "candidate_xyz": [
+        0.5960749236816191,
+        -0.6777467618400836,
+        3.433717532470279
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.50_existing_measured_right_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 62,
+      "recorded_profile_column": 27,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.320742425060266,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1016349,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.24211383306689738,
+        0.2839101976575177,
+        0.47397596927558505
+      ],
+      "source_logical_square_uv": [
+        0.5208981822953103,
+        0.23698798463779253
+      ],
+      "candidate_G7_quad_id": 4065397,
+      "candidate_native_triangle_id": 16261591,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.4321796046849645,
+        0.4842276661337944,
+        0.08359272918124105
+      ],
+      "G7_quad_control_ids": [
+        2142274,
+        97938,
+        2142276,
+        6267935
+      ],
+      "native_face_centre_id": 11067511,
+      "baseline_xyz": [
+        0.46287282584792067,
+        -0.651702495523377,
+        3.605708610681059
+      ],
+      "candidate_xyz": [
+        0.46287282584792067,
+        -0.651702495523377,
+        3.605708610681059
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.50_flanking_profile_left_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 62,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.320742425060266,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1014818,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.26741613739668885,
+        0.20482503712650887,
+        0.5277588254768023
+      ],
+      "source_logical_square_uv": [
+        0.53129555013509,
+        0.7361205872615988
+      ],
+      "candidate_G7_quad_id": 4059274,
+      "candidate_native_triangle_id": 16237098,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.4096500742530176,
+        0.4651677252066224,
+        0.12518220054036
+      ],
+      "G7_quad_control_ids": [
+        2418865,
+        990617,
+        4607024,
+        6266404
+      ],
+      "native_face_centre_id": 11061388,
+      "baseline_xyz": [
+        0.5996495886177197,
+        -0.6793858164913564,
+        3.402096266695768
+      ],
+      "candidate_xyz": [
+        0.5996495886177197,
+        -0.6793858164913564,
+        3.402096266695768
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.50_flanking_profile_right_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 62,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.320742425060266,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1016610,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.35686673860789286,
+        0.07192866985016903,
+        0.5712045915419381
+      ],
+      "source_logical_square_uv": [
+        0.2856022957709691,
+        0.6424690343788619
+      ],
+      "candidate_G7_quad_id": 4066443,
+      "candidate_native_triangle_id": 16265774,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.14385733970033798,
+        0.2862665227842143,
+        0.5698761375154477
+      ],
+      "G7_quad_control_ids": [
+        4613588,
+        1567050,
+        3973923,
+        6268196
+      ],
+      "native_face_centre_id": 11068557,
+      "baseline_xyz": [
+        0.4218397624037985,
+        -0.6691733105614881,
+        3.6409797952687337
+      ],
+      "candidate_xyz": [
+        0.4218397624037985,
+        -0.6691733105614881,
+        3.6409797952687337
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.75_existing_measured_peak",
+      "parent_component": 25,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.068055672581194,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1096982,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.36867830510971566,
+        0.5730495139021166,
+        0.05827218098816767
+      ],
+      "source_logical_square_uv": [
+        0.6021856043962004,
+        0.029136090494083836
+      ],
+      "candidate_G7_quad_id": 4387929,
+      "candidate_native_triangle_id": 17551716,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.7373566102194316,
+        0.14609902780423312,
+        0.11654436197633534
+      ],
+      "G7_quad_control_ids": [
+        2449318,
+        174699,
+        2449321,
+        6348568
+      ],
+      "native_face_centre_id": 11390043,
+      "baseline_xyz": [
+        0.6262872261935646,
+        -0.8489677893206145,
+        5.511742502954334
+      ],
+      "candidate_xyz": [
+        0.6473875738030833,
+        -0.8667598070937557,
+        5.5052519025817865
+      ],
+      "displacement": [
+        0.021100347609518733,
+        -0.01779201777314121,
+        -0.006490600372547561
+      ],
+      "displacement_length": 0.028353279508346298,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.75_existing_measured_left_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 4,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.068055672581194,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1097459,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.005594732398250706,
+        0.77276659026595,
+        0.22163867733579928
+      ],
+      "source_logical_square_uv": [
+        0.8891806613321003,
+        0.8835859289338496
+      ],
+      "candidate_G7_quad_id": 4389838,
+      "candidate_native_triangle_id": 17559352,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.011189464796501403,
+        0.5455331805318997,
+        0.4432773546715989
+      ],
+      "G7_quad_control_ids": [
+        3337792,
+        1228661,
+        5083112,
+        6349045
+      ],
+      "native_face_centre_id": 11391952,
+      "baseline_xyz": [
+        0.5618779180199751,
+        -0.791957248361812,
+        5.692207214831015
+      ],
+      "candidate_xyz": [
+        0.5618779180199751,
+        -0.791957248361812,
+        5.692207214831015
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.75_existing_measured_right_shoulder",
+      "parent_component": 25,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.068055672581194,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1082832,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.9123805147822013,
+        0.08451158371641694,
+        0.0031079015013818494
+      ],
+      "source_logical_square_uv": [
+        0.08606553446710787,
+        0.0015539507506909247
+      ],
+      "candidate_G7_quad_id": 4331328,
+      "candidate_native_triangle_id": 17325313,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.8247610295644024,
+        0.16902316743283388,
+        0.006215803002763699
+      ],
+      "G7_quad_control_ids": [
+        5121680,
+        1247945,
+        2933521,
+        6334418
+      ],
+      "native_face_centre_id": 11333442,
+      "baseline_xyz": [
+        0.41998213831976583,
+        -0.7150796005962834,
+        5.442124996030827
+      ],
+      "candidate_xyz": [
+        0.41998213831976583,
+        -0.7150796005962834,
+        5.442124996030827
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.75_flanking_profile_left_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.068055672581194,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1096490,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.015856006844424363,
+        0.9157309258506483,
+        0.06841306730492737
+      ],
+      "source_logical_square_uv": [
+        0.034206533652463685,
+        0.05006254049688805
+      ],
+      "candidate_G7_quad_id": 4385960,
+      "candidate_native_triangle_id": 17543840,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.031712013688848795,
+        0.8314618517012965,
+        0.13682613460985474
+      ],
+      "G7_quad_control_ids": [
+        3976406,
+        675308,
+        2882322,
+        6348076
+      ],
+      "native_face_centre_id": 11388074,
+      "baseline_xyz": [
+        0.5932916426564292,
+        -0.773829104232392,
+        5.755392607240558
+      ],
+      "candidate_xyz": [
+        0.5932916426564292,
+        -0.773829104232392,
+        5.755392607240558
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_02_0.75_flanking_profile_right_endpoint",
+      "parent_component": 25,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 8.068055672581194,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json",
+      "source_G6_quad_id": 1082832,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.9123805147822013,
+        0.08451158371641694,
+        0.0031079015013818494
+      ],
+      "source_logical_square_uv": [
+        0.08606553446710787,
+        0.0015539507506909247
+      ],
+      "candidate_G7_quad_id": 4331328,
+      "candidate_native_triangle_id": 17325313,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.8247610295644024,
+        0.16902316743283388,
+        0.006215803002763699
+      ],
+      "G7_quad_control_ids": [
+        5121680,
+        1247945,
+        2933521,
+        6334418
+      ],
+      "native_face_centre_id": 11333442,
+      "baseline_xyz": [
+        0.41998213831976583,
+        -0.7150796005962834,
+        5.442124996030827
+      ],
+      "candidate_xyz": [
+        0.41998213831976583,
+        -0.7150796005962834,
+        5.442124996030827
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.25_existing_measured_peak",
+      "parent_component": 40,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 15,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.4843562104546097,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 242262,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.5181533232962633,
+        0.3528907759649222,
+        0.12895590073881458
+      ],
+      "source_logical_square_uv": [
+        0.5826312736656706,
+        0.9355220496305927
+      ],
+      "candidate_G7_quad_id": 969050,
+      "candidate_native_triangle_id": 3876201,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.03630664659252658,
+        0.7057815519298443,
+        0.25791180147762915
+      ],
+      "G7_quad_control_ids": [
+        2192384,
+        877376,
+        4380542,
+        5493848
+      ],
+      "native_face_centre_id": 7971164,
+      "baseline_xyz": [
+        0.22289629977552047,
+        0.8133405682958028,
+        5.896158409819947
+      ],
+      "candidate_xyz": [
+        0.22524596390941748,
+        0.8297614166166621,
+        5.892577561517248
+      ],
+      "displacement": [
+        0.002349664133897006,
+        0.016420848320859327,
+        -0.0035808483026986693
+      ],
+      "displacement_length": 0.01697019904673279,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.25_existing_measured_left_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 5,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.4843562104546097,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 228598,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.10614583420230506,
+        0.7067351142225299,
+        0.18711905157516506
+      ],
+      "source_logical_square_uv": [
+        0.9064404742124175,
+        0.8002946400101124
+      ],
+      "candidate_G7_quad_id": 914394,
+      "candidate_native_triangle_id": 3657576,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.2122916684046101,
+        0.41347022844505976,
+        0.3742381031503301
+      ],
+      "G7_quad_control_ids": [
+        2282613,
+        922491,
+        4470772,
+        5480184
+      ],
+      "native_face_centre_id": 7916508,
+      "baseline_xyz": [
+        0.3163489648891748,
+        0.7127073972924689,
+        5.905455167881533
+      ],
+      "candidate_xyz": [
+        0.3163489648891748,
+        0.7127073972924689,
+        5.905455167881533
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.25_existing_measured_right_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 23,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.4843562104546097,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 242696,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.2196581696720323,
+        0.5871026843748851,
+        0.19323914595308261
+      ],
+      "source_logical_square_uv": [
+        0.3162777426485736,
+        0.9033804270234588
+      ],
+      "candidate_G7_quad_id": 970787,
+      "candidate_native_triangle_id": 3883148,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.4393163393440648,
+        0.17420536874977033,
+        0.3864782919061649
+      ],
+      "G7_quad_control_ids": [
+        3756572,
+        1373572,
+        4451387,
+        5494282
+      ],
+      "native_face_centre_id": 7972901,
+      "baseline_xyz": [
+        0.1625863785718748,
+        0.7309112110803239,
+        5.932167593035494
+      ],
+      "candidate_xyz": [
+        0.1625863785718748,
+        0.7309112110803239,
+        5.932167593035494
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.25_flanking_profile_left_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.4843562104546097,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 229357,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.11775796433097355,
+        0.6413134687516482,
+        0.2409285669173783
+      ],
+      "source_logical_square_uv": [
+        0.7617777522103373,
+        0.12046428345868915
+      ],
+      "candidate_G7_quad_id": 917429,
+      "candidate_native_triangle_id": 3669716,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.23551592866194715,
+        0.28262693750329626,
+        0.4818571338347566
+      ],
+      "G7_quad_control_ids": [
+        2093088,
+        85641,
+        2093086,
+        5480943
+      ],
+      "native_face_centre_id": 7919543,
+      "baseline_xyz": [
+        0.3543000228132793,
+        0.7319406859864017,
+        5.8509230540148485
+      ],
+      "candidate_xyz": [
+        0.3543000228132793,
+        0.7319406859864017,
+        5.8509230540148485
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.25_flanking_profile_right_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 31,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.25,
+      "physical_arc_s": 2.4843562104546097,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 243939,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.7807410128266065,
+        0.1349860574428737,
+        0.08427292973051971
+      ],
+      "source_logical_square_uv": [
+        0.17712252230813355,
+        0.042136464865259855
+      ],
+      "candidate_G7_quad_id": 975756,
+      "candidate_native_triangle_id": 3903025,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.5614820256532131,
+        0.2699721148857474,
+        0.16854585946103942
+      ],
+      "G7_quad_control_ids": [
+        4451486,
+        912848,
+        3124410,
+        5495525
+      ],
+      "native_face_centre_id": 7977870,
+      "baseline_xyz": [
+        0.09148093320765613,
+        0.7782892455915764,
+        6.015398513627269
+      ],
+      "candidate_xyz": [
+        0.09148093320765613,
+        0.7782892455915764,
+        6.015398513627269
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.50_existing_measured_peak",
+      "parent_component": 40,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.055528006022058,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 163548,
+      "source_G6_fan_corner": 1,
+      "source_G6_barycentric": [
+        0.24174242107444824,
+        0.46746098384470297,
+        0.29079659508084876
+      ],
+      "source_logical_square_uv": [
+        0.8546017024595756,
+        0.6128592813851274
+      ],
+      "candidate_G7_quad_id": 654194,
+      "candidate_native_triangle_id": 2616779,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.06507803231059417,
+        0.4834848421488964,
+        0.4514371255405094
+      ],
+      "G7_quad_control_ids": [
+        2672687,
+        776078,
+        4177946,
+        5415134
+      ],
+      "native_face_centre_id": 7656308,
+      "baseline_xyz": [
+        0.3495591752888137,
+        1.0206159964118802,
+        4.349876074742511
+      ],
+      "candidate_xyz": [
+        0.34964532028305795,
+        1.043415956808833,
+        4.3438611811960754
+      ],
+      "displacement": [
+        8.61449942442527e-05,
+        0.022799960396952867,
+        -0.006014893546435474
+      ],
+      "displacement_length": 0.023580173015429796,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.50_existing_measured_left_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.055528006022058,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 158399,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.1688070854088579,
+        0.7163812387046684,
+        0.11481167588647374
+      ],
+      "source_logical_square_uv": [
+        0.05740583794323687,
+        0.22621292335209475
+      ],
+      "candidate_G7_quad_id": 633596,
+      "candidate_native_triangle_id": 2534384,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.3376141708177157,
+        0.43276247740933677,
+        0.2296233517729475
+      ],
+      "G7_quad_control_ids": [
+        4914325,
+        1144267,
+        3103025,
+        5409985
+      ],
+      "native_face_centre_id": 7635710,
+      "baseline_xyz": [
+        0.508909568927132,
+        0.8713337048509897,
+        4.28399423894662
+      ],
+      "candidate_xyz": [
+        0.508909568927132,
+        0.8713337048509897,
+        4.28399423894662
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.50_existing_measured_right_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.055528006022058,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 162843,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.5918158317817535,
+        0.24218269447232785,
+        0.16600147374591867
+      ],
+      "source_logical_square_uv": [
+        0.6748165686547127,
+        0.9169992631270407
+      ],
+      "candidate_G7_quad_id": 651374,
+      "candidate_native_triangle_id": 2605497,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.1836316635635069,
+        0.484365388944656,
+        0.3320029474918371
+      ],
+      "G7_quad_control_ids": [
+        3104134,
+        883915,
+        4393621,
+        5414429
+      ],
+      "native_face_centre_id": 7653488,
+      "baseline_xyz": [
+        0.17360749183068733,
+        0.992330227508292,
+        4.474210198854967
+      ],
+      "candidate_xyz": [
+        0.17360749183068733,
+        0.992330227508292,
+        4.474210198854967
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.50_flanking_profile_left_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.055528006022058,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 158399,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.1688070854088579,
+        0.7163812387046684,
+        0.11481167588647374
+      ],
+      "source_logical_square_uv": [
+        0.05740583794323687,
+        0.22621292335209475
+      ],
+      "candidate_G7_quad_id": 633596,
+      "candidate_native_triangle_id": 2534384,
+      "candidate_native_fan_corner": 0,
+      "candidate_native_barycentric": [
+        0.3376141708177157,
+        0.43276247740933677,
+        0.2296233517729475
+      ],
+      "G7_quad_control_ids": [
+        4914325,
+        1144267,
+        3103025,
+        5409985
+      ],
+      "native_face_centre_id": 7635710,
+      "baseline_xyz": [
+        0.508909568927132,
+        0.8713337048509897,
+        4.28399423894662
+      ],
+      "candidate_xyz": [
+        0.508909568927132,
+        0.8713337048509897,
+        4.28399423894662
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.50_flanking_profile_right_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 63,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.5,
+      "physical_arc_s": 5.055528006022058,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 162843,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.5918158317817535,
+        0.24218269447232785,
+        0.16600147374591867
+      ],
+      "source_logical_square_uv": [
+        0.6748165686547127,
+        0.9169992631270407
+      ],
+      "candidate_G7_quad_id": 651374,
+      "candidate_native_triangle_id": 2605497,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.1836316635635069,
+        0.484365388944656,
+        0.3320029474918371
+      ],
+      "G7_quad_control_ids": [
+        3104134,
+        883915,
+        4393621,
+        5414429
+      ],
+      "native_face_centre_id": 7653488,
+      "baseline_xyz": [
+        0.17360749183068733,
+        0.992330227508292,
+        4.474210198854967
+      ],
+      "candidate_xyz": [
+        0.17360749183068733,
+        0.992330227508292,
+        4.474210198854967
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.75_existing_measured_peak",
+      "parent_component": 40,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 16,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 7.546350682978025,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 95913,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.4445077962732874,
+        0.24438185160838663,
+        0.31111035211832605
+      ],
+      "source_logical_square_uv": [
+        0.3999370276675497,
+        0.15555517605916303
+      ],
+      "candidate_G7_quad_id": 383652,
+      "candidate_native_triangle_id": 1534610,
+      "candidate_native_fan_corner": 2,
+      "candidate_native_barycentric": [
+        0.4887637032167733,
+        0.11098440745342542,
+        0.40025188932980127
+      ],
+      "G7_quad_control_ids": [
+        3817938,
+        596074,
+        1908970,
+        5347499
+      ],
+      "native_face_centre_id": 7385766,
+      "baseline_xyz": [
+        0.21927833286685558,
+        0.6032692392992545,
+        2.1119959828045616
+      ],
+      "candidate_xyz": [
+        0.22522740331851476,
+        0.6101983196645677,
+        2.107952036525278
+      ],
+      "displacement": [
+        0.005949070451659183,
+        0.006929080365313256,
+        -0.004043946279283617
+      ],
+      "displacement_length": 0.009987847388577074,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.75_existing_measured_left_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 7.546350682978025,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 96230,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.6417242314242214,
+        0.3305821989413799,
+        0.027693569634398726
+      ],
+      "source_logical_square_uv": [
+        0.3444289837585793,
+        0.013846784817199363
+      ],
+      "candidate_G7_quad_id": 384920,
+      "candidate_native_triangle_id": 1539681,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.2834484628484427,
+        0.6611643978827598,
+        0.05538713926879745
+      ],
+      "G7_quad_control_ids": [
+        3536333,
+        455271,
+        2258710,
+        5347816
+      ],
+      "native_face_centre_id": 7387034,
+      "baseline_xyz": [
+        0.22893002883317606,
+        0.48395075818792804,
+        2.1581251572817304
+      ],
+      "candidate_xyz": [
+        0.22893002883317606,
+        0.48395075818792804,
+        2.1581251572817304
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.75_existing_measured_right_shoulder",
+      "parent_component": 40,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 30,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 7.546350682978025,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 95991,
+      "source_G6_fan_corner": 3,
+      "source_G6_barycentric": [
+        0.5805312510458133,
+        0.3040579646978679,
+        0.1154107842563189
+      ],
+      "source_logical_square_uv": [
+        0.05770539212815945,
+        0.6382366431739728
+      ],
+      "candidate_G7_quad_id": 383967,
+      "candidate_native_triangle_id": 1535869,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.16106250209162665,
+        0.6081159293957356,
+        0.2308215685126378
+      ],
+      "G7_quad_control_ids": [
+        4462485,
+        1336895,
+        4462488,
+        5347577
+      ],
+      "native_face_centre_id": 7386081,
+      "baseline_xyz": [
+        0.1062181362894208,
+        0.5660569157420963,
+        2.1040229144629614
+      ],
+      "candidate_xyz": [
+        0.1062181362894208,
+        0.5660569157420963,
+        2.1040229144629614
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.75_flanking_profile_left_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 0,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 7.546350682978025,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 96230,
+      "source_G6_fan_corner": 0,
+      "source_G6_barycentric": [
+        0.6417242314242214,
+        0.3305821989413799,
+        0.027693569634398726
+      ],
+      "source_logical_square_uv": [
+        0.3444289837585793,
+        0.013846784817199363
+      ],
+      "candidate_G7_quad_id": 384920,
+      "candidate_native_triangle_id": 1539681,
+      "candidate_native_fan_corner": 1,
+      "candidate_native_barycentric": [
+        0.2834484628484427,
+        0.6611643978827598,
+        0.05538713926879745
+      ],
+      "G7_quad_control_ids": [
+        3536333,
+        455271,
+        2258710,
+        5347816
+      ],
+      "native_face_centre_id": 7387034,
+      "baseline_xyz": [
+        0.22893002883317606,
+        0.48395075818792804,
+        2.1581251572817304
+      ],
+      "candidate_xyz": [
+        0.22893002883317606,
+        0.48395075818792804,
+        2.1581251572817304
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    },
+    {
+      "label": "parent_03_0.75_flanking_profile_right_endpoint",
+      "parent_component": 40,
+      "parent_profile_row": 94,
+      "recorded_profile_column": 32,
+      "physical_arc_fraction": 0.75,
+      "physical_arc_s": 7.546350682978025,
+      "description": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json",
+      "source_G6_quad_id": 95988,
+      "source_G6_fan_corner": 2,
+      "source_G6_barycentric": [
+        0.02745458142573709,
+        0.2777888219461997,
+        0.6947565966280632
+      ],
+      "source_logical_square_uv": [
+        0.3748328797397687,
+        0.6526217016859683
+      ],
+      "candidate_G7_quad_id": 383955,
+      "candidate_native_triangle_id": 1535823,
+      "candidate_native_fan_corner": 3,
+      "candidate_native_barycentric": [
+        0.4444223561076007,
+        0.05490916285147407,
+        0.5006684810409252
+      ],
+      "G7_quad_control_ids": [
+        3544139,
+        1336895,
+        4462485,
+        5347574
+      ],
+      "native_face_centre_id": 7386069,
+      "baseline_xyz": [
+        0.09438225830213354,
+        0.5719517547208066,
+        2.094930854608392
+      ],
+      "candidate_xyz": [
+        0.09438225830213354,
+        0.5719517547208066,
+        2.094930854608392
+      ],
+      "displacement": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "displacement_length": 0.0,
+      "shared_boundary_evaluation_gap": 0.0
+    }
+  ],
+  "source_anchor_displacements": {
+    "count": 68,
+    "probabilities": [
+      0.0,
+      0.1,
+      0.5,
+      0.9,
+      0.99,
+      1.0
+    ],
+    "values": [
+      0.0,
+      0.0,
+      0.0,
+      0.018766960381489155,
+      0.028042074300422444,
+      0.028353279508346298
+    ]
+  },
+  "prior_close_anchor_changed_count": 4,
+  "scope": "Same exact exported control IDs and unchanged material source chart. Existing G6 triangle/bary locations carry through original child/fan provenance to the same G7 native evaluation. Approximate registered source anchors, not newly measured final crest/valley/merge landmarks.",
+  "limitations": [
+    "No self-intersection or orientation scan.",
+    "No image beauty certificate.",
+    "Sparse equality is exact only at listed IDs; complete control/native archives preserve all smaller changes.",
+    "Large-file hashes were not repeated; original receipt bindings are recorded by the production exporter."
+  ]
+}

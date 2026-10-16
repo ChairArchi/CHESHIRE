@@ -1,0 +1,51 @@
+{
+  "schema": "CHESHIRE_SPINE_INTERNAL_VISUAL_QA_V1",
+  "status": "close_rejected_internal",
+  "candidate_root": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain",
+  "generation_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\RECEIPT.json",
+    "sha256": "e93973d4b23aada4fb9cf27f986e6061538d5410b4b5ec1d672fcea6dd016b3c"
+  },
+  "review_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\SPINE_REVIEW\\REVIEW_RECEIPT.json",
+    "sha256": "1e24243c02f27edaafed09f827afd3dfe96419f2a643b37b78e8288eba0ab4cd"
+  },
+  "close_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\SPINE_REVIEW\\close\\receipt.json",
+    "sha256": "fae7e6424ea792987872e83d4bd8ce13d1d482a4c5b0a8d1ccd5306999b034be"
+  },
+  "candidate_close_png": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\SPINE_REVIEW\\close\\close_oblique.png",
+    "sha256": "1085fe766c696279bb84a05d3e76d6e73ea67ca1df8dfecf40f97f299e5d8443"
+  },
+  "reviewed_actual_views": [
+    "close_oblique"
+  ],
+  "matched_control": "Original accepted NESTED02 frozen close PNG; never rerendered",
+  "visible_geometry_change": true,
+  "beauty_adoption": false,
+  "verdict": "Meaningful local shape change is visible, but the intended continuous volumetric coffer/spine composition is not established.",
+  "checks": {
+    "continuous_chain": false,
+    "relief_hierarchy": false,
+    "calm_ground_and_macro": "Broad S ground remains, but some shoulders and return regions read stepped or kinked.",
+    "direction_and_junction": "Changes occupy long wrinkle supports, yet no clear coherent segmented wall/rib rhythm follows into the return."
+  },
+  "observations": [
+    "Relative to trial02 and accepted control, broad stepped swells or locally cut/kinked facets are visible on the left S shoulder and lower return. This is not an unchanged model.",
+    "The new relief does not clearly read as broad concave compartments enclosed by connected walls/ribs with deep, regular node/neck articulation.",
+    "Fine cloth corrugations and pre-existing cup/plate junction masses remain visually dominant in the close frame.",
+    "No alternate crop, camera, lighting, smoothing or normal-map treatment was used to improve the impression."
+  ],
+  "interpretation": "Structural section and all-four-path scope corrections made a real change, but numerical local gates did not confer the desired morphology or beauty. Review the actual visible node/neck sections and the retained fine carrier residual before another full generation.",
+  "context_rendered": false,
+  "package_created": false,
+  "user_images_emitted": false,
+  "production_receipts_modified": false,
+  "renderer": {
+    "path": "experiments/fold_junction_development_20261015/render_spine_review_v2.py",
+    "sha256": "a4fc6b0e256c03efe5754f56bef2ed24cf1bf87a926293925b8d2f76216b38ea"
+  },
+  "process": "Actual complete native candidate loaded once; close only; internal reject; Blender exited cleanly.",
+  "limitations": "This fixed close image cannot certify absence of self-intersection or characterize hidden portions. No new body/front diagnosis was performed because the primary close gate failed."
+}

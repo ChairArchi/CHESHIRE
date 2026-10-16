@@ -1,0 +1,1357 @@
+{
+  "schema": "EXACT_ORIGINAL_SPAN_AUTHORED_FOLD_BANK_V1",
+  "date": "2026-10-15",
+  "events": [
+    {
+      "bank_id": "G0_LEGACY_TIER1_LOW_X",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": 1,
+      "event": {
+        "id": "LOW_X",
+        "direction": 0.0,
+        "height": 0.255,
+        "span": 0.09,
+        "expansion": 1.1549999999999998,
+        "constriction": 0.37800000000000006,
+        "reexpansion": 0.627,
+        "return_depth": 0.72,
+        "overlap_width": 1.0,
+        "sweep": 0.25,
+        "mirror": true
+      },
+      "coordinate": "SPAN_WARPED_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Full tier1. Tier2/3 multiplied by incoming initial-memory complement and final smooth_valley protection complement.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.11549999999999999,
+          0.7160999999999998,
+          1.1549999999999998,
+          0.3464999999999999,
+          -0.37800000000000006,
+          -0.1323,
+          0.627,
+          0.2508,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.144,
+          0.72,
+          0.432,
+          -0.432,
+          -0.72,
+          -0.144,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.050897018403441595,
+            -1.3769298435538238,
+            -7.402679794520546,
+            125.24173098125691,
+            19.49632488055862,
+            -25.000777711251125,
+            -14.622069427812772,
+            2.948090804477455,
+            0.13159833191866274
+          ],
+          [
+            0.22118636472275316,
+            1.9224260779687588,
+            3.1790188356164384,
+            -45.26084619625138,
+            -3.647794928335172,
+            11.142655542250228,
+            6.952030542250219,
+            -2.8650863060989638,
+            0.07633376388530075
+          ],
+          [
+            0.0,
+            0.25617590822179725,
+            1.010071232876712,
+            0.0,
+            -3.0753307607497242,
+            0.0,
+            1.456968891549956,
+            0.0,
+            -0.4762025316455696
+          ],
+          [
+            0.0,
+            0.11549999999999999,
+            0.7160999999999998,
+            1.1549999999999998,
+            0.3464999999999999,
+            -0.37800000000000006,
+            -0.1323,
+            0.627,
+            0.2508
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.08366055857579044,
+            -15.451685393258423,
+            25.04347826086957,
+            22.260869565217394,
+            25.04347826086957,
+            -15.126050420168061,
+            -0.2109237383909237,
+            0.0
+          ],
+          [
+            0.0,
+            0.39520776544112773,
+            8.761348314606739,
+            -12.208695652173914,
+            -10.017391304347827,
+            -2.817391304347827,
+            9.650420168067225,
+            -0.24401694562122347,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.40773033707865164,
+            0.0,
+            -1.8782608695652172,
+            -1.8782608695652172,
+            0.0,
+            0.45983193277310913,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.144,
+            0.72,
+            0.432,
+            -0.432,
+            -0.72,
+            -0.144,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G0_LEGACY_TIER1_HIGH_X",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": 1,
+      "event": {
+        "id": "HIGH_X",
+        "direction": 0.0,
+        "height": 0.755,
+        "span": 0.07,
+        "expansion": 0.8085,
+        "constriction": 0.324,
+        "reexpansion": 1.056,
+        "return_depth": 0.63,
+        "overlap_width": 0.88,
+        "sweep": -0.32,
+        "mirror": true
+      },
+      "coordinate": "SPAN_WARPED_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Full tier1. Tier2/3 multiplied by incoming initial-memory complement and final smooth_valley protection complement.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.08085,
+          0.50127,
+          0.8085,
+          0.24255,
+          -0.324,
+          -0.1134,
+          1.056,
+          0.42240000000000005,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.126,
+          0.63,
+          0.378,
+          -0.378,
+          -0.63,
+          -0.126,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.0356279128824091,
+            -0.9638508904876777,
+            -5.181875856164383,
+            84.09320427451404,
+            16.458090788672898,
+            -15.86462399426433,
+            -27.347405998566074,
+            4.965205565435713,
+            0.22163929586301032
+          ],
+          [
+            0.15483045530592723,
+            1.345698254578132,
+            2.225313184931507,
+            -30.96739085490281,
+            -3.5798544732037376,
+            8.437924798852867,
+            14.569174798852861,
+            -4.825408515535096,
+            0.12856212864892788
+          ],
+          [
+            0.0,
+            0.1793231357552581,
+            0.7070498630136985,
+            0.0,
+            -2.2957718290194395,
+            0.0,
+            1.4714150402294273,
+            0.0,
+            -0.8020253164556961
+          ],
+          [
+            0.0,
+            0.08085,
+            0.50127,
+            0.8085,
+            0.24255,
+            -0.324,
+            -0.1134,
+            1.056,
+            0.42240000000000005
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.07320298875381666,
+            -13.52022471910112,
+            21.913043478260864,
+            19.47826086956521,
+            21.913043478260864,
+            -13.235294117647058,
+            -0.18455827109205816,
+            0.0
+          ],
+          [
+            0.0,
+            0.3458067947609868,
+            7.666179775280899,
+            -10.682608695652174,
+            -8.765217391304345,
+            -2.465217391304345,
+            8.444117647058823,
+            -0.21351482741857059,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.3567640449438202,
+            0.0,
+            -1.6434782608695655,
+            -1.6434782608695655,
+            0.0,
+            0.4023529411764705,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.126,
+            0.63,
+            0.378,
+            -0.378,
+            -0.63,
+            -0.126,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G0_LEGACY_TIER2_FRONT_LINK",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": 2,
+      "event": {
+        "id": "FRONT_LINK",
+        "direction": 1.5707963267948966,
+        "height": 0.455,
+        "span": 0.115,
+        "expansion": 0.75,
+        "constriction": 0.3,
+        "reexpansion": 0.5,
+        "return_depth": 0.6875,
+        "overlap_width": 1.03,
+        "sweep": 0.0,
+        "mirror": false
+      },
+      "coordinate": "SPAN_WARPED_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Full tier1. Tier2/3 multiplied by incoming initial-memory complement and final smooth_valley protection complement.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.07500000000000001,
+          0.46499999999999997,
+          0.75,
+          0.22499999999999998,
+          -0.3,
+          -0.105,
+          0.5,
+          0.2,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.1375,
+          0.6875,
+          0.4125,
+          -0.4125,
+          -0.6875,
+          -0.1375,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.03305001195028675,
+            -0.8941102880219638,
+            -4.8069349315068495,
+            78.04054054054056,
+            15.240240240240235,
+            -19.80302617230099,
+            -11.669506543075242,
+            2.350949604846455,
+            0.10494284841998613
+          ],
+          [
+            0.14362750956022935,
+            1.248328622057636,
+            2.06429794520548,
+            -28.733108108108116,
+            -3.310810810810808,
+            8.835605234460198,
+            5.554355234460195,
+            -2.284757819855633,
+            0.06087222000422722
+          ],
+          [
+            0.0,
+            0.16634799235181644,
+            0.655890410958904,
+            0.0,
+            -2.1283783783783785,
+            0.0,
+            1.1578789531079607,
+            0.0,
+            -0.379746835443038
+          ],
+          [
+            0.0,
+            0.07500000000000001,
+            0.46499999999999997,
+            0.75,
+            0.22499999999999998,
+            -0.3,
+            -0.105,
+            0.5,
+            0.2
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.0798842139178554,
+            -14.754213483146065,
+            23.91304347826088,
+            21.256038647342994,
+            23.91304347826088,
+            -14.443277310924367,
+            -0.20140287519966663,
+            0.0
+          ],
+          [
+            0.0,
+            0.3773685260288546,
+            8.365870786516853,
+            -11.657608695652177,
+            -9.565217391304346,
+            -2.6902173913043494,
+            9.214810924369747,
+            -0.2330022918258212,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.3893258426966293,
+            0.0,
+            -1.7934782608695654,
+            -1.7934782608695654,
+            0.0,
+            0.43907563025210083,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.1375,
+            0.6875,
+            0.4125,
+            -0.4125,
+            -0.6875,
+            -0.1375,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G0_LEGACY_TIER2_BACK_RETURN",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": 2,
+      "event": {
+        "id": "BACK_RETURN",
+        "direction": -1.5707963267948966,
+        "height": 0.6,
+        "span": 0.09,
+        "expansion": 0.55,
+        "constriction": 0.25,
+        "reexpansion": 0.725,
+        "return_depth": 0.5750000000000001,
+        "overlap_width": 0.92,
+        "sweep": 0.0,
+        "mirror": false
+      },
+      "coordinate": "SPAN_WARPED_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Full tier1. Tier2/3 multiplied by incoming initial-memory complement and final smooth_valley protection complement.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.05500000000000001,
+          0.341,
+          0.55,
+          0.165,
+          -0.25,
+          -0.0875,
+          0.725,
+          0.29,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.11500000000000002,
+          0.5750000000000001,
+          0.34500000000000003,
+          -0.34500000000000003,
+          -0.5750000000000001,
+          -0.11500000000000002,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.024236675430210276,
+            -0.6556808778827735,
+            -3.5250856164383557,
+            55.56027164685909,
+            12.656417028233665,
+            -12.926136363636365,
+            -18.465909090909086,
+            3.4088769270273604,
+            0.15216713020897957
+          ],
+          [
+            0.10532684034416818,
+            0.915440989508933,
+            1.5138184931506846,
+            -20.73705432937182,
+            -2.9827391058290873,
+            6.647727272727273,
+            9.69460227272727,
+            -3.312898838790668,
+            0.08826471900612984
+          ],
+          [
+            0.0,
+            0.1219885277246654,
+            0.48098630136986303,
+            0.0,
+            -1.6275891341256372,
+            0.0,
+            1.1079545454545456,
+            0.0,
+            -0.5506329113924051
+          ],
+          [
+            0.0,
+            0.05500000000000001,
+            0.341,
+            0.55,
+            0.165,
+            -0.25,
+            -0.0875,
+            0.725,
+            0.29
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.06681225164038822,
+            -12.339887640449438,
+            20.00000000000001,
+            17.777777777777775,
+            20.00000000000001,
+            -12.07983193277311,
+            -0.1684460410760848,
+            0.0
+          ],
+          [
+            0.0,
+            0.3156173126786785,
+            6.996910112359551,
+            -9.750000000000004,
+            -7.999999999999998,
+            -2.250000000000001,
+            7.706932773109244,
+            -0.19487464407250504,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.32561797752808996,
+            0.0,
+            -1.5000000000000004,
+            -1.5000000000000004,
+            0.0,
+            0.36722689075630255,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.11500000000000002,
+            0.5750000000000001,
+            0.34500000000000003,
+            -0.34500000000000003,
+            -0.5750000000000001,
+            -0.11500000000000002,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G0_LEGACY_TIER3_DIAGONAL_SHOULDER",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": 3,
+      "event": {
+        "id": "DIAGONAL_SHOULDER",
+        "direction": 0.68,
+        "height": 0.655,
+        "span": 0.105,
+        "expansion": 0.3875,
+        "constriction": 0.1625,
+        "reexpansion": 0.5,
+        "return_depth": 0.3875,
+        "overlap_width": 0.67,
+        "sweep": 0.2,
+        "mirror": true
+      },
+      "coordinate": "SPAN_WARPED_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Full tier1. Tier2/3 multiplied by incoming initial-memory complement and final smooth_valley protection complement.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.03875000000000001,
+          0.24025,
+          0.3875,
+          0.11624999999999999,
+          -0.1625,
+          -0.056874999999999995,
+          0.5,
+          0.2,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.07750000000000001,
+          0.3875,
+          0.23249999999999998,
+          -0.23249999999999998,
+          -0.3875,
+          -0.07750000000000001,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.01707583950764814,
+            -0.4619569821446812,
+            -2.483583047945206,
+            39.8946153846154,
+            8.24019943019943,
+            -8.173796172722582,
+            -12.84423029318064,
+            2.350949604846455,
+            0.10494284841998613
+          ],
+          [
+            0.07420754660611849,
+            0.6449697880631118,
+            1.0665539383561646,
+            -14.760173076923081,
+            -1.8468974358974353,
+            4.275384234544517,
+            6.794915484544513,
+            -2.284757819855633,
+            0.06087222000422722
+          ],
+          [
+            0.0,
+            0.08594646271510517,
+            0.3388767123287671,
+            0.0,
+            -1.1167153846153848,
+            0.0,
+            0.7292981530910969,
+            0.0,
+            -0.379746835443038
+          ],
+          [
+            0.0,
+            0.03875000000000001,
+            0.24025,
+            0.3875,
+            0.11624999999999999,
+            -0.1625,
+            -0.056874999999999995,
+            0.5,
+            0.2
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.04502564784460945,
+            -8.316011235955054,
+            13.478260869565226,
+            11.980676328502412,
+            13.478260869565226,
+            -8.140756302521007,
+            -0.11351798420344847,
+            0.0
+          ],
+          [
+            0.0,
+            0.2126986237617181,
+            4.715308988764043,
+            -6.570652173913047,
+            -5.391304347826085,
+            -1.516304347826088,
+            5.1938025210084025,
+            -0.13132856448364472,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.21943820224719104,
+            0.0,
+            -1.0108695652173916,
+            -1.0108695652173916,
+            0.0,
+            0.2474789915966387,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.07750000000000001,
+            0.3875,
+            0.23249999999999998,
+            -0.23249999999999998,
+            -0.3875,
+            -0.07750000000000001,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G0_OVERRUNNING_DIAGONAL_BRIDGE",
+      "actual_insertion_stage": "G0_SEED",
+      "legacy_recipe_tier": null,
+      "event": {
+        "id": "DIAGONAL_BRIDGE",
+        "direction": 0.7,
+        "height": 0.47,
+        "span": 0.19575,
+        "expansion": 0.49,
+        "constriction": 0.16,
+        "reexpansion": 0.51,
+        "return_depth": 0.5152000000000001,
+        "overlap_width": 0.94,
+        "sweep": 0.24,
+        "mirror": false
+      },
+      "coordinate": "CURRENT_MATERIAL_T",
+      "amplitude_multiplier": 0.36,
+      "retention": "Added outside legacy initial-memory/valley-complement composition.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.049,
+          0.3038,
+          0.49,
+          0.147,
+          -0.16,
+          -0.055999999999999994,
+          0.51,
+          0.20400000000000001,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.10304000000000002,
+          0.5152000000000001,
+          0.30912000000000006,
+          -0.30912000000000006,
+          -0.5152000000000001,
+          -0.10304000000000002,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.021592674474187366,
+            -0.5841520548410166,
+            -3.1405308219178067,
+            53.15579859678086,
+            8.254429005976675,
+            -7.916439104314589,
+            -13.166609776078646,
+            2.3979685969433846,
+            0.10704170538838582
+          ],
+          [
+            0.09383663957934985,
+            0.8155746997443223,
+            1.3486746575342459,
+            -19.206159719356172,
+            -1.5415462924748935,
+            4.183287820862919,
+            6.995787820862916,
+            -2.3304529762527455,
+            0.062089664404311656
+          ],
+          [
+            0.0,
+            0.10868068833652005,
+            0.4285150684931507,
+            0.0,
+            -1.3037680561287661,
+            0.0,
+            0.7233424358274168,
+            0.0,
+            -0.3873417721518987
+          ],
+          [
+            0.0,
+            0.049,
+            0.3038,
+            0.49,
+            0.147,
+            -0.16,
+            -0.055999999999999994,
+            0.51,
+            0.20400000000000001
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.05986377746978782,
+            -11.056539325842698,
+            17.920000000000012,
+            15.928888888888897,
+            17.920000000000012,
+            -10.823529411764707,
+            -0.150927652804172,
+            0.0
+          ],
+          [
+            0.0,
+            0.28279311216009595,
+            6.269231460674158,
+            -8.736000000000002,
+            -7.168000000000003,
+            -2.0160000000000022,
+            6.9054117647058835,
+            -0.17460768108896452,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.29175370786516863,
+            0.0,
+            -1.344,
+            -1.344,
+            0.0,
+            0.3290352941176471,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.10304000000000002,
+            0.5152000000000001,
+            0.30912000000000006,
+            -0.30912000000000006,
+            -0.5152000000000001,
+            -0.10304000000000002,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G2_LOWER_DIAGONAL_RETURN",
+      "actual_insertion_stage": "BEFORE_G2_TASK36",
+      "legacy_recipe_tier": null,
+      "event": {
+        "id": "LOWER_DIAGONAL_RETURN",
+        "direction": 0.35,
+        "height": 0.39,
+        "span": 0.12,
+        "expansion": 0.48,
+        "constriction": 0.28,
+        "reexpansion": 0.38,
+        "return_depth": 0.72,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      },
+      "coordinate": "CURRENT_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Applied to actual G1 controls before G2 Task36/finite field; no initial-memory mask.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.048,
+          0.2976,
+          0.48,
+          0.144,
+          -0.28,
+          -0.098,
+          0.38,
+          0.15200000000000002,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.144,
+          0.72,
+          0.432,
+          -0.432,
+          -0.72,
+          -0.144,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.021152007648183545,
+            -0.5722305843340567,
+            -3.0764383561643838,
+            45.398843930635834,
+            14.25133804324556,
+            -20.052652106084256,
+            -8.575663026521058,
+            1.7867216996833057,
+            0.07975656479918927
+          ],
+          [
+            0.0919216061185468,
+            0.798930318116887,
+            1.321150684931507,
+            -17.479768786127167,
+            -3.839691714836224,
+            8.560530421216852,
+            3.8730304212168476,
+            -1.736415943090281,
+            0.04626288720321282
+          ],
+          [
+            0.0,
+            0.10646271510516249,
+            0.4197698630136986,
+            0.0,
+            -1.5440462427745667,
+            0.0,
+            1.0178939157566302,
+            0.0,
+            -0.2886075949367089
+          ],
+          [
+            0.0,
+            0.048,
+            0.2976,
+            0.48,
+            0.144,
+            -0.28,
+            -0.098,
+            0.38,
+            0.15200000000000002
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.08366055857579044,
+            -15.451685393258423,
+            25.04347826086957,
+            22.260869565217394,
+            25.04347826086957,
+            -15.126050420168061,
+            -0.2109237383909237,
+            0.0
+          ],
+          [
+            0.0,
+            0.39520776544112773,
+            8.761348314606739,
+            -12.208695652173914,
+            -10.017391304347827,
+            -2.817391304347827,
+            9.650420168067225,
+            -0.24401694562122347,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.40773033707865164,
+            0.0,
+            -1.8782608695652172,
+            -1.8782608695652172,
+            0.0,
+            0.45983193277310913,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.144,
+            0.72,
+            0.432,
+            -0.432,
+            -0.72,
+            -0.144,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    },
+    {
+      "bank_id": "G2_UPPER_CROSSING_RETURN",
+      "actual_insertion_stage": "BEFORE_G2_TASK36",
+      "legacy_recipe_tier": null,
+      "event": {
+        "id": "UPPER_CROSSING_RETURN",
+        "direction": 1.18,
+        "height": 0.61,
+        "span": 0.12,
+        "expansion": 0.46,
+        "constriction": 0.26,
+        "reexpansion": 0.36,
+        "return_depth": 0.68,
+        "overlap_width": 0.46,
+        "sweep": 0.28,
+        "mirror": false
+      },
+      "coordinate": "CURRENT_MATERIAL_T",
+      "amplitude_multiplier": 1.0,
+      "retention": "Applied to actual G1 controls before G2 Task36/finite field; no initial-memory mask.",
+      "profile": {
+        "u_knots": [
+          -2.2,
+          -1.4,
+          -0.75,
+          -0.35,
+          -0.15,
+          0.15,
+          0.35,
+          0.75,
+          1.3,
+          2.0
+        ],
+        "radial_values": [
+          0,
+          0.046000000000000006,
+          0.2852,
+          0.46,
+          0.138,
+          -0.26,
+          -0.091,
+          0.36,
+          0.144,
+          0
+        ],
+        "axial_values": [
+          0.0,
+          0.0,
+          0.136,
+          0.68,
+          0.40800000000000003,
+          -0.40800000000000003,
+          -0.68,
+          -0.136,
+          0.0,
+          0.0
+        ],
+        "radial_PCHIP_coefficients": [
+          [
+            -0.02027067399617588,
+            -0.548387643320138,
+            -2.9482534246575343,
+            43.8979436405179,
+            13.213900877267216,
+            -18.47778624896036,
+            -8.150696562240084,
+            1.6926837154894478,
+            0.0755588508623899
+          ],
+          [
+            0.08809153919694068,
+            0.7656415548620168,
+            1.2661027397260276,
+            -16.82958872810358,
+            -3.506118304138106,
+            7.920557249792072,
+            3.701807249792068,
+            -1.6450256302960558,
+            0.0438279984030437
+          ],
+          [
+            0.0,
+            0.1020267686424474,
+            0.4022794520547945,
+            0.0,
+            -1.4640822543792844,
+            0.0,
+            0.9508885500415859,
+            0.0,
+            -0.27341772151898736
+          ],
+          [
+            0.0,
+            0.046000000000000006,
+            0.2852,
+            0.46,
+            0.138,
+            -0.26,
+            -0.091,
+            0.36,
+            0.144
+          ]
+        ],
+        "axial_PCHIP_coefficients": [
+          [
+            0.0,
+            -0.0790127497660243,
+            -14.593258426966292,
+            23.652173913043487,
+            21.024154589371978,
+            23.652173913043487,
+            -14.285714285714285,
+            -0.1992057529247611,
+            0.0
+          ],
+          [
+            0.0,
+            0.3732517784721763,
+            8.274606741573034,
+            -11.5304347826087,
+            -9.46086956521739,
+            -2.660869565217392,
+            9.114285714285714,
+            -0.2304604486422669,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.3850786516853933,
+            0.0,
+            -1.7739130434782613,
+            -1.7739130434782613,
+            0.0,
+            0.43428571428571433,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.136,
+            0.68,
+            0.40800000000000003,
+            -0.40800000000000003,
+            -0.68,
+            -0.136,
+            0.0
+          ]
+        ],
+        "principal_features_u": {
+          "radial_expansion_crest": -0.35,
+          "radial_constriction": 0.15,
+          "radial_reexpansion_crest": 0.75,
+          "positive_axial_return": -0.35,
+          "negative_axial_return": 0.35
+        }
+      }
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\seed_fold_bank.py": "8938fde2dbcf2dcf729dee5cc9bb21b547dbf7c8d1cf5e5c4d18cd3715d0808d",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\column_development_20261011\\seed_mass.py": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\terminal_fold_20261011\\iaac_input.py": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\smooth_deep.py": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\a_repair.py": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\directional_fold_memory_20261011\\study.py": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\directional_growth_20261012\\overlap_probe.py": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\sparse_input.py": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+    "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\generation.json": "6226ab8043dbd50732da3be842e9a0d2fb3f6fd8a1906dc5d9e1936564a615e1",
+    "E:\\CHESHIRE_DATA\\fold_band_growth_20261011\\inputs\\SPAN_SPARSE\\G00\\control_quad.npz": "cff9089de50aac6019684829cd70303d77e3fceaaabf3f090a06636f4f6cbf55"
+  },
+  "warp": {
+    "current_material_knots": [
+      0.0,
+      0.15,
+      0.33,
+      0.5,
+      0.7,
+      0.85,
+      1.0
+    ],
+    "source_material_values": [
+      0.0,
+      0.18,
+      0.34,
+      0.51,
+      0.72,
+      0.86,
+      1.0
+    ],
+    "forward_PCHIP_coefficients": [
+      [
+        -1.452405459313925,
+        5.859043019998674,
+        -1.1965587925881584,
+        -2.270243116126048,
+        2.3174012000827613,
+        -9.868649107779167e-15
+      ],
+      [
+        -0.7249001238638542,
+        -1.8158380039464639,
+        0.5463324307726963,
+        0.5854715481263951,
+        -0.6952203600248285,
+        2.220446049250313e-15
+      ],
+      [
+        1.3414141414141414,
+        1.0259067357512954,
+        0.9417040358744394,
+        1.023715415019763,
+        0.9854748603351954,
+        0.9333333333333331
+      ],
+      [
+        0.0,
+        0.18,
+        0.34,
+        0.51,
+        0.72,
+        0.86
+      ]
+    ],
+    "coefficient_convention": "c[j,i]*(t-x[i])**(3-j)",
+    "inverse": "Solve W(t)-s=0 on the corresponding monotone cubic interval. Do not fit PCHIP with swapped knots."
+  },
+  "equations": {
+    "s": "W(current_t) for G0 legacy bank; current_t for bridge and G2 returns",
+    "centre": "direction+sweep*sin(pi*(s-height)/.32); optional second centre pi-centre if mirror",
+    "distance": "d=atan2(sin(theta-centre),cos(theta-centre))",
+    "local_height": "height+.05*clip(abs(d)/overlap_width,0,1)**1.4",
+    "u": "(s-local_height)/span",
+    "angular_wave": "q=clip(abs(d)/width,0,1); r=(sqrt(q*q+.12**2)-.12)/(sqrt(1+.12**2)-.12); wave=1-1.5*r+.5*r**3",
+    "displacement": "multiplier*window(s-.5,.40,.49)*sum_centres(wave*[PCHIP_radial(u)*cos(theta),PCHIP_radial(u)*sin(theta),PCHIP_axial(u)])",
+    "window": "1-a*a*(3-2*a), a=clip((abs(x)-inner)/(outer-inner),0,1)"
+  },
+  "G0_composition": {
+    "initial_memory": "Within source.initial, tiers1/2/3 add their smooth_event sum times(1-memory). After each event memory=max(memory,line_memory(event)*(1-memory)).",
+    "valley": "Final legacy result=birth_after_tier1+smooth_valley_offset+(all_tier_result-birth)*(1-protect). smooth_valley temporarily uses the scaled legacy bank.",
+    "legacy_core": "source.initial(warped)-old_terminal_bottom(warped)-old_terminal_top(warped)-old_cylinder(warped) + current proportional cylinder + .36*current bridge + current end_returns.",
+    "terminal": "New end_returns and sampled cap radius/depth are separate bounded closures, not members of the longitudinal fold bank.",
+    "generations": "Legacy recipe tiers1/2/3 are all already composed into actual G0; they are not actual current mesh generations."
+  },
+  "intended_parent_frame": "theta-longitudinal, material-t-cross. Event u features are material cross rails along each theta; the current actual mesh must supply XYZ/tangent/normal/depth before a reusable smaller RETURN.",
+  "limitation": "Construction provenance identifies active source families, not exact additive causal attribution after Task36, finite-field movement, G3 WALL and later geometry-dependent operations."
+}

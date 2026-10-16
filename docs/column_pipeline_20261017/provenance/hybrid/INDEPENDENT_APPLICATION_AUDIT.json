@@ -1,0 +1,185 @@
+{
+  "kind": "INDEPENDENT_NEW_WHOLE_METHOD_APPLICATION_AUDIT",
+  "all_requested_methods_applied": true,
+  "actual_new_whole_geometry": true,
+  "generation_receipt_sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769",
+  "new_classification_actually_used": true,
+  "classification_dominant_changed_G3_SOURCE_faces": 3212,
+  "classification_dominant_changed_fraction": 0.13532187394674755,
+  "moved_from22_controls": 5932904,
+  "material_sample_count": 21280,
+  "final_frozen_cap_allow_gain_reconstruction_maximum_error": 0.0,
+  "actual_paired_CC_difference_maximum_error": 0.0,
+  "full_protected22_sample_exact": true,
+  "native_geometry_quality": {
+    "all_finite": true,
+    "degenerate_triangles": 0,
+    "original_to_output_orientation_reversals": 0,
+    "minimum_triangle_area": 3.709590679807345e-11,
+    "minimum_original_to_output_triangle_cross_dot": 3.593754241550043e-21,
+    "both_quad_diagonal_orientation_reversals": 30704,
+    "baseline_degenerate_diagonal_triangles": 0,
+    "diagonal_check_is_auxiliary_native_fan_is_rendered": true,
+    "maximum_normal_displacement": 0.05877374863851063,
+    "maximum_tangent_displacement": 0.0065049462305952314,
+    "XY_symmetry_error": 6.0285110237146e-14,
+    "global_self_intersection_checked": false
+  },
+  "required_method_contributions": {
+    "coarse_actual_CC": {
+      "positive_samples": 16941,
+      "effective_norm_quantiles": [
+        2.1999897868791865e-12,
+        0.0002707082888493682,
+        0.00282215803064247,
+        0.008986604518916376,
+        0.02413799842047907
+      ],
+      "effective_absolute_normal_height_quantiles": [
+        2.1999897868791865e-12,
+        0.0002707082888493682,
+        0.0028221580306424703,
+        0.008986604518916376,
+        0.02413799842047907
+      ]
+    },
+    "fresh_fine": {
+      "positive_samples": 16902,
+      "effective_norm_quantiles": [
+        5.78741387770211e-12,
+        8.560124278424553e-05,
+        0.0007953053313750238,
+        0.002765538703403667,
+        0.00737780043380076
+      ],
+      "effective_absolute_normal_height_quantiles": [
+        5.735335897542073e-12,
+        6.8804599382074e-05,
+        0.0006938990796482152,
+        0.002450991310608129,
+        0.0073089696708233945
+      ]
+    },
+    "paper_actual_Tissue": {
+      "positive_samples": 6351,
+      "effective_norm_quantiles": [
+        1.5578894102800662e-12,
+        0.00011500617171322678,
+        0.003293782908028568,
+        0.016380781425234303,
+        0.05521889679120575
+      ],
+      "effective_absolute_normal_height_quantiles": [
+        1.5578894102800666e-12,
+        0.0001150061717132268,
+        0.0032937829080285684,
+        0.016380781425234307,
+        0.05521889679120574
+      ]
+    }
+  },
+  "selected_material_regions": {
+    "calm": {
+      "controls": 289,
+      "moved_from22": 289,
+      "change_norm_quantiles": [
+        3.0009981038608894e-05,
+        0.0006172485835951563,
+        0.004185796843179124,
+        0.013859321054019788,
+        0.03571901818206262
+      ],
+      "new_method_contributions": {
+        "coarse_actual_CC": 289,
+        "fresh_fine": 289,
+        "paper_actual_Tissue": 0
+      }
+    },
+    "primary_flow": {
+      "controls": 289,
+      "moved_from22": 263,
+      "change_norm_quantiles": [
+        0.0,
+        1.2224256103586619e-05,
+        0.0016389076617867864,
+        0.006754857499864705,
+        0.013613869377791797
+      ],
+      "new_method_contributions": {
+        "coarse_actual_CC": 263,
+        "fresh_fine": 263,
+        "paper_actual_Tissue": 0
+      }
+    },
+    "SOURCE_oval": {
+      "controls": 289,
+      "moved_from22": 289,
+      "change_norm_quantiles": [
+        0.00014363472807899893,
+        0.0011822366385290993,
+        0.007593133301502998,
+        0.017505686252023422,
+        0.020051871845747322
+      ],
+      "new_method_contributions": {
+        "coarse_actual_CC": 289,
+        "fresh_fine": 289,
+        "paper_actual_Tissue": 0
+      }
+    },
+    "SOURCE_crossbar": {
+      "controls": 289,
+      "moved_from22": 289,
+      "change_norm_quantiles": [
+        4.8182842546097005e-05,
+        0.0016172075470808974,
+        0.010102572993498817,
+        0.016768501000232954,
+        0.019649009431469428
+      ],
+      "new_method_contributions": {
+        "coarse_actual_CC": 289,
+        "fresh_fine": 289,
+        "paper_actual_Tissue": 0
+      }
+    },
+    "attached_wall": {
+      "controls": 289,
+      "moved_from22": 121,
+      "change_norm_quantiles": [
+        0.0,
+        0.0,
+        0.0,
+        0.003791945303418376,
+        0.014389336306832498
+      ],
+      "new_method_contributions": {
+        "coarse_actual_CC": 0,
+        "fresh_fine": 0,
+        "paper_actual_Tissue": 225
+      }
+    }
+  },
+  "coarse_operator_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INTERLEAVED_COARSE_RECEIPT.json",
+    "sha256": "31164ae6705c47da0d7f25b76fdbf5f79ee77e4c25e979b0bce85fdf3edfa35f"
+  },
+  "actual_paper_component_audit": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_PAPER_COMPONENT_AUDIT.json",
+    "sha256": "4d18ad5a7708cc3ce911d35f78d646274f3e56bf923227920aa37a6c45bd2a50"
+  },
+  "actual_Tissue_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+    "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44"
+  },
+  "sample_arrays": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_APPLICATION_SAMPLES.npz",
+    "sha256": "7120d5c325062ca27ac0c5d2322dcc0971979b55fcca4663be2f54e2b9835db7"
+  },
+  "closed_paper_component_topology_transferred_to_whole": false,
+  "whole_receives_single_valued_geometric_relief": true,
+  "attribution_is_frozen_operator_decomposition_not_full_reexecuted_ablation": true,
+  "alternate_control_quad_diagonals_used_for_export_or_render": false,
+  "large_array_policy": "Just-completed generation full hashes and NPY headers reused; selected material coordinates and actual paired CC differences independently read. Exporter verifies every native source byte and PLY readback.",
+  "elapsed_seconds": 5.73184780000156
+}

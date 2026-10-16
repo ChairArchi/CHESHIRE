@@ -1,0 +1,78 @@
+{
+  "schema": "CHESHIRE_LOCAL_FORMATION_DIAGNOSTIC_V1",
+  "meshes": {
+    "NEUTRAL": {
+      "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\NEUTRAL.npz",
+      "geometry_sha256": "3b3727e058368146319cf2d479f421a9c6f787c4d2ee239a8dedeb4d13fd7304",
+      "xyz_sha256": "6b8ec09c93d533db3621ab80556e77239de18c29168087c16ffb2c5801f366f0",
+      "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+      "vertices": 3998,
+      "triangles": 7808,
+      "source_quad_count": 1952
+    },
+    "FORMED": {
+      "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\FORMED.npz",
+      "geometry_sha256": "285b2142c388e5ff9edaa20733247ef987c0ec2e5696678d260fa5ab9c5f62d5",
+      "xyz_sha256": "96f058e06ebc5d83d3e9f0fcb1436086c65a4c92d9b922dde83612c66a3920f4",
+      "faces_sha256": "3bb4da4351ea27e2edab178eef2c96388758260d105a91dddf74ba3bcbfb082c",
+      "vertices": 3998,
+      "triangles": 7808,
+      "source_quad_count": 1952
+    },
+    "CARRIER": {
+      "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\CARRIER.npz",
+      "geometry_sha256": "397be804ea400acec771f86ea5bf1b45d7f25afb58a500a588758adf8af936c7",
+      "xyz_sha256": "55d9bc462b9e97690e507e490f16031752da012a043925fd0c18133fee44f83a",
+      "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+      "vertices": 25983,
+      "triangles": 51084,
+      "source_quad_count": 12771
+    },
+    "DELIVERED": {
+      "geometry": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\DELIVERED.npz",
+      "geometry_sha256": "13b6d6d8b50bcef10214254c0788ea30b6e9e709beeca3e2c71bcfb9b2f02f2f",
+      "xyz_sha256": "ffe5de26810ea384fee132e4dd9d7f038f8bc77eb6bc161001eb976ea2302fdb",
+      "faces_sha256": "eed72eb0daf3aac49272f40214e50fc9438faf4f30ac3403af309894cca19d9c",
+      "vertices": 25983,
+      "triangles": 51084,
+      "source_quad_count": 12771
+    }
+  },
+  "frame": {
+    "center": [
+      0.24070178570781026,
+      0.7270913239472829,
+      1.363283493304111
+    ],
+    "normal": [
+      -0.30410464883212185,
+      0.9526008059592057,
+      0.008489231093773298
+    ],
+    "tangent": [
+      0.04841518710214075,
+      0.024354418034753095,
+      -0.99853033603394
+    ],
+    "across": [
+      -0.9513898061310045,
+      -0.3033022960561754,
+      -0.0535271332789411
+    ]
+  },
+  "sources": {
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\RECEIPT.json": "e93973d4b23aada4fb9cf27f986e6061538d5410b4b5ec1d672fcea6dd016b3c",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.json": "7aeca7fd3ed45f433472a75d8bb127a77efa26bd14deb1ef0482c997589811fe",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial03_coffer_chain\\PARENT_02.npz": "c23aa5d598795779a58ae16ecdf204c8f169064377284aa0ff8117cfa560282f",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.json": "22979e2967660b5125bff35babaca862b60564b39b418764dd5d2dd5dc71a95f",
+    "E:\\CHESHIRE_DATA\\experiments\\hansmeyer_reconstruction_20261015\\trial04_coffer_chain\\PARENT_03.npz": "bab36f8cd2f5e7c6463a3b0434424ee6a9f40af7cfed555ce3e98439db58f76a"
+  },
+  "component": 40,
+  "selected_cell_interval": [
+    32,
+    35
+  ],
+  "selection": "Three-cell core window nearest parent median nominal height and usable base; no camera or visually attractive-region selection.",
+  "correspondence": "FORMED/NEUTRAL are actual cached local2CC quads reconstructed as arithmetic native fans. CARRIER/DELIVERED are true original G7 native fan subsets with unchanged original control and face IDs, not resampled proxies. Different topology is intentional; same source corridor and world camera.",
+  "visual_success": false
+}

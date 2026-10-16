@@ -1,0 +1,181 @@
+{
+  "schema": "CHESHIRE_INHERITED_POSITION_SPLIT_DIRECTION_RECIPES_V1",
+  "baseline_id": "I00",
+  "recipes": [
+    {
+      "id": "I00",
+      "label_ko": "원래 SPAN 초기 계보 기준",
+      "family": "baseline"
+    },
+    {
+      "id": "I01",
+      "label_ko": "두 접힘 시작 지점 이동",
+      "family": "position",
+      "overlap_events": [
+        {
+          "template_index": 0,
+          "height": 0.28
+        },
+        {
+          "template_index": 1,
+          "height": 0.67
+        }
+      ]
+    },
+    {
+      "id": "I02",
+      "label_ko": "길이가 다른 세 접힘 구간",
+      "family": "uneven_three",
+      "overlap_events": [
+        {
+          "template_index": 0,
+          "height": 0.24,
+          "span": 0.07,
+          "direction": 0.45,
+          "sweep": 0.12,
+          "overlap_width": 0.34
+        },
+        {
+          "template_index": 1,
+          "height": 0.53,
+          "span": 0.17,
+          "direction": 1.08,
+          "sweep": -0.16,
+          "overlap_width": 0.36
+        },
+        {
+          "template_index": 0,
+          "height": 0.76,
+          "span": 0.09,
+          "direction": 0.72,
+          "sweep": 0.1,
+          "overlap_width": 0.42
+        }
+      ]
+    },
+    {
+      "id": "I03",
+      "label_ko": "불균일한 네 지점의 접힘",
+      "family": "uneven_four",
+      "overlap_events": [
+        {
+          "template_index": 0,
+          "height": 0.23,
+          "span": 0.06,
+          "direction": 0.43,
+          "sweep": -0.1,
+          "overlap_width": 0.32
+        },
+        {
+          "template_index": 1,
+          "height": 0.41,
+          "span": 0.11,
+          "direction": 1.12,
+          "sweep": 0.1,
+          "overlap_width": 0.3
+        },
+        {
+          "template_index": 0,
+          "height": 0.66,
+          "span": 0.08,
+          "direction": 0.61,
+          "sweep": -0.12,
+          "overlap_width": 0.4
+        },
+        {
+          "template_index": 1,
+          "height": 0.78,
+          "span": 0.05,
+          "direction": 1.05,
+          "sweep": 0.08,
+          "overlap_width": 0.34
+        }
+      ]
+    },
+    {
+      "id": "I04",
+      "label_ko": "두 실제 영역의 분할점 배분 변경",
+      "family": "regional_split",
+      "split_regions": [
+        {
+          "t_centre": 0.76,
+          "t_halfwidth": 0.16,
+          "theta_centre": 0.65,
+          "theta_halfwidth": 0.5,
+          "w3": -0.55,
+          "w4": 0.35,
+          "w1": -0.2
+        },
+        {
+          "t_centre": 0.3,
+          "t_halfwidth": 0.055,
+          "theta_centre": 1.12,
+          "theta_halfwidth": 0.25,
+          "w3": 0.65,
+          "w4": -0.72,
+          "w1": 0.4
+        }
+      ]
+    },
+    {
+      "id": "I05",
+      "label_ko": "큰 가지 출발 지점과 선택 방향 이동",
+      "family": "root_position",
+      "root_recipe": {
+        "root_parameter_centre": 0.7,
+        "root_cross_centre": 0.9
+      },
+      "sidewall_recipe": {
+        "beta_centres": [
+          -2.1,
+          1.15,
+          0.2
+        ]
+      }
+    },
+    {
+      "id": "I06",
+      "label_ko": "다른 방향과 불균일 폭 및 두 영역 분할",
+      "family": "combined",
+      "overlap_events": [
+        {
+          "template_index": 0,
+          "height": 0.31,
+          "span": 0.08,
+          "direction": 0.65,
+          "sweep": -0.2,
+          "overlap_width": 0.36
+        },
+        {
+          "template_index": 1,
+          "height": 0.72,
+          "span": 0.16,
+          "direction": 1.0,
+          "sweep": 0.12,
+          "overlap_width": 0.4
+        }
+      ],
+      "split_regions": [
+        {
+          "t_centre": 0.64,
+          "t_halfwidth": 0.13,
+          "theta_centre": 0.48,
+          "theta_halfwidth": 0.35,
+          "w3": -0.45,
+          "w4": 0.25,
+          "w1": -0.1
+        },
+        {
+          "t_centre": 0.32,
+          "t_halfwidth": 0.08,
+          "theta_centre": 1.15,
+          "theta_halfwidth": 0.28,
+          "w3": 0.55,
+          "w4": -0.7,
+          "w1": 0.35
+        }
+      ]
+    }
+  ],
+  "scope_ko": "원 SPAN G0와 기존 연산을 유지하며 지점, 구간폭, 방향 및 기존 분할 가중치만 바꾼다."
+}

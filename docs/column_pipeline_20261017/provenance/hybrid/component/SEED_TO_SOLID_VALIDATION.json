@@ -1,0 +1,105 @@
+{
+  "raw_quality": {
+    "vertices": 12600,
+    "faces": 25584,
+    "edges": 38340,
+    "face_corners": 3,
+    "components": 16,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 36,
+    "euler_characteristic": -156,
+    "genus_if_closed_connected": null,
+    "finite": true,
+    "degenerate_fans": 0,
+    "minimum_fan_area": 0.00017392047250363977,
+    "bbox": [
+      [
+        -1.0309090971946717,
+        -1.0309090971946717,
+        -1.079999989271164
+      ],
+      [
+        1.0309092044830321,
+        1.0309092044830321,
+        1.0309092044830321
+      ]
+    ]
+  },
+  "manifold_input_status": "Error.NoError",
+  "native_manifold_mesh_quality": {
+    "vertices": 12600,
+    "faces": 25536,
+    "edges": 38304,
+    "face_corners": 3,
+    "components": 16,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "euler_characteristic": -168,
+    "genus_if_closed_connected": null,
+    "finite": true,
+    "degenerate_fans": 0,
+    "minimum_fan_area": 0.00017392047250363977,
+    "bbox": [
+      [
+        -1.0309090971946717,
+        -1.0309090971946717,
+        -1.079999989271164
+      ],
+      [
+        1.0309092044830321,
+        1.0309092044830321,
+        1.0309092044830321
+      ]
+    ]
+  },
+  "actual_largest_seed": {
+    "vertices": 12506,
+    "faces": 25408,
+    "edges": 38112,
+    "face_corners": 3,
+    "components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "euler_characteristic": -198,
+    "genus_if_closed_connected": 100,
+    "finite": true,
+    "degenerate_fans": 0,
+    "minimum_fan_area": 0.00017392047250363977,
+    "bbox": [
+      [
+        -1.0309090971946717,
+        -1.0309090971946717,
+        -1.079999989271164
+      ],
+      [
+        1.0309092044830321,
+        1.0309092044830321,
+        1.0309092044830321
+      ]
+    ]
+  },
+  "selection": {
+    "components_before_selection": 16,
+    "component_surface_areas": [
+      21.006524539565515,
+      0.004174098097499253,
+      0.004174101476207253,
+      0.0041741048549179885,
+      0.0041741048549179885,
+      0.0041741048549179885,
+      0.004174101476208621,
+      0.0041741048549179885,
+      0.004174094718792619,
+      0.004174114991062501,
+      0.004174114991062501,
+      0.004174108233630091,
+      0.004174101476208621,
+      0.00417409809750062,
+      0.010990375746352655,
+      0.004174091340087354
+    ],
+    "selected_component": 0,
+    "criterion": "largest surface area, as in paper"
+  },
+  "interpretation": "The finite volume raw extraction includes disconnected/singular-contact pieces. Native Manifold solid conversion and largest-surface-area selection establish the closed connected seed actually passed to the first paper plane operator. Raw extraction is not claimed to satisfy the paper input contract."
+}

@@ -1,0 +1,98 @@
+{
+  "kind": "GENERATION_MIRROR_HYBRID_INDEPENDENT_VERIFICATION_PROTOCOL",
+  "status": "protocol_only_outputs_pending",
+  "prototype": true,
+  "input_topology": {
+    "control_vertices": 7002114,
+    "quads": 7002112,
+    "native_vertices": 14004226,
+    "native_triangles": 28008448
+  },
+  "baseline": "Immutable completed22 G7 coordinates; original NESTED material topology; prior whole CC1 G8 preserved separately.",
+  "required_actual_methods": [
+    "New generation-informed SOURCE5 weights used in actual field formation and color classification",
+    "Fresh coarse Mandel on actual G6 then actual neutral CC differential transported to G7",
+    "Fresh fine Mandel added after coarse CC transport",
+    "Actual paper-origin cut/reflection/join component and actual Tissue output used for whole G7 relief"
+  ],
+  "minimal_checks": [
+    {
+      "name": "new_whole_geometry",
+      "evidence": [
+        "Final coordinate/control/native hashes differ from22",
+        "Actual moved controls and displacement quantiles",
+        "Zero final native orientation reversals and nondegenerate faces"
+      ]
+    },
+    {
+      "name": "new_classification",
+      "evidence": [
+        "Old/new continuous SOURCE5 L1 differences",
+        "Dominant class confusion counts",
+        "Change counts by evidence confidence/fallback status",
+        "Formation and new color receipt bind identical new weight arrays"
+      ]
+    },
+    {
+      "name": "operator_order",
+      "evidence": [
+        "Hash-bound coarse G6 delta",
+        "Actual paired CC(base+coarse)-CC(base) differential and lineage proof",
+        "Hash-bound new fine G7 delta added after CC",
+        "Component cut/reflection/join/CC receipts and actual Tissue operator result"
+      ]
+    },
+    {
+      "name": "effective_contributions",
+      "evidence": [
+        "Fixed old-G7 material sample IDs and exact selected semantic regions",
+        "Per-method post-cap/post-allow/post-recovery contribution height and nonzero counts",
+        "Frozen-gain attribution labelled separately from rerun counterfactual ablation"
+      ]
+    },
+    {
+      "name": "flow_and_views",
+      "evidence": [
+        "Exact protected22 core coordinates",
+        "Same-material certified macro-profile before/after QA",
+        "New full-native gray/color same-coordinate readback and input receipt SHA",
+        "PNG hashes and all required views exist"
+      ]
+    }
+  ],
+  "selected_G3_material_regions": {
+    "calm": 11098,
+    "certified_primary": 16042,
+    "SOURCE_oval": 11115,
+    "SOURCE_crossbar": 10811,
+    "attached_event2_wall": 6610
+  },
+  "precise_SOURCE_complex_G7_controls": [
+    3836568,
+    2795405,
+    1485995,
+    4548028
+  ],
+  "scope_ko": "전체 기둥에 새 연산과 새 분류를 적용한 시험을 검증합니다. 기존22 고해상도 색상이나 이전 패치만을 새 전체 적용 결과로 제시하지 않습니다. 완성 채택은 실제 새 형상 검토 후 결정합니다.",
+  "source_paper": {
+    "text_path": "E:\\CHESHIRE_DATA\\experiments\\mirror_paper_review_20261016\\mirror_full_text.txt",
+    "text_sha256": "787d495bb9abffff09ebaf08f9bc6df5352822c6bd28a16f5ae820b7f4425233",
+    "title": "Recursive symmetries for geometrically complex and materially heterogeneous additive manufacturing",
+    "doi": "10.1016/j.cad.2016.09.002",
+    "method_section": "2.1",
+    "summary_ko": "양의 반공간 절단, 절단면 반사와 닫힌 접합의 재귀, 최대 연결 성분 선택, 실제 Catmull-Clark 마무리입니다."
+  },
+  "terminology_ko": [
+    "절단 경계 seam weld로 접합했다면 일반 Boolean API 호출과 구별합니다.",
+    "component에서의 closed-solid 연산과 whole host에 매핑한 단일값 기하 relief를 구별합니다.",
+    "CC 운반 후 tangent 성분은 별도 측정하며 전부 normal-only라고 단정하지 않습니다.",
+    "정점 생성 세대를 형상 특징의 발생 세대라고 단정하지 않습니다.",
+    "동일 gain을 사용한 표본별 기여량은 각 방법을 제외하고 전체 안전 회복을 재실행한 ablation과 구별합니다."
+  ],
+  "forbidden_completion_claims": [
+    "CC-only completion presented as all new methods applied",
+    "Old whole22 images presented as new whole geometry",
+    "Unchanged old SOURCE5 array renamed as new classification",
+    "Promised operator receipt with zero actual final-coordinate contribution"
+  ]
+}

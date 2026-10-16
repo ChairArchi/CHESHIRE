@@ -1,0 +1,116 @@
+{
+  "kind": "NEW_ACTUAL_PAPER_TISSUE_EXACT_G7_RAW_FIELDS_BEFORE_GUARDS",
+  "height": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\TISSUE_RAW_HEIGHT.npy",
+    "sha256": "5865a59eb075819c94a43307fd27039c31e2b7a3e49fc7985e4fcfe8a6a58f6c"
+  },
+  "priority": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\TISSUE_PRIORITY_WEIGHT.npy",
+    "sha256": "1e759917db3d57fa94abc6bad56eb0d873098ebe0075f682bd573b5e5728a4d3"
+  },
+  "host_control_vertices": 7002114,
+  "host_control_quad": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz",
+    "sha256": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3"
+  },
+  "host_quad_faces_sha256": "adac6b370da951e80f4913ed7892b569260f356d1a8dabec75a2873827c123c6",
+  "actual_Tissue_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+    "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44"
+  },
+  "actual_generated_height_grid": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_HEIGHT_GRID.npz",
+    "sha256": "d5f5e2ad70975f6ef2f2548725db9671faec4c29682da2f530e56b0ec01668ca"
+  },
+  "source_paper_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+    "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d"
+  },
+  "source_closed_component": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\06_actual_paper_CC1_component.npz",
+    "sha256": "1711d1ff049df80bd7a6e86ba9e3f6ee946c7654a5832d33fdda0da050ec660e"
+  },
+  "semantic_hosts": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz",
+    "sha256": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33"
+  },
+  "semantic_host_count": 10340,
+  "UV_pattern": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_PATTERN.npy",
+    "sha256": "b46ea7495f80b6bbb552da41316cb4c13d384a284009db7c028f2aa27491f970"
+  },
+  "UV_lineage": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\UV_LINEAGE_RECEIPT.json",
+    "sha256": "f2ddfa48ae52eb96edcc0f0a2af91ddf4ca64e39c7602af2ebfe91cacfdd7d5b"
+  },
+  "orientation": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\FACE_UV_ORIENTATION.npz",
+    "sha256": "cbc3b798277edb6cff4e00c95ace282f1bd7808ae9a69507aa8c8cce5beb44f6"
+  },
+  "original_orientation": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\broad_component_v21\\FACE_UV_ORIENTATION_V21.npz",
+    "sha256": "ef0804871b1f7624ad7386841fa706f362e8abcfbbc6368aa8d4e696db3d8f92"
+  },
+  "actual_orientation_metric": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\whole_tissue_relief_20261016\\SHARED_G3_SHAPE_METRICS.npz",
+    "sha256": "edf8f8f903ce1812edc7d3507865009052d223e59237f2e0f3eeeaa35797396a"
+  },
+  "actual_registered_phase_evidence": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\evidence.npz",
+    "sha256": "0970322f4936546326992470e7511669c390cd6550570eff9fc883ee5c94651e"
+  },
+  "reflection_representatives": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\trial03b_refined\\working_arrays\\4_representatives.npy",
+    "sha256": "f6f900ca4f8bc7efb58d3d148d0d5772bc17a551b6ae87949730dfca67b9a34e"
+  },
+  "original_hosts_with_retained_orientation": 3828,
+  "new_hosts_with_measured_orientation": 6512,
+  "orientation_mode_counts": {
+    "1": 7716,
+    "2": 2624,
+    "3": 0
+  },
+  "orientation_rule": "Keep original orientation for admitted original hosts. New hosts use actual registered phase isophase tangent (-dv*U+du*V); zero/invalid phase uses actual two-ring low-absolute-curvature tangent, then physical host U fallback.",
+  "physical_peak_budget": [
+    0.04,
+    0.06
+  ],
+  "cell_frequency": 1.0,
+  "G3_ports_exact_zero": true,
+  "shared_vertex_height_max_error": 0.0,
+  "native_reflection_exact": true,
+  "semantic_controls": 2699584,
+  "positive_height_controls": 2326500,
+  "positive_height_quantiles": [
+    1.6298998322537114e-05,
+    0.0003835848480214772,
+    0.0016869128119948455,
+    0.013244848283256798,
+    0.027780425553967324,
+    0.03817840832585348,
+    0.05907541569586823
+  ],
+  "semantic_height_quantiles": [
+    0.0,
+    0.0,
+    0.0004957065853643833,
+    0.009407681985853723,
+    0.025103627462825785,
+    0.036970906583740235,
+    0.05907541569586823
+  ],
+  "height_already_semantically_weighted_once": true,
+  "priority_already_semantically_weighted_once": true,
+  "flow_guards_applied": false,
+  "cap_guards_applied": false,
+  "safety_cap_applied": false,
+  "whole_geometry_not_yet_changed": true,
+  "previous_Tissue_field_reused": false,
+  "source_grid_from_new_actual_paper_and_actual_Tissue": true,
+  "complete_closed_component_topology_transferred_to_height_graph": false,
+  "generator": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\map_paper_tissue_native.py",
+    "sha256": "a27622d7264352120924d67e8f213338639b085996b4acf70296851f800e5d1a"
+  },
+  "elapsed_seconds": 12.894456099998933
+}

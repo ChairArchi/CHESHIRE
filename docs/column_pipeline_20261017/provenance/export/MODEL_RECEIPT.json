@@ -1,0 +1,600 @@
+{
+  "kind": "NEW_ACTUAL_GENERATION_MIRROR_HYBRID_FULL_NATIVE_EXPORT",
+  "prototype": true,
+  "user_adopted": false,
+  "model": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\CHESHIRE_COLUMN_G7_GENERATION_MIRROR_HYBRID_FULL.ply",
+  "model_sha256": "ed40809e09ac8afd0a4be6369ada572add7b2dd24fb71aaad7b63be7481363ef",
+  "bytes": 700211493,
+  "vertices": 14004226,
+  "triangles": 28008448,
+  "position_type": "float64",
+  "index_type": "uint32",
+  "images": [
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "b1a270b9dd57598565c2fd219d88cbde7779110984a8b0aef10bde769b1c0d83",
+      "style": "gray",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\context\\front.png",
+      "relative_copy": "gray/front.png"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "de6c8040bce32ffd30e355b7a6d825e22c7ab58e69a1f7f27f94018dda9a6d74",
+      "style": "gray",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\context\\body_oblique.png",
+      "relative_copy": "gray/body_oblique.png"
+    },
+    {
+      "view": "close_oblique",
+      "filename": "close_oblique.png",
+      "sha256": "79114adacecc1e6c3384c2276d5c4c8f9dee3c207b43309dfd3af739fb85ab40",
+      "style": "gray",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\close\\close_oblique.png",
+      "relative_copy": "gray/close_oblique.png"
+    },
+    {
+      "view": "front",
+      "filename": "front.png",
+      "sha256": "2911e151503a120288e9bfc0aec0774bc9c548f86ba091b8cba788ec1849909e",
+      "style": "color",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\front.png",
+      "relative_copy": "color/front.png"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "e53eff7e3f47251d4650a69db7223c49e9c723ab812092187e2a4beba41990df",
+      "style": "color",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\body_oblique.png",
+      "relative_copy": "color/body_oblique.png"
+    },
+    {
+      "view": "close_oblique",
+      "filename": "close_oblique.png",
+      "sha256": "8b1c71b86a9c2eabb1ac75bee70ab8a36929cd58dcf91b09aa0cd96a8d2df20b",
+      "style": "color",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\close_oblique.png",
+      "relative_copy": "color/close_oblique.png"
+    },
+    {
+      "view": "body_oblique",
+      "filename": "body_oblique.png",
+      "sha256": "7e80e18ffdf5de00031293dfbf76ef27bb6e3d45a70ad669f092d91473304770",
+      "style": "source_only",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\SOURCE_ONLY_REVIEW\\images\\body_oblique.png",
+      "relative_copy": "source_only/body_oblique.png"
+    }
+  ],
+  "metadata": {
+    "provenance/ALGORITHM_BUNDLE_MANIFEST.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\ALGORITHM_BUNDLE_MANIFEST.json",
+      "sha256": "b7470c29e694b09c7000fb29f8c70da2b97d1c02144708e213d14955dd9e57dc"
+    },
+    "provenance/CLASSIFICATION.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\CLASSIFICATION.json",
+      "sha256": "b4543df80fa8c4653ddcc97067cd7182f13e3308675d57a7f7e14a877d994b98"
+    },
+    "provenance/COARSE_STAGE_RECOVERY.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COARSE_STAGE_RECOVERY.json",
+      "sha256": "e57e20f58751daed9d184632957b2f13c31d36fc23442914a770378c8c0415c7"
+    },
+    "provenance/COARSE_STAGE_RECOVERY_PROGRESS.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COARSE_STAGE_RECOVERY_PROGRESS.json",
+      "sha256": "23f6941d2e11baa1049bd51b1591dd8862f98c4b7b4222d2706f72f18dad10bc"
+    },
+    "provenance/FINAL_RECOVERY.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FINAL_RECOVERY.json",
+      "sha256": "f6e84f286e1cc9b19782c084f906b1de816a0023e46f76e1257d2dca834ebdaf"
+    },
+    "provenance/FINAL_RECOVERY_PROGRESS.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FINAL_RECOVERY_PROGRESS.json",
+      "sha256": "118907d8d4e0ca397be9f526c1f1120ad620d6e592e014d8a9b4d78430f4002d"
+    },
+    "provenance/FORMATION.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FORMATION.json",
+      "sha256": "6722e9422c2ef30ca77a0d469d1f8430e73e50cc60b2d70abaee1f9bc6665613"
+    },
+    "provenance/GEOMETRY_QUALITY.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\GEOMETRY_QUALITY.json",
+      "sha256": "4c68e741dbeb381669fa304a8babae516a4c2a5b93569103d3dfddf013f834ce"
+    },
+    "provenance/INDEPENDENT_APPLICATION_AUDIT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_APPLICATION_AUDIT.json",
+      "sha256": "b1922986ca50b8b4f8a07d5c81b264add24cc911b94a31c8dbcbf31a39cb7655"
+    },
+    "provenance/INDEPENDENT_CLASSIFICATION_AUDIT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_CLASSIFICATION_AUDIT.json",
+      "sha256": "8ea0ab254ac2d98dd9515bec28bf92b17d7ca629e452c1da00478381347f9a8f"
+    },
+    "provenance/INDEPENDENT_PAPER_COMPONENT_AUDIT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_PAPER_COMPONENT_AUDIT.json",
+      "sha256": "4d18ad5a7708cc3ce911d35f78d646274f3e56bf923227920aa37a6c45bd2a50"
+    },
+    "provenance/INDEPENDENT_VERIFICATION_PROTOCOL.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_VERIFICATION_PROTOCOL.json",
+      "sha256": "166eb10338091244631cbc9bab0836a99de1599ea11893b83c12278f2936ae90"
+    },
+    "provenance/INTERLEAVED_COARSE_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INTERLEAVED_COARSE_RECEIPT.json",
+      "sha256": "31164ae6705c47da0d7f25b76fdbf5f79ee77e4c25e979b0bce85fdf3edfa35f"
+    },
+    "provenance/LOCAL_HEIGHT_RECOVERY.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\LOCAL_HEIGHT_RECOVERY.json",
+      "sha256": "f6e84f286e1cc9b19782c084f906b1de816a0023e46f76e1257d2dca834ebdaf"
+    },
+    "provenance/PRESERVATION_AUDIT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\PRESERVATION_AUDIT.json",
+      "sha256": "1deb688a530c8a5f7c38533866ed5846105cfbdc74a7a2f4d3377fddcf0a2cd3"
+    },
+    "provenance/RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\RECEIPT.json",
+      "sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769"
+    },
+    "provenance/history_classification/CLASSIFICATION_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json",
+      "sha256": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241"
+    },
+    "provenance/history_classification/SOURCE5_WEIGHTS_G3.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\SOURCE5_WEIGHTS_G3.npz",
+      "sha256": "d38abfc1d1c0a222ef5a68cda030db98ed78731321168d8452e94698a2037a08"
+    },
+    "provenance/history_classification/TISSUE_HOSTS.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.json",
+      "sha256": "1f7b3875653a08ab883027fe198ccb8f2db2d9530208f0d7efaf9fd9f8175a41"
+    },
+    "provenance/history_classification/TISSUE_HOSTS.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.npz",
+      "sha256": "70376e3b92c2ab6e59f7a28a1714c8d5fda1466ede9ad949e9177032ee2e7b33"
+    },
+    "provenance/component/PAPER_COMPONENT_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+      "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d"
+    },
+    "provenance/component/SEED_TO_SOLID_VALIDATION.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\SEED_TO_SOLID_VALIDATION.json",
+      "sha256": "0152e5cc8b64babc3daae1ef356240b66a3518d0427c7f26c66bac761ac5f816"
+    },
+    "provenance/component/COMPONENT_PLY_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\COMPONENT_PLY_RECEIPT.json",
+      "sha256": "7e6cdb1d26c0d145914ecbe040765a09a0e363f0438523e31c2cd97b91ba7abc"
+    },
+    "provenance/component/ACTUAL_PAPER_COMPONENT_FULL.ply": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\ACTUAL_PAPER_COMPONENT_FULL.ply",
+      "sha256": "83dd242a7f5d85f0ac3613cedd468ac79c38d39ad0e94befcd76cec01b91a1d6"
+    },
+    "provenance/paper_tissue/ACTUAL_TISSUE_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+      "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44"
+    },
+    "provenance/paper_tissue/ACTUAL_TISSUE_HEIGHT_GRID.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_HEIGHT_GRID.npz",
+      "sha256": "d5f5e2ad70975f6ef2f2548725db9671faec4c29682da2f530e56b0ec01668ca"
+    },
+    "provenance/paper_tissue/ACTUAL_TISSUE_GENERATED_CELL.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_GENERATED_CELL.json",
+      "sha256": "cd0da7b293ae1ad80b69cacab638e4fa14bc4988854bb34a55c506841b7734ed"
+    },
+    "provenance/paper_tissue/paper_derived_component.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\paper_derived_component.json",
+      "sha256": "bc9b7fa2460a6e5e09aed0edf2b3fb0d946faeb45713037c591cf02ffe1b79e7"
+    },
+    "provenance/paper_tissue/PAPER_EXACT_TOP_RAY_ADAPTER.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\PAPER_EXACT_TOP_RAY_ADAPTER.npz",
+      "sha256": "dbd3e2f37de8172839645f760660cdff69cc11a8d164e6911e1a4b01eb6e3e68"
+    },
+    "provenance/paper_tissue_native/RAW_TISSUE_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\RAW_TISSUE_RECEIPT.json",
+      "sha256": "850639555b6756d7c74339adf1fcb76808edcfb53e711391cea0ea6f4e8106bc"
+    },
+    "provenance/MANDEL_REVIEW/REVIEW_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\REVIEW_RECEIPT.json",
+      "sha256": "68d87d2f2b24ae82abb5c7d88736323f1a160f8c37031a82f3e88425e867f848"
+    },
+    "provenance/COLOR_ZONES_REVIEW/CLASSIFICATION_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\CLASSIFICATION_RECEIPT.json",
+      "sha256": "91e077fe247becbba25e1254c92a8e610615f45c48d4807478ebdf2e91695eab"
+    },
+    "provenance/COLOR_ZONES_REVIEW/RENDER_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\RENDER_RECEIPT.json",
+      "sha256": "d7346b50ecb925c19528c98ee026ab8455735c208c0da061756c82defbe677c4"
+    },
+    "provenance/SOURCE_ONLY_REVIEW/RENDER_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\SOURCE_ONLY_REVIEW\\RENDER_RECEIPT.json",
+      "sha256": "578a1ccca424003c90037b5df68534ea69a542a970a7e67124581a041ff803a5"
+    },
+    "gray/front.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\context\\front.png",
+      "sha256": "b1a270b9dd57598565c2fd219d88cbde7779110984a8b0aef10bde769b1c0d83"
+    },
+    "gray/body_oblique.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\context\\body_oblique.png",
+      "sha256": "de6c8040bce32ffd30e355b7a6d825e22c7ab58e69a1f7f27f94018dda9a6d74"
+    },
+    "gray/close_oblique.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MANDEL_REVIEW\\close\\close_oblique.png",
+      "sha256": "79114adacecc1e6c3384c2276d5c4c8f9dee3c207b43309dfd3af739fb85ab40"
+    },
+    "color/front.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\front.png",
+      "sha256": "2911e151503a120288e9bfc0aec0774bc9c548f86ba091b8cba788ec1849909e"
+    },
+    "color/body_oblique.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\body_oblique.png",
+      "sha256": "e53eff7e3f47251d4650a69db7223c49e9c723ab812092187e2a4beba41990df"
+    },
+    "color/close_oblique.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COLOR_ZONES_REVIEW\\images\\close_oblique.png",
+      "sha256": "8b1c71b86a9c2eabb1ac75bee70ab8a36929cd58dcf91b09aa0cd96a8d2df20b"
+    },
+    "source_only/body_oblique.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\SOURCE_ONLY_REVIEW\\images\\body_oblique.png",
+      "sha256": "7e80e18ffdf5de00031293dfbf76ef27bb6e3d45a70ad669f092d91473304770"
+    },
+    "macro_flow_qa/MACRO_FLOW_QA.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MACRO_FLOW_QA\\MACRO_FLOW_QA.json",
+      "sha256": "8daaa733647d7b806b3b60309d1914d33b7180b35bc3633e7556420f0475bd20"
+    },
+    "macro_flow_qa/MACRO_FLOW_STATIONS.csv": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MACRO_FLOW_QA\\MACRO_FLOW_STATIONS.csv",
+      "sha256": "0b69f6986c49b5ec7e8619e28692da3ec38d212cd9e083a34427880685bba34d"
+    },
+    "component_review/RENDER_RECEIPT.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component_review\\RENDER_RECEIPT.json",
+      "sha256": "43c1348e9713836e3c52135ad79a21a1d99a380b7c8216ba601b12eccdc2bc99"
+    },
+    "component_review/after.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component_review\\after.png",
+      "sha256": "7c7507b9cb1be8b2459f12729135512c672bd537473170ada3d0a7d7c81dc16d"
+    },
+    "component_review/before.png": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component_review\\before.png",
+      "sha256": "7181691307a20763528be90b04e0e10535c2573f88405fb59139cfa361e00561"
+    },
+    "source_snapshot/audit_new_classification.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\audit_new_classification.py",
+      "sha256": "8b0e59033c1fed53f3800b7d3b0ca43178466309371ee1bb1fd9bf2b86f9ccea"
+    },
+    "source_snapshot/audit_paper_component.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\audit_paper_component.py",
+      "sha256": "044f34836d4ebcc7b4a58dc71a7420a544ae8da7242301f8ec5a4653af019fc1"
+    },
+    "source_snapshot/audit_whole_application.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\audit_whole_application.py",
+      "sha256": "2968fe162bd147f41a4d907a2c4ffe8d8838c54bacd8f74913d8b2cf6d3536d6"
+    },
+    "source_snapshot/export_generation_mirror_hybrid.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\export_generation_mirror_hybrid.py",
+      "sha256": "1542a8c8e84c110c4c80bb5f9eb1315abe25aa73288cd97297d6871300a5d8a6"
+    },
+    "source_snapshot/freeze_delivery.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\freeze_delivery.py",
+      "sha256": "ddf71af8d48c7e9c3b18f06567b7f618236a4692eef602a9b27e5dd5b07baa1c"
+    },
+    "source_snapshot/generate_paper_component.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\generate_paper_component.py",
+      "sha256": "91075b9f62904289dbab7aa51ea66db6ab6a59f5a546d32473be4298e9a5d575"
+    },
+    "source_snapshot/map_paper_tissue_native.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\map_paper_tissue_native.py",
+      "sha256": "a27622d7264352120924d67e8f213338639b085996b4acf70296851f800e5d1a"
+    },
+    "source_snapshot/package_algorithm_bundle.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\package_algorithm_bundle.py",
+      "sha256": "01f4096a5b4477861a38e2f615dc327eaa79ad779e37e7167655d6edf60eea99"
+    },
+    "source_snapshot/package_generation_mirror_hybrid.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\package_generation_mirror_hybrid.py",
+      "sha256": "f3649ce130ac229bd07d9f69818a7625abe9ed8969a0706b69291a032af280f0"
+    },
+    "source_snapshot/paper_component_kernel.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_component_kernel.py",
+      "sha256": "248c51de3a9007dbcffe9d1ff4a2c456c2cfe404ab453560fb428c8f4893e34e"
+    },
+    "source_snapshot/prepare_new_renderer.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\prepare_new_renderer.py",
+      "sha256": "cef9380584c959c64d62039e16b8fed9f3d5106b3d3dfa4eebf626287d71830a"
+    },
+    "source_snapshot/prepare_paper_tissue_adapter.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\prepare_paper_tissue_adapter.py",
+      "sha256": "f9a6791143b7511de62fc5eeeb2986b137861507055f58e513e7a42c8fe162de"
+    },
+    "source_snapshot/prepare_source_only_renderer.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\prepare_source_only_renderer.py",
+      "sha256": "b78d5879ac069d620e04b820e7a3da71c62eaaf688c1c8f38bb5f047e25ef78d"
+    },
+    "source_snapshot/render_generation_mirror_hybrid.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\render_generation_mirror_hybrid.py",
+      "sha256": "323868f2720d8076bd92b7bbb88ce33a3a183d9568d251ec9d8fd33e707075a0"
+    },
+    "source_snapshot/render_paper_component.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\render_paper_component.py",
+      "sha256": "4869e6fb406d09eee4ead75e82ffaee7115eb38a1d6418476be059e3ab043f20"
+    },
+    "source_snapshot/executed_generation/run_generation_mirror_hybrid_20261016.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_generation_mirror_hybrid_20261016.py",
+      "sha256": "bfbcbca68360cda851438f1c04f7c2c320acc3c905f6a033b071fc9e202fcf74"
+    },
+    "source_snapshot/executed_generation/ornament_subdivision.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\ornament_subdivision.py",
+      "sha256": "9001f9a57082884dbee430ae2082c8e453ed61792301915683a462916f30c068"
+    },
+    "source_snapshot/executed_generation/run_visible_organic_flow_whole_hybrid_20261016.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_visible_organic_flow_whole_hybrid_20261016.py",
+      "sha256": "1f1f677171a0e0be334f70b944ee1dedfa27286dd3cb7c4aa00222f99e90e377"
+    },
+    "source_snapshot/executed_generation/run_whole_hybrid_20261016.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_whole_hybrid_20261016.py",
+      "sha256": "9fc0c8760eeddf07773ccbd9739ea4f9d6cc234ca421558fbd283d22e2389ce2"
+    },
+    "source_snapshot/executed_generation/run_continuous.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_continuous.py",
+      "sha256": "4c023d81f56a594290511be12b383e86e6c0debcfc6c7bcd79f7ff8f82373a88"
+    },
+    "source_snapshot/executed_generation/run_refined_stream.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_refined_stream.py",
+      "sha256": "7459bf5b1aa082831bbe193bd8f6bec00c2061b7f9990df6d5611043e5c7f627"
+    },
+    "source_snapshot/executed_generation/run_spine_reconstruction_v7.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_spine_reconstruction_v7.py",
+      "sha256": "33da2cdce3803d83d892dab4243d252f89c5b8d447c10795999b66f0fc267925"
+    },
+    "source_snapshot/executed_generation/mandelbulb_surface_replacement.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\mandelbulb_surface_replacement.py",
+      "sha256": "d52bd5cc11bfba3f1491d3d1e9eff721a475a4e8ee82cb17fb6741f5c5073bd8"
+    },
+    "source_snapshot/executed_generation/run_history_classification.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_history_classification.py",
+      "sha256": "e06917906fec75f7351c00812b25f4083411d71f8b2efe9b6cb7badaaab48313"
+    },
+    "source_snapshot/executed_generation/history_classifier.py": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\history_classifier.py",
+      "sha256": "4eb44513098b402c4447db2412b91f6bc7926918c90e5b83ed4adcf6886ae0c1"
+    },
+    "provenance/INDEPENDENT_APPLICATION_SAMPLES.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_APPLICATION_SAMPLES.npz",
+      "sha256": "7120d5c325062ca27ac0c5d2322dcc0971979b55fcca4663be2f54e2b9835db7"
+    },
+    "provenance/FINAL_METHOD_CONTRIBUTION_SAMPLES.npz": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FINAL_METHOD_CONTRIBUTION_SAMPLES.npz",
+      "sha256": "8e7eeacf026c11932a7e50cb7ddbb525df716fe9e859814b916d309a0fce382f"
+    },
+    "algorithm/CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+      "sha256": "19fd39c96ae42c6a2b19fa4591d13ec5693083406b1c99adeef42d6c3767533b"
+    },
+    "algorithm/ALGORITHM_BUNDLE_MANIFEST.json": {
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\ALGORITHM_BUNDLE_MANIFEST.json",
+      "sha256": "b7470c29e694b09c7000fb29f8c70da2b97d1c02144708e213d14955dd9e57dc"
+    }
+  },
+  "algorithm": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\algorithm\\CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+    "relative_copy": "algorithm/CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+    "sha256": "19fd39c96ae42c6a2b19fa4591d13ec5693083406b1c99adeef42d6c3767533b"
+  },
+  "quality": {
+    "all_finite": true,
+    "degenerate_triangles": 0,
+    "original_to_output_orientation_reversals": 0,
+    "minimum_triangle_area": 3.709590679807345e-11,
+    "minimum_original_to_output_triangle_cross_dot": 3.593754241550043e-21,
+    "both_quad_diagonal_orientation_reversals": 30704,
+    "baseline_degenerate_diagonal_triangles": 0,
+    "diagonal_check_is_auxiliary_native_fan_is_rendered": true,
+    "maximum_normal_displacement": 0.05877374863851063,
+    "maximum_tangent_displacement": 0.0065049462305952314,
+    "XY_symmetry_error": 6.0285110237146e-14,
+    "global_self_intersection_checked": false
+  },
+  "application_audit": {
+    "kind": "INDEPENDENT_NEW_WHOLE_METHOD_APPLICATION_AUDIT",
+    "all_requested_methods_applied": true,
+    "actual_new_whole_geometry": true,
+    "generation_receipt_sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769",
+    "new_classification_actually_used": true,
+    "classification_dominant_changed_G3_SOURCE_faces": 3212,
+    "classification_dominant_changed_fraction": 0.13532187394674755,
+    "moved_from22_controls": 5932904,
+    "material_sample_count": 21280,
+    "final_frozen_cap_allow_gain_reconstruction_maximum_error": 0.0,
+    "actual_paired_CC_difference_maximum_error": 0.0,
+    "full_protected22_sample_exact": true,
+    "native_geometry_quality": {
+      "all_finite": true,
+      "degenerate_triangles": 0,
+      "original_to_output_orientation_reversals": 0,
+      "minimum_triangle_area": 3.709590679807345e-11,
+      "minimum_original_to_output_triangle_cross_dot": 3.593754241550043e-21,
+      "both_quad_diagonal_orientation_reversals": 30704,
+      "baseline_degenerate_diagonal_triangles": 0,
+      "diagonal_check_is_auxiliary_native_fan_is_rendered": true,
+      "maximum_normal_displacement": 0.05877374863851063,
+      "maximum_tangent_displacement": 0.0065049462305952314,
+      "XY_symmetry_error": 6.0285110237146e-14,
+      "global_self_intersection_checked": false
+    },
+    "required_method_contributions": {
+      "coarse_actual_CC": {
+        "positive_samples": 16941,
+        "effective_norm_quantiles": [
+          2.1999897868791865e-12,
+          0.0002707082888493682,
+          0.00282215803064247,
+          0.008986604518916376,
+          0.02413799842047907
+        ],
+        "effective_absolute_normal_height_quantiles": [
+          2.1999897868791865e-12,
+          0.0002707082888493682,
+          0.0028221580306424703,
+          0.008986604518916376,
+          0.02413799842047907
+        ]
+      },
+      "fresh_fine": {
+        "positive_samples": 16902,
+        "effective_norm_quantiles": [
+          5.78741387770211e-12,
+          8.560124278424553e-05,
+          0.0007953053313750238,
+          0.002765538703403667,
+          0.00737780043380076
+        ],
+        "effective_absolute_normal_height_quantiles": [
+          5.735335897542073e-12,
+          6.8804599382074e-05,
+          0.0006938990796482152,
+          0.002450991310608129,
+          0.0073089696708233945
+        ]
+      },
+      "paper_actual_Tissue": {
+        "positive_samples": 6351,
+        "effective_norm_quantiles": [
+          1.5578894102800662e-12,
+          0.00011500617171322678,
+          0.003293782908028568,
+          0.016380781425234303,
+          0.05521889679120575
+        ],
+        "effective_absolute_normal_height_quantiles": [
+          1.5578894102800666e-12,
+          0.0001150061717132268,
+          0.0032937829080285684,
+          0.016380781425234307,
+          0.05521889679120574
+        ]
+      }
+    },
+    "selected_material_regions": {
+      "calm": {
+        "controls": 289,
+        "moved_from22": 289,
+        "change_norm_quantiles": [
+          3.0009981038608894e-05,
+          0.0006172485835951563,
+          0.004185796843179124,
+          0.013859321054019788,
+          0.03571901818206262
+        ],
+        "new_method_contributions": {
+          "coarse_actual_CC": 289,
+          "fresh_fine": 289,
+          "paper_actual_Tissue": 0
+        }
+      },
+      "primary_flow": {
+        "controls": 289,
+        "moved_from22": 263,
+        "change_norm_quantiles": [
+          0.0,
+          1.2224256103586619e-05,
+          0.0016389076617867864,
+          0.006754857499864705,
+          0.013613869377791797
+        ],
+        "new_method_contributions": {
+          "coarse_actual_CC": 263,
+          "fresh_fine": 263,
+          "paper_actual_Tissue": 0
+        }
+      },
+      "SOURCE_oval": {
+        "controls": 289,
+        "moved_from22": 289,
+        "change_norm_quantiles": [
+          0.00014363472807899893,
+          0.0011822366385290993,
+          0.007593133301502998,
+          0.017505686252023422,
+          0.020051871845747322
+        ],
+        "new_method_contributions": {
+          "coarse_actual_CC": 289,
+          "fresh_fine": 289,
+          "paper_actual_Tissue": 0
+        }
+      },
+      "SOURCE_crossbar": {
+        "controls": 289,
+        "moved_from22": 289,
+        "change_norm_quantiles": [
+          4.8182842546097005e-05,
+          0.0016172075470808974,
+          0.010102572993498817,
+          0.016768501000232954,
+          0.019649009431469428
+        ],
+        "new_method_contributions": {
+          "coarse_actual_CC": 289,
+          "fresh_fine": 289,
+          "paper_actual_Tissue": 0
+        }
+      },
+      "attached_wall": {
+        "controls": 289,
+        "moved_from22": 121,
+        "change_norm_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.003791945303418376,
+          0.014389336306832498
+        ],
+        "new_method_contributions": {
+          "coarse_actual_CC": 0,
+          "fresh_fine": 0,
+          "paper_actual_Tissue": 225
+        }
+      }
+    },
+    "coarse_operator_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INTERLEAVED_COARSE_RECEIPT.json",
+      "sha256": "31164ae6705c47da0d7f25b76fdbf5f79ee77e4c25e979b0bce85fdf3edfa35f"
+    },
+    "actual_paper_component_audit": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_PAPER_COMPONENT_AUDIT.json",
+      "sha256": "4d18ad5a7708cc3ce911d35f78d646274f3e56bf923227920aa37a6c45bd2a50"
+    },
+    "actual_Tissue_receipt": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+      "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44"
+    },
+    "sample_arrays": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_APPLICATION_SAMPLES.npz",
+      "sha256": "7120d5c325062ca27ac0c5d2322dcc0971979b55fcca4663be2f54e2b9835db7"
+    },
+    "closed_paper_component_topology_transferred_to_whole": false,
+    "whole_receives_single_valued_geometric_relief": true,
+    "attribution_is_frozen_operator_decomposition_not_full_reexecuted_ablation": true,
+    "alternate_control_quad_diagonals_used_for_export_or_render": false,
+    "large_array_policy": "Just-completed generation full hashes and NPY headers reused; selected material coordinates and actual paired CC differences independently read. Exporter verifies every native source byte and PLY readback.",
+    "elapsed_seconds": 5.73184780000156
+  },
+  "readback": {
+    "complete_vertex_readback_exact": true,
+    "complete_triangle_readback_exact": true,
+    "binary_length_exact": true,
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "model_sha256": "ed40809e09ac8afd0a4be6369ada572add7b2dd24fb71aaad7b63be7481363ef",
+    "bytes": 700211493
+  },
+  "source_arrays": {
+    "xyz": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\NATIVE_XYZ.npy",
+      "sha256": "60604f3bb2119b77ecb4b5f7d317c61bce3a7cf593032aa28127bc6d3df30ab4"
+    },
+    "faces": {
+      "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\working_arrays\\NATIVE_FACES.npy",
+      "sha256": "86b6a4e7ac66d9d160a7ee2ac5f26495b5824189cfbfff1a7fec49f77fbf8049"
+    }
+  },
+  "generation_receipt": {
+    "path": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\RECEIPT.json",
+    "sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769"
+  },
+  "elapsed_seconds": 14.19837379999808
+}

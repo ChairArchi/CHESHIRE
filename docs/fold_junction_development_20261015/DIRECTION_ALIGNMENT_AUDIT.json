@@ -1,0 +1,707 @@
+{
+  "kind": "SAVED_G6_EIGHT_QUAD_DIRECTION_ALIGNMENT_AUDIT",
+  "date": "2026-10-15",
+  "sources_and_sha256": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\diagnosis_visible_face_owners_results.json": "e8703357a59efa23be12afcfe1e4a4c4116bd783eced0575d691298885d7593d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\evidence.npz": "1f1984a368ea03cc780d5ca72429837cbf6215ac3f7113c7ef4b1fee96a2685e",
+    "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\generation.json": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\ACTUAL_G6_PARENT.json": "bdd2b3b81a1b5e7b773dd909d18702905c0f60deacd68ee1eb1f8c19db58fb55",
+    "E:\\CHESHIRE_DATA\\experiments\\fold_junction_development_20261015\\trial13_causal_parent_generation\\ACTUAL_G6_PARENT.npz": "24b9b19d19e3ad836f86e082b9e50ca4c935eb46b944925051191152e8f15947",
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\audit_direction_alignment.py": "d65962380f1b5cdd44c0ee8b294de08f55bbbc5073dfe4eb6dbf7b746c690f1e"
+  },
+  "source_hashes_verified_before_and_after": true,
+  "old_ray_receipt_kind": "EXACT_ACTUAL_G6_VISIBLE_FACE_OWNERSHIP_RAYS",
+  "old_ray_camera": {
+    "position": [
+      -18.0,
+      28.0,
+      12.0
+    ],
+    "target": [
+      -0.6,
+      0.72,
+      6.6
+    ],
+    "scale": 1.25,
+    "forward": [
+      0.5304190516471863,
+      -0.831599771976471,
+      -0.16461288928985596
+    ]
+  },
+  "current_geometry": "Preserved replay G06_MIDDLE control surface; intermediate native was not stored.",
+  "evaluation_location": "Centres of the eight G6 quads previously hit by exact native-fan orthographic rays. No new rays are cast.",
+  "measured_parent_family": 4,
+  "measured_parent_parameter_range": [
+    0.13060000000000005,
+    1.2294
+  ],
+  "tangent_derivation": {
+    "material": "Least-squares actual quad XYZ versus local [material t, canonical theta]; X_theta is only the material-row tangent.",
+    "middle_wrinkle": "Fit the G6 MIDDLE parent-wrinkle phase covector [phi_t,phi_theta] on the same quad; push [phi_theta,-phi_t] through the local Jacobian. This is not a separately measured NESTED CHILD/SMALL ornament direction.",
+    "shoulder": "At each query material t/theta, interpolate its physical cross-shoulder arc fraction from the saved 65x129 actual G6 family4 grid. Sample that same arc fraction along all65 theta stations; np.gradient in actual theta then linear interpolation gives the measured shoulder-flow tangent.",
+    "comparison": "Unoriented line angle arccos(abs(dot(unit(a),unit(b)))) in degrees; best edge is minimum over the actual four quad edges."
+  },
+  "angle_summaries": {
+    "best_quad_edge_to_material_theta_degrees": {
+      "count": 8,
+      "minimum": 0.17643554046992352,
+      "median": 1.1481929326861264,
+      "maximum": 4.724681235847812
+    },
+    "phase_isoline_to_material_theta_degrees": {
+      "count": 8,
+      "minimum": 48.62308286098603,
+      "median": 74.28791292860373,
+      "maximum": 87.38666515436256
+    },
+    "best_quad_edge_to_middle_phase_isoline_degrees": {
+      "count": 8,
+      "minimum": 0.9075002101511658,
+      "median": 31.66796794423904,
+      "maximum": 36.73503484021045
+    },
+    "best_quad_edge_to_measured_shoulder_flow_degrees": {
+      "count": 7,
+      "minimum": 1.069228828466461,
+      "median": 26.010750186604323,
+      "maximum": 45.34464716969025
+    },
+    "material_theta_to_measured_shoulder_flow_degrees": {
+      "count": 7,
+      "minimum": 1.4659734816511165,
+      "median": 26.16476662619635,
+      "maximum": 53.60620713330769
+    },
+    "phase_isoline_to_measured_shoulder_flow_degrees": {
+      "count": 7,
+      "minimum": 12.52397811820293,
+      "median": 65.77915369972686,
+      "maximum": 85.91351940078624
+    }
+  },
+  "samples": [
+    {
+      "previous_ray_image_xy": [
+        0.3,
+        0.25
+      ],
+      "G6_quad_id": 710300,
+      "G3_face_id": 11098,
+      "prior_native_triangle_id": 2841203,
+      "prior_native_fan_corner": 3,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        1162206,
+        252880,
+        810250,
+        1490473
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.7008463541666667,
+      "quad_centre_material_theta": 1.1631035574164985,
+      "local_X_t": [
+        14.530329206466194,
+        14.341018589616546,
+        36.720660245449686
+      ],
+      "local_X_theta": [
+        -1.137173222775994,
+        2.680240005210288,
+        -0.8344703750702144
+      ],
+      "local_phase_covector_t_theta": [
+        10.654350372126778,
+        43.27608694170567
+      ],
+      "local_phase_isoline_tangent": [
+        0.3520223374060034,
+        0.3251841252170182,
+        0.8776876202123718
+      ],
+      "affine_material_to_xyz_maximum_residual": 8.2924083569295e-05,
+      "best_quad_edge_to_material_theta_degrees": 0.4601130834842304,
+      "phase_isoline_to_material_theta_degrees": 85.05369693474871,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        1.2115790104053856,
+        85.09755769483489,
+        0.9075002101511658,
+        85.01052371695059
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 0.9075002101511658,
+      "best_middle_phase_edge_index": 2,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        0.0006510416666667407,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.9994983025634407,
+      "adjacent_edge_family_line_angle_degrees": 86.26726395826337,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6812574490060089,
+        0.7186809403653388
+      ],
+      "measured_family4_physical_arc_fraction": 0.5109210428991057,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.427723352653056,
+        0.5939933489636414,
+        -0.6813403224396655
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 29.06396743847554,
+      "material_theta_to_measured_shoulder_flow_degrees": 29.077406320886247,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 56.26070091209531
+    },
+    {
+      "previous_ray_image_xy": [
+        0.28,
+        0.4
+      ],
+      "G6_quad_id": 710192,
+      "G3_face_id": 11096,
+      "prior_native_triangle_id": 2840770,
+      "prior_native_fan_corner": 2,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        1162211,
+        252882,
+        615172,
+        1490446
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6949869791666667,
+      "quad_centre_material_theta": 1.1691106072585014,
+      "local_X_t": [
+        2.3156019707264877,
+        7.514430840904805,
+        28.414859546871142
+      ],
+      "local_X_theta": [
+        -1.0491936479100108,
+        2.179821379554853,
+        -0.5661282361412192
+      ],
+      "local_phase_covector_t_theta": [
+        268.2503842965804,
+        53.86918560117898
+      ],
+      "local_phase_isoline_tangent": [
+        0.2334118589108956,
+        -0.10340212596254494,
+        0.9668644705780568
+      ],
+      "affine_material_to_xyz_maximum_residual": 0.0005992105383279601,
+      "best_quad_edge_to_material_theta_degrees": 4.103394346357367,
+      "phase_isoline_to_material_theta_degrees": 65.82041996740814,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        21.32417991933222,
+        66.55964801735978,
+        24.11209648293427,
+        65.1745409396805
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 21.32417991933222,
+      "best_middle_phase_edge_index": 0,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        0.0006510416666666297,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.7355255156719849,
+      "adjacent_edge_family_line_angle_degrees": 87.35971364090469,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6787790625845417,
+        0.7186305931384966
+      ],
+      "measured_family4_physical_arc_fraction": 0.3443856518156195,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.34466017188517767,
+        0.2774753440983054,
+        -0.8967813553668512
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 33.837052261598885,
+      "material_theta_to_measured_shoulder_flow_degrees": 53.60620713330769,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 12.52397811820293
+    },
+    {
+      "previous_ray_image_xy": [
+        0.32,
+        0.55
+      ],
+      "G6_quad_id": 709596,
+      "G3_face_id": 11087,
+      "prior_native_triangle_id": 2838385,
+      "prior_native_fan_corner": 1,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        1155098,
+        249326,
+        810207,
+        1490297
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6858723958333335,
+      "quad_centre_material_theta": 1.1510500642799113,
+      "local_X_t": [
+        5.96595389745813,
+        1.5640303137396665,
+        17.515512049512374
+      ],
+      "local_X_theta": [
+        -1.3972578622006686,
+        1.5513595183483897,
+        -1.0972654179216699
+      ],
+      "local_phase_covector_t_theta": [
+        -253.3182595998187,
+        60.06601101576688
+      ],
+      "local_phase_isoline_tangent": [
+        0.004811249840856309,
+        0.5324295076650232,
+        0.846460673181306
+      ],
+      "affine_material_to_xyz_maximum_residual": 0.00011248819613481843,
+      "best_quad_edge_to_material_theta_degrees": 0.7356579366877354,
+      "phase_isoline_to_material_theta_degrees": 87.33844099696992,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        87.62172531453096,
+        31.66541802730601,
+        87.05037824349002,
+        33.04984063057215
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 31.66541802730601,
+      "best_middle_phase_edge_index": 1,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        -0.0006510416666666297,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.4488381294105204,
+      "adjacent_edge_family_line_angle_degrees": 55.98350819952087,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6809892046834632,
+        0.7183720432915134
+      ],
+      "measured_family4_physical_arc_fraction": 0.09398608557588368,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.3218154830976412,
+        0.8471980287658601,
+        -0.4227177484964083
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 18.668722426906132,
+      "material_theta_to_measured_shoulder_flow_degrees": 19.171413461407727,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 84.73795585955386
+    },
+    {
+      "previous_ray_image_xy": [
+        0.45,
+        0.35
+      ],
+      "G6_quad_id": 710251,
+      "G3_face_id": 11097,
+      "prior_native_triangle_id": 2841004,
+      "prior_native_fan_corner": 0,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        1174758,
+        372616,
+        943372,
+        1490460
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6969401041666667,
+      "quad_centre_material_theta": 1.0962399108293237,
+      "local_X_t": [
+        -3.9533820376836366,
+        -5.113354831135361,
+        24.98617001789404
+      ],
+      "local_X_theta": [
+        -3.468533639807022,
+        -0.3866359145511392,
+        0.6675138918259326
+      ],
+      "local_phase_covector_t_theta": [
+        333.0185441478587,
+        60.47218359757177
+      ],
+      "local_phase_isoline_tangent": [
+        0.5756293983134889,
+        -0.1134012387553333,
+        0.8098092089165241
+      ],
+      "affine_material_to_xyz_maximum_residual": 0.0016672271329226647,
+      "best_quad_edge_to_material_theta_degrees": 4.724681235847812,
+      "phase_isoline_to_material_theta_degrees": 66.58227083420763,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        62.13668173825417,
+        36.73503484021045,
+        70.15474210827536,
+        50.007690799781074
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 36.73503484021045,
+      "best_middle_phase_edge_index": 1,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        0.0006510416666666297,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.28451617669749896,
+      "adjacent_edge_family_line_angle_degrees": 81.21392543927028,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6764639347898953,
+        0.7234285301682308
+      ],
+      "measured_family4_physical_arc_fraction": 0.4492949941111524,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.9005858481360539,
+        0.284686313182833,
+        0.3284795780918966
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 22.10513676886629,
+      "material_theta_to_measured_shoulder_flow_degrees": 24.517054026115886,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 73.46017779489942
+    },
+    {
+      "previous_ray_image_xy": [
+        0.5,
+        0.5
+      ],
+      "G6_quad_id": 709774,
+      "G3_face_id": 11090,
+      "prior_native_triangle_id": 2839097,
+      "prior_native_fan_corner": 1,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        810221,
+        272072,
+        1200590,
+        1490341
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6839192708333335,
+      "quad_centre_material_theta": 1.0531097638733464,
+      "local_X_t": [
+        11.257141806709333,
+        -3.0123703799841484,
+        18.176838341995587
+      ],
+      "local_X_theta": [
+        -2.470954355822985,
+        1.2503228293575859,
+        -0.607425673099955
+      ],
+      "local_phase_covector_t_theta": [
+        -333.37440299876477,
+        73.52844144930343
+      ],
+      "local_phase_isoline_tangent": [
+        0.003447542390614515,
+        0.1697464008724509,
+        0.9854817470873392
+      ],
+      "affine_material_to_xyz_maximum_residual": 5.1126653773561375e-05,
+      "best_quad_edge_to_material_theta_degrees": 0.17643554046992352,
+      "phase_isoline_to_material_theta_degrees": 81.99355502299983,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        35.72220317419579,
+        81.82266314436525,
+        36.52468104901884,
+        82.16277190633473
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 35.72220317419579,
+      "best_middle_phase_edge_index": 0,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        -0.0006510416666666297,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.3182246580009781,
+      "adjacent_edge_family_line_angle_degrees": 46.100482281475195,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6806060565179234,
+        0.7338043668851018
+      ],
+      "measured_family4_physical_arc_fraction": 0.07065059825650308,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.5938700816535764,
+        0.6024492754581177,
+        -0.5332665343116552
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 26.010750186604323,
+      "material_theta_to_measured_shoulder_flow_degrees": 26.16476662619635,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 64.82982495189282
+    },
+    {
+      "previous_ray_image_xy": [
+        0.65,
+        0.5
+      ],
+      "G6_quad_id": 705529,
+      "G3_face_id": 11023,
+      "prior_native_triangle_id": 2822119,
+      "prior_native_fan_corner": 3,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        637402,
+        49944,
+        637405,
+        1489280
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6826171875000001,
+      "quad_centre_material_theta": 0.7643841634449308,
+      "local_X_t": [
+        9.726584153163982,
+        6.988202719985998,
+        17.77533652484433
+      ],
+      "local_X_theta": [
+        0.15066986857735318,
+        0.1473258130065228,
+        -1.0118165122641671
+      ],
+      "local_phase_covector_t_theta": [
+        -42.10217792118273,
+        5.478153533530036
+      ],
+      "local_phase_isoline_tangent": [
+        0.6454288938216493,
+        0.48152519682697925,
+        0.5929207601702786
+      ],
+      "affine_material_to_xyz_maximum_residual": 9.536240001771334e-05,
+      "best_quad_edge_to_material_theta_degrees": 1.5607279286845175,
+      "phase_isoline_to_material_theta_degrees": 65.30841113670434,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        65.90309363031163,
+        19.25916404334414,
+        64.71524971902896,
+        20.113873470234182
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 19.25916404334414,
+      "best_middle_phase_edge_index": 1,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        0.0006510416666667407,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.7824089834351127,
+      "adjacent_edge_family_line_angle_degrees": 46.689957930631714,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.6655401529324568,
+        0.7799983886971117
+      ],
+      "measured_family4_physical_arc_fraction": 0.18681513625693882,
+      "measured_family4_shoulder_flow_tangent": [
+        0.13716434346246226,
+        0.1665027308845997,
+        -0.9764541891407308
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 1.069228828466461,
+      "material_theta_to_measured_shoulder_flow_degrees": 1.4659734816511165,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 65.77915369972686
+    },
+    {
+      "previous_ray_image_xy": [
+        0.8,
+        0.5
+      ],
+      "G6_quad_id": 704450,
+      "G3_face_id": 11007,
+      "prior_native_triangle_id": 2817802,
+      "prior_native_fan_corner": 2,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        637311,
+        160968,
+        978383,
+        1489010
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6702473958333335,
+      "quad_centre_material_theta": 0.5424627160497286,
+      "local_X_t": [
+        -3.7009533804721504,
+        -0.25553440755395346,
+        18.231920118121117
+      ],
+      "local_X_theta": [
+        -1.298236281174225,
+        0.3730200636610547,
+        -0.4978433981144768
+      ],
+      "local_phase_covector_t_theta": [
+        127.80471161847443,
+        14.00556315487284
+      ],
+      "local_phase_isoline_tangent": [
+        0.3329844967662647,
+        -0.14959077590940792,
+        0.9309908295338567
+      ],
+      "affine_material_to_xyz_maximum_residual": 3.8332101144087665e-05,
+      "best_quad_edge_to_material_theta_degrees": 0.2483270696958672,
+      "phase_isoline_to_material_theta_degrees": 48.62308286098603,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        32.31536600941307,
+        48.50301761070981,
+        31.670517861172073,
+        48.74212295139868
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 31.670517861172073,
+      "best_middle_phase_edge_index": 2,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        -0.0006510416666665186,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.44867904327902774,
+      "adjacent_edge_family_line_angle_degrees": 80.81711621838599,
+      "inside_measured_family4_shoulder": true,
+      "measured_family4_material_t_range": [
+        0.653243447878866,
+        0.7964014783752338
+      ],
+      "measured_family4_physical_arc_fraction": 0.09741731860368652,
+      "measured_family4_shoulder_flow_tangent": [
+        -0.880359331463174,
+        0.21018768084185263,
+        0.4251924109483104
+      ],
+      "best_quad_edge_to_measured_shoulder_flow_degrees": 45.34464716969025,
+      "material_theta_to_measured_shoulder_flow_degrees": 45.46540105442003,
+      "phase_isoline_to_measured_shoulder_flow_degrees": 85.91351940078624
+    },
+    {
+      "previous_ray_image_xy": [
+        0.4,
+        0.7
+      ],
+      "G6_quad_id": 709166,
+      "G3_face_id": 11080,
+      "prior_native_triangle_id": 2836665,
+      "prior_native_fan_corner": 1,
+      "event_owner": 0,
+      "role": "SOURCE",
+      "G6_quad_vertex_ids": [
+        810179,
+        252766,
+        1161979,
+        1490189
+      ],
+      "canonical_reflection_signs": [
+        -1.0,
+        1.0,
+        1.0
+      ],
+      "quad_centre_material_t": 0.6689453125000002,
+      "quad_centre_material_theta": 1.0654669110492445,
+      "local_X_t": [
+        1.1138663276567256,
+        -1.7196984784279474,
+        12.584305641318387
+      ],
+      "local_X_theta": [
+        -1.7855186787867519,
+        0.7931883585515197,
+        -1.134283222619237
+      ],
+      "local_phase_covector_t_theta": [
+        -228.91014137200128,
+        70.43466241828372
+      ],
+      "local_phase_isoline_tangent": [
+        -0.46451704932137283,
+        0.08501131163542272,
+        0.8814743262193121
+      ],
+      "affine_material_to_xyz_maximum_residual": 0.0002396657120885243,
+      "best_quad_edge_to_material_theta_degrees": 1.93488352147986,
+      "phase_isoline_to_material_theta_degrees": 87.38666515436256,
+      "edge_angles_to_middle_phase_isoline_degrees": [
+        87.62441760912093,
+        34.60308031069697,
+        87.14936530039313,
+        35.89288894654438
+      ],
+      "best_quad_edge_to_middle_phase_isoline_degrees": 34.60308031069697,
+      "best_middle_phase_edge_index": 1,
+      "best_middle_phase_edge_material_family": "constant_theta_t_row",
+      "best_middle_phase_edge_material_delta": [
+        -0.0006510416666667407,
+        0.0
+      ],
+      "absolute_cos_2_best_middle_phase_edge_angle": 0.35500644497539546,
+      "adjacent_edge_family_line_angle_degrees": 53.38125771647826,
+      "inside_measured_family4_shoulder": false,
+      "measured_family4_material_t_range": [
+        0.677756108155982,
+        0.733901403911114
+      ]
+    }
+  ],
+  "interpretation": "These sampled quad rows retain material-theta orientation, while G6 MIDDLE parent-wrinkle phase isolines usually cross those rows. The minimum angle to all four native quad edges separately checks whether the other edge family follows MIDDLE. The measured original-family4 macro shoulder-flow direction can differ materially from either. This establishes differences between those reference directions; it does not establish wrong placement of NESTED ornaments relative to their MIDDLE wrinkle parent or the need for retopology.",
+  "hierarchy_semantics": {
+    "original_macro": "Original eight G0/G2 PCHIP families and actual measured family4 shoulder are macro references, not automatically the parent intended by the user.",
+    "middle_wrinkle": "G6 MIDDLE phase itself generates a distinct wrinkle layer; its isolines were measured in this audit.",
+    "nested_child_small": "NESTED CHILD and SMALL use scalar functions of the same wrapped MIDDLE phase. Their ideal unmodulated isolines are parallel to MIDDLE-phase isolines wherever the derivative is nonzero and the phase is smooth. Actual resulting ridge directions were not measured.",
+    "attached_ornament": "Older owner>0 CAP/WALL/directional attachments were not sampled: all eight audited faces have SOURCE owner0."
+  },
+  "causal_scope": "No automatic conclusion that MIDDLE wrinkles should align with original macro rails. For CHILD/SMALL, phase orientation is inherited; absence of an independent along-ribbon forming coordinate distinguishes parallel nested profiles from branching anatomy, but does not alone prove an aesthetic defect.",
+  "limitations": [
+    "Eight selected visible hit quads are not a global or area-weighted statistic.",
+    "Material X_theta is not assumed to be the true mature S-fold tangent.",
+    "The family4 shoulder is a saved measured parent lattice, not independently estimated principal curvature or ground-truth ridge direction; detection and sampling variation affect its derivative.",
+    "Only seven sample quad centres lie inside this saved family4 shoulder; the eighth has no shoulder-flow comparison.",
+    "The measured MIDDLE phase is a G6 parent-wrinkle field, not an independent later ornament field. CHILD/SMALL theoretical level sets are functions of this same phase; actual final crest orientation is not measured.",
+    "Local quad affine Jacobians and piecewise-linear shoulder interpolation are numerical approximations on existing geometry.",
+    "No model generation, new raycast, render, geometry edit, global retopology or beauty test is performed."
+  ],
+  "audit_history": {
+    "initial_numerical_execution_script_sha256": "9bb261be6756c7daa474e9dc9f1c06c7eea572ae1fe998aeddcabaed2a2ccd91",
+    "semantic_correction": "MIDDLE is itself a parent wrinkle layer. This audit does not independently measure NESTED CHILD/SMALL final ridge directions.",
+    "additional_same_eight_quad_pass": "Added minimum native-edge angle to MIDDLE isoline, all four edge angles and best-edge material family. No new raycast/model/render."
+  }
+}

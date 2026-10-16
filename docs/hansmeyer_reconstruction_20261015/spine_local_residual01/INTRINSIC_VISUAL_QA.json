@@ -1,0 +1,55 @@
+{
+  "schema": "CHESHIRE_LOCAL_FORMATION_VISUAL_CAUSAL_QA_V1",
+  "status": "diagnostic_complete_shape_still_not_adequate",
+  "component": 40,
+  "selected_cell_interval": [
+    32,
+    35
+  ],
+  "manifest": {
+    "path": "docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\manifest.json",
+    "sha256": "8b878d633010588a6ad18236f4f741f3b7a356b60dcfc95a451fe4a7e197f6cf"
+  },
+  "numerical_diagnostic": {
+    "path": "docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\RESULT.json",
+    "sha256": "de6840f19f2dd04dca47c8b602a9f79a41d78c6530dcadca4ecf67034e6b8fc0"
+  },
+  "render_receipt": {
+    "path": "docs\\hansmeyer_reconstruction_20261015\\spine_local_residual01\\INTRINSIC_RENDER\\RECEIPT.json",
+    "sha256": "8f9a7a89447f649ca353368ef4ff308cae04731330e5f72f211415e371a439df"
+  },
+  "observed_actual_states": [
+    "NEUTRAL",
+    "FORMED",
+    "CARRIER",
+    "DELIVERED"
+  ],
+  "observations": {
+    "NEUTRAL": "Smooth, curved and strongly varying ribbon section; source geometry itself dominates the silhouette.",
+    "FORMED": "Actual cached formed geometry shows longitudinal grooves and local transverse kinks/rises on the ribbon. Broad deep enclosed coffer compartments and a clear serial node/neck structure are not strongly established before adding the carrier residual.",
+    "CARRIER": "The true G7 native patch differs from the neutral scaffold in larger bulges and section orientation, as well as local corrugations. This is not solely a fine texture difference.",
+    "DELIVERED": "The delivered geometry retains some formed ridge/groove changes but also inherits carrier bulges, local clumps and corrugations. It does not reveal a previously bold clean coffer chain."
+  },
+  "causal_interpretation": [
+    "A carrier-residual-only explanation is insufficient: the actual formed absolute geometry is already weak in the intended coffer morphology.",
+    "The carrier-minus-neutral difference visibly contributes further shape changes. It includes generation/carrier geometry and normal differences; no frequency decomposition has proved it is only fine residual.",
+    "Numerical differential pocket depth is not an absolute geometric pocket certificate on a convex, curved source section."
+  ],
+  "limitations": [
+    "One intrinsic representative three-cell component40 interval was selected near median nominal height/base. This is an engineering diagnosis, not a beauty-selected region or whole-column verdict.",
+    "NEUTRAL/FORMED use actual cached local CC quad fans. CARRIER/DELIVERED use exact original native fan subsets with intentionally different topology.",
+    "Jagged open patch boundaries belong to extraction and are not counted as newly generated defects.",
+    "This alternate local intrinsic view does not reverse the rejected fixed whole-column close result or prove self-intersection absence."
+  ],
+  "next_requirement": "Establish visibly adequate absolute formed section and connected compartment mass on the actual curved source before any further full-column generation; assess actual-carrier normal/section compatibility separately.",
+  "same_camera_material_lights_resolution": true,
+  "geometry_processing": false,
+  "new_artistic_models": 0,
+  "full_column_renders": 0,
+  "baseline_full_rerenders": 0,
+  "user_images_emitted": false,
+  "beauty_adoption": false,
+  "package_created": false,
+  "renderer_sha256": "480aa10f8bf3ceb048ccc0eda016494b9df25fc03c5312891d766ed883a86b30",
+  "Blender_exit_code": 0
+}

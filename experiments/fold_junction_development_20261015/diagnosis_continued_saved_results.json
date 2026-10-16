@@ -1,0 +1,178 @@
+{
+  "kind": "READ_ONLY_PRESERVED_CONTINUED_G4_CAUSAL_AUDIT",
+  "date": "2026-10-15",
+  "generated_models": 0,
+  "generated_renders": 0,
+  "source_arrays_modified": false,
+  "source_bindings": {
+    "E:\\CHESHIRE_DATA\\column_detail_20261012\\CONTINUED\\G04\\operation_fields.npz": "0205802b69b852b45f2f1afd96a10dcc11cfefa449957665e4ce29203044b1a0",
+    "E:\\CHESHIRE_DATA\\column_detail_20261012\\CONTINUED\\G04\\control_quad.npz": "7542659440dffa7fd32ed3b71a29a435828da42db3fb6dc5e3d7f7074b7065da",
+    "E:\\CHESHIRE_DATA\\column_detail_20261012\\CONTINUED\\G04\\generation.json": "0b1b17522e021e5b9335415c0974381bb8ab15ad7b31cf49616c1002b0941d29",
+    "E:\\CHESHIRE_DATA\\directional_growth_20261012\\OVERLAP\\G03\\control_quad.npz": "317b50a76826491a7769276811da1493513ccf9534299a08e868b473bf3681e6"
+  },
+  "script_sha256": "6e33f8e83b7038844c158684f43c1a46d2068ab07c52008f7caf4c46c9bc6dbd",
+  "correspondence": {
+    "parent_generation": 3,
+    "output_generation": 4,
+    "parent_vertices": 25602,
+    "parent_quads": 25600,
+    "parent_edges": 51200,
+    "output_vertices": 102402,
+    "output_quads": 102400,
+    "child_edges": 204800,
+    "actual_parent_prefix_exact": true,
+    "actual_parent_quads_exact": true,
+    "actual_child_old_corners_exact": true,
+    "post_task36_equals_interpolated_plus_saved_task_delta_exact": true,
+    "actual_output_equals_post_task36_plus_saved_field_delta_exact": true
+  },
+  "quantile_probabilities": [
+    0.0,
+    0.1,
+    0.5,
+    0.9,
+    0.99,
+    1.0
+  ],
+  "grid": {
+    "coarse_spacing": [
+      0.06,
+      0.06,
+      0.0625
+    ],
+    "fine_spacing": [
+      0.03,
+      0.03,
+      0.03125
+    ],
+    "coarse_spacing_source": "experiments/column_development_20261011/target_repeat.py:112",
+    "fine_spacing_source": "Actual CONTINUED G4 generation.json field_step.local_target_logs",
+    "field_iterations": 18,
+    "fraction": 0.55,
+    "field_budget": 0.16,
+    "target_factor": 2,
+    "target_resolution_change": "G3 lead used factor3; G4/G5 use factor2, a coarser local target search. Same finite classifier and coarse fallback; no monotonic target-precision claim."
+  },
+  "input_edge_lengths": [
+    0.0005344467268821267,
+    0.027092706572067665,
+    0.06287333120618999,
+    0.11910313538057656,
+    0.25196357436631195,
+    0.8429301881837039
+  ],
+  "postTask36_child_edge_lengths": [
+    0.0007345429073686749,
+    0.014890399918892044,
+    0.03301669151612194,
+    0.06207482152181829,
+    0.12567446308727984,
+    0.43850201746490375
+  ],
+  "fraction_child_edges_under_fine_grid03": 0.42697265625,
+  "fraction_child_edges_under_coarse_grid06": 0.888671875,
+  "active_field_neighbor_delta": [
+    0.00022365937862612692,
+    0.006105495089844459,
+    0.014929259685587268,
+    0.03486619420252927,
+    0.08908595628397903,
+    0.3029959732492437
+  ],
+  "active_field_neighbor_delta_over_edge": [
+    0.00421355767125221,
+    0.19254378533059655,
+    0.5131147840067023,
+    0.8946917102556798,
+    2.3880846387686976,
+    10.921122144884952
+  ],
+  "task_neighbor_delta_over_edge": [
+    0.0012626532857989037,
+    0.15105336320095364,
+    0.34274863375337683,
+    0.5819792312573041,
+    1.0250175598190239,
+    6.217466292913099
+  ],
+  "active_canonical_points": 8277,
+  "unique_fine_targets": 3224,
+  "target_uniqueness_rounding_decimal_places": 10,
+  "birth": {
+    "old_V": {
+      "count": 25602,
+      "task_norm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "field_norm": [
+        0.0,
+        0.0,
+        0.0,
+        0.02464524368442154,
+        0.06492266571976739,
+        0.16000000000000003
+      ]
+    },
+    "new_E": {
+      "count": 51200,
+      "task_norm": [
+        6.215166637402181e-05,
+        0.00395930935860149,
+        0.009795100993224459,
+        0.01776380989274128,
+        0.03160076419152646,
+        0.07247049680554898
+      ],
+      "field_norm": [
+        0.0,
+        0.0,
+        0.0,
+        0.02907682018629438,
+        0.08163665884498948,
+        0.16000000000000003
+      ]
+    },
+    "new_F": {
+      "count": 25600,
+      "task_norm": [
+        0.0,
+        0.00659814437537135,
+        0.019142780616633343,
+        0.034223163261758796,
+        0.05740783741260361,
+        0.1537318952298142
+      ],
+      "field_norm": [
+        0.0,
+        0.0,
+        0.0,
+        0.03193457248087451,
+        0.08603338024345586,
+        0.16
+      ]
+    }
+  },
+  "face_bend": [
+    0.0013900235905882352,
+    0.0830146480416882,
+    0.25719853366369955,
+    0.6815952452224461,
+    1.0728746930714477,
+    1.8929736954727927
+  ],
+  "support_radius": [
+    0.0002716228364063073,
+    0.006592471282002108,
+    0.01967926992008054,
+    0.035934434123340596,
+    0.060905274253243644,
+    0.15464691778908252
+  ],
+  "interpretation": "Observed fixed target spacing, birth-class contrast and neighbor displacement differences support plausible grid/crust mechanisms. This is not a one-factor causal ablation or an aesthetic score. The prior continuation starts at OVERLAP G3, not the current accepted G6; G3 factor3 changed to coarser G4 factor2. It cannot establish that every later generative continuation fails.",
+  "source_file_hashes_unchanged_after_read": true
+}

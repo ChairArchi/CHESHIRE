@@ -1,0 +1,179 @@
+{
+  "kind": "CACHED_ABSOLUTE_FORM_AND_ACTUAL_NATIVE_SECTION",
+  "parents": [
+    {
+      "component": 25,
+      "columns": [
+        "neutral",
+        "formed",
+        "carrier",
+        "delivered"
+      ],
+      "definition": "At identical carried-arc stations, +/-u=.5 sidewall minus u=0 centre, projected on the operator pooled source N. Both-wall positivity is necessary for a transverse enclosed interval, not a full3D cavity certificate.",
+      "phases": {
+        "NODE": {
+          "stations": 11,
+          "mean_wall_minus_centre_median": [
+            -0.020481606388689125,
+            -0.016350379422400814,
+            -0.020698360967850302,
+            -0.01686750952601375
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.021290794199285253,
+            -0.019577157834461484,
+            -0.02368640052444506,
+            -0.018950819412431083
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "FLANK": {
+          "stations": 25,
+          "mean_wall_minus_centre_median": [
+            -0.01897208074845855,
+            -0.0036382745613958573,
+            -0.01970741819302045,
+            -0.005258224718035142
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.021750708441982472,
+            -0.006761998124568681,
+            -0.023039080384090655,
+            -0.009396232084637062
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.12,
+            0.0,
+            0.12
+          ]
+        },
+        "NECK": {
+          "stations": 10,
+          "mean_wall_minus_centre_median": [
+            -0.016333878751306985,
+            0.0012632383528410876,
+            -0.018554516246184233,
+            -0.0019290049356099172
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.019022079640183258,
+            -0.0015058517719021022,
+            -0.02224244117314997,
+            -0.0052209049612293845
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.4,
+            0.0,
+            0.4
+          ]
+        }
+      },
+      "actual_native_vs_raw_delta_core_difference": {
+        "count": 782,
+        "values": [
+          1.7143498265034597e-05,
+          0.00012201759929144269,
+          0.0005175076486749353,
+          0.001827196465869505,
+          0.0033119763100530994,
+          0.006521638885106555
+        ]
+      },
+      "difference_qualification": "Outer-support differences include the deliberately reapplied C2 taper; the core <=.5 statistic avoids that across-taper."
+    },
+    {
+      "component": 40,
+      "columns": [
+        "neutral",
+        "formed",
+        "carrier",
+        "delivered"
+      ],
+      "definition": "At identical carried-arc stations, +/-u=.5 sidewall minus u=0 centre, projected on the operator pooled source N. Both-wall positivity is necessary for a transverse enclosed interval, not a full3D cavity certificate.",
+      "phases": {
+        "NODE": {
+          "stations": 17,
+          "mean_wall_minus_centre_median": [
+            -0.00930620073056185,
+            -0.004483144312773687,
+            -0.01394522720356764,
+            -0.010458372971017968
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.01663494324498449,
+            -0.014846589988063314,
+            -0.0267341367554663,
+            -0.024368019856513354
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.0,
+            0.0,
+            0.058823529411764705
+          ]
+        },
+        "FLANK": {
+          "stations": 31,
+          "mean_wall_minus_centre_median": [
+            -0.012318468713821387,
+            0.0017564108176867797,
+            -0.01865840482202791,
+            -0.00397603117668627
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.017322786325673557,
+            -0.0014586289531971365,
+            -0.030728635694884644,
+            -0.014904212037353167
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.3548387096774194,
+            0.0,
+            0.16129032258064516
+          ]
+        },
+        "NECK": {
+          "stations": 14,
+          "mean_wall_minus_centre_median": [
+            -0.012710039001460253,
+            0.010194344077815441,
+            -0.019115868032840624,
+            0.0036800349192586167
+          ],
+          "minimum_wall_minus_centre_median": [
+            -0.01925576970080005,
+            0.004872323435593233,
+            -0.025956818467629827,
+            -0.003423929322626068
+          ],
+          "both_walls_above_centre_fraction": [
+            0.0,
+            0.7142857142857143,
+            0.0,
+            0.21428571428571427
+          ]
+        }
+      },
+      "actual_native_vs_raw_delta_core_difference": {
+        "count": 1054,
+        "values": [
+          3.1727040390995616e-06,
+          8.409474730278734e-05,
+          0.0003874513232351196,
+          0.0014955735641753627,
+          0.0042194006318105205,
+          0.006962650107324323
+        ]
+      },
+      "difference_qualification": "Outer-support differences include the deliberately reapplied C2 taper; the core <=.5 statistic avoids that across-taper."
+    }
+  ]
+}

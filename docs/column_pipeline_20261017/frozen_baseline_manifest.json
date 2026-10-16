@@ -1,0 +1,1084 @@
+{
+  "schema": "CHESHIRE_RETAINED_ORIGINAL_G7_PIPELINE_CHECKPOINT_V1",
+  "status": "PRESERVED",
+  "preserved_at_utc": "2026-10-16T22:25:09.529024+00:00",
+  "baseline": "G7_GENERATION_MIRROR_HYBRID_FULL",
+  "latest_instruction": "Retain the existing liked original pipeline and checkpoint GitHub; stop new overlap or replay generation.",
+  "external_model": {
+    "path": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\CHESHIRE_COLUMN_G7_GENERATION_MIRROR_HYBRID_FULL.ply",
+    "recorded_sha256": "ed40809e09ac8afd0a4be6369ada572add7b2dd24fb71aaad7b63be7481363ef",
+    "bytes": 700211493,
+    "vertices": 14004226,
+    "triangles": 28008448,
+    "large_file_copied": false,
+    "large_file_rehashed_by_this_tool": false,
+    "digest_provenance": "Agreement of original MODEL_RECEIPT.json and complete MODEL_READBACK.json; only current file existence/size checked here"
+  },
+  "preserved_files": [
+    {
+      "path": "algorithm/CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+      "sha256": "19fd39c96ae42c6a2b19fa4591d13ec5693083406b1c99adeef42d6c3767533b",
+      "bytes": 2235669,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "algorithm/ALGORITHM_BUNDLE_MANIFEST.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\ALGORITHM_BUNDLE_MANIFEST.json",
+      "sha256": "b7470c29e694b09c7000fb29f8c70da2b97d1c02144708e213d14955dd9e57dc",
+      "bytes": 15224,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/export/MODEL_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\MODEL_RECEIPT.json",
+      "sha256": "d7e4b593422bcad83815ebf5a622065f2b311e39fad181e94377b0bf569ddc70",
+      "bytes": 32307,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/export/MODEL_READBACK.json",
+      "source": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\MODEL_READBACK.json",
+      "sha256": "294d5e2904b73ada4d52d93bb8d073816e1934b9fb7502fd6848e7e991e4138d",
+      "bytes": 284,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\RECEIPT.json",
+      "sha256": "cd9b5c22fefe9b7abf80938a588168c6e22ffc4f50423130c12e8f943853a769",
+      "bytes": 393558,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/FORMATION.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FORMATION.json",
+      "sha256": "6722e9422c2ef30ca77a0d469d1f8430e73e50cc60b2d70abaee1f9bc6665613",
+      "bytes": 170750,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/CLASSIFICATION.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\CLASSIFICATION.json",
+      "sha256": "b4543df80fa8c4653ddcc97067cd7182f13e3308675d57a7f7e14a877d994b98",
+      "bytes": 133547,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/INTERLEAVED_COARSE_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INTERLEAVED_COARSE_RECEIPT.json",
+      "sha256": "31164ae6705c47da0d7f25b76fdbf5f79ee77e4c25e979b0bce85fdf3edfa35f",
+      "bytes": 15008,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/GEOMETRY_QUALITY.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\GEOMETRY_QUALITY.json",
+      "sha256": "4c68e741dbeb381669fa304a8babae516a4c2a5b93569103d3dfddf013f834ce",
+      "bytes": 603,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/PRESERVATION_AUDIT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\PRESERVATION_AUDIT.json",
+      "sha256": "1deb688a530c8a5f7c38533866ed5846105cfbdc74a7a2f4d3377fddcf0a2cd3",
+      "bytes": 738,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/COARSE_STAGE_RECOVERY.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\COARSE_STAGE_RECOVERY.json",
+      "sha256": "e57e20f58751daed9d184632957b2f13c31d36fc23442914a770378c8c0415c7",
+      "bytes": 3535,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/FINAL_RECOVERY.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\FINAL_RECOVERY.json",
+      "sha256": "f6e84f286e1cc9b19782c084f906b1de816a0023e46f76e1257d2dca834ebdaf",
+      "bytes": 3821,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/INDEPENDENT_APPLICATION_AUDIT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_APPLICATION_AUDIT.json",
+      "sha256": "b1922986ca50b8b4f8a07d5c81b264add24cc911b94a31c8dbcbf31a39cb7655",
+      "bytes": 6426,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/INDEPENDENT_CLASSIFICATION_AUDIT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_CLASSIFICATION_AUDIT.json",
+      "sha256": "8ea0ab254ac2d98dd9515bec28bf92b17d7ca629e452c1da00478381347f9a8f",
+      "bytes": 1959,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/INDEPENDENT_PAPER_COMPONENT_AUDIT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_PAPER_COMPONENT_AUDIT.json",
+      "sha256": "4d18ad5a7708cc3ce911d35f78d646274f3e56bf923227920aa37a6c45bd2a50",
+      "bytes": 5337,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/INDEPENDENT_VERIFICATION_PROTOCOL.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\INDEPENDENT_VERIFICATION_PROTOCOL.json",
+      "sha256": "166eb10338091244631cbc9bab0836a99de1599ea11893b83c12278f2936ae90",
+      "bytes": 4531,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/history_classification/CLASSIFICATION_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\CLASSIFICATION_RECEIPT.json",
+      "sha256": "fafb39db950e17f99100e34e7824d180e70e884372cdb936b7f28ea424d5b241",
+      "bytes": 122269,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/history_classification/TISSUE_HOSTS.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\TISSUE_HOSTS.json",
+      "sha256": "1f7b3875653a08ab883027fe198ccb8f2db2d9530208f0d7efaf9fd9f8175a41",
+      "bytes": 1406,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/component/PAPER_COMPONENT_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\PAPER_COMPONENT_RECEIPT.json",
+      "sha256": "47c6711dcc08021b50ae919c6cff2e083aebac6752ac9b7b570f40f17c89b76d",
+      "bytes": 37781,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/component/SEED_TO_SOLID_VALIDATION.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\component\\SEED_TO_SOLID_VALIDATION.json",
+      "sha256": "0152e5cc8b64babc3daae1ef356240b66a3518d0427c7f26c66bac761ac5f816",
+      "bytes": 2851,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/paper_tissue/ACTUAL_TISSUE_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_RECEIPT.json",
+      "sha256": "74723bb4bebdf74a9469f8e2e52477a1476337fa63711a7bcd39e0b86fa62e44",
+      "bytes": 3788,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/paper_tissue/ACTUAL_TISSUE_GENERATED_CELL.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\ACTUAL_TISSUE_GENERATED_CELL.json",
+      "sha256": "cd0da7b293ae1ad80b69cacab638e4fa14bc4988854bb34a55c506841b7734ed",
+      "bytes": 131926,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/paper_tissue/paper_derived_component.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue\\paper_derived_component.json",
+      "sha256": "bc9b7fa2460a6e5e09aed0edf2b3fb0d946faeb45713037c591cf02ffe1b79e7",
+      "bytes": 141431,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/paper_tissue_native/RAW_TISSUE_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\paper_tissue_native\\RAW_TISSUE_RECEIPT.json",
+      "sha256": "850639555b6756d7c74339adf1fcb76808edcfb53e711391cea0ea6f4e8106bc",
+      "bytes": 5597,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/hybrid/MACRO_FLOW_QA/MACRO_FLOW_QA.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\MACRO_FLOW_QA\\MACRO_FLOW_QA.json",
+      "sha256": "8daaa733647d7b806b3b60309d1914d33b7180b35bc3633e7556420f0475bd20",
+      "bytes": 9140,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/NESTED_RECEIPT.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\RECEIPT.json",
+      "sha256": "ab212bf9222980a25cb6d0c5ca31aa82ad0fe5f48b64864d9ed8e8d5fbb02524",
+      "bytes": 27523,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/RECIPE.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\RECIPE.json",
+      "sha256": "dcce0383e566e77821d08cead95bb5856eb290b9389fd2a05df1f5da1ef89f97",
+      "bytes": 11521,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "preview/original_front.png",
+      "source": "E:\\CHESHIRE_DATA\\exports\\20261016\\COLUMN_GENERATION_MIRROR_HYBRID\\gray\\front.png",
+      "sha256": "b1a270b9dd57598565c2fd219d88cbde7779110984a8b0aef10bde769b1c0d83",
+      "bytes": 929213,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G00_INPUT/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G00_INPUT\\generation.json",
+      "sha256": "5f14660b02c223931942f84992b8850e73ffe8630cabd208047d69e809e66ac9",
+      "bytes": 16708,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G01_ANCESTRY/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G01_ANCESTRY\\generation.json",
+      "sha256": "1c559a12b3310712ee895b0490baef2abd24ff0ba000f4aebdd239f020f3e2db",
+      "bytes": 20631,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G02_OVERLAP/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G02_OVERLAP\\generation.json",
+      "sha256": "0b268b40a06f309b0d98561c66ecc3c6ae990ac7ccf396ca2a11d4c4e797299b",
+      "bytes": 26642,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G03_WALL/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_WALL\\generation.json",
+      "sha256": "ae85933896d4a5293b6e2f0665b394fa4f893511583a5848a19ac6202cbfa879",
+      "bytes": 15487,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G03_ROOT/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_ROOT\\generation.json",
+      "sha256": "1cbfc79c6552da8b540a27d02c4246c161f554a4e831c73599bf5a00ca349e6f",
+      "bytes": 17202,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G03_SIDEWALL/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\generation.json",
+      "sha256": "c79e2227de6ffe60b278f8a79838c14fe8795eb8c3f221158e57156d0329d47b",
+      "bytes": 16628,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G04_NEUTRAL/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL\\generation.json",
+      "sha256": "2b676e3cc450fe215877e77b74d2d954f6b622b39fa3737f389aaee5b94d56b6",
+      "bytes": 14925,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G05_DIRECTIONAL/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL\\generation.json",
+      "sha256": "768c0a3c7a88d78e12baef0f0bc9063c0d4c522cf6ffb05df27a3dc2d10a628d",
+      "bytes": 20406,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G06_DEPTH08/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\generation.json",
+      "sha256": "9b7c3bb53f1d6128c969b1143cb96fa1c50852084ee1961b0f031e2f20d59534",
+      "bytes": 19281,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G06_MIDDLE/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\generation.json",
+      "sha256": "a575ebb780d4de3c5fd4e4ee3b6724fe83721cde88c39e8abb64b3c2785ad685",
+      "bytes": 18644,
+      "copy_sha_verified": true
+    },
+    {
+      "path": "provenance/original_process/G07_SURFACE/generation.json",
+      "source": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\generation.json",
+      "sha256": "f79197a633cf5809e8c734c3e5871a17975d80f2e03e6577698a231b91661ddd",
+      "bytes": 14194,
+      "copy_sha_verified": true
+    }
+  ],
+  "copied_file_count": 39,
+  "copied_bytes": 4648491,
+  "algorithm_archive": {
+    "path": "algorithm/CHESHIRE_GENERATION_MIRROR_PIPELINE_PROTOTYPE.zip",
+    "sha256": "19fd39c96ae42c6a2b19fa4591d13ec5693083406b1c99adeef42d6c3767533b",
+    "all_member_CRC_verified": true,
+    "manifest_member_SHA_verified": 96,
+    "duplicate_member_names": 0,
+    "standalone_geometry_replay_performed": false
+  },
+  "full_original_process_order": [
+    {
+      "stage": "G00_INPUT",
+      "actual_generation": 0,
+      "control_vertices": 402,
+      "control_quads": 400,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G00_INPUT\\control_quad.npz",
+      "recorded_control_sha256": "bf9a1a4b2e2ef9a90fdb9f0d816cbf285b1c09a07134b0a5ed754e3b179cc683",
+      "receipt": "provenance/original_process/G00_INPUT/generation.json"
+    },
+    {
+      "stage": "G01_ANCESTRY",
+      "actual_generation": 1,
+      "control_vertices": 1602,
+      "control_quads": 1600,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G01_ANCESTRY\\control_quad.npz",
+      "recorded_control_sha256": "42986e8083fa7142742a48e7d9b163ff142ad5af7394d198386a6e48d414dd98",
+      "receipt": "provenance/original_process/G01_ANCESTRY/generation.json"
+    },
+    {
+      "stage": "G02_OVERLAP",
+      "actual_generation": 2,
+      "control_vertices": 6402,
+      "control_quads": 6400,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G02_OVERLAP\\control_quad.npz",
+      "recorded_control_sha256": "79bc41caabb5641054b9aa778c010f2ad6d00d1b7d6b30ba26ab2effbfba4b68",
+      "receipt": "provenance/original_process/G02_OVERLAP/generation.json"
+    },
+    {
+      "stage": "G03_WALL",
+      "actual_generation": 3,
+      "control_vertices": 25602,
+      "control_quads": 25600,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_WALL\\control_quad.npz",
+      "recorded_control_sha256": "1d97ff767a534ae083b61e8de8cc551c2ee87ce9762710f53e0096d64f0934d0",
+      "receipt": "provenance/original_process/G03_WALL/generation.json"
+    },
+    {
+      "stage": "G03_ROOT",
+      "actual_generation": 3,
+      "control_vertices": 26562,
+      "control_quads": 26560,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_ROOT\\control_quad.npz",
+      "recorded_control_sha256": "a3f3073e61528a6a210f475704bf74a362768522ab829118535fd7da95e696b1",
+      "receipt": "provenance/original_process/G03_ROOT/generation.json"
+    },
+    {
+      "stage": "G03_SIDEWALL",
+      "actual_generation": 3,
+      "control_vertices": 27354,
+      "control_quads": 27352,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G03_SIDEWALL\\control_quad.npz",
+      "recorded_control_sha256": "89b5e58f6b08f8f5958cb7654e1a417be7632bf13e3d765dc7a082970eeec055",
+      "receipt": "provenance/original_process/G03_SIDEWALL/generation.json"
+    },
+    {
+      "stage": "G04_NEUTRAL",
+      "actual_generation": 4,
+      "control_vertices": 109410,
+      "control_quads": 109408,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G04_NEUTRAL\\control_quad.npz",
+      "recorded_control_sha256": "56ea4dd32d979ed6daa368ee93d57509e431addfb38ef44d3250ca6b41f84abc",
+      "receipt": "provenance/original_process/G04_NEUTRAL/generation.json"
+    },
+    {
+      "stage": "G05_DIRECTIONAL",
+      "actual_generation": 5,
+      "control_vertices": 437634,
+      "control_quads": 437632,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G05_DIRECTIONAL\\control_quad.npz",
+      "recorded_control_sha256": "e87f517a02d6ab8e042cabd09c9236d52422b5dfcb4cd196c9b53e61949fad6d",
+      "receipt": "provenance/original_process/G05_DIRECTIONAL/generation.json"
+    },
+    {
+      "stage": "G06_DEPTH08",
+      "actual_generation": 6,
+      "control_vertices": 1750530,
+      "control_quads": 1750528,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_DEPTH08\\control_quad.npz",
+      "recorded_control_sha256": "35f5bdbc39568a33697c2f414ad8754aa9b0e072ffe8f3bf8dfb0a76abdc58d1",
+      "receipt": "provenance/original_process/G06_DEPTH08/generation.json"
+    },
+    {
+      "stage": "G06_MIDDLE",
+      "actual_generation": 6,
+      "control_vertices": 1750530,
+      "control_quads": 1750528,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G06_MIDDLE\\control_quad.npz",
+      "recorded_control_sha256": "38998220e63e9b9bd98f3d63870db444c681b9531d761581083c554021b8528d",
+      "receipt": "provenance/original_process/G06_MIDDLE/generation.json"
+    },
+    {
+      "stage": "G07_SURFACE",
+      "actual_generation": 7,
+      "control_vertices": 7002114,
+      "control_quads": 7002112,
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\end_rule_revision_20261014\\trial01\\replay\\states\\G07_SURFACE\\control_quad.npz",
+      "recorded_control_sha256": "89653a94af3b2de1d875a3206a15a127f4418ef957cd011d4bca05c44fa21921",
+      "receipt": "provenance/original_process/G07_SURFACE/generation.json"
+    },
+    {
+      "stage": "G7_PRIMARY_MIDDLE_WEIGHT_AND_NESTED",
+      "actual_generation": 7,
+      "operation": "Actual G7_SURFACE + inherited actual G6 MIDDLE lift; primary gain .95+.35*p; fresh CHILD then SMALL",
+      "external_control": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\NESTED\\control_quad.npz",
+      "recorded_control_sha256": "0092aaf46018411a0008156cc52d223dd25f2ca3192ae7ccc25e21f0afc385d3",
+      "original_LINKED_WIDE_or_global_micro_FLOW_included": false,
+      "receipt": "provenance/NESTED_RECEIPT.json"
+    },
+    {
+      "stage": "HISTORY_CLASSIFICATION",
+      "operation": "Actual earlier-stage shape evidence changes SOURCE5 and Tissue host selection; no feature-birth claim",
+      "receipt": "provenance/hybrid/history_classification/CLASSIFICATION_RECEIPT.json"
+    },
+    {
+      "stage": "G6_COARSE_MANDEL_PAIRED_CC",
+      "operation": "New coarse Mandel on actual G6; true paired neutral CC displacement difference, projected onto original G7 normals; NESTED underlay retained",
+      "receipt": "provenance/hybrid/INTERLEAVED_COARSE_RECEIPT.json"
+    },
+    {
+      "stage": "PAPER_ORIGIN_ACTUAL_TISSUE_AND_FRESH_FINE",
+      "operation": "Actual paper component -> actual Tissue topmost height-grid adapter + fresh fine Mandel; guards and local recovery against actual safe22",
+      "full_paper_handles_or_overhangs_transferred": false,
+      "receipt": "provenance/hybrid/FORMATION.json"
+    },
+    {
+      "stage": "FULL_NATIVE_EXPORT",
+      "operation": "Original G7 quads rendered/exported as four arithmetic-centre fan triangles each",
+      "receipt": "provenance/export/MODEL_RECEIPT.json"
+    }
+  ],
+  "original_carrier": {
+    "rings": 25,
+    "sectors": 16,
+    "radius": 0.78
+  },
+  "source_code_bindings": {
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\coherent_fold_detail_20261013\\fold_operator.py": {
+      "recorded_sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+      "observed_sha256": "ae759519969b3989788013025575fbbf7c7f79eafd787a97b1851cf0b649183f",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\column_development_20261011\\seed_mass.py": {
+      "recorded_sha256": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+      "observed_sha256": "6f61cd6f8574cb21c53627d0b5f0bf38e3d12bbe6ce9872d6ab2721f71e57b8a",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\column_development_20261011\\target_repeat.py": {
+      "recorded_sha256": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+      "observed_sha256": "eac71709d49e714d8921d1913d0d55594d2a3a6d941d4729dc108fe1a78de35c",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\patch_growth.py": {
+      "recorded_sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+      "observed_sha256": "a413dfebfb9e561120efa7c4be10131f999854a68351ccc5f72ae3f1d6504dba",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\study.py": {
+      "recorded_sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+      "observed_sha256": "12d67288ad8c92d702518d9e4a1aaf6b65b72dd0a4e78f0e6c6785e67fb6b8b3",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\connected_fold_growth_20261012\\verify.py": {
+      "recorded_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+      "observed_sha256": "38b68465a7f056932f94f0027c93da010de7ff7d34ec7b8490aeed25cdb5c2cd",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\a_repair.py": {
+      "recorded_sha256": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+      "observed_sha256": "279eb6dfb631039190f732f2ba8db0e922566269616c35ace10d5a27c9a1e816",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\conforming_a.py": {
+      "recorded_sha256": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+      "observed_sha256": "69c19cf1e9d6d2053a61361da75d9c7588e6e9016270406f60f50fa9085dd00b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\growth_follow.py": {
+      "recorded_sha256": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+      "observed_sha256": "75409c30f9176fb66341aaae48ace20d85eac7c3e56c4566ab9cb2dd6828c613",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\side_symmetry.py": {
+      "recorded_sha256": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+      "observed_sha256": "2f838d4ba7a78a34865b6685cddf573d69716829e64f60b8cf24088e441efc51",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\smooth_deep.py": {
+      "recorded_sha256": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+      "observed_sha256": "347207a5af9f1caa70e94b26bc10e1ddd61bc1d18d52c6babbc7b77096612737",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\curved_fold_side_20261011\\valley_study.py": {
+      "recorded_sha256": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+      "observed_sha256": "c5e80252d1959df93e8ac1249456c6f16b8c27b6394cfb68f55158144b951942",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\design_one_20261013\\batch_sweep.py": {
+      "recorded_sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+      "observed_sha256": "eb14bb3c3b7c162d61a950755b852948a1f012bf18834035984dff1fa8cae8e8",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\design_one_20261013\\study.py": {
+      "recorded_sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+      "observed_sha256": "1e0f1e9bbd28904f1000493863fe80427341f66747011ad7781beea2da9c0f05",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\directional_fold_memory_20261011\\study.py": {
+      "recorded_sha256": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+      "observed_sha256": "a3459878caf1768986bb8d8c92490c79cfbc2e8e674b042664baa512ead67d3a",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\directional_g6_20261013\\g6_operator.py": {
+      "recorded_sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+      "observed_sha256": "3bd97ffa5f07279ca749f83a21fca7d2ba611136a17173651adaf5cd8304df06",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\directional_growth_20261012\\overlap_probe.py": {
+      "recorded_sha256": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+      "observed_sha256": "9928d104dd20a3b61ced55791a4b0d16be775f93b1bfdcbb10912b8990a7a14b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\end_rule_revision_20261014\\replay.py": {
+      "recorded_sha256": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+      "observed_sha256": "b40dae38ad38e5034b1c19d250d498cd0d530e52ca4acd2685fa3e5218b252fa",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\ancestry_probe.py": {
+      "recorded_sha256": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+      "observed_sha256": "533cd0b3386f0a60b69c9ce50207a03fb85c95ff5ce7599286e2dbf9f8e98c12",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\curve_growth.py": {
+      "recorded_sha256": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+      "observed_sha256": "b66066d45dad1c7b3f202129ed0295ade0012607f1417dc94dbc1a79c5526616",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\full_loop.py": {
+      "recorded_sha256": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+      "observed_sha256": "a269dd6540010db1198d73e1456817eecd12ff4641d15d8ff2112c5b7b44f0a0",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\role_growth.py": {
+      "recorded_sha256": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+      "observed_sha256": "eea12545972a637f97711101d3c48de9550922b611bf44f223463f5fce9f71d3",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_band_growth_20261011\\sparse_input.py": {
+      "recorded_sha256": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+      "observed_sha256": "3ec8c0d9efc568a2a9e164740fa64cc97fa1f642df2c9945b35017651ff6fa84",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_coherence_20261012\\fold_profile.py": {
+      "recorded_sha256": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+      "observed_sha256": "06f3e89f70840b991b708ab5640217392972d7f78f2fa90d139e4597ecc07308",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_coherence_20261012\\study.py": {
+      "recorded_sha256": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+      "observed_sha256": "d9c84a9e29a6cd68024ca02e8646e1073e53641a113b1e8f6203d55dabfb6eca",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_region_growth_20261012\\region_fold.py": {
+      "recorded_sha256": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+      "observed_sha256": "16029ed0d359fa1bdb977d699e6784dcaa30b3cbc43bc521de5eb2f17d5b5bea",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_region_growth_20261012\\study.py": {
+      "recorded_sha256": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+      "observed_sha256": "63611aa0b12c70cd7523e5109de5b95f2bf6808f9120ef2db1bb4499870949b8",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_return_20261012\\study.py": {
+      "recorded_sha256": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+      "observed_sha256": "b6214fb4926a059fe11f433a36d93cc094162468415e0bd0513d2fa33fcb06b3",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_transfer_20261012\\inputs.py": {
+      "recorded_sha256": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+      "observed_sha256": "8455170b7af8a9e5868ac9cf23794d89425250deb9dc357d2f0488ab0edd7e16",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_transfer_20261012\\memory.py": {
+      "recorded_sha256": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+      "observed_sha256": "244d5182648349f757c4b7a71260e0790d20abf656c03d8e03bc2f532d121ed3",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_transfer_20261012\\study.py": {
+      "recorded_sha256": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+      "observed_sha256": "dbdcb60a990a900484186743a43c4633aaa3218db0ce707f0011377b9c12de92",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_visible_gate_20261012\\study.py": {
+      "recorded_sha256": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+      "observed_sha256": "a01ec02fbd0781d9c35835faa38e8afe017b346a016102255b2c3819192c169f",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_visible_gate_20261012\\wall_fold.py": {
+      "recorded_sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "observed_sha256": "4bf593cd0e47c0dca42a344432f0a0a5a33c6a47ec8fa0412c23b85d08dbd712",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\iaac_mandelbrot_20261011\\column_study.py": {
+      "recorded_sha256": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+      "observed_sha256": "bdfb53a34f009f0bdcfd8d425f6605ccc9610ee05c87023be3a5c73adf73323a",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\iaac_mandelbrot_20261011\\study.py": {
+      "recorded_sha256": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+      "observed_sha256": "4493f04d32e1b5a7b6b9c0f3efad66d30e35600822cac5b83a07ceacf1a0ba20",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\iaac_mandelbrot_20261011\\variation_study.py": {
+      "recorded_sha256": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+      "observed_sha256": "f06d48269730a4372b57d7b29877c7e646f98c87c799a0f407346d66d30fb22a",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\medium_root_folds_20261013\\root_folds.py": {
+      "recorded_sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+      "observed_sha256": "74134ce9ef8537ef785d161e1326f75207fb86db787e9d4ab31e0d0e206262db",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\connected_ribs.py": {
+      "recorded_sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+      "observed_sha256": "6d111133676decb5885c06602cf57d07223dc5ac87e8e0540c75cb0f587661da",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\parent_folds.py": {
+      "recorded_sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+      "observed_sha256": "4f84ef01f239ce83a41c956b59ee9b7f24fc946f3e4c01590f2736b2796aca8b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\smooth_relief.py": {
+      "recorded_sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+      "observed_sha256": "d60646629b715eba3a76c10fedeef25b88d59ea3ed6f93d795a84ae065b547cb",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_linked_folds_20261013\\smooth_relief.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_linked_folds_20261013\\study.py": {
+      "recorded_sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+      "observed_sha256": "9ba40089c09e75dbd1e06d9ee161f5450012da22c1dc3c97bf72f5d4adbbe24b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\recipe_transfer_20261013\\early.py": {
+      "recorded_sha256": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+      "observed_sha256": "e3f8e61b24d5cf53d5e457e724d5b49d0dc92400529e8f646df03aef6b11dc2a",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\recipe_transfer_20261013\\late.py": {
+      "recorded_sha256": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+      "observed_sha256": "8a4203cbad252d8ca3a7cc572ed36191d914d5af6d0990cc7fde969ea70ce395",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\sidewall_fan_growth_20261013\\patch_sidewall.py": {
+      "recorded_sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+      "observed_sha256": "3362a06463af7ce8da5e4633ecc71dc26ca8710f3d42cbe7ad815d056e209e2e",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\terminal_fold_20261011\\field_follow.py": {
+      "recorded_sha256": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+      "observed_sha256": "f37ab2145c62c40bff9091e88405b83e5a85a53cdfe872b6e51bde114cc22937",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\terminal_fold_20261011\\iaac_input.py": {
+      "recorded_sha256": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+      "observed_sha256": "8c48348936e1dbcc2c414a7aee1b0249610544212c8089d8b87ee2233e8b7ba7",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\terminal_fold_20261011\\iaac_repeat.py": {
+      "recorded_sha256": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+      "observed_sha256": "0015fc586832d5a1a57e1a77293312b141a4df9fe3137bc2d6d7a1cb37980fcc",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\terminal_fold_20261011\\study.py": {
+      "recorded_sha256": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+      "observed_sha256": "5512487f2d7ab98f30e83016b7b1b64eb1c35b3e45c8b1043311b5a94f1ff515",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\finish_surface.py": {
+      "recorded_sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+      "observed_sha256": "c52d9a08d86c08aac385e13bcc747b21358ba1004959f879781e7a981d550067",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\study.py": {
+      "recorded_sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+      "observed_sha256": "99fc1a173ea11cc79c17b818242f81f98e57c544643da8456395090f29fd3a96",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\whole_column_detail_20261013\\whole_field.py": {
+      "recorded_sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+      "observed_sha256": "4c66d67cb7583acc7d27f65349e2ba5272b3881fb6375efe74a54c811f7fd094",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\whole_column_detail_20261013\\whole_field.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\__init__.py": {
+      "recorded_sha256": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+      "observed_sha256": "e846c8407b764f6fd6d6ac0af6bf32be5a964ef0990b10adea4fce1b4d29284b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\artifact_root.py": {
+      "recorded_sha256": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+      "observed_sha256": "51328256ff30c763b38dd218c2e937df29468c2129137bf277e9e38218a1ef93",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\attributes.py": {
+      "recorded_sha256": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+      "observed_sha256": "a931e54c0460b980889719eb35f65dbd11ad481d14a416f244ebb51c82e7557b",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\branching.py": {
+      "recorded_sha256": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+      "observed_sha256": "2f9980406a798217473523bcb9269ab868c52c0ad39c5659b599f80ac07a3d39",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\execution.py": {
+      "recorded_sha256": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+      "observed_sha256": "a596298150b9292fa0a3d8804c4913d628e99c1ca7d8f8f6c7d7be48e1165116",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\generational_subdivision.py": {
+      "recorded_sha256": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+      "observed_sha256": "222d89ba7b4bba80a7a4d941a1724bfcfa19953e91f600868ef9c62c1aa23a25",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\inheritance.py": {
+      "recorded_sha256": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+      "observed_sha256": "2b858f8d570064f234b510cdd128e091e221ee20195aa0c0b352607a8387a498",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\lineage.py": {
+      "recorded_sha256": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+      "observed_sha256": "9be8ace131913496d7389c53adc6b0eb9020e6aa9e02b269c876fe40611a7b37",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\mapping.py": {
+      "recorded_sha256": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+      "observed_sha256": "dd2fe4abb71d68733baacdc451b778b1205264b19d734e102949f7e378082613",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\mesh_io.py": {
+      "recorded_sha256": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+      "observed_sha256": "93fbbf6fbc2d83a3d324b1f71059bf75fe9baa31455642e6e559496563410e13",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\mola.py": {
+      "recorded_sha256": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+      "observed_sha256": "aff4293101103fee3d928327fcd89fa5fcc10ddc8223bbd6a7196f3be53117c0",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\normalization.py": {
+      "recorded_sha256": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+      "observed_sha256": "a3bcc49abe2eda2e42cf88536cc34b9054c384339b1fec9eb2f93ce108a48964",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\ornament.py": {
+      "recorded_sha256": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+      "observed_sha256": "60fcd221cdc5e876f9cd9a37ad6473ed360e96fd841a8d0b024b021b6eb7d9cf",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\progressive_gates.py": {
+      "recorded_sha256": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+      "observed_sha256": "b5bc5dbe97cf83659463db7468d2148d81690f282cc470f4056e20aef53791ac",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\reference_subdivision.py": {
+      "recorded_sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+      "observed_sha256": "091e7f1ac3e2255c85ee3d3c2fb5a9bc3b38cbf0723aadea59f3f5ab06a5c16a",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\src\\cheshire\\reference_subdivision.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\rules.py": {
+      "recorded_sha256": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+      "observed_sha256": "c58e2b0522cc382b9f2ba82a9794782d01acdfe02e9d984aeea2719d75d677c7",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\subdivision.py": {
+      "recorded_sha256": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+      "observed_sha256": "01470ea29e8efa8b8e04fc3d132511291996f97e557c547880772d959e51e0a7",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\task32_patches.py": {
+      "recorded_sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+      "observed_sha256": "8128ad8609bc26ea4d08c12aa872485ac194857e68ea81f0d4c11a6cbb1d85a6",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\task33_folds.py": {
+      "recorded_sha256": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+      "observed_sha256": "0a17c5479926758e743d67569a7e198d44650e706cf7da790e572dd47a6fc427",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\task36_growth.py": {
+      "recorded_sha256": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+      "observed_sha256": "07f21f14207acb9135e8b5a22d783aaafa8842a2359e4e36a9163af381240b27",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\transforms.py": {
+      "recorded_sha256": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+      "observed_sha256": "d343440443cd21faa0fb22bf65dd3320d31d6386a6ae48f82ff477c2d77a88ac",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\validation.py": {
+      "recorded_sha256": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+      "observed_sha256": "17208851a0ce2b86f1b3e8bbfefcd6ac54b0dae8b363c4bb84314c4d001126ac",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\weighted_doosabin.py": {
+      "recorded_sha256": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+      "observed_sha256": "4fac05ec771ac3f1e90c00b47e5ee14726b85b28380a757419daeb272a92c7a9",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\weighted_subdivision.py": {
+      "recorded_sha256": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422",
+      "observed_sha256": "d773f622833425f4253e78cdf12867898abf60861d3da0c061d40a8e4173f422",
+      "current_source_matches": true,
+      "origin": "Original G0-to-G7_SURFACE stage binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\run_readable.py": {
+      "recorded_sha256": "269b661efd74867aba78aae2f208ffb402b66493ad364a36b8ad710765a2ea16",
+      "observed_sha256": "269b661efd74867aba78aae2f208ffb402b66493ad364a36b8ad710765a2ea16",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_nested_folds_20261014\\run_readable.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py": {
+      "recorded_sha256": "5f9693775aa17e01a4347790a21d46ddc55f216de52956abdf1c3e20b193fde5",
+      "observed_sha256": "5f9693775aa17e01a4347790a21d46ddc55f216de52956abdf1c3e20b193fde5",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\parent_nested_folds_20261014\\parent_nested_readable.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\end_continuity_20261014\\coherent_finish.py": {
+      "recorded_sha256": "73d89b3e7f7764c6cfbe62b0c1b9a7bb4bea752a1cec185d8770370f456d88a5",
+      "observed_sha256": "73d89b3e7f7764c6cfbe62b0c1b9a7bb4bea752a1cec185d8770370f456d88a5",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\end_continuity_20261014\\coherent_finish.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\middle_lift.py": {
+      "recorded_sha256": "a690992d598b80edda23fdcb6f0319b91acafe2d1f531f0d9226022e20b44105",
+      "observed_sha256": "a690992d598b80edda23fdcb6f0319b91acafe2d1f531f0d9226022e20b44105",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\middle_lift.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\prepare.py": {
+      "recorded_sha256": "5e833d00b8639b70ab8f018fc25d97b88b93a3959a67d121b70a4614a62e0f29",
+      "observed_sha256": "5e833d00b8639b70ab8f018fc25d97b88b93a3959a67d121b70a4614a62e0f29",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\prepare.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\run.py": {
+      "recorded_sha256": "7d16d720b3da8f94eb76c322a9d8e24a7a7ca4507371dbbf82bc233c465d2939",
+      "observed_sha256": "7d16d720b3da8f94eb76c322a9d8e24a7a7ca4507371dbbf82bc233c465d2939",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\run.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_hierarchy_20261014\\texture.py": {
+      "recorded_sha256": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a",
+      "observed_sha256": "eebc604bb6e6bb70d3c8e90331ae9a02c091fb4c6ea46008dcb519c4589e2d5a",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\fold_hierarchy_20261014\\texture.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\run_curved.py": {
+      "recorded_sha256": "3e96806bea5f876623da0474b0482ab2df13a9f423286871e7d1e3f311fe4745",
+      "observed_sha256": "3e96806bea5f876623da0474b0482ab2df13a9f423286871e7d1e3f311fe4745",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\run_curved.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py": {
+      "recorded_sha256": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844",
+      "observed_sha256": "92248bd60d4d2188f05a7396fc0eec1989ae365644454081e911600e3e5bc844",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\parent_nested_folds_20261014\\trial02\\source_snapshot_run\\experiments\\flow_fold_finish_20261014\\flow_curved_operator.py",
+      "snapshot_sha_verified": true,
+      "origin": "NESTED actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\run_generation_mirror_hybrid_20261016.py": {
+      "recorded_sha256": "bfbcbca68360cda851438f1c04f7c2c320acc3c905f6a033b071fc9e202fcf74",
+      "observed_sha256": "bfbcbca68360cda851438f1c04f7c2c320acc3c905f6a033b071fc9e202fcf74",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_generation_mirror_hybrid_20261016.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\src\\cheshire\\ornament_subdivision.py": {
+      "recorded_sha256": "9001f9a57082884dbee430ae2082c8e453ed61792301915683a462916f30c068",
+      "observed_sha256": "9001f9a57082884dbee430ae2082c8e453ed61792301915683a462916f30c068",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\ornament_subdivision.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_visible_organic_flow_whole_hybrid_20261016.py": {
+      "recorded_sha256": "1f1f677171a0e0be334f70b944ee1dedfa27286dd3cb7c4aa00222f99e90e377",
+      "observed_sha256": "1f1f677171a0e0be334f70b944ee1dedfa27286dd3cb7c4aa00222f99e90e377",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_visible_organic_flow_whole_hybrid_20261016.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_whole_hybrid_20261016.py": {
+      "recorded_sha256": "9fc0c8760eeddf07773ccbd9739ea4f9d6cc234ca421558fbd283d22e2389ce2",
+      "observed_sha256": "9fc0c8760eeddf07773ccbd9739ea4f9d6cc234ca421558fbd283d22e2389ce2",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_whole_hybrid_20261016.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_continuous.py": {
+      "recorded_sha256": "4c023d81f56a594290511be12b383e86e6c0debcfc6c7bcd79f7ff8f82373a88",
+      "observed_sha256": "4c023d81f56a594290511be12b383e86e6c0debcfc6c7bcd79f7ff8f82373a88",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_continuous.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\fold_aligned_mandel_20261015\\run_refined_stream.py": {
+      "recorded_sha256": "7459bf5b1aa082831bbe193bd8f6bec00c2061b7f9990df6d5611043e5c7f627",
+      "observed_sha256": "7459bf5b1aa082831bbe193bd8f6bec00c2061b7f9990df6d5611043e5c7f627",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_refined_stream.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\hansmeyer_reconstruction_20261015\\run_spine_reconstruction_v7.py": {
+      "recorded_sha256": "33da2cdce3803d83d892dab4243d252f89c5b8d447c10795999b66f0fc267925",
+      "observed_sha256": "33da2cdce3803d83d892dab4243d252f89c5b8d447c10795999b66f0fc267925",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_spine_reconstruction_v7.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\experiments\\fold_junction_development_20261015\\mandelbulb_surface_replacement.py": {
+      "recorded_sha256": "d52bd5cc11bfba3f1491d3d1e9eff721a475a4e8ee82cb17fb6741f5c5073bd8",
+      "observed_sha256": "d52bd5cc11bfba3f1491d3d1e9eff721a475a4e8ee82cb17fb6741f5c5073bd8",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\mandelbulb_surface_replacement.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\run_history_classification.py": {
+      "recorded_sha256": "e06917906fec75f7351c00812b25f4083411d71f8b2efe9b6cb7badaaab48313",
+      "observed_sha256": "e06917906fec75f7351c00812b25f4083411d71f8b2efe9b6cb7badaaab48313",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\run_history_classification.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    },
+    "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\history_classification\\history_classifier.py": {
+      "recorded_sha256": "4eb44513098b402c4447db2412b91f6bc7926918c90e5b83ed4adcf6886ae0c1",
+      "observed_sha256": "4eb44513098b402c4447db2412b91f6bc7926918c90e5b83ed4adcf6886ae0c1",
+      "current_source_matches": true,
+      "snapshot": "E:\\CHESHIRE_DATA\\experiments\\generation_mirror_hybrid_20261016\\source_snapshot_run\\history_classifier.py",
+      "snapshot_sha_verified": true,
+      "origin": "HYBRID actual executed source binding"
+    }
+  },
+  "validation_scope": {
+    "rendered_native_fan": {
+      "all_finite": true,
+      "degenerate_triangles": 0,
+      "original_to_output_orientation_reversals": 0,
+      "minimum_triangle_area": 3.709590679807345e-11,
+      "minimum_original_to_output_triangle_cross_dot": 3.593754241550043e-21,
+      "both_quad_diagonal_orientation_reversals": 30704,
+      "baseline_degenerate_diagonal_triangles": 0,
+      "diagonal_check_is_auxiliary_native_fan_is_rendered": true,
+      "maximum_normal_displacement": 0.05877374863851063,
+      "maximum_tangent_displacement": 0.0065049462305952314,
+      "XY_symmetry_error": 6.0285110237146e-14,
+      "global_self_intersection_checked": false
+    },
+    "full_large_model_revalidation_performed": false,
+    "original_model_readback_preserved": true,
+    "global_self_intersection_certified": false,
+    "fabrication_certified": false
+  },
+  "deferred_and_not_baseline": {
+    "shortened_G5_final_pipeline": true,
+    "selective193_overlap_experiments": true,
+    "additional_early_layout_or_Mandel_mass_overlap": true,
+    "new25_or49_source_generation": true,
+    "whole_CC1_or_structural_rebuild_replacement": true,
+    "policy": "Existing experiments remain separate research archives; no new generation is requested."
+  },
+  "preservation_tool": {
+    "path": "tools/preserve_column_pipeline_20261017.py",
+    "sha256": "3b5da6b9f20b4e1073f90bc2d1213367f1faa5b60918d6e5c4012549502ee361"
+  },
+  "source_files_modified": false,
+  "geometry_rebuilt": false,
+  "E_drive_writes": false,
+  "git_operations_performed": false
+}

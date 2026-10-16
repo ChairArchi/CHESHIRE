@@ -1,0 +1,55 @@
+{
+  "kind": "COFFER_SELF_MIRROR_SOURCE_DOMAIN_QUADRANT_BOUND_PROOF",
+  "source": "C:\\Users\\USER\\CHESHIRE\\worktrees\\connected-fold-growth-20261012\\docs\\hansmeyer_reconstruction_20261015\\COFFER_MIRROR_DOMAIN_AUDIT01.json",
+  "parents": [
+    {
+      "component": 2,
+      "theta_bounds": [
+        -0.9878767157617518,
+        -0.06026021872837197
+      ],
+      "strict_material_quadrant": 4,
+      "minimum_axis_angle_margin": 0.06026021872837197,
+      "minimum_distinct_reflected_theta_interval_gap_lower_bound": 0.12052043745674394,
+      "same_parent_reflected_source_domains_disjoint": true
+    },
+    {
+      "component": 12,
+      "theta_bounds": [
+        -1.1292348177431737,
+        -0.3709882693159306
+      ],
+      "strict_material_quadrant": 4,
+      "minimum_axis_angle_margin": 0.3709882693159306,
+      "minimum_distinct_reflected_theta_interval_gap_lower_bound": 0.7419765386318612,
+      "same_parent_reflected_source_domains_disjoint": true
+    },
+    {
+      "component": 25,
+      "theta_bounds": [
+        -1.4614940365796314,
+        -0.58278399940227
+      ],
+      "strict_material_quadrant": 4,
+      "minimum_axis_angle_margin": 0.10930229021526516,
+      "minimum_distinct_reflected_theta_interval_gap_lower_bound": 0.21860458043053033,
+      "same_parent_reflected_source_domains_disjoint": true
+    },
+    {
+      "component": 40,
+      "theta_bounds": [
+        1.0161361403874194,
+        1.530727658028421
+      ],
+      "strict_material_quadrant": 1,
+      "minimum_axis_angle_margin": 0.040068668766475524,
+      "minimum_distinct_reflected_theta_interval_gap_lower_bound": 0.08013733753295105,
+      "same_parent_reflected_source_domains_disjoint": true
+    }
+  ],
+  "reason": "All vertices of each certified convex source quad lie strictly inside one open material quadrant. Affine UV refinement remains within these vertex bounds. Distinct X/Y reflected copies occupy distinct quadrants with positive angular gaps, so their same-parent source domains cannot intersect. This bound is stronger than the secondary sampled-centre check.",
+  "limitations": [
+    "Numerical bounds on stored sourceUV, not a 3D collision or beauty certificate.",
+    "This proves same-parent mirror separation only; inter-family supports use the separate production control gate."
+  ]
+}

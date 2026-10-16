@@ -1,0 +1,206 @@
+{
+  "G00_INPUT": {
+    "vertices": 402,
+    "quads": 400,
+    "meridian_edges": 384,
+    "negative_axial_edges": 30,
+    "negative_fraction": 0.078125,
+    "dz_dt_quantiles": [
+      -16.088334991068933,
+      -12.561835935229642,
+      -2.209437486304679,
+      10.356988550598864,
+      16.603108216689584,
+      23.003340324617113
+    ],
+    "negative_material_t_range": [
+      0.0625,
+      0.9375
+    ],
+    "negative_actual_z_range": [
+      0.6321692256906468,
+      9.367830774309354
+    ]
+  },
+  "G01_ANCESTRY": {
+    "vertices": 1602,
+    "quads": 1600,
+    "meridian_edges": 1536,
+    "negative_axial_edges": 102,
+    "negative_fraction": 0.06640625,
+    "dz_dt_quantiles": [
+      -29.325462953700125,
+      -10.201178994852183,
+      -0.800288668360088,
+      10.005648511982393,
+      19.036722730383715,
+      38.42873676179003
+    ],
+    "negative_material_t_range": [
+      0.052083333333333336,
+      0.9479166666666667
+    ],
+    "negative_actual_z_range": [
+      0.6111907703805509,
+      9.361379692182208
+    ]
+  },
+  "G02_OVERLAP": {
+    "vertices": 6402,
+    "quads": 6400,
+    "meridian_edges": 6144,
+    "negative_axial_edges": 566,
+    "negative_fraction": 0.09212239583333333,
+    "dz_dt_quantiles": [
+      -37.28656538327737,
+      -13.399333521367778,
+      -4.02315816826389,
+      9.8770303704161,
+      21.845563980256404,
+      58.680621517193885
+    ],
+    "negative_material_t_range": [
+      0.05729166666666667,
+      0.953125
+    ],
+    "negative_actual_z_range": [
+      0.5762743059038671,
+      9.382446016752198
+    ]
+  },
+  "G03_WALL": {
+    "vertices": 25602,
+    "quads": 25600,
+    "meridian_edges": 24576,
+    "negative_axial_edges": 1996,
+    "negative_fraction": 0.08121744791666667,
+    "dz_dt_quantiles": [
+      -37.28656538327768,
+      -13.03181909817987,
+      -2.9249294293435715,
+      9.722975951452849,
+      21.54366285307096,
+      58.68062151719402
+    ],
+    "negative_material_t_range": [
+      0.0546875,
+      0.9557291666666667
+    ],
+    "negative_actual_z_range": [
+      0.5659565029141407,
+      9.394329300893105
+    ]
+  },
+  "G03_ROOT": {
+    "vertices": 26562,
+    "quads": 26560,
+    "meridian_edges": 25272,
+    "negative_axial_edges": 1996,
+    "negative_fraction": 0.0789806900918012,
+    "dz_dt_quantiles": [
+      -37.28656538327768,
+      -12.686110402146733,
+      -2.736494847664102,
+      9.530267866811146,
+      21.543662853070927,
+      58.68062151719402
+    ],
+    "negative_material_t_range": [
+      0.0546875,
+      0.9557291666666667
+    ],
+    "negative_actual_z_range": [
+      0.5659565029141407,
+      9.394329300893105
+    ],
+    "lineage_keys": [
+      "vertex_birth_event_ids",
+      "face_event_ids",
+      "face_roles"
+    ],
+    "face_event_ids_counts": {
+      "0": 24760,
+      "1": 1800
+    },
+    "face_roles_counts": {
+      "0": 24760,
+      "1": 960,
+      "2": 840
+    }
+  },
+  "G03_SIDEWALL": {
+    "vertices": 27354,
+    "quads": 27352,
+    "meridian_edges": 25728,
+    "negative_axial_edges": 1996,
+    "negative_fraction": 0.07758084577114428,
+    "dz_dt_quantiles": [
+      -37.28656538327768,
+      -12.533735782096763,
+      -2.660998090625393,
+      9.428687448244634,
+      21.487466470787144,
+      58.68062151719402
+    ],
+    "negative_material_t_range": [
+      0.0546875,
+      0.9557291666666667
+    ],
+    "negative_actual_z_range": [
+      0.5659565029141407,
+      9.394329300893105
+    ],
+    "lineage_keys": [
+      "inherited_root_pca_origin",
+      "inherited_root_pca_major",
+      "inherited_root_pca_minor",
+      "inherited_root_pca_normal",
+      "inherited_root_pca_extent",
+      "inherited_root_radius",
+      "inherited_root_wall_start",
+      "inherited_root_cap_start",
+      "initial_parent_face_event_ids",
+      "initial_parent_face_roles",
+      "initial_parent_vertex_birth_event_ids",
+      "vertex_birth_event_ids",
+      "face_event_ids",
+      "face_roles",
+      "inherited_root_event_json"
+    ],
+    "face_event_ids_counts": {
+      "0": 24760,
+      "1": 1584,
+      "2": 240,
+      "3": 208,
+      "4": 560
+    },
+    "face_roles_counts": {
+      "0": 24760,
+      "1": 1536,
+      "2": 1056
+    }
+  },
+  "G04_NEUTRAL": {
+    "vertices": 109410,
+    "quads": 109408,
+    "meridian_edges": 102912,
+    "negative_axial_edges": 7506,
+    "negative_fraction": 0.07293610074626866,
+    "dz_dt_quantiles": [
+      -35.41976335359646,
+      -11.042160302806941,
+      -2.036292579076285,
+      9.431084858595188,
+      20.785203576835855,
+      55.7734300725011
+    ],
+    "negative_material_t_range": [
+      0.05078125,
+      0.9544270833333334
+    ],
+    "negative_actual_z_range": [
+      0.5674593600446275,
+      9.39210512148474
+    ]
+  }
+}
